@@ -4,9 +4,10 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: ['probe/probe.py', '.github/workflows/probe.yml']
+    paths: ['probe/probe2.py']
 permissions:
   contents: write
+  pages: read
 jobs:
   probe:
     runs-on: ubuntu-latest
@@ -17,6 +18,7 @@ jobs:
         with: {python-version: '3.12'}
       - name: probe
         env:
+          GH_TOKEN: ${{ github.token }}
           SEC_ODDS_API_KEYS: ${{ secrets.ODDS_API_KEYS }}
           SEC_ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
           SEC_ODDS_KEYS: ${{ secrets.ODDS_KEYS }}
@@ -41,9 +43,9 @@ jobs:
           SEC_ODDS_API_KEY6: ${{ secrets.ODDS_API_KEY6 }}
           SEC_ODDS_API_KEY7: ${{ secrets.ODDS_API_KEY7 }}
           SEC_ODDS_API_KEY8: ${{ secrets.ODDS_API_KEY8 }}
-        run: mkdir -p probe/out && python3 probe/probe.py > probe/out/log.txt 2>&1; echo "exit $?" >> probe/out/log.txt
+        run: mkdir -p probe/out2 && python3 probe/probe2.py > probe/out2/log.txt 2>&1; echo "exit $?" >> probe/out2/log.txt
       - name: commit
         if: always()
         run: |
           git config user.name prop-check-bot; git config user.email bot@users.noreply.github.com
-          git add probe/out && git commit -q -m "probe results" && git push -q || echo "nothing to commit"
+          git add probe/out2 && git commit -q -m "probe results" && git push -q || echo "nothing to commit"
