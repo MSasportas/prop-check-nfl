@@ -139,7 +139,7 @@ def grade(events, now, cfg, cache, store, ina, roster):
         snaps_in = any(r.get("snap") is not None for r in game_rows.values())
         for it in sorted(its, key=lambda x: x["id"]):
             sh = it["shown"]
-            market, period = sh["market"].split("|")
+            market, period = sh["market"], sh["period"]
             pre = []
             if record.is_open(it):
                 pre.append({"t": "locked", "id": it["id"], "at": at, "state": it["state"]})
@@ -227,7 +227,7 @@ def cross_check(events, store, days=14):
         if ev.get("source") != "espn_box":
             continue
         sh = it["shown"]
-        market, period = sh["market"].split("|")
+        market, period = sh["market"], sh["period"]
         row = store.by_game.get(sh["game_id"], {}).get(sh["player_id"])
         val = nflrows.actual(row, market, period) if row else None
         if val is None:

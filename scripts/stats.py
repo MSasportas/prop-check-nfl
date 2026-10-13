@@ -100,17 +100,24 @@ def load(season):
 
 # ---------------------------------------------------------------- keeping this season current
 def _asset_info(tag, name):
-    """dict(size, updated_at) for one release asset, or None."""
-    headers = dict(common.UA, Accept="application/vnd.github+json")
-    tok = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")
-    if tok:
-        common.register_secret(tok)
-        headers["Authorization"] = "Bearer " + tok
-    js = common.feed_json("github_api", API % tag, "release_%s.json" % tag, timeout=30, retries=1, headers=headers)
-    for a in (js or {}).get("assets", []) or []:
-        if a.get("name") == name:
-            return {"size": a.get("size"), "updated_at": a.get("updated_at")}
-    return None
+    """dict(size, stamp) for one release asset without downloading it: a 1-byte Range request (GitHub redirects
+    to its file store, which answers 206 with the full size in Content-Range and an ETag / Last-Modified).
+    Fixture: <dir>/head_<name>.json. None when it cannot be read."""
+    if common.feed_fixture_dir():
+        return common.feed_json("nflverse_head", "", "head_%s.json" % name)
+    import urllib.request
+    try:
+        req = urllib.request.Request(REL % (tag, name), headers=dict(common.UA, Range="bytes=0-0"))
+        with urllib.request.urlopen(req, timeout=30) as r:
+            h = {k.lower(): v for k, v in r.headers.items()}
+            total = (h.get("content-range") or "").rpartition("/")[2]
+            info = {"size": int(total) if total.isdigit() else h.get("content-length"),
+                    "stamp": h.get("etag") or h.get("last-modified")}
+        common.note_source("nflverse_head", True)
+        return info if info["size"] or info["stamp"] else None
+    except Exception:
+        common.note_source("nflverse_head", False)
+        return None
 
 
 def update(season, now, cfg, force=False):
@@ -135,7 +142,7 @@ def update(season, now, cfg, force=False):
             return {"status": "failed", "note": "release info did not load; rows from %s kept" % meta.get("built_at")}
     elif not force and info == old and find_rows(season) is not None and built.get("built_for") == info:
         common.write_json(meta_path(), meta)
-        return {"status": "skipped", "note": "play-by-play unchanged (%s)" % (info.get("updated_at") or "?")}
+        return {"status": "skipped", "note": "play-by-play unchanged (%s bytes)" % info.get("size")}
     res = rebuild(season, now)
     if res["status"] == "ok":
         meta["pbp"] = info or old

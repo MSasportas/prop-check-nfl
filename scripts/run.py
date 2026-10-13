@@ -197,10 +197,8 @@ class Run:
         return weather.check(self.now, self.games, self.cfg)
 
     def report_times(self):
-        out = {}
-        for g in self.games:
-            out[g["id"]] = injuries.report_counts_at(g, self.cfg)
-        return out
+        """{game id: final injury report time} (R runs r_after_report_min after it)."""
+        return {g["id"]: injuries.final_report_time(g, self.cfg) for g in self.games}
 
     def do_odds(self):
         self.load_schedule()
@@ -314,6 +312,11 @@ class Run:
             else:
                 ps = "none_yet"
                 note = "No Hard Rock player props yet." + (" Next check %s." % _day_time(nxt, now) if nxt else "")
+            k = common.parse_iso(g["start"])
+            if note is None and not self.started.get(g["id"]) and \
+                    now >= k - timedelta(minutes=v.get("inactives_deadline_min", 60)) and \
+                    not injuries.game_confirmed(self.ina if self.ina is not None else injuries.load_inactives(), g):
+                note = "Inactives not confirmed yet."
             props[g["id"]] = (ps, note)
         # injuries / inactives
         inj = self.inj if self.inj is not None else injuries.load()
@@ -521,6 +524,8 @@ def run(only=None, dry_run=False):
     now = common.now()
     started_at = now
     odds.load_keys()                                        # registers the keys so nothing can print them
+    for k in ("GITHUB_TOKEN", "GH_TOKEN"):
+        common.register_secret(os.environ.get(k))
     common.SOURCES.clear()
     odds.SOURCE.update(ok=0, failed=0)
     r = Run(cfg, now, only, dry_run)

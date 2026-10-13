@@ -273,8 +273,11 @@ class Client:
         """The market keys Hard Rock lists for one event (costs 1). Returns a sorted list, or None."""
         ops = self.cfg["ops"]
         if self.pool.fixture:
-            js = self._fixture_json("markets_%s.json" % event_id) or self._fixture_json("markets_%s.json" % game_id)
+            js = self._fixture_json("markets_%s.json" % event_id) or self._fixture_json("markets_%s.json" % game_id) \
+                or self._fixture_json("markets_default.json")
             if js is None:
+                self.errors.append("odds feed did not answer (no markets fixture for %s)" % game_id)
+                SOURCE["failed"] += 1
                 return None
             if not self._fixture_spend(1, "M", game_id):
                 return None
@@ -490,7 +493,7 @@ def due_pulls(now, games, plan, cfg, done, focus, open_games, report_times, star
         # D: 10 AM daily re-check of markets holding open picks (not on the R / C path)
         if choice is None and "D" in pulls and open_games.get(g["id"]) and now < c_at:
             d_at = _at_clock(now.date(), v.get("d_time", "10:00"))
-            if now >= d_at and not any(f["at"] >= d_at for f in reads):
+            if d_at <= now < d_at + timedelta(hours=2) and not any(f["at"] >= d_at for f in reads):
                 pl = allowed(sorted(open_games[g["id"]]))
                 if pl:
                     choice = ("D", pl, [ops["book"]])

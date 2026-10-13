@@ -507,8 +507,10 @@ def focus_markets(inp, open_ids=(), near=True):
     return out
 
 
-def apply_caps(cands, v, live):
-    """Best line per player and market, then 1 per player, max_per_team, max_per_game (counting open picks)."""
+def apply_caps(cands, v, live, pulled_players=()):
+    """Best line per player and market, then 1 per player, max_per_team, max_per_game (counting open picks).
+    pulled_players: players whose pick was pulled this week (not for a line move): they count toward the 1 per
+    player cap, so a pulled player does not come back in another market the same week."""
     by = {}
     for c in cands:
         k = (c["pid"], c["mkey"])
@@ -516,6 +518,8 @@ def apply_caps(cands, v, live):
             by[k] = c
     ranked = sorted(by.values(), key=lambda c: rank_key(c["e"]["p"], c["e"]["b"], c["settled"]) + (c["id"],))
     per_p, per_t, per_g = {}, {}, {}
+    for pid in pulled_players:
+        per_p[pid] = per_p.get(pid, 0) + 1
     for x in live.values():
         per_p[x["pid"]] = per_p.get(x["pid"], 0) + 1
         per_t[(x["game_id"], x["team"])] = per_t.get((x["game_id"], x["team"]), 0) + 1
@@ -657,7 +661,11 @@ def evaluate(inp, paused=(), block_new=False):
     cands, counts = candidates(inp, paused)
     if block_new:
         cands = []
-    fresh = apply_caps([c for c in cands if c["id"] not in singles], v, live)
+    items_now = record.fold(inp.events + new)
+    pulled_players = {it["shown"]["player_id"] for it in items_now.values()
+                      if it["slate"] == inp.slate and it["kind"] == "single" and it["pulled"]
+                      and it["pulled"].get("code") != "line_moved"}
+    fresh = apply_caps([c for c in cands if c["id"] not in singles], v, live, pulled_players)
     for c in fresh:
         live[c["id"]] = {"p": c["e"]["p"], "b": c["e"]["b"], "settled": c["settled"], "price": c["price"],
                          "price_at": c["price_at"], "pid": c["pid"], "team": c["team"], "game_id": c["game_id"],
