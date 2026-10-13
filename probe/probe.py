@@ -19,8 +19,8 @@ def get(url, keep=None, headers=False):
         return (0, str(type(e).__name__).encode(), {}) if headers else (0, str(type(e).__name__).encode())
 
 # 1. secrets: names only
-sec = json.loads(os.environ.get("PC_ALL_SECRETS") or "{}")
-names = sorted(k for k in sec if k != "github_token")
+sec = {k[4:]: v for k, v in os.environ.items() if k.startswith("SEC_") and v}
+names = sorted(sec)
 rep["secret_names"] = names
 keys = []
 for k in names:

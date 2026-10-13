@@ -17,7 +17,30 @@ jobs:
         with: {python-version: '3.12'}
       - name: probe
         env:
-          PC_ALL_SECRETS: ${{ toJSON(secrets) }}
+          SEC_ODDS_API_KEYS: ${{ secrets.ODDS_API_KEYS }}
+          SEC_ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+          SEC_ODDS_KEYS: ${{ secrets.ODDS_KEYS }}
+          SEC_ODDS_KEY: ${{ secrets.ODDS_KEY }}
+          SEC_THE_ODDS_API_KEY: ${{ secrets.THE_ODDS_API_KEY }}
+          SEC_THE_ODDS_API_KEYS: ${{ secrets.THE_ODDS_API_KEYS }}
+          SEC_ODDS_API_KEYS_NFL: ${{ secrets.ODDS_API_KEYS_NFL }}
+          SEC_NFL_ODDS_API_KEYS: ${{ secrets.NFL_ODDS_API_KEYS }}
+          SEC_ODDS_API_KEY_1: ${{ secrets.ODDS_API_KEY_1 }}
+          SEC_ODDS_API_KEY_2: ${{ secrets.ODDS_API_KEY_2 }}
+          SEC_ODDS_API_KEY_3: ${{ secrets.ODDS_API_KEY_3 }}
+          SEC_ODDS_API_KEY_4: ${{ secrets.ODDS_API_KEY_4 }}
+          SEC_ODDS_API_KEY_5: ${{ secrets.ODDS_API_KEY_5 }}
+          SEC_ODDS_API_KEY_6: ${{ secrets.ODDS_API_KEY_6 }}
+          SEC_ODDS_API_KEY_7: ${{ secrets.ODDS_API_KEY_7 }}
+          SEC_ODDS_API_KEY_8: ${{ secrets.ODDS_API_KEY_8 }}
+          SEC_ODDS_API_KEY1: ${{ secrets.ODDS_API_KEY1 }}
+          SEC_ODDS_API_KEY2: ${{ secrets.ODDS_API_KEY2 }}
+          SEC_ODDS_API_KEY3: ${{ secrets.ODDS_API_KEY3 }}
+          SEC_ODDS_API_KEY4: ${{ secrets.ODDS_API_KEY4 }}
+          SEC_ODDS_API_KEY5: ${{ secrets.ODDS_API_KEY5 }}
+          SEC_ODDS_API_KEY6: ${{ secrets.ODDS_API_KEY6 }}
+          SEC_ODDS_API_KEY7: ${{ secrets.ODDS_API_KEY7 }}
+          SEC_ODDS_API_KEY8: ${{ secrets.ODDS_API_KEY8 }}
         run: mkdir -p probe/out && python3 probe/probe.py > probe/out/log.txt 2>&1; echo "exit $?" >> probe/out/log.txt
       - name: commit
         if: always()
