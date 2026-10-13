@@ -1,0 +1,33 @@
+{
+ "core_roster_final_DAL": [
+  200,
+  31778
+ ],
+ "core_status_final": [
+  200,
+  316
+ ],
+ "sb_week6": [
+  400,
+  "\u001f\ufffd\b\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\ufffdVJ\ufffdOIU\ufffd210\ufffdQ\ufffdM-.NL\u0007\ufffd\ufffd\u00123sRS\u0014J\ufffd\u0015\ufffdSK\u0014R\ufffdR\ufffdJ\ufffd\u0015R\ufffdR\n\ufffd3\ufffdJ\ufffd\ufffdj\u0001\u0000\u0000\u0000\ufffd\ufffd\u0003\u0000\ufffd,\u0003\ufffd7\u0000\u0000\u0000"
+ ],
+ "week6_err": "TypeError('the JSON object must be str, bytes or bytearray, not NoneType')",
+ "depthchart_DEN": [
+  200,
+  21283
+ ],
+ "nflverse_depth": [
+  200,
+  61250491
+ ],
+ "nflverse_stats": [
+  200,
+  2452455
+ ],
+ "pages_site": [
+  200,
+  1825
+ ],
+ "pages_api": "{\"url\":\"https://api.github.com/repos/MSasportas/prop-check-nfl/pages\",\"status\":\"building\",\"cname\":null,\"custom_404\":false,\"html_url\":\"https://msasportas.github.io/prop-check-nfl/\",\"build_type\":\"legacy\",\"source\":{\"branch\":\"main\",\"path\":\"/\"},\"public\":true,\"protected_domain_state\":null,\"pending_domain_unverified_at\":null,\"https_enforced\":true}"
+}
+exit 0
