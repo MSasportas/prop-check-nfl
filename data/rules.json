@@ -1,0 +1,263 @@
+{
+ "version": "1.0",
+ "updated": "2026-10-13",
+ "values": {
+  "price_gate": -200,
+  "max_price": 120,
+  "model_weight": 0.6,
+  "market_weight": 0.4,
+  "shrink": {
+   "pass_yds|FG|O": 0.03,
+   "pass_yds|FG|U": 0.07,
+   "pass_td|FG|O": 0.03,
+   "pass_td|FG|U": 0.03,
+   "pass_int|FG|U": 0.03,
+   "rush_yds|FG|O": 0.05,
+   "rush_yds|FG|U": 0.03,
+   "rush_att|FG|O": 0.03,
+   "rush_att|FG|U": 0.06,
+   "rec|FG|O": 0.04,
+   "rec|FG|U": 0.06,
+   "rec_yds|FG|O": 0.06,
+   "rec_yds|FG|U": 0.06,
+   "rush_rec_yds|FG|O": 0.06,
+   "rush_rec_yds|FG|U": 0.03,
+   "long_rec|FG|O": 0.04,
+   "long_rec|FG|U": 0.03,
+   "long_rush|FG|O": 0.05,
+   "long_rush|FG|U": 0.04,
+   "pass_yds|1H|O": 0.03,
+   "pass_yds|1H|U": 0.05,
+   "rush_yds|1H|O": 0.05,
+   "rush_yds|1H|U": 0.03,
+   "rec_yds|1H|O": 0.04,
+   "rec_yds|1H|U": 0.04
+  },
+  "jump_penalty": 0.03,
+  "min_model": 0.62,
+  "min_p": 0.57,
+  "margin_early": 0.04,
+  "margin_injury": 0.03,
+  "margin_inactives": 0.02,
+  "news_gap": 0.15,
+  "too_good": 0.2,
+  "gap_uses": "model_adj",
+  "hold_min": 0.03,
+  "hold_max": 0.1,
+  "alt_lines_picks": false,
+  "elig": {
+   "min_games": 6,
+   "min_games_over": 8,
+   "max_missed": 2,
+   "min_games_with_team": 3,
+   "max_role_cv": 0.6,
+   "jump": 0.4
+  },
+  "status_no_pick": [
+   "Questionable",
+   "Doubtful",
+   "Out",
+   "Injured Reserve",
+   "Physically Unable to Perform",
+   "Non-Football Injury",
+   "Suspension",
+   "Reserve-Ret",
+   "Inactive"
+  ],
+  "final_report": {
+   "Mon": "Sat 16:00",
+   "Tue": "Sun 16:00",
+   "Wed": "Mon 16:00",
+   "Thu": "Wed 16:00",
+   "Fri": "Wed 16:00",
+   "Sat": "Thu 16:00",
+   "Sun": "Fri 16:00"
+  },
+  "final_report_grace_min": 60,
+  "inactives_earliest_min": 100,
+  "inactives_deadline_min": 60,
+  "pull_margin": 0.0,
+  "drift_pull": 0.04,
+  "near_pick_margin": -0.03,
+  "rank_by": [
+   "chance",
+   "margin",
+   "settled"
+  ],
+  "max_per_player": 1,
+  "max_per_team": 2,
+  "max_per_game": 3,
+  "parlay_min_legs": 2,
+  "parlay_max_legs": 3,
+  "parlay_one_per_game": true,
+  "parlay_same_slate_only": true,
+  "parlay_leg_min_p": 0.58,
+  "parlay_leg_min_price": -200,
+  "parlay_leg_max_price": 100,
+  "parlay_min_p_2": 0.34,
+  "parlay_min_p_3": 0.2,
+  "parlay_edge": 0.03,
+  "parlay_cap": 3,
+  "parlay_leg_max_use": 2,
+  "stake": 1,
+  "f_days_before": 5,
+  "f_min_player_markets": 15,
+  "f_force_hours": 24,
+  "r_after_report_min": 60,
+  "c_min": 75,
+  "c_latest_min": 20,
+  "pause_legs": 30,
+  "pause_gap": 0.15,
+  "pause_units": -8,
+  "board_legs": 60,
+  "board_gap": 0.1,
+  "board_tighten": 0.03,
+  "change_legs": 100,
+  "change_legs_global": 150,
+  "tiers": {
+   "full_plus": 76,
+   "full": 66,
+   "standard": 48,
+   "basic": 43,
+   "lite": 24
+  },
+  "pool_low_allowance": 43,
+  "price_note_after_hours": 6,
+  "inactives_min_per_team": 3,
+  "f_check_times": [
+   "10:00",
+   "16:00"
+  ],
+  "f_sentinel": "earliest game of each ET game day; the rest of that day's games are checked only once the sentinel shows props",
+  "d_time": "10:00",
+  "parlay_state": "least settled leg",
+  "key_out": {
+   "target_share": 0.2,
+   "carry_share": 0.35,
+   "lookback_games": 4,
+   "only_if_played_last_game": true,
+   "statuses": [
+    "Doubtful",
+    "Out",
+    "Injured Reserve",
+    "Inactive"
+   ],
+   "effect": "that team's legs in the same room may not have a model-vs-market gap over news_gap, in any state (the book has priced the absence; our model has not)",
+   "rooms": {
+    "receiving": [
+     "rec",
+     "rec_yds",
+     "long_rec",
+     "rec_yds_1h",
+     "rush_rec_yds"
+    ],
+    "rushing": [
+     "rush_yds",
+     "rush_att",
+     "long_rush",
+     "rush_yds_1h",
+     "rush_rec_yds"
+    ]
+   }
+  },
+  "qb_change": {
+   "statuses": [
+    "Doubtful",
+    "Out",
+    "Injured Reserve",
+    "Inactive"
+   ],
+   "blocks": "over",
+   "markets": "all of that team's player markets",
+   "questionable_starter": "no new overs for that team until inactives confirm him active"
+  },
+  "weather": {
+   "wind_mph": 15,
+   "hours_before": 48,
+   "roofs": [
+    "outdoors",
+    "open"
+   ],
+   "markets": [
+    "pass_yds",
+    "pass_td",
+    "rec_yds",
+    "long_rec",
+    "pass_yds_1h",
+    "rec_yds_1h"
+   ],
+   "blocks": "over",
+   "source": "open-meteo hourly wind_speed_10m at the kickoff hour, wind_speed_unit=mph, stadium lat/lon",
+   "pulls_shown": true
+  },
+  "line_move": "pull (code line_moved, reason 'Hard Rock moved the line to X'); the new line is a fresh candidate with its own id and must qualify on its own",
+  "grading": {
+   "fg": "whole game incl. overtime",
+   "1h": "quarters 1-2 only",
+   "dnp": "void (no offensive snap and no stat)",
+   "tie": "push (whole-number line)",
+   "price": "worst price shown while open (a price that triggered a pull was never shown)",
+   "units": "win = decimal(price)-1, loss = -1, push/void = 0, stake 1",
+   "parlay": "all legs win = win at the parlay's worst shown snapshot; any loss = loss; a void/push leg drops out and the parlay is repriced from the remaining legs' graded prices; one leg left = graded as that single",
+   "anytime_td": "rush + rec + return/fumble-recovery TDs (not passing TDs) (display only in v1)",
+   "long_no_catch": "0 yards (under wins) if he played and had no catch/carry: verify Hard Rock house rule",
+   "pulled": "graded too, shown separately, never counted in the hit rate",
+   "when": "after ESPN marks the game final, from nflverse play-by-play (next morning); ESPN box score fallback for full-game stats if nflverse is 36h+ late"
+  },
+  "questionable": {
+   "new_picks": "none for that game, even if he is later active (2026: Questionable players who played hit 16 of 31 picks rated 69%)",
+   "shown_pick": "pulled when he is listed Questionable or worse (code injury)"
+  },
+  "inactives_source": "ESPN game summary/roster for that event (Builder to confirm the exact field from the runner); confirmed = both teams list inactives_min_per_team+ inactives",
+  "refit": "DS may refit model_params weekly (Tue) on new games; shrink and every value here change only by the sample rule",
+  "pool_share": 1.0,
+  "missed_last": "missed his team's last game (any reason) -> no new pick until state is injury or later and he carries no designation",
+  "stats_behind": "nflverse rows missing the team's most recent game -> no new picks for that team; page names the team",
+  "big_gap_needs": "injury",
+  "inactives_rule": "state 'inactives' when ESPN lists inactives_min_per_team+ inactives for BOTH teams, checked from inactives_earliest_min before kickoff. Not confirmed by inactives_deadline_min before kickoff: picks stay 'injury', no new pick that needs 'inactives', page says 'Inactives not confirmed yet', and they lock as 'locked_unconfirmed'.",
+  "drift_applies": "until inactives confirmed (states early and injury)",
+  "near_pick": "passes every eligibility rule and margin >= near_pick_margin; used only to choose what pull C re-checks",
+  "reason_max_chars": 140,
+  "min_sample": 30
+ },
+ "text": [
+  "Every pick needs a real Hard Rock price of -200 or better, up to +120. Plus money is fine.",
+  "Full game markets we pick: receptions, receiving yards, rushing yards, carries, rush + rec yards, passing yards, passing tds, interceptions, longest catch, longest run.",
+  "1st half markets we pick: passing yards, receiving yards, rushing yards.",
+  "Our chance mixes our model (60%) with Hard Rock's own price (40%), after a safety cut for each market.",
+  "We only pick when our model gives at least 62%, our chance is at least 57%, and it beats the price's break-even by 4 points early, 3 once the injury report is in, 2 once inactives are in.",
+  "No pick on a player listed questionable or worse at any point this week, or who missed his team's last game until the injury report clears him.",
+  "No overs on a player with fewer than 8 recent games, a new team, a big role change, or a new starting QB.",
+  "No passing or deep-catch overs in wind of 15 mph or more at kickoff.",
+  "At most 1 pick per player, 2 per team and 3 per game.",
+  "1st half spreads show DraftKings numbers for reference. They are never picks.",
+  "A pick is pulled if the player is ruled out or inactive, the price goes past -200, or the line moves or comes down.",
+  "Parlays are 2 or 3 legs from the top picks, each leg in a different game.",
+  "Picks lock at kickoff. Results come from the official stats once the game is final.",
+  "The Record grades every pick at the worst Hard Rock price shown, 1 unit each. Pulled picks are graded too and shown as pulled."
+ ],
+ "ui": {
+  "stale_after_min": 90,
+  "refresh_sec": 120,
+  "picks_open": 8,
+  "state_labels": {
+   "early": "Early",
+   "injury": "Injury report in",
+   "inactives": "Inactives confirmed",
+   "locked": "Locked",
+   "locked_unconfirmed": "Locked: inactives not confirmed"
+  },
+  "messages": {
+   "not_yet": "Hard Rock hasn't posted player props for this game yet. Next check %s.",
+   "main_only": "Main lines only for this game (odds credits are low).",
+   "not_pulled": "No Hard Rock prices pulled for this game (odds credits are low).",
+   "price_age": "Price as of %s.",
+   "inactives_missing": "Inactives not confirmed yet.",
+   "parlay_one_game": "Parlays need picks from 2+ games.",
+   "keys_low": "Odds credits are running low: some games get main lines only."
+  },
+  "reason_template": "{chance}% to {verb} {line} {short}, needs {breakeven}%. {why_1}; {why_2}.",
+  "reason_rule": "verb = 'clear' (over) / 'stay under' (under). why_2 (opponent or team-total clause) is dropped when the sentence would pass reason_max_chars. Whole percents: chance rounded down, break-even rounded to nearest. No jargon, no em dashes.",
+  "picks_open_per_day": 6
+ }
+}
