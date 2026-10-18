@@ -1,5 +1,5 @@
 {
- "at": "2026-10-18T12:50:00-04:00",
+ "at": "2026-10-18T13:00:00-04:00",
  "source": "espn",
  "players": {
   "name:ARI:kitancrawford": {
@@ -861,7 +861,7 @@
    "pos": "S",
    "status": "Out",
    "fantasy": "OUT",
-   "date": "2026-10-18T12:38:00-04:00",
+   "date": "2026-10-18T12:50:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
@@ -3523,6 +3523,16 @@
    "espn_id": "3921690",
    "comment": "The Vikings placed Oliver (biceps) on injured reserve Tuesday, Craig Peters of the team's official site reports."
   },
+  "00-0036875": {
+   "name": "Rhamondre Stevenson",
+   "team": "NE",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-18T12:48:00-04:00",
+   "detail": null,
+   "espn_id": "4569173"
+  },
   "name:NE:channingcanada": {
    "name": "Channing Canada",
    "team": "NE",
@@ -3604,16 +3614,6 @@
    "date": "2026-10-18T11:35:00-04:00",
    "detail": null,
    "espn_id": "4047646"
-  },
-  "00-0036875": {
-   "name": "Rhamondre Stevenson",
-   "team": "NE",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-16T20:00:00-04:00",
-   "detail": null,
-   "espn_id": "4569173"
   },
   "name:NE:marcusbryant": {
    "name": "Marcus Bryant",

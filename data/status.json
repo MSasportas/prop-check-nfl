@@ -3,10 +3,10 @@
  "season": 2026,
  "week": 6,
  "slate": "2026-W06",
- "started_at": "2026-10-18T12:50:00-04:00",
- "status_at": "2026-10-18T12:50:00-04:00",
- "finished_at": "2026-10-18T12:50:02-04:00",
- "last_ok_at": "2026-10-18T12:50:00-04:00",
+ "started_at": "2026-10-18T13:00:00-04:00",
+ "status_at": "2026-10-18T13:00:00-04:00",
+ "finished_at": "2026-10-18T13:00:32-04:00",
+ "last_ok_at": "2026-10-18T13:00:00-04:00",
  "failed_step": null,
  "steps": [
   {
@@ -17,7 +17,7 @@
   {
    "step": "schedule",
    "status": "ok",
-   "note": "14 game(s) this week (2026-W06); live state for 1 game(s)"
+   "note": "14 game(s) this week (2026-W06); schedule read"
   },
   {
    "step": "stats",
@@ -36,8 +36,8 @@
   },
   {
    "step": "weather",
-   "status": "skipped",
-   "note": "nothing due (2 indoors)"
+   "status": "ok",
+   "note": "7 read, 0 failed, 2 indoors"
   },
   {
    "step": "odds",
@@ -47,17 +47,17 @@
   {
    "step": "engine",
    "status": "ok",
-   "note": "no change"
+   "note": "16 new event(s): 2 shown, 0 pulled"
   },
   {
    "step": "grade",
-   "status": "ok",
-   "note": "1 graded"
+   "status": "skipped",
+   "note": "nothing to grade"
   },
   {
    "step": "slate",
    "status": "ok",
-   "note": "26 open pick(s), 3 parlay(s)"
+   "note": "14 open pick(s), 3 parlay(s)"
   },
   {
    "step": "research",
@@ -100,8 +100,8 @@
   },
   {
    "n": 4,
-   "left": 179,
-   "shared": false
+   "left": 177,
+   "shared": true
   },
   {
    "n": 5,
@@ -119,10 +119,10 @@
    "shared": false
   }
  ],
- "pool_total": 1361,
- "allowance": 50.41,
+ "pool_total": 1359,
+ "allowance": 63.52,
  "tier": "standard",
- "games_left_before_reset": 27,
+ "games_left_before_reset": 20,
  "budget_used_today": 812,
  "odds": {
   "state": "ok",
@@ -143,13 +143,13 @@
  },
  "stats_problems": [],
  "games_this_week": 14,
- "record_events": 82,
+ "record_events": 98,
  "grade_checks": [],
  "odds_notes": [],
  "runner": {
   "event": "workflow_dispatch",
   "run_id": "39146042293",
-  "iteration": 2,
+  "iteration": 3,
   "chain_link": 314,
   "chain_started_at": "2026-10-18T00:30:50-04:00",
   "run_started_at": "2026-10-18T12:40:11-04:00"

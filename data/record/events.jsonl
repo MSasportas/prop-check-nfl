@@ -80,3 +80,19 @@
 {"at":"2026-10-18T12:10:00-04:00","id":"2026-W06:2026_06_NO_NYG:00-0038551:rush_att:FG:9.5:under","state":"inactives","t":"state"}
 {"at":"2026-10-18T12:10:00-04:00","id":"2026-W06:2026_06_NO_NYG:00-0039337:long_rec:FG:24.5:under","state":"inactives","t":"state"}
 {"actual":5,"actual_text":"had 5","at":"2026-10-18T12:50:00-04:00","id":"2026-W06:2026_06_HOU_JAX:00-0038618:long_rec:FG:10.5:over","price":-125,"result":"L","source":"espn_box","t":"graded","units":-1.0}
+{"at":"2026-10-18T13:00:00-04:00","id":"2026-W06:2026_06_BAL_CLE:00-0035993:pass_int:FG:0.5:under","state":"inactives","t":"locked"}
+{"at":"2026-10-18T13:00:00-04:00","id":"2026-W06:2026_06_CAR_PHI:00-0036555:rush_att:FG:18.5:under","state":"inactives","t":"locked"}
+{"at":"2026-10-18T13:00:00-04:00","id":"2026-W06:2026_06_CAR_PHI:00-0039150:rush_yds:FG:10.5:under","state":"inactives","t":"locked"}
+{"at":"2026-10-18T13:00:00-04:00","id":"2026-W06:2026_06_CHI_ATL:00-0036970:long_rec:FG:15.5:under","state":"inactives","t":"locked"}
+{"at":"2026-10-18T13:00:00-04:00","id":"2026-W06:2026_06_CHI_ATL:00-0037238:rec_yds:FG:90.5:under","state":"inactives","t":"locked"}
+{"at":"2026-10-18T13:00:00-04:00","id":"2026-W06:2026_06_CHI_ATL:00-0040126:long_rec:FG:18.5:under","state":"inactives","t":"locked"}
+{"at":"2026-10-18T13:00:00-04:00","id":"2026-W06:2026_06_NO_NYG:00-0038551:rush_att:FG:9.5:under","state":"inactives","t":"locked"}
+{"at":"2026-10-18T13:00:00-04:00","id":"2026-W06:2026_06_NO_NYG:00-0039337:long_rec:FG:24.5:under","state":"inactives","t":"locked"}
+{"at":"2026-10-18T13:00:00-04:00","id":"2026-W06:2026_06_NYJ_NE:00-0036875:rush_att:FG:14.5:under","state":"inactives","t":"locked"}
+{"at":"2026-10-18T13:00:00-04:00","id":"2026-W06:2026_06_NYJ_NE:00-0039794:rec:FG:2.5:under","state":"inactives","t":"locked"}
+{"at":"2026-10-18T13:00:00-04:00","id":"2026-W06:2026_06_NYJ_NE:00-0039851:pass_yds:1H:124.5:under","state":"inactives","t":"locked"}
+{"at":"2026-10-18T13:00:00-04:00","id":"2026-W06:2026_06_TEN_IND:00-0040676:rush_yds:1H:3.5:under","state":"inactives","t":"locked"}
+{"at":"2026-10-18T13:00:00-04:00","id":"2026-W06:P:3d54c23d94","state":"injury_report","t":"locked"}
+{"at":"2026-10-18T13:00:00-04:00","id":"2026-W06:P:ff4f758f2a","state":"injury_report","t":"locked"}
+{"at":"2026-10-18T13:00:00-04:00","id":"2026-W06:P:6704ca6d85","kind":"parlay","parlay":{"breakeven":0.303,"breakeven_pct":30,"id":"2026-W06:P:6704ca6d85","leg_prices":{"2026-W06:2026_06_BUF_LV:00-0039338:long_rec:FG:24.5:under":-120,"2026-W06:2026_06_LAC_KC:00-0039894:rec:FG:4.5:under":-125},"legs":["2026-W06:2026_06_LAC_KC:00-0039894:rec:FG:4.5:under","2026-W06:2026_06_BUF_LV:00-0039338:long_rec:FG:24.5:under"],"n":2,"p":0.3908,"p_pct":39,"price":230,"price_at":"2026-10-18T00:40:00-04:00","start":"2026-10-18T16:25:00-04:00","state":"injury_report"},"slate":"2026-W06","t":"shown"}
+{"at":"2026-10-18T13:00:00-04:00","id":"2026-W06:P:d96af58810","kind":"parlay","parlay":{"breakeven":0.1722,"breakeven_pct":17,"id":"2026-W06:P:d96af58810","leg_prices":{"2026-W06:2026_06_BUF_LV:00-0038933:rec:FG:4.5:under":-145,"2026-W06:2026_06_LAC_KC:00-0039894:rec:FG:4.5:under":-125,"2026-W06:2026_06_WAS_SF:00-0033280:long_rec:FG:15.5:under":-110},"legs":["2026-W06:2026_06_BUF_LV:00-0038933:rec:FG:4.5:under","2026-W06:2026_06_LAC_KC:00-0039894:rec:FG:4.5:under","2026-W06:2026_06_WAS_SF:00-0033280:long_rec:FG:15.5:under"],"n":3,"p":0.248,"p_pct":24,"price":481,"price_at":"2026-10-18T00:40:00-04:00","start":"2026-10-18T16:25:00-04:00","state":"injury_report"},"slate":"2026-W06","t":"shown"}
