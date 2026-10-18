@@ -52,6 +52,19 @@ class Matcher:
                 self.by_last.setdefault(tail, []).append((f, p))
 
     def find(self, name):
+        hit = self._find(name)
+        if hit is None:
+            f, l = split_name(name)
+            alt = NICK.get(f)
+            if alt and alt != f and l:
+                hit = self._find_full(alt + l)
+        return hit
+
+    def _find_full(self, key):
+        hits = self.by_full.get(key, [])
+        return hits[0] if len({h["id"] for h in hits}) == 1 else None
+
+    def _find(self, name):
         hits = self.by_full.get(full_key(name), [])
         if len({h["id"] for h in hits}) == 1:
             return hits[0]
@@ -74,7 +87,7 @@ def display(first, last):
 
 # nicknames the feed and the roster disagree on (first names only); both sides are tried
 NICK = {"aj": "aj", "cj": "cj", "dj": "dj", "jk": "jk", "kj": "kj", "tj": "tj", "pj": "pj", "rj": "rj",
-        "hollywood": "marquise", "chig": "chigoziem", "bam": "kendall"}
+        "hollywood": "marquise", "chig": "chigoziem", "bam": "kendall", "drew": "andrew"}
 
 
 def variants(name):
