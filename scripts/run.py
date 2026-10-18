@@ -51,6 +51,21 @@ STEPS = ["rules", "schedule", "stats", "roster", "injuries", "weather", "odds", 
          "record", "status"]
 
 
+PAGE_URL = "https://msasportas.github.io/prop-check-nfl/"
+
+
+def live_page_check(prev, now):
+    """Once an hour from the runner: does the public page answer and is it this page? Never in tests."""
+    if os.environ.get("PC_NOW") or os.environ.get("PC_DATA_DIR"):
+        return prev
+    last = common.parse_iso((prev or {}).get("checked_at"))
+    if last is not None and timedelta(0) <= now - last < timedelta(hours=1):
+        return prev
+    r = common.http_get(PAGE_URL + "?t=%d" % int(now.timestamp()), timeout=15, retries=1)
+    body = r.body or b""
+    return {"checked_at": common.iso(now), "http": r.status, "is_page": b"Prop Check NFL" in body}
+
+
 class Run:
     def __init__(self, cfg, now, only=None, dry_run=False, readonly=False):
         self.cfg, self.now, self.only, self.dry_run, self.readonly = cfg, now, only, dry_run, readonly
@@ -468,6 +483,7 @@ class Run:
             "grade_checks": grade.cross_check(self.events or [], self.store) if self.store else [],
             "odds_notes": sorted(set((self.odds_res or {}).get("errors", [])))[:6],
             "runner": runner_info(),
+            "live_page": live_page_check(old.get("live_page"), self.now),
         }
         if old and _essence(old) == _essence(st) and not self._heartbeat_due(old.get("finished_at")):
             return
