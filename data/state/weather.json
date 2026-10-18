@@ -1,44 +1,44 @@
 {
  "games": {
   "2026_06_HOU_JAX": {
-   "temp_f": 54.8,
-   "wind_mph": 10.3,
-   "gust_mph": 20.8,
+   "temp_f": 55.0,
+   "wind_mph": 11.4,
+   "gust_mph": 23.5,
    "rain_pct": 4,
    "rain_in": 0.0,
    "roof": "outdoors",
-   "at": "2026-10-18T04:00:00-04:00",
-   "text": "55\u00b0F, wind 10 mph"
+   "at": "2026-10-18T07:00:00-04:00",
+   "text": "55\u00b0F, wind 11 mph"
   },
   "2026_06_BAL_CLE": {
-   "temp_f": 57.5,
-   "wind_mph": 8.8,
-   "gust_mph": 15.0,
+   "temp_f": 57.8,
+   "wind_mph": 8.3,
+   "gust_mph": 13.4,
    "rain_pct": 0,
    "rain_in": 0.0,
    "roof": "outdoors",
-   "at": "2026-10-18T04:00:00-04:00",
-   "text": "58\u00b0F, wind 9 mph"
+   "at": "2026-10-18T07:00:00-04:00",
+   "text": "58\u00b0F, wind 8 mph"
   },
   "2026_06_CAR_PHI": {
-   "temp_f": 53.1,
-   "wind_mph": 6.7,
-   "gust_mph": 13.9,
+   "temp_f": 53.5,
+   "wind_mph": 6.5,
+   "gust_mph": 13.0,
    "rain_pct": 0,
    "rain_in": 0.0,
    "roof": "outdoors",
-   "at": "2026-10-18T04:00:00-04:00",
-   "text": "53\u00b0F, wind 7 mph"
+   "at": "2026-10-18T07:00:00-04:00",
+   "text": "54\u00b0F, wind 6 mph"
   },
   "2026_06_CHI_ATL": {
    "temp_f": 60.4,
-   "wind_mph": 12.5,
-   "gust_mph": 19.9,
+   "wind_mph": 13.0,
+   "gust_mph": 20.6,
    "rain_pct": 0,
    "rain_in": 0.0,
    "roof": "retractable",
-   "at": "2026-10-18T04:00:00-04:00",
-   "text": "60\u00b0F, wind 12 mph (roof may be closed)"
+   "at": "2026-10-18T07:00:00-04:00",
+   "text": "60\u00b0F, wind 13 mph (roof may be closed)"
   },
   "2026_06_NO_NYG": {
    "temp_f": 55.5,
@@ -51,34 +51,34 @@
    "text": "56\u00b0F, wind 7 mph"
   },
   "2026_06_NYJ_NE": {
-   "temp_f": 49.6,
-   "wind_mph": 2.3,
-   "gust_mph": 4.0,
+   "temp_f": 49.7,
+   "wind_mph": 3.5,
+   "gust_mph": 7.2,
    "rain_pct": 0,
    "rain_in": 0.0,
    "roof": "outdoors",
-   "at": "2026-10-18T04:00:00-04:00",
-   "text": "50\u00b0F, wind 2 mph"
+   "at": "2026-10-18T07:00:00-04:00",
+   "text": "50\u00b0F, wind 4 mph"
   },
   "2026_06_PIT_TB": {
-   "temp_f": 75.2,
-   "wind_mph": 13.3,
-   "gust_mph": 22.8,
+   "temp_f": 75.8,
+   "wind_mph": 13.0,
+   "gust_mph": 22.4,
    "rain_pct": 0,
    "rain_in": 0.0,
    "roof": "outdoors",
-   "at": "2026-10-18T04:00:00-04:00",
-   "text": "75\u00b0F, wind 13 mph"
+   "at": "2026-10-18T07:00:00-04:00",
+   "text": "76\u00b0F, wind 13 mph"
   },
   "2026_06_TEN_IND": {
    "temp_f": 54.0,
-   "wind_mph": 7.6,
-   "gust_mph": 15.0,
+   "wind_mph": 6.8,
+   "gust_mph": 12.5,
    "rain_pct": 0,
    "rain_in": 0.0,
    "roof": "retractable",
-   "at": "2026-10-18T04:00:00-04:00",
-   "text": "54\u00b0F, wind 8 mph (roof may be closed)"
+   "at": "2026-10-18T07:00:00-04:00",
+   "text": "54\u00b0F, wind 7 mph (roof may be closed)"
   },
   "2026_06_ARI_LA": {
    "roof": "dome",
@@ -99,13 +99,13 @@
    "text": "63\u00b0F, wind 11 mph"
   },
   "2026_06_DAL_GB": {
-   "temp_f": 51.3,
-   "wind_mph": 10.1,
-   "gust_mph": 19.7,
+   "temp_f": 50.9,
+   "wind_mph": 9.8,
+   "gust_mph": 19.0,
    "rain_pct": 0,
    "rain_in": 0.0,
    "roof": "outdoors",
-   "at": "2026-10-18T04:00:00-04:00",
+   "at": "2026-10-18T07:00:00-04:00",
    "text": "51\u00b0F, wind 10 mph"
   },
   "2026_06_WAS_SF": {
