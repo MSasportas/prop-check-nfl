@@ -138,6 +138,10 @@ The old Spotlight rules (brief 025) were dropped, not carried over.
     there; longest-catch reasons cite receiving-yards ranks (shown under that market).
 15. Sharp open question for the weekly review: unders picked against defenses that allow a lot to that position
     (e.g. Kolar U2.5 catches vs KC, 2nd most to TEs; the clause is now hidden, the pick stands on the model).
+16. **A new teammate isn't seen by the model.** Marvin Harrison Jr. joined HOU after week 5 (ARI through week 4, no games for
+    HOU yet), and Xavier Hutchinson's Over 10.5 longest catch (-120) was built from Hutchinson's last 5 games, all before
+    that. Eligibility flags the player who moved (3-game rule), not the teammates whose targets he takes. Sharp/DS to add:
+    when a WR/TE/RB joins a team, that room's overs wait or are blocked for N games. Found by Matt, Oct 18, 9:11 AM.
 
 ## 8. Rule-change log
 | Date | Change | Why | Sample |
