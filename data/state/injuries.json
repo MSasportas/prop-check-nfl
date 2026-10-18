@@ -1,5 +1,5 @@
 {
- "at": "2026-10-18T15:40:00-04:00",
+ "at": "2026-10-18T15:50:00-04:00",
  "source": "espn",
  "players": {
   "00-0041561": {
@@ -219,8 +219,8 @@
    "name": "Kendal Daniels",
    "team": "ATL",
    "pos": "LB",
-   "status": "Out",
-   "fantasy": "OUT",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
    "date": "2026-10-18T15:29:00-04:00",
    "detail": "Neck",
    "espn_id": "4595343"
@@ -892,7 +892,7 @@
    "pos": "S",
    "status": "Injured Reserve",
    "fantasy": "IR",
-   "date": "2026-10-18T15:28:00-04:00",
+   "date": "2026-10-18T15:43:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
@@ -902,7 +902,7 @@
    "pos": "G",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-10-18T15:19:00-04:00",
+   "date": "2026-10-18T15:39:00-04:00",
    "detail": "Hip",
    "espn_id": "3930040"
   },
@@ -1216,7 +1216,7 @@
    "pos": "LB",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-10-18T14:48:00-04:00",
+   "date": "2026-10-18T15:28:00-04:00",
    "detail": "Hip",
    "espn_id": "5150249"
   },
@@ -2255,6 +2255,16 @@
    "detail": null,
    "espn_id": "4686422"
   },
+  "name:IND:rigobertosanchez": {
+   "name": "Rigoberto Sanchez",
+   "team": "IND",
+   "pos": "P",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-18T15:42:00-04:00",
+   "detail": "Foot",
+   "espn_id": "3914922"
+  },
   "name:IND:saucegardner": {
    "name": "Sauce Gardner",
    "team": "IND",
@@ -2419,16 +2429,6 @@
    "date": "2026-10-05T22:36:00-04:00",
    "detail": null,
    "espn_id": "4686468"
-  },
-  "00-0032951": {
-   "name": "Laquon Treadwell",
-   "team": "IND",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-05T22:13:00-04:00",
-   "detail": null,
-   "espn_id": "3051889"
   },
   "00-0040718": {
    "name": "Travis Hunter",
@@ -3629,6 +3629,16 @@
    "espn_id": "3921690",
    "comment": "The Vikings placed Oliver (biceps) on injured reserve Tuesday, Craig Peters of the team's official site reports."
   },
+  "name:NE:alijahveratucker": {
+   "name": "Alijah Vera-Tucker",
+   "team": "NE",
+   "pos": "G",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-18T15:31:00-04:00",
+   "detail": "Hamstring",
+   "espn_id": "4259646"
+  },
   "00-0037816": {
    "name": "Romeo Doubs",
    "team": "NE",
@@ -3639,16 +3649,6 @@
    "detail": "Shoulder",
    "espn_id": "4361432",
    "comment": "Doubs (shoulder) has been ruled out for the rest of Sunday's game against the Jets, Doug Kyed of the Boston Herald reports."
-  },
-  "name:NE:alijahveratucker": {
-   "name": "Alijah Vera-Tucker",
-   "team": "NE",
-   "pos": "G",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-18T14:23:00-04:00",
-   "detail": "Hamstring",
-   "espn_id": "4259646"
   },
   "name:NE:morganmoses": {
    "name": "Morgan Moses",
@@ -3788,7 +3788,7 @@
    "pos": "CB",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-10-18T15:16:00-04:00",
+   "date": "2026-10-18T15:37:00-04:00",
    "detail": "Illness",
    "espn_id": "4433975"
   },
@@ -3954,13 +3954,23 @@
    "detail": null,
    "espn_id": "4569559"
   },
+  "name:NYG:andrewthomas": {
+   "name": "Andrew Thomas",
+   "team": "NYG",
+   "pos": "OT",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-18T15:48:00-04:00",
+   "detail": "Head",
+   "espn_id": "4259566"
+  },
   "name:NYG:jermaineeluemunor": {
    "name": "Jermaine Eluemunor",
    "team": "NYG",
    "pos": "OT",
    "status": "Out",
    "fantasy": "INACTIVE",
-   "date": "2026-10-18T15:32:00-04:00",
+   "date": "2026-10-18T15:48:00-04:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
@@ -3970,10 +3980,10 @@
    "pos": "WR",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-10-18T15:27:00-04:00",
+   "date": "2026-10-18T15:33:00-04:00",
    "detail": "Neck",
    "espn_id": "4040655",
-   "comment": "questionable"
+   "comment": "Mooney (neck) is questionable to return to Sunday's game against the Saints, Ross Jackson of WWL Louisiana reports."
   },
   "name:NYG:gregnewsome": {
    "name": "Greg Newsome II",
@@ -4280,16 +4290,16 @@
    "detail": null,
    "espn_id": "4808766"
   },
-  "00-0039325": {
-   "name": "Carson Steele",
+  "00-0040867": {
+   "name": "Makai Lemon",
    "team": "PHI",
-   "pos": "RB",
+   "pos": "WR",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-10-18T15:01:00-04:00",
-   "detail": "Shoulder",
-   "espn_id": "4714365",
-   "comment": "Steele has been ruled out for the remainder of Sunday's game against the Panthers due to a shoulder injury."
+   "date": "2026-10-18T15:35:00-04:00",
+   "detail": "Undisclosed",
+   "espn_id": "4870795",
+   "comment": "questionable"
   },
   "name:PHI:nolansmith": {
    "name": "Nolan Smith Jr.",
@@ -4300,6 +4310,17 @@
    "date": "2026-10-18T14:22:00-04:00",
    "detail": "Concussion",
    "espn_id": "4426331"
+  },
+  "00-0039325": {
+   "name": "Carson Steele",
+   "team": "PHI",
+   "pos": "RB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-18T13:43:00-04:00",
+   "detail": "Shoulder",
+   "espn_id": "4714365",
+   "comment": "Steele is questionable to return to Sunday's game against the Panthers due to a right shoulder injury."
   },
   "00-0040891": {
    "name": "Cole Payton",
@@ -4496,16 +4517,6 @@
    "date": "2026-10-16T16:34:00-04:00",
    "detail": null,
    "espn_id": "4428850"
-  },
-  "00-0036912": {
-   "name": "DeVonta Smith",
-   "team": "PHI",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-16T16:25:00-04:00",
-   "detail": null,
-   "espn_id": "4241478"
   },
   "name:PIT:brandinechols": {
    "name": "Brandin Echols",
@@ -6157,6 +6168,10 @@
   "00-0036309": {
    "status": "Questionable",
    "at": "2026-10-18T15:40:00-04:00"
+  },
+  "00-0040867": {
+   "status": "Questionable",
+   "at": "2026-10-18T15:50:00-04:00"
   }
  }
 }
