@@ -3,10 +3,10 @@
  "season": 2026,
  "week": 6,
  "slate": "2026-W06",
- "started_at": "2026-10-18T16:20:00-04:00",
- "status_at": "2026-10-18T16:20:00-04:00",
- "finished_at": "2026-10-18T16:20:03-04:00",
- "last_ok_at": "2026-10-18T16:20:00-04:00",
+ "started_at": "2026-10-18T16:30:00-04:00",
+ "status_at": "2026-10-18T16:30:00-04:00",
+ "finished_at": "2026-10-18T16:30:01-04:00",
+ "last_ok_at": "2026-10-18T16:30:00-04:00",
  "failed_step": null,
  "steps": [
   {
@@ -22,7 +22,7 @@
   {
    "step": "stats",
    "status": "skipped",
-   "note": "checked at 3:30 PM"
+   "note": "play-by-play unchanged (5509556 bytes)"
   },
   {
    "step": "roster",
@@ -31,13 +31,13 @@
   },
   {
    "step": "injuries",
-   "status": "ok",
-   "note": "espn: 232 out, 60 questionable; inactives posted for 22 team(s)"
+   "status": "skipped",
+   "note": "read at 4:20 PM; inactives posted for 22 team(s)"
   },
   {
    "step": "weather",
-   "status": "ok",
-   "note": "2 read, 0 failed, 1 indoors"
+   "status": "skipped",
+   "note": "nothing due (0 indoors)"
   },
   {
    "step": "odds",
@@ -47,7 +47,7 @@
   {
    "step": "engine",
    "status": "ok",
-   "note": "no change"
+   "note": "11 new event(s): 2 shown, 0 pulled"
   },
   {
    "step": "grade",
@@ -57,12 +57,12 @@
   {
    "step": "slate",
    "status": "ok",
-   "note": "11 open pick(s), 3 parlay(s)"
+   "note": "5 open pick(s), 2 parlay(s)"
   },
   {
    "step": "research",
    "status": "ok",
-   "note": "14 game file(s) written"
+   "note": "0 game file(s) written"
   },
   {
    "step": "record",
@@ -120,9 +120,9 @@
   }
  ],
  "pool_total": 1338,
- "allowance": 65.76,
- "tier": "standard",
- "games_left_before_reset": 19,
+ "allowance": 73.5,
+ "tier": "full",
+ "games_left_before_reset": 17,
  "budget_used_today": 833,
  "odds": {
   "state": "ok",
@@ -147,23 +147,27 @@
   "TEN": "last game's stats are not in yet",
   "IND": "last game's stats are not in yet",
   "NYJ": "last game's stats are not in yet",
-  "NE": "last game's stats are not in yet"
+  "NE": "last game's stats are not in yet",
+  "NO": "last game's stats are not in yet",
+  "NYG": "last game's stats are not in yet",
+  "CAR": "last game's stats are not in yet",
+  "PHI": "last game's stats are not in yet"
  },
  "stats_problems": [],
  "games_this_week": 14,
- "record_events": 129,
+ "record_events": 145,
  "grade_checks": [],
  "odds_notes": [],
  "runner": {
   "event": "workflow_dispatch",
   "run_id": "39161283885",
-  "iteration": 3,
+  "iteration": 4,
   "chain_link": 318,
   "chain_started_at": "2026-10-18T00:30:50-04:00",
   "run_started_at": "2026-10-18T16:00:14-04:00"
  },
  "live_page": {
-  "checked_at": "2026-10-18T15:30:00-04:00",
+  "checked_at": "2026-10-18T16:30:00-04:00",
   "http": 200,
   "is_page": true
  }

@@ -3367,14 +3367,14 @@
  "fail_note": null,
  "key_count": 7,
  "plan": {
-  "allowance": 65.76,
-  "tier": "standard",
-  "pulls": "MFC",
+  "allowance": 73.5,
+  "tier": "full",
+  "pulls": "MFRC",
   "pool_at_plan": 1249.5,
-  "games_left": 19,
+  "games_left": 17,
   "pool_raw": 1338,
   "keys_shared": 1,
-  "made_at": "2026-10-18T16:10:00-04:00"
+  "made_at": "2026-10-18T16:30:00-04:00"
  },
  "failed": {}
 }

@@ -2,8 +2,8 @@
  "season": 2026,
  "week": 6,
  "label": "Week 6",
- "generated_at": "2026-10-18T16:20:00-04:00",
- "status_at": "2026-10-18T16:20:00-04:00",
+ "generated_at": "2026-10-18T16:30:00-04:00",
+ "status_at": "2026-10-18T16:30:00-04:00",
  "valid_until": "2026-10-20T06:00:00-04:00",
  "next_check": "2026-10-18T19:05:00-04:00",
  "status": {
@@ -19,7 +19,7 @@
   "inactives": {
    "state": "ok",
    "at": "2026-10-18T15:20:00-04:00",
-   "note": "Posted for the 4:25 PM game."
+   "note": null
   },
   "stats": {
    "state": "ok",
@@ -37,7 +37,7 @@
   },
   "last_run": {
    "ok": true,
-   "at": "2026-10-18T16:20:00-04:00",
+   "at": "2026-10-18T16:30:00-04:00",
    "failed_step": null
   }
  },
@@ -112,8 +112,11 @@
    "day": "2026-10-18",
    "roof": "outdoors",
    "started": true,
-   "final": false,
-   "score": null,
+   "final": true,
+   "score": {
+    "away": 25,
+    "home": 14
+   },
    "settled": "inactives",
    "props_state": "ok",
    "props_at": "2026-10-18T11:50:01-04:00",
@@ -149,8 +152,11 @@
    "day": "2026-10-18",
    "roof": "outdoors",
    "started": true,
-   "final": false,
-   "score": null,
+   "final": true,
+   "score": {
+    "away": 34,
+    "home": 27
+   },
    "settled": "inactives",
    "props_state": "ok",
    "props_at": "2026-10-18T11:50:01-04:00",
@@ -239,7 +245,7 @@
    "kickoff": "2026-10-18T16:25:00-04:00",
    "day": "2026-10-18",
    "roof": "dome",
-   "started": false,
+   "started": true,
    "final": false,
    "score": null,
    "settled": "inactives",
@@ -256,7 +262,7 @@
    "kickoff": "2026-10-18T16:25:00-04:00",
    "day": "2026-10-18",
    "roof": "outdoors",
-   "started": false,
+   "started": true,
    "final": false,
    "score": null,
    "settled": "inactives",
@@ -303,245 +309,8 @@
  ],
  "picks": [
   {
-   "id": "2026-W06:2026_06_LAC_KC:00-0038046:rec:FG:2.5:under",
-   "rank": 1,
-   "game_id": "2026_06_LAC_KC",
-   "day": "2026-10-18",
-   "kickoff": "2026-10-18T16:25:00-04:00",
-   "player": "Charlie Kolar",
-   "player_short": "C. Kolar",
-   "player_id": "00-0038046",
-   "pos": "TE",
-   "team": "LAC",
-   "opp": "KC",
-   "home": false,
-   "market": "rec",
-   "period": "FG",
-   "side": "under",
-   "line": 2.5,
-   "bet": "Under 2.5 receptions",
-   "book": "Hard Rock",
-   "price": -155,
-   "price_at": "2026-10-18T15:10:00-04:00",
-   "first_price": -155,
-   "first_price_at": "2026-10-18T00:30:51-04:00",
-   "grade_price": -155,
-   "p": 0.6734,
-   "breakeven": 0.6078,
-   "p_pct": 67,
-   "breakeven_pct": 61,
-   "reason": "1.2 catches a game his last 5 (2 of 5 over 2.5). His team is projected for 16.8 points.",
-   "settled": "inactives",
-   "state": "open",
-   "thin": false,
-   "pulled": null,
-   "graded": null,
-   "history": [
-    {
-     "at": "2026-10-18T00:30:51-04:00",
-     "text": "Posted at -155"
-    },
-    {
-     "at": "2026-10-18T15:20:00-04:00",
-     "text": "Inactives confirmed"
-    }
-   ]
-  },
-  {
-   "id": "2026-W06:2026_06_BUF_LV:00-0038933:rec:FG:4.5:under",
-   "rank": 2,
-   "game_id": "2026_06_BUF_LV",
-   "day": "2026-10-18",
-   "kickoff": "2026-10-18T16:25:00-04:00",
-   "player": "Dalton Kincaid",
-   "player_short": "D. Kincaid",
-   "player_id": "00-0038933",
-   "pos": "TE",
-   "team": "BUF",
-   "opp": "LV",
-   "home": false,
-   "market": "rec",
-   "period": "FG",
-   "side": "under",
-   "line": 4.5,
-   "bet": "Under 4.5 receptions",
-   "book": "Hard Rock",
-   "price": -120,
-   "price_at": "2026-10-18T15:10:00-04:00",
-   "first_price": -145,
-   "first_price_at": "2026-10-18T00:30:51-04:00",
-   "grade_price": -145,
-   "p": 0.6416,
-   "breakeven": 0.5455,
-   "p_pct": 64,
-   "breakeven_pct": 55,
-   "reason": "3.2 catches a game his last 5 (2 of 5 over 4.5).",
-   "settled": "inactives",
-   "state": "open",
-   "thin": false,
-   "pulled": null,
-   "graded": null,
-   "history": [
-    {
-     "at": "2026-10-18T00:30:51-04:00",
-     "text": "Posted at -145"
-    },
-    {
-     "at": "2026-10-18T15:10:00-04:00",
-     "text": "Inactives confirmed"
-    },
-    {
-     "at": "2026-10-18T15:10:00-04:00",
-     "text": "Price now -120"
-    }
-   ]
-  },
-  {
-   "id": "2026-W06:2026_06_LAC_KC:00-0039894:rec:FG:4.5:under",
-   "rank": 3,
-   "game_id": "2026_06_LAC_KC",
-   "day": "2026-10-18",
-   "kickoff": "2026-10-18T16:25:00-04:00",
-   "player": "Xavier Worthy",
-   "player_short": "X. Worthy",
-   "player_id": "00-0039894",
-   "pos": "WR",
-   "team": "KC",
-   "opp": "LAC",
-   "home": true,
-   "market": "rec",
-   "period": "FG",
-   "side": "under",
-   "line": 4.5,
-   "bet": "Under 4.5 receptions",
-   "book": "Hard Rock",
-   "price": -125,
-   "price_at": "2026-10-18T15:10:00-04:00",
-   "first_price": -125,
-   "first_price_at": "2026-10-18T00:30:51-04:00",
-   "grade_price": -125,
-   "p": 0.6388,
-   "breakeven": 0.5556,
-   "p_pct": 63,
-   "breakeven_pct": 56,
-   "reason": "2.8 catches a game his last 5 (1 of 5 over 4.5).",
-   "settled": "inactives",
-   "state": "open",
-   "thin": false,
-   "pulled": null,
-   "graded": null,
-   "history": [
-    {
-     "at": "2026-10-18T00:30:51-04:00",
-     "text": "Posted at -125"
-    },
-    {
-     "at": "2026-10-18T15:20:00-04:00",
-     "text": "Inactives confirmed"
-    }
-   ]
-  },
-  {
-   "id": "2026-W06:2026_06_LAC_KC:00-0040666:rush_att:FG:9.5:over",
-   "rank": 4,
-   "game_id": "2026_06_LAC_KC",
-   "day": "2026-10-18",
-   "kickoff": "2026-10-18T16:25:00-04:00",
-   "player": "Omarion Hampton",
-   "player_short": "O. Hampton",
-   "player_id": "00-0040666",
-   "pos": "RB",
-   "team": "LAC",
-   "opp": "KC",
-   "home": false,
-   "market": "rush_att",
-   "period": "FG",
-   "side": "over",
-   "line": 9.5,
-   "bet": "Over 9.5 carries",
-   "book": "Hard Rock",
-   "price": -125,
-   "price_at": "2026-10-18T15:10:00-04:00",
-   "first_price": -120,
-   "first_price_at": "2026-10-18T00:30:51-04:00",
-   "grade_price": -125,
-   "p": 0.6273,
-   "breakeven": 0.5556,
-   "p_pct": 62,
-   "breakeven_pct": 56,
-   "reason": "14.6 carries a game his last 5 (4 of 5 over 9.5).",
-   "settled": "inactives",
-   "state": "open",
-   "thin": false,
-   "pulled": null,
-   "graded": null,
-   "history": [
-    {
-     "at": "2026-10-18T00:30:51-04:00",
-     "text": "Posted at -120"
-    },
-    {
-     "at": "2026-10-18T15:10:00-04:00",
-     "text": "Price now -125"
-    },
-    {
-     "at": "2026-10-18T15:20:00-04:00",
-     "text": "Inactives confirmed"
-    }
-   ]
-  },
-  {
-   "id": "2026-W06:2026_06_BUF_LV:00-0039338:long_rec:FG:24.5:under",
-   "rank": 5,
-   "game_id": "2026_06_BUF_LV",
-   "day": "2026-10-18",
-   "kickoff": "2026-10-18T16:25:00-04:00",
-   "player": "Brock Bowers",
-   "player_short": "B. Bowers",
-   "player_id": "00-0039338",
-   "pos": "TE",
-   "team": "LV",
-   "opp": "BUF",
-   "home": true,
-   "market": "long_rec",
-   "period": "FG",
-   "side": "under",
-   "line": 24.5,
-   "bet": "Under 24.5 longest reception yards",
-   "book": "Hard Rock",
-   "price": -115,
-   "price_at": "2026-10-18T15:10:00-04:00",
-   "first_price": -120,
-   "first_price_at": "2026-10-18T00:30:51-04:00",
-   "grade_price": -120,
-   "p": 0.6077,
-   "breakeven": 0.5349,
-   "p_pct": 60,
-   "breakeven_pct": 53,
-   "reason": "18.2 yards on his longest catch a game his last 5 (1 of 5 over 24.5).",
-   "settled": "inactives",
-   "state": "open",
-   "thin": false,
-   "pulled": null,
-   "graded": null,
-   "history": [
-    {
-     "at": "2026-10-18T00:30:51-04:00",
-     "text": "Posted at -120"
-    },
-    {
-     "at": "2026-10-18T15:10:00-04:00",
-     "text": "Inactives confirmed"
-    },
-    {
-     "at": "2026-10-18T15:10:00-04:00",
-     "text": "Price now -115"
-    }
-   ]
-  },
-  {
    "id": "2026-W06:2026_06_DAL_GB:00-0040667:rec_yds:1H:29.5:under",
-   "rank": 6,
+   "rank": 1,
    "game_id": "2026_06_DAL_GB",
    "day": "2026-10-18",
    "kickoff": "2026-10-18T20:20:00-04:00",
@@ -582,7 +351,7 @@
   },
   {
    "id": "2026-W06:2026_06_DAL_GB:00-0036264:rush_att:FG:2.5:under",
-   "rank": 7,
+   "rank": 2,
    "game_id": "2026_06_DAL_GB",
    "day": "2026-10-18",
    "kickoff": "2026-10-18T20:20:00-04:00",
@@ -622,57 +391,8 @@
    ]
   },
   {
-   "id": "2026-W06:2026_06_BUF_LV:00-0039875:rush_yds:FG:9.5:under",
-   "rank": 8,
-   "game_id": "2026_06_BUF_LV",
-   "day": "2026-10-18",
-   "kickoff": "2026-10-18T16:25:00-04:00",
-   "player": "Ray Davis",
-   "player_short": "R. Davis",
-   "player_id": "00-0039875",
-   "pos": "RB",
-   "team": "BUF",
-   "opp": "LV",
-   "home": false,
-   "market": "rush_yds",
-   "period": "FG",
-   "side": "under",
-   "line": 9.5,
-   "bet": "Under 9.5 rushing yards",
-   "book": "Hard Rock",
-   "price": -120,
-   "price_at": "2026-10-18T15:10:00-04:00",
-   "first_price": -115,
-   "first_price_at": "2026-10-18T00:30:51-04:00",
-   "grade_price": -120,
-   "p": 0.5833,
-   "breakeven": 0.5455,
-   "p_pct": 58,
-   "breakeven_pct": 55,
-   "reason": "1.6 rushing yards a game his last 5 (0 of 5 over 9.5).",
-   "settled": "inactives",
-   "state": "open",
-   "thin": false,
-   "pulled": null,
-   "graded": null,
-   "history": [
-    {
-     "at": "2026-10-18T00:30:51-04:00",
-     "text": "Posted at -115"
-    },
-    {
-     "at": "2026-10-18T15:10:00-04:00",
-     "text": "Inactives confirmed"
-    },
-    {
-     "at": "2026-10-18T15:10:00-04:00",
-     "text": "Price now -120"
-    }
-   ]
-  },
-  {
    "id": "2026-W06:2026_06_DAL_GB:00-0033077:pass_yds:1H:137.5:under",
-   "rank": 9,
+   "rank": 3,
    "game_id": "2026_06_DAL_GB",
    "day": "2026-10-18",
    "kickoff": "2026-10-18T20:20:00-04:00",
@@ -903,13 +623,17 @@
    "breakeven_pct": 50,
    "reason": "14.8 carries a game his last 5 (2 of 5 over 17.5).",
    "settled": "injury_report",
-   "state": "open",
+   "state": "locked",
    "thin": false,
    "pulled": {
     "at": "2026-10-18T11:50:01-04:00",
     "reason": "Hard Rock moved the line to 18.5."
    },
-   "graded": null,
+   "graded": {
+    "result": "L",
+    "actual": "had 28",
+    "units": -1.0
+   },
    "history": [
     {
      "at": "2026-10-18T00:30:51-04:00",
@@ -954,7 +678,11 @@
    "state": "locked",
    "thin": false,
    "pulled": null,
-   "graded": null,
+   "graded": {
+    "result": "L",
+    "actual": "had 28",
+    "units": -1.0
+   },
    "history": [
     {
      "at": "2026-10-18T11:50:01-04:00",
@@ -999,7 +727,11 @@
    "state": "locked",
    "thin": false,
    "pulled": null,
-   "graded": null,
+   "graded": {
+    "result": "W",
+    "actual": "had 6",
+    "units": 0.8333
+   },
    "history": [
     {
      "at": "2026-10-18T00:30:51-04:00",
@@ -1207,7 +939,11 @@
    "state": "locked",
    "thin": false,
    "pulled": null,
-   "graded": null,
+   "graded": {
+    "result": "L",
+    "actual": "had 20",
+    "units": -1.0
+   },
    "history": [
     {
      "at": "2026-10-18T00:30:51-04:00",
@@ -1260,7 +996,11 @@
    "state": "locked",
    "thin": false,
    "pulled": null,
-   "graded": null,
+   "graded": {
+    "result": "L",
+    "actual": "had 46",
+    "units": -1.0
+   },
    "history": [
     {
      "at": "2026-10-18T00:30:51-04:00",
@@ -1740,6 +1480,316 @@
    ]
   },
   {
+   "id": "2026-W06:2026_06_BUF_LV:00-0038933:rec:FG:4.5:under",
+   "rank": null,
+   "game_id": "2026_06_BUF_LV",
+   "day": "2026-10-18",
+   "kickoff": "2026-10-18T16:25:00-04:00",
+   "player": "Dalton Kincaid",
+   "player_short": "D. Kincaid",
+   "player_id": "00-0038933",
+   "pos": "TE",
+   "team": "BUF",
+   "opp": "LV",
+   "home": false,
+   "market": "rec",
+   "period": "FG",
+   "side": "under",
+   "line": 4.5,
+   "bet": "Under 4.5 receptions",
+   "book": "Hard Rock",
+   "price": -120,
+   "price_at": "2026-10-18T15:10:00-04:00",
+   "first_price": -145,
+   "first_price_at": "2026-10-18T00:30:51-04:00",
+   "grade_price": -145,
+   "p": 0.6416,
+   "breakeven": 0.5455,
+   "p_pct": 64,
+   "breakeven_pct": 55,
+   "reason": "3.2 catches a game his last 5 (2 of 5 over 4.5).",
+   "settled": "inactives",
+   "state": "locked",
+   "thin": false,
+   "pulled": null,
+   "graded": null,
+   "history": [
+    {
+     "at": "2026-10-18T00:30:51-04:00",
+     "text": "Posted at -145"
+    },
+    {
+     "at": "2026-10-18T15:10:00-04:00",
+     "text": "Inactives confirmed"
+    },
+    {
+     "at": "2026-10-18T15:10:00-04:00",
+     "text": "Price now -120"
+    },
+    {
+     "at": "2026-10-18T16:30:00-04:00",
+     "text": "Locked"
+    }
+   ]
+  },
+  {
+   "id": "2026-W06:2026_06_BUF_LV:00-0039338:long_rec:FG:24.5:under",
+   "rank": null,
+   "game_id": "2026_06_BUF_LV",
+   "day": "2026-10-18",
+   "kickoff": "2026-10-18T16:25:00-04:00",
+   "player": "Brock Bowers",
+   "player_short": "B. Bowers",
+   "player_id": "00-0039338",
+   "pos": "TE",
+   "team": "LV",
+   "opp": "BUF",
+   "home": true,
+   "market": "long_rec",
+   "period": "FG",
+   "side": "under",
+   "line": 24.5,
+   "bet": "Under 24.5 longest reception yards",
+   "book": "Hard Rock",
+   "price": -115,
+   "price_at": "2026-10-18T15:10:00-04:00",
+   "first_price": -120,
+   "first_price_at": "2026-10-18T00:30:51-04:00",
+   "grade_price": -120,
+   "p": 0.6077,
+   "breakeven": 0.5349,
+   "p_pct": 60,
+   "breakeven_pct": 53,
+   "reason": "18.2 yards on his longest catch a game his last 5 (1 of 5 over 24.5).",
+   "settled": "inactives",
+   "state": "locked",
+   "thin": false,
+   "pulled": null,
+   "graded": null,
+   "history": [
+    {
+     "at": "2026-10-18T00:30:51-04:00",
+     "text": "Posted at -120"
+    },
+    {
+     "at": "2026-10-18T15:10:00-04:00",
+     "text": "Inactives confirmed"
+    },
+    {
+     "at": "2026-10-18T15:10:00-04:00",
+     "text": "Price now -115"
+    },
+    {
+     "at": "2026-10-18T16:30:00-04:00",
+     "text": "Locked"
+    }
+   ]
+  },
+  {
+   "id": "2026-W06:2026_06_BUF_LV:00-0039875:rush_yds:FG:9.5:under",
+   "rank": null,
+   "game_id": "2026_06_BUF_LV",
+   "day": "2026-10-18",
+   "kickoff": "2026-10-18T16:25:00-04:00",
+   "player": "Ray Davis",
+   "player_short": "R. Davis",
+   "player_id": "00-0039875",
+   "pos": "RB",
+   "team": "BUF",
+   "opp": "LV",
+   "home": false,
+   "market": "rush_yds",
+   "period": "FG",
+   "side": "under",
+   "line": 9.5,
+   "bet": "Under 9.5 rushing yards",
+   "book": "Hard Rock",
+   "price": -120,
+   "price_at": "2026-10-18T15:10:00-04:00",
+   "first_price": -115,
+   "first_price_at": "2026-10-18T00:30:51-04:00",
+   "grade_price": -120,
+   "p": 0.5833,
+   "breakeven": 0.5455,
+   "p_pct": 58,
+   "breakeven_pct": 55,
+   "reason": "1.6 rushing yards a game his last 5 (0 of 5 over 9.5).",
+   "settled": "inactives",
+   "state": "locked",
+   "thin": false,
+   "pulled": null,
+   "graded": null,
+   "history": [
+    {
+     "at": "2026-10-18T00:30:51-04:00",
+     "text": "Posted at -115"
+    },
+    {
+     "at": "2026-10-18T15:10:00-04:00",
+     "text": "Inactives confirmed"
+    },
+    {
+     "at": "2026-10-18T15:10:00-04:00",
+     "text": "Price now -120"
+    },
+    {
+     "at": "2026-10-18T16:30:00-04:00",
+     "text": "Locked"
+    }
+   ]
+  },
+  {
+   "id": "2026-W06:2026_06_LAC_KC:00-0038046:rec:FG:2.5:under",
+   "rank": null,
+   "game_id": "2026_06_LAC_KC",
+   "day": "2026-10-18",
+   "kickoff": "2026-10-18T16:25:00-04:00",
+   "player": "Charlie Kolar",
+   "player_short": "C. Kolar",
+   "player_id": "00-0038046",
+   "pos": "TE",
+   "team": "LAC",
+   "opp": "KC",
+   "home": false,
+   "market": "rec",
+   "period": "FG",
+   "side": "under",
+   "line": 2.5,
+   "bet": "Under 2.5 receptions",
+   "book": "Hard Rock",
+   "price": -155,
+   "price_at": "2026-10-18T00:30:51-04:00",
+   "first_price": -155,
+   "first_price_at": "2026-10-18T00:30:51-04:00",
+   "grade_price": -155,
+   "p": 0.6734,
+   "breakeven": 0.6078,
+   "p_pct": 67,
+   "breakeven_pct": 61,
+   "reason": "1.2 catches a game his last 5 (2 of 5 over 2.5). His team is projected for 16.8 points.",
+   "settled": "inactives",
+   "state": "locked",
+   "thin": false,
+   "pulled": null,
+   "graded": null,
+   "history": [
+    {
+     "at": "2026-10-18T00:30:51-04:00",
+     "text": "Posted at -155"
+    },
+    {
+     "at": "2026-10-18T15:20:00-04:00",
+     "text": "Inactives confirmed"
+    },
+    {
+     "at": "2026-10-18T16:30:00-04:00",
+     "text": "Locked"
+    }
+   ]
+  },
+  {
+   "id": "2026-W06:2026_06_LAC_KC:00-0039894:rec:FG:4.5:under",
+   "rank": null,
+   "game_id": "2026_06_LAC_KC",
+   "day": "2026-10-18",
+   "kickoff": "2026-10-18T16:25:00-04:00",
+   "player": "Xavier Worthy",
+   "player_short": "X. Worthy",
+   "player_id": "00-0039894",
+   "pos": "WR",
+   "team": "KC",
+   "opp": "LAC",
+   "home": true,
+   "market": "rec",
+   "period": "FG",
+   "side": "under",
+   "line": 4.5,
+   "bet": "Under 4.5 receptions",
+   "book": "Hard Rock",
+   "price": -125,
+   "price_at": "2026-10-18T00:30:51-04:00",
+   "first_price": -125,
+   "first_price_at": "2026-10-18T00:30:51-04:00",
+   "grade_price": -125,
+   "p": 0.6388,
+   "breakeven": 0.5556,
+   "p_pct": 63,
+   "breakeven_pct": 56,
+   "reason": "2.8 catches a game his last 5 (1 of 5 over 4.5).",
+   "settled": "inactives",
+   "state": "locked",
+   "thin": false,
+   "pulled": null,
+   "graded": null,
+   "history": [
+    {
+     "at": "2026-10-18T00:30:51-04:00",
+     "text": "Posted at -125"
+    },
+    {
+     "at": "2026-10-18T15:20:00-04:00",
+     "text": "Inactives confirmed"
+    },
+    {
+     "at": "2026-10-18T16:30:00-04:00",
+     "text": "Locked"
+    }
+   ]
+  },
+  {
+   "id": "2026-W06:2026_06_LAC_KC:00-0040666:rush_att:FG:9.5:over",
+   "rank": null,
+   "game_id": "2026_06_LAC_KC",
+   "day": "2026-10-18",
+   "kickoff": "2026-10-18T16:25:00-04:00",
+   "player": "Omarion Hampton",
+   "player_short": "O. Hampton",
+   "player_id": "00-0040666",
+   "pos": "RB",
+   "team": "LAC",
+   "opp": "KC",
+   "home": false,
+   "market": "rush_att",
+   "period": "FG",
+   "side": "over",
+   "line": 9.5,
+   "bet": "Over 9.5 carries",
+   "book": "Hard Rock",
+   "price": -125,
+   "price_at": "2026-10-18T15:10:00-04:00",
+   "first_price": -120,
+   "first_price_at": "2026-10-18T00:30:51-04:00",
+   "grade_price": -125,
+   "p": 0.6273,
+   "breakeven": 0.5556,
+   "p_pct": 62,
+   "breakeven_pct": 56,
+   "reason": "14.6 carries a game his last 5 (4 of 5 over 9.5).",
+   "settled": "inactives",
+   "state": "locked",
+   "thin": false,
+   "pulled": null,
+   "graded": null,
+   "history": [
+    {
+     "at": "2026-10-18T00:30:51-04:00",
+     "text": "Posted at -120"
+    },
+    {
+     "at": "2026-10-18T15:10:00-04:00",
+     "text": "Price now -125"
+    },
+    {
+     "at": "2026-10-18T15:20:00-04:00",
+     "text": "Inactives confirmed"
+    },
+    {
+     "at": "2026-10-18T16:30:00-04:00",
+     "text": "Locked"
+    }
+   ]
+  },
+  {
    "id": "2026-W06:2026_06_WAS_SF:00-0039910:pass_td:FG:1.5:under",
    "rank": 1,
    "game_id": "2026_06_WAS_SF",
@@ -1824,6 +1874,48 @@
  ],
  "parlays": [
   {
+   "id": "2026-W06:P:ea45628464",
+   "legs": [
+    "2026-W06:2026_06_DAL_GB:00-0040667:rec_yds:1H:29.5:under",
+    "2026-W06:2026_06_WAS_SF:00-0033280:long_rec:FG:15.5:under"
+   ],
+   "n": 2,
+   "price": 257,
+   "price_at": "2026-10-18T00:40:00-04:00",
+   "first_price": 257,
+   "first_price_at": "2026-10-18T00:40:00-04:00",
+   "grade_price": 257,
+   "p": 0.3471,
+   "breakeven": 0.2802,
+   "p_pct": 34,
+   "breakeven_pct": 28,
+   "kickoff": "2026-10-18T20:20:00-04:00",
+   "state": "open",
+   "pulled": null,
+   "graded": null
+  },
+  {
+   "id": "2026-W06:P:1839d42db7",
+   "legs": [
+    "2026-W06:2026_06_WAS_SF:00-0039910:pass_td:FG:1.5:under",
+    "2026-W06:2026_06_DAL_GB:00-0036264:rush_att:FG:2.5:under"
+   ],
+   "n": 2,
+   "price": 220,
+   "price_at": "2026-10-18T00:40:00-04:00",
+   "first_price": 220,
+   "first_price_at": "2026-10-18T00:40:00-04:00",
+   "grade_price": 220,
+   "p": 0.3602,
+   "breakeven": 0.312,
+   "p_pct": 36,
+   "breakeven_pct": 31,
+   "kickoff": "2026-10-18T20:20:00-04:00",
+   "state": "open",
+   "pulled": null,
+   "graded": null
+  },
+  {
    "id": "2026-W06:P:b54fe89587",
    "legs": [
     "2026-W06:2026_06_BUF_LV:00-0038933:rec:FG:4.5:under",
@@ -1840,50 +1932,7 @@
    "p_pct": 40,
    "breakeven_pct": 30,
    "kickoff": "2026-10-18T16:25:00-04:00",
-   "state": "open",
-   "pulled": null,
-   "graded": null
-  },
-  {
-   "id": "2026-W06:P:6704ca6d85",
-   "legs": [
-    "2026-W06:2026_06_LAC_KC:00-0039894:rec:FG:4.5:under",
-    "2026-W06:2026_06_BUF_LV:00-0039338:long_rec:FG:24.5:under"
-   ],
-   "n": 2,
-   "price": 237,
-   "price_at": "2026-10-18T15:10:00-04:00",
-   "first_price": 230,
-   "first_price_at": "2026-10-18T00:40:00-04:00",
-   "grade_price": 230,
-   "p": 0.3882,
-   "breakeven": 0.2972,
-   "p_pct": 38,
-   "breakeven_pct": 30,
-   "kickoff": "2026-10-18T16:25:00-04:00",
-   "state": "open",
-   "pulled": null,
-   "graded": null
-  },
-  {
-   "id": "2026-W06:P:d96af58810",
-   "legs": [
-    "2026-W06:2026_06_BUF_LV:00-0038933:rec:FG:4.5:under",
-    "2026-W06:2026_06_LAC_KC:00-0039894:rec:FG:4.5:under",
-    "2026-W06:2026_06_WAS_SF:00-0033280:long_rec:FG:15.5:under"
-   ],
-   "n": 3,
-   "price": 530,
-   "price_at": "2026-10-18T15:10:00-04:00",
-   "first_price": 481,
-   "first_price_at": "2026-10-18T00:40:00-04:00",
-   "grade_price": 481,
-   "p": 0.2402,
-   "breakeven": 0.1587,
-   "p_pct": 24,
-   "breakeven_pct": 16,
-   "kickoff": "2026-10-18T16:25:00-04:00",
-   "state": "open",
+   "state": "locked",
    "pulled": null,
    "graded": null
   },
@@ -1909,6 +1958,27 @@
    "graded": null
   },
   {
+   "id": "2026-W06:P:6704ca6d85",
+   "legs": [
+    "2026-W06:2026_06_LAC_KC:00-0039894:rec:FG:4.5:under",
+    "2026-W06:2026_06_BUF_LV:00-0039338:long_rec:FG:24.5:under"
+   ],
+   "n": 2,
+   "price": 237,
+   "price_at": "2026-10-18T15:10:00-04:00",
+   "first_price": 230,
+   "first_price_at": "2026-10-18T00:40:00-04:00",
+   "grade_price": 230,
+   "p": 0.3882,
+   "breakeven": 0.2972,
+   "p_pct": 38,
+   "breakeven_pct": 30,
+   "kickoff": "2026-10-18T16:25:00-04:00",
+   "state": "locked",
+   "pulled": null,
+   "graded": null
+  },
+  {
    "id": "2026-W06:P:3d54c23d94",
    "legs": [
     "2026-W06:2026_06_BUF_LV:00-0038933:rec:FG:4.5:under",
@@ -1926,6 +1996,28 @@
    "p_pct": 26,
    "breakeven_pct": 18,
    "kickoff": "2026-10-18T13:00:00-04:00",
+   "state": "locked",
+   "pulled": null,
+   "graded": null
+  },
+  {
+   "id": "2026-W06:P:d96af58810",
+   "legs": [
+    "2026-W06:2026_06_BUF_LV:00-0038933:rec:FG:4.5:under",
+    "2026-W06:2026_06_LAC_KC:00-0039894:rec:FG:4.5:under",
+    "2026-W06:2026_06_WAS_SF:00-0033280:long_rec:FG:15.5:under"
+   ],
+   "n": 3,
+   "price": 530,
+   "price_at": "2026-10-18T15:10:00-04:00",
+   "first_price": 481,
+   "first_price_at": "2026-10-18T00:40:00-04:00",
+   "grade_price": 481,
+   "p": 0.2402,
+   "breakeven": 0.1587,
+   "p_pct": 24,
+   "breakeven_pct": 16,
+   "kickoff": "2026-10-18T16:25:00-04:00",
    "state": "locked",
    "pulled": null,
    "graded": null
