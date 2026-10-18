@@ -66,7 +66,7 @@ class World:
             shutil.copy(os.path.join(WORLD, f), os.path.join(self.feed, f))
         if with_rows:
             for s in (2024, 2025, 2026):
-                shutil.copy(os.path.join(REPO, "data", "state", "rows%d.json.gz" % s),
+                shutil.copy(os.path.join(HERE, "fixtures", "rows", "rows%d.json.gz" % s),
                             os.path.join(self.data, "state", "rows%d.json.gz" % s))
         write(os.path.join(self.feed, "head_play_by_play_2026.csv.gz.json"), {"size": 1, "stamp": "seed"})
         write(os.path.join(self.data, "state", "stats_meta.json"),

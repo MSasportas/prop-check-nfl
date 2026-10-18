@@ -260,6 +260,7 @@ class Inputs:
         ctx = {"pos": pos, "season": self.season, "date": g["date"], "spread": sp,
                "team_total": model.implied_total(gc["total"], sp) if gc["total"] is not None else None,
                "opp": opp_tab.get(opp) or {}, "opp_name": opp, "games_with_team": h["with_team"],
+               "opp_raw": self.store.raw_ranks(g["date"], self.season, period).get(opp) or {},
                "missed_last": h["missed"], "qb_changed": self.team_qb_out(g, team)}
         res = model.prob_over(h["rows"], market, period, line, ctx)
         rs, _ = model._prior_rows(h["rows"], ctx)

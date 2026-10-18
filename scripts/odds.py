@@ -770,17 +770,61 @@ def build_view(fetches, cfg):
     return out
 
 
+def _be(price):
+    try:
+        price = float(price)
+    except (TypeError, ValueError):
+        return None
+    return 100.0 / (price + 100.0) if price > 0 else -price / (-price + 100.0)
+
+
+def main_total(outcomes, over="over", under="under"):
+    """The main over/under pair: same number on both sides, priced closest to even. -> (over, under) or None.
+    A feed can carry alternate numbers under the same key (Hard Rock 1H total 30.5 at +425/-800)."""
+    best = None
+    for o in outcomes or []:
+        if o.get("side") != over or o.get("point") is None:
+            continue
+        for u in outcomes:
+            if u.get("side") == under and u.get("point") == o["point"]:
+                bo, bu = _be(o.get("price")), _be(u.get("price"))
+                if bo is None or bu is None or not (0.33 <= bo <= 0.72 and 0.33 <= bu <= 0.72):
+                    continue                                   # not a main line (e.g. +425 / -800)
+                d = abs(bo - bu)
+                if best is None or d < best[0]:
+                    best = (d, o, u)
+    return (best[1], best[2]) if best else None
+
+
+def main_spread(outcomes, away, home):
+    """The main spread pair: away and home on mirrored numbers, priced closest to even. -> (away, home) or None."""
+    best = None
+    for a in outcomes or []:
+        if a.get("side") != away or a.get("point") is None:
+            continue
+        for h in outcomes:
+            if h.get("side") == home and h.get("point") is not None and abs(h["point"] + a["point"]) < 1e-9:
+                ba, bh = _be(a.get("price")), _be(h.get("price"))
+                if ba is None or bh is None or not (0.33 <= ba <= 0.72 and 0.33 <= bh <= 0.72):
+                    continue                                   # not a main line (e.g. +425 / -800)
+                d = abs(ba - bh)
+                if best is None or d < best[0]:
+                    best = (d, a, h)
+    return (best[1], best[2]) if best else None
+
+
 def game_context(gv, game):
     """Hard Rock main total and each team's spread (+ = favored) from the newest game lines; falls back to the
     schedule's consensus line when Hard Rock has none. -> dict(total, spread {team: float}, source)."""
     lines = (gv or {}).get("lines") or {}
     tot = None
-    for o in (lines.get("totals") or {}).get("outcomes", []):
-        if o["side"] == "over" and o.get("point") is not None:
-            tot = float(o["point"])
+    mt = main_total((lines.get("totals") or {}).get("outcomes"))
+    if mt:
+        tot = float(mt[0]["point"])
     sp = {}
-    for o in (lines.get("spreads") or {}).get("outcomes", []):
-        if o["side"] in (game["away"], game["home"]) and o.get("point") is not None:
+    ms = main_spread((lines.get("spreads") or {}).get("outcomes"), game["away"], game["home"])
+    if ms:
+        for o in ms:
             sp[o["side"]] = -float(o["point"])
     src = "hardrock"
     if tot is None or len(sp) < 2:

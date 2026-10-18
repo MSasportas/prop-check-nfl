@@ -493,6 +493,9 @@ def why(rs, market, period, line, ctx, e=None):
     if allow and ctx.get("opp_name"):
         k = allow.replace("POS", pos)
         o = opp.get(k)
+        raw = (ctx.get("opp_raw") or {}).get(k)                 # same numbers Research shows, when given
+        if raw:
+            o = (None, raw)
         if isinstance(o, (tuple, list)) and len(o) > 1 and o[1]:
             rank = o[1]
             nm = ALLOW_NOUN.get(k, k)
@@ -522,6 +525,28 @@ def _ord(n):
 TEAM_KEYS = ["pa", "rc", "py", "td_rec", "td_rush", "rc_WR", "rc_TE", "rc_RB", "rcy_WR", "rcy_TE", "rcy_RB",
              "ry_RB", "ra_RB", "ry", "ra"]
 
+
+
+def raw_ranks(team_rows, date, season, period="FG"):
+    """Plain this-season ranks, the same numbers Research shows: per-game average each defense allowed in
+    regular-season games before `date`. Returns {defense: {key: rank}} with rank 1 = MOST allowed
+    (Research's 'rank' is 1 = fewest; rank_most = teams + 1 - rank_fewest, ties broken by team code)."""
+    pre = _pkey(period)
+    rs = [t for t in team_rows if t["date"] < date and t["season"] == season and t.get("stype", "REG") == "REG"]
+    if not rs:
+        return {}
+    rs = [dict(t, **{p + "rc": t[p + "rc_WR"] + t[p + "rc_TE"] + t[p + "rc_RB"] for p in ("", "h_")}) for t in rs]
+    by = {}
+    for t in rs:
+        by.setdefault(t["opp"], []).append(t)
+    out = {d: {} for d in by}
+    for k in TEAM_KEYS:
+        avg = {d: sum(t[pre + k] for t in lst) / float(len(lst)) for d, lst in by.items()}
+        order = sorted(avg, key=lambda d: (avg[d], d))          # fewest first, as Research
+        n = len(order)
+        for i, d in enumerate(order):
+            out[d][k] = n - i
+    return out
 
 def opp_table(team_rows, date, season, period="FG", P=None):
     """Shrunk 'allowed' factors for every defense from team-game rows (nflrows) before `date`.

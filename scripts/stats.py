@@ -75,6 +75,13 @@ class Store:
         rs = self.by_pid.get(pid, [])
         return [r for r in rs if before is None or r["date"] < before]
 
+    def raw_ranks(self, date, season, period):
+        import model
+        k = ("raw", date, season, period)
+        if k not in self._opp:
+            self._opp[k] = model.raw_ranks(self.team_rows, date, season, period)
+        return self._opp[k]
+
     def opp_table(self, date, season, period):
         import model
         k = (date, season, period)

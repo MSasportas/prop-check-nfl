@@ -315,6 +315,7 @@ button{background:none;border:0;padding:0;margin:0;text-align:left;cursor:pointe
 <noscript><p style="padding:16px">Prop Check NFL needs JavaScript turned on.</p></noscript>
 
 <script>
+function niceDate(s){ var m=/^(\d{4})-(\d{2})-(\d{2})/.exec(String(s||'')); if(!m) return String(s||''); return ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][+m[2]-1]+' '+(+m[3]); }
 (function () {
 'use strict';
 
@@ -1009,7 +1010,7 @@ function renderGame(gid) {
   if (!players.length) plist.appendChild(h('div', { class: 'li mu', text: 'No players listed.' }));
   players.forEach(function (p) {
     var ls = arr(p.lines).filter(function (l) { return S.per === 'all' || l.period === S.per; });
-    var subTxt = ls.length ? ls.slice(0, 3).map(function (l) { return mkLabel(l.market) + (l.period === '1H' ? ' 1H' : '') + ' ' + (l.market === 'anytime_td' ? odds(l.over) : fmtNum(l.line)); }).join(' · ') + (ls.length > 3 ? ' +' + (ls.length - 3) : '') : 'No Hard Rock lines' + (S.per !== 'all' ? ' for ' + perWord(S.per).toLowerCase() : '');
+    var subTxt = ls.length ? ls.slice(0, 3).map(function (l) { return mkLabel(l.market) + (l.period === '1H' ? ' 1H' : '') + ' ' + (l.market === 'anytime_td' ? odds(l.over) : fmtNum(l.line)); }).join(' · ') + (ls.length > 3 ? ' · ' + (ls.length - 3) + ' more' : '') : 'No Hard Rock lines' + (S.per !== 'all' ? ' for ' + perWord(S.per).toLowerCase() : '');
     plist.appendChild(h('button', { class: 'li', type: 'button', on: { click: function () { go('#research/' + gid + '/' + p.id); } } },
       h('span', { class: 'grow' }, h('span', { class: 'nm', text: str(p.name) }), ' ', h('span', { class: 'mu', text: str(p.pos) }),
         p.status ? h('span', { class: 'badge ' + (injCls(p.status) || ''), text: str(p.status) }) : null,
@@ -1216,7 +1217,7 @@ function renderRecord() {
   } else {
     app.appendChild(h('div', { class: 'bigrec' }, h('span', { class: 'wl', text: (num(hd.w) || 0) + '-' + (num(hd.l) || 0) }), h('span', { class: 'un ' + signCls(hd.units), text: units(hd.units, 1) || '' })));
     var sub = ['Singles']; if (num(hd.push)) sub.push(hd.push + ' push'); if (num(hd.void)) sub.push(hd.void + ' void');
-    sub.push('1 unit each, at the posted price');
+    sub.push('1 unit each, at the worst Hard Rock price shown');
     app.appendChild(h('div', { class: 'subline', text: sub.join(' · ') }));
     if (few(n)) { app.appendChild(h('div', { class: 'chance', style: 'margin-top:10px' }, 'Hit ', h('b', { text: (num(hd.w) || 0) + ' of ' + n }))); app.appendChild(h('div', { class: 'subline', text: fewTag })); }
     else { app.appendChild(h('div', { class: 'chance', style: 'margin-top:10px' }, 'Hit ', h('b', { text: pctOf(null, hd.hit_rate) || '–' }), pctOf(null, hd.needed) ? ' · needed ' + pctOf(null, hd.needed) : '')); var b = chanceBar(hd.hit_rate, hd.needed); if (b) app.appendChild(b); }
@@ -1229,7 +1230,7 @@ function renderRecord() {
         var lab = r.key === 'pulled' ? h('span', { class: 'lbl', role: 'cell' }, 'Pulled', h('small', { text: '(not counted above)' })) : h('span', { class: 'lbl', role: 'cell', text: str(r.label || r.key) });
         var tr = h('div', { class: 'tr', role: 'row' }, lab, h('span', { class: 'num', role: 'cell', text: (num(r.w) || 0) + '-' + (num(r.l) || 0) }));
         if (!k) tr.appendChild(h('span', { class: 'span2 mu', role: 'cell', text: '–' }));
-        else if (few(k)) tr.appendChild(h('span', { class: 'span2', role: 'cell', text: (num(r.w) || 0) + ' of ' + k }));
+        else if (few(k)) { tr.appendChild(h('span', { role: 'cell', text: (num(r.w) || 0) + ' of ' + k })); tr.appendChild(h('span', { class: 'mu', role: 'cell', text: '–' })); }
         else { tr.appendChild(h('span', { role: 'cell', text: pctOf(null, r.hit_rate) || '–' })); tr.appendChild(h('span', { role: 'cell', text: pctOf(null, r.needed) || '–' })); }
         tr.appendChild(h('span', { class: 'num ' + signCls(u), role: 'cell', text: u == null ? '–' : (units(u, 1) || '').replace(/u$/, '') }));
         if (k && few(k)) tr.appendChild(h('span', { class: 'few', text: fewTag }));
@@ -1377,7 +1378,7 @@ function fillSheet() {
 }
 function rulesBody(body) {
   var r = S.rules;
-  body.appendChild(h('div', { class: 'mu', style: 'font-size:12px', text: r ? 'Rules v' + str(r.version) + ' · changed ' + str(r.updated) : "The rules didn't load." }));
+  body.appendChild(h('div', { class: 'mu', style: 'font-size:12px', text: r ? 'Rules v' + str(r.version) + ' · changed ' + niceDate(r.updated) : "The rules didn't load." }));
   var ol = h('ol', { class: 'rules' });
   arr(r && r.text).forEach(function (s) { ol.appendChild(h('li', { text: str(s) })); });
   body.appendChild(ol);

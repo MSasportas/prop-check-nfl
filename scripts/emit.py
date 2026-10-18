@@ -180,10 +180,10 @@ def rules_doc(cfg):
             common.fmt_price(v["price_gate"]), common.fmt_price(v["max_price"])),
         "Full game markets we pick: %s." % ", ".join(fg),
         "1st half markets we pick: %s." % ", ".join(h1) if h1 else "No 1st half markets are picked right now.",
-        "Our chance mixes our model (%d%%) with Hard Rock's own price (%d%%), after a safety cut for each market." % (
+        "Our chance mixes our model (%d%%) with Hard Rock's own price (%d%%). The model's number is trimmed a little first, more for markets it reads less well." % (
             round(v["model_weight"] * 100), round(v["market_weight"] * 100)),
         "We only pick when our model gives at least %d%%, our chance is at least %d%%, and it beats the price's "
-        "break-even by %d points early, %d once the injury report is in, %d once inactives are in." % (
+        "the price needs (what it takes to break even) by %d points early, %d once the injury report is in, %d once inactives are in." % (
             round(v["min_model"] * 100), round(v["min_p"] * 100), round(v["margin_early"] * 100),
             round(v["margin_injury"] * 100), round(v["margin_inactives"] * 100)),
         "No pick on a player listed questionable or worse at any point this week, or who missed his team's last game "
@@ -219,9 +219,10 @@ def lines_list(gv, g):
         lm = lines.get(key)
         if not lm:
             return
-        rows = [o for o in lm["outcomes"] if o["side"] in (g["away"], g["home"]) and o.get("point") is not None]
-        if len(rows) != 2:
+        pair = odds.main_spread(lm["outcomes"], g["away"], g["home"])
+        if not pair:
             return
+        rows = list(pair)
         fav = min(rows, key=lambda o: o["point"])
         dog = [o for o in rows if o is not fav][0]
         out.append({"kind": "spread", "period": period, "book": book, "team": fav["side"], "line": fav["point"],
@@ -232,8 +233,8 @@ def lines_list(gv, g):
         lm = lines.get(key)
         if not lm:
             return
-        o = next((x for x in lm["outcomes"] if x["side"] == "over"), None)
-        u = next((x for x in lm["outcomes"] if x["side"] == "under"), None)
+        pair = odds.main_total(lm["outcomes"])
+        o, u = pair if pair else (None, None)
         if o and u:
             out.append({"kind": "total", "period": period, "book": book, "line": o["point"], "over": o["price"],
                         "under": u["price"], "at": lm["at"]})
@@ -256,8 +257,8 @@ def lines_list(gv, g):
         if not lm:
             continue
         for t in (g["away"], g["home"]):
-            o = next((x for x in lm["outcomes"] if x["side"] == "%s over" % t), None)
-            u = next((x for x in lm["outcomes"] if x["side"] == "%s under" % t), None)
+            pair = odds.main_total(lm["outcomes"], "%s over" % t, "%s under" % t)
+            o, u = pair if pair else (None, None)
             if o and u:
                 out.append({"kind": "team_total", "period": period, "book": "Hard Rock", "team": t, "line": o["point"],
                             "over": o["price"], "under": u["price"], "at": lm["at"]})
