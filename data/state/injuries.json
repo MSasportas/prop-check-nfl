@@ -1,7 +1,18 @@
 {
- "at": "2026-10-18T14:50:00-04:00",
+ "at": "2026-10-18T15:00:01-04:00",
  "source": "espn",
  "players": {
+  "00-0041561": {
+   "name": "Carson Beck",
+   "team": "ARI",
+   "pos": "QB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T14:45:00-04:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4430841",
+   "comment": "Beck (coach's decision) is inactive and is designated as Arizona's emergency third quarterback for Sunday's matchup versus the Rams, Darren Urban of the Cardina"
+  },
   "name:ARI:wydettwilliams": {
    "name": "Wydett Williams Jr.",
    "team": "ARI",
@@ -51,17 +62,6 @@
    "date": "2026-10-18T14:37:00-04:00",
    "detail": "Ankle",
    "espn_id": "4870808",
-   "comment": "inactive"
-  },
-  "00-0041561": {
-   "name": "Carson Beck",
-   "team": "ARI",
-   "pos": "QB",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-10-18T14:37:00-04:00",
-   "detail": "Coach's Decision",
-   "espn_id": "4430841",
    "comment": "inactive"
   },
   "name:ARI:andrewbillings": {
@@ -204,6 +204,16 @@
    "date": "2026-10-11T20:39:00-04:00",
    "detail": null,
    "espn_id": "4361307"
+  },
+  "name:ATL:avieonterrell": {
+   "name": "Avieon Terrell",
+   "team": "ATL",
+   "pos": "CB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-18T14:44:00-04:00",
+   "detail": "Oblique",
+   "espn_id": "4870988"
   },
   "name:ATL:divinedeablo": {
    "name": "Divine Deablo",
@@ -371,12 +381,12 @@
    "name": "Rashod Bateman",
    "team": "BAL",
    "pos": "WR",
-   "status": "Questionable",
+   "status": "Out",
    "fantasy": "OUT",
-   "date": "2026-10-18T14:24:00-04:00",
+   "date": "2026-10-18T14:45:00-04:00",
    "detail": "Shoulder",
    "espn_id": "4360939",
-   "comment": "Bateman sustained a shoulder injury during Sunday's game at Cleveland, Brian Wacker of The Baltimore Sun reports."
+   "comment": "Bateman (shoulder) has been ruled out of Sunday's game in Cleveland."
   },
   "name:BAL:andrewvorhees": {
    "name": "Andrew Vorhees",
@@ -873,7 +883,7 @@
    "pos": "S",
    "status": "Injured Reserve",
    "fantasy": "IR",
-   "date": "2026-10-18T14:32:00-04:00",
+   "date": "2026-10-18T14:49:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
@@ -1181,6 +1191,16 @@
    "detail": null,
    "espn_id": "4690070"
   },
+  "name:CLE:justinjefferson": {
+   "name": "Justin Jefferson",
+   "team": "CLE",
+   "pos": "LB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-18T14:48:00-04:00",
+   "detail": "Hip",
+   "espn_id": "5150249"
+  },
   "name:CLE:grantdelpit": {
    "name": "Grant Delpit",
    "team": "CLE",
@@ -1364,16 +1384,6 @@
    "date": "2026-10-12T21:42:00-04:00",
    "detail": null,
    "espn_id": "4241463"
-  },
-  "00-0033537": {
-   "name": "Deshaun Watson",
-   "team": "CLE",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-11T19:33:00-04:00",
-   "detail": null,
-   "espn_id": "3122840"
   },
   "name:DAL:joeyporter": {
    "name": "Joey Porter Jr.",
@@ -2226,6 +2236,27 @@
    "detail": null,
    "espn_id": "4686422"
   },
+  "name:IND:saucegardner": {
+   "name": "Sauce Gardner",
+   "team": "IND",
+   "pos": "CB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-18T14:49:00-04:00",
+   "detail": "Calf",
+   "espn_id": "4427250"
+  },
+  "00-0039816": {
+   "name": "Anthony Gould",
+   "team": "IND",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-18T14:46:00-04:00",
+   "detail": "Concussion",
+   "espn_id": "4429684",
+   "comment": "Gould (concussion) won't return to Sunday's game against the Titans, Mike Chappell of Fox 59 News Indianapolis reports."
+  },
   "00-0040206": {
    "name": "Riley Leonard",
    "team": "IND",
@@ -2379,16 +2410,6 @@
    "date": "2026-10-05T22:13:00-04:00",
    "detail": null,
    "espn_id": "3051889"
-  },
-  "00-0040179": {
-   "name": "DJ Giddens",
-   "team": "IND",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-05T14:44:00-04:00",
-   "detail": null,
-   "espn_id": "4874509"
   },
   "00-0040718": {
    "name": "Travis Hunter",
@@ -3079,6 +3100,69 @@
    "detail": null,
    "espn_id": "4685382"
   },
+  "name:LA:trentmcduffie": {
+   "name": "Trent McDuffie",
+   "team": "LA",
+   "pos": "CB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T14:54:00-04:00",
+   "detail": "Groin",
+   "espn_id": "4426405"
+  },
+  "00-0036849": {
+   "name": "Tutu Atwell",
+   "team": "LA",
+   "pos": "WR",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T14:52:00-04:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4360797",
+   "comment": "Atwell (coach's decision) is inactive for Sunday's game against the Cardinals."
+  },
+  "00-0041568": {
+   "name": "Ty Simpson",
+   "team": "LA",
+   "pos": "QB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T14:47:00-04:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4685522",
+   "comment": "inactive"
+  },
+  "name:LA:larrellmurchison": {
+   "name": "Larrell Murchison",
+   "team": "LA",
+   "pos": "DE",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T14:47:00-04:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4240123"
+  },
+  "name:LA:billmurray": {
+   "name": "Bill Murray",
+   "team": "LA",
+   "pos": "G",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T14:47:00-04:00",
+   "detail": "Coach's Decision",
+   "espn_id": "3912189"
+  },
+  "00-0041399": {
+   "name": "CJ Daniels",
+   "team": "LA",
+   "pos": "WR",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T14:47:00-04:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4605951",
+   "comment": "inactive"
+  },
   "00-0039074": {
    "name": "Davis Allen",
    "team": "LA",
@@ -3088,26 +3172,6 @@
    "date": "2026-10-16T22:42:00-04:00",
    "detail": null,
    "espn_id": "4426553"
-  },
-  "name:LA:trentmcduffie": {
-   "name": "Trent McDuffie",
-   "team": "LA",
-   "pos": "CB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-16T20:31:00-04:00",
-   "detail": "Groin",
-   "espn_id": "4426405"
-  },
-  "name:LA:kamcurl": {
-   "name": "Kam Curl",
-   "team": "LA",
-   "pos": "S",
-   "status": "Questionable",
-   "fantasy": null,
-   "date": "2026-10-16T20:28:00-04:00",
-   "detail": null,
-   "espn_id": "4242154"
   },
   "00-0036244": {
    "name": "Colby Parkinson",
@@ -3148,16 +3212,6 @@
    "date": "2026-10-13T13:06:00-04:00",
    "detail": null,
    "espn_id": "4833029"
-  },
-  "00-0041399": {
-   "name": "CJ Daniels",
-   "team": "LA",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-13T13:06:00-04:00",
-   "detail": null,
-   "espn_id": "4605951"
   },
   "00-0033110": {
    "name": "Tyler Higbee",
@@ -3218,16 +3272,6 @@
    "date": "2026-10-13T00:08:00-04:00",
    "detail": null,
    "espn_id": "4426515"
-  },
-  "00-0041568": {
-   "name": "Ty Simpson",
-   "team": "LA",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-12T19:00:00-04:00",
-   "detail": null,
-   "espn_id": "4685522"
   },
   "name:MIA:jaredwayne": {
    "name": "Jared Wayne",
@@ -3704,7 +3748,7 @@
    "pos": "G",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-10-18T14:29:00-04:00",
+   "date": "2026-10-18T14:34:00-04:00",
    "detail": "Knee",
    "espn_id": "4258199"
   },
@@ -3866,7 +3910,7 @@
    "pos": "OT",
    "status": "Out",
    "fantasy": "INACTIVE",
-   "date": "2026-10-18T14:37:00-04:00",
+   "date": "2026-10-18T14:52:00-04:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
@@ -6010,6 +6054,22 @@
   "00-0041561": {
    "status": "Out",
    "at": "2026-10-18T14:40:00-04:00"
+  },
+  "00-0039816": {
+   "status": "Questionable",
+   "at": "2026-10-18T15:00:01-04:00"
+  },
+  "00-0036849": {
+   "status": "Out",
+   "at": "2026-10-18T15:00:01-04:00"
+  },
+  "00-0041568": {
+   "status": "Out",
+   "at": "2026-10-18T15:00:01-04:00"
+  },
+  "00-0041399": {
+   "status": "Out",
+   "at": "2026-10-18T15:00:01-04:00"
   }
  }
 }

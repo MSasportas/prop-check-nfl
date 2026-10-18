@@ -700,10 +700,41 @@
    "confirmed_at": "2026-10-18T14:40:00-04:00"
   },
   "LA": {
-   "confirmed": false,
-   "count": 0,
-   "players": [],
-   "confirmed_at": null
+   "confirmed": true,
+   "count": 6,
+   "players": [
+    {
+     "pid": null,
+     "name": "Bill Murray",
+     "pos": "G"
+    },
+    {
+     "pid": "00-0041399",
+     "name": "CJ Daniels",
+     "pos": "WR"
+    },
+    {
+     "pid": null,
+     "name": "Larrell Murchison",
+     "pos": "DE"
+    },
+    {
+     "pid": null,
+     "name": "Trent McDuffie",
+     "pos": "CB"
+    },
+    {
+     "pid": "00-0036849",
+     "name": "Tutu Atwell",
+     "pos": "WR"
+    },
+    {
+     "pid": "00-0041568",
+     "name": "Ty Simpson",
+     "pos": "QB"
+    }
+   ],
+   "confirmed_at": "2026-10-18T15:00:01-04:00"
   }
  },
  "2026_06_BUF_LV": {

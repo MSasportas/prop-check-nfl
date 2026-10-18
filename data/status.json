@@ -3,10 +3,10 @@
  "season": 2026,
  "week": 6,
  "slate": "2026-W06",
- "started_at": "2026-10-18T14:50:00-04:00",
- "status_at": "2026-10-18T14:50:00-04:00",
- "finished_at": "2026-10-18T14:50:02-04:00",
- "last_ok_at": "2026-10-18T14:50:00-04:00",
+ "started_at": "2026-10-18T15:00:01-04:00",
+ "status_at": "2026-10-18T15:00:01-04:00",
+ "finished_at": "2026-10-18T15:00:05-04:00",
+ "last_ok_at": "2026-10-18T15:00:01-04:00",
  "failed_step": null,
  "steps": [
   {
@@ -17,7 +17,7 @@
   {
    "step": "schedule",
    "status": "ok",
-   "note": "14 game(s) this week (2026-W06); live state for 6 game(s)"
+   "note": "14 game(s) this week (2026-W06); live state for 7 game(s)"
   },
   {
    "step": "stats",
@@ -32,7 +32,7 @@
   {
    "step": "injuries",
    "status": "ok",
-   "note": "espn: 208 out, 64 questionable; inactives posted for 17 team(s)"
+   "note": "espn: 215 out, 65 questionable; inactives posted for 18 team(s)"
   },
   {
    "step": "weather",
@@ -42,12 +42,12 @@
   {
    "step": "odds",
    "status": "ok",
-   "note": "1 read(s) (C)"
+   "note": "no pull due"
   },
   {
    "step": "engine",
    "status": "ok",
-   "note": "4 new event(s): 2 shown, 2 pulled"
+   "note": "3 new event(s): 0 shown, 0 pulled"
   },
   {
    "step": "grade",
@@ -129,13 +129,7 @@
   "at": "2026-10-18T14:50:00-04:00",
   "next_at": "2026-10-18T15:10:00-04:00"
  },
- "due": [
-  {
-   "pull": "C",
-   "game_id": "2026_06_ARI_LA",
-   "cost_max": 7
-  }
- ],
+ "due": [],
  "skipped_games": [],
  "unmatched_names": [
   "Drew Ogletree",
@@ -149,13 +143,13 @@
  },
  "stats_problems": [],
  "games_this_week": 14,
- "record_events": 102,
+ "record_events": 105,
  "grade_checks": [],
  "odds_notes": [],
  "runner": {
   "event": "workflow_dispatch",
   "run_id": "39153678619",
-  "iteration": 4,
+  "iteration": 5,
   "chain_link": 316,
   "chain_started_at": "2026-10-18T00:30:50-04:00",
   "run_started_at": "2026-10-18T14:20:15-04:00"
