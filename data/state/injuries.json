@@ -1,5 +1,5 @@
 {
- "at": "2026-10-18T09:20:00-04:00",
+ "at": "2026-10-18T09:30:00-04:00",
  "source": "espn",
  "players": {
   "name:ARI:kitancrawford": {
@@ -1156,6 +1156,16 @@
    "detail": null,
    "espn_id": "4690070"
   },
+  "name:CLE:carsonschwesinger": {
+   "name": "Carson Schwesinger",
+   "team": "CLE",
+   "pos": "LB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-18T09:23:00-04:00",
+   "detail": "Ankle",
+   "espn_id": "4876017"
+  },
   "name:CLE:masongraham": {
    "name": "Mason Graham",
    "team": "CLE",
@@ -1226,16 +1236,6 @@
    "date": "2026-10-16T21:46:00-04:00",
    "detail": "Ankle",
    "espn_id": "4600415"
-  },
-  "name:CLE:carsonschwesinger": {
-   "name": "Carson Schwesinger",
-   "team": "CLE",
-   "pos": "LB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-16T21:44:00-04:00",
-   "detail": "Ankle",
-   "espn_id": "4876017"
   },
   "00-0041037": {
    "name": "Denzel Boston",

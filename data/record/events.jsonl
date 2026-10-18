@@ -54,3 +54,4 @@
 {"at":"2026-10-18T08:20:01-04:00","breakeven":0.5455,"breakeven_pct":55,"fair":0.5101,"id":"2026-W06:2026_06_HOU_JAX:00-0038618:long_rec:FG:10.5:over","p":0.6248,"p_pct":62,"price":-120,"price_at":"2026-10-18T08:20:01-04:00","reason":"22 yards on his longest catch a game his last 5 (5 of 5 over 10.5). JAX allows the most receiving yards to WRs.","t":"price"}
 {"at":"2026-10-18T08:20:01-04:00","id":"2026-W06:2026_06_HOU_JAX:00-0038618:long_rec:FG:10.5:over","state":"inactives","t":"state"}
 {"at":"2026-10-18T08:20:01-04:00","code":"line_moved","id":"2026-W06:2026_06_HOU_JAX:00-0040719:rec_yds:1H:4.5:under","reason":"Hard Rock moved the line to 3.5.","t":"pulled"}
+{"at":"2026-10-18T09:30:00-04:00","id":"2026-W06:2026_06_HOU_JAX:00-0038618:long_rec:FG:10.5:over","state":"inactives","t":"locked"}

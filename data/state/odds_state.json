@@ -3192,14 +3192,14 @@
  "fail_note": null,
  "key_count": 7,
  "plan": {
-  "allowance": 49.54,
+  "allowance": 51.37,
   "tier": "standard",
   "pulls": "MFC",
   "pool_at_plan": 1387.0,
-  "games_left": 28,
+  "games_left": 27,
   "pool_raw": 1387,
   "keys_shared": 0,
-  "made_at": "2026-10-18T08:20:01-04:00"
+  "made_at": "2026-10-18T09:30:00-04:00"
  },
  "failed": {}
 }

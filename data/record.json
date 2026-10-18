@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-18T08:20:01-04:00",
+ "generated_at": "2026-10-18T09:30:00-04:00",
  "season": 2026,
  "summary": {
   "headline": {
@@ -29,6 +29,23 @@
    "l": 0,
    "units": 0,
    "entries": [
+    {
+     "id": "2026-W06:2026_06_HOU_JAX:00-0038618:long_rec:FG:10.5:over",
+     "kind": "single",
+     "date": "2026-10-18",
+     "game": "HOU at JAX",
+     "player": "X. Hutchinson",
+     "team": "HOU",
+     "market": "long_rec",
+     "period": "FG",
+     "bet": "Over 10.5 longest reception yards",
+     "price": -125,
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": []
+    },
     {
      "id": "2026-W06:2026_06_HOU_JAX:00-0040719:rec_yds:1H:4.5:under",
      "kind": "single",

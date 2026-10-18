@@ -2,8 +2,8 @@
  "season": 2026,
  "week": 6,
  "label": "Week 6",
- "generated_at": "2026-10-18T09:20:00-04:00",
- "status_at": "2026-10-18T09:20:00-04:00",
+ "generated_at": "2026-10-18T09:30:00-04:00",
+ "status_at": "2026-10-18T09:30:00-04:00",
  "valid_until": "2026-10-20T06:00:00-04:00",
  "next_check": "2026-10-18T11:45:00-04:00",
  "status": {
@@ -14,12 +14,12 @@
   },
   "injuries": {
    "state": "ok",
-   "at": "2026-10-18T09:20:00-04:00"
+   "at": "2026-10-18T09:30:00-04:00"
   },
   "inactives": {
    "state": "ok",
    "at": "2026-10-18T08:20:01-04:00",
-   "note": "Posted for the 9:30 AM game."
+   "note": null
   },
   "stats": {
    "state": "ok",
@@ -37,7 +37,7 @@
   },
   "last_run": {
    "ok": true,
-   "at": "2026-10-18T09:20:00-04:00",
+   "at": "2026-10-18T09:30:00-04:00",
    "failed_step": null
   }
  },
@@ -71,7 +71,7 @@
    "kickoff": "2026-10-18T09:30:00-04:00",
    "day": "2026-10-18",
    "roof": "outdoors",
-   "started": false,
+   "started": true,
    "final": false,
    "score": null,
    "settled": "inactives",
@@ -452,57 +452,8 @@
    ]
   },
   {
-   "id": "2026-W06:2026_06_HOU_JAX:00-0038618:long_rec:FG:10.5:over",
-   "rank": 5,
-   "game_id": "2026_06_HOU_JAX",
-   "day": "2026-10-18",
-   "kickoff": "2026-10-18T09:30:00-04:00",
-   "player": "Xavier Hutchinson",
-   "player_short": "X. Hutchinson",
-   "player_id": "00-0038618",
-   "pos": "WR",
-   "team": "HOU",
-   "opp": "JAX",
-   "home": false,
-   "market": "long_rec",
-   "period": "FG",
-   "side": "over",
-   "line": 10.5,
-   "bet": "Over 10.5 longest reception yards",
-   "book": "Hard Rock",
-   "price": -120,
-   "price_at": "2026-10-18T08:20:01-04:00",
-   "first_price": -125,
-   "first_price_at": "2026-10-18T00:30:51-04:00",
-   "grade_price": -125,
-   "p": 0.6248,
-   "breakeven": 0.5455,
-   "p_pct": 62,
-   "breakeven_pct": 55,
-   "reason": "22 yards on his longest catch a game his last 5 (5 of 5 over 10.5). JAX allows the most receiving yards to WRs.",
-   "settled": "inactives",
-   "state": "open",
-   "thin": false,
-   "pulled": null,
-   "graded": null,
-   "history": [
-    {
-     "at": "2026-10-18T00:30:51-04:00",
-     "text": "Posted at -125"
-    },
-    {
-     "at": "2026-10-18T08:20:01-04:00",
-     "text": "Inactives confirmed"
-    },
-    {
-     "at": "2026-10-18T08:20:01-04:00",
-     "text": "Price now -120"
-    }
-   ]
-  },
-  {
    "id": "2026-W06:2026_06_LAC_KC:00-0040666:rush_att:FG:9.5:over",
-   "rank": 6,
+   "rank": 5,
    "game_id": "2026_06_LAC_KC",
    "day": "2026-10-18",
    "kickoff": "2026-10-18T16:25:00-04:00",
@@ -543,7 +494,7 @@
   },
   {
    "id": "2026-W06:2026_06_BAL_CLE:00-0035993:pass_int:FG:0.5:under",
-   "rank": 7,
+   "rank": 6,
    "game_id": "2026_06_BAL_CLE",
    "day": "2026-10-18",
    "kickoff": "2026-10-18T13:00:00-04:00",
@@ -584,7 +535,7 @@
   },
   {
    "id": "2026-W06:2026_06_BUF_LV:00-0039338:long_rec:FG:24.5:under",
-   "rank": 8,
+   "rank": 7,
    "game_id": "2026_06_BUF_LV",
    "day": "2026-10-18",
    "kickoff": "2026-10-18T16:25:00-04:00",
@@ -625,7 +576,7 @@
   },
   {
    "id": "2026-W06:2026_06_CHI_ATL:00-0040126:long_rec:FG:18.5:under",
-   "rank": 9,
+   "rank": 8,
    "game_id": "2026_06_CHI_ATL",
    "day": "2026-10-18",
    "kickoff": "2026-10-18T13:00:00-04:00",
@@ -666,7 +617,7 @@
   },
   {
    "id": "2026-W06:2026_06_TEN_IND:00-0040676:rush_yds:1H:3.5:under",
-   "rank": 10,
+   "rank": 9,
    "game_id": "2026_06_TEN_IND",
    "day": "2026-10-18",
    "kickoff": "2026-10-18T13:00:00-04:00",
@@ -707,7 +658,7 @@
   },
   {
    "id": "2026-W06:2026_06_NYJ_NE:00-0036875:rush_att:FG:14.5:under",
-   "rank": 11,
+   "rank": 10,
    "game_id": "2026_06_NYJ_NE",
    "day": "2026-10-18",
    "kickoff": "2026-10-18T13:00:00-04:00",
@@ -748,7 +699,7 @@
   },
   {
    "id": "2026-W06:2026_06_NYJ_NE:00-0039794:rec:FG:2.5:under",
-   "rank": 12,
+   "rank": 11,
    "game_id": "2026_06_NYJ_NE",
    "day": "2026-10-18",
    "kickoff": "2026-10-18T13:00:00-04:00",
@@ -789,7 +740,7 @@
   },
   {
    "id": "2026-W06:2026_06_ARI_LA:00-0033307:long_rec:FG:16.5:under",
-   "rank": 13,
+   "rank": 12,
    "game_id": "2026_06_ARI_LA",
    "day": "2026-10-18",
    "kickoff": "2026-10-18T16:05:00-04:00",
@@ -830,7 +781,7 @@
   },
   {
    "id": "2026-W06:2026_06_NO_NYG:00-0039337:long_rec:FG:24.5:under",
-   "rank": 14,
+   "rank": 13,
    "game_id": "2026_06_NO_NYG",
    "day": "2026-10-18",
    "kickoff": "2026-10-18T13:00:00-04:00",
@@ -871,7 +822,7 @@
   },
   {
    "id": "2026-W06:2026_06_DAL_GB:00-0040667:rec_yds:1H:29.5:under",
-   "rank": 15,
+   "rank": 14,
    "game_id": "2026_06_DAL_GB",
    "day": "2026-10-18",
    "kickoff": "2026-10-18T20:20:00-04:00",
@@ -912,7 +863,7 @@
   },
   {
    "id": "2026-W06:2026_06_CAR_PHI:00-0036555:rush_att:FG:17.5:under",
-   "rank": 16,
+   "rank": 15,
    "game_id": "2026_06_CAR_PHI",
    "day": "2026-10-18",
    "kickoff": "2026-10-18T13:00:00-04:00",
@@ -953,7 +904,7 @@
   },
   {
    "id": "2026-W06:2026_06_CAR_PHI:00-0039150:rush_yds:FG:10.5:under",
-   "rank": 17,
+   "rank": 16,
    "game_id": "2026_06_CAR_PHI",
    "day": "2026-10-18",
    "kickoff": "2026-10-18T13:00:00-04:00",
@@ -994,7 +945,7 @@
   },
   {
    "id": "2026-W06:2026_06_DAL_GB:00-0036264:rush_att:FG:2.5:under",
-   "rank": 18,
+   "rank": 17,
    "game_id": "2026_06_DAL_GB",
    "day": "2026-10-18",
    "kickoff": "2026-10-18T20:20:00-04:00",
@@ -1035,7 +986,7 @@
   },
   {
    "id": "2026-W06:2026_06_ARI_LA:00-0039738:rush_att:FG:9.5:under",
-   "rank": 19,
+   "rank": 18,
    "game_id": "2026_06_ARI_LA",
    "day": "2026-10-18",
    "kickoff": "2026-10-18T16:05:00-04:00",
@@ -1080,7 +1031,7 @@
   },
   {
    "id": "2026-W06:2026_06_ARI_LA:00-0038640:rec_yds:FG:20.5:under",
-   "rank": 20,
+   "rank": 19,
    "game_id": "2026_06_ARI_LA",
    "day": "2026-10-18",
    "kickoff": "2026-10-18T16:05:00-04:00",
@@ -1121,7 +1072,7 @@
   },
   {
    "id": "2026-W06:2026_06_BUF_LV:00-0039875:rush_yds:FG:9.5:under",
-   "rank": 21,
+   "rank": 20,
    "game_id": "2026_06_BUF_LV",
    "day": "2026-10-18",
    "kickoff": "2026-10-18T16:25:00-04:00",
@@ -1162,7 +1113,7 @@
   },
   {
    "id": "2026-W06:2026_06_DAL_GB:00-0033077:pass_yds:1H:137.5:under",
-   "rank": 22,
+   "rank": 21,
    "game_id": "2026_06_DAL_GB",
    "day": "2026-10-18",
    "kickoff": "2026-10-18T20:20:00-04:00",
@@ -1198,6 +1149,59 @@
     {
      "at": "2026-10-18T00:30:51-04:00",
      "text": "Posted at -115"
+    }
+   ]
+  },
+  {
+   "id": "2026-W06:2026_06_HOU_JAX:00-0038618:long_rec:FG:10.5:over",
+   "rank": null,
+   "game_id": "2026_06_HOU_JAX",
+   "day": "2026-10-18",
+   "kickoff": "2026-10-18T09:30:00-04:00",
+   "player": "Xavier Hutchinson",
+   "player_short": "X. Hutchinson",
+   "player_id": "00-0038618",
+   "pos": "WR",
+   "team": "HOU",
+   "opp": "JAX",
+   "home": false,
+   "market": "long_rec",
+   "period": "FG",
+   "side": "over",
+   "line": 10.5,
+   "bet": "Over 10.5 longest reception yards",
+   "book": "Hard Rock",
+   "price": -120,
+   "price_at": "2026-10-18T08:20:01-04:00",
+   "first_price": -125,
+   "first_price_at": "2026-10-18T00:30:51-04:00",
+   "grade_price": -125,
+   "p": 0.6248,
+   "breakeven": 0.5455,
+   "p_pct": 62,
+   "breakeven_pct": 55,
+   "reason": "22 yards on his longest catch a game his last 5 (5 of 5 over 10.5). JAX allows the most receiving yards to WRs.",
+   "settled": "inactives",
+   "state": "locked",
+   "thin": false,
+   "pulled": null,
+   "graded": null,
+   "history": [
+    {
+     "at": "2026-10-18T00:30:51-04:00",
+     "text": "Posted at -125"
+    },
+    {
+     "at": "2026-10-18T08:20:01-04:00",
+     "text": "Inactives confirmed"
+    },
+    {
+     "at": "2026-10-18T08:20:01-04:00",
+     "text": "Price now -120"
+    },
+    {
+     "at": "2026-10-18T09:30:00-04:00",
+     "text": "Locked"
     }
    ]
   },
