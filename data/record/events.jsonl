@@ -113,3 +113,8 @@
 {"at":"2026-10-18T15:10:00-04:00","breakeven":0.2972,"breakeven_pct":30,"id":"2026-W06:P:6704ca6d85","leg_prices":{"2026-W06:2026_06_BUF_LV:00-0039338:long_rec:FG:24.5:under":-115,"2026-W06:2026_06_LAC_KC:00-0039894:rec:FG:4.5:under":-125},"p":0.3882,"p_pct":38,"price":237,"price_at":"2026-10-18T15:10:00-04:00","t":"price"}
 {"at":"2026-10-18T15:10:00-04:00","breakeven":0.303,"breakeven_pct":30,"id":"2026-W06:P:b54fe89587","leg_prices":{"2026-W06:2026_06_BUF_LV:00-0038933:rec:FG:4.5:under":-120,"2026-W06:2026_06_LAC_KC:00-0040666:rush_att:FG:9.5:over":-125},"p":0.4025,"p_pct":40,"price":230,"price_at":"2026-10-18T15:10:00-04:00","t":"price"}
 {"at":"2026-10-18T15:10:00-04:00","breakeven":0.1587,"breakeven_pct":16,"id":"2026-W06:P:d96af58810","leg_prices":{"2026-W06:2026_06_BUF_LV:00-0038933:rec:FG:4.5:under":-120,"2026-W06:2026_06_LAC_KC:00-0039894:rec:FG:4.5:under":-125,"2026-W06:2026_06_WAS_SF:00-0033280:long_rec:FG:15.5:under":-110},"p":0.2402,"p_pct":24,"price":530,"price_at":"2026-10-18T15:10:00-04:00","t":"price"}
+{"at":"2026-10-18T15:20:00-04:00","id":"2026-W06:2026_06_LAC_KC:00-0038046:rec:FG:2.5:under","state":"inactives","t":"state"}
+{"at":"2026-10-18T15:20:00-04:00","id":"2026-W06:2026_06_LAC_KC:00-0039894:rec:FG:4.5:under","state":"inactives","t":"state"}
+{"at":"2026-10-18T15:20:00-04:00","id":"2026-W06:2026_06_LAC_KC:00-0040666:rush_att:FG:9.5:over","state":"inactives","t":"state"}
+{"at":"2026-10-18T15:20:00-04:00","id":"2026-W06:P:6704ca6d85","state":"inactives","t":"state"}
+{"at":"2026-10-18T15:20:00-04:00","id":"2026-W06:P:b54fe89587","state":"inactives","t":"state"}
