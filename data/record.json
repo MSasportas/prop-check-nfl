@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-18T01:00:01-04:00",
- "season": null,
+ "generated_at": "2026-10-18T08:20:01-04:00",
+ "season": 2026,
  "summary": {
   "headline": {
    "w": 0,
@@ -19,6 +19,38 @@
   },
   "rows": []
  },
- "weeks": [],
+ "weeks": [
+  {
+   "week": 6,
+   "slate": "2026-W06",
+   "label": "Week 6",
+   "graded": false,
+   "w": 0,
+   "l": 0,
+   "units": 0,
+   "entries": [
+    {
+     "id": "2026-W06:2026_06_HOU_JAX:00-0040719:rec_yds:1H:4.5:under",
+     "kind": "single",
+     "date": "2026-10-18",
+     "game": "HOU at JAX",
+     "player": "B. Tuten",
+     "team": "JAX",
+     "market": "rec_yds",
+     "period": "1H",
+     "bet": "Under 4.5 receiving yards",
+     "price": -120,
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": {
+      "at": "2026-10-18T08:20:01-04:00",
+      "reason": "Hard Rock moved the line to 3.5."
+     },
+     "legs": []
+    }
+   ]
+  }
+ ],
  "older": []
 }

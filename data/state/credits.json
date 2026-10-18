@@ -14,11 +14,11 @@
   },
   {
    "n": 2,
-   "left": 18,
+   "left": 12,
    "status": "ok",
-   "checked_at": "2026-10-18T07:00:00-04:00",
+   "checked_at": "2026-10-18T08:20:01-04:00",
    "month": "2026-10",
-   "after_us": 18,
+   "after_us": 12,
    "shared": false,
    "shared_at": null,
    "others_spent": 0
@@ -391,6 +391,14 @@
    "game_id": "2026_06_WAS_SF",
    "cost": 41,
    "key": 3
+  },
+  {
+   "at": "2026-10-18T08:20:01-04:00",
+   "date": "2026-10-18",
+   "pull": "C",
+   "game_id": "2026_06_HOU_JAX",
+   "cost": 6,
+   "key": 2
   }
  ]
 }

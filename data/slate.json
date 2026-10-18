@@ -2,24 +2,24 @@
  "season": 2026,
  "week": 6,
  "label": "Week 6",
- "generated_at": "2026-10-18T08:10:00-04:00",
- "status_at": "2026-10-18T08:10:00-04:00",
+ "generated_at": "2026-10-18T08:20:01-04:00",
+ "status_at": "2026-10-18T08:20:01-04:00",
  "valid_until": "2026-10-20T06:00:00-04:00",
- "next_check": "2026-10-18T08:15:00-04:00",
+ "next_check": "2026-10-18T11:45:00-04:00",
  "status": {
   "odds": {
    "state": "ok",
-   "at": "2026-10-18T00:40:00-04:00",
-   "next_at": "2026-10-18T08:15:00-04:00"
+   "at": "2026-10-18T08:20:01-04:00",
+   "next_at": "2026-10-18T11:45:00-04:00"
   },
   "injuries": {
    "state": "ok",
-   "at": "2026-10-18T08:10:00-04:00"
+   "at": "2026-10-18T08:20:01-04:00"
   },
   "inactives": {
-   "state": "not_yet",
-   "at": null,
-   "note": "Not posted yet. They come out about 90 minutes before kickoff."
+   "state": "ok",
+   "at": "2026-10-18T08:20:01-04:00",
+   "note": "Posted for the 9:30 AM game."
   },
   "stats": {
    "state": "ok",
@@ -27,7 +27,7 @@
    "at": "2026-10-18T06:00:01-04:00"
   },
   "pool": {
-   "credits_left": 1393,
+   "credits_left": 1387,
    "keys": 7,
    "keys_live": 6,
    "keys_shared": 0,
@@ -37,7 +37,7 @@
   },
   "last_run": {
    "ok": true,
-   "at": "2026-10-18T08:10:00-04:00",
+   "at": "2026-10-18T08:20:01-04:00",
    "failed_step": null
   }
  },
@@ -74,12 +74,12 @@
    "started": false,
    "final": false,
    "score": null,
-   "settled": "injury_report",
+   "settled": "inactives",
    "props_state": "ok",
-   "props_at": "2026-10-18T00:40:00-04:00",
-   "lines_at": "2026-10-18T00:40:00-04:00",
+   "props_at": "2026-10-18T08:20:01-04:00",
+   "lines_at": "2026-10-18T08:20:01-04:00",
    "note": null,
-   "picks": 2
+   "picks": 1
   },
   {
    "id": "2026_06_BAL_CLE",
@@ -411,49 +411,8 @@
    ]
   },
   {
-   "id": "2026-W06:2026_06_HOU_JAX:00-0038618:long_rec:FG:10.5:over",
-   "rank": 4,
-   "game_id": "2026_06_HOU_JAX",
-   "day": "2026-10-18",
-   "kickoff": "2026-10-18T09:30:00-04:00",
-   "player": "Xavier Hutchinson",
-   "player_short": "X. Hutchinson",
-   "player_id": "00-0038618",
-   "pos": "WR",
-   "team": "HOU",
-   "opp": "JAX",
-   "home": false,
-   "market": "long_rec",
-   "period": "FG",
-   "side": "over",
-   "line": 10.5,
-   "bet": "Over 10.5 longest reception yards",
-   "book": "Hard Rock",
-   "price": -125,
-   "price_at": "2026-10-18T00:40:00-04:00",
-   "first_price": -125,
-   "first_price_at": "2026-10-18T00:30:51-04:00",
-   "grade_price": -125,
-   "p": 0.6289,
-   "breakeven": 0.5556,
-   "p_pct": 62,
-   "breakeven_pct": 56,
-   "reason": "22 yards on his longest catch a game his last 5 (5 of 5 over 10.5). JAX allows the most receiving yards to WRs.",
-   "settled": "injury_report",
-   "state": "open",
-   "thin": false,
-   "pulled": null,
-   "graded": null,
-   "history": [
-    {
-     "at": "2026-10-18T00:30:51-04:00",
-     "text": "Posted at -125"
-    }
-   ]
-  },
-  {
    "id": "2026-W06:2026_06_NO_NYG:00-0038551:rush_att:FG:9.5:under",
-   "rank": 5,
+   "rank": 4,
    "game_id": "2026_06_NO_NYG",
    "day": "2026-10-18",
    "kickoff": "2026-10-18T13:00:00-04:00",
@@ -489,6 +448,55 @@
     {
      "at": "2026-10-18T00:30:51-04:00",
      "text": "Posted at -120"
+    }
+   ]
+  },
+  {
+   "id": "2026-W06:2026_06_HOU_JAX:00-0038618:long_rec:FG:10.5:over",
+   "rank": 5,
+   "game_id": "2026_06_HOU_JAX",
+   "day": "2026-10-18",
+   "kickoff": "2026-10-18T09:30:00-04:00",
+   "player": "Xavier Hutchinson",
+   "player_short": "X. Hutchinson",
+   "player_id": "00-0038618",
+   "pos": "WR",
+   "team": "HOU",
+   "opp": "JAX",
+   "home": false,
+   "market": "long_rec",
+   "period": "FG",
+   "side": "over",
+   "line": 10.5,
+   "bet": "Over 10.5 longest reception yards",
+   "book": "Hard Rock",
+   "price": -120,
+   "price_at": "2026-10-18T08:20:01-04:00",
+   "first_price": -125,
+   "first_price_at": "2026-10-18T00:30:51-04:00",
+   "grade_price": -125,
+   "p": 0.6248,
+   "breakeven": 0.5455,
+   "p_pct": 62,
+   "breakeven_pct": 55,
+   "reason": "22 yards on his longest catch a game his last 5 (5 of 5 over 10.5). JAX allows the most receiving yards to WRs.",
+   "settled": "inactives",
+   "state": "open",
+   "thin": false,
+   "pulled": null,
+   "graded": null,
+   "history": [
+    {
+     "at": "2026-10-18T00:30:51-04:00",
+     "text": "Posted at -125"
+    },
+    {
+     "at": "2026-10-18T08:20:01-04:00",
+     "text": "Inactives confirmed"
+    },
+    {
+     "at": "2026-10-18T08:20:01-04:00",
+     "text": "Price now -120"
     }
    ]
   },
@@ -985,49 +993,8 @@
    ]
   },
   {
-   "id": "2026-W06:2026_06_HOU_JAX:00-0040719:rec_yds:1H:4.5:under",
-   "rank": 18,
-   "game_id": "2026_06_HOU_JAX",
-   "day": "2026-10-18",
-   "kickoff": "2026-10-18T09:30:00-04:00",
-   "player": "Bhayshul Tuten",
-   "player_short": "B. Tuten",
-   "player_id": "00-0040719",
-   "pos": "RB",
-   "team": "JAX",
-   "opp": "HOU",
-   "home": true,
-   "market": "rec_yds",
-   "period": "1H",
-   "side": "under",
-   "line": 4.5,
-   "bet": "Under 4.5 receiving yards",
-   "book": "Hard Rock",
-   "price": -120,
-   "price_at": "2026-10-18T00:40:00-04:00",
-   "first_price": -120,
-   "first_price_at": "2026-10-18T00:30:51-04:00",
-   "grade_price": -120,
-   "p": 0.5853,
-   "breakeven": 0.5455,
-   "p_pct": 58,
-   "breakeven_pct": 55,
-   "reason": "1.0 receiving yards a game in the 1st half his last 5 (1 of 5 over 4.5). HOU allows the 6th fewest receiving yards to RBs.",
-   "settled": "injury_report",
-   "state": "open",
-   "thin": false,
-   "pulled": null,
-   "graded": null,
-   "history": [
-    {
-     "at": "2026-10-18T00:30:51-04:00",
-     "text": "Posted at -120"
-    }
-   ]
-  },
-  {
    "id": "2026-W06:2026_06_DAL_GB:00-0036264:rush_att:FG:2.5:under",
-   "rank": 19,
+   "rank": 18,
    "game_id": "2026_06_DAL_GB",
    "day": "2026-10-18",
    "kickoff": "2026-10-18T20:20:00-04:00",
@@ -1068,7 +1035,7 @@
   },
   {
    "id": "2026-W06:2026_06_ARI_LA:00-0039738:rush_att:FG:9.5:under",
-   "rank": 20,
+   "rank": 19,
    "game_id": "2026_06_ARI_LA",
    "day": "2026-10-18",
    "kickoff": "2026-10-18T16:05:00-04:00",
@@ -1113,7 +1080,7 @@
   },
   {
    "id": "2026-W06:2026_06_ARI_LA:00-0038640:rec_yds:FG:20.5:under",
-   "rank": 21,
+   "rank": 20,
    "game_id": "2026_06_ARI_LA",
    "day": "2026-10-18",
    "kickoff": "2026-10-18T16:05:00-04:00",
@@ -1154,7 +1121,7 @@
   },
   {
    "id": "2026-W06:2026_06_BUF_LV:00-0039875:rush_yds:FG:9.5:under",
-   "rank": 22,
+   "rank": 21,
    "game_id": "2026_06_BUF_LV",
    "day": "2026-10-18",
    "kickoff": "2026-10-18T16:25:00-04:00",
@@ -1195,7 +1162,7 @@
   },
   {
    "id": "2026-W06:2026_06_DAL_GB:00-0033077:pass_yds:1H:137.5:under",
-   "rank": 23,
+   "rank": 22,
    "game_id": "2026_06_DAL_GB",
    "day": "2026-10-18",
    "kickoff": "2026-10-18T20:20:00-04:00",
@@ -1231,6 +1198,54 @@
     {
      "at": "2026-10-18T00:30:51-04:00",
      "text": "Posted at -115"
+    }
+   ]
+  },
+  {
+   "id": "2026-W06:2026_06_HOU_JAX:00-0040719:rec_yds:1H:4.5:under",
+   "rank": null,
+   "game_id": "2026_06_HOU_JAX",
+   "day": "2026-10-18",
+   "kickoff": "2026-10-18T09:30:00-04:00",
+   "player": "Bhayshul Tuten",
+   "player_short": "B. Tuten",
+   "player_id": "00-0040719",
+   "pos": "RB",
+   "team": "JAX",
+   "opp": "HOU",
+   "home": true,
+   "market": "rec_yds",
+   "period": "1H",
+   "side": "under",
+   "line": 4.5,
+   "bet": "Under 4.5 receiving yards",
+   "book": "Hard Rock",
+   "price": -120,
+   "price_at": "2026-10-18T00:30:51-04:00",
+   "first_price": -120,
+   "first_price_at": "2026-10-18T00:30:51-04:00",
+   "grade_price": -120,
+   "p": 0.5853,
+   "breakeven": 0.5455,
+   "p_pct": 58,
+   "breakeven_pct": 55,
+   "reason": "1.0 receiving yards a game in the 1st half his last 5 (1 of 5 over 4.5). HOU allows the 6th fewest receiving yards to RBs.",
+   "settled": "injury_report",
+   "state": "open",
+   "thin": false,
+   "pulled": {
+    "at": "2026-10-18T08:20:01-04:00",
+    "reason": "Hard Rock moved the line to 3.5."
+   },
+   "graded": null,
+   "history": [
+    {
+     "at": "2026-10-18T00:30:51-04:00",
+     "text": "Posted at -120"
+    },
+    {
+     "at": "2026-10-18T08:20:01-04:00",
+     "text": "Pulled. Hard Rock moved the line to 3.5."
     }
    ]
   },

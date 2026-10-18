@@ -2,22 +2,83 @@
  "2026_06_HOU_JAX": {
   "_kickoff": "2026-10-18T09:30:00-04:00",
   "HOU": {
-   "confirmed": false,
-   "count": 0,
-   "players": [],
-   "confirmed_at": null
+   "confirmed": true,
+   "count": 7,
+   "players": [
+    {
+     "pid": null,
+     "name": "Braden Smith",
+     "pos": "OT"
+    },
+    {
+     "pid": "00-0035685",
+     "name": "David Montgomery",
+     "pos": "RB"
+    },
+    {
+     "pid": null,
+     "name": "Febechi Nwaiwu",
+     "pos": "G"
+    },
+    {
+     "pid": null,
+     "name": "Jalen Pitre",
+     "pos": "S"
+    },
+    {
+     "pid": "00-0041472",
+     "name": "Marlin Klein",
+     "pos": "TE"
+    },
+    {
+     "pid": null,
+     "name": "Nate Thomas",
+     "pos": "OT"
+    },
+    {
+     "pid": null,
+     "name": "Sabastian Harsh",
+     "pos": "DE"
+    }
+   ],
+   "confirmed_at": "2026-10-18T08:20:01-04:00"
   },
   "JAX": {
-   "confirmed": false,
-   "count": 1,
+   "confirmed": true,
+   "count": 6,
    "players": [
+    {
+     "pid": null,
+     "name": "Albert Regis",
+     "pos": "DT"
+    },
+    {
+     "pid": "00-0041106",
+     "name": "CJ Williams",
+     "pos": "WR"
+    },
+    {
+     "pid": null,
+     "name": "Jalen Huskey",
+     "pos": "S"
+    },
     {
      "pid": null,
      "name": "Montaric Brown",
      "pos": "CB"
+    },
+    {
+     "pid": null,
+     "name": "Ross Matiscik",
+     "pos": "LS"
+    },
+    {
+     "pid": null,
+     "name": "Wesley Williams",
+     "pos": "DE"
     }
    ],
-   "confirmed_at": null
+   "confirmed_at": "2026-10-18T08:20:01-04:00"
   }
  }
 }

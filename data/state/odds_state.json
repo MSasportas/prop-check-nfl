@@ -154,6 +154,27 @@
      "totals_h1"
     ],
     "cost": 41
+   },
+   {
+    "pull": "C",
+    "at": "2026-10-18T08:20:01-04:00",
+    "asked": [
+     "player_reception_longest",
+     "player_reception_yds",
+     "player_reception_yds_h1",
+     "player_rush_attempts",
+     "spreads",
+     "totals"
+    ],
+    "returned": [
+     "player_reception_longest",
+     "player_reception_yds",
+     "player_reception_yds_h1",
+     "player_rush_attempts",
+     "spreads",
+     "totals"
+    ],
+    "cost": 6
    }
   ],
   "2026_06_BAL_CLE": [
@@ -3171,14 +3192,14 @@
  "fail_note": null,
  "key_count": 7,
  "plan": {
-  "allowance": 49.75,
+  "allowance": 49.54,
   "tier": "standard",
   "pulls": "MFC",
-  "pool_at_plan": 1393.0,
+  "pool_at_plan": 1387.0,
   "games_left": 28,
-  "pool_raw": 1393,
+  "pool_raw": 1387,
   "keys_shared": 0,
-  "made_at": "2026-10-18T00:40:00-04:00"
+  "made_at": "2026-10-18T08:20:01-04:00"
  },
  "failed": {}
 }
