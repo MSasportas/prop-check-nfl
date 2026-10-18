@@ -3,16 +3,16 @@
  "season": 2026,
  "week": 6,
  "slate": "2026-W06",
- "started_at": "2026-10-18T00:40:00-04:00",
- "status_at": "2026-10-18T00:40:00-04:00",
- "finished_at": "2026-10-18T00:40:03-04:00",
- "last_ok_at": "2026-10-18T00:40:00-04:00",
+ "started_at": "2026-10-18T00:50:01-04:00",
+ "status_at": "2026-10-18T00:50:01-04:00",
+ "finished_at": "2026-10-18T00:50:01-04:00",
+ "last_ok_at": "2026-10-18T00:50:01-04:00",
  "failed_step": null,
  "steps": [
   {
    "step": "rules",
-   "status": "skipped",
-   "note": "unchanged"
+   "status": "ok",
+   "note": "rules.json written"
   },
   {
    "step": "schedule",
@@ -42,12 +42,12 @@
   {
    "step": "odds",
    "status": "ok",
-   "note": "13 read(s) (F)"
+   "note": "no pull due"
   },
   {
    "step": "engine",
    "status": "ok",
-   "note": "1 new event(s): 0 shown, 0 pulled"
+   "note": "13 new event(s): 0 shown, 0 pulled"
   },
   {
    "step": "grade",
@@ -62,7 +62,7 @@
   {
    "step": "research",
    "status": "ok",
-   "note": "13 game file(s) written"
+   "note": "6 game file(s) written"
   },
   {
    "step": "record",
@@ -127,73 +127,7 @@
   "at": "2026-10-18T00:40:00-04:00",
   "next_at": "2026-10-18T08:15:00-04:00"
  },
- "due": [
-  {
-   "pull": "F",
-   "game_id": "2026_06_HOU_JAX",
-   "cost_max": 41
-  },
-  {
-   "pull": "F",
-   "game_id": "2026_06_BAL_CLE",
-   "cost_max": 41
-  },
-  {
-   "pull": "F",
-   "game_id": "2026_06_CAR_PHI",
-   "cost_max": 41
-  },
-  {
-   "pull": "F",
-   "game_id": "2026_06_CHI_ATL",
-   "cost_max": 41
-  },
-  {
-   "pull": "F",
-   "game_id": "2026_06_NO_NYG",
-   "cost_max": 41
-  },
-  {
-   "pull": "F",
-   "game_id": "2026_06_NYJ_NE",
-   "cost_max": 41
-  },
-  {
-   "pull": "F",
-   "game_id": "2026_06_PIT_TB",
-   "cost_max": 41
-  },
-  {
-   "pull": "F",
-   "game_id": "2026_06_TEN_IND",
-   "cost_max": 41
-  },
-  {
-   "pull": "F",
-   "game_id": "2026_06_ARI_LA",
-   "cost_max": 41
-  },
-  {
-   "pull": "F",
-   "game_id": "2026_06_BUF_LV",
-   "cost_max": 41
-  },
-  {
-   "pull": "F",
-   "game_id": "2026_06_LAC_KC",
-   "cost_max": 41
-  },
-  {
-   "pull": "F",
-   "game_id": "2026_06_DAL_GB",
-   "cost_max": 41
-  },
-  {
-   "pull": "F",
-   "game_id": "2026_06_WAS_SF",
-   "cost_max": 41
-  }
- ],
+ "due": [],
  "skipped_games": [],
  "unmatched_names": [
   "Drew Ogletree",
@@ -204,15 +138,20 @@
  "behind": {},
  "stats_problems": [],
  "games_this_week": 14,
- "record_events": 29,
+ "record_events": 42,
  "grade_checks": [],
  "odds_notes": [],
  "runner": {
   "event": "push",
   "run_id": "39097348694",
-  "iteration": 2,
+  "iteration": 3,
   "chain_link": 0,
   "chain_started_at": "2026-10-18T00:30:50-04:00",
   "run_started_at": "2026-10-18T00:30:50-04:00"
+ },
+ "live_page": {
+  "checked_at": "2026-10-18T00:50:01-04:00",
+  "http": 200,
+  "is_page": true
  }
 }
