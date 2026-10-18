@@ -1,5 +1,5 @@
 {
- "at": "2026-10-18T07:00:00-04:00",
+ "at": "2026-10-18T07:30:00-04:00",
  "source": "espn",
  "players": {
   "name:ARI:kitancrawford": {
@@ -856,9 +856,9 @@
    "name": "Anthony Johnson Jr.",
    "team": "CHI",
    "pos": "S",
-   "status": "Injured Reserve",
-   "fantasy": "IR",
-   "date": "2026-10-18T06:01:00-04:00",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-10-18T07:24:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
@@ -3798,7 +3798,7 @@
    "pos": "OT",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-10-18T06:01:00-04:00",
+   "date": "2026-10-18T07:13:00-04:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
@@ -4333,6 +4333,17 @@
    "detail": null,
    "espn_id": "4685201"
   },
+  "00-0036139": {
+   "name": "Rico Dowdle",
+   "team": "PIT",
+   "pos": "RB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-18T07:12:00-04:00",
+   "detail": "Toe",
+   "espn_id": "4038815",
+   "comment": "Dowdle (toe) is slated to play in Sunday's game against the Buccaneers, Jeremy Fowler of ESPN.com reports."
+  },
   "00-0036775": {
    "name": "Brandon Smith",
    "team": "PIT",
@@ -4434,17 +4445,6 @@
    "date": "2026-10-16T19:54:00-04:00",
    "detail": null,
    "espn_id": "4685261"
-  },
-  "00-0036139": {
-   "name": "Rico Dowdle",
-   "team": "PIT",
-   "pos": "RB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-16T15:35:00-04:00",
-   "detail": "Toe",
-   "espn_id": "4038815",
-   "comment": "Dowdle (toe) is listed as questionable for Sunday's game against the Buccaneers after being a full participant in practice Thursday and Friday."
   },
   "name:PIT:keeanubenton": {
    "name": "Keeanu Benton",
