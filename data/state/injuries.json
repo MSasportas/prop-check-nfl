@@ -1,5 +1,5 @@
 {
- "at": "2026-10-18T14:40:00-04:00",
+ "at": "2026-10-18T14:50:00-04:00",
  "source": "espn",
  "players": {
   "name:ARI:wydettwilliams": {
@@ -372,7 +372,7 @@
    "team": "BAL",
    "pos": "WR",
    "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
+   "fantasy": "OUT",
    "date": "2026-10-18T14:24:00-04:00",
    "detail": "Shoulder",
    "espn_id": "4360939",
@@ -3104,9 +3104,9 @@
    "team": "LA",
    "pos": "S",
    "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
+   "fantasy": null,
    "date": "2026-10-16T20:28:00-04:00",
-   "detail": "Ankle",
+   "detail": null,
    "espn_id": "4242154"
   },
   "00-0036244": {

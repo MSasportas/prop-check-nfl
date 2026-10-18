@@ -2,19 +2,19 @@
  "season": 2026,
  "week": 6,
  "label": "Week 6",
- "generated_at": "2026-10-18T14:40:00-04:00",
- "status_at": "2026-10-18T14:40:00-04:00",
+ "generated_at": "2026-10-18T14:50:00-04:00",
+ "status_at": "2026-10-18T14:50:00-04:00",
  "valid_until": "2026-10-20T06:00:00-04:00",
- "next_check": "2026-10-18T14:50:00-04:00",
+ "next_check": "2026-10-18T15:10:00-04:00",
  "status": {
   "odds": {
    "state": "ok",
-   "at": "2026-10-18T11:50:01-04:00",
-   "next_at": "2026-10-18T14:50:00-04:00"
+   "at": "2026-10-18T14:50:00-04:00",
+   "next_at": "2026-10-18T15:10:00-04:00"
   },
   "injuries": {
    "state": "ok",
-   "at": "2026-10-18T14:40:00-04:00"
+   "at": "2026-10-18T14:50:00-04:00"
   },
   "inactives": {
    "state": "ok",
@@ -27,7 +27,7 @@
    "at": "2026-10-18T10:10:01-04:00"
   },
   "pool": {
-   "credits_left": 1359,
+   "credits_left": 1352,
    "keys": 7,
    "keys_live": 6,
    "keys_shared": 1,
@@ -37,7 +37,7 @@
   },
   "last_run": {
    "ok": true,
-   "at": "2026-10-18T14:40:00-04:00",
+   "at": "2026-10-18T14:50:00-04:00",
    "failed_step": null
   }
  },
@@ -215,8 +215,8 @@
    "score": null,
    "settled": "injury_report",
    "props_state": "ok",
-   "props_at": "2026-10-18T00:40:00-04:00",
-   "lines_at": "2026-10-18T00:40:00-04:00",
+   "props_at": "2026-10-18T14:50:00-04:00",
+   "lines_at": "2026-10-18T14:50:00-04:00",
    "note": null,
    "picks": 3
   },
@@ -496,49 +496,8 @@
    ]
   },
   {
-   "id": "2026-W06:2026_06_ARI_LA:00-0033307:long_rec:FG:16.5:under",
-   "rank": 6,
-   "game_id": "2026_06_ARI_LA",
-   "day": "2026-10-18",
-   "kickoff": "2026-10-18T16:05:00-04:00",
-   "player": "Kendrick Bourne",
-   "player_short": "K. Bourne",
-   "player_id": "00-0033307",
-   "pos": "WR",
-   "team": "ARI",
-   "opp": "LA",
-   "home": false,
-   "market": "long_rec",
-   "period": "FG",
-   "side": "under",
-   "line": 16.5,
-   "bet": "Under 16.5 longest reception yards",
-   "book": "Hard Rock",
-   "price": -115,
-   "price_at": "2026-10-18T00:40:00-04:00",
-   "first_price": -115,
-   "first_price_at": "2026-10-18T00:30:51-04:00",
-   "grade_price": -115,
-   "p": 0.5946,
-   "breakeven": 0.5349,
-   "p_pct": 59,
-   "breakeven_pct": 53,
-   "reason": "11.6 yards on his longest catch a game his last 5 (1 of 5 over 16.5). LA allows the 2nd fewest receiving yards to WRs.",
-   "settled": "injury_report",
-   "state": "open",
-   "thin": false,
-   "pulled": null,
-   "graded": null,
-   "history": [
-    {
-     "at": "2026-10-18T00:30:51-04:00",
-     "text": "Posted at -115"
-    }
-   ]
-  },
-  {
    "id": "2026-W06:2026_06_DAL_GB:00-0040667:rec_yds:1H:29.5:under",
-   "rank": 7,
+   "rank": 6,
    "game_id": "2026_06_DAL_GB",
    "day": "2026-10-18",
    "kickoff": "2026-10-18T20:20:00-04:00",
@@ -578,8 +537,90 @@
    ]
   },
   {
-   "id": "2026-W06:2026_06_DAL_GB:00-0036264:rush_att:FG:2.5:under",
+   "id": "2026-W06:2026_06_ARI_LA:00-0038640:rec_yds:FG:21.5:under",
+   "rank": 7,
+   "game_id": "2026_06_ARI_LA",
+   "day": "2026-10-18",
+   "kickoff": "2026-10-18T16:05:00-04:00",
+   "player": "Jalen Brooks",
+   "player_short": "J. Brooks",
+   "player_id": "00-0038640",
+   "pos": "WR",
+   "team": "ARI",
+   "opp": "LA",
+   "home": false,
+   "market": "rec_yds",
+   "period": "FG",
+   "side": "under",
+   "line": 21.5,
+   "bet": "Under 21.5 receiving yards",
+   "book": "Hard Rock",
+   "price": -115,
+   "price_at": "2026-10-18T14:50:00-04:00",
+   "first_price": -115,
+   "first_price_at": "2026-10-18T14:50:00-04:00",
+   "grade_price": -115,
+   "p": 0.5915,
+   "breakeven": 0.5349,
+   "p_pct": 59,
+   "breakeven_pct": 53,
+   "reason": "3.2 receiving yards a game his last 5 (0 of 5 over 21.5). LA allows the 2nd fewest receiving yards to WRs.",
+   "settled": "injury_report",
+   "state": "open",
+   "thin": false,
+   "pulled": null,
+   "graded": null,
+   "history": [
+    {
+     "at": "2026-10-18T14:50:00-04:00",
+     "text": "Posted at -115"
+    }
+   ]
+  },
+  {
+   "id": "2026-W06:2026_06_ARI_LA:00-0037263:rec:FG:2.5:under",
    "rank": 8,
+   "game_id": "2026_06_ARI_LA",
+   "day": "2026-10-18",
+   "kickoff": "2026-10-18T16:05:00-04:00",
+   "player": "Tyler Allgeier",
+   "player_short": "T. Allgeier",
+   "player_id": "00-0037263",
+   "pos": "RB",
+   "team": "ARI",
+   "opp": "LA",
+   "home": false,
+   "market": "rec",
+   "period": "FG",
+   "side": "under",
+   "line": 2.5,
+   "bet": "Under 2.5 receptions",
+   "book": "Hard Rock",
+   "price": -115,
+   "price_at": "2026-10-18T14:50:00-04:00",
+   "first_price": -115,
+   "first_price_at": "2026-10-18T14:50:00-04:00",
+   "grade_price": -115,
+   "p": 0.5863,
+   "breakeven": 0.5349,
+   "p_pct": 58,
+   "breakeven_pct": 53,
+   "reason": "2.4 catches a game his last 5 (1 of 5 over 2.5). His team is projected for 19.2 points.",
+   "settled": "injury_report",
+   "state": "open",
+   "thin": false,
+   "pulled": null,
+   "graded": null,
+   "history": [
+    {
+     "at": "2026-10-18T14:50:00-04:00",
+     "text": "Posted at -115"
+    }
+   ]
+  },
+  {
+   "id": "2026-W06:2026_06_DAL_GB:00-0036264:rush_att:FG:2.5:under",
+   "rank": 9,
    "game_id": "2026_06_DAL_GB",
    "day": "2026-10-18",
    "kickoff": "2026-10-18T20:20:00-04:00",
@@ -620,7 +661,7 @@
   },
   {
    "id": "2026-W06:2026_06_ARI_LA:00-0039738:rush_att:FG:9.5:under",
-   "rank": 9,
+   "rank": 10,
    "game_id": "2026_06_ARI_LA",
    "day": "2026-10-18",
    "kickoff": "2026-10-18T16:05:00-04:00",
@@ -638,7 +679,7 @@
    "bet": "Under 9.5 carries",
    "book": "Hard Rock",
    "price": -110,
-   "price_at": "2026-10-18T00:40:00-04:00",
+   "price_at": "2026-10-18T14:50:00-04:00",
    "first_price": -115,
    "first_price_at": "2026-10-18T00:30:51-04:00",
    "grade_price": -115,
@@ -660,47 +701,6 @@
     {
      "at": "2026-10-18T00:40:00-04:00",
      "text": "Price now -110"
-    }
-   ]
-  },
-  {
-   "id": "2026-W06:2026_06_ARI_LA:00-0038640:rec_yds:FG:20.5:under",
-   "rank": 10,
-   "game_id": "2026_06_ARI_LA",
-   "day": "2026-10-18",
-   "kickoff": "2026-10-18T16:05:00-04:00",
-   "player": "Jalen Brooks",
-   "player_short": "J. Brooks",
-   "player_id": "00-0038640",
-   "pos": "WR",
-   "team": "ARI",
-   "opp": "LA",
-   "home": false,
-   "market": "rec_yds",
-   "period": "FG",
-   "side": "under",
-   "line": 20.5,
-   "bet": "Under 20.5 receiving yards",
-   "book": "Hard Rock",
-   "price": -115,
-   "price_at": "2026-10-18T00:40:00-04:00",
-   "first_price": -115,
-   "first_price_at": "2026-10-18T00:30:51-04:00",
-   "grade_price": -115,
-   "p": 0.5803,
-   "breakeven": 0.5349,
-   "p_pct": 58,
-   "breakeven_pct": 53,
-   "reason": "3.2 receiving yards a game his last 5 (0 of 5 over 20.5). LA allows the 2nd fewest receiving yards to WRs.",
-   "settled": "injury_report",
-   "state": "open",
-   "thin": false,
-   "pulled": null,
-   "graded": null,
-   "history": [
-    {
-     "at": "2026-10-18T00:30:51-04:00",
-     "text": "Posted at -115"
     }
    ]
   },
@@ -1540,6 +1540,102 @@
     {
      "at": "2026-10-18T13:00:00-04:00",
      "text": "Locked"
+    }
+   ]
+  },
+  {
+   "id": "2026-W06:2026_06_ARI_LA:00-0033307:long_rec:FG:16.5:under",
+   "rank": null,
+   "game_id": "2026_06_ARI_LA",
+   "day": "2026-10-18",
+   "kickoff": "2026-10-18T16:05:00-04:00",
+   "player": "Kendrick Bourne",
+   "player_short": "K. Bourne",
+   "player_id": "00-0033307",
+   "pos": "WR",
+   "team": "ARI",
+   "opp": "LA",
+   "home": false,
+   "market": "long_rec",
+   "period": "FG",
+   "side": "under",
+   "line": 16.5,
+   "bet": "Under 16.5 longest reception yards",
+   "book": "Hard Rock",
+   "price": -115,
+   "price_at": "2026-10-18T00:30:51-04:00",
+   "first_price": -115,
+   "first_price_at": "2026-10-18T00:30:51-04:00",
+   "grade_price": -115,
+   "p": 0.5946,
+   "breakeven": 0.5349,
+   "p_pct": 59,
+   "breakeven_pct": 53,
+   "reason": "11.6 yards on his longest catch a game his last 5 (1 of 5 over 16.5). LA allows the 2nd fewest receiving yards to WRs.",
+   "settled": "injury_report",
+   "state": "open",
+   "thin": false,
+   "pulled": {
+    "at": "2026-10-18T14:50:00-04:00",
+    "reason": "Hard Rock moved the line to 15.5."
+   },
+   "graded": null,
+   "history": [
+    {
+     "at": "2026-10-18T00:30:51-04:00",
+     "text": "Posted at -115"
+    },
+    {
+     "at": "2026-10-18T14:50:00-04:00",
+     "text": "Pulled. Hard Rock moved the line to 15.5."
+    }
+   ]
+  },
+  {
+   "id": "2026-W06:2026_06_ARI_LA:00-0038640:rec_yds:FG:20.5:under",
+   "rank": null,
+   "game_id": "2026_06_ARI_LA",
+   "day": "2026-10-18",
+   "kickoff": "2026-10-18T16:05:00-04:00",
+   "player": "Jalen Brooks",
+   "player_short": "J. Brooks",
+   "player_id": "00-0038640",
+   "pos": "WR",
+   "team": "ARI",
+   "opp": "LA",
+   "home": false,
+   "market": "rec_yds",
+   "period": "FG",
+   "side": "under",
+   "line": 20.5,
+   "bet": "Under 20.5 receiving yards",
+   "book": "Hard Rock",
+   "price": -115,
+   "price_at": "2026-10-18T00:30:51-04:00",
+   "first_price": -115,
+   "first_price_at": "2026-10-18T00:30:51-04:00",
+   "grade_price": -115,
+   "p": 0.5803,
+   "breakeven": 0.5349,
+   "p_pct": 58,
+   "breakeven_pct": 53,
+   "reason": "3.2 receiving yards a game his last 5 (0 of 5 over 20.5). LA allows the 2nd fewest receiving yards to WRs.",
+   "settled": "injury_report",
+   "state": "open",
+   "thin": false,
+   "pulled": {
+    "at": "2026-10-18T14:50:00-04:00",
+    "reason": "Hard Rock moved the line to 21.5."
+   },
+   "graded": null,
+   "history": [
+    {
+     "at": "2026-10-18T00:30:51-04:00",
+     "text": "Posted at -115"
+    },
+    {
+     "at": "2026-10-18T14:50:00-04:00",
+     "text": "Pulled. Hard Rock moved the line to 21.5."
     }
    ]
   },

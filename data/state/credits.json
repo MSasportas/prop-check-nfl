@@ -25,11 +25,11 @@
   },
   {
    "n": 3,
-   "left": 156,
+   "left": 149,
    "status": "ok",
-   "checked_at": "2026-10-18T13:00:00-04:00",
+   "checked_at": "2026-10-18T14:50:00-04:00",
    "month": "2026-10",
-   "after_us": 156,
+   "after_us": 149,
    "shared": false,
    "shared_at": null,
    "others_spent": 0
@@ -446,6 +446,14 @@
    "pull": "C",
    "game_id": "2026_06_TEN_IND",
    "cost": 4,
+   "key": 3
+  },
+  {
+   "at": "2026-10-18T14:50:00-04:00",
+   "date": "2026-10-18",
+   "pull": "C",
+   "game_id": "2026_06_ARI_LA",
+   "cost": 7,
    "key": 3
   }
  ]

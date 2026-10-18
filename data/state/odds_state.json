@@ -1385,6 +1385,29 @@
      "totals_h1"
     ],
     "cost": 41
+   },
+   {
+    "pull": "C",
+    "at": "2026-10-18T14:50:00-04:00",
+    "asked": [
+     "player_reception_longest",
+     "player_reception_yds",
+     "player_receptions",
+     "player_rush_attempts",
+     "player_rush_yds",
+     "spreads",
+     "totals"
+    ],
+    "returned": [
+     "player_reception_longest",
+     "player_reception_yds",
+     "player_receptions",
+     "player_rush_attempts",
+     "player_rush_yds",
+     "spreads",
+     "totals"
+    ],
+    "cost": 7
    }
   ],
   "2026_06_BUF_LV": [
@@ -3298,14 +3321,14 @@
  "fail_note": null,
  "key_count": 7,
  "plan": {
-  "allowance": 63.52,
+  "allowance": 63.17,
   "tier": "standard",
   "pulls": "MFC",
-  "pool_at_plan": 1270.5,
+  "pool_at_plan": 1263.5,
   "games_left": 20,
-  "pool_raw": 1359,
+  "pool_raw": 1352,
   "keys_shared": 1,
-  "made_at": "2026-10-18T13:00:00-04:00"
+  "made_at": "2026-10-18T14:50:00-04:00"
  },
  "failed": {}
 }

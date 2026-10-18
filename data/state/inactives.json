@@ -705,5 +705,35 @@
    "players": [],
    "confirmed_at": null
   }
+ },
+ "2026_06_BUF_LV": {
+  "_kickoff": "2026-10-18T16:25:00-04:00",
+  "BUF": {
+   "confirmed": false,
+   "count": 0,
+   "players": [],
+   "confirmed_at": null
+  },
+  "LV": {
+   "confirmed": false,
+   "count": 0,
+   "players": [],
+   "confirmed_at": null
+  }
+ },
+ "2026_06_LAC_KC": {
+  "_kickoff": "2026-10-18T16:25:00-04:00",
+  "LAC": {
+   "confirmed": false,
+   "count": 0,
+   "players": [],
+   "confirmed_at": null
+  },
+  "KC": {
+   "confirmed": false,
+   "count": 0,
+   "players": [],
+   "confirmed_at": null
+  }
  }
 }

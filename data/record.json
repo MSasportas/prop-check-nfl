@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-18T13:00:00-04:00",
+ "generated_at": "2026-10-18T14:50:00-04:00",
  "season": 2026,
  "summary": {
   "headline": {
@@ -42,6 +42,46 @@
    "l": 1,
    "units": -1.0,
    "entries": [
+    {
+     "id": "2026-W06:2026_06_ARI_LA:00-0033307:long_rec:FG:16.5:under",
+     "kind": "single",
+     "date": "2026-10-18",
+     "game": "ARI at LA",
+     "player": "K. Bourne",
+     "team": "ARI",
+     "market": "long_rec",
+     "period": "FG",
+     "bet": "Under 16.5 longest reception yards",
+     "price": -115,
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": {
+      "at": "2026-10-18T14:50:00-04:00",
+      "reason": "Hard Rock moved the line to 15.5."
+     },
+     "legs": []
+    },
+    {
+     "id": "2026-W06:2026_06_ARI_LA:00-0038640:rec_yds:FG:20.5:under",
+     "kind": "single",
+     "date": "2026-10-18",
+     "game": "ARI at LA",
+     "player": "J. Brooks",
+     "team": "ARI",
+     "market": "rec_yds",
+     "period": "FG",
+     "bet": "Under 20.5 receiving yards",
+     "price": -115,
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": {
+      "at": "2026-10-18T14:50:00-04:00",
+      "reason": "Hard Rock moved the line to 21.5."
+     },
+     "legs": []
+    },
     {
      "id": "2026-W06:2026_06_BAL_CLE:00-0035993:pass_int:FG:0.5:under",
      "kind": "single",
