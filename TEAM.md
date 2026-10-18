@@ -106,9 +106,9 @@ The old Spotlight rules (brief 025) were dropped, not carried over.
   in `tests/fixtures/rows/`, never the live data.
 
 ## 6. Reviews (scheduled tasks; each reads this file first and updates it last)
-- **Game-day check:** Thu 6:47 PM, Sun 11:47 AM, Mon 6:47 PM ET. Chain alive, pulls ran, failed steps, unmatched
+- **Game-day checks:** Sun 11:47 AM and Mon/Thu 6:47 PM ET (scheduled tasks). Chain alive, pulls ran, failed steps, unmatched
   names, inactives confirming, last games graded. Fix what's broken; no rule changes.
-- **Weekly team review:** Tuesdays 10:47 AM ET (after MNF is graded). Full team on the Record and the odds log:
+- **Weekly team review:** Tuesdays 10:47 AM ET (scheduled task) (after MNF is graded). Full team on the Record and the odds log:
   volume, hit rate vs break-even by market, closing-price check (did Hard Rock move toward us?), calibration; ship
   agreed fixes through QA; log changes in section 8.
 
@@ -125,24 +125,32 @@ The old Spotlight rules (brief 025) were dropped, not carried over.
 6. 1H receptions: no Hard Rock market in the feed; Research shows the model number only. `player_receptions_h1`
    is never requested (it fails the whole call).
 7. Hard Rock's 1H total in the feed is an alt line (e.g. 30.5 at +425/-800); Research shows only a main pair
-   (both sides -250..+200, closest to even), so 1H total and 1H spread come from DraftKings, labelled.
+   (both sides -160..+140, closest to even), so 1H total and 1H spread come from DraftKings, labelled.
 8. Key pool may be shared with Prop Check NHL; both step down together if it runs low. Keys reset on the 1st.
 9. Timer chain holds one runner most of the day (free on public repos; GitHub discourages always-on use).
 10. Inactives depend on ESPN's pre-game feed; if not confirmed by 60 min before kickoff the pick locks as
     "inactives not confirmed".
 11. Model blind spots: rookies get position averages; no route data; traded players need 3 games before an over.
 12. 320px phones: long names truncate. Thanksgiving week needs an injury-report override (report is Tuesday).
+13. Final games on Research still say "Weather not posted yet" / "No Hard Rock game lines yet" and don't show the
+    score (QA round 3 minor). Status sheet says "Stats through week N" before that week's Sunday games are played.
+14. Research has no TD-pass defense row, so the Daniels-type reason ("7th fewest TD passes") can't be checked
+    there; longest-catch reasons cite receiving-yards ranks (shown under that market).
+15. Sharp open question for the weekly review: unders picked against defenses that allow a lot to that position
+    (e.g. Kolar U2.5 catches vs KC, 2nd most to TEs; the clause is now hidden, the pick stands on the model).
 
 ## 8. Rule-change log
 | Date | Change | Why | Sample |
 |---|---|---|---|
 | 2026-10-18 | Reason line: context clauses (defense rank, team total) only when they support the side; defense ranks are the plain this-season numbers Research shows | QA: reasons contradicted Research and some argued against the pick | Display only, no pick rule changed |
-| 2026-10-18 | Game lines on Research: main pair only (both sides -250..+200, closest to even); otherwise DraftKings, labelled | Hard Rock's 1H total in the feed is an alt line | Display only |
+| 2026-10-18 | Game lines on Research: main pair only (both sides -160..+140, closest to even); otherwise DraftKings, labelled | Hard Rock's 1H total in the feed is an alt line | Display only |
 | 2026-10-13 | v1.0 set (section 4) | First build. Sharp standard from the DS backtest and one live Hard Rock pull. Spotlight rules dropped | Backtest only; 0 graded live legs |
 
 ## 9. Session log (newest first, one line each)
 - 2026-10-18 ~1 AM: LIVE. v1 pushed 12:30 AM, first real run 12:31 AM (25 open picks, 3 parlays, 1,926 credits,
   tier full). QA round 1 SHIP WITH FIXES -> fixed; QA round 2 on live data FAIL (reasons vs Research) -> fixed and
-  re-verified with a checker. Live page check from the runner: 200.
+  re-verified with a checker (25 of 25 reasons match Research). QA round 3 SHIP WITH FIXES: lopsided 1H totals
+  tightened (main pair -160..+140, else DraftKings). Reviews scheduled: Sun 11:47 AM, Mon/Thu 6:47 PM, Tue 10:47 AM.
+  Live page check from the runner: 200.
 - 2026-10-13: probes (secret `ODDS_API_KEYS`, Hard Rock market list, ESPN, Pages), DS model + backtest, Sharp
   standard v1.0, UX spec + page, Builder backend. Work stalled before go-live; Thursday missed.
