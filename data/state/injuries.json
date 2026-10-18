@@ -1,16 +1,78 @@
 {
- "at": "2026-10-18T14:30:00-04:00",
+ "at": "2026-10-18T14:40:00-04:00",
  "source": "espn",
  "players": {
-  "name:ARI:kitancrawford": {
-   "name": "Kitan Crawford",
+  "name:ARI:wydettwilliams": {
+   "name": "Wydett Williams Jr.",
    "team": "ARI",
    "pos": "S",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-17T22:54:00-04:00",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T14:37:00-04:00",
+   "detail": "Concussion",
+   "espn_id": "5099542"
+  },
+  "name:ARI:andrewwingard": {
+   "name": "Andrew Wingard",
+   "team": "ARI",
+   "pos": "S",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T14:37:00-04:00",
+   "detail": "Knee",
+   "espn_id": "3918331"
+  },
+  "name:ARI:jerrickreed": {
+   "name": "Jerrick Reed II",
+   "team": "ARI",
+   "pos": "S",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T14:37:00-04:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4570084"
+  },
+  "name:ARI:starlingthomas": {
+   "name": "Starling Thomas V",
+   "team": "ARI",
+   "pos": "CB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T14:37:00-04:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4363408"
+  },
+  "00-0041027": {
+   "name": "Jeremiyah Love",
+   "team": "ARI",
+   "pos": "RB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T14:37:00-04:00",
    "detail": "Ankle",
-   "espn_id": "4430821"
+   "espn_id": "4870808",
+   "comment": "inactive"
+  },
+  "00-0041561": {
+   "name": "Carson Beck",
+   "team": "ARI",
+   "pos": "QB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T14:37:00-04:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4430841",
+   "comment": "inactive"
+  },
+  "name:ARI:andrewbillings": {
+   "name": "Andrew Billings",
+   "team": "ARI",
+   "pos": "DT",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T14:37:00-04:00",
+   "detail": "Coach's Decision",
+   "espn_id": "3051775"
   },
   "00-0038397": {
    "name": "Evan Hull",
@@ -21,36 +83,6 @@
    "date": "2026-10-17T22:13:00-04:00",
    "detail": null,
    "espn_id": "4569609"
-  },
-  "name:ARI:andrewwingard": {
-   "name": "Andrew Wingard",
-   "team": "ARI",
-   "pos": "S",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-16T22:53:00-04:00",
-   "detail": "Knee",
-   "espn_id": "3918331"
-  },
-  "name:ARI:zavencollins": {
-   "name": "Zaven Collins",
-   "team": "ARI",
-   "pos": "LB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-16T22:49:00-04:00",
-   "detail": "Hip",
-   "espn_id": "4244606"
-  },
-  "name:ARI:buddabaker": {
-   "name": "Budda Baker",
-   "team": "ARI",
-   "pos": "S",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-16T22:45:00-04:00",
-   "detail": "Groin",
-   "espn_id": "3127287"
   },
   "00-0037157": {
    "name": "Bam Knight",
@@ -72,16 +104,6 @@
    "detail": null,
    "espn_id": "4373626"
   },
-  "name:ARI:blakegillikin": {
-   "name": "Blake Gillikin",
-   "team": "ARI",
-   "pos": "P",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-16T17:29:00-04:00",
-   "detail": "Back",
-   "espn_id": "4045180"
-  },
   "00-0036331": {
    "name": "Devin Duvernay",
    "team": "ARI",
@@ -91,27 +113,6 @@
    "date": "2026-10-16T17:29:00-04:00",
    "detail": null,
    "espn_id": "4039050"
-  },
-  "00-0041027": {
-   "name": "Jeremiyah Love",
-   "team": "ARI",
-   "pos": "RB",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-16T14:37:00-04:00",
-   "detail": "Ankle",
-   "espn_id": "4870808",
-   "comment": "Love (ankle) has been ruled out for Sunday's game at the Rams, Darren Urban of the Cardinals' official site reports."
-  },
-  "name:ARI:wydettwilliams": {
-   "name": "Wydett Williams Jr.",
-   "team": "ARI",
-   "pos": "S",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-14T21:25:00-04:00",
-   "detail": "Concussion",
-   "espn_id": "5099542"
   },
   "00-0039550": {
    "name": "Shawn Bowman",
@@ -203,16 +204,6 @@
    "date": "2026-10-11T20:39:00-04:00",
    "detail": null,
    "espn_id": "4361307"
-  },
-  "00-0041561": {
-   "name": "Carson Beck",
-   "team": "ARI",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-11T15:10:00-04:00",
-   "detail": null,
-   "espn_id": "4430841"
   },
   "name:ATL:divinedeablo": {
    "name": "Divine Deablo",
@@ -382,10 +373,10 @@
    "pos": "WR",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-10-18T14:20:00-04:00",
+   "date": "2026-10-18T14:24:00-04:00",
    "detail": "Shoulder",
    "espn_id": "4360939",
-   "comment": "questionable"
+   "comment": "Bateman sustained a shoulder injury during Sunday's game at Cleveland, Brian Wacker of The Baltimore Sun reports."
   },
   "name:BAL:andrewvorhees": {
    "name": "Andrew Vorhees",
@@ -882,19 +873,9 @@
    "pos": "S",
    "status": "Injured Reserve",
    "fantasy": "IR",
-   "date": "2026-10-18T14:18:00-04:00",
+   "date": "2026-10-18T14:32:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
-  },
-  "name:CHI:camlewis": {
-   "name": "Cam Lewis",
-   "team": "CHI",
-   "pos": "CB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-18T14:02:00-04:00",
-   "detail": "Head",
-   "espn_id": "3916577"
   },
   "00-0038416": {
    "name": "Tyson Bagent",
@@ -3564,6 +3545,16 @@
    "espn_id": "3921690",
    "comment": "The Vikings placed Oliver (biceps) on injured reserve Tuesday, Craig Peters of the team's official site reports."
   },
+  "name:NE:alijahveratucker": {
+   "name": "Alijah Vera-Tucker",
+   "team": "NE",
+   "pos": "G",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-18T14:23:00-04:00",
+   "detail": "Hamstring",
+   "espn_id": "4259646"
+  },
   "name:NE:morganmoses": {
    "name": "Morgan Moses",
    "team": "NE",
@@ -3707,26 +3698,25 @@
    "detail": null,
    "espn_id": "4431431"
   },
-  "00-0040563": {
-   "name": "Efton Chism III",
-   "team": "NE",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-12T00:38:00-04:00",
-   "detail": null,
-   "espn_id": "4695193"
+  "name:NO:cesarruiz": {
+   "name": "Cesar Ruiz",
+   "team": "NO",
+   "pos": "G",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-18T14:29:00-04:00",
+   "detail": "Knee",
+   "espn_id": "4258199"
   },
   "00-0033906": {
    "name": "Alvin Kamara",
    "team": "NO",
    "pos": "RB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-18T14:01:00-04:00",
-   "detail": "Undisclosed",
-   "espn_id": "3054850",
-   "comment": "Kamara (undisclosed) walked slowly to the medical tent during Sunday's game at the Giants, Matthew Paras of The New Orleans Times-Picayune reports."
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-18T14:28:00-04:00",
+   "detail": null,
+   "espn_id": "3054850"
   },
   "name:NO:nathanshepherd": {
    "name": "Nathan Shepherd",
@@ -3876,7 +3866,7 @@
    "pos": "OT",
    "status": "Out",
    "fantasy": "INACTIVE",
-   "date": "2026-10-18T14:22:00-04:00",
+   "date": "2026-10-18T14:37:00-04:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
@@ -4191,7 +4181,7 @@
    "pos": "LB",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-10-18T14:15:00-04:00",
+   "date": "2026-10-18T14:22:00-04:00",
    "detail": "Concussion",
    "espn_id": "4426331"
   },
@@ -6016,6 +6006,10 @@
   "00-0036550": {
    "status": "Questionable",
    "at": "2026-10-18T14:30:00-04:00"
+  },
+  "00-0041561": {
+   "status": "Out",
+   "at": "2026-10-18T14:40:00-04:00"
   }
  }
 }

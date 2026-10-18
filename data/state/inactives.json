@@ -658,10 +658,46 @@
  "2026_06_ARI_LA": {
   "_kickoff": "2026-10-18T16:05:00-04:00",
   "ARI": {
-   "confirmed": false,
-   "count": 0,
-   "players": [],
-   "confirmed_at": null
+   "confirmed": true,
+   "count": 7,
+   "players": [
+    {
+     "pid": null,
+     "name": "Andrew Billings",
+     "pos": "DT"
+    },
+    {
+     "pid": null,
+     "name": "Andrew Wingard",
+     "pos": "S"
+    },
+    {
+     "pid": "00-0041561",
+     "name": "Carson Beck",
+     "pos": "QB"
+    },
+    {
+     "pid": "00-0041027",
+     "name": "Jeremiyah Love",
+     "pos": "RB"
+    },
+    {
+     "pid": null,
+     "name": "Jerrick Reed II",
+     "pos": "S"
+    },
+    {
+     "pid": null,
+     "name": "Starling Thomas V",
+     "pos": "CB"
+    },
+    {
+     "pid": null,
+     "name": "Wydett Williams Jr.",
+     "pos": "S"
+    }
+   ],
+   "confirmed_at": "2026-10-18T14:40:00-04:00"
   },
   "LA": {
    "confirmed": false,
