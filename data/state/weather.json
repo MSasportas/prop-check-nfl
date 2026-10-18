@@ -41,14 +41,14 @@
    "text": "60\u00b0F, wind 13 mph (roof may be closed)"
   },
   "2026_06_NO_NYG": {
-   "temp_f": 55.5,
-   "wind_mph": 6.7,
-   "gust_mph": 11.0,
+   "temp_f": 55.4,
+   "wind_mph": 6.5,
+   "gust_mph": 10.1,
    "rain_pct": 0,
    "rain_in": 0.0,
    "roof": "outdoors",
-   "at": "2026-10-18T04:01:39-04:00",
-   "text": "56\u00b0F, wind 7 mph"
+   "at": "2026-10-18T07:10:00-04:00",
+   "text": "55\u00b0F, wind 6 mph"
   },
   "2026_06_NYJ_NE": {
    "temp_f": 49.7,
@@ -89,14 +89,14 @@
    "text": "Indoors"
   },
   "2026_06_LAC_KC": {
-   "temp_f": 63.3,
-   "wind_mph": 11.4,
+   "temp_f": 63.6,
+   "wind_mph": 11.9,
    "gust_mph": 17.4,
    "rain_pct": 0,
    "rain_in": 0.0,
    "roof": "outdoors",
-   "at": "2026-10-18T04:01:39-04:00",
-   "text": "63\u00b0F, wind 11 mph"
+   "at": "2026-10-18T07:10:00-04:00",
+   "text": "64\u00b0F, wind 12 mph"
   },
   "2026_06_DAL_GB": {
    "temp_f": 50.9,
@@ -115,7 +115,7 @@
    "rain_pct": 0,
    "rain_in": 0.0,
    "roof": "outdoors",
-   "at": "2026-10-18T04:01:39-04:00",
+   "at": "2026-10-18T07:10:00-04:00",
    "text": "60\u00b0F, wind 14 mph"
   }
  }
