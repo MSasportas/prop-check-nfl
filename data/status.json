@@ -3,10 +3,10 @@
  "season": 2026,
  "week": 6,
  "slate": "2026-W06",
- "started_at": "2026-10-18T08:40:14-04:00",
- "status_at": "2026-10-18T08:40:14-04:00",
- "finished_at": "2026-10-18T08:40:15-04:00",
- "last_ok_at": "2026-10-18T08:40:14-04:00",
+ "started_at": "2026-10-18T09:10:01-04:00",
+ "status_at": "2026-10-18T09:10:01-04:00",
+ "finished_at": "2026-10-18T09:10:02-04:00",
+ "last_ok_at": "2026-10-18T09:10:01-04:00",
  "failed_step": null,
  "steps": [
   {
@@ -22,7 +22,7 @@
   {
    "step": "stats",
    "status": "skipped",
-   "note": "checked at 8:10 AM"
+   "note": "play-by-play unchanged (5509553 bytes)"
   },
   {
    "step": "roster",
@@ -32,7 +32,7 @@
   {
    "step": "injuries",
    "status": "ok",
-   "note": "espn: 151 out, 100 questionable; inactives posted for 2 team(s)"
+   "note": "espn: 150 out, 100 questionable; inactives posted for 2 team(s)"
   },
   {
    "step": "weather",
@@ -78,7 +78,8 @@
   "nflverse_snaps": "ok",
   "espn_injuries": "ok",
   "open_meteo": "ok",
-  "odds": "ok"
+  "odds": "ok",
+  "espn_scoreboard": "ok"
  },
  "keys": [
   {
@@ -144,13 +145,13 @@
  "runner": {
   "event": "workflow_dispatch",
   "run_id": "39128240202",
-  "iteration": 1,
+  "iteration": 4,
   "chain_link": 309,
   "chain_started_at": "2026-10-18T00:30:50-04:00",
   "run_started_at": "2026-10-18T08:40:14-04:00"
  },
  "live_page": {
-  "checked_at": "2026-10-18T08:10:00-04:00",
+  "checked_at": "2026-10-18T09:10:01-04:00",
   "http": 200,
   "is_page": true
  }
