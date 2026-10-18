@@ -1,5 +1,5 @@
 {
- "at": "2026-10-18T07:50:16-04:00",
+ "at": "2026-10-18T08:00:00-04:00",
  "source": "espn",
  "players": {
   "name:ARI:kitancrawford": {
@@ -3619,6 +3619,28 @@
    "detail": null,
    "espn_id": "4361432"
   },
+  "00-0033906": {
+   "name": "Alvin Kamara",
+   "team": "NO",
+   "pos": "RB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-18T07:49:00-04:00",
+   "detail": "Back",
+   "espn_id": "3054850",
+   "comment": "Kamara (back), who is listed as questionable for Sunday's contest at the Giants, is expected to play, Ian Rapoport of NFL Network reports."
+  },
+  "00-0037239": {
+   "name": "Chris Olave",
+   "team": "NO",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-18T07:44:00-04:00",
+   "detail": "Illness",
+   "espn_id": "4361370",
+   "comment": "Olave (illness), who is listed as questionable for Sunday's game at the Giants, is expected to suit up, Ian Rapoport of NFL Network reports."
+  },
   "name:NO:zachwood": {
    "name": "Zach Wood",
    "team": "NO",
@@ -3658,28 +3680,6 @@
    "date": "2026-10-16T20:45:00-04:00",
    "detail": "Calf",
    "espn_id": "3124890"
-  },
-  "00-0033906": {
-   "name": "Alvin Kamara",
-   "team": "NO",
-   "pos": "RB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-16T14:28:00-04:00",
-   "detail": "Back",
-   "espn_id": "3054850",
-   "comment": "Kamara (back) practiced on a limited basis Friday is listed as questionable for Sunday's game at the Giants, Katherine Terrell of ESPN.com reports."
-  },
-  "00-0037239": {
-   "name": "Chris Olave",
-   "team": "NO",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-16T14:10:00-04:00",
-   "detail": "Illness",
-   "espn_id": "4361370",
-   "comment": "Olave (illness) was limited at Friday's practice and will be listed as questionable for Week 6."
   },
   "name:NO:lorenzostyles": {
    "name": "Lorenzo Styles Jr.",
