@@ -102,7 +102,7 @@ The old Spotlight rules (brief 025) were dropped, not carried over.
 - **Files:** `index.html` (page), `data/slate.json`, `data/record.json`, `data/rules.json`, `data/status.json`,
   `data/research/` (index + one file per game), `data/odds/<date>.json` (every price pulled), `data/state/`.
   `fixtures/` = page test data (`?fixture=normal|fresh|nopicks|allstarted|recordempty|stale`).
-  Tests: `python -m unittest discover -s tests` (82), incl. a full replayed Thursday. Tests use frozen stat rows
+  Tests: `python -m unittest discover -s tests` (84), incl. a full replayed Thursday. Tests use frozen stat rows
   in `tests/fixtures/rows/`, never the live data.
 
 ## 6. Reviews (scheduled tasks; each reads this file first and updates it last)
@@ -151,6 +151,7 @@ The old Spotlight rules (brief 025) were dropped, not carried over.
 | 2026-10-13 | v1.0 set (section 4) | First build. Sharp standard from the DS backtest and one live Hard Rock pull. Spotlight rules dropped | Backtest only; 0 graded live legs |
 
 ## 9. Session log (newest first, one line each)
+- 2026-10-18 12:05 PM: game-day check. Chain alive (12:00 run, link 313), no failed steps, page 200, pool 1,361 (tier standard, 51/game), inactives confirming team by team for 1 PM games (ESPN lag, as designed), nothing to grade yet. Fixed: feed nicknames never matched (Hollywood Brown, Drew Ogletree): Matcher now uses NICK; test added (84). James Jordan not on any roster, left unmatched.
 - 2026-10-18 ~1 AM: LIVE. v1 pushed 12:30 AM, first real run 12:31 AM (25 open picks, 3 parlays, 1,926 credits,
   tier full). QA round 1 SHIP WITH FIXES -> fixed; QA round 2 on live data FAIL (reasons vs Research) -> fixed and
   re-verified with a checker (25 of 25 reasons match Research). QA round 3 SHIP WITH FIXES: lopsided 1H totals
