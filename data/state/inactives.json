@@ -537,7 +537,7 @@
   },
   "TB": {
    "confirmed": true,
-   "count": 6,
+   "count": 7,
    "players": [
     {
      "pid": null,
@@ -568,6 +568,11 @@
      "pid": null,
      "name": "Luke Haggard",
      "pos": "G"
+    },
+    {
+     "pid": "00-0038951",
+     "name": "Sean Tucker",
+     "pos": "RB"
     }
    ],
    "confirmed_at": "2026-10-18T12:10:00-04:00"

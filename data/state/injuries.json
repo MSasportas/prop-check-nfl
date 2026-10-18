@@ -1,5 +1,5 @@
 {
- "at": "2026-10-18T12:30:01-04:00",
+ "at": "2026-10-18T12:40:00-04:00",
  "source": "espn",
  "players": {
   "name:ARI:kitancrawford": {
@@ -366,6 +366,17 @@
    "detail": "Hamstring",
    "espn_id": "4360807"
   },
+  "00-0040876": {
+   "name": "Elijah Sarratt",
+   "team": "BAL",
+   "pos": "WR",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T12:22:00-04:00",
+   "detail": "Coach's Decision",
+   "espn_id": "5088338",
+   "comment": "Sarratt (coach's decision) is listed as inactive for Sunday's game against the Browns."
+  },
   "00-0040870": {
    "name": "Ja'Kobi Lane",
    "team": "BAL",
@@ -375,17 +386,6 @@
    "date": "2026-10-18T11:47:00-04:00",
    "detail": null,
    "espn_id": "4870847"
-  },
-  "00-0040876": {
-   "name": "Elijah Sarratt",
-   "team": "BAL",
-   "pos": "WR",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-10-18T11:33:00-04:00",
-   "detail": "Coach's Decision",
-   "espn_id": "5088338",
-   "comment": "inactive"
   },
   "name:BAL:andrewvorhees": {
    "name": "Andrew Vorhees",
@@ -671,6 +671,16 @@
    "detail": "Hamstring",
    "espn_id": "4427348"
   },
+  "00-0040644": {
+   "name": "Trevor Etienne",
+   "team": "CAR",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-18T12:16:00-04:00",
+   "detail": null,
+   "espn_id": "4685350"
+  },
   "00-0041149": {
    "name": "Haynes King",
    "team": "CAR",
@@ -743,16 +753,6 @@
    "detail": "Ankle",
    "espn_id": "4239934",
    "comment": "inactive"
-  },
-  "00-0040644": {
-   "name": "Trevor Etienne",
-   "team": "CAR",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-17T19:35:00-04:00",
-   "detail": null,
-   "espn_id": "4685350"
   },
   "00-0037005": {
    "name": "Tommy Tremble",
@@ -3824,9 +3824,20 @@
    "pos": "OT",
    "status": "Out",
    "fantasy": "INACTIVE",
-   "date": "2026-10-18T12:17:00-04:00",
+   "date": "2026-10-18T12:20:00-04:00",
    "detail": "Calf",
    "espn_id": "3115303"
+  },
+  "00-0038998": {
+   "name": "Jake Haener",
+   "team": "NYG",
+   "pos": "QB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T12:15:00-04:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4243322",
+   "comment": "Haener is inactive for Sunday's game against the Saints but is listed as the Giants' emergency quarterback, Dan Salomone of the team's official site reports."
   },
   "name:NYG:tylernubin": {
    "name": "Tyler Nubin",
@@ -3847,17 +3858,6 @@
    "date": "2026-10-18T11:54:00-04:00",
    "detail": "Coach's Decision",
    "espn_id": "5144942"
-  },
-  "00-0038998": {
-   "name": "Jake Haener",
-   "team": "NYG",
-   "pos": "QB",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-10-18T11:54:00-04:00",
-   "detail": "Coach's Decision",
-   "espn_id": "4243322",
-   "comment": "inactive"
   },
   "name:NYG:coltonhood": {
    "name": "Colton Hood",
@@ -4916,6 +4916,17 @@
    "espn_id": "4426385",
    "comment": "Charbonnet (knee) has been ruled out for Thursday's game at Denver, Corbin K. Smith of EmeraldCitySpectrum.com reports."
   },
+  "00-0038951": {
+   "name": "Sean Tucker",
+   "team": "TB",
+   "pos": "RB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T12:21:00-04:00",
+   "detail": "Quadriceps",
+   "espn_id": "4430871",
+   "comment": "Tucker (quadriceps) is inactive for Sunday's game against the Steelers."
+  },
   "name:TB:benjaminmorrison": {
    "name": "Benjamin Morrison",
    "team": "TB",
@@ -4976,17 +4987,6 @@
    "date": "2026-10-18T11:52:00-04:00",
    "detail": "Coach's Decision",
    "espn_id": "4429007"
-  },
-  "00-0038951": {
-   "name": "Sean Tucker",
-   "team": "TB",
-   "pos": "RB",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-10-18T08:57:00-04:00",
-   "detail": "Quadriceps",
-   "espn_id": "4430871",
-   "comment": "Tucker (quadriceps), who is listed as questionable for Sunday's game against the Steelers, isn't expected to play, Ian Rapoport of NFL Network reports."
   },
   "00-0040429": {
    "name": "Josh Williams",
