@@ -99,14 +99,14 @@
    "text": "65\u00b0F, wind 12 mph"
   },
   "2026_06_DAL_GB": {
-   "temp_f": 53.3,
-   "wind_mph": 10.3,
-   "gust_mph": 20.4,
+   "temp_f": 53.9,
+   "wind_mph": 10.4,
+   "gust_mph": 20.6,
    "rain_pct": 0,
    "rain_in": 0.0,
    "roof": "outdoors",
-   "at": "2026-10-18T13:00:00-04:00",
-   "text": "53\u00b0F, wind 10 mph"
+   "at": "2026-10-18T16:00:01-04:00",
+   "text": "54\u00b0F, wind 10 mph"
   },
   "2026_06_WAS_SF": {
    "temp_f": 60.9,

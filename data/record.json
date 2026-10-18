@@ -1,16 +1,16 @@
 {
- "generated_at": "2026-10-18T15:20:00-04:00",
+ "generated_at": "2026-10-18T16:00:01-04:00",
  "season": 2026,
  "summary": {
   "headline": {
-   "w": 0,
+   "w": 1,
    "l": 1,
    "push": 0,
    "void": 0,
-   "n": 1,
-   "units": -1.0,
-   "hit_rate": 0.0,
-   "needed": 0.5556,
+   "n": 2,
+   "units": -0.2593,
+   "hit_rate": 0.5,
+   "needed": 0.565,
    "parlays": {
     "w": 0,
     "l": 0,
@@ -18,6 +18,18 @@
    }
   },
   "rows": [
+   {
+    "key": "pass_int|FG",
+    "label": "Interceptions",
+    "w": 1,
+    "l": 0,
+    "push": 0,
+    "void": 0,
+    "n": 1,
+    "units": 0.7407,
+    "hit_rate": 1.0,
+    "needed": 0.5745
+   },
    {
     "key": "long_rec|FG",
     "label": "Longest catch",
@@ -38,9 +50,9 @@
    "slate": "2026-W06",
    "label": "Week 6",
    "graded": false,
-   "w": 0,
+   "w": 1,
    "l": 1,
-   "units": -1.0,
+   "units": -0.2593,
    "entries": [
     {
      "id": "2026-W06:2026_06_ARI_LA:00-0033307:long_rec:FG:16.5:under",
@@ -93,9 +105,9 @@
      "period": "FG",
      "bet": "Under 0.5 interceptions",
      "price": -135,
-     "result": null,
-     "actual": null,
-     "units": null,
+     "result": "W",
+     "actual": "had 0",
+     "units": 0.7407,
      "pulled": null,
      "legs": []
     },

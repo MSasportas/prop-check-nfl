@@ -1,5 +1,5 @@
 {
- "at": "2026-10-18T15:50:00-04:00",
+ "at": "2026-10-18T16:00:01-04:00",
  "source": "espn",
  "players": {
   "00-0041561": {
@@ -211,7 +211,7 @@
    "pos": "CB",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-10-18T15:32:00-04:00",
+   "date": "2026-10-18T15:38:00-04:00",
    "detail": "Hamstring",
    "espn_id": "4431194"
   },
@@ -892,7 +892,7 @@
    "pos": "S",
    "status": "Injured Reserve",
    "fantasy": "IR",
-   "date": "2026-10-18T15:43:00-04:00",
+   "date": "2026-10-18T15:57:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
@@ -3629,6 +3629,26 @@
    "espn_id": "3921690",
    "comment": "The Vikings placed Oliver (biceps) on injured reserve Tuesday, Craig Peters of the team's official site reports."
   },
+  "name:NE:benbrown": {
+   "name": "Ben Brown",
+   "team": "NE",
+   "pos": "C",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-18T15:47:00-04:00",
+   "detail": "Knee",
+   "espn_id": "4362890"
+  },
+  "name:NE:morganmoses": {
+   "name": "Morgan Moses",
+   "team": "NE",
+   "pos": "OT",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-18T15:40:00-04:00",
+   "detail": "Ankle",
+   "espn_id": "16771"
+  },
   "name:NE:alijahveratucker": {
    "name": "Alijah Vera-Tucker",
    "team": "NE",
@@ -3649,16 +3669,6 @@
    "detail": "Shoulder",
    "espn_id": "4361432",
    "comment": "Doubs (shoulder) has been ruled out for the rest of Sunday's game against the Jets, Doug Kyed of the Boston Herald reports."
-  },
-  "name:NE:morganmoses": {
-   "name": "Morgan Moses",
-   "team": "NE",
-   "pos": "OT",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-18T14:06:00-04:00",
-   "detail": "Ankle",
-   "espn_id": "16771"
   },
   "00-0036875": {
    "name": "Rhamondre Stevenson",
@@ -4294,11 +4304,21 @@
    "name": "Makai Lemon",
    "team": "PHI",
    "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-18T15:57:00-04:00",
+   "detail": null,
+   "espn_id": "4870795"
+  },
+  "00-0038393": {
+   "name": "Dontayvion Wicks",
+   "team": "PHI",
+   "pos": "WR",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-10-18T15:35:00-04:00",
+   "date": "2026-10-18T15:52:00-04:00",
    "detail": "Undisclosed",
-   "espn_id": "4870795",
+   "espn_id": "4428850",
    "comment": "questionable"
   },
   "name:PHI:nolansmith": {
@@ -4507,16 +4527,6 @@
    "date": "2026-10-16T16:39:00-04:00",
    "detail": null,
    "espn_id": "4248557"
-  },
-  "00-0038393": {
-   "name": "Dontayvion Wicks",
-   "team": "PHI",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-16T16:34:00-04:00",
-   "detail": null,
-   "espn_id": "4428850"
   },
   "name:PIT:brandinechols": {
    "name": "Brandin Echols",
@@ -6172,6 +6182,10 @@
   "00-0040867": {
    "status": "Questionable",
    "at": "2026-10-18T15:50:00-04:00"
+  },
+  "00-0038393": {
+   "status": "Questionable",
+   "at": "2026-10-18T16:00:01-04:00"
   }
  }
 }
