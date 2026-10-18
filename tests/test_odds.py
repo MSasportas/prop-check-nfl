@@ -225,8 +225,8 @@ class KeyRotation(unittest.TestCase):
         self.assertNotIn("regions=", self.urls[-1])
         self.assertEqual(cost, 1)
         self.assertEqual([(s["left"], s["status"]) for s in pool.state], [(0, "empty"), (None, "limited"), (88, "ok")])
-        self.assertEqual(pool.public(), [{"n": 1, "left": 0, "status": "empty"}, {"n": 2, "left": None, "status": "limited"},
-                                         {"n": 3, "left": 88, "status": "ok"}])
+        self.assertEqual(pool.public(), [{"n": 1, "left": 0, "status": "empty", "shared": False}, {"n": 2, "left": None, "status": "limited", "shared": False},
+                                         {"n": 3, "left": 88, "status": "ok", "shared": False}])
         self.calls.clear()
         client.event_odds("ev1", THU, ["player_receptions"], ["hardrockbet_fl"], "F")
         self.assertEqual([c[0] for c in self.calls], ["3333"])

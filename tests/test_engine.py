@@ -173,7 +173,7 @@ class PageFiles(unittest.TestCase):
                   "games", "picks", "parlays"):
             self.assertIn(k, s)
         self.assertEqual(set(s["status"]), {"odds", "injuries", "inactives", "stats", "pool", "last_run"})
-        self.assertEqual(set(s["status"]["pool"]), {"credits_left", "keys", "keys_live", "days_left", "low", "empty"})
+        self.assertEqual(set(s["status"]["pool"]), {"credits_left", "keys", "keys_live", "keys_shared", "days_left", "low", "empty"})
         self.assertEqual(s["valid_until"], "2026-10-20T06:00:00-04:00")
         g = s["games"][0]
         self.assertEqual(set(g), {"id", "away", "home", "kickoff", "day", "roof", "started", "final", "score", "settled",

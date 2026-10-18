@@ -1,0 +1,107 @@
+season,team,position,status,full_name,first_name,last_name,gsis_id,espn_id,football_name,week,game_type
+2026,JAX,RB,ACT,Ameer Abdullah,Ameer,Abdullah,00-0032104,2576336,Ameer,5,REG
+2026,JAX,QB,DEV,Nick Mullens,Nicholas,Mullens,00-0033319,3059989,Nick,5,REG
+2026,SEA,TE,ACT,Eric Saubert,Eric,Saubert,00-0033576,2975863,Eric,5,REG
+2026,HOU,RB,ACT,Dare Ogunbowale,Oluwadare,Ogunbowale,00-0033854,2983509,Dare,5,REG
+2026,DEN,TE,ACT,Evan Engram,Evan,Engram,00-0033881,3051876,Evan,5,REG
+2026,SEA,WR,ACT,Cooper Kupp,Cooper,Kupp,00-0033908,2977187,Cooper,5,REG
+2026,DEN,WR,ACT,Courtland Sutton,Courtland,Sutton,00-0034348,3128429,Courtland,5,REG
+2026,HOU,TE,ACT,Dalton Schultz,Dalton,Schultz,00-0034383,3117256,Dalton,5,REG
+2026,SEA,QB,ACT,Sam Darnold,Sam,Darnold,00-0034869,3912547,Sam,5,REG
+2026,JAX,WR,ACT,Jakobi Meyers,Jakobi,Meyers,00-0034960,3916433,Jakobi,5,REG
+2026,HOU,TE,ACT,Foster Moreau,Foster,Moreau,00-0034981,3843945,Foster,5,REG
+2026,DEN,QB,ACT,Jarrett Stidham,Jarrett,Stidham,00-0035264,3892775,Jarrett,5,REG
+2026,DEN,WR,ACT,Lil'Jordan Humphrey,Lil'Jordan,Humphrey,00-0035406,4039057,Lil'Jordan,5,REG
+2026,HOU,RB,ACT,David Montgomery,David,Montgomery,00-0035685,4035538,David,5,REG
+2026,SEA,QB,ACT,Drew Lock,Drew,Lock,00-0035704,3924327,Drew,5,REG
+2026,DEN,RB,ACT,J.K. Dobbins,Jkaylin,Dobbins,00-0036158,4241985,J.K.,5,REG
+2026,DEN,TE,ACT,Adam Trautman,Adam,Trautman,00-0036422,3911853,Adam,5,REG
+2026,JAX,WR,DEV,Tim Jones,Tim,Jones,00-0036497,4245131,Tim,5,REG
+2026,HOU,WR,ACT,Nico Collins,Nico,Collins,00-0036554,4258173,Nico,5,REG
+2026,HOU,TE,ACT,Brevin Jordan,Brevin,Jordan,00-0036556,4362504,Brevin,5,REG
+2026,JAX,TE,ACT,Quintin Morris,Quintin,Morris,00-0036590,4244049,Quintin,5,REG
+2026,DEN,WR,ACT,Jaylen Waddle,Jaylen,Waddle,00-0036613,4372016,Jaylen,5,REG
+2026,DEN,RB,ACT,Adam Prentice,Adam,Prentice,00-0036727,3929914,Adam,5,REG
+2026,JAX,WR,DEV,Austin Trammell,Austin,Trammell,00-0036841,4244856,Austin,5,REG
+2026,DEN,QB,INA,Sam Ehlinger,Samuel,Ehlinger,00-0036879,4241820,Sam,5,REG
+2026,HOU,QB,ACT,Davis Mills,Davis,Mills,00-0036898,4242546,Davis,5,REG
+2026,DEN,WR,DEV,Michael Bandy,Michael,Bandy,00-0036959,4034704,Michael,5,REG
+2026,JAX,QB,ACT,Trevor Lawrence,Trevor,Lawrence,00-0036971,4360310,Trevor,5,REG
+2026,DEN,RB,ACT,Tyler Badie,Tyler,Badie,00-0037085,4362748,Tyler,5,REG
+2026,SEA,WR,RES,Irvin Charles,Irvin,Charles,00-0037156,3929636,Irvin,5,REG
+2026,HOU,TE,DEV,Zaire Mitchell-Paden,Zaire,Mitchell-Paden,00-0037340,4876006,Zaire,5,REG
+2026,DEN,TE,DEV,Lucas Krull,Lucas,Krull,00-0037539,4360231,Lucas,5,REG
+2026,SEA,WR,ACT,Rashid Shaheed,Rashid,Shaheed,00-0037545,4032473,Rashid,5,REG
+2026,SEA,RB,ACT,Velus Jones Jr.,Velus,Jones,00-0037745,4035693,Velus,5,REG
+2026,SEA,RB,ACT,Brady Russell,Brady,Russell,00-0038488,4243176,Brady,5,REG
+2026,SEA,WR,ACT,Jaxon Smith-Njigba,Jaxon,Smith-Njigba,00-0038543,4430878,Jaxon,5,REG
+2026,JAX,WR,ACT,Parker Washington,Christopher,Washington,00-0038606,4432620,Parker,5,REG
+2026,HOU,WR,ACT,Kayshon Boutte,Kayshon,Boutte,00-0038608,4429022,Kayshon,5,REG
+2026,JAX,RB,ACT,Chris Rodriguez Jr.,Christopher,Rodriguez,00-0038611,4362619,Chris,5,REG
+2026,HOU,WR,ACT,Xavier Hutchinson,Xavier,Hutchinson,00-0038618,4686422,Xavier,5,REG
+2026,HOU,RB,DEV,Deuce Vaughn,Christopher,Vaughn,00-0038622,4431453,Deuce,5,REG
+2026,HOU,WR,ACT,Jared Wayne,Jared,Wayne,00-0038728,4430681,Jared,5,REG
+2026,SEA,WR,RES,Jake Bobo,Jake,Bobo,00-0038752,4360405,Jake,5,REG
+2026,DEN,TE,ACT,Nate Adkins,Nate,Adkins,00-0038783,4383440,Nate,5,REG
+2026,SEA,RB,ACT,Emanuel Wilson,Emanuel,Wilson,00-0038797,4887558,Emanuel,5,REG
+2026,JAX,TE,ACT,Brenton Strange,Brenton,Strange,00-0038935,4430539,Brenton,5,REG
+2026,DEN,WR,ACT,Marvin Mims Jr.,Marvin,Mims,00-0038976,4686472,Marvin,5,REG
+2026,HOU,WR,RES,Tank Dell,Nathaniel,Dell,00-0038977,4366031,Tank,5,REG
+2026,HOU,QB,ACT,C.J. Stroud,Coleridge,Stroud,00-0039163,4432577,C.J.,5,REG
+2026,SEA,RB,RES,Zach Charbonnet,Zach,Charbonnet,00-0039165,4426385,Zach,5,REG
+2026,SEA,RB,ACT,George Holani,George,Holani,00-0039299,4429835,George,5,REG
+2026,HOU,TE,ACT,Cade Stover,Cade,Stover,00-0039359,4426496,Cade,5,REG
+2026,HOU,RB,DEV,Jawhar Jordan,Jawhar,Jordan,00-0039405,4429939,Jawhar,5,REG
+2026,JAX,TE,DEV,Brenden Bates,Brenden,Bates,00-0039458,4362603,Brenden,5,REG
+2026,HOU,RB,RES,British Brooks,British,Brooks,00-0039603,4373273,British,5,REG
+2026,HOU,WR,CUT,Bryce Oliver,Bryce,Oliver,00-0039650,4362617,Bryce,5,REG
+2026,DEN,RB,DEV,Cody Schrader,Cody,Schrader,00-0039703,4391845,Cody,5,REG
+2026,DEN,QB,ACT,Bo Nix,Bo,Nix,00-0039732,4426338,Bo,5,REG
+2026,SEA,TE,ACT,AJ Barner,A.J.,Barner,00-0039793,4576297,A.J.,5,REG
+2026,DEN,WR,ACT,Troy Franklin,Troy,Franklin,00-0039868,4431280,Troy,5,REG
+2026,JAX,WR,ACT,Brian Thomas Jr.,Brian,Thomas,00-0039893,4432773,Brian,5,REG
+2026,HOU,WR,DEV,Josh Kelly,Joshua,Kelly,00-0040049,,Josh,5,REG
+2026,SEA,TE,INA,Nick Kallerup,Nick,Kallerup,00-0040058,4569547,Nick,5,REG
+2026,SEA,RB,DEV,Jacardia Wright,Jacardia,Wright,00-0040067,4428943,Jacardia,5,REG
+2026,HOU,WR,RES,Jayden Higgins,Jayden,Higgins,00-0040130,4877706,Jayden,5,REG
+2026,DEN,WR,RES,Pat Bryant,Patrick,Bryant,00-0040134,4600981,Pat,5,REG
+2026,HOU,WR,ACT,Jaylin Noel,Jaylin,Noel,00-0040138,4586312,Jaylin,5,REG
+2026,HOU,QB,RES,Graham Mertz,Graham,Mertz,00-0040211,4426335,Graham,5,REG
+2026,JAX,QB,ACT,Quinn Ewers,Quinn,Ewers,00-0040234,4889929,Quinn,5,REG
+2026,JAX,RB,ACT,LeQuint Allen Jr.,LeQuint,Allen,00-0040238,4911851,LeQuint,5,REG
+2026,DEN,TE,RES,Caleb Lohner,Caleb,Lohner,00-0040240,4432208,Caleb,5,REG
+2026,HOU,RB,ACT,Woody Marks,Jo'Quavious,Marks,00-0040583,4429059,Woody,5,REG
+2026,SEA,WR,INA,Montorie Foster Jr,Montorie,Foster,00-0040621,4600597,Montorie,5,REG
+2026,SEA,WR,ACT,Tory Horton,Tory,Horton,00-0040648,4597703,Tory,5,REG
+2026,SEA,RB,RES,Robbie Ouzts,Robbie,Ouzts,00-0040649,4691688,Robbie,5,REG
+2026,SEA,WR,DEV,Ricky White III,Ricky,White,00-0040653,4431479,Ricky,5,REG
+2026,SEA,QB,INA,Jalen Milroe,Jalen,Milroe,00-0040673,4432734,Jalen,5,REG
+2026,JAX,WR,ACT,Travis Hunter,Travis,Hunter,00-0040718,4685415,Travis,5,REG
+2026,JAX,RB,ACT,Bhayshul Tuten,Bhayshul,Tuten,00-0040719,4882093,Bhayshul,5,REG
+2026,DEN,RB,ACT,RJ Harvey,Robert,Harvey,00-0040730,4568490,R.J.,5,REG
+2026,SEA,TE,ACT,Elijah Arroyo,Elijah,Arroyo,00-0040739,4678006,Elijah,5,REG
+2026,SEA,WR,DEV,Emmanuel Henderson Jr.,Emmanuel,Henderson,00-0040895,4685381,Emmanuel,5,REG
+2026,SEA,RB,DEV,Dontae McMillan,Donnie,McMillan,00-0040984,,Dontae,5,REG
+2026,JAX,TE,ACT,Tanner Koziol,Tanner,Koziol,00-0041084,4917427,Tanner,5,REG
+2026,JAX,WR,ACT,Josh Cameron,Josh,Cameron,00-0041100,4879194,Josh,5,REG
+2026,JAX,WR,INA,C.J. Williams,Christian,Williams,00-0041106,5085024,C.J.,5,REG
+2026,DEN,TE,INA,Dallen Bentley,Dallen,Bentley,00-0041133,5159802,Dallen,5,REG
+2026,HOU,QB,CUT,Mark Gronowski,Mark,Gronowski,00-0041156,4695400,Mark,5,REG
+2026,SEA,RB,INA,Robert Henry Jr.,Robert,Henry,00-0041178,5151317,Robert,5,REG
+2026,JAX,QB,DEV,Joey Aguilar,Joey,Aguilar,00-0041203,,Joey,5,REG
+2026,JAX,WR,RET,Alex Bullock,Alex,Bullock,00-0041206,,Alex,5,REG
+2026,JAX,WR,DEV,Trebor Pena,Trebor,Pena,00-0041216,4575862,Trebor,5,REG
+2026,JAX,RB,DEV,J'Mari Taylor,J'mari,Taylor,00-0041217,4713118,J'mari,5,REG
+2026,JAX,WR,DEV,Michael Wortham,Michael,Wortham,00-0041220,,Michael,5,REG
+2026,DEN,WR,DEV,Kolbe Katsis,Kolbe,Katsis,00-0041292,5225419,Kolbe,5,REG
+2026,DEN,WR,DEV,Dane Key,Dane,Key,00-0041293,4685424,Dane,5,REG
+2026,DEN,WR,DEV,Cameron Ross,Cameron,Ross,00-0041299,,Cam,5,REG
+2026,HOU,WR,CUT,Treyvhon Saunders,Treyvhon,Saunders,00-0041308,,Treyvhon,5,REG
+2026,HOU,WR,DEV,Daniel Sobkowicz,Daniel,Sobkowicz,00-0041309,,Daniel,5,REG
+2026,HOU,RB,DEV,Noah Whittington,Noah,Whittington,00-0041312,4432631,Noah,5,REG
+2026,HOU,WR,DEV,Lewis Bond,Lewis,Bond,00-0041467,4683159,Lewis,5,REG
+2026,HOU,TE,INA,Marlin Klein,Marlin,Klein,00-0041472,4695705,Marlin,5,REG
+2026,DEN,RB,RES,Jonah Coleman,Jonah,Coleman,00-0041496,4702555,Jonah,5,REG
+2026,JAX,TE,ACT,Nate Boerkircher,Nate,Boerkircher,00-0041503,4686248,Nate,5,REG
+2026,SEA,RB,RES,Jadarian Price,Jadarian,Price,00-0041512,4685512,Jadarian,5,REG
+2026,SEA,WR,DEV,Malick Meiga,Malick,Meiga,00-0041542,,Malick,5,REG

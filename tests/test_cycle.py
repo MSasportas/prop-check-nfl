@@ -172,7 +172,8 @@ class Cycle(unittest.TestCase):
 
     def test_someone_else_pushed_during_the_cycle(self):
         self.cycle("10:05")
-        during = ("%s scripts/run.py && cd %s && printf 'during\\n' > README.md && git add -A && "
+        during = ("%s scripts/run.py && cd %s && git pull -q --rebase origin main && "
+                  "printf 'during\\n' > README.md && git add -A && "
                   "git commit -q -m 'human edit during' && git push -q origin main" % (sys.executable, self.other))
         r = self.cycle("10:40", CYCLE_RUN_CMD=during)
         self.assertEqual(r.returncode, 0, r.stdout + r.stderr)

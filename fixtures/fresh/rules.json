@@ -1,0 +1,29 @@
+{
+ "version": "0.1",
+ "updated": "2026-10-14",
+ "values": {
+  "price_gate": -200,
+  "min_p": 0.62,
+  "stake": 1,
+  "parlay_min_legs": 2,
+  "parlay_max_legs": 3,
+  "min_sample": 30
+ },
+ "text": [
+  "Every pick needs a real Hard Rock price of -200 or better. Plus money is fine.",
+  "We only pick when our chance is at least 62% after a safety cut, and beats the price's break-even.",
+  "Player props are the core: full game and 1st half. Sides and totals only when the edge is clear.",
+  "1st half spreads show DraftKings numbers for reference. They are never picks.",
+  "Each pick says how settled it is: Early, Injury report in, or Inactives confirmed.",
+  "A pick is pulled if the player is out or limited, the price goes past -200, or the line is gone.",
+  "Parlays are 2 or 3 legs from the top picks, each leg in a different game.",
+  "Picks lock at kickoff. Results come from the official stats once the game is final.",
+  "The Record grades every pick at the price posted, 1 unit each. Pulled picks are graded too and shown as pulled."
+ ],
+ "ui": {
+  "stale_after_min": 90,
+  "refresh_sec": 120,
+  "picks_open_per_day": 6
+ },
+ "fixture": true
+}

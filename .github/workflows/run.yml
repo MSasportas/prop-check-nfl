@@ -1,0 +1,61 @@
+# The timer (see /TEAM.md "How it runs").
+# GitHub's own schedule is unreliable for this kind of repo, so the timer is a CHAIN: each run loops scripts/cycle.sh
+# for about 50 minutes (cadence from scripts/cadence.py: every 10 min on game days and around kickoffs, 30 min on
+# other days, hourly overnight), then its last step starts the next run with workflow_dispatch. The hourly schedule
+# and code pushes only (re)start the chain. The concurrency group keeps one run going and at most one waiting.
+# Off switch: commit a file named config/stop_timer.
+# Secrets: only ODDS_API_KEYS, passed by name to the loop step. Never dump the whole secrets object.
+name: run
+on:
+  workflow_dispatch:
+    inputs:
+      chain_link:
+        description: 'Which link of the chain this is (set by the previous run)'
+        required: false
+        default: '0'
+      chain_started_at:
+        description: 'When the chain began (set by the previous run)'
+        required: false
+        default: ''
+  schedule:
+    - cron: '23 * * * *'      # restarter only
+  push:                       # a code or rule change starts a chain right away
+    branches: [main]
+    paths: ['scripts/**', 'config/**', '.github/workflows/run.yml']
+permissions:
+  contents: write             # commit data/
+  actions: write              # start the next run
+concurrency:
+  group: repo-writer
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 65
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0        # full history: scripts/guard_record.py --history walks every Record version
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: loop (about 50 minutes)
+        timeout-minutes: 60     # a step timeout still lets the hand-over step below run
+        env:
+          ODDS_API_KEYS: ${{ secrets.ODDS_API_KEYS }}    # the only place the keys exist; never echoed
+          GITHUB_TOKEN: ${{ github.token }}              # GitHub API (nflverse release info) rate limit; scrubbed
+          PC_RUNNER_EVENT: ${{ github.event_name }}
+          PC_RUNNER_RUN_ID: ${{ github.run_id }}
+          PC_RUNNER_LINK: ${{ github.event_name == 'workflow_dispatch' && inputs.chain_link || '0' }}
+          PC_RUNNER_CHAIN_STARTED: ${{ github.event_name == 'workflow_dispatch' && inputs.chain_started_at || '' }}
+        run: bash scripts/loop.sh
+
+      - name: start the next run
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          PC_RUNNER_LINK: ${{ github.event_name == 'workflow_dispatch' && inputs.chain_link || '0' }}
+          PC_RUNNER_CHAIN_STARTED: ${{ github.event_name == 'workflow_dispatch' && inputs.chain_started_at || '' }}
+        run: bash scripts/dispatch_next.sh || [ -f scripts/dispatch_next.sh ] || gh workflow run run.yml --ref "${GITHUB_REF_NAME:-main}"

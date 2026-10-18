@@ -1,0 +1,100 @@
+{
+ "ok": true,
+ "season": 2026,
+ "week": 6,
+ "started_at": "2026-10-19T21:00:00-04:00",
+ "finished_at": "2026-10-19T21:00:00-04:00",
+ "last_ok_at": "2026-10-19T21:00:00-04:00",
+ "failed_step": null,
+ "steps": [
+  {
+   "step": "schedule",
+   "status": "ok",
+   "note": "14 games this week"
+  },
+  {
+   "step": "stats",
+   "status": "skipped",
+   "note": "built through week 5"
+  },
+  {
+   "step": "injuries",
+   "status": "ok",
+   "note": "32 teams read"
+  },
+  {
+   "step": "inactives",
+   "status": "ok",
+   "note": "7 games posted"
+  },
+  {
+   "step": "odds",
+   "status": "ok",
+   "note": "9 games, 41 credits"
+  },
+  {
+   "step": "engine",
+   "status": "ok",
+   "note": "13 open picks, 1 pulled"
+  },
+  {
+   "step": "research",
+   "status": "ok",
+   "note": "14 game files"
+  },
+  {
+   "step": "grade",
+   "status": "skipped",
+   "note": "nothing final"
+  },
+  {
+   "step": "record",
+   "status": "skipped",
+   "note": "unchanged"
+  }
+ ],
+ "sources": {
+  "odds": "ok",
+  "espn": "ok",
+  "nflverse": "ok",
+  "weather": "ok"
+ },
+ "keys": [
+  {
+   "n": 1,
+   "left": 0
+  },
+  {
+   "n": 2,
+   "left": 0
+  },
+  {
+   "n": 3,
+   "left": 0
+  },
+  {
+   "n": 4,
+   "left": 0
+  },
+  {
+   "n": 5,
+   "left": 120
+  },
+  {
+   "n": 6,
+   "left": 180
+  },
+  {
+   "n": 7,
+   "left": 112
+  }
+ ],
+ "pool_total": 412,
+ "budget_today": 60,
+ "budget_used_today": 41,
+ "runner": {
+  "event": "workflow_dispatch",
+  "run_id": "0",
+  "iteration": 1
+ }
+}
