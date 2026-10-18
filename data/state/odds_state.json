@@ -1546,6 +1546,25 @@
      "totals_h1"
     ],
     "cost": 41
+   },
+   {
+    "pull": "C",
+    "at": "2026-10-18T15:10:00-04:00",
+    "asked": [
+     "player_reception_longest",
+     "player_receptions",
+     "player_rush_yds",
+     "spreads",
+     "totals"
+    ],
+    "returned": [
+     "player_reception_longest",
+     "player_receptions",
+     "player_rush_yds",
+     "spreads",
+     "totals"
+    ],
+    "cost": 5
    }
   ],
   "2026_06_LAC_KC": [
@@ -1684,6 +1703,33 @@
      "totals_h1"
     ],
     "cost": 41
+   },
+   {
+    "pull": "C",
+    "at": "2026-10-18T15:10:00-04:00",
+    "asked": [
+     "player_reception_longest",
+     "player_reception_yds",
+     "player_reception_yds_h1",
+     "player_receptions",
+     "player_rush_attempts",
+     "player_rush_longest",
+     "player_rush_yds_h1",
+     "spreads",
+     "totals"
+    ],
+    "returned": [
+     "player_reception_longest",
+     "player_reception_yds",
+     "player_reception_yds_h1",
+     "player_receptions",
+     "player_rush_attempts",
+     "player_rush_longest",
+     "player_rush_yds_h1",
+     "spreads",
+     "totals"
+    ],
+    "cost": 9
    }
   ],
   "2026_06_DAL_GB": [
@@ -3321,14 +3367,14 @@
  "fail_note": null,
  "key_count": 7,
  "plan": {
-  "allowance": 63.17,
+  "allowance": 62.48,
   "tier": "standard",
   "pulls": "MFC",
-  "pool_at_plan": 1263.5,
+  "pool_at_plan": 1249.5,
   "games_left": 20,
-  "pool_raw": 1352,
+  "pool_raw": 1338,
   "keys_shared": 1,
-  "made_at": "2026-10-18T14:50:00-04:00"
+  "made_at": "2026-10-18T15:10:00-04:00"
  },
  "failed": {}
 }

@@ -3,10 +3,10 @@
  "season": 2026,
  "week": 6,
  "slate": "2026-W06",
- "started_at": "2026-10-18T15:00:01-04:00",
- "status_at": "2026-10-18T15:00:01-04:00",
- "finished_at": "2026-10-18T15:00:05-04:00",
- "last_ok_at": "2026-10-18T15:00:01-04:00",
+ "started_at": "2026-10-18T15:10:00-04:00",
+ "status_at": "2026-10-18T15:10:00-04:00",
+ "finished_at": "2026-10-18T15:10:03-04:00",
+ "last_ok_at": "2026-10-18T15:10:00-04:00",
  "failed_step": null,
  "steps": [
   {
@@ -32,7 +32,7 @@
   {
    "step": "injuries",
    "status": "ok",
-   "note": "espn: 215 out, 65 questionable; inactives posted for 18 team(s)"
+   "note": "espn: 227 out, 56 questionable; inactives posted for 21 team(s)"
   },
   {
    "step": "weather",
@@ -42,12 +42,12 @@
   {
    "step": "odds",
    "status": "ok",
-   "note": "no pull due"
+   "note": "2 read(s) (C)"
   },
   {
    "step": "engine",
    "status": "ok",
-   "note": "3 new event(s): 0 shown, 0 pulled"
+   "note": "10 new event(s): 0 shown, 0 pulled"
   },
   {
    "step": "grade",
@@ -95,7 +95,7 @@
   },
   {
    "n": 3,
-   "left": 149,
+   "left": 135,
    "shared": false
   },
   {
@@ -119,17 +119,28 @@
    "shared": false
   }
  ],
- "pool_total": 1352,
- "allowance": 63.17,
+ "pool_total": 1338,
+ "allowance": 62.48,
  "tier": "standard",
  "games_left_before_reset": 20,
- "budget_used_today": 819,
+ "budget_used_today": 833,
  "odds": {
   "state": "ok",
-  "at": "2026-10-18T14:50:00-04:00",
-  "next_at": "2026-10-18T15:10:00-04:00"
+  "at": "2026-10-18T15:10:00-04:00",
+  "next_at": "2026-10-18T19:05:00-04:00"
  },
- "due": [],
+ "due": [
+  {
+   "pull": "C",
+   "game_id": "2026_06_BUF_LV",
+   "cost_max": 5
+  },
+  {
+   "pull": "C",
+   "game_id": "2026_06_LAC_KC",
+   "cost_max": 9
+  }
+ ],
  "skipped_games": [],
  "unmatched_names": [
   "Drew Ogletree",
@@ -143,13 +154,13 @@
  },
  "stats_problems": [],
  "games_this_week": 14,
- "record_events": 105,
+ "record_events": 115,
  "grade_checks": [],
  "odds_notes": [],
  "runner": {
   "event": "workflow_dispatch",
   "run_id": "39153678619",
-  "iteration": 5,
+  "iteration": 6,
   "chain_link": 316,
   "chain_started_at": "2026-10-18T00:30:50-04:00",
   "run_started_at": "2026-10-18T14:20:15-04:00"

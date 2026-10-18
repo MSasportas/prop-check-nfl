@@ -740,25 +740,118 @@
  "2026_06_BUF_LV": {
   "_kickoff": "2026-10-18T16:25:00-04:00",
   "BUF": {
-   "confirmed": false,
-   "count": 0,
-   "players": [],
-   "confirmed_at": null
+   "confirmed": true,
+   "count": 5,
+   "players": [
+    {
+     "pid": null,
+     "name": "Ar'maj Reed-Adams",
+     "pos": "G"
+    },
+    {
+     "pid": "00-0034827",
+     "name": "DJ Moore",
+     "pos": "WR"
+    },
+    {
+     "pid": null,
+     "name": "Ed Oliver",
+     "pos": "DT"
+    },
+    {
+     "pid": null,
+     "name": "Jude Bowry",
+     "pos": "OT"
+    },
+    {
+     "pid": null,
+     "name": "Mike Danna",
+     "pos": "DE"
+    }
+   ],
+   "confirmed_at": "2026-10-18T15:10:00-04:00"
   },
   "LV": {
-   "confirmed": false,
-   "count": 0,
-   "players": [],
-   "confirmed_at": null
+   "confirmed": true,
+   "count": 6,
+   "players": [
+    {
+     "pid": "00-0038579",
+     "name": "Aidan O'Connell",
+     "pos": "QB"
+    },
+    {
+     "pid": null,
+     "name": "Bryce Cabeldue",
+     "pos": "G"
+    },
+    {
+     "pid": null,
+     "name": "Cian Slone",
+     "pos": "DE"
+    },
+    {
+     "pid": null,
+     "name": "Dalton Johnson",
+     "pos": "S"
+    },
+    {
+     "pid": null,
+     "name": "Tonka Hemingway",
+     "pos": "DT"
+    },
+    {
+     "pid": null,
+     "name": "Tristin McCollum",
+     "pos": "S"
+    }
+   ],
+   "confirmed_at": "2026-10-18T15:10:00-04:00"
   }
  },
  "2026_06_LAC_KC": {
   "_kickoff": "2026-10-18T16:25:00-04:00",
   "LAC": {
-   "confirmed": false,
-   "count": 0,
-   "players": [],
-   "confirmed_at": null
+   "confirmed": true,
+   "count": 7,
+   "players": [
+    {
+     "pid": null,
+     "name": "Bud Dupree",
+     "pos": "LB"
+    },
+    {
+     "pid": null,
+     "name": "Derwin James Jr.",
+     "pos": "S"
+    },
+    {
+     "pid": null,
+     "name": "Donte Jackson",
+     "pos": "CB"
+    },
+    {
+     "pid": null,
+     "name": "Joe Alt",
+     "pos": "OT"
+    },
+    {
+     "pid": null,
+     "name": "Kayode Awosika",
+     "pos": "G"
+    },
+    {
+     "pid": null,
+     "name": "Rodney Shelley",
+     "pos": "CB"
+    },
+    {
+     "pid": "00-0040727",
+     "name": "Tre' Harris",
+     "pos": "WR"
+    }
+   ],
+   "confirmed_at": "2026-10-18T15:10:00-04:00"
   },
   "KC": {
    "confirmed": false,
