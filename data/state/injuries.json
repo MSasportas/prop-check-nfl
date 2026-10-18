@@ -1,5 +1,5 @@
 {
- "at": "2026-10-18T15:20:00-04:00",
+ "at": "2026-10-18T15:30:00-04:00",
  "source": "espn",
  "players": {
   "00-0041561": {
@@ -204,6 +204,16 @@
    "date": "2026-10-11T20:39:00-04:00",
    "detail": null,
    "espn_id": "4361307"
+  },
+  "name:ATL:kendaldaniels": {
+   "name": "Kendal Daniels",
+   "team": "ATL",
+   "pos": "LB",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-10-18T15:12:00-04:00",
+   "detail": "Neck",
+   "espn_id": "4595343"
   },
   "name:ATL:avieonterrell": {
    "name": "Avieon Terrell",
@@ -531,6 +541,26 @@
    "detail": null,
    "espn_id": "3043078"
   },
+  "name:BUF:edoliver": {
+   "name": "Ed Oliver",
+   "team": "BUF",
+   "pos": "DT",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T15:10:00-04:00",
+   "detail": "Knee",
+   "espn_id": "4039303"
+  },
+  "00-0036988": {
+   "name": "Joshua Palmer",
+   "team": "BUF",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-18T15:05:00-04:00",
+   "detail": null,
+   "espn_id": "4242433"
+  },
   "name:BUF:armajreedadams": {
    "name": "Ar'maj Reed-Adams",
    "team": "BUF",
@@ -541,16 +571,6 @@
    "detail": "Coach's Decision",
    "espn_id": "4606712"
   },
-  "name:BUF:edoliver": {
-   "name": "Ed Oliver",
-   "team": "BUF",
-   "pos": "DT",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-10-18T15:00:00-04:00",
-   "detail": "Knee",
-   "espn_id": "4039303"
-  },
   "name:BUF:mikedanna": {
    "name": "Mike Danna",
    "team": "BUF",
@@ -560,16 +580,6 @@
    "date": "2026-10-18T15:00:00-04:00",
    "detail": "Coach's Decision",
    "espn_id": "3915487"
-  },
-  "00-0036988": {
-   "name": "Joshua Palmer",
-   "team": "BUF",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-18T15:00:00-04:00",
-   "detail": null,
-   "espn_id": "4242433"
   },
   "name:BUF:judebowry": {
    "name": "Jude Bowry",
@@ -701,16 +711,6 @@
    "date": "2026-10-18T14:15:00-04:00",
    "detail": "Calf",
    "espn_id": "4714157"
-  },
-  "name:CAR:jaelanphillips": {
-   "name": "Jaelan Phillips",
-   "team": "CAR",
-   "pos": "LB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-18T13:54:00-04:00",
-   "detail": "Hamstring",
-   "espn_id": "4242975"
   },
   "name:CAR:monroefreeling": {
    "name": "Monroe Freeling",
@@ -892,9 +892,19 @@
    "pos": "S",
    "status": "Injured Reserve",
    "fantasy": "IR",
-   "date": "2026-10-18T15:13:00-04:00",
+   "date": "2026-10-18T15:28:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
+  },
+  "name:CHI:jonahjackson": {
+   "name": "Jonah Jackson",
+   "team": "CHI",
+   "pos": "G",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-18T15:19:00-04:00",
+   "detail": "Hip",
+   "espn_id": "3930040"
   },
   "00-0038416": {
    "name": "Tyson Bagent",
@@ -2948,6 +2958,36 @@
    "detail": null,
    "espn_id": "14880"
   },
+  "name:LAC:rodneyshelley": {
+   "name": "Rodney Shelley",
+   "team": "LAC",
+   "pos": "CB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T15:18:00-04:00",
+   "detail": "Hamstring",
+   "espn_id": "4838693"
+  },
+  "00-0041550": {
+   "name": "Brenen Thompson",
+   "team": "LAC",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-18T15:14:00-04:00",
+   "detail": null,
+   "espn_id": "4685553"
+  },
+  "name:LAC:buddupree": {
+   "name": "Bud Dupree",
+   "team": "LAC",
+   "pos": "LB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T15:13:00-04:00",
+   "detail": "Neck",
+   "espn_id": "2576702"
+  },
   "00-0040184": {
    "name": "KeAndre Lambert-Smith",
    "team": "LAC",
@@ -2957,16 +2997,6 @@
    "date": "2026-10-18T15:07:00-04:00",
    "detail": null,
    "espn_id": "4430870"
-  },
-  "name:LAC:rodneyshelley": {
-   "name": "Rodney Shelley",
-   "team": "LAC",
-   "pos": "CB",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-10-18T15:01:00-04:00",
-   "detail": "Hamstring",
-   "espn_id": "4838693"
   },
   "00-0040727": {
    "name": "Tre' Harris",
@@ -3008,26 +3038,6 @@
    "date": "2026-10-18T15:01:00-04:00",
    "detail": "Lower Leg",
    "espn_id": "4040842"
-  },
-  "name:LAC:buddupree": {
-   "name": "Bud Dupree",
-   "team": "LAC",
-   "pos": "LB",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-10-18T15:01:00-04:00",
-   "detail": "Neck",
-   "espn_id": "2576702"
-  },
-  "00-0041550": {
-   "name": "Brenen Thompson",
-   "team": "LAC",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-18T15:01:00-04:00",
-   "detail": null,
-   "espn_id": "4685553"
   },
   "name:LAC:joealt": {
    "name": "Joe Alt",
