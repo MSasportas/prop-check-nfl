@@ -1,5 +1,5 @@
 {
- "at": "2026-10-18T08:40:14-04:00",
+ "at": "2026-10-18T08:50:00-04:00",
  "source": "espn",
  "players": {
   "name:ARI:kitancrawford": {
@@ -1156,6 +1156,16 @@
    "detail": null,
    "espn_id": "4690070"
   },
+  "name:CLE:masongraham": {
+   "name": "Mason Graham",
+   "team": "CLE",
+   "pos": "DT",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-18T08:27:00-04:00",
+   "detail": "Knee - MCL",
+   "espn_id": "4873232"
+  },
   "00-0040784": {
    "name": "Quinshon Judkins",
    "team": "CLE",
@@ -1226,16 +1236,6 @@
    "date": "2026-10-16T21:44:00-04:00",
    "detail": "Ankle",
    "espn_id": "4876017"
-  },
-  "name:CLE:masongraham": {
-   "name": "Mason Graham",
-   "team": "CLE",
-   "pos": "DT",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-16T21:41:00-04:00",
-   "detail": "Knee - MCL",
-   "espn_id": "4873232"
   },
   "00-0041037": {
    "name": "Denzel Boston",
@@ -2829,6 +2829,16 @@
    "detail": null,
    "espn_id": "14880"
   },
+  "name:LAC:joealt": {
+   "name": "Joe Alt",
+   "team": "LAC",
+   "pos": "OT",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-10-18T08:31:00-04:00",
+   "detail": "Neck",
+   "espn_id": "4683487"
+  },
   "00-0040184": {
    "name": "KeAndre Lambert-Smith",
    "team": "LAC",
@@ -2901,16 +2911,6 @@
    "detail": "Hamstring",
    "espn_id": "4686612",
    "comment": "Harris (hamstring) has been ruled out for Sunday's game against the Chiefs."
-  },
-  "name:LAC:joealt": {
-   "name": "Joe Alt",
-   "team": "LAC",
-   "pos": "OT",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-16T16:15:00-04:00",
-   "detail": "Neck",
-   "espn_id": "4683487"
   },
   "name:LAC:kayodeawosika": {
    "name": "Kayode Awosika",
