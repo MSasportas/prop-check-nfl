@@ -174,10 +174,46 @@
  "2026_06_TEN_IND": {
   "_kickoff": "2026-10-18T13:00:00-04:00",
   "TEN": {
-   "confirmed": false,
-   "count": 0,
-   "players": [],
-   "confirmed_at": null
+   "confirmed": true,
+   "count": 7,
+   "players": [
+    {
+     "pid": null,
+     "name": "Alontae Taylor",
+     "pos": "CB"
+    },
+    {
+     "pid": null,
+     "name": "Brandon Crenshaw-Dickson",
+     "pos": "OT"
+    },
+    {
+     "pid": null,
+     "name": "Jackie Marshall",
+     "pos": "DT"
+    },
+    {
+     "pid": null,
+     "name": "Jordan Elliott",
+     "pos": "DT"
+    },
+    {
+     "pid": null,
+     "name": "Kevin Winston Jr.",
+     "pos": "S"
+    },
+    {
+     "pid": "00-0036876",
+     "name": "Kylen Granson",
+     "pos": "TE"
+    },
+    {
+     "pid": "00-0040886",
+     "name": "Nicholas Singleton",
+     "pos": "RB"
+    }
+   ],
+   "confirmed_at": "2026-10-18T11:40:00-04:00"
   },
   "IND": {
    "confirmed": false,

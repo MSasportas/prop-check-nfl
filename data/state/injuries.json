@@ -1,5 +1,5 @@
 {
- "at": "2026-10-18T11:30:00-04:00",
+ "at": "2026-10-18T11:40:00-04:00",
  "source": "espn",
  "players": {
   "name:ARI:kitancrawford": {
@@ -348,12 +348,11 @@
    "name": "Ja'Kobi Lane",
    "team": "BAL",
    "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
+   "status": "Active",
+   "fantasy": null,
    "date": "2026-10-17T16:16:00-04:00",
-   "detail": "Wrist",
-   "espn_id": "4870847",
-   "comment": "Lane (wrist) was activated from injured reserve by Baltimore on Saturday."
+   "detail": null,
+   "espn_id": "4870847"
   },
   "name:BAL:broderickwashington": {
    "name": "Broderick Washington Jr.",
@@ -370,7 +369,7 @@
    "team": "BAL",
    "pos": "C",
    "status": "Out",
-   "fantasy": "OUT",
+   "fantasy": "INACTIVE",
    "date": "2026-10-17T00:02:00-04:00",
    "detail": "Concussion",
    "espn_id": "4361178"
@@ -380,7 +379,7 @@
    "team": "BAL",
    "pos": "TE",
    "status": "Out",
-   "fantasy": "OUT",
+   "fantasy": "INACTIVE",
    "date": "2026-10-16T20:19:00-04:00",
    "detail": "Hand",
    "espn_id": "4432260",
@@ -421,7 +420,7 @@
    "team": "BAL",
    "pos": "QB",
    "status": "Out",
-   "fantasy": "OUT",
+   "fantasy": "INACTIVE",
    "date": "2026-10-16T12:43:00-04:00",
    "detail": "Ankle",
    "espn_id": "3916387",
@@ -1181,7 +1180,7 @@
    "team": "CLE",
    "pos": "RB",
    "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
+   "fantasy": "INACTIVE",
    "date": "2026-10-18T07:31:00-04:00",
    "detail": "Foot",
    "espn_id": "4685702",
@@ -2037,16 +2036,6 @@
    "date": "2026-10-18T10:58:00-04:00",
    "detail": "Concussion",
    "espn_id": "4243956"
-  },
-  "name:HOU:azeezalshaair": {
-   "name": "Azeez Al-Shaair",
-   "team": "HOU",
-   "pos": "LB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-18T10:55:00-04:00",
-   "detail": "Concussion",
-   "espn_id": "3919117"
   },
   "00-0039849": {
    "name": "Marvin Harrison Jr.",
@@ -3696,21 +3685,20 @@
    "name": "Alvin Kamara",
    "team": "NO",
    "pos": "RB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
+   "status": "Active",
+   "fantasy": null,
    "date": "2026-10-18T07:49:00-04:00",
-   "detail": "Back",
-   "espn_id": "3054850",
-   "comment": "Kamara (back), who is listed as questionable for Sunday's contest at the Giants, is expected to play, Ian Rapoport of NFL Network reports."
+   "detail": null,
+   "espn_id": "3054850"
   },
   "00-0037239": {
    "name": "Chris Olave",
    "team": "NO",
    "pos": "WR",
    "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
+   "fantasy": null,
    "date": "2026-10-18T07:44:00-04:00",
-   "detail": "Illness",
+   "detail": null,
    "espn_id": "4361370",
    "comment": "Olave (illness), who is listed as questionable for Sunday's game at the Giants, is expected to suit up, Ian Rapoport of NFL Network reports."
   },
@@ -3861,7 +3849,7 @@
    "pos": "OT",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-10-18T11:07:00-04:00",
+   "date": "2026-10-18T11:32:00-04:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
@@ -4104,7 +4092,7 @@
    "team": "NYJ",
    "pos": "WR",
    "status": "Out",
-   "fantasy": "OUT",
+   "fantasy": "INACTIVE",
    "date": "2026-10-16T11:32:00-04:00",
    "detail": "Finger",
    "espn_id": "4597500",
@@ -4279,7 +4267,7 @@
    "team": "PHI",
    "pos": "DE",
    "status": "Doubtful",
-   "fantasy": "DOUBTFUL",
+   "fantasy": "INACTIVE",
    "date": "2026-10-17T00:31:00-04:00",
    "detail": "Back",
    "espn_id": "4240585"
@@ -4370,7 +4358,7 @@
    "team": "PHI",
    "pos": "RB",
    "status": "Out",
-   "fantasy": "OUT",
+   "fantasy": "INACTIVE",
    "date": "2026-10-16T12:48:00-04:00",
    "detail": "Hamstring",
    "espn_id": "3929630",
@@ -4381,9 +4369,9 @@
    "team": "PHI",
    "pos": "QB",
    "status": "Active",
-   "fantasy": null,
+   "fantasy": "INACTIVE",
    "date": "2026-10-16T11:37:00-04:00",
-   "detail": null,
+   "detail": "Coach's Decision",
    "espn_id": "4360698"
   },
   "00-0038400": {
@@ -5174,6 +5162,78 @@
    "detail": null,
    "espn_id": "4034779"
   },
+  "name:TEN:kevinwinston": {
+   "name": "Kevin Winston Jr.",
+   "team": "TEN",
+   "pos": "S",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T11:32:00-04:00",
+   "detail": "Quadriceps",
+   "espn_id": "4685617"
+  },
+  "00-0040886": {
+   "name": "Nicholas Singleton",
+   "team": "TEN",
+   "pos": "RB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T11:32:00-04:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4685555",
+   "comment": "inactive"
+  },
+  "name:TEN:alontaetaylor": {
+   "name": "Alontae Taylor",
+   "team": "TEN",
+   "pos": "CB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T11:32:00-04:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4369835"
+  },
+  "name:TEN:jackiemarshall": {
+   "name": "Jackie Marshall",
+   "team": "TEN",
+   "pos": "DT",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T11:32:00-04:00",
+   "detail": "Coach's Decision",
+   "espn_id": "5081785"
+  },
+  "00-0036876": {
+   "name": "Kylen Granson",
+   "team": "TEN",
+   "pos": "TE",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T11:32:00-04:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4039160",
+   "comment": "inactive"
+  },
+  "name:TEN:brandoncrenshawdickson": {
+   "name": "Brandon Crenshaw-Dickson",
+   "team": "TEN",
+   "pos": "OT",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T11:32:00-04:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4426987"
+  },
+  "name:TEN:jordanelliott": {
+   "name": "Jordan Elliott",
+   "team": "TEN",
+   "pos": "DT",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T11:32:00-04:00",
+   "detail": "Personal",
+   "espn_id": "4039052"
+  },
   "00-0039648": {
    "name": "David Martin-Robinson",
    "team": "TEN",
@@ -5183,26 +5243,6 @@
    "date": "2026-10-16T21:55:00-04:00",
    "detail": null,
    "espn_id": "4360978"
-  },
-  "name:TEN:jordanelliott": {
-   "name": "Jordan Elliott",
-   "team": "TEN",
-   "pos": "DT",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-16T21:48:00-04:00",
-   "detail": "Personal",
-   "espn_id": "4039052"
-  },
-  "name:TEN:kevinwinston": {
-   "name": "Kevin Winston Jr.",
-   "team": "TEN",
-   "pos": "S",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-16T19:17:00-04:00",
-   "detail": "Quadriceps",
-   "espn_id": "4685617"
   },
   "00-0039032": {
    "name": "Tyjae Spears",
@@ -5264,16 +5304,6 @@
    "date": "2026-10-12T15:45:00-04:00",
    "detail": null,
    "espn_id": "4240657"
-  },
-  "00-0040886": {
-   "name": "Nicholas Singleton",
-   "team": "TEN",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-12T15:45:00-04:00",
-   "detail": null,
-   "espn_id": "4685555"
   },
   "00-0038117": {
    "name": "Wan'Dale Robinson",
@@ -5860,6 +5890,14 @@
   "00-0032104": {
    "status": "Questionable",
    "at": "2026-10-18T10:30:01-04:00"
+  },
+  "00-0040886": {
+   "status": "Out",
+   "at": "2026-10-18T11:40:00-04:00"
+  },
+  "00-0036876": {
+   "status": "Out",
+   "at": "2026-10-18T11:40:00-04:00"
   }
  }
 }
