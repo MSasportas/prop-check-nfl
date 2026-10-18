@@ -1,5 +1,5 @@
 {
- "at": "2026-10-18T11:10:00-04:00",
+ "at": "2026-10-18T11:20:00-04:00",
  "source": "espn",
  "players": {
   "name:ARI:kitancrawford": {
@@ -858,7 +858,7 @@
    "pos": "S",
    "status": "Out",
    "fantasy": "OUT",
-   "date": "2026-10-18T11:01:00-04:00",
+   "date": "2026-10-18T11:07:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
@@ -2035,7 +2035,7 @@
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
    "date": "2026-10-18T10:58:00-04:00",
-   "detail": "Head",
+   "detail": "Concussion",
    "espn_id": "4243956"
   },
   "name:HOU:azeezalshaair": {
@@ -2045,7 +2045,7 @@
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
    "date": "2026-10-18T10:55:00-04:00",
-   "detail": "Head",
+   "detail": "Concussion",
    "espn_id": "3919117"
   },
   "00-0039849": {
@@ -3861,7 +3861,7 @@
    "pos": "OT",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-10-18T11:04:00-04:00",
+   "date": "2026-10-18T11:07:00-04:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },

@@ -80,5 +80,110 @@
    ],
    "confirmed_at": "2026-10-18T08:20:01-04:00"
   }
+ },
+ "2026_06_BAL_CLE": {
+  "_kickoff": "2026-10-18T13:00:00-04:00",
+  "BAL": {
+   "confirmed": false,
+   "count": 0,
+   "players": [],
+   "confirmed_at": null
+  },
+  "CLE": {
+   "confirmed": false,
+   "count": 0,
+   "players": [],
+   "confirmed_at": null
+  }
+ },
+ "2026_06_CAR_PHI": {
+  "_kickoff": "2026-10-18T13:00:00-04:00",
+  "CAR": {
+   "confirmed": false,
+   "count": 0,
+   "players": [],
+   "confirmed_at": null
+  },
+  "PHI": {
+   "confirmed": false,
+   "count": 0,
+   "players": [],
+   "confirmed_at": null
+  }
+ },
+ "2026_06_CHI_ATL": {
+  "_kickoff": "2026-10-18T13:00:00-04:00",
+  "CHI": {
+   "confirmed": false,
+   "count": 0,
+   "players": [],
+   "confirmed_at": null
+  },
+  "ATL": {
+   "confirmed": false,
+   "count": 0,
+   "players": [],
+   "confirmed_at": null
+  }
+ },
+ "2026_06_NO_NYG": {
+  "_kickoff": "2026-10-18T13:00:00-04:00",
+  "NO": {
+   "confirmed": false,
+   "count": 0,
+   "players": [],
+   "confirmed_at": null
+  },
+  "NYG": {
+   "confirmed": false,
+   "count": 0,
+   "players": [],
+   "confirmed_at": null
+  }
+ },
+ "2026_06_NYJ_NE": {
+  "_kickoff": "2026-10-18T13:00:00-04:00",
+  "NYJ": {
+   "confirmed": false,
+   "count": 0,
+   "players": [],
+   "confirmed_at": null
+  },
+  "NE": {
+   "confirmed": false,
+   "count": 0,
+   "players": [],
+   "confirmed_at": null
+  }
+ },
+ "2026_06_PIT_TB": {
+  "_kickoff": "2026-10-18T13:00:00-04:00",
+  "PIT": {
+   "confirmed": false,
+   "count": 0,
+   "players": [],
+   "confirmed_at": null
+  },
+  "TB": {
+   "confirmed": false,
+   "count": 0,
+   "players": [],
+   "confirmed_at": null
+  }
+ },
+ "2026_06_TEN_IND": {
+  "_kickoff": "2026-10-18T13:00:00-04:00",
+  "TEN": {
+   "confirmed": false,
+   "count": 0,
+   "players": [],
+   "confirmed_at": null
+  },
+  "IND": {
+   "confirmed": false,
+   "count": 0,
+   "players": [],
+   "confirmed_at": null
+  }
  }
 }
