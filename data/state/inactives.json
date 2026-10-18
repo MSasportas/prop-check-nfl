@@ -295,10 +295,46 @@
    "confirmed_at": "2026-10-18T12:00:01-04:00"
   },
   "ATL": {
-   "confirmed": false,
-   "count": 0,
-   "players": [],
-   "confirmed_at": null
+   "confirmed": true,
+   "count": 7,
+   "players": [
+    {
+     "pid": null,
+     "name": "C.J. Henderson",
+     "pos": "CB"
+    },
+    {
+     "pid": null,
+     "name": "Christian Harris",
+     "pos": "LB"
+    },
+    {
+     "pid": "00-0033662",
+     "name": "Cooper Rush",
+     "pos": "QB"
+    },
+    {
+     "pid": null,
+     "name": "Drake Jackson",
+     "pos": "DE"
+    },
+    {
+     "pid": null,
+     "name": "Ethan Onianwa",
+     "pos": "OT"
+    },
+    {
+     "pid": "00-0041194",
+     "name": "Jack Strand",
+     "pos": "QB"
+    },
+    {
+     "pid": null,
+     "name": "Malcolm DeWalt IV",
+     "pos": "CB"
+    }
+   ],
+   "confirmed_at": "2026-10-18T12:10:00-04:00"
   }
  },
  "2026_06_NO_NYG": {
@@ -341,10 +377,41 @@
    "confirmed_at": "2026-10-18T12:00:01-04:00"
   },
   "NYG": {
-   "confirmed": false,
-   "count": 0,
-   "players": [],
-   "confirmed_at": null
+   "confirmed": true,
+   "count": 6,
+   "players": [
+    {
+     "pid": null,
+     "name": "CJ Okoye",
+     "pos": "DT"
+    },
+    {
+     "pid": null,
+     "name": "Colton Hood",
+     "pos": "CB"
+    },
+    {
+     "pid": "00-0038998",
+     "name": "Jake Haener",
+     "pos": "QB"
+    },
+    {
+     "pid": null,
+     "name": "Jermaine Eluemunor",
+     "pos": "OT"
+    },
+    {
+     "pid": "00-0039847",
+     "name": "Theo Johnson",
+     "pos": "TE"
+    },
+    {
+     "pid": null,
+     "name": "Tyler Nubin",
+     "pos": "S"
+    }
+   ],
+   "confirmed_at": "2026-10-18T12:10:00-04:00"
   }
  },
  "2026_06_NYJ_NE": {
@@ -469,10 +536,41 @@
    "confirmed_at": "2026-10-18T11:50:01-04:00"
   },
   "TB": {
-   "confirmed": false,
-   "count": 0,
-   "players": [],
-   "confirmed_at": null
+   "confirmed": true,
+   "count": 6,
+   "players": [
+    {
+     "pid": null,
+     "name": "Antoine Winfield Jr.",
+     "pos": "S"
+    },
+    {
+     "pid": "00-0034855",
+     "name": "Baker Mayfield",
+     "pos": "QB"
+    },
+    {
+     "pid": null,
+     "name": "Benjamin Morrison",
+     "pos": "CB"
+    },
+    {
+     "pid": null,
+     "name": "Billy Schrauth",
+     "pos": "G"
+    },
+    {
+     "pid": null,
+     "name": "DeMonte Capehart",
+     "pos": "DT"
+    },
+    {
+     "pid": null,
+     "name": "Luke Haggard",
+     "pos": "G"
+    }
+   ],
+   "confirmed_at": "2026-10-18T12:10:00-04:00"
   }
  },
  "2026_06_TEN_IND": {

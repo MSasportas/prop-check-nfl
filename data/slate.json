@@ -2,8 +2,8 @@
  "season": 2026,
  "week": 6,
  "label": "Week 6",
- "generated_at": "2026-10-18T12:00:01-04:00",
- "status_at": "2026-10-18T12:00:01-04:00",
+ "generated_at": "2026-10-18T12:10:00-04:00",
+ "status_at": "2026-10-18T12:10:00-04:00",
  "valid_until": "2026-10-20T06:00:00-04:00",
  "next_check": "2026-10-18T14:50:00-04:00",
  "status": {
@@ -14,11 +14,11 @@
   },
   "injuries": {
    "state": "ok",
-   "at": "2026-10-18T12:00:01-04:00"
+   "at": "2026-10-18T12:10:00-04:00"
   },
   "inactives": {
    "state": "ok",
-   "at": "2026-10-18T12:00:01-04:00",
+   "at": "2026-10-18T12:10:00-04:00",
    "note": "Posted for the 1:00 PM game."
   },
   "stats": {
@@ -37,7 +37,7 @@
   },
   "last_run": {
    "ok": true,
-   "at": "2026-10-18T12:00:01-04:00",
+   "at": "2026-10-18T12:10:00-04:00",
    "failed_step": null
   }
  },
@@ -125,11 +125,11 @@
    "started": false,
    "final": false,
    "score": null,
-   "settled": "injury_report",
+   "settled": "inactives",
    "props_state": "ok",
    "props_at": "2026-10-18T11:50:01-04:00",
    "lines_at": "2026-10-18T11:50:01-04:00",
-   "note": "Inactives not confirmed yet.",
+   "note": null,
    "picks": 3
   },
   {
@@ -142,11 +142,11 @@
    "started": false,
    "final": false,
    "score": null,
-   "settled": "injury_report",
+   "settled": "inactives",
    "props_state": "ok",
    "props_at": "2026-10-18T11:50:01-04:00",
    "lines_at": "2026-10-18T11:50:01-04:00",
-   "note": "Inactives not confirmed yet.",
+   "note": null,
    "picks": 2
   },
   {
@@ -176,11 +176,11 @@
    "started": false,
    "final": false,
    "score": null,
-   "settled": "injury_report",
+   "settled": "inactives",
    "props_state": "ok",
    "props_at": "2026-10-18T00:40:00-04:00",
    "lines_at": "2026-10-18T00:40:00-04:00",
-   "note": "Inactives not confirmed yet.",
+   "note": null,
    "picks": 0
   },
   {
@@ -480,7 +480,7 @@
    "p_pct": 63,
    "breakeven_pct": 56,
    "reason": "6.0 carries a game his last 5 (1 of 5 over 9.5).",
-   "settled": "injury_report",
+   "settled": "inactives",
    "state": "open",
    "thin": false,
    "pulled": null,
@@ -493,6 +493,10 @@
     {
      "at": "2026-10-18T11:50:01-04:00",
      "text": "Price now -125"
+    },
+    {
+     "at": "2026-10-18T12:10:00-04:00",
+     "text": "Inactives confirmed"
     }
    ]
   },
@@ -705,7 +709,7 @@
    "p_pct": 61,
    "breakeven_pct": 55,
    "reason": "9.0 yards on his longest catch a game his last 5 (0 of 5 over 18.5).",
-   "settled": "injury_report",
+   "settled": "inactives",
    "state": "open",
    "thin": false,
    "pulled": null,
@@ -714,6 +718,10 @@
     {
      "at": "2026-10-18T00:30:51-04:00",
      "text": "Posted at -120"
+    },
+    {
+     "at": "2026-10-18T12:10:00-04:00",
+     "text": "Inactives confirmed"
     }
    ]
   },
@@ -840,7 +848,7 @@
    "p_pct": 59,
    "breakeven_pct": 53,
    "reason": "19.2 yards on his longest catch a game his last 5 (2 of 5 over 24.5). NO allows the 8th fewest receiving yards to WRs.",
-   "settled": "injury_report",
+   "settled": "inactives",
    "state": "open",
    "thin": false,
    "pulled": null,
@@ -853,6 +861,10 @@
     {
      "at": "2026-10-18T11:50:01-04:00",
      "text": "Price now -115"
+    },
+    {
+     "at": "2026-10-18T12:10:00-04:00",
+     "text": "Inactives confirmed"
     }
    ]
   },
@@ -1221,7 +1233,7 @@
    "p_pct": 57,
    "breakeven_pct": 53,
    "reason": "12.2 yards on his longest catch a game his last 5 (1 of 5 over 15.5).",
-   "settled": "injury_report",
+   "settled": "inactives",
    "state": "open",
    "thin": false,
    "pulled": null,
@@ -1230,6 +1242,10 @@
     {
      "at": "2026-10-18T11:50:01-04:00",
      "text": "Posted at -115"
+    },
+    {
+     "at": "2026-10-18T12:10:00-04:00",
+     "text": "Inactives confirmed"
     }
    ]
   },
@@ -1262,7 +1278,7 @@
    "p_pct": 57,
    "breakeven_pct": 53,
    "reason": "98 receiving yards a game his last 5 (3 of 5 over 90.5).",
-   "settled": "injury_report",
+   "settled": "inactives",
    "state": "open",
    "thin": false,
    "pulled": null,
@@ -1271,6 +1287,10 @@
     {
      "at": "2026-10-18T11:50:01-04:00",
      "text": "Posted at -115"
+    },
+    {
+     "at": "2026-10-18T12:10:00-04:00",
+     "text": "Inactives confirmed"
     }
    ]
   },
