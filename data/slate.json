@@ -2,8 +2,8 @@
  "season": 2026,
  "week": 6,
  "label": "Week 6",
- "generated_at": "2026-10-18T11:50:13-04:00",
- "status_at": "2026-10-18T11:50:13-04:00",
+ "generated_at": "2026-10-18T12:00:01-04:00",
+ "status_at": "2026-10-18T12:00:01-04:00",
  "valid_until": "2026-10-20T06:00:00-04:00",
  "next_check": "2026-10-18T14:50:00-04:00",
  "status": {
@@ -14,11 +14,11 @@
   },
   "injuries": {
    "state": "ok",
-   "at": "2026-10-18T11:50:13-04:00"
+   "at": "2026-10-18T12:00:01-04:00"
   },
   "inactives": {
    "state": "ok",
-   "at": "2026-10-18T11:50:01-04:00",
+   "at": "2026-10-18T12:00:01-04:00",
    "note": "Posted for the 1:00 PM game."
   },
   "stats": {
@@ -37,7 +37,7 @@
   },
   "last_run": {
    "ok": true,
-   "at": "2026-10-18T11:50:13-04:00",
+   "at": "2026-10-18T12:00:01-04:00",
    "failed_step": null
   }
  },
@@ -129,7 +129,7 @@
    "props_state": "ok",
    "props_at": "2026-10-18T11:50:01-04:00",
    "lines_at": "2026-10-18T11:50:01-04:00",
-   "note": null,
+   "note": "Inactives not confirmed yet.",
    "picks": 3
   },
   {
@@ -146,7 +146,7 @@
    "props_state": "ok",
    "props_at": "2026-10-18T11:50:01-04:00",
    "lines_at": "2026-10-18T11:50:01-04:00",
-   "note": null,
+   "note": "Inactives not confirmed yet.",
    "picks": 2
   },
   {
@@ -159,7 +159,7 @@
    "started": false,
    "final": false,
    "score": null,
-   "settled": "injury_report",
+   "settled": "inactives",
    "props_state": "ok",
    "props_at": "2026-10-18T11:50:01-04:00",
    "lines_at": "2026-10-18T11:50:01-04:00",
@@ -180,7 +180,7 @@
    "props_state": "ok",
    "props_at": "2026-10-18T00:40:00-04:00",
    "lines_at": "2026-10-18T00:40:00-04:00",
-   "note": null,
+   "note": "Inactives not confirmed yet.",
    "picks": 0
   },
   {
@@ -566,7 +566,7 @@
    "p_pct": 61,
    "breakeven_pct": 57,
    "reason": "11.4 carries a game his last 5 (1 of 5 over 14.5).",
-   "settled": "injury_report",
+   "settled": "inactives",
    "state": "open",
    "thin": false,
    "pulled": null,
@@ -579,6 +579,10 @@
     {
      "at": "2026-10-18T11:50:01-04:00",
      "text": "Price now -130"
+    },
+    {
+     "at": "2026-10-18T12:00:01-04:00",
+     "text": "Inactives confirmed"
     }
    ]
   },
@@ -791,7 +795,7 @@
    "p_pct": 60,
    "breakeven_pct": 51,
    "reason": "1.4 catches a game his last 5 (1 of 5 over 2.5). His team is projected for 17.8 points.",
-   "settled": "injury_report",
+   "settled": "inactives",
    "state": "open",
    "thin": false,
    "pulled": null,
@@ -800,6 +804,10 @@
     {
      "at": "2026-10-18T00:30:51-04:00",
      "text": "Posted at -105"
+    },
+    {
+     "at": "2026-10-18T12:00:01-04:00",
+     "text": "Inactives confirmed"
     }
    ]
   },
@@ -1295,7 +1303,7 @@
    "p_pct": 57,
    "breakeven_pct": 53,
    "reason": "103 passing yards a game in the 1st half his last 5 (1 of 5 over 124.5). NYJ allows the 4th fewest passing yards.",
-   "settled": "injury_report",
+   "settled": "inactives",
    "state": "open",
    "thin": false,
    "pulled": null,
@@ -1304,6 +1312,10 @@
     {
      "at": "2026-10-18T11:50:01-04:00",
      "text": "Posted at -115"
+    },
+    {
+     "at": "2026-10-18T12:00:01-04:00",
+     "text": "Inactives confirmed"
     }
    ]
   },

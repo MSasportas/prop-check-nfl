@@ -3,10 +3,10 @@
  "season": 2026,
  "week": 6,
  "slate": "2026-W06",
- "started_at": "2026-10-18T11:50:01-04:00",
- "status_at": "2026-10-18T11:50:01-04:00",
- "finished_at": "2026-10-18T11:50:02-04:00",
- "last_ok_at": "2026-10-18T11:50:01-04:00",
+ "started_at": "2026-10-18T12:00:01-04:00",
+ "status_at": "2026-10-18T12:00:01-04:00",
+ "finished_at": "2026-10-18T12:00:02-04:00",
+ "last_ok_at": "2026-10-18T12:00:01-04:00",
  "failed_step": null,
  "steps": [
   {
@@ -32,7 +32,7 @@
   {
    "step": "injuries",
    "status": "ok",
-   "note": "espn: 178 out, 81 questionable; inactives posted for 10 team(s)"
+   "note": "espn: 191 out, 67 questionable; inactives posted for 13 team(s)"
   },
   {
    "step": "weather",
@@ -42,12 +42,12 @@
   {
    "step": "odds",
    "status": "ok",
-   "note": "6 read(s) (C)"
+   "note": "no pull due"
   },
   {
    "step": "engine",
    "status": "ok",
-   "note": "16 new event(s): 4 shown, 1 pulled"
+   "note": "3 new event(s): 0 shown, 0 pulled"
   },
   {
    "step": "grade",
@@ -128,38 +128,7 @@
   "at": "2026-10-18T11:50:01-04:00",
   "next_at": "2026-10-18T14:50:00-04:00"
  },
- "due": [
-  {
-   "pull": "C",
-   "game_id": "2026_06_BAL_CLE",
-   "cost_max": 5
-  },
-  {
-   "pull": "C",
-   "game_id": "2026_06_CAR_PHI",
-   "cost_max": 5
-  },
-  {
-   "pull": "C",
-   "game_id": "2026_06_CHI_ATL",
-   "cost_max": 3
-  },
-  {
-   "pull": "C",
-   "game_id": "2026_06_NO_NYG",
-   "cost_max": 4
-  },
-  {
-   "pull": "C",
-   "game_id": "2026_06_NYJ_NE",
-   "cost_max": 5
-  },
-  {
-   "pull": "C",
-   "game_id": "2026_06_TEN_IND",
-   "cost_max": 4
-  }
- ],
+ "due": [],
  "skipped_games": [],
  "unmatched_names": [
   "Drew Ogletree",
@@ -170,16 +139,16 @@
  "behind": {},
  "stats_problems": [],
  "games_this_week": 14,
- "record_events": 73,
+ "record_events": 76,
  "grade_checks": [],
  "odds_notes": [],
  "runner": {
   "event": "workflow_dispatch",
-  "run_id": "39139245995",
-  "iteration": 5,
-  "chain_link": 312,
+  "run_id": "39142260140",
+  "iteration": 2,
+  "chain_link": 313,
   "chain_started_at": "2026-10-18T00:30:50-04:00",
-  "run_started_at": "2026-10-18T11:10:13-04:00"
+  "run_started_at": "2026-10-18T11:50:12-04:00"
  },
  "live_page": {
   "checked_at": "2026-10-18T11:10:13-04:00",

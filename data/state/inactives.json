@@ -127,7 +127,7 @@
   },
   "CLE": {
    "confirmed": true,
-   "count": 6,
+   "count": 7,
    "players": [
     {
      "pid": null,
@@ -148,6 +148,11 @@
      "pid": null,
      "name": "Parker Brailsford",
      "pos": "C"
+    },
+    {
+     "pid": "00-0040784",
+     "name": "Quinshon Judkins",
+     "pos": "RB"
     },
     {
      "pid": "00-0041092",
@@ -248,10 +253,46 @@
  "2026_06_CHI_ATL": {
   "_kickoff": "2026-10-18T13:00:00-04:00",
   "CHI": {
-   "confirmed": false,
-   "count": 0,
-   "players": [],
-   "confirmed_at": null
+   "confirmed": true,
+   "count": 7,
+   "players": [
+    {
+     "pid": "00-0028986",
+     "name": "Case Keenum",
+     "pos": "QB"
+    },
+    {
+     "pid": null,
+     "name": "Jayden Loving",
+     "pos": "DT"
+    },
+    {
+     "pid": null,
+     "name": "Jordan McFadden",
+     "pos": "G"
+    },
+    {
+     "pid": null,
+     "name": "Keyshaun Elliott",
+     "pos": "LB"
+    },
+    {
+     "pid": "00-0040236",
+     "name": "Kyle Monangai",
+     "pos": "RB"
+    },
+    {
+     "pid": null,
+     "name": "T.J. Edwards",
+     "pos": "LB"
+    },
+    {
+     "pid": null,
+     "name": "Tyrique Stevenson Sr.",
+     "pos": "CB"
+    }
+   ],
+   "confirmed_at": "2026-10-18T12:00:01-04:00"
   },
   "ATL": {
    "confirmed": false,
@@ -263,10 +304,41 @@
  "2026_06_NO_NYG": {
   "_kickoff": "2026-10-18T13:00:00-04:00",
   "NO": {
-   "confirmed": false,
-   "count": 0,
-   "players": [],
-   "confirmed_at": null
+   "confirmed": true,
+   "count": 6,
+   "players": [
+    {
+     "pid": null,
+     "name": "Anfernee Jennings",
+     "pos": "LB"
+    },
+    {
+     "pid": null,
+     "name": "John Ridgeway III",
+     "pos": "DT"
+    },
+    {
+     "pid": null,
+     "name": "Kaden Elliss",
+     "pos": "LB"
+    },
+    {
+     "pid": null,
+     "name": "Mike Reid",
+     "pos": "CB"
+    },
+    {
+     "pid": null,
+     "name": "Nathan Shepherd",
+     "pos": "DT"
+    },
+    {
+     "pid": "00-0037013",
+     "name": "Zach Wilson",
+     "pos": "QB"
+    }
+   ],
+   "confirmed_at": "2026-10-18T12:00:01-04:00"
   },
   "NYG": {
    "confirmed": false,
@@ -315,10 +387,41 @@
    "confirmed_at": "2026-10-18T11:50:01-04:00"
   },
   "NE": {
-   "confirmed": false,
-   "count": 0,
-   "players": [],
-   "confirmed_at": null
+   "confirmed": true,
+   "count": 6,
+   "players": [
+    {
+     "pid": "00-0041123",
+     "name": "Behren Morton",
+     "pos": "QB"
+    },
+    {
+     "pid": null,
+     "name": "Carlton Davis III",
+     "pos": "CB"
+    },
+    {
+     "pid": null,
+     "name": "Channing Canada",
+     "pos": "CB"
+    },
+    {
+     "pid": null,
+     "name": "Dametrious Crownover",
+     "pos": "OT"
+    },
+    {
+     "pid": null,
+     "name": "Karon Prunty",
+     "pos": "CB"
+    },
+    {
+     "pid": "00-0041314",
+     "name": "Tanner Arkin",
+     "pos": "TE"
+    }
+   ],
+   "confirmed_at": "2026-10-18T12:00:01-04:00"
   }
  },
  "2026_06_PIT_TB": {
