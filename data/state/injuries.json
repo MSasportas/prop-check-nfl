@@ -1,5 +1,5 @@
 {
- "at": "2026-10-18T15:30:00-04:00",
+ "at": "2026-10-18T15:40:00-04:00",
  "source": "espn",
  "players": {
   "00-0041561": {
@@ -205,25 +205,25 @@
    "detail": null,
    "espn_id": "4361307"
   },
+  "name:ATL:billybowman": {
+   "name": "Billy Bowman Jr.",
+   "team": "ATL",
+   "pos": "CB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-18T15:32:00-04:00",
+   "detail": "Hamstring",
+   "espn_id": "4431194"
+  },
   "name:ATL:kendaldaniels": {
    "name": "Kendal Daniels",
    "team": "ATL",
    "pos": "LB",
    "status": "Out",
    "fantasy": "OUT",
-   "date": "2026-10-18T15:12:00-04:00",
+   "date": "2026-10-18T15:29:00-04:00",
    "detail": "Neck",
    "espn_id": "4595343"
-  },
-  "name:ATL:avieonterrell": {
-   "name": "Avieon Terrell",
-   "team": "ATL",
-   "pos": "CB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-18T14:55:00-04:00",
-   "detail": "Oblique",
-   "espn_id": "4870988"
   },
   "name:ATL:divinedeablo": {
    "name": "Divine Deablo",
@@ -708,7 +708,7 @@
    "pos": "LB",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-10-18T14:15:00-04:00",
+   "date": "2026-10-18T15:20:00-04:00",
    "detail": "Calf",
    "espn_id": "4714157"
   },
@@ -3782,6 +3782,16 @@
    "detail": null,
    "espn_id": "4431431"
   },
+  "name:NO:koolaidmckinstry": {
+   "name": "Kool-Aid McKinstry",
+   "team": "NO",
+   "pos": "CB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-18T15:16:00-04:00",
+   "detail": "Illness",
+   "espn_id": "4433975"
+  },
   "name:NO:cesarruiz": {
    "name": "Cesar Ruiz",
    "team": "NO",
@@ -3950,9 +3960,20 @@
    "pos": "OT",
    "status": "Out",
    "fantasy": "INACTIVE",
-   "date": "2026-10-18T15:16:00-04:00",
+   "date": "2026-10-18T15:32:00-04:00",
    "detail": "Calf",
    "espn_id": "3115303"
+  },
+  "00-0036309": {
+   "name": "Darnell Mooney",
+   "team": "NYG",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-18T15:27:00-04:00",
+   "detail": "Neck",
+   "espn_id": "4040655",
+   "comment": "questionable"
   },
   "name:NYG:gregnewsome": {
    "name": "Greg Newsome II",
@@ -3960,7 +3981,7 @@
    "pos": "CB",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-10-18T15:02:00-04:00",
+   "date": "2026-10-18T15:26:00-04:00",
    "detail": "Concussion",
    "espn_id": "4361266"
   },
@@ -4045,16 +4066,6 @@
    "date": "2026-10-18T08:47:00-04:00",
    "detail": null,
    "espn_id": "4696981"
-  },
-  "00-0036309": {
-   "name": "Darnell Mooney",
-   "team": "NYG",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-15T20:01:00-04:00",
-   "detail": null,
-   "espn_id": "4040655"
   },
   "00-0039923": {
    "name": "J.J. McCarthy",
@@ -4278,7 +4289,7 @@
    "date": "2026-10-18T15:01:00-04:00",
    "detail": "Shoulder",
    "espn_id": "4714365",
-   "comment": "Steele (shoulder) has been ruled out for the remainder of Sunday's game against the Panthers."
+   "comment": "Steele has been ruled out for the remainder of Sunday's game against the Panthers due to a shoulder injury."
   },
   "name:PHI:nolansmith": {
    "name": "Nolan Smith Jr.",
@@ -6142,6 +6153,10 @@
   "00-0040906": {
    "status": "Out",
    "at": "2026-10-18T15:20:00-04:00"
+  },
+  "00-0036309": {
+   "status": "Questionable",
+   "at": "2026-10-18T15:40:00-04:00"
   }
  }
 }
