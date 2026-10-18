@@ -22,6 +22,7 @@ Settledness per player's team: early -> injury_report -> inactives (only moves f
 A shown pick is never silently removed: each run it keeps its price (a new one is appended to the Record), is
 pulled with a plain reason, or locks at kickoff. slate.json is rebuilt from the Record each run.
 """
+import re
 import hashlib
 import itertools
 from datetime import timedelta
@@ -159,11 +160,25 @@ def pcts(e):
     return pct_floor(e["p"]), pct_round(e["b"])
 
 
-def reason_text(why_parts, limit=120):
-    """'7.4 catches a game his last 5 (3 of 5 over 6.5). DEN allows the 4th fewest catches to WRs.'"""
+def _supports(part, side):
+    """False when a context clause argues against the side (e.g. 'allows the most' on an under)."""
+    s = part.lower()
+    if " allows the " in s:
+        return ("most" in s) == (side == "over")
+    m = re.search(r"projected for ([\d.]+) points", s)
+    if m and side in ("over", "under"):
+        return (float(m.group(1)) > model.PARAMS["lg_team_total"]) == (side == "over")
+    return True
+
+
+def reason_text(why_parts, limit=120, side=None):
+    """'7.4 catches a game his last 5 (3 of 5 over 6.5). DEN allows the 4th fewest catches to WRs.'
+    Context clauses that argue against the side are left out."""
     parts = [w.strip() for w in (why_parts or []) if w and w.strip()]
     if not parts:
         return None
+    if side:
+        parts = parts[:1] + [w for w in parts[1:] if _supports(w, side)]
     cap = lambda s: s[0].upper() + s[1:]
     out = cap(parts[0]) + "."
     if len(parts) > 1 and len(out) + 1 + len(parts[1]) + 1 <= limit:
@@ -644,7 +659,7 @@ def evaluate(inp, paused=(), block_new=False):
         if code:
             new.append({"t": "pulled", "id": i, "at": at, "code": code, "reason": text, "seen_price": price})
             continue
-        reason = (reason_text(why, v.get("reason_max_chars", 120)) if why else None) or it["reason"]
+        reason = (reason_text(why, v.get("reason_max_chars", 120), sh["side"]) if why else None) or it["reason"]
         p_pct, b_pct = pcts(e)
         if price != record.last_price(it):
             new.append({"t": "price", "id": i, "at": at, "price": price, "price_at": common.iso(price_at),
@@ -685,7 +700,7 @@ def evaluate(inp, paused=(), block_new=False):
             "price_at": common.iso(c["price_at"]), "p": round(e["p"], 4), "breakeven": round(e["b"], 4),
             "fair": round(e["fair"], 4), "p_pct": pcts(e)[0], "breakeven_pct": pcts(e)[1],
             "model": round(e["model"], 4), "model_adj": round(e["model_adj"], 4), "mu": round(mm["mu"], 2),
-            "reason": reason_text(mm["why"], v.get("reason_max_chars", 120)), "state": c["settled"], "thin": bool(mm["thin"]),
+            "reason": reason_text(mm["why"], v.get("reason_max_chars", 120), c["side"]), "state": c["settled"], "thin": bool(mm["thin"]),
             "games_used": mm["n"], "games_this_season": mm["n_season"], "flags": mm["flags"],
             "lines_from": mm["ctx_source"],
         }

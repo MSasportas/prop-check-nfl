@@ -104,8 +104,11 @@ def game_doc(g, now, cache, view, settled, picks_count, props_state, note):
         if a is not None and h is not None:
             score = {"away": a, "home": h}
     gv = view.get(g["id"]) or {}
+    started = sched.started(g, now, cache)
+    if started and props_state != "ok":
+        props_state, note = "closed", None          # kicked off: no "props not posted yet" or "next check" talk
     return {"id": g["id"], "away": g["away"], "home": g["home"], "kickoff": g["start"], "day": g["date"],
-            "roof": g.get("roof") or None, "started": sched.started(g, now, cache), "final": bool(final),
+            "roof": g.get("roof") or None, "started": started, "final": bool(final),
             "score": score, "settled": settled, "props_state": props_state,
             "props_at": common.iso(gv["props_at"]) if gv.get("props_at") else None,
             "lines_at": common.iso(gv["lines_at"]) if gv.get("lines_at") else None, "note": note,
@@ -313,9 +316,13 @@ def player_log(store, pid, team, season, before, n=10):
         out.append({"season": season, "week": r["week"], "opp": r["opp"], "home": bool(r["home"]), "played": True,
                     "snap_pct": int(round(r["snap"] * 100)) if r.get("snap") is not None else None,
                     "fg": statline(r, ""), "h1": statline(r, "h_")})
+    seen = {(x["season"], x["week"]) for x in out if x["played"]}       # a traded player: the game he played wins
+    out = [x for x in out if x["played"] or (x["season"], x["week"]) not in seen]
     out.sort(key=lambda x: (x["season"], x["week"]))
     need = n - len(out)
-    prev = [r for r in rows if r["season"] == season - 1 and r["stype"] == "REG"][-need:] if need > 0 else []
+    # last season's tail, playoffs included (the pick reasons count them too)
+    prev = [r for r in rows if r["season"] == season - 1 and r["stype"] in ("REG", "POST")]
+    prev = sorted(prev, key=lambda r: (r["date"], r["week"]))[-need:] if need > 0 else []
     pre = [{"season": r["season"], "week": r["week"], "opp": r["opp"], "home": bool(r["home"]), "played": True,
             "snap_pct": int(round(r["snap"] * 100)) if r.get("snap") is not None else None,
             "fg": statline(r, ""), "h1": statline(r, "h_")} for r in prev]
