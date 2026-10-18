@@ -1,5 +1,5 @@
 {
- "at": "2026-10-18T12:20:00-04:00",
+ "at": "2026-10-18T12:30:01-04:00",
  "source": "espn",
  "players": {
   "name:ARI:kitancrawford": {
@@ -861,7 +861,7 @@
    "pos": "S",
    "status": "Out",
    "fantasy": "OUT",
-   "date": "2026-10-18T12:12:00-04:00",
+   "date": "2026-10-18T12:20:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
@@ -1169,6 +1169,16 @@
    "detail": null,
    "espn_id": "4690070"
   },
+  "name:CLE:masongraham": {
+   "name": "Mason Graham",
+   "team": "CLE",
+   "pos": "DT",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T12:24:00-04:00",
+   "detail": "Knee - MCL",
+   "espn_id": "4873232"
+  },
   "00-0040784": {
    "name": "Quinshon Judkins",
    "team": "CLE",
@@ -1230,16 +1240,6 @@
    "date": "2026-10-18T11:35:00-04:00",
    "detail": "Coach's Decision",
    "espn_id": "4816090"
-  },
-  "name:CLE:masongraham": {
-   "name": "Mason Graham",
-   "team": "CLE",
-   "pos": "DT",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-10-18T08:27:00-04:00",
-   "detail": "Knee - MCL",
-   "espn_id": "4873232"
   },
   "name:CLE:kaliadavis": {
    "name": "Kalia Davis",
@@ -4123,6 +4123,16 @@
    "detail": null,
    "espn_id": "4808766"
   },
+  "00-0038400": {
+   "name": "Tanner McKee",
+   "team": "PHI",
+   "pos": "QB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-18T12:16:00-04:00",
+   "detail": null,
+   "espn_id": "4685201"
+  },
   "name:PHI:ajepenesa": {
    "name": "AJ Epenesa",
    "team": "PHI",
@@ -4319,16 +4329,6 @@
    "detail": "Foot",
    "espn_id": "4431545",
    "comment": "The Eagles placed Shipley (foot) on injured reserve Friday."
-  },
-  "00-0038400": {
-   "name": "Tanner McKee",
-   "team": "PHI",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-15T13:29:00-04:00",
-   "detail": null,
-   "espn_id": "4685201"
   },
   "00-0041490": {
    "name": "Eli Heidenreich",
