@@ -1,5 +1,5 @@
 {
- "at": "2026-10-18T11:40:00-04:00",
+ "at": "2026-10-18T11:50:01-04:00",
  "source": "espn",
  "players": {
   "name:ARI:kitancrawford": {
@@ -344,23 +344,44 @@
    "detail": null,
    "espn_id": "3043275"
   },
-  "00-0040870": {
-   "name": "Ja'Kobi Lane",
+  "00-0040876": {
+   "name": "Elijah Sarratt",
    "team": "BAL",
    "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-17T16:16:00-04:00",
-   "detail": null,
-   "espn_id": "4870847"
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T11:33:00-04:00",
+   "detail": "Coach's Decision",
+   "espn_id": "5088338",
+   "comment": "inactive"
+  },
+  "name:BAL:andrewvorhees": {
+   "name": "Andrew Vorhees",
+   "team": "BAL",
+   "pos": "G",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T11:33:00-04:00",
+   "detail": "Foot",
+   "espn_id": "4243220"
+  },
+  "name:BAL:kvonwallace": {
+   "name": "K'Von Wallace",
+   "team": "BAL",
+   "pos": "CB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T11:33:00-04:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4035463"
   },
   "name:BAL:broderickwashington": {
    "name": "Broderick Washington Jr.",
    "team": "BAL",
    "pos": "DT",
    "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-17T00:07:00-04:00",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T11:33:00-04:00",
    "detail": "Ankle",
    "espn_id": "3915837"
   },
@@ -370,7 +391,7 @@
    "pos": "C",
    "status": "Out",
    "fantasy": "INACTIVE",
-   "date": "2026-10-17T00:02:00-04:00",
+   "date": "2026-10-18T11:33:00-04:00",
    "detail": "Concussion",
    "espn_id": "4361178"
   },
@@ -380,10 +401,31 @@
    "pos": "TE",
    "status": "Out",
    "fantasy": "INACTIVE",
-   "date": "2026-10-16T20:19:00-04:00",
+   "date": "2026-10-18T11:33:00-04:00",
    "detail": "Hand",
    "espn_id": "4432260",
-   "comment": "Hibner (hand) has been ruled out for Sunday's game against the Browns."
+   "comment": "inactive"
+  },
+  "00-0034796": {
+   "name": "Lamar Jackson",
+   "team": "BAL",
+   "pos": "QB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T11:33:00-04:00",
+   "detail": "Ankle",
+   "espn_id": "3916387",
+   "comment": "inactive"
+  },
+  "00-0040870": {
+   "name": "Ja'Kobi Lane",
+   "team": "BAL",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-17T16:16:00-04:00",
+   "detail": null,
+   "espn_id": "4870847"
   },
   "00-0035993": {
    "name": "Tyler Huntley",
@@ -415,17 +457,6 @@
    "detail": null,
    "espn_id": "4429615"
   },
-  "00-0034796": {
-   "name": "Lamar Jackson",
-   "team": "BAL",
-   "pos": "QB",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-10-16T12:43:00-04:00",
-   "detail": "Ankle",
-   "espn_id": "3916387",
-   "comment": "Jackson (ankle) isn't practicing Friday, making him unlikely to play Sunday at Cleveland, according to Brian Wacker of The Baltimore Sun."
-  },
   "00-0032394": {
    "name": "Nick Vannett",
    "team": "BAL",
@@ -436,16 +467,6 @@
    "detail": null,
    "espn_id": "2576399"
   },
-  "name:BAL:emeryjones": {
-   "name": "Emery Jones Jr.",
-   "team": "BAL",
-   "pos": "OT",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-14T18:25:00-04:00",
-   "detail": "Ankle",
-   "espn_id": "4685736"
-  },
   "00-0034975": {
    "name": "Justice Hill",
    "team": "BAL",
@@ -455,26 +476,6 @@
    "date": "2026-10-13T22:01:00-04:00",
    "detail": null,
    "espn_id": "4038441"
-  },
-  "name:BAL:andrewvorhees": {
-   "name": "Andrew Vorhees",
-   "team": "BAL",
-   "pos": "G",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-13T13:10:00-04:00",
-   "detail": "Foot",
-   "espn_id": "4243220"
-  },
-  "00-0040876": {
-   "name": "Elijah Sarratt",
-   "team": "BAL",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-12T14:57:00-04:00",
-   "detail": null,
-   "espn_id": "5088338"
   },
   "00-0034753": {
    "name": "Mark Andrews",
@@ -648,6 +649,79 @@
    "detail": "Hamstring",
    "espn_id": "4427348"
   },
+  "name:CAR:albertreese": {
+   "name": "Albert Reese IV",
+   "team": "CAR",
+   "pos": "OT",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T11:44:00-04:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4683506"
+  },
+  "00-0039356": {
+   "name": "Ja'Tavion Sanders",
+   "team": "CAR",
+   "pos": "TE",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T11:44:00-04:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4431588",
+   "comment": "inactive"
+  },
+  "name:CAR:torricellisimpkins": {
+   "name": "Torricelli Simpkins III",
+   "team": "CAR",
+   "pos": "G",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T11:44:00-04:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4696902"
+  },
+  "00-0041149": {
+   "name": "Haynes King",
+   "team": "CAR",
+   "pos": "QB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T11:44:00-04:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4428993",
+   "comment": "inactive"
+  },
+  "name:CAR:terahedwards": {
+   "name": "TeRah Edwards",
+   "team": "CAR",
+   "pos": "DT",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T11:44:00-04:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4431077"
+  },
+  "name:CAR:monroefreeling": {
+   "name": "Monroe Freeling",
+   "team": "CAR",
+   "pos": "OT",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T11:44:00-04:00",
+   "detail": "Knee",
+   "espn_id": "4870694"
+  },
+  "00-0036265": {
+   "name": "AJ Dillon",
+   "team": "CAR",
+   "pos": "RB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T11:44:00-04:00",
+   "detail": "Ankle",
+   "espn_id": "4239934",
+   "comment": "inactive"
+  },
   "name:CAR:taylormoton": {
    "name": "Taylor Moton",
    "team": "CAR",
@@ -679,26 +753,6 @@
    "espn_id": "4685350",
    "comment": "The Panthers activated Etienne (ankle) from injured reserve Saturday."
   },
-  "name:CAR:monroefreeling": {
-   "name": "Monroe Freeling",
-   "team": "CAR",
-   "pos": "OT",
-   "status": "Doubtful",
-   "fantasy": "DOUBTFUL",
-   "date": "2026-10-16T23:34:00-04:00",
-   "detail": "Knee",
-   "espn_id": "4870694"
-  },
-  "name:CAR:damienlewis": {
-   "name": "Damien Lewis",
-   "team": "CAR",
-   "pos": "G",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-16T23:28:00-04:00",
-   "detail": "Elbow",
-   "espn_id": "4362647"
-  },
   "00-0037005": {
    "name": "Tommy Tremble",
    "team": "CAR",
@@ -708,27 +762,6 @@
    "date": "2026-10-16T19:54:00-04:00",
    "detail": null,
    "espn_id": "4372780"
-  },
-  "name:CAR:jaelanphillips": {
-   "name": "Jaelan Phillips",
-   "team": "CAR",
-   "pos": "LB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-16T19:48:00-04:00",
-   "detail": "Hamstring",
-   "espn_id": "4242975"
-  },
-  "00-0036265": {
-   "name": "AJ Dillon",
-   "team": "CAR",
-   "pos": "RB",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-16T16:51:00-04:00",
-   "detail": "Ankle",
-   "espn_id": "4239934",
-   "comment": "Dillon (ankle) has been ruled out for Sunday's game against the Eagles."
   },
   "00-0031610": {
    "name": "Darren Waller",
@@ -801,16 +834,6 @@
    "detail": "Knee",
    "espn_id": "4427132"
   },
-  "00-0039356": {
-   "name": "Ja'Tavion Sanders",
-   "team": "CAR",
-   "pos": "TE",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-05T14:31:00-04:00",
-   "detail": null,
-   "espn_id": "4431588"
-  },
   "00-0039150": {
    "name": "Bryce Young",
    "team": "CAR",
@@ -831,35 +854,25 @@
    "detail": null,
    "espn_id": "4241416"
   },
-  "00-0040124": {
-   "name": "Tetairoa McMillan",
-   "team": "CAR",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-05T00:04:00-04:00",
-   "detail": null,
-   "espn_id": "4685472"
-  },
-  "00-0041149": {
-   "name": "Haynes King",
-   "team": "CAR",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-04T19:08:00-04:00",
-   "detail": null,
-   "espn_id": "4428993"
-  },
   "name:CHI:anthonyjohnson": {
    "name": "Anthony Johnson Jr.",
    "team": "CHI",
    "pos": "S",
    "status": "Out",
    "fantasy": "OUT",
-   "date": "2026-10-18T11:22:00-04:00",
+   "date": "2026-10-18T11:43:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
+  },
+  "00-0039918": {
+   "name": "Caleb Williams",
+   "team": "CHI",
+   "pos": "QB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-18T11:43:00-04:00",
+   "detail": null,
+   "espn_id": "4431611"
   },
   "name:CHI:dayoodeyingbo": {
    "name": "Dayo Odeyingbo",
@@ -890,17 +903,6 @@
    "date": "2026-10-17T19:16:00-04:00",
    "detail": "Calf",
    "espn_id": "4361093"
-  },
-  "00-0039918": {
-   "name": "Caleb Williams",
-   "team": "CHI",
-   "pos": "QB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-17T16:37:00-04:00",
-   "detail": "Hamstring",
-   "espn_id": "4431611",
-   "comment": "Williams (hamstring) remains listed as questionable for Sunday's game against the Falcons but is expected to start, Adam Schefter of ESPN reports."
   },
   "name:CHI:keyshaunelliott": {
    "name": "Keyshaun Elliott",
@@ -1155,25 +1157,66 @@
    "detail": null,
    "espn_id": "4690070"
   },
-  "name:CLE:carsonschwesinger": {
-   "name": "Carson Schwesinger",
-   "team": "CLE",
-   "pos": "LB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-18T09:23:00-04:00",
-   "detail": "Ankle",
-   "espn_id": "4876017"
-  },
   "name:CLE:masongraham": {
    "name": "Mason Graham",
    "team": "CLE",
    "pos": "DT",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-18T08:27:00-04:00",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T11:35:00-04:00",
    "detail": "Knee - MCL",
    "espn_id": "4873232"
+  },
+  "00-0041092": {
+   "name": "Taylen Green",
+   "team": "CLE",
+   "pos": "QB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T11:35:00-04:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4431325",
+   "comment": "inactive"
+  },
+  "name:CLE:mikehall": {
+   "name": "Mike Hall Jr.",
+   "team": "CLE",
+   "pos": "DT",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T11:35:00-04:00",
+   "detail": "Ankle",
+   "espn_id": "4600415"
+  },
+  "name:CLE:noahigbinoghene": {
+   "name": "Noah Igbinoghene",
+   "team": "CLE",
+   "pos": "CB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T11:35:00-04:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4242516"
+  },
+  "name:CLE:tevenjenkins": {
+   "name": "Teven Jenkins",
+   "team": "CLE",
+   "pos": "G",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T11:35:00-04:00",
+   "detail": "Back",
+   "espn_id": "4038457"
+  },
+  "name:CLE:parkerbrailsford": {
+   "name": "Parker Brailsford",
+   "team": "CLE",
+   "pos": "C",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T11:35:00-04:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4816090"
   },
   "00-0040784": {
    "name": "Quinshon Judkins",
@@ -1185,16 +1228,6 @@
    "detail": "Foot",
    "espn_id": "4685702",
    "comment": "Judkins (ankle), who is listed as questionable for Sunday's contest against the Ravens, will go through a pregame workout before his status is determined, Ian R"
-  },
-  "name:CLE:tevenjenkins": {
-   "name": "Teven Jenkins",
-   "team": "CLE",
-   "pos": "G",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-16T23:59:00-04:00",
-   "detail": "Back",
-   "espn_id": "4038457"
   },
   "name:CLE:kaliadavis": {
    "name": "Kalia Davis",
@@ -1225,16 +1258,6 @@
    "date": "2026-10-16T21:48:00-04:00",
    "detail": null,
    "espn_id": "4685540"
-  },
-  "name:CLE:mikehall": {
-   "name": "Mike Hall Jr.",
-   "team": "CLE",
-   "pos": "DT",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-16T21:46:00-04:00",
-   "detail": "Ankle",
-   "espn_id": "4600415"
   },
   "00-0041037": {
    "name": "Denzel Boston",
@@ -1267,16 +1290,6 @@
    "espn_id": "5081397",
    "comment": "Sampson (knee) won't be activated from injured reserve ahead of Sunday's contest against the Ravens, Zac Jackson of The Athletic reports."
   },
-  "name:CLE:derekbarnett": {
-   "name": "Derek Barnett",
-   "team": "CLE",
-   "pos": "DE",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-14T17:45:00-04:00",
-   "detail": "Ankle",
-   "espn_id": "3115336"
-  },
   "00-0039373": {
    "name": "Audric Estime",
    "team": "CLE",
@@ -1308,16 +1321,6 @@
    "detail": null,
    "espn_id": "4241463"
   },
-  "00-0041092": {
-   "name": "Taylen Green",
-   "team": "CLE",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-12T15:03:00-04:00",
-   "detail": null,
-   "espn_id": "4431325"
-  },
   "00-0033537": {
    "name": "Deshaun Watson",
    "team": "CLE",
@@ -1337,17 +1340,6 @@
    "date": "2026-10-11T19:31:00-04:00",
    "detail": null,
    "espn_id": "5083076"
-  },
-  "00-0040704": {
-   "name": "Dillon Gabriel",
-   "team": "CLE",
-   "pos": "QB",
-   "status": "Injured Reserve",
-   "fantasy": "IR-R",
-   "date": "2026-10-09T20:37:00-04:00",
-   "detail": "Back",
-   "espn_id": "4427238",
-   "comment": "Gabriel (back) has been ruled out ahead of Sunday's game against the Jets, Daniel Oyefusi of ESPN.com reports."
   },
   "name:DAL:joeyporter": {
    "name": "Joey Porter Jr.",
@@ -2033,7 +2025,7 @@
    "pos": "S",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-10-18T10:58:00-04:00",
+   "date": "2026-10-18T11:33:00-04:00",
    "detail": "Concussion",
    "espn_id": "4243956"
   },
@@ -2204,12 +2196,54 @@
    "name": "Tyler Warren",
    "team": "IND",
    "pos": "TE",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-18T07:23:00-04:00",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T11:38:00-04:00",
    "detail": "Groin",
    "espn_id": "4431459",
-   "comment": "Warren (groin) is considered a game-time decision for Sunday's contest against the Titans, Jeremy Fowler of ESPN reports."
+   "comment": "Warren (groin) is inactive for Sunday's game against the Titans."
+  },
+  "name:IND:daltontucker": {
+   "name": "Dalton Tucker",
+   "team": "IND",
+   "pos": "G",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T11:34:00-04:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4370363"
+  },
+  "00-0040206": {
+   "name": "Riley Leonard",
+   "team": "IND",
+   "pos": "QB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T11:34:00-04:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4683423",
+   "comment": "inactive"
+  },
+  "00-0035021": {
+   "name": "Ashton Dulin",
+   "team": "IND",
+   "pos": "WR",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T11:34:00-04:00",
+   "detail": "Hamstring",
+   "espn_id": "4061956",
+   "comment": "inactive"
+  },
+  "name:IND:jayloncarlies": {
+   "name": "Jaylon Carlies",
+   "team": "IND",
+   "pos": "LB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T11:34:00-04:00",
+   "detail": "Ribs",
+   "espn_id": "4601021"
   },
   "00-0038394": {
    "name": "Will Mallory",
@@ -2220,27 +2254,6 @@
    "date": "2026-10-17T19:08:00-04:00",
    "detail": null,
    "espn_id": "4362523"
-  },
-  "name:IND:jayloncarlies": {
-   "name": "Jaylon Carlies",
-   "team": "IND",
-   "pos": "LB",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-16T23:26:00-04:00",
-   "detail": "Ribs",
-   "espn_id": "4601021"
-  },
-  "00-0035021": {
-   "name": "Ashton Dulin",
-   "team": "IND",
-   "pos": "WR",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-16T19:40:00-04:00",
-   "detail": "Hamstring",
-   "espn_id": "4061956",
-   "comment": "Dulin (hamstring) has been ruled out ahead of Sunday's game against the Titans, Joel A. Erickson of The Indianapolis Star reports."
   },
   "00-0038997": {
    "name": "Josh Downs",
@@ -2282,16 +2295,6 @@
    "date": "2026-10-13T17:17:00-04:00",
    "detail": null,
    "espn_id": "2971281"
-  },
-  "00-0040206": {
-   "name": "Riley Leonard",
-   "team": "IND",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-12T15:14:00-04:00",
-   "detail": null,
-   "espn_id": "4683423"
   },
   "00-0035710": {
    "name": "Daniel Jones",
@@ -2352,6 +2355,16 @@
    "date": "2026-10-05T14:44:00-04:00",
    "detail": null,
    "espn_id": "4874509"
+  },
+  "name:JAX:antoniojohnson": {
+   "name": "Antonio Johnson",
+   "team": "JAX",
+   "pos": "S",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-18T11:37:00-04:00",
+   "detail": "Ankle",
+   "espn_id": "4429168"
   },
   "00-0032104": {
    "name": "Ameer Abdullah",
@@ -2514,16 +2527,6 @@
    "date": "2026-10-11T14:56:00-04:00",
    "detail": null,
    "espn_id": "4360310"
-  },
-  "00-0040719": {
-   "name": "Bhayshul Tuten",
-   "team": "JAX",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-11T14:51:00-04:00",
-   "detail": null,
-   "espn_id": "4882093"
   },
   "00-0034386": {
    "name": "Justin Watson",
@@ -3513,12 +3516,11 @@
    "name": "A.J. Brown",
    "team": "NE",
    "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-18T09:37:00-04:00",
-   "detail": "Ankle",
-   "espn_id": "4047646",
-   "comment": "Brown (ankle), who is listed as questionable for Sunday's game against the Jets, is expected to be active and play \"a good amount\" of snaps, Ian Rapoport of NFL"
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-18T11:35:00-04:00",
+   "detail": null,
+   "espn_id": "4047646"
   },
   "name:NE:willcampbell": {
    "name": "Will Campbell",
@@ -3534,12 +3536,11 @@
    "name": "TreVeyon Henderson",
    "team": "NE",
    "pos": "RB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
+   "status": "Active",
+   "fantasy": null,
    "date": "2026-10-18T07:38:00-04:00",
-   "detail": "Ankle",
-   "espn_id": "4432710",
-   "comment": "Henderson (ankle), who is listed as questionable for Sunday's game against the Jets, is likely to suit up, Ian Rapoport of NFL Network reports."
+   "detail": null,
+   "espn_id": "4432710"
   },
   "name:NE:karonprunty": {
    "name": "Karon Prunty",
@@ -3671,6 +3672,16 @@
    "detail": null,
    "espn_id": "4361432"
   },
+  "00-0037239": {
+   "name": "Chris Olave",
+   "team": "NO",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-18T11:38:00-04:00",
+   "detail": null,
+   "espn_id": "4361370"
+  },
   "00-0040743": {
    "name": "Tyler Shough",
    "team": "NO",
@@ -3690,17 +3701,6 @@
    "date": "2026-10-18T07:49:00-04:00",
    "detail": null,
    "espn_id": "3054850"
-  },
-  "00-0037239": {
-   "name": "Chris Olave",
-   "team": "NO",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": null,
-   "date": "2026-10-18T07:44:00-04:00",
-   "detail": null,
-   "espn_id": "4361370",
-   "comment": "Olave (illness), who is listed as questionable for Sunday's game at the Giants, is expected to suit up, Ian Rapoport of NFL Network reports."
   },
   "name:NO:zachwood": {
    "name": "Zach Wood",
@@ -3849,7 +3849,7 @@
    "pos": "OT",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-10-18T11:32:00-04:00",
+   "date": "2026-10-18T11:47:00-04:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
@@ -4015,16 +4015,77 @@
    "detail": null,
    "espn_id": "2969939"
   },
+  "name:NYJ:nahshonwright": {
+   "name": "Nahshon Wright",
+   "team": "NYJ",
+   "pos": "CB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T11:35:00-04:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4570470"
+  },
+  "00-0039890": {
+   "name": "Adonai Mitchell",
+   "team": "NYJ",
+   "pos": "WR",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T11:35:00-04:00",
+   "detail": "Finger",
+   "espn_id": "4597500",
+   "comment": "inactive"
+  },
+  "name:NYJ:josephossai": {
+   "name": "Joseph Ossai",
+   "team": "NYJ",
+   "pos": "DE",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T11:35:00-04:00",
+   "detail": "Ankle",
+   "espn_id": "4362094"
+  },
+  "name:NYJ:dylanparham": {
+   "name": "Dylan Parham",
+   "team": "NYJ",
+   "pos": "G",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T11:35:00-04:00",
+   "detail": "Knee",
+   "espn_id": "4243375"
+  },
+  "00-0038120": {
+   "name": "Breece Hall",
+   "team": "NYJ",
+   "pos": "RB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T11:35:00-04:00",
+   "detail": "Quadriceps",
+   "espn_id": "4427366",
+   "comment": "inactive"
+  },
+  "name:NYJ:jackheflin": {
+   "name": "Jack Heflin",
+   "team": "NYJ",
+   "pos": "DT",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T11:35:00-04:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4039485"
+  },
   "00-0041032": {
    "name": "Kenyon Sadiq",
    "team": "NYJ",
    "pos": "TE",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
+   "status": "Active",
+   "fantasy": null,
    "date": "2026-10-18T07:55:00-04:00",
-   "detail": "Concussion",
-   "espn_id": "5083315",
-   "comment": "Sadiq (concussion) is listed as questionable but is in line to play in Sunday's game at New England, Ian Rapoport of NFL Network reports."
+   "detail": null,
+   "espn_id": "5083315"
   },
   "00-0041511": {
    "name": "Omar Cooper Jr.",
@@ -4036,16 +4097,6 @@
    "detail": "Ankle",
    "espn_id": "4723820",
    "comment": "Cooper (ankle) was activated from injured reserve Saturday."
-  },
-  "name:NYJ:dylanparham": {
-   "name": "Dylan Parham",
-   "team": "NYJ",
-   "pos": "G",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-16T23:22:00-04:00",
-   "detail": "Knee",
-   "espn_id": "4243375"
   },
   "00-0039451": {
    "name": "Isaiah Williams",
@@ -4076,48 +4127,6 @@
    "date": "2026-10-16T20:02:00-04:00",
    "detail": null,
    "espn_id": "4685247"
-  },
-  "name:NYJ:josephossai": {
-   "name": "Joseph Ossai",
-   "team": "NYJ",
-   "pos": "DE",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-16T19:08:00-04:00",
-   "detail": "Ankle",
-   "espn_id": "4362094"
-  },
-  "00-0039890": {
-   "name": "Adonai Mitchell",
-   "team": "NYJ",
-   "pos": "WR",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-10-16T11:32:00-04:00",
-   "detail": "Finger",
-   "espn_id": "4597500",
-   "comment": "Mitchell (finger) has been ruled out for Sunday's game, Brian Costello of the New York Post reports."
-  },
-  "00-0038120": {
-   "name": "Breece Hall",
-   "team": "NYJ",
-   "pos": "RB",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-16T11:29:00-04:00",
-   "detail": "Quadriceps",
-   "espn_id": "4427366",
-   "comment": "Hall (quadriceps) is out for Sunday's game, Brian Costello of the New York Post reports."
-  },
-  "name:NYJ:danebelton": {
-   "name": "Dane Belton",
-   "team": "NYJ",
-   "pos": "S",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-14T16:18:00-04:00",
-   "detail": "Knee",
-   "espn_id": "4426686"
   },
   "00-0039798": {
    "name": "Isaiah Davis",
@@ -4159,15 +4168,78 @@
    "detail": null,
    "espn_id": "4808766"
   },
-  "name:NYJ:braidenmcgregor": {
-   "name": "Braiden McGregor",
-   "team": "NYJ",
+  "name:PHI:lanejohnson": {
+   "name": "Lane Johnson",
+   "team": "PHI",
+   "pos": "OT",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-10-18T11:34:00-04:00",
+   "detail": "Personal",
+   "espn_id": "15797"
+  },
+  "00-0039398": {
+   "name": "Joe Milton III",
+   "team": "PHI",
+   "pos": "QB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T11:33:00-04:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4360698",
+   "comment": "inactive"
+  },
+  "name:PHI:ajepenesa": {
+   "name": "AJ Epenesa",
+   "team": "PHI",
    "pos": "DE",
-   "status": "Injured Reserve",
-   "fantasy": "IR",
-   "date": "2026-10-07T17:44:00-04:00",
-   "detail": "Pectoral",
-   "espn_id": "4429005"
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T11:33:00-04:00",
+   "detail": "Back",
+   "espn_id": "4240585"
+  },
+  "name:PHI:jalyxhunt": {
+   "name": "Jalyx Hunt",
+   "team": "PHI",
+   "pos": "LB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T11:33:00-04:00",
+   "detail": "Ankle",
+   "espn_id": "4571162"
+  },
+  "00-0034844": {
+   "name": "Saquon Barkley",
+   "team": "PHI",
+   "pos": "RB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T11:33:00-04:00",
+   "detail": "Hamstring",
+   "espn_id": "3929630",
+   "comment": "inactive"
+  },
+  "00-0035662": {
+   "name": "Hollywood Brown",
+   "team": "PHI",
+   "pos": "WR",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T11:33:00-04:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4241372",
+   "comment": "inactive"
+  },
+  "name:PHI:michaelcarter": {
+   "name": "Michael Carter II",
+   "team": "PHI",
+   "pos": "CB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T11:33:00-04:00",
+   "detail": "Abdomen",
+   "espn_id": "4240456"
   },
   "name:PHI:jakorianbennett": {
    "name": "Jakorian Bennett",
@@ -4242,56 +4314,6 @@
    "espn_id": "4040715",
    "comment": "The Eagles placed Hurts (calf) on injured reserve Saturday."
   },
-  "name:PHI:lanejohnson": {
-   "name": "Lane Johnson",
-   "team": "PHI",
-   "pos": "OT",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-17T15:13:00-04:00",
-   "detail": "Personal",
-   "espn_id": "15797"
-  },
-  "name:PHI:drewkendall": {
-   "name": "Drew Kendall",
-   "team": "PHI",
-   "pos": "C",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-17T00:43:00-04:00",
-   "detail": "Knee",
-   "espn_id": "4567802"
-  },
-  "name:PHI:ajepenesa": {
-   "name": "AJ Epenesa",
-   "team": "PHI",
-   "pos": "DE",
-   "status": "Doubtful",
-   "fantasy": "INACTIVE",
-   "date": "2026-10-17T00:31:00-04:00",
-   "detail": "Back",
-   "espn_id": "4240585"
-  },
-  "name:PHI:jalyxhunt": {
-   "name": "Jalyx Hunt",
-   "team": "PHI",
-   "pos": "LB",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-16T22:25:00-04:00",
-   "detail": "Ankle",
-   "espn_id": "4571162"
-  },
-  "name:PHI:michaelcarter": {
-   "name": "Michael Carter II",
-   "team": "PHI",
-   "pos": "CB",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-16T22:20:00-04:00",
-   "detail": "Abdomen",
-   "espn_id": "4240456"
-  },
   "00-0037258": {
    "name": "Dameon Pierce",
    "team": "PHI",
@@ -4311,16 +4333,6 @@
    "date": "2026-10-16T16:39:00-04:00",
    "detail": null,
    "espn_id": "4248557"
-  },
-  "00-0035662": {
-   "name": "Hollywood Brown",
-   "team": "PHI",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-16T16:39:00-04:00",
-   "detail": null,
-   "espn_id": "4241372"
   },
   "00-0038393": {
    "name": "Dontayvion Wicks",
@@ -4353,27 +4365,6 @@
    "espn_id": "4431545",
    "comment": "The Eagles placed Shipley (foot) on injured reserve Friday."
   },
-  "00-0034844": {
-   "name": "Saquon Barkley",
-   "team": "PHI",
-   "pos": "RB",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-10-16T12:48:00-04:00",
-   "detail": "Hamstring",
-   "espn_id": "3929630",
-   "comment": "Barkley (hamstring) wasn't spotted at Friday's practice, Jimmy Kempski of PhillyVoice.com reports."
-  },
-  "00-0039398": {
-   "name": "Joe Milton III",
-   "team": "PHI",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": "INACTIVE",
-   "date": "2026-10-16T11:37:00-04:00",
-   "detail": "Coach's Decision",
-   "espn_id": "4360698"
-  },
   "00-0038400": {
    "name": "Tanner McKee",
    "team": "PHI",
@@ -4384,27 +4375,99 @@
    "detail": null,
    "espn_id": "4685201"
   },
+  "00-0036862": {
+   "name": "Ben Skowronek",
+   "team": "PIT",
+   "pos": "WR",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T11:42:00-04:00",
+   "detail": "Calf",
+   "espn_id": "4035656",
+   "comment": "inactive"
+  },
+  "name:PIT:terellsmith": {
+   "name": "Terell Smith",
+   "team": "PIT",
+   "pos": "CB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T11:42:00-04:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4360935"
+  },
+  "name:PIT:seanmurphybunting": {
+   "name": "Sean Murphy-Bunting",
+   "team": "PIT",
+   "pos": "CB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T11:42:00-04:00",
+   "detail": "Coach's Decision",
+   "espn_id": "3932886"
+  },
+  "00-0041490": {
+   "name": "Eli Heidenreich",
+   "team": "PIT",
+   "pos": "RB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T11:42:00-04:00",
+   "detail": "Coach's Decision",
+   "espn_id": "5081508",
+   "comment": "inactive"
+  },
+  "00-0040203": {
+   "name": "Will Howard",
+   "team": "PIT",
+   "pos": "QB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T11:42:00-04:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4429955",
+   "comment": "inactive"
+  },
+  "name:PIT:kevinjobity": {
+   "name": "Kevin Jobity Jr.",
+   "team": "PIT",
+   "pos": "DT",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T11:42:00-04:00",
+   "detail": "Coach's Decision",
+   "espn_id": "5084849"
+  },
   "00-0036894": {
    "name": "Pat Freiermuth",
    "team": "PIT",
    "pos": "TE",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-18T08:09:00-04:00",
-   "detail": "Calf",
-   "espn_id": "4361411",
-   "comment": "The Steelers are \"optimistic\" that Freiermuth (calf) -- who is listed as questionable -- will play Sunday at Tampa Bay, Ian Rapoport of NFL Network reports."
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-18T11:42:00-04:00",
+   "detail": null,
+   "espn_id": "4361411"
+  },
+  "00-0041565": {
+   "name": "Drew Allar",
+   "team": "PIT",
+   "pos": "QB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T11:42:00-04:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4714771",
+   "comment": "inactive"
   },
   "00-0036139": {
    "name": "Rico Dowdle",
    "team": "PIT",
    "pos": "RB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-18T07:12:00-04:00",
-   "detail": "Toe",
-   "espn_id": "4038815",
-   "comment": "Dowdle (toe), who is listed as questionable for Sunday's game against the Buccaneers, is slated to play, Jeremy Fowler of ESPN.com reports."
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-18T11:42:00-04:00",
+   "detail": null,
+   "espn_id": "4038815"
   },
   "00-0036775": {
    "name": "Brandon Smith",
@@ -4467,26 +4530,6 @@
    "detail": "Knee",
    "espn_id": "3929846"
   },
-  "name:PIT:jalenramsey": {
-   "name": "Jalen Ramsey",
-   "team": "PIT",
-   "pos": "CB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-16T21:37:00-04:00",
-   "detail": "Wrist",
-   "espn_id": "3045373"
-  },
-  "name:PIT:jameldean": {
-   "name": "Jamel Dean",
-   "team": "PIT",
-   "pos": "CB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-16T21:30:00-04:00",
-   "detail": "Ankle",
-   "espn_id": "3873935"
-  },
   "00-0041489": {
    "name": "Germie Bernard",
    "team": "PIT",
@@ -4497,16 +4540,6 @@
    "detail": null,
    "espn_id": "4685261"
   },
-  "name:PIT:keeanubenton": {
-   "name": "Keeanu Benton",
-   "team": "PIT",
-   "pos": "DT",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-14T16:06:00-04:00",
-   "detail": "Ankle",
-   "espn_id": "4426694"
-  },
   "00-0038558": {
    "name": "Darnell Washington",
    "team": "PIT",
@@ -4516,47 +4549,6 @@
    "date": "2026-10-13T22:11:00-04:00",
    "detail": null,
    "espn_id": "4430802"
-  },
-  "00-0036862": {
-   "name": "Ben Skowronek",
-   "team": "PIT",
-   "pos": "WR",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-12T18:08:00-04:00",
-   "detail": "Calf",
-   "espn_id": "4035656",
-   "comment": "Head coach Mike McCarthy said Monday that Skowronek (calf) will not play against the Buccaneers this Sunday, Alan Saunders of SteelersNow.com reports."
-  },
-  "00-0041565": {
-   "name": "Drew Allar",
-   "team": "PIT",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-12T15:36:00-04:00",
-   "detail": null,
-   "espn_id": "4714771"
-  },
-  "00-0041490": {
-   "name": "Eli Heidenreich",
-   "team": "PIT",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-12T15:36:00-04:00",
-   "detail": null,
-   "espn_id": "5081508"
-  },
-  "00-0040203": {
-   "name": "Will Howard",
-   "team": "PIT",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-12T15:36:00-04:00",
-   "detail": null,
-   "espn_id": "4429955"
   },
   "00-0037228": {
    "name": "Jaylen Warren",
@@ -5162,6 +5154,38 @@
    "detail": null,
    "espn_id": "4034779"
   },
+  "00-0036876": {
+   "name": "Kylen Granson",
+   "team": "TEN",
+   "pos": "TE",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T11:44:00-04:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4039160",
+   "comment": "Granson (coach's decision) is inactive for Sunday's game against the Colts."
+  },
+  "00-0040886": {
+   "name": "Nicholas Singleton",
+   "team": "TEN",
+   "pos": "RB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T11:41:00-04:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4685555",
+   "comment": "Singleton (coach's decision) is inactive for Sunday's game against the Colts."
+  },
+  "name:TEN:alontaetaylor": {
+   "name": "Alontae Taylor",
+   "team": "TEN",
+   "pos": "CB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T11:37:00-04:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4369835"
+  },
   "name:TEN:kevinwinston": {
    "name": "Kevin Winston Jr.",
    "team": "TEN",
@@ -5172,27 +5196,6 @@
    "detail": "Quadriceps",
    "espn_id": "4685617"
   },
-  "00-0040886": {
-   "name": "Nicholas Singleton",
-   "team": "TEN",
-   "pos": "RB",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-10-18T11:32:00-04:00",
-   "detail": "Coach's Decision",
-   "espn_id": "4685555",
-   "comment": "inactive"
-  },
-  "name:TEN:alontaetaylor": {
-   "name": "Alontae Taylor",
-   "team": "TEN",
-   "pos": "CB",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-10-18T11:32:00-04:00",
-   "detail": "Coach's Decision",
-   "espn_id": "4369835"
-  },
   "name:TEN:jackiemarshall": {
    "name": "Jackie Marshall",
    "team": "TEN",
@@ -5202,17 +5205,6 @@
    "date": "2026-10-18T11:32:00-04:00",
    "detail": "Coach's Decision",
    "espn_id": "5081785"
-  },
-  "00-0036876": {
-   "name": "Kylen Granson",
-   "team": "TEN",
-   "pos": "TE",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-10-18T11:32:00-04:00",
-   "detail": "Coach's Decision",
-   "espn_id": "4039160",
-   "comment": "inactive"
   },
   "name:TEN:brandoncrenshawdickson": {
    "name": "Brandon Crenshaw-Dickson",
@@ -5898,6 +5890,46 @@
   "00-0036876": {
    "status": "Out",
    "at": "2026-10-18T11:40:00-04:00"
+  },
+  "00-0040876": {
+   "status": "Out",
+   "at": "2026-10-18T11:50:01-04:00"
+  },
+  "00-0039356": {
+   "status": "Out",
+   "at": "2026-10-18T11:50:01-04:00"
+  },
+  "00-0041149": {
+   "status": "Out",
+   "at": "2026-10-18T11:50:01-04:00"
+  },
+  "00-0041092": {
+   "status": "Out",
+   "at": "2026-10-18T11:50:01-04:00"
+  },
+  "00-0040206": {
+   "status": "Out",
+   "at": "2026-10-18T11:50:01-04:00"
+  },
+  "00-0039398": {
+   "status": "Out",
+   "at": "2026-10-18T11:50:01-04:00"
+  },
+  "00-0035662": {
+   "status": "Out",
+   "at": "2026-10-18T11:50:01-04:00"
+  },
+  "00-0041490": {
+   "status": "Out",
+   "at": "2026-10-18T11:50:01-04:00"
+  },
+  "00-0040203": {
+   "status": "Out",
+   "at": "2026-10-18T11:50:01-04:00"
+  },
+  "00-0041565": {
+   "status": "Out",
+   "at": "2026-10-18T11:50:01-04:00"
   }
  }
 }

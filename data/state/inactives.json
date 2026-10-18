@@ -84,31 +84,165 @@
  "2026_06_BAL_CLE": {
   "_kickoff": "2026-10-18T13:00:00-04:00",
   "BAL": {
-   "confirmed": false,
-   "count": 0,
-   "players": [],
-   "confirmed_at": null
+   "confirmed": true,
+   "count": 7,
+   "players": [
+    {
+     "pid": null,
+     "name": "Andrew Vorhees",
+     "pos": "G"
+    },
+    {
+     "pid": null,
+     "name": "Broderick Washington Jr.",
+     "pos": "DT"
+    },
+    {
+     "pid": null,
+     "name": "Cam Jurgens",
+     "pos": "C"
+    },
+    {
+     "pid": "00-0040876",
+     "name": "Elijah Sarratt",
+     "pos": "WR"
+    },
+    {
+     "pid": null,
+     "name": "K'Von Wallace",
+     "pos": "CB"
+    },
+    {
+     "pid": "00-0034796",
+     "name": "Lamar Jackson",
+     "pos": "QB"
+    },
+    {
+     "pid": "00-0040879",
+     "name": "Matt Hibner",
+     "pos": "TE"
+    }
+   ],
+   "confirmed_at": "2026-10-18T11:50:01-04:00"
   },
   "CLE": {
-   "confirmed": false,
-   "count": 0,
-   "players": [],
-   "confirmed_at": null
+   "confirmed": true,
+   "count": 6,
+   "players": [
+    {
+     "pid": null,
+     "name": "Mason Graham",
+     "pos": "DT"
+    },
+    {
+     "pid": null,
+     "name": "Mike Hall Jr.",
+     "pos": "DT"
+    },
+    {
+     "pid": null,
+     "name": "Noah Igbinoghene",
+     "pos": "CB"
+    },
+    {
+     "pid": null,
+     "name": "Parker Brailsford",
+     "pos": "C"
+    },
+    {
+     "pid": "00-0041092",
+     "name": "Taylen Green",
+     "pos": "QB"
+    },
+    {
+     "pid": null,
+     "name": "Teven Jenkins",
+     "pos": "G"
+    }
+   ],
+   "confirmed_at": "2026-10-18T11:50:01-04:00"
   }
  },
  "2026_06_CAR_PHI": {
   "_kickoff": "2026-10-18T13:00:00-04:00",
   "CAR": {
-   "confirmed": false,
-   "count": 0,
-   "players": [],
-   "confirmed_at": null
+   "confirmed": true,
+   "count": 7,
+   "players": [
+    {
+     "pid": "00-0036265",
+     "name": "AJ Dillon",
+     "pos": "RB"
+    },
+    {
+     "pid": null,
+     "name": "Albert Reese IV",
+     "pos": "OT"
+    },
+    {
+     "pid": "00-0041149",
+     "name": "Haynes King",
+     "pos": "QB"
+    },
+    {
+     "pid": "00-0039356",
+     "name": "Ja'Tavion Sanders",
+     "pos": "TE"
+    },
+    {
+     "pid": null,
+     "name": "Monroe Freeling",
+     "pos": "OT"
+    },
+    {
+     "pid": null,
+     "name": "TeRah Edwards",
+     "pos": "DT"
+    },
+    {
+     "pid": null,
+     "name": "Torricelli Simpkins III",
+     "pos": "G"
+    }
+   ],
+   "confirmed_at": "2026-10-18T11:50:01-04:00"
   },
   "PHI": {
-   "confirmed": false,
-   "count": 0,
-   "players": [],
-   "confirmed_at": null
+   "confirmed": true,
+   "count": 6,
+   "players": [
+    {
+     "pid": null,
+     "name": "AJ Epenesa",
+     "pos": "DE"
+    },
+    {
+     "pid": "00-0035662",
+     "name": "Hollywood Brown",
+     "pos": "WR"
+    },
+    {
+     "pid": null,
+     "name": "Jalyx Hunt",
+     "pos": "LB"
+    },
+    {
+     "pid": "00-0039398",
+     "name": "Joe Milton III",
+     "pos": "QB"
+    },
+    {
+     "pid": null,
+     "name": "Michael Carter II",
+     "pos": "CB"
+    },
+    {
+     "pid": "00-0034844",
+     "name": "Saquon Barkley",
+     "pos": "RB"
+    }
+   ],
+   "confirmed_at": "2026-10-18T11:50:01-04:00"
   }
  },
  "2026_06_CHI_ATL": {
@@ -144,10 +278,41 @@
  "2026_06_NYJ_NE": {
   "_kickoff": "2026-10-18T13:00:00-04:00",
   "NYJ": {
-   "confirmed": false,
-   "count": 0,
-   "players": [],
-   "confirmed_at": null
+   "confirmed": true,
+   "count": 6,
+   "players": [
+    {
+     "pid": "00-0039890",
+     "name": "Adonai Mitchell",
+     "pos": "WR"
+    },
+    {
+     "pid": "00-0038120",
+     "name": "Breece Hall",
+     "pos": "RB"
+    },
+    {
+     "pid": null,
+     "name": "Dylan Parham",
+     "pos": "G"
+    },
+    {
+     "pid": null,
+     "name": "Jack Heflin",
+     "pos": "DT"
+    },
+    {
+     "pid": null,
+     "name": "Joseph Ossai",
+     "pos": "DE"
+    },
+    {
+     "pid": null,
+     "name": "Nahshon Wright",
+     "pos": "CB"
+    }
+   ],
+   "confirmed_at": "2026-10-18T11:50:01-04:00"
   },
   "NE": {
    "confirmed": false,
@@ -159,10 +324,46 @@
  "2026_06_PIT_TB": {
   "_kickoff": "2026-10-18T13:00:00-04:00",
   "PIT": {
-   "confirmed": false,
-   "count": 0,
-   "players": [],
-   "confirmed_at": null
+   "confirmed": true,
+   "count": 7,
+   "players": [
+    {
+     "pid": "00-0036862",
+     "name": "Ben Skowronek",
+     "pos": "WR"
+    },
+    {
+     "pid": "00-0041565",
+     "name": "Drew Allar",
+     "pos": "QB"
+    },
+    {
+     "pid": "00-0041490",
+     "name": "Eli Heidenreich",
+     "pos": "RB"
+    },
+    {
+     "pid": null,
+     "name": "Kevin Jobity Jr.",
+     "pos": "DT"
+    },
+    {
+     "pid": null,
+     "name": "Sean Murphy-Bunting",
+     "pos": "CB"
+    },
+    {
+     "pid": null,
+     "name": "Terell Smith",
+     "pos": "CB"
+    },
+    {
+     "pid": "00-0040203",
+     "name": "Will Howard",
+     "pos": "QB"
+    }
+   ],
+   "confirmed_at": "2026-10-18T11:50:01-04:00"
   },
   "TB": {
    "confirmed": false,
@@ -216,10 +417,36 @@
    "confirmed_at": "2026-10-18T11:40:00-04:00"
   },
   "IND": {
-   "confirmed": false,
-   "count": 0,
-   "players": [],
-   "confirmed_at": null
+   "confirmed": true,
+   "count": 5,
+   "players": [
+    {
+     "pid": "00-0035021",
+     "name": "Ashton Dulin",
+     "pos": "WR"
+    },
+    {
+     "pid": null,
+     "name": "Dalton Tucker",
+     "pos": "G"
+    },
+    {
+     "pid": null,
+     "name": "Jaylon Carlies",
+     "pos": "LB"
+    },
+    {
+     "pid": "00-0040206",
+     "name": "Riley Leonard",
+     "pos": "QB"
+    },
+    {
+     "pid": "00-0040128",
+     "name": "Tyler Warren",
+     "pos": "TE"
+    }
+   ],
+   "confirmed_at": "2026-10-18T11:50:01-04:00"
   }
  }
 }

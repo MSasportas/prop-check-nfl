@@ -313,6 +313,25 @@
      "totals_h1"
     ],
     "cost": 41
+   },
+   {
+    "pull": "C",
+    "at": "2026-10-18T11:50:01-04:00",
+    "asked": [
+     "player_pass_interceptions",
+     "player_receptions",
+     "player_rush_yds_h1",
+     "spreads",
+     "totals"
+    ],
+    "returned": [
+     "player_pass_interceptions",
+     "player_receptions",
+     "player_rush_yds_h1",
+     "spreads",
+     "totals"
+    ],
+    "cost": 5
    }
   ],
   "2026_06_CAR_PHI": [
@@ -451,6 +470,25 @@
      "totals_h1"
     ],
     "cost": 41
+   },
+   {
+    "pull": "C",
+    "at": "2026-10-18T11:50:01-04:00",
+    "asked": [
+     "player_receptions",
+     "player_rush_attempts",
+     "player_rush_yds",
+     "spreads",
+     "totals"
+    ],
+    "returned": [
+     "player_receptions",
+     "player_rush_attempts",
+     "player_rush_yds",
+     "spreads",
+     "totals"
+    ],
+    "cost": 5
    }
   ],
   "2026_06_CHI_ATL": [
@@ -589,6 +627,21 @@
      "totals_h1"
     ],
     "cost": 41
+   },
+   {
+    "pull": "C",
+    "at": "2026-10-18T11:50:01-04:00",
+    "asked": [
+     "player_reception_longest",
+     "spreads",
+     "totals"
+    ],
+    "returned": [
+     "player_reception_longest",
+     "spreads",
+     "totals"
+    ],
+    "cost": 3
    }
   ],
   "2026_06_NO_NYG": [
@@ -727,6 +780,23 @@
      "totals_h1"
     ],
     "cost": 41
+   },
+   {
+    "pull": "C",
+    "at": "2026-10-18T11:50:01-04:00",
+    "asked": [
+     "player_reception_longest",
+     "player_rush_attempts",
+     "spreads",
+     "totals"
+    ],
+    "returned": [
+     "player_reception_longest",
+     "player_rush_attempts",
+     "spreads",
+     "totals"
+    ],
+    "cost": 4
    }
   ],
   "2026_06_NYJ_NE": [
@@ -865,6 +935,25 @@
      "totals_h1"
     ],
     "cost": 41
+   },
+   {
+    "pull": "C",
+    "at": "2026-10-18T11:50:01-04:00",
+    "asked": [
+     "player_receptions",
+     "player_rush_attempts",
+     "player_rush_longest",
+     "spreads",
+     "totals"
+    ],
+    "returned": [
+     "player_receptions",
+     "player_rush_attempts",
+     "player_rush_longest",
+     "spreads",
+     "totals"
+    ],
+    "cost": 5
    }
   ],
   "2026_06_PIT_TB": [
@@ -1141,6 +1230,23 @@
      "totals_h1"
     ],
     "cost": 41
+   },
+   {
+    "pull": "C",
+    "at": "2026-10-18T11:50:01-04:00",
+    "asked": [
+     "player_receptions",
+     "player_rush_yds_h1",
+     "spreads",
+     "totals"
+    ],
+    "returned": [
+     "player_receptions",
+     "player_rush_yds_h1",
+     "spreads",
+     "totals"
+    ],
+    "cost": 4
    }
   ],
   "2026_06_ARI_LA": [
@@ -3192,14 +3298,14 @@
  "fail_note": null,
  "key_count": 7,
  "plan": {
-  "allowance": 51.37,
+  "allowance": 50.41,
   "tier": "standard",
   "pulls": "MFC",
-  "pool_at_plan": 1387.0,
+  "pool_at_plan": 1361.0,
   "games_left": 27,
-  "pool_raw": 1387,
+  "pool_raw": 1361,
   "keys_shared": 0,
-  "made_at": "2026-10-18T09:30:00-04:00"
+  "made_at": "2026-10-18T11:50:01-04:00"
  },
  "failed": {}
 }

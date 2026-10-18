@@ -14,22 +14,22 @@
   },
   {
    "n": 2,
-   "left": 12,
+   "left": 2,
    "status": "ok",
-   "checked_at": "2026-10-18T08:20:01-04:00",
+   "checked_at": "2026-10-18T11:50:01-04:00",
    "month": "2026-10",
-   "after_us": 12,
+   "after_us": 2,
    "shared": false,
    "shared_at": null,
    "others_spent": 0
   },
   {
    "n": 3,
-   "left": 172,
+   "left": 156,
    "status": "ok",
-   "checked_at": "2026-10-18T07:00:00-04:00",
+   "checked_at": "2026-10-18T11:50:01-04:00",
    "month": "2026-10",
-   "after_us": 172,
+   "after_us": 156,
    "shared": false,
    "shared_at": null,
    "others_spent": 0
@@ -399,6 +399,54 @@
    "game_id": "2026_06_HOU_JAX",
    "cost": 6,
    "key": 2
+  },
+  {
+   "at": "2026-10-18T11:50:01-04:00",
+   "date": "2026-10-18",
+   "pull": "C",
+   "game_id": "2026_06_BAL_CLE",
+   "cost": 5,
+   "key": 2
+  },
+  {
+   "at": "2026-10-18T11:50:01-04:00",
+   "date": "2026-10-18",
+   "pull": "C",
+   "game_id": "2026_06_CAR_PHI",
+   "cost": 5,
+   "key": 2
+  },
+  {
+   "at": "2026-10-18T11:50:01-04:00",
+   "date": "2026-10-18",
+   "pull": "C",
+   "game_id": "2026_06_CHI_ATL",
+   "cost": 3,
+   "key": 3
+  },
+  {
+   "at": "2026-10-18T11:50:01-04:00",
+   "date": "2026-10-18",
+   "pull": "C",
+   "game_id": "2026_06_NO_NYG",
+   "cost": 4,
+   "key": 3
+  },
+  {
+   "at": "2026-10-18T11:50:01-04:00",
+   "date": "2026-10-18",
+   "pull": "C",
+   "game_id": "2026_06_NYJ_NE",
+   "cost": 5,
+   "key": 3
+  },
+  {
+   "at": "2026-10-18T11:50:01-04:00",
+   "date": "2026-10-18",
+   "pull": "C",
+   "game_id": "2026_06_TEN_IND",
+   "cost": 4,
+   "key": 3
   }
  ]
 }

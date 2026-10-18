@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-18T09:30:00-04:00",
+ "generated_at": "2026-10-18T11:50:01-04:00",
  "season": 2026,
  "summary": {
   "headline": {
@@ -29,6 +29,26 @@
    "l": 0,
    "units": 0,
    "entries": [
+    {
+     "id": "2026-W06:2026_06_CAR_PHI:00-0036555:rush_att:FG:17.5:under",
+     "kind": "single",
+     "date": "2026-10-18",
+     "game": "CAR at PHI",
+     "player": "C. Hubbard",
+     "team": "CAR",
+     "market": "rush_att",
+     "period": "FG",
+     "bet": "Under 17.5 carries",
+     "price": 100,
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": {
+      "at": "2026-10-18T11:50:01-04:00",
+      "reason": "Hard Rock moved the line to 18.5."
+     },
+     "legs": []
+    },
     {
      "id": "2026-W06:2026_06_HOU_JAX:00-0038618:long_rec:FG:10.5:over",
      "kind": "single",

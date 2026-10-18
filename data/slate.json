@@ -2,24 +2,24 @@
  "season": 2026,
  "week": 6,
  "label": "Week 6",
- "generated_at": "2026-10-18T11:40:00-04:00",
- "status_at": "2026-10-18T11:40:00-04:00",
+ "generated_at": "2026-10-18T11:50:01-04:00",
+ "status_at": "2026-10-18T11:50:01-04:00",
  "valid_until": "2026-10-20T06:00:00-04:00",
- "next_check": "2026-10-18T11:45:00-04:00",
+ "next_check": "2026-10-18T14:50:00-04:00",
  "status": {
   "odds": {
    "state": "ok",
-   "at": "2026-10-18T08:20:01-04:00",
-   "next_at": "2026-10-18T11:45:00-04:00"
+   "at": "2026-10-18T11:50:01-04:00",
+   "next_at": "2026-10-18T14:50:00-04:00"
   },
   "injuries": {
    "state": "ok",
-   "at": "2026-10-18T11:40:00-04:00"
+   "at": "2026-10-18T11:50:01-04:00"
   },
   "inactives": {
    "state": "ok",
-   "at": "2026-10-18T11:40:00-04:00",
-   "note": null
+   "at": "2026-10-18T11:50:01-04:00",
+   "note": "Posted for the 1:00 PM game."
   },
   "stats": {
    "state": "ok",
@@ -27,7 +27,7 @@
    "at": "2026-10-18T10:10:01-04:00"
   },
   "pool": {
-   "credits_left": 1387,
+   "credits_left": 1361,
    "keys": 7,
    "keys_live": 6,
    "keys_shared": 0,
@@ -37,7 +37,7 @@
   },
   "last_run": {
    "ok": true,
-   "at": "2026-10-18T11:40:00-04:00",
+   "at": "2026-10-18T11:50:01-04:00",
    "failed_step": null
   }
  },
@@ -91,10 +91,10 @@
    "started": false,
    "final": false,
    "score": null,
-   "settled": "injury_report",
+   "settled": "inactives",
    "props_state": "ok",
-   "props_at": "2026-10-18T00:40:00-04:00",
-   "lines_at": "2026-10-18T00:40:00-04:00",
+   "props_at": "2026-10-18T11:50:01-04:00",
+   "lines_at": "2026-10-18T11:50:01-04:00",
    "note": null,
    "picks": 1
   },
@@ -108,10 +108,10 @@
    "started": false,
    "final": false,
    "score": null,
-   "settled": "injury_report",
+   "settled": "inactives",
    "props_state": "ok",
-   "props_at": "2026-10-18T00:40:00-04:00",
-   "lines_at": "2026-10-18T00:40:00-04:00",
+   "props_at": "2026-10-18T11:50:01-04:00",
+   "lines_at": "2026-10-18T11:50:01-04:00",
    "note": null,
    "picks": 2
   },
@@ -127,10 +127,10 @@
    "score": null,
    "settled": "injury_report",
    "props_state": "ok",
-   "props_at": "2026-10-18T00:40:00-04:00",
-   "lines_at": "2026-10-18T00:40:00-04:00",
+   "props_at": "2026-10-18T11:50:01-04:00",
+   "lines_at": "2026-10-18T11:50:01-04:00",
    "note": null,
-   "picks": 1
+   "picks": 3
   },
   {
    "id": "2026_06_NO_NYG",
@@ -144,8 +144,8 @@
    "score": null,
    "settled": "injury_report",
    "props_state": "ok",
-   "props_at": "2026-10-18T00:40:00-04:00",
-   "lines_at": "2026-10-18T00:40:00-04:00",
+   "props_at": "2026-10-18T11:50:01-04:00",
+   "lines_at": "2026-10-18T11:50:01-04:00",
    "note": null,
    "picks": 2
   },
@@ -161,10 +161,10 @@
    "score": null,
    "settled": "injury_report",
    "props_state": "ok",
-   "props_at": "2026-10-18T00:40:00-04:00",
-   "lines_at": "2026-10-18T00:40:00-04:00",
+   "props_at": "2026-10-18T11:50:01-04:00",
+   "lines_at": "2026-10-18T11:50:01-04:00",
    "note": null,
-   "picks": 2
+   "picks": 3
   },
   {
    "id": "2026_06_PIT_TB",
@@ -193,10 +193,10 @@
    "started": false,
    "final": false,
    "score": null,
-   "settled": "injury_report",
+   "settled": "inactives",
    "props_state": "ok",
-   "props_at": "2026-10-18T00:40:00-04:00",
-   "lines_at": "2026-10-18T00:40:00-04:00",
+   "props_at": "2026-10-18T11:50:01-04:00",
+   "lines_at": "2026-10-18T11:50:01-04:00",
    "note": null,
    "picks": 1
   },
@@ -411,8 +411,49 @@
    ]
   },
   {
-   "id": "2026-W06:2026_06_NO_NYG:00-0038551:rush_att:FG:9.5:under",
+   "id": "2026-W06:2026_06_CAR_PHI:00-0036555:rush_att:FG:18.5:under",
    "rank": 4,
+   "game_id": "2026_06_CAR_PHI",
+   "day": "2026-10-18",
+   "kickoff": "2026-10-18T13:00:00-04:00",
+   "player": "Chuba Hubbard",
+   "player_short": "C. Hubbard",
+   "player_id": "00-0036555",
+   "pos": "RB",
+   "team": "CAR",
+   "opp": "PHI",
+   "home": false,
+   "market": "rush_att",
+   "period": "FG",
+   "side": "under",
+   "line": 18.5,
+   "bet": "Under 18.5 carries",
+   "book": "Hard Rock",
+   "price": -125,
+   "price_at": "2026-10-18T11:50:01-04:00",
+   "first_price": -125,
+   "first_price_at": "2026-10-18T11:50:01-04:00",
+   "grade_price": -125,
+   "p": 0.6366,
+   "breakeven": 0.5556,
+   "p_pct": 63,
+   "breakeven_pct": 56,
+   "reason": "14.8 carries a game his last 5 (2 of 5 over 18.5).",
+   "settled": "inactives",
+   "state": "open",
+   "thin": false,
+   "pulled": null,
+   "graded": null,
+   "history": [
+    {
+     "at": "2026-10-18T11:50:01-04:00",
+     "text": "Posted at -125"
+    }
+   ]
+  },
+  {
+   "id": "2026-W06:2026_06_NO_NYG:00-0038551:rush_att:FG:9.5:under",
+   "rank": 5,
    "game_id": "2026_06_NO_NYG",
    "day": "2026-10-18",
    "kickoff": "2026-10-18T13:00:00-04:00",
@@ -429,15 +470,15 @@
    "line": 9.5,
    "bet": "Under 9.5 carries",
    "book": "Hard Rock",
-   "price": -120,
-   "price_at": "2026-10-18T00:40:00-04:00",
+   "price": -125,
+   "price_at": "2026-10-18T11:50:01-04:00",
    "first_price": -120,
    "first_price_at": "2026-10-18T00:30:51-04:00",
-   "grade_price": -120,
-   "p": 0.6272,
-   "breakeven": 0.5455,
-   "p_pct": 62,
-   "breakeven_pct": 55,
+   "grade_price": -125,
+   "p": 0.6313,
+   "breakeven": 0.5556,
+   "p_pct": 63,
+   "breakeven_pct": 56,
    "reason": "6.0 carries a game his last 5 (1 of 5 over 9.5).",
    "settled": "injury_report",
    "state": "open",
@@ -448,12 +489,16 @@
     {
      "at": "2026-10-18T00:30:51-04:00",
      "text": "Posted at -120"
+    },
+    {
+     "at": "2026-10-18T11:50:01-04:00",
+     "text": "Price now -125"
     }
    ]
   },
   {
    "id": "2026-W06:2026_06_LAC_KC:00-0040666:rush_att:FG:9.5:over",
-   "rank": 5,
+   "rank": 6,
    "game_id": "2026_06_LAC_KC",
    "day": "2026-10-18",
    "kickoff": "2026-10-18T16:25:00-04:00",
@@ -493,8 +538,53 @@
    ]
   },
   {
+   "id": "2026-W06:2026_06_NYJ_NE:00-0036875:rush_att:FG:14.5:under",
+   "rank": 7,
+   "game_id": "2026_06_NYJ_NE",
+   "day": "2026-10-18",
+   "kickoff": "2026-10-18T13:00:00-04:00",
+   "player": "Rhamondre Stevenson",
+   "player_short": "R. Stevenson",
+   "player_id": "00-0036875",
+   "pos": "RB",
+   "team": "NE",
+   "opp": "NYJ",
+   "home": true,
+   "market": "rush_att",
+   "period": "FG",
+   "side": "under",
+   "line": 14.5,
+   "bet": "Under 14.5 carries",
+   "book": "Hard Rock",
+   "price": -130,
+   "price_at": "2026-10-18T11:50:01-04:00",
+   "first_price": -120,
+   "first_price_at": "2026-10-18T00:30:51-04:00",
+   "grade_price": -130,
+   "p": 0.6164,
+   "breakeven": 0.5652,
+   "p_pct": 61,
+   "breakeven_pct": 57,
+   "reason": "11.4 carries a game his last 5 (1 of 5 over 14.5).",
+   "settled": "injury_report",
+   "state": "open",
+   "thin": false,
+   "pulled": null,
+   "graded": null,
+   "history": [
+    {
+     "at": "2026-10-18T00:30:51-04:00",
+     "text": "Posted at -120"
+    },
+    {
+     "at": "2026-10-18T11:50:01-04:00",
+     "text": "Price now -130"
+    }
+   ]
+  },
+  {
    "id": "2026-W06:2026_06_BAL_CLE:00-0035993:pass_int:FG:0.5:under",
-   "rank": 6,
+   "rank": 8,
    "game_id": "2026_06_BAL_CLE",
    "day": "2026-10-18",
    "kickoff": "2026-10-18T13:00:00-04:00",
@@ -511,17 +601,17 @@
    "line": 0.5,
    "bet": "Under 0.5 interceptions",
    "book": "Hard Rock",
-   "price": -130,
-   "price_at": "2026-10-18T00:40:00-04:00",
+   "price": -135,
+   "price_at": "2026-10-18T11:50:01-04:00",
    "first_price": -130,
    "first_price_at": "2026-10-18T00:30:51-04:00",
-   "grade_price": -130,
-   "p": 0.6137,
-   "breakeven": 0.5652,
+   "grade_price": -135,
+   "p": 0.6153,
+   "breakeven": 0.5745,
    "p_pct": 61,
    "breakeven_pct": 57,
    "reason": "0.0 INTs a game his last 5 (0 of 5 over 0.5).",
-   "settled": "injury_report",
+   "settled": "inactives",
    "state": "open",
    "thin": false,
    "pulled": null,
@@ -530,12 +620,20 @@
     {
      "at": "2026-10-18T00:30:51-04:00",
      "text": "Posted at -130"
+    },
+    {
+     "at": "2026-10-18T11:50:01-04:00",
+     "text": "Inactives confirmed"
+    },
+    {
+     "at": "2026-10-18T11:50:01-04:00",
+     "text": "Price now -135"
     }
    ]
   },
   {
    "id": "2026-W06:2026_06_BUF_LV:00-0039338:long_rec:FG:24.5:under",
-   "rank": 7,
+   "rank": 9,
    "game_id": "2026_06_BUF_LV",
    "day": "2026-10-18",
    "kickoff": "2026-10-18T16:25:00-04:00",
@@ -576,7 +674,7 @@
   },
   {
    "id": "2026-W06:2026_06_CHI_ATL:00-0040126:long_rec:FG:18.5:under",
-   "rank": 8,
+   "rank": 10,
    "game_id": "2026_06_CHI_ATL",
    "day": "2026-10-18",
    "kickoff": "2026-10-18T13:00:00-04:00",
@@ -594,7 +692,7 @@
    "bet": "Under 18.5 longest reception yards",
    "book": "Hard Rock",
    "price": -120,
-   "price_at": "2026-10-18T00:40:00-04:00",
+   "price_at": "2026-10-18T11:50:01-04:00",
    "first_price": -120,
    "first_price_at": "2026-10-18T00:30:51-04:00",
    "grade_price": -120,
@@ -617,7 +715,7 @@
   },
   {
    "id": "2026-W06:2026_06_TEN_IND:00-0040676:rush_yds:1H:3.5:under",
-   "rank": 9,
+   "rank": 11,
    "game_id": "2026_06_TEN_IND",
    "day": "2026-10-18",
    "kickoff": "2026-10-18T13:00:00-04:00",
@@ -634,17 +732,17 @@
    "line": 3.5,
    "bet": "Under 3.5 rushing yards",
    "book": "Hard Rock",
-   "price": -115,
-   "price_at": "2026-10-18T00:40:00-04:00",
+   "price": -110,
+   "price_at": "2026-10-18T11:50:01-04:00",
    "first_price": -115,
    "first_price_at": "2026-10-18T00:30:51-04:00",
    "grade_price": -115,
-   "p": 0.6099,
-   "breakeven": 0.5349,
+   "p": 0.6062,
+   "breakeven": 0.5238,
    "p_pct": 60,
-   "breakeven_pct": 53,
-   "reason": "2.8 rushing yards a game in the 1st half his last 5 (2 of 5 over 3.5). His team is projected for 19.2 points.",
-   "settled": "injury_report",
+   "breakeven_pct": 52,
+   "reason": "2.8 rushing yards a game in the 1st half his last 5 (2 of 5 over 3.5). His team is projected for 18.8 points.",
+   "settled": "inactives",
    "state": "open",
    "thin": false,
    "pulled": null,
@@ -653,53 +751,20 @@
     {
      "at": "2026-10-18T00:30:51-04:00",
      "text": "Posted at -115"
-    }
-   ]
-  },
-  {
-   "id": "2026-W06:2026_06_NYJ_NE:00-0036875:rush_att:FG:14.5:under",
-   "rank": 10,
-   "game_id": "2026_06_NYJ_NE",
-   "day": "2026-10-18",
-   "kickoff": "2026-10-18T13:00:00-04:00",
-   "player": "Rhamondre Stevenson",
-   "player_short": "R. Stevenson",
-   "player_id": "00-0036875",
-   "pos": "RB",
-   "team": "NE",
-   "opp": "NYJ",
-   "home": true,
-   "market": "rush_att",
-   "period": "FG",
-   "side": "under",
-   "line": 14.5,
-   "bet": "Under 14.5 carries",
-   "book": "Hard Rock",
-   "price": -120,
-   "price_at": "2026-10-18T00:40:00-04:00",
-   "first_price": -120,
-   "first_price_at": "2026-10-18T00:30:51-04:00",
-   "grade_price": -120,
-   "p": 0.6082,
-   "breakeven": 0.5455,
-   "p_pct": 60,
-   "breakeven_pct": 55,
-   "reason": "11.4 carries a game his last 5 (1 of 5 over 14.5).",
-   "settled": "injury_report",
-   "state": "open",
-   "thin": false,
-   "pulled": null,
-   "graded": null,
-   "history": [
+    },
     {
-     "at": "2026-10-18T00:30:51-04:00",
-     "text": "Posted at -120"
+     "at": "2026-10-18T11:50:01-04:00",
+     "text": "Inactives confirmed"
+    },
+    {
+     "at": "2026-10-18T11:50:01-04:00",
+     "text": "Price now -110"
     }
    ]
   },
   {
    "id": "2026-W06:2026_06_NYJ_NE:00-0039794:rec:FG:2.5:under",
-   "rank": 11,
+   "rank": 12,
    "game_id": "2026_06_NYJ_NE",
    "day": "2026-10-18",
    "kickoff": "2026-10-18T13:00:00-04:00",
@@ -717,15 +782,15 @@
    "bet": "Under 2.5 receptions",
    "book": "Hard Rock",
    "price": -105,
-   "price_at": "2026-10-18T00:40:00-04:00",
+   "price_at": "2026-10-18T11:50:01-04:00",
    "first_price": -105,
    "first_price_at": "2026-10-18T00:30:51-04:00",
    "grade_price": -105,
-   "p": 0.5993,
+   "p": 0.6022,
    "breakeven": 0.5122,
-   "p_pct": 59,
+   "p_pct": 60,
    "breakeven_pct": 51,
-   "reason": "1.4 catches a game his last 5 (1 of 5 over 2.5). His team is projected for 18.0 points.",
+   "reason": "1.4 catches a game his last 5 (1 of 5 over 2.5). His team is projected for 17.8 points.",
    "settled": "injury_report",
    "state": "open",
    "thin": false,
@@ -739,8 +804,53 @@
    ]
   },
   {
+   "id": "2026-W06:2026_06_NO_NYG:00-0039337:long_rec:FG:24.5:under",
+   "rank": 13,
+   "game_id": "2026_06_NO_NYG",
+   "day": "2026-10-18",
+   "kickoff": "2026-10-18T13:00:00-04:00",
+   "player": "Malik Nabers",
+   "player_short": "M. Nabers",
+   "player_id": "00-0039337",
+   "pos": "WR",
+   "team": "NYG",
+   "opp": "NO",
+   "home": true,
+   "market": "long_rec",
+   "period": "FG",
+   "side": "under",
+   "line": 24.5,
+   "bet": "Under 24.5 longest reception yards",
+   "book": "Hard Rock",
+   "price": -115,
+   "price_at": "2026-10-18T11:50:01-04:00",
+   "first_price": -110,
+   "first_price_at": "2026-10-18T00:30:51-04:00",
+   "grade_price": -115,
+   "p": 0.5977,
+   "breakeven": 0.5349,
+   "p_pct": 59,
+   "breakeven_pct": 53,
+   "reason": "19.2 yards on his longest catch a game his last 5 (2 of 5 over 24.5). NO allows the 8th fewest receiving yards to WRs.",
+   "settled": "injury_report",
+   "state": "open",
+   "thin": false,
+   "pulled": null,
+   "graded": null,
+   "history": [
+    {
+     "at": "2026-10-18T00:30:51-04:00",
+     "text": "Posted at -110"
+    },
+    {
+     "at": "2026-10-18T11:50:01-04:00",
+     "text": "Price now -115"
+    }
+   ]
+  },
+  {
    "id": "2026-W06:2026_06_ARI_LA:00-0033307:long_rec:FG:16.5:under",
-   "rank": 12,
+   "rank": 14,
    "game_id": "2026_06_ARI_LA",
    "day": "2026-10-18",
    "kickoff": "2026-10-18T16:05:00-04:00",
@@ -780,49 +890,8 @@
    ]
   },
   {
-   "id": "2026-W06:2026_06_NO_NYG:00-0039337:long_rec:FG:24.5:under",
-   "rank": 13,
-   "game_id": "2026_06_NO_NYG",
-   "day": "2026-10-18",
-   "kickoff": "2026-10-18T13:00:00-04:00",
-   "player": "Malik Nabers",
-   "player_short": "M. Nabers",
-   "player_id": "00-0039337",
-   "pos": "WR",
-   "team": "NYG",
-   "opp": "NO",
-   "home": true,
-   "market": "long_rec",
-   "period": "FG",
-   "side": "under",
-   "line": 24.5,
-   "bet": "Under 24.5 longest reception yards",
-   "book": "Hard Rock",
-   "price": -110,
-   "price_at": "2026-10-18T00:40:00-04:00",
-   "first_price": -110,
-   "first_price_at": "2026-10-18T00:30:51-04:00",
-   "grade_price": -110,
-   "p": 0.5937,
-   "breakeven": 0.5238,
-   "p_pct": 59,
-   "breakeven_pct": 52,
-   "reason": "19.2 yards on his longest catch a game his last 5 (2 of 5 over 24.5). NO allows the 8th fewest receiving yards to WRs.",
-   "settled": "injury_report",
-   "state": "open",
-   "thin": false,
-   "pulled": null,
-   "graded": null,
-   "history": [
-    {
-     "at": "2026-10-18T00:30:51-04:00",
-     "text": "Posted at -110"
-    }
-   ]
-  },
-  {
    "id": "2026-W06:2026_06_DAL_GB:00-0040667:rec_yds:1H:29.5:under",
-   "rank": 14,
+   "rank": 15,
    "game_id": "2026_06_DAL_GB",
    "day": "2026-10-18",
    "kickoff": "2026-10-18T20:20:00-04:00",
@@ -862,47 +931,6 @@
    ]
   },
   {
-   "id": "2026-W06:2026_06_CAR_PHI:00-0036555:rush_att:FG:17.5:under",
-   "rank": 15,
-   "game_id": "2026_06_CAR_PHI",
-   "day": "2026-10-18",
-   "kickoff": "2026-10-18T13:00:00-04:00",
-   "player": "Chuba Hubbard",
-   "player_short": "C. Hubbard",
-   "player_id": "00-0036555",
-   "pos": "RB",
-   "team": "CAR",
-   "opp": "PHI",
-   "home": false,
-   "market": "rush_att",
-   "period": "FG",
-   "side": "under",
-   "line": 17.5,
-   "bet": "Under 17.5 carries",
-   "book": "Hard Rock",
-   "price": 100,
-   "price_at": "2026-10-18T00:40:00-04:00",
-   "first_price": 100,
-   "first_price_at": "2026-10-18T00:30:51-04:00",
-   "grade_price": 100,
-   "p": 0.5892,
-   "breakeven": 0.5,
-   "p_pct": 58,
-   "breakeven_pct": 50,
-   "reason": "14.8 carries a game his last 5 (2 of 5 over 17.5).",
-   "settled": "injury_report",
-   "state": "open",
-   "thin": false,
-   "pulled": null,
-   "graded": null,
-   "history": [
-    {
-     "at": "2026-10-18T00:30:51-04:00",
-     "text": "Posted at +100"
-    }
-   ]
-  },
-  {
    "id": "2026-W06:2026_06_CAR_PHI:00-0039150:rush_yds:FG:10.5:under",
    "rank": 16,
    "game_id": "2026_06_CAR_PHI",
@@ -922,7 +950,7 @@
    "bet": "Under 10.5 rushing yards",
    "book": "Hard Rock",
    "price": -120,
-   "price_at": "2026-10-18T00:40:00-04:00",
+   "price_at": "2026-10-18T11:50:01-04:00",
    "first_price": -120,
    "first_price_at": "2026-10-18T00:30:51-04:00",
    "grade_price": -120,
@@ -931,7 +959,7 @@
    "p_pct": 58,
    "breakeven_pct": 55,
    "reason": "8.6 rushing yards a game his last 5 (1 of 5 over 10.5).",
-   "settled": "injury_report",
+   "settled": "inactives",
    "state": "open",
    "thin": false,
    "pulled": null,
@@ -940,6 +968,10 @@
     {
      "at": "2026-10-18T00:30:51-04:00",
      "text": "Posted at -120"
+    },
+    {
+     "at": "2026-10-18T11:50:01-04:00",
+     "text": "Inactives confirmed"
     }
    ]
   },
@@ -1153,6 +1185,129 @@
    ]
   },
   {
+   "id": "2026-W06:2026_06_CHI_ATL:00-0036970:long_rec:FG:15.5:under",
+   "rank": 22,
+   "game_id": "2026_06_CHI_ATL",
+   "day": "2026-10-18",
+   "kickoff": "2026-10-18T13:00:00-04:00",
+   "player": "Kyle Pitts",
+   "player_short": "K. Pitts",
+   "player_id": "00-0036970",
+   "pos": "TE",
+   "team": "ATL",
+   "opp": "CHI",
+   "home": true,
+   "market": "long_rec",
+   "period": "FG",
+   "side": "under",
+   "line": 15.5,
+   "bet": "Under 15.5 longest reception yards",
+   "book": "Hard Rock",
+   "price": -115,
+   "price_at": "2026-10-18T11:50:01-04:00",
+   "first_price": -115,
+   "first_price_at": "2026-10-18T11:50:01-04:00",
+   "grade_price": -115,
+   "p": 0.574,
+   "breakeven": 0.5349,
+   "p_pct": 57,
+   "breakeven_pct": 53,
+   "reason": "12.2 yards on his longest catch a game his last 5 (1 of 5 over 15.5).",
+   "settled": "injury_report",
+   "state": "open",
+   "thin": false,
+   "pulled": null,
+   "graded": null,
+   "history": [
+    {
+     "at": "2026-10-18T11:50:01-04:00",
+     "text": "Posted at -115"
+    }
+   ]
+  },
+  {
+   "id": "2026-W06:2026_06_CHI_ATL:00-0037238:rec_yds:FG:90.5:under",
+   "rank": 23,
+   "game_id": "2026_06_CHI_ATL",
+   "day": "2026-10-18",
+   "kickoff": "2026-10-18T13:00:00-04:00",
+   "player": "Drake London",
+   "player_short": "D. London",
+   "player_id": "00-0037238",
+   "pos": "WR",
+   "team": "ATL",
+   "opp": "CHI",
+   "home": true,
+   "market": "rec_yds",
+   "period": "FG",
+   "side": "under",
+   "line": 90.5,
+   "bet": "Under 90.5 receiving yards",
+   "book": "Hard Rock",
+   "price": -115,
+   "price_at": "2026-10-18T00:40:00-04:00",
+   "first_price": -115,
+   "first_price_at": "2026-10-18T00:40:00-04:00",
+   "grade_price": -115,
+   "p": 0.5734,
+   "breakeven": 0.5349,
+   "p_pct": 57,
+   "breakeven_pct": 53,
+   "reason": "98 receiving yards a game his last 5 (3 of 5 over 90.5).",
+   "settled": "injury_report",
+   "state": "open",
+   "thin": false,
+   "pulled": null,
+   "graded": null,
+   "history": [
+    {
+     "at": "2026-10-18T11:50:01-04:00",
+     "text": "Posted at -115"
+    }
+   ]
+  },
+  {
+   "id": "2026-W06:2026_06_NYJ_NE:00-0039851:pass_yds:1H:124.5:under",
+   "rank": 24,
+   "game_id": "2026_06_NYJ_NE",
+   "day": "2026-10-18",
+   "kickoff": "2026-10-18T13:00:00-04:00",
+   "player": "Drake Maye",
+   "player_short": "D. Maye",
+   "player_id": "00-0039851",
+   "pos": "QB",
+   "team": "NE",
+   "opp": "NYJ",
+   "home": true,
+   "market": "pass_yds",
+   "period": "1H",
+   "side": "under",
+   "line": 124.5,
+   "bet": "Under 124.5 passing yards",
+   "book": "Hard Rock",
+   "price": -115,
+   "price_at": "2026-10-18T00:40:00-04:00",
+   "first_price": -115,
+   "first_price_at": "2026-10-18T00:40:00-04:00",
+   "grade_price": -115,
+   "p": 0.5727,
+   "breakeven": 0.5349,
+   "p_pct": 57,
+   "breakeven_pct": 53,
+   "reason": "103 passing yards a game in the 1st half his last 5 (1 of 5 over 124.5). NYJ allows the 4th fewest passing yards.",
+   "settled": "injury_report",
+   "state": "open",
+   "thin": false,
+   "pulled": null,
+   "graded": null,
+   "history": [
+    {
+     "at": "2026-10-18T11:50:01-04:00",
+     "text": "Posted at -115"
+    }
+   ]
+  },
+  {
    "id": "2026-W06:2026_06_HOU_JAX:00-0038618:long_rec:FG:10.5:over",
    "rank": null,
    "game_id": "2026_06_HOU_JAX",
@@ -1254,6 +1409,54 @@
    ]
   },
   {
+   "id": "2026-W06:2026_06_CAR_PHI:00-0036555:rush_att:FG:17.5:under",
+   "rank": null,
+   "game_id": "2026_06_CAR_PHI",
+   "day": "2026-10-18",
+   "kickoff": "2026-10-18T13:00:00-04:00",
+   "player": "Chuba Hubbard",
+   "player_short": "C. Hubbard",
+   "player_id": "00-0036555",
+   "pos": "RB",
+   "team": "CAR",
+   "opp": "PHI",
+   "home": false,
+   "market": "rush_att",
+   "period": "FG",
+   "side": "under",
+   "line": 17.5,
+   "bet": "Under 17.5 carries",
+   "book": "Hard Rock",
+   "price": 100,
+   "price_at": "2026-10-18T00:30:51-04:00",
+   "first_price": 100,
+   "first_price_at": "2026-10-18T00:30:51-04:00",
+   "grade_price": 100,
+   "p": 0.5892,
+   "breakeven": 0.5,
+   "p_pct": 58,
+   "breakeven_pct": 50,
+   "reason": "14.8 carries a game his last 5 (2 of 5 over 17.5).",
+   "settled": "injury_report",
+   "state": "open",
+   "thin": false,
+   "pulled": {
+    "at": "2026-10-18T11:50:01-04:00",
+    "reason": "Hard Rock moved the line to 18.5."
+   },
+   "graded": null,
+   "history": [
+    {
+     "at": "2026-10-18T00:30:51-04:00",
+     "text": "Posted at +100"
+    },
+    {
+     "at": "2026-10-18T11:50:01-04:00",
+     "text": "Pulled. Hard Rock moved the line to 18.5."
+    }
+   ]
+  },
+  {
    "id": "2026-W06:2026_06_WAS_SF:00-0039910:pass_td:FG:1.5:under",
    "rank": 1,
    "game_id": "2026_06_WAS_SF",
@@ -1344,15 +1547,15 @@
     "2026-W06:2026_06_NO_NYG:00-0038551:rush_att:FG:9.5:under"
    ],
    "n": 2,
-   "price": 230,
-   "price_at": "2026-10-18T00:30:51-04:00",
+   "price": 224,
+   "price_at": "2026-10-18T11:50:01-04:00",
    "first_price": 230,
    "first_price_at": "2026-10-18T00:30:51-04:00",
-   "grade_price": 230,
-   "p": 0.4007,
-   "breakeven": 0.303,
+   "grade_price": 224,
+   "p": 0.4033,
+   "breakeven": 0.3086,
    "p_pct": 40,
-   "breakeven_pct": 30,
+   "breakeven_pct": 31,
    "kickoff": "2026-10-18T13:00:00-04:00",
    "state": "open",
    "pulled": null,
@@ -1387,13 +1590,13 @@
     "2026-W06:2026_06_NO_NYG:00-0038551:rush_att:FG:9.5:under"
    ],
    "n": 3,
-   "price": 458,
-   "price_at": "2026-10-18T00:30:51-04:00",
+   "price": 447,
+   "price_at": "2026-10-18T11:50:01-04:00",
    "first_price": 458,
    "first_price_at": "2026-10-18T00:30:51-04:00",
-   "grade_price": 458,
-   "p": 0.2654,
-   "breakeven": 0.1793,
+   "grade_price": 447,
+   "p": 0.2672,
+   "breakeven": 0.1827,
    "p_pct": 26,
    "breakeven_pct": 18,
    "kickoff": "2026-10-18T13:00:00-04:00",

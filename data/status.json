@@ -3,10 +3,10 @@
  "season": 2026,
  "week": 6,
  "slate": "2026-W06",
- "started_at": "2026-10-18T11:40:00-04:00",
- "status_at": "2026-10-18T11:40:00-04:00",
- "finished_at": "2026-10-18T11:40:01-04:00",
- "last_ok_at": "2026-10-18T11:40:00-04:00",
+ "started_at": "2026-10-18T11:50:01-04:00",
+ "status_at": "2026-10-18T11:50:01-04:00",
+ "finished_at": "2026-10-18T11:50:02-04:00",
+ "last_ok_at": "2026-10-18T11:50:01-04:00",
  "failed_step": null,
  "steps": [
   {
@@ -32,7 +32,7 @@
   {
    "step": "injuries",
    "status": "ok",
-   "note": "espn: 155 out, 100 questionable; inactives posted for 3 team(s)"
+   "note": "espn: 178 out, 81 questionable; inactives posted for 10 team(s)"
   },
   {
    "step": "weather",
@@ -42,12 +42,12 @@
   {
    "step": "odds",
    "status": "ok",
-   "note": "no pull due"
+   "note": "6 read(s) (C)"
   },
   {
    "step": "engine",
    "status": "ok",
-   "note": "no change"
+   "note": "16 new event(s): 4 shown, 1 pulled"
   },
   {
    "step": "grade",
@@ -57,7 +57,7 @@
   {
    "step": "slate",
    "status": "ok",
-   "note": "23 open pick(s), 3 parlay(s)"
+   "note": "26 open pick(s), 3 parlay(s)"
   },
   {
    "step": "research",
@@ -66,8 +66,8 @@
   },
   {
    "step": "record",
-   "status": "skipped",
-   "note": "unchanged"
+   "status": "ok",
+   "note": "record.json"
   }
  ],
  "sources": {
@@ -89,12 +89,12 @@
   },
   {
    "n": 2,
-   "left": 12,
+   "left": 2,
    "shared": false
   },
   {
    "n": 3,
-   "left": 172,
+   "left": 156,
    "shared": false
   },
   {
@@ -118,17 +118,48 @@
    "shared": false
   }
  ],
- "pool_total": 1387,
- "allowance": 51.37,
+ "pool_total": 1361,
+ "allowance": 50.41,
  "tier": "standard",
  "games_left_before_reset": 27,
- "budget_used_today": 786,
+ "budget_used_today": 812,
  "odds": {
   "state": "ok",
-  "at": "2026-10-18T08:20:01-04:00",
-  "next_at": "2026-10-18T11:45:00-04:00"
+  "at": "2026-10-18T11:50:01-04:00",
+  "next_at": "2026-10-18T14:50:00-04:00"
  },
- "due": [],
+ "due": [
+  {
+   "pull": "C",
+   "game_id": "2026_06_BAL_CLE",
+   "cost_max": 5
+  },
+  {
+   "pull": "C",
+   "game_id": "2026_06_CAR_PHI",
+   "cost_max": 5
+  },
+  {
+   "pull": "C",
+   "game_id": "2026_06_CHI_ATL",
+   "cost_max": 3
+  },
+  {
+   "pull": "C",
+   "game_id": "2026_06_NO_NYG",
+   "cost_max": 4
+  },
+  {
+   "pull": "C",
+   "game_id": "2026_06_NYJ_NE",
+   "cost_max": 5
+  },
+  {
+   "pull": "C",
+   "game_id": "2026_06_TEN_IND",
+   "cost_max": 4
+  }
+ ],
  "skipped_games": [],
  "unmatched_names": [
   "Drew Ogletree",
@@ -139,13 +170,13 @@
  "behind": {},
  "stats_problems": [],
  "games_this_week": 14,
- "record_events": 57,
+ "record_events": 73,
  "grade_checks": [],
  "odds_notes": [],
  "runner": {
   "event": "workflow_dispatch",
   "run_id": "39139245995",
-  "iteration": 4,
+  "iteration": 5,
   "chain_link": 312,
   "chain_started_at": "2026-10-18T00:30:50-04:00",
   "run_started_at": "2026-10-18T11:10:13-04:00"
