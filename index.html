@@ -976,7 +976,8 @@ function renderGame(gid) {
   });
   var lsec = h('section', { class: 'sec' }, h('div', { class: 'sec-h' }, h('h2', { text: 'Lines' }), h('span', { class: 'mu', text: fStamp(rows[0] && rows[0].at) || '' })));
   lsec.appendChild(rows.length ? h('div', { class: 'list' }, lt) : h('div', { class: 'card empty' }, h('div', { class: 's', style: 'margin:0', text: 'No Hard Rock game lines yet.' })));
-  if (rows.some(function (l) { return l.book === 'DraftKings'; })) lsec.appendChild(h('div', { class: 'note', text: "Hard Rock doesn't post a usable 1st half spread, so that line is DraftKings, for reference only." }));
+  var dk = rows.filter(function (l) { return l.book === 'DraftKings'; }).map(function (l) { return l.kind === 'total' ? 'total' : 'spread'; });
+  if (dk.length) lsec.appendChild(h('div', { class: 'note', text: "Hard Rock doesn't post a usable 1st half " + (dk.indexOf('spread') >= 0 && dk.indexOf('total') >= 0 ? 'spread or total, so those lines are' : (dk[0] + ', so that line is')) + " DraftKings, for reference only." }));
   app.appendChild(lsec);
 
   /* injuries + inactives */

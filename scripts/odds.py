@@ -788,7 +788,7 @@ def main_total(outcomes, over="over", under="under"):
         for u in outcomes:
             if u.get("side") == under and u.get("point") == o["point"]:
                 bo, bu = _be(o.get("price")), _be(u.get("price"))
-                if bo is None or bu is None or not (0.33 <= bo <= 0.72 and 0.33 <= bu <= 0.72):
+                if bo is None or bu is None or not (0.41 <= bo <= 0.62 and 0.41 <= bu <= 0.62):
                     continue                                   # not a main line (e.g. +425 / -800)
                 d = abs(bo - bu)
                 if best is None or d < best[0]:
@@ -805,7 +805,7 @@ def main_spread(outcomes, away, home):
         for h in outcomes:
             if h.get("side") == home and h.get("point") is not None and abs(h["point"] + a["point"]) < 1e-9:
                 ba, bh = _be(a.get("price")), _be(h.get("price"))
-                if ba is None or bh is None or not (0.33 <= ba <= 0.72 and 0.33 <= bh <= 0.72):
+                if ba is None or bh is None or not (0.41 <= ba <= 0.62 and 0.41 <= bh <= 0.62):
                     continue                                   # not a main line (e.g. +425 / -800)
                 d = abs(ba - bh)
                 if best is None or d < best[0]:
