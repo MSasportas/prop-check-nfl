@@ -1,5 +1,5 @@
 {
- "at": "2026-10-18T16:00:01-04:00",
+ "at": "2026-10-18T16:00:15-04:00",
  "source": "espn",
  "players": {
   "00-0041561": {
@@ -892,7 +892,7 @@
    "pos": "S",
    "status": "Injured Reserve",
    "fantasy": "IR",
-   "date": "2026-10-18T15:57:00-04:00",
+   "date": "2026-10-18T15:48:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
@@ -3792,6 +3792,16 @@
    "detail": null,
    "espn_id": "4431431"
   },
+  "name:NO:cesarruiz": {
+   "name": "Cesar Ruiz",
+   "team": "NO",
+   "pos": "G",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-18T15:42:00-04:00",
+   "detail": "Knee",
+   "espn_id": "4258199"
+  },
   "name:NO:koolaidmckinstry": {
    "name": "Kool-Aid McKinstry",
    "team": "NO",
@@ -3801,16 +3811,6 @@
    "date": "2026-10-18T15:37:00-04:00",
    "detail": "Illness",
    "espn_id": "4433975"
-  },
-  "name:NO:cesarruiz": {
-   "name": "Cesar Ruiz",
-   "team": "NO",
-   "pos": "G",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-18T14:34:00-04:00",
-   "detail": "Knee",
-   "espn_id": "4258199"
   },
   "00-0033906": {
    "name": "Alvin Kamara",
@@ -3964,23 +3964,13 @@
    "detail": null,
    "espn_id": "4569559"
   },
-  "name:NYG:andrewthomas": {
-   "name": "Andrew Thomas",
-   "team": "NYG",
-   "pos": "OT",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-18T15:48:00-04:00",
-   "detail": "Head",
-   "espn_id": "4259566"
-  },
   "name:NYG:jermaineeluemunor": {
    "name": "Jermaine Eluemunor",
    "team": "NYG",
    "pos": "OT",
    "status": "Out",
    "fantasy": "INACTIVE",
-   "date": "2026-10-18T15:48:00-04:00",
+   "date": "2026-10-18T15:52:00-04:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
@@ -4004,6 +3994,16 @@
    "date": "2026-10-18T15:26:00-04:00",
    "detail": "Concussion",
    "espn_id": "4361266"
+  },
+  "name:NYG:andrewthomas": {
+   "name": "Andrew Thomas",
+   "team": "NYG",
+   "pos": "OT",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-18T12:47:00-04:00",
+   "detail": "Head",
+   "espn_id": "4259566"
   },
   "00-0038998": {
    "name": "Jake Haener",
@@ -4304,21 +4304,11 @@
    "name": "Makai Lemon",
    "team": "PHI",
    "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-18T15:57:00-04:00",
-   "detail": null,
-   "espn_id": "4870795"
-  },
-  "00-0038393": {
-   "name": "Dontayvion Wicks",
-   "team": "PHI",
-   "pos": "WR",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-10-18T15:52:00-04:00",
+   "date": "2026-10-18T15:35:00-04:00",
    "detail": "Undisclosed",
-   "espn_id": "4428850",
+   "espn_id": "4870795",
    "comment": "questionable"
   },
   "name:PHI:nolansmith": {
@@ -4527,6 +4517,16 @@
    "date": "2026-10-16T16:39:00-04:00",
    "detail": null,
    "espn_id": "4248557"
+  },
+  "00-0038393": {
+   "name": "Dontayvion Wicks",
+   "team": "PHI",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-16T16:34:00-04:00",
+   "detail": null,
+   "espn_id": "4428850"
   },
   "name:PIT:brandinechols": {
    "name": "Brandin Echols",
