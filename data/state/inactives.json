@@ -654,5 +654,20 @@
    ],
    "confirmed_at": "2026-10-18T11:50:01-04:00"
   }
+ },
+ "2026_06_ARI_LA": {
+  "_kickoff": "2026-10-18T16:05:00-04:00",
+  "ARI": {
+   "confirmed": false,
+   "count": 0,
+   "players": [],
+   "confirmed_at": null
+  },
+  "LA": {
+   "confirmed": false,
+   "count": 0,
+   "players": [],
+   "confirmed_at": null
+  }
  }
 }

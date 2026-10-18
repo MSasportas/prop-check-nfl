@@ -1,5 +1,5 @@
 {
- "at": "2026-10-18T14:00:01-04:00",
+ "at": "2026-10-18T14:30:00-04:00",
  "source": "espn",
  "players": {
   "name:ARI:kitancrawford": {
@@ -220,7 +220,7 @@
    "pos": "LB",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-10-18T13:46:00-04:00",
+   "date": "2026-10-18T14:07:00-04:00",
    "detail": "Arm",
    "espn_id": "4037626"
   },
@@ -376,6 +376,17 @@
    "detail": "Hamstring",
    "espn_id": "4360807"
   },
+  "00-0036550": {
+   "name": "Rashod Bateman",
+   "team": "BAL",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-18T14:20:00-04:00",
+   "detail": "Shoulder",
+   "espn_id": "4360939",
+   "comment": "questionable"
+  },
   "name:BAL:andrewvorhees": {
    "name": "Andrew Vorhees",
    "team": "BAL",
@@ -468,16 +479,6 @@
    "date": "2026-10-16T19:17:00-04:00",
    "detail": null,
    "espn_id": "4035671"
-  },
-  "00-0036550": {
-   "name": "Rashod Bateman",
-   "team": "BAL",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-16T16:31:00-04:00",
-   "detail": null,
-   "espn_id": "4360939"
   },
   "00-0039064": {
    "name": "Zay Flowers",
@@ -681,13 +682,23 @@
    "detail": "Hamstring",
    "espn_id": "4427348"
   },
+  "name:CAR:thomasincoom": {
+   "name": "Thomas Incoom",
+   "team": "CAR",
+   "pos": "LB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-18T14:15:00-04:00",
+   "detail": "Calf",
+   "espn_id": "4714157"
+  },
   "name:CAR:jaelanphillips": {
    "name": "Jaelan Phillips",
    "team": "CAR",
    "pos": "LB",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-10-18T13:47:00-04:00",
+   "date": "2026-10-18T13:54:00-04:00",
    "detail": "Hamstring",
    "espn_id": "4242975"
   },
@@ -865,23 +876,13 @@
    "detail": null,
    "espn_id": "4685720"
   },
-  "00-0036555": {
-   "name": "Chuba Hubbard",
-   "team": "CAR",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-05T00:15:00-04:00",
-   "detail": null,
-   "espn_id": "4241416"
-  },
   "name:CHI:anthonyjohnson": {
    "name": "Anthony Johnson Jr.",
    "team": "CHI",
    "pos": "S",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-18T13:58:00-04:00",
+   "status": "Injured Reserve",
+   "fantasy": "IR",
+   "date": "2026-10-18T14:18:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
@@ -891,7 +892,7 @@
    "pos": "CB",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-10-18T13:58:00-04:00",
+   "date": "2026-10-18T14:02:00-04:00",
    "detail": "Head",
    "espn_id": "3916577"
   },
@@ -2408,6 +2409,26 @@
    "detail": null,
    "espn_id": "4874509"
   },
+  "00-0040718": {
+   "name": "Travis Hunter",
+   "team": "JAX",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-18T13:56:00-04:00",
+   "detail": null,
+   "espn_id": "4685415"
+  },
+  "00-0039893": {
+   "name": "Brian Thomas Jr.",
+   "team": "JAX",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-18T13:53:00-04:00",
+   "detail": null,
+   "espn_id": "4432773"
+  },
   "00-0034960": {
    "name": "Jakobi Meyers",
    "team": "JAX",
@@ -2539,16 +2560,6 @@
    "detail": null,
    "espn_id": "4686248"
   },
-  "00-0040718": {
-   "name": "Travis Hunter",
-   "team": "JAX",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-14T11:36:00-04:00",
-   "detail": null,
-   "espn_id": "4685415"
-  },
   "00-0041100": {
    "name": "Josh Cameron",
    "team": "JAX",
@@ -2568,16 +2579,6 @@
    "date": "2026-10-13T15:12:00-04:00",
    "detail": "Knee",
    "espn_id": "4692525"
-  },
-  "00-0038611": {
-   "name": "Chris Rodriguez Jr.",
-   "team": "JAX",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-11T23:07:00-04:00",
-   "detail": null,
-   "espn_id": "4362619"
   },
   "00-0034386": {
    "name": "Justin Watson",
@@ -3563,6 +3564,16 @@
    "espn_id": "3921690",
    "comment": "The Vikings placed Oliver (biceps) on injured reserve Tuesday, Craig Peters of the team's official site reports."
   },
+  "name:NE:morganmoses": {
+   "name": "Morgan Moses",
+   "team": "NE",
+   "pos": "OT",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-18T14:06:00-04:00",
+   "detail": "Ankle",
+   "espn_id": "16771"
+  },
   "00-0037816": {
    "name": "Romeo Doubs",
    "team": "NE",
@@ -3706,6 +3717,17 @@
    "detail": null,
    "espn_id": "4695193"
   },
+  "00-0033906": {
+   "name": "Alvin Kamara",
+   "team": "NO",
+   "pos": "RB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-18T14:01:00-04:00",
+   "detail": "Undisclosed",
+   "espn_id": "3054850",
+   "comment": "Kamara (undisclosed) walked slowly to the medical tent during Sunday's game at the Giants, Matthew Paras of The New Orleans Times-Picayune reports."
+  },
   "name:NO:nathanshepherd": {
    "name": "Nathan Shepherd",
    "team": "NO",
@@ -3766,16 +3788,6 @@
    "date": "2026-10-18T11:46:00-04:00",
    "detail": "Knee",
    "espn_id": "3925350"
-  },
-  "00-0033906": {
-   "name": "Alvin Kamara",
-   "team": "NO",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-18T11:43:00-04:00",
-   "detail": null,
-   "espn_id": "3054850"
   },
   "00-0037239": {
    "name": "Chris Olave",
@@ -3864,7 +3876,7 @@
    "pos": "OT",
    "status": "Out",
    "fantasy": "INACTIVE",
-   "date": "2026-10-18T13:47:00-04:00",
+   "date": "2026-10-18T14:22:00-04:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
@@ -4173,6 +4185,16 @@
    "detail": null,
    "espn_id": "4808766"
   },
+  "name:PHI:nolansmith": {
+   "name": "Nolan Smith Jr.",
+   "team": "PHI",
+   "pos": "LB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-18T14:15:00-04:00",
+   "detail": "Concussion",
+   "espn_id": "4426331"
+  },
   "00-0039325": {
    "name": "Carson Steele",
    "team": "PHI",
@@ -4389,17 +4411,6 @@
    "date": "2026-10-16T16:25:00-04:00",
    "detail": null,
    "espn_id": "4241478"
-  },
-  "00-0039746": {
-   "name": "Will Shipley",
-   "team": "PHI",
-   "pos": "RB",
-   "status": "Injured Reserve",
-   "fantasy": "IR",
-   "date": "2026-10-16T16:07:00-04:00",
-   "detail": "Foot",
-   "espn_id": "4431545",
-   "comment": "The Eagles placed Shipley (foot) on injured reserve Friday."
   },
   "00-0041490": {
    "name": "Eli Heidenreich",
@@ -5179,6 +5190,16 @@
    "date": "2026-10-07T18:50:00-04:00",
    "detail": null,
    "espn_id": "4034779"
+  },
+  "name:TEN:tonyadams": {
+   "name": "Tony Adams",
+   "team": "TEN",
+   "pos": "S",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-18T13:59:00-04:00",
+   "detail": "Ankle",
+   "espn_id": "4240532"
   },
   "00-0039032": {
    "name": "Tyjae Spears",
@@ -5991,6 +6012,10 @@
   "00-0039325": {
    "status": "Questionable",
    "at": "2026-10-18T14:00:01-04:00"
+  },
+  "00-0036550": {
+   "status": "Questionable",
+   "at": "2026-10-18T14:30:00-04:00"
   }
  }
 }
