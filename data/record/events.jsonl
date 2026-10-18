@@ -122,3 +122,8 @@
 {"at":"2026-10-18T16:10:00-04:00","id":"2026-W06:2026_06_ARI_LA:00-0037263:rec:FG:2.5:under","state":"inactives","t":"locked"}
 {"at":"2026-10-18T16:10:00-04:00","id":"2026-W06:2026_06_ARI_LA:00-0038640:rec_yds:FG:21.5:under","state":"inactives","t":"locked"}
 {"at":"2026-10-18T16:10:00-04:00","id":"2026-W06:2026_06_ARI_LA:00-0039738:rush_att:FG:9.5:under","state":"inactives","t":"locked"}
+{"actual":29,"actual_text":"had 29","at":"2026-10-18T16:20:00-04:00","id":"2026-W06:2026_06_CHI_ATL:00-0036970:long_rec:FG:15.5:under","price":-115,"result":"L","source":"espn_box","t":"graded","units":-1.0}
+{"actual":62,"actual_text":"had 62","at":"2026-10-18T16:20:00-04:00","id":"2026-W06:2026_06_CHI_ATL:00-0037238:rec_yds:FG:90.5:under","price":-115,"result":"W","source":"espn_box","t":"graded","units":0.8696}
+{"actual":16,"actual_text":"had 16","at":"2026-10-18T16:20:00-04:00","id":"2026-W06:2026_06_CHI_ATL:00-0040126:long_rec:FG:18.5:under","price":-120,"result":"W","source":"espn_box","t":"graded","units":0.8333}
+{"actual":14,"actual_text":"had 14","at":"2026-10-18T16:20:00-04:00","id":"2026-W06:2026_06_NYJ_NE:00-0036875:rush_att:FG:14.5:under","price":-130,"result":"W","source":"espn_box","t":"graded","units":0.7692}
+{"actual":2,"actual_text":"had 2","at":"2026-10-18T16:20:00-04:00","id":"2026-W06:2026_06_NYJ_NE:00-0039794:rec:FG:2.5:under","price":-105,"result":"W","source":"espn_box","t":"graded","units":0.9524}

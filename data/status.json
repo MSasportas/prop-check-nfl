@@ -3,10 +3,10 @@
  "season": 2026,
  "week": 6,
  "slate": "2026-W06",
- "started_at": "2026-10-18T16:10:00-04:00",
- "status_at": "2026-10-18T16:10:00-04:00",
- "finished_at": "2026-10-18T16:10:01-04:00",
- "last_ok_at": "2026-10-18T16:10:00-04:00",
+ "started_at": "2026-10-18T16:20:00-04:00",
+ "status_at": "2026-10-18T16:20:00-04:00",
+ "finished_at": "2026-10-18T16:20:03-04:00",
+ "last_ok_at": "2026-10-18T16:20:00-04:00",
  "failed_step": null,
  "steps": [
   {
@@ -17,7 +17,7 @@
   {
    "step": "schedule",
    "status": "ok",
-   "note": "14 game(s) this week (2026-W06); live state for 7 game(s)"
+   "note": "14 game(s) this week (2026-W06); live state for 6 game(s)"
   },
   {
    "step": "stats",
@@ -36,8 +36,8 @@
   },
   {
    "step": "weather",
-   "status": "skipped",
-   "note": "nothing due (1 indoors)"
+   "status": "ok",
+   "note": "2 read, 0 failed, 1 indoors"
   },
   {
    "step": "odds",
@@ -47,12 +47,12 @@
   {
    "step": "engine",
    "status": "ok",
-   "note": "3 new event(s): 0 shown, 0 pulled"
+   "note": "no change"
   },
   {
    "step": "grade",
-   "status": "skipped",
-   "note": "nothing to grade"
+   "status": "ok",
+   "note": "5 graded"
   },
   {
    "step": "slate",
@@ -140,20 +140,24 @@
  "behind": {
   "HOU": "last game's stats are not in yet",
   "JAX": "last game's stats are not in yet",
+  "CHI": "last game's stats are not in yet",
+  "ATL": "last game's stats are not in yet",
   "BAL": "last game's stats are not in yet",
   "CLE": "last game's stats are not in yet",
   "TEN": "last game's stats are not in yet",
-  "IND": "last game's stats are not in yet"
+  "IND": "last game's stats are not in yet",
+  "NYJ": "last game's stats are not in yet",
+  "NE": "last game's stats are not in yet"
  },
  "stats_problems": [],
  "games_this_week": 14,
- "record_events": 124,
+ "record_events": 129,
  "grade_checks": [],
  "odds_notes": [],
  "runner": {
   "event": "workflow_dispatch",
   "run_id": "39161283885",
-  "iteration": 2,
+  "iteration": 3,
   "chain_link": 318,
   "chain_started_at": "2026-10-18T00:30:50-04:00",
   "run_started_at": "2026-10-18T16:00:14-04:00"

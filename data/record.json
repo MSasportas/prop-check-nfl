@@ -1,16 +1,16 @@
 {
- "generated_at": "2026-10-18T16:10:00-04:00",
+ "generated_at": "2026-10-18T16:20:00-04:00",
  "season": 2026,
  "summary": {
   "headline": {
-   "w": 1,
-   "l": 1,
+   "w": 5,
+   "l": 2,
    "push": 0,
    "void": 0,
-   "n": 2,
-   "units": -0.2593,
-   "hit_rate": 0.5,
-   "needed": 0.565,
+   "n": 7,
+   "units": 2.1652,
+   "hit_rate": 0.7143,
+   "needed": 0.5461,
    "parlays": {
     "w": 0,
     "l": 0,
@@ -18,6 +18,18 @@
    }
   },
   "rows": [
+   {
+    "key": "rush_att|FG",
+    "label": "Carries",
+    "w": 1,
+    "l": 0,
+    "push": 0,
+    "void": 0,
+    "n": 1,
+    "units": 0.7692,
+    "hit_rate": 1.0,
+    "needed": 0.5652
+   },
    {
     "key": "pass_int|FG",
     "label": "Interceptions",
@@ -33,14 +45,38 @@
    {
     "key": "long_rec|FG",
     "label": "Longest catch",
-    "w": 0,
-    "l": 1,
+    "w": 1,
+    "l": 2,
+    "push": 0,
+    "void": 0,
+    "n": 3,
+    "units": -1.1667,
+    "hit_rate": 0.3333,
+    "needed": 0.5453
+   },
+   {
+    "key": "rec|FG",
+    "label": "Receptions",
+    "w": 1,
+    "l": 0,
     "push": 0,
     "void": 0,
     "n": 1,
-    "units": -1.0,
-    "hit_rate": 0.0,
-    "needed": 0.5556
+    "units": 0.9524,
+    "hit_rate": 1.0,
+    "needed": 0.5122
+   },
+   {
+    "key": "rec_yds|FG",
+    "label": "Receiving yards",
+    "w": 1,
+    "l": 0,
+    "push": 0,
+    "void": 0,
+    "n": 1,
+    "units": 0.8696,
+    "hit_rate": 1.0,
+    "needed": 0.5349
    }
   ]
  },
@@ -50,9 +86,9 @@
    "slate": "2026-W06",
    "label": "Week 6",
    "graded": false,
-   "w": 1,
-   "l": 1,
-   "units": -0.2593,
+   "w": 5,
+   "l": 2,
+   "units": 2.1652,
    "entries": [
     {
      "id": "2026-W06:2026_06_ARI_LA:00-0033307:long_rec:FG:16.5:under",
@@ -176,9 +212,9 @@
      "period": "FG",
      "bet": "Under 18.5 longest reception yards",
      "price": -120,
-     "result": null,
-     "actual": null,
-     "units": null,
+     "result": "W",
+     "actual": "had 16",
+     "units": 0.8333,
      "pulled": null,
      "legs": []
     },
@@ -264,9 +300,9 @@
      "period": "FG",
      "bet": "Under 14.5 carries",
      "price": -130,
-     "result": null,
-     "actual": null,
-     "units": null,
+     "result": "W",
+     "actual": "had 14",
+     "units": 0.7692,
      "pulled": null,
      "legs": []
     },
@@ -281,9 +317,9 @@
      "period": "FG",
      "bet": "Under 2.5 receptions",
      "price": -105,
-     "result": null,
-     "actual": null,
-     "units": null,
+     "result": "W",
+     "actual": "had 2",
+     "units": 0.9524,
      "pulled": null,
      "legs": []
     },
@@ -418,9 +454,9 @@
      "period": "FG",
      "bet": "Under 15.5 longest reception yards",
      "price": -115,
-     "result": null,
-     "actual": null,
-     "units": null,
+     "result": "L",
+     "actual": "had 29",
+     "units": -1.0,
      "pulled": null,
      "legs": []
     },
@@ -435,9 +471,9 @@
      "period": "FG",
      "bet": "Under 90.5 receiving yards",
      "price": -115,
-     "result": null,
-     "actual": null,
-     "units": null,
+     "result": "W",
+     "actual": "had 62",
+     "units": 0.8696,
      "pulled": null,
      "legs": []
     },
