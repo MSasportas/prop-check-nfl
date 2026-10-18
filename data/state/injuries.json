@@ -1,5 +1,5 @@
 {
- "at": "2026-10-18T13:00:00-04:00",
+ "at": "2026-10-18T13:30:00-04:00",
  "source": "espn",
  "players": {
   "name:ARI:kitancrawford": {
@@ -861,7 +861,7 @@
    "pos": "S",
    "status": "Out",
    "fantasy": "OUT",
-   "date": "2026-10-18T12:50:00-04:00",
+   "date": "2026-10-18T13:19:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
@@ -1168,6 +1168,16 @@
    "date": "2026-10-05T22:52:00-04:00",
    "detail": null,
    "espn_id": "4690070"
+  },
+  "name:CLE:grantdelpit": {
+   "name": "Grant Delpit",
+   "team": "CLE",
+   "pos": "S",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-18T13:20:00-04:00",
+   "detail": "Head",
+   "espn_id": "4242208"
   },
   "00-0038794": {
    "name": "Jaleel McLaughlin",
@@ -2031,6 +2041,16 @@
    "detail": null,
    "espn_id": "4248528"
   },
+  "00-0036554": {
+   "name": "Nico Collins",
+   "team": "HOU",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-18T13:08:00-04:00",
+   "detail": null,
+   "espn_id": "4258173"
+  },
   "name:HOU:reedblankenship": {
    "name": "Reed Blankenship",
    "team": "HOU",
@@ -2193,16 +2213,6 @@
    "date": "2026-10-11T21:20:00-04:00",
    "detail": null,
    "espn_id": "4586312"
-  },
-  "00-0039163": {
-   "name": "C.J. Stroud",
-   "team": "HOU",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-11T19:04:00-04:00",
-   "detail": null,
-   "espn_id": "4432577"
   },
   "00-0040206": {
    "name": "Riley Leonard",
@@ -2368,6 +2378,16 @@
    "detail": null,
    "espn_id": "4874509"
   },
+  "name:JAX:antoniojohnson": {
+   "name": "Antonio Johnson",
+   "team": "JAX",
+   "pos": "S",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-18T12:57:00-04:00",
+   "detail": "Ankle",
+   "espn_id": "4429168"
+  },
   "00-0032104": {
    "name": "Ameer Abdullah",
    "team": "JAX",
@@ -2377,16 +2397,6 @@
    "date": "2026-10-18T12:34:00-04:00",
    "detail": null,
    "espn_id": "2576336"
-  },
-  "name:JAX:antoniojohnson": {
-   "name": "Antonio Johnson",
-   "team": "JAX",
-   "pos": "S",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-18T11:48:00-04:00",
-   "detail": "Ankle",
-   "espn_id": "4429168"
   },
   "00-0041106": {
    "name": "CJ Williams",
@@ -3823,7 +3833,7 @@
    "pos": "OT",
    "status": "Out",
    "fantasy": "INACTIVE",
-   "date": "2026-10-18T12:38:00-04:00",
+   "date": "2026-10-18T13:01:00-04:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
@@ -4164,7 +4174,7 @@
    "comment": "Brown (coach's decision) is inactive for Sunday's game against the Panthers."
   },
   "00-0039398": {
-   "name": "Joe Milton III",
+   "name": "Joe Milton",
    "team": "PHI",
    "pos": "QB",
    "status": "Out",
