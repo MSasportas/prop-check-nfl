@@ -1,23 +1,36 @@
 {
- "generated_at": "2026-10-18T12:10:00-04:00",
+ "generated_at": "2026-10-18T12:50:00-04:00",
  "season": 2026,
  "summary": {
   "headline": {
    "w": 0,
-   "l": 0,
+   "l": 1,
    "push": 0,
    "void": 0,
-   "n": 0,
-   "units": 0,
-   "hit_rate": null,
-   "needed": null,
+   "n": 1,
+   "units": -1.0,
+   "hit_rate": 0.0,
+   "needed": 0.5556,
    "parlays": {
     "w": 0,
     "l": 0,
     "units": 0
    }
   },
-  "rows": []
+  "rows": [
+   {
+    "key": "long_rec|FG",
+    "label": "Longest catch",
+    "w": 0,
+    "l": 1,
+    "push": 0,
+    "void": 0,
+    "n": 1,
+    "units": -1.0,
+    "hit_rate": 0.0,
+    "needed": 0.5556
+   }
+  ]
  },
  "weeks": [
   {
@@ -26,8 +39,8 @@
    "label": "Week 6",
    "graded": false,
    "w": 0,
-   "l": 0,
-   "units": 0,
+   "l": 1,
+   "units": -1.0,
    "entries": [
     {
      "id": "2026-W06:2026_06_CAR_PHI:00-0036555:rush_att:FG:17.5:under",
@@ -60,9 +73,9 @@
      "period": "FG",
      "bet": "Over 10.5 longest reception yards",
      "price": -125,
-     "result": null,
-     "actual": null,
-     "units": null,
+     "result": "L",
+     "actual": "had 5",
+     "units": -1.0,
      "pulled": null,
      "legs": []
     },

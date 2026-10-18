@@ -1,5 +1,5 @@
 {
- "at": "2026-10-18T12:40:12-04:00",
+ "at": "2026-10-18T12:50:00-04:00",
  "source": "espn",
  "players": {
   "name:ARI:kitancrawford": {
@@ -366,6 +366,16 @@
    "detail": "Hamstring",
    "espn_id": "4360807"
   },
+  "name:BAL:andrewvorhees": {
+   "name": "Andrew Vorhees",
+   "team": "BAL",
+   "pos": "G",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T12:44:00-04:00",
+   "detail": "Foot",
+   "espn_id": "4243220"
+  },
   "00-0040876": {
    "name": "Elijah Sarratt",
    "team": "BAL",
@@ -386,16 +396,6 @@
    "date": "2026-10-18T11:47:00-04:00",
    "detail": null,
    "espn_id": "4870847"
-  },
-  "name:BAL:andrewvorhees": {
-   "name": "Andrew Vorhees",
-   "team": "BAL",
-   "pos": "G",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-10-18T11:33:00-04:00",
-   "detail": "Foot",
-   "espn_id": "4243220"
   },
   "name:BAL:kvonwallace": {
    "name": "K'Von Wallace",
@@ -671,6 +671,16 @@
    "detail": "Hamstring",
    "espn_id": "4427348"
   },
+  "name:CAR:monroefreeling": {
+   "name": "Monroe Freeling",
+   "team": "CAR",
+   "pos": "OT",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T12:35:00-04:00",
+   "detail": "Knee",
+   "espn_id": "4870694"
+  },
   "00-0040644": {
    "name": "Trevor Etienne",
    "team": "CAR",
@@ -732,16 +742,6 @@
    "date": "2026-10-18T11:44:00-04:00",
    "detail": "Coach's Decision",
    "espn_id": "4431077"
-  },
-  "name:CAR:monroefreeling": {
-   "name": "Monroe Freeling",
-   "team": "CAR",
-   "pos": "OT",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-10-18T11:44:00-04:00",
-   "detail": "Knee",
-   "espn_id": "4870694"
   },
   "00-0036265": {
    "name": "AJ Dillon",
@@ -861,7 +861,7 @@
    "pos": "S",
    "status": "Out",
    "fantasy": "OUT",
-   "date": "2026-10-18T12:20:00-04:00",
+   "date": "2026-10-18T12:38:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
@@ -1169,6 +1169,27 @@
    "detail": null,
    "espn_id": "4690070"
   },
+  "00-0038794": {
+   "name": "Jaleel McLaughlin",
+   "team": "CLE",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-18T12:37:00-04:00",
+   "detail": null,
+   "espn_id": "4722893"
+  },
+  "00-0041092": {
+   "name": "Taylen Green",
+   "team": "CLE",
+   "pos": "QB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T12:33:00-04:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4431325",
+   "comment": "Green (coach's decision) is listed as inactive but will serve as the Browns' emergency third quarterback for Sunday's game against the Ravens, Kelsey Russo of t"
+  },
   "name:CLE:masongraham": {
    "name": "Mason Graham",
    "team": "CLE",
@@ -1186,20 +1207,9 @@
    "status": "Out",
    "fantasy": "INACTIVE",
    "date": "2026-10-18T11:41:00-04:00",
-   "detail": "Foot",
+   "detail": "Ankle",
    "espn_id": "4685702",
    "comment": "Judkins (ankle) is inactive for Sunday's game against the Ravens."
-  },
-  "00-0041092": {
-   "name": "Taylen Green",
-   "team": "CLE",
-   "pos": "QB",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-10-18T11:35:00-04:00",
-   "detail": "Coach's Decision",
-   "espn_id": "4431325",
-   "comment": "inactive"
   },
   "name:CLE:mikehall": {
    "name": "Mike Hall Jr.",
@@ -1342,16 +1352,6 @@
    "date": "2026-10-11T19:33:00-04:00",
    "detail": null,
    "espn_id": "3122840"
-  },
-  "00-0040663": {
-   "name": "Harold Fannin Jr.",
-   "team": "CLE",
-   "pos": "TE",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-11T19:31:00-04:00",
-   "detail": null,
-   "espn_id": "5083076"
   },
   "name:DAL:joeyporter": {
    "name": "Joey Porter Jr.",
@@ -2368,6 +2368,16 @@
    "detail": null,
    "espn_id": "4874509"
   },
+  "00-0032104": {
+   "name": "Ameer Abdullah",
+   "team": "JAX",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-18T12:34:00-04:00",
+   "detail": null,
+   "espn_id": "2576336"
+  },
   "name:JAX:antoniojohnson": {
    "name": "Antonio Johnson",
    "team": "JAX",
@@ -2377,17 +2387,6 @@
    "date": "2026-10-18T11:48:00-04:00",
    "detail": "Ankle",
    "espn_id": "4429168"
-  },
-  "00-0032104": {
-   "name": "Ameer Abdullah",
-   "team": "JAX",
-   "pos": "RB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-18T10:12:00-04:00",
-   "detail": "Concussion",
-   "espn_id": "2576336",
-   "comment": "questionable"
   },
   "00-0041106": {
    "name": "CJ Williams",
@@ -3524,6 +3523,16 @@
    "espn_id": "3921690",
    "comment": "The Vikings placed Oliver (biceps) on injured reserve Tuesday, Craig Peters of the team's official site reports."
   },
+  "name:NE:channingcanada": {
+   "name": "Channing Canada",
+   "team": "NE",
+   "pos": "CB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T12:38:00-04:00",
+   "detail": "Hamstring",
+   "espn_id": "4688779"
+  },
   "00-0041123": {
    "name": "Behren Morton",
    "team": "NE",
@@ -3555,16 +3564,6 @@
    "detail": "Coach's Decision",
    "espn_id": "4683308",
    "comment": "inactive"
-  },
-  "name:NE:channingcanada": {
-   "name": "Channing Canada",
-   "team": "NE",
-   "pos": "CB",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-10-18T11:51:00-04:00",
-   "detail": "Hamstring",
-   "espn_id": "4688779"
   },
   "name:NE:dametriouscrownover": {
    "name": "Dametrious Crownover",
@@ -3824,7 +3823,7 @@
    "pos": "OT",
    "status": "Out",
    "fantasy": "INACTIVE",
-   "date": "2026-10-18T12:20:00-04:00",
+   "date": "2026-10-18T12:38:00-04:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
@@ -4122,6 +4121,16 @@
    "date": "2026-10-09T17:44:00-04:00",
    "detail": null,
    "espn_id": "4808766"
+  },
+  "00-0040891": {
+   "name": "Cole Payton",
+   "team": "PHI",
+   "pos": "QB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-18T12:26:00-04:00",
+   "detail": null,
+   "espn_id": "4879250"
   },
   "00-0038400": {
    "name": "Tanner McKee",
