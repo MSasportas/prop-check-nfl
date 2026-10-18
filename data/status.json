@@ -3,16 +3,16 @@
  "season": 2026,
  "week": 6,
  "slate": "2026-W06",
- "started_at": "2026-10-18T00:30:51-04:00",
- "status_at": "2026-10-18T00:30:51-04:00",
- "finished_at": "2026-10-18T00:31:00-04:00",
- "last_ok_at": "2026-10-18T00:30:51-04:00",
+ "started_at": "2026-10-18T00:40:00-04:00",
+ "status_at": "2026-10-18T00:40:00-04:00",
+ "finished_at": "2026-10-18T00:40:03-04:00",
+ "last_ok_at": "2026-10-18T00:40:00-04:00",
  "failed_step": null,
  "steps": [
   {
    "step": "rules",
-   "status": "ok",
-   "note": "rules.json written"
+   "status": "skipped",
+   "note": "unchanged"
   },
   {
    "step": "schedule",
@@ -21,33 +21,33 @@
   },
   {
    "step": "stats",
-   "status": "ok",
-   "note": "80 games through 2026-10-15"
+   "status": "skipped",
+   "note": "checked at 12:30 AM"
   },
   {
    "step": "roster",
-   "status": "ok",
-   "note": "790 skill players"
+   "status": "skipped",
+   "note": "read at 12:30 AM"
   },
   {
    "step": "injuries",
-   "status": "ok",
-   "note": "espn: 142 out, 102 questionable"
+   "status": "skipped",
+   "note": "read at 12:30 AM"
   },
   {
    "step": "weather",
-   "status": "ok",
-   "note": "11 read, 0 failed, 2 indoors"
+   "status": "skipped",
+   "note": "nothing due (2 indoors)"
   },
   {
    "step": "odds",
    "status": "ok",
-   "note": "26 read(s) (M, R)"
+   "note": "13 read(s) (F)"
   },
   {
    "step": "engine",
    "status": "ok",
-   "note": "28 new event(s): 28 shown, 0 pulled"
+   "note": "1 new event(s): 0 shown, 0 pulled"
   },
   {
    "step": "grade",
@@ -62,7 +62,7 @@
   {
    "step": "research",
    "status": "ok",
-   "note": "14 game file(s) written"
+   "note": "13 game file(s) written"
   },
   {
    "step": "record",
@@ -88,12 +88,12 @@
   },
   {
    "n": 2,
-   "left": 223,
+   "left": 18,
    "shared": false
   },
   {
    "n": 3,
-   "left": 500,
+   "left": 172,
    "shared": false
   },
   {
@@ -117,161 +117,100 @@
    "shared": false
   }
  ],
- "pool_total": 1926,
- "allowance": 68.79,
- "tier": "full",
+ "pool_total": 1393,
+ "allowance": 49.75,
+ "tier": "standard",
  "games_left_before_reset": 28,
- "budget_used_today": 247,
+ "budget_used_today": 780,
  "odds": {
   "state": "ok",
-  "at": "2026-10-18T00:30:51-04:00",
+  "at": "2026-10-18T00:40:00-04:00",
   "next_at": "2026-10-18T08:15:00-04:00"
  },
  "due": [
   {
-   "pull": "M",
+   "pull": "F",
    "game_id": "2026_06_HOU_JAX",
-   "cost_max": 1
+   "cost_max": 41
   },
   {
-   "pull": "M",
+   "pull": "F",
    "game_id": "2026_06_BAL_CLE",
-   "cost_max": 1
+   "cost_max": 41
   },
   {
-   "pull": "M",
+   "pull": "F",
    "game_id": "2026_06_CAR_PHI",
-   "cost_max": 1
+   "cost_max": 41
   },
   {
-   "pull": "M",
+   "pull": "F",
    "game_id": "2026_06_CHI_ATL",
-   "cost_max": 1
+   "cost_max": 41
   },
   {
-   "pull": "M",
+   "pull": "F",
    "game_id": "2026_06_NO_NYG",
-   "cost_max": 1
+   "cost_max": 41
   },
   {
-   "pull": "M",
+   "pull": "F",
    "game_id": "2026_06_NYJ_NE",
-   "cost_max": 1
+   "cost_max": 41
   },
   {
-   "pull": "M",
+   "pull": "F",
    "game_id": "2026_06_PIT_TB",
-   "cost_max": 1
+   "cost_max": 41
   },
   {
-   "pull": "M",
+   "pull": "F",
    "game_id": "2026_06_TEN_IND",
-   "cost_max": 1
+   "cost_max": 41
   },
   {
-   "pull": "M",
+   "pull": "F",
    "game_id": "2026_06_ARI_LA",
-   "cost_max": 1
+   "cost_max": 41
   },
   {
-   "pull": "M",
+   "pull": "F",
    "game_id": "2026_06_BUF_LV",
-   "cost_max": 1
+   "cost_max": 41
   },
   {
-   "pull": "M",
+   "pull": "F",
    "game_id": "2026_06_LAC_KC",
-   "cost_max": 1
+   "cost_max": 41
   },
   {
-   "pull": "M",
+   "pull": "F",
    "game_id": "2026_06_DAL_GB",
-   "cost_max": 1
+   "cost_max": 41
   },
   {
-   "pull": "M",
+   "pull": "F",
    "game_id": "2026_06_WAS_SF",
-   "cost_max": 1
-  },
-  {
-   "pull": "R",
-   "game_id": "2026_06_HOU_JAX",
-   "cost_max": 18
-  },
-  {
-   "pull": "R",
-   "game_id": "2026_06_BAL_CLE",
-   "cost_max": 18
-  },
-  {
-   "pull": "R",
-   "game_id": "2026_06_CAR_PHI",
-   "cost_max": 18
-  },
-  {
-   "pull": "R",
-   "game_id": "2026_06_CHI_ATL",
-   "cost_max": 18
-  },
-  {
-   "pull": "R",
-   "game_id": "2026_06_NO_NYG",
-   "cost_max": 18
-  },
-  {
-   "pull": "R",
-   "game_id": "2026_06_NYJ_NE",
-   "cost_max": 18
-  },
-  {
-   "pull": "R",
-   "game_id": "2026_06_PIT_TB",
-   "cost_max": 18
-  },
-  {
-   "pull": "R",
-   "game_id": "2026_06_TEN_IND",
-   "cost_max": 18
-  },
-  {
-   "pull": "R",
-   "game_id": "2026_06_ARI_LA",
-   "cost_max": 18
-  },
-  {
-   "pull": "R",
-   "game_id": "2026_06_BUF_LV",
-   "cost_max": 18
-  },
-  {
-   "pull": "R",
-   "game_id": "2026_06_LAC_KC",
-   "cost_max": 18
-  },
-  {
-   "pull": "R",
-   "game_id": "2026_06_DAL_GB",
-   "cost_max": 18
-  },
-  {
-   "pull": "R",
-   "game_id": "2026_06_WAS_SF",
-   "cost_max": 18
+   "cost_max": 41
   }
  ],
  "skipped_games": [],
- "unmatched_names": [],
+ "unmatched_names": [
+  "Drew Ogletree",
+  "Hollywood Brown",
+  "James Jordan"
+ ],
  "unknown_teams": [],
  "behind": {},
  "stats_problems": [],
  "games_this_week": 14,
- "record_events": 28,
+ "record_events": 29,
  "grade_checks": [],
  "odds_notes": [],
  "runner": {
   "event": "push",
   "run_id": "39097348694",
-  "iteration": 1,
+  "iteration": 2,
   "chain_link": 0,
   "chain_started_at": "2026-10-18T00:30:50-04:00",
   "run_started_at": "2026-10-18T00:30:50-04:00"
