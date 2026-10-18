@@ -3,16 +3,16 @@
  "season": 2026,
  "week": 6,
  "slate": "2026-W06",
- "started_at": "2026-10-18T00:50:01-04:00",
- "status_at": "2026-10-18T00:50:01-04:00",
- "finished_at": "2026-10-18T00:50:01-04:00",
- "last_ok_at": "2026-10-18T00:50:01-04:00",
+ "started_at": "2026-10-18T01:00:01-04:00",
+ "status_at": "2026-10-18T01:00:01-04:00",
+ "finished_at": "2026-10-18T01:00:01-04:00",
+ "last_ok_at": "2026-10-18T01:00:01-04:00",
  "failed_step": null,
  "steps": [
   {
    "step": "rules",
-   "status": "ok",
-   "note": "rules.json written"
+   "status": "skipped",
+   "note": "unchanged"
   },
   {
    "step": "schedule",
@@ -47,7 +47,7 @@
   {
    "step": "engine",
    "status": "ok",
-   "note": "13 new event(s): 0 shown, 0 pulled"
+   "note": "11 new event(s): 0 shown, 0 pulled"
   },
   {
    "step": "grade",
@@ -62,7 +62,7 @@
   {
    "step": "research",
    "status": "ok",
-   "note": "6 game file(s) written"
+   "note": "14 game file(s) written"
   },
   {
    "step": "record",
@@ -138,16 +138,16 @@
  "behind": {},
  "stats_problems": [],
  "games_this_week": 14,
- "record_events": 42,
+ "record_events": 53,
  "grade_checks": [],
  "odds_notes": [],
  "runner": {
-  "event": "push",
-  "run_id": "39097348694",
-  "iteration": 3,
-  "chain_link": 0,
+  "event": "workflow_dispatch",
+  "run_id": "39098462207",
+  "iteration": 2,
+  "chain_link": 1,
   "chain_started_at": "2026-10-18T00:30:50-04:00",
-  "run_started_at": "2026-10-18T00:30:50-04:00"
+  "run_started_at": "2026-10-18T00:50:12-04:00"
  },
  "live_page": {
   "checked_at": "2026-10-18T00:50:01-04:00",
