@@ -3,10 +3,10 @@
  "season": 2026,
  "week": 6,
  "slate": "2026-W06",
- "started_at": "2026-10-18T13:00:00-04:00",
- "status_at": "2026-10-18T13:00:00-04:00",
- "finished_at": "2026-10-18T13:00:32-04:00",
- "last_ok_at": "2026-10-18T13:00:00-04:00",
+ "started_at": "2026-10-18T13:20:00-04:00",
+ "status_at": "2026-10-18T13:20:00-04:00",
+ "finished_at": "2026-10-18T13:20:01-04:00",
+ "last_ok_at": "2026-10-18T13:20:00-04:00",
  "failed_step": null,
  "steps": [
   {
@@ -17,12 +17,12 @@
   {
    "step": "schedule",
    "status": "ok",
-   "note": "14 game(s) this week (2026-W06); schedule read"
+   "note": "14 game(s) this week (2026-W06); live state for 7 game(s)"
   },
   {
    "step": "stats",
    "status": "skipped",
-   "note": "checked at 12:20 PM"
+   "note": "play-by-play unchanged (5509556 bytes)"
   },
   {
    "step": "roster",
@@ -31,13 +31,13 @@
   },
   {
    "step": "injuries",
-   "status": "ok",
-   "note": "espn: 204 out, 56 questionable; inactives posted for 16 team(s)"
+   "status": "skipped",
+   "note": "read at 1:00 PM; inactives posted for 16 team(s)"
   },
   {
    "step": "weather",
-   "status": "ok",
-   "note": "7 read, 0 failed, 2 indoors"
+   "status": "skipped",
+   "note": "nothing due (2 indoors)"
   },
   {
    "step": "odds",
@@ -47,7 +47,7 @@
   {
    "step": "engine",
    "status": "ok",
-   "note": "16 new event(s): 2 shown, 0 pulled"
+   "note": "no change"
   },
   {
    "step": "grade",
@@ -62,12 +62,12 @@
   {
    "step": "research",
    "status": "ok",
-   "note": "14 game file(s) written"
+   "note": "0 game file(s) written"
   },
   {
    "step": "record",
-   "status": "ok",
-   "note": "record.json"
+   "status": "skipped",
+   "note": "unchanged"
   }
  ],
  "sources": {
@@ -149,13 +149,13 @@
  "runner": {
   "event": "workflow_dispatch",
   "run_id": "39146042293",
-  "iteration": 3,
+  "iteration": 5,
   "chain_link": 314,
   "chain_started_at": "2026-10-18T00:30:50-04:00",
   "run_started_at": "2026-10-18T12:40:11-04:00"
  },
  "live_page": {
-  "checked_at": "2026-10-18T12:20:00-04:00",
+  "checked_at": "2026-10-18T13:20:00-04:00",
   "http": 200,
   "is_page": true
  }
