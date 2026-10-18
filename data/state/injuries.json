@@ -1,5 +1,5 @@
 {
- "at": "2026-10-18T10:30:01-04:00",
+ "at": "2026-10-18T11:10:00-04:00",
  "source": "espn",
  "players": {
   "name:ARI:kitancrawford": {
@@ -856,9 +856,9 @@
    "name": "Anthony Johnson Jr.",
    "team": "CHI",
    "pos": "S",
-   "status": "Injured Reserve",
-   "fantasy": "IR",
-   "date": "2026-10-18T10:12:00-04:00",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-10-18T11:01:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
@@ -2028,6 +2028,26 @@
    "detail": null,
    "espn_id": "4248528"
   },
+  "name:HOU:reedblankenship": {
+   "name": "Reed Blankenship",
+   "team": "HOU",
+   "pos": "S",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-18T10:58:00-04:00",
+   "detail": "Head",
+   "espn_id": "4243956"
+  },
+  "name:HOU:azeezalshaair": {
+   "name": "Azeez Al-Shaair",
+   "team": "HOU",
+   "pos": "LB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-18T10:55:00-04:00",
+   "detail": "Head",
+   "espn_id": "3919117"
+  },
   "00-0039849": {
    "name": "Marvin Harrison Jr.",
    "team": "HOU",
@@ -2190,16 +2210,6 @@
    "date": "2026-10-11T19:04:00-04:00",
    "detail": null,
    "espn_id": "4432577"
-  },
-  "00-0036554": {
-   "name": "Nico Collins",
-   "team": "HOU",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-11T18:59:00-04:00",
-   "detail": null,
-   "espn_id": "4258173"
   },
   "00-0040128": {
    "name": "Tyler Warren",
@@ -3845,6 +3855,16 @@
    "detail": null,
    "espn_id": "4698597"
   },
+  "name:NYG:jermaineeluemunor": {
+   "name": "Jermaine Eluemunor",
+   "team": "NYG",
+   "pos": "OT",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-18T11:04:00-04:00",
+   "detail": "Calf",
+   "espn_id": "3115303"
+  },
   "00-0039384": {
    "name": "Tyrone Tracy Jr.",
    "team": "NYG",
@@ -3854,16 +3874,6 @@
    "date": "2026-10-18T10:19:00-04:00",
    "detail": null,
    "espn_id": "4360516"
-  },
-  "name:NYG:jermaineeluemunor": {
-   "name": "Jermaine Eluemunor",
-   "team": "NYG",
-   "pos": "OT",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-18T10:12:00-04:00",
-   "detail": "Calf",
-   "espn_id": "3115303"
   },
   "00-0036893": {
    "name": "Najee Harris",
