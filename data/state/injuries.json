@@ -1,5 +1,5 @@
 {
- "at": "2026-10-18T16:20:00-04:00",
+ "at": "2026-10-18T16:50:01-04:00",
  "source": "espn",
  "players": {
   "00-0041561": {
@@ -391,8 +391,8 @@
    "name": "Rashod Bateman",
    "team": "BAL",
    "pos": "WR",
-   "status": "Out",
-   "fantasy": "OUT",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
    "date": "2026-10-18T14:45:00-04:00",
    "detail": "Shoulder",
    "espn_id": "4360939",
@@ -892,7 +892,7 @@
    "pos": "S",
    "status": "Injured Reserve",
    "fantasy": "IR",
-   "date": "2026-10-18T16:01:00-04:00",
+   "date": "2026-10-18T16:26:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
@@ -3140,6 +3140,16 @@
    "detail": null,
    "espn_id": "4038941"
   },
+  "name:LA:blakegrupe": {
+   "name": "Blake Grupe",
+   "team": "LA",
+   "pos": "PK",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-18T16:31:00-04:00",
+   "detail": "Knee",
+   "espn_id": "4259619"
+  },
   "00-0041568": {
    "name": "Ty Simpson",
    "team": "LA",
@@ -3629,6 +3639,16 @@
    "espn_id": "3921690",
    "comment": "The Vikings placed Oliver (biceps) on injured reserve Tuesday, Craig Peters of the team's official site reports."
   },
+  "name:NE:morganmoses": {
+   "name": "Morgan Moses",
+   "team": "NE",
+   "pos": "OT",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-18T16:43:00-04:00",
+   "detail": "Ankle",
+   "espn_id": "16771"
+  },
   "name:NE:benbrown": {
    "name": "Ben Brown",
    "team": "NE",
@@ -3638,16 +3658,6 @@
    "date": "2026-10-18T15:58:00-04:00",
    "detail": "Knee",
    "espn_id": "4362890"
-  },
-  "name:NE:morganmoses": {
-   "name": "Morgan Moses",
-   "team": "NE",
-   "pos": "OT",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-18T15:40:00-04:00",
-   "detail": "Ankle",
-   "espn_id": "16771"
   },
   "name:NE:alijahveratucker": {
    "name": "Alijah Vera-Tucker",
@@ -3663,8 +3673,8 @@
    "name": "Romeo Doubs",
    "team": "NE",
    "pos": "WR",
-   "status": "Out",
-   "fantasy": "OUT",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
    "date": "2026-10-18T14:54:00-04:00",
    "detail": "Shoulder",
    "espn_id": "4361432",
@@ -3970,7 +3980,7 @@
    "pos": "OT",
    "status": "Out",
    "fantasy": "INACTIVE",
-   "date": "2026-10-18T16:01:00-04:00",
+   "date": "2026-10-18T16:26:00-04:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
@@ -4306,7 +4316,7 @@
    "pos": "WR",
    "status": "Active",
    "fantasy": null,
-   "date": "2026-10-18T16:01:00-04:00",
+   "date": "2026-10-18T16:02:00-04:00",
    "detail": null,
    "espn_id": "4428850"
   },

@@ -3,10 +3,10 @@
  "season": 2026,
  "week": 6,
  "slate": "2026-W06",
- "started_at": "2026-10-18T16:30:00-04:00",
- "status_at": "2026-10-18T16:30:00-04:00",
- "finished_at": "2026-10-18T16:30:01-04:00",
- "last_ok_at": "2026-10-18T16:30:00-04:00",
+ "started_at": "2026-10-18T16:50:01-04:00",
+ "status_at": "2026-10-18T16:50:01-04:00",
+ "finished_at": "2026-10-18T16:50:02-04:00",
+ "last_ok_at": "2026-10-18T16:50:01-04:00",
  "failed_step": null,
  "steps": [
   {
@@ -17,12 +17,12 @@
   {
    "step": "schedule",
    "status": "ok",
-   "note": "14 game(s) this week (2026-W06); live state for 6 game(s)"
+   "note": "14 game(s) this week (2026-W06); live state for 4 game(s)"
   },
   {
    "step": "stats",
    "status": "skipped",
-   "note": "play-by-play unchanged (5509556 bytes)"
+   "note": "checked at 4:30 PM"
   },
   {
    "step": "roster",
@@ -31,8 +31,8 @@
   },
   {
    "step": "injuries",
-   "status": "skipped",
-   "note": "read at 4:20 PM; inactives posted for 22 team(s)"
+   "status": "ok",
+   "note": "espn: 230 out, 63 questionable; inactives posted for 22 team(s)"
   },
   {
    "step": "weather",
@@ -47,12 +47,12 @@
   {
    "step": "engine",
    "status": "ok",
-   "note": "11 new event(s): 2 shown, 0 pulled"
+   "note": "no change"
   },
   {
    "step": "grade",
-   "status": "ok",
-   "note": "5 graded"
+   "status": "skipped",
+   "note": "nothing to grade"
   },
   {
    "step": "slate",
@@ -62,12 +62,12 @@
   {
    "step": "research",
    "status": "ok",
-   "note": "0 game file(s) written"
+   "note": "14 game file(s) written"
   },
   {
    "step": "record",
-   "status": "ok",
-   "note": "record.json"
+   "status": "skipped",
+   "note": "unchanged"
   }
  ],
  "sources": {
@@ -151,7 +151,9 @@
   "NO": "last game's stats are not in yet",
   "NYG": "last game's stats are not in yet",
   "CAR": "last game's stats are not in yet",
-  "PHI": "last game's stats are not in yet"
+  "PHI": "last game's stats are not in yet",
+  "PIT": "last game's stats are not in yet",
+  "TB": "last game's stats are not in yet"
  },
  "stats_problems": [],
  "games_this_week": 14,
@@ -161,7 +163,7 @@
  "runner": {
   "event": "workflow_dispatch",
   "run_id": "39161283885",
-  "iteration": 4,
+  "iteration": 6,
   "chain_link": 318,
   "chain_started_at": "2026-10-18T00:30:50-04:00",
   "run_started_at": "2026-10-18T16:00:14-04:00"
