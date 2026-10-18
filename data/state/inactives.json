@@ -1,1 +1,17 @@
-{}
+{
+ "2026_06_HOU_JAX": {
+  "_kickoff": "2026-10-18T09:30:00-04:00",
+  "HOU": {
+   "confirmed": false,
+   "count": 0,
+   "players": [],
+   "confirmed_at": null
+  },
+  "JAX": {
+   "confirmed": false,
+   "count": 0,
+   "players": [],
+   "confirmed_at": null
+  }
+ }
+}
