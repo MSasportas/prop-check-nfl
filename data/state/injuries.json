@@ -1,5 +1,5 @@
 {
- "at": "2026-10-18T12:10:00-04:00",
+ "at": "2026-10-18T12:20:00-04:00",
  "source": "espn",
  "players": {
   "name:ARI:kitancrawford": {
@@ -220,10 +220,10 @@
    "pos": "QB",
    "status": "Out",
    "fantasy": "INACTIVE",
-   "date": "2026-10-18T11:51:00-04:00",
+   "date": "2026-10-18T12:08:00-04:00",
    "detail": "Coach's Decision",
    "espn_id": "2972515",
-   "comment": "inactive"
+   "comment": "Rush (coach's decision) is listed as inactive but will serve as the Falcons' emergency third quarterback for Sunday's game against the Bears."
   },
   "00-0041194": {
    "name": "Jack Strand",
@@ -285,16 +285,6 @@
    "date": "2026-10-18T11:51:00-04:00",
    "detail": "Coach's Decision",
    "espn_id": "5225251"
-  },
-  "name:ATL:zadariussmith": {
-   "name": "Za'Darius Smith",
-   "team": "ATL",
-   "pos": "DE",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-16T20:25:00-04:00",
-   "detail": "Neck",
-   "espn_id": "3043168"
   },
   "00-0036212": {
    "name": "Tua Tagovailoa",
@@ -681,6 +671,28 @@
    "detail": "Hamstring",
    "espn_id": "4427348"
   },
+  "00-0041149": {
+   "name": "Haynes King",
+   "team": "CAR",
+   "pos": "QB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T12:10:00-04:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4428993",
+   "comment": "King (coach's decision) is inactive but will be the emergency third quarterback against the Eagles on Sunday, Darin Gantt of the Panthers' official site reports"
+  },
+  "00-0039356": {
+   "name": "Ja'Tavion Sanders",
+   "team": "CAR",
+   "pos": "TE",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T12:06:00-04:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4431588",
+   "comment": "Sanders (coach's decision) is inactive against the Eagles on Sunday, Darin Gantt of the Panthers' official site reports."
+  },
   "name:CAR:albertreese": {
    "name": "Albert Reese IV",
    "team": "CAR",
@@ -691,17 +703,6 @@
    "detail": "Coach's Decision",
    "espn_id": "4683506"
   },
-  "00-0039356": {
-   "name": "Ja'Tavion Sanders",
-   "team": "CAR",
-   "pos": "TE",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-10-18T11:44:00-04:00",
-   "detail": "Coach's Decision",
-   "espn_id": "4431588",
-   "comment": "inactive"
-  },
   "name:CAR:torricellisimpkins": {
    "name": "Torricelli Simpkins III",
    "team": "CAR",
@@ -711,17 +712,6 @@
    "date": "2026-10-18T11:44:00-04:00",
    "detail": "Coach's Decision",
    "espn_id": "4696902"
-  },
-  "00-0041149": {
-   "name": "Haynes King",
-   "team": "CAR",
-   "pos": "QB",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-10-18T11:44:00-04:00",
-   "detail": "Coach's Decision",
-   "espn_id": "4428993",
-   "comment": "inactive"
   },
   "name:CAR:terahedwards": {
    "name": "TeRah Edwards",
@@ -871,9 +861,30 @@
    "pos": "S",
    "status": "Out",
    "fantasy": "OUT",
-   "date": "2026-10-18T11:56:00-04:00",
+   "date": "2026-10-18T12:12:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
+  },
+  "00-0038416": {
+   "name": "Tyson Bagent",
+   "team": "CHI",
+   "pos": "QB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-18T12:08:00-04:00",
+   "detail": null,
+   "espn_id": "4434153"
+  },
+  "00-0028986": {
+   "name": "Case Keenum",
+   "team": "CHI",
+   "pos": "QB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T12:02:00-04:00",
+   "detail": "Coach's Decision",
+   "espn_id": "15168",
+   "comment": "Keenum (coach's decision) is inactive but will serve as the Bears' emergency third quarterback against the Falcons on Sunday."
   },
   "name:CHI:tyriquestevenson": {
    "name": "Tyrique Stevenson Sr.",
@@ -881,7 +892,7 @@
    "pos": "CB",
    "status": "Out",
    "fantasy": "INACTIVE",
-   "date": "2026-10-18T11:49:00-04:00",
+   "date": "2026-10-18T11:59:00-04:00",
    "detail": "Hip",
    "espn_id": "4426374"
   },
@@ -894,17 +905,6 @@
    "date": "2026-10-18T11:49:00-04:00",
    "detail": "Toe",
    "espn_id": "4608686",
-   "comment": "inactive"
-  },
-  "00-0028986": {
-   "name": "Case Keenum",
-   "team": "CHI",
-   "pos": "QB",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-10-18T11:49:00-04:00",
-   "detail": "Coach's Decision",
-   "espn_id": "15168",
    "comment": "inactive"
   },
   "name:CHI:jaydenloving": {
@@ -977,16 +977,6 @@
    "detail": null,
    "espn_id": "4257364"
   },
-  "name:CHI:kylergordon": {
-   "name": "Kyler Gordon",
-   "team": "CHI",
-   "pos": "CB",
-   "status": "Questionable",
-   "fantasy": null,
-   "date": "2026-10-17T19:16:00-04:00",
-   "detail": null,
-   "espn_id": "4361093"
-  },
   "00-0036275": {
    "name": "D'Andre Swift",
    "team": "CHI",
@@ -996,16 +986,6 @@
    "date": "2026-10-16T19:44:00-04:00",
    "detail": null,
    "espn_id": "4259545"
-  },
-  "00-0038416": {
-   "name": "Tyson Bagent",
-   "team": "CHI",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-16T19:33:00-04:00",
-   "detail": null,
-   "espn_id": "4434153"
   },
   "00-0032464": {
    "name": "Kalif Raymond",
@@ -1200,16 +1180,6 @@
    "espn_id": "4685702",
    "comment": "Judkins (ankle) is inactive for Sunday's game against the Ravens."
   },
-  "name:CLE:masongraham": {
-   "name": "Mason Graham",
-   "team": "CLE",
-   "pos": "DT",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-10-18T11:35:00-04:00",
-   "detail": "Knee - MCL",
-   "espn_id": "4873232"
-  },
   "00-0041092": {
    "name": "Taylen Green",
    "team": "CLE",
@@ -1260,6 +1230,16 @@
    "date": "2026-10-18T11:35:00-04:00",
    "detail": "Coach's Decision",
    "espn_id": "4816090"
+  },
+  "name:CLE:masongraham": {
+   "name": "Mason Graham",
+   "team": "CLE",
+   "pos": "DT",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T08:27:00-04:00",
+   "detail": "Knee - MCL",
+   "espn_id": "4873232"
   },
   "name:CLE:kaliadavis": {
    "name": "Kalia Davis",
@@ -3550,10 +3530,10 @@
    "pos": "QB",
    "status": "Out",
    "fantasy": "INACTIVE",
-   "date": "2026-10-18T11:51:00-04:00",
+   "date": "2026-10-18T12:08:00-04:00",
    "detail": "Coach's Decision",
    "espn_id": "4431465",
-   "comment": "inactive"
+   "comment": "Morton (coach's decision) is inactive but will serve as the Patriots' emergency third quarterback against the Jets on Sunday."
   },
   "name:NE:karonprunty": {
    "name": "Karon Prunty",
@@ -3686,6 +3666,16 @@
    "detail": null,
    "espn_id": "3046439"
   },
+  "name:NO:nathanshepherd": {
+   "name": "Nathan Shepherd",
+   "team": "NO",
+   "pos": "DT",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T11:55:00-04:00",
+   "detail": "Illness",
+   "espn_id": "4076951"
+  },
   "00-0037013": {
    "name": "Zach Wilson",
    "team": "NO",
@@ -3716,16 +3706,6 @@
    "date": "2026-10-18T11:46:00-04:00",
    "detail": "Coach's Decision",
    "espn_id": "4248047"
-  },
-  "name:NO:nathanshepherd": {
-   "name": "Nathan Shepherd",
-   "team": "NO",
-   "pos": "DT",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-10-18T11:46:00-04:00",
-   "detail": "Illness",
-   "espn_id": "4076951"
   },
   "name:NO:kadenelliss": {
    "name": "Kaden Elliss",
@@ -3844,7 +3824,7 @@
    "pos": "OT",
    "status": "Out",
    "fantasy": "INACTIVE",
-   "date": "2026-10-18T12:01:00-04:00",
+   "date": "2026-10-18T12:17:00-04:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
@@ -4350,6 +4330,38 @@
    "detail": null,
    "espn_id": "4685201"
   },
+  "00-0041490": {
+   "name": "Eli Heidenreich",
+   "team": "PIT",
+   "pos": "RB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T11:59:00-04:00",
+   "detail": "Coach's Decision",
+   "espn_id": "5081508",
+   "comment": "Heidenreich (coach's decision) is inactive for Sunday's game against the Buccaneers."
+  },
+  "00-0036139": {
+   "name": "Rico Dowdle",
+   "team": "PIT",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-18T11:58:00-04:00",
+   "detail": null,
+   "espn_id": "4038815"
+  },
+  "00-0041565": {
+   "name": "Drew Allar",
+   "team": "PIT",
+   "pos": "QB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T11:55:00-04:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4714771",
+   "comment": "Allar (coach's decision) is inactive for Sunday's game against the Buccaneers."
+  },
   "00-0036894": {
    "name": "Pat Freiermuth",
    "team": "PIT",
@@ -4402,17 +4414,6 @@
    "detail": "Coach's Decision",
    "espn_id": "3932886"
   },
-  "00-0041490": {
-   "name": "Eli Heidenreich",
-   "team": "PIT",
-   "pos": "RB",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-10-18T11:42:00-04:00",
-   "detail": "Coach's Decision",
-   "espn_id": "5081508",
-   "comment": "inactive"
-  },
   "name:PIT:kevinjobity": {
    "name": "Kevin Jobity Jr.",
    "team": "PIT",
@@ -4422,27 +4423,6 @@
    "date": "2026-10-18T11:42:00-04:00",
    "detail": "Coach's Decision",
    "espn_id": "5084849"
-  },
-  "00-0041565": {
-   "name": "Drew Allar",
-   "team": "PIT",
-   "pos": "QB",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-10-18T11:42:00-04:00",
-   "detail": "Coach's Decision",
-   "espn_id": "4714771",
-   "comment": "inactive"
-  },
-  "00-0036139": {
-   "name": "Rico Dowdle",
-   "team": "PIT",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-18T07:12:00-04:00",
-   "detail": null,
-   "espn_id": "4038815"
   },
   "00-0036775": {
    "name": "Brandon Smith",
@@ -4936,6 +4916,16 @@
    "espn_id": "4426385",
    "comment": "Charbonnet (knee) has been ruled out for Thursday's game at Denver, Corbin K. Smith of EmeraldCitySpectrum.com reports."
   },
+  "name:TB:benjaminmorrison": {
+   "name": "Benjamin Morrison",
+   "team": "TB",
+   "pos": "CB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T12:11:00-04:00",
+   "detail": "Quadriceps",
+   "espn_id": "4816107"
+  },
   "name:TB:antoinewinfield": {
    "name": "Antoine Winfield Jr.",
    "team": "TB",
@@ -4966,16 +4956,6 @@
    "detail": "Thumb",
    "espn_id": "3052587",
    "comment": "inactive"
-  },
-  "name:TB:benjaminmorrison": {
-   "name": "Benjamin Morrison",
-   "team": "TB",
-   "pos": "CB",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-10-18T11:52:00-04:00",
-   "detail": "Quadriceps",
-   "espn_id": "4816107"
   },
   "name:TB:lukehaggard": {
    "name": "Luke Haggard",
@@ -5039,16 +5019,6 @@
    "espn_id": "3871102",
    "comment": "Sills (hamstring) is listed as questionable for Sunday's game against the Steelers."
   },
-  "name:TB:josiahtrotter": {
-   "name": "Josiah Trotter",
-   "team": "TB",
-   "pos": "LB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-16T21:01:00-04:00",
-   "detail": "Knee",
-   "espn_id": "4870998"
-  },
   "00-0041251": {
    "name": "Jalon Daniels",
    "team": "TB",
@@ -5058,26 +5028,6 @@
    "date": "2026-10-16T20:10:00-04:00",
    "detail": null,
    "espn_id": "4596472"
-  },
-  "name:TB:aydengarnes": {
-   "name": "Ayden Garnes",
-   "team": "TB",
-   "pos": "CB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-14T16:48:00-04:00",
-   "detail": "Ankle",
-   "espn_id": "4890885"
-  },
-  "name:TB:sirvoceadennis": {
-   "name": "SirVocea Dennis",
-   "team": "TB",
-   "pos": "LB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-13T13:10:00-04:00",
-   "detail": "Ankle",
-   "espn_id": "4429511"
   },
   "00-0041048": {
    "name": "Ted Hurst III",
@@ -5158,6 +5108,16 @@
    "date": "2026-10-07T18:50:00-04:00",
    "detail": null,
    "espn_id": "4034779"
+  },
+  "00-0039032": {
+   "name": "Tyjae Spears",
+   "team": "TEN",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-18T12:13:00-04:00",
+   "detail": null,
+   "espn_id": "4428557"
   },
   "00-0036876": {
    "name": "Kylen Granson",
@@ -5240,17 +5200,6 @@
    "date": "2026-10-16T21:55:00-04:00",
    "detail": null,
    "espn_id": "4360978"
-  },
-  "00-0039032": {
-   "name": "Tyjae Spears",
-   "team": "TEN",
-   "pos": "RB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-16T16:35:00-04:00",
-   "detail": "Knee",
-   "espn_id": "4428557",
-   "comment": "Spears (knee) is listed as questionable for Sunday's game against the Colts."
   },
   "00-0035261": {
    "name": "Tony Pollard",

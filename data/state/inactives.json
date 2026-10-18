@@ -127,13 +127,8 @@
   },
   "CLE": {
    "confirmed": true,
-   "count": 7,
+   "count": 6,
    "players": [
-    {
-     "pid": null,
-     "name": "Mason Graham",
-     "pos": "DT"
-    },
     {
      "pid": null,
      "name": "Mike Hall Jr.",
