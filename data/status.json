@@ -3,10 +3,10 @@
  "season": 2026,
  "week": 6,
  "slate": "2026-W06",
- "started_at": "2026-10-18T16:00:01-04:00",
- "status_at": "2026-10-18T16:00:01-04:00",
- "finished_at": "2026-10-18T16:00:02-04:00",
- "last_ok_at": "2026-10-18T16:00:01-04:00",
+ "started_at": "2026-10-18T16:10:00-04:00",
+ "status_at": "2026-10-18T16:10:00-04:00",
+ "finished_at": "2026-10-18T16:10:01-04:00",
+ "last_ok_at": "2026-10-18T16:10:00-04:00",
  "failed_step": null,
  "steps": [
   {
@@ -32,12 +32,12 @@
   {
    "step": "injuries",
    "status": "ok",
-   "note": "espn: 232 out, 61 questionable; inactives posted for 22 team(s)"
+   "note": "espn: 232 out, 60 questionable; inactives posted for 22 team(s)"
   },
   {
    "step": "weather",
-   "status": "ok",
-   "note": "1 read, 0 failed, 2 indoors"
+   "status": "skipped",
+   "note": "nothing due (1 indoors)"
   },
   {
    "step": "odds",
@@ -47,17 +47,17 @@
   {
    "step": "engine",
    "status": "ok",
-   "note": "no change"
+   "note": "3 new event(s): 0 shown, 0 pulled"
   },
   {
    "step": "grade",
-   "status": "ok",
-   "note": "1 graded"
+   "status": "skipped",
+   "note": "nothing to grade"
   },
   {
    "step": "slate",
    "status": "ok",
-   "note": "14 open pick(s), 3 parlay(s)"
+   "note": "11 open pick(s), 3 parlay(s)"
   },
   {
    "step": "research",
@@ -120,9 +120,9 @@
   }
  ],
  "pool_total": 1338,
- "allowance": 62.48,
+ "allowance": 65.76,
  "tier": "standard",
- "games_left_before_reset": 20,
+ "games_left_before_reset": 19,
  "budget_used_today": 833,
  "odds": {
   "state": "ok",
@@ -141,20 +141,22 @@
   "HOU": "last game's stats are not in yet",
   "JAX": "last game's stats are not in yet",
   "BAL": "last game's stats are not in yet",
-  "CLE": "last game's stats are not in yet"
+  "CLE": "last game's stats are not in yet",
+  "TEN": "last game's stats are not in yet",
+  "IND": "last game's stats are not in yet"
  },
  "stats_problems": [],
  "games_this_week": 14,
- "record_events": 121,
+ "record_events": 124,
  "grade_checks": [],
  "odds_notes": [],
  "runner": {
   "event": "workflow_dispatch",
-  "run_id": "39157510568",
-  "iteration": 6,
-  "chain_link": 317,
+  "run_id": "39161283885",
+  "iteration": 2,
+  "chain_link": 318,
   "chain_started_at": "2026-10-18T00:30:50-04:00",
-  "run_started_at": "2026-10-18T15:10:14-04:00"
+  "run_started_at": "2026-10-18T16:00:14-04:00"
  },
  "live_page": {
   "checked_at": "2026-10-18T15:30:00-04:00",

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-18T16:00:01-04:00",
+ "generated_at": "2026-10-18T16:10:00-04:00",
  "season": 2026,
  "summary": {
   "headline": {
@@ -92,6 +92,23 @@
       "at": "2026-10-18T14:50:00-04:00",
       "reason": "Hard Rock moved the line to 21.5."
      },
+     "legs": []
+    },
+    {
+     "id": "2026-W06:2026_06_ARI_LA:00-0039738:rush_att:FG:9.5:under",
+     "kind": "single",
+     "date": "2026-10-18",
+     "game": "ARI at LA",
+     "player": "B. Corum",
+     "team": "LA",
+     "market": "rush_att",
+     "period": "FG",
+     "bet": "Under 9.5 carries",
+     "price": -115,
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
      "legs": []
     },
     {
@@ -434,6 +451,40 @@
      "market": "pass_yds",
      "period": "1H",
      "bet": "Under 124.5 passing yards",
+     "price": -115,
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-W06:2026_06_ARI_LA:00-0037263:rec:FG:2.5:under",
+     "kind": "single",
+     "date": "2026-10-18",
+     "game": "ARI at LA",
+     "player": "T. Allgeier",
+     "team": "ARI",
+     "market": "rec",
+     "period": "FG",
+     "bet": "Under 2.5 receptions",
+     "price": -115,
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-W06:2026_06_ARI_LA:00-0038640:rec_yds:FG:21.5:under",
+     "kind": "single",
+     "date": "2026-10-18",
+     "game": "ARI at LA",
+     "player": "J. Brooks",
+     "team": "ARI",
+     "market": "rec_yds",
+     "period": "FG",
+     "bet": "Under 21.5 receiving yards",
      "price": -115,
      "result": null,
      "actual": null,

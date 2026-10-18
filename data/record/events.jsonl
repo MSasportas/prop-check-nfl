@@ -119,3 +119,6 @@
 {"at":"2026-10-18T15:20:00-04:00","id":"2026-W06:P:6704ca6d85","state":"inactives","t":"state"}
 {"at":"2026-10-18T15:20:00-04:00","id":"2026-W06:P:b54fe89587","state":"inactives","t":"state"}
 {"actual":0,"actual_text":"had 0","at":"2026-10-18T16:00:01-04:00","id":"2026-W06:2026_06_BAL_CLE:00-0035993:pass_int:FG:0.5:under","price":-135,"result":"W","source":"espn_box","t":"graded","units":0.7407}
+{"at":"2026-10-18T16:10:00-04:00","id":"2026-W06:2026_06_ARI_LA:00-0037263:rec:FG:2.5:under","state":"inactives","t":"locked"}
+{"at":"2026-10-18T16:10:00-04:00","id":"2026-W06:2026_06_ARI_LA:00-0038640:rec_yds:FG:21.5:under","state":"inactives","t":"locked"}
+{"at":"2026-10-18T16:10:00-04:00","id":"2026-W06:2026_06_ARI_LA:00-0039738:rush_att:FG:9.5:under","state":"inactives","t":"locked"}
