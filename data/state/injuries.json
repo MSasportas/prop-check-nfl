@@ -1,5 +1,5 @@
 {
- "at": "2026-10-18T03:00:00-04:00",
+ "at": "2026-10-18T04:00:00-04:00",
  "source": "espn",
  "players": {
   "name:ARI:kitancrawford": {
@@ -858,7 +858,7 @@
    "pos": "S",
    "status": "Out",
    "fantasy": "OUT",
-   "date": "2026-10-18T02:01:00-04:00",
+   "date": "2026-10-18T03:01:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
@@ -3798,7 +3798,7 @@
    "pos": "OT",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-10-18T02:01:00-04:00",
+   "date": "2026-10-18T03:01:00-04:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
