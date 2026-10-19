@@ -1,16 +1,16 @@
 {
- "generated_at": "2026-10-18T23:50:00-04:00",
+ "generated_at": "2026-10-19T02:00:00-04:00",
  "season": 2026,
  "summary": {
   "headline": {
-   "w": 9,
-   "l": 14,
+   "w": 10,
+   "l": 15,
    "push": 0,
    "void": 0,
-   "n": 23,
-   "units": -6.429,
-   "hit_rate": 0.3913,
-   "needed": 0.5489,
+   "n": 25,
+   "units": -6.5594,
+   "hit_rate": 0.4,
+   "needed": 0.5478,
    "parlays": {
     "w": 0,
     "l": 4,
@@ -81,6 +81,18 @@
    {
     "key": "pass_yds|1H",
     "label": "Passing yards (1st half)",
+    "w": 1,
+    "l": 1,
+    "push": 0,
+    "void": 0,
+    "n": 2,
+    "units": -0.1304,
+    "hit_rate": 0.5,
+    "needed": 0.5349
+   },
+   {
+    "key": "rec_yds|1H",
+    "label": "Receiving yards (1st half)",
     "w": 0,
     "l": 1,
     "push": 0,
@@ -146,9 +158,9 @@
    "slate": "2026-W06",
    "label": "Week 6",
    "graded": false,
-   "w": 9,
-   "l": 14,
-   "units": -6.429,
+   "w": 10,
+   "l": 15,
+   "units": -6.5594,
    "entries": [
     {
      "id": "2026-W06:2026_06_ARI_LA:00-0033307:long_rec:FG:16.5:under",
@@ -340,9 +352,9 @@
      "period": "1H",
      "bet": "Under 137.5 passing yards",
      "price": -115,
-     "result": null,
-     "actual": null,
-     "units": null,
+     "result": "W",
+     "actual": "had 86",
+     "units": 0.8696,
      "pulled": null,
      "legs": []
     },
@@ -374,9 +386,9 @@
      "period": "1H",
      "bet": "Under 29.5 receiving yards",
      "price": -115,
-     "result": null,
-     "actual": null,
-     "units": null,
+     "result": "L",
+     "actual": "had 71",
+     "units": -1.0,
      "pulled": null,
      "legs": []
     },
@@ -926,8 +938,8 @@
        "bet": "Under 29.5 receiving yards",
        "period": "1H",
        "price": -115,
-       "result": null,
-       "actual": null
+       "result": "L",
+       "actual": "had 71"
       },
       {
        "id": "2026-W06:2026_06_WAS_SF:00-0033280:long_rec:FG:15.5:under",
