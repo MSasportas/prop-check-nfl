@@ -1,5 +1,5 @@
 {
- "at": "2026-10-19T06:00:00-04:00",
+ "at": "2026-10-19T07:00:00-04:00",
  "source": "espn",
  "players": {
   "00-0037157": {
@@ -387,6 +387,16 @@
    "detail": "Hamstring",
    "espn_id": "4360807"
   },
+  "00-0040870": {
+   "name": "Ja'Kobi Lane",
+   "team": "BAL",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-19T06:14:00-04:00",
+   "detail": null,
+   "espn_id": "4870847"
+  },
   "00-0035993": {
    "name": "Tyler Huntley",
    "team": "BAL",
@@ -459,16 +469,6 @@
    "espn_id": "5088338",
    "comment": "Sarratt (coach's decision) is listed as inactive for Sunday's game against the Browns."
   },
-  "00-0040870": {
-   "name": "Ja'Kobi Lane",
-   "team": "BAL",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-18T11:47:00-04:00",
-   "detail": null,
-   "espn_id": "4870847"
-  },
   "name:BAL:kvonwallace": {
    "name": "K'Von Wallace",
    "team": "BAL",
@@ -540,6 +540,26 @@
    "date": "2026-10-13T22:01:00-04:00",
    "detail": null,
    "espn_id": "4038441"
+  },
+  "00-0039901": {
+   "name": "Keon Coleman",
+   "team": "BUF",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-19T06:00:00-04:00",
+   "detail": null,
+   "espn_id": "4635008"
+  },
+  "00-0037261": {
+   "name": "Khalil Shakir",
+   "team": "BUF",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-19T05:56:00-04:00",
+   "detail": null,
+   "espn_id": "4373678"
   },
   "00-0034857": {
    "name": "Josh Allen",
@@ -652,26 +672,6 @@
    "date": "2026-10-13T22:57:00-04:00",
    "detail": null,
    "espn_id": "4429501"
-  },
-  "00-0039901": {
-   "name": "Keon Coleman",
-   "team": "BUF",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-13T19:25:00-04:00",
-   "detail": null,
-   "espn_id": "4635008"
-  },
-  "00-0037261": {
-   "name": "Khalil Shakir",
-   "team": "BUF",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-13T01:22:00-04:00",
-   "detail": null,
-   "espn_id": "4373678"
   },
   "00-0041443": {
    "name": "Skyler Bell",
@@ -887,6 +887,16 @@
    "detail": null,
    "espn_id": "4567096"
   },
+  "name:CHI:anthonyjohnson": {
+   "name": "Anthony Johnson Jr.",
+   "team": "CHI",
+   "pos": "S",
+   "status": "Injured Reserve",
+   "fantasy": "IR",
+   "date": "2026-10-19T06:00:00-04:00",
+   "detail": "Undisclosed",
+   "espn_id": "4361748"
+  },
   "00-0039919": {
    "name": "Rome Odunze",
    "team": "CHI",
@@ -896,16 +906,6 @@
    "date": "2026-10-19T05:21:00-04:00",
    "detail": null,
    "espn_id": "4431299"
-  },
-  "name:CHI:anthonyjohnson": {
-   "name": "Anthony Johnson Jr.",
-   "team": "CHI",
-   "pos": "S",
-   "status": "Injured Reserve",
-   "fantasy": "IR",
-   "date": "2026-10-19T05:00:00-04:00",
-   "detail": "Undisclosed",
-   "espn_id": "4361748"
   },
   "00-0040126": {
    "name": "Colston Loveland",
@@ -1221,6 +1221,26 @@
    "detail": null,
    "espn_id": "4690070"
   },
+  "00-0041547": {
+   "name": "KC Concepcion",
+   "team": "CLE",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-19T06:19:00-04:00",
+   "detail": null,
+   "espn_id": "4870653"
+  },
+  "00-0038794": {
+   "name": "Jaleel McLaughlin",
+   "team": "CLE",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-19T06:11:00-04:00",
+   "detail": null,
+   "espn_id": "4722893"
+  },
   "00-0040663": {
    "name": "Harold Fannin Jr.",
    "team": "CLE",
@@ -1280,16 +1300,6 @@
    "date": "2026-10-18T13:41:00-04:00",
    "detail": "Concussion",
    "espn_id": "4242208"
-  },
-  "00-0038794": {
-   "name": "Jaleel McLaughlin",
-   "team": "CLE",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-18T12:37:00-04:00",
-   "detail": null,
-   "espn_id": "4722893"
   },
   "00-0041092": {
    "name": "Taylen Green",
@@ -1392,16 +1402,6 @@
    "date": "2026-10-16T21:48:00-04:00",
    "detail": null,
    "espn_id": "4685540"
-  },
-  "00-0041547": {
-   "name": "KC Concepcion",
-   "team": "CLE",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-16T14:27:00-04:00",
-   "detail": null,
-   "espn_id": "4870653"
   },
   "00-0040162": {
    "name": "Dylan Sampson",
@@ -2837,6 +2837,26 @@
    "detail": null,
    "espn_id": "4832955"
   },
+  "00-0039066": {
+   "name": "Michael Mayer",
+   "team": "LV",
+   "pos": "TE",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-19T06:06:00-04:00",
+   "detail": null,
+   "espn_id": "4429086"
+  },
+  "00-0029604": {
+   "name": "Kirk Cousins",
+   "team": "LV",
+   "pos": "QB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-19T05:51:00-04:00",
+   "detail": null,
+   "espn_id": "14880"
+  },
   "00-0039338": {
    "name": "Brock Bowers",
    "team": "LV",
@@ -2980,16 +3000,6 @@
    "detail": null,
    "espn_id": "4241983"
   },
-  "00-0039066": {
-   "name": "Michael Mayer",
-   "team": "LV",
-   "pos": "TE",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-12T21:16:00-04:00",
-   "detail": null,
-   "espn_id": "4429086"
-  },
   "00-0039407": {
    "name": "Dylan Laube",
    "team": "LV",
@@ -3009,16 +3019,6 @@
    "date": "2026-10-11T21:06:00-04:00",
    "detail": null,
    "espn_id": "4837248"
-  },
-  "00-0029604": {
-   "name": "Kirk Cousins",
-   "team": "LV",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-11T21:00:00-04:00",
-   "detail": null,
-   "espn_id": "14880"
   },
   "00-0038544": {
    "name": "Quentin Johnston",
@@ -4053,7 +4053,7 @@
    "pos": "OT",
    "status": "Out",
    "fantasy": "INACTIVE",
-   "date": "2026-10-19T05:00:00-04:00",
+   "date": "2026-10-19T06:00:00-04:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
@@ -4393,6 +4393,16 @@
    "detail": null,
    "espn_id": "4808766"
   },
+  "00-0038400": {
+   "name": "Tanner McKee",
+   "team": "PHI",
+   "pos": "QB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-19T05:45:00-04:00",
+   "detail": null,
+   "espn_id": "4685201"
+  },
   "00-0037258": {
    "name": "Dameon Pierce",
    "team": "PHI",
@@ -4473,16 +4483,6 @@
    "date": "2026-10-18T12:26:00-04:00",
    "detail": null,
    "espn_id": "4879250"
-  },
-  "00-0038400": {
-   "name": "Tanner McKee",
-   "team": "PHI",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-18T12:16:00-04:00",
-   "detail": null,
-   "espn_id": "4685201"
   },
   "name:PHI:ajepenesa": {
    "name": "AJ Epenesa",
