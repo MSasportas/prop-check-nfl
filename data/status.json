@@ -3,10 +3,10 @@
  "season": 2026,
  "week": 6,
  "slate": "2026-W06",
- "started_at": "2026-10-19T10:00:01-04:00",
- "status_at": "2026-10-19T10:00:01-04:00",
- "finished_at": "2026-10-19T10:00:15-04:00",
- "last_ok_at": "2026-10-19T10:00:01-04:00",
+ "started_at": "2026-10-19T10:10:01-04:00",
+ "status_at": "2026-10-19T10:10:01-04:00",
+ "finished_at": "2026-10-19T10:10:02-04:00",
+ "last_ok_at": "2026-10-19T10:10:01-04:00",
  "failed_step": null,
  "steps": [
   {
@@ -22,7 +22,7 @@
   {
    "step": "stats",
    "status": "skipped",
-   "note": "checked at 9:10 AM"
+   "note": "play-by-play unchanged (6370287 bytes)"
   },
   {
    "step": "roster",
@@ -31,8 +31,8 @@
   },
   {
    "step": "injuries",
-   "status": "ok",
-   "note": "espn: 232 out, 62 questionable; inactives posted for 24 team(s)"
+   "status": "skipped",
+   "note": "read at 10:00 AM; inactives posted for 24 team(s)"
   },
   {
    "step": "weather",
@@ -42,12 +42,12 @@
   {
    "step": "odds",
    "status": "ok",
-   "note": "1 read(s) (D)"
+   "note": "no pull due"
   },
   {
    "step": "engine",
    "status": "ok",
-   "note": "1 new event(s): 0 shown, 0 pulled"
+   "note": "no change"
   },
   {
    "step": "grade",
@@ -56,18 +56,18 @@
   },
   {
    "step": "slate",
-   "status": "ok",
-   "note": "2 open pick(s), 0 parlay(s)"
+   "status": "skipped",
+   "note": "unchanged"
   },
   {
    "step": "research",
    "status": "ok",
-   "note": "14 game file(s) written"
+   "note": "0 game file(s) written"
   },
   {
    "step": "record",
-   "status": "ok",
-   "note": "record.json"
+   "status": "skipped",
+   "note": "unchanged"
   }
  ],
  "sources": {
@@ -129,13 +129,7 @@
   "at": "2026-10-19T10:00:01-04:00",
   "next_at": "2026-10-19T19:00:00-04:00"
  },
- "due": [
-  {
-   "pull": "D",
-   "game_id": "2026_06_WAS_SF",
-   "cost_max": 2
-  }
- ],
+ "due": [],
  "skipped_games": [],
  "unmatched_names": [
   "Drew Ogletree",
@@ -152,13 +146,13 @@
  "runner": {
   "event": "workflow_dispatch",
   "run_id": "39262098874",
-  "iteration": 3,
+  "iteration": 4,
   "chain_link": 366,
   "chain_started_at": "2026-10-18T20:10:54-04:00",
   "run_started_at": "2026-10-19T09:40:14-04:00"
  },
  "live_page": {
-  "checked_at": "2026-10-19T09:10:00-04:00",
+  "checked_at": "2026-10-19T10:10:01-04:00",
   "http": 200,
   "is_page": true
  }
