@@ -1,5 +1,5 @@
 {
- "at": "2026-10-19T10:00:01-04:00",
+ "at": "2026-10-19T10:30:14-04:00",
  "source": "espn",
  "players": {
   "00-0037157": {
@@ -205,15 +205,15 @@
    "detail": null,
    "espn_id": "4374045"
   },
-  "00-0033662": {
-   "name": "Cooper Rush",
+  "name:ATL:andydalton": {
+   "name": "Andy Dalton",
    "team": "ATL",
    "pos": "QB",
    "status": "Active",
    "fantasy": null,
-   "date": "2026-10-19T09:53:00-04:00",
+   "date": "2026-10-19T09:50:00-04:00",
    "detail": null,
-   "espn_id": "2972515"
+   "espn_id": "14012"
   },
   "00-0039917": {
    "name": "Michael Penix Jr.",
@@ -892,7 +892,7 @@
    "pos": "S",
    "status": "Injured Reserve",
    "fantasy": "IR",
-   "date": "2026-10-19T09:16:00-04:00",
+   "date": "2026-10-19T10:16:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
@@ -2355,7 +2355,7 @@
    "date": "2026-10-18T14:46:00-04:00",
    "detail": "Concussion",
    "espn_id": "4429684",
-   "comment": "Gould (concussion) won't return to Sunday's game against the Titans, Mike Chappell of Fox 59 News Indianapolis reports."
+   "comment": "Gould won't return to Sunday's game against the Titans after being diagnosed with a concussion, Mike Chappell of Fox 59 News Indianapolis reports."
   },
   "00-0040206": {
    "name": "Riley Leonard",
@@ -4052,7 +4052,7 @@
    "pos": "OT",
    "status": "Out",
    "fantasy": "INACTIVE",
-   "date": "2026-10-19T09:53:00-04:00",
+   "date": "2026-10-19T10:16:00-04:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
