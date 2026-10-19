@@ -1,5 +1,5 @@
 {
- "at": "2026-10-19T13:50:00-04:00",
+ "at": "2026-10-19T14:20:01-04:00",
  "source": "espn",
  "players": {
   "name:ARI:wydettwilliams": {
@@ -747,7 +747,7 @@
    "pos": "S",
    "status": "Injured Reserve",
    "fantasy": "IR",
-   "date": "2026-10-19T13:19:00-04:00",
+   "date": "2026-10-19T14:00:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
@@ -1351,8 +1351,8 @@
    "name": "Dee Winters",
    "team": "DAL",
    "pos": "LB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
+   "status": "Doubtful",
+   "fantasy": "DOUBTFUL",
    "date": "2026-10-18T21:25:00-04:00",
    "detail": "Ankle",
    "espn_id": "4428914"
@@ -3579,7 +3579,7 @@
    "pos": "OT",
    "status": "Out",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-10-19T13:19:00-04:00",
+   "date": "2026-10-19T14:06:00-04:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
