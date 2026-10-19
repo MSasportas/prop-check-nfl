@@ -1,5 +1,5 @@
 {
- "at": "2026-10-19T10:30:14-04:00",
+ "at": "2026-10-19T11:10:01-04:00",
  "source": "espn",
  "players": {
   "00-0037157": {
@@ -892,7 +892,7 @@
    "pos": "S",
    "status": "Injured Reserve",
    "fantasy": "IR",
-   "date": "2026-10-19T10:16:00-04:00",
+   "date": "2026-10-19T11:00:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
@@ -1088,6 +1088,17 @@
    "detail": "Suspension",
    "espn_id": "3134690"
   },
+  "00-0034613": {
+   "name": "Tanner Hudson",
+   "team": "CIN",
+   "pos": "TE",
+   "status": "Injured Reserve",
+   "fantasy": "IR",
+   "date": "2026-10-19T10:40:00-04:00",
+   "detail": "Pectoral",
+   "espn_id": "3050481",
+   "comment": "ir"
+  },
   "00-0040785": {
    "name": "Dohnte Meyers",
    "team": "CIN",
@@ -1118,17 +1129,6 @@
    "date": "2026-10-13T13:10:00-04:00",
    "detail": "Quadriceps",
    "espn_id": "4401811"
-  },
-  "00-0034613": {
-   "name": "Tanner Hudson",
-   "team": "CIN",
-   "pos": "TE",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-13T11:52:00-04:00",
-   "detail": "Pectoral",
-   "espn_id": "3050481",
-   "comment": "Hudson's agent revealed Tuesday that the tight end sustained a torn pectoral in Sunday's 31-24 win over the Dolphins and is expected to miss the rest of the sea"
   },
   "name:CIN:swayzebozeman": {
    "name": "Swayze Bozeman",
@@ -3385,6 +3385,17 @@
    "detail": null,
    "espn_id": "2573401"
   },
+  "00-0041523": {
+   "name": "Caleb Douglas",
+   "team": "MIA",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-19T10:44:00-04:00",
+   "detail": "Ankle",
+   "espn_id": "4869645",
+   "comment": "Dolphins head coach Jeff Hafley said that Douglas (ankle) will be a limited participant in Monday's informal practice, David Furones of the South Florida Sun Se"
+  },
   "name:MIA:jaredwayne": {
    "name": "Jared Wayne",
    "team": "MIA",
@@ -3414,17 +3425,6 @@
    "date": "2026-10-13T13:10:00-04:00",
    "detail": "Concussion",
    "espn_id": "4912052",
-   "comment": "questionable"
-  },
-  "00-0041523": {
-   "name": "Caleb Douglas",
-   "team": "MIA",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-13T13:10:00-04:00",
-   "detail": "Ankle",
-   "espn_id": "4869645",
    "comment": "questionable"
   },
   "name:MIA:robertbeal": {
@@ -4052,7 +4052,7 @@
    "pos": "OT",
    "status": "Out",
    "fantasy": "INACTIVE",
-   "date": "2026-10-19T10:16:00-04:00",
+   "date": "2026-10-19T10:49:00-04:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
@@ -4392,6 +4392,17 @@
    "detail": null,
    "espn_id": "4808766"
   },
+  "00-0036389": {
+   "name": "Jalen Hurts",
+   "team": "PHI",
+   "pos": "QB",
+   "status": "Injured Reserve",
+   "fantasy": "IR",
+   "date": "2026-10-19T10:18:00-04:00",
+   "detail": "Calf",
+   "espn_id": "4040715",
+   "comment": "Hurts (calf) is expected to be held out of football activities for multiple months and miss the rest of the season after new imaging over the weekend revealed s"
+  },
   "00-0038400": {
    "name": "Tanner McKee",
    "team": "PHI",
@@ -4617,17 +4628,6 @@
    "date": "2026-10-17T17:10:00-04:00",
    "detail": null,
    "espn_id": "15835"
-  },
-  "00-0036389": {
-   "name": "Jalen Hurts",
-   "team": "PHI",
-   "pos": "QB",
-   "status": "Injured Reserve",
-   "fantasy": "IR",
-   "date": "2026-10-17T16:02:00-04:00",
-   "detail": "Calf",
-   "espn_id": "4040715",
-   "comment": "The Eagles placed Hurts (calf) on injured reserve Saturday."
   },
   "00-0036894": {
    "name": "Pat Freiermuth",
@@ -5600,6 +5600,16 @@
    "detail": null,
    "espn_id": "4240657"
   },
+  "name:WAS:treyamos": {
+   "name": "Trey Amos",
+   "team": "WAS",
+   "pos": "CB",
+   "status": "Injured Reserve",
+   "fantasy": "IR-R",
+   "date": "2026-10-19T11:04:00-04:00",
+   "detail": "Ankle",
+   "espn_id": "4574689"
+  },
   "name:WAS:javontaejeanbaptiste": {
    "name": "Javontae Jean-Baptiste",
    "team": "WAS",
@@ -5793,16 +5803,6 @@
    "date": "2026-10-12T20:41:00-04:00",
    "detail": null,
    "espn_id": "4360635"
-  },
-  "00-0039910": {
-   "name": "Jayden Daniels",
-   "team": "WAS",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-11T18:14:00-04:00",
-   "detail": null,
-   "espn_id": "4426348"
   }
  },
  "last_fail_at": null,
