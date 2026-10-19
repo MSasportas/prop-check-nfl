@@ -151,6 +151,7 @@ The old Spotlight rules (brief 025) were dropped, not carried over.
 | 2026-10-13 | v1.0 set (section 4) | First build. Sharp standard from the DS backtest and one live Hard Rock pull. Spotlight rules dropped | Backtest only; 0 graded live legs |
 
 ## 9. Session log (newest first, one line each)
+- 2026-10-18 8:10 PM: RESUMED at Matt's request. `config/stop_timer` removed (push restarted the chain, link 0, run 39179604468); the three NFL scheduled tasks re-enabled. Status clean: no failed steps, page 200, pool 1,333 (tier full), 15:10 pull has no unmatched names (the Brown/Ogletree fix holds; the status list is the day's accumulated list). Open picks 5, parlays 7 (most games started).
 - 2026-10-18 ~1 PM: PAUSED at Matt's request. `config/stop_timer` committed (timer chain and all odds pulls stop; page stays up with last data, will go stale). Three NFL scheduled tasks (Sun check, Mon/Thu check, Tue review) disabled. To resume: delete `config/stop_timer` (push restarts the chain) and re-enable the three tasks.
 - 2026-10-18 12:05 PM: game-day check. Chain alive (12:00 run, link 313), no failed steps, page 200, pool 1,361 (tier standard, 51/game), inactives confirming team by team for 1 PM games (ESPN lag, as designed), nothing to grade yet. Fixed: feed nicknames never matched (Hollywood Brown, Drew Ogletree): Matcher now uses NICK; test added (84). James Jordan not on any roster, left unmatched.
 - 2026-10-18 ~1 AM: LIVE. v1 pushed 12:30 AM, first real run 12:31 AM (25 open picks, 3 parlays, 1,926 credits,
