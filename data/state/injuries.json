@@ -1,5 +1,5 @@
 {
- "at": "2026-10-19T04:00:00-04:00",
+ "at": "2026-10-19T05:00:01-04:00",
  "source": "espn",
  "players": {
   "00-0037157": {
@@ -387,6 +387,16 @@
    "detail": "Hamstring",
    "espn_id": "4360807"
   },
+  "00-0035993": {
+   "name": "Tyler Huntley",
+   "team": "BAL",
+   "pos": "QB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-19T04:05:00-04:00",
+   "detail": null,
+   "espn_id": "4035671"
+  },
   "00-0039064": {
    "name": "Zay Flowers",
    "team": "BAL",
@@ -510,16 +520,6 @@
    "detail": "Ankle",
    "espn_id": "3916387",
    "comment": "inactive"
-  },
-  "00-0035993": {
-   "name": "Tyler Huntley",
-   "team": "BAL",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-16T19:17:00-04:00",
-   "detail": null,
-   "espn_id": "4035671"
   },
   "00-0032394": {
    "name": "Nick Vannett",
@@ -887,13 +887,23 @@
    "detail": "Knee",
    "espn_id": "4427132"
   },
+  "00-0040735": {
+   "name": "Luther Burden III",
+   "team": "CHI",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-19T04:38:00-04:00",
+   "detail": null,
+   "espn_id": "4685278"
+  },
   "name:CHI:anthonyjohnson": {
    "name": "Anthony Johnson Jr.",
    "team": "CHI",
    "pos": "S",
    "status": "Out",
    "fantasy": "OUT",
-   "date": "2026-10-19T03:01:00-04:00",
+   "date": "2026-10-19T04:01:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
@@ -1069,16 +1079,6 @@
    "detail": null,
    "espn_id": "4723086"
   },
-  "00-0039919": {
-   "name": "Rome Odunze",
-   "team": "CHI",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-11T18:34:00-04:00",
-   "detail": null,
-   "espn_id": "4431299"
-  },
   "00-0040785": {
    "name": "Dohnte Meyers",
    "team": "CIN",
@@ -1210,6 +1210,26 @@
    "date": "2026-10-05T22:52:00-04:00",
    "detail": null,
    "espn_id": "4690070"
+  },
+  "00-0040663": {
+   "name": "Harold Fannin Jr.",
+   "team": "CLE",
+   "pos": "TE",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-19T04:10:00-04:00",
+   "detail": null,
+   "espn_id": "5083076"
+  },
+  "00-0033537": {
+   "name": "Deshaun Watson",
+   "team": "CLE",
+   "pos": "QB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-19T03:58:00-04:00",
+   "detail": null,
+   "espn_id": "3122840"
   },
   "00-0041037": {
    "name": "Denzel Boston",
@@ -1393,17 +1413,6 @@
    "date": "2026-10-13T17:45:00-04:00",
    "detail": null,
    "espn_id": "4569682"
-  },
-  "00-0040466": {
-   "name": "Raheim Sanders",
-   "team": "CLE",
-   "pos": "RB",
-   "status": "Injured Reserve",
-   "fantasy": "IR",
-   "date": "2026-10-13T17:00:00-04:00",
-   "detail": "Hip",
-   "espn_id": "4601080",
-   "comment": "The Browns placed Sanders (hip) on injured reserve Tuesday."
   },
   "00-0036997": {
    "name": "Javonte Williams",
@@ -2818,6 +2827,26 @@
    "detail": null,
    "espn_id": "4832955"
   },
+  "00-0039338": {
+   "name": "Brock Bowers",
+   "team": "LV",
+   "pos": "TE",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-19T03:53:00-04:00",
+   "detail": null,
+   "espn_id": "4432665"
+  },
+  "00-0040122": {
+   "name": "Ashton Jeanty",
+   "team": "LV",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-19T03:50:00-04:00",
+   "detail": null,
+   "espn_id": "4890973"
+  },
   "00-0037291": {
    "name": "Jalen Nailor",
    "team": "LV",
@@ -2930,26 +2959,6 @@
    "detail": "Hamstring",
    "espn_id": "4432775",
    "comment": "Thornton (hamstring) won't be activated from injured reserve for Sunday's game against the Bills,  Sam Warren of The Athletic reports."
-  },
-  "00-0039338": {
-   "name": "Brock Bowers",
-   "team": "LV",
-   "pos": "TE",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-15T20:25:00-04:00",
-   "detail": null,
-   "espn_id": "4432665"
-  },
-  "00-0040122": {
-   "name": "Ashton Jeanty",
-   "team": "LV",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-14T19:54:00-04:00",
-   "detail": null,
-   "espn_id": "4890973"
   },
   "00-0035891": {
    "name": "Cody White",
@@ -3683,6 +3692,26 @@
    "espn_id": "3921690",
    "comment": "The Vikings placed Oliver (biceps) on injured reserve Tuesday, Craig Peters of the team's official site reports."
   },
+  "00-0040734": {
+   "name": "TreVeyon Henderson",
+   "team": "NE",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-19T04:22:00-04:00",
+   "detail": null,
+   "espn_id": "4432710"
+  },
+  "00-0036875": {
+   "name": "Rhamondre Stevenson",
+   "team": "NE",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-19T04:18:00-04:00",
+   "detail": null,
+   "espn_id": "4569173"
+  },
   "00-0039851": {
    "name": "Drake Maye",
    "team": "NE",
@@ -3764,16 +3793,6 @@
    "espn_id": "4361432",
    "comment": "Doubs (shoulder) has been ruled out for the rest of Sunday's game against the Jets, Doug Kyed of the Boston Herald reports."
   },
-  "00-0036875": {
-   "name": "Rhamondre Stevenson",
-   "team": "NE",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-18T12:48:00-04:00",
-   "detail": null,
-   "espn_id": "4569173"
-  },
   "name:NE:channingcanada": {
    "name": "Channing Canada",
    "team": "NE",
@@ -3835,16 +3854,6 @@
    "date": "2026-10-18T11:51:00-04:00",
    "detail": "Neck",
    "espn_id": "3916923"
-  },
-  "00-0040734": {
-   "name": "TreVeyon Henderson",
-   "team": "NE",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-18T11:41:00-04:00",
-   "detail": null,
-   "espn_id": "4432710"
   },
   "00-0036040": {
    "name": "Juwan Johnson",
@@ -4034,7 +4043,7 @@
    "pos": "OT",
    "status": "Out",
    "fantasy": "INACTIVE",
-   "date": "2026-10-19T03:01:00-04:00",
+   "date": "2026-10-19T04:01:00-04:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
@@ -4212,6 +4221,36 @@
    "detail": null,
    "espn_id": "4682648"
   },
+  "00-0041511": {
+   "name": "Omar Cooper Jr.",
+   "team": "NYJ",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-19T04:33:00-04:00",
+   "detail": null,
+   "espn_id": "4723820"
+  },
+  "00-0030565": {
+   "name": "Geno Smith",
+   "team": "NYJ",
+   "pos": "QB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-19T04:27:00-04:00",
+   "detail": null,
+   "espn_id": "15864"
+  },
+  "00-0039794": {
+   "name": "Braelon Allen",
+   "team": "NYJ",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-19T04:14:00-04:00",
+   "detail": null,
+   "espn_id": "4685247"
+  },
   "00-0037740": {
    "name": "Garrett Wilson",
    "team": "NYJ",
@@ -4241,16 +4280,6 @@
    "date": "2026-10-18T13:37:00-04:00",
    "detail": "Thigh",
    "espn_id": "4700136"
-  },
-  "00-0041511": {
-   "name": "Omar Cooper Jr.",
-   "team": "NYJ",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-18T11:55:00-04:00",
-   "detail": null,
-   "espn_id": "4723820"
   },
   "name:NYJ:nahshonwright": {
    "name": "Nahshon Wright",
@@ -4334,16 +4363,6 @@
    "detail": null,
    "espn_id": "3134353"
   },
-  "00-0039794": {
-   "name": "Braelon Allen",
-   "team": "NYJ",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-16T20:02:00-04:00",
-   "detail": null,
-   "espn_id": "4685247"
-  },
   "00-0039798": {
    "name": "Isaiah Davis",
    "team": "NYJ",
@@ -4353,16 +4372,6 @@
    "date": "2026-10-12T20:50:00-04:00",
    "detail": null,
    "espn_id": "4695404"
-  },
-  "00-0030565": {
-   "name": "Geno Smith",
-   "team": "NYJ",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-11T17:29:00-04:00",
-   "detail": null,
-   "espn_id": "15864"
   },
   "00-0040736": {
    "name": "Mason Taylor",
