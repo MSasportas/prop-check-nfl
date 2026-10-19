@@ -758,11 +758,13 @@ def _parlays(inp, items, live, at):
     legs_ok = [i for i, x in live.items() if x["p"] >= v["parlay_leg_min_p"] - EPS
                and lo - EPS <= odds.decimal(x["price"]) <= hi + EPS]
     legs_ok.sort(key=lambda i: rank_key(live[i]["p"], live[i]["b"], live[i]["settled"]) + (i,))
-    legs_ok = legs_ok[:12]
 
-    def best(size, forbid_shared_with=()):
+    def day_of(leg_ids):                     # open parlays here have every leg in live
+        return min(live[l]["start"] for l in leg_ids)[:10]
+
+    def best(size, pool, forbid_shared_with=()):
         top = None
-        for combo in itertools.combinations(legs_ok, size):
+        for combo in itertools.combinations(pool, size):
             if v["parlay_one_per_game"] and len({live[l]["game_id"] for l in combo}) < size:
                 continue
             if len({live[l]["pid"] for l in combo}) < size:
@@ -795,17 +797,24 @@ def _parlays(inp, items, live, at):
         for l in legs:
             use[l] = use.get(l, 0) + 1
 
-    if v["parlay_min_legs"] <= 2:
-        while sum(1 for o in open_parlays if len(o) == 2) < 2 and len(open_parlays) < v["parlay_cap"]:
-            f = best(2, [o for o in open_parlays if len(o) == 2])
-            if not f:
-                break
-            add(f)
-    if v["parlay_max_legs"] >= 3:
-        if not any(len(o) == 3 for o in open_parlays) and len(open_parlays) < v["parlay_cap"]:
-            f = best(3)
-            if f:
+    # Same game day only; the cap (up to parlay_cap) is per game day.
+    for day in sorted({live[i]["start"][:10] for i in legs_ok}):
+        pool = [i for i in legs_ok if live[i]["start"][:10] == day][:12]
+
+        def today():
+            return [o for o in open_parlays if day_of(o) == day]
+
+        if v["parlay_min_legs"] <= 2:
+            while sum(1 for o in today() if len(o) == 2) < 2 and len(today()) < v["parlay_cap"]:
+                f = best(2, pool, [o for o in today() if len(o) == 2])
+                if not f:
+                    break
                 add(f)
+        if v["parlay_max_legs"] >= 3:
+            if not any(len(o) == 3 for o in today()) and len(today()) < v["parlay_cap"]:
+                f = best(3, pool)
+                if f:
+                    add(f)
     return new
 
 
