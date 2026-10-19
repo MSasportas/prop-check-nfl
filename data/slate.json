@@ -2,8 +2,8 @@
  "season": 2026,
  "week": 6,
  "label": "Week 6",
- "generated_at": "2026-10-18T23:50:00-04:00",
- "status_at": "2026-10-18T23:50:00-04:00",
+ "generated_at": "2026-10-19T00:00:00-04:00",
+ "status_at": "2026-10-19T00:00:00-04:00",
  "valid_until": "2026-10-20T06:00:00-04:00",
  "next_check": "2026-10-19T19:00:00-04:00",
  "status": {
@@ -31,13 +31,13 @@
    "keys": 7,
    "keys_live": 6,
    "keys_shared": 1,
-   "days_left": 14,
+   "days_left": 1,
    "low": false,
    "empty": false
   },
   "last_run": {
    "ok": true,
-   "at": "2026-10-18T23:50:00-04:00",
+   "at": "2026-10-19T00:00:00-04:00",
    "failed_step": null
   }
  },
