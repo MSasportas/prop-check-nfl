@@ -1,5 +1,5 @@
 {
- "at": "2026-10-18T23:00:01-04:00",
+ "at": "2026-10-18T23:30:13-04:00",
  "source": "espn",
  "players": {
   "00-0037157": {
@@ -693,6 +693,16 @@
    "detail": null,
    "espn_id": "3930086"
   },
+  "00-0031610": {
+   "name": "Darren Waller",
+   "team": "CAR",
+   "pos": "TE",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-18T22:57:00-04:00",
+   "detail": null,
+   "espn_id": "2576925"
+  },
   "00-0037005": {
    "name": "Tommy Tremble",
    "team": "CAR",
@@ -796,16 +806,6 @@
    "espn_id": "4239934",
    "comment": "inactive"
   },
-  "00-0031610": {
-   "name": "Darren Waller",
-   "team": "CAR",
-   "pos": "TE",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-16T13:23:00-04:00",
-   "detail": null,
-   "espn_id": "2576925"
-  },
   "00-0039344": {
    "name": "Jonathon Brooks",
    "team": "CAR",
@@ -883,7 +883,7 @@
    "pos": "S",
    "status": "Out",
    "fantasy": "OUT",
-   "date": "2026-10-18T22:43:00-04:00",
+   "date": "2026-10-18T23:00:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
@@ -3806,6 +3806,16 @@
    "detail": "Ankle",
    "espn_id": "4565293"
   },
+  "00-0036040": {
+   "name": "Juwan Johnson",
+   "team": "NO",
+   "pos": "TE",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-18T22:49:00-04:00",
+   "detail": null,
+   "espn_id": "3929645"
+  },
   "00-0033906": {
    "name": "Alvin Kamara",
    "team": "NO",
@@ -3968,16 +3978,6 @@
    "espn_id": "4880281",
    "comment": "Saints head coach Kellen Moore said Monday that Tyson (hamstring) is \"progressing well\" but isn't on track to return to practice this week, Jeff Nowak of WWL Ne"
   },
-  "00-0036040": {
-   "name": "Juwan Johnson",
-   "team": "NO",
-   "pos": "TE",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-11T20:14:00-04:00",
-   "detail": null,
-   "espn_id": "3929645"
-  },
   "00-0039424": {
    "name": "Devaughn Vele",
    "team": "NO",
@@ -3994,7 +3994,7 @@
    "pos": "OT",
    "status": "Out",
    "fantasy": "INACTIVE",
-   "date": "2026-10-18T22:43:00-04:00",
+   "date": "2026-10-18T23:00:00-04:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
@@ -4334,6 +4334,16 @@
    "detail": null,
    "espn_id": "4808766"
   },
+  "00-0040867": {
+   "name": "Makai Lemon",
+   "team": "PHI",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-18T22:45:00-04:00",
+   "detail": null,
+   "espn_id": "4870795"
+  },
   "00-0034351": {
    "name": "Dallas Goedert",
    "team": "PHI",
@@ -4353,16 +4363,6 @@
    "date": "2026-10-18T16:02:00-04:00",
    "detail": null,
    "espn_id": "4428850"
-  },
-  "00-0040867": {
-   "name": "Makai Lemon",
-   "team": "PHI",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-18T15:59:00-04:00",
-   "detail": null,
-   "espn_id": "4870795"
   },
   "name:PHI:nolansmith": {
    "name": "Nolan Smith Jr.",
@@ -5350,6 +5350,16 @@
    "detail": null,
    "espn_id": "4034779"
   },
+  "00-0039032": {
+   "name": "Tyjae Spears",
+   "team": "TEN",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-18T23:10:00-04:00",
+   "detail": null,
+   "espn_id": "4428557"
+  },
   "00-0038117": {
    "name": "Wan'Dale Robinson",
    "team": "TEN",
@@ -5399,16 +5409,6 @@
    "date": "2026-10-18T13:59:00-04:00",
    "detail": "Ankle",
    "espn_id": "4240532"
-  },
-  "00-0039032": {
-   "name": "Tyjae Spears",
-   "team": "TEN",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-18T12:13:00-04:00",
-   "detail": null,
-   "espn_id": "4428557"
   },
   "00-0036876": {
    "name": "Kylen Granson",
