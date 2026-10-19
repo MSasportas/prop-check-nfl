@@ -1,5 +1,5 @@
 {
- "at": "2026-10-19T19:20:00-04:00",
+ "at": "2026-10-19T19:30:00-04:00",
  "source": "espn",
  "players": {
   "name:ARI:wydettwilliams": {
@@ -756,7 +756,7 @@
    "pos": "S",
    "status": "Injured Reserve",
    "fantasy": "IR",
-   "date": "2026-10-19T19:01:00-04:00",
+   "date": "2026-10-19T19:18:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
@@ -5005,6 +5005,26 @@
    "detail": null,
    "espn_id": "4240657"
   },
+  "name:WAS:javontaejeanbaptiste": {
+   "name": "Javontae Jean-Baptiste",
+   "team": "WAS",
+   "pos": "LB",
+   "status": "Injured Reserve",
+   "fantasy": "IR",
+   "date": "2026-10-19T19:14:00-04:00",
+   "detail": "Pectoral",
+   "espn_id": "4361357"
+  },
+  "00-0033955": {
+   "name": "Jeremy McNichols",
+   "team": "WAS",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-19T19:12:00-04:00",
+   "detail": null,
+   "espn_id": "3127586"
+  },
   "name:WAS:isaacyiadom": {
    "name": "Isaac Yiadom",
    "team": "WAS",
@@ -5086,26 +5106,6 @@
    "detail": "Groin",
    "espn_id": "4575131",
    "comment": "The Commanders placed Croskey-Merritt (groin) on injured reserve Monday."
-  },
-  "name:WAS:javontaejeanbaptiste": {
-   "name": "Javontae Jean-Baptiste",
-   "team": "WAS",
-   "pos": "LB",
-   "status": "Injured Reserve",
-   "fantasy": "IR",
-   "date": "2026-10-19T16:08:00-04:00",
-   "detail": "Pectoral",
-   "espn_id": "4361357"
-  },
-  "00-0033955": {
-   "name": "Jeremy McNichols",
-   "team": "WAS",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-19T16:08:00-04:00",
-   "detail": null,
-   "espn_id": "3127586"
   },
   "00-0037742": {
    "name": "Treylon Burks",
