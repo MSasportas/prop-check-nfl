@@ -1,5 +1,5 @@
 {
- "at": "2026-10-19T16:40:01-04:00",
+ "at": "2026-10-19T17:10:11-04:00",
  "source": "espn",
  "players": {
   "name:ARI:wydettwilliams": {
@@ -463,7 +463,7 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-10-19T16:14:00-04:00",
+   "date": "2026-10-19T16:47:00-04:00",
    "detail": "Suspension",
    "espn_id": "4034953"
   },
@@ -757,7 +757,7 @@
    "pos": "S",
    "status": "Injured Reserve",
    "fantasy": "IR",
-   "date": "2026-10-19T16:14:00-04:00",
+   "date": "2026-10-19T17:01:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
@@ -1680,6 +1680,17 @@
    "detail": null,
    "espn_id": "3915486"
   },
+  "00-0035700": {
+   "name": "Josh Jacobs",
+   "team": "GB",
+   "pos": "RB",
+   "status": "Out",
+   "fantasy": "RESERVE-CEL",
+   "date": "2026-10-19T16:58:00-04:00",
+   "detail": "Personal",
+   "espn_id": "4047365",
+   "comment": "Head coach Matt LaFleur said that Jacobs (personal) will get in a full week of practice, but the practice, but the Packers have yet to determine whether he'll b"
+  },
   "name:GB:benjaminstjuste": {
    "name": "Benjamin St-Juste",
    "team": "GB",
@@ -1820,17 +1831,6 @@
    "detail": "Ankle",
    "espn_id": "4430191",
    "comment": "The Packers placed Moore (ankle) on injured reserve Saturday."
-  },
-  "00-0035700": {
-   "name": "Josh Jacobs",
-   "team": "GB",
-   "pos": "RB",
-   "status": "Out",
-   "fantasy": "RESERVE-CEL",
-   "date": "2026-10-16T15:57:00-04:00",
-   "detail": "Personal",
-   "espn_id": "4047365",
-   "comment": "Jacobs (personal) will be removed from the Commissioner's Exempt List on Monday and be eligible to play as soon as the Packers' Week 7 game at Detroit, Tom Peli"
   },
   "name:GB:jordonriley": {
    "name": "Jordon Riley",
@@ -2830,9 +2830,9 @@
    "team": "LA",
    "pos": "WR",
    "status": "Active",
-   "fantasy": null,
+   "fantasy": "OUT",
    "date": "2026-10-18T21:18:00-04:00",
-   "detail": null,
+   "detail": "Knee",
    "espn_id": "16800"
   },
   "00-0026498": {
@@ -3599,7 +3599,7 @@
    "pos": "OT",
    "status": "Out",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-10-19T16:14:00-04:00",
+   "date": "2026-10-19T16:47:00-04:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
@@ -4332,10 +4332,10 @@
    "pos": "WR",
    "status": "Injured Reserve",
    "fantasy": "IR-R",
-   "date": "2026-10-19T11:40:00-04:00",
+   "date": "2026-10-19T16:47:00-04:00",
    "detail": "Calf",
    "espn_id": "3895856",
-   "comment": "Kirk (calf), who is listed as questionable for Monday's matchup with the Commanders, is expected to be reinstated from injured reserve ahead of the Week 6 game,"
+   "comment": "The 49ers downgraded Kirk (calf) to out for Monday's game against the Commanders, Matt Maiocco of NBC Sports Bay Area reports."
   },
   "00-0031408": {
    "name": "Mike Evans",
