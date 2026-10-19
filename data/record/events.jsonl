@@ -166,3 +166,8 @@
 {"actual":0,"actual_text":"0 of 2 legs hit","at":"2026-10-18T20:10:55-04:00","id":"2026-W06:P:6704ca6d85","legs":[{"id":"2026-W06:2026_06_LAC_KC:00-0039894:rec:FG:4.5:under","result":"L"},{"id":"2026-W06:2026_06_BUF_LV:00-0039338:long_rec:FG:24.5:under","result":"L"}],"price":230,"result":"L","t":"graded","units":-1.0}
 {"actual":0,"actual_text":"0 of 2 legs hit","at":"2026-10-18T20:10:55-04:00","id":"2026-W06:P:b54fe89587","legs":[{"id":"2026-W06:2026_06_BUF_LV:00-0038933:rec:FG:4.5:under","result":"L"},{"id":"2026-W06:2026_06_LAC_KC:00-0040666:rush_att:FG:9.5:over","result":"L"}],"price":210,"result":"L","t":"graded","units":-1.0}
 {"actual":0,"actual_text":"0 of 2 legs hit","at":"2026-10-18T20:10:55-04:00","id":"2026-W06:P:ff4f758f2a","legs":[{"id":"2026-W06:2026_06_LAC_KC:00-0039894:rec:FG:4.5:under","result":"L"},{"id":"2026-W06:2026_06_NO_NYG:00-0038551:rush_att:FG:9.5:under","result":"L"}],"price":224,"result":"L","t":"graded","units":-1.0}
+{"at":"2026-10-18T20:20:01-04:00","id":"2026-W06:2026_06_DAL_GB:00-0033077:pass_yds:1H:137.5:under","state":"inactives","t":"locked"}
+{"at":"2026-10-18T20:20:01-04:00","id":"2026-W06:2026_06_DAL_GB:00-0036264:rush_att:FG:2.5:under","state":"inactives","t":"locked"}
+{"at":"2026-10-18T20:20:01-04:00","id":"2026-W06:2026_06_DAL_GB:00-0040667:rec_yds:1H:29.5:under","state":"inactives","t":"locked"}
+{"at":"2026-10-18T20:20:01-04:00","id":"2026-W06:P:1839d42db7","state":"injury_report","t":"locked"}
+{"at":"2026-10-18T20:20:01-04:00","id":"2026-W06:P:ea45628464","state":"injury_report","t":"locked"}

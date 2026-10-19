@@ -3,10 +3,10 @@
  "season": 2026,
  "week": 6,
  "slate": "2026-W06",
- "started_at": "2026-10-18T20:10:55-04:00",
- "status_at": "2026-10-18T20:10:55-04:00",
- "finished_at": "2026-10-18T20:10:58-04:00",
- "last_ok_at": "2026-10-18T20:10:55-04:00",
+ "started_at": "2026-10-18T20:20:01-04:00",
+ "status_at": "2026-10-18T20:20:01-04:00",
+ "finished_at": "2026-10-18T20:20:01-04:00",
+ "last_ok_at": "2026-10-18T20:20:01-04:00",
  "failed_step": null,
  "steps": [
   {
@@ -17,12 +17,12 @@
   {
    "step": "schedule",
    "status": "ok",
-   "note": "14 game(s) this week (2026-W06); live state for 3 game(s)"
+   "note": "14 game(s) this week (2026-W06); schedule read"
   },
   {
    "step": "stats",
-   "status": "ok",
-   "note": "91 games through 2026-10-18"
+   "status": "skipped",
+   "note": "checked at 8:10 PM"
   },
   {
    "step": "roster",
@@ -31,13 +31,13 @@
   },
   {
    "step": "injuries",
-   "status": "ok",
-   "note": "espn: 237 out, 58 questionable; inactives posted for 24 team(s)"
+   "status": "skipped",
+   "note": "read at 8:10 PM; inactives posted for 24 team(s)"
   },
   {
    "step": "weather",
-   "status": "ok",
-   "note": "2 read, 0 failed, 0 indoors"
+   "status": "skipped",
+   "note": "nothing due (0 indoors)"
   },
   {
    "step": "odds",
@@ -51,18 +51,18 @@
   },
   {
    "step": "grade",
-   "status": "ok",
-   "note": "18 graded"
+   "status": "skipped",
+   "note": "nothing to grade"
   },
   {
    "step": "slate",
    "status": "ok",
-   "note": "5 open pick(s), 2 parlay(s)"
+   "note": "2 open pick(s), 0 parlay(s)"
   },
   {
    "step": "research",
    "status": "ok",
-   "note": "14 game file(s) written"
+   "note": "0 game file(s) written"
   },
   {
    "step": "record",
@@ -120,9 +120,9 @@
   }
  ],
  "pool_total": 1333,
- "allowance": 73.35,
- "tier": "full",
- "games_left_before_reset": 17,
+ "allowance": 77.94,
+ "tier": "full_plus",
+ "games_left_before_reset": 16,
  "budget_used_today": 833,
  "odds": {
   "state": "ok",
@@ -140,13 +140,13 @@
  "behind": {},
  "stats_problems": [],
  "games_this_week": 14,
- "record_events": 168,
+ "record_events": 173,
  "grade_checks": [],
  "odds_notes": [],
  "runner": {
   "event": "push",
   "run_id": "39179604468",
-  "iteration": 1,
+  "iteration": 2,
   "chain_link": 0,
   "chain_started_at": "2026-10-18T20:10:54-04:00",
   "run_started_at": "2026-10-18T20:10:54-04:00"

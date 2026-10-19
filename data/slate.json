@@ -2,8 +2,8 @@
  "season": 2026,
  "week": 6,
  "label": "Week 6",
- "generated_at": "2026-10-18T20:10:55-04:00",
- "status_at": "2026-10-18T20:10:55-04:00",
+ "generated_at": "2026-10-18T20:20:01-04:00",
+ "status_at": "2026-10-18T20:20:01-04:00",
  "valid_until": "2026-10-20T06:00:00-04:00",
  "next_check": "2026-10-19T19:00:00-04:00",
  "status": {
@@ -19,7 +19,7 @@
   "inactives": {
    "state": "ok",
    "at": "2026-10-18T20:10:55-04:00",
-   "note": "Posted for the 8:20 PM game."
+   "note": null
   },
   "stats": {
    "state": "ok",
@@ -37,7 +37,7 @@
   },
   "last_run": {
    "ok": true,
-   "at": "2026-10-18T20:10:55-04:00",
+   "at": "2026-10-18T20:20:01-04:00",
    "failed_step": null
   }
  },
@@ -291,7 +291,7 @@
    "kickoff": "2026-10-18T20:20:00-04:00",
    "day": "2026-10-18",
    "roof": "outdoors",
-   "started": false,
+   "started": true,
    "final": false,
    "score": null,
    "settled": "inactives",
@@ -320,141 +320,6 @@
   }
  ],
  "picks": [
-  {
-   "id": "2026-W06:2026_06_DAL_GB:00-0040667:rec_yds:1H:29.5:under",
-   "rank": 1,
-   "game_id": "2026_06_DAL_GB",
-   "day": "2026-10-18",
-   "kickoff": "2026-10-18T20:20:00-04:00",
-   "player": "Matthew Golden",
-   "player_short": "M. Golden",
-   "player_id": "00-0040667",
-   "pos": "WR",
-   "team": "GB",
-   "opp": "DAL",
-   "home": true,
-   "market": "rec_yds",
-   "period": "1H",
-   "side": "under",
-   "line": 29.5,
-   "bet": "Under 29.5 receiving yards",
-   "book": "Hard Rock",
-   "price": -115,
-   "price_at": "2026-10-18T00:40:00-04:00",
-   "first_price": -115,
-   "first_price_at": "2026-10-18T00:30:51-04:00",
-   "grade_price": -115,
-   "p": 0.5923,
-   "breakeven": 0.5349,
-   "p_pct": 59,
-   "breakeven_pct": 53,
-   "reason": "15.0 receiving yards a game in the 1st half his last 5 (1 of 5 over 29.5).",
-   "settled": "inactives",
-   "state": "open",
-   "thin": false,
-   "pulled": null,
-   "graded": null,
-   "history": [
-    {
-     "at": "2026-10-18T00:30:51-04:00",
-     "text": "Posted at -115"
-    },
-    {
-     "at": "2026-10-18T20:10:55-04:00",
-     "text": "Inactives confirmed"
-    }
-   ]
-  },
-  {
-   "id": "2026-W06:2026_06_DAL_GB:00-0036264:rush_att:FG:2.5:under",
-   "rank": 2,
-   "game_id": "2026_06_DAL_GB",
-   "day": "2026-10-18",
-   "kickoff": "2026-10-18T20:20:00-04:00",
-   "player": "Jordan Love",
-   "player_short": "J. Love",
-   "player_id": "00-0036264",
-   "pos": "QB",
-   "team": "GB",
-   "opp": "DAL",
-   "home": true,
-   "market": "rush_att",
-   "period": "FG",
-   "side": "under",
-   "line": 2.5,
-   "bet": "Under 2.5 carries",
-   "book": "Hard Rock",
-   "price": -115,
-   "price_at": "2026-10-18T00:40:00-04:00",
-   "first_price": -115,
-   "first_price_at": "2026-10-18T00:30:51-04:00",
-   "grade_price": -115,
-   "p": 0.5848,
-   "breakeven": 0.5349,
-   "p_pct": 58,
-   "breakeven_pct": 53,
-   "reason": "1.4 carries a game his last 5 (1 of 5 over 2.5).",
-   "settled": "inactives",
-   "state": "open",
-   "thin": false,
-   "pulled": null,
-   "graded": null,
-   "history": [
-    {
-     "at": "2026-10-18T00:30:51-04:00",
-     "text": "Posted at -115"
-    },
-    {
-     "at": "2026-10-18T20:10:55-04:00",
-     "text": "Inactives confirmed"
-    }
-   ]
-  },
-  {
-   "id": "2026-W06:2026_06_DAL_GB:00-0033077:pass_yds:1H:137.5:under",
-   "rank": 3,
-   "game_id": "2026_06_DAL_GB",
-   "day": "2026-10-18",
-   "kickoff": "2026-10-18T20:20:00-04:00",
-   "player": "Dak Prescott",
-   "player_short": "D. Prescott",
-   "player_id": "00-0033077",
-   "pos": "QB",
-   "team": "DAL",
-   "opp": "GB",
-   "home": false,
-   "market": "pass_yds",
-   "period": "1H",
-   "side": "under",
-   "line": 137.5,
-   "bet": "Under 137.5 passing yards",
-   "book": "Hard Rock",
-   "price": -115,
-   "price_at": "2026-10-18T00:40:00-04:00",
-   "first_price": -115,
-   "first_price_at": "2026-10-18T00:30:51-04:00",
-   "grade_price": -115,
-   "p": 0.5793,
-   "breakeven": 0.5349,
-   "p_pct": 57,
-   "breakeven_pct": 53,
-   "reason": "100 passing yards a game in the 1st half his last 5 (1 of 5 over 137.5). GB allows the 3rd fewest passing yards.",
-   "settled": "inactives",
-   "state": "open",
-   "thin": false,
-   "pulled": null,
-   "graded": null,
-   "history": [
-    {
-     "at": "2026-10-18T00:30:51-04:00",
-     "text": "Posted at -115"
-    },
-    {
-     "at": "2026-10-18T20:10:55-04:00",
-     "text": "Inactives confirmed"
-    }
-   ]
-  },
   {
    "id": "2026-W06:2026_06_HOU_JAX:00-0038618:long_rec:FG:10.5:over",
    "rank": null,
@@ -1870,6 +1735,153 @@
    ]
   },
   {
+   "id": "2026-W06:2026_06_DAL_GB:00-0033077:pass_yds:1H:137.5:under",
+   "rank": null,
+   "game_id": "2026_06_DAL_GB",
+   "day": "2026-10-18",
+   "kickoff": "2026-10-18T20:20:00-04:00",
+   "player": "Dak Prescott",
+   "player_short": "D. Prescott",
+   "player_id": "00-0033077",
+   "pos": "QB",
+   "team": "DAL",
+   "opp": "GB",
+   "home": false,
+   "market": "pass_yds",
+   "period": "1H",
+   "side": "under",
+   "line": 137.5,
+   "bet": "Under 137.5 passing yards",
+   "book": "Hard Rock",
+   "price": -115,
+   "price_at": "2026-10-18T00:30:51-04:00",
+   "first_price": -115,
+   "first_price_at": "2026-10-18T00:30:51-04:00",
+   "grade_price": -115,
+   "p": 0.5793,
+   "breakeven": 0.5349,
+   "p_pct": 57,
+   "breakeven_pct": 53,
+   "reason": "100 passing yards a game in the 1st half his last 5 (1 of 5 over 137.5). GB allows the 3rd fewest passing yards.",
+   "settled": "inactives",
+   "state": "locked",
+   "thin": false,
+   "pulled": null,
+   "graded": null,
+   "history": [
+    {
+     "at": "2026-10-18T00:30:51-04:00",
+     "text": "Posted at -115"
+    },
+    {
+     "at": "2026-10-18T20:10:55-04:00",
+     "text": "Inactives confirmed"
+    },
+    {
+     "at": "2026-10-18T20:20:01-04:00",
+     "text": "Locked"
+    }
+   ]
+  },
+  {
+   "id": "2026-W06:2026_06_DAL_GB:00-0036264:rush_att:FG:2.5:under",
+   "rank": null,
+   "game_id": "2026_06_DAL_GB",
+   "day": "2026-10-18",
+   "kickoff": "2026-10-18T20:20:00-04:00",
+   "player": "Jordan Love",
+   "player_short": "J. Love",
+   "player_id": "00-0036264",
+   "pos": "QB",
+   "team": "GB",
+   "opp": "DAL",
+   "home": true,
+   "market": "rush_att",
+   "period": "FG",
+   "side": "under",
+   "line": 2.5,
+   "bet": "Under 2.5 carries",
+   "book": "Hard Rock",
+   "price": -115,
+   "price_at": "2026-10-18T00:30:51-04:00",
+   "first_price": -115,
+   "first_price_at": "2026-10-18T00:30:51-04:00",
+   "grade_price": -115,
+   "p": 0.5848,
+   "breakeven": 0.5349,
+   "p_pct": 58,
+   "breakeven_pct": 53,
+   "reason": "1.4 carries a game his last 5 (1 of 5 over 2.5).",
+   "settled": "inactives",
+   "state": "locked",
+   "thin": false,
+   "pulled": null,
+   "graded": null,
+   "history": [
+    {
+     "at": "2026-10-18T00:30:51-04:00",
+     "text": "Posted at -115"
+    },
+    {
+     "at": "2026-10-18T20:10:55-04:00",
+     "text": "Inactives confirmed"
+    },
+    {
+     "at": "2026-10-18T20:20:01-04:00",
+     "text": "Locked"
+    }
+   ]
+  },
+  {
+   "id": "2026-W06:2026_06_DAL_GB:00-0040667:rec_yds:1H:29.5:under",
+   "rank": null,
+   "game_id": "2026_06_DAL_GB",
+   "day": "2026-10-18",
+   "kickoff": "2026-10-18T20:20:00-04:00",
+   "player": "Matthew Golden",
+   "player_short": "M. Golden",
+   "player_id": "00-0040667",
+   "pos": "WR",
+   "team": "GB",
+   "opp": "DAL",
+   "home": true,
+   "market": "rec_yds",
+   "period": "1H",
+   "side": "under",
+   "line": 29.5,
+   "bet": "Under 29.5 receiving yards",
+   "book": "Hard Rock",
+   "price": -115,
+   "price_at": "2026-10-18T00:30:51-04:00",
+   "first_price": -115,
+   "first_price_at": "2026-10-18T00:30:51-04:00",
+   "grade_price": -115,
+   "p": 0.5923,
+   "breakeven": 0.5349,
+   "p_pct": 59,
+   "breakeven_pct": 53,
+   "reason": "15.0 receiving yards a game in the 1st half his last 5 (1 of 5 over 29.5).",
+   "settled": "inactives",
+   "state": "locked",
+   "thin": false,
+   "pulled": null,
+   "graded": null,
+   "history": [
+    {
+     "at": "2026-10-18T00:30:51-04:00",
+     "text": "Posted at -115"
+    },
+    {
+     "at": "2026-10-18T20:10:55-04:00",
+     "text": "Inactives confirmed"
+    },
+    {
+     "at": "2026-10-18T20:20:01-04:00",
+     "text": "Locked"
+    }
+   ]
+  },
+  {
    "id": "2026-W06:2026_06_WAS_SF:00-0039910:pass_td:FG:1.5:under",
    "rank": 1,
    "game_id": "2026_06_WAS_SF",
@@ -1953,48 +1965,6 @@
   }
  ],
  "parlays": [
-  {
-   "id": "2026-W06:P:ea45628464",
-   "legs": [
-    "2026-W06:2026_06_DAL_GB:00-0040667:rec_yds:1H:29.5:under",
-    "2026-W06:2026_06_WAS_SF:00-0033280:long_rec:FG:15.5:under"
-   ],
-   "n": 2,
-   "price": 257,
-   "price_at": "2026-10-18T00:40:00-04:00",
-   "first_price": 257,
-   "first_price_at": "2026-10-18T00:40:00-04:00",
-   "grade_price": 257,
-   "p": 0.3472,
-   "breakeven": 0.2802,
-   "p_pct": 34,
-   "breakeven_pct": 28,
-   "kickoff": "2026-10-18T20:20:00-04:00",
-   "state": "open",
-   "pulled": null,
-   "graded": null
-  },
-  {
-   "id": "2026-W06:P:1839d42db7",
-   "legs": [
-    "2026-W06:2026_06_WAS_SF:00-0039910:pass_td:FG:1.5:under",
-    "2026-W06:2026_06_DAL_GB:00-0036264:rush_att:FG:2.5:under"
-   ],
-   "n": 2,
-   "price": 220,
-   "price_at": "2026-10-18T00:40:00-04:00",
-   "first_price": 220,
-   "first_price_at": "2026-10-18T00:40:00-04:00",
-   "grade_price": 220,
-   "p": 0.3602,
-   "breakeven": 0.312,
-   "p_pct": 36,
-   "breakeven_pct": 31,
-   "kickoff": "2026-10-18T20:20:00-04:00",
-   "state": "open",
-   "pulled": null,
-   "graded": null
-  },
   {
    "id": "2026-W06:P:b54fe89587",
    "legs": [
@@ -2114,6 +2084,48 @@
    "p_pct": 24,
    "breakeven_pct": 16,
    "kickoff": "2026-10-18T16:25:00-04:00",
+   "state": "locked",
+   "pulled": null,
+   "graded": null
+  },
+  {
+   "id": "2026-W06:P:ea45628464",
+   "legs": [
+    "2026-W06:2026_06_DAL_GB:00-0040667:rec_yds:1H:29.5:under",
+    "2026-W06:2026_06_WAS_SF:00-0033280:long_rec:FG:15.5:under"
+   ],
+   "n": 2,
+   "price": 257,
+   "price_at": "2026-10-18T00:40:00-04:00",
+   "first_price": 257,
+   "first_price_at": "2026-10-18T00:40:00-04:00",
+   "grade_price": 257,
+   "p": 0.3472,
+   "breakeven": 0.2802,
+   "p_pct": 34,
+   "breakeven_pct": 28,
+   "kickoff": "2026-10-18T20:20:00-04:00",
+   "state": "locked",
+   "pulled": null,
+   "graded": null
+  },
+  {
+   "id": "2026-W06:P:1839d42db7",
+   "legs": [
+    "2026-W06:2026_06_WAS_SF:00-0039910:pass_td:FG:1.5:under",
+    "2026-W06:2026_06_DAL_GB:00-0036264:rush_att:FG:2.5:under"
+   ],
+   "n": 2,
+   "price": 220,
+   "price_at": "2026-10-18T00:40:00-04:00",
+   "first_price": 220,
+   "first_price_at": "2026-10-18T00:40:00-04:00",
+   "grade_price": 220,
+   "p": 0.3602,
+   "breakeven": 0.312,
+   "p_pct": 36,
+   "breakeven_pct": 31,
+   "kickoff": "2026-10-18T20:20:00-04:00",
    "state": "locked",
    "pulled": null,
    "graded": null
