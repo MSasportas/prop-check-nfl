@@ -1,5 +1,5 @@
 {
- "at": "2026-10-18T23:30:13-04:00",
+ "at": "2026-10-19T00:10:00-04:00",
  "source": "espn",
  "players": {
   "00-0037157": {
@@ -205,6 +205,16 @@
    "detail": null,
    "espn_id": "4374045"
   },
+  "00-0037746": {
+   "name": "Brian Robinson Jr.",
+   "team": "ATL",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-18T23:20:00-04:00",
+   "detail": null,
+   "espn_id": "4241474"
+  },
   "00-0037741": {
    "name": "Jahan Dotson",
    "team": "ATL",
@@ -336,16 +346,6 @@
    "date": "2026-10-16T19:22:00-04:00",
    "detail": null,
    "espn_id": "4241479"
-  },
-  "00-0037746": {
-   "name": "Brian Robinson Jr.",
-   "team": "ATL",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-12T21:14:00-04:00",
-   "detail": null,
-   "espn_id": "4241474"
   },
   "00-0036970": {
    "name": "Kyle Pitts Sr.",
@@ -881,9 +881,9 @@
    "name": "Anthony Johnson Jr.",
    "team": "CHI",
    "pos": "S",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-18T23:00:00-04:00",
+   "status": "Injured Reserve",
+   "fantasy": "IR",
+   "date": "2026-10-19T00:00:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
@@ -1395,6 +1395,16 @@
    "espn_id": "4601080",
    "comment": "The Browns placed Sanders (hip) on injured reserve Tuesday."
   },
+  "00-0036358": {
+   "name": "CeeDee Lamb",
+   "team": "DAL",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-18T23:55:00-04:00",
+   "detail": null,
+   "espn_id": "4241389"
+  },
   "00-0037801": {
    "name": "KaVontae Turpin",
    "team": "DAL",
@@ -1497,16 +1507,6 @@
    "date": "2026-10-16T19:46:00-04:00",
    "detail": null,
    "espn_id": "4426354"
-  },
-  "00-0036358": {
-   "name": "CeeDee Lamb",
-   "team": "DAL",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-14T17:17:00-04:00",
-   "detail": null,
-   "espn_id": "4241389"
   },
   "00-0039062": {
    "name": "Jonathan Mingo",
@@ -1873,6 +1873,16 @@
    "detail": null,
    "espn_id": "3915486"
   },
+  "name:GB:brandoncisse": {
+   "name": "Brandon Cisse",
+   "team": "GB",
+   "pos": "CB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-18T23:36:00-04:00",
+   "detail": "Neck",
+   "espn_id": "5076652"
+  },
   "name:GB:aaronbanks": {
    "name": "Aaron Banks",
    "team": "GB",
@@ -2054,6 +2064,16 @@
    "date": "2026-10-11T16:51:00-04:00",
    "detail": null,
    "espn_id": "4701936"
+  },
+  "00-0034383": {
+   "name": "Dalton Schultz",
+   "team": "HOU",
+   "pos": "TE",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-18T23:23:00-04:00",
+   "detail": null,
+   "espn_id": "3117256"
   },
   "00-0039405": {
    "name": "Jawhar Jordan",
@@ -2778,6 +2798,16 @@
    "detail": null,
    "espn_id": "4832955"
   },
+  "00-0037291": {
+   "name": "Jalen Nailor",
+   "team": "LV",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-18T23:25:00-04:00",
+   "detail": null,
+   "espn_id": "4382466"
+  },
   "00-0040878": {
    "name": "Mike Washington Jr.",
    "team": "LV",
@@ -2880,16 +2910,6 @@
    "detail": "Hamstring",
    "espn_id": "4432775",
    "comment": "Thornton (hamstring) won't be activated from injured reserve for Sunday's game against the Bills,  Sam Warren of The Athletic reports."
-  },
-  "00-0037291": {
-   "name": "Jalen Nailor",
-   "team": "LV",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-16T18:05:00-04:00",
-   "detail": null,
-   "espn_id": "4382466"
   },
   "00-0039338": {
    "name": "Brock Bowers",
@@ -3994,7 +4014,7 @@
    "pos": "OT",
    "status": "Out",
    "fantasy": "INACTIVE",
-   "date": "2026-10-18T23:00:00-04:00",
+   "date": "2026-10-19T00:05:00-04:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
@@ -4172,6 +4192,16 @@
    "detail": null,
    "espn_id": "4682648"
   },
+  "00-0041032": {
+   "name": "Kenyon Sadiq",
+   "team": "NYJ",
+   "pos": "TE",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-18T23:29:00-04:00",
+   "detail": null,
+   "espn_id": "5083315"
+  },
   "name:NYJ:kikomauigoa": {
    "name": "Kiko Mauigoa",
    "team": "NYJ",
@@ -4191,16 +4221,6 @@
    "date": "2026-10-18T11:55:00-04:00",
    "detail": null,
    "espn_id": "4723820"
-  },
-  "00-0041032": {
-   "name": "Kenyon Sadiq",
-   "team": "NYJ",
-   "pos": "TE",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-18T11:45:00-04:00",
-   "detail": null,
-   "espn_id": "5083315"
   },
   "name:NYJ:nahshonwright": {
    "name": "Nahshon Wright",
@@ -4561,6 +4581,16 @@
    "detail": null,
    "espn_id": "4360238"
   },
+  "00-0036894": {
+   "name": "Pat Freiermuth",
+   "team": "PIT",
+   "pos": "TE",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-18T23:26:00-04:00",
+   "detail": null,
+   "espn_id": "4361411"
+  },
   "00-0035640": {
    "name": "DK Metcalf",
    "team": "PIT",
@@ -4652,16 +4682,6 @@
    "detail": "Coach's Decision",
    "espn_id": "4714771",
    "comment": "Allar (coach's decision) is inactive for Sunday's game against the Buccaneers."
-  },
-  "00-0036894": {
-   "name": "Pat Freiermuth",
-   "team": "PIT",
-   "pos": "TE",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-18T11:54:00-04:00",
-   "detail": null,
-   "espn_id": "4361411"
   },
   "00-0040203": {
    "name": "Will Howard",
@@ -5157,6 +5177,16 @@
    "espn_id": "4426385",
    "comment": "Charbonnet (knee) has been ruled out for Thursday's game at Denver, Corbin K. Smith of EmeraldCitySpectrum.com reports."
   },
+  "00-0038129": {
+   "name": "Cade Otton",
+   "team": "TB",
+   "pos": "TE",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-18T23:31:00-04:00",
+   "detail": null,
+   "espn_id": "4243331"
+  },
   "00-0033921": {
    "name": "Chris Godwin Jr.",
    "team": "TB",
@@ -5329,16 +5359,6 @@
    "date": "2026-10-10T00:43:00-04:00",
    "detail": null,
    "espn_id": "4608810"
-  },
-  "00-0038129": {
-   "name": "Cade Otton",
-   "team": "TB",
-   "pos": "TE",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-09T19:53:00-04:00",
-   "detail": null,
-   "espn_id": "4243331"
   },
   "00-0037311": {
    "name": "Ko Kieft",
