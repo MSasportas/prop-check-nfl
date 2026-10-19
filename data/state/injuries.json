@@ -1,5 +1,5 @@
 {
- "at": "2026-10-18T22:30:01-04:00",
+ "at": "2026-10-18T23:00:01-04:00",
  "source": "espn",
  "players": {
   "00-0037157": {
@@ -883,7 +883,7 @@
    "pos": "S",
    "status": "Out",
    "fantasy": "OUT",
-   "date": "2026-10-18T22:21:00-04:00",
+   "date": "2026-10-18T22:43:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
@@ -1201,6 +1201,16 @@
    "detail": null,
    "espn_id": "4690070"
   },
+  "00-0041037": {
+   "name": "Denzel Boston",
+   "team": "CLE",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-18T22:29:00-04:00",
+   "detail": null,
+   "espn_id": "4832800"
+  },
   "00-0036407": {
    "name": "Jerry Jeudy",
    "team": "CLE",
@@ -1343,16 +1353,6 @@
    "detail": null,
    "espn_id": "4685540"
   },
-  "00-0041037": {
-   "name": "Denzel Boston",
-   "team": "CLE",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-16T16:20:00-04:00",
-   "detail": null,
-   "espn_id": "4832800"
-  },
   "00-0041547": {
    "name": "KC Concepcion",
    "team": "CLE",
@@ -1395,6 +1395,17 @@
    "espn_id": "4601080",
    "comment": "The Browns placed Sanders (hip) on injured reserve Tuesday."
   },
+  "00-0037801": {
+   "name": "KaVontae Turpin",
+   "team": "DAL",
+   "pos": "WR",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-10-18T22:25:00-04:00",
+   "detail": "Ribs",
+   "espn_id": "3676833",
+   "comment": "Turpin (ribs) has been ruled out for the rest of Sunday night's contest versus the Packers, Tommy Yarrish of the Cowboys' official site reports."
+  },
   "name:DAL:deewinters": {
    "name": "Dee Winters",
    "team": "DAL",
@@ -1404,17 +1415,6 @@
    "date": "2026-10-18T21:25:00-04:00",
    "detail": "Ankle",
    "espn_id": "4428914"
-  },
-  "00-0037801": {
-   "name": "KaVontae Turpin",
-   "team": "DAL",
-   "pos": "WR",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-18T20:52:00-04:00",
-   "detail": "Ribs",
-   "espn_id": "3676833",
-   "comment": "Turpin (ribs) is questionable to return to Sunday night's matchup against Green Bay, Tommy Yarrish of the Cowboys' official site reports."
   },
   "00-0038705": {
    "name": "Emari Demercado",
@@ -2403,6 +2403,16 @@
    "detail": null,
    "espn_id": "4686468"
   },
+  "00-0038935": {
+   "name": "Brenton Strange",
+   "team": "JAX",
+   "pos": "TE",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-18T22:36:00-04:00",
+   "detail": null,
+   "espn_id": "4430539"
+  },
   "00-0038611": {
    "name": "Chris Rodriguez Jr.",
    "team": "JAX",
@@ -2951,17 +2961,6 @@
    "detail": null,
    "espn_id": "14880"
   },
-  "00-0039915": {
-   "name": "Ladd McConkey",
-   "team": "LAC",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-18T22:20:00-04:00",
-   "detail": "Concussion",
-   "espn_id": "4612826",
-   "comment": "questionable"
-  },
   "00-0038544": {
    "name": "Quentin Johnston",
    "team": "LAC",
@@ -2991,6 +2990,17 @@
    "date": "2026-10-18T20:44:00-04:00",
    "detail": null,
    "espn_id": "4685382"
+  },
+  "00-0039915": {
+   "name": "Ladd McConkey",
+   "team": "LAC",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-18T17:14:00-04:00",
+   "detail": "Concussion",
+   "espn_id": "4612826",
+   "comment": "McConkey won't return to Sunday's game at Kansas City due to a concussion."
   },
   "name:LAC:rodneyshelley": {
    "name": "Rodney Shelley",
@@ -3984,7 +3994,7 @@
    "pos": "OT",
    "status": "Out",
    "fantasy": "INACTIVE",
-   "date": "2026-10-18T22:21:00-04:00",
+   "date": "2026-10-18T22:43:00-04:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
@@ -5147,6 +5157,46 @@
    "espn_id": "4426385",
    "comment": "Charbonnet (knee) has been ruled out for Thursday's game at Denver, Corbin K. Smith of EmeraldCitySpectrum.com reports."
   },
+  "00-0033921": {
+   "name": "Chris Godwin Jr.",
+   "team": "TB",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-18T22:49:00-04:00",
+   "detail": null,
+   "espn_id": "3116165"
+  },
+  "00-0040129": {
+   "name": "Emeka Egbuka",
+   "team": "TB",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-18T22:43:00-04:00",
+   "detail": null,
+   "espn_id": "4567750"
+  },
+  "00-0039361": {
+   "name": "Bucky Irving",
+   "team": "TB",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-18T22:38:00-04:00",
+   "detail": null,
+   "espn_id": "4596448"
+  },
+  "00-0041251": {
+   "name": "Jalon Daniels",
+   "team": "TB",
+   "pos": "QB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-18T22:33:00-04:00",
+   "detail": null,
+   "espn_id": "4596472"
+  },
   "00-0036919": {
    "name": "Kenny Gainwell",
    "team": "TB",
@@ -5260,16 +5310,6 @@
    "espn_id": "3871102",
    "comment": "Sills (hamstring) is listed as questionable for Sunday's game against the Steelers."
   },
-  "00-0041251": {
-   "name": "Jalon Daniels",
-   "team": "TB",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-16T20:10:00-04:00",
-   "detail": null,
-   "espn_id": "4596472"
-  },
   "00-0041048": {
    "name": "Ted Hurst III",
    "team": "TB",
@@ -5299,36 +5339,6 @@
    "date": "2026-10-09T19:53:00-04:00",
    "detail": null,
    "espn_id": "4243331"
-  },
-  "00-0033921": {
-   "name": "Chris Godwin Jr.",
-   "team": "TB",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-09T00:06:00-04:00",
-   "detail": null,
-   "espn_id": "3116165"
-  },
-  "00-0040129": {
-   "name": "Emeka Egbuka",
-   "team": "TB",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-09T00:02:00-04:00",
-   "detail": null,
-   "espn_id": "4567750"
-  },
-  "00-0039361": {
-   "name": "Bucky Irving",
-   "team": "TB",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-08T23:38:00-04:00",
-   "detail": null,
-   "espn_id": "4596448"
   },
   "00-0037311": {
    "name": "Ko Kieft",
