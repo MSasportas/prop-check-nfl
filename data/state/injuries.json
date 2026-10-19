@@ -1,5 +1,5 @@
 {
- "at": "2026-10-19T15:30:00-04:00",
+ "at": "2026-10-19T16:00:01-04:00",
  "source": "espn",
  "players": {
   "name:ARI:wydettwilliams": {
@@ -334,7 +334,7 @@
    "date": "2026-10-19T15:08:00-04:00",
    "detail": "Ankle",
    "espn_id": "3916387",
-   "comment": "Ravens head coach Jesse Minter said Monday that Jackson could \"potentially\" practice in Week 7 and is still being considered day-to-day, Ryan Mink of the team's"
+   "comment": "Ravens head coach Jesse Minter said Monday that Jackson (ankle) could \"potentially\" practice in Week 7 and is still being considered day-to-day, Ryan Mink of th"
   },
   "name:BAL:broderickwashington": {
    "name": "Broderick Washington Jr.",
@@ -757,7 +757,7 @@
    "pos": "S",
    "status": "Injured Reserve",
    "fantasy": "IR",
-   "date": "2026-10-19T15:03:00-04:00",
+   "date": "2026-10-19T15:56:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
