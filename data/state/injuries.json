@@ -1,7 +1,47 @@
 {
- "at": "2026-10-18T20:10:55-04:00",
+ "at": "2026-10-18T20:50:01-04:00",
  "source": "espn",
  "players": {
+  "00-0037157": {
+   "name": "Bam Knight",
+   "team": "ARI",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-18T20:17:00-04:00",
+   "detail": null,
+   "espn_id": "4427728"
+  },
+  "00-0033119": {
+   "name": "Jacoby Brissett",
+   "team": "ARI",
+   "pos": "QB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-18T20:14:00-04:00",
+   "detail": null,
+   "espn_id": "2578570"
+  },
+  "00-0037263": {
+   "name": "Tyler Allgeier",
+   "team": "ARI",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-18T20:12:00-04:00",
+   "detail": null,
+   "espn_id": "4373626"
+  },
+  "00-0038559": {
+   "name": "Michael Wilson",
+   "team": "ARI",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-18T20:12:00-04:00",
+   "detail": null,
+   "espn_id": "4360761"
+  },
   "00-0037744": {
    "name": "Trey McBride",
    "team": "ARI",
@@ -94,26 +134,6 @@
    "detail": null,
    "espn_id": "4569609"
   },
-  "00-0037157": {
-   "name": "Bam Knight",
-   "team": "ARI",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-16T19:09:00-04:00",
-   "detail": null,
-   "espn_id": "4427728"
-  },
-  "00-0037263": {
-   "name": "Tyler Allgeier",
-   "team": "ARI",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-16T19:00:00-04:00",
-   "detail": null,
-   "espn_id": "4373626"
-  },
   "00-0036331": {
    "name": "Devin Duvernay",
    "team": "ARI",
@@ -174,26 +194,6 @@
    "date": "2026-10-11T22:48:00-04:00",
    "detail": null,
    "espn_id": "3045523"
-  },
-  "00-0033119": {
-   "name": "Jacoby Brissett",
-   "team": "ARI",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-11T21:39:00-04:00",
-   "detail": null,
-   "espn_id": "2578570"
-  },
-  "00-0038559": {
-   "name": "Michael Wilson",
-   "team": "ARI",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-11T21:23:00-04:00",
-   "detail": null,
-   "espn_id": "4360761"
   },
   "00-0037277": {
    "name": "Teagan Quitoriano",
@@ -883,7 +883,7 @@
    "pos": "S",
    "status": "Injured Reserve",
    "fantasy": "IR",
-   "date": "2026-10-18T19:00:00-04:00",
+   "date": "2026-10-18T20:00:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
@@ -2217,6 +2217,16 @@
    "detail": null,
    "espn_id": "3117256"
   },
+  "00-0030279": {
+   "name": "Keenan Allen",
+   "team": "IND",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-18T20:12:00-04:00",
+   "detail": null,
+   "espn_id": "15818"
+  },
   "00-0038997": {
    "name": "Josh Downs",
    "team": "IND",
@@ -2351,16 +2361,6 @@
    "detail": "Heel",
    "espn_id": "4360078",
    "comment": "Pierce was spotted without a cast on his left ankle/heel Wednesday, James Boyd of The Athletic reports."
-  },
-  "00-0030279": {
-   "name": "Keenan Allen",
-   "team": "IND",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-14T16:51:00-04:00",
-   "detail": null,
-   "espn_id": "15818"
   },
   "00-0033439": {
    "name": "Pharaoh Brown",
@@ -2563,6 +2563,16 @@
    "detail": "Knee",
    "espn_id": "4692525"
   },
+  "00-0038134": {
+   "name": "Kenneth Walker III",
+   "team": "KC",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-18T20:29:00-04:00",
+   "detail": null,
+   "espn_id": "4567048"
+  },
   "name:KC:jaylonmoore": {
    "name": "Jaylon Moore",
    "team": "KC",
@@ -2737,15 +2747,15 @@
    "detail": null,
    "espn_id": "3139477"
   },
-  "00-0038134": {
-   "name": "Kenneth Walker III",
-   "team": "KC",
-   "pos": "RB",
+  "00-0038563": {
+   "name": "Tre Tucker",
+   "team": "LV",
+   "pos": "WR",
    "status": "Active",
    "fantasy": null,
-   "date": "2026-10-04T20:16:00-04:00",
+   "date": "2026-10-18T20:24:00-04:00",
    "detail": null,
-   "espn_id": "4567048"
+   "espn_id": "4428718"
   },
   "00-0038579": {
    "name": "Aidan O'Connell",
@@ -2890,16 +2900,6 @@
    "detail": null,
    "espn_id": "4686658"
   },
-  "00-0038563": {
-   "name": "Tre Tucker",
-   "team": "LV",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-12T00:21:00-04:00",
-   "detail": null,
-   "espn_id": "4428718"
-  },
   "00-0039407": {
    "name": "Dylan Laube",
    "team": "LV",
@@ -2929,6 +2929,16 @@
    "date": "2026-10-11T21:00:00-04:00",
    "detail": null,
    "espn_id": "14880"
+  },
+  "00-0040666": {
+   "name": "Omarion Hampton",
+   "team": "LAC",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-18T20:44:00-04:00",
+   "detail": null,
+   "espn_id": "4685382"
   },
   "00-0039915": {
    "name": "Ladd McConkey",
@@ -3102,16 +3112,6 @@
    "date": "2026-10-11T21:25:00-04:00",
    "detail": null,
    "espn_id": "4430968"
-  },
-  "00-0036355": {
-   "name": "Justin Herbert",
-   "team": "LAC",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-11T20:46:00-04:00",
-   "detail": null,
-   "espn_id": "4038941"
   },
   "name:LA:blakegrupe": {
    "name": "Blake Grupe",
@@ -3775,6 +3775,36 @@
    "detail": null,
    "espn_id": "4431431"
   },
+  "00-0038551": {
+   "name": "Kendre Miller",
+   "team": "NO",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-18T20:42:00-04:00",
+   "detail": null,
+   "espn_id": "4599739"
+  },
+  "00-0040743": {
+   "name": "Tyler Shough",
+   "team": "NO",
+   "pos": "QB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-18T20:37:00-04:00",
+   "detail": null,
+   "espn_id": "4360689"
+  },
+  "00-0037239": {
+   "name": "Chris Olave",
+   "team": "NO",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-18T20:26:00-04:00",
+   "detail": null,
+   "espn_id": "4361370"
+  },
   "name:NO:koolaidmckinstry": {
    "name": "Kool-Aid McKinstry",
    "team": "NO",
@@ -3876,26 +3906,6 @@
    "detail": "Knee",
    "espn_id": "3925350"
   },
-  "00-0037239": {
-   "name": "Chris Olave",
-   "team": "NO",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-18T11:38:00-04:00",
-   "detail": null,
-   "espn_id": "4361370"
-  },
-  "00-0040743": {
-   "name": "Tyler Shough",
-   "team": "NO",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-18T08:01:00-04:00",
-   "detail": null,
-   "espn_id": "4360689"
-  },
   "00-0038979": {
    "name": "Cedric Tillman",
    "team": "NO",
@@ -3905,16 +3915,6 @@
    "date": "2026-10-17T19:52:00-04:00",
    "detail": null,
    "espn_id": "4369863"
-  },
-  "00-0038551": {
-   "name": "Kendre Miller",
-   "team": "NO",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-13T21:29:00-04:00",
-   "detail": null,
-   "espn_id": "4599739"
   },
   "00-0035644": {
    "name": "Noah Fant",
@@ -4510,6 +4510,16 @@
    "detail": null,
    "espn_id": "4248557"
   },
+  "00-0041489": {
+   "name": "Germie Bernard",
+   "team": "PIT",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-18T20:30:00-04:00",
+   "detail": null,
+   "espn_id": "4685261"
+  },
   "name:PIT:brandinechols": {
    "name": "Brandin Echols",
    "team": "PIT",
@@ -4674,16 +4684,6 @@
    "date": "2026-10-16T21:42:00-04:00",
    "detail": "Knee",
    "espn_id": "3929846"
-  },
-  "00-0041489": {
-   "name": "Germie Bernard",
-   "team": "PIT",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-16T19:54:00-04:00",
-   "detail": null,
-   "espn_id": "4685261"
   },
   "00-0038558": {
    "name": "Darnell Washington",
