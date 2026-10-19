@@ -1,5 +1,5 @@
 {
- "at": "2026-10-19T02:00:00-04:00",
+ "at": "2026-10-19T03:00:00-04:00",
  "source": "espn",
  "players": {
   "00-0037157": {
@@ -205,6 +205,16 @@
    "detail": null,
    "espn_id": "4374045"
   },
+  "00-0038542": {
+   "name": "Bijan Robinson",
+   "team": "ATL",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-19T02:18:00-04:00",
+   "detail": null,
+   "espn_id": "4430807"
+  },
   "00-0037746": {
    "name": "Brian Robinson Jr.",
    "team": "ATL",
@@ -366,16 +376,6 @@
    "date": "2026-10-12T00:20:00-04:00",
    "detail": null,
    "espn_id": "4426502"
-  },
-  "00-0038542": {
-   "name": "Bijan Robinson",
-   "team": "ATL",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-12T00:12:00-04:00",
-   "detail": null,
-   "espn_id": "4430807"
   },
   "name:ATL:yasirabdullah": {
    "name": "Yasir Abdullah",
@@ -877,13 +877,33 @@
    "detail": null,
    "espn_id": "4685720"
   },
+  "00-0039918": {
+   "name": "Caleb Williams",
+   "team": "CHI",
+   "pos": "QB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-19T02:31:00-04:00",
+   "detail": null,
+   "espn_id": "4431611"
+  },
+  "00-0036275": {
+   "name": "D'Andre Swift",
+   "team": "CHI",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-19T02:25:00-04:00",
+   "detail": null,
+   "espn_id": "4259545"
+  },
   "name:CHI:anthonyjohnson": {
    "name": "Anthony Johnson Jr.",
    "team": "CHI",
    "pos": "S",
-   "status": "Injured Reserve",
-   "fantasy": "IR",
-   "date": "2026-10-19T01:01:00-04:00",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-10-19T02:01:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
@@ -989,16 +1009,6 @@
    "detail": "Quadriceps",
    "espn_id": "4911952"
   },
-  "00-0039918": {
-   "name": "Caleb Williams",
-   "team": "CHI",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-18T11:46:00-04:00",
-   "detail": null,
-   "espn_id": "4431611"
-  },
   "name:CHI:dayoodeyingbo": {
    "name": "Dayo Odeyingbo",
    "team": "CHI",
@@ -1018,16 +1028,6 @@
    "date": "2026-10-17T19:21:00-04:00",
    "detail": null,
    "espn_id": "4257364"
-  },
-  "00-0036275": {
-   "name": "D'Andre Swift",
-   "team": "CHI",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-16T19:44:00-04:00",
-   "detail": null,
-   "espn_id": "4259545"
   },
   "00-0032464": {
    "name": "Kalif Raymond",
@@ -3673,6 +3673,26 @@
    "espn_id": "3921690",
    "comment": "The Vikings placed Oliver (biceps) on injured reserve Tuesday, Craig Peters of the team's official site reports."
   },
+  "00-0039851": {
+   "name": "Drake Maye",
+   "team": "NE",
+   "pos": "QB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-19T02:11:00-04:00",
+   "detail": null,
+   "espn_id": "4431452"
+  },
+  "00-0035676": {
+   "name": "A.J. Brown",
+   "team": "NE",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-19T01:51:00-04:00",
+   "detail": null,
+   "espn_id": "4047646"
+  },
   "00-0033090": {
    "name": "Hunter Henry",
    "team": "NE",
@@ -3815,26 +3835,6 @@
    "date": "2026-10-18T11:41:00-04:00",
    "detail": null,
    "espn_id": "4432710"
-  },
-  "00-0035676": {
-   "name": "A.J. Brown",
-   "team": "NE",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-18T11:35:00-04:00",
-   "detail": null,
-   "espn_id": "4047646"
-  },
-  "name:NE:marcusbryant": {
-   "name": "Marcus Bryant",
-   "team": "NE",
-   "pos": "OT",
-   "status": "Injured Reserve",
-   "fantasy": "IR-R",
-   "date": "2026-10-14T20:55:00-04:00",
-   "detail": "Ankle",
-   "espn_id": "4565293"
   },
   "00-0036040": {
    "name": "Juwan Johnson",
@@ -4024,7 +4024,7 @@
    "pos": "OT",
    "status": "Out",
    "fantasy": "INACTIVE",
-   "date": "2026-10-19T01:01:00-04:00",
+   "date": "2026-10-19T02:01:00-04:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
@@ -4202,6 +4202,16 @@
    "detail": null,
    "espn_id": "4682648"
   },
+  "00-0037740": {
+   "name": "Garrett Wilson",
+   "team": "NYJ",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-19T02:05:00-04:00",
+   "detail": null,
+   "espn_id": "4569618"
+  },
   "00-0041032": {
    "name": "Kenyon Sadiq",
    "team": "NYJ",
@@ -4343,16 +4353,6 @@
    "date": "2026-10-11T17:29:00-04:00",
    "detail": null,
    "espn_id": "15864"
-  },
-  "00-0037740": {
-   "name": "Garrett Wilson",
-   "team": "NYJ",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-11T16:51:00-04:00",
-   "detail": null,
-   "espn_id": "4569618"
   },
   "00-0040736": {
    "name": "Mason Taylor",

@@ -3,10 +3,10 @@
  "season": 2026,
  "week": 6,
  "slate": "2026-W06",
- "started_at": "2026-10-19T02:00:00-04:00",
- "status_at": "2026-10-19T02:00:00-04:00",
- "finished_at": "2026-10-19T02:00:03-04:00",
- "last_ok_at": "2026-10-19T02:00:00-04:00",
+ "started_at": "2026-10-19T03:00:00-04:00",
+ "status_at": "2026-10-19T03:00:00-04:00",
+ "finished_at": "2026-10-19T03:00:06-04:00",
+ "last_ok_at": "2026-10-19T03:00:00-04:00",
  "failed_step": null,
  "steps": [
   {
@@ -21,8 +21,8 @@
   },
   {
    "step": "stats",
-   "status": "ok",
-   "note": "92 games through 2026-10-18"
+   "status": "skipped",
+   "note": "play-by-play unchanged (6370308 bytes)"
   },
   {
    "step": "roster",
@@ -32,12 +32,12 @@
   {
    "step": "injuries",
    "status": "ok",
-   "note": "espn: 236 out, 62 questionable; inactives posted for 24 team(s)"
+   "note": "espn: 235 out, 62 questionable; inactives posted for 24 team(s)"
   },
   {
    "step": "weather",
-   "status": "skipped",
-   "note": "nothing due (0 indoors)"
+   "status": "ok",
+   "note": "1 read, 0 failed, 0 indoors"
   },
   {
    "step": "odds",
@@ -47,12 +47,12 @@
   {
    "step": "engine",
    "status": "ok",
-   "note": "1 new event(s): 0 shown, 0 pulled"
+   "note": "no change"
   },
   {
    "step": "grade",
-   "status": "ok",
-   "note": "2 graded"
+   "status": "skipped",
+   "note": "nothing to grade"
   },
   {
    "step": "slate",
@@ -66,8 +66,8 @@
   },
   {
    "step": "record",
-   "status": "ok",
-   "note": "record.json"
+   "status": "skipped",
+   "note": "unchanged"
   }
  ],
  "sources": {
@@ -145,14 +145,14 @@
  "odds_notes": [],
  "runner": {
   "event": "workflow_dispatch",
-  "run_id": "39203108742",
+  "run_id": "39208332211",
   "iteration": 2,
-  "chain_link": 57,
+  "chain_link": 110,
   "chain_started_at": "2026-10-18T20:10:54-04:00",
-  "run_started_at": "2026-10-19T01:10:00-04:00"
+  "run_started_at": "2026-10-19T02:10:02-04:00"
  },
  "live_page": {
-  "checked_at": "2026-10-19T02:00:00-04:00",
+  "checked_at": "2026-10-19T03:00:00-04:00",
   "http": 200,
   "is_page": true
  }
