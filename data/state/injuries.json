@@ -1,5 +1,5 @@
 {
- "at": "2026-10-19T09:30:00-04:00",
+ "at": "2026-10-19T10:00:01-04:00",
  "source": "espn",
  "players": {
   "00-0037157": {
@@ -205,6 +205,16 @@
    "detail": null,
    "espn_id": "4374045"
   },
+  "00-0033662": {
+   "name": "Cooper Rush",
+   "team": "ATL",
+   "pos": "QB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-19T09:53:00-04:00",
+   "detail": null,
+   "espn_id": "2972515"
+  },
   "00-0039917": {
    "name": "Michael Penix Jr.",
    "team": "ATL",
@@ -294,17 +304,6 @@
    "date": "2026-10-18T14:07:00-04:00",
    "detail": "Arm",
    "espn_id": "4037626"
-  },
-  "00-0033662": {
-   "name": "Cooper Rush",
-   "team": "ATL",
-   "pos": "QB",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-10-18T12:08:00-04:00",
-   "detail": "Coach's Decision",
-   "espn_id": "2972515",
-   "comment": "Rush (coach's decision) is listed as inactive but will serve as the Falcons' emergency third quarterback for Sunday's game against the Bears."
   },
   "00-0041194": {
    "name": "Jack Strand",
@@ -3874,7 +3873,7 @@
    "date": "2026-10-19T09:19:00-04:00",
    "detail": "Hamstring",
    "espn_id": "4880281",
-   "comment": "Saints head coach Kellen Moore said that Tyson (hamstring) traveled to Paris in advance of Sunday's game against the Steelers, made the trip to Paris with the S"
+   "comment": "Saints head coach Kellen Moore said that Tyson (hamstring) traveled to Paris in advance of Sunday's game against the Steelers, NewOrleans.football reports."
   },
   "00-0036040": {
    "name": "Juwan Johnson",
@@ -4053,7 +4052,7 @@
    "pos": "OT",
    "status": "Out",
    "fantasy": "INACTIVE",
-   "date": "2026-10-19T09:00:00-04:00",
+   "date": "2026-10-19T09:53:00-04:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },

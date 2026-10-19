@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-19T02:00:00-04:00",
+ "generated_at": "2026-10-19T10:00:01-04:00",
  "season": 2026,
  "summary": {
   "headline": {
@@ -899,7 +899,7 @@
        "player": "J. Daniels",
        "bet": "Under 1.5 passing TDs",
        "period": "FG",
-       "price": -140,
+       "price": -150,
        "result": null,
        "actual": null
       },

@@ -2006,6 +2006,19 @@
      "totals_h1"
     ],
     "cost": 41
+   },
+   {
+    "pull": "D",
+    "at": "2026-10-19T10:00:01-04:00",
+    "asked": [
+     "player_pass_tds",
+     "player_reception_longest"
+    ],
+    "returned": [
+     "player_pass_tds",
+     "player_reception_longest"
+    ],
+    "cost": 2
    }
   ]
  },
@@ -3367,14 +3380,14 @@
  "fail_note": null,
  "key_count": 7,
  "plan": {
-  "allowance": 77.94,
+  "allowance": 77.81,
   "tier": "full_plus",
   "pulls": "MFDRC",
-  "pool_at_plan": 1247.0,
+  "pool_at_plan": 1245.0,
   "games_left": 16,
-  "pool_raw": 1333,
+  "pool_raw": 1331,
   "keys_shared": 1,
-  "made_at": "2026-10-18T20:20:01-04:00"
+  "made_at": "2026-10-19T10:00:01-04:00"
  },
  "failed": {}
 }

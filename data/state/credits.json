@@ -14,11 +14,11 @@
   },
   {
    "n": 2,
-   "left": 2,
-   "status": "ok",
-   "checked_at": "2026-10-19T09:00:00-04:00",
+   "left": 0,
+   "status": "empty",
+   "checked_at": "2026-10-19T10:00:01-04:00",
    "month": "2026-10",
-   "after_us": 2,
+   "after_us": 0,
    "shared": false,
    "shared_at": null,
    "others_spent": 0
@@ -471,6 +471,14 @@
    "game_id": "2026_06_LAC_KC",
    "cost": 9,
    "key": 3
+  },
+  {
+   "at": "2026-10-19T10:00:01-04:00",
+   "date": "2026-10-19",
+   "pull": "D",
+   "game_id": "2026_06_WAS_SF",
+   "cost": 2,
+   "key": 2
   }
  ]
 }
