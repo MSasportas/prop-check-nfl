@@ -25,11 +25,11 @@
   },
   {
    "n": 3,
-   "left": 135,
+   "left": 129,
    "status": "ok",
-   "checked_at": "2026-10-19T15:00:00-04:00",
+   "checked_at": "2026-10-19T19:00:00-04:00",
    "month": "2026-10",
-   "after_us": 135,
+   "after_us": 129,
    "shared": false,
    "shared_at": null,
    "others_spent": 0
@@ -479,6 +479,14 @@
    "game_id": "2026_06_WAS_SF",
    "cost": 2,
    "key": 2
+  },
+  {
+   "at": "2026-10-19T19:00:00-04:00",
+   "date": "2026-10-19",
+   "pull": "C",
+   "game_id": "2026_06_WAS_SF",
+   "cost": 6,
+   "key": 3
   }
  ]
 }
