@@ -1,5 +1,5 @@
 {
- "at": "2026-10-19T09:00:00-04:00",
+ "at": "2026-10-19T09:30:00-04:00",
  "source": "espn",
  "players": {
   "00-0037157": {
@@ -893,7 +893,7 @@
    "pos": "S",
    "status": "Injured Reserve",
    "fantasy": "IR",
-   "date": "2026-10-19T08:00:00-04:00",
+   "date": "2026-10-19T09:16:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
@@ -3865,6 +3865,17 @@
    "detail": "Neck",
    "espn_id": "3916923"
   },
+  "00-0041029": {
+   "name": "Jordyn Tyson",
+   "team": "NO",
+   "pos": "WR",
+   "status": "Injured Reserve",
+   "fantasy": "IR-R",
+   "date": "2026-10-19T09:19:00-04:00",
+   "detail": "Hamstring",
+   "espn_id": "4880281",
+   "comment": "Saints head coach Kellen Moore said that Tyson (hamstring) traveled to Paris in advance of Sunday's game against the Steelers, made the trip to Paris with the S"
+  },
   "00-0036040": {
    "name": "Juwan Johnson",
    "team": "NO",
@@ -4026,17 +4037,6 @@
    "detail": null,
    "espn_id": "4036131"
   },
-  "00-0041029": {
-   "name": "Jordyn Tyson",
-   "team": "NO",
-   "pos": "WR",
-   "status": "Injured Reserve",
-   "fantasy": "IR-R",
-   "date": "2026-10-12T14:59:00-04:00",
-   "detail": "Hamstring",
-   "espn_id": "4880281",
-   "comment": "Saints head coach Kellen Moore said Monday that Tyson (hamstring) is \"progressing well\" but isn't on track to return to practice this week, Jeff Nowak of WWL Ne"
-  },
   "00-0039424": {
    "name": "Devaughn Vele",
    "team": "NO",
@@ -4053,7 +4053,7 @@
    "pos": "OT",
    "status": "Out",
    "fantasy": "INACTIVE",
-   "date": "2026-10-19T08:00:00-04:00",
+   "date": "2026-10-19T09:00:00-04:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
