@@ -1,5 +1,5 @@
 {
- "at": "2026-10-19T19:10:00-04:00",
+ "at": "2026-10-19T19:20:00-04:00",
  "source": "espn",
  "players": {
   "name:ARI:wydettwilliams": {
@@ -756,7 +756,7 @@
    "pos": "S",
    "status": "Injured Reserve",
    "fantasy": "IR",
-   "date": "2026-10-19T18:57:00-04:00",
+   "date": "2026-10-19T19:01:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
@@ -4345,6 +4345,16 @@
    "espn_id": "4035687",
    "comment": "The Steelers placed Pittman (foot) on injured reserve Saturday."
   },
+  "00-0034867": {
+   "name": "Malik Turner",
+   "team": "SF",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-19T19:04:00-04:00",
+   "detail": null,
+   "espn_id": "3115928"
+  },
   "name:SF:garretwallow": {
    "name": "Garret Wallow",
    "team": "SF",
@@ -4499,6 +4509,28 @@
    "detail": "Hamstring",
    "espn_id": "4573188"
   },
+  "00-0040739": {
+   "name": "Elijah Arroyo",
+   "team": "SEA",
+   "pos": "TE",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-10-19T19:18:00-04:00",
+   "detail": "Shoulder",
+   "espn_id": "4678006",
+   "comment": "out"
+  },
+  "00-0039165": {
+   "name": "Zach Charbonnet",
+   "team": "SEA",
+   "pos": "RB",
+   "status": "Out",
+   "fantasy": "PUP-R",
+   "date": "2026-10-19T19:10:00-04:00",
+   "detail": "Knee - ACL",
+   "espn_id": "4426385",
+   "comment": "Head coach Mike Macdonald said Monday that Charbonnet (knee) is slated for a \"full week of work\" and has a \"good chance\" to play Sunday night against the Chiefs"
+  },
   "name:SEA:chazzsurratt": {
    "name": "Chazz Surratt",
    "team": "SEA",
@@ -4548,17 +4580,6 @@
    "date": "2026-10-19T13:16:00-04:00",
    "detail": null,
    "espn_id": "4600597"
-  },
-  "00-0040739": {
-   "name": "Elijah Arroyo",
-   "team": "SEA",
-   "pos": "TE",
-   "status": "Doubtful",
-   "fantasy": "DOUBTFUL",
-   "date": "2026-10-19T13:08:00-04:00",
-   "detail": "Shoulder",
-   "espn_id": "4678006",
-   "comment": "Arroyo is expected to miss time after exiting Thursday's 17-14 loss to the Broncos due to a shoulder injury, Jeremy Fowler of ESPN.com reports."
   },
   "00-0037745": {
    "name": "Velus Jones Jr.",
@@ -4670,17 +4691,6 @@
    "date": "2026-10-14T19:17:00-04:00",
    "detail": null,
    "espn_id": "3924327"
-  },
-  "00-0039165": {
-   "name": "Zach Charbonnet",
-   "team": "SEA",
-   "pos": "RB",
-   "status": "Out",
-   "fantasy": "PUP-R",
-   "date": "2026-10-14T18:14:00-04:00",
-   "detail": "Knee - ACL",
-   "espn_id": "4426385",
-   "comment": "Charbonnet (knee) has been ruled out for Thursday's game at Denver, Corbin K. Smith of EmeraldCitySpectrum.com reports."
   },
   "name:TB:antoinewinfield": {
    "name": "Antoine Winfield Jr.",
