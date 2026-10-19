@@ -109,14 +109,14 @@
    "text": "56\u00b0F, wind 12 mph"
   },
   "2026_06_WAS_SF": {
-   "temp_f": 61.6,
-   "wind_mph": 12.8,
-   "gust_mph": 16.6,
+   "temp_f": 61.0,
+   "wind_mph": 11.5,
+   "gust_mph": 15.0,
    "rain_pct": 0,
    "rain_in": 0.0,
    "roof": "outdoors",
-   "at": "2026-10-19T12:00:00-04:00",
-   "text": "62\u00b0F, wind 13 mph"
+   "at": "2026-10-19T15:00:00-04:00",
+   "text": "61\u00b0F, wind 12 mph"
   }
  }
 }

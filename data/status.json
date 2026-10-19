@@ -3,10 +3,10 @@
  "season": 2026,
  "week": 6,
  "slate": "2026-W06",
- "started_at": "2026-10-19T14:40:15-04:00",
- "status_at": "2026-10-19T14:40:15-04:00",
- "finished_at": "2026-10-19T14:40:16-04:00",
- "last_ok_at": "2026-10-19T14:40:15-04:00",
+ "started_at": "2026-10-19T15:00:00-04:00",
+ "status_at": "2026-10-19T15:00:00-04:00",
+ "finished_at": "2026-10-19T15:00:05-04:00",
+ "last_ok_at": "2026-10-19T15:00:00-04:00",
  "failed_step": null,
  "steps": [
   {
@@ -31,13 +31,13 @@
   },
   {
    "step": "injuries",
-   "status": "skipped",
-   "note": "read at 2:20 PM; inactives posted for 24 team(s)"
+   "status": "ok",
+   "note": "espn: 143 out, 59 questionable; inactives posted for 24 team(s)"
   },
   {
    "step": "weather",
-   "status": "skipped",
-   "note": "nothing due (0 indoors)"
+   "status": "ok",
+   "note": "1 read, 0 failed, 0 indoors"
   },
   {
    "step": "odds",
@@ -56,13 +56,13 @@
   },
   {
    "step": "slate",
-   "status": "skipped",
-   "note": "unchanged"
+   "status": "ok",
+   "note": "2 open pick(s), 0 parlay(s)"
   },
   {
    "step": "research",
    "status": "ok",
-   "note": "0 game file(s) written"
+   "note": "14 game file(s) written"
   },
   {
    "step": "record",
@@ -100,7 +100,7 @@
   },
   {
    "n": 4,
-   "left": 172,
+   "left": 167,
    "shared": true
   },
   {
@@ -119,8 +119,8 @@
    "shared": false
   }
  ],
- "pool_total": 1331,
- "allowance": 77.81,
+ "pool_total": 1326,
+ "allowance": 77.66,
  "tier": "full_plus",
  "games_left_before_reset": 16,
  "budget_used_today": 2,
@@ -146,7 +146,7 @@
  "runner": {
   "event": "workflow_dispatch",
   "run_id": "39304429894",
-  "iteration": 1,
+  "iteration": 3,
   "chain_link": 372,
   "chain_started_at": "2026-10-18T20:10:54-04:00",
   "run_started_at": "2026-10-19T14:40:14-04:00"

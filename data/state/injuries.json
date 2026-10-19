@@ -1,5 +1,5 @@
 {
- "at": "2026-10-19T14:20:01-04:00",
+ "at": "2026-10-19T15:00:00-04:00",
  "source": "espn",
  "players": {
   "name:ARI:wydettwilliams": {
@@ -747,9 +747,19 @@
    "pos": "S",
    "status": "Injured Reserve",
    "fantasy": "IR",
-   "date": "2026-10-19T14:00:00-04:00",
+   "date": "2026-10-19T14:48:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
+  },
+  "00-0040277": {
+   "name": "Jahdae Walker",
+   "team": "CHI",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-19T14:44:00-04:00",
+   "detail": null,
+   "espn_id": "5160110"
   },
   "name:CHI:tyriquestevenson": {
    "name": "Tyrique Stevenson Sr.",
@@ -1842,6 +1852,16 @@
    "detail": null,
    "espn_id": "14163"
   },
+  "00-0038608": {
+   "name": "Kayshon Boutte",
+   "team": "HOU",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-19T14:26:00-04:00",
+   "detail": null,
+   "espn_id": "4429022"
+  },
   "name:HOU:jalenpitre": {
    "name": "Jalen Pitre",
    "team": "HOU",
@@ -1974,15 +1994,16 @@
    "espn_id": "4366031",
    "comment": "The Texans ruled out Dell (knee) for Sunday's game against the Jaguars in London."
   },
-  "00-0038608": {
-   "name": "Kayshon Boutte",
-   "team": "HOU",
+  "00-0037664": {
+   "name": "Alec Pierce",
+   "team": "IND",
    "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-12T21:42:00-04:00",
-   "detail": null,
-   "espn_id": "4429022"
+   "status": "Injured Reserve",
+   "fantasy": "IR",
+   "date": "2026-10-19T14:32:00-04:00",
+   "detail": "Heel",
+   "espn_id": "4360078",
+   "comment": "Colts head coach Shane Steichen said Monday that Pierce (heel) won't have his 21-day practice window opened in Week 7, Nathan Brown of The Indianapolis Star rep"
   },
   "name:IND:saucegardner": {
    "name": "Sauce Gardner",
@@ -2106,17 +2127,6 @@
    "date": "2026-10-17T19:08:00-04:00",
    "detail": null,
    "espn_id": "4362523"
-  },
-  "00-0037664": {
-   "name": "Alec Pierce",
-   "team": "IND",
-   "pos": "WR",
-   "status": "Injured Reserve",
-   "fantasy": "IR",
-   "date": "2026-10-14T20:54:00-04:00",
-   "detail": "Heel",
-   "espn_id": "4360078",
-   "comment": "Pierce was spotted without a cast on his left ankle/heel Wednesday, James Boyd of The Athletic reports."
   },
   "00-0033439": {
    "name": "Pharaoh Brown",
@@ -3579,7 +3589,7 @@
    "pos": "OT",
    "status": "Out",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-10-19T14:06:00-04:00",
+   "date": "2026-10-19T14:48:00-04:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
