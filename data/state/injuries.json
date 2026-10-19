@@ -1,5 +1,5 @@
 {
- "at": "2026-10-19T11:10:01-04:00",
+ "at": "2026-10-19T11:40:01-04:00",
  "source": "espn",
  "players": {
   "00-0037157": {
@@ -892,7 +892,7 @@
    "pos": "S",
    "status": "Injured Reserve",
    "fantasy": "IR",
-   "date": "2026-10-19T11:00:00-04:00",
+   "date": "2026-10-19T11:24:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
@@ -3385,6 +3385,16 @@
    "detail": null,
    "espn_id": "2573401"
   },
+  "00-0038128": {
+   "name": "Malik Willis",
+   "team": "MIA",
+   "pos": "QB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-19T10:56:00-04:00",
+   "detail": null,
+   "espn_id": "4242512"
+  },
   "00-0041523": {
    "name": "Caleb Douglas",
    "team": "MIA",
@@ -3476,16 +3486,6 @@
    "date": "2026-10-11T19:54:00-04:00",
    "detail": null,
    "espn_id": "4569603"
-  },
-  "00-0038128": {
-   "name": "Malik Willis",
-   "team": "MIA",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-11T19:47:00-04:00",
-   "detail": null,
-   "espn_id": "4242512"
   },
   "00-0040198": {
    "name": "Ollie Gordon II",
@@ -4052,7 +4052,7 @@
    "pos": "OT",
    "status": "Out",
    "fantasy": "INACTIVE",
-   "date": "2026-10-19T10:49:00-04:00",
+   "date": "2026-10-19T11:29:00-04:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
@@ -4845,6 +4845,17 @@
    "espn_id": "4035687",
    "comment": "The Steelers placed Pittman (foot) on injured reserve Saturday."
   },
+  "00-0031408": {
+   "name": "Mike Evans",
+   "team": "SF",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-19T11:21:00-04:00",
+   "detail": "Ribs",
+   "espn_id": "16737",
+   "comment": "Evans (ribs/Achilles), who is listed as questionable for Monday's contest against the Commanders, is viewed as a game-time decision, Cam Inman of The San Jose M"
+  },
   "name:SF:mykelwilliams": {
    "name": "Mykel Williams",
    "team": "SF",
@@ -4905,17 +4916,6 @@
    "detail": "Calf",
    "espn_id": "3895856",
    "comment": "Head coach Kyle Shanahan said Saturday that the 49ers may activate Kirk (calf) from injured reserve ahead of Monday's game against the Commanders, Nick Wagoner "
-  },
-  "00-0031408": {
-   "name": "Mike Evans",
-   "team": "SF",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-17T16:58:00-04:00",
-   "detail": "Ribs",
-   "espn_id": "16737",
-   "comment": "Evans (ribs) is listed as questionable for Monday's game against Washington, Vic Tafur of The Athletic reports."
   },
   "00-0029892": {
    "name": "Kyle Juszczyk",
