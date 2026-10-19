@@ -1,7 +1,18 @@
 {
- "at": "2026-10-19T19:30:00-04:00",
+ "at": "2026-10-19T19:40:00-04:00",
  "source": "espn",
  "players": {
+  "00-0041027": {
+   "name": "Jeremiyah Love",
+   "team": "ARI",
+   "pos": "RB",
+   "status": "Out",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-19T19:21:00-04:00",
+   "detail": "Ankle",
+   "espn_id": "4870808",
+   "comment": "Head coach Mike LaFleur said Monday that Love (ankle) is expected to do some running Tuesday, Tyler Drake of ArizonaSports.com reports."
+  },
   "name:ARI:wydettwilliams": {
    "name": "Wydett Williams Jr.",
    "team": "ARI",
@@ -21,17 +32,6 @@
    "date": "2026-10-19T12:19:00-04:00",
    "detail": "Knee",
    "espn_id": "3918331"
-  },
-  "00-0041027": {
-   "name": "Jeremiyah Love",
-   "team": "ARI",
-   "pos": "RB",
-   "status": "Out",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-19T12:19:00-04:00",
-   "detail": "Ankle",
-   "espn_id": "4870808",
-   "comment": "out"
   },
   "00-0037157": {
    "name": "Bam Knight",
@@ -462,9 +462,9 @@
    "team": "BUF",
    "pos": "S",
    "status": "Suspension",
-   "fantasy": "RESERVE-SUS",
-   "date": "2026-10-19T19:01:00-04:00",
-   "detail": "Suspension",
+   "fantasy": null,
+   "date": "2026-10-19T19:18:00-04:00",
+   "detail": null,
    "espn_id": "4034953"
   },
   "00-0038933": {
@@ -947,10 +947,10 @@
    "pos": "TE",
    "status": "Injured Reserve",
    "fantasy": "IR",
-   "date": "2026-10-19T10:40:00-04:00",
+   "date": "2026-10-19T19:18:00-04:00",
    "detail": "Pectoral",
    "espn_id": "3050481",
-   "comment": "ir"
+   "comment": "Hudson (pectoral) was placed on injured reserve by the Bengals on Monday."
   },
   "00-0040785": {
    "name": "Dohnte Meyers",
@@ -1261,7 +1261,7 @@
    "pos": "LB",
    "status": "Out",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-10-19T12:31:00-04:00",
+   "date": "2026-10-19T19:29:00-04:00",
    "detail": "Hamstring",
    "espn_id": "4362088"
   },
@@ -2954,16 +2954,6 @@
    "detail": null,
    "espn_id": "4426553"
   },
-  "name:LA:alaricjackson": {
-   "name": "Alaric Jackson",
-   "team": "LA",
-   "pos": "OT",
-   "status": "Suspension",
-   "fantasy": "RESERVE-SUS",
-   "date": "2026-10-14T21:36:00-04:00",
-   "detail": "Suspension",
-   "espn_id": "4036135"
-  },
   "00-0041510": {
    "name": "Max Klare",
    "team": "LA",
@@ -3618,7 +3608,7 @@
    "pos": "OT",
    "status": "Out",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-10-19T19:01:00-04:00",
+   "date": "2026-10-19T19:18:00-04:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
@@ -4515,10 +4505,10 @@
    "pos": "TE",
    "status": "Out",
    "fantasy": "OUT",
-   "date": "2026-10-19T19:18:00-04:00",
+   "date": "2026-10-19T19:21:00-04:00",
    "detail": "Shoulder",
    "espn_id": "4678006",
-   "comment": "out"
+   "comment": "Head coach Mike Macdonald confirmed with reporters Monday that Arroyo will miss \"significant time\" due to a shoulder injury that he picked up during Thursday's "
   },
   "00-0039165": {
    "name": "Zach Charbonnet",
