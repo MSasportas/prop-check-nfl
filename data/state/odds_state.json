@@ -15,7 +15,7 @@
   "2026_06_DAL_GB": "82fd5a159fa130e67abab93a9537f70b",
   "2026_06_WAS_SF": "f122527f003276d3bca19efa48c902c1"
  },
- "events_at": "2026-10-18T13:00:00-04:00",
+ "events_at": "2026-10-18T20:10:55-04:00",
  "unknown_teams": [],
  "done": {
   "2026_06_HOU_JAX": [
@@ -3367,14 +3367,14 @@
  "fail_note": null,
  "key_count": 7,
  "plan": {
-  "allowance": 73.5,
+  "allowance": 73.35,
   "tier": "full",
   "pulls": "MFRC",
-  "pool_at_plan": 1249.5,
+  "pool_at_plan": 1247.0,
   "games_left": 17,
-  "pool_raw": 1338,
+  "pool_raw": 1333,
   "keys_shared": 1,
-  "made_at": "2026-10-18T16:30:00-04:00"
+  "made_at": "2026-10-18T20:10:55-04:00"
  },
  "failed": {}
 }

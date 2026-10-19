@@ -2,32 +2,32 @@
  "season": 2026,
  "week": 6,
  "label": "Week 6",
- "generated_at": "2026-10-18T16:50:01-04:00",
- "status_at": "2026-10-18T16:50:01-04:00",
+ "generated_at": "2026-10-18T20:10:55-04:00",
+ "status_at": "2026-10-18T20:10:55-04:00",
  "valid_until": "2026-10-20T06:00:00-04:00",
- "next_check": "2026-10-18T19:05:00-04:00",
+ "next_check": "2026-10-19T19:00:00-04:00",
  "status": {
   "odds": {
    "state": "ok",
    "at": "2026-10-18T15:10:00-04:00",
-   "next_at": "2026-10-18T19:05:00-04:00"
+   "next_at": "2026-10-19T19:00:00-04:00"
   },
   "injuries": {
    "state": "ok",
-   "at": "2026-10-18T16:50:01-04:00"
+   "at": "2026-10-18T20:10:55-04:00"
   },
   "inactives": {
    "state": "ok",
-   "at": "2026-10-18T15:20:00-04:00",
-   "note": null
+   "at": "2026-10-18T20:10:55-04:00",
+   "note": "Posted for the 8:20 PM game."
   },
   "stats": {
    "state": "ok",
    "through_week": 6,
-   "at": "2026-10-18T10:10:01-04:00"
+   "at": "2026-10-18T20:10:55-04:00"
   },
   "pool": {
-   "credits_left": 1338,
+   "credits_left": 1333,
    "keys": 7,
    "keys_live": 6,
    "keys_shared": 1,
@@ -37,7 +37,7 @@
   },
   "last_run": {
    "ok": true,
-   "at": "2026-10-18T16:50:01-04:00",
+   "at": "2026-10-18T20:10:55-04:00",
    "failed_step": null
   }
  },
@@ -130,7 +130,7 @@
    "home": "ATL",
    "kickoff": "2026-10-18T13:00:00-04:00",
    "day": "2026-10-18",
-   "roof": null,
+   "roof": "closed",
    "started": true,
    "final": true,
    "score": {
@@ -210,7 +210,7 @@
    "home": "IND",
    "kickoff": "2026-10-18T13:00:00-04:00",
    "day": "2026-10-18",
-   "roof": null,
+   "roof": "open",
    "started": true,
    "final": true,
    "score": {
@@ -232,8 +232,11 @@
    "day": "2026-10-18",
    "roof": "dome",
    "started": true,
-   "final": false,
-   "score": null,
+   "final": true,
+   "score": {
+    "away": 18,
+    "home": 16
+   },
    "settled": "inactives",
    "props_state": "ok",
    "props_at": "2026-10-18T14:50:00-04:00",
@@ -249,8 +252,11 @@
    "day": "2026-10-18",
    "roof": "dome",
    "started": true,
-   "final": false,
-   "score": null,
+   "final": true,
+   "score": {
+    "away": 33,
+    "home": 30
+   },
    "settled": "inactives",
    "props_state": "ok",
    "props_at": "2026-10-18T15:10:00-04:00",
@@ -266,8 +272,11 @@
    "day": "2026-10-18",
    "roof": "outdoors",
    "started": true,
-   "final": false,
-   "score": null,
+   "final": true,
+   "score": {
+    "away": 6,
+    "home": 22
+   },
    "settled": "inactives",
    "props_state": "ok",
    "props_at": "2026-10-18T15:10:00-04:00",
@@ -285,7 +294,7 @@
    "started": false,
    "final": false,
    "score": null,
-   "settled": "injury_report",
+   "settled": "inactives",
    "props_state": "ok",
    "props_at": "2026-10-18T00:40:00-04:00",
    "lines_at": "2026-10-18T00:40:00-04:00",
@@ -340,7 +349,7 @@
    "p_pct": 59,
    "breakeven_pct": 53,
    "reason": "15.0 receiving yards a game in the 1st half his last 5 (1 of 5 over 29.5).",
-   "settled": "injury_report",
+   "settled": "inactives",
    "state": "open",
    "thin": false,
    "pulled": null,
@@ -349,6 +358,10 @@
     {
      "at": "2026-10-18T00:30:51-04:00",
      "text": "Posted at -115"
+    },
+    {
+     "at": "2026-10-18T20:10:55-04:00",
+     "text": "Inactives confirmed"
     }
    ]
   },
@@ -381,7 +394,7 @@
    "p_pct": 58,
    "breakeven_pct": 53,
    "reason": "1.4 carries a game his last 5 (1 of 5 over 2.5).",
-   "settled": "injury_report",
+   "settled": "inactives",
    "state": "open",
    "thin": false,
    "pulled": null,
@@ -390,6 +403,10 @@
     {
      "at": "2026-10-18T00:30:51-04:00",
      "text": "Posted at -115"
+    },
+    {
+     "at": "2026-10-18T20:10:55-04:00",
+     "text": "Inactives confirmed"
     }
    ]
   },
@@ -422,7 +439,7 @@
    "p_pct": 57,
    "breakeven_pct": 53,
    "reason": "100 passing yards a game in the 1st half his last 5 (1 of 5 over 137.5). GB allows the 3rd fewest passing yards.",
-   "settled": "injury_report",
+   "settled": "inactives",
    "state": "open",
    "thin": false,
    "pulled": null,
@@ -431,6 +448,10 @@
     {
      "at": "2026-10-18T00:30:51-04:00",
      "text": "Posted at -115"
+    },
+    {
+     "at": "2026-10-18T20:10:55-04:00",
+     "text": "Inactives confirmed"
     }
    ]
   },
@@ -521,13 +542,17 @@
    "breakeven_pct": 55,
    "reason": "1.0 receiving yards a game in the 1st half his last 5 (1 of 5 over 4.5). HOU allows the 6th fewest receiving yards to RBs.",
    "settled": "injury_report",
-   "state": "open",
+   "state": "locked",
    "thin": false,
    "pulled": {
     "at": "2026-10-18T08:20:01-04:00",
     "reason": "Hard Rock moved the line to 3.5."
    },
-   "graded": null,
+   "graded": {
+    "result": "L",
+    "actual": "had 29",
+    "units": -1.0
+   },
    "history": [
     {
      "at": "2026-10-18T00:30:51-04:00",
@@ -1166,7 +1191,11 @@
    "state": "locked",
    "thin": false,
    "pulled": null,
-   "graded": null,
+   "graded": {
+    "result": "L",
+    "actual": "had 130",
+    "units": -1.0
+   },
    "history": [
     {
      "at": "2026-10-18T11:50:01-04:00",
@@ -1215,7 +1244,11 @@
    "state": "locked",
    "thin": false,
    "pulled": null,
-   "graded": null,
+   "graded": {
+    "result": "L",
+    "actual": "had 4",
+    "units": -1.0
+   },
    "history": [
     {
      "at": "2026-10-18T00:30:51-04:00",
@@ -1265,13 +1298,17 @@
    "breakeven_pct": 53,
    "reason": "11.6 yards on his longest catch a game his last 5 (1 of 5 over 16.5). LA allows the 2nd fewest receiving yards to WRs.",
    "settled": "injury_report",
-   "state": "open",
+   "state": "locked",
    "thin": false,
    "pulled": {
     "at": "2026-10-18T14:50:00-04:00",
     "reason": "Hard Rock moved the line to 15.5."
    },
-   "graded": null,
+   "graded": {
+    "result": "W",
+    "actual": "had 15",
+    "units": 0.8696
+   },
    "history": [
     {
      "at": "2026-10-18T00:30:51-04:00",
@@ -1316,7 +1353,11 @@
    "state": "locked",
    "thin": false,
    "pulled": null,
-   "graded": null,
+   "graded": {
+    "result": "W",
+    "actual": "had 1",
+    "units": 0.8696
+   },
    "history": [
     {
      "at": "2026-10-18T14:50:00-04:00",
@@ -1362,13 +1403,17 @@
    "breakeven_pct": 53,
    "reason": "3.2 receiving yards a game his last 5 (0 of 5 over 20.5). LA allows the 2nd fewest receiving yards to WRs.",
    "settled": "injury_report",
-   "state": "open",
+   "state": "locked",
    "thin": false,
    "pulled": {
     "at": "2026-10-18T14:50:00-04:00",
     "reason": "Hard Rock moved the line to 21.5."
    },
-   "graded": null,
+   "graded": {
+    "result": "L",
+    "actual": "had 30",
+    "units": -1.0
+   },
    "history": [
     {
      "at": "2026-10-18T00:30:51-04:00",
@@ -1413,7 +1458,11 @@
    "state": "locked",
    "thin": false,
    "pulled": null,
-   "graded": null,
+   "graded": {
+    "result": "L",
+    "actual": "had 30",
+    "units": -1.0
+   },
    "history": [
     {
      "at": "2026-10-18T14:50:00-04:00",
@@ -1462,7 +1511,11 @@
    "state": "locked",
    "thin": false,
    "pulled": null,
-   "graded": null,
+   "graded": {
+    "result": "W",
+    "actual": "had 9",
+    "units": 0.8696
+   },
    "history": [
     {
      "at": "2026-10-18T00:30:51-04:00",
@@ -1515,7 +1568,11 @@
    "state": "locked",
    "thin": false,
    "pulled": null,
-   "graded": null,
+   "graded": {
+    "result": "L",
+    "actual": "had 7",
+    "units": -1.0
+   },
    "history": [
     {
      "at": "2026-10-18T00:30:51-04:00",
@@ -1568,7 +1625,11 @@
    "state": "locked",
    "thin": false,
    "pulled": null,
-   "graded": null,
+   "graded": {
+    "result": "L",
+    "actual": "had 29",
+    "units": -1.0
+   },
    "history": [
     {
      "at": "2026-10-18T00:30:51-04:00",
@@ -1621,7 +1682,11 @@
    "state": "locked",
    "thin": false,
    "pulled": null,
-   "graded": null,
+   "graded": {
+    "result": "W",
+    "actual": "had 4",
+    "units": 0.8333
+   },
    "history": [
     {
      "at": "2026-10-18T00:30:51-04:00",
@@ -1674,7 +1739,11 @@
    "state": "locked",
    "thin": false,
    "pulled": null,
-   "graded": null,
+   "graded": {
+    "result": "L",
+    "actual": "had 3",
+    "units": -1.0
+   },
    "history": [
     {
      "at": "2026-10-18T00:30:51-04:00",
@@ -1723,7 +1792,11 @@
    "state": "locked",
    "thin": false,
    "pulled": null,
-   "graded": null,
+   "graded": {
+    "result": "L",
+    "actual": "had 7",
+    "units": -1.0
+   },
    "history": [
     {
      "at": "2026-10-18T00:30:51-04:00",
@@ -1772,7 +1845,11 @@
    "state": "locked",
    "thin": false,
    "pulled": null,
-   "graded": null,
+   "graded": {
+    "result": "L",
+    "actual": "had 7",
+    "units": -1.0
+   },
    "history": [
     {
      "at": "2026-10-18T00:30:51-04:00",
@@ -1820,7 +1897,7 @@
    "breakeven": 0.5833,
    "p_pct": 61,
    "breakeven_pct": 58,
-   "reason": "0.6 TD passes a game his last 5 (1 of 5 over 1.5). SF allows the 7th fewest TD passes.",
+   "reason": "0.6 TD passes a game his last 5 (1 of 5 over 1.5). SF allows the 6th fewest TD passes.",
    "settled": "injury_report",
    "state": "open",
    "thin": false,
@@ -1888,7 +1965,7 @@
    "first_price": 257,
    "first_price_at": "2026-10-18T00:40:00-04:00",
    "grade_price": 257,
-   "p": 0.3471,
+   "p": 0.3472,
    "breakeven": 0.2802,
    "p_pct": 34,
    "breakeven_pct": 28,
@@ -1937,7 +2014,11 @@
    "kickoff": "2026-10-18T16:25:00-04:00",
    "state": "locked",
    "pulled": null,
-   "graded": null
+   "graded": {
+    "result": "L",
+    "actual": "0 of 2 legs hit",
+    "units": -1.0
+   }
   },
   {
    "id": "2026-W06:P:ff4f758f2a",
@@ -1958,7 +2039,11 @@
    "kickoff": "2026-10-18T13:00:00-04:00",
    "state": "locked",
    "pulled": null,
-   "graded": null
+   "graded": {
+    "result": "L",
+    "actual": "0 of 2 legs hit",
+    "units": -1.0
+   }
   },
   {
    "id": "2026-W06:P:6704ca6d85",
@@ -1979,7 +2064,11 @@
    "kickoff": "2026-10-18T16:25:00-04:00",
    "state": "locked",
    "pulled": null,
-   "graded": null
+   "graded": {
+    "result": "L",
+    "actual": "0 of 2 legs hit",
+    "units": -1.0
+   }
   },
   {
    "id": "2026-W06:P:3d54c23d94",
@@ -2001,7 +2090,11 @@
    "kickoff": "2026-10-18T13:00:00-04:00",
    "state": "locked",
    "pulled": null,
-   "graded": null
+   "graded": {
+    "result": "L",
+    "actual": "0 of 3 legs hit",
+    "units": -1.0
+   }
   },
   {
    "id": "2026-W06:P:d96af58810",

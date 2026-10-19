@@ -890,5 +890,77 @@
    ],
    "confirmed_at": "2026-10-18T15:20:00-04:00"
   }
+ },
+ "2026_06_DAL_GB": {
+  "_kickoff": "2026-10-18T20:20:00-04:00",
+  "DAL": {
+   "confirmed": true,
+   "count": 7,
+   "players": [
+    {
+     "pid": null,
+     "name": "Alijah Clark",
+     "pos": "S"
+    },
+    {
+     "pid": "00-0040930",
+     "name": "Camden Brown",
+     "pos": "WR"
+    },
+    {
+     "pid": null,
+     "name": "Cobie Durant",
+     "pos": "CB"
+    },
+    {
+     "pid": null,
+     "name": "DeMarvion Overshown",
+     "pos": "LB"
+    },
+    {
+     "pid": null,
+     "name": "Drew Shelton",
+     "pos": "OT"
+    },
+    {
+     "pid": "00-0038705",
+     "name": "Emari Demercado",
+     "pos": "RB"
+    },
+    {
+     "pid": null,
+     "name": "James Houston",
+     "pos": "LB"
+    }
+   ],
+   "confirmed_at": "2026-10-18T20:10:55-04:00"
+  },
+  "GB": {
+   "confirmed": true,
+   "count": 4,
+   "players": [
+    {
+     "pid": null,
+     "name": "Aaron Banks",
+     "pos": "G"
+    },
+    {
+     "pid": null,
+     "name": "Benjamin St-Juste",
+     "pos": "CB"
+    },
+    {
+     "pid": null,
+     "name": "Donovan Jennings",
+     "pos": "G"
+    },
+    {
+     "pid": null,
+     "name": "Jager Burton",
+     "pos": "C"
+    }
+   ],
+   "confirmed_at": "2026-10-18T20:10:55-04:00"
+  }
  }
 }
