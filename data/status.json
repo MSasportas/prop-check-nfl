@@ -3,10 +3,10 @@
  "season": 2026,
  "week": 6,
  "slate": "2026-W06",
- "started_at": "2026-10-18T23:20:01-04:00",
- "status_at": "2026-10-18T23:20:01-04:00",
- "finished_at": "2026-10-18T23:20:03-04:00",
- "last_ok_at": "2026-10-18T23:20:01-04:00",
+ "started_at": "2026-10-18T23:50:00-04:00",
+ "status_at": "2026-10-18T23:50:00-04:00",
+ "finished_at": "2026-10-18T23:50:01-04:00",
+ "last_ok_at": "2026-10-18T23:50:00-04:00",
  "failed_step": null,
  "steps": [
   {
@@ -22,7 +22,7 @@
   {
    "step": "stats",
    "status": "skipped",
-   "note": "play-by-play unchanged (6290543 bytes)"
+   "note": "checked at 11:20 PM"
   },
   {
    "step": "roster",
@@ -32,12 +32,12 @@
   {
    "step": "injuries",
    "status": "skipped",
-   "note": "read at 11:00 PM; inactives posted for 24 team(s)"
+   "note": "read at 11:30 PM; inactives posted for 24 team(s)"
   },
   {
    "step": "weather",
-   "status": "ok",
-   "note": "1 read, 0 failed, 0 indoors"
+   "status": "skipped",
+   "note": "nothing due (0 indoors)"
   },
   {
    "step": "odds",
@@ -51,8 +51,8 @@
   },
   {
    "step": "grade",
-   "status": "skipped",
-   "note": "nothing to grade"
+   "status": "ok",
+   "note": "1 graded"
   },
   {
    "step": "slate",
@@ -62,12 +62,12 @@
   {
    "step": "research",
    "status": "ok",
-   "note": "1 game file(s) written"
+   "note": "0 game file(s) written"
   },
   {
    "step": "record",
-   "status": "skipped",
-   "note": "unchanged"
+   "status": "ok",
+   "note": "record.json"
   }
  ],
  "sources": {
@@ -137,19 +137,22 @@
   "James Jordan"
  ],
  "unknown_teams": [],
- "behind": {},
+ "behind": {
+  "DAL": "last game's stats are not in yet",
+  "GB": "last game's stats are not in yet"
+ },
  "stats_problems": [],
  "games_this_week": 14,
- "record_events": 173,
+ "record_events": 174,
  "grade_checks": [],
  "odds_notes": [],
  "runner": {
   "event": "workflow_dispatch",
-  "run_id": "39191038873",
-  "iteration": 5,
-  "chain_link": 3,
+  "run_id": "39194975563",
+  "iteration": 3,
+  "chain_link": 4,
   "chain_started_at": "2026-10-18T20:10:54-04:00",
-  "run_started_at": "2026-10-18T22:40:13-04:00"
+  "run_started_at": "2026-10-18T23:30:12-04:00"
  },
  "live_page": {
   "checked_at": "2026-10-18T23:20:01-04:00",

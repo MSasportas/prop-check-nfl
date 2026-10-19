@@ -171,3 +171,4 @@
 {"at":"2026-10-18T20:20:01-04:00","id":"2026-W06:2026_06_DAL_GB:00-0040667:rec_yds:1H:29.5:under","state":"inactives","t":"locked"}
 {"at":"2026-10-18T20:20:01-04:00","id":"2026-W06:P:1839d42db7","state":"injury_report","t":"locked"}
 {"at":"2026-10-18T20:20:01-04:00","id":"2026-W06:P:ea45628464","state":"injury_report","t":"locked"}
+{"actual":4,"actual_text":"had 4","at":"2026-10-18T23:50:00-04:00","id":"2026-W06:2026_06_DAL_GB:00-0036264:rush_att:FG:2.5:under","price":-115,"result":"L","source":"espn_box","t":"graded","units":-1.0}

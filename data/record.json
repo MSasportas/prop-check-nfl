@@ -1,16 +1,16 @@
 {
- "generated_at": "2026-10-18T20:20:01-04:00",
+ "generated_at": "2026-10-18T23:50:00-04:00",
  "season": 2026,
  "summary": {
   "headline": {
    "w": 9,
-   "l": 13,
+   "l": 14,
    "push": 0,
    "void": 0,
-   "n": 22,
-   "units": -5.429,
-   "hit_rate": 0.4091,
-   "needed": 0.5496,
+   "n": 23,
+   "units": -6.429,
+   "hit_rate": 0.3913,
+   "needed": 0.5489,
    "parlays": {
     "w": 0,
     "l": 4,
@@ -22,13 +22,13 @@
     "key": "rush_att|FG",
     "label": "Carries",
     "w": 2,
-    "l": 3,
+    "l": 4,
     "push": 0,
     "void": 0,
-    "n": 5,
-    "units": -1.3612,
-    "hit_rate": 0.4,
-    "needed": 0.5534
+    "n": 6,
+    "units": -2.3612,
+    "hit_rate": 0.3333,
+    "needed": 0.5503
    },
    {
     "key": "pass_int|FG",
@@ -147,8 +147,8 @@
    "label": "Week 6",
    "graded": false,
    "w": 9,
-   "l": 13,
-   "units": -5.429,
+   "l": 14,
+   "units": -6.429,
    "entries": [
     {
      "id": "2026-W06:2026_06_ARI_LA:00-0033307:long_rec:FG:16.5:under",
@@ -357,9 +357,9 @@
      "period": "FG",
      "bet": "Under 2.5 carries",
      "price": -115,
-     "result": null,
-     "actual": null,
-     "units": null,
+     "result": "L",
+     "actual": "had 4",
+     "units": -1.0,
      "pulled": null,
      "legs": []
     },
@@ -898,8 +898,8 @@
        "bet": "Under 2.5 carries",
        "period": "FG",
        "price": -115,
-       "result": null,
-       "actual": null
+       "result": "L",
+       "actual": "had 4"
       }
      ]
     },
