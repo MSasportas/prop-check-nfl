@@ -1,5 +1,5 @@
 {
- "at": "2026-10-18T21:30:01-04:00",
+ "at": "2026-10-18T22:00:01-04:00",
  "source": "espn",
  "players": {
   "00-0037157": {
@@ -1401,7 +1401,7 @@
    "pos": "LB",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-10-18T21:19:00-04:00",
+   "date": "2026-10-18T21:25:00-04:00",
    "detail": "Ankle",
    "espn_id": "4428914"
   },
@@ -2574,6 +2574,26 @@
    "detail": "Knee",
    "espn_id": "4692525"
   },
+  "00-0030506": {
+   "name": "Travis Kelce",
+   "team": "KC",
+   "pos": "TE",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-18T21:30:00-04:00",
+   "detail": null,
+   "espn_id": "15847"
+  },
+  "00-0039894": {
+   "name": "Xavier Worthy",
+   "team": "KC",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-18T21:25:00-04:00",
+   "detail": null,
+   "espn_id": "4683062"
+  },
   "00-0033873": {
    "name": "Patrick Mahomes",
    "team": "KC",
@@ -2697,16 +2717,6 @@
    "detail": null,
    "espn_id": "5093923"
   },
-  "00-0039894": {
-   "name": "Xavier Worthy",
-   "team": "KC",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-16T19:52:00-04:00",
-   "detail": null,
-   "espn_id": "4683062"
-  },
   "00-0038104": {
    "name": "Tyquan Thornton",
    "team": "KC",
@@ -2747,16 +2757,6 @@
    "date": "2026-10-05T21:10:00-04:00",
    "detail": null,
    "espn_id": "4832955"
-  },
-  "00-0030506": {
-   "name": "Travis Kelce",
-   "team": "KC",
-   "pos": "TE",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-04T21:05:00-04:00",
-   "detail": null,
-   "espn_id": "15847"
   },
   "00-0038563": {
    "name": "Tre Tucker",
@@ -3968,6 +3968,26 @@
    "detail": null,
    "espn_id": "4569559"
   },
+  "00-0037838": {
+   "name": "Isaiah Likely",
+   "team": "NYG",
+   "pos": "TE",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-18T21:35:00-04:00",
+   "detail": null,
+   "espn_id": "4361050"
+  },
+  "00-0040715": {
+   "name": "Cam Skattebo",
+   "team": "NYG",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-18T21:31:00-04:00",
+   "detail": null,
+   "espn_id": "4696981"
+  },
   "00-0039923": {
    "name": "J.J. McCarthy",
    "team": "NYG",
@@ -4110,16 +4130,6 @@
    "date": "2026-10-18T10:08:00-04:00",
    "detail": null,
    "espn_id": "4241457"
-  },
-  "00-0040715": {
-   "name": "Cam Skattebo",
-   "team": "NYG",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-18T08:47:00-04:00",
-   "detail": null,
-   "espn_id": "4696981"
   },
   "00-0034419": {
    "name": "Braxton Berrios",
