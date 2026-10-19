@@ -1,5 +1,5 @@
 {
- "at": "2026-10-19T17:10:11-04:00",
+ "at": "2026-10-19T17:50:01-04:00",
  "source": "espn",
  "players": {
   "name:ARI:wydettwilliams": {
@@ -463,9 +463,19 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-10-19T16:47:00-04:00",
+   "date": "2026-10-19T17:41:00-04:00",
    "detail": "Suspension",
    "espn_id": "4034953"
+  },
+  "00-0038933": {
+   "name": "Dalton Kincaid",
+   "team": "BUF",
+   "pos": "TE",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-19T17:41:00-04:00",
+   "detail": null,
+   "espn_id": "4385690"
   },
   "00-0039901": {
    "name": "Keon Coleman",
@@ -506,17 +516,6 @@
    "date": "2026-10-19T03:39:00-04:00",
    "detail": null,
    "espn_id": "4379399"
-  },
-  "00-0038933": {
-   "name": "Dalton Kincaid",
-   "team": "BUF",
-   "pos": "TE",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-18T18:39:00-04:00",
-   "detail": "Ribs",
-   "espn_id": "4385690",
-   "comment": "Kincaid (ribs) is questionable to return to Sunday's game against the Raiders."
   },
   "name:BUF:edoliver": {
    "name": "Ed Oliver",
@@ -757,7 +756,7 @@
    "pos": "S",
    "status": "Injured Reserve",
    "fantasy": "IR",
-   "date": "2026-10-19T17:01:00-04:00",
+   "date": "2026-10-19T17:33:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
@@ -1684,12 +1683,21 @@
    "name": "Josh Jacobs",
    "team": "GB",
    "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-19T17:32:00-04:00",
+   "detail": null,
+   "espn_id": "4047365"
+  },
+  "name:GB:micahparsons": {
+   "name": "Micah Parsons",
+   "team": "GB",
+   "pos": "DE",
    "status": "Out",
-   "fantasy": "RESERVE-CEL",
-   "date": "2026-10-19T16:58:00-04:00",
-   "detail": "Personal",
-   "espn_id": "4047365",
-   "comment": "Head coach Matt LaFleur said that Jacobs (personal) will get in a full week of practice, but the practice, but the Packers have yet to determine whether he'll b"
+   "fantasy": "PUP-R",
+   "date": "2026-10-19T17:14:00-04:00",
+   "detail": "Knee - ACL",
+   "espn_id": "4361423"
   },
   "name:GB:benjaminstjuste": {
    "name": "Benjamin St-Juste",
@@ -1841,16 +1849,6 @@
    "date": "2026-10-14T21:53:00-04:00",
    "detail": "Achilles",
    "espn_id": "4240677"
-  },
-  "name:GB:micahparsons": {
-   "name": "Micah Parsons",
-   "team": "GB",
-   "pos": "DE",
-   "status": "Out",
-   "fantasy": "PUP-R",
-   "date": "2026-10-12T13:41:00-04:00",
-   "detail": "Knee - ACL",
-   "espn_id": "4361423"
   },
   "00-0028118": {
    "name": "Tyrod Taylor",
@@ -2805,6 +2803,37 @@
    "detail": null,
    "espn_id": "4596334"
   },
+  "00-0031381": {
+   "name": "Davante Adams",
+   "team": "LA",
+   "pos": "WR",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-10-19T17:31:00-04:00",
+   "detail": "Hamstring",
+   "espn_id": "16800",
+   "comment": "Adams is expected to undergo a procedure to address a ruptured left hamstring tendon and is targeting a return around the Rams' Week 11 bye or a little thereaft"
+  },
+  "name:LA:poonaford": {
+   "name": "Poona Ford",
+   "team": "LA",
+   "pos": "DT",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-10-19T17:11:00-04:00",
+   "detail": "Triceps",
+   "espn_id": "3125114"
+  },
+  "name:LA:kobieturner": {
+   "name": "Kobie Turner",
+   "team": "LA",
+   "pos": "DE",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-10-19T17:09:00-04:00",
+   "detail": "Groin",
+   "espn_id": "4250621"
+  },
   "name:LA:blakegrupe": {
    "name": "Blake Grupe",
    "team": "LA",
@@ -2812,7 +2841,7 @@
    "status": "Injured Reserve",
    "fantasy": "IR",
    "date": "2026-10-19T15:57:00-04:00",
-   "detail": "Knee",
+   "detail": "Knee - ACL",
    "espn_id": "4259619"
   },
   "00-0041399": {
@@ -2824,16 +2853,6 @@
    "date": "2026-10-19T12:53:00-04:00",
    "detail": null,
    "espn_id": "4605951"
-  },
-  "00-0031381": {
-   "name": "Davante Adams",
-   "team": "LA",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": "OUT",
-   "date": "2026-10-18T21:18:00-04:00",
-   "detail": "Knee",
-   "espn_id": "16800"
   },
   "00-0026498": {
    "name": "Matthew Stafford",
@@ -3142,11 +3161,11 @@
    "team": "MIN",
    "pos": "RB",
    "status": "Injured Reserve",
-   "fantasy": "IR",
-   "date": "2026-10-15T12:29:00-04:00",
+   "fantasy": "IR-R",
+   "date": "2026-10-19T17:24:00-04:00",
    "detail": "Thumb",
    "espn_id": "4360569",
-   "comment": "The Vikings are hopeful that Mason (thumb) will be ready to return from injured reserve for their Week 7 game versus the Colts, Jeremy Fowler of ESPN.com report"
+   "comment": "The Vikings designated Mason (thumb) for return from injured reserve Monday."
   },
   "name:MIN:christiandarrisaw": {
    "name": "Christian Darrisaw",
@@ -3599,7 +3618,7 @@
    "pos": "OT",
    "status": "Out",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-10-19T16:47:00-04:00",
+   "date": "2026-10-19T17:41:00-04:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
@@ -5682,6 +5701,10 @@
   "00-0037801": {
    "status": "Questionable",
    "at": "2026-10-18T21:30:01-04:00"
+  },
+  "00-0031381": {
+   "status": "Out",
+   "at": "2026-10-19T17:50:01-04:00"
   }
  }
 }
