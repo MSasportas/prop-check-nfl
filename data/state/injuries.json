@@ -1,5 +1,5 @@
 {
- "at": "2026-10-19T05:00:01-04:00",
+ "at": "2026-10-19T06:00:00-04:00",
  "source": "espn",
  "players": {
   "00-0037157": {
@@ -205,6 +205,26 @@
    "detail": null,
    "espn_id": "4374045"
   },
+  "00-0039917": {
+   "name": "Michael Penix Jr.",
+   "team": "ATL",
+   "pos": "QB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-19T05:26:00-04:00",
+   "detail": null,
+   "espn_id": "4360423"
+  },
+  "00-0036970": {
+   "name": "Kyle Pitts Sr.",
+   "team": "ATL",
+   "pos": "TE",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-19T05:14:00-04:00",
+   "detail": null,
+   "espn_id": "4360248"
+  },
   "00-0037238": {
    "name": "Drake London",
    "team": "ATL",
@@ -274,16 +294,6 @@
    "date": "2026-10-18T14:07:00-04:00",
    "detail": "Arm",
    "espn_id": "4037626"
-  },
-  "00-0039917": {
-   "name": "Michael Penix Jr.",
-   "team": "ATL",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-18T13:36:00-04:00",
-   "detail": null,
-   "espn_id": "4360423"
   },
   "00-0033662": {
    "name": "Cooper Rush",
@@ -366,16 +376,6 @@
    "date": "2026-10-16T19:22:00-04:00",
    "detail": null,
    "espn_id": "4241479"
-  },
-  "00-0036970": {
-   "name": "Kyle Pitts Sr.",
-   "team": "ATL",
-   "pos": "TE",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-12T00:52:00-04:00",
-   "detail": null,
-   "espn_id": "4360248"
   },
   "name:ATL:yasirabdullah": {
    "name": "Yasir Abdullah",
@@ -693,6 +693,26 @@
    "detail": null,
    "espn_id": "3930086"
   },
+  "00-0039491": {
+   "name": "Jalen Coker",
+   "team": "CAR",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-19T05:35:00-04:00",
+   "detail": null,
+   "espn_id": "4695883"
+  },
+  "00-0039150": {
+   "name": "Bryce Young",
+   "team": "CAR",
+   "pos": "QB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-19T05:31:00-04:00",
+   "detail": null,
+   "espn_id": "4685720"
+  },
   "00-0040124": {
    "name": "Tetairoa McMillan",
    "team": "CAR",
@@ -837,16 +857,6 @@
    "espn_id": "4678008",
    "comment": "Brooks (core) was seen jogging at practice Thursday, Sheena Quick of Fox Sports Radio 1340 reports."
   },
-  "00-0039491": {
-   "name": "Jalen Coker",
-   "team": "CAR",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-14T16:11:00-04:00",
-   "detail": null,
-   "espn_id": "4695883"
-  },
   "name:CAR:camjackson": {
    "name": "Cam Jackson",
    "team": "CAR",
@@ -877,15 +887,35 @@
    "detail": null,
    "espn_id": "4567096"
   },
-  "name:CAR:ikemekwonu": {
-   "name": "Ikem Ekwonu",
-   "team": "CAR",
-   "pos": "OT",
-   "status": "Out",
-   "fantasy": "PUP-R",
-   "date": "2026-10-05T21:04:00-04:00",
-   "detail": "Knee",
-   "espn_id": "4427132"
+  "00-0039919": {
+   "name": "Rome Odunze",
+   "team": "CHI",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-19T05:21:00-04:00",
+   "detail": null,
+   "espn_id": "4431299"
+  },
+  "name:CHI:anthonyjohnson": {
+   "name": "Anthony Johnson Jr.",
+   "team": "CHI",
+   "pos": "S",
+   "status": "Injured Reserve",
+   "fantasy": "IR",
+   "date": "2026-10-19T05:00:00-04:00",
+   "detail": "Undisclosed",
+   "espn_id": "4361748"
+  },
+  "00-0040126": {
+   "name": "Colston Loveland",
+   "team": "CHI",
+   "pos": "TE",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-19T04:45:00-04:00",
+   "detail": null,
+   "espn_id": "4723086"
   },
   "00-0040735": {
    "name": "Luther Burden III",
@@ -896,16 +926,6 @@
    "date": "2026-10-19T04:38:00-04:00",
    "detail": null,
    "espn_id": "4685278"
-  },
-  "name:CHI:anthonyjohnson": {
-   "name": "Anthony Johnson Jr.",
-   "team": "CHI",
-   "pos": "S",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-19T04:01:00-04:00",
-   "detail": "Undisclosed",
-   "espn_id": "4361748"
   },
   "00-0039918": {
    "name": "Caleb Williams",
@@ -1068,16 +1088,6 @@
    "date": "2026-10-13T16:16:00-04:00",
    "detail": "Suspension",
    "espn_id": "3134690"
-  },
-  "00-0040126": {
-   "name": "Colston Loveland",
-   "team": "CHI",
-   "pos": "TE",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-11T18:40:00-04:00",
-   "detail": null,
-   "espn_id": "4723086"
   },
   "00-0040785": {
    "name": "Dohnte Meyers",
@@ -4043,7 +4053,7 @@
    "pos": "OT",
    "status": "Out",
    "fantasy": "INACTIVE",
-   "date": "2026-10-19T04:01:00-04:00",
+   "date": "2026-10-19T05:00:00-04:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
@@ -4383,6 +4393,16 @@
    "detail": null,
    "espn_id": "4808766"
   },
+  "00-0037258": {
+   "name": "Dameon Pierce",
+   "team": "PHI",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-19T05:40:00-04:00",
+   "detail": null,
+   "espn_id": "4360238"
+  },
   "00-0036912": {
    "name": "DeVonta Smith",
    "team": "PHI",
@@ -4609,16 +4629,6 @@
    "detail": "Calf",
    "espn_id": "4040715",
    "comment": "The Eagles placed Hurts (calf) on injured reserve Saturday."
-  },
-  "00-0037258": {
-   "name": "Dameon Pierce",
-   "team": "PHI",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-16T20:05:00-04:00",
-   "detail": null,
-   "espn_id": "4360238"
   },
   "00-0036894": {
    "name": "Pat Freiermuth",
