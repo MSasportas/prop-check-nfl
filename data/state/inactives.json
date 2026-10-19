@@ -966,16 +966,83 @@
  "2026_06_WAS_SF": {
   "_kickoff": "2026-10-19T20:15:00-04:00",
   "WAS": {
-   "confirmed": false,
-   "count": 0,
-   "players": [],
-   "confirmed_at": null
+   "confirmed": true,
+   "count": 6,
+   "players": [
+    {
+     "pid": null,
+     "name": "Charles Omenihu",
+     "pos": "DE"
+    },
+    {
+     "pid": null,
+     "name": "Fabian Moreau",
+     "pos": "CB"
+    },
+    {
+     "pid": null,
+     "name": "Isaac Yiadom",
+     "pos": "CB"
+    },
+    {
+     "pid": "00-0032268",
+     "name": "Marcus Mariota",
+     "pos": "QB"
+    },
+    {
+     "pid": null,
+     "name": "T.J. Maguranyanga",
+     "pos": "DE"
+    },
+    {
+     "pid": null,
+     "name": "Tanoa Togiai",
+     "pos": "G"
+    }
+   ],
+   "confirmed_at": "2026-10-19T19:00:16-04:00"
   },
   "SF": {
-   "confirmed": false,
-   "count": 0,
-   "players": [],
-   "confirmed_at": null
+   "confirmed": true,
+   "count": 7,
+   "players": [
+    {
+     "pid": "00-0035719",
+     "name": "Deebo Samuel Sr.",
+     "pos": "WR"
+    },
+    {
+     "pid": null,
+     "name": "Enrique Cruz Jr.",
+     "pos": "OT"
+    },
+    {
+     "pid": null,
+     "name": "Garret Wallow",
+     "pos": "LB"
+    },
+    {
+     "pid": "00-0040589",
+     "name": "Kurtis Rourke",
+     "pos": "QB"
+    },
+    {
+     "pid": null,
+     "name": "Marques Sigle",
+     "pos": "S"
+    },
+    {
+     "pid": null,
+     "name": "Naquan Jones",
+     "pos": "DT"
+    },
+    {
+     "pid": null,
+     "name": "Nick Bosa",
+     "pos": "DE"
+    }
+   ],
+   "confirmed_at": "2026-10-19T19:00:16-04:00"
   }
  }
 }

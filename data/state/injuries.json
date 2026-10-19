@@ -1,5 +1,5 @@
 {
- "at": "2026-10-19T19:00:00-04:00",
+ "at": "2026-10-19T19:00:16-04:00",
  "source": "espn",
  "players": {
   "name:ARI:wydettwilliams": {
@@ -463,7 +463,7 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-10-19T18:56:00-04:00",
+   "date": "2026-10-19T18:47:00-04:00",
    "detail": "Suspension",
    "espn_id": "4034953"
   },
@@ -756,7 +756,7 @@
    "pos": "S",
    "status": "Injured Reserve",
    "fantasy": "IR",
-   "date": "2026-10-19T18:47:00-04:00",
+   "date": "2026-10-19T18:57:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
@@ -3618,7 +3618,7 @@
    "pos": "OT",
    "status": "Out",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-10-19T18:56:00-04:00",
+   "date": "2026-10-19T18:47:00-04:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
@@ -4345,6 +4345,88 @@
    "espn_id": "4035687",
    "comment": "The Steelers placed Pittman (foot) on injured reserve Saturday."
   },
+  "name:SF:garretwallow": {
+   "name": "Garret Wallow",
+   "team": "SF",
+   "pos": "LB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-19T18:56:00-04:00",
+   "detail": "Hamstring",
+   "espn_id": "4241807"
+  },
+  "00-0040589": {
+   "name": "Kurtis Rourke",
+   "team": "SF",
+   "pos": "QB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-19T18:56:00-04:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4430431",
+   "comment": "inactive"
+  },
+  "00-0035719": {
+   "name": "Deebo Samuel Sr.",
+   "team": "SF",
+   "pos": "WR",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-19T18:56:00-04:00",
+   "detail": "Hamstring",
+   "espn_id": "3126486",
+   "comment": "inactive"
+  },
+  "name:SF:marquessigle": {
+   "name": "Marques Sigle",
+   "team": "SF",
+   "pos": "S",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-19T18:56:00-04:00",
+   "detail": "Ankle",
+   "espn_id": "4693337"
+  },
+  "name:SF:naquanjones": {
+   "name": "Naquan Jones",
+   "team": "SF",
+   "pos": "DT",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-19T18:56:00-04:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4046716"
+  },
+  "name:SF:nickbosa": {
+   "name": "Nick Bosa",
+   "team": "SF",
+   "pos": "DE",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-19T18:56:00-04:00",
+   "detail": "Calf",
+   "espn_id": "4040605"
+  },
+  "name:SF:enriquecruz": {
+   "name": "Enrique Cruz Jr.",
+   "team": "SF",
+   "pos": "OT",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-19T18:56:00-04:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4691556"
+  },
+  "00-0031408": {
+   "name": "Mike Evans",
+   "team": "SF",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-19T18:50:00-04:00",
+   "detail": null,
+   "espn_id": "16737"
+  },
   "name:SF:bretttoth": {
    "name": "Brett Toth",
    "team": "SF",
@@ -4366,56 +4448,6 @@
    "espn_id": "3895856",
    "comment": "The 49ers downgraded Kirk (calf) to out for Monday's game against the Commanders, Matt Maiocco of NBC Sports Bay Area reports."
   },
-  "00-0031408": {
-   "name": "Mike Evans",
-   "team": "SF",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-19T11:21:00-04:00",
-   "detail": null,
-   "espn_id": "16737"
-  },
-  "name:SF:mykelwilliams": {
-   "name": "Mykel Williams",
-   "team": "SF",
-   "pos": "DE",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-17T22:40:00-04:00",
-   "detail": "Knee",
-   "espn_id": "4685623"
-  },
-  "name:SF:uptonstout": {
-   "name": "Upton Stout",
-   "team": "SF",
-   "pos": "CB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-17T22:38:00-04:00",
-   "detail": "Shoulder",
-   "espn_id": "4565200"
-  },
-  "name:SF:marquessigle": {
-   "name": "Marques Sigle",
-   "team": "SF",
-   "pos": "S",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-17T22:23:00-04:00",
-   "detail": "Ankle",
-   "espn_id": "4693337"
-  },
-  "name:SF:nickbosa": {
-   "name": "Nick Bosa",
-   "team": "SF",
-   "pos": "DE",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-17T22:19:00-04:00",
-   "detail": "Calf",
-   "espn_id": "4040605"
-  },
   "00-0041052": {
    "name": "Kaelon Black",
    "team": "SF",
@@ -4435,37 +4467,6 @@
    "date": "2026-10-16T19:21:00-04:00",
    "detail": null,
    "espn_id": "16002"
-  },
-  "name:SF:siranneal": {
-   "name": "Siran Neal",
-   "team": "SF",
-   "pos": "S",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-15T19:27:00-04:00",
-   "detail": "Neck",
-   "espn_id": "3057524"
-  },
-  "name:SF:gracenhalton": {
-   "name": "Gracen Halton",
-   "team": "SF",
-   "pos": "DT",
-   "status": "Questionable",
-   "fantasy": null,
-   "date": "2026-10-15T19:26:00-04:00",
-   "detail": null,
-   "espn_id": "4685369"
-  },
-  "00-0035719": {
-   "name": "Deebo Samuel Sr.",
-   "team": "SF",
-   "pos": "WR",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-15T15:54:00-04:00",
-   "detail": "Hamstring",
-   "espn_id": "3126486",
-   "comment": "Head coach Kyle Shanahan said Thursday that the 49ers will \"hold off\" on placing Samuel (hamstring) on IR due to the team's bye in Week 8, Vic Tafur of the Athl"
   },
   "00-0032775": {
    "name": "Demarcus Robinson",
@@ -4497,26 +4498,6 @@
    "date": "2026-10-12T20:00:00-04:00",
    "detail": "Hamstring",
    "espn_id": "4573188"
-  },
-  "name:SF:garretwallow": {
-   "name": "Garret Wallow",
-   "team": "SF",
-   "pos": "LB",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-12T17:19:00-04:00",
-   "detail": "Hamstring",
-   "espn_id": "4241807"
-  },
-  "00-0040589": {
-   "name": "Kurtis Rourke",
-   "team": "SF",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-12T15:37:00-04:00",
-   "detail": null,
-   "espn_id": "4430431"
   },
   "name:SEA:chazzsurratt": {
    "name": "Chazz Surratt",
@@ -5014,6 +4995,67 @@
    "detail": null,
    "espn_id": "4240657"
   },
+  "name:WAS:isaacyiadom": {
+   "name": "Isaac Yiadom",
+   "team": "WAS",
+   "pos": "CB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-19T18:52:00-04:00",
+   "detail": "Coach's Decision",
+   "espn_id": "3122797"
+  },
+  "name:WAS:charlesomenihu": {
+   "name": "Charles Omenihu",
+   "team": "WAS",
+   "pos": "DE",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-19T18:52:00-04:00",
+   "detail": "Groin",
+   "espn_id": "3929865"
+  },
+  "name:WAS:tanoatogiai": {
+   "name": "Tanoa Togiai",
+   "team": "WAS",
+   "pos": "G",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-19T18:52:00-04:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4605488"
+  },
+  "name:WAS:tjmaguranyanga": {
+   "name": "T.J. Maguranyanga",
+   "team": "WAS",
+   "pos": "DE",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-19T18:52:00-04:00",
+   "detail": "Coach's Decision",
+   "espn_id": "5278092"
+  },
+  "00-0032268": {
+   "name": "Marcus Mariota",
+   "team": "WAS",
+   "pos": "QB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-19T18:52:00-04:00",
+   "detail": "Knee - MCL",
+   "espn_id": "2576980",
+   "comment": "inactive"
+  },
+  "name:WAS:fabianmoreau": {
+   "name": "Fabian Moreau",
+   "team": "WAS",
+   "pos": "CB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-19T18:52:00-04:00",
+   "detail": "Coach's Decision",
+   "espn_id": "2971586"
+  },
   "00-0031588": {
    "name": "Stefon Diggs",
    "team": "WAS",
@@ -5055,16 +5097,6 @@
    "detail": null,
    "espn_id": "3127586"
   },
-  "name:WAS:charlesomenihu": {
-   "name": "Charles Omenihu",
-   "team": "WAS",
-   "pos": "DE",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-17T22:46:00-04:00",
-   "detail": "Groin",
-   "espn_id": "3929865"
-  },
   "00-0037742": {
    "name": "Treylon Burks",
    "team": "WAS",
@@ -5105,37 +5137,6 @@
    "detail": null,
    "espn_id": "3121422"
   },
-  "00-0032268": {
-   "name": "Marcus Mariota",
-   "team": "WAS",
-   "pos": "QB",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-10-17T12:55:00-04:00",
-   "detail": "Knee - MCL",
-   "espn_id": "2576980",
-   "comment": "Mariota (knee) has been ruled out for Monday's game against the 49ers, Tashan Reed of The Washington Post reports."
-  },
-  "name:WAS:lucaspatrick": {
-   "name": "Lucas Patrick",
-   "team": "WAS",
-   "pos": "G",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-16T18:18:00-04:00",
-   "detail": "Illness",
-   "espn_id": "2576736"
-  },
-  "name:WAS:javonkinlaw": {
-   "name": "Javon Kinlaw",
-   "team": "WAS",
-   "pos": "DT",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-16T18:17:00-04:00",
-   "detail": "Ankle",
-   "espn_id": "4259491"
-  },
   "00-0041040": {
    "name": "Antonio Williams",
    "team": "WAS",
@@ -5146,26 +5147,6 @@
    "detail": null,
    "espn_id": "5081432"
   },
-  "name:WAS:tylerowens": {
-   "name": "Tyler Owens",
-   "team": "WAS",
-   "pos": "S",
-   "status": "Questionable",
-   "fantasy": null,
-   "date": "2026-10-13T13:10:00-04:00",
-   "detail": null,
-   "espn_id": "4572460"
-  },
-  "name:WAS:percybutler": {
-   "name": "Percy Butler",
-   "team": "WAS",
-   "pos": "S",
-   "status": "Questionable",
-   "fantasy": null,
-   "date": "2026-10-13T13:10:00-04:00",
-   "detail": null,
-   "espn_id": "4363097"
-  },
   "00-0036415": {
    "name": "Van Jefferson",
    "team": "WAS",
@@ -5175,16 +5156,6 @@
    "date": "2026-10-13T00:19:00-04:00",
    "detail": null,
    "espn_id": "3930066"
-  },
-  "00-0037809": {
-   "name": "Chig Okonkwo",
-   "team": "WAS",
-   "pos": "TE",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-12T20:41:00-04:00",
-   "detail": null,
-   "espn_id": "4360635"
   }
  },
  "last_fail_at": null,
@@ -5693,6 +5664,10 @@
   "00-0031381": {
    "status": "Out",
    "at": "2026-10-19T17:50:01-04:00"
+  },
+  "00-0040589": {
+   "status": "Out",
+   "at": "2026-10-19T19:00:16-04:00"
   }
  }
 }
