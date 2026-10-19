@@ -1,5 +1,5 @@
 {
- "at": "2026-10-19T17:50:01-04:00",
+ "at": "2026-10-19T18:30:01-04:00",
  "source": "espn",
  "players": {
   "name:ARI:wydettwilliams": {
@@ -463,7 +463,7 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-10-19T17:41:00-04:00",
+   "date": "2026-10-19T18:16:00-04:00",
    "detail": "Suspension",
    "espn_id": "4034953"
   },
@@ -473,7 +473,7 @@
    "pos": "TE",
    "status": "Active",
    "fantasy": null,
-   "date": "2026-10-19T17:41:00-04:00",
+   "date": "2026-10-19T17:50:00-04:00",
    "detail": null,
    "espn_id": "4385690"
   },
@@ -756,7 +756,7 @@
    "pos": "S",
    "status": "Injured Reserve",
    "fantasy": "IR",
-   "date": "2026-10-19T17:33:00-04:00",
+   "date": "2026-10-19T18:18:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
@@ -2803,6 +2803,36 @@
    "detail": null,
    "espn_id": "4596334"
   },
+  "name:LA:blakegrupe": {
+   "name": "Blake Grupe",
+   "team": "LA",
+   "pos": "PK",
+   "status": "Injured Reserve",
+   "fantasy": "IR",
+   "date": "2026-10-19T18:01:00-04:00",
+   "detail": "Knee - ACL",
+   "espn_id": "4259619"
+  },
+  "name:LA:kobieturner": {
+   "name": "Kobie Turner",
+   "team": "LA",
+   "pos": "DE",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-10-19T17:57:00-04:00",
+   "detail": "Groin",
+   "espn_id": "4250621"
+  },
+  "name:LA:mylesgarrett": {
+   "name": "Myles Garrett",
+   "team": "LA",
+   "pos": "DE",
+   "status": "Injured Reserve",
+   "fantasy": "IR",
+   "date": "2026-10-19T17:45:00-04:00",
+   "detail": "Knee",
+   "espn_id": "3122132"
+  },
   "00-0031381": {
    "name": "Davante Adams",
    "team": "LA",
@@ -2812,7 +2842,7 @@
    "date": "2026-10-19T17:31:00-04:00",
    "detail": "Hamstring",
    "espn_id": "16800",
-   "comment": "Adams is expected to undergo a procedure to address a ruptured left hamstring tendon and is targeting a return around the Rams' Week 11 bye or a little thereaft"
+   "comment": "Adams sustained a ruptured left hamstring in Sunday's 18-16 loss to the Cardinals and is slated to undergo a procedure that he hopes will allow him to return a "
   },
   "name:LA:poonaford": {
    "name": "Poona Ford",
@@ -2823,26 +2853,6 @@
    "date": "2026-10-19T17:11:00-04:00",
    "detail": "Triceps",
    "espn_id": "3125114"
-  },
-  "name:LA:kobieturner": {
-   "name": "Kobie Turner",
-   "team": "LA",
-   "pos": "DE",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-19T17:09:00-04:00",
-   "detail": "Groin",
-   "espn_id": "4250621"
-  },
-  "name:LA:blakegrupe": {
-   "name": "Blake Grupe",
-   "team": "LA",
-   "pos": "PK",
-   "status": "Injured Reserve",
-   "fantasy": "IR",
-   "date": "2026-10-19T15:57:00-04:00",
-   "detail": "Knee - ACL",
-   "espn_id": "4259619"
   },
   "00-0041399": {
    "name": "CJ Daniels",
@@ -2953,16 +2963,6 @@
    "date": "2026-10-14T21:36:00-04:00",
    "detail": "Suspension",
    "espn_id": "4036135"
-  },
-  "name:LA:mylesgarrett": {
-   "name": "Myles Garrett",
-   "team": "LA",
-   "pos": "DE",
-   "status": "Injured Reserve",
-   "fantasy": "IR",
-   "date": "2026-10-13T21:14:00-04:00",
-   "detail": "Knee",
-   "espn_id": "3122132"
   },
   "00-0041510": {
    "name": "Max Klare",
@@ -3618,7 +3618,7 @@
    "pos": "OT",
    "status": "Out",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-10-19T17:41:00-04:00",
+   "date": "2026-10-19T18:16:00-04:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
@@ -4345,6 +4345,16 @@
    "espn_id": "4035687",
    "comment": "The Steelers placed Pittman (foot) on injured reserve Saturday."
   },
+  "name:SF:bretttoth": {
+   "name": "Brett Toth",
+   "team": "SF",
+   "pos": "C",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-19T17:56:00-04:00",
+   "detail": "Concussion",
+   "espn_id": "3129116"
+  },
   "00-0034775": {
    "name": "Christian Kirk",
    "team": "SF",
@@ -4508,16 +4518,6 @@
    "date": "2026-10-12T15:37:00-04:00",
    "detail": null,
    "espn_id": "4430431"
-  },
-  "00-0033288": {
-   "name": "George Kittle",
-   "team": "SF",
-   "pos": "TE",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-11T21:06:00-04:00",
-   "detail": null,
-   "espn_id": "3040151"
   },
   "name:SEA:chazzsurratt": {
    "name": "Chazz Surratt",
