@@ -962,5 +962,20 @@
    ],
    "confirmed_at": "2026-10-18T20:10:55-04:00"
   }
+ },
+ "2026_06_WAS_SF": {
+  "_kickoff": "2026-10-19T20:15:00-04:00",
+  "WAS": {
+   "confirmed": false,
+   "count": 0,
+   "players": [],
+   "confirmed_at": null
+  },
+  "SF": {
+   "confirmed": false,
+   "count": 0,
+   "players": [],
+   "confirmed_at": null
+  }
  }
 }
