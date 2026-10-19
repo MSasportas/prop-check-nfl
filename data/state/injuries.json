@@ -1,5 +1,5 @@
 {
- "at": "2026-10-19T11:40:01-04:00",
+ "at": "2026-10-19T12:10:01-04:00",
  "source": "espn",
  "players": {
   "00-0037157": {
@@ -892,7 +892,7 @@
    "pos": "S",
    "status": "Injured Reserve",
    "fantasy": "IR",
-   "date": "2026-10-19T11:24:00-04:00",
+   "date": "2026-10-19T11:32:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
@@ -4052,7 +4052,7 @@
    "pos": "OT",
    "status": "Out",
    "fantasy": "INACTIVE",
-   "date": "2026-10-19T11:29:00-04:00",
+   "date": "2026-10-19T12:00:00-04:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
@@ -4845,6 +4845,17 @@
    "espn_id": "4035687",
    "comment": "The Steelers placed Pittman (foot) on injured reserve Saturday."
   },
+  "00-0034775": {
+   "name": "Christian Kirk",
+   "team": "SF",
+   "pos": "WR",
+   "status": "Injured Reserve",
+   "fantasy": "IR-R",
+   "date": "2026-10-19T11:40:00-04:00",
+   "detail": "Calf",
+   "espn_id": "3895856",
+   "comment": "Kirk (calf), who is listed as questionable for Monday's matchup with the Commanders, is expected to be reinstated from injured reserve ahead of the Week 6 game,"
+  },
   "00-0031408": {
    "name": "Mike Evans",
    "team": "SF",
@@ -4905,17 +4916,6 @@
    "date": "2026-10-17T17:51:00-04:00",
    "detail": null,
    "espn_id": "4696044"
-  },
-  "00-0034775": {
-   "name": "Christian Kirk",
-   "team": "SF",
-   "pos": "WR",
-   "status": "Injured Reserve",
-   "fantasy": "IR-R",
-   "date": "2026-10-17T17:02:00-04:00",
-   "detail": "Calf",
-   "espn_id": "3895856",
-   "comment": "Head coach Kyle Shanahan said Saturday that the 49ers may activate Kirk (calf) from injured reserve ahead of Monday's game against the Commanders, Nick Wagoner "
   },
   "00-0029892": {
    "name": "Kyle Juszczyk",
