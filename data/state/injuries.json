@@ -1,5 +1,5 @@
 {
- "at": "2026-10-19T00:10:00-04:00",
+ "at": "2026-10-19T00:40:00-04:00",
  "source": "espn",
  "players": {
   "00-0037157": {
@@ -883,7 +883,7 @@
    "pos": "S",
    "status": "Injured Reserve",
    "fantasy": "IR",
-   "date": "2026-10-19T00:00:00-04:00",
+   "date": "2026-10-19T00:12:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
@@ -1395,6 +1395,56 @@
    "espn_id": "4601080",
    "comment": "The Browns placed Sanders (hip) on injured reserve Tuesday."
   },
+  "00-0036997": {
+   "name": "Javonte Williams",
+   "team": "DAL",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-19T00:23:00-04:00",
+   "detail": null,
+   "espn_id": "4361579"
+  },
+  "00-0033077": {
+   "name": "Dak Prescott",
+   "team": "DAL",
+   "pos": "QB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-19T00:22:00-04:00",
+   "detail": null,
+   "espn_id": "2577417"
+  },
+  "00-0037247": {
+   "name": "George Pickens",
+   "team": "DAL",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-19T00:21:00-04:00",
+   "detail": null,
+   "espn_id": "4426354"
+  },
+  "00-0039410": {
+   "name": "Ryan Flournoy",
+   "team": "DAL",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-19T00:20:00-04:00",
+   "detail": null,
+   "espn_id": "5083754"
+  },
+  "00-0038041": {
+   "name": "Jake Ferguson",
+   "team": "DAL",
+   "pos": "TE",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-19T00:15:00-04:00",
+   "detail": null,
+   "espn_id": "4242355"
+  },
   "00-0036358": {
    "name": "CeeDee Lamb",
    "team": "DAL",
@@ -1409,8 +1459,8 @@
    "name": "KaVontae Turpin",
    "team": "DAL",
    "pos": "WR",
-   "status": "Out",
-   "fantasy": "OUT",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
    "date": "2026-10-18T22:25:00-04:00",
    "detail": "Ribs",
    "espn_id": "3676833",
@@ -1498,16 +1548,6 @@
    "detail": "Coach's Decision",
    "espn_id": "4595352"
   },
-  "00-0037247": {
-   "name": "George Pickens",
-   "team": "DAL",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-16T19:46:00-04:00",
-   "detail": null,
-   "espn_id": "4426354"
-  },
   "00-0039062": {
    "name": "Jonathan Mingo",
    "team": "DAL",
@@ -1517,46 +1557,6 @@
    "date": "2026-10-10T13:35:00-04:00",
    "detail": null,
    "espn_id": "4426485"
-  },
-  "00-0038041": {
-   "name": "Jake Ferguson",
-   "team": "DAL",
-   "pos": "TE",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-09T00:55:00-04:00",
-   "detail": null,
-   "espn_id": "4242355"
-  },
-  "00-0039410": {
-   "name": "Ryan Flournoy",
-   "team": "DAL",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-09T00:49:00-04:00",
-   "detail": null,
-   "espn_id": "5083754"
-  },
-  "00-0033077": {
-   "name": "Dak Prescott",
-   "team": "DAL",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-08T23:56:00-04:00",
-   "detail": null,
-   "espn_id": "2577417"
-  },
-  "00-0036997": {
-   "name": "Javonte Williams",
-   "team": "DAL",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-08T23:49:00-04:00",
-   "detail": null,
-   "espn_id": "4361579"
   },
   "00-0038976": {
    "name": "Marvin Mims Jr.",
@@ -1873,6 +1873,66 @@
    "detail": null,
    "espn_id": "3915486"
   },
+  "00-0039811": {
+   "name": "MarShawn Lloyd",
+   "team": "GB",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-19T00:20:00-04:00",
+   "detail": null,
+   "espn_id": "4429023"
+  },
+  "00-0038124": {
+   "name": "Christian Watson",
+   "team": "GB",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-19T00:17:00-04:00",
+   "detail": null,
+   "espn_id": "4248528"
+  },
+  "00-0040667": {
+   "name": "Matthew Golden",
+   "team": "GB",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-19T00:16:00-04:00",
+   "detail": null,
+   "espn_id": "4701936"
+  },
+  "00-0036264": {
+   "name": "Jordan Love",
+   "team": "GB",
+   "pos": "QB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-19T00:15:00-04:00",
+   "detail": null,
+   "espn_id": "4036378"
+  },
+  "00-0038098": {
+   "name": "Pierre Strong Jr.",
+   "team": "GB",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-19T00:14:00-04:00",
+   "detail": null,
+   "espn_id": "4249836"
+  },
+  "00-0038996": {
+   "name": "Tucker Kraft",
+   "team": "GB",
+   "pos": "TE",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-19T00:10:00-04:00",
+   "detail": null,
+   "espn_id": "4572680"
+  },
   "name:GB:brandoncisse": {
    "name": "Brandon Cisse",
    "team": "GB",
@@ -2005,16 +2065,6 @@
    "detail": "Knee - ACL",
    "espn_id": "4361423"
   },
-  "00-0038098": {
-   "name": "Pierre Strong Jr.",
-   "team": "GB",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-12T12:50:00-04:00",
-   "detail": null,
-   "espn_id": "4249836"
-  },
   "00-0028118": {
    "name": "Tyrod Taylor",
    "team": "GB",
@@ -2024,46 +2074,6 @@
    "date": "2026-10-12T12:44:00-04:00",
    "detail": null,
    "espn_id": "14163"
-  },
-  "00-0039811": {
-   "name": "MarShawn Lloyd",
-   "team": "GB",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-11T22:55:00-04:00",
-   "detail": null,
-   "espn_id": "4429023"
-  },
-  "00-0038996": {
-   "name": "Tucker Kraft",
-   "team": "GB",
-   "pos": "TE",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-11T18:47:00-04:00",
-   "detail": null,
-   "espn_id": "4572680"
-  },
-  "00-0036264": {
-   "name": "Jordan Love",
-   "team": "GB",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-11T17:02:00-04:00",
-   "detail": null,
-   "espn_id": "4036378"
-  },
-  "00-0040667": {
-   "name": "Matthew Golden",
-   "team": "GB",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-11T16:51:00-04:00",
-   "detail": null,
-   "espn_id": "4701936"
   },
   "00-0034383": {
    "name": "Dalton Schultz",
@@ -2661,7 +2671,7 @@
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
    "date": "2026-10-18T18:41:00-04:00",
-   "detail": "Head",
+   "detail": "Concussion",
    "espn_id": "4043041"
   },
   "name:KC:joshsimmons": {
@@ -3883,7 +3893,7 @@
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
    "date": "2026-10-18T17:06:00-04:00",
-   "detail": "Head",
+   "detail": "Migraine",
    "espn_id": "4433975"
   },
   "name:NO:quincyriley": {
@@ -4014,7 +4024,7 @@
    "pos": "OT",
    "status": "Out",
    "fantasy": "INACTIVE",
-   "date": "2026-10-19T00:05:00-04:00",
+   "date": "2026-10-19T00:12:00-04:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
