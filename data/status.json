@@ -3,10 +3,10 @@
  "season": 2026,
  "week": 6,
  "slate": "2026-W06",
- "started_at": "2026-10-19T06:00:00-04:00",
- "status_at": "2026-10-19T06:00:00-04:00",
- "finished_at": "2026-10-19T06:00:01-04:00",
- "last_ok_at": "2026-10-19T06:00:00-04:00",
+ "started_at": "2026-10-19T06:00:14-04:00",
+ "status_at": "2026-10-19T06:00:14-04:00",
+ "finished_at": "2026-10-19T06:00:15-04:00",
+ "last_ok_at": "2026-10-19T06:00:14-04:00",
  "failed_step": null,
  "steps": [
   {
@@ -21,8 +21,8 @@
   },
   {
    "step": "stats",
-   "status": "skipped",
-   "note": "checked at 5:00 AM"
+   "status": "ok",
+   "note": "92 games through 2026-10-18"
   },
   {
    "step": "roster",
@@ -31,13 +31,13 @@
   },
   {
    "step": "injuries",
-   "status": "ok",
-   "note": "espn: 233 out, 62 questionable; inactives posted for 24 team(s)"
+   "status": "skipped",
+   "note": "read at 6:00 AM; inactives posted for 24 team(s)"
   },
   {
    "step": "weather",
-   "status": "ok",
-   "note": "1 read, 0 failed, 0 indoors"
+   "status": "skipped",
+   "note": "nothing due (0 indoors)"
   },
   {
    "step": "odds",
@@ -62,7 +62,7 @@
   {
    "step": "research",
    "status": "ok",
-   "note": "14 game file(s) written"
+   "note": "0 game file(s) written"
   },
   {
    "step": "record",
@@ -145,14 +145,14 @@
  "odds_notes": [],
  "runner": {
   "event": "workflow_dispatch",
-  "run_id": "39227994849",
-  "iteration": 2,
-  "chain_link": 262,
+  "run_id": "39234230964",
+  "iteration": 1,
+  "chain_link": 263,
   "chain_started_at": "2026-10-18T20:10:54-04:00",
-  "run_started_at": "2026-10-19T05:10:06-04:00"
+  "run_started_at": "2026-10-19T06:00:13-04:00"
  },
  "live_page": {
-  "checked_at": "2026-10-19T05:00:01-04:00",
+  "checked_at": "2026-10-19T06:00:14-04:00",
   "http": 200,
   "is_page": true
  }
