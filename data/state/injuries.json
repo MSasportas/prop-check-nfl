@@ -1,5 +1,5 @@
 {
- "at": "2026-10-19T03:00:00-04:00",
+ "at": "2026-10-19T04:00:00-04:00",
  "source": "espn",
  "players": {
   "00-0037157": {
@@ -205,6 +205,16 @@
    "detail": null,
    "espn_id": "4374045"
   },
+  "00-0037238": {
+   "name": "Drake London",
+   "team": "ATL",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-19T03:13:00-04:00",
+   "detail": null,
+   "espn_id": "4426502"
+  },
   "00-0038542": {
    "name": "Bijan Robinson",
    "team": "ATL",
@@ -366,16 +376,6 @@
    "date": "2026-10-12T00:52:00-04:00",
    "detail": null,
    "espn_id": "4360248"
-  },
-  "00-0037238": {
-   "name": "Drake London",
-   "team": "ATL",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-12T00:20:00-04:00",
-   "detail": null,
-   "espn_id": "4426502"
   },
   "name:ATL:yasirabdullah": {
    "name": "Yasir Abdullah",
@@ -541,6 +541,26 @@
    "detail": null,
    "espn_id": "4038441"
   },
+  "00-0034857": {
+   "name": "Josh Allen",
+   "team": "BUF",
+   "pos": "QB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-19T03:45:00-04:00",
+   "detail": null,
+   "espn_id": "3918298"
+  },
+  "00-0037248": {
+   "name": "James Cook III",
+   "team": "BUF",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-19T03:39:00-04:00",
+   "detail": null,
+   "espn_id": "4379399"
+  },
   "00-0038933": {
    "name": "Dalton Kincaid",
    "team": "BUF",
@@ -653,26 +673,6 @@
    "detail": null,
    "espn_id": "4373678"
   },
-  "00-0034857": {
-   "name": "Josh Allen",
-   "team": "BUF",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-13T00:50:00-04:00",
-   "detail": null,
-   "espn_id": "3918298"
-  },
-  "00-0037248": {
-   "name": "James Cook III",
-   "team": "BUF",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-13T00:15:00-04:00",
-   "detail": null,
-   "espn_id": "4379399"
-  },
   "00-0041443": {
    "name": "Skyler Bell",
    "team": "BUF",
@@ -692,6 +692,26 @@
    "date": "2026-10-05T22:41:00-04:00",
    "detail": null,
    "espn_id": "3930086"
+  },
+  "00-0040124": {
+   "name": "Tetairoa McMillan",
+   "team": "CAR",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-19T03:22:00-04:00",
+   "detail": null,
+   "espn_id": "4685472"
+  },
+  "00-0036555": {
+   "name": "Chuba Hubbard",
+   "team": "CAR",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-19T03:18:00-04:00",
+   "detail": null,
+   "espn_id": "4241416"
   },
   "00-0031610": {
    "name": "Darren Waller",
@@ -867,15 +887,15 @@
    "detail": "Knee",
    "espn_id": "4427132"
   },
-  "00-0039150": {
-   "name": "Bryce Young",
-   "team": "CAR",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-05T00:20:00-04:00",
-   "detail": null,
-   "espn_id": "4685720"
+  "name:CHI:anthonyjohnson": {
+   "name": "Anthony Johnson Jr.",
+   "team": "CHI",
+   "pos": "S",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-10-19T03:01:00-04:00",
+   "detail": "Undisclosed",
+   "espn_id": "4361748"
   },
   "00-0039918": {
    "name": "Caleb Williams",
@@ -896,16 +916,6 @@
    "date": "2026-10-19T02:25:00-04:00",
    "detail": null,
    "espn_id": "4259545"
-  },
-  "name:CHI:anthonyjohnson": {
-   "name": "Anthony Johnson Jr.",
-   "team": "CHI",
-   "pos": "S",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-19T02:01:00-04:00",
-   "detail": "Undisclosed",
-   "espn_id": "4361748"
   },
   "00-0039021": {
    "name": "Roschon Johnson",
@@ -4024,7 +4034,7 @@
    "pos": "OT",
    "status": "Out",
    "fantasy": "INACTIVE",
-   "date": "2026-10-19T02:01:00-04:00",
+   "date": "2026-10-19T03:01:00-04:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
@@ -4363,6 +4373,16 @@
    "date": "2026-10-09T17:44:00-04:00",
    "detail": null,
    "espn_id": "4808766"
+  },
+  "00-0036912": {
+   "name": "DeVonta Smith",
+   "team": "PHI",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-19T03:30:00-04:00",
+   "detail": null,
+   "espn_id": "4241478"
   },
   "00-0040867": {
    "name": "Makai Lemon",
