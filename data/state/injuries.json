@@ -1,5 +1,5 @@
 {
- "at": "2026-10-18T22:00:01-04:00",
+ "at": "2026-10-18T22:30:01-04:00",
  "source": "espn",
  "players": {
   "00-0037157": {
@@ -883,7 +883,7 @@
    "pos": "S",
    "status": "Out",
    "fantasy": "OUT",
-   "date": "2026-10-18T21:19:00-04:00",
+   "date": "2026-10-18T22:21:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
@@ -1409,8 +1409,8 @@
    "name": "KaVontae Turpin",
    "team": "DAL",
    "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
+   "status": "Out",
+   "fantasy": "OUT",
    "date": "2026-10-18T20:52:00-04:00",
    "detail": "Ribs",
    "espn_id": "3676833",
@@ -2403,6 +2403,16 @@
    "detail": null,
    "espn_id": "4686468"
   },
+  "00-0038611": {
+   "name": "Chris Rodriguez Jr.",
+   "team": "JAX",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-18T22:07:00-04:00",
+   "detail": null,
+   "espn_id": "4362619"
+  },
   "00-0040718": {
    "name": "Travis Hunter",
    "team": "JAX",
@@ -2758,6 +2768,16 @@
    "detail": null,
    "espn_id": "4832955"
   },
+  "00-0040878": {
+   "name": "Mike Washington Jr.",
+   "team": "LV",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-18T22:13:00-04:00",
+   "detail": null,
+   "espn_id": "4686658"
+  },
   "00-0038563": {
    "name": "Tre Tucker",
    "team": "LV",
@@ -2901,16 +2921,6 @@
    "detail": null,
    "espn_id": "4429086"
   },
-  "00-0040878": {
-   "name": "Mike Washington Jr.",
-   "team": "LV",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-12T19:55:00-04:00",
-   "detail": null,
-   "espn_id": "4686658"
-  },
   "00-0039407": {
    "name": "Dylan Laube",
    "team": "LV",
@@ -2941,6 +2951,17 @@
    "detail": null,
    "espn_id": "14880"
   },
+  "00-0039915": {
+   "name": "Ladd McConkey",
+   "team": "LAC",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-18T22:20:00-04:00",
+   "detail": "Concussion",
+   "espn_id": "4612826",
+   "comment": "questionable"
+  },
   "00-0038544": {
    "name": "Quentin Johnston",
    "team": "LAC",
@@ -2970,17 +2991,6 @@
    "date": "2026-10-18T20:44:00-04:00",
    "detail": null,
    "espn_id": "4685382"
-  },
-  "00-0039915": {
-   "name": "Ladd McConkey",
-   "team": "LAC",
-   "pos": "WR",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-18T17:14:00-04:00",
-   "detail": "Concussion",
-   "espn_id": "4612826",
-   "comment": "McConkey won't return to Sunday's game at Kansas City due to a concussion."
   },
   "name:LAC:rodneyshelley": {
    "name": "Rodney Shelley",
@@ -3968,6 +3978,16 @@
    "detail": null,
    "espn_id": "4569559"
   },
+  "name:NYG:jermaineeluemunor": {
+   "name": "Jermaine Eluemunor",
+   "team": "NYG",
+   "pos": "OT",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-18T22:21:00-04:00",
+   "detail": "Calf",
+   "espn_id": "3115303"
+  },
   "00-0037838": {
    "name": "Isaiah Likely",
    "team": "NYG",
@@ -3997,16 +4017,6 @@
    "date": "2026-10-18T21:20:00-04:00",
    "detail": null,
    "espn_id": "4433970"
-  },
-  "name:NYG:jermaineeluemunor": {
-   "name": "Jermaine Eluemunor",
-   "team": "NYG",
-   "pos": "OT",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-10-18T21:19:00-04:00",
-   "detail": "Calf",
-   "espn_id": "3115303"
   },
   "00-0031503": {
    "name": "Jameis Winston",
@@ -4541,6 +4551,46 @@
    "detail": null,
    "espn_id": "4360238"
   },
+  "00-0035640": {
+   "name": "DK Metcalf",
+   "team": "PIT",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-18T22:15:00-04:00",
+   "detail": null,
+   "espn_id": "4047650"
+  },
+  "00-0036139": {
+   "name": "Rico Dowdle",
+   "team": "PIT",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-18T22:12:00-04:00",
+   "detail": null,
+   "espn_id": "4038815"
+  },
+  "00-0037228": {
+   "name": "Jaylen Warren",
+   "team": "PIT",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-18T22:07:00-04:00",
+   "detail": null,
+   "espn_id": "4569987"
+  },
+  "00-0023459": {
+   "name": "Aaron Rodgers",
+   "team": "PIT",
+   "pos": "QB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-18T21:57:00-04:00",
+   "detail": null,
+   "espn_id": "8439"
+  },
   "00-0038558": {
    "name": "Darnell Washington",
    "team": "PIT",
@@ -4581,16 +4631,6 @@
    "detail": "Coach's Decision",
    "espn_id": "5081508",
    "comment": "Heidenreich (coach's decision) is inactive for Sunday's game against the Buccaneers."
-  },
-  "00-0036139": {
-   "name": "Rico Dowdle",
-   "team": "PIT",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-18T11:58:00-04:00",
-   "detail": null,
-   "espn_id": "4038815"
   },
   "00-0041565": {
    "name": "Drew Allar",
@@ -4706,16 +4746,6 @@
    "espn_id": "4431492",
    "comment": "Wilson (finger) was placed on injured reserve Saturday, Ray Fittipaldo of the Pittsburgh Post-Gazette reports."
   },
-  "00-0035640": {
-   "name": "DK Metcalf",
-   "team": "PIT",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-17T12:27:00-04:00",
-   "detail": null,
-   "espn_id": "4047650"
-  },
   "name:PIT:deshonelliott": {
    "name": "DeShon Elliott",
    "team": "PIT",
@@ -4725,26 +4755,6 @@
    "date": "2026-10-16T21:42:00-04:00",
    "detail": "Knee",
    "espn_id": "3929846"
-  },
-  "00-0037228": {
-   "name": "Jaylen Warren",
-   "team": "PIT",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-12T15:27:00-04:00",
-   "detail": null,
-   "espn_id": "4569987"
-  },
-  "00-0023459": {
-   "name": "Aaron Rodgers",
-   "team": "PIT",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-11T20:22:00-04:00",
-   "detail": null,
-   "espn_id": "8439"
   },
   "00-0036252": {
    "name": "Michael Pittman Jr.",
@@ -5137,6 +5147,16 @@
    "espn_id": "4426385",
    "comment": "Charbonnet (knee) has been ruled out for Thursday's game at Denver, Corbin K. Smith of EmeraldCitySpectrum.com reports."
   },
+  "00-0036919": {
+   "name": "Kenny Gainwell",
+   "team": "TB",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-18T22:06:00-04:00",
+   "detail": null,
+   "espn_id": "4371733"
+  },
   "00-0038951": {
    "name": "Sean Tucker",
    "team": "TB",
@@ -5280,16 +5300,6 @@
    "detail": null,
    "espn_id": "4243331"
   },
-  "00-0036919": {
-   "name": "Kenny Gainwell",
-   "team": "TB",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-09T00:59:00-04:00",
-   "detail": null,
-   "espn_id": "4371733"
-  },
   "00-0033921": {
    "name": "Chris Godwin Jr.",
    "team": "TB",
@@ -5329,6 +5339,16 @@
    "date": "2026-10-07T18:50:00-04:00",
    "detail": null,
    "espn_id": "4034779"
+  },
+  "00-0038117": {
+   "name": "Wan'Dale Robinson",
+   "team": "TEN",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-18T22:16:00-04:00",
+   "detail": null,
+   "espn_id": "4569587"
   },
   "00-0041438": {
    "name": "Carnell Tate",
@@ -5501,16 +5521,6 @@
    "date": "2026-10-12T15:45:00-04:00",
    "detail": null,
    "espn_id": "4240657"
-  },
-  "00-0038117": {
-   "name": "Wan'Dale Robinson",
-   "team": "TEN",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-11T19:33:00-04:00",
-   "detail": null,
-   "espn_id": "4569587"
   },
   "name:WAS:javontaejeanbaptiste": {
    "name": "Javontae Jean-Baptiste",
