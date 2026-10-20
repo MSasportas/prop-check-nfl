@@ -1,5 +1,5 @@
 {
- "at": "2026-10-20T09:30:12-04:00",
+ "at": "2026-10-20T10:00:27-04:00",
  "source": "espn",
  "players": {
   "00-0033307": {
@@ -4976,16 +4976,6 @@
    "detail": null,
    "espn_id": "4697815"
   },
-  "00-0031588": {
-   "name": "Stefon Diggs",
-   "team": "WAS",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-20T00:06:00-04:00",
-   "detail": null,
-   "espn_id": "2976212"
-  },
   "00-0039910": {
    "name": "Jayden Daniels",
    "team": "WAS",
@@ -5108,6 +5098,16 @@
    "detail": "Groin",
    "espn_id": "4575131",
    "comment": "The Commanders placed Croskey-Merritt (groin) on injured reserve Monday."
+  },
+  "00-0031588": {
+   "name": "Stefon Diggs",
+   "team": "WAS",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-19T16:14:00-04:00",
+   "detail": null,
+   "espn_id": "2976212"
   },
   "00-0037742": {
    "name": "Treylon Burks",
