@@ -3,10 +3,10 @@
  "season": 2026,
  "week": 7,
  "slate": "2026-W07",
- "started_at": "2026-10-20T10:00:01-04:00",
- "status_at": "2026-10-20T10:00:01-04:00",
- "finished_at": "2026-10-20T10:00:13-04:00",
- "last_ok_at": "2026-10-20T10:00:01-04:00",
+ "started_at": "2026-10-20T10:30:00-04:00",
+ "status_at": "2026-10-20T10:30:00-04:00",
+ "finished_at": "2026-10-20T10:30:06-04:00",
+ "last_ok_at": "2026-10-20T10:30:00-04:00",
  "failed_step": null,
  "steps": [
   {
@@ -21,8 +21,8 @@
   },
   {
    "step": "stats",
-   "status": "skipped",
-   "note": "checked at 9:30 AM"
+   "status": "ok",
+   "note": "93 games through 2026-10-19"
   },
   {
    "step": "roster",
@@ -32,7 +32,7 @@
   {
    "step": "injuries",
    "status": "skipped",
-   "note": "read at 9:30 AM"
+   "note": "read at 10:00 AM"
   },
   {
    "step": "weather",
@@ -42,7 +42,7 @@
   {
    "step": "odds",
    "status": "ok",
-   "note": "16 read(s) (D, F, M)"
+   "note": "no pull due"
   },
   {
    "step": "engine",
@@ -62,7 +62,7 @@
   {
    "step": "research",
    "status": "ok",
-   "note": "4 game file(s) written"
+   "note": "1 game file(s) written"
   },
   {
    "step": "record",
@@ -129,88 +129,7 @@
   "at": "2026-10-20T10:00:01-04:00",
   "next_at": "2026-10-20T16:00:00-04:00"
  },
- "due": [
-  {
-   "pull": "D",
-   "game_id": "2026_07_NE_CHI",
-   "cost_max": 1
-  },
-  {
-   "pull": "M",
-   "game_id": "2026_07_PIT_NO",
-   "cost_max": 1
-  },
-  {
-   "pull": "F",
-   "game_id": "2026_07_PIT_NO",
-   "cost_max": 34
-  },
-  {
-   "pull": "M",
-   "game_id": "2026_07_CIN_BAL",
-   "cost_max": 1
-  },
-  {
-   "pull": "M",
-   "game_id": "2026_07_CLE_TEN",
-   "cost_max": 1
-  },
-  {
-   "pull": "M",
-   "game_id": "2026_07_IND_MIN",
-   "cost_max": 1
-  },
-  {
-   "pull": "M",
-   "game_id": "2026_07_MIA_NYJ",
-   "cost_max": 1
-  },
-  {
-   "pull": "M",
-   "game_id": "2026_07_NYG_HOU",
-   "cost_max": 1
-  },
-  {
-   "pull": "M",
-   "game_id": "2026_07_SF_ATL",
-   "cost_max": 1
-  },
-  {
-   "pull": "M",
-   "game_id": "2026_07_TB_CAR",
-   "cost_max": 1
-  },
-  {
-   "pull": "M",
-   "game_id": "2026_07_DEN_ARI",
-   "cost_max": 1
-  },
-  {
-   "pull": "M",
-   "game_id": "2026_07_GB_DET",
-   "cost_max": 1
-  },
-  {
-   "pull": "M",
-   "game_id": "2026_07_LA_LV",
-   "cost_max": 1
-  },
-  {
-   "pull": "M",
-   "game_id": "2026_07_KC_SEA",
-   "cost_max": 1
-  },
-  {
-   "pull": "F",
-   "game_id": "2026_07_GB_DET",
-   "cost_max": 31
-  },
-  {
-   "pull": "F",
-   "game_id": "2026_07_KC_SEA",
-   "cost_max": 21
-  }
- ],
+ "due": [],
  "skipped_games": [],
  "unmatched_names": [],
  "unknown_teams": [],
@@ -222,14 +141,14 @@
  "odds_notes": [],
  "runner": {
   "event": "workflow_dispatch",
-  "run_id": "39430913238",
+  "run_id": "39435334923",
   "iteration": 2,
-  "chain_link": 736,
+  "chain_link": 737,
   "chain_started_at": "2026-10-18T20:10:54-04:00",
-  "run_started_at": "2026-10-20T09:30:11-04:00"
+  "run_started_at": "2026-10-20T10:00:26-04:00"
  },
  "live_page": {
-  "checked_at": "2026-10-20T09:30:00-04:00",
+  "checked_at": "2026-10-20T10:30:00-04:00",
   "http": 200,
   "is_page": true
  }
