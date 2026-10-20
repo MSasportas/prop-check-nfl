@@ -1,7 +1,17 @@
 {
- "at": "2026-10-19T20:10:00-04:00",
+ "at": "2026-10-19T20:40:01-04:00",
  "source": "espn",
  "players": {
+  "00-0033307": {
+   "name": "Kendrick Bourne",
+   "team": "ARI",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-19T20:22:00-04:00",
+   "detail": null,
+   "espn_id": "3045523"
+  },
   "00-0041027": {
    "name": "Jeremiyah Love",
    "team": "ARI",
@@ -153,16 +163,6 @@
    "detail": "Foot",
    "espn_id": "3045147",
    "comment": "Conner (foot) is close to practicing, but the Cardinals aren't expected to open his 21-day evaluation window this week, John Gambadoro of Arizona Sports 98.7 FM"
-  },
-  "00-0033307": {
-   "name": "Kendrick Bourne",
-   "team": "ARI",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-11T22:48:00-04:00",
-   "detail": null,
-   "espn_id": "3045523"
   },
   "00-0037277": {
    "name": "Teagan Quitoriano",
@@ -473,7 +473,7 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-10-19T19:42:00-04:00",
+   "date": "2026-10-19T20:19:00-04:00",
    "detail": "Suspension",
    "espn_id": "4034953"
   },
@@ -760,15 +760,46 @@
    "detail": null,
    "espn_id": "4567096"
   },
+  "name:CHI:tjedwards": {
+   "name": "T.J. Edwards",
+   "team": "CHI",
+   "pos": "LB",
+   "status": "Out",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-19T20:21:00-04:00",
+   "detail": "Hamstring",
+   "espn_id": "3121544"
+  },
   "name:CHI:anthonyjohnson": {
    "name": "Anthony Johnson Jr.",
    "team": "CHI",
    "pos": "S",
    "status": "Injured Reserve",
    "fantasy": "IR",
-   "date": "2026-10-19T20:01:00-04:00",
+   "date": "2026-10-19T20:19:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
+  },
+  "name:CHI:jacksanborn": {
+   "name": "Jack Sanborn",
+   "team": "CHI",
+   "pos": "LB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-19T20:14:00-04:00",
+   "detail": "Concussion",
+   "espn_id": "4372576"
+  },
+  "00-0040236": {
+   "name": "Kyle Monangai",
+   "team": "CHI",
+   "pos": "RB",
+   "status": "Out",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-19T20:05:00-04:00",
+   "detail": "Toe",
+   "espn_id": "4608686",
+   "comment": "Monangai (thumb/toe) was listed as a non-participant on Monday's estimated injury report."
   },
   "00-0040277": {
    "name": "Jahdae Walker",
@@ -779,47 +810,6 @@
    "date": "2026-10-19T14:44:00-04:00",
    "detail": null,
    "espn_id": "5160110"
-  },
-  "name:CHI:tyriquestevenson": {
-   "name": "Tyrique Stevenson Sr.",
-   "team": "CHI",
-   "pos": "CB",
-   "status": "Out",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-19T12:28:00-04:00",
-   "detail": "Hip",
-   "espn_id": "4426374"
-  },
-  "00-0040236": {
-   "name": "Kyle Monangai",
-   "team": "CHI",
-   "pos": "RB",
-   "status": "Out",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-19T12:28:00-04:00",
-   "detail": "Toe",
-   "espn_id": "4608686",
-   "comment": "out"
-  },
-  "name:CHI:tjedwards": {
-   "name": "T.J. Edwards",
-   "team": "CHI",
-   "pos": "LB",
-   "status": "Out",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-19T12:28:00-04:00",
-   "detail": "Hamstring",
-   "espn_id": "3121544"
-  },
-  "name:CHI:keyshaunelliott": {
-   "name": "Keyshaun Elliott",
-   "team": "CHI",
-   "pos": "LB",
-   "status": "Out",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-19T12:28:00-04:00",
-   "detail": "Quadriceps",
-   "espn_id": "4911952"
   },
   "00-0028986": {
    "name": "Case Keenum",
@@ -1265,6 +1255,17 @@
    "espn_id": "5081397",
    "comment": "Sampson (knee) won't be activated from injured reserve ahead of Sunday's contest against the Ravens, Zac Jackson of The Athletic reports."
   },
+  "00-0037801": {
+   "name": "KaVontae Turpin",
+   "team": "DAL",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-19T20:07:00-04:00",
+   "detail": "Ribs",
+   "espn_id": "3676833",
+   "comment": "Turpin (ribs) is expected to miss the team's Week 7 matchup with the Eagles, Joe Hoyt of The Dallas Morning News reports."
+  },
   "name:DAL:deewinters": {
    "name": "Dee Winters",
    "team": "DAL",
@@ -1374,17 +1375,6 @@
    "date": "2026-10-18T23:55:00-04:00",
    "detail": null,
    "espn_id": "4241389"
-  },
-  "00-0037801": {
-   "name": "KaVontae Turpin",
-   "team": "DAL",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-18T22:25:00-04:00",
-   "detail": "Ribs",
-   "espn_id": "3676833",
-   "comment": "Turpin (ribs) has been ruled out for the rest of Sunday night's contest versus the Packers, Tommy Yarrish of the Cowboys' official site reports."
   },
   "00-0038705": {
    "name": "Emari Demercado",
@@ -1689,16 +1679,6 @@
    "detail": null,
    "espn_id": "3915486"
   },
-  "00-0035700": {
-   "name": "Josh Jacobs",
-   "team": "GB",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-19T17:32:00-04:00",
-   "detail": null,
-   "espn_id": "4047365"
-  },
   "name:GB:micahparsons": {
    "name": "Micah Parsons",
    "team": "GB",
@@ -1708,6 +1688,16 @@
    "date": "2026-10-19T17:14:00-04:00",
    "detail": "Knee - ACL",
    "espn_id": "4361423"
+  },
+  "00-0035700": {
+   "name": "Josh Jacobs",
+   "team": "GB",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-19T16:58:00-04:00",
+   "detail": null,
+   "espn_id": "4047365"
   },
   "name:GB:benjaminstjuste": {
    "name": "Benjamin St-Juste",
@@ -2813,6 +2803,26 @@
    "detail": null,
    "espn_id": "4596334"
   },
+  "00-0033110": {
+   "name": "Tyler Higbee",
+   "team": "LA",
+   "pos": "TE",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-19T20:11:00-04:00",
+   "detail": null,
+   "espn_id": "2573401"
+  },
+  "name:LA:poonaford": {
+   "name": "Poona Ford",
+   "team": "LA",
+   "pos": "DT",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-10-19T20:00:00-04:00",
+   "detail": "Triceps",
+   "espn_id": "3125114"
+  },
   "name:LA:blakegrupe": {
    "name": "Blake Grupe",
    "team": "LA",
@@ -2853,16 +2863,6 @@
    "detail": "Hamstring",
    "espn_id": "16800",
    "comment": "Adams sustained a ruptured left hamstring in Sunday's 18-16 loss to the Cardinals and is slated to undergo a procedure that he hopes will allow him to return a "
-  },
-  "name:LA:poonaford": {
-   "name": "Poona Ford",
-   "team": "LA",
-   "pos": "DT",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-19T17:11:00-04:00",
-   "detail": "Triceps",
-   "espn_id": "3125114"
   },
   "00-0041399": {
    "name": "CJ Daniels",
@@ -2974,15 +2974,15 @@
    "detail": null,
    "espn_id": "4833029"
   },
-  "00-0033110": {
-   "name": "Tyler Higbee",
-   "team": "LA",
-   "pos": "TE",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-13T01:17:00-04:00",
-   "detail": null,
-   "espn_id": "2573401"
+  "name:MIA:jonahsavaiinaea": {
+   "name": "Jonah Savaiinaea",
+   "team": "MIA",
+   "pos": "G",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-19T20:18:00-04:00",
+   "detail": "Ankle",
+   "espn_id": "4819257"
   },
   "00-0038128": {
    "name": "Malik Willis",
@@ -3115,16 +3115,6 @@
    "date": "2026-10-11T15:04:00-04:00",
    "detail": "Chest",
    "espn_id": "4880346"
-  },
-  "name:MIA:jonahsavaiinaea": {
-   "name": "Jonah Savaiinaea",
-   "team": "MIA",
-   "pos": "G",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-11T14:19:00-04:00",
-   "detail": "Ankle",
-   "espn_id": "4819257"
   },
   "00-0039874": {
    "name": "Jaylen Wright",
@@ -3300,6 +3290,27 @@
    "espn_id": "3921690",
    "comment": "The Vikings placed Oliver (biceps) on injured reserve Tuesday, Craig Peters of the team's official site reports."
   },
+  "name:NE:carltondavis": {
+   "name": "Carlton Davis III",
+   "team": "NE",
+   "pos": "CB",
+   "status": "Out",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-19T20:32:00-04:00",
+   "detail": "Neck",
+   "espn_id": "3916923"
+  },
+  "00-0035676": {
+   "name": "A.J. Brown",
+   "team": "NE",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-19T20:12:00-04:00",
+   "detail": "Ankle",
+   "espn_id": "4047646",
+   "comment": "Brown (ankle) was listed as limited on Monday's estimated practice report."
+  },
   "00-0037816": {
    "name": "Romeo Doubs",
    "team": "NE",
@@ -3351,16 +3362,6 @@
    "detail": "Hamstring",
    "espn_id": "4688779"
   },
-  "name:NE:carltondavis": {
-   "name": "Carlton Davis III",
-   "team": "NE",
-   "pos": "CB",
-   "status": "Out",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-19T13:09:00-04:00",
-   "detail": "Neck",
-   "espn_id": "3916923"
-  },
   "00-0040734": {
    "name": "TreVeyon Henderson",
    "team": "NE",
@@ -3391,16 +3392,6 @@
    "detail": null,
    "espn_id": "4431452"
   },
-  "00-0035676": {
-   "name": "A.J. Brown",
-   "team": "NE",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-19T01:51:00-04:00",
-   "detail": null,
-   "espn_id": "4047646"
-  },
   "00-0033090": {
    "name": "Hunter Henry",
    "team": "NE",
@@ -3428,7 +3419,7 @@
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
    "date": "2026-10-18T16:43:00-04:00",
-   "detail": "Ankle",
+   "detail": "Foot",
    "espn_id": "16771"
   },
   "name:NE:benbrown": {
@@ -3450,6 +3441,16 @@
    "date": "2026-10-18T15:31:00-04:00",
    "detail": "Hamstring",
    "espn_id": "4259646"
+  },
+  "name:NO:cesarruiz": {
+   "name": "Cesar Ruiz",
+   "team": "NO",
+   "pos": "G",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-19T20:17:00-04:00",
+   "detail": "Knee",
+   "espn_id": "4258199"
   },
   "00-0039424": {
    "name": "Devaughn Vele",
@@ -3592,16 +3593,6 @@
    "detail": "Neck",
    "espn_id": "4428350"
   },
-  "name:NO:cesarruiz": {
-   "name": "Cesar Ruiz",
-   "team": "NO",
-   "pos": "G",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-18T15:42:00-04:00",
-   "detail": "Knee",
-   "espn_id": "4258199"
-  },
   "00-0038979": {
    "name": "Cedric Tillman",
    "team": "NO",
@@ -3628,7 +3619,7 @@
    "pos": "OT",
    "status": "Out",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-10-19T19:42:00-04:00",
+   "date": "2026-10-19T20:19:00-04:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
@@ -4446,16 +4437,6 @@
    "date": "2026-10-19T18:50:00-04:00",
    "detail": null,
    "espn_id": "16737"
-  },
-  "name:SF:bretttoth": {
-   "name": "Brett Toth",
-   "team": "SF",
-   "pos": "C",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-19T17:56:00-04:00",
-   "detail": "Concussion",
-   "espn_id": "3129116"
   },
   "00-0034775": {
    "name": "Christian Kirk",
