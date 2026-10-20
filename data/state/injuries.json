@@ -1,5 +1,5 @@
 {
- "at": "2026-10-20T17:00:01-04:00",
+ "at": "2026-10-20T17:30:16-04:00",
  "source": "espn",
  "players": {
   "name:ARI:wydettwilliams": {
@@ -463,7 +463,7 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-10-20T16:01:00-04:00",
+   "date": "2026-10-20T17:00:00-04:00",
    "detail": "Suspension",
    "espn_id": "4034953"
   },
@@ -746,7 +746,7 @@
    "pos": "S",
    "status": "Injured Reserve",
    "fantasy": "IR",
-   "date": "2026-10-20T16:56:00-04:00",
+   "date": "2026-10-20T17:25:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
@@ -756,10 +756,10 @@
    "pos": "RB",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-10-20T12:10:00-04:00",
+   "date": "2026-10-20T17:20:00-04:00",
    "detail": "Toe",
    "espn_id": "4608686",
-   "comment": "questionable"
+   "comment": "Monangai (thumb/toe) was listed as a non-participant in Tuesday's walk-through."
   },
   "name:CHI:tjedwards": {
    "name": "T.J. Edwards",
@@ -1517,6 +1517,16 @@
    "detail": "Ankle",
    "espn_id": "4600981",
    "comment": "Bryant (ankle) was placed on the Broncos' injured reserve Friday."
+  },
+  "name:DET:kerbyjoseph": {
+   "name": "Kerby Joseph",
+   "team": "DET",
+   "pos": "S",
+   "status": "Out",
+   "fantasy": "PUP-R",
+   "date": "2026-10-20T17:14:00-04:00",
+   "detail": "Knee",
+   "espn_id": "4360383"
   },
   "name:DET:benbartch": {
    "name": "Ben Bartch",
@@ -3569,7 +3579,7 @@
    "pos": "OT",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-10-20T16:01:00-04:00",
+   "date": "2026-10-20T17:00:00-04:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
@@ -3918,16 +3928,6 @@
    "date": "2026-10-20T12:10:00-04:00",
    "detail": "Abdomen",
    "espn_id": "4240456"
-  },
-  "00-0040586": {
-   "name": "Jaydon Blue",
-   "team": "PHI",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-19T22:47:00-04:00",
-   "detail": null,
-   "espn_id": "4685279"
   },
   "00-0038393": {
    "name": "Dontayvion Wicks",
