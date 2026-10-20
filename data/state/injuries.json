@@ -1,5 +1,5 @@
 {
- "at": "2026-10-20T15:30:00-04:00",
+ "at": "2026-10-20T16:00:01-04:00",
  "source": "espn",
  "players": {
   "name:ARI:wydettwilliams": {
@@ -22,17 +22,6 @@
    "detail": "Knee",
    "espn_id": "3918331"
   },
-  "00-0041027": {
-   "name": "Jeremiyah Love",
-   "team": "ARI",
-   "pos": "RB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-20T12:10:00-04:00",
-   "detail": "Ankle",
-   "espn_id": "4870808",
-   "comment": "questionable"
-  },
   "00-0033307": {
    "name": "Kendrick Bourne",
    "team": "ARI",
@@ -42,6 +31,17 @@
    "date": "2026-10-19T20:22:00-04:00",
    "detail": null,
    "espn_id": "3045523"
+  },
+  "00-0041027": {
+   "name": "Jeremiyah Love",
+   "team": "ARI",
+   "pos": "RB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-19T19:21:00-04:00",
+   "detail": "Ankle",
+   "espn_id": "4870808",
+   "comment": "Head coach Mike LaFleur said Monday that Love (ankle) is expected to do some running Tuesday, Tyler Drake of ArizonaSports.com reports."
   },
   "00-0037157": {
    "name": "Bam Knight",
@@ -746,7 +746,7 @@
    "pos": "S",
    "status": "Injured Reserve",
    "fantasy": "IR",
-   "date": "2026-10-20T15:06:00-04:00",
+   "date": "2026-10-20T15:53:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
@@ -1053,6 +1053,17 @@
    "detail": null,
    "espn_id": "4690070"
   },
+  "00-0039386": {
+   "name": "Bub Means",
+   "team": "CLE",
+   "pos": "WR",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-10-20T15:52:00-04:00",
+   "detail": "Knee",
+   "espn_id": "4427985",
+   "comment": "out"
+  },
   "00-0040784": {
    "name": "Quinshon Judkins",
    "team": "CLE",
@@ -1223,17 +1234,6 @@
    "date": "2026-10-16T21:48:00-04:00",
    "detail": null,
    "espn_id": "4685540"
-  },
-  "00-0040162": {
-   "name": "Dylan Sampson",
-   "team": "CLE",
-   "pos": "RB",
-   "status": "Injured Reserve",
-   "fantasy": "IR-R",
-   "date": "2026-10-16T14:20:00-04:00",
-   "detail": "Knee",
-   "espn_id": "5081397",
-   "comment": "Sampson (knee) won't be activated from injured reserve ahead of Sunday's contest against the Ravens, Zac Jackson of The Athletic reports."
   },
   "name:DAL:demarvionovershown": {
    "name": "DeMarvion Overshown",
@@ -3240,6 +3240,17 @@
    "espn_id": "3921690",
    "comment": "The Vikings placed Oliver (biceps) on injured reserve Tuesday, Craig Peters of the team's official site reports."
   },
+  "00-0035676": {
+   "name": "A.J. Brown",
+   "team": "NE",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-20T15:42:00-04:00",
+   "detail": "Ankle",
+   "espn_id": "4047646",
+   "comment": "Brown (ankle) was spotted on the practice field Tuesday, according to Mike Reiss of ESPN.com."
+  },
   "name:NE:benbrown": {
    "name": "Ben Brown",
    "team": "NE",
@@ -3299,17 +3310,6 @@
    "date": "2026-10-19T21:15:00-04:00",
    "detail": null,
    "espn_id": "4431431"
-  },
-  "00-0035676": {
-   "name": "A.J. Brown",
-   "team": "NE",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-19T20:12:00-04:00",
-   "detail": "Ankle",
-   "espn_id": "4047646",
-   "comment": "Brown (ankle) was listed as limited on Monday's estimated practice report."
   },
   "00-0037816": {
    "name": "Romeo Doubs",
@@ -5309,6 +5309,10 @@
   "00-0040242": {
    "status": "Injured Reserve",
    "at": "2026-10-20T05:00:00-04:00"
+  },
+  "00-0039386": {
+   "status": "Out",
+   "at": "2026-10-20T16:00:01-04:00"
   }
  }
 }
