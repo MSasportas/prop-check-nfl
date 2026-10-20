@@ -2,15 +2,15 @@
  "season": 2026,
  "week": 7,
  "label": "Week 7",
- "generated_at": "2026-10-20T09:30:12-04:00",
- "status_at": "2026-10-20T09:30:12-04:00",
+ "generated_at": "2026-10-20T10:00:01-04:00",
+ "status_at": "2026-10-20T10:00:01-04:00",
  "valid_until": "2026-10-27T06:00:00-04:00",
- "next_check": "2026-10-20T10:00:00-04:00",
+ "next_check": "2026-10-20T16:00:00-04:00",
  "status": {
   "odds": {
    "state": "ok",
-   "at": "2026-10-20T05:00:00-04:00",
-   "next_at": "2026-10-20T10:00:00-04:00"
+   "at": "2026-10-20T10:00:01-04:00",
+   "next_at": "2026-10-20T16:00:00-04:00"
   },
   "injuries": {
    "state": "ok",
@@ -27,17 +27,17 @@
    "at": "2026-10-20T07:00:49-04:00"
   },
   "pool": {
-   "credits_left": 1270,
+   "credits_left": 1171,
    "keys": 7,
    "keys_live": 5,
    "keys_shared": 1,
-   "days_left": 3,
+   "days_left": 2,
    "low": false,
    "empty": false
   },
   "last_run": {
    "ok": true,
-   "at": "2026-10-20T09:30:12-04:00",
+   "at": "2026-10-20T10:00:01-04:00",
    "failed_step": null
   }
  },
@@ -56,7 +56,7 @@
    "score": null,
    "settled": "early",
    "props_state": "ok",
-   "props_at": "2026-10-20T05:00:00-04:00",
+   "props_at": "2026-10-20T10:00:01-04:00",
    "lines_at": "2026-10-20T05:00:00-04:00",
    "note": null,
    "picks": 1
@@ -72,10 +72,10 @@
    "final": false,
    "score": null,
    "settled": "early",
-   "props_state": "none_yet",
-   "props_at": null,
-   "lines_at": null,
-   "note": "No Hard Rock player props yet. Next check 10:00 AM.",
+   "props_state": "ok",
+   "props_at": "2026-10-20T10:00:01-04:00",
+   "lines_at": "2026-10-20T10:00:01-04:00",
+   "note": null,
    "picks": 0
   },
   {
@@ -92,7 +92,7 @@
    "props_state": "none_yet",
    "props_at": null,
    "lines_at": null,
-   "note": "No Hard Rock player props yet. Next check 10:00 AM.",
+   "note": "No Hard Rock player props yet. Next check 4:00 PM.",
    "picks": 0
   },
   {
@@ -109,7 +109,7 @@
    "props_state": "none_yet",
    "props_at": null,
    "lines_at": null,
-   "note": "No Hard Rock player props yet. Next check 10:00 AM.",
+   "note": "No Hard Rock player props yet. Next check 4:00 PM.",
    "picks": 0
   },
   {
@@ -126,7 +126,7 @@
    "props_state": "none_yet",
    "props_at": null,
    "lines_at": null,
-   "note": "No Hard Rock player props yet. Next check 10:00 AM.",
+   "note": "No Hard Rock player props yet. Next check 4:00 PM.",
    "picks": 0
   },
   {
@@ -143,7 +143,7 @@
    "props_state": "none_yet",
    "props_at": null,
    "lines_at": null,
-   "note": "No Hard Rock player props yet. Next check 10:00 AM.",
+   "note": "No Hard Rock player props yet. Next check 4:00 PM.",
    "picks": 0
   },
   {
@@ -160,7 +160,7 @@
    "props_state": "none_yet",
    "props_at": null,
    "lines_at": null,
-   "note": "No Hard Rock player props yet. Next check 10:00 AM.",
+   "note": "No Hard Rock player props yet. Next check 4:00 PM.",
    "picks": 0
   },
   {
@@ -177,7 +177,7 @@
    "props_state": "none_yet",
    "props_at": null,
    "lines_at": null,
-   "note": "No Hard Rock player props yet. Next check 10:00 AM.",
+   "note": "No Hard Rock player props yet. Next check 4:00 PM.",
    "picks": 0
   },
   {
@@ -194,7 +194,7 @@
    "props_state": "none_yet",
    "props_at": null,
    "lines_at": null,
-   "note": "No Hard Rock player props yet. Next check 10:00 AM.",
+   "note": "No Hard Rock player props yet. Next check 4:00 PM.",
    "picks": 0
   },
   {
@@ -211,7 +211,7 @@
    "props_state": "none_yet",
    "props_at": null,
    "lines_at": null,
-   "note": "No Hard Rock player props yet. Next check 10:00 AM.",
+   "note": "No Hard Rock player props yet. Next check 4:00 PM.",
    "picks": 0
   },
   {
@@ -225,10 +225,10 @@
    "final": false,
    "score": null,
    "settled": "early",
-   "props_state": "none_yet",
-   "props_at": null,
-   "lines_at": null,
-   "note": "No Hard Rock player props yet. Next check 10:00 AM.",
+   "props_state": "ok",
+   "props_at": "2026-10-20T10:00:01-04:00",
+   "lines_at": "2026-10-20T10:00:01-04:00",
+   "note": null,
    "picks": 0
   },
   {
@@ -245,7 +245,7 @@
    "props_state": "none_yet",
    "props_at": null,
    "lines_at": null,
-   "note": "No Hard Rock player props yet. Next check 10:00 AM.",
+   "note": "No Hard Rock player props yet. Next check 4:00 PM.",
    "picks": 0
   },
   {
@@ -259,10 +259,10 @@
    "final": false,
    "score": null,
    "settled": "early",
-   "props_state": "none_yet",
-   "props_at": null,
-   "lines_at": null,
-   "note": "No Hard Rock player props yet. Next check 10:00 AM.",
+   "props_state": "ok",
+   "props_at": "2026-10-20T10:00:01-04:00",
+   "lines_at": "2026-10-20T10:00:01-04:00",
+   "note": null,
    "picks": 0
   },
   {
@@ -279,7 +279,7 @@
    "props_state": "none_yet",
    "props_at": null,
    "lines_at": null,
-   "note": "No Hard Rock player props yet. Next check 10:00 AM.",
+   "note": "No Hard Rock player props yet. Next check 4:00 PM.",
    "picks": 0
   }
  ],
@@ -304,7 +304,7 @@
    "bet": "Under 7.5 receiving yards",
    "book": "Hard Rock",
    "price": -110,
-   "price_at": "2026-10-20T05:00:00-04:00",
+   "price_at": "2026-10-20T10:00:01-04:00",
    "first_price": -110,
    "first_price_at": "2026-10-20T05:00:00-04:00",
    "grade_price": -110,
