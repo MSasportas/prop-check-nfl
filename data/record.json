@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-20T05:00:00-04:00",
+ "generated_at": "2026-10-20T11:30:04-04:00",
  "season": 2026,
  "summary": {
   "headline": {
@@ -165,6 +165,37 @@
   ]
  },
  "weeks": [
+  {
+   "week": 7,
+   "slate": "2026-W07",
+   "label": "Week 7",
+   "graded": false,
+   "w": 0,
+   "l": 0,
+   "units": 0,
+   "entries": [
+    {
+     "id": "2026-W07:2026_07_NE_CHI:00-0036875:rec_yds:1H:7.5:under",
+     "kind": "single",
+     "date": "2026-10-22",
+     "game": "NE at CHI",
+     "player": "R. Stevenson",
+     "team": "NE",
+     "market": "rec_yds",
+     "period": "1H",
+     "bet": "Under 7.5 receiving yards",
+     "price": -110,
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": {
+      "at": "2026-10-20T11:30:04-04:00",
+      "reason": "Rules tightened: His role swings too much game to game."
+     },
+     "legs": []
+    }
+   ]
+  },
   {
    "week": 6,
    "slate": "2026-W06",

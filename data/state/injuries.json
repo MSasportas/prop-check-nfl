@@ -1,5 +1,5 @@
 {
- "at": "2026-10-20T11:00:00-04:00",
+ "at": "2026-10-20T11:30:04-04:00",
  "source": "espn",
  "players": {
   "00-0033307": {
@@ -463,7 +463,7 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-10-20T10:24:00-04:00",
+   "date": "2026-10-20T11:21:00-04:00",
    "detail": "Suspension",
    "espn_id": "4034953"
   },
@@ -746,7 +746,7 @@
    "pos": "S",
    "status": "Injured Reserve",
    "fantasy": "IR",
-   "date": "2026-10-20T10:55:00-04:00",
+   "date": "2026-10-20T11:01:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
@@ -1756,7 +1756,7 @@
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
    "date": "2026-10-18T23:36:00-04:00",
-   "detail": "Neck",
+   "detail": "Shoulder",
    "espn_id": "5076652"
   },
   "name:GB:aaronbanks": {
@@ -3086,16 +3086,6 @@
    "detail": null,
    "espn_id": "4682745"
   },
-  "name:MIA:stormduck": {
-   "name": "Storm Duck",
-   "team": "MIA",
-   "pos": "CB",
-   "status": "Out",
-   "fantasy": "PUP-R",
-   "date": "2026-10-10T20:56:00-04:00",
-   "detail": "Knee",
-   "espn_id": "4427103"
-  },
   "00-0041525": {
    "name": "Chris Bell",
    "team": "MIA",
@@ -3579,7 +3569,7 @@
    "pos": "OT",
    "status": "Out",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-10-20T10:24:00-04:00",
+   "date": "2026-10-20T11:23:00-04:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
@@ -3734,16 +3724,6 @@
    "date": "2026-10-18T15:26:00-04:00",
    "detail": "Concussion",
    "espn_id": "4361266"
-  },
-  "00-0036893": {
-   "name": "Najee Harris",
-   "team": "NYG",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-18T10:08:00-04:00",
-   "detail": null,
-   "espn_id": "4241457"
   },
   "00-0034419": {
    "name": "Braxton Berrios",

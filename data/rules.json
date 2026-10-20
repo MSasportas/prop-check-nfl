@@ -1,6 +1,6 @@
 {
- "version": "1.0",
- "updated": "2026-10-13",
+ "version": "1.1",
+ "updated": "2026-10-20",
  "values": {
   "price_gate": -200,
   "max_price": 120,
@@ -40,7 +40,7 @@
   "margin_injury": 0.03,
   "margin_inactives": 0.02,
   "news_gap": 0.15,
-  "too_good": 0.2,
+  "too_good": 0.15,
   "gap_uses": "model_adj",
   "hold_min": 0.03,
   "hold_max": 0.1,
@@ -51,7 +51,8 @@
    "max_missed": 2,
    "min_games_with_team": 3,
    "max_role_cv": 0.6,
-   "jump": 0.4
+   "jump": 0.4,
+   "role_cv_blocks": "both"
   },
   "status_no_pick": [
    "Questionable",
@@ -97,8 +98,8 @@
   "parlay_min_p_2": 0.34,
   "parlay_min_p_3": 0.2,
   "parlay_edge": 0.03,
-  "parlay_cap": 3,
-  "parlay_leg_max_use": 2,
+  "parlay_cap": 2,
+  "parlay_leg_max_use": 1,
   "stake": 1,
   "f_days_before": 5,
   "f_min_player_markets": 15,
@@ -160,6 +161,22 @@
     ]
    }
   },
+  "room_change": {
+   "target_share": 0.08,
+   "carry_share": 0.25,
+   "lookback_games": 4,
+   "team_games_after": 2,
+   "positions": [
+    "WR",
+    "TE",
+    "RB"
+   ],
+   "leave_statuses": [
+    "RES"
+   ],
+   "max_wait_team_games": 6,
+   "effect": "a WR/TE/RB with target_share+ of his team's targets or carry_share+ of its carries over his last lookback_games games for that team joins a new team or leaves one: no new picks (over or under) in that team's same room (key_out.rooms) until the team has played team_games_after games since the change. Join: rows or the weekly roster put him on a new team; it clears once he has played team_games_after games for it (or the team has played max_wait_team_games games since his last old-team game without him playing). Leave: he has rows for another team after his last game for this one, is on another team's roster, is off every weekly roster (cut, released, traded), or his roster status is in leave_statuses (RES = IR, PUP, NFI); clears once his old team has played team_games_after games since his last game for it. A weekly Out is not a leave. Shown picks in the room are pulled."
+  },
   "qb_change": {
    "statuses": [
     "Doubtful",
@@ -218,6 +235,7 @@
   "drift_applies": "until inactives confirmed (states early and injury)",
   "near_pick": "passes every eligibility rule and margin >= near_pick_margin; used only to choose what pull C re-checks",
   "reason_max_chars": 140,
+  "new_pick_max_price_age_hours": 6,
   "min_sample": 30
  },
  "text": [
@@ -227,12 +245,15 @@
   "Our chance mixes our model (60%) with Hard Rock's own price (40%). The model's number is trimmed a little first, more for markets it reads less well.",
   "We only pick when our model gives at least 62%, our chance is at least 57%, and it beats the price's the price needs (what it takes to break even) by 4 points early, 3 once the injury report is in, 2 once inactives are in.",
   "No pick on a player listed questionable or worse at any point this week, or who missed his team's last game until the injury report clears him.",
-  "No overs on a player with fewer than 8 recent games, a new team, a big role change, or a new starting QB.",
+  "No overs on a player with fewer than 8 recent games, a new team, or a new starting QB.",
+  "No pick either way on a player whose role swings a lot from game to game.",
+  "When a receiver or back with a big share of his team's targets or carries joins or leaves a team, that team's receiving or rushing picks wait 2 games.",
+  "No new pick from a Hard Rock price more than 6 hours old.",
   "No passing or deep-catch overs in wind of 15 mph or more at kickoff.",
   "At most 1 pick per player, 2 per team and 3 per game.",
   "1st half spreads show DraftKings numbers for reference. They are never picks.",
   "A pick is pulled if the player is ruled out or inactive, the price goes past -200, or the line moves or comes down.",
-  "Parlays are 2 or 3 legs from the top picks, each leg in a different game.",
+  "Parlays are 2 or 3 legs from the top picks, each leg in a different game, up to 2 a game day, each pick in at most 1.",
   "Picks lock at kickoff. Results come from the official stats once the game is final.",
   "The Record grades every pick at the worst Hard Rock price shown, 1 unit each. Pulled picks are graded too and shown as pulled."
  ],

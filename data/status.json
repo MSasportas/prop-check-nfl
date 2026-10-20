@@ -3,16 +3,16 @@
  "season": 2026,
  "week": 7,
  "slate": "2026-W07",
- "started_at": "2026-10-20T11:00:00-04:00",
- "status_at": "2026-10-20T11:00:00-04:00",
- "finished_at": "2026-10-20T11:00:04-04:00",
- "last_ok_at": "2026-10-20T11:00:00-04:00",
+ "started_at": "2026-10-20T11:30:04-04:00",
+ "status_at": "2026-10-20T11:30:04-04:00",
+ "finished_at": "2026-10-20T11:30:05-04:00",
+ "last_ok_at": "2026-10-20T11:30:04-04:00",
  "failed_step": null,
  "steps": [
   {
    "step": "rules",
-   "status": "skipped",
-   "note": "unchanged"
+   "status": "ok",
+   "note": "rules.json written"
   },
   {
    "step": "schedule",
@@ -22,7 +22,7 @@
   {
    "step": "stats",
    "status": "skipped",
-   "note": "checked at 10:30 AM"
+   "note": "play-by-play unchanged (6436955 bytes)"
   },
   {
    "step": "roster",
@@ -32,12 +32,12 @@
   {
    "step": "injuries",
    "status": "ok",
-   "note": "espn: 146 out, 50 questionable"
+   "note": "espn: 145 out, 50 questionable"
   },
   {
    "step": "weather",
-   "status": "ok",
-   "note": "1 read, 0 failed, 0 indoors"
+   "status": "skipped",
+   "note": "nothing due (0 indoors)"
   },
   {
    "step": "odds",
@@ -47,7 +47,7 @@
   {
    "step": "engine",
    "status": "ok",
-   "note": "no change"
+   "note": "1 new event(s): 0 shown, 1 pulled"
   },
   {
    "step": "grade",
@@ -57,7 +57,7 @@
   {
    "step": "slate",
    "status": "ok",
-   "note": "1 open pick(s), 0 parlay(s)"
+   "note": "0 open pick(s), 0 parlay(s)"
   },
   {
    "step": "research",
@@ -66,8 +66,8 @@
   },
   {
    "step": "record",
-   "status": "skipped",
-   "note": "unchanged"
+   "status": "ok",
+   "note": "record.json"
   }
  ],
  "sources": {
@@ -136,19 +136,19 @@
  "behind": {},
  "stats_problems": [],
  "games_this_week": 14,
- "record_events": 192,
+ "record_events": 193,
  "grade_checks": [],
  "odds_notes": [],
  "runner": {
   "event": "workflow_dispatch",
-  "run_id": "39439789345",
+  "run_id": "39444376982",
   "iteration": 2,
-  "chain_link": 738,
+  "chain_link": 739,
   "chain_started_at": "2026-10-18T20:10:54-04:00",
-  "run_started_at": "2026-10-20T10:30:17-04:00"
+  "run_started_at": "2026-10-20T11:00:18-04:00"
  },
  "live_page": {
-  "checked_at": "2026-10-20T10:30:00-04:00",
+  "checked_at": "2026-10-20T11:30:04-04:00",
   "http": 200,
   "is_page": true
  }
