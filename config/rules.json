@@ -163,7 +163,7 @@
    }
   },
   "room_change": {
-   "target_share": 0.15,
+   "target_share": 0.08,
    "carry_share": 0.25,
    "lookback_games": 4,
    "team_games_after": 2,

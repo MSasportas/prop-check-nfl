@@ -229,7 +229,7 @@ class RoomChange(unittest.TestCase):
         self.assertIsNone(inp.room_change(g, "ARI", "rush_att"))
 
     def test_small_share_is_ignored(self):
-        rows = [("wr3", "ARI", w, 2, 0) for w in (1, 2, 3, 4)]               # 2 of 22 = 9%
+        rows = [("wr3", "ARI", w, 1, 0) for w in (1, 2, 3, 4)]               # 1 of 21 = 5%
         st = store_with({"wr3": ["Wide Three", "WR"]}, self.TEAMS, rows)
         inp, g = inputs(st, {"wr3": self.person("HOU"), "fill-HOU": self.person("HOU")}, 6)
         self.assertIsNone(inp.room_change(g, "HOU", "rec"))

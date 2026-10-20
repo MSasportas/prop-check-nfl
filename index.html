@@ -732,7 +732,8 @@ function poolInfo(st) {
   arr(S.slate && S.slate.games).filter(isObj).forEach(function (g) { var k = ms(g.kickoff); if (!g.started && k && k > now() && (next == null || k < next)) next = k; });
   var need = next == null ? 0 : Math.ceil((next - now()) / 86400000);
   var t = 'about ' + n + (n === 1 ? ' day' : ' days') + ' of odds left';
-  if (p.low === true || n < need) return { cls: 'warnt', text: 'Odds low: ' + t };
+  /* days_left is a burn-rate guess skewed by Sunday's heavy pulls; the backend's low flag (tier-based) is the real signal */
+  if (p.low === true) return { cls: 'warnt', text: 'Odds low: ' + t };
   return { cls: null, text: 'Odds OK' };
 }
 function statusLine(sl) {
