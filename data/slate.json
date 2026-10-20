@@ -2,8 +2,8 @@
  "season": 2026,
  "week": 6,
  "label": "Week 6",
- "generated_at": "2026-10-19T23:30:01-04:00",
- "status_at": "2026-10-19T23:30:01-04:00",
+ "generated_at": "2026-10-20T00:00:01-04:00",
+ "status_at": "2026-10-20T00:00:01-04:00",
  "valid_until": "2026-10-20T06:00:00-04:00",
  "next_check": null,
  "status": {
@@ -14,7 +14,7 @@
   },
   "injuries": {
    "state": "ok",
-   "at": "2026-10-19T23:30:01-04:00"
+   "at": "2026-10-20T00:00:01-04:00"
   },
   "inactives": {
    "state": "ok",
@@ -31,13 +31,13 @@
    "keys": 7,
    "keys_live": 5,
    "keys_shared": 1,
-   "days_left": 1,
+   "days_left": 3,
    "low": false,
    "empty": false
   },
   "last_run": {
    "ok": true,
-   "at": "2026-10-19T23:30:01-04:00",
+   "at": "2026-10-20T00:00:01-04:00",
    "failed_step": null
   }
  },
