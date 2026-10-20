@@ -1,5 +1,5 @@
 {
- "at": "2026-10-20T17:30:16-04:00",
+ "at": "2026-10-20T18:30:00-04:00",
  "source": "espn",
  "players": {
   "name:ARI:wydettwilliams": {
@@ -463,7 +463,7 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-10-20T17:00:00-04:00",
+   "date": "2026-10-20T18:17:00-04:00",
    "detail": "Suspension",
    "espn_id": "4034953"
   },
@@ -746,7 +746,7 @@
    "pos": "S",
    "status": "Injured Reserve",
    "fantasy": "IR",
-   "date": "2026-10-20T17:25:00-04:00",
+   "date": "2026-10-20T18:25:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
@@ -761,16 +761,6 @@
    "espn_id": "4608686",
    "comment": "Monangai (thumb/toe) was listed as a non-participant in Tuesday's walk-through."
   },
-  "name:CHI:tjedwards": {
-   "name": "T.J. Edwards",
-   "team": "CHI",
-   "pos": "LB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-20T12:10:00-04:00",
-   "detail": "Hamstring",
-   "espn_id": "3121544"
-  },
   "name:CHI:jonahjackson": {
    "name": "Jonah Jackson",
    "team": "CHI",
@@ -780,6 +770,16 @@
    "date": "2026-10-19T22:39:00-04:00",
    "detail": "Hip",
    "espn_id": "3930040"
+  },
+  "name:CHI:tjedwards": {
+   "name": "T.J. Edwards",
+   "team": "CHI",
+   "pos": "LB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-19T20:21:00-04:00",
+   "detail": "Hamstring",
+   "espn_id": "3121544"
   },
   "name:CHI:jacksanborn": {
    "name": "Jack Sanborn",
@@ -2773,6 +2773,28 @@
    "detail": "Undisclosed",
    "espn_id": "2579621"
   },
+  "00-0040737": {
+   "name": "Terrance Ferguson",
+   "team": "LA",
+   "pos": "TE",
+   "status": "Injured Reserve",
+   "fantasy": "IR",
+   "date": "2026-10-20T18:14:00-04:00",
+   "detail": "Ankle",
+   "espn_id": "4570037",
+   "comment": "Ferguson (ankle), who is eligible to come off injured reserve next week, isn't expected to be ready at that time, Adam Schefter of ESPN reports."
+  },
+  "00-0031381": {
+   "name": "Davante Adams",
+   "team": "LA",
+   "pos": "WR",
+   "status": "Injured Reserve",
+   "fantasy": "IR",
+   "date": "2026-10-20T17:36:00-04:00",
+   "detail": "Hamstring",
+   "espn_id": "16800",
+   "comment": "Adams (hamstring) was placed on injured reserve Tuesday, Ian Rapoport of NFL Network reports."
+  },
   "name:LA:trentmcduffie": {
    "name": "Trent McDuffie",
    "team": "LA",
@@ -2832,17 +2854,6 @@
    "date": "2026-10-19T17:45:00-04:00",
    "detail": "Knee",
    "espn_id": "3122132"
-  },
-  "00-0031381": {
-   "name": "Davante Adams",
-   "team": "LA",
-   "pos": "WR",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-19T17:31:00-04:00",
-   "detail": "Hamstring",
-   "espn_id": "16800",
-   "comment": "Adams sustained a ruptured left hamstring in Sunday's 18-16 loss to the Cardinals and is slated to undergo a procedure that he hopes will allow him to return \"a"
   },
   "00-0041399": {
    "name": "CJ Daniels",
@@ -3250,16 +3261,27 @@
    "espn_id": "3921690",
    "comment": "The Vikings placed Oliver (biceps) on injured reserve Tuesday, Craig Peters of the team's official site reports."
   },
+  "00-0040570": {
+   "name": "Jeremiah Webb",
+   "team": "NE",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-20T18:13:00-04:00",
+   "detail": "Arm",
+   "espn_id": "4572655",
+   "comment": "questionable"
+  },
   "00-0035676": {
    "name": "A.J. Brown",
    "team": "NE",
    "pos": "WR",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-10-20T15:42:00-04:00",
+   "date": "2026-10-20T18:01:00-04:00",
    "detail": "Ankle",
    "espn_id": "4047646",
-   "comment": "Brown (ankle) was spotted on the practice field Tuesday, according to Mike Reiss of ESPN.com."
+   "comment": "Brown (ankle) was listed as a limited participant on Tuesday's practice report."
   },
   "name:NE:benbrown": {
    "name": "Ben Brown",
@@ -3301,16 +3323,6 @@
    "detail": "Hamstring",
    "espn_id": "4688779"
   },
-  "name:NE:carltondavis": {
-   "name": "Carlton Davis III",
-   "team": "NE",
-   "pos": "CB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-20T12:10:00-04:00",
-   "detail": "Neck",
-   "espn_id": "3916923"
-  },
   "00-0040556": {
    "name": "Corey Kiner",
    "team": "NE",
@@ -3320,6 +3332,16 @@
    "date": "2026-10-19T21:15:00-04:00",
    "detail": null,
    "espn_id": "4431431"
+  },
+  "name:NE:carltondavis": {
+   "name": "Carlton Davis III",
+   "team": "NE",
+   "pos": "CB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-19T20:32:00-04:00",
+   "detail": "Neck",
+   "espn_id": "3916923"
   },
   "00-0037816": {
    "name": "Romeo Doubs",
@@ -3579,7 +3601,7 @@
    "pos": "OT",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-10-20T17:00:00-04:00",
+   "date": "2026-10-20T18:17:00-04:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
@@ -3888,6 +3910,17 @@
    "detail": null,
    "espn_id": "4569371"
   },
+  "00-0039325": {
+   "name": "Carson Steele",
+   "team": "PHI",
+   "pos": "RB",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-10-20T18:17:00-04:00",
+   "detail": "Shoulder",
+   "espn_id": "4714365",
+   "comment": "out"
+  },
   "name:PHI:ajepenesa": {
    "name": "AJ Epenesa",
    "team": "PHI",
@@ -4029,17 +4062,6 @@
    "date": "2026-10-18T14:22:00-04:00",
    "detail": "Concussion",
    "espn_id": "4426331"
-  },
-  "00-0039325": {
-   "name": "Carson Steele",
-   "team": "PHI",
-   "pos": "RB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-18T13:43:00-04:00",
-   "detail": "Shoulder",
-   "espn_id": "4714365",
-   "comment": "Steele is questionable to return to Sunday's game against the Panthers due to a right shoulder injury."
   },
   "00-0040891": {
    "name": "Cole Payton",
@@ -4276,6 +4298,16 @@
    "espn_id": "4035687",
    "comment": "The Steelers placed Pittman (foot) on injured reserve Saturday."
   },
+  "00-0039365": {
+   "name": "Jacob Cowing",
+   "team": "SF",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-20T17:56:00-04:00",
+   "detail": null,
+   "espn_id": "4575665"
+  },
   "name:SF:marquessigle": {
    "name": "Marques Sigle",
    "team": "SF",
@@ -4418,16 +4450,6 @@
    "detail": "Calf",
    "espn_id": "3895856",
    "comment": "The 49ers downgraded Kirk (calf) to out for Monday's game against the Commanders, Matt Maiocco of NBC Sports Bay Area reports."
-  },
-  "00-0029892": {
-   "name": "Kyle Juszczyk",
-   "team": "SF",
-   "pos": "FB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-16T19:21:00-04:00",
-   "detail": null,
-   "espn_id": "16002"
   },
   "name:SEA:chazzsurratt": {
    "name": "Chazz Surratt",
@@ -4895,6 +4917,26 @@
    "detail": null,
    "espn_id": "4240657"
   },
+  "00-0036626": {
+   "name": "Dyami Brown",
+   "team": "WAS",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-20T17:44:00-04:00",
+   "detail": null,
+   "espn_id": "4361577"
+  },
+  "00-0033955": {
+   "name": "Jeremy McNichols",
+   "team": "WAS",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-20T17:32:00-04:00",
+   "detail": null,
+   "espn_id": "3127586"
+  },
   "00-0035659": {
    "name": "Terry McLaurin",
    "team": "WAS",
@@ -4904,7 +4946,7 @@
    "date": "2026-10-20T15:18:00-04:00",
    "detail": "Knee",
    "espn_id": "3121422",
-   "comment": "Coach Dan Quinn noted Tuesday that McLaurin tore his left patellar tendon during Monday's loss to the 49ers, according to John Keim of ESPN.com."
+   "comment": "McLaurin tore his left patellar tendon during Monday's loss to the 49ers, according to John Keim of ESPN.com."
   },
   "name:WAS:charlesomenihu": {
    "name": "Charles Omenihu",
@@ -4997,16 +5039,6 @@
    "detail": "Pectoral",
    "espn_id": "4361357"
   },
-  "00-0033955": {
-   "name": "Jeremy McNichols",
-   "team": "WAS",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-19T19:12:00-04:00",
-   "detail": null,
-   "espn_id": "3127586"
-  },
   "00-0040242": {
    "name": "Jacory Croskey-Merritt",
    "team": "WAS",
@@ -5027,16 +5059,6 @@
    "date": "2026-10-19T16:14:00-04:00",
    "detail": null,
    "espn_id": "2976212"
-  },
-  "00-0033699": {
-   "name": "Austin Ekeler",
-   "team": "WAS",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-17T15:36:00-04:00",
-   "detail": null,
-   "espn_id": "3068267"
   }
  },
  "last_fail_at": null,
@@ -5313,6 +5335,14 @@
   "00-0039386": {
    "status": "Out",
    "at": "2026-10-20T16:00:01-04:00"
+  },
+  "00-0040737": {
+   "status": "Injured Reserve",
+   "at": "2026-10-20T18:30:00-04:00"
+  },
+  "00-0040570": {
+   "status": "Questionable",
+   "at": "2026-10-20T18:30:00-04:00"
   }
  }
 }
