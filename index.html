@@ -727,10 +727,6 @@ function poolInfo(st) {
   if (p.empty === true) return { cls: 'badt', text: 'Out of odds keys' };
   if (n == null) return null;
   n = Math.max(0, Math.floor(n));
-  /* days until the next game day that hasn't started: odds only run "low" if they won't last until then */
-  var next = null;
-  arr(S.slate && S.slate.games).filter(isObj).forEach(function (g) { var k = ms(g.kickoff); if (!g.started && k && k > now() && (next == null || k < next)) next = k; });
-  var need = next == null ? 0 : Math.ceil((next - now()) / 86400000);
   var t = 'about ' + n + (n === 1 ? ' day' : ' days') + ' of odds left';
   /* days_left is a burn-rate guess skewed by Sunday's heavy pulls; the backend's low flag (tier-based) is the real signal */
   if (p.low === true) return { cls: 'warnt', text: 'Odds low: ' + t };
