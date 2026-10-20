@@ -3,10 +3,10 @@
  "season": 2026,
  "week": 6,
  "slate": "2026-W06",
- "started_at": "2026-10-20T01:10:08-04:00",
- "status_at": "2026-10-20T01:10:08-04:00",
- "finished_at": "2026-10-20T01:10:09-04:00",
- "last_ok_at": "2026-10-20T01:10:08-04:00",
+ "started_at": "2026-10-20T02:00:00-04:00",
+ "status_at": "2026-10-20T02:00:00-04:00",
+ "finished_at": "2026-10-20T02:00:01-04:00",
+ "last_ok_at": "2026-10-20T02:00:00-04:00",
  "failed_step": null,
  "steps": [
   {
@@ -22,7 +22,7 @@
   {
    "step": "stats",
    "status": "skipped",
-   "note": "checked at 12:50 AM"
+   "note": "play-by-play unchanged (6436955 bytes)"
   },
   {
    "step": "roster",
@@ -146,13 +146,13 @@
  "runner": {
   "event": "workflow_dispatch",
   "run_id": "39373425128",
-  "iteration": 1,
+  "iteration": 2,
   "chain_link": 436,
   "chain_started_at": "2026-10-18T20:10:54-04:00",
   "run_started_at": "2026-10-20T01:10:08-04:00"
  },
  "live_page": {
-  "checked_at": "2026-10-20T00:50:00-04:00",
+  "checked_at": "2026-10-20T02:00:00-04:00",
   "http": 200,
   "is_page": true
  }
