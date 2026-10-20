@@ -1,5 +1,5 @@
 {
- "at": "2026-10-19T19:50:16-04:00",
+ "at": "2026-10-19T20:00:00-04:00",
  "source": "espn",
  "players": {
   "00-0041027": {
@@ -473,7 +473,7 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-10-19T19:40:00-04:00",
+   "date": "2026-10-19T19:42:00-04:00",
    "detail": "Suspension",
    "espn_id": "4034953"
   },
@@ -766,7 +766,7 @@
    "pos": "S",
    "status": "Injured Reserve",
    "fantasy": "IR",
-   "date": "2026-10-19T19:35:00-04:00",
+   "date": "2026-10-19T19:42:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
@@ -1083,6 +1083,16 @@
    "detail": null,
    "espn_id": "4690070"
   },
+  "00-0039373": {
+   "name": "Audric Estime",
+   "team": "CLE",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-19T19:44:00-04:00",
+   "detail": null,
+   "espn_id": "4569682"
+  },
   "name:CLE:tevenjenkins": {
    "name": "Teven Jenkins",
    "team": "CLE",
@@ -1254,16 +1264,6 @@
    "detail": "Knee",
    "espn_id": "5081397",
    "comment": "Sampson (knee) won't be activated from injured reserve ahead of Sunday's contest against the Ravens, Zac Jackson of The Athletic reports."
-  },
-  "00-0039373": {
-   "name": "Audric Estime",
-   "team": "CLE",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-13T17:45:00-04:00",
-   "detail": null,
-   "espn_id": "4569682"
   },
   "name:DAL:deewinters": {
    "name": "Dee Winters",
@@ -3618,7 +3618,7 @@
    "pos": "OT",
    "status": "Out",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-10-19T19:40:00-04:00",
+   "date": "2026-10-19T19:42:00-04:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
