@@ -3,10 +3,10 @@
  "season": 2026,
  "week": 6,
  "slate": "2026-W06",
- "started_at": "2026-10-19T23:10:00-04:00",
- "status_at": "2026-10-19T23:10:00-04:00",
- "finished_at": "2026-10-19T23:10:01-04:00",
- "last_ok_at": "2026-10-19T23:10:00-04:00",
+ "started_at": "2026-10-19T23:30:01-04:00",
+ "status_at": "2026-10-19T23:30:01-04:00",
+ "finished_at": "2026-10-19T23:30:02-04:00",
+ "last_ok_at": "2026-10-19T23:30:01-04:00",
  "failed_step": null,
  "steps": [
   {
@@ -31,8 +31,8 @@
   },
   {
    "step": "injuries",
-   "status": "skipped",
-   "note": "read at 10:50 PM; inactives posted for 26 team(s)"
+   "status": "ok",
+   "note": "espn: 151 out, 49 questionable; inactives posted for 26 team(s)"
   },
   {
    "step": "weather",
@@ -51,23 +51,23 @@
   },
   {
    "step": "grade",
-   "status": "skipped",
-   "note": "nothing to grade"
+   "status": "ok",
+   "note": "6 graded"
   },
   {
    "step": "slate",
-   "status": "skipped",
-   "note": "unchanged"
+   "status": "ok",
+   "note": "0 open pick(s), 0 parlay(s)"
   },
   {
    "step": "research",
    "status": "ok",
-   "note": "0 game file(s) written"
+   "note": "14 game file(s) written"
   },
   {
    "step": "record",
-   "status": "skipped",
-   "note": "unchanged"
+   "status": "ok",
+   "note": "record.json"
   }
  ],
  "sources": {
@@ -137,19 +137,22 @@
   "James Jordan"
  ],
  "unknown_teams": [],
- "behind": {},
+ "behind": {
+  "WAS": "last game's stats are not in yet",
+  "SF": "last game's stats are not in yet"
+ },
  "stats_problems": [],
  "games_this_week": 14,
- "record_events": 185,
+ "record_events": 191,
  "grade_checks": [],
  "odds_notes": [],
  "runner": {
   "event": "workflow_dispatch",
-  "run_id": "39358338563",
-  "iteration": 6,
-  "chain_link": 382,
+  "run_id": "39362854505",
+  "iteration": 3,
+  "chain_link": 383,
   "chain_started_at": "2026-10-18T20:10:54-04:00",
-  "run_started_at": "2026-10-19T22:20:14-04:00"
+  "run_started_at": "2026-10-19T23:10:12-04:00"
  },
  "live_page": {
   "checked_at": "2026-10-19T22:40:01-04:00",
