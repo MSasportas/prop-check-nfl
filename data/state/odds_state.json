@@ -16,7 +16,7 @@
   "2026_07_KC_SEA": "176d474ed8b2bbf1eb4d7e9c56b4bf22",
   "2026_07_DAL_PHI": "4853610e63c246f2027a6a248e642c9a"
  },
- "events_at": "2026-10-20T11:00:00-04:00",
+ "events_at": "2026-10-20T17:00:01-04:00",
  "unknown_teams": [],
  "done": {
   "2026_07_NE_CHI": [
@@ -1259,14 +1259,14 @@
  "fail_note": null,
  "key_count": 7,
  "plan": {
-  "allowance": 70.77,
+  "allowance": 70.4,
   "tier": "full",
   "pulls": "MFRC",
-  "pool_at_plan": 1061.5,
+  "pool_at_plan": 1056.0,
   "games_left": 15,
-  "pool_raw": 1140,
+  "pool_raw": 1129,
   "keys_shared": 1,
-  "made_at": "2026-10-20T16:00:01-04:00"
+  "made_at": "2026-10-20T17:00:01-04:00"
  },
  "failed": {}
 }
