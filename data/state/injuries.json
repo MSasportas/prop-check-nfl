@@ -1,5 +1,5 @@
 {
- "at": "2026-10-19T22:20:00-04:00",
+ "at": "2026-10-19T22:50:01-04:00",
  "source": "espn",
  "players": {
   "00-0033307": {
@@ -739,16 +739,6 @@
    "date": "2026-10-05T23:00:00-04:00",
    "detail": null,
    "espn_id": "4360763"
-  },
-  "00-0037614": {
-   "name": "John Metchie III",
-   "team": "CAR",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-05T22:21:00-04:00",
-   "detail": null,
-   "espn_id": "4567096"
   },
   "name:CHI:anthonyjohnson": {
    "name": "Anthony Johnson Jr.",
@@ -2136,6 +2126,16 @@
    "detail": null,
    "espn_id": "4686468"
   },
+  "00-0041100": {
+   "name": "Josh Cameron",
+   "team": "JAX",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-19T22:26:00-04:00",
+   "detail": null,
+   "espn_id": "4879194"
+  },
   "00-0041503": {
    "name": "Nate Boerkircher",
    "team": "JAX",
@@ -2275,16 +2275,6 @@
    "date": "2026-10-18T12:34:00-04:00",
    "detail": null,
    "espn_id": "2576336"
-  },
-  "00-0041100": {
-   "name": "Josh Cameron",
-   "team": "JAX",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-13T20:58:00-04:00",
-   "detail": null,
-   "espn_id": "4879194"
   },
   "name:JAX:antonharrison": {
    "name": "Anton Harrison",
@@ -2438,6 +2428,16 @@
    "espn_id": "4362921",
    "comment": "The Chiefs placed Thornton (ankle) on injured reserve Tuesday."
   },
+  "00-0041562": {
+   "name": "Fernando Mendoza",
+   "team": "LV",
+   "pos": "QB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-19T22:36:00-04:00",
+   "detail": null,
+   "espn_id": "4837248"
+  },
   "name:LV:tonkahemingway": {
    "name": "Tonka Hemingway",
    "team": "LV",
@@ -2569,16 +2569,6 @@
    "date": "2026-10-11T22:33:00-04:00",
    "detail": null,
    "espn_id": "4366963"
-  },
-  "00-0041562": {
-   "name": "Fernando Mendoza",
-   "team": "LV",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-11T21:06:00-04:00",
-   "detail": null,
-   "espn_id": "4837248"
   },
   "00-0038046": {
    "name": "Charlie Kolar",
@@ -3422,6 +3412,16 @@
    "detail": "Hamstring",
    "espn_id": "4259646"
   },
+  "00-0041326": {
+   "name": "CJ Donaldson",
+   "team": "NO",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-19T22:15:00-04:00",
+   "detail": null,
+   "espn_id": "5081999"
+  },
   "name:NO:cesarruiz": {
    "name": "Cesar Ruiz",
    "team": "NO",
@@ -3572,16 +3572,6 @@
    "date": "2026-10-18T16:59:00-04:00",
    "detail": "Neck",
    "espn_id": "4428350"
-  },
-  "00-0035644": {
-   "name": "Noah Fant",
-   "team": "NO",
-   "pos": "TE",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-13T19:55:00-04:00",
-   "detail": null,
-   "espn_id": "4036131"
   },
   "name:NYG:jermaineeluemunor": {
    "name": "Jermaine Eluemunor",
@@ -3766,6 +3756,26 @@
    "espn_id": "3123075",
    "comment": "Berrios (foot) underwent successful surgery Friday to repair a Lisfranc injury, Jordan Raanan of ESPN.com reports."
   },
+  "00-0039798": {
+   "name": "Isaiah Davis",
+   "team": "NYJ",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-19T22:37:00-04:00",
+   "detail": null,
+   "espn_id": "4695404"
+  },
+  "00-0033375": {
+   "name": "Tim Patrick",
+   "team": "NYJ",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-19T22:11:00-04:00",
+   "detail": null,
+   "espn_id": "3134353"
+  },
   "00-0040736": {
    "name": "Mason Taylor",
    "team": "NYJ",
@@ -3887,26 +3897,6 @@
    "date": "2026-10-16T20:22:00-04:00",
    "detail": null,
    "espn_id": "4569371"
-  },
-  "00-0033375": {
-   "name": "Tim Patrick",
-   "team": "NYJ",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-16T20:12:00-04:00",
-   "detail": null,
-   "espn_id": "3134353"
-  },
-  "00-0039798": {
-   "name": "Isaiah Davis",
-   "team": "NYJ",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-12T20:50:00-04:00",
-   "detail": null,
-   "espn_id": "4695404"
   },
   "00-0038393": {
    "name": "Dontayvion Wicks",
@@ -4797,6 +4787,26 @@
    "detail": null,
    "espn_id": "4034779"
   },
+  "00-0034837": {
+   "name": "Calvin Ridley",
+   "team": "TEN",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-19T22:31:00-04:00",
+   "detail": null,
+   "espn_id": "3925357"
+  },
+  "00-0040584": {
+   "name": "Gunnar Helm",
+   "team": "TEN",
+   "pos": "TE",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-19T22:24:00-04:00",
+   "detail": null,
+   "espn_id": "4686728"
+  },
   "name:TEN:kevinwinston": {
    "name": "Kevin Winston Jr.",
    "team": "TEN",
@@ -4917,26 +4927,6 @@
    "detail": null,
    "espn_id": "4883647"
   },
-  "00-0034837": {
-   "name": "Calvin Ridley",
-   "team": "TEN",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-12T21:31:00-04:00",
-   "detail": null,
-   "espn_id": "3925357"
-  },
-  "00-0040584": {
-   "name": "Gunnar Helm",
-   "team": "TEN",
-   "pos": "TE",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-12T20:21:00-04:00",
-   "detail": null,
-   "espn_id": "4686728"
-  },
   "00-0036924": {
    "name": "Michael Carter",
    "team": "TEN",
@@ -4953,7 +4943,7 @@
    "pos": "DT",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-10-19T22:04:00-04:00",
+   "date": "2026-10-19T22:16:00-04:00",
    "detail": "Knee",
    "espn_id": "4259491"
   },
