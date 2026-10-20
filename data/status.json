@@ -3,10 +3,10 @@
  "season": 2026,
  "week": 7,
  "slate": "2026-W07",
- "started_at": "2026-10-20T16:00:01-04:00",
- "status_at": "2026-10-20T16:00:01-04:00",
- "finished_at": "2026-10-20T16:00:17-04:00",
- "last_ok_at": "2026-10-20T16:00:01-04:00",
+ "started_at": "2026-10-20T16:30:01-04:00",
+ "status_at": "2026-10-20T16:30:01-04:00",
+ "finished_at": "2026-10-20T16:30:01-04:00",
+ "last_ok_at": "2026-10-20T16:30:01-04:00",
  "failed_step": null,
  "steps": [
   {
@@ -22,7 +22,7 @@
   {
    "step": "stats",
    "status": "skipped",
-   "note": "play-by-play unchanged (6436955 bytes)"
+   "note": "checked at 4:00 PM"
   },
   {
    "step": "roster",
@@ -42,7 +42,7 @@
   {
    "step": "odds",
    "status": "ok",
-   "note": "10 read(s) (F, M)"
+   "note": "no pull due"
   },
   {
    "step": "engine",
@@ -129,58 +129,7 @@
   "at": "2026-10-20T16:00:01-04:00",
   "next_at": "2026-10-21T10:00:00-04:00"
  },
- "due": [
-  {
-   "pull": "M",
-   "game_id": "2026_07_CIN_BAL",
-   "cost_max": 1
-  },
-  {
-   "pull": "M",
-   "game_id": "2026_07_CLE_TEN",
-   "cost_max": 1
-  },
-  {
-   "pull": "M",
-   "game_id": "2026_07_IND_MIN",
-   "cost_max": 1
-  },
-  {
-   "pull": "M",
-   "game_id": "2026_07_MIA_NYJ",
-   "cost_max": 1
-  },
-  {
-   "pull": "M",
-   "game_id": "2026_07_NYG_HOU",
-   "cost_max": 1
-  },
-  {
-   "pull": "M",
-   "game_id": "2026_07_SF_ATL",
-   "cost_max": 1
-  },
-  {
-   "pull": "M",
-   "game_id": "2026_07_TB_CAR",
-   "cost_max": 1
-  },
-  {
-   "pull": "M",
-   "game_id": "2026_07_DEN_ARI",
-   "cost_max": 1
-  },
-  {
-   "pull": "M",
-   "game_id": "2026_07_LA_LV",
-   "cost_max": 1
-  },
-  {
-   "pull": "F",
-   "game_id": "2026_07_IND_MIN",
-   "cost_max": 22
-  }
- ],
+ "due": [],
  "skipped_games": [],
  "unmatched_names": [],
  "unknown_teams": [],
@@ -192,11 +141,11 @@
  "odds_notes": [],
  "runner": {
   "event": "workflow_dispatch",
-  "run_id": "39483984659",
+  "run_id": "39488261109",
   "iteration": 2,
-  "chain_link": 748,
+  "chain_link": 749,
   "chain_started_at": "2026-10-18T20:10:54-04:00",
-  "run_started_at": "2026-10-20T15:30:13-04:00"
+  "run_started_at": "2026-10-20T16:00:30-04:00"
  },
  "live_page": {
   "checked_at": "2026-10-20T16:00:01-04:00",
