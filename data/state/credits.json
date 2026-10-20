@@ -5,7 +5,7 @@
    "n": 1,
    "left": 0,
    "status": "empty",
-   "checked_at": "2026-10-19T15:00:00-04:00",
+   "checked_at": "2026-10-20T05:00:00-04:00",
    "month": "2026-10",
    "after_us": 0,
    "shared": false,
@@ -16,7 +16,7 @@
    "n": 2,
    "left": 0,
    "status": "empty",
-   "checked_at": "2026-10-19T15:00:00-04:00",
+   "checked_at": "2026-10-20T05:00:00-04:00",
    "month": "2026-10",
    "after_us": 0,
    "shared": false,
@@ -25,31 +25,31 @@
   },
   {
    "n": 3,
-   "left": 129,
+   "left": 89,
    "status": "ok",
-   "checked_at": "2026-10-19T19:00:00-04:00",
+   "checked_at": "2026-10-20T05:00:00-04:00",
    "month": "2026-10",
-   "after_us": 129,
+   "after_us": 89,
    "shared": false,
    "shared_at": null,
    "others_spent": 0
   },
   {
    "n": 4,
-   "left": 167,
+   "left": 157,
    "status": "ok",
-   "checked_at": "2026-10-19T15:00:00-04:00",
+   "checked_at": "2026-10-20T05:00:00-04:00",
    "month": "2026-10",
-   "after_us": 167,
+   "after_us": 157,
    "shared": true,
    "shared_at": "2026-10-18T13:00:00-04:00",
-   "others_spent": 12
+   "others_spent": 22
   },
   {
    "n": 5,
    "left": 109,
    "status": "ok",
-   "checked_at": "2026-10-19T15:00:00-04:00",
+   "checked_at": "2026-10-20T05:00:00-04:00",
    "month": "2026-10",
    "after_us": 109,
    "shared": false,
@@ -60,7 +60,7 @@
    "n": 6,
    "left": 500,
    "status": "ok",
-   "checked_at": "2026-10-19T15:00:00-04:00",
+   "checked_at": "2026-10-20T05:00:00-04:00",
    "month": "2026-10",
    "after_us": 500,
    "shared": false,
@@ -71,7 +71,7 @@
    "n": 7,
    "left": 415,
    "status": "ok",
-   "checked_at": "2026-10-19T15:00:00-04:00",
+   "checked_at": "2026-10-20T05:00:00-04:00",
    "month": "2026-10",
    "after_us": 415,
    "shared": false,
@@ -486,6 +486,22 @@
    "pull": "C",
    "game_id": "2026_06_WAS_SF",
    "cost": 6,
+   "key": 3
+  },
+  {
+   "at": "2026-10-20T05:00:00-04:00",
+   "date": "2026-10-20",
+   "pull": "M",
+   "game_id": "2026_07_NE_CHI",
+   "cost": 1,
+   "key": 3
+  },
+  {
+   "at": "2026-10-20T05:00:00-04:00",
+   "date": "2026-10-20",
+   "pull": "F",
+   "game_id": "2026_07_NE_CHI",
+   "cost": 39,
    "key": 3
   }
  ]

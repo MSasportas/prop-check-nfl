@@ -1,12 +1,12 @@
 {
  "ok": true,
  "season": 2026,
- "week": 6,
- "slate": "2026-W06",
- "started_at": "2026-10-20T04:00:28-04:00",
- "status_at": "2026-10-20T04:00:28-04:00",
- "finished_at": "2026-10-20T04:00:29-04:00",
- "last_ok_at": "2026-10-20T04:00:28-04:00",
+ "week": 7,
+ "slate": "2026-W07",
+ "started_at": "2026-10-20T05:00:00-04:00",
+ "status_at": "2026-10-20T05:00:00-04:00",
+ "finished_at": "2026-10-20T05:00:05-04:00",
+ "last_ok_at": "2026-10-20T05:00:00-04:00",
  "failed_step": null,
  "steps": [
   {
@@ -17,12 +17,12 @@
   {
    "step": "schedule",
    "status": "ok",
-   "note": "14 game(s) this week (2026-W06); schedule read"
+   "note": "14 game(s) this week (2026-W07); schedule read"
   },
   {
    "step": "stats",
    "status": "skipped",
-   "note": "play-by-play unchanged (6436955 bytes)"
+   "note": "checked at 4:00 AM"
   },
   {
    "step": "roster",
@@ -31,23 +31,23 @@
   },
   {
    "step": "injuries",
-   "status": "skipped",
-   "note": "read at 4:00 AM; inactives posted for 26 team(s)"
+   "status": "ok",
+   "note": "espn: 148 out, 49 questionable"
   },
   {
    "step": "weather",
-   "status": "skipped",
-   "note": "nothing due (0 indoors)"
+   "status": "ok",
+   "note": "1 read, 0 failed, 0 indoors"
   },
   {
    "step": "odds",
-   "status": "skipped",
-   "note": "no games left to price this week"
+   "status": "ok",
+   "note": "2 read(s) (F, M)"
   },
   {
    "step": "engine",
    "status": "ok",
-   "note": "no change"
+   "note": "1 new event(s): 1 shown, 0 pulled"
   },
   {
    "step": "grade",
@@ -56,18 +56,18 @@
   },
   {
    "step": "slate",
-   "status": "skipped",
-   "note": "unchanged"
+   "status": "ok",
+   "note": "1 open pick(s), 0 parlay(s)"
   },
   {
    "step": "research",
    "status": "ok",
-   "note": "0 game file(s) written"
+   "note": "14 game file(s) written"
   },
   {
    "step": "record",
-   "status": "skipped",
-   "note": "unchanged"
+   "status": "ok",
+   "note": "record.json"
   }
  ],
  "sources": {
@@ -95,12 +95,12 @@
   },
   {
    "n": 3,
-   "left": 129,
+   "left": 89,
    "shared": false
   },
   {
    "n": 4,
-   "left": 167,
+   "left": 157,
    "shared": true
   },
   {
@@ -119,37 +119,44 @@
    "shared": false
   }
  ],
- "pool_total": 1320,
- "allowance": 77.28,
+ "pool_total": 1270,
+ "allowance": 79.43,
  "tier": "full_plus",
- "games_left_before_reset": 16,
- "budget_used_today": 0,
+ "games_left_before_reset": 15,
+ "budget_used_today": 40,
  "odds": {
   "state": "ok",
-  "at": "2026-10-19T19:00:00-04:00",
-  "next_at": null
+  "at": "2026-10-20T05:00:00-04:00",
+  "next_at": "2026-10-20T10:00:00-04:00"
  },
- "due": null,
- "skipped_games": [],
- "unmatched_names": [
-  "Drew Ogletree",
-  "Hollywood Brown",
-  "James Jordan"
+ "due": [
+  {
+   "pull": "M",
+   "game_id": "2026_07_NE_CHI",
+   "cost_max": 1
+  },
+  {
+   "pull": "F",
+   "game_id": "2026_07_NE_CHI",
+   "cost_max": 39
+  }
  ],
+ "skipped_games": [],
+ "unmatched_names": [],
  "unknown_teams": [],
  "behind": {},
  "stats_problems": [],
  "games_this_week": 14,
- "record_events": 191,
+ "record_events": 192,
  "grade_checks": [],
  "odds_notes": [],
  "runner": {
   "event": "workflow_dispatch",
-  "run_id": "39390301805",
-  "iteration": 1,
-  "chain_link": 537,
+  "run_id": "39391441954",
+  "iteration": 2,
+  "chain_link": 588,
   "chain_started_at": "2026-10-18T20:10:54-04:00",
-  "run_started_at": "2026-10-20T04:00:27-04:00"
+  "run_started_at": "2026-10-20T04:10:11-04:00"
  },
  "live_page": {
   "checked_at": "2026-10-20T04:00:28-04:00",
