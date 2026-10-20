@@ -1,5 +1,5 @@
 {
- "at": "2026-10-20T19:00:00-04:00",
+ "at": "2026-10-20T19:30:01-04:00",
  "source": "espn",
  "players": {
   "name:ARI:wydettwilliams": {
@@ -463,7 +463,7 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-10-20T18:45:00-04:00",
+   "date": "2026-10-20T19:01:00-04:00",
    "detail": "Suspension",
    "espn_id": "4034953"
   },
@@ -746,7 +746,7 @@
    "pos": "S",
    "status": "Injured Reserve",
    "fantasy": "IR",
-   "date": "2026-10-20T18:45:00-04:00",
+   "date": "2026-10-20T19:01:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
@@ -3612,7 +3612,7 @@
    "pos": "OT",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-10-20T18:45:00-04:00",
+   "date": "2026-10-20T19:01:00-04:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
@@ -4309,6 +4309,16 @@
    "espn_id": "4035687",
    "comment": "The Steelers placed Pittman (foot) on injured reserve Saturday."
   },
+  "00-0040172": {
+   "name": "Jordan Watkins",
+   "team": "SF",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-20T19:08:00-04:00",
+   "detail": null,
+   "espn_id": "4431466"
+  },
   "00-0039365": {
    "name": "Jacob Cowing",
    "team": "SF",
@@ -4937,6 +4947,16 @@
    "date": "2026-10-12T15:45:00-04:00",
    "detail": null,
    "espn_id": "4240657"
+  },
+  "00-0033699": {
+   "name": "Austin Ekeler",
+   "team": "WAS",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-20T19:14:00-04:00",
+   "detail": null,
+   "espn_id": "3068267"
   },
   "00-0036626": {
    "name": "Dyami Brown",
