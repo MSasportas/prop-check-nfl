@@ -3,10 +3,10 @@
  "season": 2026,
  "week": 7,
  "slate": "2026-W07",
- "started_at": "2026-10-20T05:00:00-04:00",
- "status_at": "2026-10-20T05:00:00-04:00",
- "finished_at": "2026-10-20T05:00:05-04:00",
- "last_ok_at": "2026-10-20T05:00:00-04:00",
+ "started_at": "2026-10-20T05:00:29-04:00",
+ "status_at": "2026-10-20T05:00:29-04:00",
+ "finished_at": "2026-10-20T05:00:29-04:00",
+ "last_ok_at": "2026-10-20T05:00:29-04:00",
  "failed_step": null,
  "steps": [
   {
@@ -22,7 +22,7 @@
   {
    "step": "stats",
    "status": "skipped",
-   "note": "checked at 4:00 AM"
+   "note": "play-by-play unchanged (6436955 bytes)"
   },
   {
    "step": "roster",
@@ -31,23 +31,23 @@
   },
   {
    "step": "injuries",
-   "status": "ok",
-   "note": "espn: 148 out, 49 questionable"
+   "status": "skipped",
+   "note": "read at 5:00 AM"
   },
   {
    "step": "weather",
-   "status": "ok",
-   "note": "1 read, 0 failed, 0 indoors"
+   "status": "skipped",
+   "note": "nothing due (0 indoors)"
   },
   {
    "step": "odds",
    "status": "ok",
-   "note": "2 read(s) (F, M)"
+   "note": "no pull due"
   },
   {
    "step": "engine",
    "status": "ok",
-   "note": "1 new event(s): 1 shown, 0 pulled"
+   "note": "no change"
   },
   {
    "step": "grade",
@@ -56,18 +56,18 @@
   },
   {
    "step": "slate",
-   "status": "ok",
-   "note": "1 open pick(s), 0 parlay(s)"
+   "status": "skipped",
+   "note": "unchanged"
   },
   {
    "step": "research",
    "status": "ok",
-   "note": "14 game file(s) written"
+   "note": "0 game file(s) written"
   },
   {
    "step": "record",
-   "status": "ok",
-   "note": "record.json"
+   "status": "skipped",
+   "note": "unchanged"
   }
  ],
  "sources": {
@@ -129,18 +129,7 @@
   "at": "2026-10-20T05:00:00-04:00",
   "next_at": "2026-10-20T10:00:00-04:00"
  },
- "due": [
-  {
-   "pull": "M",
-   "game_id": "2026_07_NE_CHI",
-   "cost_max": 1
-  },
-  {
-   "pull": "F",
-   "game_id": "2026_07_NE_CHI",
-   "cost_max": 39
-  }
- ],
+ "due": [],
  "skipped_games": [],
  "unmatched_names": [],
  "unknown_teams": [],
@@ -152,14 +141,14 @@
  "odds_notes": [],
  "runner": {
   "event": "workflow_dispatch",
-  "run_id": "39391441954",
-  "iteration": 2,
-  "chain_link": 588,
+  "run_id": "39397500112",
+  "iteration": 1,
+  "chain_link": 590,
   "chain_started_at": "2026-10-18T20:10:54-04:00",
-  "run_started_at": "2026-10-20T04:10:11-04:00"
+  "run_started_at": "2026-10-20T05:00:28-04:00"
  },
  "live_page": {
-  "checked_at": "2026-10-20T04:00:28-04:00",
+  "checked_at": "2026-10-20T05:00:29-04:00",
   "http": 200,
   "is_page": true
  }
