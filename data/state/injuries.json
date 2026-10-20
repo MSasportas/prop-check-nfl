@@ -1,5 +1,5 @@
 {
- "at": "2026-10-20T00:40:00-04:00",
+ "at": "2026-10-20T01:10:08-04:00",
  "source": "espn",
  "players": {
   "00-0033307": {
@@ -746,7 +746,7 @@
    "pos": "S",
    "status": "Injured Reserve",
    "fantasy": "IR",
-   "date": "2026-10-20T00:01:00-04:00",
+   "date": "2026-10-20T01:00:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
@@ -4296,6 +4296,16 @@
    "espn_id": "4035687",
    "comment": "The Steelers placed Pittman (foot) on injured reserve Saturday."
   },
+  "00-0031236": {
+   "name": "Brandin Cooks",
+   "team": "SF",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-20T00:50:00-04:00",
+   "detail": null,
+   "espn_id": "16731"
+  },
   "00-0041052": {
    "name": "Kaelon Black",
    "team": "SF",
@@ -4459,17 +4469,6 @@
    "date": "2026-10-16T19:21:00-04:00",
    "detail": null,
    "espn_id": "16002"
-  },
-  "00-0032775": {
-   "name": "Demarcus Robinson",
-   "team": "SF",
-   "pos": "WR",
-   "status": "Injured Reserve",
-   "fantasy": "IR",
-   "date": "2026-10-15T15:50:00-04:00",
-   "detail": "Ankle",
-   "espn_id": "3043116",
-   "comment": "Head coach Kyle Shanahan said Thursday that Robinson (ankle) has an \"outside chance\" to return from injured reserve for the 49ers' Week 7 game versus the Falcon"
   },
   "name:SEA:anthonybradford": {
    "name": "Anthony Bradford",
