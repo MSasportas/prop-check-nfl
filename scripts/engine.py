@@ -59,6 +59,8 @@ def check_config(cfg):
         raise ConfigError("price_gate must be negative and max_price +100 or longer")
     if v["parlay_max_legs"] > 3 or v["parlay_min_legs"] < 2:
         raise ConfigError("parlays are 2-3 legs (customer rule)")
+    if v["news_gap"] > v["too_good"] + 1e-9:
+        raise ConfigError("news_gap must not be above too_good (equal = no 'wait' zone)")
 
 
 # ---------------------------------------------------------------- market names
@@ -193,6 +195,19 @@ def pick_id(slate, game_id, pid, market, period, line, side):
 def parlay_id(slate, leg_ids):
     h = hashlib.sha1("|".join(sorted(leg_ids)).encode()).hexdigest()[:10]
     return "%s:P:%s" % (slate, h)
+
+
+STALE = "price too old for a new pick"
+
+
+def stale_price(now, price_at, v):
+    """values.new_pick_max_price_age_hours: no NEW pick from a Hard Rock price older than this. Shown picks keep
+    their 'Price as of' note instead."""
+    h = v.get("new_pick_max_price_age_hours")
+    if h is None or price_at is None:
+        return False
+    at = common.parse_iso(price_at) if isinstance(price_at, str) else price_at
+    return now - at > timedelta(hours=h)
 
 
 # ---------------------------------------------------------------- what the engine reads
@@ -364,6 +379,120 @@ class Inputs:
                     return nm
         return None
 
+    def _share(self, rows, team):
+        """(target share, carry share) of `team` over these rows' games."""
+        tg = sum(r["tg"] for r in rows)
+        ra = sum(r["ra"] for r in rows)
+        ttg = tra = 0
+        for r in rows:
+            for x in self.store.by_game.get(r["gid"], {}).values():
+                if x["team"] == team:
+                    ttg += x["tg"]
+                    tra += x["ra"]
+        return (tg / float(ttg) if ttg else 0.0), (ra / float(tra) if tra else 0.0)
+
+    def room_changes(self, g, team):
+        """Sharp room_change: {room: [(pid, sentence)]} for `team` before game g. See config values.room_change."""
+        rc = self.v.get("room_change") or {}
+        k = ("rc", g["id"], team)
+        if k in self._c:
+            return self._c[k]
+        out = {}
+        self._c[k] = out
+        if not rc:
+            return out
+        d = g["date"]
+        n_look, after = rc.get("lookback_games", 4), rc.get("team_games_after", 2)
+        poss, leave_st = set(rc.get("positions", ["WR", "TE", "RB"])), set(rc.get("leave_statuses", []))
+        tg = [t["date"] for t in self.store.team_games.get(team, []) if t["date"] < d]
+        roster_on = any("status" in p for p in self.people.values())   # weekly roster loaded
+
+        def games_since(dt):
+            return sum(1 for x in tg if x > dt)
+
+        def rooms_for(rows, t):
+            s_tg, s_ra = self._share(rows[-n_look:], t)
+            r = []
+            if s_tg >= rc.get("target_share", 1) - EPS:
+                r.append("receiving")
+            if s_ra >= rc.get("carry_share", 1) - EPS:
+                r.append("rushing")
+            return r
+
+        def name(pid):
+            return ((self.people.get(pid) or {}).get("name")) or (self.store.players.get(pid) or [pid])[0]
+
+        recent = set()
+        for t in self.store.team_games.get(team, []):
+            if t["date"] < d and games_since(t["date"]) < max(after, rc.get("max_wait_team_games", 6)):
+                recent |= {p2 for p2, r in self.store.by_game.get(t["gid"], {}).items() if r["team"] == team}
+        cands = recent | {p2 for p2, p in self.people.items() if p.get("team") == team}
+        for p2 in sorted(cands):
+            if self.pos(p2) not in poss:
+                continue
+            rows = self.store.player_rows(p2, before=d)
+            if not rows:
+                continue
+            person = self.people.get(p2)
+            # ---- joined this team: his rows before his current stint are for another team
+            if (person or {}).get("team") == team or rows[-1]["team"] == team:
+                n_with = 0
+                for r in reversed(rows):
+                    if r["team"] != team:
+                        break
+                    n_with += 1
+                old = rows[:len(rows) - n_with]
+                if old and n_with < after and (person or {}).get("status") not in leave_st:
+                    u = old[-1]["team"]
+                    block = []
+                    for r in reversed(old):
+                        if r["team"] != u:
+                            break
+                        block.insert(0, r)
+                    if games_since(block[-1]["date"]) < rc.get("max_wait_team_games", 6):
+                        for room in rooms_for(block, u):
+                            out.setdefault(room, []).append(
+                                (p2, "%s joined %s (%d game%s with them)" % (name(p2), team, n_with,
+                                                                             "" if n_with == 1 else "s")))
+            # ---- left this team
+            mine = [r for r in rows if r["team"] == team]
+            if not mine or games_since(mine[-1]["date"]) >= after:
+                continue
+            last = mine[-1]
+            later = [r for r in rows if r["date"] > last["date"] and r["team"] != team]
+            why = None
+            if later:
+                why = "now with %s" % later[-1]["team"]
+            elif roster_on and (person is None or person.get("from_rows")):
+                why = "off the roster"
+            elif person is not None and person.get("team") not in (None, team):
+                why = "now with %s" % person["team"]
+            elif person is not None and person.get("status") in leave_st:
+                why = "on reserve (IR/PUP/NFI)"
+            if why:
+                block = []
+                for r in reversed(rows[:rows.index(last) + 1]):
+                    if r["team"] != team:
+                        break
+                    block.insert(0, r)
+                for room in rooms_for(block, team):
+                    out.setdefault(room, []).append((p2, "%s left %s (%s)" % (name(p2), team, why)))
+        return out
+
+    def room_change(self, g, team, mkey):
+        """Sentence when a room change blocks this market for this team, else None."""
+        rc = self.v.get("room_change")
+        if not rc:
+            return None
+        rooms = [r for r, ms in ((self.v.get("key_out") or {}).get("rooms") or {}).items() if mkey in ms]
+        if not rooms:
+            return None
+        ch = self.room_changes(g, team)
+        for r in rooms:
+            for _, s in ch.get(r, []):
+                return "%s: %s picks wait %d games" % (s, r, rc.get("team_games_after", 2))
+        return None
+
     def wind_blocks(self, g, mkey, side):
         wv = self.v.get("weather") or {}
         if not wv or side != wv.get("blocks", "over") or mkey not in wv.get("markets", []):
@@ -428,8 +557,11 @@ def judge(inp, g, mkey, pid, line, pair, side, mv_at):
         qb = inp.qb_block(g, team)                          # eligibility flag below says the same, less plainly)
         if qb:
             return None, qb, None
-    if not model.pick_ok(mm["flags"], side):
+    if not model.pick_ok(mm["flags"], side, v["elig"].get("role_cv_blocks", "over")):
         return None, "eligibility: %s" % ", ".join(f for f in mm["flags"] if f != "role_jump"), None
+    rc = inp.room_change(g, team, mkey)
+    if rc:
+        return None, "room change: %s" % rc, None
     wind = inp.wind_blocks(g, mkey, side)
     if wind:
         return None, wind, None
@@ -442,6 +574,8 @@ def judge(inp, g, mkey, pid, line, pair, side, mv_at):
         ko = inp.key_out(g, team, mkey, pid)
         if ko:
             ok, why = False, "big gap with %s out: the book has priced it" % ko
+    if ok and stale_price(inp.now, mv_at, v):
+        ok, why = False, STALE
     nums = {"e": e, "m": mm, "settled": settled, "status": status}
     if not ok:
         return None, why, nums
@@ -516,7 +650,7 @@ def focus_markets(inp, open_ids=(), near=True):
             if pair.get(side) is None:
                 continue
             c, verdict, nums = judge(inp, g, mkey, pid, line, pair, side, mv["at"])
-            near = nums is not None and verdict in ("margin too small", "chance under the minimum") and \
+            near = nums is not None and verdict in ("margin too small", "chance under the minimum", STALE) and \
                 nums["e"]["margin"] - margin_need(nums["settled"], v, inp.tighten) >= v["near_pick_margin"] - EPS
             if c or near:
                 out.setdefault(gid, set()).add(feed[mkey])
@@ -647,6 +781,21 @@ def evaluate(inp, paused=(), block_new=False):
             jump, why = mm["jump"], mm["why"]
         e = edge(ms, sh["side"], sh["market"], sh["period"], price, other, v, fair=it.get("fair") or sh.get("fair"),
                  jump=jump)
+        tight = None                                        # v1.1 rules re-checked on shown picks
+        if mm is not None and "role_unstable" in mm["flags"] and \
+                not model.pick_ok(mm["flags"], sh["side"], v["elig"].get("role_cv_blocks", "over")):
+            tight = "his role swings too much game to game"
+        if tight is None:
+            rc = inp.room_change(g, sh["team"], sh["mkey"])
+            if rc:
+                tight = rc
+        if tight is None and e["gap"] > v["too_good"] + EPS:
+            tight = "our model is too far from Hard Rock's price (the book likely knows something)"
+        if tight:
+            pre = "Rules tightened: " if it["shown_at"][:10] <= inp.cfg.get("updated", "") else ""
+            text = pre + tight[0].upper() + tight[1:] + "."
+            new.append({"t": "pulled", "id": i, "at": at, "code": "rules", "reason": text, "seen_price": price})
+            continue
         code = None
         if odds.decimal(price) < odds.decimal(v["price_gate"]) - EPS:
             code, text = "gate", pull_reason("gate", price=price, gate=v["price_gate"])
@@ -725,13 +874,30 @@ def _parlay_numbers(leg_ids, live):
 def _parlays(inp, items, live, at):
     v, new = inp.v, []
     week = {i: it for i, it in items.items() if it["slate"] == inp.slate}
-    open_parlays, use = [], {}
+    # posted = every parlay shown this week (open, pulled or locked) as (legs, game day). Both caps (parlay_cap per
+    # game day, parlay_leg_max_use per leg) count all of them, not only the open ones.
+    posted, use = [], {}
+
+    def leg_day(l):
+        if l in live:
+            return live[l]["start"][:10]
+        return ((week.get(l) or {}).get("shown") or {}).get("start", "")[:10]
+
+    def post(legs, day=None):
+        posted.append((list(legs), day or min(leg_day(l) for l in legs)))
+        for l in legs:
+            use[l] = use.get(l, 0) + 1
+
     for i, it in sorted(week.items()):
-        if it["kind"] != "parlay" or not record.is_open(it):
+        if it["kind"] != "parlay":
+            continue
+        if not record.is_open(it):
+            post(it["shown"]["legs"], (it["shown"].get("start") or "")[:10] or None)
             continue
         legs = it["shown"]["legs"]
         pulled = [l for l in legs if l in week and week[l]["pulled"]]
         locked = [l for l in legs if l in week and week[l]["locked_at"]]
+        post(legs, (it["shown"].get("start") or "")[:10] or None)
         if pulled:
             who = week[pulled[0]]["shown"].get("player_short") or week[pulled[0]]["shown"]["player"]
             new.append({"t": "pulled", "id": i, "at": at, "code": "leg", "reason": pull_reason("leg", who=who),
@@ -750,17 +916,11 @@ def _parlays(inp, items, live, at):
                         "p_pct": pct_floor(n["p"]), "breakeven_pct": pct_round(n["b"])})
         if n["state"] != it["state"]:
             new.append({"t": "state", "id": i, "at": at, "state": n["state"]})
-        open_parlays.append(legs)
-        for l in legs:
-            use[l] = use.get(l, 0) + 1
 
     lo, hi = odds.decimal(v["parlay_leg_min_price"]), odds.decimal(v["parlay_leg_max_price"])
     legs_ok = [i for i, x in live.items() if x["p"] >= v["parlay_leg_min_p"] - EPS
                and lo - EPS <= odds.decimal(x["price"]) <= hi + EPS]
     legs_ok.sort(key=lambda i: rank_key(live[i]["p"], live[i]["b"], live[i]["settled"]) + (i,))
-
-    def day_of(leg_ids):                     # open parlays here have every leg in live
-        return min(live[l]["start"] for l in leg_ids)[:10]
 
     def best(size, pool, forbid_shared_with=()):
         top = None
@@ -793,16 +953,14 @@ def _parlays(inp, items, live, at):
                 "p_pct": pct_floor(n["p"]), "breakeven_pct": pct_round(n["b"]), "state": n["state"],
                 "start": min(live[l]["start"] for l in legs)}
         new.append({"t": "shown", "kind": "parlay", "id": pid_, "at": at, "slate": inp.slate, "parlay": body})
-        open_parlays.append(legs)
-        for l in legs:
-            use[l] = use.get(l, 0) + 1
+        post(legs, body["start"][:10])
 
     # Same game day only; the cap (up to parlay_cap) is per game day.
     for day in sorted({live[i]["start"][:10] for i in legs_ok}):
         pool = [i for i in legs_ok if live[i]["start"][:10] == day][:12]
 
         def today():
-            return [o for o in open_parlays if day_of(o) == day]
+            return [o for o, d in posted if d == day]
 
         if v["parlay_min_legs"] <= 2:
             while sum(1 for o in today() if len(o) == 2) < 2 and len(today()) < v["parlay_cap"]:

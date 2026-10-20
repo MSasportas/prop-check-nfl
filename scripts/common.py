@@ -189,7 +189,7 @@ def read_gz_json(path, default=None):
 
 
 def load_config():
-    with open(CONFIG_PATH, "r", encoding="utf-8") as f:
+    with open(os.environ.get("PC_CONFIG") or CONFIG_PATH, "r", encoding="utf-8") as f:   # PC_CONFIG: tests only
         return json.load(f)
 
 

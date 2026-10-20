@@ -191,16 +191,23 @@ def rules_doc(cfg):
             round(v["margin_injury"] * 100), round(v["margin_inactives"] * 100)),
         "No pick on a player listed questionable or worse at any point this week, or who missed his team's last game "
         "until the injury report clears him.",
-        "No overs on a player with fewer than %d recent games, a new team, a big role change, or a new starting QB." %
+        "No overs on a player with fewer than %d recent games, a new team, or a new starting QB." %
         v["elig"]["min_games_over"],
+        "No pick either way on a player whose role swings a lot from game to game." if
+        v["elig"].get("role_cv_blocks") == "both" else "No overs on a player whose role swings a lot from game to game.",
+        "When a receiver or back with a big share of his team's targets or carries joins or leaves a team, that "
+        "team's receiving or rushing picks wait %d games." % (v.get("room_change") or {}).get("team_games_after", 2)
+        if v.get("room_change") else None,
+        "No new pick from a Hard Rock price more than %d hours old." % v["new_pick_max_price_age_hours"]
+        if v.get("new_pick_max_price_age_hours") else None,
         "No passing or deep-catch overs in wind of %d mph or more at kickoff." % (v.get("weather") or {}).get("wind_mph", 15),
         "At most %d pick per player, %d per team and %d per game." % (v["max_per_player"], v["max_per_team"],
                                                                      v["max_per_game"]),
         "1st half spreads show DraftKings numbers for reference. They are never picks.",
         "A pick is pulled if the player is ruled out or inactive, the price goes past %s, or the line moves or comes "
         "down." % common.fmt_price(v["price_gate"]),
-        "Parlays are %d or %d legs from the top picks, each leg in a different game." % (v["parlay_min_legs"],
-                                                                                         v["parlay_max_legs"]),
+        "Parlays are %d or %d legs from the top picks, each leg in a different game, up to %d a game day, each pick "
+        "in at most %d." % (v["parlay_min_legs"], v["parlay_max_legs"], v["parlay_cap"], v["parlay_leg_max_use"]),
         "Picks lock at kickoff. Results come from the official stats once the game is final.",
         "The Record grades every pick at the worst Hard Rock price shown, 1 unit each. Pulled picks are graded too "
         "and shown as pulled.",
@@ -209,7 +216,7 @@ def rules_doc(cfg):
     vals.setdefault("min_sample", v.get("min_sample", 30))
     ui = dict(cfg["ui"])
     ui.setdefault("picks_open_per_day", 6)
-    return {"version": cfg["version"], "updated": cfg["updated"], "values": vals, "text": [clean(t) for t in text],
+    return {"version": cfg["version"], "updated": cfg["updated"], "values": vals, "text": [clean(t) for t in text if t],
             "ui": ui}
 
 

@@ -87,6 +87,7 @@ button{background:none;border:0;padding:0;margin:0;text-align:left;cursor:pointe
 .dayh h2{font:600 22px/26px var(--display);letter-spacing:.02em;margin:0;flex:1}
 .dayh .mu{font-size:12px;white-space:nowrap}
 .daynote{font-size:13px;line-height:18px;color:var(--warn);margin:-2px 0 8px}
+.daynote.calm{color:var(--muted)}
 .jump{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
 .jump button{min-height:44px;display:inline-flex;align-items:center}
 .jump span{display:inline-flex;align-items:center;gap:6px;height:32px;padding:0 12px;border-radius:16px;border:1px solid var(--line);font-size:13px}
@@ -98,7 +99,7 @@ button{background:none;border:0;padding:0;margin:0;text-align:left;cursor:pointe
 .card[aria-expanded="true"]{border-color:var(--line2)}
 .r1{display:flex;align-items:baseline;gap:8px}
 .rank{font:600 17px/22px var(--display);color:var(--accent);flex:none;min-width:12px}
-.name{font:600 17px/22px var(--display);letter-spacing:.01em;flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.name{font:600 17px/22px var(--display);letter-spacing:.01em;flex:1;min-width:0;white-space:normal;overflow:hidden;overflow-wrap:anywhere;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
 .meta{font-size:12px;line-height:16px;color:var(--muted);white-space:nowrap;flex:none}
 .own{color:var(--fg);font-weight:500}
 .r2{display:flex;align-items:flex-start;gap:8px;margin-top:2px}
@@ -151,7 +152,7 @@ button{background:none;border:0;padding:0;margin:0;text-align:left;cursor:pointe
 .ptitle{font:600 17px/22px var(--display);letter-spacing:.01em}
 .leg{padding:8px 0;border-bottom:1px solid var(--line)}
 .leg .l1{display:flex;align-items:baseline;gap:8px}
-.leg .lname{font:600 17px/22px var(--display);flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.leg .lname{font:600 17px/22px var(--display);flex:1;min-width:0;white-space:normal;overflow:hidden;overflow-wrap:anywhere;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
 .leg .lprice{font:600 20px/22px var(--display);flex:none}
 .leg .l2{font-size:12px;line-height:17px;color:var(--muted);overflow-wrap:anywhere}
 .leg .l2 .lb{color:var(--fg)}
@@ -201,8 +202,9 @@ button{background:none;border:0;padding:0;margin:0;text-align:left;cursor:pointe
 .ph{margin:4px 0 10px}
 .ph .pn{font:600 32px/34px var(--display);letter-spacing:.01em}
 .ph .sub{font-size:13px;line-height:18px;color:var(--muted)}
-.mchips{display:flex;gap:6px;flex-wrap:wrap;margin:4px -2px 0}
-.mchip{min-height:44px;display:inline-flex;align-items:center;padding:0 2px}
+.mchips{display:flex;gap:6px;flex-wrap:nowrap;overflow-x:auto;overflow-y:hidden;margin:4px -16px 0;padding:0 14px;scrollbar-width:none;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain}
+.mchips::-webkit-scrollbar{display:none}
+.mchip{flex:none;min-height:44px;display:inline-flex;align-items:center;padding:0 2px}
 .mchip span{display:inline-flex;align-items:center;gap:6px;height:34px;padding:0 11px;border-radius:17px;border:1px solid var(--line);font-size:13px;color:var(--fg);white-space:nowrap}
 .mchip span b{font:600 16px/16px var(--display)}
 .mchip span .per{margin:0;vertical-align:0;font-size:12px;line-height:16px;padding:0 4px}
@@ -262,6 +264,8 @@ button{background:none;border:0;padding:0;margin:0;text-align:left;cursor:pointe
 .bigrec .wl{font:600 44px/46px var(--display)}
 .bigrec .un{font:600 30px/34px var(--display)}
 .subline{font-size:12px;line-height:17px;color:var(--muted);margin-top:2px}
+.parrec{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-top:8px;font:600 20px/24px var(--display)}
+.parrec .lb{font:400 13px/18px var(--body);color:var(--muted)}
 .tbl{margin-top:16px;font-size:13px;line-height:18px}
 .tr{display:grid;grid-template-columns:minmax(0,1fr) 50px 40px 50px 50px;column-gap:6px;align-items:baseline;padding:8px 0;border-bottom:1px solid var(--line)}
 .tr.th{font-size:12px;line-height:15px;color:var(--muted);padding:0 0 4px}
@@ -723,8 +727,13 @@ function poolInfo(st) {
   if (p.empty === true) return { cls: 'badt', text: 'Out of odds keys' };
   if (n == null) return null;
   n = Math.max(0, Math.floor(n));
+  /* days until the next game day that hasn't started: odds only run "low" if they won't last until then */
+  var next = null;
+  arr(S.slate && S.slate.games).filter(isObj).forEach(function (g) { var k = ms(g.kickoff); if (!g.started && k && k > now() && (next == null || k < next)) next = k; });
+  var need = next == null ? 0 : Math.ceil((next - now()) / 86400000);
   var t = 'about ' + n + (n === 1 ? ' day' : ' days') + ' of odds left';
-  return p.low === true ? { cls: 'warnt', text: 'Odds low: ' + t } : { cls: null, text: 'Odds: ' + t };
+  if (p.low === true || n < need) return { cls: 'warnt', text: 'Odds low: ' + t };
+  return { cls: null, text: 'Odds OK' };
 }
 function statusLine(sl) {
   var st = isObj(sl.status) ? sl.status : {}, out = [];
@@ -741,12 +750,14 @@ function statusLine(sl) {
 }
 function recordStrip() {
   var hd = S.record && isObj(S.record.summary) && isObj(S.record.summary.headline) ? S.record.summary.headline : null;
-  var t, u = null, c = null;
-  if (!S.record) t = 'Record not loaded';
-  else if (!hd || !((num(hd.w) || 0) + (num(hd.l) || 0))) t = 'Record: no graded picks yet';
-  else { t = 'Record ' + (num(hd.w) || 0) + '-' + (num(hd.l) || 0); u = units(hd.units, 1); c = signCls(hd.units); }
-  return h('button', { class: 'rowbtn strip', type: 'button', on: { click: function () { go('#record'); } } },
-    h('span', { class: 'grow' }, t, u ? ' · ' : null, u ? h('span', { class: c, text: u }) : null), h('span', { class: 'chev' }, icon('right', 16)));
+  var parts = [];
+  var pr = hd && isObj(hd.parlays) ? hd.parlays : null, sn = hd ? (num(hd.w) || 0) + (num(hd.l) || 0) : 0, pn = pr ? (num(pr.w) || 0) + (num(pr.l) || 0) : 0;
+  var seg = function (lab, x) { var u = units(x.units, 1); return [h('span', { style: 'white-space:nowrap' }, lab + ' ' + (num(x.w) || 0) + '-' + (num(x.l) || 0), u ? ' ' : null, u ? h('span', { class: signCls(x.units), text: u }) : null)]; };
+  if (!S.record) parts = ['Record not loaded'];
+  else if (!sn && !pn) parts = ['Record: no graded picks yet'];
+  else { parts = seg('Singles', hd); if (pn) parts = parts.concat([' · '], seg('Parlays', pr)); }
+  return h('button', { class: 'rowbtn strip', type: 'button', 'aria-label': 'The Record', on: { click: function () { go('#record'); } } },
+    h('span', { class: 'grow' }, parts), h('span', { class: 'chev' }, icon('right', 16)));
 }
 function topBanners() {
   var sl = S.slate, out = [];
@@ -811,7 +822,7 @@ function renderPicks() {
     sec.appendChild(h('div', { class: 'dayh' }, h('h2', { text: pd ? pd.long + ', ' + pd.md : k }),
       h('span', { class: 'mu', text: list.length + (list.length === 1 ? ' pick' : ' picks') + ' · ' + gs.length + (gs.length === 1 ? ' game' : ' games') })));
     var none = gs.filter(function (g) { return g.props_state && g.props_state !== 'ok' && g.props_state !== 'closed' && !g.started; });
-    if (none.length) sec.appendChild(h('div', { class: 'daynote', text: noPropsText(none, gs) }));
+    if (none.length) { var np = noPropsText(none, gs); sec.appendChild(h('div', { class: 'daynote' + (np.calm ? ' calm' : ''), text: np.text })); }
     if (!list.length && !none.length) sec.appendChild(h('div', { class: 'card empty' }, h('div', { class: 's', style: 'margin:0', text: (S.per !== 'all' && (byDayAll[k] || []).length ? 'No ' + perWord(S.per).toLowerCase() + ' picks for ' + (pd ? pd.long : 'this day') + '.' : 'No picks yet for ' + (pd ? pd.long : 'this day') + '. Checks keep running.') })));
     var stack = h('div', { class: 'stack' });
     list.forEach(function (p, i) { if (i < lim || S.dayMore[k]) stack.appendChild(pickCard(p, d, { n: i + 1 })); });
@@ -849,9 +860,13 @@ function renderPicks() {
   }));
   app.appendChild(footer());
 }
+var FAR_MS = 48 * 3600 * 1000; /* games further out than this: Hard Rock not posting props yet is normal */
 function noPropsText(none, all) {
-  if (none.length === all.length && all.length > 2) return 'No Hard Rock player props yet for any of these ' + all.length + ' games.';
-  return 'No Hard Rock player props yet: ' + none.map(function (g) { return str(g.away) + ' at ' + str(g.home); }).join(', ') + '.';
+  var waiting = none.filter(function (g) { return g.props_state === 'none_yet'; });
+  if (waiting.length === none.length && none.every(function (g) { return (ms(g.kickoff) || 0) - now() > FAR_MS; }))
+    return { calm: true, text: 'Hard Rock usually posts props mid-week. Picks show up here as they do.' };
+  if (none.length === all.length && all.length > 2) return { text: 'No Hard Rock player props yet for any of these ' + all.length + ' games.' };
+  return { text: 'No Hard Rock player props yet: ' + none.map(function (g) { return str(g.away) + ' at ' + str(g.home); }).join(', ') + '.' };
 }
 function toggleSec(key, title, body) {
   var open = !!S.open[key];
@@ -1070,6 +1085,7 @@ function renderPlayer(gid, pid) {
       h('span', null, perTag(o.period), mkLabel(o.market), o.line ? h('b', { text: o.market === 'anytime_td' ? odds(o.line.over) : fmtNum(o.line.line) }) : null)));
   });
   app.appendChild(chips);
+  requestAnimationFrame(function () { var on = chips.querySelector('[aria-pressed="true"]'); if (on && on.offsetLeft + on.offsetWidth > chips.clientWidth) chips.scrollLeft = on.offsetLeft - 16; });
 
   /* our pick on this player, if any */
   arr(p.picks).forEach(function (id) {
@@ -1222,24 +1238,27 @@ function renderRecord() {
     var sub = ['Singles']; if (num(hd.push)) sub.push(hd.push + ' push'); if (num(hd.void)) sub.push(hd.void + ' void');
     sub.push('1 unit each, at the worst Hard Rock price shown');
     app.appendChild(h('div', { class: 'subline', text: sub.join(' · ') }));
+    var hp = isObj(hd.parlays) ? hd.parlays : null;
+    if (hp && (num(hp.w) || 0) + (num(hp.l) || 0)) app.appendChild(h('div', { class: 'parrec' }, h('span', { class: 'lb', text: 'Parlays' }),
+      h('span', { text: (num(hp.w) || 0) + '-' + (num(hp.l) || 0) }), h('span', { class: signCls(hp.units), text: units(hp.units, 1) || '' })));
     if (few(n)) { app.appendChild(h('div', { class: 'chance', style: 'margin-top:10px' }, 'Hit ', h('b', { text: (num(hd.w) || 0) + ' of ' + n }))); app.appendChild(h('div', { class: 'subline', text: fewTag })); }
     else { app.appendChild(h('div', { class: 'chance', style: 'margin-top:10px' }, 'Hit ', h('b', { text: pctOf(null, hd.hit_rate) || '–' }), pctOf(null, hd.needed) ? ' · needed ' + pctOf(null, hd.needed) : '')); var b = chanceBar(hd.hit_rate, hd.needed); if (b) app.appendChild(b); }
     var rows = arr(sum.rows).filter(function (r) { return isObj(r) && sampleN(r) + (num(r.push) || 0) + (num(r.void) || 0) > 0; });
     if (rows.length) {
-      var tbl = h('div', { class: 'tbl', role: 'table', 'aria-label': 'Record by market' });
+      var tbl = h('div', { class: 'tbl', role: 'table', 'aria-label': 'Record by market' }), anyFew = false;
       tbl.appendChild(h('div', { class: 'tr th', role: 'row' }, ['', 'W-L', 'Hit', 'Needed', 'Units'].map(function (x) { return h('span', { role: 'columnheader', text: x }); })));
       rows.forEach(function (r) {
         var k = sampleN(r), u = num(r.units);
         var lab = r.key === 'pulled' ? h('span', { class: 'lbl', role: 'cell' }, 'Pulled', h('small', { text: '(not counted above)' })) : h('span', { class: 'lbl', role: 'cell', text: str(r.label || r.key) });
         var tr = h('div', { class: 'tr', role: 'row' }, lab, h('span', { class: 'num', role: 'cell', text: (num(r.w) || 0) + '-' + (num(r.l) || 0) }));
         if (!k) tr.appendChild(h('span', { class: 'span2 mu', role: 'cell', text: '–' }));
-        else if (few(k)) { tr.appendChild(h('span', { role: 'cell', text: (num(r.w) || 0) + ' of ' + k })); tr.appendChild(h('span', { class: 'mu', role: 'cell', text: '–' })); }
+        else if (few(k)) { anyFew = true; tr.appendChild(h('span', { role: 'cell', text: (num(r.w) || 0) + ' of ' + k })); tr.appendChild(h('span', { role: 'cell', text: pctOf(null, r.needed) || '–' })); }
         else { tr.appendChild(h('span', { role: 'cell', text: pctOf(null, r.hit_rate) || '–' })); tr.appendChild(h('span', { role: 'cell', text: pctOf(null, r.needed) || '–' })); }
         tr.appendChild(h('span', { class: 'num ' + signCls(u), role: 'cell', text: u == null ? '–' : (units(u, 1) || '').replace(/u$/, '') }));
-        if (k && few(k)) tr.appendChild(h('span', { class: 'few', text: fewTag }));
         tbl.appendChild(tr);
       });
       app.appendChild(tbl);
+      if (anyFew) app.appendChild(h('div', { class: 'subline', style: 'margin-top:6px', text: 'Rows showing "W of N" have ' + (minS != null ? 'under ' + minS + ' graded picks' : 'too few graded picks') + ': too few to judge yet.' }));
     }
     app.appendChild(h('p', { class: 'note', text: 'Graded at the worst Hard Rock price shown on each pick, 1 unit. Push and void are 0 units and left out of the hit rate.' }));
   }
@@ -1262,8 +1281,15 @@ function renderRecord() {
     });
     if (!ents.length) return;
     shown++;
-    var wl = (num(w.w) || 0) + (num(w.l) || 0), tail = wl ? (num(w.w) || 0) + '-' + (num(w.l) || 0) + (units(w.units, 1) ? ' · ' + units(w.units, 1) : '') : null;
-    var sec = h('section', { class: 'wk' }, h('h3', null, str(w.label || 'Week ' + w.week) + (tail ? ' · ' + tail : ''),
+    var tally = function (list) { var t = { w: 0, l: 0, u: 0 }; list.forEach(function (e) { if (e.result === 'W') t.w++; else if (e.result === 'L') t.l++; if (e.result != null) t.u += num(e.units) || 0; }); return t; };
+    var tl = function (t, lab) { return t.w + t.l ? (lab ? lab + ' ' : '') + t.w + '-' + t.l + (units(t.u, 1) ? ' ' + units(t.u, 1) : '') : null; };
+    var tail;
+    if (S.filter === 'all' || !S.filter) {
+      var ts = tl(tally(ents.filter(function (e) { return e.kind !== 'parlay' && !e.pulled; })), 'Singles'), tp = tl(tally(ents.filter(function (e) { return e.kind === 'parlay' && !e.pulled; })), 'Parlays');
+      tail = [ts, tp].filter(Boolean).join(' · ') || null;
+    } else tail = tl(tally(ents), S.filter === 'pulled' ? 'Pulled, not counted:' : null);
+    var tailNodes = tail ? tail.split(' · ').map(function (x, i) { return [' · ', h('span', { style: 'white-space:nowrap', text: x })]; }) : null;
+    var sec = h('section', { class: 'wk' }, h('h3', null, str(w.label || 'Week ' + w.week), tailNodes,
       w.graded ? null : h('span', { class: 'mu', text: (tail ? ' so far' : '') + ' · results post once each game is final' })));
     ents.forEach(function (e) { entryRow(e, w).forEach(function (x) { sec.appendChild(x); }); });
     app.appendChild(sec);
@@ -1273,10 +1299,10 @@ function renderRecord() {
 }
 function entryRow(e, w) {
   var res = e.result == null ? null : str(e.result), known = { W: 1, L: 1, PUSH: 1, VOID: 1 };
-  var tag = h('span', { class: 'tg ' + (res && known[res] ? res : 'none'), text: res || '–' });
+  var tag = h('span', { class: 'tg ' + (res && known[res] && !e.pulled ? res : 'none'), text: res || '–' });
   if (!res) tag.setAttribute('aria-label', 'Waiting on the result');
   var ptag = e.pulled ? h('span', { class: 'ptag', text: 'PULLED' }) : null, l2 = [];
-  var pulledTxt = e.pulled ? 'pulled' + (fStamp(e.pulled.at) ? ' ' + fStamp(e.pulled.at) : '') + (e.pulled.reason ? ': ' + str(e.pulled.reason) : '') : null;
+  var pulledTxt = e.pulled ? 'pulled' + (fStamp(e.pulled.at) ? ' ' + fStamp(e.pulled.at) : '') + (e.pulled.reason ? ': ' + str(e.pulled.reason).replace(/\.$/, '') : '') + ' · not counted' : null;
   if (e.kind === 'parlay') {
     var key = str(w.week) + '|' + str(e.id), legs = arr(e.legs).filter(isObj), open = !!S.legsOpen[key];
     if (pulledTxt) l2.push(pulledTxt);

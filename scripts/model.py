@@ -457,9 +457,12 @@ OVER_BLOCK = ("few_games", "short_history", "injury_return", "new_team", "qb_cha
 UNDER_BLOCK = ("few_games",)
 
 
-def pick_ok(flags, side):
-    """True when no flag blocks this side ('over' / 'under'). role_jump never blocks (soft)."""
+def pick_ok(flags, side, role_cv_blocks="over"):
+    """True when no flag blocks this side ('over' / 'under'). role_jump never blocks (soft).
+    role_cv_blocks = "both" (Sharp, v1.1): role_unstable blocks unders too."""
     block = OVER_BLOCK if side == "over" else UNDER_BLOCK
+    if side != "over" and role_cv_blocks == "both":
+        block = block + ("role_unstable",)
     return not any(f in block for f in flags)
 
 

@@ -1,6 +1,6 @@
 {
- "version": "1.0",
- "updated": "2026-10-13",
+ "version": "1.1",
+ "updated": "2026-10-20",
  "_about": "Prop Check NFL Sharp standard v1.0. EVERY rule value lives here. The engine reads this file; data/rules.json (what the page reads) is generated from it. Probabilities 0-1, prices American integers, times Eastern, wind mph. Our market keys: '<stat>' = full game (incl. OT), '<stat>_1h' = 1st half. shrink keys are '<model market>|<FG|1H>|<O|U>'; a market|period|side with no shrink entry is never a pick.",
  "values": {
   "price_gate": -200,
@@ -41,7 +41,7 @@
   "margin_injury": 0.03,
   "margin_inactives": 0.02,
   "news_gap": 0.15,
-  "too_good": 0.2,
+  "too_good": 0.15,
   "gap_uses": "model_adj",
   "hold_min": 0.03,
   "hold_max": 0.1,
@@ -52,7 +52,8 @@
    "max_missed": 2,
    "min_games_with_team": 3,
    "max_role_cv": 0.6,
-   "jump": 0.4
+   "jump": 0.4,
+   "role_cv_blocks": "both"
   },
   "status_no_pick": [
    "Questionable",
@@ -98,8 +99,8 @@
   "parlay_min_p_2": 0.34,
   "parlay_min_p_3": 0.2,
   "parlay_edge": 0.03,
-  "parlay_cap": 3,
-  "parlay_leg_max_use": 2,
+  "parlay_cap": 2,
+  "parlay_leg_max_use": 1,
   "stake": 1,
   "f_days_before": 5,
   "f_min_player_markets": 15,
@@ -161,6 +162,22 @@
     ]
    }
   },
+  "room_change": {
+   "target_share": 0.15,
+   "carry_share": 0.25,
+   "lookback_games": 4,
+   "team_games_after": 2,
+   "positions": [
+    "WR",
+    "TE",
+    "RB"
+   ],
+   "leave_statuses": [
+    "RES"
+   ],
+   "max_wait_team_games": 6,
+   "effect": "a WR/TE/RB with target_share+ of his team's targets or carry_share+ of its carries over his last lookback_games games for that team joins a new team or leaves one: no new picks (over or under) in that team's same room (key_out.rooms) until the team has played team_games_after games since the change. Join: rows or the weekly roster put him on a new team; it clears once he has played team_games_after games for it (or the team has played max_wait_team_games games since his last old-team game without him playing). Leave: he has rows for another team after his last game for this one, is on another team's roster, is off every weekly roster (cut, released, traded), or his roster status is in leave_statuses (RES = IR, PUP, NFI); clears once his old team has played team_games_after games since his last game for it. A weekly Out is not a leave. Shown picks in the room are pulled."
+  },
   "qb_change": {
    "statuses": [
     "Doubtful",
@@ -218,7 +235,8 @@
   "inactives_rule": "state 'inactives' when ESPN lists inactives_min_per_team+ inactives for BOTH teams, checked from inactives_earliest_min before kickoff. Not confirmed by inactives_deadline_min before kickoff: picks stay 'injury', no new pick that needs 'inactives', page says 'Inactives not confirmed yet', and they lock as 'locked_unconfirmed'.",
   "drift_applies": "until inactives confirmed (states early and injury)",
   "near_pick": "passes every eligibility rule and margin >= near_pick_margin; used only to choose what pull C re-checks",
-  "reason_max_chars": 140
+  "reason_max_chars": 140,
+  "new_pick_max_price_age_hours": 6
  },
  "ui": {
   "stale_after_min": 90,

@@ -22,7 +22,7 @@ import run      # noqa: E402
 
 WORLD = os.path.join(HERE, "fixtures", "world")
 ENV = ("PC_NOW", "PC_DATA_DIR", "PC_ODDS_FIXTURE_DIR", "PC_FEED_FIXTURE_DIR", "ODDS_API_KEYS", "PC_RAISE",
-       "GITHUB_TOKEN", "GH_TOKEN")
+       "GITHUB_TOKEN", "GH_TOKEN", "PC_CONFIG")
 SEA_DEN = "2026_06_SEA_DEN"
 HOU_JAX = "2026_06_HOU_JAX"
 WILSON = "00-0038797"          # Emanuel Wilson, SEA RB
@@ -52,8 +52,17 @@ def fresh(payload, iso_z):
     return json.loads(s)
 
 
+def legacy_role_cfg():
+    """The live rules with the v1.0 role rule (role_unstable blocks overs only). The replayed Thursday is built
+    around one pick (E. Wilson under 1.5 catches) whose role is jumpy; v1.1 blocks it. The v1.1 rule has its own
+    tests (test_engine.Tightened); the replay keeps testing everything else on the live rules."""
+    c = cfg()
+    c["values"]["elig"]["role_cv_blocks"] = "over"
+    return c
+
+
 class World:
-    def __init__(self, pool=(500, 500, 500, 500), with_rows=True):
+    def __init__(self, pool=(500, 500, 500, 500), with_rows=True, config=None):
         self.saved = {k: os.environ.get(k) for k in ENV}
         self.root = tempfile.mkdtemp(prefix="pcn_test_")
         self.data = os.path.join(self.root, "data")
@@ -80,6 +89,9 @@ class World:
             os.environ.pop(k, None)
         os.environ.update(PC_DATA_DIR=self.data, PC_FEED_FIXTURE_DIR=self.feed, PC_ODDS_FIXTURE_DIR=self.odds,
                           PC_RAISE="1")
+        conf = legacy_role_cfg() if config is None else config
+        write(os.path.join(self.root, "rules.json"), conf)
+        os.environ["PC_CONFIG"] = os.path.join(self.root, "rules.json")
         self.last = None
         self.output = ""
         self.prev_log = b""

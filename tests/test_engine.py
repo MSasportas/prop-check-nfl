@@ -40,9 +40,12 @@ class Edge(unittest.TestCase):
         self.assertEqual(engine.qualifies(low, -110, "inactives", V), (False, "model chance under the minimum"))
         big = engine.edge(0.80, "under", "rec", "FG", -110, -110, V)                 # gap 0.24 > too_good
         self.assertEqual(engine.qualifies(big, -110, "inactives", V), (False, "too good: assume the book knows"))
-        mid = engine.edge(0.72, "under", "rec", "FG", -110, -110, V)                 # gap 0.16 > news_gap
-        self.assertEqual(engine.qualifies(mid, -110, "early", V), (False, "big gap waits for the injury report"))
-        self.assertTrue(engine.qualifies(mid, -110, "injury_report", V)[0])
+        mid = engine.edge(0.72, "under", "rec", "FG", -110, -110, V)                 # gap 0.16 > too_good (v1.1)
+        self.assertEqual(V["too_good"], V["news_gap"])                               # v1.1: no 'wait' zone
+        self.assertEqual(engine.qualifies(mid, -110, "injury_report", V), (False, "too good: assume the book knows"))
+        old = dict(V, too_good=0.20)                                                 # v1.0 values: the wait zone
+        self.assertEqual(engine.qualifies(mid, -110, "early", old), (False, "big gap waits for the injury report"))
+        self.assertTrue(engine.qualifies(mid, -110, "injury_report", old)[0])
 
     def test_margins_by_settledness(self):
         self.assertEqual(engine.margin_need("early", V), V["margin_early"])
@@ -121,17 +124,18 @@ class OnTheRealPayload(unittest.TestCase):
     def test_verdicts(self):
         rows = self.explain()
         by = {(x["player"], x["market"], x["side"]): x["verdict"] for x in rows}
-        self.assertEqual(by[("Emanuel Wilson", "rec", "under")], "QUALIFIES")
+        self.assertTrue(by[("Emanuel Wilson", "rec", "under")].startswith("eligibility: role_unstable"))  # v1.1
         self.assertEqual(by[("Jaxon Smith-Njigba", "rec", "over")], "listed questionable")
         self.assertTrue(by[("Sam Darnold", "pass_att", "over")].startswith("market not picked"))
         self.assertEqual(by[("Sam Darnold", "pass_int", "over")], "this side is never picked")
         self.assertTrue(by[("Emanuel Wilson", "anytime_td", "over")].startswith("market not picked"))
-        self.assertEqual(by[("Troy Franklin", "rec", "under")], "big gap waits for the injury report")
+        self.assertTrue(by[("Troy Franklin", "rec", "under")].startswith("eligibility: role_unstable"))  # v1.1
         self.assertTrue(by[("Troy Franklin", "rec", "over")].startswith("eligibility: role_unstable"))
         # every verdict is one of the known rules (no surprises in explain output)
         known = ("QUALIFIES", "listed", "market not picked", "this side", "eligibility", "model chance", "chance under",
                  "margin too small", "price outside", "too good", "big gap", "feed check", "one-sided", "missed his",
-                 "starting QB", "wind", "no model", "Hard Rock has no", "player not on")
+                 "starting QB", "wind", "no model", "Hard Rock has no", "player not on", "room change",
+                 engine.STALE)
         for x in rows:
             self.assertTrue(x["verdict"].startswith(known), x)
 

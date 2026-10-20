@@ -143,7 +143,7 @@ class Run:
                 first, _, last = nm.partition(" ")
                 if last and pos in ("QB", "RB", "WR", "TE", "FB"):
                     ppl[pid] = {"first": first, "last": last, "name": nm, "team": rows[-1]["team"],
-                                "pos": "RB" if pos == "FB" else pos, "espn_id": None}
+                                "pos": "RB" if pos == "FB" else pos, "espn_id": None, "from_rows": True}
         return ppl
 
     def matcher_for(self, game):

@@ -34,6 +34,7 @@ class Cycle(unittest.TestCase):
             shutil.copytree(os.path.join(REPO, d), os.path.join(self.runner, d),
                             ignore=shutil.ignore_patterns("__pycache__"))
         shutil.copy(os.path.join(REPO, ".gitignore"), self.runner)
+        helpers.write(os.path.join(self.runner, "config", "rules.json"), helpers.legacy_role_cfg())  # see helpers
         os.makedirs(os.path.join(self.runner, "data", "record"))
         shutil.copytree(os.path.join(self.world.data, "state"), os.path.join(self.runner, "data", "state"))
         open(os.path.join(self.runner, "data", "record", "events.jsonl"), "w").close()
