@@ -1,5 +1,5 @@
 {
- "at": "2026-10-20T18:30:00-04:00",
+ "at": "2026-10-20T19:00:00-04:00",
  "source": "espn",
  "players": {
   "name:ARI:wydettwilliams": {
@@ -463,7 +463,7 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-10-20T18:17:00-04:00",
+   "date": "2026-10-20T18:45:00-04:00",
    "detail": "Suspension",
    "espn_id": "4034953"
   },
@@ -746,7 +746,7 @@
    "pos": "S",
    "status": "Injured Reserve",
    "fantasy": "IR",
-   "date": "2026-10-20T18:25:00-04:00",
+   "date": "2026-10-20T18:45:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
@@ -1053,17 +1053,6 @@
    "detail": null,
    "espn_id": "4690070"
   },
-  "00-0039386": {
-   "name": "Bub Means",
-   "team": "CLE",
-   "pos": "WR",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-20T15:52:00-04:00",
-   "detail": "Knee",
-   "espn_id": "4427985",
-   "comment": "out"
-  },
   "00-0040784": {
    "name": "Quinshon Judkins",
    "team": "CLE",
@@ -1234,6 +1223,17 @@
    "date": "2026-10-16T21:48:00-04:00",
    "detail": null,
    "espn_id": "4685540"
+  },
+  "00-0040162": {
+   "name": "Dylan Sampson",
+   "team": "CLE",
+   "pos": "RB",
+   "status": "Injured Reserve",
+   "fantasy": "IR-R",
+   "date": "2026-10-16T14:20:00-04:00",
+   "detail": "Knee",
+   "espn_id": "5081397",
+   "comment": "Sampson (knee) won't be activated from injured reserve ahead of Sunday's contest against the Ravens, Zac Jackson of The Athletic reports."
   },
   "name:DAL:demarvionovershown": {
    "name": "DeMarvion Overshown",
@@ -2448,6 +2448,17 @@
    "espn_id": "4362921",
    "comment": "The Chiefs placed Thornton (ankle) on injured reserve Tuesday."
   },
+  "00-0041005": {
+   "name": "Corey Rucker",
+   "team": "LV",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-20T18:30:00-04:00",
+   "detail": "Undisclosed",
+   "espn_id": "4433901",
+   "comment": "questionable"
+  },
   "name:LV:tonkahemingway": {
    "name": "Tonka Hemingway",
    "team": "LV",
@@ -2819,8 +2830,8 @@
    "name": "Poona Ford",
    "team": "LA",
    "pos": "DT",
-   "status": "Out",
-   "fantasy": "OUT",
+   "status": "Injured Reserve",
+   "fantasy": "IR",
    "date": "2026-10-19T20:00:00-04:00",
    "detail": "Triceps",
    "espn_id": "3125114"
@@ -3601,7 +3612,7 @@
    "pos": "OT",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-10-20T18:17:00-04:00",
+   "date": "2026-10-20T18:45:00-04:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
@@ -4429,6 +4440,16 @@
    "date": "2026-10-19T22:08:00-04:00",
    "detail": "Groin",
    "espn_id": "3116097"
+  },
+  "name:SF:uptonstout": {
+   "name": "Upton Stout",
+   "team": "SF",
+   "pos": "CB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-19T19:09:00-04:00",
+   "detail": "Shoulder - AC Joint",
+   "espn_id": "4565200"
   },
   "00-0034867": {
    "name": "Malik Turner",
@@ -5343,6 +5364,10 @@
   "00-0040570": {
    "status": "Questionable",
    "at": "2026-10-20T18:30:00-04:00"
+  },
+  "00-0041005": {
+   "status": "Questionable",
+   "at": "2026-10-20T19:00:00-04:00"
   }
  }
 }
