@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-19T19:00:16-04:00",
+ "generated_at": "2026-10-19T20:20:00-04:00",
  "season": 2026,
  "summary": {
   "headline": {
@@ -566,6 +566,40 @@
      "legs": []
     },
     {
+     "id": "2026-W06:2026_06_WAS_SF:00-0033280:long_rec:FG:15.5:under",
+     "kind": "single",
+     "date": "2026-10-19",
+     "game": "WAS at SF",
+     "player": "C. McCaffrey",
+     "team": "SF",
+     "market": "long_rec",
+     "period": "FG",
+     "bet": "Under 15.5 longest reception yards",
+     "price": -115,
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-W06:2026_06_WAS_SF:00-0039910:pass_td:FG:1.5:under",
+     "kind": "single",
+     "date": "2026-10-19",
+     "game": "WAS at SF",
+     "player": "J. Daniels",
+     "team": "WAS",
+     "market": "pass_td",
+     "period": "FG",
+     "bet": "Under 1.5 passing TDs",
+     "price": -150,
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": []
+    },
+    {
      "id": "2026-W06:P:3d54c23d94",
      "kind": "parlay",
      "date": "2026-10-18",
@@ -952,6 +986,23 @@
        "actual": null
       }
      ]
+    },
+    {
+     "id": "2026-W06:2026_06_WAS_SF:00-0033288:rec:FG:5.5:under",
+     "kind": "single",
+     "date": "2026-10-19",
+     "game": "WAS at SF",
+     "player": "G. Kittle",
+     "team": "SF",
+     "market": "rec",
+     "period": "FG",
+     "bet": "Under 5.5 receptions",
+     "price": -130,
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": []
     }
    ]
   }

@@ -2,8 +2,8 @@
  "season": 2026,
  "week": 6,
  "label": "Week 6",
- "generated_at": "2026-10-19T20:10:00-04:00",
- "status_at": "2026-10-19T20:10:00-04:00",
+ "generated_at": "2026-10-19T20:20:00-04:00",
+ "status_at": "2026-10-19T20:20:00-04:00",
  "valid_until": "2026-10-20T06:00:00-04:00",
  "next_check": null,
  "status": {
@@ -19,7 +19,7 @@
   "inactives": {
    "state": "ok",
    "at": "2026-10-19T19:00:16-04:00",
-   "note": "Posted for the 8:15 PM game."
+   "note": null
   },
   "stats": {
    "state": "ok",
@@ -37,12 +37,16 @@
   },
   "last_run": {
    "ok": true,
-   "at": "2026-10-19T20:10:00-04:00",
+   "at": "2026-10-19T20:20:00-04:00",
    "failed_step": null
   }
  },
  "banners": [],
- "empty": null,
+ "empty": {
+  "code": "all_started",
+  "text": "Every Week 6 game has started.",
+  "sub": "Week 7 picks start showing up Tuesday."
+ },
  "games": [
   {
    "id": "2026_06_SEA_DEN",
@@ -311,7 +315,7 @@
    "kickoff": "2026-10-19T20:15:00-04:00",
    "day": "2026-10-19",
    "roof": "outdoors",
-   "started": false,
+   "started": true,
    "final": false,
    "score": null,
    "settled": "inactives",
@@ -1897,98 +1901,8 @@
    ]
   },
   {
-   "id": "2026-W06:2026_06_WAS_SF:00-0039910:pass_td:FG:1.5:under",
-   "rank": 1,
-   "game_id": "2026_06_WAS_SF",
-   "day": "2026-10-19",
-   "kickoff": "2026-10-19T20:15:00-04:00",
-   "player": "Jayden Daniels",
-   "player_short": "J. Daniels",
-   "player_id": "00-0039910",
-   "pos": "QB",
-   "team": "WAS",
-   "opp": "SF",
-   "home": false,
-   "market": "pass_td",
-   "period": "FG",
-   "side": "under",
-   "line": 1.5,
-   "bet": "Under 1.5 passing TDs",
-   "book": "Hard Rock",
-   "price": -150,
-   "price_at": "2026-10-19T19:00:00-04:00",
-   "first_price": -140,
-   "first_price_at": "2026-10-18T00:30:51-04:00",
-   "grade_price": -150,
-   "p": 0.6187,
-   "breakeven": 0.6,
-   "p_pct": 61,
-   "breakeven_pct": 60,
-   "reason": "0.6 TD passes a game his last 5 (1 of 5 over 1.5). SF allows the 6th fewest TD passes.",
-   "settled": "inactives",
-   "state": "open",
-   "thin": false,
-   "pulled": null,
-   "graded": null,
-   "history": [
-    {
-     "at": "2026-10-18T00:30:51-04:00",
-     "text": "Posted at -140"
-    },
-    {
-     "at": "2026-10-19T10:00:01-04:00",
-     "text": "Price now -150"
-    },
-    {
-     "at": "2026-10-19T19:00:16-04:00",
-     "text": "Inactives confirmed"
-    }
-   ]
-  },
-  {
-   "id": "2026-W06:2026_06_WAS_SF:00-0033288:rec:FG:5.5:under",
-   "rank": 2,
-   "game_id": "2026_06_WAS_SF",
-   "day": "2026-10-19",
-   "kickoff": "2026-10-19T20:15:00-04:00",
-   "player": "George Kittle",
-   "player_short": "G. Kittle",
-   "player_id": "00-0033288",
-   "pos": "TE",
-   "team": "SF",
-   "opp": "WAS",
-   "home": true,
-   "market": "rec",
-   "period": "FG",
-   "side": "under",
-   "line": 5.5,
-   "bet": "Under 5.5 receptions",
-   "book": "Hard Rock",
-   "price": -130,
-   "price_at": "2026-10-19T19:00:00-04:00",
-   "first_price": -130,
-   "first_price_at": "2026-10-19T19:00:00-04:00",
-   "grade_price": -130,
-   "p": 0.5945,
-   "breakeven": 0.5652,
-   "p_pct": 59,
-   "breakeven_pct": 57,
-   "reason": "4.2 catches a game his last 5 (1 of 5 over 5.5).",
-   "settled": "inactives",
-   "state": "open",
-   "thin": false,
-   "pulled": null,
-   "graded": null,
-   "history": [
-    {
-     "at": "2026-10-19T19:00:16-04:00",
-     "text": "Posted at -130"
-    }
-   ]
-  },
-  {
    "id": "2026-W06:2026_06_WAS_SF:00-0033280:long_rec:FG:15.5:under",
-   "rank": 3,
+   "rank": null,
    "game_id": "2026_06_WAS_SF",
    "day": "2026-10-19",
    "kickoff": "2026-10-19T20:15:00-04:00",
@@ -2016,7 +1930,7 @@
    "breakeven_pct": 53,
    "reason": "10.8 yards on his longest catch a game his last 5 (1 of 5 over 15.5).",
    "settled": "inactives",
-   "state": "open",
+   "state": "locked",
    "thin": false,
    "pulled": null,
    "graded": null,
@@ -2032,6 +1946,108 @@
     {
      "at": "2026-10-19T19:00:16-04:00",
      "text": "Inactives confirmed"
+    },
+    {
+     "at": "2026-10-19T20:20:00-04:00",
+     "text": "Locked"
+    }
+   ]
+  },
+  {
+   "id": "2026-W06:2026_06_WAS_SF:00-0033288:rec:FG:5.5:under",
+   "rank": null,
+   "game_id": "2026_06_WAS_SF",
+   "day": "2026-10-19",
+   "kickoff": "2026-10-19T20:15:00-04:00",
+   "player": "George Kittle",
+   "player_short": "G. Kittle",
+   "player_id": "00-0033288",
+   "pos": "TE",
+   "team": "SF",
+   "opp": "WAS",
+   "home": true,
+   "market": "rec",
+   "period": "FG",
+   "side": "under",
+   "line": 5.5,
+   "bet": "Under 5.5 receptions",
+   "book": "Hard Rock",
+   "price": -130,
+   "price_at": "2026-10-19T19:00:00-04:00",
+   "first_price": -130,
+   "first_price_at": "2026-10-19T19:00:00-04:00",
+   "grade_price": -130,
+   "p": 0.5945,
+   "breakeven": 0.5652,
+   "p_pct": 59,
+   "breakeven_pct": 57,
+   "reason": "4.2 catches a game his last 5 (1 of 5 over 5.5).",
+   "settled": "inactives",
+   "state": "locked",
+   "thin": false,
+   "pulled": null,
+   "graded": null,
+   "history": [
+    {
+     "at": "2026-10-19T19:00:16-04:00",
+     "text": "Posted at -130"
+    },
+    {
+     "at": "2026-10-19T20:20:00-04:00",
+     "text": "Locked"
+    }
+   ]
+  },
+  {
+   "id": "2026-W06:2026_06_WAS_SF:00-0039910:pass_td:FG:1.5:under",
+   "rank": null,
+   "game_id": "2026_06_WAS_SF",
+   "day": "2026-10-19",
+   "kickoff": "2026-10-19T20:15:00-04:00",
+   "player": "Jayden Daniels",
+   "player_short": "J. Daniels",
+   "player_id": "00-0039910",
+   "pos": "QB",
+   "team": "WAS",
+   "opp": "SF",
+   "home": false,
+   "market": "pass_td",
+   "period": "FG",
+   "side": "under",
+   "line": 1.5,
+   "bet": "Under 1.5 passing TDs",
+   "book": "Hard Rock",
+   "price": -150,
+   "price_at": "2026-10-19T10:00:01-04:00",
+   "first_price": -140,
+   "first_price_at": "2026-10-18T00:30:51-04:00",
+   "grade_price": -150,
+   "p": 0.6187,
+   "breakeven": 0.6,
+   "p_pct": 61,
+   "breakeven_pct": 60,
+   "reason": "0.6 TD passes a game his last 5 (1 of 5 over 1.5). SF allows the 6th fewest TD passes.",
+   "settled": "inactives",
+   "state": "locked",
+   "thin": false,
+   "pulled": null,
+   "graded": null,
+   "history": [
+    {
+     "at": "2026-10-18T00:30:51-04:00",
+     "text": "Posted at -140"
+    },
+    {
+     "at": "2026-10-19T10:00:01-04:00",
+     "text": "Price now -150"
+    },
+    {
+     "at": "2026-10-19T19:00:16-04:00",
+     "text": "Inactives confirmed"
+    },
+    {
+     "at": "2026-10-19T20:20:00-04:00",
+     "text": "Locked"
     }
    ]
   }

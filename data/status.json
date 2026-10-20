@@ -3,10 +3,10 @@
  "season": 2026,
  "week": 6,
  "slate": "2026-W06",
- "started_at": "2026-10-19T20:10:00-04:00",
- "status_at": "2026-10-19T20:10:00-04:00",
- "finished_at": "2026-10-19T20:10:01-04:00",
- "last_ok_at": "2026-10-19T20:10:00-04:00",
+ "started_at": "2026-10-19T20:20:00-04:00",
+ "status_at": "2026-10-19T20:20:00-04:00",
+ "finished_at": "2026-10-19T20:20:00-04:00",
+ "last_ok_at": "2026-10-19T20:20:00-04:00",
  "failed_step": null,
  "steps": [
   {
@@ -17,7 +17,7 @@
   {
    "step": "schedule",
    "status": "ok",
-   "note": "14 game(s) this week (2026-W06); schedule read"
+   "note": "14 game(s) this week (2026-W06); live state for 1 game(s)"
   },
   {
    "step": "stats",
@@ -31,8 +31,8 @@
   },
   {
    "step": "injuries",
-   "status": "ok",
-   "note": "espn: 151 out, 46 questionable; inactives posted for 26 team(s)"
+   "status": "skipped",
+   "note": "read at 8:10 PM; inactives posted for 26 team(s)"
   },
   {
    "step": "weather",
@@ -41,13 +41,13 @@
   },
   {
    "step": "odds",
-   "status": "ok",
-   "note": "no pull due"
+   "status": "skipped",
+   "note": "no games left to price this week"
   },
   {
    "step": "engine",
    "status": "ok",
-   "note": "no change"
+   "note": "3 new event(s): 0 shown, 0 pulled"
   },
   {
    "step": "grade",
@@ -57,17 +57,17 @@
   {
    "step": "slate",
    "status": "ok",
-   "note": "3 open pick(s), 0 parlay(s)"
+   "note": "0 open pick(s), 0 parlay(s)"
   },
   {
    "step": "research",
    "status": "ok",
-   "note": "14 game file(s) written"
+   "note": "0 game file(s) written"
   },
   {
    "step": "record",
-   "status": "skipped",
-   "note": "unchanged"
+   "status": "ok",
+   "note": "record.json"
   }
  ],
  "sources": {
@@ -129,7 +129,7 @@
   "at": "2026-10-19T19:00:00-04:00",
   "next_at": null
  },
- "due": [],
+ "due": null,
  "skipped_games": [],
  "unmatched_names": [
   "Drew Ogletree",
@@ -140,13 +140,13 @@
  "behind": {},
  "stats_problems": [],
  "games_this_week": 14,
- "record_events": 182,
+ "record_events": 185,
  "grade_checks": [],
  "odds_notes": [],
  "runner": {
   "event": "workflow_dispatch",
   "run_id": "39343989563",
-  "iteration": 3,
+  "iteration": 4,
   "chain_link": 379,
   "chain_started_at": "2026-10-18T20:10:54-04:00",
   "run_started_at": "2026-10-19T19:50:14-04:00"
