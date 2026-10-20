@@ -3,10 +3,10 @@
  "season": 2026,
  "week": 6,
  "slate": "2026-W06",
- "started_at": "2026-10-20T00:30:00-04:00",
- "status_at": "2026-10-20T00:30:00-04:00",
- "finished_at": "2026-10-20T00:30:00-04:00",
- "last_ok_at": "2026-10-20T00:30:00-04:00",
+ "started_at": "2026-10-20T00:50:00-04:00",
+ "status_at": "2026-10-20T00:50:00-04:00",
+ "finished_at": "2026-10-20T00:50:02-04:00",
+ "last_ok_at": "2026-10-20T00:50:00-04:00",
  "failed_step": null,
  "steps": [
   {
@@ -21,18 +21,18 @@
   },
   {
    "step": "stats",
-   "status": "skipped",
-   "note": "checked at 11:50 PM"
+   "status": "ok",
+   "note": "93 games through 2026-10-19"
   },
   {
    "step": "roster",
    "status": "skipped",
-   "note": "read at 12:40 PM"
+   "note": "read at 12:40 AM"
   },
   {
    "step": "injuries",
    "status": "skipped",
-   "note": "read at 12:00 AM; inactives posted for 26 team(s)"
+   "note": "read at 12:40 AM; inactives posted for 26 team(s)"
   },
   {
    "step": "weather",
@@ -137,10 +137,7 @@
   "James Jordan"
  ],
  "unknown_teams": [],
- "behind": {
-  "WAS": "last game's stats are not in yet",
-  "SF": "last game's stats are not in yet"
- },
+ "behind": {},
  "stats_problems": [],
  "games_this_week": 14,
  "record_events": 191,
@@ -149,13 +146,13 @@
  "runner": {
   "event": "workflow_dispatch",
   "run_id": "39367225414",
-  "iteration": 4,
+  "iteration": 6,
   "chain_link": 384,
   "chain_started_at": "2026-10-18T20:10:54-04:00",
   "run_started_at": "2026-10-20T00:00:14-04:00"
  },
  "live_page": {
-  "checked_at": "2026-10-19T23:50:00-04:00",
+  "checked_at": "2026-10-20T00:50:00-04:00",
   "http": 200,
   "is_page": true
  }
