@@ -1,5 +1,5 @@
 {
- "at": "2026-10-19T20:00:00-04:00",
+ "at": "2026-10-19T20:10:00-04:00",
  "source": "espn",
  "players": {
   "00-0041027": {
@@ -766,7 +766,7 @@
    "pos": "S",
    "status": "Injured Reserve",
    "fantasy": "IR",
-   "date": "2026-10-19T19:42:00-04:00",
+   "date": "2026-10-19T20:01:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
@@ -3306,10 +3306,10 @@
    "pos": "WR",
    "status": "Injured Reserve",
    "fantasy": "IR",
-   "date": "2026-10-19T16:33:00-04:00",
+   "date": "2026-10-19T19:53:00-04:00",
    "detail": "Shoulder",
    "espn_id": "4361432",
-   "comment": "The Patriots placed Doubs (shoulder) on injured reserve Monday."
+   "comment": "Doubs (shoulder) is hopeful to return after the Patriots' Week 11 bye and isn't expected to face a long-term absence, Jeremy Fowler of ESPN.com reports."
   },
   "name:NE:karonprunty": {
    "name": "Karon Prunty",
@@ -3450,6 +3450,26 @@
    "date": "2026-10-18T15:31:00-04:00",
    "detail": "Hamstring",
    "espn_id": "4259646"
+  },
+  "00-0039424": {
+   "name": "Devaughn Vele",
+   "team": "NO",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-19T19:56:00-04:00",
+   "detail": null,
+   "espn_id": "4569559"
+  },
+  "00-0041067": {
+   "name": "Bryce Lance",
+   "team": "NO",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-19T19:50:00-04:00",
+   "detail": null,
+   "espn_id": "4879276"
   },
   "name:NO:nathanshepherd": {
    "name": "Nathan Shepherd",
@@ -3601,16 +3621,6 @@
    "date": "2026-10-13T19:55:00-04:00",
    "detail": null,
    "espn_id": "4036131"
-  },
-  "00-0039424": {
-   "name": "Devaughn Vele",
-   "team": "NO",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-11T20:08:00-04:00",
-   "detail": null,
-   "espn_id": "4569559"
   },
   "name:NYG:jermaineeluemunor": {
    "name": "Jermaine Eluemunor",
