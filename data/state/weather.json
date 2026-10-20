@@ -1,14 +1,14 @@
 {
  "games": {
   "2026_07_NE_CHI": {
-   "temp_f": 62.6,
-   "wind_mph": 4.5,
+   "temp_f": 61.7,
+   "wind_mph": 5.0,
    "gust_mph": 7.2,
    "rain_pct": 0,
    "rain_in": 0.0,
    "roof": "outdoors",
-   "at": "2026-10-20T05:00:00-04:00",
-   "text": "63\u00b0F, wind 4 mph"
+   "at": "2026-10-20T08:00:00-04:00",
+   "text": "62\u00b0F, wind 5 mph"
   }
  }
 }
