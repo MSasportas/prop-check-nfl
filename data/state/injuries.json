@@ -1,5 +1,5 @@
 {
- "at": "2026-10-21T14:00:01-04:00",
+ "at": "2026-10-21T14:30:14-04:00",
  "source": "espn",
  "players": {
   "00-0038640": {
@@ -473,7 +473,7 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-10-21T13:44:00-04:00",
+   "date": "2026-10-21T14:02:00-04:00",
    "detail": "Suspension",
    "espn_id": "4034953"
   },
@@ -774,9 +774,9 @@
    "name": "Anthony Johnson Jr.",
    "team": "CHI",
    "pos": "S",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-21T13:44:00-04:00",
+   "status": "Injured Reserve",
+   "fantasy": "IR",
+   "date": "2026-10-21T14:02:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
@@ -1870,6 +1870,17 @@
    "detail": null,
    "espn_id": "14163"
   },
+  "00-0035685": {
+   "name": "David Montgomery",
+   "team": "HOU",
+   "pos": "RB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-21T14:11:00-04:00",
+   "detail": "Groin",
+   "espn_id": "4035538",
+   "comment": "Montgomery (groin) isn't slated to practice Wednesday, Aaron Wilson of KPRC 2 Houston reports."
+  },
   "name:HOU:jakehummel": {
    "name": "Jake Hummel",
    "team": "HOU",
@@ -1889,17 +1900,6 @@
    "date": "2026-10-20T12:10:00-04:00",
    "detail": "Shoulder - AC Joint",
    "espn_id": "4241223"
-  },
-  "00-0035685": {
-   "name": "David Montgomery",
-   "team": "HOU",
-   "pos": "RB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-20T12:10:00-04:00",
-   "detail": "Groin",
-   "espn_id": "4035538",
-   "comment": "questionable"
   },
   "00-0038618": {
    "name": "Xavier Hutchinson",
@@ -2843,6 +2843,16 @@
    "detail": "Undisclosed",
    "espn_id": "2579621"
   },
+  "name:LA:kobieturner": {
+   "name": "Kobie Turner",
+   "team": "LA",
+   "pos": "DE",
+   "status": "Injured Reserve",
+   "fantasy": "IR",
+   "date": "2026-10-21T14:02:00-04:00",
+   "detail": "Groin",
+   "espn_id": "4250621"
+  },
   "00-0040590": {
    "name": "Konata Mumpfield",
    "team": "LA",
@@ -2914,16 +2924,6 @@
    "date": "2026-10-19T18:01:00-04:00",
    "detail": "Knee - ACL",
    "espn_id": "4259619"
-  },
-  "name:LA:kobieturner": {
-   "name": "Kobie Turner",
-   "team": "LA",
-   "pos": "DE",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-19T17:57:00-04:00",
-   "detail": "Groin",
-   "espn_id": "4250621"
   },
   "name:LA:mylesgarrett": {
    "name": "Myles Garrett",
@@ -3660,7 +3660,7 @@
    "pos": "OT",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-10-21T13:44:00-04:00",
+   "date": "2026-10-21T14:02:00-04:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
