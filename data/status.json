@@ -3,10 +3,10 @@
  "season": 2026,
  "week": 7,
  "slate": "2026-W07",
- "started_at": "2026-10-21T09:30:01-04:00",
- "status_at": "2026-10-21T09:30:01-04:00",
- "finished_at": "2026-10-21T09:30:01-04:00",
- "last_ok_at": "2026-10-21T09:30:01-04:00",
+ "started_at": "2026-10-21T10:00:00-04:00",
+ "status_at": "2026-10-21T10:00:00-04:00",
+ "finished_at": "2026-10-21T10:00:15-04:00",
+ "last_ok_at": "2026-10-21T10:00:00-04:00",
  "failed_step": null,
  "steps": [
   {
@@ -22,7 +22,7 @@
   {
    "step": "stats",
    "status": "skipped",
-   "note": "play-by-play unchanged (6436940 bytes)"
+   "note": "checked at 9:30 AM"
   },
   {
    "step": "roster",
@@ -32,7 +32,7 @@
   {
    "step": "injuries",
    "status": "skipped",
-   "note": "read at 9:00 AM"
+   "note": "read at 9:30 AM"
   },
   {
    "step": "weather",
@@ -42,12 +42,12 @@
   {
    "step": "odds",
    "status": "ok",
-   "note": "no pull due"
+   "note": "16 read(s) (F, M)"
   },
   {
    "step": "engine",
    "status": "ok",
-   "note": "no change"
+   "note": "2 new event(s): 2 shown, 0 pulled"
   },
   {
    "step": "grade",
@@ -57,17 +57,17 @@
   {
    "step": "slate",
    "status": "ok",
-   "note": "0 open pick(s), 0 parlay(s)"
+   "note": "2 open pick(s), 0 parlay(s)"
   },
   {
    "step": "research",
    "status": "ok",
-   "note": "0 game file(s) written"
+   "note": "7 game file(s) written"
   },
   {
    "step": "record",
-   "status": "skipped",
-   "note": "unchanged"
+   "status": "ok",
+   "note": "record.json"
   }
  ],
  "sources": {
@@ -95,7 +95,7 @@
   },
   {
    "n": 3,
-   "left": 2,
+   "left": 0,
    "shared": false
   },
   {
@@ -105,12 +105,12 @@
   },
   {
    "n": 5,
-   "left": 66,
+   "left": 2,
    "shared": false
   },
   {
    "n": 6,
-   "left": 500,
+   "left": 353,
    "shared": false
   },
   {
@@ -119,33 +119,116 @@
    "shared": false
   }
  ],
- "pool_total": 1107,
- "allowance": 69.67,
- "tier": "full",
+ "pool_total": 894,
+ "allowance": 55.47,
+ "tier": "standard",
  "games_left_before_reset": 15,
- "budget_used_today": 0,
+ "budget_used_today": 213,
  "odds": {
   "state": "ok",
-  "at": "2026-10-20T16:00:01-04:00",
-  "next_at": "2026-10-21T10:00:00-04:00"
+  "at": "2026-10-21T10:00:00-04:00",
+  "next_at": "2026-10-21T16:00:00-04:00"
  },
- "due": [],
+ "due": [
+  {
+   "pull": "M",
+   "game_id": "2026_07_CIN_BAL",
+   "cost_max": 1
+  },
+  {
+   "pull": "M",
+   "game_id": "2026_07_CLE_TEN",
+   "cost_max": 1
+  },
+  {
+   "pull": "M",
+   "game_id": "2026_07_MIA_NYJ",
+   "cost_max": 1
+  },
+  {
+   "pull": "M",
+   "game_id": "2026_07_NYG_HOU",
+   "cost_max": 1
+  },
+  {
+   "pull": "M",
+   "game_id": "2026_07_SF_ATL",
+   "cost_max": 1
+  },
+  {
+   "pull": "M",
+   "game_id": "2026_07_TB_CAR",
+   "cost_max": 1
+  },
+  {
+   "pull": "M",
+   "game_id": "2026_07_DEN_ARI",
+   "cost_max": 1
+  },
+  {
+   "pull": "M",
+   "game_id": "2026_07_LA_LV",
+   "cost_max": 1
+  },
+  {
+   "pull": "M",
+   "game_id": "2026_07_DAL_PHI",
+   "cost_max": 1
+  },
+  {
+   "pull": "F",
+   "game_id": "2026_07_CIN_BAL",
+   "cost_max": 33
+  },
+  {
+   "pull": "F",
+   "game_id": "2026_07_CLE_TEN",
+   "cost_max": 24
+  },
+  {
+   "pull": "F",
+   "game_id": "2026_07_SF_ATL",
+   "cost_max": 34
+  },
+  {
+   "pull": "F",
+   "game_id": "2026_07_TB_CAR",
+   "cost_max": 34
+  },
+  {
+   "pull": "F",
+   "game_id": "2026_07_DEN_ARI",
+   "cost_max": 22
+  },
+  {
+   "pull": "F",
+   "game_id": "2026_07_LA_LV",
+   "cost_max": 25
+  },
+  {
+   "pull": "F",
+   "game_id": "2026_07_DAL_PHI",
+   "cost_max": 32
+  }
+ ],
  "skipped_games": [],
- "unmatched_names": [],
+ "unmatched_names": [
+  "James Jordan"
+ ],
  "unknown_teams": [],
  "behind": {},
  "stats_problems": [],
  "games_this_week": 14,
- "record_events": 193,
+ "record_events": 195,
  "grade_checks": [],
  "odds_notes": [],
  "runner": {
   "event": "workflow_dispatch",
-  "run_id": "39604166599",
+  "run_id": "39608537601",
   "iteration": 2,
-  "chain_link": 1116,
+  "chain_link": 1117,
   "chain_started_at": "2026-10-18T20:10:54-04:00",
-  "run_started_at": "2026-10-21T09:00:12-04:00"
+  "run_started_at": "2026-10-21T09:30:14-04:00"
  },
  "live_page": {
   "checked_at": "2026-10-21T09:30:01-04:00",
