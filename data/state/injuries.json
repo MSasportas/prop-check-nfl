@@ -1,5 +1,5 @@
 {
- "at": "2026-10-20T19:30:01-04:00",
+ "at": "2026-10-20T20:00:01-04:00",
  "source": "espn",
  "players": {
   "name:ARI:wydettwilliams": {
@@ -588,6 +588,16 @@
    "detail": null,
    "espn_id": "3930086"
   },
+  "00-0040394": {
+   "name": "Anthony Tyus III",
+   "team": "CAR",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-20T19:32:00-04:00",
+   "detail": null,
+   "espn_id": "4709392"
+  },
   "name:CAR:monroefreeling": {
    "name": "Monroe Freeling",
    "team": "CAR",
@@ -729,16 +739,6 @@
    "date": "2026-10-13T21:16:00-04:00",
    "detail": "Shoulder",
    "espn_id": "4687513"
-  },
-  "00-0038840": {
-   "name": "Brycen Tremayne",
-   "team": "CAR",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-05T23:00:00-04:00",
-   "detail": null,
-   "espn_id": "4360763"
   },
   "name:CHI:anthonyjohnson": {
    "name": "Anthony Johnson Jr.",
@@ -2448,17 +2448,6 @@
    "espn_id": "4362921",
    "comment": "The Chiefs placed Thornton (ankle) on injured reserve Tuesday."
   },
-  "00-0041005": {
-   "name": "Corey Rucker",
-   "team": "LV",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-20T18:30:00-04:00",
-   "detail": "Undisclosed",
-   "espn_id": "4433901",
-   "comment": "questionable"
-  },
   "name:LV:tonkahemingway": {
    "name": "Tonka Hemingway",
    "team": "LV",
@@ -3272,16 +3261,15 @@
    "espn_id": "3921690",
    "comment": "The Vikings placed Oliver (biceps) on injured reserve Tuesday, Craig Peters of the team's official site reports."
   },
-  "00-0040570": {
-   "name": "Jeremiah Webb",
+  "name:NE:carltondavis": {
+   "name": "Carlton Davis III",
    "team": "NE",
-   "pos": "WR",
+   "pos": "CB",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-10-20T18:13:00-04:00",
-   "detail": "Arm",
-   "espn_id": "4572655",
-   "comment": "questionable"
+   "date": "2026-10-20T19:41:00-04:00",
+   "detail": "Neck",
+   "espn_id": "3916923"
   },
   "00-0035676": {
    "name": "A.J. Brown",
@@ -3343,16 +3331,6 @@
    "date": "2026-10-19T21:15:00-04:00",
    "detail": null,
    "espn_id": "4431431"
-  },
-  "name:NE:carltondavis": {
-   "name": "Carlton Davis III",
-   "team": "NE",
-   "pos": "CB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-19T20:32:00-04:00",
-   "detail": "Neck",
-   "espn_id": "3916923"
   },
   "00-0037816": {
    "name": "Romeo Doubs",
@@ -3921,16 +3899,15 @@
    "detail": null,
    "espn_id": "4569371"
   },
-  "00-0039325": {
-   "name": "Carson Steele",
+  "00-0035662": {
+   "name": "Hollywood Brown",
    "team": "PHI",
-   "pos": "RB",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-20T18:17:00-04:00",
-   "detail": "Shoulder",
-   "espn_id": "4714365",
-   "comment": "out"
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-20T19:29:00-04:00",
+   "detail": null,
+   "espn_id": "4241372"
   },
   "name:PHI:ajepenesa": {
    "name": "AJ Epenesa",
@@ -3982,16 +3959,6 @@
    "date": "2026-10-19T21:49:00-04:00",
    "detail": null,
    "espn_id": "4428850"
-  },
-  "00-0035662": {
-   "name": "Hollywood Brown",
-   "team": "PHI",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-19T13:14:00-04:00",
-   "detail": null,
-   "espn_id": "4241372"
   },
   "00-0039398": {
    "name": "Joe Milton",
