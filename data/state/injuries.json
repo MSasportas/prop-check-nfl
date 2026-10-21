@@ -1,5 +1,5 @@
 {
- "at": "2026-10-21T13:00:21-04:00",
+ "at": "2026-10-21T14:00:01-04:00",
  "source": "espn",
  "players": {
   "00-0038640": {
@@ -314,6 +314,28 @@
    "detail": null,
    "espn_id": "4241479"
   },
+  "00-0036550": {
+   "name": "Rashod Bateman",
+   "team": "BAL",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-21T13:10:00-04:00",
+   "detail": "Shoulder",
+   "espn_id": "4360939",
+   "comment": "Bateman (shoulder) is taking part in Wednesday's practice, Brian Wacker of The Baltimore Sun reports."
+  },
+  "00-0034796": {
+   "name": "Lamar Jackson",
+   "team": "BAL",
+   "pos": "QB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-21T13:05:00-04:00",
+   "detail": "Ankle",
+   "espn_id": "3916387",
+   "comment": "Jackson (ankle) wasn't present for the open portion of Wednesday's practice, Jonas Shaffer of TheBaltimoreBanner.com reports."
+  },
   "00-0034975": {
    "name": "Justice Hill",
    "team": "BAL",
@@ -365,17 +387,6 @@
    "espn_id": "4432260",
    "comment": "questionable"
   },
-  "00-0034796": {
-   "name": "Lamar Jackson",
-   "team": "BAL",
-   "pos": "QB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-20T12:10:00-04:00",
-   "detail": "Ankle",
-   "espn_id": "3916387",
-   "comment": "questionable"
-  },
   "00-0034753": {
    "name": "Mark Andrews",
    "team": "BAL",
@@ -385,17 +396,6 @@
    "date": "2026-10-19T19:38:00-04:00",
    "detail": null,
    "espn_id": "3116365"
-  },
-  "00-0036550": {
-   "name": "Rashod Bateman",
-   "team": "BAL",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-19T15:16:00-04:00",
-   "detail": "Shoulder",
-   "espn_id": "4360939",
-   "comment": "Ravens head coach Jesse Minter said Monday that Bateman (shoulder) \"should be OK\" after exiting late in the second quarter of Sunday's 13-10 loss to the Browns,"
   },
   "00-0040876": {
    "name": "Elijah Sarratt",
@@ -473,7 +473,7 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-10-21T12:50:00-04:00",
+   "date": "2026-10-21T13:44:00-04:00",
    "detail": "Suspension",
    "espn_id": "4034953"
   },
@@ -774,9 +774,9 @@
    "name": "Anthony Johnson Jr.",
    "team": "CHI",
    "pos": "S",
-   "status": "Injured Reserve",
-   "fantasy": "IR",
-   "date": "2026-10-21T12:17:00-04:00",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-10-21T13:44:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
@@ -1083,6 +1083,17 @@
    "detail": null,
    "espn_id": "4690070"
   },
+  "00-0040162": {
+   "name": "Dylan Sampson",
+   "team": "CLE",
+   "pos": "RB",
+   "status": "Injured Reserve",
+   "fantasy": "IR-R",
+   "date": "2026-10-21T12:46:00-04:00",
+   "detail": "Knee",
+   "espn_id": "5081397",
+   "comment": "Browns head coach Todd Monken said that he's optimistic that Sampson (knee) will be activated from injured reserve ahead of Sunday's game against the Titans, Da"
+  },
   "00-0040784": {
    "name": "Quinshon Judkins",
    "team": "CLE",
@@ -1263,17 +1274,6 @@
    "date": "2026-10-16T21:48:00-04:00",
    "detail": null,
    "espn_id": "4685540"
-  },
-  "00-0040162": {
-   "name": "Dylan Sampson",
-   "team": "CLE",
-   "pos": "RB",
-   "status": "Injured Reserve",
-   "fantasy": "IR-R",
-   "date": "2026-10-16T14:20:00-04:00",
-   "detail": "Knee",
-   "espn_id": "5081397",
-   "comment": "Sampson (knee) won't be activated from injured reserve ahead of Sunday's contest against the Ravens, Zac Jackson of The Athletic reports."
   },
   "name:DAL:demarvionovershown": {
    "name": "DeMarvion Overshown",
@@ -1709,6 +1709,16 @@
    "detail": null,
    "espn_id": "3915486"
   },
+  "00-0035700": {
+   "name": "Josh Jacobs",
+   "team": "GB",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-21T13:40:00-04:00",
+   "detail": null,
+   "espn_id": "4047365"
+  },
   "name:GB:benjaminstjuste": {
    "name": "Benjamin St-Juste",
    "team": "GB",
@@ -1738,16 +1748,6 @@
    "date": "2026-10-19T21:04:00-04:00",
    "detail": null,
    "espn_id": "4431487"
-  },
-  "00-0035700": {
-   "name": "Josh Jacobs",
-   "team": "GB",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-19T17:32:00-04:00",
-   "detail": null,
-   "espn_id": "4047365"
   },
   "name:GB:micahparsons": {
    "name": "Micah Parsons",
@@ -1910,16 +1910,6 @@
    "date": "2026-10-19T22:48:00-04:00",
    "detail": null,
    "espn_id": "4686422"
-  },
-  "00-0039405": {
-   "name": "Jawhar Jordan",
-   "team": "HOU",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-19T21:34:00-04:00",
-   "detail": null,
-   "espn_id": "4429939"
   },
   "00-0038977": {
    "name": "Tank Dell",
@@ -2376,6 +2366,17 @@
    "detail": "Knee",
    "espn_id": "4692525"
   },
+  "00-0039067": {
+   "name": "Rashee Rice",
+   "team": "KC",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-21T12:59:00-04:00",
+   "detail": "Hamstring",
+   "espn_id": "4428331",
+   "comment": "Head coach Andy Reid said that Rice (hamstring) won't practice Wednesday, Nate Taylor of ESPN.com reports."
+  },
   "00-0040646": {
    "name": "Jalen Royals",
    "team": "KC",
@@ -2395,17 +2396,6 @@
    "date": "2026-10-20T20:33:00-04:00",
    "detail": "Knee",
    "espn_id": "4567826"
-  },
-  "00-0039067": {
-   "name": "Rashee Rice",
-   "team": "KC",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-20T12:10:00-04:00",
-   "detail": "Hamstring",
-   "espn_id": "4428331",
-   "comment": "questionable"
   },
   "name:KC:joshsimmons": {
    "name": "Josh Simmons",
@@ -3670,7 +3660,7 @@
    "pos": "OT",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-10-21T12:50:00-04:00",
+   "date": "2026-10-21T13:44:00-04:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
@@ -3837,6 +3827,37 @@
    "espn_id": "3123075",
    "comment": "Berrios (foot) underwent successful surgery Friday to repair a Lisfranc injury, Jordan Raanan of ESPN.com reports."
   },
+  "name:NYJ:kikomauigoa": {
+   "name": "Kiko Mauigoa",
+   "team": "NYJ",
+   "pos": "LB",
+   "status": "Doubtful",
+   "fantasy": "DOUBTFUL",
+   "date": "2026-10-21T13:10:00-04:00",
+   "detail": "Thigh",
+   "espn_id": "4700136"
+  },
+  "name:NYJ:josephossai": {
+   "name": "Joseph Ossai",
+   "team": "NYJ",
+   "pos": "DE",
+   "status": "Doubtful",
+   "fantasy": "DOUBTFUL",
+   "date": "2026-10-21T13:10:00-04:00",
+   "detail": "Ankle",
+   "espn_id": "4362094"
+  },
+  "00-0038120": {
+   "name": "Breece Hall",
+   "team": "NYJ",
+   "pos": "RB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-21T12:57:00-04:00",
+   "detail": "Quadriceps",
+   "espn_id": "4427366",
+   "comment": "Jets head coach Aaron Glenn said that Hall (quadriceps) won't practice Wednesday but hasn't been ruled out from playing Sunday versus the Dolphins, Al Iannazzon"
+  },
   "00-0039890": {
    "name": "Adonai Mitchell",
    "team": "NYJ",
@@ -3846,17 +3867,7 @@
    "date": "2026-10-21T12:50:00-04:00",
    "detail": "Finger",
    "espn_id": "4597500",
-   "comment": "questionable"
-  },
-  "name:NYJ:josephossai": {
-   "name": "Joseph Ossai",
-   "team": "NYJ",
-   "pos": "DE",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-20T12:10:00-04:00",
-   "detail": "Ankle",
-   "espn_id": "4362094"
+   "comment": "Jets head coach Aaron Glenn said that Mitchell (finger) will be a limited participant in Wednesday's practice."
   },
   "name:NYJ:dylanparham": {
    "name": "Dylan Parham",
@@ -3867,17 +3878,6 @@
    "date": "2026-10-20T12:10:00-04:00",
    "detail": "Knee",
    "espn_id": "4243375"
-  },
-  "00-0038120": {
-   "name": "Breece Hall",
-   "team": "NYJ",
-   "pos": "RB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-20T12:10:00-04:00",
-   "detail": "Quadriceps",
-   "espn_id": "4427366",
-   "comment": "questionable"
   },
   "00-0039798": {
    "name": "Isaiah Davis",
@@ -3958,16 +3958,6 @@
    "date": "2026-10-18T23:29:00-04:00",
    "detail": null,
    "espn_id": "5083315"
-  },
-  "name:NYJ:kikomauigoa": {
-   "name": "Kiko Mauigoa",
-   "team": "NYJ",
-   "pos": "LB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-18T13:37:00-04:00",
-   "detail": "Thigh",
-   "espn_id": "4700136"
   },
   "00-0039451": {
    "name": "Isaiah Williams",
@@ -4824,6 +4814,17 @@
    "espn_id": "3871102",
    "comment": "Sills (hamstring) is listed as questionable for Sunday's game against the Steelers."
   },
+  "00-0039032": {
+   "name": "Tyjae Spears",
+   "team": "TEN",
+   "pos": "RB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-21T13:14:00-04:00",
+   "detail": "Undisclosed",
+   "espn_id": "4428557",
+   "comment": "Titans head coach Robert Saleh said that Spears won't participate in Wednesday's practice, Jim Wyatt of the team's official site reports."
+  },
   "name:TEN:kevinwinston": {
    "name": "Kevin Winston Jr.",
    "team": "TEN",
@@ -4873,16 +4874,6 @@
    "date": "2026-10-19T13:18:00-04:00",
    "detail": null,
    "espn_id": "4685555"
-  },
-  "00-0039032": {
-   "name": "Tyjae Spears",
-   "team": "TEN",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-18T23:10:00-04:00",
-   "detail": null,
-   "espn_id": "4428557"
   },
   "00-0038117": {
    "name": "Wan'Dale Robinson",
@@ -5383,6 +5374,10 @@
   "00-0041005": {
    "status": "Questionable",
    "at": "2026-10-20T19:00:00-04:00"
+  },
+  "00-0039032": {
+   "status": "Questionable",
+   "at": "2026-10-21T14:00:01-04:00"
   }
  }
 }
