@@ -1,5 +1,5 @@
 {
- "at": "2026-10-20T21:30:01-04:00",
+ "at": "2026-10-20T22:00:13-04:00",
  "source": "espn",
  "players": {
   "00-0038640": {
@@ -473,7 +473,7 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-10-20T21:00:00-04:00",
+   "date": "2026-10-20T21:28:00-04:00",
    "detail": "Suspension",
    "espn_id": "4034953"
   },
@@ -3670,7 +3670,7 @@
    "pos": "OT",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-10-20T21:00:00-04:00",
+   "date": "2026-10-20T21:28:00-04:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
@@ -4518,16 +4518,6 @@
    "detail": "Groin",
    "espn_id": "3116097"
   },
-  "00-0034867": {
-   "name": "Malik Turner",
-   "team": "SF",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-19T19:04:00-04:00",
-   "detail": null,
-   "espn_id": "3115928"
-  },
   "00-0034775": {
    "name": "Christian Kirk",
    "team": "SF",
@@ -5136,27 +5126,6 @@
    "date": "2026-10-19T19:14:00-04:00",
    "detail": "Pectoral",
    "espn_id": "4361357"
-  },
-  "00-0040242": {
-   "name": "Jacory Croskey-Merritt",
-   "team": "WAS",
-   "pos": "RB",
-   "status": "Injured Reserve",
-   "fantasy": "IR",
-   "date": "2026-10-19T16:28:00-04:00",
-   "detail": "Groin",
-   "espn_id": "4575131",
-   "comment": "The Commanders placed Croskey-Merritt (groin) on injured reserve Monday."
-  },
-  "00-0031588": {
-   "name": "Stefon Diggs",
-   "team": "WAS",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-19T16:14:00-04:00",
-   "detail": null,
-   "espn_id": "2976212"
   }
  },
  "last_fail_at": null,
