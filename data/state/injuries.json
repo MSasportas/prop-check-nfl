@@ -1,5 +1,5 @@
 {
- "at": "2026-10-20T23:00:14-04:00",
+ "at": "2026-10-21T00:00:01-04:00",
  "source": "espn",
  "players": {
   "00-0038640": {
@@ -473,7 +473,7 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-10-20T22:01:00-04:00",
+   "date": "2026-10-20T23:00:00-04:00",
    "detail": "Suspension",
    "espn_id": "4034953"
   },
@@ -766,7 +766,7 @@
    "pos": "S",
    "status": "Injured Reserve",
    "fantasy": "IR",
-   "date": "2026-10-20T22:01:00-04:00",
+   "date": "2026-10-20T23:00:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
@@ -3650,7 +3650,7 @@
    "pos": "OT",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-10-20T22:01:00-04:00",
+   "date": "2026-10-20T23:00:00-04:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
@@ -4803,16 +4803,6 @@
    "detail": "Hamstring",
    "espn_id": "3871102",
    "comment": "Sills (hamstring) is listed as questionable for Sunday's game against the Steelers."
-  },
-  "00-0040237": {
-   "name": "Tez Johnson",
-   "team": "TB",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-10T00:43:00-04:00",
-   "detail": null,
-   "espn_id": "4608810"
   },
   "name:TEN:kevinwinston": {
    "name": "Kevin Winston Jr.",
