@@ -1,5 +1,5 @@
 {
- "at": "2026-10-21T17:00:00-04:00",
+ "at": "2026-10-21T17:30:00-04:00",
  "source": "espn",
  "players": {
   "00-0041027": {
@@ -314,6 +314,17 @@
    "detail": null,
    "espn_id": "4241479"
   },
+  "00-0036550": {
+   "name": "Rashod Bateman",
+   "team": "BAL",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-21T17:09:00-04:00",
+   "detail": "Shoulder",
+   "espn_id": "4360939",
+   "comment": "Bateman (shoulder) was a limited practice participant Wednesday."
+  },
   "name:BAL:taviusrobinson": {
    "name": "Tavius Robinson",
    "team": "BAL",
@@ -333,7 +344,7 @@
    "date": "2026-10-21T16:37:00-04:00",
    "detail": "Ankle",
    "espn_id": "3916387",
-   "comment": "Jackson (ankle) was a limited participant Wednesday."
+   "comment": "Jackson (ankle) was listed as a  limited participant Wednesday."
   },
   "name:BAL:johnsimpson": {
    "name": "John Simpson",
@@ -364,17 +375,6 @@
    "date": "2026-10-21T16:33:00-04:00",
    "detail": "Ankle",
    "espn_id": "4832793"
-  },
-  "00-0036550": {
-   "name": "Rashod Bateman",
-   "team": "BAL",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-21T13:10:00-04:00",
-   "detail": "Shoulder",
-   "espn_id": "4360939",
-   "comment": "Bateman (shoulder) is taking part in Wednesday's practice, Brian Wacker of The Baltimore Sun reports."
   },
   "00-0034975": {
    "name": "Justice Hill",
@@ -503,7 +503,7 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-10-21T16:48:00-04:00",
+   "date": "2026-10-21T17:24:00-04:00",
    "detail": "Suspension",
    "espn_id": "4034953"
   },
@@ -805,7 +805,7 @@
    "pos": "S",
    "status": "Injured Reserve",
    "fantasy": "IR",
-   "date": "2026-10-21T16:45:00-04:00",
+   "date": "2026-10-21T17:17:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
@@ -970,6 +970,16 @@
    "detail": "Suspension",
    "espn_id": "3134690"
   },
+  "00-0041069": {
+   "name": "Colbie Young",
+   "team": "CIN",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-21T16:55:00-04:00",
+   "detail": null,
+   "espn_id": "5092508"
+  },
   "00-0041246": {
    "name": "Josh Kattus",
    "team": "CIN",
@@ -1000,17 +1010,6 @@
    "date": "2026-10-13T22:47:00-04:00",
    "detail": null,
    "espn_id": "4384852"
-  },
-  "00-0041069": {
-   "name": "Colbie Young",
-   "team": "CIN",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-13T13:10:00-04:00",
-   "detail": "Knee",
-   "espn_id": "5092508",
-   "comment": "questionable"
   },
   "name:CIN:kyledugger": {
    "name": "Kyle Dugger",
@@ -1467,15 +1466,36 @@
    "detail": null,
    "espn_id": "4426485"
   },
+  "name:DEN:jonahelliss": {
+   "name": "Jonah Elliss",
+   "team": "DEN",
+   "pos": "LB",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-10-21T17:20:00-04:00",
+   "detail": "Lower Leg",
+   "espn_id": "4687592"
+  },
   "name:DEN:patsurtain": {
    "name": "Pat Surtain II",
    "team": "DEN",
    "pos": "CB",
-   "status": "Doubtful",
-   "fantasy": "DOUBTFUL",
-   "date": "2026-10-20T12:10:00-04:00",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-21T17:11:00-04:00",
    "detail": "Ankle",
    "espn_id": "4372012"
+  },
+  "00-0041496": {
+   "name": "Jonah Coleman",
+   "team": "DEN",
+   "pos": "RB",
+   "status": "Injured Reserve",
+   "fantasy": "IR-R",
+   "date": "2026-10-21T16:59:00-04:00",
+   "detail": "Ankle",
+   "espn_id": "4702555",
+   "comment": "Coleman (ankle) was back at practice Wednesday after being designated for return from injured reserve, Chris Tomasson of The Denver Gazette reports."
   },
   "name:DEN:talanoahufanga": {
    "name": "Talanoa Hufanga",
@@ -1587,27 +1607,6 @@
    "detail": "Thumb",
    "espn_id": "4362748",
    "comment": "Badie (thumb) won't return to Thursday's game against Seattle, Zac Stevens of TheDNVR.com reports. He finished with one carry for six yards."
-  },
-  "00-0035406": {
-   "name": "Lil'Jordan Humphrey",
-   "team": "DEN",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-09T20:22:00-04:00",
-   "detail": null,
-   "espn_id": "4039057"
-  },
-  "00-0040134": {
-   "name": "Pat Bryant",
-   "team": "DEN",
-   "pos": "WR",
-   "status": "Injured Reserve",
-   "fantasy": "IR",
-   "date": "2026-10-09T17:47:00-04:00",
-   "detail": "Ankle",
-   "espn_id": "4600981",
-   "comment": "Bryant (ankle) was placed on the Broncos' injured reserve Friday."
   },
   "name:DET:kerbyjoseph": {
    "name": "Kerby Joseph",
@@ -1946,6 +1945,37 @@
    "detail": "Achilles",
    "espn_id": "4240677"
   },
+  "name:HOU:azeezalshaair": {
+   "name": "Azeez Al-Shaair",
+   "team": "HOU",
+   "pos": "LB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-21T17:24:00-04:00",
+   "detail": "Knee",
+   "espn_id": "3919117"
+  },
+  "name:HOU:trentbrown": {
+   "name": "Trent Brown",
+   "team": "HOU",
+   "pos": "OT",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-21T17:24:00-04:00",
+   "detail": "Wrist",
+   "espn_id": "3043109"
+  },
+  "00-0034383": {
+   "name": "Dalton Schultz",
+   "team": "HOU",
+   "pos": "TE",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-21T17:23:00-04:00",
+   "detail": "Quadriceps",
+   "espn_id": "3117256",
+   "comment": "questionable"
+  },
   "00-0035685": {
    "name": "David Montgomery",
    "team": "HOU",
@@ -1972,7 +2002,7 @@
    "team": "HOU",
    "pos": "S",
    "status": "Doubtful",
-   "fantasy": "DOUBTFUL",
+   "fantasy": "QUESTIONABLE",
    "date": "2026-10-20T12:10:00-04:00",
    "detail": "Shoulder - AC Joint",
    "espn_id": "4241223"
@@ -2017,16 +2047,6 @@
    "date": "2026-10-19T12:40:00-04:00",
    "detail": null,
    "espn_id": "4695705"
-  },
-  "00-0034383": {
-   "name": "Dalton Schultz",
-   "team": "HOU",
-   "pos": "TE",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-18T23:23:00-04:00",
-   "detail": null,
-   "espn_id": "3117256"
   },
   "00-0034981": {
    "name": "Foster Moreau",
@@ -2970,6 +2990,16 @@
    "detail": "Groin",
    "espn_id": "4250621"
   },
+  "name:LA:natelandman": {
+   "name": "Nate Landman",
+   "team": "LA",
+   "pos": "LB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-20T22:51:00-04:00",
+   "detail": "Concussion",
+   "espn_id": "4243181"
+  },
   "00-0040590": {
    "name": "Konata Mumpfield",
    "team": "LA",
@@ -3132,6 +3162,16 @@
    "detail": null,
    "espn_id": "4360797"
   },
+  "00-0038128": {
+   "name": "Malik Willis",
+   "team": "MIA",
+   "pos": "QB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-21T16:52:00-04:00",
+   "detail": null,
+   "espn_id": "4242512"
+  },
   "00-0039874": {
    "name": "Jaylen Wright",
    "team": "MIA",
@@ -3141,7 +3181,7 @@
    "date": "2026-10-21T16:45:00-04:00",
    "detail": "Foot",
    "espn_id": "4682745",
-   "comment": "Wright (foot) was a limited participant in Wednesday's practice, David Furones of the Sun Sentinel  reports."
+   "comment": "Wright (foot) was a limited participant in Wednesday's practice, David Furones of the South Florida Sun Sentinel reports."
   },
   "00-0041077": {
    "name": "Justin Joly",
@@ -3183,17 +3223,7 @@
    "date": "2026-10-21T16:22:00-04:00",
    "detail": "Ankle",
    "espn_id": "4869645",
-   "comment": "Douglas (ankle) practiced Wednesday and said that his status is day-to-day heading into Sunday's game against the Jets, David Furones of the South Florida Sun S"
-  },
-  "00-0038128": {
-   "name": "Malik Willis",
-   "team": "MIA",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-19T10:56:00-04:00",
-   "detail": null,
-   "espn_id": "4242512"
+   "comment": "Douglas (ankle) was a limited practice participant Wednesday and said afterward that his status is day-to-day heading into Sunday's game against the Jets, David"
   },
   "00-0038728": {
    "name": "Jared Wayne",
@@ -3285,6 +3315,27 @@
    "detail": null,
    "espn_id": "4869961"
   },
+  "00-0036322": {
+   "name": "Justin Jefferson",
+   "team": "MIN",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-21T17:24:00-04:00",
+   "detail": "Ankle",
+   "espn_id": "4262921",
+   "comment": "questionable"
+  },
+  "00-0038994": {
+   "name": "Jordan Addison",
+   "team": "MIN",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-21T17:23:00-04:00",
+   "detail": null,
+   "espn_id": "4429205"
+  },
   "00-0035229": {
    "name": "T.J. Hockenson",
    "team": "MIN",
@@ -3295,17 +3346,6 @@
    "detail": "Concussion",
    "espn_id": "4036133",
    "comment": "Head coach Kevin O'Connell said that Hockenson (concussion) is expected to practice Wednesday, Alec Lewis of The Athletic reports."
-  },
-  "00-0038994": {
-   "name": "Jordan Addison",
-   "team": "MIN",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-21T14:36:00-04:00",
-   "detail": "Hamstring",
-   "espn_id": "4429205",
-   "comment": "Head coach Kevin O'Connell said Addison (hamstring) will participate in practice Wednesday, Alec Lewis of The Athletic reports."
   },
   "00-0037525": {
    "name": "Jordan Mason",
@@ -3377,16 +3417,6 @@
    "date": "2026-10-11T17:26:00-04:00",
    "detail": null,
    "espn_id": "3042519"
-  },
-  "00-0036322": {
-   "name": "Justin Jefferson",
-   "team": "MIN",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-11T16:27:00-04:00",
-   "detail": null,
-   "espn_id": "4262921"
   },
   "00-0040509": {
    "name": "Ben Yurosek",
@@ -3797,7 +3827,7 @@
    "pos": "OT",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-10-21T16:48:00-04:00",
+   "date": "2026-10-21T17:24:00-04:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
@@ -5675,6 +5705,18 @@
   "00-0038576": {
    "status": "Questionable",
    "at": "2026-10-21T17:00:00-04:00"
+  },
+  "00-0041496": {
+   "status": "Injured Reserve",
+   "at": "2026-10-21T17:30:00-04:00"
+  },
+  "00-0034383": {
+   "status": "Questionable",
+   "at": "2026-10-21T17:30:00-04:00"
+  },
+  "00-0036322": {
+   "status": "Questionable",
+   "at": "2026-10-21T17:30:00-04:00"
   }
  }
 }
