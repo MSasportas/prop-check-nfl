@@ -1,7 +1,18 @@
 {
- "at": "2026-10-21T15:00:15-04:00",
+ "at": "2026-10-21T16:00:00-04:00",
  "source": "espn",
  "players": {
+  "00-0041027": {
+   "name": "Jeremiyah Love",
+   "team": "ARI",
+   "pos": "RB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-21T15:11:00-04:00",
+   "detail": "Ankle",
+   "espn_id": "4870808",
+   "comment": "Love (ankle) will not practice Wednesday, per Dani Sureck of the Cardinals' official site."
+  },
   "00-0038640": {
    "name": "Jalen Brooks",
    "team": "ARI",
@@ -51,17 +62,6 @@
    "date": "2026-10-19T20:22:00-04:00",
    "detail": null,
    "espn_id": "3045523"
-  },
-  "00-0041027": {
-   "name": "Jeremiyah Love",
-   "team": "ARI",
-   "pos": "RB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-19T19:21:00-04:00",
-   "detail": "Ankle",
-   "espn_id": "4870808",
-   "comment": "Head coach Mike LaFleur said Monday that Love (ankle) is expected to do some running Tuesday, Tyler Drake of ArizonaSports.com reports."
   },
   "00-0037157": {
    "name": "Bam Knight",
@@ -314,6 +314,17 @@
    "detail": null,
    "espn_id": "4241479"
   },
+  "00-0034796": {
+   "name": "Lamar Jackson",
+   "team": "BAL",
+   "pos": "QB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-21T15:03:00-04:00",
+   "detail": "Ankle",
+   "espn_id": "3916387",
+   "comment": "Ravens head coach Jesse Minter said that Jackson got some \"limited\" work in with the team during Wednesday's practice, Ryan Mink of the Ravens' official site re"
+  },
   "00-0036550": {
    "name": "Rashod Bateman",
    "team": "BAL",
@@ -324,17 +335,6 @@
    "detail": "Shoulder",
    "espn_id": "4360939",
    "comment": "Bateman (shoulder) is taking part in Wednesday's practice, Brian Wacker of The Baltimore Sun reports."
-  },
-  "00-0034796": {
-   "name": "Lamar Jackson",
-   "team": "BAL",
-   "pos": "QB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-21T13:05:00-04:00",
-   "detail": "Ankle",
-   "espn_id": "3916387",
-   "comment": "Jackson (ankle) wasn't present for the open portion of Wednesday's practice, Jonas Shaffer of TheBaltimoreBanner.com reports."
   },
   "00-0034975": {
    "name": "Justice Hill",
@@ -473,7 +473,7 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-10-21T14:32:00-04:00",
+   "date": "2026-10-21T15:50:00-04:00",
    "detail": "Suspension",
    "espn_id": "4034953"
   },
@@ -608,6 +608,26 @@
    "detail": null,
    "espn_id": "4683153"
   },
+  "name:CAR:jaelanphillips": {
+   "name": "Jaelan Phillips",
+   "team": "CAR",
+   "pos": "LB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-21T14:55:00-04:00",
+   "detail": "Hamstring",
+   "espn_id": "4242975"
+  },
+  "00-0036265": {
+   "name": "AJ Dillon",
+   "team": "CAR",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-21T14:55:00-04:00",
+   "detail": null,
+   "espn_id": "4239934"
+  },
   "00-0040394": {
    "name": "Anthony Tyus III",
    "team": "CAR",
@@ -617,27 +637,6 @@
    "date": "2026-10-20T19:32:00-04:00",
    "detail": null,
    "espn_id": "4709392"
-  },
-  "name:CAR:monroefreeling": {
-   "name": "Monroe Freeling",
-   "team": "CAR",
-   "pos": "OT",
-   "status": "Questionable",
-   "fantasy": null,
-   "date": "2026-10-20T12:10:00-04:00",
-   "detail": null,
-   "espn_id": "4870694"
-  },
-  "00-0036265": {
-   "name": "AJ Dillon",
-   "team": "CAR",
-   "pos": "RB",
-   "status": "Questionable",
-   "fantasy": null,
-   "date": "2026-10-20T12:10:00-04:00",
-   "detail": null,
-   "espn_id": "4239934",
-   "comment": "questionable"
   },
   "00-0041149": {
    "name": "Haynes King",
@@ -776,9 +775,40 @@
    "pos": "S",
    "status": "Injured Reserve",
    "fantasy": "IR",
-   "date": "2026-10-21T14:32:00-04:00",
+   "date": "2026-10-21T15:28:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
+  },
+  "00-0040236": {
+   "name": "Kyle Monangai",
+   "team": "CHI",
+   "pos": "RB",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-10-21T15:18:00-04:00",
+   "detail": "Toe",
+   "espn_id": "4608686",
+   "comment": "Monangai (thumb/toe) has been ruled out for Thursday's game against the Patriots."
+  },
+  "name:CHI:tyriquestevenson": {
+   "name": "Tyrique Stevenson Sr.",
+   "team": "CHI",
+   "pos": "CB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-21T15:10:00-04:00",
+   "detail": "Hip",
+   "espn_id": "4426374"
+  },
+  "name:CHI:tjedwards": {
+   "name": "T.J. Edwards",
+   "team": "CHI",
+   "pos": "LB",
+   "status": "Doubtful",
+   "fantasy": "DOUBTFUL",
+   "date": "2026-10-21T15:09:00-04:00",
+   "detail": "Hamstring",
+   "espn_id": "3121544"
   },
   "00-0032464": {
    "name": "Kalif Raymond",
@@ -794,42 +824,11 @@
    "name": "Jack Sanborn",
    "team": "CHI",
    "pos": "LB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
+   "status": "Out",
+   "fantasy": "OUT",
    "date": "2026-10-20T20:30:00-04:00",
    "detail": "Concussion",
    "espn_id": "4372576"
-  },
-  "00-0040236": {
-   "name": "Kyle Monangai",
-   "team": "CHI",
-   "pos": "RB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-20T17:20:00-04:00",
-   "detail": "Toe",
-   "espn_id": "4608686",
-   "comment": "Monangai (thumb/toe) was listed as a non-participant in Tuesday's walk-through."
-  },
-  "name:CHI:jonahjackson": {
-   "name": "Jonah Jackson",
-   "team": "CHI",
-   "pos": "G",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-19T22:39:00-04:00",
-   "detail": "Hip",
-   "espn_id": "3930040"
-  },
-  "name:CHI:tjedwards": {
-   "name": "T.J. Edwards",
-   "team": "CHI",
-   "pos": "LB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-19T20:21:00-04:00",
-   "detail": "Hamstring",
-   "espn_id": "3121544"
   },
   "00-0040277": {
    "name": "Jahdae Walker",
@@ -3321,6 +3320,46 @@
    "espn_id": "3921690",
    "comment": "The Vikings placed Oliver (biceps) on injured reserve Tuesday, Craig Peters of the team's official site reports."
   },
+  "00-0035676": {
+   "name": "A.J. Brown",
+   "team": "NE",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-21T15:22:00-04:00",
+   "detail": null,
+   "espn_id": "4047646"
+  },
+  "name:NE:craigwoodson": {
+   "name": "Craig Woodson",
+   "team": "NE",
+   "pos": "S",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-21T15:19:00-04:00",
+   "detail": "Shoulder",
+   "espn_id": "4428930"
+  },
+  "name:NE:christianelliss": {
+   "name": "Christian Elliss",
+   "team": "NE",
+   "pos": "LB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-21T15:19:00-04:00",
+   "detail": "Chest",
+   "espn_id": "4245273"
+  },
+  "name:NE:kevinbyard": {
+   "name": "Kevin Byard",
+   "team": "NE",
+   "pos": "S",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-21T15:18:00-04:00",
+   "detail": "Chest",
+   "espn_id": "2574056"
+  },
   "name:NE:channingcanada": {
    "name": "Channing Canada",
    "team": "NE",
@@ -3390,17 +3429,6 @@
    "date": "2026-10-20T19:41:00-04:00",
    "detail": "Neck",
    "espn_id": "3916923"
-  },
-  "00-0035676": {
-   "name": "A.J. Brown",
-   "team": "NE",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-20T18:01:00-04:00",
-   "detail": "Ankle",
-   "espn_id": "4047646",
-   "comment": "Brown (ankle) was listed as a limited participant on Tuesday's practice report."
   },
   "00-0040556": {
    "name": "Corey Kiner",
@@ -3660,9 +3688,19 @@
    "pos": "OT",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-10-21T14:32:00-04:00",
+   "date": "2026-10-21T15:50:00-04:00",
    "detail": "Calf",
    "espn_id": "3115303"
+  },
+  "00-0039923": {
+   "name": "J.J. McCarthy",
+   "team": "NYG",
+   "pos": "QB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-21T15:16:00-04:00",
+   "detail": null,
+   "espn_id": "4433970"
   },
   "00-0031503": {
    "name": "Jameis Winston",
@@ -3673,16 +3711,6 @@
    "date": "2026-10-21T12:36:00-04:00",
    "detail": null,
    "espn_id": "2969939"
-  },
-  "00-0039923": {
-   "name": "J.J. McCarthy",
-   "team": "NYG",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-21T12:12:00-04:00",
-   "detail": null,
-   "espn_id": "4433970"
   },
   "name:NYG:tylernubin": {
    "name": "Tyler Nubin",
@@ -4697,10 +4725,82 @@
    "pos": "QB",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-10-21T12:19:00-04:00",
+   "date": "2026-10-21T15:32:00-04:00",
    "detail": "Thumb",
    "espn_id": "3052587",
-   "comment": "Mayfield (thumb) was seen participating in Wednesday's practice and was throwing while wearing a glove on his right hand, Rick Stroud of the Tampa Bay Times rep"
+   "comment": "Mayfield (right thumb) was a full practice participant Wednesday, Scott Smith of the Buccaneers' official site reports."
+  },
+  "00-0039361": {
+   "name": "Bucky Irving",
+   "team": "TB",
+   "pos": "RB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-21T15:30:00-04:00",
+   "detail": "Illness",
+   "espn_id": "4596448",
+   "comment": "Irving (illness) did not practice Wednesday, Greg Auman of Fox Sports reports."
+  },
+  "00-0040129": {
+   "name": "Emeka Egbuka",
+   "team": "TB",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-21T15:26:00-04:00",
+   "detail": "Concussion",
+   "espn_id": "4567750",
+   "comment": "Egbuka (concussion/foot) was a non-participant in Wednesday's practice, Scott Smith of the Buccaneers' official site reports."
+  },
+  "00-0038951": {
+   "name": "Sean Tucker",
+   "team": "TB",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-21T15:24:00-04:00",
+   "detail": null,
+   "espn_id": "4430871"
+  },
+  "name:TB:calijahkancey": {
+   "name": "Calijah Kancey",
+   "team": "TB",
+   "pos": "DT",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-21T15:23:00-04:00",
+   "detail": "Illness",
+   "espn_id": "4427673"
+  },
+  "name:TB:christianrozeboom": {
+   "name": "Christian Rozeboom",
+   "team": "TB",
+   "pos": "LB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-21T15:22:00-04:00",
+   "detail": "Finger",
+   "espn_id": "3909013"
+  },
+  "name:TB:lukegoedeke": {
+   "name": "Luke Goedeke",
+   "team": "TB",
+   "pos": "OT",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-21T15:22:00-04:00",
+   "detail": "Calf",
+   "espn_id": "4380507"
+  },
+  "name:TB:zyonmccollum": {
+   "name": "Zyon McCollum",
+   "team": "TB",
+   "pos": "CB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-20T22:48:00-04:00",
+   "detail": "Illness",
+   "espn_id": "4250392"
   },
   "name:TB:antoinewinfield": {
    "name": "Antoine Winfield Jr.",
@@ -4711,27 +4811,6 @@
    "date": "2026-10-20T12:10:00-04:00",
    "detail": "Ribs",
    "espn_id": "4034790"
-  },
-  "00-0038951": {
-   "name": "Sean Tucker",
-   "team": "TB",
-   "pos": "RB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-20T12:10:00-04:00",
-   "detail": "Quadriceps",
-   "espn_id": "4430871",
-   "comment": "questionable"
-  },
-  "name:TB:benjaminmorrison": {
-   "name": "Benjamin Morrison",
-   "team": "TB",
-   "pos": "CB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-20T12:10:00-04:00",
-   "detail": "Quadriceps",
-   "espn_id": "4816107"
   },
   "00-0041048": {
    "name": "Ted Hurst III",
@@ -4763,26 +4842,6 @@
    "detail": null,
    "espn_id": "3116165"
   },
-  "00-0040129": {
-   "name": "Emeka Egbuka",
-   "team": "TB",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-18T22:43:00-04:00",
-   "detail": null,
-   "espn_id": "4567750"
-  },
-  "00-0039361": {
-   "name": "Bucky Irving",
-   "team": "TB",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-18T22:38:00-04:00",
-   "detail": null,
-   "espn_id": "4596448"
-  },
   "00-0041251": {
    "name": "Jalon Daniels",
    "team": "TB",
@@ -4803,27 +4862,26 @@
    "detail": null,
    "espn_id": "4371733"
   },
-  "00-0035359": {
-   "name": "David Sills V",
-   "team": "TB",
+  "00-0034837": {
+   "name": "Calvin Ridley",
+   "team": "TEN",
    "pos": "WR",
-   "status": "Injured Reserve",
-   "fantasy": "IR-R",
-   "date": "2026-10-16T21:18:00-04:00",
-   "detail": "Hamstring",
-   "espn_id": "3871102",
-   "comment": "Sills (hamstring) is listed as questionable for Sunday's game against the Steelers."
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-21T15:50:00-04:00",
+   "detail": "Hip",
+   "espn_id": "3925357",
+   "comment": "questionable"
   },
   "00-0039032": {
    "name": "Tyjae Spears",
    "team": "TEN",
    "pos": "RB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-21T13:14:00-04:00",
-   "detail": "Undisclosed",
-   "espn_id": "4428557",
-   "comment": "Titans head coach Robert Saleh said that Spears won't participate in Wednesday's practice, Jim Wyatt of the team's official site reports."
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-21T15:50:00-04:00",
+   "detail": null,
+   "espn_id": "4428557"
   },
   "name:TEN:kevinwinston": {
    "name": "Kevin Winston Jr.",
@@ -4834,16 +4892,6 @@
    "date": "2026-10-20T12:10:00-04:00",
    "detail": "Quadriceps",
    "espn_id": "4685617"
-  },
-  "00-0034837": {
-   "name": "Calvin Ridley",
-   "team": "TEN",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-19T22:31:00-04:00",
-   "detail": null,
-   "espn_id": "3925357"
   },
   "00-0040584": {
    "name": "Gunnar Helm",
@@ -5378,6 +5426,18 @@
   "00-0039032": {
    "status": "Questionable",
    "at": "2026-10-21T14:00:01-04:00"
+  },
+  "00-0039361": {
+   "status": "Questionable",
+   "at": "2026-10-21T16:00:00-04:00"
+  },
+  "00-0040129": {
+   "status": "Questionable",
+   "at": "2026-10-21T16:00:00-04:00"
+  },
+  "00-0034837": {
+   "status": "Questionable",
+   "at": "2026-10-21T16:00:00-04:00"
   }
  }
 }

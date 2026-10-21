@@ -2,19 +2,19 @@
  "season": 2026,
  "week": 7,
  "label": "Week 7",
- "generated_at": "2026-10-21T15:30:01-04:00",
- "status_at": "2026-10-21T15:30:01-04:00",
+ "generated_at": "2026-10-21T16:00:00-04:00",
+ "status_at": "2026-10-21T16:00:00-04:00",
  "valid_until": "2026-10-27T06:00:00-04:00",
- "next_check": "2026-10-21T16:00:00-04:00",
+ "next_check": "2026-10-22T19:00:00-04:00",
  "status": {
   "odds": {
    "state": "ok",
-   "at": "2026-10-21T10:00:00-04:00",
-   "next_at": "2026-10-21T16:00:00-04:00"
+   "at": "2026-10-21T16:00:00-04:00",
+   "next_at": "2026-10-22T19:00:00-04:00"
   },
   "injuries": {
    "state": "ok",
-   "at": "2026-10-21T15:00:15-04:00"
+   "at": "2026-10-21T16:00:00-04:00"
   },
   "inactives": {
    "state": "not_yet",
@@ -27,9 +27,9 @@
    "at": "2026-10-21T11:30:01-04:00"
   },
   "pool": {
-   "credits_left": 894,
+   "credits_left": 827,
    "keys": 7,
-   "keys_live": 4,
+   "keys_live": 3,
    "keys_shared": 1,
    "days_left": 2,
    "low": false,
@@ -37,7 +37,7 @@
   },
   "last_run": {
    "ok": true,
-   "at": "2026-10-21T15:30:01-04:00",
+   "at": "2026-10-21T16:00:00-04:00",
    "failed_step": null
   }
  },
@@ -140,11 +140,11 @@
    "final": false,
    "score": null,
    "settled": "early",
-   "props_state": "none_yet",
-   "props_at": null,
-   "lines_at": null,
-   "note": "No Hard Rock player props yet. Next check 4:00 PM.",
-   "picks": 0
+   "props_state": "ok",
+   "props_at": "2026-10-21T16:00:00-04:00",
+   "lines_at": "2026-10-21T16:00:00-04:00",
+   "note": null,
+   "picks": 2
   },
   {
    "id": "2026_07_NYG_HOU",
@@ -157,10 +157,10 @@
    "final": false,
    "score": null,
    "settled": "early",
-   "props_state": "none_yet",
-   "props_at": null,
-   "lines_at": null,
-   "note": "No Hard Rock player props yet. Next check 4:00 PM.",
+   "props_state": "ok",
+   "props_at": "2026-10-21T16:00:00-04:00",
+   "lines_at": "2026-10-21T16:00:00-04:00",
+   "note": null,
    "picks": 0
   },
   {
@@ -333,8 +333,49 @@
    ]
   },
   {
-   "id": "2026-W07:2026_07_TB_CAR:00-0036555:rush_yds:1H:30.5:under",
+   "id": "2026-W07:2026_07_MIA_NYJ:00-0040198:rush_yds:FG:48.5:under",
    "rank": 1,
+   "game_id": "2026_07_MIA_NYJ",
+   "day": "2026-10-25",
+   "kickoff": "2026-10-25T13:00:00-04:00",
+   "player": "Ollie Gordon II",
+   "player_short": "O. Gordon",
+   "player_id": "00-0040198",
+   "pos": "RB",
+   "team": "MIA",
+   "opp": "NYJ",
+   "home": false,
+   "market": "rush_yds",
+   "period": "FG",
+   "side": "under",
+   "line": 48.5,
+   "bet": "Under 48.5 rushing yards",
+   "book": "Hard Rock",
+   "price": -115,
+   "price_at": "2026-10-21T16:00:00-04:00",
+   "first_price": -115,
+   "first_price_at": "2026-10-21T16:00:00-04:00",
+   "grade_price": -115,
+   "p": 0.5875,
+   "breakeven": 0.5349,
+   "p_pct": 58,
+   "breakeven_pct": 53,
+   "reason": "47 rushing yards a game his last 5 (2 of 5 over 48.5). His team is projected for 17.5 points.",
+   "settled": "early",
+   "state": "open",
+   "thin": false,
+   "pulled": null,
+   "graded": null,
+   "history": [
+    {
+     "at": "2026-10-21T16:00:00-04:00",
+     "text": "Posted at -115"
+    }
+   ]
+  },
+  {
+   "id": "2026-W07:2026_07_TB_CAR:00-0036555:rush_yds:1H:30.5:under",
+   "rank": 2,
    "game_id": "2026_07_TB_CAR",
    "day": "2026-10-25",
    "kickoff": "2026-10-25T13:00:00-04:00",
@@ -375,7 +416,7 @@
   },
   {
    "id": "2026-W07:2026_07_SF_ATL:00-0033280:rush_att:FG:15.5:under",
-   "rank": 2,
+   "rank": 3,
    "game_id": "2026_07_SF_ATL",
    "day": "2026-10-25",
    "kickoff": "2026-10-25T13:00:00-04:00",
@@ -413,7 +454,70 @@
      "text": "Posted at -115"
     }
    ]
+  },
+  {
+   "id": "2026-W07:2026_07_MIA_NYJ:00-0030565:pass_yds:1H:110.5:under",
+   "rank": 4,
+   "game_id": "2026_07_MIA_NYJ",
+   "day": "2026-10-25",
+   "kickoff": "2026-10-25T13:00:00-04:00",
+   "player": "Geno Smith",
+   "player_short": "G. Smith",
+   "player_id": "00-0030565",
+   "pos": "QB",
+   "team": "NYJ",
+   "opp": "MIA",
+   "home": true,
+   "market": "pass_yds",
+   "period": "1H",
+   "side": "under",
+   "line": 110.5,
+   "bet": "Under 110.5 passing yards",
+   "book": "Hard Rock",
+   "price": -115,
+   "price_at": "2026-10-21T16:00:00-04:00",
+   "first_price": -115,
+   "first_price_at": "2026-10-21T16:00:00-04:00",
+   "grade_price": -115,
+   "p": 0.579,
+   "breakeven": 0.5349,
+   "p_pct": 57,
+   "breakeven_pct": 53,
+   "reason": "88 passing yards a game in the 1st half his last 5 (1 of 5 over 110.5).",
+   "settled": "early",
+   "state": "open",
+   "thin": false,
+   "pulled": null,
+   "graded": null,
+   "history": [
+    {
+     "at": "2026-10-21T16:00:00-04:00",
+     "text": "Posted at -115"
+    }
+   ]
   }
  ],
- "parlays": []
+ "parlays": [
+  {
+   "id": "2026-W07:P:915cca9575",
+   "legs": [
+    "2026-W07:2026_07_MIA_NYJ:00-0040198:rush_yds:FG:48.5:under",
+    "2026-W07:2026_07_TB_CAR:00-0036555:rush_yds:1H:30.5:under"
+   ],
+   "n": 2,
+   "price": 250,
+   "price_at": "2026-10-21T16:00:00-04:00",
+   "first_price": 250,
+   "first_price_at": "2026-10-21T16:00:00-04:00",
+   "grade_price": 250,
+   "p": 0.3421,
+   "breakeven": 0.2861,
+   "p_pct": 34,
+   "breakeven_pct": 29,
+   "kickoff": "2026-10-25T13:00:00-04:00",
+   "state": "open",
+   "pulled": null,
+   "graded": null
+  }
+ ]
 }

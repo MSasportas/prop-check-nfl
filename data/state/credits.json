@@ -47,22 +47,22 @@
   },
   {
    "n": 5,
-   "left": 2,
-   "status": "ok",
-   "checked_at": "2026-10-21T11:30:01-04:00",
+   "left": 0,
+   "status": "empty",
+   "checked_at": "2026-10-21T16:00:00-04:00",
    "month": "2026-10",
-   "after_us": 2,
+   "after_us": 0,
    "shared": false,
    "shared_at": null,
    "others_spent": 0
   },
   {
    "n": 6,
-   "left": 353,
+   "left": 288,
    "status": "ok",
-   "checked_at": "2026-10-21T11:30:01-04:00",
+   "checked_at": "2026-10-21T16:00:00-04:00",
    "month": "2026-10",
-   "after_us": 353,
+   "after_us": 288,
    "shared": false,
    "shared_at": null,
    "others_spent": 0
@@ -837,6 +837,38 @@
    "date": "2026-10-21",
    "pull": "F",
    "game_id": "2026_07_DAL_PHI",
+   "cost": 32,
+   "key": 6
+  },
+  {
+   "at": "2026-10-21T16:00:00-04:00",
+   "date": "2026-10-21",
+   "pull": "M",
+   "game_id": "2026_07_MIA_NYJ",
+   "cost": 1,
+   "key": 5
+  },
+  {
+   "at": "2026-10-21T16:00:00-04:00",
+   "date": "2026-10-21",
+   "pull": "M",
+   "game_id": "2026_07_NYG_HOU",
+   "cost": 1,
+   "key": 5
+  },
+  {
+   "at": "2026-10-21T16:00:00-04:00",
+   "date": "2026-10-21",
+   "pull": "F",
+   "game_id": "2026_07_MIA_NYJ",
+   "cost": 33,
+   "key": 6
+  },
+  {
+   "at": "2026-10-21T16:00:00-04:00",
+   "date": "2026-10-21",
+   "pull": "F",
+   "game_id": "2026_07_NYG_HOU",
    "cost": 32,
    "key": 6
   }
