@@ -1,5 +1,5 @@
 {
- "at": "2026-10-21T09:30:15-04:00",
+ "at": "2026-10-21T10:00:29-04:00",
  "source": "espn",
  "players": {
   "00-0038640": {
@@ -473,7 +473,7 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-10-21T09:00:00-04:00",
+   "date": "2026-10-21T09:27:00-04:00",
    "detail": "Suspension",
    "espn_id": "4034953"
   },
@@ -766,7 +766,7 @@
    "pos": "S",
    "status": "Injured Reserve",
    "fantasy": "IR",
-   "date": "2026-10-21T09:00:00-04:00",
+   "date": "2026-10-21T09:27:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
@@ -3483,6 +3483,17 @@
    "detail": null,
    "espn_id": "4427095"
   },
+  "00-0041029": {
+   "name": "Jordyn Tyson",
+   "team": "NO",
+   "pos": "WR",
+   "status": "Injured Reserve",
+   "fantasy": "IR-R",
+   "date": "2026-10-21T09:31:00-04:00",
+   "detail": "Hamstring",
+   "espn_id": "4880281",
+   "comment": "Tyson (hamstring), per GM Mickey Loomis, is \"getting closer\" but will not practice this week, Ross Jackson of WWL Louisiana reports."
+  },
   "name:NO:nathanshepherd": {
    "name": "Nathan Shepherd",
    "team": "NO",
@@ -3563,17 +3574,6 @@
    "detail": null,
    "espn_id": "4361259"
   },
-  "00-0041029": {
-   "name": "Jordyn Tyson",
-   "team": "NO",
-   "pos": "WR",
-   "status": "Injured Reserve",
-   "fantasy": "IR-R",
-   "date": "2026-10-19T09:19:00-04:00",
-   "detail": "Hamstring",
-   "espn_id": "4880281",
-   "comment": "Saints head coach Kellen Moore said that Tyson (hamstring) traveled to Paris in advance of Sunday's game against the Steelers, NewOrleans.football reports."
-  },
   "00-0036040": {
    "name": "Juwan Johnson",
    "team": "NO",
@@ -3650,7 +3650,7 @@
    "pos": "OT",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-10-21T09:00:00-04:00",
+   "date": "2026-10-21T09:27:00-04:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
