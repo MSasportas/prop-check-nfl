@@ -3,10 +3,10 @@
  "season": 2026,
  "week": 7,
  "slate": "2026-W07",
- "started_at": "2026-10-21T12:30:01-04:00",
- "status_at": "2026-10-21T12:30:01-04:00",
- "finished_at": "2026-10-21T12:30:01-04:00",
- "last_ok_at": "2026-10-21T12:30:01-04:00",
+ "started_at": "2026-10-21T13:00:01-04:00",
+ "status_at": "2026-10-21T13:00:01-04:00",
+ "finished_at": "2026-10-21T13:00:01-04:00",
+ "last_ok_at": "2026-10-21T13:00:01-04:00",
  "failed_step": null,
  "steps": [
   {
@@ -22,17 +22,17 @@
   {
    "step": "stats",
    "status": "skipped",
-   "note": "play-by-play unchanged (6436940 bytes)"
+   "note": "checked at 12:30 PM"
   },
   {
    "step": "roster",
-   "status": "skipped",
-   "note": "read at 1:00 AM"
+   "status": "ok",
+   "note": "786 skill players"
   },
   {
    "step": "injuries",
    "status": "skipped",
-   "note": "read at 12:00 PM"
+   "note": "read at 12:30 PM"
   },
   {
    "step": "weather",
@@ -62,7 +62,7 @@
   {
    "step": "research",
    "status": "ok",
-   "note": "0 game file(s) written"
+   "note": "1 game file(s) written"
   },
   {
    "step": "record",
@@ -143,11 +143,11 @@
  "odds_notes": [],
  "runner": {
   "event": "workflow_dispatch",
-  "run_id": "39630775447",
+  "run_id": "39635312691",
   "iteration": 2,
-  "chain_link": 1122,
+  "chain_link": 1123,
   "chain_started_at": "2026-10-18T20:10:54-04:00",
-  "run_started_at": "2026-10-21T12:00:13-04:00"
+  "run_started_at": "2026-10-21T12:30:14-04:00"
  },
  "live_page": {
   "checked_at": "2026-10-21T12:30:01-04:00",
