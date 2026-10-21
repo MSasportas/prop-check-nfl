@@ -1,5 +1,5 @@
 {
- "at": "2026-10-21T18:30:01-04:00",
+ "at": "2026-10-21T19:00:01-04:00",
  "source": "espn",
  "players": {
   "00-0041027": {
@@ -3690,6 +3690,17 @@
    "detail": null,
    "espn_id": "4427095"
   },
+  "00-0041326": {
+   "name": "CJ Donaldson",
+   "team": "NO",
+   "pos": "RB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-21T18:33:00-04:00",
+   "detail": "Shoulder",
+   "espn_id": "5081999",
+   "comment": "Donaldson (shoulder) was listed as a limited practice participant Wednesday, Katherine Terrell of ESPN reports."
+  },
   "00-0033906": {
    "name": "Alvin Kamara",
    "team": "NO",
@@ -3700,17 +3711,6 @@
    "detail": "Back",
    "espn_id": "3054850",
    "comment": "Kamara (back) practiced in a limited capacity Wednesday, Katherine Terrell of ESPN reports."
-  },
-  "00-0041326": {
-   "name": "CJ Donaldson",
-   "team": "NO",
-   "pos": "RB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-21T17:40:00-04:00",
-   "detail": "Shoulder",
-   "espn_id": "5081999",
-   "comment": "questionable"
   },
   "00-0041029": {
    "name": "Jordyn Tyson",
