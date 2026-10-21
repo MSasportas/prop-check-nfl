@@ -1,5 +1,5 @@
 {
- "at": "2026-10-21T12:00:14-04:00",
+ "at": "2026-10-21T12:30:15-04:00",
  "source": "espn",
  "players": {
   "00-0038640": {
@@ -473,7 +473,7 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-10-21T11:50:00-04:00",
+   "date": "2026-10-21T12:17:00-04:00",
    "detail": "Suspension",
    "espn_id": "4034953"
   },
@@ -776,7 +776,7 @@
    "pos": "S",
    "status": "Injured Reserve",
    "fantasy": "IR",
-   "date": "2026-10-21T11:45:00-04:00",
+   "date": "2026-10-21T12:08:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
@@ -1082,6 +1082,16 @@
    "date": "2026-10-05T22:52:00-04:00",
    "detail": null,
    "espn_id": "4690070"
+  },
+  "name:CLE:carsonschwesinger": {
+   "name": "Carson Schwesinger",
+   "team": "CLE",
+   "pos": "LB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-20T21:47:00-04:00",
+   "detail": "Ankle",
+   "espn_id": "4876017"
   },
   "00-0040784": {
    "name": "Quinshon Judkins",
@@ -3660,9 +3670,19 @@
    "pos": "OT",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-10-21T11:50:00-04:00",
+   "date": "2026-10-21T12:17:00-04:00",
    "detail": "Calf",
    "espn_id": "3115303"
+  },
+  "00-0039923": {
+   "name": "J.J. McCarthy",
+   "team": "NYG",
+   "pos": "QB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-21T12:12:00-04:00",
+   "detail": null,
+   "espn_id": "4433970"
   },
   "name:NYG:tylernubin": {
    "name": "Tyler Nubin",
@@ -3744,16 +3764,6 @@
    "date": "2026-10-18T21:31:00-04:00",
    "detail": null,
    "espn_id": "4696981"
-  },
-  "00-0039923": {
-   "name": "J.J. McCarthy",
-   "team": "NYG",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-18T21:20:00-04:00",
-   "detail": null,
-   "espn_id": "4433970"
   },
   "00-0031503": {
    "name": "Jameis Winston",
@@ -4691,6 +4701,17 @@
    "detail": null,
    "espn_id": "4430878"
   },
+  "00-0034855": {
+   "name": "Baker Mayfield",
+   "team": "TB",
+   "pos": "QB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-21T12:19:00-04:00",
+   "detail": "Thumb",
+   "espn_id": "3052587",
+   "comment": "Mayfield (thumb) was seen participating in Wednesday's practice and was throwing while wearing a glove on his right hand, Rick Stroud of the Tampa Bay Times rep"
+  },
   "name:TB:antoinewinfield": {
    "name": "Antoine Winfield Jr.",
    "team": "TB",
@@ -4710,17 +4731,6 @@
    "date": "2026-10-20T12:10:00-04:00",
    "detail": "Quadriceps",
    "espn_id": "4430871",
-   "comment": "questionable"
-  },
-  "00-0034855": {
-   "name": "Baker Mayfield",
-   "team": "TB",
-   "pos": "QB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-20T12:10:00-04:00",
-   "detail": "Thumb",
-   "espn_id": "3052587",
    "comment": "questionable"
   },
   "name:TB:benjaminmorrison": {
