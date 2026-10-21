@@ -3,10 +3,10 @@
  "season": 2026,
  "week": 7,
  "slate": "2026-W07",
- "started_at": "2026-10-21T00:00:01-04:00",
- "status_at": "2026-10-21T00:00:01-04:00",
- "finished_at": "2026-10-21T00:00:01-04:00",
- "last_ok_at": "2026-10-21T00:00:01-04:00",
+ "started_at": "2026-10-21T00:30:01-04:00",
+ "status_at": "2026-10-21T00:30:01-04:00",
+ "finished_at": "2026-10-21T00:30:02-04:00",
+ "last_ok_at": "2026-10-21T00:30:01-04:00",
  "failed_step": null,
  "steps": [
   {
@@ -141,11 +141,11 @@
  "odds_notes": [],
  "runner": {
   "event": "workflow_dispatch",
-  "run_id": "39538904841",
+  "run_id": "39541618140",
   "iteration": 2,
-  "chain_link": 764,
+  "chain_link": 765,
   "chain_started_at": "2026-10-18T20:10:54-04:00",
-  "run_started_at": "2026-10-20T23:30:13-04:00"
+  "run_started_at": "2026-10-21T00:00:12-04:00"
  },
  "live_page": {
   "checked_at": "2026-10-20T23:30:13-04:00",
