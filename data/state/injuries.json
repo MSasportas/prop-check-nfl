@@ -1,5 +1,5 @@
 {
- "at": "2026-10-21T10:00:29-04:00",
+ "at": "2026-10-21T11:00:01-04:00",
  "source": "espn",
  "players": {
   "00-0038640": {
@@ -467,13 +467,23 @@
    "detail": null,
    "espn_id": "2576399"
   },
+  "name:BUF:samfranklin": {
+   "name": "Sam Franklin Jr.",
+   "team": "BUF",
+   "pos": "S",
+   "status": "Suspension",
+   "fantasy": "RESERVE-SUS",
+   "date": "2026-10-21T10:13:00-04:00",
+   "detail": "Suspension",
+   "espn_id": "4044133"
+  },
   "name:BUF:cjgardnerjohnson": {
    "name": "C.J. Gardner-Johnson",
    "team": "BUF",
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-10-21T09:27:00-04:00",
+   "date": "2026-10-21T10:13:00-04:00",
    "detail": "Suspension",
    "espn_id": "4034953"
   },
@@ -766,7 +776,7 @@
    "pos": "S",
    "status": "Injured Reserve",
    "fantasy": "IR",
-   "date": "2026-10-21T09:27:00-04:00",
+   "date": "2026-10-21T10:13:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
@@ -3650,7 +3660,7 @@
    "pos": "OT",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-10-21T09:27:00-04:00",
+   "date": "2026-10-21T10:13:00-04:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
@@ -4983,7 +4993,7 @@
    "date": "2026-10-20T15:18:00-04:00",
    "detail": "Knee",
    "espn_id": "3121422",
-   "comment": "McLaurin tore his left patellar tendon during Monday's loss to the 49ers, according to John Keim of ESPN.com."
+   "comment": "Commanders head coach Dan Quinn announced Monday that McLaurin has been diagnosed with a torn patellar tendon in his left knee following an MRI and will miss th"
   },
   "name:WAS:charlesomenihu": {
    "name": "Charles Omenihu",
