@@ -1,5 +1,5 @@
 {
- "at": "2026-10-20T22:00:13-04:00",
+ "at": "2026-10-20T22:30:13-04:00",
  "source": "espn",
  "players": {
   "00-0038640": {
@@ -473,7 +473,7 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-10-20T21:28:00-04:00",
+   "date": "2026-10-20T22:01:00-04:00",
    "detail": "Suspension",
    "espn_id": "4034953"
   },
@@ -766,7 +766,7 @@
    "pos": "S",
    "status": "Injured Reserve",
    "fantasy": "IR",
-   "date": "2026-10-20T21:28:00-04:00",
+   "date": "2026-10-20T22:01:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
@@ -2650,16 +2650,6 @@
    "detail": null,
    "espn_id": "4241983"
   },
-  "00-0039407": {
-   "name": "Dylan Laube",
-   "team": "LV",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-11T22:33:00-04:00",
-   "detail": null,
-   "espn_id": "4366963"
-  },
   "00-0040184": {
    "name": "KeAndre Lambert-Smith",
    "team": "LAC",
@@ -3670,7 +3660,7 @@
    "pos": "OT",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-10-20T21:28:00-04:00",
+   "date": "2026-10-20T22:01:00-04:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
