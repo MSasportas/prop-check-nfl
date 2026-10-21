@@ -1,5 +1,5 @@
 {
- "at": "2026-10-21T12:30:15-04:00",
+ "at": "2026-10-21T13:00:21-04:00",
  "source": "espn",
  "players": {
   "00-0038640": {
@@ -473,7 +473,7 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-10-21T12:17:00-04:00",
+   "date": "2026-10-21T12:50:00-04:00",
    "detail": "Suspension",
    "espn_id": "4034953"
   },
@@ -776,7 +776,7 @@
    "pos": "S",
    "status": "Injured Reserve",
    "fantasy": "IR",
-   "date": "2026-10-21T12:08:00-04:00",
+   "date": "2026-10-21T12:17:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
@@ -941,7 +941,7 @@
    "detail": "Suspension",
    "espn_id": "3134690"
   },
-  "name:CIN:joshkattus": {
+  "00-0041246": {
    "name": "Josh Kattus",
    "team": "CIN",
    "pos": "TE",
@@ -1083,6 +1083,17 @@
    "detail": null,
    "espn_id": "4690070"
   },
+  "00-0040784": {
+   "name": "Quinshon Judkins",
+   "team": "CLE",
+   "pos": "RB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-21T12:39:00-04:00",
+   "detail": "Ankle",
+   "espn_id": "4685702",
+   "comment": "Browns head coach Todd Monken said that he's optimistic that Judkins (ankle) will be available for Sunday's game against the Titans, Daniel Oyefusi of ESPN.comr"
+  },
   "name:CLE:carsonschwesinger": {
    "name": "Carson Schwesinger",
    "team": "CLE",
@@ -1092,17 +1103,6 @@
    "date": "2026-10-20T21:47:00-04:00",
    "detail": "Ankle",
    "espn_id": "4876017"
-  },
-  "00-0040784": {
-   "name": "Quinshon Judkins",
-   "team": "CLE",
-   "pos": "RB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-20T12:10:00-04:00",
-   "detail": "Ankle",
-   "espn_id": "4685702",
-   "comment": "questionable"
   },
   "name:CLE:masongraham": {
    "name": "Mason Graham",
@@ -3670,9 +3670,19 @@
    "pos": "OT",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-10-21T12:17:00-04:00",
+   "date": "2026-10-21T12:50:00-04:00",
    "detail": "Calf",
    "espn_id": "3115303"
+  },
+  "00-0031503": {
+   "name": "Jameis Winston",
+   "team": "NYG",
+   "pos": "QB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-21T12:36:00-04:00",
+   "detail": null,
+   "espn_id": "2969939"
   },
   "00-0039923": {
    "name": "J.J. McCarthy",
@@ -3765,16 +3775,6 @@
    "detail": null,
    "espn_id": "4696981"
   },
-  "00-0031503": {
-   "name": "Jameis Winston",
-   "team": "NYG",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-18T21:10:00-04:00",
-   "detail": null,
-   "espn_id": "2969939"
-  },
   "00-0039337": {
    "name": "Malik Nabers",
    "team": "NYG",
@@ -3837,6 +3837,17 @@
    "espn_id": "3123075",
    "comment": "Berrios (foot) underwent successful surgery Friday to repair a Lisfranc injury, Jordan Raanan of ESPN.com reports."
   },
+  "00-0039890": {
+   "name": "Adonai Mitchell",
+   "team": "NYJ",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-21T12:50:00-04:00",
+   "detail": "Finger",
+   "espn_id": "4597500",
+   "comment": "questionable"
+  },
   "name:NYJ:josephossai": {
    "name": "Joseph Ossai",
    "team": "NYJ",
@@ -3856,17 +3867,6 @@
    "date": "2026-10-20T12:10:00-04:00",
    "detail": "Knee",
    "espn_id": "4243375"
-  },
-  "00-0039890": {
-   "name": "Adonai Mitchell",
-   "team": "NYJ",
-   "pos": "WR",
-   "status": "Doubtful",
-   "fantasy": "DOUBTFUL",
-   "date": "2026-10-20T12:10:00-04:00",
-   "detail": "Finger",
-   "espn_id": "4597500",
-   "comment": "doubtful"
   },
   "00-0038120": {
    "name": "Breece Hall",
