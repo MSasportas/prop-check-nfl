@@ -1,5 +1,5 @@
 {
- "at": "2026-10-21T06:00:01-04:00",
+ "at": "2026-10-21T07:00:01-04:00",
  "source": "espn",
  "players": {
   "00-0038640": {
@@ -473,7 +473,7 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-10-21T05:00:00-04:00",
+   "date": "2026-10-21T06:01:00-04:00",
    "detail": "Suspension",
    "espn_id": "4034953"
   },
@@ -766,7 +766,7 @@
    "pos": "S",
    "status": "Injured Reserve",
    "fantasy": "IR",
-   "date": "2026-10-21T05:00:00-04:00",
+   "date": "2026-10-21T06:01:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
@@ -3650,7 +3650,7 @@
    "pos": "OT",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-10-21T05:00:00-04:00",
+   "date": "2026-10-21T06:01:00-04:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
