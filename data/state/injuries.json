@@ -1,5 +1,5 @@
 {
- "at": "2026-10-21T16:30:00-04:00",
+ "at": "2026-10-21T17:00:00-04:00",
  "source": "espn",
  "players": {
   "00-0041027": {
@@ -314,16 +314,56 @@
    "detail": null,
    "espn_id": "4241479"
   },
+  "name:BAL:taviusrobinson": {
+   "name": "Tavius Robinson",
+   "team": "BAL",
+   "pos": "LB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-21T16:38:00-04:00",
+   "detail": "Pectoral",
+   "espn_id": "4690179"
+  },
   "00-0034796": {
    "name": "Lamar Jackson",
    "team": "BAL",
    "pos": "QB",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-10-21T15:03:00-04:00",
+   "date": "2026-10-21T16:37:00-04:00",
    "detail": "Ankle",
    "espn_id": "3916387",
-   "comment": "Ravens head coach Jesse Minter said that Jackson got some \"limited\" work in with the team during Wednesday's practice, Ryan Mink of the Ravens' official site re"
+   "comment": "Jackson (ankle) was a limited participant Wednesday."
+  },
+  "name:BAL:johnsimpson": {
+   "name": "John Simpson",
+   "team": "BAL",
+   "pos": "G",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-21T16:36:00-04:00",
+   "detail": "Groin",
+   "espn_id": "4035479"
+  },
+  "name:BAL:jaylinnhawkins": {
+   "name": "Jaylinn Hawkins",
+   "team": "BAL",
+   "pos": "S",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-21T16:34:00-04:00",
+   "detail": "Knee",
+   "espn_id": "3858276"
+  },
+  "name:BAL:olaivavegaioane": {
+   "name": "Olaivavega Ioane",
+   "team": "BAL",
+   "pos": "G",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-21T16:33:00-04:00",
+   "detail": "Ankle",
+   "espn_id": "4832793"
   },
   "00-0036550": {
    "name": "Rashod Bateman",
@@ -353,7 +393,7 @@
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
    "date": "2026-10-20T12:10:00-04:00",
-   "detail": "Foot",
+   "detail": "Knee",
    "espn_id": "4243220"
   },
   "name:BAL:broderickwashington": {
@@ -363,7 +403,7 @@
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
    "date": "2026-10-20T12:10:00-04:00",
-   "detail": "Ankle",
+   "detail": "Foot",
    "espn_id": "3915837"
   },
   "name:BAL:camjurgens": {
@@ -457,23 +497,13 @@
    "detail": null,
    "espn_id": "4876132"
   },
-  "00-0032394": {
-   "name": "Nick Vannett",
-   "team": "BAL",
-   "pos": "TE",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-15T19:46:00-04:00",
-   "detail": null,
-   "espn_id": "2576399"
-  },
   "name:BUF:cjgardnerjohnson": {
    "name": "C.J. Gardner-Johnson",
    "team": "BUF",
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-10-21T16:20:00-04:00",
+   "date": "2026-10-21T16:48:00-04:00",
    "detail": "Suspension",
    "espn_id": "4034953"
   },
@@ -775,7 +805,7 @@
    "pos": "S",
    "status": "Injured Reserve",
    "fantasy": "IR",
-   "date": "2026-10-21T16:18:00-04:00",
+   "date": "2026-10-21T16:45:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
@@ -1082,6 +1112,17 @@
    "detail": null,
    "espn_id": "4690070"
   },
+  "00-0041547": {
+   "name": "KC Concepcion",
+   "team": "CLE",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-21T16:21:00-04:00",
+   "detail": "Calf",
+   "espn_id": "4870653",
+   "comment": "Concepcion (calf, quad) was a limited participant in Wednesday's practice, Chris Easterling of the Akron Beacon Journal reports."
+  },
   "00-0041037": {
    "name": "Denzel Boston",
    "team": "CLE",
@@ -1143,17 +1184,6 @@
    "date": "2026-10-21T16:02:00-04:00",
    "detail": "Ankle",
    "espn_id": "3115336"
-  },
-  "00-0041547": {
-   "name": "KC Concepcion",
-   "team": "CLE",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-21T15:59:00-04:00",
-   "detail": "Calf",
-   "espn_id": "4870653",
-   "comment": "questionable"
   },
   "00-0040162": {
    "name": "Dylan Sampson",
@@ -1730,6 +1760,28 @@
    "detail": null,
    "espn_id": "3915486"
   },
+  "00-0040667": {
+   "name": "Matthew Golden",
+   "team": "GB",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-21T16:20:00-04:00",
+   "detail": "Shoulder",
+   "espn_id": "4701936",
+   "comment": "Golden (shoulder) was listed as a limited participant on Wednesday's estimated injury report, Matt Schneidman of The Athletic reports."
+  },
+  "00-0038124": {
+   "name": "Christian Watson",
+   "team": "GB",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-21T16:17:00-04:00",
+   "detail": "Ankle",
+   "espn_id": "4248528",
+   "comment": "Watson was listed as a limited participant on Wednesday's practice estimate due to an ankle injury, Matt Schneidman of The Athletic reports."
+  },
   "00-0036264": {
    "name": "Jordan Love",
    "team": "GB",
@@ -1781,28 +1833,6 @@
    "date": "2026-10-21T16:10:00-04:00",
    "detail": "Ankle",
    "espn_id": "4431487",
-   "comment": "questionable"
-  },
-  "00-0038124": {
-   "name": "Christian Watson",
-   "team": "GB",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-21T16:08:00-04:00",
-   "detail": "Ankle",
-   "espn_id": "4248528",
-   "comment": "questionable"
-  },
-  "00-0040667": {
-   "name": "Matthew Golden",
-   "team": "GB",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-21T16:08:00-04:00",
-   "detail": "Shoulder",
-   "espn_id": "4701936",
    "comment": "questionable"
   },
   "00-0035700": {
@@ -3102,15 +3132,58 @@
    "detail": null,
    "espn_id": "4360797"
   },
-  "name:MIA:jonahsavaiinaea": {
-   "name": "Jonah Savaiinaea",
+  "00-0039874": {
+   "name": "Jaylen Wright",
    "team": "MIA",
-   "pos": "G",
+   "pos": "RB",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-10-19T20:18:00-04:00",
+   "date": "2026-10-21T16:45:00-04:00",
+   "detail": "Foot",
+   "espn_id": "4682745",
+   "comment": "Wright (foot) was a limited participant in Wednesday's practice, David Furones of the Sun Sentinel  reports."
+  },
+  "00-0041077": {
+   "name": "Justin Joly",
+   "team": "MIA",
+   "pos": "TE",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-21T16:39:00-04:00",
+   "detail": null,
+   "espn_id": "4912052"
+  },
+  "00-0041524": {
+   "name": "Will Kacmarek",
+   "team": "MIA",
+   "pos": "TE",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-21T16:36:00-04:00",
+   "detail": "Hamstring",
+   "espn_id": "4880236",
+   "comment": "questionable"
+  },
+  "name:MIA:tuckeraddington": {
+   "name": "Tucker Addington",
+   "team": "MIA",
+   "pos": "LS",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-21T16:36:00-04:00",
+   "detail": "Shoulder",
+   "espn_id": "4034729"
+  },
+  "00-0041523": {
+   "name": "Caleb Douglas",
+   "team": "MIA",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-21T16:22:00-04:00",
    "detail": "Ankle",
-   "espn_id": "4819257"
+   "espn_id": "4869645",
+   "comment": "Douglas (ankle) practiced Wednesday and said that his status is day-to-day heading into Sunday's game against the Jets, David Furones of the South Florida Sun S"
   },
   "00-0038128": {
    "name": "Malik Willis",
@@ -3121,17 +3194,6 @@
    "date": "2026-10-19T10:56:00-04:00",
    "detail": null,
    "espn_id": "4242512"
-  },
-  "00-0041523": {
-   "name": "Caleb Douglas",
-   "team": "MIA",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-19T10:44:00-04:00",
-   "detail": "Ankle",
-   "espn_id": "4869645",
-   "comment": "Dolphins head coach Jeff Hafley said that Douglas (ankle) will be a limited participant in Monday's informal practice, David Furones of the South Florida Sun Se"
   },
   "00-0038728": {
    "name": "Jared Wayne",
@@ -3152,17 +3214,6 @@
    "date": "2026-10-13T13:10:00-04:00",
    "detail": "Quadriceps",
    "espn_id": "4371946"
-  },
-  "00-0041077": {
-   "name": "Justin Joly",
-   "team": "MIA",
-   "pos": "TE",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-13T13:10:00-04:00",
-   "detail": "Concussion",
-   "espn_id": "4912052",
-   "comment": "questionable"
   },
   "name:MIA:robertbeal": {
    "name": "Robert Beal Jr.",
@@ -3223,36 +3274,6 @@
    "date": "2026-10-11T19:06:00-04:00",
    "detail": null,
    "espn_id": "4711533"
-  },
-  "name:MIA:jujubrents": {
-   "name": "JuJu Brents",
-   "team": "MIA",
-   "pos": "CB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-11T15:53:00-04:00",
-   "detail": "Neck",
-   "espn_id": "4360488"
-  },
-  "name:MIA:michaeltaaffe": {
-   "name": "Michael Taaffe",
-   "team": "MIA",
-   "pos": "S",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-11T15:04:00-04:00",
-   "detail": "Chest",
-   "espn_id": "4880346"
-  },
-  "00-0039874": {
-   "name": "Jaylen Wright",
-   "team": "MIA",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-11T12:01:00-04:00",
-   "detail": null,
-   "espn_id": "4682745"
   },
   "00-0041525": {
    "name": "Chris Bell",
@@ -3776,9 +3797,50 @@
    "pos": "OT",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-10-21T16:20:00-04:00",
+   "date": "2026-10-21T16:48:00-04:00",
    "detail": "Calf",
    "espn_id": "3115303"
+  },
+  "name:NYG:kayvonthibodeaux": {
+   "name": "Kayvon Thibodeaux",
+   "team": "NYG",
+   "pos": "LB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-21T16:28:00-04:00",
+   "detail": "Illness",
+   "espn_id": "4426326"
+  },
+  "name:NYG:jordanstout": {
+   "name": "Jordan Stout",
+   "team": "NYG",
+   "pos": "P",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-21T16:27:00-04:00",
+   "detail": "Knee",
+   "espn_id": "4260224"
+  },
+  "00-0036309": {
+   "name": "Darnell Mooney",
+   "team": "NYG",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-21T16:27:00-04:00",
+   "detail": null,
+   "espn_id": "4040655"
+  },
+  "00-0038576": {
+   "name": "Charlie Jones",
+   "team": "NYG",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-21T16:26:00-04:00",
+   "detail": "Achilles",
+   "espn_id": "4257188",
+   "comment": "questionable"
   },
   "name:NYG:andrewthomas": {
    "name": "Andrew Thomas",
@@ -3940,17 +4002,6 @@
    "date": "2026-10-18T17:47:00-04:00",
    "detail": "Shoulder",
    "espn_id": "3929950"
-  },
-  "00-0036309": {
-   "name": "Darnell Mooney",
-   "team": "NYG",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-18T15:33:00-04:00",
-   "detail": "Neck",
-   "espn_id": "4040655",
-   "comment": "Mooney (neck) is questionable to return to Sunday's game against the Saints, Ross Jackson of WWL Louisiana reports."
   },
   "name:NYG:gregnewsome": {
    "name": "Greg Newsome II",
@@ -5612,6 +5663,18 @@
   "00-0036842": {
    "status": "Questionable",
    "at": "2026-10-21T16:30:00-04:00"
+  },
+  "00-0039874": {
+   "status": "Questionable",
+   "at": "2026-10-21T17:00:00-04:00"
+  },
+  "00-0041524": {
+   "status": "Questionable",
+   "at": "2026-10-21T17:00:00-04:00"
+  },
+  "00-0038576": {
+   "status": "Questionable",
+   "at": "2026-10-21T17:00:00-04:00"
   }
  }
 }
