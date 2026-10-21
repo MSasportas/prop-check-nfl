@@ -1,5 +1,5 @@
 {
- "at": "2026-10-21T18:00:00-04:00",
+ "at": "2026-10-21T18:30:01-04:00",
  "source": "espn",
  "players": {
   "00-0041027": {
@@ -503,7 +503,7 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-10-21T17:41:00-04:00",
+   "date": "2026-10-21T18:01:00-04:00",
    "detail": "Suspension",
    "espn_id": "4034953"
   },
@@ -805,7 +805,7 @@
    "pos": "S",
    "status": "Injured Reserve",
    "fantasy": "IR",
-   "date": "2026-10-21T17:41:00-04:00",
+   "date": "2026-10-21T18:01:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
@@ -1495,7 +1495,7 @@
    "date": "2026-10-21T16:59:00-04:00",
    "detail": "Ankle",
    "espn_id": "4702555",
-   "comment": "Coleman (ankle) was back at practice Wednesday after being designated for return from injured reserve, Chris Tomasson of The Denver Gazette reports."
+   "comment": "Coleman (ankle) was on the field for practice Wednesday after being designated for return from injured reserve, Chris Tomasson of The Denver Gazette reports."
   },
   "name:DEN:talanoahufanga": {
    "name": "Talanoa Hufanga",
@@ -1759,6 +1759,17 @@
    "detail": null,
    "espn_id": "3915486"
   },
+  "00-0040009": {
+   "name": "Savion Williams",
+   "team": "GB",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-21T17:54:00-04:00",
+   "detail": "Ankle",
+   "espn_id": "4431487",
+   "comment": "Williams (ankle) was listed as a limited participant on Wednesday's estimated injury report, Matt Schneidman of The Athletic reports."
+  },
   "00-0040667": {
    "name": "Matthew Golden",
    "team": "GB",
@@ -1822,17 +1833,6 @@
    "date": "2026-10-21T16:11:00-04:00",
    "detail": "Shoulder",
    "espn_id": "5076652"
-  },
-  "00-0040009": {
-   "name": "Savion Williams",
-   "team": "GB",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-21T16:10:00-04:00",
-   "detail": "Ankle",
-   "espn_id": "4431487",
-   "comment": "questionable"
   },
   "00-0035700": {
    "name": "Josh Jacobs",
@@ -3690,6 +3690,17 @@
    "detail": null,
    "espn_id": "4427095"
   },
+  "00-0033906": {
+   "name": "Alvin Kamara",
+   "team": "NO",
+   "pos": "RB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-21T17:50:00-04:00",
+   "detail": "Back",
+   "espn_id": "3054850",
+   "comment": "Kamara (back) practiced in a limited capacity Wednesday, Katherine Terrell of ESPN reports."
+  },
   "00-0041326": {
    "name": "CJ Donaldson",
    "team": "NO",
@@ -3699,17 +3710,6 @@
    "date": "2026-10-21T17:40:00-04:00",
    "detail": "Shoulder",
    "espn_id": "5081999",
-   "comment": "questionable"
-  },
-  "00-0033906": {
-   "name": "Alvin Kamara",
-   "team": "NO",
-   "pos": "RB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-21T17:39:00-04:00",
-   "detail": "Back",
-   "espn_id": "3054850",
    "comment": "questionable"
   },
   "00-0041029": {
@@ -3839,9 +3839,19 @@
    "pos": "OT",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-10-21T17:41:00-04:00",
+   "date": "2026-10-21T18:01:00-04:00",
    "detail": "Calf",
    "espn_id": "3115303"
+  },
+  "00-0036309": {
+   "name": "Darnell Mooney",
+   "team": "NYG",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-21T17:56:00-04:00",
+   "detail": null,
+   "espn_id": "4040655"
   },
   "name:NYG:kayvonthibodeaux": {
    "name": "Kayvon Thibodeaux",
@@ -3862,16 +3872,6 @@
    "date": "2026-10-21T16:27:00-04:00",
    "detail": "Knee",
    "espn_id": "4260224"
-  },
-  "00-0036309": {
-   "name": "Darnell Mooney",
-   "team": "NYG",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-21T16:27:00-04:00",
-   "detail": null,
-   "espn_id": "4040655"
   },
   "00-0038576": {
    "name": "Charlie Jones",
