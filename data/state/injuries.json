@@ -1,5 +1,5 @@
 {
- "at": "2026-10-22T10:10:01-04:00",
+ "at": "2026-10-22T10:40:01-04:00",
  "source": "espn",
  "players": {
   "name:ARI:buddabaker": {
@@ -476,7 +476,7 @@
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
    "date": "2026-10-20T12:10:00-04:00",
-   "detail": "Knee",
+   "detail": "Foot",
    "espn_id": "4243220"
   },
   "name:BAL:broderickwashington": {
@@ -486,7 +486,7 @@
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
    "date": "2026-10-20T12:10:00-04:00",
-   "detail": "Foot",
+   "detail": "Ankle",
    "espn_id": "3915837"
   },
   "00-0034753": {
@@ -565,7 +565,7 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-10-22T09:00:00-04:00",
+   "date": "2026-10-22T10:26:00-04:00",
    "detail": "Suspension",
    "espn_id": "4034953"
   },
@@ -704,8 +704,8 @@
    "name": "Jaelan Phillips",
    "team": "CAR",
    "pos": "LB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
+   "status": "Doubtful",
+   "fantasy": "DOUBTFUL",
    "date": "2026-10-21T19:38:00-04:00",
    "detail": "Hamstring",
    "espn_id": "4242975"
@@ -857,7 +857,7 @@
    "pos": "S",
    "status": "Injured Reserve",
    "fantasy": "IR",
-   "date": "2026-10-22T10:00:00-04:00",
+   "date": "2026-10-22T10:35:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
@@ -900,7 +900,7 @@
    "date": "2026-10-21T15:18:00-04:00",
    "detail": "Toe",
    "espn_id": "4608686",
-   "comment": "Monangai (thumb/toe) has been ruled out for Thursday's game against the Patriots."
+   "comment": "Monangai (toe/thumb) has been ruled out for Thursday's game against the Patriots."
   },
   "00-0032464": {
    "name": "Kalif Raymond",
@@ -1535,7 +1535,7 @@
    "status": "Doubtful",
    "fantasy": "DOUBTFUL",
    "date": "2026-10-21T20:32:00-04:00",
-   "detail": "Lower Leg",
+   "detail": "Ankle",
    "espn_id": "4687592"
   },
   "00-0037085": {
@@ -2789,7 +2789,7 @@
    "date": "2026-10-21T19:34:00-04:00",
    "detail": "Foot",
    "espn_id": "4686658",
-   "comment": "Washington (foot/back) was limited in Wednesday's practice, Around The NFL reports."
+   "comment": "Washington was a limited participant in Wednesday's practice due to foot and back injuries."
   },
   "00-0039338": {
    "name": "Brock Bowers",
@@ -3925,7 +3925,7 @@
    "pos": "OT",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-10-22T09:00:00-04:00",
+   "date": "2026-10-22T10:26:00-04:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
