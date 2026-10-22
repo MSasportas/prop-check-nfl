@@ -1,5 +1,5 @@
 {
- "at": "2026-10-22T09:30:01-04:00",
+ "at": "2026-10-22T10:10:01-04:00",
  "source": "espn",
  "players": {
   "name:ARI:buddabaker": {
@@ -855,9 +855,9 @@
    "name": "Anthony Johnson Jr.",
    "team": "CHI",
    "pos": "S",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-22T09:00:00-04:00",
+   "status": "Injured Reserve",
+   "fantasy": "IR",
+   "date": "2026-10-22T10:00:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
@@ -4314,6 +4314,17 @@
    "detail": null,
    "espn_id": "4569371"
   },
+  "00-0034844": {
+   "name": "Saquon Barkley",
+   "team": "PHI",
+   "pos": "RB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-22T09:45:00-04:00",
+   "detail": "Hamstring",
+   "espn_id": "3929630",
+   "comment": "Barkley (hamstring) is expected to practice Thursday and \"is in line to play Monday against the Cowboys,\" Mike Garafolo of NFL Network reports."
+  },
   "00-0040024": {
    "name": "Darius Cooper",
    "team": "PHI",
@@ -4353,17 +4364,6 @@
    "date": "2026-10-20T12:10:00-04:00",
    "detail": "Ankle",
    "espn_id": "4571162"
-  },
-  "00-0034844": {
-   "name": "Saquon Barkley",
-   "team": "PHI",
-   "pos": "RB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-20T12:10:00-04:00",
-   "detail": "Hamstring",
-   "espn_id": "3929630",
-   "comment": "questionable"
   },
   "name:PHI:michaelcarter": {
    "name": "Michael Carter II",
