@@ -1,5 +1,5 @@
 {
- "at": "2026-10-21T23:30:15-04:00",
+ "at": "2026-10-22T00:10:00-04:00",
  "source": "espn",
  "players": {
   "name:ARI:buddabaker": {
@@ -565,7 +565,7 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-10-21T23:00:00-04:00",
+   "date": "2026-10-22T00:00:00-04:00",
    "detail": "Suspension",
    "espn_id": "4034953"
   },
@@ -855,9 +855,9 @@
    "name": "Anthony Johnson Jr.",
    "team": "CHI",
    "pos": "S",
-   "status": "Injured Reserve",
-   "fantasy": "IR",
-   "date": "2026-10-21T23:00:00-04:00",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-10-22T00:00:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
@@ -1173,17 +1173,6 @@
    "detail": "Ankle",
    "espn_id": "4876017"
   },
-  "00-0040162": {
-   "name": "Dylan Sampson",
-   "team": "CLE",
-   "pos": "RB",
-   "status": "Injured Reserve",
-   "fantasy": "IR-R",
-   "date": "2026-10-21T17:17:00-04:00",
-   "detail": "Knee",
-   "espn_id": "5081397",
-   "comment": "Sampson (knee) was deemed a limited  participant in Wednesday's practice."
-  },
   "00-0041547": {
    "name": "KC Concepcion",
    "team": "CLE",
@@ -1256,6 +1245,17 @@
    "date": "2026-10-21T16:02:00-04:00",
    "detail": "Ankle",
    "espn_id": "3115336"
+  },
+  "00-0040162": {
+   "name": "Dylan Sampson",
+   "team": "CLE",
+   "pos": "RB",
+   "status": "Injured Reserve",
+   "fantasy": "IR-R",
+   "date": "2026-10-21T12:46:00-04:00",
+   "detail": "Knee",
+   "espn_id": "5081397",
+   "comment": "Browns head coach Todd Monken said that he's optimistic that Sampson (knee) will be activated from injured reserve ahead of Sunday's game against the Titans, Da"
   },
   "name:CLE:masongraham": {
    "name": "Mason Graham",
@@ -3421,28 +3421,6 @@
    "detail": null,
    "espn_id": "4869961"
   },
-  "00-0035229": {
-   "name": "T.J. Hockenson",
-   "team": "MIN",
-   "pos": "TE",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-21T17:42:00-04:00",
-   "detail": "Concussion",
-   "espn_id": "4036133",
-   "comment": "Hockenson (concussion) was a full practice participant Wednesday."
-  },
-  "00-0037525": {
-   "name": "Jordan Mason",
-   "team": "MIN",
-   "pos": "RB",
-   "status": "Injured Reserve",
-   "fantasy": "IR-R",
-   "date": "2026-10-21T17:36:00-04:00",
-   "detail": "Thumb",
-   "espn_id": "4360569",
-   "comment": "Mason (thumb), who remains on injured reserve, practiced in full Wednesday."
-  },
   "00-0036322": {
    "name": "Justin Jefferson",
    "team": "MIN",
@@ -3474,15 +3452,37 @@
    "detail": "Knee",
    "espn_id": "3123954"
   },
+  "00-0035229": {
+   "name": "T.J. Hockenson",
+   "team": "MIN",
+   "pos": "TE",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-21T14:39:00-04:00",
+   "detail": "Concussion",
+   "espn_id": "4036133",
+   "comment": "Head coach Kevin O'Connell said that Hockenson (concussion) is expected to practice Wednesday, Alec Lewis of The Athletic reports."
+  },
   "00-0038994": {
    "name": "Jordan Addison",
    "team": "MIN",
    "pos": "WR",
    "status": "Active",
    "fantasy": null,
-   "date": "2026-10-21T17:27:00-04:00",
+   "date": "2026-10-21T14:36:00-04:00",
    "detail": null,
    "espn_id": "4429205"
+  },
+  "00-0037525": {
+   "name": "Jordan Mason",
+   "team": "MIN",
+   "pos": "RB",
+   "status": "Injured Reserve",
+   "fantasy": "IR-R",
+   "date": "2026-10-21T14:32:00-04:00",
+   "detail": "Thumb",
+   "espn_id": "4360569",
+   "comment": "Head coach Kevin O'Connell said that Mason (thumb) is expected to practice Wednesday, Alec Lewis of The Athletic reports."
   },
   "name:MIN:christiandarrisaw": {
    "name": "Christian Darrisaw",
@@ -3925,7 +3925,7 @@
    "pos": "OT",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-10-21T23:00:00-04:00",
+   "date": "2026-10-22T00:00:00-04:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
