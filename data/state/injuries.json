@@ -1,7 +1,28 @@
 {
- "at": "2026-10-21T21:00:01-04:00",
+ "at": "2026-10-21T21:30:01-04:00",
  "source": "espn",
  "players": {
+  "name:ARI:buddabaker": {
+   "name": "Budda Baker",
+   "team": "ARI",
+   "pos": "S",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-21T21:00:00-04:00",
+   "detail": "Groin",
+   "espn_id": "3127287"
+  },
+  "00-0041561": {
+   "name": "Carson Beck",
+   "team": "ARI",
+   "pos": "QB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-21T20:56:00-04:00",
+   "detail": "Back",
+   "espn_id": "4430841",
+   "comment": "Beck (back) was a limited participant at practice Wednesday, Darren Urban of the Cardinals' official site reports."
+  },
   "name:ARI:garrettwilliams": {
    "name": "Garrett Williams",
    "team": "ARI",
@@ -41,27 +62,6 @@
    "date": "2026-10-21T19:47:00-04:00",
    "detail": "Ankle",
    "espn_id": "4685503"
-  },
-  "name:ARI:buddabaker": {
-   "name": "Budda Baker",
-   "team": "ARI",
-   "pos": "S",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-21T19:47:00-04:00",
-   "detail": "Groin",
-   "espn_id": "3127287"
-  },
-  "00-0041561": {
-   "name": "Carson Beck",
-   "team": "ARI",
-   "pos": "QB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-21T19:26:00-04:00",
-   "detail": "Back",
-   "espn_id": "4430841",
-   "comment": "questionable"
   },
   "00-0041027": {
    "name": "Jeremiyah Love",
@@ -184,6 +184,36 @@
    "detail": null,
    "espn_id": "4039050"
   },
+  "name:ATL:ajterrell": {
+   "name": "A.J. Terrell Jr.",
+   "team": "ATL",
+   "pos": "CB",
+   "status": "Injured Reserve",
+   "fantasy": "IR-R",
+   "date": "2026-10-21T21:07:00-04:00",
+   "detail": "Groin",
+   "espn_id": "4239995"
+  },
+  "name:ATL:cjhenderson": {
+   "name": "C.J. Henderson",
+   "team": "ATL",
+   "pos": "CB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-21T21:01:00-04:00",
+   "detail": "Groin",
+   "espn_id": "4240596"
+  },
+  "name:ATL:divinedeablo": {
+   "name": "Divine Deablo",
+   "team": "ATL",
+   "pos": "LB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-21T20:56:00-04:00",
+   "detail": "Arm",
+   "espn_id": "4037626"
+  },
   "00-0035208": {
    "name": "Olamide Zaccheaus",
    "team": "ATL",
@@ -215,16 +245,6 @@
    "date": "2026-10-21T19:13:00-04:00",
    "detail": null,
    "espn_id": "14012"
-  },
-  "name:ATL:ajterrell": {
-   "name": "A.J. Terrell Jr.",
-   "team": "ATL",
-   "pos": "CB",
-   "status": "Injured Reserve",
-   "fantasy": "IR-R",
-   "date": "2026-10-21T19:12:00-04:00",
-   "detail": "Groin",
-   "espn_id": "4239995"
   },
   "name:ATL:zadariussmith": {
    "name": "Za'Darius Smith",
@@ -265,16 +285,6 @@
    "date": "2026-10-21T18:59:00-04:00",
    "detail": "Hamstring",
    "espn_id": "3045527"
-  },
-  "name:ATL:cjhenderson": {
-   "name": "C.J. Henderson",
-   "team": "ATL",
-   "pos": "CB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-20T12:10:00-04:00",
-   "detail": "Groin",
-   "espn_id": "4240596"
   },
   "00-0041044": {
    "name": "Zachariah Branch",
@@ -356,15 +366,15 @@
    "detail": "Hamstring",
    "espn_id": "4431194"
   },
-  "name:ATL:divinedeablo": {
-   "name": "Divine Deablo",
-   "team": "ATL",
-   "pos": "LB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-18T14:07:00-04:00",
-   "detail": "Arm",
-   "espn_id": "4037626"
+  "name:BAL:tjtampa": {
+   "name": "T.J. Tampa",
+   "team": "BAL",
+   "pos": "CB",
+   "status": "Injured Reserve",
+   "fantasy": "IR-R",
+   "date": "2026-10-21T21:17:00-04:00",
+   "detail": "Toe",
+   "espn_id": "4575483"
   },
   "00-0040879": {
    "name": "Matt Hibner",
@@ -555,7 +565,7 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-10-21T20:01:00-04:00",
+   "date": "2026-10-21T21:01:00-04:00",
    "detail": "Suspension",
    "espn_id": "4034953"
   },
@@ -689,6 +699,16 @@
    "date": "2026-10-10T14:14:00-04:00",
    "detail": null,
    "espn_id": "4683153"
+  },
+  "name:CAR:bammartinscott": {
+   "name": "Bam Martin-Scott",
+   "team": "CAR",
+   "pos": "LB",
+   "status": "Injured Reserve",
+   "fantasy": "IR-R",
+   "date": "2026-10-21T21:08:00-04:00",
+   "detail": "Hamstring",
+   "espn_id": "4880613"
   },
   "name:CAR:jaelanphillips": {
    "name": "Jaelan Phillips",
@@ -841,23 +861,13 @@
    "detail": "Shoulder",
    "espn_id": "4687513"
   },
-  "00-0038840": {
-   "name": "Brycen Tremayne",
-   "team": "CAR",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-05T23:00:00-04:00",
-   "detail": null,
-   "espn_id": "4360763"
-  },
   "name:CHI:anthonyjohnson": {
    "name": "Anthony Johnson Jr.",
    "team": "CHI",
    "pos": "S",
    "status": "Injured Reserve",
    "fantasy": "IR",
-   "date": "2026-10-21T20:01:00-04:00",
+   "date": "2026-10-21T21:01:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
@@ -1518,6 +1528,16 @@
    "detail": null,
    "espn_id": "4426485"
   },
+  "name:DEN:talanoahufanga": {
+   "name": "Talanoa Hufanga",
+   "team": "DEN",
+   "pos": "S",
+   "status": "Doubtful",
+   "fantasy": "DOUBTFUL",
+   "date": "2026-10-21T20:56:00-04:00",
+   "detail": "Ankle",
+   "espn_id": "4360853"
+  },
   "name:DEN:jonahelliss": {
    "name": "Jonah Elliss",
    "team": "DEN",
@@ -1570,16 +1590,6 @@
    "detail": "Ankle",
    "espn_id": "4702555",
    "comment": "Coleman (ankle) was on the field for practice Wednesday after being designated for return from injured reserve, Chris Tomasson of The Denver Gazette reports."
-  },
-  "name:DEN:talanoahufanga": {
-   "name": "Talanoa Hufanga",
-   "team": "DEN",
-   "pos": "S",
-   "status": "Doubtful",
-   "fantasy": "DOUBTFUL",
-   "date": "2026-10-20T12:10:00-04:00",
-   "detail": "Ankle",
-   "espn_id": "4360853"
   },
   "00-0041133": {
    "name": "Dallen Bentley",
@@ -2749,6 +2759,27 @@
    "espn_id": "4362921",
    "comment": "The Chiefs placed Thornton (ankle) on injured reserve Tuesday."
   },
+  "name:LV:quaywalker": {
+   "name": "Quay Walker",
+   "team": "LV",
+   "pos": "LB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-21T21:14:00-04:00",
+   "detail": "Chest",
+   "espn_id": "4379416"
+  },
+  "00-0040581": {
+   "name": "Dont'e Thornton Jr.",
+   "team": "LV",
+   "pos": "WR",
+   "status": "Injured Reserve",
+   "fantasy": "IR-R",
+   "date": "2026-10-21T21:09:00-04:00",
+   "detail": "Hamstring",
+   "espn_id": "4432775",
+   "comment": "Thornton (hamstring) was a full participant at practice Wednesday."
+  },
   "name:LV:koltonmiller": {
    "name": "Kolton Miller",
    "team": "LV",
@@ -2790,16 +2821,6 @@
    "detail": "Hamstring",
    "espn_id": "4432665",
    "comment": "Bowers (hamstring/calf) was a limited participant in Wednesday's practice, Around The NFL reports."
-  },
-  "name:LV:quaywalker": {
-   "name": "Quay Walker",
-   "team": "LV",
-   "pos": "LB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-20T22:04:00-04:00",
-   "detail": "Chest",
-   "espn_id": "4379416"
   },
   "name:LV:tonkahemingway": {
    "name": "Tonka Hemingway",
@@ -2891,17 +2912,6 @@
    "detail": "Lower Body",
    "espn_id": "5155825",
    "comment": "Runyon (lower body) has been ruled out ahead of Sunday's game against the Bills, Sam Warren of The Athletic reports."
-  },
-  "00-0040581": {
-   "name": "Dont'e Thornton Jr.",
-   "team": "LV",
-   "pos": "WR",
-   "status": "Injured Reserve",
-   "fantasy": "IR-R",
-   "date": "2026-10-16T18:08:00-04:00",
-   "detail": "Hamstring",
-   "espn_id": "4432775",
-   "comment": "Thornton (hamstring) won't be activated from injured reserve for Sunday's game against the Bills,  Sam Warren of The Athletic reports."
   },
   "00-0040184": {
    "name": "KeAndre Lambert-Smith",
@@ -3267,6 +3277,16 @@
    "date": "2026-10-18T14:52:00-04:00",
    "detail": null,
    "espn_id": "4360797"
+  },
+  "name:MIA:kylelouis": {
+   "name": "Kyle Louis",
+   "team": "MIA",
+   "pos": "LB",
+   "status": "Injured Reserve",
+   "fantasy": "IR-R",
+   "date": "2026-10-21T21:24:00-04:00",
+   "detail": "Knee",
+   "espn_id": "4880273"
   },
   "00-0041524": {
    "name": "Will Kacmarek",
@@ -3919,6 +3939,16 @@
    "detail": "Neck",
    "espn_id": "4428350"
   },
+  "name:NYG:jermaineeluemunor": {
+   "name": "Jermaine Eluemunor",
+   "team": "NYG",
+   "pos": "OT",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-21T21:01:00-04:00",
+   "detail": "Calf",
+   "espn_id": "3115303"
+  },
   "name:NYG:gregnewsome": {
    "name": "Greg Newsome II",
    "team": "NYG",
@@ -3959,16 +3989,6 @@
    "detail": "Neck",
    "espn_id": "4429148",
    "comment": "Johnson (neck) was a limited participant at practice Wednesday, Dan Salomone of the Giants' official site reports."
-  },
-  "name:NYG:jermaineeluemunor": {
-   "name": "Jermaine Eluemunor",
-   "team": "NYG",
-   "pos": "OT",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-21T20:01:00-04:00",
-   "detail": "Calf",
-   "espn_id": "3115303"
   },
   "name:NYG:paulsonadebo": {
    "name": "Paulson Adebo",
@@ -4141,6 +4161,16 @@
    "detail": null,
    "espn_id": "4595348"
   },
+  "name:NYJ:dylanparham": {
+   "name": "Dylan Parham",
+   "team": "NYJ",
+   "pos": "G",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-21T21:11:00-04:00",
+   "detail": "Knee",
+   "espn_id": "4243375"
+  },
   "00-0036842": {
    "name": "Kene Nwangwu",
    "team": "NYJ",
@@ -4213,16 +4243,6 @@
    "detail": "Finger",
    "espn_id": "4597500",
    "comment": "Jets head coach Aaron Glenn said that Mitchell (finger) will be a limited participant in Wednesday's practice."
-  },
-  "name:NYJ:dylanparham": {
-   "name": "Dylan Parham",
-   "team": "NYJ",
-   "pos": "G",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-20T12:10:00-04:00",
-   "detail": "Knee",
-   "espn_id": "4243375"
   },
   "00-0039798": {
    "name": "Isaiah Davis",
@@ -4700,6 +4720,36 @@
    "detail": "Hamstring",
    "espn_id": "4567979"
   },
+  "name:SF:jadendugger": {
+   "name": "Jaden Dugger",
+   "team": "SF",
+   "pos": "LB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-21T21:14:00-04:00",
+   "detail": "Knee",
+   "espn_id": "5086161"
+  },
+  "name:SF:mykelwilliams": {
+   "name": "Mykel Williams",
+   "team": "SF",
+   "pos": "DE",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-21T21:10:00-04:00",
+   "detail": "Knee",
+   "espn_id": "4685623"
+  },
+  "name:SF:marquessigle": {
+   "name": "Marques Sigle",
+   "team": "SF",
+   "pos": "S",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-21T21:05:00-04:00",
+   "detail": "Ankle",
+   "espn_id": "4693337"
+  },
   "name:SF:nickbosa": {
    "name": "Nick Bosa",
    "team": "SF",
@@ -4709,16 +4759,6 @@
    "date": "2026-10-21T19:55:00-04:00",
    "detail": "Calf",
    "espn_id": "4040605"
-  },
-  "name:SF:mykelwilliams": {
-   "name": "Mykel Williams",
-   "team": "SF",
-   "pos": "DE",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-21T19:53:00-04:00",
-   "detail": "Knee",
-   "espn_id": "4685623"
   },
   "name:SF:ashtyndavis": {
    "name": "Ashtyn Davis",
@@ -4773,16 +4813,6 @@
    "espn_id": "3126486",
    "comment": "Samuel (hamstring) is not expected to practice Wednesday, Cam Inman of Bay Area News Group reports."
   },
-  "name:SF:jadendugger": {
-   "name": "Jaden Dugger",
-   "team": "SF",
-   "pos": "LB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-20T21:37:00-04:00",
-   "detail": "Knee",
-   "espn_id": "5086161"
-  },
   "name:SF:uptonstout": {
    "name": "Upton Stout",
    "team": "SF",
@@ -4812,16 +4842,6 @@
    "date": "2026-10-20T17:56:00-04:00",
    "detail": null,
    "espn_id": "4575665"
-  },
-  "name:SF:marquessigle": {
-   "name": "Marques Sigle",
-   "team": "SF",
-   "pos": "S",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-20T12:10:00-04:00",
-   "detail": "Ankle",
-   "espn_id": "4693337"
   },
   "name:SF:garretwallow": {
    "name": "Garret Wallow",
@@ -4903,6 +4923,16 @@
    "detail": "Groin",
    "espn_id": "3116097"
   },
+  "name:SEA:drakethomas": {
+   "name": "Drake Thomas",
+   "team": "SEA",
+   "pos": "LB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-21T20:57:00-04:00",
+   "detail": "Ankle",
+   "espn_id": "4428659"
+  },
   "00-0035704": {
    "name": "Drew Lock",
    "team": "SEA",
@@ -4975,16 +5005,6 @@
    "date": "2026-10-20T12:10:00-04:00",
    "detail": "Calf",
    "espn_id": "4037521"
-  },
-  "name:SEA:drakethomas": {
-   "name": "Drake Thomas",
-   "team": "SEA",
-   "pos": "LB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-20T12:10:00-04:00",
-   "detail": "Ankle",
-   "espn_id": "4428659"
   },
   "name:SEA:anthonybradford": {
    "name": "Anthony Bradford",
