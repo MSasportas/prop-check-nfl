@@ -1,5 +1,5 @@
 {
- "at": "2026-10-21T21:30:01-04:00",
+ "at": "2026-10-21T22:00:01-04:00",
  "source": "espn",
  "players": {
   "name:ARI:buddabaker": {
@@ -366,6 +366,16 @@
    "detail": "Hamstring",
    "espn_id": "4431194"
   },
+  "name:BAL:camjurgens": {
+   "name": "Cam Jurgens",
+   "team": "BAL",
+   "pos": "C",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-21T21:47:00-04:00",
+   "detail": "Concussion",
+   "espn_id": "4361178"
+  },
   "name:BAL:tjtampa": {
    "name": "T.J. Tampa",
    "team": "BAL",
@@ -478,16 +488,6 @@
    "date": "2026-10-20T12:10:00-04:00",
    "detail": "Foot",
    "espn_id": "3915837"
-  },
-  "name:BAL:camjurgens": {
-   "name": "Cam Jurgens",
-   "team": "BAL",
-   "pos": "C",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-20T12:10:00-04:00",
-   "detail": "Concussion",
-   "espn_id": "4361178"
   },
   "00-0034753": {
    "name": "Mark Andrews",
@@ -861,6 +861,16 @@
    "detail": "Shoulder",
    "espn_id": "4687513"
   },
+  "name:CHI:jacksanborn": {
+   "name": "Jack Sanborn",
+   "team": "CHI",
+   "pos": "LB",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-10-21T21:31:00-04:00",
+   "detail": "Concussion",
+   "espn_id": "4372576"
+  },
   "name:CHI:anthonyjohnson": {
    "name": "Anthony Johnson Jr.",
    "team": "CHI",
@@ -911,16 +921,6 @@
    "date": "2026-10-20T21:22:00-04:00",
    "detail": null,
    "espn_id": "2973405"
-  },
-  "name:CHI:jacksanborn": {
-   "name": "Jack Sanborn",
-   "team": "CHI",
-   "pos": "LB",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-20T20:30:00-04:00",
-   "detail": "Concussion",
-   "espn_id": "4372576"
   },
   "00-0040277": {
    "name": "Jahdae Walker",
@@ -3595,6 +3595,56 @@
    "espn_id": "3921690",
    "comment": "The Vikings placed Oliver (biceps) on injured reserve Tuesday, Craig Peters of the team's official site reports."
   },
+  "name:NE:morganmoses": {
+   "name": "Morgan Moses",
+   "team": "NE",
+   "pos": "OT",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-21T21:41:00-04:00",
+   "detail": "Foot",
+   "espn_id": "16771"
+  },
+  "name:NE:channingcanada": {
+   "name": "Channing Canada",
+   "team": "NE",
+   "pos": "CB",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-10-21T21:41:00-04:00",
+   "detail": "Hamstring",
+   "espn_id": "4688779"
+  },
+  "name:NE:karonprunty": {
+   "name": "Karon Prunty",
+   "team": "NE",
+   "pos": "CB",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-10-21T21:37:00-04:00",
+   "detail": "Hamstring",
+   "espn_id": "4606666"
+  },
+  "name:NE:benbrown": {
+   "name": "Ben Brown",
+   "team": "NE",
+   "pos": "C",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-10-21T21:33:00-04:00",
+   "detail": "Knee",
+   "espn_id": "4362890"
+  },
+  "name:NE:alijahveratucker": {
+   "name": "Alijah Vera-Tucker",
+   "team": "NE",
+   "pos": "G",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-10-21T21:30:00-04:00",
+   "detail": "Hamstring",
+   "espn_id": "4259646"
+  },
   "name:NE:christianelliss": {
    "name": "Christian Elliss",
    "team": "NE",
@@ -3645,46 +3695,6 @@
    "detail": null,
    "espn_id": "4047646"
   },
-  "name:NE:channingcanada": {
-   "name": "Channing Canada",
-   "team": "NE",
-   "pos": "CB",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-21T14:32:00-04:00",
-   "detail": "Hamstring",
-   "espn_id": "4688779"
-  },
-  "name:NE:benbrown": {
-   "name": "Ben Brown",
-   "team": "NE",
-   "pos": "C",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-21T14:31:00-04:00",
-   "detail": "Knee",
-   "espn_id": "4362890"
-  },
-  "name:NE:alijahveratucker": {
-   "name": "Alijah Vera-Tucker",
-   "team": "NE",
-   "pos": "G",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-21T14:30:00-04:00",
-   "detail": "Hamstring",
-   "espn_id": "4259646"
-  },
-  "name:NE:karonprunty": {
-   "name": "Karon Prunty",
-   "team": "NE",
-   "pos": "CB",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-21T14:30:00-04:00",
-   "detail": "Hamstring",
-   "espn_id": "4606666"
-  },
   "name:NE:marcusbryant": {
    "name": "Marcus Bryant",
    "team": "NE",
@@ -3694,16 +3704,6 @@
    "date": "2026-10-20T20:30:00-04:00",
    "detail": "Ankle",
    "espn_id": "4565293"
-  },
-  "name:NE:morganmoses": {
-   "name": "Morgan Moses",
-   "team": "NE",
-   "pos": "OT",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-20T20:24:00-04:00",
-   "detail": "Foot",
-   "espn_id": "16771"
   },
   "00-0040556": {
    "name": "Corey Kiner",
@@ -4161,6 +4161,16 @@
    "detail": null,
    "espn_id": "4595348"
   },
+  "name:NYJ:kikomauigoa": {
+   "name": "Kiko Mauigoa",
+   "team": "NYJ",
+   "pos": "LB",
+   "status": "Doubtful",
+   "fantasy": "DOUBTFUL",
+   "date": "2026-10-21T21:26:00-04:00",
+   "detail": "Thigh",
+   "espn_id": "4700136"
+  },
   "name:NYJ:dylanparham": {
    "name": "Dylan Parham",
    "team": "NYJ",
@@ -4211,16 +4221,6 @@
    "date": "2026-10-21T16:18:00-04:00",
    "detail": "Toe",
    "espn_id": "4361767"
-  },
-  "name:NYJ:kikomauigoa": {
-   "name": "Kiko Mauigoa",
-   "team": "NYJ",
-   "pos": "LB",
-   "status": "Doubtful",
-   "fantasy": "DOUBTFUL",
-   "date": "2026-10-21T13:10:00-04:00",
-   "detail": "Thigh",
-   "espn_id": "4700136"
   },
   "00-0038120": {
    "name": "Breece Hall",
@@ -5270,6 +5270,16 @@
    "date": "2026-10-18T22:06:00-04:00",
    "detail": null,
    "espn_id": "4371733"
+  },
+  "name:TEN:dorianmausi": {
+   "name": "Dorian Mausi",
+   "team": "TEN",
+   "pos": "LB",
+   "status": "Injured Reserve",
+   "fantasy": "IR-R",
+   "date": "2026-10-21T21:35:00-04:00",
+   "detail": "Undisclosed",
+   "espn_id": "4573318"
   },
   "name:TEN:kevinwinston": {
    "name": "Kevin Winston Jr.",
