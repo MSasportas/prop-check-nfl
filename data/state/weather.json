@@ -9,6 +9,10 @@
    "roof": "outdoors",
    "at": "2026-10-22T09:10:00-04:00",
    "text": "56\u00b0F, wind 5 mph"
+  },
+  "2026_07_PIT_NO": {
+   "roof": "dome",
+   "text": "Indoors"
   }
  }
 }
