@@ -1,5 +1,5 @@
 {
- "at": "2026-10-22T00:10:00-04:00",
+ "at": "2026-10-22T00:40:01-04:00",
  "source": "espn",
  "players": {
   "name:ARI:buddabaker": {
@@ -3430,7 +3430,7 @@
    "date": "2026-10-21T17:31:00-04:00",
    "detail": "Ankle",
    "espn_id": "4262921",
-   "comment": "Jefferson (ankle) was a limited at Wednesday's practice."
+   "comment": "Jefferson (ankle) was limited at Wednesday's practice."
   },
   "name:MIN:jamespierre": {
    "name": "James Pierre",
