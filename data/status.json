@@ -3,10 +3,10 @@
  "season": 2026,
  "week": 7,
  "slate": "2026-W07",
- "started_at": "2026-10-21T23:30:01-04:00",
- "status_at": "2026-10-21T23:30:01-04:00",
- "finished_at": "2026-10-21T23:30:01-04:00",
- "last_ok_at": "2026-10-21T23:30:01-04:00",
+ "started_at": "2026-10-21T23:30:15-04:00",
+ "status_at": "2026-10-21T23:30:15-04:00",
+ "finished_at": "2026-10-21T23:30:16-04:00",
+ "last_ok_at": "2026-10-21T23:30:15-04:00",
  "failed_step": null,
  "steps": [
   {
@@ -31,8 +31,8 @@
   },
   {
    "step": "injuries",
-   "status": "skipped",
-   "note": "read at 11:00 PM"
+   "status": "ok",
+   "note": "espn: 83 out, 185 questionable"
   },
   {
    "step": "weather",
@@ -62,7 +62,7 @@
   {
    "step": "research",
    "status": "ok",
-   "note": "0 game file(s) written"
+   "note": "14 game file(s) written"
   },
   {
    "step": "record",
@@ -100,7 +100,7 @@
   },
   {
    "n": 4,
-   "left": 122,
+   "left": 120,
    "shared": true
   },
   {
@@ -119,8 +119,8 @@
    "shared": false
   }
  ],
- "pool_total": 825,
- "allowance": 50.93,
+ "pool_total": 823,
+ "allowance": 50.87,
  "tier": "standard",
  "games_left_before_reset": 15,
  "budget_used_today": 280,
@@ -143,11 +143,11 @@
  "odds_notes": [],
  "runner": {
   "event": "workflow_dispatch",
-  "run_id": "39714431458",
-  "iteration": 2,
-  "chain_link": 1144,
+  "run_id": "39717168300",
+  "iteration": 1,
+  "chain_link": 1145,
   "chain_started_at": "2026-10-18T20:10:54-04:00",
-  "run_started_at": "2026-10-21T23:00:13-04:00"
+  "run_started_at": "2026-10-21T23:30:13-04:00"
  },
  "live_page": {
   "checked_at": "2026-10-21T23:00:01-04:00",
