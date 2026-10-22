@@ -1,5 +1,5 @@
 {
- "at": "2026-10-22T06:00:00-04:00",
+ "at": "2026-10-22T07:00:01-04:00",
  "source": "espn",
  "players": {
   "name:ARI:buddabaker": {
@@ -565,7 +565,7 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-10-22T05:00:00-04:00",
+   "date": "2026-10-22T06:01:00-04:00",
    "detail": "Suspension",
    "espn_id": "4034953"
   },
@@ -857,7 +857,7 @@
    "pos": "S",
    "status": "Injured Reserve",
    "fantasy": "IR",
-   "date": "2026-10-22T05:00:00-04:00",
+   "date": "2026-10-22T06:01:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
@@ -3925,7 +3925,7 @@
    "pos": "OT",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-10-22T05:00:00-04:00",
+   "date": "2026-10-22T06:01:00-04:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
