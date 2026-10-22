@@ -1,5 +1,5 @@
 {
- "at": "2026-10-21T22:00:01-04:00",
+ "at": "2026-10-21T22:30:13-04:00",
  "source": "espn",
  "players": {
   "name:ARI:buddabaker": {
@@ -8,7 +8,7 @@
    "pos": "S",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-10-21T21:00:00-04:00",
+   "date": "2026-10-21T22:06:00-04:00",
    "detail": "Groin",
    "espn_id": "3127287"
   },
@@ -565,7 +565,7 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-10-21T21:01:00-04:00",
+   "date": "2026-10-21T22:00:00-04:00",
    "detail": "Suspension",
    "espn_id": "4034953"
   },
@@ -689,16 +689,6 @@
    "date": "2026-10-19T03:39:00-04:00",
    "detail": null,
    "espn_id": "4379399"
-  },
-  "00-0041443": {
-   "name": "Skyler Bell",
-   "team": "BUF",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-10T14:14:00-04:00",
-   "detail": null,
-   "espn_id": "4683153"
   },
   "name:CAR:bammartinscott": {
    "name": "Bam Martin-Scott",
@@ -861,6 +851,16 @@
    "detail": "Shoulder",
    "espn_id": "4687513"
   },
+  "name:CHI:anthonyjohnson": {
+   "name": "Anthony Johnson Jr.",
+   "team": "CHI",
+   "pos": "S",
+   "status": "Injured Reserve",
+   "fantasy": "IR",
+   "date": "2026-10-21T22:00:00-04:00",
+   "detail": "Undisclosed",
+   "espn_id": "4361748"
+  },
   "name:CHI:jacksanborn": {
    "name": "Jack Sanborn",
    "team": "CHI",
@@ -870,16 +870,6 @@
    "date": "2026-10-21T21:31:00-04:00",
    "detail": "Concussion",
    "espn_id": "4372576"
-  },
-  "name:CHI:anthonyjohnson": {
-   "name": "Anthony Johnson Jr.",
-   "team": "CHI",
-   "pos": "S",
-   "status": "Injured Reserve",
-   "fantasy": "IR",
-   "date": "2026-10-21T21:01:00-04:00",
-   "detail": "Undisclosed",
-   "espn_id": "4361748"
   },
   "name:CHI:tyriquestevenson": {
    "name": "Tyrique Stevenson Sr.",
@@ -2576,16 +2566,6 @@
    "detail": null,
    "espn_id": "2576336"
   },
-  "name:JAX:antonharrison": {
-   "name": "Anton Harrison",
-   "team": "JAX",
-   "pos": "OT",
-   "status": "Injured Reserve",
-   "fantasy": "IR",
-   "date": "2026-10-13T15:12:00-04:00",
-   "detail": "Knee",
-   "espn_id": "4692525"
-  },
   "00-0030506": {
    "name": "Travis Kelce",
    "team": "KC",
@@ -3945,7 +3925,7 @@
    "pos": "OT",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-10-21T21:01:00-04:00",
+   "date": "2026-10-21T22:00:00-04:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
@@ -4547,16 +4527,6 @@
    "detail": "Back",
    "espn_id": "4241374",
    "comment": "The Eagles downgraded Calcaterra (back) to out Saturday for Sunday's game against the Panthers."
-  },
-  "00-0030061": {
-   "name": "Zach Ertz",
-   "team": "PHI",
-   "pos": "TE",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-17T17:10:00-04:00",
-   "detail": null,
-   "espn_id": "15835"
   },
   "name:PIT:deshonelliott": {
    "name": "DeShon Elliott",
