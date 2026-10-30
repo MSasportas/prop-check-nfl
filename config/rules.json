@@ -342,7 +342,7 @@
      "others_min": 4,
      "min_ev_vs_pin": 0.0,
      "max_age_min": 60,
-     "skip_whole_lines": false
+     "skip_whole_lines": true
     },
     "pin_judge": {
      "active": true,
@@ -351,7 +351,7 @@
      "from_slate": "2026-W08",
      "min_ev": 0.02,
      "max_age_min": 60,
-     "skip_whole_lines": false
+     "skip_whole_lines": true
     }
    }
   },

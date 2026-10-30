@@ -454,8 +454,21 @@ def main():
     sl["methods"] = {"gap_guard": {"era": "gg1", "live": True}, "pin_solo": {"era": "ps1", "live": True}}
     hw = history_weeks(12, seed=11, loss_bias=0.42)
     rec, older = record_doc(hw, cur, 13, gen)
-    rec["pin_solo"] = {"era": "ps1", "label": "Pinnacle moves alone", "summary": summary([]), "weeks": []}
+    ents = []
+    for x, res in zip(sl["picks"][:3], ("W", "L", None)):
+        e = entry(x)
+        e.update({"era": "ps1", "method": "pin_solo", "state": "graded" if res else "locked", "result": res,
+                  "actual": ("had 3" if res == "W" else "had 6") if res else None,
+                  "units": units_for(x["price"], res) if res else None})
+        ents.append(e)
+    wk12 = week_doc(12, ents)
+    rec["pin_solo"] = {"era": "ps1", "label": "Pinnacle moves alone", "summary": summary([wk12]), "weeks": [wk12]}
     write("pinsolo", sl, rec, status_json(13, gen), older)
+
+    # ---- pinsolo_empty: the switch is on but nothing is on its line yet: the page hides the block
+    rec2 = json.loads(json.dumps(rec))
+    rec2["pin_solo"] = {"era": "ps1", "label": "Pinnacle moves alone", "summary": summary([]), "weeks": []}
+    write("pinsolo_empty", sl, rec2, status_json(13, gen), older)
 
 
 if __name__ == "__main__":

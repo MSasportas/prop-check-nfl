@@ -151,6 +151,8 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;margin:0;te
 .hl .un{font:700 28px/34px var(--font);letter-spacing:-.02em}
 .hl .cap{font-size:12px;line-height:16px;color:var(--muted)}
 .hl .hit{margin-top:6px;font-size:14px;line-height:20px}
+.mtag{display:inline-block;margin-top:6px;padding:1px 8px;border:1px solid var(--line2);border-radius:10px;font-size:12px;line-height:16px;color:var(--accent)}
+.hl.ps .wl{font-size:30px;line-height:34px} .hl.ps .un{font-size:22px;line-height:28px} .hl.ps h2{font:700 16px/22px var(--font);margin:0 0 4px}
 .hl .small{margin-top:6px;font-size:13px;line-height:18px;color:var(--warn)}
 .tbl{margin-top:14px;font-size:13px;line-height:18px}
 .tr{display:grid;grid-template-columns:minmax(0,1fr) 52px 44px 58px;column-gap:6px;align-items:baseline;padding:8px 0;border-bottom:1px solid var(--line)}
@@ -472,6 +474,7 @@ function pickCard(p) {
       h('div', { class: 'pl', text: pulled ? 'Was posted at' : 'Bet at' }),
       h('div', { class: 'pv', text: odds(p.price) }),
       h('div', { class: 'pb', text: pulled ? 'Hard Rock' : 'or better' }))));
+  if (p.method === 'pin_solo') body.push(h('div', {}, h('span', { class: 'mtag', text: "Pinnacle moved, Hard Rock didn't" })));
   if (p.vs) body.push(h('div', { class: 'vs', text: p.vs }));
   if (p.reason) body.push(h('div', { class: 'reason', text: p.reason }));
   if (!pulled) {
@@ -696,6 +699,25 @@ function retiredBlock(rt) {
   }
   return h('div', { class: 'retired' }, kids);
 }
+function pinSoloBlock(ps) {
+  /* the fallback method (era ps1): its own line, never added to the headline above; hidden until it has an entry */
+  if (!isObj(ps)) return null;
+  var weeks = arr(ps.weeks).filter(isObj);
+  var hd = isObj(ps.summary) && isObj(ps.summary.headline) ? ps.summary.headline : { w: 0, l: 0, push: 0, void: 0, n: 0, units: 0 };
+  var has = (num(hd.n) || 0) > 0 || weeks.some(function (w) { return arr(w.entries).some(isObj); });
+  if (!has) return null;
+  var n = num(hd.n) || 0, kids = [];
+  kids.push(h('div', { class: 'hl ps' },
+    h('h2', { text: "Pinnacle moved, Hard Rock didn't" }),
+    h('div', { class: 'cap', text: 'Separate method, kept apart from the record above' }),
+    h('div', { class: 'row' },
+      h('div', { class: 'wl', text: (hd.w || 0) + '-' + (hd.l || 0) + '-' + (hd.push || 0) }),
+      h('div', { class: 'un ' + signCls(hd.units), text: units(hd.units) || '0.00u' })),
+    n ? hitLine(hd) : h('div', { class: 'hit', text: 'No graded picks yet.' }),
+    n && n < FINAL_ERA_MIN ? h('div', { class: 'small', text: 'Only ' + plural(n, 'graded pick') + ' so far. Too early to judge.' }) : null));
+  weeks.forEach(function (w, i) { kids.push(weekBlock(w, i, 'ps:')); });
+  return h('div', { class: 'sec' }, kids);
+}
 function viewRecord() {
   var r = S.record, out = [header(S.record && S.record.season ? S.record.season + ' season' : 'Record')];
   out.push(updatedLine());
@@ -730,6 +752,7 @@ function viewRecord() {
       if (S.olderErr) out.push(h('div', { class: 'note', text: "Some older weeks didn't load. Tap to try again." }));
     }
   }
+  out.push(pinSoloBlock(r.pin_solo));
   out.push(retiredBlock(r.retired));
   out.push(h('div', { class: 'foot' }, 'Every pick is graded at the Hard Rock price it was posted at. Pulled picks are kept and marked, and never counted.'));
   return out;

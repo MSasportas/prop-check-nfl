@@ -108,6 +108,8 @@ class Base(unittest.TestCase):
 class PinSolo(Base):
     def test_pinnacle_moves_3_pts_others_1_pt_hard_rock_stays_is_flagged(self):
         s = self.two_reads(pin=-0.03, others=-0.01)
+        pr = [e for e in events(self.w) if e["t"] == "pair" and e["track"] == "pin_solo"][0]
+        self.assertEqual(pr["gap_min"], round((common.parse_iso(pr["b_at"]) - common.parse_iso(pr["a_at"])).total_seconds() / 60.0, 1))
         fl = [e for e in events(self.w) if e["t"] == "flag" and e["track"] == "pin_solo"]
         self.assertEqual([(e["player"], e["market"], e["side"], e["line"], e["price"], e["read"], e["window"])
                           for e in fl], [(WHO, "rush_att", "under", 17.5, 105, "C", "R→C")])
@@ -337,6 +339,31 @@ class LiveSwitch(unittest.TestCase):
             self.assertIsNone(common.read_json(w.path("record.json"))["pin_solo"])
             self.assertEqual(len([e for e in events(w) if e["t"] == "flag" and e["track"] == "pin_solo"]), 1)   # research still sees it
         finally:
+            w.close()
+
+    def test_only_a_real_true_turns_it_on(self):
+        for v in ("true", 1, "yes", None):
+            self.assertFalse(watch.pin_live(cfg_live(v), "2026-W08"), v)
+        self.assertTrue(watch.pin_live(cfg_live(True), "2026-W08"))
+
+    def test_whole_number_lines_are_skipped_by_both_tracks(self):
+        t = helpers.cfg()["ops"]["watch"]["tracks"]
+        self.assertIs(t["pin_solo"]["skip_whole_lines"], True)
+        self.assertIs(t["pin_judge"]["skip_whole_lines"], True)
+
+    def test_a_ps1_pick_counts_as_holding_its_market_for_the_c_read(self):
+        import engine
+        w = World(pool=(500, 500, 500, 500), config=cfg_live(True))
+        seen = []
+        real = engine.focus_markets
+        try:
+            self.run_pair(w)
+            engine.focus_markets = lambda inp, by_game, open_items, near=True: (seen.append([i["shown"].get("era") for i in open_items]),
+                                                                              real(inp, by_game, open_items, near))[1]
+            w.at("2026-10-15T19:15")
+            self.assertIn(["ps1"], seen)
+        finally:
+            engine.focus_markets = real
             w.close()
 
     def test_switch_on_but_the_watch_track_off_stays_off(self):

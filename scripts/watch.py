@@ -27,6 +27,7 @@ Event types: pair (a pair of reads was scanned), scan (a read was scanned), cand
 import json
 import os
 import statistics
+from datetime import timezone
 
 import common
 import gg
@@ -126,7 +127,7 @@ def ps_era(cfg):
 def pin_live(cfg, slate):
     """True only when Matt flipped ops.pin_solo.live AND the pin_solo watch track is on for this slate (same gates). Anything
     less and the method makes no pick."""
-    return bool(ps(cfg).get("live")) and track_on(cfg, SOLO, slate)
+    return ps(cfg).get("live") is True and track_on(cfg, SOLO, slate)
 
 
 # ---------------------------------------------------------------- reads
@@ -342,7 +343,7 @@ def scan(inp, eng, by_game, events, cfg, now):
                 if pid_ in done_ids:
                     continue
                 rows, n_lines = solo_rows(a, b, g, inp, eng, cfg)
-                gap = (common.parse_iso(b["at"]) - common.parse_iso(a["at"])).total_seconds() / 60.0
+                gap = (common.parse_iso(b["at"]).astimezone(timezone.utc) - common.parse_iso(a["at"]).astimezone(timezone.utc)).total_seconds() / 60.0
                 out.append({"t": "pair", "track": SOLO, "id": pid_, "at": common.iso(now), "v": VERSION, "slate": slate,
                             "game_id": gid, "window": window_label(a, b), "a_at": a["at"], "b_at": b["at"],
                             "gap_min": round(gap, 1), "pin_lines": n_lines, "moves": len(rows)})

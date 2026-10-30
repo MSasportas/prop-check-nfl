@@ -249,7 +249,7 @@ class Run:
         inp = self.build_inputs()
         items = record.fold(self.load_events())
         open_items = [it for it in items.values() if it["slate"] == self.slate and record.is_open(it)
-                      and it["kind"] == "single" and it["era"] == gg.era(self.cfg)]
+                      and it["kind"] == "single" and it["era"] in (gg.era(self.cfg), watch.ps_era(self.cfg))]
         focus = engine.focus_markets(inp, self.by_game(), open_items)
         window = sched.games_in_window(self.cache, self.now, self.cfg)
         left = len(window)

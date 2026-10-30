@@ -196,5 +196,9 @@ old) become real picks beside Gap + Guard:
   headline (same shape as section 6); the gg1 headline, rows and weeks never include ps1.
 - Own safety pause: ps1 down `ops.pin_solo.safety_pause_units` (-10) stops new pin_solo picks only (banner
   `safety_pause_text`); Gap + Guard's pause counts gg1 only.
-- Page: unknown fields are ignored; a pin_solo pick renders from `vs` and `reason` (fixtures/pinsolo checked in a real browser at
-  390px, no change needed). To label the method later, read `pick.method` and `slate.methods`.
+- Page (index.html): a pin_solo pick gets a small tag "Pinnacle moved, Hard Rock didn't" (`pick.method == "pin_solo"`) above its `vs` and
+  `reason` lines. The Record tab shows `record.json.pin_solo` as its own block under the weeks ("Pinnacle moved, Hard Rock didn't":
+  W-L-P, units, hit rate vs break-even, its weeks), hidden while it has no graded or open entries, never added to the gg1 headline.
+  Fixtures `pinsolo` and `pinsolo_empty`; checked at 380px (0 console errors, no overflow).
+- Only a literal `true` turns the switch on (`"true"`, 1 or a missing key stay off). `skip_whole_lines` is true on both watch tracks
+  and so on the live method: a whole-number line (a push is possible) is never picked.
