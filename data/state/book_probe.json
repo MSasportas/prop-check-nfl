@@ -119,7 +119,7 @@
     "pinnacle",
     "prophetx"
    ],
-   "books_two_sided": 14,
+   "books_two_sided": 13,
    "books_usable": [
     "betmgm",
     "betonlineag",
@@ -140,9 +140,9 @@
    "hr_and_pinnacle_pairs": 1,
    "hr_pin_4plus_pairs": 1,
    "hr_pin_4plus_players": 1,
-   "mean_gap_abs_others_vs_pinnacle": 0.0062,
+   "mean_gap_abs_others_vs_pinnacle": 0.0068,
    "main_line_players": 2,
-   "main_line_books_median": 7.0,
+   "main_line_books_median": 6.5,
    "main_lines": {
     "Daniel Jones": {
      "line": 188.5,
@@ -150,49 +150,19 @@
     },
     "Trevor Lawrence": {
      "line": 240.5,
-     "books": 9
+     "books": 8
     }
    },
    "books": {
-    "draftkings": {
-     "title": "DraftKings",
+    "betmgm": {
+     "title": "BetMGM",
      "pairs": 2,
      "players": 2,
-     "hold_mean": 0.0566,
-     "shared_with_pinnacle": 1,
-     "gap_abs": 0.0021,
-     "gap_signed": 0.0021,
-     "last_update": "2026-10-30T20:25:20Z"
-    },
-    "fanduel": {
-     "title": "FanDuel",
-     "pairs": 2,
-     "players": 2,
-     "hold_mean": 0.0654,
-     "shared_with_pinnacle": 2,
-     "gap_abs": 0.0051,
-     "gap_signed": -0.0051,
-     "last_update": "2026-10-30T20:24:45Z"
-    },
-    "betrivers": {
-     "title": "BetRivers",
-     "pairs": 2,
-     "players": 2,
-     "hold_mean": 0.0708,
+     "hold_mean": 0.0721,
      "shared_with_pinnacle": 0,
      "gap_abs": null,
      "gap_signed": null,
-     "last_update": "2026-10-30T20:24:38Z"
-    },
-    "betparx": {
-     "title": "betPARX",
-     "pairs": 2,
-     "players": 2,
-     "hold_mean": 0.0654,
-     "shared_with_pinnacle": 0,
-     "gap_abs": null,
-     "gap_signed": null,
-     "last_update": "2026-10-30T20:24:19Z"
+     "last_update": null
     },
     "betonlineag": {
      "title": "BetOnline.ag",
@@ -202,87 +172,27 @@
      "shared_with_pinnacle": 1,
      "gap_abs": 0.0031,
      "gap_signed": 0.0031,
-     "last_update": "2026-10-30T20:25:27Z"
+     "last_update": null
     },
-    "novig": {
-     "title": "Novig",
-     "pairs": 26,
-     "players": 2,
-     "hold_mean": 0.2644,
-     "shared_with_pinnacle": 2,
-     "gap_abs": 0.0112,
-     "gap_signed": -0.0112,
-     "last_update": "2026-10-30T20:25:36Z"
-    },
-    "fliff": {
-     "title": "Fliff",
+    "betparx": {
+     "title": "betPARX",
      "pairs": 2,
      "players": 2,
-     "hold_mean": 0.0909,
-     "shared_with_pinnacle": 1,
-     "gap_abs": 0.0101,
-     "gap_signed": -0.0101,
-     "last_update": "2026-10-30T20:24:56Z"
-    },
-    "prophetx": {
-     "title": "ProphetX",
-     "pairs": 5,
-     "players": 2,
-     "hold_mean": 0.055,
-     "shared_with_pinnacle": 2,
-     "gap_abs": 0.0099,
-     "gap_signed": -0.0099,
-     "last_update": "2026-10-30T20:25:34Z"
-    },
-    "betmgm": {
-     "title": "BetMGM",
-     "pairs": 2,
-     "players": 2,
-     "hold_mean": 0.0721,
+     "hold_mean": 0.0654,
      "shared_with_pinnacle": 0,
      "gap_abs": null,
      "gap_signed": null,
-     "last_update": "2026-10-30T20:25:55Z"
+     "last_update": null
     },
-    "hardrockbet": {
-     "title": "Hard Rock Bet",
+    "betrivers": {
+     "title": "BetRivers",
      "pairs": 2,
      "players": 2,
-     "hold_mean": 0.0698,
-     "shared_with_pinnacle": 1,
-     "gap_abs": 0.0,
-     "gap_signed": 0.0,
-     "last_update": "2026-10-30T20:22:49Z"
-    },
-    "hardrockbet_fl": {
-     "title": "Hard Rock Bet (FL)",
-     "pairs": 2,
-     "players": 2,
-     "hold_mean": 0.0698,
-     "shared_with_pinnacle": 1,
-     "gap_abs": 0.0,
-     "gap_signed": 0.0,
-     "last_update": "2026-10-30T20:25:43Z"
-    },
-    "espnbet": {
-     "title": "theScore Bet",
-     "pairs": 2,
-     "players": 2,
-     "hold_mean": 0.0685,
+     "hold_mean": 0.0708,
      "shared_with_pinnacle": 0,
      "gap_abs": null,
      "gap_signed": null,
-     "last_update": "2026-10-30T20:24:59Z"
-    },
-    "pinnacle": {
-     "title": "Pinnacle",
-     "pairs": 2,
-     "players": 2,
-     "hold_mean": 0.0673,
-     "shared_with_pinnacle": 2,
-     "gap_abs": 0.0,
-     "gap_signed": 0.0,
-     "last_update": "2026-10-30T20:23:54Z"
+     "last_update": null
     },
     "bovada": {
      "title": "Bovada",
@@ -292,7 +202,97 @@
      "shared_with_pinnacle": 1,
      "gap_abs": 0.0,
      "gap_signed": 0.0,
-     "last_update": "2026-10-30T20:23:23Z"
+     "last_update": null
+    },
+    "draftkings": {
+     "title": "DraftKings",
+     "pairs": 2,
+     "players": 2,
+     "hold_mean": 0.0566,
+     "shared_with_pinnacle": 1,
+     "gap_abs": 0.0021,
+     "gap_signed": 0.0021,
+     "last_update": null
+    },
+    "espnbet": {
+     "title": "theScore Bet",
+     "pairs": 2,
+     "players": 2,
+     "hold_mean": 0.0685,
+     "shared_with_pinnacle": 0,
+     "gap_abs": null,
+     "gap_signed": null,
+     "last_update": null
+    },
+    "fanduel": {
+     "title": "FanDuel",
+     "pairs": 2,
+     "players": 2,
+     "hold_mean": 0.0654,
+     "shared_with_pinnacle": 2,
+     "gap_abs": 0.0051,
+     "gap_signed": -0.0051,
+     "last_update": null
+    },
+    "fliff": {
+     "title": "Fliff",
+     "pairs": 2,
+     "players": 2,
+     "hold_mean": 0.0909,
+     "shared_with_pinnacle": 1,
+     "gap_abs": 0.0101,
+     "gap_signed": -0.0101,
+     "last_update": null
+    },
+    "hardrockbet": {
+     "title": "Hard Rock Bet",
+     "pairs": 2,
+     "players": 2,
+     "hold_mean": 0.0698,
+     "shared_with_pinnacle": 1,
+     "gap_abs": 0.0,
+     "gap_signed": 0.0,
+     "last_update": null
+    },
+    "hardrockbet_fl": {
+     "title": "Hard Rock Bet (FL)",
+     "pairs": 2,
+     "players": 2,
+     "hold_mean": 0.0698,
+     "shared_with_pinnacle": 1,
+     "gap_abs": 0.0,
+     "gap_signed": 0.0,
+     "last_update": null
+    },
+    "novig": {
+     "title": "Novig",
+     "pairs": 26,
+     "players": 2,
+     "hold_mean": 0.2644,
+     "shared_with_pinnacle": 2,
+     "gap_abs": 0.0112,
+     "gap_signed": -0.0112,
+     "last_update": null
+    },
+    "pinnacle": {
+     "title": "Pinnacle",
+     "pairs": 2,
+     "players": 2,
+     "hold_mean": 0.0673,
+     "shared_with_pinnacle": 2,
+     "gap_abs": 0.0,
+     "gap_signed": 0.0,
+     "last_update": null
+    },
+    "prophetx": {
+     "title": "ProphetX",
+     "pairs": 5,
+     "players": 2,
+     "hold_mean": 0.055,
+     "shared_with_pinnacle": 2,
+     "gap_abs": 0.0099,
+     "gap_signed": -0.0099,
+     "last_update": null
     }
    }
   },
@@ -325,7 +325,7 @@
     "pinnacle",
     "prophetx"
    ],
-   "books_two_sided": 14,
+   "books_two_sided": 13,
    "books_usable": [
     "betmgm",
     "betonlineag",
@@ -346,59 +346,29 @@
    "hr_and_pinnacle_pairs": 2,
    "hr_pin_4plus_pairs": 2,
    "hr_pin_4plus_players": 2,
-   "mean_gap_abs_others_vs_pinnacle": 0.0177,
+   "mean_gap_abs_others_vs_pinnacle": 0.0186,
    "main_line_players": 2,
-   "main_line_books_median": 13.5,
+   "main_line_books_median": 12.5,
    "main_lines": {
     "Daniel Jones": {
      "line": 0.5,
-     "books": 14
+     "books": 13
     },
     "Trevor Lawrence": {
      "line": 1.5,
-     "books": 13
+     "books": 12
     }
    },
    "books": {
-    "draftkings": {
-     "title": "DraftKings",
+    "betmgm": {
+     "title": "BetMGM",
      "pairs": 2,
      "players": 2,
-     "hold_mean": 0.0581,
+     "hold_mean": 0.0748,
      "shared_with_pinnacle": 2,
-     "gap_abs": 0.022,
-     "gap_signed": 0.0029,
-     "last_update": "2026-10-30T20:25:20Z"
-    },
-    "fanduel": {
-     "title": "FanDuel",
-     "pairs": 2,
-     "players": 2,
-     "hold_mean": 0.0693,
-     "shared_with_pinnacle": 1,
-     "gap_abs": 0.0326,
-     "gap_signed": -0.0326,
-     "last_update": "2026-10-30T20:24:45Z"
-    },
-    "betrivers": {
-     "title": "BetRivers",
-     "pairs": 2,
-     "players": 2,
-     "hold_mean": 0.0718,
-     "shared_with_pinnacle": 2,
-     "gap_abs": 0.0243,
-     "gap_signed": -0.0201,
-     "last_update": "2026-10-30T20:24:38Z"
-    },
-    "betparx": {
-     "title": "betPARX",
-     "pairs": 2,
-     "players": 2,
-     "hold_mean": 0.0671,
-     "shared_with_pinnacle": 2,
-     "gap_abs": 0.0235,
-     "gap_signed": -0.0193,
-     "last_update": "2026-10-30T20:24:19Z"
+     "gap_abs": 0.0228,
+     "gap_signed": -0.0228,
+     "last_update": null
     },
     "betonlineag": {
      "title": "BetOnline.ag",
@@ -408,87 +378,27 @@
      "shared_with_pinnacle": 2,
      "gap_abs": 0.0101,
      "gap_signed": -0.0051,
-     "last_update": "2026-10-30T20:25:27Z"
+     "last_update": null
     },
-    "novig": {
-     "title": "Novig",
-     "pairs": 4,
-     "players": 2,
-     "hold_mean": 0.0259,
-     "shared_with_pinnacle": 2,
-     "gap_abs": 0.0072,
-     "gap_signed": -0.003,
-     "last_update": "2026-10-30T20:25:36Z"
-    },
-    "fliff": {
-     "title": "Fliff",
+    "betparx": {
+     "title": "betPARX",
      "pairs": 2,
      "players": 2,
-     "hold_mean": 0.0906,
+     "hold_mean": 0.0671,
      "shared_with_pinnacle": 2,
-     "gap_abs": 0.0175,
-     "gap_signed": -0.0175,
-     "last_update": "2026-10-30T20:24:56Z"
+     "gap_abs": 0.0235,
+     "gap_signed": -0.0193,
+     "last_update": null
     },
-    "prophetx": {
-     "title": "ProphetX",
-     "pairs": 3,
-     "players": 2,
-     "hold_mean": 0.035,
-     "shared_with_pinnacle": 2,
-     "gap_abs": 0.0085,
-     "gap_signed": -0.0043,
-     "last_update": "2026-10-30T20:25:34Z"
-    },
-    "betmgm": {
-     "title": "BetMGM",
+    "betrivers": {
+     "title": "BetRivers",
      "pairs": 2,
      "players": 2,
-     "hold_mean": 0.0748,
+     "hold_mean": 0.0718,
      "shared_with_pinnacle": 2,
-     "gap_abs": 0.0228,
-     "gap_signed": -0.0228,
-     "last_update": "2026-10-30T20:25:55Z"
-    },
-    "hardrockbet": {
-     "title": "Hard Rock Bet",
-     "pairs": 2,
-     "players": 2,
-     "hold_mean": 0.0746,
-     "shared_with_pinnacle": 2,
-     "gap_abs": 0.008,
-     "gap_signed": -0.008,
-     "last_update": "2026-10-30T20:22:49Z"
-    },
-    "hardrockbet_fl": {
-     "title": "Hard Rock Bet (FL)",
-     "pairs": 2,
-     "players": 2,
-     "hold_mean": 0.0746,
-     "shared_with_pinnacle": 2,
-     "gap_abs": 0.008,
-     "gap_signed": -0.008,
-     "last_update": "2026-10-30T20:25:43Z"
-    },
-    "espnbet": {
-     "title": "theScore Bet",
-     "pairs": 2,
-     "players": 2,
-     "hold_mean": 0.069,
-     "shared_with_pinnacle": 2,
-     "gap_abs": 0.0208,
-     "gap_signed": 0.0028,
-     "last_update": "2026-10-30T20:24:59Z"
-    },
-    "pinnacle": {
-     "title": "Pinnacle",
-     "pairs": 2,
-     "players": 2,
-     "hold_mean": 0.0692,
-     "shared_with_pinnacle": 2,
-     "gap_abs": 0.0,
-     "gap_signed": 0.0,
-     "last_update": "2026-10-30T20:23:54Z"
+     "gap_abs": 0.0243,
+     "gap_signed": -0.0201,
+     "last_update": null
     },
     "bovada": {
      "title": "Bovada",
@@ -498,7 +408,97 @@
      "shared_with_pinnacle": 2,
      "gap_abs": 0.0228,
      "gap_signed": 0.0048,
-     "last_update": "2026-10-30T20:23:23Z"
+     "last_update": null
+    },
+    "draftkings": {
+     "title": "DraftKings",
+     "pairs": 2,
+     "players": 2,
+     "hold_mean": 0.0581,
+     "shared_with_pinnacle": 2,
+     "gap_abs": 0.022,
+     "gap_signed": 0.0029,
+     "last_update": null
+    },
+    "espnbet": {
+     "title": "theScore Bet",
+     "pairs": 2,
+     "players": 2,
+     "hold_mean": 0.069,
+     "shared_with_pinnacle": 2,
+     "gap_abs": 0.0208,
+     "gap_signed": 0.0028,
+     "last_update": null
+    },
+    "fanduel": {
+     "title": "FanDuel",
+     "pairs": 2,
+     "players": 2,
+     "hold_mean": 0.0693,
+     "shared_with_pinnacle": 1,
+     "gap_abs": 0.0326,
+     "gap_signed": -0.0326,
+     "last_update": null
+    },
+    "fliff": {
+     "title": "Fliff",
+     "pairs": 2,
+     "players": 2,
+     "hold_mean": 0.0906,
+     "shared_with_pinnacle": 2,
+     "gap_abs": 0.0175,
+     "gap_signed": -0.0175,
+     "last_update": null
+    },
+    "hardrockbet": {
+     "title": "Hard Rock Bet",
+     "pairs": 2,
+     "players": 2,
+     "hold_mean": 0.0746,
+     "shared_with_pinnacle": 2,
+     "gap_abs": 0.008,
+     "gap_signed": -0.008,
+     "last_update": null
+    },
+    "hardrockbet_fl": {
+     "title": "Hard Rock Bet (FL)",
+     "pairs": 2,
+     "players": 2,
+     "hold_mean": 0.0746,
+     "shared_with_pinnacle": 2,
+     "gap_abs": 0.008,
+     "gap_signed": -0.008,
+     "last_update": null
+    },
+    "novig": {
+     "title": "Novig",
+     "pairs": 4,
+     "players": 2,
+     "hold_mean": 0.0259,
+     "shared_with_pinnacle": 2,
+     "gap_abs": 0.0072,
+     "gap_signed": -0.003,
+     "last_update": null
+    },
+    "pinnacle": {
+     "title": "Pinnacle",
+     "pairs": 2,
+     "players": 2,
+     "hold_mean": 0.0692,
+     "shared_with_pinnacle": 2,
+     "gap_abs": 0.0,
+     "gap_signed": 0.0,
+     "last_update": null
+    },
+    "prophetx": {
+     "title": "ProphetX",
+     "pairs": 3,
+     "players": 2,
+     "hold_mean": 0.035,
+     "shared_with_pinnacle": 2,
+     "gap_abs": 0.0085,
+     "gap_signed": -0.0043,
+     "last_update": null
     }
    }
   },
@@ -529,7 +529,7 @@
     "pinnacle",
     "prophetx"
    ],
-   "books_two_sided": 12,
+   "books_two_sided": 11,
    "books_usable": [
     "betmgm",
     "betonlineag",
@@ -548,39 +548,29 @@
    "hr_and_pinnacle_pairs": 1,
    "hr_pin_4plus_pairs": 1,
    "hr_pin_4plus_players": 1,
-   "mean_gap_abs_others_vs_pinnacle": 0.0128,
+   "mean_gap_abs_others_vs_pinnacle": 0.0129,
    "main_line_players": 2,
-   "main_line_books_median": 10.5,
+   "main_line_books_median": 9.5,
    "main_lines": {
     "Daniel Jones": {
      "line": 31.5,
-     "books": 9
+     "books": 8
     },
     "Trevor Lawrence": {
      "line": 30.5,
-     "books": 12
+     "books": 11
     }
    },
    "books": {
-    "draftkings": {
-     "title": "DraftKings",
+    "betmgm": {
+     "title": "BetMGM",
      "pairs": 2,
      "players": 2,
-     "hold_mean": 0.0604,
+     "hold_mean": 0.0745,
      "shared_with_pinnacle": 1,
-     "gap_abs": 0.0259,
-     "gap_signed": 0.0259,
-     "last_update": "2026-10-30T20:25:20Z"
-    },
-    "betparx": {
-     "title": "betPARX",
-     "pairs": 2,
-     "players": 2,
-     "hold_mean": 0.0656,
-     "shared_with_pinnacle": 1,
-     "gap_abs": 0.0214,
-     "gap_signed": 0.0214,
-     "last_update": "2026-10-30T20:24:19Z"
+     "gap_abs": 0.007,
+     "gap_signed": -0.007,
+     "last_update": null
     },
     "betonlineag": {
      "title": "BetOnline.ag",
@@ -590,87 +580,17 @@
      "shared_with_pinnacle": 1,
      "gap_abs": 0.002,
      "gap_signed": 0.002,
-     "last_update": "2026-10-30T20:25:27Z"
+     "last_update": null
     },
-    "novig": {
-     "title": "Novig",
-     "pairs": 3,
-     "players": 2,
-     "hold_mean": 0.0378,
-     "shared_with_pinnacle": 2,
-     "gap_abs": 0.0098,
-     "gap_signed": 0.0097,
-     "last_update": "2026-10-30T20:25:36Z"
-    },
-    "fliff": {
-     "title": "Fliff",
+    "betparx": {
+     "title": "betPARX",
      "pairs": 2,
      "players": 2,
-     "hold_mean": 0.0904,
+     "hold_mean": 0.0656,
      "shared_with_pinnacle": 1,
-     "gap_abs": 0.0115,
-     "gap_signed": 0.0115,
-     "last_update": "2026-10-30T20:24:56Z"
-    },
-    "prophetx": {
-     "title": "ProphetX",
-     "pairs": 2,
-     "players": 2,
-     "hold_mean": 0.0609,
-     "shared_with_pinnacle": 2,
-     "gap_abs": 0.0047,
-     "gap_signed": -0.0037,
-     "last_update": "2026-10-30T20:25:34Z"
-    },
-    "betmgm": {
-     "title": "BetMGM",
-     "pairs": 2,
-     "players": 2,
-     "hold_mean": 0.0745,
-     "shared_with_pinnacle": 1,
-     "gap_abs": 0.007,
-     "gap_signed": -0.007,
-     "last_update": "2026-10-30T20:25:55Z"
-    },
-    "hardrockbet": {
-     "title": "Hard Rock Bet",
-     "pairs": 2,
-     "players": 2,
-     "hold_mean": 0.0693,
-     "shared_with_pinnacle": 1,
-     "gap_abs": 0.0121,
-     "gap_signed": 0.0121,
-     "last_update": "2026-10-30T20:22:49Z"
-    },
-    "hardrockbet_fl": {
-     "title": "Hard Rock Bet (FL)",
-     "pairs": 2,
-     "players": 2,
-     "hold_mean": 0.0693,
-     "shared_with_pinnacle": 1,
-     "gap_abs": 0.0121,
-     "gap_signed": 0.0121,
-     "last_update": "2026-10-30T20:25:43Z"
-    },
-    "espnbet": {
-     "title": "theScore Bet",
-     "pairs": 2,
-     "players": 2,
-     "hold_mean": 0.0685,
-     "shared_with_pinnacle": 1,
-     "gap_abs": 0.0223,
-     "gap_signed": 0.0223,
-     "last_update": "2026-10-30T20:24:59Z"
-    },
-    "pinnacle": {
-     "title": "Pinnacle",
-     "pairs": 2,
-     "players": 2,
-     "hold_mean": 0.0696,
-     "shared_with_pinnacle": 2,
-     "gap_abs": 0.0,
-     "gap_signed": 0.0,
-     "last_update": "2026-10-30T20:23:54Z"
+     "gap_abs": 0.0214,
+     "gap_signed": 0.0214,
+     "last_update": null
     },
     "bovada": {
      "title": "Bovada",
@@ -680,7 +600,87 @@
      "shared_with_pinnacle": 1,
      "gap_abs": 0.0223,
      "gap_signed": 0.0223,
-     "last_update": "2026-10-30T20:23:23Z"
+     "last_update": null
+    },
+    "draftkings": {
+     "title": "DraftKings",
+     "pairs": 2,
+     "players": 2,
+     "hold_mean": 0.0604,
+     "shared_with_pinnacle": 1,
+     "gap_abs": 0.0259,
+     "gap_signed": 0.0259,
+     "last_update": null
+    },
+    "espnbet": {
+     "title": "theScore Bet",
+     "pairs": 2,
+     "players": 2,
+     "hold_mean": 0.0685,
+     "shared_with_pinnacle": 1,
+     "gap_abs": 0.0223,
+     "gap_signed": 0.0223,
+     "last_update": null
+    },
+    "fliff": {
+     "title": "Fliff",
+     "pairs": 2,
+     "players": 2,
+     "hold_mean": 0.0904,
+     "shared_with_pinnacle": 1,
+     "gap_abs": 0.0115,
+     "gap_signed": 0.0115,
+     "last_update": null
+    },
+    "hardrockbet": {
+     "title": "Hard Rock Bet",
+     "pairs": 2,
+     "players": 2,
+     "hold_mean": 0.0693,
+     "shared_with_pinnacle": 1,
+     "gap_abs": 0.0121,
+     "gap_signed": 0.0121,
+     "last_update": null
+    },
+    "hardrockbet_fl": {
+     "title": "Hard Rock Bet (FL)",
+     "pairs": 2,
+     "players": 2,
+     "hold_mean": 0.0693,
+     "shared_with_pinnacle": 1,
+     "gap_abs": 0.0121,
+     "gap_signed": 0.0121,
+     "last_update": null
+    },
+    "novig": {
+     "title": "Novig",
+     "pairs": 3,
+     "players": 2,
+     "hold_mean": 0.0378,
+     "shared_with_pinnacle": 2,
+     "gap_abs": 0.0098,
+     "gap_signed": 0.0097,
+     "last_update": null
+    },
+    "pinnacle": {
+     "title": "Pinnacle",
+     "pairs": 2,
+     "players": 2,
+     "hold_mean": 0.0696,
+     "shared_with_pinnacle": 2,
+     "gap_abs": 0.0,
+     "gap_signed": 0.0,
+     "last_update": null
+    },
+    "prophetx": {
+     "title": "ProphetX",
+     "pairs": 2,
+     "players": 2,
+     "hold_mean": 0.0609,
+     "shared_with_pinnacle": 2,
+     "gap_abs": 0.0047,
+     "gap_signed": -0.0037,
+     "last_update": null
     }
    }
   },
@@ -712,7 +712,7 @@
     "pinnacle",
     "prophetx"
    ],
-   "books_two_sided": 12,
+   "books_two_sided": 11,
    "books_usable": [
     "betmgm",
     "betonlineag",
@@ -731,39 +731,29 @@
    "hr_and_pinnacle_pairs": 2,
    "hr_pin_4plus_pairs": 2,
    "hr_pin_4plus_players": 2,
-   "mean_gap_abs_others_vs_pinnacle": 0.0169,
+   "mean_gap_abs_others_vs_pinnacle": 0.0171,
    "main_line_players": 2,
-   "main_line_books_median": 10.5,
+   "main_line_books_median": 9.5,
    "main_lines": {
     "Daniel Jones": {
      "line": 19.5,
-     "books": 11
+     "books": 10
     },
     "Trevor Lawrence": {
      "line": 19.5,
-     "books": 10
+     "books": 9
     }
    },
    "books": {
-    "draftkings": {
-     "title": "DraftKings",
-     "pairs": 2,
-     "players": 2,
-     "hold_mean": 0.0613,
-     "shared_with_pinnacle": 2,
-     "gap_abs": 0.0207,
-     "gap_signed": 0.016,
-     "last_update": "2026-10-30T20:25:20Z"
-    },
-    "betparx": {
-     "title": "betPARX",
-     "pairs": 2,
-     "players": 2,
-     "hold_mean": 0.0656,
-     "shared_with_pinnacle": 1,
-     "gap_abs": 0.0365,
-     "gap_signed": -0.0365,
-     "last_update": "2026-10-30T20:24:19Z"
+    "betmgm": {
+     "title": "BetMGM",
+     "pairs": 1,
+     "players": 1,
+     "hold_mean": 0.0745,
+     "shared_with_pinnacle": 0,
+     "gap_abs": null,
+     "gap_signed": null,
+     "last_update": null
     },
     "betonlineag": {
      "title": "BetOnline.ag",
@@ -773,87 +763,17 @@
      "shared_with_pinnacle": 2,
      "gap_abs": 0.0089,
      "gap_signed": 0.002,
-     "last_update": "2026-10-30T20:25:27Z"
+     "last_update": null
     },
-    "novig": {
-     "title": "Novig",
+    "betparx": {
+     "title": "betPARX",
      "pairs": 2,
      "players": 2,
-     "hold_mean": 0.0463,
-     "shared_with_pinnacle": 2,
-     "gap_abs": 0.009,
-     "gap_signed": 0.009,
-     "last_update": "2026-10-30T20:25:36Z"
-    },
-    "fliff": {
-     "title": "Fliff",
-     "pairs": 2,
-     "players": 2,
-     "hold_mean": 0.0957,
-     "shared_with_pinnacle": 2,
-     "gap_abs": 0.0177,
-     "gap_signed": 0.0101,
-     "last_update": "2026-10-30T20:24:56Z"
-    },
-    "prophetx": {
-     "title": "ProphetX",
-     "pairs": 3,
-     "players": 2,
-     "hold_mean": 0.1947,
-     "shared_with_pinnacle": 2,
-     "gap_abs": 0.0084,
-     "gap_signed": 0.0007,
-     "last_update": "2026-10-30T20:25:34Z"
-    },
-    "betmgm": {
-     "title": "BetMGM",
-     "pairs": 1,
-     "players": 1,
-     "hold_mean": 0.0745,
-     "shared_with_pinnacle": 0,
-     "gap_abs": null,
-     "gap_signed": null,
-     "last_update": "2026-10-30T20:25:55Z"
-    },
-    "hardrockbet": {
-     "title": "Hard Rock Bet",
-     "pairs": 2,
-     "players": 2,
-     "hold_mean": 0.0695,
-     "shared_with_pinnacle": 2,
-     "gap_abs": 0.0151,
-     "gap_signed": 0.0081,
-     "last_update": "2026-10-30T20:22:49Z"
-    },
-    "hardrockbet_fl": {
-     "title": "Hard Rock Bet (FL)",
-     "pairs": 2,
-     "players": 2,
-     "hold_mean": 0.0695,
-     "shared_with_pinnacle": 2,
-     "gap_abs": 0.0151,
-     "gap_signed": 0.0081,
-     "last_update": "2026-10-30T20:25:43Z"
-    },
-    "espnbet": {
-     "title": "theScore Bet",
-     "pairs": 2,
-     "players": 2,
-     "hold_mean": 0.0685,
-     "shared_with_pinnacle": 2,
-     "gap_abs": 0.0253,
-     "gap_signed": 0.0183,
-     "last_update": "2026-10-30T20:24:59Z"
-    },
-    "pinnacle": {
-     "title": "Pinnacle",
-     "pairs": 2,
-     "players": 2,
-     "hold_mean": 0.0699,
-     "shared_with_pinnacle": 2,
-     "gap_abs": 0.0,
-     "gap_signed": 0.0,
-     "last_update": "2026-10-30T20:23:54Z"
+     "hold_mean": 0.0656,
+     "shared_with_pinnacle": 1,
+     "gap_abs": 0.0365,
+     "gap_signed": -0.0365,
+     "last_update": null
     },
     "bovada": {
      "title": "Bovada",
@@ -863,7 +783,87 @@
      "shared_with_pinnacle": 2,
      "gap_abs": 0.0202,
      "gap_signed": 0.0132,
-     "last_update": "2026-10-30T20:23:23Z"
+     "last_update": null
+    },
+    "draftkings": {
+     "title": "DraftKings",
+     "pairs": 2,
+     "players": 2,
+     "hold_mean": 0.0613,
+     "shared_with_pinnacle": 2,
+     "gap_abs": 0.0207,
+     "gap_signed": 0.016,
+     "last_update": null
+    },
+    "espnbet": {
+     "title": "theScore Bet",
+     "pairs": 2,
+     "players": 2,
+     "hold_mean": 0.0685,
+     "shared_with_pinnacle": 2,
+     "gap_abs": 0.0253,
+     "gap_signed": 0.0183,
+     "last_update": null
+    },
+    "fliff": {
+     "title": "Fliff",
+     "pairs": 2,
+     "players": 2,
+     "hold_mean": 0.0957,
+     "shared_with_pinnacle": 2,
+     "gap_abs": 0.0177,
+     "gap_signed": 0.0101,
+     "last_update": null
+    },
+    "hardrockbet": {
+     "title": "Hard Rock Bet",
+     "pairs": 2,
+     "players": 2,
+     "hold_mean": 0.0695,
+     "shared_with_pinnacle": 2,
+     "gap_abs": 0.0151,
+     "gap_signed": 0.0081,
+     "last_update": null
+    },
+    "hardrockbet_fl": {
+     "title": "Hard Rock Bet (FL)",
+     "pairs": 2,
+     "players": 2,
+     "hold_mean": 0.0695,
+     "shared_with_pinnacle": 2,
+     "gap_abs": 0.0151,
+     "gap_signed": 0.0081,
+     "last_update": null
+    },
+    "novig": {
+     "title": "Novig",
+     "pairs": 2,
+     "players": 2,
+     "hold_mean": 0.0463,
+     "shared_with_pinnacle": 2,
+     "gap_abs": 0.009,
+     "gap_signed": 0.009,
+     "last_update": null
+    },
+    "pinnacle": {
+     "title": "Pinnacle",
+     "pairs": 2,
+     "players": 2,
+     "hold_mean": 0.0699,
+     "shared_with_pinnacle": 2,
+     "gap_abs": 0.0,
+     "gap_signed": 0.0,
+     "last_update": null
+    },
+    "prophetx": {
+     "title": "ProphetX",
+     "pairs": 3,
+     "players": 2,
+     "hold_mean": 0.1947,
+     "shared_with_pinnacle": 2,
+     "gap_abs": 0.0084,
+     "gap_signed": 0.0007,
+     "last_update": null
     }
    }
   },
@@ -894,7 +894,7 @@
     "novig",
     "prophetx"
    ],
-   "books_two_sided": 12,
+   "books_two_sided": 11,
    "books_usable": [
     "betmgm",
     "betonlineag",
@@ -915,47 +915,27 @@
    "hr_pin_4plus_players": 0,
    "mean_gap_abs_others_vs_pinnacle": null,
    "main_line_players": 2,
-   "main_line_books_median": 11.0,
+   "main_line_books_median": 10.0,
    "main_lines": {
     "Daniel Jones": {
      "line": 0.5,
-     "books": 10
+     "books": 9
     },
     "Trevor Lawrence": {
      "line": 0.5,
-     "books": 12
+     "books": 11
     }
    },
    "books": {
-    "draftkings": {
-     "title": "DraftKings",
-     "pairs": 2,
-     "players": 2,
-     "hold_mean": 0.0598,
+    "betmgm": {
+     "title": "BetMGM",
+     "pairs": 1,
+     "players": 1,
+     "hold_mean": 0.0674,
      "shared_with_pinnacle": 0,
      "gap_abs": null,
      "gap_signed": null,
-     "last_update": "2026-10-30T20:25:20Z"
-    },
-    "betrivers": {
-     "title": "BetRivers",
-     "pairs": 2,
-     "players": 2,
-     "hold_mean": 0.0711,
-     "shared_with_pinnacle": 0,
-     "gap_abs": null,
-     "gap_signed": null,
-     "last_update": "2026-10-30T20:24:38Z"
-    },
-    "betparx": {
-     "title": "betPARX",
-     "pairs": 2,
-     "players": 2,
-     "hold_mean": 0.0648,
-     "shared_with_pinnacle": 0,
-     "gap_abs": null,
-     "gap_signed": null,
-     "last_update": "2026-10-30T20:24:19Z"
+     "last_update": null
     },
     "betonlineag": {
      "title": "BetOnline.ag",
@@ -965,77 +945,27 @@
      "shared_with_pinnacle": 0,
      "gap_abs": null,
      "gap_signed": null,
-     "last_update": "2026-10-30T20:25:27Z"
+     "last_update": null
     },
-    "novig": {
-     "title": "Novig",
+    "betparx": {
+     "title": "betPARX",
      "pairs": 2,
      "players": 2,
-     "hold_mean": 0.0451,
+     "hold_mean": 0.0648,
      "shared_with_pinnacle": 0,
      "gap_abs": null,
      "gap_signed": null,
-     "last_update": "2026-10-30T20:25:36Z"
+     "last_update": null
     },
-    "fliff": {
-     "title": "Fliff",
+    "betrivers": {
+     "title": "BetRivers",
      "pairs": 2,
      "players": 2,
-     "hold_mean": 0.0921,
+     "hold_mean": 0.0711,
      "shared_with_pinnacle": 0,
      "gap_abs": null,
      "gap_signed": null,
-     "last_update": "2026-10-30T20:24:56Z"
-    },
-    "prophetx": {
-     "title": "ProphetX",
-     "pairs": 1,
-     "players": 1,
-     "hold_mean": 0.0446,
-     "shared_with_pinnacle": 0,
-     "gap_abs": null,
-     "gap_signed": null,
-     "last_update": "2026-10-30T20:25:34Z"
-    },
-    "betmgm": {
-     "title": "BetMGM",
-     "pairs": 1,
-     "players": 1,
-     "hold_mean": 0.0674,
-     "shared_with_pinnacle": 0,
-     "gap_abs": null,
-     "gap_signed": null,
-     "last_update": "2026-10-30T20:25:55Z"
-    },
-    "hardrockbet": {
-     "title": "Hard Rock Bet",
-     "pairs": 2,
-     "players": 2,
-     "hold_mean": 0.0702,
-     "shared_with_pinnacle": 0,
-     "gap_abs": null,
-     "gap_signed": null,
-     "last_update": "2026-10-30T20:22:49Z"
-    },
-    "hardrockbet_fl": {
-     "title": "Hard Rock Bet (FL)",
-     "pairs": 2,
-     "players": 2,
-     "hold_mean": 0.0702,
-     "shared_with_pinnacle": 0,
-     "gap_abs": null,
-     "gap_signed": null,
-     "last_update": "2026-10-30T20:25:43Z"
-    },
-    "espnbet": {
-     "title": "theScore Bet",
-     "pairs": 2,
-     "players": 2,
-     "hold_mean": 0.0668,
-     "shared_with_pinnacle": 0,
-     "gap_abs": null,
-     "gap_signed": null,
-     "last_update": "2026-10-30T20:24:59Z"
+     "last_update": null
     },
     "bovada": {
      "title": "Bovada",
@@ -1045,7 +975,77 @@
      "shared_with_pinnacle": 0,
      "gap_abs": null,
      "gap_signed": null,
-     "last_update": "2026-10-30T20:23:23Z"
+     "last_update": null
+    },
+    "draftkings": {
+     "title": "DraftKings",
+     "pairs": 2,
+     "players": 2,
+     "hold_mean": 0.0598,
+     "shared_with_pinnacle": 0,
+     "gap_abs": null,
+     "gap_signed": null,
+     "last_update": null
+    },
+    "espnbet": {
+     "title": "theScore Bet",
+     "pairs": 2,
+     "players": 2,
+     "hold_mean": 0.0668,
+     "shared_with_pinnacle": 0,
+     "gap_abs": null,
+     "gap_signed": null,
+     "last_update": null
+    },
+    "fliff": {
+     "title": "Fliff",
+     "pairs": 2,
+     "players": 2,
+     "hold_mean": 0.0921,
+     "shared_with_pinnacle": 0,
+     "gap_abs": null,
+     "gap_signed": null,
+     "last_update": null
+    },
+    "hardrockbet": {
+     "title": "Hard Rock Bet",
+     "pairs": 2,
+     "players": 2,
+     "hold_mean": 0.0702,
+     "shared_with_pinnacle": 0,
+     "gap_abs": null,
+     "gap_signed": null,
+     "last_update": null
+    },
+    "hardrockbet_fl": {
+     "title": "Hard Rock Bet (FL)",
+     "pairs": 2,
+     "players": 2,
+     "hold_mean": 0.0702,
+     "shared_with_pinnacle": 0,
+     "gap_abs": null,
+     "gap_signed": null,
+     "last_update": null
+    },
+    "novig": {
+     "title": "Novig",
+     "pairs": 2,
+     "players": 2,
+     "hold_mean": 0.0451,
+     "shared_with_pinnacle": 0,
+     "gap_abs": null,
+     "gap_signed": null,
+     "last_update": null
+    },
+    "prophetx": {
+     "title": "ProphetX",
+     "pairs": 1,
+     "players": 1,
+     "hold_mean": 0.0446,
+     "shared_with_pinnacle": 0,
+     "gap_abs": null,
+     "gap_signed": null,
+     "last_update": null
     }
    }
   },
@@ -1078,7 +1078,7 @@
     "pinnacle",
     "prophetx"
    ],
-   "books_two_sided": 14,
+   "books_two_sided": 13,
    "books_usable": [
     "betmgm",
     "betonlineag",
@@ -1099,13 +1099,13 @@
    "hr_and_pinnacle_pairs": 2,
    "hr_pin_4plus_pairs": 2,
    "hr_pin_4plus_players": 2,
-   "mean_gap_abs_others_vs_pinnacle": 0.0073,
+   "mean_gap_abs_others_vs_pinnacle": 0.0074,
    "main_line_players": 6,
-   "main_line_books_median": 8.0,
+   "main_line_books_median": 7.0,
    "main_lines": {
     "Bhayshul Tuten": {
      "line": 65.5,
-     "books": 7
+     "books": 6
     },
     "Chris Rodriguez Jr.": {
      "line": 31.5,
@@ -1113,61 +1113,31 @@
     },
     "Daniel Jones": {
      "line": 8.5,
-     "books": 10
+     "books": 9
     },
     "Jonathan Taylor": {
      "line": 56.5,
-     "books": 9
+     "books": 8
     },
     "Seth McGowan": {
      "line": 19.5,
-     "books": 8
+     "books": 7
     },
     "Trevor Lawrence": {
      "line": 11.5,
-     "books": 8
+     "books": 7
     }
    },
    "books": {
-    "draftkings": {
-     "title": "DraftKings",
-     "pairs": 6,
-     "players": 6,
-     "hold_mean": 0.0564,
-     "shared_with_pinnacle": 1,
-     "gap_abs": 0.0021,
-     "gap_signed": 0.0021,
-     "last_update": "2026-10-30T20:25:20Z"
-    },
-    "fanduel": {
-     "title": "FanDuel",
-     "pairs": 6,
-     "players": 6,
-     "hold_mean": 0.0654,
-     "shared_with_pinnacle": 5,
-     "gap_abs": 0.0004,
-     "gap_signed": 0.0004,
-     "last_update": "2026-10-30T20:24:45Z"
-    },
-    "betrivers": {
-     "title": "BetRivers",
-     "pairs": 6,
-     "players": 6,
-     "hold_mean": 0.071,
-     "shared_with_pinnacle": 1,
-     "gap_abs": 0.008,
-     "gap_signed": -0.008,
-     "last_update": "2026-10-30T20:24:38Z"
-    },
-    "betparx": {
-     "title": "betPARX",
-     "pairs": 6,
-     "players": 6,
-     "hold_mean": 0.0663,
-     "shared_with_pinnacle": 1,
-     "gap_abs": 0.0082,
-     "gap_signed": -0.0082,
-     "last_update": "2026-10-30T20:24:19Z"
+    "betmgm": {
+     "title": "BetMGM",
+     "pairs": 3,
+     "players": 3,
+     "hold_mean": 0.0694,
+     "shared_with_pinnacle": 0,
+     "gap_abs": null,
+     "gap_signed": null,
+     "last_update": null
     },
     "betonlineag": {
      "title": "BetOnline.ag",
@@ -1177,87 +1147,27 @@
      "shared_with_pinnacle": 1,
      "gap_abs": 0.0011,
      "gap_signed": -0.0011,
-     "last_update": "2026-10-30T20:25:27Z"
+     "last_update": null
     },
-    "novig": {
-     "title": "Novig",
-     "pairs": 52,
-     "players": 6,
-     "hold_mean": 0.1952,
-     "shared_with_pinnacle": 5,
-     "gap_abs": 0.0144,
-     "gap_signed": 0.0088,
-     "last_update": "2026-10-30T20:25:36Z"
-    },
-    "fliff": {
-     "title": "Fliff",
+    "betparx": {
+     "title": "betPARX",
      "pairs": 6,
      "players": 6,
-     "hold_mean": 0.0907,
-     "shared_with_pinnacle": 3,
-     "gap_abs": 0.007,
-     "gap_signed": 0.007,
-     "last_update": "2026-10-30T20:24:56Z"
-    },
-    "prophetx": {
-     "title": "ProphetX",
-     "pairs": 22,
-     "players": 6,
-     "hold_mean": 0.2083,
-     "shared_with_pinnacle": 5,
-     "gap_abs": 0.0088,
-     "gap_signed": 0.0061,
-     "last_update": "2026-10-30T20:25:34Z"
-    },
-    "betmgm": {
-     "title": "BetMGM",
-     "pairs": 3,
-     "players": 3,
-     "hold_mean": 0.0694,
-     "shared_with_pinnacle": 0,
-     "gap_abs": null,
-     "gap_signed": null,
-     "last_update": "2026-10-30T20:25:55Z"
-    },
-    "hardrockbet": {
-     "title": "Hard Rock Bet",
-     "pairs": 6,
-     "players": 6,
-     "hold_mean": 0.0695,
-     "shared_with_pinnacle": 2,
-     "gap_abs": 0.0051,
-     "gap_signed": 0.0051,
-     "last_update": "2026-10-30T20:22:49Z"
-    },
-    "hardrockbet_fl": {
-     "title": "Hard Rock Bet (FL)",
-     "pairs": 6,
-     "players": 6,
-     "hold_mean": 0.0695,
-     "shared_with_pinnacle": 2,
-     "gap_abs": 0.0051,
-     "gap_signed": 0.0051,
-     "last_update": "2026-10-30T20:25:43Z"
-    },
-    "espnbet": {
-     "title": "theScore Bet",
-     "pairs": 6,
-     "players": 6,
-     "hold_mean": 0.0681,
+     "hold_mean": 0.0663,
      "shared_with_pinnacle": 1,
-     "gap_abs": 0.0203,
-     "gap_signed": 0.0203,
-     "last_update": "2026-10-30T20:24:59Z"
+     "gap_abs": 0.0082,
+     "gap_signed": -0.0082,
+     "last_update": null
     },
-    "pinnacle": {
-     "title": "Pinnacle",
-     "pairs": 5,
-     "players": 5,
-     "hold_mean": 0.0672,
-     "shared_with_pinnacle": 5,
-     "gap_abs": 0.0,
-     "gap_signed": 0.0,
-     "last_update": "2026-10-30T20:23:54Z"
+    "betrivers": {
+     "title": "BetRivers",
+     "pairs": 6,
+     "players": 6,
+     "hold_mean": 0.071,
+     "shared_with_pinnacle": 1,
+     "gap_abs": 0.008,
+     "gap_signed": -0.008,
+     "last_update": null
     },
     "bovada": {
      "title": "Bovada",
@@ -1267,7 +1177,97 @@
      "shared_with_pinnacle": 1,
      "gap_abs": 0.0,
      "gap_signed": 0.0,
-     "last_update": "2026-10-30T20:23:23Z"
+     "last_update": null
+    },
+    "draftkings": {
+     "title": "DraftKings",
+     "pairs": 6,
+     "players": 6,
+     "hold_mean": 0.0564,
+     "shared_with_pinnacle": 1,
+     "gap_abs": 0.0021,
+     "gap_signed": 0.0021,
+     "last_update": null
+    },
+    "espnbet": {
+     "title": "theScore Bet",
+     "pairs": 6,
+     "players": 6,
+     "hold_mean": 0.0681,
+     "shared_with_pinnacle": 1,
+     "gap_abs": 0.0203,
+     "gap_signed": 0.0203,
+     "last_update": null
+    },
+    "fanduel": {
+     "title": "FanDuel",
+     "pairs": 6,
+     "players": 6,
+     "hold_mean": 0.0654,
+     "shared_with_pinnacle": 5,
+     "gap_abs": 0.0004,
+     "gap_signed": 0.0004,
+     "last_update": null
+    },
+    "fliff": {
+     "title": "Fliff",
+     "pairs": 6,
+     "players": 6,
+     "hold_mean": 0.0907,
+     "shared_with_pinnacle": 3,
+     "gap_abs": 0.007,
+     "gap_signed": 0.007,
+     "last_update": null
+    },
+    "hardrockbet": {
+     "title": "Hard Rock Bet",
+     "pairs": 6,
+     "players": 6,
+     "hold_mean": 0.0695,
+     "shared_with_pinnacle": 2,
+     "gap_abs": 0.0051,
+     "gap_signed": 0.0051,
+     "last_update": null
+    },
+    "hardrockbet_fl": {
+     "title": "Hard Rock Bet (FL)",
+     "pairs": 6,
+     "players": 6,
+     "hold_mean": 0.0695,
+     "shared_with_pinnacle": 2,
+     "gap_abs": 0.0051,
+     "gap_signed": 0.0051,
+     "last_update": null
+    },
+    "novig": {
+     "title": "Novig",
+     "pairs": 52,
+     "players": 6,
+     "hold_mean": 0.1952,
+     "shared_with_pinnacle": 5,
+     "gap_abs": 0.0144,
+     "gap_signed": 0.0088,
+     "last_update": null
+    },
+    "pinnacle": {
+     "title": "Pinnacle",
+     "pairs": 5,
+     "players": 5,
+     "hold_mean": 0.0672,
+     "shared_with_pinnacle": 5,
+     "gap_abs": 0.0,
+     "gap_signed": 0.0,
+     "last_update": null
+    },
+    "prophetx": {
+     "title": "ProphetX",
+     "pairs": 22,
+     "players": 6,
+     "hold_mean": 0.2083,
+     "shared_with_pinnacle": 5,
+     "gap_abs": 0.0088,
+     "gap_signed": 0.0061,
+     "last_update": null
     }
    }
   },
@@ -1297,7 +1297,7 @@
     "pinnacle",
     "prophetx"
    ],
-   "books_two_sided": 11,
+   "books_two_sided": 10,
    "books_usable": [
     "betonlineag",
     "betparx",
@@ -1313,35 +1313,35 @@
    ],
    "basis": "two-sided, de-vigged",
    "hr_and_pinnacle_pairs": 3,
-   "hr_pin_4plus_pairs": 3,
-   "hr_pin_4plus_players": 3,
-   "mean_gap_abs_others_vs_pinnacle": 0.0202,
+   "hr_pin_4plus_pairs": 2,
+   "hr_pin_4plus_players": 2,
+   "mean_gap_abs_others_vs_pinnacle": 0.0209,
    "main_line_players": 3,
-   "main_line_books_median": 11,
+   "main_line_books_median": 10,
    "main_lines": {
     "Bhayshul Tuten": {
      "line": 15.5,
-     "books": 6
+     "books": 5
     },
     "Chris Rodriguez Jr.": {
      "line": 7.5,
-     "books": 11
+     "books": 10
     },
     "Jonathan Taylor": {
      "line": 15.5,
-     "books": 11
+     "books": 10
     }
    },
    "books": {
-    "draftkings": {
-     "title": "DraftKings",
+    "betonlineag": {
+     "title": "BetOnline.ag",
      "pairs": 3,
      "players": 3,
-     "hold_mean": 0.0607,
+     "hold_mean": 0.0647,
      "shared_with_pinnacle": 2,
-     "gap_abs": 0.0327,
-     "gap_signed": -0.0111,
-     "last_update": "2026-10-30T20:25:20Z"
+     "gap_abs": 0.0192,
+     "gap_signed": -0.0131,
+     "last_update": null
     },
     "betparx": {
      "title": "betPARX",
@@ -1351,87 +1351,7 @@
      "shared_with_pinnacle": 3,
      "gap_abs": 0.0276,
      "gap_signed": -0.0109,
-     "last_update": "2026-10-30T20:24:19Z"
-    },
-    "betonlineag": {
-     "title": "BetOnline.ag",
-     "pairs": 3,
-     "players": 3,
-     "hold_mean": 0.0647,
-     "shared_with_pinnacle": 2,
-     "gap_abs": 0.0192,
-     "gap_signed": -0.0131,
-     "last_update": "2026-10-30T20:25:27Z"
-    },
-    "novig": {
-     "title": "Novig",
-     "pairs": 5,
-     "players": 3,
-     "hold_mean": 0.0451,
-     "shared_with_pinnacle": 3,
-     "gap_abs": 0.0057,
-     "gap_signed": -0.0003,
-     "last_update": "2026-10-30T20:25:36Z"
-    },
-    "fliff": {
-     "title": "Fliff",
-     "pairs": 3,
-     "players": 3,
-     "hold_mean": 0.0921,
-     "shared_with_pinnacle": 3,
-     "gap_abs": 0.0178,
-     "gap_signed": -0.0074,
-     "last_update": "2026-10-30T20:24:56Z"
-    },
-    "prophetx": {
-     "title": "ProphetX",
-     "pairs": 2,
-     "players": 2,
-     "hold_mean": 0.0394,
-     "shared_with_pinnacle": 2,
-     "gap_abs": 0.0095,
-     "gap_signed": -0.0095,
-     "last_update": "2026-10-30T20:25:34Z"
-    },
-    "hardrockbet": {
-     "title": "Hard Rock Bet",
-     "pairs": 3,
-     "players": 3,
-     "hold_mean": 0.0689,
-     "shared_with_pinnacle": 3,
-     "gap_abs": 0.016,
-     "gap_signed": -0.0,
-     "last_update": "2026-10-30T20:22:49Z"
-    },
-    "hardrockbet_fl": {
-     "title": "Hard Rock Bet (FL)",
-     "pairs": 3,
-     "players": 3,
-     "hold_mean": 0.0689,
-     "shared_with_pinnacle": 3,
-     "gap_abs": 0.016,
-     "gap_signed": -0.0,
-     "last_update": "2026-10-30T20:25:43Z"
-    },
-    "espnbet": {
-     "title": "theScore Bet",
-     "pairs": 3,
-     "players": 3,
-     "hold_mean": 0.0676,
-     "shared_with_pinnacle": 2,
-     "gap_abs": 0.0252,
-     "gap_signed": 0.0011,
-     "last_update": "2026-10-30T20:24:59Z"
-    },
-    "pinnacle": {
-     "title": "Pinnacle",
-     "pairs": 3,
-     "players": 3,
-     "hold_mean": 0.0703,
-     "shared_with_pinnacle": 3,
-     "gap_abs": 0.0,
-     "gap_signed": 0.0,
-     "last_update": "2026-10-30T20:23:54Z"
+     "last_update": null
     },
     "bovada": {
      "title": "Bovada",
@@ -1441,7 +1361,87 @@
      "shared_with_pinnacle": 2,
      "gap_abs": 0.0354,
      "gap_signed": -0.009,
-     "last_update": "2026-10-30T20:23:23Z"
+     "last_update": null
+    },
+    "draftkings": {
+     "title": "DraftKings",
+     "pairs": 3,
+     "players": 3,
+     "hold_mean": 0.0607,
+     "shared_with_pinnacle": 2,
+     "gap_abs": 0.0327,
+     "gap_signed": -0.0111,
+     "last_update": null
+    },
+    "espnbet": {
+     "title": "theScore Bet",
+     "pairs": 3,
+     "players": 3,
+     "hold_mean": 0.0676,
+     "shared_with_pinnacle": 2,
+     "gap_abs": 0.0252,
+     "gap_signed": 0.0011,
+     "last_update": null
+    },
+    "fliff": {
+     "title": "Fliff",
+     "pairs": 3,
+     "players": 3,
+     "hold_mean": 0.0921,
+     "shared_with_pinnacle": 3,
+     "gap_abs": 0.0178,
+     "gap_signed": -0.0074,
+     "last_update": null
+    },
+    "hardrockbet": {
+     "title": "Hard Rock Bet",
+     "pairs": 3,
+     "players": 3,
+     "hold_mean": 0.0689,
+     "shared_with_pinnacle": 3,
+     "gap_abs": 0.016,
+     "gap_signed": -0.0,
+     "last_update": null
+    },
+    "hardrockbet_fl": {
+     "title": "Hard Rock Bet (FL)",
+     "pairs": 3,
+     "players": 3,
+     "hold_mean": 0.0689,
+     "shared_with_pinnacle": 3,
+     "gap_abs": 0.016,
+     "gap_signed": -0.0,
+     "last_update": null
+    },
+    "novig": {
+     "title": "Novig",
+     "pairs": 5,
+     "players": 3,
+     "hold_mean": 0.0451,
+     "shared_with_pinnacle": 3,
+     "gap_abs": 0.0057,
+     "gap_signed": -0.0003,
+     "last_update": null
+    },
+    "pinnacle": {
+     "title": "Pinnacle",
+     "pairs": 3,
+     "players": 3,
+     "hold_mean": 0.0703,
+     "shared_with_pinnacle": 3,
+     "gap_abs": 0.0,
+     "gap_signed": 0.0,
+     "last_update": null
+    },
+    "prophetx": {
+     "title": "ProphetX",
+     "pairs": 2,
+     "players": 2,
+     "hold_mean": 0.0394,
+     "shared_with_pinnacle": 2,
+     "gap_abs": 0.0095,
+     "gap_signed": -0.0095,
+     "last_update": null
     }
    }
   },
@@ -1474,7 +1474,7 @@
     "pinnacle",
     "prophetx"
    ],
-   "books_two_sided": 13,
+   "books_two_sided": 12,
    "books_usable": [
     "betmgm",
     "betonlineag",
@@ -1494,17 +1494,17 @@
    "hr_and_pinnacle_pairs": 6,
    "hr_pin_4plus_pairs": 6,
    "hr_pin_4plus_players": 6,
-   "mean_gap_abs_others_vs_pinnacle": 0.0138,
+   "mean_gap_abs_others_vs_pinnacle": 0.0143,
    "main_line_players": 13,
-   "main_line_books_median": 10,
+   "main_line_books_median": 9,
    "main_lines": {
     "Bhayshul Tuten": {
      "line": 2.5,
-     "books": 13
+     "books": 12
     },
     "Brenton Strange": {
      "line": 3.5,
-     "books": 13
+     "books": 12
     },
     "Brian Thomas Jr": {
      "line": 1.5,
@@ -1516,23 +1516,23 @@
     },
     "Jonathan Taylor": {
      "line": 2.5,
-     "books": 12
+     "books": 11
     },
     "Josh Cameron": {
      "line": 1.5,
-     "books": 5
+     "books": 4
     },
     "Josh Downs": {
      "line": 3.5,
-     "books": 10
+     "books": 9
     },
     "Keenan Allen": {
      "line": 4.5,
-     "books": 12
+     "books": 11
     },
     "Laquon Treadwell": {
      "line": 2.5,
-     "books": 10
+     "books": 9
     },
     "Nate Boerkircher": {
      "line": 1.5,
@@ -1540,7 +1540,7 @@
     },
     "Parker Washington": {
      "line": 4.5,
-     "books": 12
+     "books": 11
     },
     "Travis Hunter": {
      "line": 1.5,
@@ -1548,39 +1548,19 @@
     },
     "Tyler Warren": {
      "line": 4.5,
-     "books": 11
+     "books": 10
     }
    },
    "books": {
-    "draftkings": {
-     "title": "DraftKings",
-     "pairs": 10,
-     "players": 10,
-     "hold_mean": 0.0597,
-     "shared_with_pinnacle": 6,
-     "gap_abs": 0.0177,
-     "gap_signed": -0.0063,
-     "last_update": "2026-10-30T20:25:20Z"
-    },
-    "fanduel": {
-     "title": "FanDuel",
-     "pairs": 12,
-     "players": 12,
-     "hold_mean": 0.0696,
-     "shared_with_pinnacle": 6,
-     "gap_abs": 0.009,
-     "gap_signed": 0.0028,
-     "last_update": "2026-10-30T20:24:45Z"
-    },
-    "betparx": {
-     "title": "betPARX",
-     "pairs": 9,
-     "players": 9,
-     "hold_mean": 0.0655,
-     "shared_with_pinnacle": 7,
-     "gap_abs": 0.0178,
-     "gap_signed": -0.0057,
-     "last_update": "2026-10-30T20:24:19Z"
+    "betmgm": {
+     "title": "BetMGM",
+     "pairs": 2,
+     "players": 2,
+     "hold_mean": 0.0722,
+     "shared_with_pinnacle": 2,
+     "gap_abs": 0.0012,
+     "gap_signed": 0.0012,
+     "last_update": null
     },
     "betonlineag": {
      "title": "BetOnline.ag",
@@ -1590,87 +1570,17 @@
      "shared_with_pinnacle": 7,
      "gap_abs": 0.0123,
      "gap_signed": -0.001,
-     "last_update": "2026-10-30T20:25:27Z"
+     "last_update": null
     },
-    "novig": {
-     "title": "Novig",
-     "pairs": 15,
-     "players": 12,
-     "hold_mean": 0.0809,
-     "shared_with_pinnacle": 7,
-     "gap_abs": 0.0123,
-     "gap_signed": -0.0033,
-     "last_update": "2026-10-30T20:25:36Z"
-    },
-    "fliff": {
-     "title": "Fliff",
-     "pairs": 10,
-     "players": 10,
-     "hold_mean": 0.0926,
-     "shared_with_pinnacle": 7,
-     "gap_abs": 0.005,
-     "gap_signed": 0.0023,
-     "last_update": "2026-10-30T20:24:56Z"
-    },
-    "prophetx": {
-     "title": "ProphetX",
-     "pairs": 14,
-     "players": 12,
-     "hold_mean": 0.1724,
-     "shared_with_pinnacle": 7,
-     "gap_abs": 0.0175,
-     "gap_signed": -0.0084,
-     "last_update": "2026-10-30T20:25:34Z"
-    },
-    "betmgm": {
-     "title": "BetMGM",
-     "pairs": 2,
-     "players": 2,
-     "hold_mean": 0.0722,
-     "shared_with_pinnacle": 2,
-     "gap_abs": 0.0012,
-     "gap_signed": 0.0012,
-     "last_update": "2026-10-30T20:25:55Z"
-    },
-    "hardrockbet": {
-     "title": "Hard Rock Bet",
-     "pairs": 10,
-     "players": 10,
-     "hold_mean": 0.0677,
-     "shared_with_pinnacle": 6,
-     "gap_abs": 0.0092,
-     "gap_signed": 0.0014,
-     "last_update": "2026-10-30T20:22:49Z"
-    },
-    "hardrockbet_fl": {
-     "title": "Hard Rock Bet (FL)",
+    "betparx": {
+     "title": "betPARX",
      "pairs": 9,
      "players": 9,
-     "hold_mean": 0.0675,
-     "shared_with_pinnacle": 6,
-     "gap_abs": 0.0092,
-     "gap_signed": 0.0014,
-     "last_update": "2026-10-30T20:25:43Z"
-    },
-    "espnbet": {
-     "title": "theScore Bet",
-     "pairs": 5,
-     "players": 5,
-     "hold_mean": 0.0675,
-     "shared_with_pinnacle": 5,
-     "gap_abs": 0.0234,
-     "gap_signed": -0.0072,
-     "last_update": "2026-10-30T20:24:59Z"
-    },
-    "pinnacle": {
-     "title": "Pinnacle",
-     "pairs": 7,
-     "players": 7,
-     "hold_mean": 0.0695,
+     "hold_mean": 0.0655,
      "shared_with_pinnacle": 7,
-     "gap_abs": 0.0,
-     "gap_signed": 0.0,
-     "last_update": "2026-10-30T20:23:54Z"
+     "gap_abs": 0.0178,
+     "gap_signed": -0.0057,
+     "last_update": null
     },
     "bovada": {
      "title": "Bovada",
@@ -1680,7 +1590,97 @@
      "shared_with_pinnacle": 6,
      "gap_abs": 0.0202,
      "gap_signed": -0.0053,
-     "last_update": "2026-10-30T20:23:23Z"
+     "last_update": null
+    },
+    "draftkings": {
+     "title": "DraftKings",
+     "pairs": 10,
+     "players": 10,
+     "hold_mean": 0.0597,
+     "shared_with_pinnacle": 6,
+     "gap_abs": 0.0177,
+     "gap_signed": -0.0063,
+     "last_update": null
+    },
+    "espnbet": {
+     "title": "theScore Bet",
+     "pairs": 5,
+     "players": 5,
+     "hold_mean": 0.0675,
+     "shared_with_pinnacle": 5,
+     "gap_abs": 0.0234,
+     "gap_signed": -0.0072,
+     "last_update": null
+    },
+    "fanduel": {
+     "title": "FanDuel",
+     "pairs": 12,
+     "players": 12,
+     "hold_mean": 0.0696,
+     "shared_with_pinnacle": 6,
+     "gap_abs": 0.009,
+     "gap_signed": 0.0028,
+     "last_update": null
+    },
+    "fliff": {
+     "title": "Fliff",
+     "pairs": 10,
+     "players": 10,
+     "hold_mean": 0.0926,
+     "shared_with_pinnacle": 7,
+     "gap_abs": 0.005,
+     "gap_signed": 0.0023,
+     "last_update": null
+    },
+    "hardrockbet": {
+     "title": "Hard Rock Bet",
+     "pairs": 10,
+     "players": 10,
+     "hold_mean": 0.0677,
+     "shared_with_pinnacle": 6,
+     "gap_abs": 0.0092,
+     "gap_signed": 0.0014,
+     "last_update": null
+    },
+    "hardrockbet_fl": {
+     "title": "Hard Rock Bet (FL)",
+     "pairs": 9,
+     "players": 9,
+     "hold_mean": 0.0675,
+     "shared_with_pinnacle": 6,
+     "gap_abs": 0.0092,
+     "gap_signed": 0.0014,
+     "last_update": null
+    },
+    "novig": {
+     "title": "Novig",
+     "pairs": 15,
+     "players": 12,
+     "hold_mean": 0.0809,
+     "shared_with_pinnacle": 7,
+     "gap_abs": 0.0123,
+     "gap_signed": -0.0033,
+     "last_update": null
+    },
+    "pinnacle": {
+     "title": "Pinnacle",
+     "pairs": 7,
+     "players": 7,
+     "hold_mean": 0.0695,
+     "shared_with_pinnacle": 7,
+     "gap_abs": 0.0,
+     "gap_signed": 0.0,
+     "last_update": null
+    },
+    "prophetx": {
+     "title": "ProphetX",
+     "pairs": 14,
+     "players": 12,
+     "hold_mean": 0.1724,
+     "shared_with_pinnacle": 7,
+     "gap_abs": 0.0175,
+     "gap_signed": -0.0084,
+     "last_update": null
     }
    }
   },
@@ -1713,7 +1713,7 @@
     "pinnacle",
     "prophetx"
    ],
-   "books_two_sided": 14,
+   "books_two_sided": 13,
    "books_usable": [
     "betmgm",
     "betonlineag",
@@ -1734,13 +1734,13 @@
    "hr_and_pinnacle_pairs": 1,
    "hr_pin_4plus_pairs": 1,
    "hr_pin_4plus_players": 1,
-   "mean_gap_abs_others_vs_pinnacle": 0.0074,
+   "mean_gap_abs_others_vs_pinnacle": 0.0073,
    "main_line_players": 13,
    "main_line_books_median": 6,
    "main_lines": {
     "Bhayshul Tuten": {
      "line": 14.5,
-     "books": 9
+     "books": 8
     },
     "Brenton Strange": {
      "line": 39.5,
@@ -1756,15 +1756,15 @@
     },
     "Jonathan Taylor": {
      "line": 16.5,
-     "books": 7
+     "books": 6
     },
     "Josh Cameron": {
      "line": 13.5,
-     "books": 5
+     "books": 4
     },
     "Josh Downs": {
      "line": 32.5,
-     "books": 9
+     "books": 8
     },
     "Keenan Allen": {
      "line": 37.5,
@@ -1776,11 +1776,11 @@
     },
     "Nate Boerkircher": {
      "line": 6.5,
-     "books": 6
+     "books": 5
     },
     "Parker Washington": {
      "line": 66.5,
-     "books": 8
+     "books": 7
     },
     "Travis Hunter": {
      "line": 9.5,
@@ -1792,45 +1792,15 @@
     }
    },
    "books": {
-    "draftkings": {
-     "title": "DraftKings",
-     "pairs": 10,
-     "players": 10,
-     "hold_mean": 0.0569,
-     "shared_with_pinnacle": 0,
-     "gap_abs": null,
-     "gap_signed": null,
-     "last_update": "2026-10-30T20:25:20Z"
-    },
-    "fanduel": {
-     "title": "FanDuel",
-     "pairs": 12,
-     "players": 12,
-     "hold_mean": 0.0654,
-     "shared_with_pinnacle": 3,
-     "gap_abs": 0.0,
-     "gap_signed": 0.0,
-     "last_update": "2026-10-30T20:24:45Z"
-    },
-    "betrivers": {
-     "title": "BetRivers",
-     "pairs": 9,
-     "players": 9,
-     "hold_mean": 0.0714,
-     "shared_with_pinnacle": 1,
-     "gap_abs": 0.0,
-     "gap_signed": 0.0,
-     "last_update": "2026-10-30T20:24:38Z"
-    },
-    "betparx": {
-     "title": "betPARX",
-     "pairs": 9,
-     "players": 9,
-     "hold_mean": 0.0661,
-     "shared_with_pinnacle": 1,
-     "gap_abs": 0.0,
-     "gap_signed": 0.0,
-     "last_update": "2026-10-30T20:24:19Z"
+    "betmgm": {
+     "title": "BetMGM",
+     "pairs": 2,
+     "players": 2,
+     "hold_mean": 0.0686,
+     "shared_with_pinnacle": 2,
+     "gap_abs": 0.0036,
+     "gap_signed": -0.0036,
+     "last_update": null
     },
     "betonlineag": {
      "title": "BetOnline.ag",
@@ -1840,87 +1810,27 @@
      "shared_with_pinnacle": 1,
      "gap_abs": 0.0031,
      "gap_signed": -0.0031,
-     "last_update": "2026-10-30T20:25:27Z"
+     "last_update": null
     },
-    "novig": {
-     "title": "Novig",
-     "pairs": 74,
-     "players": 11,
-     "hold_mean": 0.1888,
-     "shared_with_pinnacle": 7,
-     "gap_abs": 0.0134,
-     "gap_signed": -0.0023,
-     "last_update": "2026-10-30T20:25:36Z"
-    },
-    "fliff": {
-     "title": "Fliff",
-     "pairs": 11,
-     "players": 11,
-     "hold_mean": 0.0925,
-     "shared_with_pinnacle": 3,
-     "gap_abs": 0.0109,
-     "gap_signed": -0.0046,
-     "last_update": "2026-10-30T20:24:56Z"
-    },
-    "prophetx": {
-     "title": "ProphetX",
-     "pairs": 11,
+    "betparx": {
+     "title": "betPARX",
+     "pairs": 9,
      "players": 9,
-     "hold_mean": 0.0678,
-     "shared_with_pinnacle": 4,
-     "gap_abs": 0.0058,
-     "gap_signed": 0.0027,
-     "last_update": "2026-10-30T20:25:34Z"
-    },
-    "betmgm": {
-     "title": "BetMGM",
-     "pairs": 2,
-     "players": 2,
-     "hold_mean": 0.0686,
-     "shared_with_pinnacle": 2,
-     "gap_abs": 0.0036,
-     "gap_signed": -0.0036,
-     "last_update": "2026-10-30T20:25:55Z"
-    },
-    "hardrockbet": {
-     "title": "Hard Rock Bet",
-     "pairs": 10,
-     "players": 10,
-     "hold_mean": 0.0695,
+     "hold_mean": 0.0661,
      "shared_with_pinnacle": 1,
-     "gap_abs": 0.0101,
-     "gap_signed": 0.0101,
-     "last_update": "2026-10-30T20:22:49Z"
-    },
-    "hardrockbet_fl": {
-     "title": "Hard Rock Bet (FL)",
-     "pairs": 10,
-     "players": 10,
-     "hold_mean": 0.0695,
-     "shared_with_pinnacle": 1,
-     "gap_abs": 0.0101,
-     "gap_signed": 0.0101,
-     "last_update": "2026-10-30T20:25:43Z"
-    },
-    "espnbet": {
-     "title": "theScore Bet",
-     "pairs": 5,
-     "players": 5,
-     "hold_mean": 0.066,
-     "shared_with_pinnacle": 0,
-     "gap_abs": null,
-     "gap_signed": null,
-     "last_update": "2026-10-30T20:24:59Z"
-    },
-    "pinnacle": {
-     "title": "Pinnacle",
-     "pairs": 7,
-     "players": 7,
-     "hold_mean": 0.0673,
-     "shared_with_pinnacle": 7,
      "gap_abs": 0.0,
      "gap_signed": 0.0,
-     "last_update": "2026-10-30T20:23:54Z"
+     "last_update": null
+    },
+    "betrivers": {
+     "title": "BetRivers",
+     "pairs": 9,
+     "players": 9,
+     "hold_mean": 0.0714,
+     "shared_with_pinnacle": 1,
+     "gap_abs": 0.0,
+     "gap_signed": 0.0,
+     "last_update": null
     },
     "bovada": {
      "title": "Bovada",
@@ -1930,7 +1840,97 @@
      "shared_with_pinnacle": 0,
      "gap_abs": null,
      "gap_signed": null,
-     "last_update": "2026-10-30T20:23:23Z"
+     "last_update": null
+    },
+    "draftkings": {
+     "title": "DraftKings",
+     "pairs": 10,
+     "players": 10,
+     "hold_mean": 0.0569,
+     "shared_with_pinnacle": 0,
+     "gap_abs": null,
+     "gap_signed": null,
+     "last_update": null
+    },
+    "espnbet": {
+     "title": "theScore Bet",
+     "pairs": 5,
+     "players": 5,
+     "hold_mean": 0.066,
+     "shared_with_pinnacle": 0,
+     "gap_abs": null,
+     "gap_signed": null,
+     "last_update": null
+    },
+    "fanduel": {
+     "title": "FanDuel",
+     "pairs": 12,
+     "players": 12,
+     "hold_mean": 0.0654,
+     "shared_with_pinnacle": 3,
+     "gap_abs": 0.0,
+     "gap_signed": 0.0,
+     "last_update": null
+    },
+    "fliff": {
+     "title": "Fliff",
+     "pairs": 11,
+     "players": 11,
+     "hold_mean": 0.0925,
+     "shared_with_pinnacle": 3,
+     "gap_abs": 0.0109,
+     "gap_signed": -0.0046,
+     "last_update": null
+    },
+    "hardrockbet": {
+     "title": "Hard Rock Bet",
+     "pairs": 10,
+     "players": 10,
+     "hold_mean": 0.0695,
+     "shared_with_pinnacle": 1,
+     "gap_abs": 0.0101,
+     "gap_signed": 0.0101,
+     "last_update": null
+    },
+    "hardrockbet_fl": {
+     "title": "Hard Rock Bet (FL)",
+     "pairs": 10,
+     "players": 10,
+     "hold_mean": 0.0695,
+     "shared_with_pinnacle": 1,
+     "gap_abs": 0.0101,
+     "gap_signed": 0.0101,
+     "last_update": null
+    },
+    "novig": {
+     "title": "Novig",
+     "pairs": 74,
+     "players": 11,
+     "hold_mean": 0.1888,
+     "shared_with_pinnacle": 7,
+     "gap_abs": 0.0134,
+     "gap_signed": -0.0023,
+     "last_update": null
+    },
+    "pinnacle": {
+     "title": "Pinnacle",
+     "pairs": 7,
+     "players": 7,
+     "hold_mean": 0.0673,
+     "shared_with_pinnacle": 7,
+     "gap_abs": 0.0,
+     "gap_signed": 0.0,
+     "last_update": null
+    },
+    "prophetx": {
+     "title": "ProphetX",
+     "pairs": 11,
+     "players": 9,
+     "hold_mean": 0.0678,
+     "shared_with_pinnacle": 4,
+     "gap_abs": 0.0058,
+     "gap_signed": 0.0027,
+     "last_update": null
     }
    }
   },
@@ -1960,7 +1960,7 @@
     "novig",
     "prophetx"
    ],
-   "books_two_sided": 11,
+   "books_two_sided": 10,
    "books_usable": [
     "betmgm",
     "betparx",
@@ -1992,35 +1992,15 @@
     }
    },
    "books": {
-    "draftkings": {
-     "title": "DraftKings",
-     "pairs": 2,
-     "players": 2,
-     "hold_mean": 0.061,
+    "betmgm": {
+     "title": "BetMGM",
+     "pairs": 1,
+     "players": 1,
+     "hold_mean": 0.0698,
      "shared_with_pinnacle": 0,
      "gap_abs": null,
      "gap_signed": null,
-     "last_update": "2026-10-30T20:25:20Z"
-    },
-    "fanduel": {
-     "title": "FanDuel",
-     "pairs": 2,
-     "players": 2,
-     "hold_mean": 0.0665,
-     "shared_with_pinnacle": 0,
-     "gap_abs": null,
-     "gap_signed": null,
-     "last_update": "2026-10-30T20:24:45Z"
-    },
-    "betrivers": {
-     "title": "BetRivers",
-     "pairs": 2,
-     "players": 2,
-     "hold_mean": 0.0719,
-     "shared_with_pinnacle": 0,
-     "gap_abs": null,
-     "gap_signed": null,
-     "last_update": "2026-10-30T20:24:38Z"
+     "last_update": null
     },
     "betparx": {
      "title": "betPARX",
@@ -2030,67 +2010,17 @@
      "shared_with_pinnacle": 0,
      "gap_abs": null,
      "gap_signed": null,
-     "last_update": "2026-10-30T20:24:19Z"
+     "last_update": null
     },
-    "novig": {
-     "title": "Novig",
+    "betrivers": {
+     "title": "BetRivers",
      "pairs": 2,
      "players": 2,
-     "hold_mean": 0.0494,
+     "hold_mean": 0.0719,
      "shared_with_pinnacle": 0,
      "gap_abs": null,
      "gap_signed": null,
-     "last_update": "2026-10-30T20:25:36Z"
-    },
-    "fliff": {
-     "title": "Fliff",
-     "pairs": 2,
-     "players": 2,
-     "hold_mean": 0.096,
-     "shared_with_pinnacle": 0,
-     "gap_abs": null,
-     "gap_signed": null,
-     "last_update": "2026-10-30T20:24:56Z"
-    },
-    "prophetx": {
-     "title": "ProphetX",
-     "pairs": 1,
-     "players": 1,
-     "hold_mean": 0.0991,
-     "shared_with_pinnacle": 0,
-     "gap_abs": null,
-     "gap_signed": null,
-     "last_update": "2026-10-30T20:25:34Z"
-    },
-    "betmgm": {
-     "title": "BetMGM",
-     "pairs": 1,
-     "players": 1,
-     "hold_mean": 0.0698,
-     "shared_with_pinnacle": 0,
-     "gap_abs": null,
-     "gap_signed": null,
-     "last_update": "2026-10-30T20:25:55Z"
-    },
-    "hardrockbet": {
-     "title": "Hard Rock Bet",
-     "pairs": 2,
-     "players": 2,
-     "hold_mean": 0.0698,
-     "shared_with_pinnacle": 0,
-     "gap_abs": null,
-     "gap_signed": null,
-     "last_update": "2026-10-30T20:22:49Z"
-    },
-    "hardrockbet_fl": {
-     "title": "Hard Rock Bet (FL)",
-     "pairs": 2,
-     "players": 2,
-     "hold_mean": 0.0698,
-     "shared_with_pinnacle": 0,
-     "gap_abs": null,
-     "gap_signed": null,
-     "last_update": "2026-10-30T20:25:43Z"
+     "last_update": null
     },
     "bovada": {
      "title": "Bovada",
@@ -2100,7 +2030,77 @@
      "shared_with_pinnacle": 0,
      "gap_abs": null,
      "gap_signed": null,
-     "last_update": "2026-10-30T20:23:23Z"
+     "last_update": null
+    },
+    "draftkings": {
+     "title": "DraftKings",
+     "pairs": 2,
+     "players": 2,
+     "hold_mean": 0.061,
+     "shared_with_pinnacle": 0,
+     "gap_abs": null,
+     "gap_signed": null,
+     "last_update": null
+    },
+    "fanduel": {
+     "title": "FanDuel",
+     "pairs": 2,
+     "players": 2,
+     "hold_mean": 0.0665,
+     "shared_with_pinnacle": 0,
+     "gap_abs": null,
+     "gap_signed": null,
+     "last_update": null
+    },
+    "fliff": {
+     "title": "Fliff",
+     "pairs": 2,
+     "players": 2,
+     "hold_mean": 0.096,
+     "shared_with_pinnacle": 0,
+     "gap_abs": null,
+     "gap_signed": null,
+     "last_update": null
+    },
+    "hardrockbet": {
+     "title": "Hard Rock Bet",
+     "pairs": 2,
+     "players": 2,
+     "hold_mean": 0.0698,
+     "shared_with_pinnacle": 0,
+     "gap_abs": null,
+     "gap_signed": null,
+     "last_update": null
+    },
+    "hardrockbet_fl": {
+     "title": "Hard Rock Bet (FL)",
+     "pairs": 2,
+     "players": 2,
+     "hold_mean": 0.0698,
+     "shared_with_pinnacle": 0,
+     "gap_abs": null,
+     "gap_signed": null,
+     "last_update": null
+    },
+    "novig": {
+     "title": "Novig",
+     "pairs": 2,
+     "players": 2,
+     "hold_mean": 0.0494,
+     "shared_with_pinnacle": 0,
+     "gap_abs": null,
+     "gap_signed": null,
+     "last_update": null
+    },
+    "prophetx": {
+     "title": "ProphetX",
+     "pairs": 1,
+     "players": 1,
+     "hold_mean": 0.0991,
+     "shared_with_pinnacle": 0,
+     "gap_abs": null,
+     "gap_signed": null,
+     "last_update": null
     }
    }
   },
@@ -2129,7 +2129,7 @@
     "novig",
     "prophetx"
    ],
-   "books_two_sided": 9,
+   "books_two_sided": 8,
    "books_usable": [
     "betparx",
     "betrivers",
@@ -2147,15 +2147,15 @@
    "hr_pin_4plus_players": 0,
    "mean_gap_abs_others_vs_pinnacle": null,
    "main_line_players": 11,
-   "main_line_books_median": 5,
+   "main_line_books_median": 4,
    "main_lines": {
     "Bhayshul Tuten": {
      "line": 9.5,
-     "books": 9
+     "books": 8
     },
     "Brenton Strange": {
      "line": 17.5,
-     "books": 7
+     "books": 6
     },
     "Brian Thomas Jr": {
      "line": 9.5,
@@ -2167,7 +2167,7 @@
     },
     "Jonathan Taylor": {
      "line": 9.5,
-     "books": 5
+     "books": 4
     },
     "Josh Cameron": {
      "line": 11.5,
@@ -2175,11 +2175,11 @@
     },
     "Josh Downs": {
      "line": 15.5,
-     "books": 3
+     "books": 2
     },
     "Keenan Allen": {
      "line": 16.5,
-     "books": 5
+     "books": 4
     },
     "Laquon Treadwell": {
      "line": 14.5,
@@ -2187,23 +2187,23 @@
     },
     "Parker Washington": {
      "line": 24.5,
-     "books": 7
+     "books": 6
     },
     "Tyler Warren": {
      "line": 15.5,
-     "books": 7
+     "books": 6
     }
    },
    "books": {
-    "draftkings": {
-     "title": "DraftKings",
-     "pairs": 8,
-     "players": 8,
-     "hold_mean": 0.0643,
+    "betparx": {
+     "title": "betPARX",
+     "pairs": 6,
+     "players": 6,
+     "hold_mean": 0.0659,
      "shared_with_pinnacle": 0,
      "gap_abs": null,
      "gap_signed": null,
-     "last_update": "2026-10-30T20:25:20Z"
+     "last_update": null
     },
     "betrivers": {
      "title": "BetRivers",
@@ -2213,67 +2213,7 @@
      "shared_with_pinnacle": 0,
      "gap_abs": null,
      "gap_signed": null,
-     "last_update": "2026-10-30T20:24:38Z"
-    },
-    "betparx": {
-     "title": "betPARX",
-     "pairs": 6,
-     "players": 6,
-     "hold_mean": 0.0659,
-     "shared_with_pinnacle": 0,
-     "gap_abs": null,
-     "gap_signed": null,
-     "last_update": "2026-10-30T20:24:19Z"
-    },
-    "novig": {
-     "title": "Novig",
-     "pairs": 5,
-     "players": 5,
-     "hold_mean": 0.1048,
-     "shared_with_pinnacle": 0,
-     "gap_abs": null,
-     "gap_signed": null,
-     "last_update": "2026-10-30T20:25:36Z"
-    },
-    "fliff": {
-     "title": "Fliff",
-     "pairs": 11,
-     "players": 11,
-     "hold_mean": 0.093,
-     "shared_with_pinnacle": 0,
-     "gap_abs": null,
-     "gap_signed": null,
-     "last_update": "2026-10-30T20:24:56Z"
-    },
-    "hardrockbet": {
-     "title": "Hard Rock Bet",
-     "pairs": 7,
-     "players": 7,
-     "hold_mean": 0.0695,
-     "shared_with_pinnacle": 0,
-     "gap_abs": null,
-     "gap_signed": null,
-     "last_update": "2026-10-30T20:22:49Z"
-    },
-    "hardrockbet_fl": {
-     "title": "Hard Rock Bet (FL)",
-     "pairs": 8,
-     "players": 8,
-     "hold_mean": 0.0695,
-     "shared_with_pinnacle": 0,
-     "gap_abs": null,
-     "gap_signed": null,
-     "last_update": "2026-10-30T20:25:43Z"
-    },
-    "espnbet": {
-     "title": "theScore Bet",
-     "pairs": 4,
-     "players": 4,
-     "hold_mean": 0.0684,
-     "shared_with_pinnacle": 0,
-     "gap_abs": null,
-     "gap_signed": null,
-     "last_update": "2026-10-30T20:24:59Z"
+     "last_update": null
     },
     "bovada": {
      "title": "Bovada",
@@ -2283,7 +2223,67 @@
      "shared_with_pinnacle": 0,
      "gap_abs": null,
      "gap_signed": null,
-     "last_update": "2026-10-30T20:23:23Z"
+     "last_update": null
+    },
+    "draftkings": {
+     "title": "DraftKings",
+     "pairs": 8,
+     "players": 8,
+     "hold_mean": 0.0643,
+     "shared_with_pinnacle": 0,
+     "gap_abs": null,
+     "gap_signed": null,
+     "last_update": null
+    },
+    "espnbet": {
+     "title": "theScore Bet",
+     "pairs": 4,
+     "players": 4,
+     "hold_mean": 0.0684,
+     "shared_with_pinnacle": 0,
+     "gap_abs": null,
+     "gap_signed": null,
+     "last_update": null
+    },
+    "fliff": {
+     "title": "Fliff",
+     "pairs": 11,
+     "players": 11,
+     "hold_mean": 0.093,
+     "shared_with_pinnacle": 0,
+     "gap_abs": null,
+     "gap_signed": null,
+     "last_update": null
+    },
+    "hardrockbet": {
+     "title": "Hard Rock Bet",
+     "pairs": 7,
+     "players": 7,
+     "hold_mean": 0.0695,
+     "shared_with_pinnacle": 0,
+     "gap_abs": null,
+     "gap_signed": null,
+     "last_update": null
+    },
+    "hardrockbet_fl": {
+     "title": "Hard Rock Bet (FL)",
+     "pairs": 8,
+     "players": 8,
+     "hold_mean": 0.0695,
+     "shared_with_pinnacle": 0,
+     "gap_abs": null,
+     "gap_signed": null,
+     "last_update": null
+    },
+    "novig": {
+     "title": "Novig",
+     "pairs": 5,
+     "players": 5,
+     "hold_mean": 0.1048,
+     "shared_with_pinnacle": 0,
+     "gap_abs": null,
+     "gap_signed": null,
+     "last_update": null
     }
    }
   },
@@ -2311,7 +2311,7 @@
     "novig",
     "prophetx"
    ],
-   "books_two_sided": 7,
+   "books_two_sided": 6,
    "books_usable": [
     "betparx",
     "betrivers",
@@ -2327,11 +2327,11 @@
    "hr_pin_4plus_players": 0,
    "mean_gap_abs_others_vs_pinnacle": null,
    "main_line_players": 5,
-   "main_line_books_median": 5,
+   "main_line_books_median": 4,
    "main_lines": {
     "Bhayshul Tuten": {
      "line": 15.5,
-     "books": 7
+     "books": 6
     },
     "Chris Rodriguez Jr.": {
      "line": 11.5,
@@ -2339,27 +2339,27 @@
     },
     "Daniel Jones": {
      "line": 6.5,
-     "books": 5
+     "books": 4
     },
     "Jonathan Taylor": {
      "line": 13.5,
-     "books": 5
+     "books": 4
     },
     "Trevor Lawrence": {
      "line": 8.5,
-     "books": 6
+     "books": 5
     }
    },
    "books": {
-    "draftkings": {
-     "title": "DraftKings",
+    "betparx": {
+     "title": "betPARX",
      "pairs": 4,
      "players": 4,
-     "hold_mean": 0.0641,
+     "hold_mean": 0.0665,
      "shared_with_pinnacle": 0,
      "gap_abs": null,
      "gap_signed": null,
-     "last_update": "2026-10-30T20:25:20Z"
+     "last_update": null
     },
     "betrivers": {
      "title": "BetRivers",
@@ -2369,47 +2369,17 @@
      "shared_with_pinnacle": 0,
      "gap_abs": null,
      "gap_signed": null,
-     "last_update": "2026-10-30T20:24:38Z"
+     "last_update": null
     },
-    "betparx": {
-     "title": "betPARX",
+    "draftkings": {
+     "title": "DraftKings",
      "pairs": 4,
      "players": 4,
-     "hold_mean": 0.0665,
+     "hold_mean": 0.0641,
      "shared_with_pinnacle": 0,
      "gap_abs": null,
      "gap_signed": null,
-     "last_update": "2026-10-30T20:24:19Z"
-    },
-    "fliff": {
-     "title": "Fliff",
-     "pairs": 4,
-     "players": 4,
-     "hold_mean": 0.0899,
-     "shared_with_pinnacle": 0,
-     "gap_abs": null,
-     "gap_signed": null,
-     "last_update": "2026-10-30T20:24:56Z"
-    },
-    "hardrockbet": {
-     "title": "Hard Rock Bet",
-     "pairs": 4,
-     "players": 4,
-     "hold_mean": 0.0685,
-     "shared_with_pinnacle": 0,
-     "gap_abs": null,
-     "gap_signed": null,
-     "last_update": "2026-10-30T20:22:49Z"
-    },
-    "hardrockbet_fl": {
-     "title": "Hard Rock Bet (FL)",
-     "pairs": 4,
-     "players": 4,
-     "hold_mean": 0.0685,
-     "shared_with_pinnacle": 0,
-     "gap_abs": null,
-     "gap_signed": null,
-     "last_update": "2026-10-30T20:25:43Z"
+     "last_update": null
     },
     "espnbet": {
      "title": "theScore Bet",
@@ -2419,7 +2389,37 @@
      "shared_with_pinnacle": 0,
      "gap_abs": null,
      "gap_signed": null,
-     "last_update": "2026-10-30T20:24:59Z"
+     "last_update": null
+    },
+    "fliff": {
+     "title": "Fliff",
+     "pairs": 4,
+     "players": 4,
+     "hold_mean": 0.0899,
+     "shared_with_pinnacle": 0,
+     "gap_abs": null,
+     "gap_signed": null,
+     "last_update": null
+    },
+    "hardrockbet": {
+     "title": "Hard Rock Bet",
+     "pairs": 4,
+     "players": 4,
+     "hold_mean": 0.0685,
+     "shared_with_pinnacle": 0,
+     "gap_abs": null,
+     "gap_signed": null,
+     "last_update": null
+    },
+    "hardrockbet_fl": {
+     "title": "Hard Rock Bet (FL)",
+     "pairs": 4,
+     "players": 4,
+     "hold_mean": 0.0685,
+     "shared_with_pinnacle": 0,
+     "gap_abs": null,
+     "gap_signed": null,
+     "last_update": null
     }
    }
   },
@@ -2447,7 +2447,7 @@
     "hardrockbet_fl",
     "prophetx"
    ],
-   "books_two_sided": 8,
+   "books_two_sided": 7,
    "books_usable": [
     "betparx",
     "betrivers",
@@ -2464,11 +2464,11 @@
    "hr_pin_4plus_players": 0,
    "mean_gap_abs_others_vs_pinnacle": null,
    "main_line_players": 2,
-   "main_line_books_median": 5.0,
+   "main_line_books_median": 4.5,
    "main_lines": {
     "Daniel Jones": {
      "line": 32.5,
-     "books": 4
+     "books": 3
     },
     "Trevor Lawrence": {
      "line": 39.5,
@@ -2476,15 +2476,15 @@
     }
    },
    "books": {
-    "draftkings": {
-     "title": "DraftKings",
+    "betparx": {
+     "title": "betPARX",
      "pairs": 2,
      "players": 2,
-     "hold_mean": 0.0652,
+     "hold_mean": 0.0658,
      "shared_with_pinnacle": 0,
      "gap_abs": null,
      "gap_signed": null,
-     "last_update": "2026-10-30T20:25:20Z"
+     "last_update": null
     },
     "betrivers": {
      "title": "BetRivers",
@@ -2494,57 +2494,7 @@
      "shared_with_pinnacle": 0,
      "gap_abs": null,
      "gap_signed": null,
-     "last_update": "2026-10-30T20:24:38Z"
-    },
-    "betparx": {
-     "title": "betPARX",
-     "pairs": 2,
-     "players": 2,
-     "hold_mean": 0.0658,
-     "shared_with_pinnacle": 0,
-     "gap_abs": null,
-     "gap_signed": null,
-     "last_update": "2026-10-30T20:24:19Z"
-    },
-    "fliff": {
-     "title": "Fliff",
-     "pairs": 2,
-     "players": 2,
-     "hold_mean": 0.0907,
-     "shared_with_pinnacle": 0,
-     "gap_abs": null,
-     "gap_signed": null,
-     "last_update": "2026-10-30T20:24:56Z"
-    },
-    "hardrockbet": {
-     "title": "Hard Rock Bet",
-     "pairs": 2,
-     "players": 2,
-     "hold_mean": 0.0698,
-     "shared_with_pinnacle": 0,
-     "gap_abs": null,
-     "gap_signed": null,
-     "last_update": "2026-10-30T20:22:49Z"
-    },
-    "hardrockbet_fl": {
-     "title": "Hard Rock Bet (FL)",
-     "pairs": 2,
-     "players": 2,
-     "hold_mean": 0.0698,
-     "shared_with_pinnacle": 0,
-     "gap_abs": null,
-     "gap_signed": null,
-     "last_update": "2026-10-30T20:25:43Z"
-    },
-    "espnbet": {
-     "title": "theScore Bet",
-     "pairs": 2,
-     "players": 2,
-     "hold_mean": 0.0688,
-     "shared_with_pinnacle": 0,
-     "gap_abs": null,
-     "gap_signed": null,
-     "last_update": "2026-10-30T20:24:59Z"
+     "last_update": null
     },
     "bovada": {
      "title": "Bovada",
@@ -2554,7 +2504,57 @@
      "shared_with_pinnacle": 0,
      "gap_abs": null,
      "gap_signed": null,
-     "last_update": "2026-10-30T20:23:23Z"
+     "last_update": null
+    },
+    "draftkings": {
+     "title": "DraftKings",
+     "pairs": 2,
+     "players": 2,
+     "hold_mean": 0.0652,
+     "shared_with_pinnacle": 0,
+     "gap_abs": null,
+     "gap_signed": null,
+     "last_update": null
+    },
+    "espnbet": {
+     "title": "theScore Bet",
+     "pairs": 2,
+     "players": 2,
+     "hold_mean": 0.0688,
+     "shared_with_pinnacle": 0,
+     "gap_abs": null,
+     "gap_signed": null,
+     "last_update": null
+    },
+    "fliff": {
+     "title": "Fliff",
+     "pairs": 2,
+     "players": 2,
+     "hold_mean": 0.0907,
+     "shared_with_pinnacle": 0,
+     "gap_abs": null,
+     "gap_signed": null,
+     "last_update": null
+    },
+    "hardrockbet": {
+     "title": "Hard Rock Bet",
+     "pairs": 2,
+     "players": 2,
+     "hold_mean": 0.0698,
+     "shared_with_pinnacle": 0,
+     "gap_abs": null,
+     "gap_signed": null,
+     "last_update": null
+    },
+    "hardrockbet_fl": {
+     "title": "Hard Rock Bet (FL)",
+     "pairs": 2,
+     "players": 2,
+     "hold_mean": 0.0698,
+     "shared_with_pinnacle": 0,
+     "gap_abs": null,
+     "gap_signed": null,
+     "last_update": null
     }
    }
   },
@@ -2609,39 +2609,39 @@
    "hr_pin_4plus_players": 0,
    "mean_gap_abs_others_vs_pinnacle": null,
    "main_line_players": 34,
-   "main_line_books_median": 13.0,
+   "main_line_books_median": 12.0,
    "main_lines": {
     "Ameer Abdullah": {
      "line": 0.5,
-     "books": 14
+     "books": 13
     },
     "Anthony Gould": {
      "line": 0.5,
-     "books": 12
+     "books": 11
     },
     "Ashton Dulin": {
      "line": 0.5,
-     "books": 13
+     "books": 12
     },
     "Bhayshul Tuten": {
      "line": 0.5,
-     "books": 14
+     "books": 13
     },
     "Brenton Strange": {
      "line": 0.5,
-     "books": 14
+     "books": 13
     },
     "Brian Thomas Jr": {
      "line": 0.5,
-     "books": 13
+     "books": 12
     },
     "CJ Williams": {
      "line": 0.5,
-     "books": 12
+     "books": 11
     },
     "Chris Rodriguez Jr.": {
      "line": 0.5,
-     "books": 14
+     "books": 13
     },
     "DJ Giddens": {
      "line": 0.5,
@@ -2649,15 +2649,15 @@
     },
     "Daniel Jones": {
      "line": 0.5,
-     "books": 14
+     "books": 13
     },
     "Deion Burks": {
      "line": 0.5,
-     "books": 14
+     "books": 13
     },
     "Drew Ogletree": {
      "line": 0.5,
-     "books": 13
+     "books": 12
     },
     "Indianapolis Colts D/ST": {
      "line": 0.5,
@@ -2681,39 +2681,39 @@
     },
     "Jonathan Taylor": {
      "line": 0.5,
-     "books": 14
+     "books": 13
     },
     "Josh Cameron": {
      "line": 0.5,
-     "books": 13
+     "books": 12
     },
     "Josh Downs": {
      "line": 0.5,
-     "books": 14
+     "books": 13
     },
     "Keenan Allen": {
      "line": 0.5,
-     "books": 14
+     "books": 13
     },
     "Laquon Treadwell": {
      "line": 0.5,
-     "books": 14
+     "books": 13
     },
     "LeQuint Allen Jr.": {
      "line": 0.5,
-     "books": 14
+     "books": 13
     },
     "Mo Alie-Cox": {
      "line": 0.5,
-     "books": 14
+     "books": 13
     },
     "Nate Boerkircher": {
      "line": 0.5,
-     "books": 14
+     "books": 13
     },
     "Parker Washington": {
      "line": 0.5,
-     "books": 13
+     "books": 12
     },
     "Pharaoh Brown": {
      "line": 0.5,
@@ -2721,15 +2721,15 @@
     },
     "Quintin Morris": {
      "line": 0.5,
-     "books": 14
+     "books": 13
     },
     "Seth McGowan": {
      "line": 0.5,
-     "books": 13
+     "books": 12
     },
     "Tanner Koziol": {
      "line": 0.5,
-     "books": 13
+     "books": 12
     },
     "Travis Hunter": {
      "line": 0.5,
@@ -2737,38 +2737,18 @@
     },
     "Trevor Lawrence": {
      "line": 0.5,
-     "books": 14
+     "books": 13
     },
     "Tyler Warren": {
      "line": 0.5,
-     "books": 14
+     "books": 13
     },
     "Will Mallory": {
      "line": 0.5,
-     "books": 13
+     "books": 12
     }
    },
    "books": {
-    "draftkings": {
-     "title": "DraftKings",
-     "pairs": 30,
-     "players": 30,
-     "hold_mean": null,
-     "shared_with_pinnacle": 0,
-     "gap_abs": null,
-     "gap_signed": null,
-     "last_update": "2026-10-30T20:25:20Z"
-    },
-    "fanduel": {
-     "title": "FanDuel",
-     "pairs": 30,
-     "players": 30,
-     "hold_mean": null,
-     "shared_with_pinnacle": 0,
-     "gap_abs": null,
-     "gap_signed": null,
-     "last_update": "2026-10-30T20:24:45Z"
-    },
     "ballybet": {
      "title": "Bally Bet",
      "pairs": 30,
@@ -2777,67 +2757,7 @@
      "shared_with_pinnacle": 0,
      "gap_abs": null,
      "gap_signed": null,
-     "last_update": "2026-10-30T20:25:34Z"
-    },
-    "betrivers": {
-     "title": "BetRivers",
-     "pairs": 30,
-     "players": 30,
-     "hold_mean": null,
-     "shared_with_pinnacle": 0,
-     "gap_abs": null,
-     "gap_signed": null,
-     "last_update": "2026-10-30T20:24:38Z"
-    },
-    "betparx": {
-     "title": "betPARX",
-     "pairs": 30,
-     "players": 30,
-     "hold_mean": null,
-     "shared_with_pinnacle": 0,
-     "gap_abs": null,
-     "gap_signed": null,
-     "last_update": "2026-10-30T20:24:19Z"
-    },
-    "betonlineag": {
-     "title": "BetOnline.ag",
-     "pairs": 29,
-     "players": 29,
-     "hold_mean": null,
-     "shared_with_pinnacle": 0,
-     "gap_abs": null,
-     "gap_signed": null,
-     "last_update": "2026-10-30T20:25:27Z"
-    },
-    "novig": {
-     "title": "Novig",
-     "pairs": 29,
-     "players": 29,
-     "hold_mean": 0.0538,
-     "shared_with_pinnacle": 0,
-     "gap_abs": null,
-     "gap_signed": null,
-     "last_update": "2026-10-30T20:25:36Z"
-    },
-    "fliff": {
-     "title": "Fliff",
-     "pairs": 28,
-     "players": 28,
-     "hold_mean": null,
-     "shared_with_pinnacle": 0,
-     "gap_abs": null,
-     "gap_signed": null,
-     "last_update": "2026-10-30T20:24:56Z"
-    },
-    "prophetx": {
-     "title": "ProphetX",
-     "pairs": 29,
-     "players": 29,
-     "hold_mean": 0.1973,
-     "shared_with_pinnacle": 0,
-     "gap_abs": null,
-     "gap_signed": null,
-     "last_update": "2026-10-30T20:25:34Z"
+     "last_update": null
     },
     "betmgm": {
      "title": "BetMGM",
@@ -2847,27 +2767,37 @@
      "shared_with_pinnacle": 0,
      "gap_abs": null,
      "gap_signed": null,
-     "last_update": "2026-10-30T20:25:55Z"
+     "last_update": null
     },
-    "hardrockbet": {
-     "title": "Hard Rock Bet",
-     "pairs": 26,
-     "players": 26,
+    "betonlineag": {
+     "title": "BetOnline.ag",
+     "pairs": 29,
+     "players": 29,
      "hold_mean": null,
      "shared_with_pinnacle": 0,
      "gap_abs": null,
      "gap_signed": null,
-     "last_update": "2026-10-30T20:22:49Z"
+     "last_update": null
     },
-    "hardrockbet_fl": {
-     "title": "Hard Rock Bet (FL)",
-     "pairs": 26,
-     "players": 26,
+    "betparx": {
+     "title": "betPARX",
+     "pairs": 30,
+     "players": 30,
      "hold_mean": null,
      "shared_with_pinnacle": 0,
      "gap_abs": null,
      "gap_signed": null,
-     "last_update": "2026-10-30T20:25:43Z"
+     "last_update": null
+    },
+    "betrivers": {
+     "title": "BetRivers",
+     "pairs": 30,
+     "players": 30,
+     "hold_mean": null,
+     "shared_with_pinnacle": 0,
+     "gap_abs": null,
+     "gap_signed": null,
+     "last_update": null
     },
     "bovada": {
      "title": "Bovada",
@@ -2877,7 +2807,67 @@
      "shared_with_pinnacle": 0,
      "gap_abs": null,
      "gap_signed": null,
-     "last_update": "2026-10-30T20:23:23Z"
+     "last_update": null
+    },
+    "draftkings": {
+     "title": "DraftKings",
+     "pairs": 30,
+     "players": 30,
+     "hold_mean": null,
+     "shared_with_pinnacle": 0,
+     "gap_abs": null,
+     "gap_signed": null,
+     "last_update": null
+    },
+    "fanduel": {
+     "title": "FanDuel",
+     "pairs": 30,
+     "players": 30,
+     "hold_mean": null,
+     "shared_with_pinnacle": 0,
+     "gap_abs": null,
+     "gap_signed": null,
+     "last_update": null
+    },
+    "fliff": {
+     "title": "Fliff",
+     "pairs": 28,
+     "players": 28,
+     "hold_mean": null,
+     "shared_with_pinnacle": 0,
+     "gap_abs": null,
+     "gap_signed": null,
+     "last_update": null
+    },
+    "hardrockbet": {
+     "title": "Hard Rock Bet",
+     "pairs": 26,
+     "players": 26,
+     "hold_mean": null,
+     "shared_with_pinnacle": 0,
+     "gap_abs": null,
+     "gap_signed": null,
+     "last_update": null
+    },
+    "hardrockbet_fl": {
+     "title": "Hard Rock Bet (FL)",
+     "pairs": 26,
+     "players": 26,
+     "hold_mean": null,
+     "shared_with_pinnacle": 0,
+     "gap_abs": null,
+     "gap_signed": null,
+     "last_update": null
+    },
+    "novig": {
+     "title": "Novig",
+     "pairs": 29,
+     "players": 29,
+     "hold_mean": 0.0538,
+     "shared_with_pinnacle": 0,
+     "gap_abs": null,
+     "gap_signed": null,
+     "last_update": null
     },
     "polymarket": {
      "title": "Polymarket",
@@ -2887,7 +2877,17 @@
      "shared_with_pinnacle": 0,
      "gap_abs": null,
      "gap_signed": null,
-     "last_update": "2026-10-30T20:25:42Z"
+     "last_update": null
+    },
+    "prophetx": {
+     "title": "ProphetX",
+     "pairs": 29,
+     "players": 29,
+     "hold_mean": 0.1973,
+     "shared_with_pinnacle": 0,
+     "gap_abs": null,
+     "gap_signed": null,
+     "last_update": null
     }
    }
   }
@@ -3107,9 +3107,9 @@
     "player_rush_yds"
    ],
    "hold_mean": 0.0693,
-   "shared_with_pinnacle": 18,
-   "gap_abs": 0.0101,
-   "gap_signed": 0.0023
+   "shared_with_pinnacle": 0,
+   "gap_abs": null,
+   "gap_signed": null
   },
   "hardrockbet_fl": {
    "pairs": 80,
@@ -3203,5 +3203,6 @@
    "gap_signed": -0.0027
   }
  },
- "notes": []
+ "notes": [],
+ "resummarized": true
 }

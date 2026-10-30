@@ -39,6 +39,7 @@ PULL = "P"
 HARD_ROCK = "hardrockbet_fl"
 PINNACLE = "pinnacle"
 MIN_OTHERS = 4
+HR_FAMILY = (HARD_ROCK, "hardrockbet")      # national Hard Rock is the same operator: never counted as an "other" book
 ONE_SIDED = {"player_anytime_td"}          # Yes-only market: no under to de-vig; compared on raw break-even
 
 
@@ -143,26 +144,26 @@ def summarize(books, markets_asked):
             book_pairs[k] += len(u)
             book_markets[k].add(mk)
             book_holds[k] += holds
-            if k != PINNACLE:
+            if k != PINNACLE and k != "hardrockbet":
                 book_gaps[k] += [abs(x) for x in shared]
                 book_signed[k] += shared
         # the number that matters: Hard Rock AND Pinnacle AND >= MIN_OTHERS other books on the SAME (player, line)
         hr, others_n = usable.get(HARD_ROCK, {}), defaultdict(int)
         for k, u in usable.items():
-            if k in (HARD_ROCK, PINNACLE):
+            if k in HR_FAMILY or k == PINNACLE:
                 continue
             for pl in u:
                 others_n[pl] += 1
         full = [pl for pl in hr if pl in pin and others_n[pl] >= MIN_OTHERS]
         hr_pin = [pl for pl in hr if pl in pin]
-        others = [k for k in usable if k not in (HARD_ROCK, PINNACLE)]
-        ml = main_lines(fair)
+        others = [k for k in usable if k not in HR_FAMILY and k != PINNACLE]
+        ml = main_lines({k: f for k, f in fair.items() if k != "hardrockbet"})
         per_market[mk] = {
             "hard_rock": {"present": HARD_ROCK in anyp, "pairs": len(hr), "players": len({pl[0] for pl in hr}),
                           "any_price_players": anyp.get(HARD_ROCK, 0)},
             "pinnacle": {"present": PINNACLE in anyp, "pairs": len(pin), "players": len({pl[0] for pl in pin})},
             "books_any_price": sorted(anyp),
-            "books_two_sided": len(usable) if mk not in ONE_SIDED else None,
+            "books_two_sided": len([k for k in usable if k != "hardrockbet"]) if mk not in ONE_SIDED else None,
             "books_usable": sorted(usable),
             "basis": "yes price break-even (one-sided market)" if mk in ONE_SIDED else "two-sided, de-vigged",
             "hr_and_pinnacle_pairs": len(hr_pin),
@@ -299,7 +300,31 @@ def write_results(out, pairs):
         common.write_bytes(pairs_path(), gzip.compress(json.dumps(pairs, separators=(",", ":")).encode("utf-8"), mtime=0))
 
 
+def resummarize():
+    """Rebuild book_probe.json's numbers from book_probe_pairs.json.gz (no credits, no network)."""
+    prev = common.read_json(path(), {}) or {}
+    rows = common.read_gz_json(pairs_path(), None)
+    if not rows or prev.get("status") != "ok":
+        common.log("nothing to resummarize")
+        return 1
+    titles = {}
+    for m in (prev.get("per_market") or {}).values():
+        for k, b in m.get("books", {}).items():
+            titles[k] = b.get("title")
+    books = {}
+    for k, mk, who, pt, ov, un in rows:
+        rec = books.setdefault(k, {"title": titles.get(k), "markets": {}})
+        rec["markets"].setdefault(mk, {"last_update": None, "pairs": {}})["pairs"][(who, pt)] = [ov, un]
+    prev["per_market"], prev["per_book"] = summarize(books, [m for m in prev["markets_asked"] if m not in prev["markets_rejected"]])
+    prev["resummarized"] = True
+    common.write_json(path(), prev)
+    common.log("resummarized %d pairs" % len(rows))
+    return 0
+
+
 def main():
+    if "--resummarize" in sys.argv:
+        return resummarize()
     common.install_scrubbers()
     now = common.now()
     cfg = common.load_config()

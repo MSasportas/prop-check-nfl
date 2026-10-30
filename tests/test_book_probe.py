@@ -33,6 +33,7 @@ PAYLOAD = {"bookmakers": [
     book("b4", {YDS: two("A", 250.5, -110, -110) + two("B", 232.5, -110, -110)}),
     book("b5", {YDS: two("A", 250.5, -120, -100)}),
     book("b6", {YDS: two("A", 250.5, -110, -110) + [o("Over", "C", 200.5, -110)]}),
+    book("hardrockbet", {YDS: two("A", 250.5, -115, -115)}),         # national Hard Rock: not an "other" book
     book("onlyover", {YDS: [o("Over", "A", 250.5, -110)]}),
 ]}
 
@@ -47,7 +48,7 @@ class Summary(unittest.TestCase):
         self.assertTrue(m["hard_rock"]["present"] and m["pinnacle"]["present"])
         self.assertNotIn("onlyover", m["books"])                      # one side only is not a pair
         self.assertEqual(m["books"]["b6"]["pairs"], 1)                # C has an over only
-        self.assertEqual(m["books_two_sided"], 6)
+        self.assertEqual(m["books_two_sided"], 6)                      # the national Hard Rock copy is not counted
         self.assertEqual(m["books"]["hardrockbet_fl"]["pairs"], 2)
 
     def test_gap_vs_pinnacle(self):
