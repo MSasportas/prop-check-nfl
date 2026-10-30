@@ -1,7 +1,47 @@
 {
- "at": "2026-10-30T17:27:58-04:00",
+ "at": "2026-10-30T18:00:00-04:00",
  "source": "espn",
  "players": {
+  "00-0037157": {
+   "name": "Bam Knight",
+   "team": "ARI",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-30T17:47:00-04:00",
+   "detail": null,
+   "espn_id": "4427728"
+  },
+  "00-0037263": {
+   "name": "Tyler Allgeier",
+   "team": "ARI",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-30T17:28:00-04:00",
+   "detail": null,
+   "espn_id": "4373626"
+  },
+  "name:ARI:walternolen": {
+   "name": "Walter Nolen III",
+   "team": "ARI",
+   "pos": "DT",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-10-30T17:28:00-04:00",
+   "detail": "Ankle",
+   "espn_id": "4685503"
+  },
+  "00-0038559": {
+   "name": "Michael Wilson",
+   "team": "ARI",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-30T17:23:00-04:00",
+   "detail": null,
+   "espn_id": "4360761"
+  },
   "00-0041027": {
    "name": "Jeremiyah Love",
    "team": "ARI",
@@ -11,16 +51,6 @@
    "date": "2026-10-30T17:13:00-04:00",
    "detail": null,
    "espn_id": "4870808"
-  },
-  "name:ARI:walternolen": {
-   "name": "Walter Nolen III",
-   "team": "ARI",
-   "pos": "DT",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-30T14:01:00-04:00",
-   "detail": "Ankle",
-   "espn_id": "4685503"
   },
   "name:ARI:jongaines": {
    "name": "Jon Gaines II",
@@ -32,16 +62,6 @@
    "detail": "Ankle",
    "espn_id": "4367199"
   },
-  "00-0038559": {
-   "name": "Michael Wilson",
-   "team": "ARI",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-30T13:58:00-04:00",
-   "detail": null,
-   "espn_id": "4360761"
-  },
   "00-0041561": {
    "name": "Carson Beck",
    "team": "ARI",
@@ -51,16 +71,6 @@
    "date": "2026-10-29T21:19:00-04:00",
    "detail": null,
    "espn_id": "4430841"
-  },
-  "00-0037263": {
-   "name": "Tyler Allgeier",
-   "team": "ARI",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-29T19:17:00-04:00",
-   "detail": null,
-   "espn_id": "4373626"
   },
   "name:ARI:hjaltefroholdt": {
    "name": "Hjalte Froholdt",
@@ -144,16 +154,6 @@
    "detail": "Foot",
    "espn_id": "3045147",
    "comment": "When asked Monday if Conner (foot) will play this season, coach Mike LaFleur said \"potentially,\" Dani Sureck of the Cardinals' official site reports."
-  },
-  "00-0037157": {
-   "name": "Bam Knight",
-   "team": "ARI",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-25T21:31:00-04:00",
-   "detail": null,
-   "espn_id": "4427728"
   },
   "00-0033119": {
    "name": "Jacoby Brissett",
@@ -2869,6 +2869,27 @@
    "detail": null,
    "espn_id": "4685382"
   },
+  "name:LA:trentmcduffie": {
+   "name": "Trent McDuffie",
+   "team": "LA",
+   "pos": "CB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-30T17:40:00-04:00",
+   "detail": "Groin",
+   "espn_id": "4426405"
+  },
+  "00-0039751": {
+   "name": "Jordan Whittington",
+   "team": "LA",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-30T17:38:00-04:00",
+   "detail": "Back",
+   "espn_id": "4569382",
+   "comment": "Whittington (back) is questionable for Sunday's game against the Chargers, Nate Atkins of The Athletic reports."
+  },
   "00-0036244": {
    "name": "Colby Parkinson",
    "team": "LA",
@@ -2889,27 +2910,6 @@
    "date": "2026-10-30T14:33:00-04:00",
    "detail": "Ankle",
    "espn_id": "2575907"
-  },
-  "00-0039751": {
-   "name": "Jordan Whittington",
-   "team": "LA",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-30T14:32:00-04:00",
-   "detail": "Back",
-   "espn_id": "4569382",
-   "comment": "questionable"
-  },
-  "name:LA:trentmcduffie": {
-   "name": "Trent McDuffie",
-   "team": "LA",
-   "pos": "CB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-28T20:44:00-04:00",
-   "detail": "Groin",
-   "espn_id": "4426405"
   },
   "name:LA:colemanshelton": {
    "name": "Coleman Shelton",
@@ -4094,6 +4094,17 @@
    "detail": null,
    "espn_id": "4241372"
   },
+  "00-0036862": {
+   "name": "Ben Skowronek",
+   "team": "PIT",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-30T17:33:00-04:00",
+   "detail": "Calf",
+   "espn_id": "4035656",
+   "comment": "Skowronek (calf) is questionable for Sunday's game against the Browns, Mike DeFabo of The Athletic reports."
+  },
   "name:PIT:doneikoslaughter": {
    "name": "Doneiko Slaughter",
    "team": "PIT",
@@ -4113,17 +4124,6 @@
    "date": "2026-10-30T14:33:00-04:00",
    "detail": "Hamstring",
    "espn_id": "4567979"
-  },
-  "00-0036862": {
-   "name": "Ben Skowronek",
-   "team": "PIT",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-29T20:01:00-04:00",
-   "detail": "Calf",
-   "espn_id": "4035656",
-   "comment": "Skowronek (calf) practiced in a limited capacity Thursday, Teresa Varley of the Steelers' official site reports."
   },
   "00-0041489": {
    "name": "Germie Bernard",

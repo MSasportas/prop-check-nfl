@@ -3,16 +3,16 @@
  "season": 2026,
  "week": 8,
  "slate": "2026-W08",
- "started_at": "2026-10-30T17:27:58-04:00",
- "status_at": "2026-10-30T17:27:58-04:00",
- "finished_at": "2026-10-30T17:28:07-04:00",
- "last_ok_at": "2026-10-30T17:27:58-04:00",
+ "started_at": "2026-10-30T18:00:00-04:00",
+ "status_at": "2026-10-30T18:00:00-04:00",
+ "finished_at": "2026-10-30T18:00:01-04:00",
+ "last_ok_at": "2026-10-30T18:00:00-04:00",
  "failed_step": null,
  "steps": [
   {
    "step": "rules",
-   "status": "ok",
-   "note": "rules.json written"
+   "status": "skipped",
+   "note": "unchanged"
   },
   {
    "step": "schedule",
@@ -21,13 +21,13 @@
   },
   {
    "step": "stats",
-   "status": "ok",
-   "note": "108 games through 2026-10-29"
+   "status": "skipped",
+   "note": "checked at 5:27 PM"
   },
   {
    "step": "roster",
-   "status": "ok",
-   "note": "786 skill players"
+   "status": "skipped",
+   "note": "read at 5:27 PM"
   },
   {
    "step": "injuries",
@@ -36,23 +36,23 @@
   },
   {
    "step": "weather",
-   "status": "ok",
-   "note": "10 read, 0 failed, 2 indoors"
+   "status": "skipped",
+   "note": "nothing due (2 indoors)"
   },
   {
    "step": "odds",
    "status": "ok",
-   "note": "12 read(s) (R)"
+   "note": "no pull due"
   },
   {
    "step": "engine",
    "status": "ok",
-   "note": "5 new event(s): 0 shown, 0 pulled, 5 locked"
+   "note": "no change"
   },
   {
    "step": "grade",
-   "status": "ok",
-   "note": "6 graded"
+   "status": "skipped",
+   "note": "nothing to grade"
   },
   {
    "step": "slate",
@@ -61,8 +61,8 @@
   },
   {
    "step": "record",
-   "status": "ok",
-   "note": "record.json"
+   "status": "skipped",
+   "note": "unchanged"
   }
  ],
  "sources": {
@@ -124,68 +124,7 @@
   "at": "2026-10-30T17:27:58-04:00",
   "next_at": "2026-10-31T17:00:00-04:00"
  },
- "due": [
-  {
-   "pull": "R",
-   "game_id": "2026_08_ARI_DAL",
-   "cost_max": 6
-  },
-  {
-   "pull": "R",
-   "game_id": "2026_08_ATL_TB",
-   "cost_max": 6
-  },
-  {
-   "pull": "R",
-   "game_id": "2026_08_BAL_BUF",
-   "cost_max": 6
-  },
-  {
-   "pull": "R",
-   "game_id": "2026_08_CLE_PIT",
-   "cost_max": 6
-  },
-  {
-   "pull": "R",
-   "game_id": "2026_08_IND_JAX",
-   "cost_max": 6
-  },
-  {
-   "pull": "R",
-   "game_id": "2026_08_LV_NYJ",
-   "cost_max": 6
-  },
-  {
-   "pull": "R",
-   "game_id": "2026_08_MIN_DET",
-   "cost_max": 6
-  },
-  {
-   "pull": "R",
-   "game_id": "2026_08_TEN_CIN",
-   "cost_max": 6
-  },
-  {
-   "pull": "R",
-   "game_id": "2026_08_LAC_LA",
-   "cost_max": 6
-  },
-  {
-   "pull": "R",
-   "game_id": "2026_08_KC_DEN",
-   "cost_max": 6
-  },
-  {
-   "pull": "R",
-   "game_id": "2026_08_NE_MIA",
-   "cost_max": 6
-  },
-  {
-   "pull": "R",
-   "game_id": "2026_08_PHI_WAS",
-   "cost_max": 6
-  }
- ],
+ "due": [],
  "skipped_games": [],
  "unmatched_names": [],
  "unknown_teams": [],
@@ -198,7 +137,7 @@
  "runner": {
   "event": "push",
   "run_id": "41131232518",
-  "iteration": 1,
+  "iteration": 3,
   "chain_link": 0,
   "chain_started_at": "2026-10-30T17:27:57-04:00",
   "run_started_at": "2026-10-30T17:27:57-04:00"
