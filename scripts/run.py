@@ -16,9 +16,10 @@ Steps, in order, each allowed to fail without stopping the others:
     roster     nflverse weekly rosters (names -> gsis ids)
     injuries   ESPN injuries (nflverse fallback) + inactives for games inside their window
     weather    open-meteo at kickoff for outdoor games
-    odds       Hard Rock + other books' prices (pulls R and C), if one is due and the budget allows
+    odds       Hard Rock + other books' prices (pulls R and C, and the optional watch-only W), if one is due and the budget allows
     engine     lock / pull / keep shown picks, add new Gap + Guard picks  -> appends to the Record (and data/gg/)
     grade      results for final games                                    -> appends to the Record
+    watch      behind-the-scenes research tracks (Pinnacle moves alone / price judge)  -> data/watch/ only; soft
     slate      data/slate.json
     record     data/record.json and older-week files
     status     data/status.json
@@ -38,6 +39,7 @@ import emit        # noqa: E402
 import engine      # noqa: E402
 import gg          # noqa: E402
 import grade       # noqa: E402
+import watch       # noqa: E402
 import injuries    # noqa: E402
 import names       # noqa: E402
 import odds        # noqa: E402
@@ -47,8 +49,8 @@ import sched       # noqa: E402
 import stats       # noqa: E402
 import weather     # noqa: E402
 
-STEPS = ["rules", "schedule", "stats", "roster", "injuries", "weather", "odds", "engine", "grade", "slate", "record",
-         "status"]
+STEPS = ["rules", "schedule", "stats", "roster", "injuries", "weather", "odds", "engine", "grade", "watch", "slate",
+         "record", "status"]
 
 
 PAGE_URL = "https://msasportas.github.io/prop-check-nfl/"
@@ -249,10 +251,13 @@ class Run:
         open_items = [it for it in items.values() if it["slate"] == self.slate and record.is_open(it)
                       and it["kind"] == "single" and it["era"] == gg.era(self.cfg)]
         focus = engine.focus_markets(inp, self.by_game(), open_items)
-        left = len(sched.games_in_window(self.cache, self.now, self.cfg))
+        window = sched.games_in_window(self.cache, self.now, self.cfg)
+        left = len(window)
+        reserve = {g["id"]: g for g in window}                 # R and C are owed to these before any watch-only W read
+        reserve.update({g["id"]: g for g in sched.games_left_before_reset(self.cache, self.now)})
         self.odds_res = odds.run_pulls(self.now, self.slate, self.games, left, self.cfg, self.matcher_for, focus,
                                        self.report_times(), self.report_ok(), self.confirmed(), self.started,
-                                       dry_run=self.dry_run)
+                                       dry_run=self.dry_run, reserve_games=list(reserve.values()))
         self.inp = None                                     # prices changed: rebuild the inputs for the engine
         return {"status": self.odds_res["status"], "note": self.odds_res["note"]}
 
@@ -297,6 +302,40 @@ class Run:
         elif self.stats_problems:
             note += "; new picks blocked (%s)" % "; ".join(self.stats_problems)
         return {"note": note}
+
+    def do_watch(self):
+        """Behind-the-scenes research tracks (scripts/watch.py). Soft by design: whatever goes wrong here is a note, never a
+        failed step, so it can never mark the page or the run as failed. Writes only data/watch/."""
+        if not watch.enabled(self.cfg):
+            return {"status": "skipped", "note": "off"}
+        try:
+            self.load_schedule()
+            if not self.cache or not self.games:
+                return {"status": "skipped", "note": "no games this week"}
+            self.load_stats()
+            inp = self.inp or self.build_inputs()
+            by_game = self.by_game()
+            old = watch.read_events()
+            new = watch.scan(inp, engine, by_game, old, self.cfg, self.now)
+            new += watch.closes(old + new, by_game, inp.games, self.cfg, self.now)
+            if self.ina is None:
+                self.ina = injuries.load_inactives()
+            graded = watch.grade_new(old + new, self.cfg, self.now, self.cache, self.store or stats.Store(), self.ina,
+                                     self.load_roster())
+            new += graded
+            allev = old + new
+            if not self.dry_run:
+                watch.append(new)
+                ledger = common.read_json(odds.ledger_path(), {}) or {}
+                watch.write_summary(allev, self.cfg, self.now, watch.w_credits(ledger, self.now))
+            n = lambda t: sum(1 for e in new if e["t"] == t)    # noqa: E731
+            return {"status": "ok" if new else "skipped",
+                    "note": "%d move(s)/side(s) scanned, %d flagged, %d graded" % (n("cand"), n("flag"), n("graded"))}
+        except Exception as e:
+            if os.environ.get("PC_RAISE"):
+                raise
+            common.log("watch failed (soft): %s" % common.short_err(e))
+            return {"status": "skipped", "note": "watch failed (soft): %s" % common.short_err(e)}
 
     def do_grade(self):
         self.load_schedule()
@@ -579,6 +618,7 @@ def run(only=None, dry_run=False):
     record_before = record.read_raw() if r.wants("slate") else None
     r.step("engine", r.do_engine)
     r.step("grade", r.do_grade)
+    r.step("watch", r.do_watch)
     failed = r.failed_step()
     last_run = {"ok": failed is None, "at": common.iso(now), "failed_step": failed}
     facts = None

@@ -313,6 +313,40 @@
    "tight": 7,
    "pool_low_allowance": 7
   },
+  "watch": {
+   "_about": "BEHIND THE SCENES research tracks (scripts/watch.py, docs/SPEC.md section 10). They never make a pick, never touch the Picks tab, the Record or era gg1; they write only data/watch/. Ported from Prop Check NBA. W = an optional extra price read (same cost as R or C: 6 credits, Hard Rock + 9 books) about w_target_min before kickoff, made ONLY when the credits left after reserving R and C for every game that has not started and kicks off before the keys reset (and for the whole plan window) still cover it. w_reads caps W reads per game; w_margin is credits kept in hand besides the reserve. w_pace shares out the spare over the weeks of games still to come this month, so one week cannot use it all.",
+   "active": true,
+   "reads": ["R", "W", "C"],
+   "w_reads": 1,
+   "w_target_min": 180,
+   "w_latest_min": 100,
+   "w_margin": 12,
+   "w_pace": true,
+   "summary_weeks": 6,
+   "tracks": {
+    "pin_solo": {
+     "active": true,
+     "label": "Pinnacle moves alone",
+     "about": "Fallback option (NBA live rule since 2026-10-28). Between two reads of a game, Pinnacle's de-vigged chance moves 2+ pts toward a side while the median of the other books (4+, same line) moves under 2 pts, and Hard Rock's price on that side is at or better than Pinnacle's new fair price. Flat 1 unit at Hard Rock's price on the later read.",
+     "from_slate": "2026-W08",
+     "min_move": 0.02,
+     "others_max": 0.02,
+     "others_min": 4,
+     "min_ev_vs_pin": 0.0,
+     "max_age_min": 60,
+     "skip_whole_lines": false
+    },
+    "pin_judge": {
+     "active": true,
+     "label": "Pinnacle as the price judge",
+     "about": "Fallback option. Hard Rock's price is 2%+ better than Pinnacle's de-vigged fair on the same line (newest read, first flag per player, market and game). Flat 1 unit at Hard Rock's price.",
+     "from_slate": "2026-W08",
+     "min_ev": 0.02,
+     "max_age_min": 60,
+     "skip_whole_lines": false
+    }
+   }
+  },
   "monthly_cap": 1000,
   "shared_key_weight": 0.5,
   "plan_window_days": 7,

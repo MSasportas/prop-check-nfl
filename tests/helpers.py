@@ -118,6 +118,8 @@ def legacy_role_cfg():
     c = cfg()
     c["values"]["elig"]["role_cv_blocks"] = "over"
     c["ops"]["gap_guard"]["live_from"] = "2020-W01"       # the test world is weeks 5-8 of 2026, before the real go-live
+    for t in c["ops"]["watch"]["tracks"].values():
+        t["from_slate"] = "2020-W01"
     return c
 
 

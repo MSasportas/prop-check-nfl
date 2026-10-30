@@ -424,7 +424,34 @@ def c_target(k, confirmed, pc):
     return k - timedelta(minutes=pc["c_target_min"]) if confirmed else k - timedelta(minutes=pc["c_fallback_min"])
 
 
-def due_pulls(now, games, plan, cfg, done, focus, started, report_times, report_ok, confirmed):
+def watch_budget(plan, pool_avail, reserve_games, done, cfg, report_times=None, now=None):
+    """Credits the watch-only W reads may spend now: what the plan can pay (weighted, capped) minus the R and C still owed to
+    EVERY unstarted game in reserve_games (the plan window and the games before the keys reset), minus ops.watch.w_margin.
+    Never negative. None when W reads are off or the plan is not in the full tier."""
+    wc = (cfg.get("ops") or {}).get("watch") or {}
+    if not wc.get("active") or not plan or plan.get("tier") != "full" or pool_avail is None:
+        return None
+    per = len(pick_keys(cfg)) * regions_billed(len(request_books(cfg)))
+    last = timedelta(minutes=cfg["ops"]["pulls"]["c_latest_min"])
+    owed, weeks = 0, set()
+    w_spent = per * sum(1 for reads in done.values() for f in reads if f["pull"] == "W")     # this slate's W reads so far
+    for g in reserve_games:
+        reads = done.get(g["id"], [])
+        if now is not None and now >= common.parse_iso(g["start"]) - last:
+            continue                                        # no read can still be made for it
+        weeks.add(g.get("week"))
+        rt = (report_times or {}).get(g["id"])
+        r_done = any(f["pull"] == "R" and (rt is None or f["at"] >= rt) for f in reads)
+        c_done = any(f["pull"] == "C" for f in reads)
+        owed += (0 if r_done else per) + (0 if c_done else per)
+    spare = max(0.0, float(pool_avail) - owed - float(wc.get("w_margin", 12)))
+    if wc.get("w_pace", True) and weeks:
+        # share out what is spare over the weeks of games still to come this month: this week may use its share
+        spare = max(0.0, (spare + w_spent) / len(weeks) - w_spent)
+    return spare
+
+
+def due_pulls(now, games, plan, cfg, done, focus, started, report_times, report_ok, confirmed, watch=None):
     """Which pull each game needs right now. One action per game per run at most.
 
     done: {gid: [dict(pull, at datetime, asked [keys], returned [keys], hr [Hard Rock keys], ina bool)]} every read so far.
@@ -432,6 +459,7 @@ def due_pulls(now, games, plan, cfg, done, focus, started, report_times, report_
     report_times: {gid: datetime} when the final injury report counts as in (R is due from then).
     report_ok: set of game ids whose injury read is fresh enough to say the report is in.
     confirmed: set of game ids with both teams' inactives posted.
+    watch: None, or {"spare": credits} from watch_budget(): lets a game with no R or C due take one watch-only W read.
     Returns [dict(pull, game, keys [feed keys], books [bookmakers])] in kickoff order."""
     ops = cfg["ops"]
     pc = ops["pulls"]
@@ -465,6 +493,19 @@ def due_pulls(now, games, plan, cfg, done, focus, started, report_times, report_
             retry = timedelta(minutes=pc["r_retry_min"])
             if not rs or (not hr_up and len(rs) < pc["r_max_reads"] and now - rs[-1]["at"] >= retry):
                 choice = ("R", keys)
+        # W: watch-only read about w_target_min before kickoff, after R, never later than w_latest_min before kickoff, and only
+        # while the budget (credits left after reserving R and C for every game) covers it. It never feeds a live pick.
+        wc = ops.get("watch") or {}
+        if choice is None and watch is not None and wc.get("active") and g["id"] in report_ok:
+            ws = [f for f in reads if f["pull"] == "W"]
+            rt = report_times.get(g["id"])
+            has_r = any(f["pull"] == "R" and (rt is None or f["at"] >= rt) for f in reads)
+            if has_r and len(ws) < wc.get("w_reads", 1) and \
+                    k - timedelta(minutes=wc.get("w_target_min", 180)) <= now < k - timedelta(minutes=wc.get("w_latest_min", 100)):
+                cost = len(keys) * regions_billed(len(books))
+                if watch["spare"] >= cost:
+                    watch["spare"] -= cost
+                    choice = ("W", keys)
         if choice:
             out.append({"pull": choice[0], "game": g, "keys": choice[1], "books": books})
     return out
@@ -826,11 +867,12 @@ def load_fetches(games, now, days=9):
 
 
 def run_pulls(now, slate, games, games_left, cfg, matcher_for, focus, report_times, report_ok, confirmed, started,
-              dry_run=False):
+              dry_run=False, reserve_games=None):
     """The whole odds step. Returns a result dict for status.json and the engine.
     focus {gid: set(feed keys)}: markets holding an open pick or near-pick (tight tier's C). report_times {gid: when the final
     injury report counts as in}. report_ok: game ids whose injury read is fresh after that time. confirmed: game ids with
-    both teams' inactives posted."""
+    both teams' inactives posted. reserve_games: every game that has not started and kicks off in the plan window or before the
+    keys reset (dicts with id, start): the R and C still owed to them are held back before any watch-only W read is made."""
     ops = cfg["ops"]
     keys = load_keys()
     pool = Pool(keys, now)
@@ -885,8 +927,12 @@ def run_pulls(now, slate, games, games_left, cfg, matcher_for, focus, report_tim
         t = common.parse_iso((st["failed"].get(gid) or {}).get("at"))
         return t is not None and t <= now < t + rest
 
+    spare = watch_budget(plan, plan.get("pool_at_plan"),
+                         [g for g in (reserve_games if reserve_games is not None else games) if not started.get(g["id"])],
+                         done_map(st), cfg, report_times, now)
     due = [d for d in due_pulls(now, games, plan, cfg, done_map(st), focus, started, report_times, report_ok,
-                                confirmed) if not resting(d["game"]["id"])]
+                                confirmed, None if spare is None else {"spare": spare})
+           if not resting(d["game"]["id"])]
     res["due"] = [{"pull": d["pull"], "game_id": d["game"]["id"], "cost_max": est_cost(d)} for d in due]
     failed, no_budget = [], []
     day = now.date().isoformat()
@@ -897,21 +943,26 @@ def run_pulls(now, slate, games, games_left, cfg, matcher_for, focus, report_tim
         if dry_run:
             continue
         cost_max = est_cost(d)
+        is_w = d["pull"] == "W"
         over_cap = d["pull"] == "R" and pool.spent_on_game(g["id"]) > 0 and \
             pool.spent_on_game(g["id"]) + cost_max > cap
         if pool.total_left() < cost_max or over_cap:
-            no_budget.append(g["id"])
-            st["skipped"][g["id"]] = {"pull": d["pull"], "why": "no budget", "at": common.iso(now)}
+            if not is_w:                                    # a watch read that cannot be paid is simply not made
+                no_budget.append(g["id"])
+                st["skipped"][g["id"]] = {"pull": d["pull"], "why": "no budget", "at": common.iso(now)}
             continue
         ev = st["events"].get(g["id"])
         if not ev:
+            if is_w:
+                continue
             failed.append(g["id"])
             st["failed"][g["id"]] = {"pull": d["pull"], "at": common.iso(now)}
             client.errors.append("no odds event yet for %s at %s" % (g["away"], g["home"]))
             continue
         payload, cost = client.event_odds(ev, g, d["keys"], d["books"], d["pull"])
         if payload is None:
-            failed.append(g["id"])
+            if not is_w:                                    # a failed watch read never marks the odds step or the page
+                failed.append(g["id"])
             st["failed"][g["id"]] = {"pull": d["pull"], "at": common.iso(now)}
             continue
         st["failed"].pop(g["id"], None)
