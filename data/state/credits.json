@@ -5,7 +5,7 @@
    "n": 1,
    "left": 0,
    "status": "empty",
-   "checked_at": "2026-10-22T06:00:00-04:00",
+   "checked_at": "2026-10-30T16:25:57-04:00",
    "month": "2026-10",
    "after_us": 0,
    "shared": false,
@@ -16,7 +16,7 @@
    "n": 2,
    "left": 0,
    "status": "empty",
-   "checked_at": "2026-10-22T06:00:00-04:00",
+   "checked_at": "2026-10-30T16:25:57-04:00",
    "month": "2026-10",
    "after_us": 0,
    "shared": false,
@@ -27,7 +27,7 @@
    "n": 3,
    "left": 0,
    "status": "empty",
-   "checked_at": "2026-10-22T06:00:00-04:00",
+   "checked_at": "2026-10-30T16:25:57-04:00",
    "month": "2026-10",
    "after_us": 0,
    "shared": false,
@@ -36,20 +36,20 @@
   },
   {
    "n": 4,
-   "left": 120,
-   "status": "ok",
-   "checked_at": "2026-10-22T06:00:00-04:00",
+   "left": 0,
+   "status": "empty",
+   "checked_at": "2026-10-30T16:25:57-04:00",
    "month": "2026-10",
-   "after_us": 120,
+   "after_us": 0,
    "shared": true,
    "shared_at": "2026-10-18T13:00:00-04:00",
-   "others_spent": 59
+   "others_spent": 179
   },
   {
    "n": 5,
    "left": 0,
    "status": "empty",
-   "checked_at": "2026-10-22T06:00:00-04:00",
+   "checked_at": "2026-10-30T16:25:57-04:00",
    "month": "2026-10",
    "after_us": 0,
    "shared": false,
@@ -58,25 +58,25 @@
   },
   {
    "n": 6,
-   "left": 288,
+   "left": 151,
    "status": "ok",
-   "checked_at": "2026-10-22T06:00:00-04:00",
+   "checked_at": "2026-10-30T16:25:57-04:00",
    "month": "2026-10",
-   "after_us": 288,
-   "shared": false,
-   "shared_at": null,
-   "others_spent": 0
+   "after_us": 151,
+   "shared": true,
+   "shared_at": "2026-10-30T16:25:57-04:00",
+   "others_spent": 67
   },
   {
    "n": 7,
-   "left": 415,
+   "left": 347,
    "status": "ok",
-   "checked_at": "2026-10-22T06:00:00-04:00",
+   "checked_at": "2026-10-30T16:25:57-04:00",
    "month": "2026-10",
-   "after_us": 415,
-   "shared": false,
-   "shared_at": null,
-   "others_spent": 0
+   "after_us": 347,
+   "shared": true,
+   "shared_at": "2026-10-30T16:25:57-04:00",
+   "others_spent": 68
   }
  ],
  "spent": [
@@ -870,6 +870,22 @@
    "pull": "F",
    "game_id": "2026_07_NYG_HOU",
    "cost": 32,
+   "key": 6
+  },
+  {
+   "at": "2026-10-30T16:25:57-04:00",
+   "date": "2026-10-30",
+   "pull": "P",
+   "game_id": "Indianapolis Colts@Jacksonville Jaguars",
+   "cost": 35,
+   "key": 6
+  },
+  {
+   "at": "2026-10-30T16:25:57-04:00",
+   "date": "2026-10-30",
+   "pull": "P",
+   "game_id": "Indianapolis Colts@Jacksonville Jaguars",
+   "cost": 35,
    "key": 6
   }
  ]
