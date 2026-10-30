@@ -5,26 +5,20 @@ Read this first in every session. Update it last.
 **Live page: https://msasportas.github.io/prop-check-nfl/** · Repo: MSasportas/prop-check-nfl (public)
 
 ## 1. The product
-Every NFL game day: every leg that qualifies at a real Hard Rock (`hardrockbet_fl`) price, ranked best first, each
-with the price, our chance vs the price's break-even and a one-line reason, plus 2-3 leg parlays from the top legs.
-Grouped by game day. Each pick shows how settled it is: Early / Injury report in / Inactives confirmed. Pulled picks
-stay visible with the reason. Research: any game (lines, weather, injuries, inactives, defense ranks, players) and
-any player (Hard Rock lines, last 10 games FG and 1H, chart). Record: every pick and parlay as shown, graded.
-Dark, phone first (~380px), All / 1st half / Full game toggle, bottom tabs Picks · Research · Record.
+Every NFL game day: every player-prop leg that qualifies at a real Hard Rock (`hardrockbet_fl`) price, ranked best first,
+each with the price, how it beat the market and a one-line reason. Grouped by game day. Each pick says how settled it is
+(Injury report in / Inactives confirmed). Pulled picks stay visible with the reason and what a bet at the posted price
+means now. Record: every pick as shown, graded. No parlays, no Research tab, no Early picks. Dark, phone first (~380px).
 
-**Customer facts (fixed), updated 2026-10-30 (Matt's new brief; supersedes the lines below where they differ):** Matt; Hard Rock
-Florida only (a pick needs a real Hard Rock number); **no single leg worse than -150** (plus money fine); **NO PARLAYS**
-(none offered, none built); **NFL player props only: full game, main lines only to start** (no 1H, no alt lines, no sides,
-totals, game or team props); Sharp chooses and can add/drop prop markets from evidence, Hard Rock must offer the market;
-**picks are for betting after the injury reports are in** (no "Early" picks shown); **regular season AND playoffs**;
-**same method as Prop Check NHL (Gap + Guard): Hard Rock's price must beat the other books' no-vig market fair
-(Pinnacle plus others) by 3% or more**; **Research tab dropped**; hit-based. Old text (kept until the rework is logged in
-section 8): Hard Rock Florida only; no leg worse than -200; parlays 2-3 legs; 1H and FG.
-**Fixed:** the Record. Every pick and parlay exactly as shown, graded after the game at the posted price,
-append-only, pulled picks kept and marked. Nothing edited or dropped. Started clean on Oct 18, 2026 (week 6). The
-old Spotlight Record is retired. It is the only reporting Matt wants.
-**Come to Matt only for:** more odds keys, paying for something, a GitHub setting we can't reach. Exact taps, one
-short message.
+**Customer facts (fixed), Matt 2026-10-30:** Hard Rock Florida only (a pick needs a real Hard Rock number); **no single
+leg worse than -150** (plus money fine, +120 ceiling is a config value); **NO PARLAYS**; **NFL player props only: full
+game, main lines only** (no 1H, no alt lines, no sides, totals, game or team props); Sharp chooses and can add or drop prop
+markets from evidence, Hard Rock must offer the market; **picks are for betting after the injury reports are in**;
+**regular season AND playoffs**; **method = Prop Check NHL's Gap + Guard** (section 4); **Research tab dropped**; hit-based.
+**Fixed:** the Record. Every pick exactly as shown, graded after the game at the posted price, append-only, pulled picks
+kept and marked. Nothing edited or dropped. It is the only reporting Matt wants. The first-rules history (Oct 18-25, blended
+chance, parlays, 1st half) stays in the log as a labelled "retired" block and never counts toward the new headline.
+**Come to Matt only for:** more odds keys, paying for something, a GitHub setting we can't reach. Exact taps, one short message.
 
 ## 2. How we are judged
 1. Picks hit, at the price posted. Fewer picks beats picks that miss.
@@ -37,59 +31,30 @@ Sharp (betting standard, final call on rules) · Data Scientist (data, model, sa
 (page) · Builder (all code) · QA (tests every change before it goes live, real browser at 380px, fresh eyes each
 round). Rule changes: the DS names the sample first; the Sharp decides; log it in section 8.
 
-## 4. Current rules (v1.1, 2026-10-20; v1.0 2026-10-13). Source of truth: `config/rules.json`
-Set by the Sharp from the DS backtest (fit 2024+2025, out of sample on 2025 and 2026 weeks 1-5) and one real Hard
-Rock payload (SEA@DEN). Not tested against real prices (no free price history; `data/odds/` is building one).
-The old Spotlight rules (brief 025) were dropped, not carried over.
-
+## 4. Current rules (v2.0 Gap + Guard, 2026-10-30). Source of truth: `config/rules.json`; shape of the files in docs/SPEC.md
 | Area | Rule |
 |---|---|
-| Markets picked | **Full game:** receptions, receiving yds, rushing yds, carries, rush+rec yds, passing yds, passing TDs, longest catch, longest run (over and under); interceptions (under only). **1st half:** passing yds, receiving yds, rushing yds (over and under). Main Hard Rock line only |
-| Shown, never picked | Pass attempts, completions, pass+rush yds, longest completion (model failed out of sample or no model). Anytime TD FG/1H (Yes-only market, no No price). Alt lines (all markets). Sides and totals (no model). 1H spread and 1H total come from DraftKings, labelled "DraftKings" |
-| Research only | 1H receptions: Hard Rock has no market. Model number only, no price. `player_receptions_h1` is never requested |
-| Price gate | -200 to +120 |
-| Chance | Model chance for that side, minus the DS shrink for that market/half/side (0.03-0.07), minus 0.03 more on an over after a role jump. Then 60% that + 40% Hard Rock's de-vigged price = **our chance** (shown on the card) |
-| Qualify | Model (after shrink) ≥ 0.62 **and** our chance ≥ 0.57 **and** our chance beats break-even by 0.04 (Early) / 0.03 (Injury report in) / 0.02 (Inactives confirmed). Model beats Hard Rock's fair by more than 0.15 = no pick at any settledness (v1.1; was wait 0.15 / no pick 0.20). No new pick from a Hard Rock price over 6h old. Line's vig must be 3-10% or the line is skipped as a feed glitch |
-| Eligibility | Under 6 games (this season + last) = no pick. Under 8 games, missed 2+ straight games, under 3 games with his team, his team's QB changed, = no over. A jumpy role (targets/carries swing 60%+ game to game) = no pick either side (v1.1). Room change (v1.1): a WR/TE/RB with 8%+ target share or 25%+ carry share (last 4 games) joins or leaves a team (trade, cut, IR/PUP/NFI; weekly Out doesn't count) = no picks in that team's receiving/rushing room until he/they have 2 games since. Missed his team's last game = waits for the injury report and must carry no tag. Listed Questionable or worse = no pick; Questionable on the final report = no pick for that game even if active. Stats missing his team's last game = no picks for that team (named on the page) |
-| News | Key teammate (20%+ of targets or 35%+ of RB carries, last 4 games) Doubtful/Out: that team's legs in the same room can't have a model-vs-book gap over 0.15. Starting QB Doubtful/Out: no overs for that team; QB Questionable: no overs for that team until inactives confirm him. Outdoor game with 15+ mph wind forecast at kickoff (within 48h): no overs in passing yds, passing TDs, receiving yds, longest catch (FG or 1H) |
-| Settled | **Early** from the first price. **Injury report in** 60 min after the final injury report (4 PM ET on the last practice day: Sun game = Fri, Mon = Sat, Thu = Wed, Sat = Thu) once a fresh ESPN injury read is in. **Inactives confirmed** when ESPN lists 3+ inactives for both teams (checked from 100 min before kickoff). Not confirmed by 60 min before kickoff: stays "Injury report in", page says "Inactives not confirmed yet", locks as "Locked: inactives not confirmed" |
-| Ranking and caps | By our chance, then margin, then most settled. 1 pick per player, 2 per team, 3 per game, no slate cap. First 8 open, rest under More |
-| Parlays | 2-3 legs, one leg per game, same game day only. Legs: our chance ≥ 0.58, price -200 to +100. Combined chance ≥ 0.34 (2 legs) / 0.20 (3 legs) and beats the parlay break-even by 0.03. Up to 2 a game day, a leg in at most 1; caps count every parlay posted that day (open, pulled, locked) (v1.1). Price = product of leg prices, shown as "about". A one-game day (most Thursdays) has no parlays and says so |
-| Pulls | Listed Questionable or worse, or inactive. Price past -200 or past +120. Hard Rock moves the line (pulled, "Hard Rock moved the line to X"; the new line must qualify on its own as a new pick). Line or market gone. Our chance drops below break-even. Price moves 4+ points of break-even against the pick before inactives are confirmed. Starting QB ruled out (his team's overs). 15+ mph wind (weather overs). Rules tightened: open picks that now fail a rule are pulled ("Rules tightened: ..."); gap over 0.15 pulls a shown pick any time. A parlay with a pulled leg is pulled. Pulled picks stay on the page and in the Record |
-| Lock and grading | Locks at scheduled kickoff. Full game includes OT; 1H = quarters 1-2. Didn't play = void; whole-number tie = push. Graded from nflverse play-by-play (matches official stats 99.8-100%), ESPN box score if nflverse is 36h+ late. "Posted price" = the price on the card; if a pick showed more than one price while open, it's graded at the **worst** one shown (the Record lists every price). Parlay: any loss = loss; a void/push leg drops out and the parlay is repriced from the rest. Flat 1 unit. Pulled picks are graded too, shown apart, never in the hit rate |
-| Odds pulls | Allowance = credits left (read from each response) / games left before the keys reset on the 1st. **M** = 1-credit "are props up" check, from 5 days out at 10 AM and 4 PM, earliest game of each game day first. **F** = full pull: every Hard Rock player prop for the game + game lines (~41 credits), once 15+ player markets are up; forced 24h before kickoff. **D** = 10 AM daily re-check of markets holding open picks. **R** = main player lines + game lines 60 min after the final injury report (~18). **C** = markets holding picks or near-picks + spread/total, 75 min before kickoff, retried to 20 min (~5). Tiers (credits/game): 76+ M+F+D+R+C · 66+ M+F+R+C · 48+ M+F+C · 43+ M+F (C only where a pick is open) · 24+ M+R+C (no full pull) · below: R only, earliest games first. Games after the 1st (key reset) get their full pull early only from credits spare after reserving the full tier for every game before it. Started games are never pulled |
-| Page when not pulled | "Hard Rock hasn't posted player props for this game yet. Next check 4 PM." / "Main lines only for this game (odds credits are low)." / "No Hard Rock prices pulled for this game (odds credits are low)." / "Price as of 10:02 AM." on any price over 6 hours old |
-| Safety | A market (each half separate) pauses itself at 30 graded picks if its hit rate is 15+ points under its average break-even or it's at -8 units. Whole board at 60 graded picks running 10+ points under break-even: every margin tightens by 0.03 automatically. Tightening any value: any time, logged. Loosening: not before 100 graded picks in that market (150 for board-wide values), one change at a time. DS may refit the model weekly; calibration and these values change only by this rule |
-| Reason line | One sentence: "60% to stay under 4.5 catches, needs 54%. 3.6 catches a game his last 5 (2 of 5 over 4.5); SEA allows the 3rd fewest catches to WRs." Chance rounded down, break-even rounded. Opponent clause dropped if it runs long |
+| Markets | Full game, main line: passing yds, passing TDs, rushing yds, carries, receptions, receiving yds (over and under). Odds API keys `player_pass_yds`, `player_pass_tds`, `player_rush_yds`, `player_rush_attempts`, `player_receptions`, `player_reception_yds`. Sharp adds or drops markets in `ops.gap_guard.markets` |
+| Price window | -150 to +120. Whole-number lines skipped |
+| Step 1 gap | Hard Rock EV vs the median proportional no-vig fair of the other books >= +3.0%; at least 4 other books with both sides on the same player, line and side; Pinnacle one of them and its own fair EV on Hard Rock's price >= 0. Other books: Pinnacle, DraftKings, FanDuel, BetMGM, BetOnline, BetRivers, ESPN Bet, Bovada, Fliff (+ BetParx reserve, cut at 10 books). The national `hardrockbet` key is never an other book. A book's market older than 120 min at read time is dropped; hold must be 0..15% |
+| Step 2 guard | final = 0.8 x market fair + 0.2 x model chance (model p minus shrink 0.03-0.07, minus 0.03 on role-jump overs); pass iff final EV >= +2.0%. The model can only veto. No model = no pick |
+| Timing | Only R and C reads taken at or after the final injury report counts in (final report + 60 min grace) create a pick; from the newest usable read (<= 120 min old). Price frozen at the first passing read. Later reads can only pull. No Early level |
+| Vetoes | Questionable or worse this week; missed his last game; eligibility (games, new team, QB change); role swings (both sides); room change; starting QB out (no overs); key teammate out (room blocked until inactives); wind 15+ mph (overs on pass yds, pass TDs, rec yds); stats missing his team's last game |
+| Caps | 1 pick per player. No team or game cap (config values, off) |
+| Pulls | Player ruled out or inactive; listed questionable or worse; Hard Rock moved or removed the line or market; price outside the window; gap gone on a newer R or C read (pull EV 1.5%); rules tightened. Pulled text carries "if you bet at the posted price" and the price now |
+| Settled | `injury_report` or `inactives`. Inactives confirmed = ESPN lists 3+ inactives for both teams. Not confirmed by 60 min before kickoff: locks as "Locked: inactives not confirmed" |
+| Lock and grading | Locks at kickoff. Full game incl. OT. Did not play = void; push on a whole number (never picked). Graded from nflverse play-by-play, ESPN box score if nflverse is 36h+ late. Posted price = the frozen Hard Rock price. 1 unit flat. Pulled picks are graded, shown apart, never in the hit rate |
+| Odds pulls | R after the final injury report (~6 credits a game: six markets, 10 books, one region); C at kickoff - 70 min once inactives are confirmed, else kickoff - 45. Tiers by credits per game left: full >= 12, tight >= 7 (C only for games holding a pick or near-pick), below = R only. Monthly cap 1,000 credits; shared keys at 0.5. Keys: `ODDS_API_KEYS` + `ODDS_API_KEYS_2` |
+| Safety pause | New-era graded singles (not pulled) at -10 units: no NEW picks until a person reviews, banner on the page. Retired-era results never count |
+| Research log | `data/gg/events.jsonl` (vetoes, capped, closing prices for CLV). Not on the page, not the Record, append-only and guarded |
 
-### Why (one line each)
-- **Markets:** the DS "use" list plus the "caution" markets (higher shrink already priced in). Pass attempts/completions/pass+rush yds fell apart out of sample in 2026 (the .70+ legs hit 54-59%), so they stay off.
-- **No alt lines:** in SEA@DEN, 30 alt lines sat inside the gate; none got a model chance near 0.62 (best 0.53). They are over-only (no under price to de-vig), carry more vig, and sit in the tails where the model was never calibrated. Revisit only with a DS backtest on tail lines.
-- **No anytime TD:** Hard Rock posts only "Yes" (no "No" side), so there is no fair price, and only 2 of 28 Yes prices were inside the gate (both +100, model 37-48%). The 1H TD is worse: the model trusts only the "No" side, which isn't offered.
-- **No sides/totals:** no model for them and they are the sharpest lines on the board. Hard Rock's 1H spread/total in the feed are broken (1H total 30.5 at -800/+425), so those come from DraftKings, display only.
-- **+120 max:** past +120 the break-even is under 45%: a coin-flip-or-worse bet doesn't fit "picks must hit".
-- **Blend 60/40, min model 0.62, min chance 0.57:** the DS pick rule at 0.62 hit 69-78% out of sample on proxy lines. Real Hard Rock lines are sharper, so the market's 40% vote and a 57% floor keep us honest.
-- **Margins by settledness:** early-week prices move and injury news is unknown, so early picks need a bigger cushion (0.04) than picks after the report (0.03) or after inactives (0.02).
-- **"Too good" at 0.15 (v1.1):** week 6 gap >0.15 went 4-12 (-8.6u), gap ≤0.15 went 8-4 (+2.7u); Hard Rock fair beat our chance on Brier (.258 vs .288). A big gap means we're missing something.
-- **Jumpy role blocks unders too (v1.1):** role-unstable picks went 1-5 in week 6.
-- **Room change (v1.1):** Jalen Brooks' snaps went 5%→53% after Harrison Jr. left ARI; both Brooks unders lost. 8% share is the level that catches Harrison (8.8% at ARI).
-- **2 parlays a day, leg used once (v1.1):** parlays 0-7 in week 6, a builder bug let 7 go up with one leg in 4.
-- **Questionable = no pick:** in 2026, players tagged Questionable who still played hit 16 of 31 picks the model rated 69%. That is the clearest leak we found.
-- **Key teammate out:** the backtest can't test it (proxy lines don't move on news), but the real book will raise the line and our model won't know. Capping the gap stops us "finding edge" that is just the injury.
-- **Wind:** 2024-26 overs in pass/receiving markets at 15+ mph hit 55% when rated 67% (n=29); unders were fine (74%). So wind blocks overs only.
-- **Rank by chance:** Matt is hit-based. Margin breaks ties.
-- **2 per team, 3 per game:** one game script can sink every leg on one team.
-- **One leg per game in parlays:** no correlation guesswork; one bad game kills one parlay at most.
-- **Line moves pull the pick:** the old number is no longer bettable, so showing it as live would be wrong. The Record keeps the original exactly as shown.
-- **Worst price shown:** the Record must never flatter us; Matt may have bet at any price the card showed.
-- **Odds plan:** through Oct 31 there are 29 games (SEA@DEN through CAR@GB). ~2,330 credits / 29 ≈ 80 a game: every game gets the top tier, including one full all-props pull, if the keys are ours alone. Per-game cost by tier: about 80 / 65 / 47 / 42 / 24. Tiers step down on their own if credits run low. Nov 1 games wait for the reset unless there are spare credits, so October games keep their full plan.
-- **Faster pause (30 legs, not NHL's 50):** NFL volume is weekly; 50 legs in one market could take a month of losing.
+Retired v1.1 (Oct 13-25: blended chance, parlays, 1st half, M/F/D pulls) is kept in section 8 and in the Record's retired block.
 
 ## 5. How it runs
 - `scripts/run.py` is the only entry point; each run decides what's due: rules, schedule (nflverse games.csv +
   ESPN scoreboard), stats (nflverse play-by-play -> `data/state/rows<season>.json.gz`), roster, injuries (ESPN,
-  nflverse fallback), weather (open-meteo), odds (pulls M/F/D/R/C), engine (keep / pull / lock shown picks, add new
-  ones, parlays -> Record), grade, slate, research, record, status. Each step may fail without stopping the others.
+  nflverse fallback), weather (open-meteo), odds (pulls R/C), engine (lock / pull shown picks, add new
+  ones from gg.py -> Record), grade, slate, record, status. Each step may fail without stopping the others.
   Stdlib Python 3.12.
 - **Timer:** `.github/workflows/run.yml` is a self-dispatching chain (cron is unreliable): each run loops
   `scripts/loop.sh` ~50 min (`scripts/cadence.py`: every 10 min on game days 8 AM-1 AM and around kickoffs, 30 min
@@ -104,14 +69,14 @@ The old Spotlight rules (brief 025) were dropped, not carried over.
   `data/record/events.jsonl` must be a byte-exact prefix of the next, or the cycle pushes nothing and the page says
   "Updates have stopped". Only the timer writes `data/record/`. No chat ever edits it. `python scripts/run.py
   --rebuild-record` regenerates the derived views.
-- **Odds keys:** GitHub secret `ODDS_API_KEYS` (comma-separated, 7 keys on Oct 18). Never in the repo, page or
+- **Odds keys:** GitHub secrets `ODDS_API_KEYS` and `ODDS_API_KEYS_2` (comma-separated). Never in the repo, page or
   logs; passed by name only (never `toJSON(secrets)`: GitHub holds the run). The ledger trusts
   `x-requests-remaining` every call; a key spent by another tool (Prop Check NHL) is marked shared and counted at a
   discount. Page warns when the pool is low.
 - **Files:** `index.html` (page), `data/slate.json`, `data/record.json`, `data/rules.json`, `data/status.json`,
-  `data/research/` (index + one file per game), `data/odds/<date>.json` (every price pulled), `data/state/`.
-  `fixtures/` = page test data (`?fixture=normal|fresh|nopicks|allstarted|recordempty|stale`).
-  Tests: `python -m unittest discover -s tests` (87), incl. a full replayed Thursday. Tests use frozen stat rows
+  `data/odds/<date>.json` (every price pulled, others included), `data/gg/events.jsonl` (research log), `data/state/`.
+  `fixtures/` = OLD page test data (schema 1, has parlays and research): the UX agent replaces it.
+  Tests: `python -m unittest discover -s tests` (122), incl. a full replayed Thursday on a synthetic 7-book consensus. Tests use frozen stat rows
   in `tests/fixtures/rows/`, never the live data.
 
 ## 6. Reviews (scheduled tasks; each reads this file first and updates it last)
@@ -122,41 +87,22 @@ The old Spotlight rules (brief 025) were dropped, not carried over.
   agreed fixes through QA; log changes in section 8.
 
 ## 7. Known gaps and risks
-1. **Thursday Oct 15 (SEA@DEN) was missed.** Go-live slipped to 12:31 AM Sun Oct 18. The Record starts with week 6
-   Sunday. SEA@DEN shows as started with no picks.
-2. **Edge vs Hard Rock is unproven.** Model leans under on most lines; first card (Oct 18) was 25 picks, nearly all
-   unders, our chance 57-67%. Judge at the first weekly review with the closing-price check before touching values.
-3. The first 28 picks (12:31 AM Oct 18) were posted with reason lines whose defense rank came from the model's
-   weighted table, which didn't always match Research. Fixed 12:50 AM (reasons now use Research's plain ranks and
-   drop clauses that argue against the side); the Record keeps what was first shown, plus "update" events.
-4. Hard Rock house rules not verified: longest catch/run with no catch/carry (graded 0), parlay void-leg repricing.
-5. Parlay price is the product of leg prices ("about"); Hard Rock's real parlay price may differ a little.
-6. 1H receptions: no Hard Rock market in the feed; Research shows the model number only. `player_receptions_h1`
-   is never requested (it fails the whole call).
-7. Hard Rock's 1H total in the feed is an alt line (e.g. 30.5 at +425/-800); Research shows only a main pair
-   (both sides -160..+140, closest to even), so 1H total and 1H spread come from DraftKings, labelled.
-8. Key pool may be shared with Prop Check NHL; both step down together if it runs low. Keys reset on the 1st.
+1. **Odds credits are thin.** About 500 credits across the keys, mostly shared with NHL (weighted 0.5), and the monthly cap is 1,000. At ~6 credits per read and 2 reads per game the Nov 1 slate may run in the tight or below tier. The page says when games get fewer checks. More keys (or ODDS_API_KEYS_2) are Matt's call.
+2. **Other books' staleness is untuned.** The book probe did not store `last_update`, so `stale_min_others` is 120 by guess. Tune from the first real reads in `data/odds/`.
+3. **The Gap + Guard thresholds are NHL's, untested on NFL prices.** Expect few picks; fewer beats misses. First review after week 8 grades.
+4. **No model, no pick:** rookies and thin samples never appear. By design.
+5. Hard Rock house rules not verified (longest-style props are not picked, so mainly DNP = void).
+6. Inactives depend on ESPN's pre-game feed; if not confirmed 60 min before kickoff the pick locks as "inactives not confirmed".
+7. Thanksgiving week needs an injury-report override (report is Tuesday). Playoffs: the week and slate numbering after week 18 is untested.
+8. Key pool shared with Prop Check NHL; both step down together if it runs low. Keys reset on the 1st.
 9. Timer chain holds one runner most of the day (free on public repos; GitHub discourages always-on use).
-10. Inactives depend on ESPN's pre-game feed; if not confirmed by 60 min before kickoff the pick locks as
-    "inactives not confirmed".
-11. Model blind spots: rookies get position averages; no route data; traded players need 3 games before an over.
-12. 320px phones: long names truncate. Thanksgiving week needs an injury-report override (report is Tuesday).
-13. Final games on Research still say "Weather not posted yet" / "No Hard Rock game lines yet" and don't show the
-    score (QA round 3 minor). Status sheet says "Stats through week N" before that week's Sunday games are played.
-14. Research has no TD-pass defense row, so the Daniels-type reason ("7th fewest TD passes") can't be checked
-    there; longest-catch reasons cite receiving-yards ranks (shown under that market).
-15. CLOSED 2026-10-20: unders vs top-10-allowing defenses went 6-6, vs stingy (bottom-10) 1-7. No rule.
-16. ADDRESSED 2026-10-20 by the room_change rule (v1.1). Not covered: exact transaction date (only latest roster week), returns from IR. Was: **A new teammate isn't seen by the model.** Marvin Harrison Jr. joined HOU after week 5 (ARI through week 4, no games for
-    HOU yet), and Xavier Hutchinson's Over 10.5 longest catch (-120) was built from Hutchinson's last 5 games, all before
-    that. Eligibility flags the player who moved (3-game rule), not the teammates whose targets he takes. Sharp/DS to add:
-    when a WR/TE/RB joins a team, that room's overs wait or are blocked for N games. Found by Matt, Oct 18, 9:11 AM.
-
-17. **Week 6 Record: singles 12-16 (-5.9u), parlays 0-7, pulled 1-3.** Zero closing-line value (Hard Rock rarely moves; 18 of 28 at -115/-115). Calibration inverted (our chance .63+ went 0-4). The 60/40 blend is unchanged (calibration waits for the sample rule); DS re-checks at 60 graded. Board auto-tighten (0.03) fires at 60 graded if still 10+ pts under. v1.1 cuts week 6's card to ~8-10 singles; DS flags any week under 5 legs.
-18. QA follow-ups (minor): Record Parlays row shows "–" under Needed; nopicks fixture repeats the mid-week props note under every day.
+10. `fixtures/` and the page (index.html) are still schema 1 until UX rebuilds them from docs/SPEC.md.
+11. The Record's retired block label is derived from entry dates ("Retired rules (Oct 18-22)"); the brief says Oct 18-25.
 
 ## 8. Rule-change log
 | Date | Change | Why | Sample |
 |---|---|---|---|
+| 2026-10-30 | **v2.0 Gap + Guard** (Matt's brief): price window -150..+120; NO parlays; full game main lines only (six markets); picks only from reads after the final injury report (no Early); market = other books' no-vig fair (Pinnacle required, 4+ books, gap >= 3%, guard 80/20, final EV >= 2%); R and C pulls only, monthly cap 1,000; safety pause at -10u; Research tab dropped; Record gets era gg1 plus a retired block | Customer rules and the NHL method | No NFL sample; thresholds from NHL |
 | 2026-10-20 | v1.1 (all tightenings): `too_good` 0.20→0.15 (open picks over it pulled); role-unstable blocks unders too (`elig.role_cv_blocks` both); no new pick on a price >6h old; `parlay_cap` 3→2, `parlay_leg_max_use` 2→1, caps count locked/pulled parlays (bug fix); new `room_change` (8% targets / 25% carries, 2 games) | Week 6: gap>0.15 4-12, role-unstable 1-5, parlays 0-7 (7 on one day), picks posted on 11h-old prices, Brooks/Hutchinson room changes | 28 graded singles, 7 parlays. Tightening allowed any time; no loosening before 100/market, 150 board |
 | 2026-10-20 | Page: Record headline shows singles + parlays; filter-aware week totals; pulled entries greyed "not counted"; calm mid-week no-props note; odds warning only on the backend low flag | UX review at 380px | Display only |
 | 2026-10-18 | Reason line: context clauses (defense rank, team total) only when they support the side; defense ranks are the plain this-season numbers Research shows | QA: reasons contradicted Research and some argued against the pick | Display only, no pick rule changed |
@@ -164,6 +110,7 @@ The old Spotlight rules (brief 025) were dropped, not carried over.
 | 2026-10-13 | v1.0 set (section 4) | First build. Sharp standard from the DS backtest and one live Hard Rock pull. Spotlight rules dropped | Backtest only; 0 graded live legs |
 
 ## 9. Session log (newest first, one line each)
+- 2026-10-30 evening: Builder shipped the Gap + Guard backend (gg.py, odds R/C, engine, record eras, slate schema 2, docs/SPEC.md, 122 tests). Timer still PAUSED (config/stop_timer) until the CEO says go. Next: UX builds the page from docs/SPEC.md, QA, then go-live for Sun Nov 1.
 - 2026-10-30 4:40 PM: Matt's new brief and answers received (section 1). Rework to NHL-style Gap + Guard started, target live Sun Nov 1. Timer still PAUSED (config/stop_timer) until the rework passes QA. First job: probe which books/markets the feed has for NFL player props, then Sharp reports the market list to Matt before go-live.
 - 2026-10-22 10:41 AM: PAUSED by Matt. `config/stop_timer` committed (no more odds pulls or runs); game-day and weekly review scheduled tasks disabled. Resume: delete `config/stop_timer` (push restarts the chain) and re-enable the three scheduled tasks. Page stays up on the last data (credits left 823).
 - 2026-10-20 ~12:30 PM: weekly review (week 6). Health clean (10:30 run, link 737, no failed steps, page 200, pool 1,171 tier full, MNF graded). DS/Sharp/UX/Builder/QA: rules v1.1 shipped (section 8), QA SHIP, 100 tests. Expect R. Stevenson's Thursday pick to be pulled "Rules tightened" next cycle; 0 new picks for NE@CHI so far. Gap 15 closed, gap 16 addressed.
