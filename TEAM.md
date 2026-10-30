@@ -12,8 +12,14 @@ stay visible with the reason. Research: any game (lines, weather, injuries, inac
 any player (Hard Rock lines, last 10 games FG and 1H, chart). Record: every pick and parlay as shown, graded.
 Dark, phone first (~380px), All / 1st half / Full game toggle, bottom tabs Picks · Research · Record.
 
-**Customer facts (fixed):** Matt; Hard Rock Florida only; no leg worse than -200 (plus money fine); parlays 2-3 legs;
-player props are the core, 1H and FG (sides/totals allowed); hit-based; bets any time from early week to kickoff.
+**Customer facts (fixed), updated 2026-10-30 (Matt's new brief; supersedes the lines below where they differ):** Matt; Hard Rock
+Florida only (a pick needs a real Hard Rock number); **no single leg worse than -150** (plus money fine); **NO PARLAYS**
+(none offered, none built); **NFL player props only: full game, main lines only to start** (no 1H, no alt lines, no sides,
+totals, game or team props); Sharp chooses and can add/drop prop markets from evidence, Hard Rock must offer the market;
+**picks are for betting after the injury reports are in** (no "Early" picks shown); **regular season AND playoffs**;
+**same method as Prop Check NHL (Gap + Guard): Hard Rock's price must beat the other books' no-vig market fair
+(Pinnacle plus others) by 3% or more**; **Research tab dropped**; hit-based. Old text (kept until the rework is logged in
+section 8): Hard Rock Florida only; no leg worse than -200; parlays 2-3 legs; 1H and FG.
 **Fixed:** the Record. Every pick and parlay exactly as shown, graded after the game at the posted price,
 append-only, pulled picks kept and marked. Nothing edited or dropped. Started clean on Oct 18, 2026 (week 6). The
 old Spotlight Record is retired. It is the only reporting Matt wants.
@@ -158,6 +164,7 @@ The old Spotlight rules (brief 025) were dropped, not carried over.
 | 2026-10-13 | v1.0 set (section 4) | First build. Sharp standard from the DS backtest and one live Hard Rock pull. Spotlight rules dropped | Backtest only; 0 graded live legs |
 
 ## 9. Session log (newest first, one line each)
+- 2026-10-30 4:40 PM: Matt's new brief and answers received (section 1). Rework to NHL-style Gap + Guard started, target live Sun Nov 1. Timer still PAUSED (config/stop_timer) until the rework passes QA. First job: probe which books/markets the feed has for NFL player props, then Sharp reports the market list to Matt before go-live.
 - 2026-10-22 10:41 AM: PAUSED by Matt. `config/stop_timer` committed (no more odds pulls or runs); game-day and weekly review scheduled tasks disabled. Resume: delete `config/stop_timer` (push restarts the chain) and re-enable the three scheduled tasks. Page stays up on the last data (credits left 823).
 - 2026-10-20 ~12:30 PM: weekly review (week 6). Health clean (10:30 run, link 737, no failed steps, page 200, pool 1,171 tier full, MNF graded). DS/Sharp/UX/Builder/QA: rules v1.1 shipped (section 8), QA SHIP, 100 tests. Expect R. Stevenson's Thursday pick to be pulled "Rules tightened" next cycle; 0 new picks for NE@CHI so far. Gap 15 closed, gap 16 addressed.
 - 2026-10-19 6:55 PM: MNF check (WAS@SF). Chain alive (6:50 run, link 376), no failed steps, page 200, pool 1,326 (tier full_plus), D pull 10 AM ran, C pull due 7 PM, inactives not posted yet for WAS/SF (checked each cycle), Sunday graded (singles 10-15, -6.6u; parlays 0-4). Fixed: parlay builder ignored "same game day only" (3 week-6 parlays paired Sunday legs with MNF; all already have a lost leg, Record untouched); parlays now built and capped per game day; test added (87). Unmatched names in status are Sun 12:40 AM pulls from before the NICK fix.
