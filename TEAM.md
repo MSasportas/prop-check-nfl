@@ -15,6 +15,9 @@ leg worse than -150** (plus money fine, +120 ceiling is a config value); **NO PA
 game, main lines only** (no 1H, no alt lines, no sides, totals, game or team props); Sharp chooses and can add or drop prop
 markets from evidence, Hard Rock must offer the market; **picks are for betting after the injury reports are in**;
 **regular season AND playoffs**; **method = Prop Check NHL's Gap + Guard** (section 4); **Research tab dropped**; hit-based.
+**Option kept behind the scenes (Matt, 2026-10-30):** the NBA project's "Pinnacle moves alone" strategy (and "Pinnacle as the price judge")
+runs as a research watch track beside the live rule, in case Gap + Guard finds no 3% edge. It never makes a pick on the Picks tab, never
+enters the Record or era gg1, and promoting it to a live rule needs Matt (section 4, "Behind the scenes").
 **Fixed:** the Record. Every pick exactly as shown, graded after the game at the posted price, append-only, pulled picks
 kept and marked. Nothing edited or dropped. It is the only reporting Matt wants. The first-rules history (Oct 18-25, blended
 chance, parlays, 1st half) stays in the log as a labelled "retired" block and never counts toward the new headline.
@@ -47,6 +50,7 @@ round). Rule changes: the DS names the sample first; the Sharp decides; log it i
 | Odds pulls | R after the final injury report (~6 credits a game: six markets, 10 books, one region); C at kickoff - 70 min once inactives are confirmed, else kickoff - 45. Tiers by credits per game in the NEXT 7 DAYS (unstarted games, `ops.plan_window_days`; not the whole month): full >= 12, tight >= 7 (C only for games holding a pick or near-pick), below = R only. Monthly cap 1,000 credits; shared keys at 0.5. Keys: `ODDS_API_KEYS` + `ODDS_API_KEYS_2` |
 | Safety pause | New-era graded singles (not pulled) at -10 units: no NEW picks until a person reviews, banner on the page. Retired-era results never count |
 | Research log | `data/gg/events.jsonl` (vetoes, capped, closing prices for CLV). Not on the page, not the Record, append-only and guarded |
+| Behind the scenes | **Research watch (never picks, never the Record).** `scripts/watch.py`, `ops.watch`, output `data/watch/` (events.jsonl append-only, summary.json; shape in docs/SPEC.md section 10). Track `pin_solo` ("Pinnacle moves alone", NBA's fallback): between two reads of a game, Pinnacle's de-vigged chance moves 2+ pts toward a side while the other books' median (4+ books, same line, hold 0-15%) moves under 2 pts, and Hard Rock's price on that side is at or better than Pinnacle's new fair price; window -150..+120, same six markets, same eligibility vetoes as the live engine, reads after the final injury report only. Track `pin_judge`: Hard Rock EV >= +2% vs Pinnacle's fair on the same line (newest read, first flag per player/market/game). Both graded by the Record's code at the frozen price, 1 unit; summary has W-L-P, units, hit rate vs average break-even, CLV vs Pinnacle's closing fair, by market, and how many candidate moves were seen with the gate that stopped each. Optional **W read** (watch-only, ~6 credits/game, ~180 min before kickoff, one per game, full tier only, only from credits left after reserving R and C for every unstarted game in the window and before the reset, paced over the weeks left in the month). Promotion to live needs Matt |
 
 Retired v1.1 (Oct 13-25: blended chance, parlays, 1st half, M/F/D pulls) is kept in section 8 and in the Record's retired block.
 
@@ -74,9 +78,9 @@ Retired v1.1 (Oct 13-25: blended chance, parlays, 1st half, M/F/D pulls) is kept
   `x-requests-remaining` every call; a key spent by another tool (Prop Check NHL) is marked shared and counted at a
   discount. Page warns when the pool is low.
 - **Files:** `index.html` (page), `data/slate.json`, `data/record.json`, `data/rules.json`, `data/status.json`,
-  `data/odds/<date>.json` (every price pulled, others included), `data/gg/events.jsonl` (research log), `data/state/`.
+  `data/odds/<date>.json` (every price pulled, others included), `data/gg/events.jsonl` (research log), `data/watch/` (behind-the-scenes tracks), `data/state/`.
   `fixtures/` = page test data, schema 2 (`?fixture=NAME`, built by `fixtures/make_fixtures.py`).
-  Tests: `python -m unittest discover -s tests` (130), incl. a full replayed Thursday on a synthetic 7-book consensus. Tests use frozen stat rows
+  Tests: `python -m unittest discover -s tests` (153), incl. a full replayed Thursday on a synthetic 7-book consensus. Tests use frozen stat rows
   in `tests/fixtures/rows/`, never the live data.
 
 ## 6. Reviews (scheduled tasks; each reads this file first and updates it last)
@@ -100,10 +104,14 @@ Retired v1.1 (Oct 13-25: blended chance, parlays, 1st half, M/F/D pulls) is kept
 11. Key pool shared with Prop Check NHL; both step down together if it runs low. Keys reset on the 1st.
 12. Timer chain holds one runner most of the day (free on public repos; GitHub discourages always-on use).
 13. The Record's retired block label is derived from entry dates ("Retired rules (Oct 18-22)"); the brief says Oct 18-25.
+14. **Watch tracks have few reads.** Each game has R (Fri/Sat after the injury report), C (about 70 min before kickoff) and at most one W (about 3 hours before): the R to C gap is about 2 days on early games, so Pinnacle's move between reads is mostly news, not a short-term move, and only R→W→C pairs exist. Expect few candidates; summary.json reads.by_window shows the real gaps. A flag made on the C read has no closing line, so its CLV is blank.
+15. **W budget is conservative and pre-reset it is zero.** W is made only from credits left after reserving R and C for every unstarted game before the reset and in the 7-day window, paced over the weeks left this month. On a stale pre-reset ledger (about 420 credits, shared keys at 0.5) the reserve for the 71 November games exceeds the pool, so no W is made until the keys are re-read after the reset.
+16. The watch tracks use the live eligibility vetoes as they stand NOW when a read is first scanned (a later change of a player's status does not rewrite old rows). Candidate rows are read-level: a side that stays a candidate on R, W and C is counted three times (`distinct_sides` counts it once).
 
 ## 8. Rule-change log
 | Date | Change | Why | Sample |
 |---|---|---|---|
+| 2026-10-30 | **Behind the scenes only:** NBA "Pinnacle moves alone" (`pin_solo`) and "Pinnacle as the price judge" (`pin_judge`) ported as research watch tracks, plus an optional watch-only W read. No live value changed; W cannot flag a live pick | Matt: keep the NBA option as the fallback if Gap + Guard finds no 3% edge | NBA discovery Oct 25-28: pin_solo 16 bets 12-4 +7.12u (v2.3), judge 6 bets 5-1 +3.18u; no NFL sample |
 | 2026-10-30 | **v2.0 Gap + Guard** (Matt's brief): price window -150..+120; NO parlays; full game main lines only (six markets); picks only from reads after the final injury report (no Early); market = other books' no-vig fair (Pinnacle required, 4+ books, gap >= 3%, guard 80/20, final EV >= 2%); R and C pulls only, monthly cap 1,000; safety pause at -10u; Research tab dropped; Record gets era gg1 plus a retired block | Customer rules and the NHL method | No NFL sample; thresholds from NHL |
 | 2026-10-20 | v1.1 (all tightenings): `too_good` 0.20→0.15 (open picks over it pulled); role-unstable blocks unders too (`elig.role_cv_blocks` both); no new pick on a price >6h old; `parlay_cap` 3→2, `parlay_leg_max_use` 2→1, caps count locked/pulled parlays (bug fix); new `room_change` (8% targets / 25% carries, 2 games) | Week 6: gap>0.15 4-12, role-unstable 1-5, parlays 0-7 (7 on one day), picks posted on 11h-old prices, Brooks/Hutchinson room changes | 28 graded singles, 7 parlays. Tightening allowed any time; no loosening before 100/market, 150 board |
 | 2026-10-20 | Page: Record headline shows singles + parlays; filter-aware week totals; pulled entries greyed "not counted"; calm mid-week no-props note; odds warning only on the backend low flag | UX review at 380px | Display only |
@@ -112,6 +120,7 @@ Retired v1.1 (Oct 13-25: blended chance, parlays, 1st half, M/F/D pulls) is kept
 | 2026-10-13 | v1.0 set (section 4) | First build. Sharp standard from the DS backtest and one live Hard Rock pull. Spotlight rules dropped | Backtest only; 0 graded live legs |
 
 ## 9. Session log (newest first, one line each)
+- 2026-10-30 evening: Builder added the behind-the-scenes watch tracks (`pin_solo`, `pin_judge`, watch-only W read, `data/watch/summary.json`; SPEC section 10). The watch step is soft (never marks the run failed). Live values untouched. Page tab for it is the UX agent's job.
 - 2026-10-30 5:30 PM: LIVE. Page (schema 2, Picks + Record) built and checked at 380px; QA SHIP WITH FIXES, both blockers fixed (injury feed down now blocks new picks; credit plan uses this week's games), 130 tests, guard_record ok. `config/stop_timer` removed (push restarts the chain); three NFL scheduled tasks re-enabled. Sharp's market list (pass yds, pass TDs, rush yds, rush att, receptions, rec yds) reported to Matt. Expect first R reads for Sunday games right after the push (October credits ~500, resets Nov 1). Watch: stale_min_others, final_report offsets for Nov 25/27 and Dec 19/25.
 - 2026-10-30 evening: Builder shipped the Gap + Guard backend (gg.py, odds R/C, engine, record eras, slate schema 2, docs/SPEC.md, 122 tests). Timer still PAUSED (config/stop_timer) until the CEO says go. Next: UX builds the page from docs/SPEC.md, QA, then go-live for Sun Nov 1.
 - 2026-10-30 4:40 PM: Matt's new brief and answers received (section 1). Rework to NHL-style Gap + Guard started, target live Sun Nov 1. Timer still PAUSED (config/stop_timer) until the rework passes QA. First job: probe which books/markets the feed has for NFL player props, then Sharp reports the market list to Matt before go-live.

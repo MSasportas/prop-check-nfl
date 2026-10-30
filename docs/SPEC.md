@@ -123,3 +123,51 @@ config/rules.json by run.py. The text lists what is in force (price window, mark
 `python scripts/run.py` (one cycle), `--explain` (every candidate with its verdict), `--dry-run` (copy of data, nothing
 written back), `--rebuild-record`. Tests: `python -m unittest discover -s tests`. Guards: `python scripts/guard_record.py`
 and `--history`. The timer is off while `config/stop_timer` exists.
+
+## 10. Behind the scenes: data/watch/summary.json (research only, for a Backstage tab)
+Two research tracks, ported from Prop Check NBA, run beside the live rule and **never** make a pick on the Picks tab,
+never enter the Record or era gg1, never move a live value. They write only under `data/watch/`:
+`events.jsonl` (append-only, guarded like `data/gg/events.jsonl`) and `summary.json` (rebuilt from the log each run).
+Config: `ops.watch` (`tracks.pin_solo`, `tracks.pin_judge`, W-read settings). Code: `scripts/watch.py`.
+
+- **pin_solo, "Pinnacle moves alone".** Between two consecutive reads of a game (R, W or C, taken after the final injury report,
+  before kickoff): Hard Rock quotes the same main line on both reads; Pinnacle quotes it on both and its de-vigged chance moves
+  >= 2 pts toward a side; the median move toward that side of the other books (same line, both reads, >= 4 books, hold 0-15%,
+  never the national `hardrockbet`) is under 2 pts; and Hard Rock's price on that side is at or better than Pinnacle's NEW fair
+  price (Pinnacle's chance x Hard Rock payout - 1 >= 0). Candidate = that side at Hard Rock's price on the later read, inside
+  the live window (-150..+120), the six live markets, the live eligibility vetoes (`engine.pre_check`). Flagged only from the
+  newest read of an unstarted game, read at most 60 min old, first flag per player / market / game.
+- **pin_judge, "Pinnacle as the price judge".** The newest read of an unstarted game: Hard Rock's price has EV >= +2% against
+  Pinnacle's de-vigged fair on the same line, price in the window, eligible. First flag per player / market / game.
+- Both are graded by the Record's own grading code (`grade.grade`, nflverse then ESPN box score) at the price frozen when
+  flagged, flat 1 unit, push and void = 0 units. Closing value: the flag's price against Pinnacle's fair on the same line on
+  the first C read after the flag's own read (a flag made on the C read has none).
+- **W read** (`pull: "W"`, ops.watch): an extra price read, same cost as R or C (6 credits: six markets, Hard Rock + 9 books),
+  ~180 min before kickoff (never later than 100), one per game (`w_reads`), only after R, only in the full tier, and only
+  with credits to spare after reserving R and C for every unstarted game in the plan window and before the keys reset
+  (`w_margin` 12 kept back; `w_pace` shares the spare over the weeks left in the month). W never makes a live pick
+  (`gg.T.flag_pulls` stays R and C). A W that cannot be paid or fails is simply not made and never marks the odds step failed.
+
+summary.json (schema 1; `updated_at` and the numbers change, the shape does not):
+```
+{schema 1, updated_at, note,
+ reads   {games_with_pairs, pairs, by_window [ {window "R→C"|"R→W"|"W→C", pairs, avg_gap_hours, avg_pin_lines,
+                                                avg_moves} ]},      // how far apart the reads are, how many Pinnacle lines, how many moved
+ credits {w_reads, w_credits, month},                              // W reads this month, from the odds ledger
+ tracks  [ { track "pin_solo"|"pin_judge", label, about, from_slate, active,
+             total   {flags, w, l, push, void, pending, units, hit_rate, avg_break_even, edge_pts,
+                      clv {n, avg, positive}},                     // hit_rate and avg_break_even are fractions; edge_pts = hit_rate - avg_break_even
+             by_market [ {market, label, flags, w, l, push, void, units, hit_rate} ],
+             seen    {reads_scanned, candidates, distinct_sides, would_fire,
+                      by_gate [ {gate, label, n} ]},               // every Pinnacle move (solo) / side at +2% (judge) and the gate that stopped it
+             weeks   [ {slate, label, flags, w, l, push, void, pending, units, bets [BET]} ] } ] }   // newest first; bets only for the newest ops.watch.summary_weeks
+BET {id, slate, game_id, game "SEA @ DEN", start, player, team, opp, home, market, market_label, side, line, bet, price (frozen),
+     read "R"|"W"|"C", read_at, prev_read, prev_at, window, flagged_at,
+     solo only: pin_before, pin_after, others_move, n_others, ev_vs_pin;  judge only: pin_fair, pin_ev,
+     result "W"|"L"|"PUSH"|"VOID"|null, actual "had 14"|null, units|null, close_fair|null, clv|null}
+```
+Gates (`by_gate[].gate`): `hr_line` Hard Rock did not quote the line on both reads; `hr_feed` Hard Rock price failed the feed
+check; `books` fewer than 4 other books; `others_moved` the other books moved too; `worse_than_fair` Hard Rock worse than
+Pinnacle's fair; `price_window`; `whole_line` (off by default); `ineligible` a live veto; `late` read too old to flag;
+`superseded` a newer read existed; `already_flagged`. A row with no gate is a flag (`would_fire`).
+Event types in events.jsonl: `pair`/`scan` (a pair of reads / one read was scanned), `cand`, `flag`, `close`, `graded`.
