@@ -1,0 +1,50 @@
+# One-time research probe: which books post which NFL player prop markets (scripts/book_probe.py, about 70 credits).
+# Separate from run.yml so the timer (and its stop switch) is untouched. Starts by hand (workflow_dispatch) or when
+# probe/request.json is pushed. Research only: it writes data/state/book_probe*.json* and the credit ledger, nothing else.
+# Secrets: ODDS_API_KEYS and ODDS_API_KEYS_2, passed by name in the probe step only. Never dump the whole secrets object.
+name: probe
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['probe/request.json']
+permissions:
+  contents: write
+concurrency:
+  group: repo-writer
+  cancel-in-progress: false
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: book probe
+        id: probe
+        env:
+          ODDS_API_KEYS: ${{ secrets.ODDS_API_KEYS }}
+          ODDS_API_KEYS_2: ${{ secrets.ODDS_API_KEYS_2 }}
+        run: python scripts/book_probe.py
+
+      - name: publish result
+        if: always()
+        run: |
+          git config user.name "prop-check-bot"
+          git config user.email "bot@users.noreply.github.com"
+          for f in data/state/book_probe.json data/state/book_probe_pairs.json.gz data/state/credits.json; do
+            [ -f "$f" ] && git add "$f"
+          done
+          if git diff --cached --quiet; then echo "nothing to publish"; exit 0; fi
+          git commit -q -m "book probe result"
+          for attempt in 1 2; do
+            git fetch -q origin main
+            if git rebase -q origin/main && git push -q origin HEAD:main; then echo "pushed"; exit 0; fi
+            git rebase --abort >/dev/null 2>&1 || true
+            sleep 5
+          done
+          echo "could not push the probe result"
+          exit 1

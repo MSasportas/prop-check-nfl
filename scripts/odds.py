@@ -1,7 +1,7 @@
 """odds.py: Hard Rock prices from the-odds-api (americanfootball_nfl, bookmaker hardrockbet_fl).
 
 What lives here
-  keys      env ODDS_API_KEYS only (comma separated). Never printed, never written. A key that is used up or
+  keys      env ODDS_API_KEYS (then optional ODDS_API_KEYS_2), comma separated. Never printed, never written. A key that is used up or
             refused (401 / 429) is skipped and the next one is tried.
   ledger    data/state/credits.json: what each key has left (by POSITION, never the key text) and what we spent.
             The x-requests-remaining header is trusted on every answer (the keys may be shared with other tools).
@@ -78,8 +78,12 @@ def hold(price_a, price_b):
 
 # ---------------------------------------------------------------- keys and ledger (ported from NHL, proven)
 def load_keys():
-    raw = os.environ.get("ODDS_API_KEYS", "")
-    keys = [k.strip() for k in raw.replace("\n", ",").split(",") if k.strip()]
+    """ODDS_API_KEYS, then ODDS_API_KEYS_2 (an optional second secret; same order as Prop Check NHL). Only the probe
+    workflow passes the second one today; with it unset this is exactly the old behaviour."""
+    keys = []
+    for var in ("ODDS_API_KEYS", "ODDS_API_KEYS_2"):
+        raw = os.environ.get(var, "")
+        keys += [k.strip() for k in raw.replace("\n", ",").split(",") if k.strip()]
     for k in keys:
         common.register_secret(k)
     return keys

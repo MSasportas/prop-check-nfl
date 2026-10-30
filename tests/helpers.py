@@ -21,7 +21,7 @@ import common   # noqa: E402
 import run      # noqa: E402
 
 WORLD = os.path.join(HERE, "fixtures", "world")
-ENV = ("PC_NOW", "PC_DATA_DIR", "PC_ODDS_FIXTURE_DIR", "PC_FEED_FIXTURE_DIR", "ODDS_API_KEYS", "PC_RAISE",
+ENV = ("PC_NOW", "PC_DATA_DIR", "PC_ODDS_FIXTURE_DIR", "PC_FEED_FIXTURE_DIR", "ODDS_API_KEYS", "ODDS_API_KEYS_2", "PC_RAISE",
        "GITHUB_TOKEN", "GH_TOKEN", "PC_CONFIG")
 SEA_DEN = "2026_06_SEA_DEN"
 HOU_JAX = "2026_06_HOU_JAX"
