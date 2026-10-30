@@ -52,12 +52,72 @@ def fresh(payload, iso_z):
     return json.loads(s)
 
 
+SIX = ("player_pass_yds", "player_pass_tds", "player_rush_yds", "player_rush_attempts", "player_receptions",
+       "player_reception_yds")
+BOOKS7 = ("pinnacle", "draftkings", "fanduel", "betmgm", "betonlineag", "betrivers", "bovada")
+
+
+def _am(prob_be):
+    """break-even probability -> American integer price"""
+    dec = 1.0 / prob_be
+    return int(round((dec - 1.0) * 100)) if dec >= 2.0 else int(round(-100.0 / (dec - 1.0)))
+
+
+def _dec(price):
+    return 1.0 + (100.0 / -price if price < 0 else price / 100.0)
+
+
+def _be(price):
+    return 1.0 / _dec(price)
+
+
+def add_books(payload, edges=None, books=BOOKS7, last_update_z="2026-10-14T21:00:00Z", skip=(), jitter=True):
+    """Give a Hard Rock-only payload the other books' prices (a synthetic consensus built from Hard Rock's own pairs).
+    Every book prices every two-sided Hard Rock pair of the six picked markets at Hard Rock's de-vigged fair (a hair of
+    deterministic jitter per book), with a 5% hold (Pinnacle 3%): Hard Rock's price is then 2-3% WORSE than the market, no
+    gap anywhere. edges: {(feed_key, player, side): ev} makes the market fair for that side such that Hard Rock's price has
+    that EV against it (+0.04 = a 4% gap). skip: {(book, feed_key)} markets that book leaves out."""
+    edges = edges or {}
+    js = json.loads(json.dumps(payload))
+    hr = next(b for b in js["bookmakers"] if b["key"] == "hardrockbet_fl")
+    new = {b: {"key": b, "title": b, "last_update": last_update_z, "markets": []} for b in books}
+    for m in hr["markets"]:
+        if m["key"] not in SIX:
+            continue
+        pairs = {}
+        for o in m["outcomes"]:
+            pairs.setdefault((o["description"], o["point"]), {})[o["name"].lower()] = o["price"]
+        for bi, b in enumerate(books):
+            if (b, m["key"]) in skip:
+                continue
+            outs = []
+            for (who, pt), pr in pairs.items():
+                if "over" not in pr or "under" not in pr:
+                    continue
+                bo, bu = _be(pr["over"]), _be(pr["under"])
+                fair_over = bo / (bo + bu)
+                for side in ("over", "under"):
+                    key = (m["key"], who, side)
+                    if key in edges:
+                        fs = (1.0 + edges[key]) / _dec(pr[side])
+                        fair_over = fs if side == "over" else 1.0 - fs
+                if jitter and (m["key"], who, "over") not in edges and (m["key"], who, "under") not in edges:
+                    fair_over += (bi - len(books) / 2.0) * 0.0004
+                hold = 0.03 if b == "pinnacle" else 0.05
+                outs.append({"name": "Over", "description": who, "price": _am(fair_over * (1 + hold)), "point": pt})
+                outs.append({"name": "Under", "description": who, "price": _am((1 - fair_over) * (1 + hold)), "point": pt})
+            new[b]["markets"].append({"key": m["key"], "last_update": last_update_z, "outcomes": outs})
+    js["bookmakers"] = [b for b in js["bookmakers"] if b["key"] == "hardrockbet_fl"] + [new[b] for b in books]
+    return js
+
+
 def legacy_role_cfg():
     """The live rules with the v1.0 role rule (role_unstable blocks overs only). The replayed Thursday is built
     around one pick (E. Wilson under 1.5 catches) whose role is jumpy; v1.1 blocks it. The v1.1 rule has its own
     tests (test_engine.Tightened); the replay keeps testing everything else on the live rules."""
     c = cfg()
     c["values"]["elig"]["role_cv_blocks"] = "over"
+    c["ops"]["gap_guard"]["live_from"] = "2020-W01"       # the test world is weeks 5-8 of 2026, before the real go-live
     return c
 
 
@@ -204,5 +264,5 @@ class World:
         """The first pick on this player this week (posting order), optionally in one market."""
         slate = slate or self.slate()
         ps = [p for p in slate["picks"] if p["player_id"] == pid and (market is None or p["market"] == market)]
-        ps.sort(key=lambda p: p["first_price_at"])
+        ps.sort(key=lambda p: p["read_at"])
         return ps[0] if ps else None

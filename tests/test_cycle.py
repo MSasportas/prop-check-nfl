@@ -34,6 +34,9 @@ class Cycle(unittest.TestCase):
             shutil.copytree(os.path.join(REPO, d), os.path.join(self.runner, d),
                             ignore=shutil.ignore_patterns("__pycache__"))
         shutil.copy(os.path.join(REPO, ".gitignore"), self.runner)
+        stop = os.path.join(self.runner, "config", "stop_timer")      # the real repo may be paused: the test copy never is
+        if os.path.exists(stop):
+            os.unlink(stop)
         helpers.write(os.path.join(self.runner, "config", "rules.json"), helpers.legacy_role_cfg())  # see helpers
         os.makedirs(os.path.join(self.runner, "data", "record"))
         shutil.copytree(os.path.join(self.world.data, "state"), os.path.join(self.runner, "data", "state"))
@@ -114,9 +117,9 @@ class Cycle(unittest.TestCase):
         st = json.loads(self.origin_file("data/status.json"))
         self.assertEqual(st["runner"]["chain_link"], 7)
         sl = json.loads(self.origin_file("data/slate.json"))
-        self.assertEqual(len(sl["picks"]), 1)                       # the Thursday pick, from the real payload
-        self.assertIsNotNone(self.origin_file("data/research/index.json"))
-        self.assertIsNotNone(self.origin_file("data/odds/2026-10-13.json"))
+        self.assertEqual(sl["picks"], [])                            # Tuesday: before the final injury report, no pick
+        self.assertEqual(sl["schema"], 2)
+        self.assertIsNone(self.origin_file("data/research/index.json"))   # the Research tab is gone
         n = len(self.subjects())
         r = self.cycle("10:08", PC_RUNNER_ITERATION="2")
         self.assertEqual(r.returncode, 0, r.stdout + r.stderr)

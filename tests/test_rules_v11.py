@@ -1,8 +1,6 @@
-"""Rules v1.1 (Sharp, Oct 20): too_good 0.15, role_unstable blocks unders, no new pick from a price 6h+ old,
-parlays capped at 2 a game day with each leg in 1 (counting every parlay posted, locked and pulled too), and the
-room_change rule (a big-share WR/TE/RB joins or leaves a team)."""
+"""Live rule values against the customer brief (Oct 30), the role_unstable rule and the room_change rule (a big-share
+WR/TE/RB joins or leaves a team)."""
 import os
-import types
 import unittest
 from datetime import timedelta
 
@@ -11,8 +9,6 @@ from helpers import SEA_DEN, WILSON, World
 import common
 import engine
 import model
-import record
-import run
 import stats
 
 LIVE = helpers.cfg()
@@ -20,17 +16,30 @@ V = LIVE["values"]
 
 
 class Values(unittest.TestCase):
-    def test_values(self):
-        self.assertEqual((V["too_good"], V["news_gap"]), (0.15, 0.15))
-        self.assertEqual(V["elig"]["role_cv_blocks"], "both")
-        self.assertEqual(V["new_pick_max_price_age_hours"], 6)
-        self.assertEqual((V["parlay_cap"], V["parlay_leg_max_use"]), (2, 1))
+    def test_live_values_match_the_customer_rules(self):
+        g = LIVE["ops"]["gap_guard"]["thresholds"]
+        self.assertEqual((V["price_gate"], V["max_price"]), (-150, 120))
+        self.assertEqual((g["gap_ev"], g["books_min"], g["pin_ev_min"], g["final_ev"]), (0.03, 4, 0, 0.02))
+        self.assertEqual((g["market_weight"], g["model_weight"]), (0.8, 0.2))
+        self.assertEqual(g["flag_pulls"], ["R", "C"])
+        self.assertEqual(LIVE["ops"]["book"], "hardrockbet_fl")
+        self.assertEqual(LIVE["ops"]["never_book"], ["hardrockbet"])
+        self.assertNotIn("hardrockbet", LIVE["ops"]["consensus_books"])
+        self.assertIn("pinnacle", LIVE["ops"]["consensus_books"])
+        import odds
+        self.assertEqual(len(odds.request_books(LIVE)), 10)                      # Hard Rock + 9: one billed region
+        self.assertEqual(LIVE["ops"]["monthly_cap"], 1000)
+        self.assertEqual(sorted(LIVE["ops"]["gap_guard"]["markets"]),
+                         ["pass_td", "pass_yds", "rec", "rec_yds", "rush_att", "rush_yds"])
         engine.check_config(LIVE)
 
-    def test_news_gap_above_too_good_is_refused(self):
-        bad = {"values": dict(V, news_gap=0.2, too_good=0.15)}
-        with self.assertRaises(engine.ConfigError):
-            engine.check_config(bad)
+    def test_no_parlays_no_first_half_no_alt_lines_in_the_markets(self):
+        for name, m in LIVE["ops"]["markets"].items():
+            self.assertEqual(m["period"], "FG", name)
+            self.assertNotIn("alternate", m["feed_key"])
+            self.assertNotIn("h1", m["feed_key"])
+        self.assertTrue(all("|FG|" in k for k in V["shrink"]))
+        self.assertNotIn("parlay", " ".join(LIVE["ops"]) + " ".join(V))
 
     def test_role_unstable_blocks_unders_when_both(self):
         f = ["role_unstable"]
@@ -38,107 +47,7 @@ class Values(unittest.TestCase):
         self.assertFalse(model.pick_ok(f, "under", "both"))
         self.assertFalse(model.pick_ok(f, "over", "both"))
         self.assertTrue(model.pick_ok(["role_jump"], "under", "both"))
-
-    def test_stale_price(self):
-        now = common.parse_iso("2026-10-20T16:00:00-04:00")
-        self.assertFalse(engine.stale_price(now, now - timedelta(hours=6), V))
-        self.assertTrue(engine.stale_price(now, now - timedelta(hours=6, minutes=1), V))
-        self.assertTrue(engine.stale_price(now, "2026-10-20T09:00:00-04:00", V))
-        self.assertFalse(engine.stale_price(now, None, V))
-
-
-class OnTheReplay(unittest.TestCase):
-    """SEA at DEN: the Tuesday pick (Wilson under 1.5 catches) under the v1.0 role rule, then v1.1."""
-
-    def setUp(self):
-        self.w = World()
-
-    def tearDown(self):
-        self.w.close()
-
-    def test_old_price_makes_no_new_pick(self):
-        self.w.at("2026-10-13T10:05")
-        cfg = helpers.legacy_role_cfg()
-
-        def verdict(now):
-            r = run.Run(cfg, common.parse_iso(now), readonly=True)
-            r.load_schedule()
-            rows = engine.explain(r.build_inputs())
-            return next(x["verdict"] for x in rows if x["player"] == "Emanuel Wilson" and x["market"] == "rec"
-                        and x["side"] == "under")
-        self.assertEqual(verdict("2026-10-13T15:30:00-04:00"), "QUALIFIES")
-        self.assertEqual(verdict("2026-10-13T16:30:00-04:00"), engine.STALE)
-
-    def test_shown_pick_failing_a_tightened_rule_is_pulled(self):
-        w = self.w
-        w.at("2026-10-13T10:05")
-        self.assertEqual(w.pick(WILSON)["state"], "open")
-        n = len(w.events())
-        helpers.write(os.environ["PC_CONFIG"], LIVE)              # the v1.1 rules arrive
-        w.at("2026-10-13T10:15")
-        p = w.pick(WILSON)
-        self.assertEqual(p["pulled"]["reason"], "Rules tightened: His role swings too much game to game.")
-        ev = w.events()
-        self.assertEqual([e["t"] for e in ev[n:] if e["id"] == p["id"]], ["pulled"])
-
-
-# ---------------------------------------------------------------- parlays: every posted parlay counts
-def leg(i, day, game, p=0.66, price=-120):
-    return i, {"p": p, "b": 0.5455, "price": price, "settled": "inactives",
-               "price_at": common.parse_iso(day + "T10:00:00-04:00"), "pid": "p" + i, "team": "T" + game,
-               "game_id": game, "start": day + "T13:00:00-04:00"}
-
-
-def shown_single(i, day, game):
-    return {"t": "shown", "kind": "single", "id": i, "at": day + "T09:00:00-04:00", "slate": "2026-W07",
-            "pick": {"id": i, "game_id": game, "player_id": "p" + i, "team": "T" + game,
-                     "start": day + "T13:00:00-04:00", "price": -120, "price_at": day + "T09:00:00-04:00"}}
-
-
-def shown_parlay(pid, legs, day):
-    return {"t": "shown", "kind": "parlay", "id": pid, "at": day + "T09:00:00-04:00", "slate": "2026-W07",
-            "parlay": {"id": pid, "legs": legs, "n": len(legs), "price": 264, "price_at": day + "T09:00:00-04:00",
-                       "start": day + "T13:00:00-04:00"}}
-
-
-class ParlayCaps(unittest.TestCase):
-    def run_parlays(self, events, legs, v=V):
-        inp = types.SimpleNamespace(v=v, slate="2026-W07")
-        return [e for e in engine._parlays(inp, record.fold(events), dict(legs), "2026-10-25T10:00:00-04:00")
-                if e["t"] == "shown"]
-
-    def test_locked_parlays_count_toward_the_day_cap(self):
-        day = "2026-10-25"
-        early = [shown_single("a", day, "g1"), shown_single("b", day, "g2"),
-                 {"t": "locked", "id": "a", "at": day + "T13:00:00-04:00"},
-                 {"t": "locked", "id": "b", "at": day + "T13:00:00-04:00"},
-                 shown_parlay("2026-W07:P:old", ["a", "b"], day),
-                 {"t": "locked", "id": "2026-W07:P:old", "at": day + "T13:00:00-04:00"}]
-        late = [leg(c, day, "g" + c) for c in "cdefgh"]
-        shown = self.run_parlays(early, late)
-        self.assertEqual(len(shown), V["parlay_cap"] - 1)               # 2 a day, 1 already posted (locked)
-        two_locked = early + [shown_parlay("2026-W07:P:old2", ["a", "b"], day),
-                              {"t": "locked", "id": "2026-W07:P:old2", "at": day + "T13:00:00-04:00"}]
-        self.assertEqual(self.run_parlays(two_locked, late), [])
-
-    def test_a_leg_in_a_pulled_parlay_is_used(self):
-        day = "2026-10-25"
-        ev = [shown_single("c", day, "gc"), shown_single("x", day, "gx"),
-              shown_parlay("2026-W07:P:px", ["c", "x"], day),
-              {"t": "pulled", "id": "x", "at": day + "T09:30:00-04:00", "reason": "Listed out."},
-              {"t": "pulled", "id": "2026-W07:P:px", "at": day + "T09:30:00-04:00", "reason": "x leg pulled."}]
-        live = [leg(c, day, "g" + c) for c in "cde"]
-        shown = self.run_parlays(ev, live)
-        self.assertTrue(shown)
-        for e in shown:
-            self.assertNotIn("c", e["parlay"]["legs"])                  # c already in a parlay today (max use 1)
-
-    def test_each_leg_in_one_parlay(self):
-        day = "2026-10-25"
-        shown = self.run_parlays([], [leg(c, day, "g" + c) for c in "abcdefgh"])
-        self.assertEqual(len(shown), 2)
-        used = [l for e in shown for l in e["parlay"]["legs"]]
-        self.assertEqual(len(used), len(set(used)))
+        self.assertEqual(V["elig"]["role_cv_blocks"], "both")
 
 
 # ---------------------------------------------------------------- room change
@@ -208,10 +117,10 @@ class RoomChange(unittest.TestCase):
         people = {"mhj": self.person("HOU", name="Marvin Harrison Jr.")}
         st = store_with({"mhj": ["Marvin Harrison Jr.", "WR"]}, self.TEAMS, rows)
         inp, g = inputs(st, people, 6)                                        # ARI played week 5 only since
-        self.assertEqual(inp.room_change(g, "ARI", "long_rec"),
+        self.assertEqual(inp.room_change(g, "ARI", "rec_yds"),
                          "Marvin Harrison Jr. left ARI (now with HOU): receiving picks wait 2 games")
         inp, g = inputs(st, people, 7)                                        # ARI played weeks 5 and 6
-        self.assertIsNone(inp.room_change(g, "ARI", "long_rec"))
+        self.assertIsNone(inp.room_change(g, "ARI", "rec_yds"))
 
     def test_reserve_and_release_are_leaves_weekly_out_is_not(self):
         rows = [("rb", "ARI", w, 1, 15) for w in (1, 2, 3, 4, 5)]           # 15 of 35 carries = 43%

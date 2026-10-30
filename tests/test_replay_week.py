@@ -1,91 +1,127 @@
-"""A full simulated Thursday, offline: SEA at DEN, Oct 15 2026 (8:15 PM ET), on the real Hard Rock payload.
+"""A full simulated Thursday, offline: SEA at DEN, Oct 15 2026 (8:15 PM ET), Gap + Guard on a synthetic consensus.
 
-  Tue 10:05 AM   markets check (M) then full pull (F); one Early pick (E. Wilson under 1.5 catches -110)
-  Tue 10:15 AM   nothing due: no new credits, no new Record events
-  Wed  5:10 PM   final injury report counts in (Wed 4 PM + 60 min): pick moves to "injury_report"; R refresh
-  Thu  7:05 PM   inactives posted for both teams (3+ each): pick moves to "inactives"; C check (kickoff - 75 min)
-  Thu  8:20 PM   kickoff passed: pick and anything open lock
-  Thu 11:59 PM   ESPN says final, box score in: graded from the box (source espn_box), Record rebuilt
+Hard Rock's prices are the real SEA@DEN payload. The other books (Pinnacle + 6) are built from Hard Rock's own pairs
+(helpers.add_books): no gap anywhere except where a test plants one.
+
+  Tue 10:05 AM   nothing: no read is due before the final injury report, so there is no 'Early' pick
+  Wed  5:10 PM   final injury report counts in (Wed 4 PM + 60 min): read R. Planted: E. Wilson under 17.5 carries +100 (+4% gap, model
+                 agrees) = the one pick; Wilson's second leg (rec yds) is capped (1 per player); S. Darnold over 218.5 pass yds
+                 (+3.5% gap, model says no) = a veto in the research log; D. Dobbins has only 3 other books = nothing
+  Thu  7:05 PM   inactives posted for both teams: read C (kickoff - 70 min): pick moves to 'Inactives confirmed', price final
+  Thu  8:20 PM   kickoff passed: locked
+  Thu 11:59 PM   ESPN says final, box score in: graded from the box (source espn_box) at the frozen price
 Every run checks the Record only grew at the end (helpers.World.at)."""
 import json
 import os
 import unittest
 
 import helpers
-from helpers import SEA_DEN, WILSON, World
+from helpers import SEA_DEN, WILSON, World, add_books
 import common
 
+EDGES = {("player_reception_yds", "Emanuel Wilson", "under"): 0.04,
+         ("player_rush_attempts", "Emanuel Wilson", "under"): 0.04,
+         ("player_pass_yds", "Sam Darnold", "over"): 0.035}
 
-def box(wilson_rec):
+
+def box(wilson_rec, wilson_yds="9", carries="15"):
     """An ESPN summary for SEA at DEN with Wilson's receiving line (other players omitted)."""
     return {"header": {"competitions": [{"status": {"type": {"completed": True, "state": "post"}}}]},
             "boxscore": {"players": [{"team": {"abbreviation": "SEA"}, "statistics": [
                 {"name": "receiving", "keys": ["receptions", "receivingYards", "yardsPerReception",
                                                "receivingTouchdowns", "longReception", "receivingTargets"],
-                 "athletes": [{"athlete": {"id": "4887558"}, "stats": [str(wilson_rec), "9", "4.5", "0", "6", "2"]}]},
+                 "athletes": [{"athlete": {"id": "4887558"}, "stats": [str(wilson_rec), wilson_yds, "4.5", "0", "6", "2"]}]},
                 {"name": "rushing", "keys": ["rushingAttempts", "rushingYards", "yardsPerRushAttempt",
                                              "rushingTouchdowns", "longRushing"],
-                 "athletes": [{"athlete": {"id": "4887558"}, "stats": ["18", "77", "4.3", "1", "21"]}]}]}]}}
+                 "athletes": [{"athlete": {"id": "4887558"}, "stats": [carries, "77", "4.3", "1", "21"]}]}]}]}}
+
+
+def gg_log(w):
+    p = w.path("gg", "events.jsonl")
+    if not os.path.exists(p):
+        return []
+    with open(p) as f:
+        return [json.loads(l) for l in f.read().splitlines() if l]
 
 
 class Week(unittest.TestCase):
     def setUp(self):
         self.w = World(pool=(29, 500, 500, 326, 109, 500, 415))
+        self.w.set_odds(SEA_DEN, add_books(self.w.sea_den, EDGES), "2026-10-14T21:00:00Z")
 
     def tearDown(self):
         self.w.close()
 
     def test_thursday(self):
         w = self.w
-        # ---- Tuesday morning: M then F, one early pick
+        # ---- Tuesday morning: no read is due before the final injury report; no pick, no credits spent
         s = w.at("2026-10-13T10:05")
+        self.assertEqual(s["picks"], [])
+        self.assertEqual(w.status()["due"], [])
+        self.assertEqual(w.status()["pool_total"], 29 + 500 + 500 + 326 + 109 + 500 + 415)
+        self.assertEqual(s["schema"], 2)
+        self.assertEqual(s["empty"]["code"], "no_picks_yet")
+
+        # ---- Wednesday 5:10 PM: the final report is in; read R; one pick
+        s = w.at("2026-10-14T17:10")
         st = w.status()
-        pulls = [d["pull"] for d in st["due"] if d["game_id"] == SEA_DEN]
-        self.assertEqual(pulls[:2], ["M", "F"])
-        self.assertEqual(st["tier"], "full_plus")
-        p = w.pick(WILSON)
-        self.assertIsNotNone(p, s["picks"])
-        self.assertEqual((p["bet"], p["price"], p["settled"], p["state"], p["book"]),
-                         ("Under 1.5 receptions", -110, "early", "open", "Hard Rock"))
-        self.assertEqual(p["id"], "2026-W06:2026_06_SEA_DEN:00-0038797:rec:FG:1.5:under")
-        self.assertEqual((p["p_pct"], p["breakeven_pct"]), (57, 52))
-        self.assertEqual(s["label"], "Week 6")
-        self.assertIsNone(s["empty"])
-        g = next(g for g in s["games"] if g["id"] == SEA_DEN)
-        self.assertEqual((g["props_state"], g["settled"], g["started"]), ("ok", "early", False))
-        # Jaxon Smith-Njigba is listed Questionable on the probe: never a pick
+        due = [d for d in st["due"] if d["game_id"] == SEA_DEN]
+        self.assertEqual([d["pull"] for d in due], ["R"])
+        self.assertEqual(due[0]["cost_max"], 6)
+        self.assertEqual(st["tier"], "full")
+        picks = [p for p in s["picks"] if p["state"] == "open"]
+        self.assertEqual(len(picks), 1, [(p["player"], p["bet"]) for p in s["picks"]])
+        p = picks[0]
+        self.assertEqual((p["player_id"], p["market"], p["bet"], p["price"], p["book"], p["state"], p["settled"]),
+                         (WILSON, "rush_att", "Under 17.5 carries", 100, "Hard Rock", "open", "injury_report"))
+        self.assertEqual(p["id"], "2026-W06:2026_06_SEA_DEN:00-0038797:rush_att:17.5:under")
+        self.assertEqual((p["read_pull"], p["settled_text"], p["n_books"], p["pinnacle"], p["rank"]),
+                         ("R", "Injury report in", 7, True, 1))
+        self.assertTrue(3.5 <= p["gap_pct"] <= 4.5, p["gap_pct"])
+        self.assertTrue(p["vs"][:2] in ("+3", "+4") and p["vs"].endswith("% vs 7 books (Pinnacle in)"), p["vs"])
+        self.assertGreaterEqual(p["final_ev_pct"], 2.0)
+        self.assertEqual(p["flags"]["price_final"], False)
+        self.assertEqual(p["flags"]["weather"]["state"], "not_checked")
+        self.assertIsNone(p["pulled"])
+        self.assertEqual(p["game"], "SEA @ DEN")
+        self.assertEqual(s["games"][0]["settled"] if s["games"][0]["id"] == SEA_DEN else
+                         next(g for g in s["games"] if g["id"] == SEA_DEN)["settled"], "injury_report")
+        # no parlays, no 1st half, no research, no Early anywhere
+        self.assertNotIn("parlays", s)
+        self.assertFalse(os.path.exists(w.path("research")))
+        self.assertNotIn("early", json.dumps(s["picks"]).lower())
+        shown = [e for e in w.events() if e["t"] == "shown"]
+        self.assertEqual(len(shown), 1)
+        self.assertEqual(shown[0]["pick"]["era"], "gg1")
+        self.assertEqual(shown[0]["pick"]["period"], "FG")
+        self.assertEqual(shown[0]["pick"]["read_pull"], "R")
+        # Jaxon Smith-Njigba is listed Questionable: never a pick. Wilson's rush attempts leg is capped (1 per player)
         self.assertIsNone(w.pick(helpers.JSN))
+        log = gg_log(w)
+        self.assertEqual(sorted((e["t"], e["player"], e["market"], e["side"]) for e in log),
+                         [("capped", "Emanuel Wilson", "rec_yds", "under"),
+                          ("veto", "Sam Darnold", "pass_yds", "over")])
         credits = w.status()["pool_total"]
         n_events = len(w.events())
+        self.assertEqual(credits, 29 + 500 + 500 + 326 + 109 + 500 + 415 - 6)     # one R read: six markets, one region
 
-        # ---- ten minutes later: nothing due, no credits, no events
-        w.at("2026-10-13T10:15")
+        # ---- ten minutes later: nothing due, no credits, no new events
+        w.at("2026-10-14T17:20")
         self.assertEqual(w.status()["pool_total"], credits)
         self.assertEqual(len(w.events()), n_events)
 
-        # ---- Wednesday after the final report: injury_report + R refresh (same prices)
-        w.set_odds(SEA_DEN, w.sea_den, "2026-10-14T21:00:00Z")
-        s = w.at("2026-10-14T17:10")
-        self.assertEqual(w.pick(WILSON)["settled"], "injury_report")
-        self.assertIn("R", [d["pull"] for d in w.status()["due"] if d["game_id"] == SEA_DEN])
-        hist = [h["text"] for h in w.pick(WILSON)["history"]]
-        self.assertEqual(hist, ["Posted at -110", "Injury report in"])
-
-        # ---- Thursday: inactives posted by both teams 90 minutes out; price moves -110 -> -115
+        # ---- Thursday 7:05 PM: inactives posted by both teams; read C; the pick is still good and 'price final'
         w.post_inactives(26, [("Zach Charbonnet", "RB"), ("Chazz Surratt", "LB"), ("Julian Neal", "CB")])
         w.post_inactives(7, [("Riley Moss", "CB"), ("Pat Surtain II", "CB"), ("Pat Bryant", "WR")])
-        w.set_price(SEA_DEN, "player_receptions", "Emanuel Wilson", "under", -115, last_update_z="2026-10-15T22:40:00Z")
-        w.set_price(SEA_DEN, "player_receptions", "Emanuel Wilson", "over", -115, last_update_z="2026-10-15T22:40:00Z")
+        w.set_odds(SEA_DEN, add_books(w.sea_den, EDGES, last_update_z="2026-10-15T23:00:00Z"), "2026-10-15T23:00:00Z")
         s = w.at("2026-10-15T19:05")
-        p = w.pick(WILSON)
-        self.assertEqual(p["settled"], "inactives")
-        self.assertEqual((p["price"], p["first_price"], p["grade_price"]), (-115, -110, -115))
         self.assertIn("C", [d["pull"] for d in w.status()["due"] if d["game_id"] == SEA_DEN])
-        ina = s["status"]["inactives"]
-        self.assertEqual(ina["state"], "ok")
-        res = helpers.load(w.path("research", "%s.json" % SEA_DEN))
-        self.assertTrue(res["inactives"]["posted"])
-        self.assertIn("Zach Charbonnet", [x["player"] for x in res["inactives"]["list"]])
+        p = w.pick(WILSON)
+        self.assertEqual((p["settled"], p["state"], p["price"], p["flags"]["price_final"]),
+                         ("inactives", "open", 100, True))
+        self.assertEqual(p["settled_text"], "Inactives confirmed")
+        self.assertEqual([h["text"] for h in p["history"]], ["Posted at +100", "Inactives confirmed"])
+        self.assertEqual(s["status"]["inactives"]["state"], "ok")
 
         # ---- kickoff: locked, nothing open, no more pulls for this game
         s = w.at("2026-10-15T20:20")
@@ -96,18 +132,19 @@ class Week(unittest.TestCase):
         self.assertEqual(len(rec["weeks"]), 1)
         self.assertEqual(rec["weeks"][0]["entries"][0]["result"], None)       # on the Record, waiting
 
-        # ---- final: ESPN box score grades it (1 catch: under 1.5 wins at -115)
+        # ---- final: ESPN box score grades it (15 carries: under 17.5 wins at +100)
         w.set_scoreboard("20261015", "401872995", "post", away=20, home=17)
         w.set_summary("401872995", box(1))
         s = w.at("2026-10-15T23:59")
         p = w.pick(WILSON)
-        self.assertEqual(p["graded"], {"result": "W", "actual": "had 1", "units": round(100 / 115.0, 4)})
+        self.assertEqual(p["graded"], {"result": "W", "actual": "had 15", "units": 1.0})
         ev = [e for e in w.events() if e["t"] == "graded"]
         self.assertEqual(ev[0]["source"], "espn_box")
         rec = helpers.load(w.path("record.json"))
         self.assertEqual((rec["summary"]["headline"]["w"], rec["summary"]["headline"]["l"]), (1, 0))
-        self.assertEqual(rec["summary"]["rows"][0]["key"], "rec|FG")
-        self.assertEqual(rec["summary"]["rows"][0]["label"], "Receptions")
+        self.assertEqual(rec["summary"]["rows"][0]["key"], "rush_att|FG")
+        self.assertEqual(rec["summary"]["rows"][0]["label"], "Carries")
+        self.assertIsNone(rec["retired"])
         g = next(g for g in s["games"] if g["id"] == SEA_DEN)
         self.assertEqual((g["final"], g["score"]), (True, {"away": 20, "home": 17}))
 
@@ -115,52 +152,63 @@ class Week(unittest.TestCase):
         n = len(w.events())
         w.at("2026-10-16T00:10")
         self.assertEqual(len(w.events()), n)
-        # Wilson's events in the Record, in order
-        pid = "2026-W06:2026_06_SEA_DEN:00-0038797:rec:FG:1.5:under"
-        self.assertEqual([e["t"] for e in w.events() if e["id"] == pid],
-                         ["shown", "state", "price", "state", "locked", "graded"])
-        # every pick shown this week is on the Record (locked at kickoff), and one per player at most
-        rec = helpers.load(w.path("record.json"))
-        shown = [e["id"] for e in w.events() if e["t"] == "shown" and e["kind"] == "single"]
-        self.assertEqual(sorted(x["id"] for x in rec["weeks"][0]["entries"] if x["kind"] == "single"), sorted(shown))
-        players = [e["pick"]["player_id"] for e in w.events() if e["t"] == "shown" and e["kind"] == "single"]
-        self.assertEqual(len(players), len(set(players)))
+        pid = "2026-W06:2026_06_SEA_DEN:00-0038797:rush_att:17.5:under"
+        self.assertEqual([e["t"] for e in w.events() if e["id"] == pid], ["shown", "state", "locked", "graded"])
+        # the closing consensus on the C read was logged for the pick and the veto (research only)
+        closes = [e for e in gg_log(w) if e["t"] == "close"]
+        self.assertEqual(sorted(e["id"].split(":")[3] for e in closes), ["pass_yds", "rush_att"])
+        self.assertTrue(all(e["close_books"] == 7 for e in closes))
 
     def test_questionable_pulls_a_shown_pick(self):
         w = self.w
-        w.at("2026-10-13T10:05")
+        w.at("2026-10-14T17:10")
         self.assertIsNotNone(w.pick(WILSON))
         w.set_injury(26, "Emanuel Wilson", "Questionable", pos="RB", espn_id="4887558")
-        w.at("2026-10-13T11:00")
+        w.at("2026-10-14T17:40")
         p = w.pick(WILSON)
         self.assertEqual(p["pulled"]["reason"], "Listed questionable.")
-        # cleared later in the week: the pick stays pulled and is never re-shown (sticky designation)
+        self.assertIn("If you already bet it at +100", p["pulled"]["if_bet"])
+        # cleared later: the pick stays pulled and is never re-shown (sticky designation)
         w.set_injury(26, "Emanuel Wilson", "Active", pos="RB", espn_id="4887558")
-        w.at("2026-10-14T17:10")
+        w.at("2026-10-15T09:00")
         picks = [x for x in w.slate()["picks"] if x["player_id"] == WILSON]
         self.assertEqual(len(picks), 1)
         self.assertIsNotNone(picks[0]["pulled"])
 
-    def test_price_past_the_gate_pulls(self):
+    def test_c_read_takes_the_pick_back_when_the_gap_is_gone(self):
         w = self.w
-        w.at("2026-10-13T10:05")
-        w.set_price(SEA_DEN, "player_receptions", "Emanuel Wilson", "under", -215, last_update_z="2026-10-14T21:00:00Z")
-        w.set_price(SEA_DEN, "player_receptions", "Emanuel Wilson", "over", 165, last_update_z="2026-10-14T21:00:00Z")
-        w.at("2026-10-14T17:10")                                       # the R refresh reads the new price
+        w.at("2026-10-14T17:10")
+        self.assertIsNotNone(w.pick(WILSON))
+        no_edge = {k: v for k, v in EDGES.items() if k[1] != "Emanuel Wilson"}
+        w.post_inactives(26, [("Zach Charbonnet", "RB"), ("Chazz Surratt", "LB"), ("Julian Neal", "CB")])
+        w.post_inactives(7, [("Riley Moss", "CB"), ("Pat Surtain II", "CB"), ("Pat Bryant", "WR")])
+        # Hard Rock moves to -120 while the other books stay at about even money: the gap is gone
+        w.set_price(SEA_DEN, "player_rush_attempts", "Emanuel Wilson", "under", -120, last_update_z="2026-10-15T23:00:00Z")
+        w.set_price(SEA_DEN, "player_rush_attempts", "Emanuel Wilson", "over", -110, last_update_z="2026-10-15T23:00:00Z")
+        w.set_odds(SEA_DEN, add_books(helpers.load(os.path.join(w.odds, "odds_%s.json" % SEA_DEN)), no_edge,
+                                      last_update_z="2026-10-15T23:00:00Z"), "2026-10-15T23:00:00Z")
+        w.at("2026-10-15T19:05")
         p = w.pick(WILSON)
-        self.assertEqual(p["pulled"]["reason"], "Hard Rock moved it to -215, past our -200 limit.")
-        self.assertEqual(p["price"], -110, "a price that caused a pull was never shown as live")
-        rec = helpers.load(w.path("record.json"))
-        self.assertEqual(rec["weeks"][0]["entries"][0]["pulled"]["reason"], p["pulled"]["reason"])
+        self.assertEqual(p["state"], "pulled")
+        self.assertEqual(p["pulled"]["code"], "gap_gone")
+        self.assertEqual(p["pulled"]["now_price"], -120)
+        self.assertEqual(p["price"], 100, "the frozen price is what the Record keeps")
+        self.assertIn("If you already bet it at +100: Hard Rock is now -120", p["pulled"]["if_bet"])
 
     def test_line_moved_pulls(self):
         w = self.w
-        w.at("2026-10-13T10:05")
-        for side in ("under", "over"):
-            w.set_price(SEA_DEN, "player_receptions", "Emanuel Wilson", side, -110, line=2.5,
-                        last_update_z="2026-10-14T21:00:00Z")
         w.at("2026-10-14T17:10")
-        self.assertEqual(w.pick(WILSON)["pulled"]["reason"], "Hard Rock moved the line to 2.5.")
+        self.assertIsNotNone(w.pick(WILSON))
+        w.post_inactives(26, [("Zach Charbonnet", "RB"), ("Chazz Surratt", "LB"), ("Julian Neal", "CB")])
+        w.post_inactives(7, [("Riley Moss", "CB"), ("Pat Surtain II", "CB"), ("Pat Bryant", "WR")])
+        for side in ("under", "over"):
+            w.set_price(SEA_DEN, "player_rush_attempts", "Emanuel Wilson", side, -115, line=18.5,
+                        last_update_z="2026-10-15T23:00:00Z")
+        w.set_odds(SEA_DEN, add_books(helpers.load(os.path.join(w.odds, "odds_%s.json" % SEA_DEN)), {},
+                                      last_update_z="2026-10-15T23:00:00Z"), "2026-10-15T23:00:00Z")
+        w.at("2026-10-15T19:05")
+        p = w.pick(WILSON, market="rush_att")
+        self.assertEqual(p["pulled"]["reason"], "Hard Rock moved the line to 18.5.")
 
 
 if __name__ == "__main__":

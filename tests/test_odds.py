@@ -1,5 +1,5 @@
-"""Odds: price arithmetic, the real Hard Rock payload, the key pool (rotation, refused keys, ledger by position),
-the pull planner (tiers, M / F / D / R / C, sentinel, started games) and the budget."""
+"""Odds: price arithmetic, the real Hard Rock payload plus a synthetic consensus, the key pool (rotation, refused keys, ledger
+by position, x-requests-last), the pull planner (tiers, R / C, started games) and the budget."""
 import json
 import os
 import unittest
@@ -23,7 +23,6 @@ def game(gid, start, away="SEA", home="DEN"):
 THU = game(SEA_DEN, "2026-10-15T20:15:00-04:00")
 SUN1 = game(HOU_JAX, "2026-10-18T09:30:00-04:00", "HOU", "JAX")
 SUN2 = game("2026_06_CHI_ATL", "2026-10-18T13:00:00-04:00", "CHI", "ATL")
-LISTED = {SEA_DEN: CFG["ops"]["pull_full_keys"] + ["player_receptions_h1_fake"]}
 
 
 class Arithmetic(unittest.TestCase):
@@ -56,30 +55,53 @@ class RealPayload(unittest.TestCase):
 
     def test_normalize_and_view(self):
         at = T("2026-10-13T10:05:00-04:00")
-        rec = odds.normalize(self.payload, THU, self.matcher(), ["player_receptions"], "F", at, 40, CFG)
+        rec = odds.normalize(self.payload, THU, self.matcher(), ["player_receptions"], "R", at, 6, CFG)
         self.assertEqual(rec["book"], "hardrockbet_fl")
         self.assertEqual(rec["unmatched"], [])                        # every feed name matched a gsis id
-        self.assertIn("spreads_h1@draftkings", rec["lines"])          # DraftKings kept only for display_only keys
-        self.assertNotIn("h2h@draftkings", rec["lines"])
+        self.assertEqual(rec["others"], {})                           # draftkings only had game lines: no player market
         self.assertEqual(rec["props"]["player_anytime_td"]["outcomes"][0]["side"], "over")    # "Yes" -> over
-        view = odds.build_view([dict(rec, asked=list(rec["props"]) + list(rec["lines"]))], CFG)[SEA_DEN]
-        rec_mv = view["props"]["rec"]
-        pr = rec_mv["pairs"][(helpers.WILSON, 1.5)]
+        view = odds.build_view([dict(rec, asked=["player_receptions"])], CFG)[SEA_DEN]
+        pr = view["props"]["rec"]["pairs"][(helpers.WILSON, 1.5)]
         self.assertEqual((pr["over"], pr["under"], pr["ok"]), (-120, -110, True))
-        self.assertIn((helpers.WILSON, 2.5), view["props"]["rec"]["alt"] or {(helpers.WILSON, 2.5): 1})
-        self.assertEqual(view["props"]["anytime_td"]["pairs"][(helpers.WILSON, 0.5)]["under"], None)
         gc = odds.game_context(view, THU)
         self.assertEqual((gc["total"], gc["spread"]["SEA"], gc["spread"]["DEN"], gc["source"]),
                          (41.5, 2.5, -2.5, "hardrock"))
+        self.assertIn(odds.game_context({}, THU)["source"], (None, "schedule"))  # no game lines at all: never invented
+
+    def test_others_are_normalized_by_book_and_feed_key(self):
+        at = T("2026-10-14T17:10:00-04:00")
+        pay = helpers.add_books(self.payload, {}, books=("pinnacle", "fanduel"))
+        pay["bookmakers"].append({"key": "hardrockbet", "title": "Hard Rock Bet", "markets": [
+            dict(m, key=m["key"]) for m in pay["bookmakers"][0]["markets"] if m["key"] == "player_receptions"]})
+        keys = ["player_receptions", "player_reception_yds"]
+        rec = odds.normalize(pay, THU, self.matcher(), keys, "R", at, 2, CFG)
+        self.assertEqual(sorted(rec["others"]), ["fanduel", "pinnacle"])          # never the national 'hardrockbet' key
+        self.assertEqual(sorted(rec["others"]["pinnacle"]), sorted(helpers.SIX))
+        row = next(o for o in rec["others"]["pinnacle"]["player_receptions"]["outcomes"] if o["pid"] == helpers.WILSON)
+        self.assertEqual(set(row), {"pid", "side", "line", "price"})              # compact rows
+        self.assertNotIn("player_receptions_alternate", rec["others"]["pinnacle"])  # main lines only
+        self.assertEqual(rec["book"], "hardrockbet_fl")
+
+    def test_request_books_hard_rock_first_ten_in_all_and_never_the_national_key(self):
+        books = odds.request_books(CFG)
+        self.assertEqual(books[0], "hardrockbet_fl")
+        self.assertEqual(len(books), 10)
+        self.assertEqual(books[1], "pinnacle")
+        self.assertNotIn("hardrockbet", books)
+        self.assertNotIn("novig", books)
+        self.assertNotIn("prophetx", books)
+        self.assertEqual(odds.request_books(CFG, others=False), ["hardrockbet_fl"])
+        self.assertEqual(odds.regions_billed(10), 1)
+        self.assertEqual(odds.regions_billed(11), 2)
 
     def test_stale_and_gone(self):
         at = T("2026-10-13T10:05:00-04:00")
         old = helpers.fresh(self.payload, "2026-10-13T04:27:00Z")     # 5.6 hours old at read time
-        rec = odds.normalize(old, THU, self.matcher(), ["player_receptions"], "F", at, 1, CFG)
+        rec = odds.normalize(old, THU, self.matcher(), ["player_receptions"], "R", at, 1, CFG)
         view = odds.build_view([dict(rec, asked=["player_receptions"])], CFG)[SEA_DEN]
         self.assertFalse(view["props"]["rec"]["pairs"][(helpers.WILSON, 1.5)]["ok"])
         # a newer read that asked for the market and did not get it: gone
-        good = odds.normalize(self.payload, THU, self.matcher(), ["player_receptions"], "F", at, 1, CFG)
+        good = odds.normalize(self.payload, THU, self.matcher(), ["player_receptions"], "R", at, 1, CFG)
         empty = dict(good, at=common.iso(at + timedelta(hours=2)), props={}, returned=[])
         view = odds.build_view([dict(good, asked=["player_receptions"]), dict(empty, asked=["player_receptions"])], CFG)
         self.assertTrue(view[SEA_DEN]["props"]["rec"]["gone"])
@@ -94,92 +116,102 @@ class RealPayload(unittest.TestCase):
 class Plan(unittest.TestCase):
     def test_tiers(self):
         t = lambda credits, games: odds.make_plan(credits, games, CFG)["tier"]
-        tiers = CFG["values"]["tiers"]
-        self.assertEqual(t(tiers["full_plus"] * 10, 10), "full_plus")
+        tiers = CFG["ops"]["tiers"]
         self.assertEqual(t(tiers["full"] * 10, 10), "full")
-        self.assertEqual(t(tiers["standard"] * 10, 10), "standard")
-        self.assertEqual(t(tiers["basic"] * 10, 10), "basic")
-        self.assertEqual(t(tiers["lite"] * 10, 10), "lite")
-        self.assertEqual(t(tiers["lite"] * 10 - 1, 10), "below")
-        self.assertEqual(odds.make_plan(2300, 29, CFG)["tier"], "full_plus")      # the real pool on Oct 13
-        self.assertEqual(odds.make_plan(2300, 29, CFG)["pulls"], "MFDRC")
+        self.assertEqual(t(tiers["full"] * 10 - 1, 10), "tight")
+        self.assertEqual(t(tiers["tight"] * 10, 10), "tight")
+        self.assertEqual(t(tiers["tight"] * 10 - 1, 10), "below")
+        self.assertEqual(odds.make_plan(690, 58, CFG)["pulls"], "Rc")                 # 11.9 a game: R everywhere, C where it matters
+        self.assertEqual(odds.make_plan(700, 58, CFG)["pulls"], "RC")
+        self.assertEqual(odds.make_plan(1000, 58, CFG)["tier"], "full")
+        self.assertEqual(odds.make_plan(498, 0, CFG)["tier"], "full")                 # no games before the reset: all of it
 
-    def test_check_slots(self):
-        self.assertIsNone(odds.check_slot(T("2026-10-09T12:00:00-04:00"), THU, CFG))   # before the window
-        self.assertEqual(odds.check_slot(T("2026-10-13T10:05:00-04:00"), THU, CFG), T("2026-10-13T10:00:00-04:00"))
-        self.assertEqual(odds.check_slot(T("2026-10-13T09:55:00-04:00"), THU, CFG), T("2026-10-12T16:00:00-04:00"))
-        self.assertEqual(odds.next_slot(T("2026-10-13T10:05:00-04:00"), THU, CFG), T("2026-10-13T16:00:00-04:00"))
+    def test_monthly_cap_limits_the_plan_not_the_pool(self):
+        pool = odds.Pool(["k1", "k2"], T("2026-11-03T10:00:00-05:00"))
+        pool.state[0].update(left=900, status="ok")
+        pool.state[1].update(left=900, status="ok")
+        pool.spent = [{"at": "2026-11-02T10:00:00-05:00", "date": "2026-11-02", "pull": "R", "game_id": "x", "cost": 300,
+                       "key": 1}]
+        st = {}
+        plan = odds._set_plan(st, pool, 50, CFG, T("2026-11-03T10:00:00-05:00"))
+        self.assertEqual(plan["pool_at_plan"], 700)                                   # 1000 cap - 300 spent
+        self.assertEqual(plan["pool_raw"], 1800)
+        self.assertEqual(plan["allowance"], 14.0)
+        self.assertEqual(plan["tier"], "full")
 
 
 class Due(unittest.TestCase):
-    PLAN = {"tier": "full_plus", "pulls": "MFDRC", "allowance": 80}
+    PLAN = {"tier": "full", "pulls": "RC", "allowance": 20}
+    REPORT = {SEA_DEN: T("2026-10-14T17:00:00-04:00")}
 
-    def due(self, now, games=(THU,), done=None, listed=None, m_done=None, focus=None, held=None, report=None,
-            started=None, plan=None):
+    def due(self, now, games=(THU,), done=None, focus=None, report=None, started=None, plan=None, ok=None, conf=()):
+        rep = self.REPORT if report is None else report
         return [(d["pull"], d["game"]["id"], len(d["keys"])) for d in odds.due_pulls(
-            T(now), list(games), plan or self.PLAN, CFG, done or {}, focus or {}, held or {}, report or {},
-            started or {}, listed if listed is not None else {}, m_done or {})]
+            T(now), list(games), plan or self.PLAN, CFG, done or {}, focus or {}, started or {}, rep,
+            set(rep) if ok is None else ok, set(conf))]
 
-    def test_m_first_then_f_and_never_an_unlisted_key(self):
-        self.assertEqual(self.due("2026-10-13T10:05:00-04:00"), [("M", SEA_DEN, 0)])
-        out = odds.due_pulls(T("2026-10-13T10:05:00-04:00"), [THU], self.PLAN, CFG, {}, {}, {}, {}, {}, LISTED,
-                             {SEA_DEN: T("2026-10-13T10:05:00-04:00")})
-        self.assertEqual(out[0]["pull"], "F")
-        self.assertNotIn("player_receptions_h1", out[0]["keys"])
-        self.assertTrue(set(out[0]["keys"]) <= set(LISTED[SEA_DEN]))
-        self.assertEqual(out[0]["books"], ["hardrockbet_fl", "draftkings"])    # one call: lines include spreads_h1
+    def read(self, pull, at, hr=True, ina=False):
+        return {"pull": pull, "at": T(at), "asked": [], "returned": ["player_receptions"],
+                "hr": ["player_receptions"] if hr else [], "ina": ina}
 
-    def test_no_props_yet_waits_for_the_next_slot(self):
-        listed = {SEA_DEN: ["h2h", "spreads", "totals"]}
-        m = {SEA_DEN: T("2026-10-13T10:05:00-04:00")}
-        self.assertEqual(self.due("2026-10-13T12:00:00-04:00", listed=listed, m_done=m), [])
-        self.assertEqual(self.due("2026-10-13T16:05:00-04:00", listed=listed, m_done=m), [("M", SEA_DEN, 0)])
+    def test_nothing_before_the_final_injury_report(self):
+        self.assertEqual(self.due("2026-10-13T10:05:00-04:00"), [])
+        self.assertEqual(self.due("2026-10-14T16:59:00-04:00"), [])
+        self.assertEqual(self.due("2026-10-14T17:00:00-04:00", ok=set()), [])        # injury read not fresh after the report yet
 
-    def test_sentinel_gates_the_rest_of_the_day(self):
-        listed = {HOU_JAX: ["h2h", "spreads"]}                        # the 9:30 AM game shows no props yet
-        m = {HOU_JAX: T("2026-10-14T10:01:00-04:00")}
-        out = self.due("2026-10-14T10:05:00-04:00", games=(SUN1, SUN2), listed=listed, m_done=m)
-        self.assertEqual(out, [])                                     # CHI at ATL waits for its sentinel
-        listed = {HOU_JAX: CFG["ops"]["pull_full_keys"]}
-        out = self.due("2026-10-14T10:05:00-04:00", games=(SUN1, SUN2), listed=listed, m_done=m)
-        self.assertEqual([x[:2] for x in out], [("F", HOU_JAX), ("M", "2026_06_CHI_ATL")])
+    def test_r_once_the_report_counts_in_six_markets_one_call(self):
+        out = odds.due_pulls(T("2026-10-14T17:01:00-04:00"), [THU], self.PLAN, CFG, {}, {}, {}, self.REPORT, {SEA_DEN}, set())
+        self.assertEqual([(d["pull"], len(d["keys"])) for d in out], [("R", 6)])
+        self.assertEqual(out[0]["keys"], odds.pick_keys(CFG))
+        self.assertEqual(out[0]["books"], odds.request_books(CFG))
+        self.assertEqual(odds.est_cost(out[0]), 6)
+        done = {SEA_DEN: [self.read("R", "2026-10-14T17:01:00-04:00")]}
+        self.assertEqual(self.due("2026-10-14T17:30:00-04:00", done=done), [])
 
-    def test_f_done_once_and_r_after_the_report(self):
-        f = {"pull": "F", "at": T("2026-10-13T10:05:00-04:00"), "asked": LISTED[SEA_DEN],
-             "returned": CFG["ops"]["pull_full_keys"][:20]}
-        done = {SEA_DEN: [f]}
-        m = {SEA_DEN: T("2026-10-13T10:05:00-04:00")}
-        rep = {SEA_DEN: T("2026-10-14T16:00:00-04:00")}
-        self.assertEqual(self.due("2026-10-13T16:05:00-04:00", done=done, listed=LISTED, m_done=m, report=rep), [])
-        self.assertEqual(self.due("2026-10-14T16:30:00-04:00", done=done, listed=LISTED, m_done=m, report=rep), [])
-        out = self.due("2026-10-14T17:01:00-04:00", done=done, listed=LISTED, m_done=m, report=rep)
-        self.assertEqual(out[0][:2], ("R", SEA_DEN))
-        r = {"pull": "R", "at": T("2026-10-14T17:01:00-04:00"), "asked": [], "returned": ["player_receptions"]}
-        done = {SEA_DEN: [f, r]}
-        self.assertEqual(self.due("2026-10-14T17:30:00-04:00", done=done, listed=LISTED, m_done=m, report=rep), [])
+    def test_r_retries_only_while_hard_rock_has_not_posted(self):
+        done = {SEA_DEN: [self.read("R", "2026-10-14T17:01:00-04:00", hr=False)]}
+        self.assertEqual(self.due("2026-10-14T18:00:00-04:00", done=done), [])
+        self.assertEqual(self.due("2026-10-14T21:05:00-04:00", done=done), [("R", SEA_DEN, 6)])   # r_retry_min later
+        done[SEA_DEN] += [self.read("R", "2026-10-14T21:05:00-04:00", hr=False), self.read("R", "2026-10-15T01:10:00-04:00", hr=False)]
+        self.assertEqual(self.due("2026-10-15T09:00:00-04:00", done=done), [], "r_max_reads is 3")
 
-    def test_c_and_d_only_for_markets_that_matter(self):
-        f = {"pull": "F", "at": T("2026-10-13T10:05:00-04:00"), "asked": [], "returned": CFG["ops"]["pull_full_keys"]}
-        done = {SEA_DEN: [f]}
-        m = {SEA_DEN: T("2026-10-13T10:05:00-04:00")}
-        held = {SEA_DEN: {"player_receptions"}}
-        out = self.due("2026-10-14T10:05:00-04:00", done=done, listed=LISTED, m_done=m, held=held)
-        self.assertEqual(out, [("D", SEA_DEN, 1)])
-        out = self.due("2026-10-15T19:01:00-04:00", done=done, listed=LISTED, m_done=m, focus=held)
-        self.assertEqual(out, [("C", SEA_DEN, 3)])                   # receptions + spreads + totals
-        self.assertEqual(self.due("2026-10-15T19:01:00-04:00", done=done, listed=LISTED, m_done=m), [])
+    def test_c_at_70_minutes_when_inactives_are_in_else_45(self):
+        done = {SEA_DEN: [self.read("R", "2026-10-14T17:01:00-04:00")]}
+        self.assertEqual(self.due("2026-10-15T19:04:00-04:00", done=done, conf=[SEA_DEN]), [])
+        self.assertEqual(self.due("2026-10-15T19:05:00-04:00", done=done, conf=[SEA_DEN]), [("C", SEA_DEN, 6)])
+        self.assertEqual(self.due("2026-10-15T19:05:00-04:00", done=done), [])         # inactives not in: wait for 45
+        self.assertEqual(self.due("2026-10-15T19:30:00-04:00", done=done), [("C", SEA_DEN, 6)])
+        # a C made before inactives were in is made again once they are
+        done[SEA_DEN].append(self.read("C", "2026-10-15T19:30:00-04:00", ina=False))
+        self.assertEqual(self.due("2026-10-15T19:40:00-04:00", done=done), [])
+        self.assertEqual(self.due("2026-10-15T19:40:00-04:00", done=done, conf=[SEA_DEN]), [("C", SEA_DEN, 6)])
+        done[SEA_DEN].append(self.read("C", "2026-10-15T19:40:00-04:00", ina=True))
+        self.assertEqual(self.due("2026-10-15T19:50:00-04:00", done=done, conf=[SEA_DEN]), [])
+
+    def test_tight_tier_asks_c_only_where_a_pick_or_near_pick_sits(self):
+        plan = {"tier": "tight", "pulls": "Rc", "allowance": 9}
+        done = {SEA_DEN: [self.read("R", "2026-10-14T17:01:00-04:00")]}
+        self.assertEqual(self.due("2026-10-15T19:30:00-04:00", plan=plan, done=done), [])
+        focus = {SEA_DEN: {"player_receptions", "player_rush_yds"}}
+        self.assertEqual(self.due("2026-10-15T19:30:00-04:00", plan=plan, focus=focus, done=done), [("C", SEA_DEN, 2)])
+        self.assertEqual(self.due("2026-10-14T17:01:00-04:00", plan=plan), [("R", SEA_DEN, 6)])   # R is everywhere
 
     def test_started_games_are_never_pulled(self):
-        self.assertEqual(self.due("2026-10-15T20:00:00-04:00", listed=LISTED), [])     # inside c_latest_min
-        self.assertEqual(self.due("2026-10-13T10:05:00-04:00", started={SEA_DEN: True}), [])
+        self.assertEqual(self.due("2026-10-15T20:00:00-04:00", conf=[SEA_DEN]), [])       # inside c_latest_min
+        self.assertEqual(self.due("2026-10-14T17:05:00-04:00", started={SEA_DEN: True}), [])
 
-    def test_lite_tier_has_no_full_pull(self):
-        plan = {"tier": "lite", "pulls": "MRC", "allowance": 25}
-        m = {SEA_DEN: T("2026-10-13T10:05:00-04:00")}
-        self.assertEqual(self.due("2026-10-13T10:06:00-04:00", listed=LISTED, m_done=m, plan=plan), [])
-        out = self.due("2026-10-14T17:01:00-04:00", listed=LISTED, m_done=m, plan=plan,
-                       report={SEA_DEN: T("2026-10-14T16:00:00-04:00")})
-        self.assertEqual(out[0][:2], ("R", SEA_DEN))
+    def test_below_tier_is_r_only(self):
+        plan = {"tier": "below", "pulls": "R", "allowance": 3}
+        self.assertEqual(self.due("2026-10-15T19:30:00-04:00", plan=plan), [("R", SEA_DEN, 6)])
+        done = {SEA_DEN: [self.read("R", "2026-10-14T17:01:00-04:00")]}
+        self.assertEqual(self.due("2026-10-15T19:30:00-04:00", plan=plan, done=done), [])
+
+    def test_next_check(self):
+        n = odds.next_check_at(T("2026-10-13T10:00:00-04:00"), [THU], self.PLAN, CFG, {}, self.REPORT, {})
+        self.assertEqual(n, T("2026-10-14T17:00:00-04:00"))
+        done = {SEA_DEN: [self.read("R", "2026-10-14T17:01:00-04:00")]}
+        n = odds.next_check_at(T("2026-10-14T18:00:00-04:00"), [THU], self.PLAN, CFG, done, self.REPORT, {})
+        self.assertEqual(n, T("2026-10-15T19:30:00-04:00"))
 
 
 class KeyRotation(unittest.TestCase):
@@ -219,16 +251,16 @@ class KeyRotation(unittest.TestCase):
         self.assertEqual(len(keys), 3)
         pool = odds.Pool(keys, now)
         client = odds.Client(pool, CFG)
-        js, cost = client.event_odds("ev1", THU, ["player_receptions", "player_receptions_h1"], ["hardrockbet_fl"], "F")
+        js, cost = client.event_odds("ev1", THU, ["player_receptions"], ["hardrockbet_fl"], "R")
         self.assertEqual([c[0] for c in self.calls], ["1111", "2222", "3333"])
-        self.assertNotIn("player_receptions_h1", self.urls[-1])      # never requested, even if asked
         self.assertNotIn("regions=", self.urls[-1])
+        self.assertIn("bookmakers=hardrockbet_fl", self.urls[-1])
         self.assertEqual(cost, 1)
         self.assertEqual([(s["left"], s["status"]) for s in pool.state], [(0, "empty"), (None, "limited"), (88, "ok")])
         self.assertEqual(pool.public(), [{"n": 1, "left": 0, "status": "empty", "shared": False}, {"n": 2, "left": None, "status": "limited", "shared": False},
                                          {"n": 3, "left": 88, "status": "ok", "shared": False}])
         self.calls.clear()
-        client.event_odds("ev1", THU, ["player_receptions"], ["hardrockbet_fl"], "F")
+        client.event_odds("ev1", THU, ["player_receptions"], ["hardrockbet_fl"], "R")
         self.assertEqual([c[0] for c in self.calls], ["3333"])
         pool.save()
         with open(odds.ledger_path()) as f:
@@ -243,14 +275,14 @@ class KeyRotation(unittest.TestCase):
         pool = odds.Pool(odds.load_keys(), T("2026-10-13T10:05:00-04:00"))
         pool.state[0]["left"] = 400                                   # what we thought (another tool spent the rest)
         client = odds.Client(pool, CFG)
-        client.event_odds("ev1", THU, ["player_receptions"], ["hardrockbet_fl"], "F")
+        client.event_odds("ev1", THU, ["player_receptions"], ["hardrockbet_fl"], "R")
         self.assertEqual(pool.state[0]["left"], 17)
 
     def test_refused_key_is_unknown_not_zero(self):
         self.fake(lambda key, url: common.Http(401, {}, b'{"message":"Invalid API key"}', "HTTP 401"))
         pool = odds.Pool(odds.load_keys(), T("2026-10-13T10:05:00-04:00"))
         client = odds.Client(pool, CFG)
-        js, _ = client.event_odds("ev1", THU, ["player_receptions"], ["hardrockbet_fl"], "F")
+        js, _ = client.event_odds("ev1", THU, ["player_receptions"], ["hardrockbet_fl"], "R")
         self.assertIsNone(js)
         self.assertTrue(pool.all_refused())
         self.assertEqual(pool.total_left(), 0)
@@ -260,30 +292,43 @@ class KeyRotation(unittest.TestCase):
         self.fake(lambda key, url: common.Http(0, {}, None, "TimeoutError"))
         pool = odds.Pool(odds.load_keys(), T("2026-10-13T10:05:00-04:00"))
         client = odds.Client(pool, CFG)
-        js, _ = client.event_odds("ev1", THU, ["player_receptions"], ["hardrockbet_fl"], "F")
+        js, _ = client.event_odds("ev1", THU, ["player_receptions"], ["hardrockbet_fl"], "R")
         self.assertIsNone(js)
         self.assertEqual(len(self.calls), 1)
         self.assertEqual([s["status"] for s in pool.state], ["ok", "ok", "ok"])
 
-    def test_markets_endpoint(self):
-        body = json.dumps({"bookmakers": [{"key": "hardrockbet_fl", "markets": [{"key": "h2h"}, {"key": "player_receptions"}]}]}).encode()
-        self.fake(lambda key, url: common.Http(200, {"x-requests-remaining": "99", "x-requests-last": "1"}, body))
-        pool = odds.Pool(odds.load_keys(), T("2026-10-13T10:05:00-04:00"))
+    def test_ten_books_one_call_cost_is_read_from_the_header(self):
+        body = json.dumps({"bookmakers": [{"key": "hardrockbet_fl", "markets": [{"key": "player_receptions", "outcomes": []}]},
+                                          {"key": "pinnacle", "markets": [{"key": "player_receptions", "outcomes": []}]}]}).encode()
+        self.fake(lambda key, url: common.Http(200, {"x-requests-remaining": "94", "x-requests-last": "1"}, body))
+        pool = odds.Pool(odds.load_keys(), T("2026-10-14T17:10:00-04:00"))
         client = odds.Client(pool, CFG)
-        self.assertEqual(client.event_markets("ev1", SEA_DEN), ["h2h", "player_receptions"])
-        self.assertIn("/events/ev1/markets", self.urls[0])
-        self.assertIn("bookmakers=hardrockbet_fl", self.urls[0])
+        books = odds.request_books(CFG)
+        js, cost = client.event_odds("ev1", THU, ["player_receptions"], books, "R")
+        self.assertEqual(cost, 1)                                     # one market, one region, however many books
+        self.assertEqual(client.errors, [])
+        self.assertEqual(self.urls[-1].count("bookmakers="), 1)
+        self.assertIn("pinnacle", self.urls[-1])
+        self.assertNotIn("hardrockbet%2C", self.urls[-1])             # the national key is never asked
+
+    def test_a_read_billed_more_than_one_region_is_noted(self):
+        body = json.dumps({"bookmakers": [{"key": "hardrockbet_fl", "markets": [{"key": "player_receptions", "outcomes": []}]}]}).encode()
+        self.fake(lambda key, url: common.Http(200, {"x-requests-remaining": "90", "x-requests-last": "3"}, body))
+        pool = odds.Pool(odds.load_keys(), T("2026-10-14T17:10:00-04:00"))
+        client = odds.Client(pool, CFG)
+        js, cost = client.event_odds("ev1", THU, ["player_receptions"], odds.request_books(CFG), "R")
+        self.assertEqual(cost, 3)
+        self.assertTrue(any("billed 3 credits for 1 market" in e for e in client.errors), client.errors)
 
 
 class Pulls(unittest.TestCase):
     def test_budget_and_one_write_per_read(self):
-        w = World(pool=(60,))                                         # 60 credits / 29 games -> "below": M + R only
+        w = World(pool=(4,))                                          # 4 credits: a 6-credit R read cannot be paid
         try:
-            w.at("2026-10-13T10:05")
+            w.at("2026-10-14T17:10")
             st = w.status()
-            self.assertEqual(st["tier"], "below")
-            self.assertTrue(all(d["pull"] == "M" for d in st["due"]))
-            self.assertEqual(st["pool_total"], 60 - len(st["due"]))
+            self.assertEqual(st["tier"], "below")                     # 4 credits across the week's games
+            self.assertEqual(st["pool_total"], 4)
             self.assertEqual(w.slate()["picks"], [])
         finally:
             w.close()
@@ -291,7 +336,7 @@ class Pulls(unittest.TestCase):
     def test_pool_empty_and_no_keys_banners(self):
         w = World(pool=(0, 0))
         try:
-            s = w.at("2026-10-13T10:05")
+            s = w.at("2026-10-14T17:10")
             self.assertEqual(s["status"]["odds"]["state"], "pool_empty")
             self.assertTrue(s["status"]["pool"]["empty"])
             self.assertTrue(any("Out of odds keys" in b["text"] for b in s["banners"]))
@@ -300,7 +345,7 @@ class Pulls(unittest.TestCase):
         w = World()
         try:
             os.environ.pop("PC_ODDS_FIXTURE_DIR")
-            s = w.at("2026-10-13T10:05")
+            s = w.at("2026-10-14T17:10")
             self.assertTrue(any("no odds keys are set" in b["text"] for b in s["banners"]))
             self.assertEqual(s["status"]["odds"]["state"], "not_yet")
         finally:
@@ -309,13 +354,13 @@ class Pulls(unittest.TestCase):
     def test_every_saved_read_is_our_price_history(self):
         w = World()
         try:
-            w.at("2026-10-13T10:05")
-            doc = helpers.load(w.path("odds", "2026-10-13.json"))
+            w.at("2026-10-14T17:10")
+            doc = helpers.load(w.path("odds", "2026-10-14.json"))
             f = [x for x in doc["fetches"] if x["game_id"] == SEA_DEN]
             self.assertEqual(len(f), 1)
-            self.assertEqual(f[0]["pull"], "F")
-            self.assertGreaterEqual(len(f[0]["props"]), 15)
-            self.assertEqual(f[0]["cost"], 40)
+            self.assertEqual(f[0]["pull"], "R")
+            self.assertEqual(sorted(f[0]["props"]), sorted(helpers.SIX))        # only the six picked markets are asked
+            self.assertEqual(f[0]["cost"], 6)
         finally:
             w.close()
 

@@ -31,7 +31,7 @@ def shown(i, market="rec", period="FG", line=4.5, side="over", price=-120, game=
                      "mkey": market if period == "FG" else market + "_1h", "market": market, "period": period,
                      "line": line, "side": side, "bet": "Over %g receptions" % line, "book": "Hard Rock",
                      "price": price, "price_at": at, "p": 0.6, "breakeven": 0.55, "p_pct": 60, "breakeven_pct": 55,
-                     "reason": "r", "state": "early", "thin": False}}
+                     "reason": "r", "state": "early", "thin": False, "era": "gg1"}}
 
 
 def graded(i, result, price, units, text="had 5", at="2026-10-16T00:30:00-04:00"):
@@ -111,7 +111,7 @@ class RecordLog(unittest.TestCase):
 
     def test_contract_views_and_rebuild(self):
         ev = [shown("a", price=-120), shown("b", price=-150, pid="p2"),
-              shown("c", market="rush_yds", period="1H", line=22.5, price=110, pid="p3"),
+              shown("c", market="rush_yds", line=22.5, price=110, pid="p3"),
               shown("d", price=-110, pid="p4"), shown("e", price=-110, pid="p5"),          # e: shown, never on Record
               {"t": "pulled", "id": "d", "at": "2026-10-14T11:00:00-04:00", "reason": "Listed questionable.",
                "code": "injury"},
@@ -126,9 +126,9 @@ class RecordLog(unittest.TestCase):
         self.assertAlmostEqual(h["units"], -0.1667, places=4)
         self.assertEqual(h["parlays"], {"w": 0, "l": 0, "units": 0})
         rows = {r["key"]: r for r in rec["summary"]["rows"]}
-        self.assertEqual(sorted(rows), ["pulled", "rec|FG", "rush_yds|1H"])
+        self.assertEqual(sorted(rows), ["pulled", "rec|FG", "rush_yds|FG"])
         self.assertEqual(rows["rec|FG"]["label"], "Receptions")
-        self.assertEqual(rows["rush_yds|1H"]["label"], "Rushing yards (1st half)")
+        self.assertEqual(rows["rush_yds|FG"]["label"], "Rushing yards")
         self.assertEqual((rows["pulled"]["l"], rows["pulled"]["label"]), (1, "Pulled"))
         wk = rec["weeks"][0]
         self.assertEqual((wk["week"], wk["label"], wk["graded"], wk["w"], wk["l"]), (6, "Week 6", True, 1, 1))
@@ -148,6 +148,24 @@ class RecordLog(unittest.TestCase):
             run.main(["--rebuild-record"])
         self.assertEqual(open(common.dpath("record.json"), "rb").read(), before)
         self.assertEqual(record.write_views(CFG), [])
+
+    def test_old_rules_items_are_a_labelled_retired_block_and_never_the_headline(self):
+        old = shown("o1", slate="2026-W07")
+        old["pick"].pop("era")                                  # shown under the first rules: no era field
+        ev = [old, {"t": "locked", "id": "o1", "at": "2026-10-15T20:15:00-04:00", "state": "early"},
+              graded("o1", "L", -120, -1.0),
+              shown("n1", slate="2026-W08"), {"t": "locked", "id": "n1", "at": "2026-11-01T13:00:00-04:00",
+                                              "state": "inactives"},
+              graded("n1", "W", -120, 0.8333)]
+        rec, older = record.build_views(ev, CFG)
+        h = rec["summary"]["headline"]
+        self.assertEqual((h["w"], h["l"], h["n"]), (1, 0, 1))
+        self.assertEqual([w["week"] for w in rec["weeks"]], [8])
+        r = rec["retired"]
+        self.assertTrue(r["label"].startswith("Retired rules"))
+        self.assertEqual((r["summary"]["headline"]["w"], r["summary"]["headline"]["l"]), (0, 1))
+        self.assertEqual([w["week"] for w in r["weeks"]], [7])
+        self.assertEqual(record.era_units(ev, "gg1"), 0.8333)
 
     def test_empty_record_at_cutover(self):
         rec, older = record.build_views([], CFG)
