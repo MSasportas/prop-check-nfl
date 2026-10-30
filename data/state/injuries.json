@@ -1,5 +1,5 @@
 {
- "at": "2026-10-30T19:00:01-04:00",
+ "at": "2026-10-30T19:30:01-04:00",
  "source": "espn",
  "players": {
   "00-0037157": {
@@ -505,7 +505,7 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-10-30T18:01:00-04:00",
+   "date": "2026-10-30T19:16:00-04:00",
    "detail": "Suspension",
    "espn_id": "4034953"
   },
@@ -839,9 +839,9 @@
    "name": "Anthony Johnson Jr.",
    "team": "CHI",
    "pos": "S",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-30T18:01:00-04:00",
+   "status": "Injured Reserve",
+   "fantasy": "IR",
+   "date": "2026-10-30T19:16:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
@@ -1289,6 +1289,16 @@
    "date": "2026-10-25T18:36:00-04:00",
    "detail": null,
    "espn_id": "4870653"
+  },
+  "name:DAL:kennyclark": {
+   "name": "Kenny Clark",
+   "team": "DAL",
+   "pos": "DT",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-30T19:12:00-04:00",
+   "detail": "Back",
+   "espn_id": "3122752"
   },
   "00-0037247": {
    "name": "George Pickens",
@@ -2708,6 +2718,16 @@
    "detail": null,
    "espn_id": "4260394"
   },
+  "00-0038544": {
+   "name": "Quentin Johnston",
+   "team": "LAC",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-30T18:53:00-04:00",
+   "detail": null,
+   "espn_id": "4429025"
+  },
   "00-0039915": {
    "name": "Ladd McConkey",
    "team": "LAC",
@@ -2838,16 +2858,6 @@
    "date": "2026-10-19T20:58:00-04:00",
    "detail": null,
    "espn_id": "4596334"
-  },
-  "00-0038544": {
-   "name": "Quentin Johnston",
-   "team": "LAC",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-18T20:51:00-04:00",
-   "detail": null,
-   "espn_id": "4429025"
   },
   "00-0036355": {
    "name": "Justin Herbert",
@@ -3193,6 +3203,16 @@
    "detail": null,
    "espn_id": "4242512"
   },
+  "00-0037525": {
+   "name": "Jordan Mason",
+   "team": "MIN",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-30T18:57:00-04:00",
+   "detail": null,
+   "espn_id": "4360569"
+  },
   "name:MIN:jayward": {
    "name": "Jay Ward",
    "team": "MIN",
@@ -3272,16 +3292,6 @@
    "date": "2026-10-25T18:15:00-04:00",
    "detail": null,
    "espn_id": "4429205"
-  },
-  "00-0037525": {
-   "name": "Jordan Mason",
-   "team": "MIN",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-25T18:11:00-04:00",
-   "detail": null,
-   "espn_id": "4360569"
   },
   "00-0035228": {
    "name": "Kyler Murray",
@@ -4460,6 +4470,37 @@
    "detail": null,
    "espn_id": "3040151"
   },
+  "00-0039165": {
+   "name": "Zach Charbonnet",
+   "team": "SEA",
+   "pos": "RB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-30T19:18:00-04:00",
+   "detail": "Knee - ACL",
+   "espn_id": "4426385",
+   "comment": "Charbonnet (knee) was a limited participant in Friday's practice, John Boyle of the Seahawks' official site reports."
+  },
+  "name:SEA:byronmurphy": {
+   "name": "Byron Murphy II",
+   "team": "SEA",
+   "pos": "DT",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-30T19:16:00-04:00",
+   "detail": "Back",
+   "espn_id": "4570040"
+  },
+  "name:SEA:brandonpili": {
+   "name": "Brandon Pili",
+   "team": "SEA",
+   "pos": "DT",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-30T19:15:00-04:00",
+   "detail": "Back",
+   "espn_id": "4259651"
+  },
   "00-0037745": {
    "name": "Velus Jones Jr.",
    "team": "SEA",
@@ -4482,16 +4523,6 @@
    "espn_id": "3924327",
    "comment": "Lock (elbow) was a limited participant at the Seahawks' practice Thursday."
   },
-  "name:SEA:drakethomas": {
-   "name": "Drake Thomas",
-   "team": "SEA",
-   "pos": "LB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-29T21:00:00-04:00",
-   "detail": "Ankle",
-   "espn_id": "4428659"
-  },
   "name:SEA:tyriceknight": {
    "name": "Tyrice Knight",
    "team": "SEA",
@@ -4501,16 +4532,6 @@
    "date": "2026-10-29T20:55:00-04:00",
    "detail": "Hip",
    "espn_id": "4686540"
-  },
-  "name:SEA:leonardwilliams": {
-   "name": "Leonard Williams",
-   "team": "SEA",
-   "pos": "DT",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-29T20:51:00-04:00",
-   "detail": "Achilles",
-   "espn_id": "2971622"
   },
   "name:SEA:anthonybradford": {
    "name": "Anthony Bradford",
@@ -4544,17 +4565,6 @@
    "espn_id": "4685512",
    "comment": "Price (chest) was limited in Thursday's practice, John Boyle of the Seahawks' official site reports."
   },
-  "00-0039165": {
-   "name": "Zach Charbonnet",
-   "team": "SEA",
-   "pos": "RB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-29T19:06:00-04:00",
-   "detail": "Knee - ACL",
-   "espn_id": "4426385",
-   "comment": "Charbonnet (knee) was a full participant at Thursday's practice, John Boyle of the Seahawks' official site reports."
-  },
   "name:SEA:uchennanwosu": {
    "name": "Uchenna Nwosu",
    "team": "SEA",
@@ -4574,26 +4584,6 @@
    "date": "2026-10-29T18:54:00-04:00",
    "detail": "Toe",
    "espn_id": "4364623"
-  },
-  "name:SEA:chazzsurratt": {
-   "name": "Chazz Surratt",
-   "team": "SEA",
-   "pos": "LB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-27T09:11:00-04:00",
-   "detail": "Calf",
-   "espn_id": "4037521"
-  },
-  "name:SEA:connorotoole": {
-   "name": "Connor O'Toole",
-   "team": "SEA",
-   "pos": "LB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-27T09:11:00-04:00",
-   "detail": "Hamstring",
-   "espn_id": "4605491"
   },
   "00-0039299": {
    "name": "George Holani",
@@ -4654,26 +4644,6 @@
    "date": "2026-10-25T23:52:00-04:00",
    "detail": null,
    "espn_id": "3912547"
-  },
-  "00-0039793": {
-   "name": "AJ Barner",
-   "team": "SEA",
-   "pos": "TE",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-25T23:47:00-04:00",
-   "detail": null,
-   "espn_id": "4576297"
-  },
-  "00-0038797": {
-   "name": "Emanuel Wilson",
-   "team": "SEA",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-25T23:37:00-04:00",
-   "detail": null,
-   "espn_id": "4887558"
   },
   "00-0036919": {
    "name": "Kenny Gainwell",
@@ -4817,6 +4787,26 @@
    "detail": null,
    "espn_id": "3871102"
   },
+  "00-0038117": {
+   "name": "Wan'Dale Robinson",
+   "team": "TEN",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-30T19:10:00-04:00",
+   "detail": null,
+   "espn_id": "4569587"
+  },
+  "00-0035261": {
+   "name": "Tony Pollard",
+   "team": "TEN",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-30T19:06:00-04:00",
+   "detail": null,
+   "espn_id": "3916148"
+  },
   "00-0039032": {
    "name": "Tyjae Spears",
    "team": "TEN",
@@ -4910,16 +4900,6 @@
    "detail": null,
    "espn_id": "4685555"
   },
-  "00-0038117": {
-   "name": "Wan'Dale Robinson",
-   "team": "TEN",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-25T22:34:00-04:00",
-   "detail": null,
-   "espn_id": "4569587"
-  },
   "00-0040584": {
    "name": "Gunnar Helm",
    "team": "TEN",
@@ -4940,16 +4920,6 @@
    "detail": null,
    "espn_id": "4688380"
   },
-  "00-0035261": {
-   "name": "Tony Pollard",
-   "team": "TEN",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-25T19:27:00-04:00",
-   "detail": null,
-   "espn_id": "3916148"
-  },
   "name:TEN:dorianmausi": {
    "name": "Dorian Mausi",
    "team": "TEN",
@@ -4959,6 +4929,16 @@
    "date": "2026-10-21T21:35:00-04:00",
    "detail": "Foot",
    "espn_id": "4573318"
+  },
+  "name:WAS:daronpayne": {
+   "name": "Daron Payne",
+   "team": "WAS",
+   "pos": "DT",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-10-30T18:59:00-04:00",
+   "detail": "Foot",
+   "espn_id": "3925354"
   },
   "name:WAS:javonkinlaw": {
    "name": "Javon Kinlaw",
@@ -5143,16 +5123,6 @@
    "date": "2026-10-20T00:13:00-04:00",
    "detail": null,
    "espn_id": "4697815"
-  },
-  "00-0039910": {
-   "name": "Jayden Daniels",
-   "team": "WAS",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-20T00:00:00-04:00",
-   "detail": null,
-   "espn_id": "4426348"
   }
  },
  "last_fail_at": null,
