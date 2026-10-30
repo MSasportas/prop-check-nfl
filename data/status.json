@@ -3,10 +3,10 @@
  "season": 2026,
  "week": 8,
  "slate": "2026-W08",
- "started_at": "2026-10-30T18:00:00-04:00",
- "status_at": "2026-10-30T18:00:00-04:00",
- "finished_at": "2026-10-30T18:00:01-04:00",
- "last_ok_at": "2026-10-30T18:00:00-04:00",
+ "started_at": "2026-10-30T18:30:01-04:00",
+ "status_at": "2026-10-30T18:30:01-04:00",
+ "finished_at": "2026-10-30T18:30:01-04:00",
+ "last_ok_at": "2026-10-30T18:30:01-04:00",
  "failed_step": null,
  "steps": [
   {
@@ -22,7 +22,7 @@
   {
    "step": "stats",
    "status": "skipped",
-   "note": "checked at 5:27 PM"
+   "note": "play-by-play unchanged (7433373 bytes)"
   },
   {
    "step": "roster",
@@ -53,6 +53,11 @@
    "step": "grade",
    "status": "skipped",
    "note": "nothing to grade"
+  },
+  {
+   "step": "watch",
+   "status": "ok",
+   "note": "1 move(s)/side(s) scanned, 0 flagged, 0 graded"
   },
   {
    "step": "slate",
@@ -135,15 +140,15 @@
  "grade_checks": [],
  "odds_notes": [],
  "runner": {
-  "event": "push",
-  "run_id": "41131232518",
-  "iteration": 3,
-  "chain_link": 0,
+  "event": "workflow_dispatch",
+  "run_id": "41135070470",
+  "iteration": 2,
+  "chain_link": 1,
   "chain_started_at": "2026-10-30T17:27:57-04:00",
-  "run_started_at": "2026-10-30T17:27:57-04:00"
+  "run_started_at": "2026-10-30T18:00:13-04:00"
  },
  "live_page": {
-  "checked_at": "2026-10-30T17:27:58-04:00",
+  "checked_at": "2026-10-30T18:30:01-04:00",
   "http": 200,
   "is_page": true
  }

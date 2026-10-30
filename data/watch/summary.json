@@ -1,0 +1,89 @@
+{
+ "schema": 1,
+ "updated_at": "2026-10-30T18:30:01-04:00",
+ "note": "Research only. Never on the Picks tab, never in the Record. Promotion to a live rule needs Matt.",
+ "reads": {
+  "games_with_pairs": 0,
+  "pairs": 0,
+  "by_window": []
+ },
+ "credits": {
+  "w_reads": 0,
+  "w_credits": 0,
+  "month": "2026-10"
+ },
+ "tracks": [
+  {
+   "track": "pin_solo",
+   "label": "Pinnacle moves alone",
+   "about": "Fallback option (NBA live rule since 2026-10-28). Between two reads of a game, Pinnacle's de-vigged chance moves 2+ pts toward a side while the median of the other books (4+, same line) moves under 2 pts, and Hard Rock's price on that side is at or better than Pinnacle's new fair price. Flat 1 unit at Hard Rock's price on the later read.",
+   "from_slate": "2026-W08",
+   "active": true,
+   "total": {
+    "flags": 0,
+    "w": 0,
+    "l": 0,
+    "push": 0,
+    "void": 0,
+    "pending": 0,
+    "units": 0,
+    "hit_rate": null,
+    "avg_break_even": null,
+    "edge_pts": null,
+    "clv": {
+     "n": 0,
+     "avg": null,
+     "positive": 0
+    }
+   },
+   "by_market": [],
+   "seen": {
+    "reads_scanned": 0,
+    "candidates": 0,
+    "distinct_sides": 0,
+    "would_fire": 0,
+    "by_gate": []
+   },
+   "weeks": []
+  },
+  {
+   "track": "pin_judge",
+   "label": "Pinnacle as the price judge",
+   "about": "Fallback option. Hard Rock's price is 2%+ better than Pinnacle's de-vigged fair on the same line (newest read, first flag per player, market and game). Flat 1 unit at Hard Rock's price.",
+   "from_slate": "2026-W08",
+   "active": true,
+   "total": {
+    "flags": 0,
+    "w": 0,
+    "l": 0,
+    "push": 0,
+    "void": 0,
+    "pending": 0,
+    "units": 0,
+    "hit_rate": null,
+    "avg_break_even": null,
+    "edge_pts": null,
+    "clv": {
+     "n": 0,
+     "avg": null,
+     "positive": 0
+    }
+   },
+   "by_market": [],
+   "seen": {
+    "reads_scanned": 12,
+    "candidates": 1,
+    "distinct_sides": 1,
+    "would_fire": 0,
+    "by_gate": [
+     {
+      "gate": "price_window",
+      "label": "Hard Rock price outside the price window",
+      "n": 1
+     }
+    ]
+   },
+   "weeks": []
+  }
+ ]
+}

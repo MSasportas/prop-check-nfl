@@ -1,5 +1,5 @@
 {
- "at": "2026-10-30T18:00:00-04:00",
+ "at": "2026-10-30T18:30:01-04:00",
  "source": "espn",
  "players": {
   "00-0037157": {
@@ -338,6 +338,16 @@
    "detail": null,
    "espn_id": "4360248"
   },
+  "name:BAL:jaylinnhawkins": {
+   "name": "Jaylinn Hawkins",
+   "team": "BAL",
+   "pos": "S",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-10-30T18:05:00-04:00",
+   "detail": "Knee",
+   "espn_id": "3858276"
+  },
   "00-0034796": {
    "name": "Lamar Jackson",
    "team": "BAL",
@@ -367,16 +377,6 @@
    "date": "2026-10-29T21:26:00-04:00",
    "detail": "Knee",
    "espn_id": "4575483"
-  },
-  "name:BAL:jaylinnhawkins": {
-   "name": "Jaylinn Hawkins",
-   "team": "BAL",
-   "pos": "S",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-29T15:53:00-04:00",
-   "detail": "Knee",
-   "espn_id": "3858276"
   },
   "00-0040888": {
    "name": "Adam Randall",
@@ -505,9 +505,19 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-10-30T17:08:00-04:00",
+   "date": "2026-10-30T18:01:00-04:00",
    "detail": "Suspension",
    "espn_id": "4034953"
+  },
+  "name:BUF:deealford": {
+   "name": "Dee Alford",
+   "team": "BUF",
+   "pos": "CB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-30T17:56:00-04:00",
+   "detail": "Ankle",
+   "espn_id": "4401823"
   },
   "00-0039875": {
    "name": "Ray Davis",
@@ -571,16 +581,6 @@
    "date": "2026-10-28T17:22:00-04:00",
    "detail": "Knee",
    "espn_id": "4870886"
-  },
-  "name:BUF:deealford": {
-   "name": "Dee Alford",
-   "team": "BUF",
-   "pos": "CB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-28T17:21:00-04:00",
-   "detail": "Ankle",
-   "espn_id": "4401823"
   },
   "name:BUF:spencerbrown": {
    "name": "Spencer Brown",
@@ -839,9 +839,9 @@
    "name": "Anthony Johnson Jr.",
    "team": "CHI",
    "pos": "S",
-   "status": "Injured Reserve",
-   "fantasy": "IR",
-   "date": "2026-10-30T17:08:00-04:00",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-10-30T18:01:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
@@ -1433,6 +1433,27 @@
    "detail": "Forearm",
    "espn_id": "4427816"
   },
+  "00-0041496": {
+   "name": "Jonah Coleman",
+   "team": "DEN",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-30T18:16:00-04:00",
+   "detail": null,
+   "espn_id": "4702555"
+  },
+  "00-0036613": {
+   "name": "Jaylen Waddle",
+   "team": "DEN",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-30T18:00:00-04:00",
+   "detail": "Chest",
+   "espn_id": "4372016",
+   "comment": "Waddle (chest) is listed as questionable for Sunday's game against the Chiefs after he was a limited participant in Friday's practice."
+  },
   "00-0040730": {
    "name": "RJ Harvey",
    "team": "DEN",
@@ -1473,17 +1494,6 @@
    "date": "2026-10-29T18:51:00-04:00",
    "detail": null,
    "espn_id": "4686472"
-  },
-  "00-0036613": {
-   "name": "Jaylen Waddle",
-   "team": "DEN",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-29T17:35:00-04:00",
-   "detail": "Chest",
-   "espn_id": "4372016",
-   "comment": "Waddle (chest) practiced in a limited capacity Thursday, Aric DiLalla of the Broncos' official site reports."
   },
   "name:DEN:brandonjones": {
    "name": "Brandon Jones",
@@ -1544,16 +1554,6 @@
    "date": "2026-10-25T22:02:00-04:00",
    "detail": null,
    "espn_id": "3128429"
-  },
-  "00-0041496": {
-   "name": "Jonah Coleman",
-   "team": "DEN",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-25T20:34:00-04:00",
-   "detail": null,
-   "espn_id": "4702555"
   },
   "00-0036158": {
    "name": "J.K. Dobbins",
@@ -3789,15 +3789,35 @@
    "detail": "Chest",
    "espn_id": "3929950"
   },
+  "name:NYJ:davidbailey": {
+   "name": "David Bailey",
+   "team": "NYJ",
+   "pos": "LB",
+   "status": "Doubtful",
+   "fantasy": "DOUBTFUL",
+   "date": "2026-10-30T18:15:00-04:00",
+   "detail": "Groin",
+   "espn_id": "4685248"
+  },
   "name:NYJ:tvondresweat": {
    "name": "T'Vondre Sweat",
    "team": "NYJ",
    "pos": "DT",
    "status": "Out",
    "fantasy": "OUT",
-   "date": "2026-10-30T15:17:00-04:00",
+   "date": "2026-10-30T18:12:00-04:00",
    "detail": "Knee",
    "espn_id": "4428617"
+  },
+  "name:NYJ:josephossai": {
+   "name": "Joseph Ossai",
+   "team": "NYJ",
+   "pos": "DE",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-10-30T18:10:00-04:00",
+   "detail": "Ankle",
+   "espn_id": "4362094"
   },
   "name:NYJ:maxmitchell": {
    "name": "Max Mitchell",
@@ -3808,26 +3828,6 @@
    "date": "2026-10-30T15:17:00-04:00",
    "detail": "Concussion",
    "espn_id": "4373656"
-  },
-  "name:NYJ:josephossai": {
-   "name": "Joseph Ossai",
-   "team": "NYJ",
-   "pos": "DE",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-30T15:17:00-04:00",
-   "detail": "Ankle",
-   "espn_id": "4362094"
-  },
-  "name:NYJ:davidbailey": {
-   "name": "David Bailey",
-   "team": "NYJ",
-   "pos": "LB",
-   "status": "Doubtful",
-   "fantasy": "DOUBTFUL",
-   "date": "2026-10-30T15:17:00-04:00",
-   "detail": "Groin",
-   "espn_id": "4685248"
   },
   "00-0038120": {
    "name": "Breece Hall",
