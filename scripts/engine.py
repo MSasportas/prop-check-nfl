@@ -26,6 +26,7 @@ import names
 import odds
 import record
 import sched
+import watch
 
 EPS = 1e-9
 SELF = sys.modules[__name__]                       # gg.py calls back into pre_check / model_side through this
@@ -562,12 +563,12 @@ def focus_markets(inp, by_game, open_items, near=True):
 
 # ---------------------------------------------------------------- one run of the engine
 def _count_toward_caps(items, slate, cfg):
-    """This slate's new-era singles that count toward the caps: open, locked, and pulled (but a pull for a line move does not)."""
+    """This slate's new-era singles (Gap + Guard and Pinnacle-moves) that count toward the caps: open, locked, and pulled (but a pull for a line move does not)."""
     mine = []
     for it in items.values():
         sh = it["shown"]
-        if it["kind"] != "single" or it["slate"] != slate or sh.get("era") != gg.era(cfg):
-            continue
+        if it["kind"] != "single" or it["slate"] != slate or sh.get("era") not in (gg.era(cfg), watch.ps_era(cfg)):
+            continue                                        # one pick per player across BOTH methods
         if it["pulled"] and it["pulled"].get("code") == "line_moved":
             continue
         mine.append({"pid": sh["player_id"], "game_id": sh["game_id"], "team": sh["team"]})
@@ -603,7 +604,8 @@ def evaluate(inp, by_game, block_new=False, log_items=None):
         if g is None or inp.started(g):
             new.append({"t": "locked", "id": i, "at": at, "state": it["state"]})
             continue
-        if sh.get("era") != gg.era(cfg):
+        is_ps = sh.get("era") == watch.ps_era(cfg) and sh.get("method") == "pin_solo"
+        if sh.get("era") != gg.era(cfg) and not is_ps:
             continue                                        # a retired-rules pick of this slate: only locked (above on kickoff)
         status = inp.status(g, sh["team"], sh["player_id"], sh.get("feed_name"))
         if status == "Inactive":
@@ -630,7 +632,8 @@ def evaluate(inp, by_game, block_new=False, log_items=None):
             new.append(_pull(i, at, "rules", tight[0].upper() + tight[1:] + ".", sh, it))
             continue
         # a newer read can only take the pick back (it keeps its frozen price)
-        f = gg.newest_read(by_game.get(sh["game_id"], []), g, cfg)
+        f = watch.newest_usable(by_game.get(sh["game_id"], []), g, cfg) if is_ps \
+            else gg.newest_read(by_game.get(sh["game_id"], []), g, cfg)
         if f is not None and common.parse_iso(f["at"]) > common.parse_iso(sh.get("read_at") or it["shown_at"]):
             pulled = _judge_read(inp, g, f, sh, it, i, at, t)
             if pulled:
@@ -651,10 +654,32 @@ def evaluate(inp, by_game, block_new=False, log_items=None):
         g = a["game"]
         live[a["id"]] = {"final_ev": a["final_ev"], "settled": a["settled"], "price": a["price"], "pid": a["pid"],
                          "team": a["team"], "game_id": g["id"], "start": g["start"]}
+    # Pinnacle moves alone (ops.pin_solo.live, OFF by default): after Gap + Guard, one pick per player across both methods
+    ps_picks, ps_pause = [], None
+    if watch.pin_live(cfg, inp.slate):
+        pcfg = watch.ps(cfg)
+        units = record.era_units(inp.events, watch.ps_era(cfg))
+        if pcfg.get("safety_pause_units") is not None and units <= pcfg["safety_pause_units"] + EPS:
+            ps_pause = pcfg.get("safety_pause_text")
+        elif not block_new:
+            mine = _count_toward_caps(record.fold(inp.events), inp.slate, cfg) + \
+                [{"pid": a["pid"], "game_id": a["game"]["id"], "team": a["team"]} for a in found["flags"]]
+            have = {e["id"] for e in inp.events if e["t"] == "shown"}
+            for r in watch.live_candidates(inp, SELF, by_game, cfg, now):
+                g = r["g"]
+                r["_id"] = gg.pick_id(inp.slate, g["id"], r["pid"], r["market"], r["line"], r["side"]) + ":ps"
+                if r["_id"] in have or gg.cap_reason({"pid": r["pid"]}, mine, t, g["id"], r["team"]):
+                    continue
+                ps_picks.append(r)
+                mine.append({"pid": r["pid"], "game_id": g["id"], "team": r["team"]})
+                live[r["_id"]] = {"final_ev": r["ev_vs_pin"], "settled": inp.settled(g, r["team"]), "price": r["price"],
+                                  "pid": r["pid"], "team": r["team"], "game_id": g["id"], "start": g["start"]}
     order = sorted(live, key=lambda i: rank_key(live[i]["final_ev"], live[i]["settled"], i))
     ranks = {i: n + 1 for n, i in enumerate(order)}
     for a in found["flags"]:
         new.append(_shown(inp, a, ranks[a["id"]], at))
+    for r in ps_picks:
+        new.append(_shown_ps(inp, r, ranks[r["_id"]], at))
 
     # ---- 3. research log: vetoes, capped rows, closes
     log = [gg.log_event("veto", dict(a, slate=inp.slate), now, guard="veto") for a in found["vetoes"]]
@@ -663,7 +688,8 @@ def evaluate(inp, by_game, block_new=False, log_items=None):
     for e in log:
         merged.setdefault(e["id"], {}).setdefault(e["t"], e)
     log += gg.close_events(inp, record.fold(inp.events + new), merged, by_game, cfg, now)
-    return new, {"ranks": ranks, "live": live, "log": log, "blocked": found["blocked"], "considered": found["considered"]}
+    return new, {"ranks": ranks, "live": live, "log": log, "blocked": found["blocked"], "considered": found["considered"],
+                 "ps_pause": ps_pause}
 
 
 def _pull(i, at, code, text, sh, it, status=None, yours=None, now_price=None):
@@ -697,6 +723,8 @@ def _judge_read(inp, g, f, sh, it, i, at, t):
         return _pull(i, at, "line_gone", pull_reason("line_gone"), sh, it)
     if pair["why"] is not None or pair.get("over") is None or pair.get("under") is None:
         return None                                         # a stale / odd Hard Rock read says nothing
+    if sh.get("method") == "pin_solo":
+        return _judge_ps(inp, f, sh, it, i, at, pair, t)
     entry = (gg.other_lines(f, mname, cfg) or {}).get((sh["player_id"], sh["line"]))
     mm = inp.model(sh["player_id"], sh["team"], sh["game_id"], mname, sh["line"])
     fn = (lambda: model_side(inp, mm, side, mname)) if mm is not None else (lambda: None)
@@ -706,6 +734,50 @@ def _judge_read(inp, g, f, sh, it, i, at, t):
         return None
     yours = gg.at_your_price(side, sh["line"], frozen, entry, fn, t)
     return _pull(i, at, reason[0], reason[1], sh, it, yours=yours, now_price=pair[side])
+
+
+def _judge_ps(inp, f, sh, it, i, at, pair, t):
+    """A newer read for a Pinnacle-moves pick: only Hard Rock's own number can take it back (price outside the window). The
+    line moving or going away is handled before this by _judge_read; the move itself is not re-judged."""
+    now_price, side = pair[sh["side"]], sh["side"]
+    if gg.inside_gate(now_price, t):
+        return None
+    code = "gate" if odds.decimal(now_price) < odds.decimal(t["price_gate"]) else "max_price"
+    text = ("Hard Rock moved it to %s, past our %s limit." % (common.fmt_price(now_price), common.fmt_price(t["price_gate"]))
+            if code == "gate" else "Hard Rock moved it to %s, longer than we take." % common.fmt_price(now_price))
+    yours = None
+    pin = ((gg.other_lines(f, sh["mkey"], inp.cfg) or {}).get((sh["player_id"], sh["line"])) or {}).get("pairs", {}).get(gg.PINNACLE)
+    if pin is not None:
+        yours = {"yours_ev": gg.ev(gg.side_fair(odds.fair_two_sided(pin[0], pin[1]), side), it["prices"][0]["price"])}
+    return _pull(i, at, code, text, sh, it, yours=yours, now_price=now_price)
+
+
+def _shown_ps(inp, r, rank, at):
+    """A Pinnacle-moves pick (ops.pin_solo.live): the same body the Record needs, tagged method pin_solo, era ps1."""
+    cfg, v = inp.cfg, inp.v
+    g = r["g"]
+    mname, price, side = r["market"], r["price"], r["side"]
+    mm = inp.model(r["pid"], r["team"], g["id"], mname, r["line"])
+    full, short = inp.name_parts(r["pid"], r["player"])
+    market, period = contract_market(cfg, mname)
+    opp = g["away"] if r["team"] == g["home"] else g["home"]
+    bet = bet_text(side, r["line"], mname, cfg)
+    body = {
+        "id": r["_id"], "era": watch.ps_era(cfg), "method": "pin_solo", "rank": rank, "game_id": g["id"], "player": full,
+        "player_short": short, "feed_name": r["player"], "player_id": r["pid"], "pos": inp.pos(r["pid"]), "team": r["team"],
+        "opp": opp, "home": r["team"] == g["home"], "start": g["start"], "mkey": mname, "market": market, "period": period,
+        "market_label": cfg["ops"]["markets"][mname]["label"], "line": r["line"], "side": side, "bet": bet,
+        "book": "Hard Rock", "price": price, "price_at": r["read_at"], "read_at": r["read_at"], "read_pull": r["read"],
+        "p": round(r["pin_after"], 4), "breakeven": round(odds.break_even(price), 4),
+        "p_pct": pct_floor(r["pin_after"]), "breakeven_pct": pct_round(odds.break_even(price)),
+        "pin_before": r["pin_before"], "pin_after": r["pin_after"], "others_move": r["others_move"],
+        "n_others": r["n_others"], "n_books": r["n_others"], "ev_vs_pin": r["ev_vs_pin"],
+        "pin_fair_price": watch.fair_price(r["pin_after"]), "window": r["window"], "prev_read": r["prev_read"],
+        "price_before": r.get("price_before"), "final_ev": r["ev_vs_pin"],
+        "reason": watch.plain_reason(r, bet), "state": inp.settled(g, r["team"]), "thin": bool(mm["thin"]),
+        "mu": round(mm["mu"], 2), "games_used": mm["n"], "games_this_season": mm["n_season"], "flags": mm["flags"],
+    }
+    return {"t": "shown", "kind": "single", "id": r["_id"], "at": at, "slate": inp.slate, "pick": body}
 
 
 def _shown(inp, a, rank, at):

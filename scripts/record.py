@@ -232,7 +232,7 @@ def _entry(it, items):
                 "bet": "%d legs" % len(sh.get("legs", [])), "price": grade_price(it), "result": g.get("result"),
                 "actual": g.get("actual_text"), "units": g.get("units"), "pulled": _pulled(it),
                 "legs": [_leg(l) for l in legs]}
-    return {"id": it["id"], "kind": "single", "era": it["era"], "state": _state(it), "date": (sh.get("start") or "")[:10] or None,
+    return {"id": it["id"], "kind": "single", "era": it["era"], "method": (sh.get("method") or "gap_guard") if it["era"] != "v1" else None, "state": _state(it), "date": (sh.get("start") or "")[:10] or None,
             "game": _game_text(sh),
             "player": sh.get("player_short") or sh.get("player"), "team": sh.get("team"), "market": sh.get("market"),
             "period": sh.get("period"), "bet": sh.get("bet"), "price": grade_price(it), "result": g.get("result"),
@@ -326,10 +326,12 @@ def build_views(events, cfg):
     summary; it never counts toward the headline or the safety pause."""
     items = fold(events)
     cur = gg_era(cfg)
-    by_week, old_by_week = {}, {}
+    by_week, old_by_week, ps_by_week = {}, {}, {}
+    ps_era = ps_era_of(cfg)
     for it in items.values():
         if on_record(it):
-            (by_week if it["era"] == cur else old_by_week).setdefault(it["slate"], []).append(it)
+            (by_week if it["era"] == cur else ps_by_week if it["era"] == ps_era else old_by_week).setdefault(
+                it["slate"], []).append(it)
     weeks, summary = _block(items, by_week, cfg)
     keep = cfg["ops"].get("record_weeks", 4)
     older = {}
@@ -343,7 +345,12 @@ def build_views(events, cfg):
             pass
     rec = {"generated_at": events[-1]["at"] if events else None, "season": season, "era": cur,
            "summary": summary, "weeks": weeks[:keep],
-           "older": ["record/%s.json" % s for s in sorted(older, reverse=True)], "retired": None}
+           "older": ["record/%s.json" % s for s in sorted(older, reverse=True)], "retired": None, "pin_solo": None}
+    if ps_by_week:                                          # the fallback method (ops.pin_solo.live): its own headline, never in gg1
+        pwks, psum = _block(items, ps_by_week, cfg)
+        rec["pin_solo"] = {"era": ps_era, "label": "Pinnacle moves alone", "method": "pin_solo",
+                           "note": "Picks made by the Pinnacle-moves method. Counted on their own, never in the main record.",
+                           "summary": psum, "weeks": pwks}
     if old_by_week:
         owks, osum = _block(items, old_by_week, cfg)
         dates = sorted(e["date"] for w in owks for e in w["entries"] if e["date"])
@@ -355,6 +362,10 @@ def build_views(events, cfg):
                                   "Not part of the current record.",
                           "summary": osum, "weeks": owks}
     return rec, older
+
+
+def ps_era_of(cfg):
+    return ((cfg.get("ops") or {}).get("pin_solo") or {}).get("era") or "ps1"
 
 
 def gg_era(cfg):

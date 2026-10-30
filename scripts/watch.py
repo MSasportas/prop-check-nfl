@@ -114,6 +114,21 @@ def append(events):
     return len(events)
 
 
+# ---------------------------------------------------------------- the live switch (ops.pin_solo.live, OFF by default)
+def ps(cfg):
+    return (cfg.get("ops") or {}).get("pin_solo") or {}
+
+
+def ps_era(cfg):
+    return ps(cfg).get("era") or "ps1"
+
+
+def pin_live(cfg, slate):
+    """True only when Matt flipped ops.pin_solo.live AND the pin_solo watch track is on for this slate (same gates). Anything
+    less and the method makes no pick."""
+    return bool(ps(cfg).get("live")) and track_on(cfg, SOLO, slate)
+
+
 # ---------------------------------------------------------------- reads
 def usable(f, game, cfg):
     """A read a watch track may use: R, W or C, asked the other books and got Hard Rock back, before kickoff, taken at or
@@ -205,7 +220,8 @@ def solo_rows(a, b, g, inp, eng, cfg):
                 or next((p for k, p in ha.items() if k[0] == pid), None) or {}
             price = (hb.get(key) or {}).get(side)
             r = _base(g, b, mname, pid, line, side, pair, price)
-            r.update(prev_read=a["pull"], prev_at=a["at"], window=window_label(a, b),
+            pa_hr = (ha.get(key) or {}).get(side)
+            r.update(prev_read=a["pull"], prev_at=a["at"], window=window_label(a, b), price_before=pa_hr,
                      pin_before=round(pin_a, 4), pin_after=round(pin_b, 4),
                      pin_price_after=pb[0] if side == "over" else pb[1],
                      others_move=round(statistics.median(mv), 4) if mv else None, n_others=len(mv),
@@ -545,3 +561,52 @@ def w_credits(ledger, now):
     month = now.date().isoformat()[:7]
     rows = [e for e in (ledger or {}).get("spent", []) if e.get("pull") == "W" and str(e.get("date", ""))[:7] == month]
     return {"w_reads": len(rows), "w_credits": sum(e.get("cost", 0) for e in rows), "month": month}
+
+
+# ---------------------------------------------------------------- live picks (only when ops.pin_solo.live)
+def fair_price(p):
+    """A probability as the American price it is fair at."""
+    d = 1.0 / p
+    return int(round((d - 1.0) * 100)) if d >= 2.0 else int(round(-100.0 / (d - 1.0)))
+
+
+def newest_usable(reads, game, cfg):
+    us = usable_reads(reads, game, cfg)
+    return us[-1] if us else None
+
+
+def live_candidates(inp, eng, by_game, cfg, now):
+    """Pin_solo sides that pass every gate on the NEWEST pair of usable reads of each unstarted game, the newer read being at
+    most max_age_min old. Same rows, same gates as the watch track (solo_rows). Sorted biggest Pinnacle move first."""
+    ps_c = tcfg(cfg, SOLO)
+    out = []
+    for gid, g in sorted(inp.games.items(), key=lambda kv: (kv[1]["start"], kv[0])):
+        if inp.started(g):
+            continue
+        reads = usable_reads(by_game.get(gid, []), g, cfg)
+        if len(reads) < 2:
+            continue
+        a, b = reads[-2], reads[-1]
+        if (now - common.parse_iso(b["at"])).total_seconds() > ps_c.get("max_age_min", 60) * 60:
+            continue
+        rows, _ = solo_rows(a, b, g, inp, eng, cfg)
+        for r in rows:
+            if r["gate"] is None:
+                r["g"] = g
+                out.append(r)
+    out.sort(key=lambda r: (-abs(r["pin_after"] - r["pin_before"]), str(r["pid"]), r["market"]))
+    return out
+
+
+def plain_reason(r, bet):
+    """'Pinnacle moved 3 pts toward Over 5.5 receptions; the other books moved 1; Hard Rock is still at -115, better than
+    Pinnacle's fair -122.'"""
+    g = lambda x: "%g" % round(abs(x) * 100, 1)                 # noqa: E731
+    fair = fair_price(r["pin_after"])
+    still = r.get("price_before") == r["price"]
+    cmp_ = "better than" if (r.get("ev_vs_pin") or 0) > 1e-4 else "level with"
+    om = r["others_move"] or 0.0
+    others = g(om) if om >= 0 else "%s the other way" % g(om)
+    return "Pinnacle moved %s pts toward %s; the other books moved %s; Hard Rock is %s %s, %s Pinnacle's fair %s." % (
+        g(r["pin_after"] - r["pin_before"]), bet, others, "still at" if still else "now at",
+        common.fmt_price(r["price"]), cmp_, common.fmt_price(fair))

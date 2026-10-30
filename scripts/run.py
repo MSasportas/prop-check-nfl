@@ -287,6 +287,8 @@ class Run:
         block = bool(self.stats_problems) or bool(pause) or bool(inj_problem)
         log_items = gg.fold(gg.read_events())
         new, self.extra = engine.evaluate(inp, self.by_game(), block_new=block, log_items=log_items)
+        if self.extra.get("ps_pause"):
+            self.paused["pin_solo"] = self.extra["ps_pause"]
         record.append(new)
         gg.append(self.extra.get("log") or [])
         self.events = inp.events + new

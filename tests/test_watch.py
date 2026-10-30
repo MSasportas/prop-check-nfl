@@ -302,6 +302,197 @@ class SoftAndSeparate(Base):
                                       "date": "2026-10-15"}, helpers.cfg()))
 
 
+def cfg_live(live=True, **ps):
+    c = cfg_no_w()
+    c["ops"]["pin_solo"]["live"] = live
+    c["ops"]["pin_solo"].update(ps)
+    return c
+
+
+class LiveSwitch(unittest.TestCase):
+    """ops.pin_solo.live: OFF by default. On, the pin_solo candidates become real picks (method pin_solo, era ps1)."""
+
+    def run_pair(self, w, pin=-0.03, others=-0.01, hr_under=105, r_edges=None):
+        if r_edges:
+            w.set_odds(SEA_DEN, add_books(copy.deepcopy(w.sea_den), r_edges, last_update_z=LU_R), LU_R)
+        else:
+            build(w, hr_under=hr_under)
+        w.at(R_AT)
+        inactives(w)
+        build(w, pin=pin, others=others, hr_under=hr_under, lu=LU_C)
+        return w.at(C_AT)
+
+    def test_the_shipped_switch_is_off(self):
+        c = helpers.cfg()
+        self.assertIs(c["ops"]["pin_solo"]["live"], False)
+        self.assertFalse(watch.pin_live(c, "2026-W08"))
+
+    def test_switch_off_means_no_pin_solo_pick_ever(self):
+        w = World(pool=(500, 500, 500, 500), config=cfg_live(False))
+        try:
+            s = self.run_pair(w)
+            self.assertEqual([e for e in w.events() if e["t"] == "shown"], [])
+            self.assertEqual(s["picks"], [])
+            self.assertEqual(s["methods"]["pin_solo"]["live"], False)
+            self.assertIsNone(common.read_json(w.path("record.json"))["pin_solo"])
+            self.assertEqual(len([e for e in events(w) if e["t"] == "flag" and e["track"] == "pin_solo"]), 1)   # research still sees it
+        finally:
+            w.close()
+
+    def test_switch_on_but_the_watch_track_off_stays_off(self):
+        c = cfg_live(True)
+        c["ops"]["watch"]["tracks"]["pin_solo"]["active"] = False
+        w = World(pool=(500, 500, 500, 500), config=c)
+        try:
+            s = self.run_pair(w)
+            self.assertEqual([e for e in w.events() if e["t"] == "shown"], [])
+            self.assertFalse(s["methods"]["pin_solo"]["live"])
+        finally:
+            w.close()
+
+    def test_switch_on_pinnacle_moves_hard_rock_stays_is_a_real_pick(self):
+        w = World(pool=(500, 500, 500, 500), config=cfg_live(True))
+        try:
+            s = self.run_pair(w)
+            sh = [e for e in w.events() if e["t"] == "shown"]
+            self.assertEqual(len(sh), 1)
+            b = sh[0]["pick"]
+            self.assertEqual((b["method"], b["era"], b["player_id"], b["mkey"], b["side"], b["line"], b["price"], b["read_pull"]),
+                             ("pin_solo", "ps1", WILSON, "rush_att", "under", 17.5, 105, "C"))
+            self.assertTrue(sh[0]["id"].endswith(":ps"))
+            self.assertRegex(b["reason"], r"^Pinnacle moved 3 pts toward Under 17\.5 carries; the other books moved 0\.9; "
+                                          r"Hard Rock is still at \+105, better than Pinnacle's fair [+-]\d+\.$")
+            p = [x for x in s["picks"] if x["state"] == "open"][0]
+            self.assertEqual((p["method"], p["era"], p["settled_text"], p["price"], p["rank"]),
+                             ("pin_solo", "ps1", "Inactives confirmed", 105, 1))
+            self.assertEqual(p["pin_solo"]["pin_move_pts"], 3.0)
+            self.assertEqual(p["pin_solo"]["others_move_pts"], 0.9)
+            self.assertIsNone(p["gap_pct"])
+            self.assertIsNone(p["final_ev_pct"])
+            self.assertEqual(p["vs"], "Pinnacle +3 pts, other books +0.9")
+            self.assertTrue(s["methods"]["pin_solo"]["live"])
+            self.assertTrue(p["flags"]["price_final"])
+            rec = common.read_json(w.path("record.json"))
+            self.assertEqual(rec["weeks"], [])                    # nothing in the gg1 record
+            self.assertEqual(rec["summary"]["headline"]["n"], 0)
+        finally:
+            w.close()
+
+    def test_a_gap_guard_pick_for_the_same_player_blocks_the_second(self):
+        w = World(pool=(500, 500, 500, 500), config=cfg_live(True))
+        try:
+            edges = {(RA, WHO, "under"): 0.04}                    # a real gap on the R read: Gap + Guard picks Wilson
+            s = self.run_pair(w, r_edges=edges)
+            sh = [e for e in w.events() if e["t"] == "shown"]
+            self.assertEqual([(e["pick"]["method"] if "method" in e["pick"] else "gap_guard", e["pick"]["era"]) for e in sh],
+                             [("gap_guard", "gg1")])
+            self.assertEqual([p["method"] for p in s["picks"]], ["gap_guard"])         # the C read took it back; no second pick
+        finally:
+            w.close()
+
+    def test_one_pick_per_player_also_holds_for_a_pin_solo_pick_first(self):
+        w = World(pool=(500, 500, 500, 500), config=cfg_live(True))
+        try:
+            self.run_pair(w)
+            self.assertEqual(len([e for e in w.events() if e["t"] == "shown"]), 1)
+            w.at("2026-10-15T19:15")                              # later runs add nothing
+            self.assertEqual(len([e for e in w.events() if e["t"] == "shown"]), 1)
+        finally:
+            w.close()
+
+    def test_price_out_of_the_window_pulls_the_pick(self):
+        c = cfg_live(True)
+        c["ops"]["watch"]["w_reads"] = 1
+        w = World(pool=(500, 500, 500, 500), config=c)
+        try:
+            build(w)
+            w.at(R_AT)
+            build(w, pin=-0.03, others=-0.01, lu="2026-10-15T20:50:00Z")
+            w.at("2026-10-15T17:20")                              # the W read: the pair R to W makes the pick
+            sh = [e for e in w.events() if e["t"] == "shown"]
+            self.assertEqual([(e["pick"]["method"], e["pick"]["read_pull"]) for e in sh], [("pin_solo", "W")])
+            inactives(w)
+            build(w, pin=-0.03, others=-0.01, hr_under=-170, lu=LU_C)
+            w.set_price(SEA_DEN, RA, WHO, "over", 140, last_update_z=LU_C)       # a sane two-sided price: the under is now -170
+            w.at(C_AT)
+            pulled = [e for e in w.events() if e["t"] == "pulled"]
+            self.assertEqual([e["code"] for e in pulled], ["gate"])
+            self.assertIn("-150", pulled[0]["reason"])
+            self.assertIn("If you already bet it at +100", pulled[0]["if_bet"])
+            p = w.slate()["picks"][0]
+            self.assertEqual((p["state"], p["price"]), ("pulled", 100))
+        finally:
+            w.close()
+
+    def test_pinnacle_drifting_back_alone_does_not_pull_it(self):
+        w = World(pool=(500, 500, 500, 500), config=cfg_live(True))
+        try:
+            self.run_pair(w)
+            build(w, pin=0.0, others=0.0, hr_under=105, lu="2026-10-15T23:20:00Z")
+            w.at("2026-10-15T19:20")
+            self.assertEqual([e for e in w.events() if e["t"] == "pulled"], [])
+            self.assertEqual([p["state"] for p in w.slate()["picks"]], ["open"])
+        finally:
+            w.close()
+
+    def test_a_questionable_listing_pulls_it_like_any_pick(self):
+        w = World(pool=(500, 500, 500, 500), config=cfg_live(True))
+        try:
+            self.run_pair(w)
+            w.set_injury(26, "Emanuel Wilson", "Questionable", pos="RB", espn_id="4887558")
+            w.at("2026-10-15T19:20")
+            self.assertEqual([e["code"] for e in w.events() if e["t"] == "pulled"], ["injury"])
+        finally:
+            w.close()
+
+    def test_locks_grades_and_counts_on_its_own_headline(self):
+        from test_replay_week import box
+        w = World(pool=(500, 500, 500, 500), config=cfg_live(True))
+        try:
+            self.run_pair(w)
+            w.set_scoreboard("20261015", "401872995", "post", away=20, home=17)
+            w.set_summary("401872995", box(3, "9", "14"))
+            w.at("2026-10-16T00:10")
+            ev = [e for e in w.events() if e["t"] in ("locked", "graded")]
+            self.assertEqual([(e["t"], e.get("result"), e.get("price"), e.get("units")) for e in ev],
+                             [("locked", None, None, None), ("graded", "W", 105, 1.05)])
+            rec = common.read_json(w.path("record.json"))
+            self.assertEqual(rec["summary"]["headline"]["n"], 0)          # never mixed into gg1
+            self.assertEqual(rec["weeks"], [])
+            ps = rec["pin_solo"]
+            self.assertEqual((ps["era"], ps["label"]), ("ps1", "Pinnacle moves alone"))
+            h = ps["summary"]["headline"]
+            self.assertEqual((h["w"], h["l"], h["n"], h["units"]), (1, 0, 1, 1.05))
+            e = ps["weeks"][0]["entries"][0]
+            self.assertEqual((e["method"], e["era"], e["state"], e["result"]), ("pin_solo", "ps1", "graded", "W"))
+            self.assertEqual(w.slate()["picks"][0]["graded"]["result"], "W")
+        finally:
+            w.close()
+
+    def test_its_own_safety_pause_counts_only_ps1(self):
+        w = World(pool=(500, 500, 500, 500), config=cfg_live(True))
+        try:
+            ev = []
+            for n in range(10):
+                i = "2026-W05:g:p%d:rec:4.5:over:ps" % n
+                body = {"id": i, "era": "ps1", "method": "pin_solo", "game_id": "g", "player_id": "p%d" % n,
+                        "player_short": "P. X", "team": "SEA", "opp": "DEN", "home": False, "start": "2026-10-08T20:15:00-04:00",
+                        "market": "rec", "mkey": "rec", "period": "FG", "line": 4.5, "side": "over", "price": -120,
+                        "price_at": "2026-10-08T10:00:00-04:00", "bet": "Over 4.5 receptions"}
+                ev += [{"t": "shown", "kind": "single", "id": i, "at": "2026-10-08T10:00:00-04:00", "slate": "2026-W05", "pick": body},
+                       {"t": "locked", "id": i, "at": "2026-10-08T20:15:00-04:00", "state": "inactives"},
+                       {"t": "graded", "id": i, "at": "2026-10-09T01:00:00-04:00", "result": "L", "actual": 0,
+                        "actual_text": "had 0", "price": -120, "units": -1.0}]
+            import record
+            record.append(ev)
+            s = self.run_pair(w)
+            self.assertEqual([e["id"] for e in w.events() if e["t"] == "shown" and e["slate"] == "2026-W06"], [])
+            self.assertTrue(any("Pinnacle-moves picks are stopped" in b["text"] for b in s["banners"]), s["banners"])
+            self.assertNotIn("Record is down 10 units", json.dumps(s["banners"]))      # gg1 is not paused
+        finally:
+            w.close()
+
+
 class WRead(unittest.TestCase):
     """The optional W read: ~3 hours before kickoff, only with credits to spare after reserving R and C for every game."""
 

@@ -58,7 +58,8 @@ data/state/*                   schedule, stats, injuries, rosters, credits ledge
 ## 5. data/slate.json (schema 2)
 Rewritten every run. Top level:
 ```
-schema 2, era "gg1", season 2026, week 8, label "Week 8",
+schema 2, era "gg1", methods {gap_guard {era "gg1", live true}, pin_solo {era "ps1", live false}},   // see section 11
+season 2026, week 8, label "Week 8",
 generated_at, status_at, valid_until (ISO, next Tuesday 6 AM ET rollover), next_check (ISO|null),
 status { odds, injuries, inactives, stats, pool, last_run },
 banners [ {level "warn"|"stop", text} ],
@@ -82,11 +83,12 @@ GAME:
 ```
 PICK (one row per bet, no legs):
 ```
-{id, era "gg1", rank int|null (open picks only, best first within the game day), state "open"|"locked"|"pulled",
+{id, era "gg1"|"ps1", method "gap_guard"|"pin_solo", rank int|null (open picks only, best first within the game day), state "open"|"locked"|"pulled",
  game_id, day, kickoff, game "SEA @ DEN", player, player_short, player_id, pos, team, opp, home,
  market (our key), market_label ("Carries"), side "over"|"under", line (always x.5), bet "Under 17.5 carries",
  book "Hard Rock", price (American int, FROZEN at first passing read), read_at, read_pull "R"|"C",
- vs "+3.9% vs 7 books (Pinnacle in)", gap_pct, n_books, pinnacle true, final_ev_pct,
+ vs "+3.9% vs 7 books (Pinnacle in)", gap_pct, n_books, pinnacle true, final_ev_pct,   // pin_solo: gap_pct and final_ev_pct are null
+ pin_solo null | {window "R→C", pin_move_pts, others_move_pts, n_others, fair_price, ev_vs_fair_pct},   // only on method pin_solo
  reason (one plain sentence), settled "injury_report"|"inactives", settled_text,
  flags {price_final bool, weather {state "checked"|"dome"|"not_checked", text, wind_mph}},
  pulled null | {at, reason, code, if_bet, now_price},     // code: inactive, injury, rules, wind, line_moved, line_gone,
@@ -107,7 +109,8 @@ settled level.
  retired null | {label, note, summary, weeks}}
 ENTRY {id, kind "single", era, state "locked"|"graded"|"pulled", date, game, player, team, market, period "FG", bet, price, result, actual, units, pulled null|{at,reason,...}, legs []}
 ```
-Headline, rows and weeks are the current era (gg1) only. Everything shown under the first rules (Oct 18-25: blended chance,
+`record.json` also has `pin_solo` (null | {era "ps1", label "Pinnacle moves alone", summary, weeks}) once the fallback switch has ever
+been on (section 11); each ENTRY carries `method`. Headline, rows and weeks are the current era (gg1) only; ps1 is never mixed in. Everything shown under the first rules (Oct 18-25: blended chance,
 parlays, 1st half) is a labelled `retired` block with its own summary; it never counts toward the headline or the pause.
 Rows are per market (`pulled` row separate). There is no `parlays` in the headline. Each ENTRY has `state`: `locked` (game started, not graded yet, not counted), `graded`, or `pulled` (never counted).
 
@@ -171,3 +174,27 @@ check; `books` fewer than 4 other books; `others_moved` the other books moved to
 Pinnacle's fair; `price_window`; `whole_line` (off by default); `ineligible` a live veto; `late` read too old to flag;
 `superseded` a newer read existed; `already_flagged`. A row with no gate is a flag (`would_fire`).
 Event types in events.jsonl: `pair`/`scan` (a pair of reads / one read was scanned), `cand`, `flag`, `close`, `graded`.
+
+## 11. The fallback switch: "Pinnacle moves alone" as a live method (OFF by default)
+`config/rules.json` `ops.pin_solo.live` (false). Flipped to true only when Matt says so; nothing else turns it on. It also needs
+the watch track `pin_solo` active (`ops.watch.tracks.pin_solo`). While false: no pin_solo pick is ever made, `record.json.pin_solo`
+is null and `slate.methods.pin_solo.live` is false. The page can ignore all of it.
+
+When true, the candidates the watch track flags (section 10: same gates, same -150..+120 window, same eligibility vetoes, reads
+after the final injury report, newest pair of usable reads with the newer one under `ops.watch.tracks.pin_solo.max_age_min`
+old) become real picks beside Gap + Guard:
+- Same path as any pick: shown with the price frozen at the first passing read, same lock at kickoff, same grade at the posted
+  price. Pulled for injury status, inactive, wind, line moved or gone, market gone, or Hard Rock's price leaving the window (`code`
+  `gate` / `max_price`). Pinnacle drifting back is NOT a pull (the move is not re-judged).
+- One pick per player per week across BOTH methods (a Gap + Guard pick for him, even a pulled one, blocks a pin_solo pick, and the
+  other way round); the same per-game and per-team caps apply.
+- Pick id = the Gap + Guard id plus `:ps`. Pick `method` is `"pin_solo"`, `era` `"ps1"`, `gap_pct` and `final_ev_pct` are null,
+  `vs` = "Pinnacle +3 pts, other books +0.9", `reason` = "Pinnacle moved 3 pts toward Under 17.5 carries; the other books moved
+  0.9; Hard Rock is still at +105, better than Pinnacle's fair +102.", and the `pin_solo` object (above) holds the numbers.
+  `rank` is shared with Gap + Guard picks in the same list (final EV for Gap + Guard, EV against Pinnacle's fair for pin_solo).
+- Record: events carry `era "ps1"`, `method "pin_solo"`. `record.json.pin_solo` = {era, label, summary, weeks} with its own
+  headline (same shape as section 6); the gg1 headline, rows and weeks never include ps1.
+- Own safety pause: ps1 down `ops.pin_solo.safety_pause_units` (-10) stops new pin_solo picks only (banner
+  `safety_pause_text`); Gap + Guard's pause counts gg1 only.
+- Page: unknown fields are ignored; a pin_solo pick renders from `vs` and `reason` (fixtures/pinsolo checked in a real browser at
+  390px, no change needed). To label the method later, read `pick.method` and `slate.methods`.

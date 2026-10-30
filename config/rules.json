@@ -313,6 +313,14 @@
    "tight": 7,
    "pool_low_allowance": 7
   },
+  "pin_solo": {
+   "_about": "THE FALLBACK SWITCH (Matt, 2026-10-30), OFF. Set live to true and the watch track pin_solo (ops.watch.tracks.pin_solo: same gates, same -150..+120 window, same eligibility vetoes, same after-injury-report timing) also makes real picks through the normal pick and Record path, tagged method pin_solo and era ps1 (its own Record headline, never mixed into gg1). Gap + Guard keeps running; one pick per player across both methods. Needs ops.watch.active and the pin_solo track active, otherwise it stays off. Reads that may make a pick: R, W, C (the reads the research used).",
+   "live": false,
+   "era": "ps1",
+   "method": "pin_solo",
+   "safety_pause_units": -10,
+   "safety_pause_text": "New Pinnacle-moves picks are stopped: that method is down 10 units or more."
+  },
   "watch": {
    "_about": "BEHIND THE SCENES research tracks (scripts/watch.py, docs/SPEC.md section 10). They never make a pick, never touch the Picks tab, the Record or era gg1; they write only data/watch/. Ported from Prop Check NBA. W = an optional extra price read (same cost as R or C: 6 credits, Hard Rock + 9 books) about w_target_min before kickoff, made ONLY when the credits left after reserving R and C for every game that has not started and kicks off before the keys reset (and for the whole plan window) still cover it. w_reads caps W reads per game; w_margin is credits kept in hand besides the reserve. w_pace shares out the spare over the weeks of games still to come this month, so one week cannot use it all.",
    "active": true,

@@ -435,6 +435,28 @@ def main():
     rec, older = record_doc(hw, on_record(p), 13, "2026-12-06T10:20:00-05:00")
     write("many", sl, rec, status_json(13, "2026-12-06T10:20:00-05:00"), older)
 
+    # ---- pinsolo: the Normal day with the fallback switch ON: two of the open picks come from "Pinnacle moves alone"
+    # (method pin_solo, era ps1, no gap / final EV numbers). The page must show them like any other pick.
+    sl, cur, gen = build_normal()
+    open_ones = [x for x in sl["picks"] if x["state"] == "open"]
+    for x, mv in zip(open_ones[:2], ((3.0, 0.9, "Over"), (2.5, 0.4, "Under"))):
+        x["id"] += ":ps"
+        x["era"], x["method"] = "ps1", "pin_solo"
+        x["vs"] = "Pinnacle %+g pts, other books %+g" % (mv[0], mv[1])
+        x["gap_pct"], x["final_ev_pct"] = None, None
+        x["pin_solo"] = {"window": "R\u2192C", "pin_move_pts": mv[0], "others_move_pts": mv[1], "n_others": 5,
+                         "fair_price": -122, "ev_vs_fair_pct": 2.4}
+        x["reason"] = ("Pinnacle moved %g pts toward %s; the other books moved %g; Hard Rock is still at %s, better than "
+                       "Pinnacle's fair -122." % (mv[0], x["bet"], mv[1], price_txt(x["price"])))
+    for x in sl["picks"]:
+        x.setdefault("method", "gap_guard")
+        x.setdefault("pin_solo", None)
+    sl["methods"] = {"gap_guard": {"era": "gg1", "live": True}, "pin_solo": {"era": "ps1", "live": True}}
+    hw = history_weeks(12, seed=11, loss_bias=0.42)
+    rec, older = record_doc(hw, cur, 13, gen)
+    rec["pin_solo"] = {"era": "ps1", "label": "Pinnacle moves alone", "summary": summary([]), "weeks": []}
+    write("pinsolo", sl, rec, status_json(13, gen), older)
+
 
 if __name__ == "__main__":
     main()

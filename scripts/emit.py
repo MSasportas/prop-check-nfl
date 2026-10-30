@@ -13,6 +13,7 @@ import injuries
 import odds
 import record
 import sched
+import watch
 
 SCHEMA = 2
 
@@ -38,7 +39,10 @@ def history(it, cfg):
 
 
 def vs_text(sh):
-    """'+3.4% vs 5 books (Pinnacle in)'"""
+    """'+3.4% vs 5 books (Pinnacle in)'; for a Pinnacle-moves pick 'Pinnacle +3 pts, other books +1'."""
+    if sh.get("method") == "pin_solo":
+        return "Pinnacle %+g pts, other books %+g" % (round(100 * (sh["pin_after"] - sh["pin_before"]), 1),
+                                                       round(100 * (sh["others_move"] or 0.0), 1))
     return "%+.1f%% vs %d books (Pinnacle in)" % (100 * sh["gap_ev"], sh["n_books"])
 
 
@@ -54,6 +58,7 @@ def weather_flag(inp, gid):
 def pick_doc(it, rank, inp, price_final):
     sh, g = it["shown"], it["graded"]
     started = it["locked_at"] is not None or it["graded"] is not None
+    ps = sh.get("method") == "pin_solo"
     state = "pulled" if it["pulled"] else ("locked" if started else "open")
     pf = bool(price_final.get(sh["game_id"])) and state == "open"
     return {
@@ -65,8 +70,13 @@ def pick_doc(it, rank, inp, price_final):
         "market": sh["mkey"], "market_label": sh.get("market_label") or engine.market_label(inp.cfg, sh["market"], sh["period"]),
         "side": sh["side"], "line": sh["line"], "bet": sh["bet"], "book": "Hard Rock",
         "price": record.first_price(it), "read_at": sh.get("read_at") or it["shown_at"], "read_pull": sh.get("read_pull"),
-        "vs": vs_text(sh), "gap_pct": round(100 * sh["gap_ev"], 1), "n_books": sh["n_books"], "pinnacle": True,
-        "final_ev_pct": round(100 * sh["final_ev"], 1),
+        "method": sh.get("method") or "gap_guard",
+        "vs": vs_text(sh), "gap_pct": None if ps else round(100 * sh["gap_ev"], 1), "n_books": sh["n_books"], "pinnacle": True,
+        "final_ev_pct": None if ps else round(100 * sh["final_ev"], 1),
+        "pin_solo": ({"window": sh.get("window"), "pin_move_pts": round(100 * (sh["pin_after"] - sh["pin_before"]), 1),
+                      "others_move_pts": round(100 * (sh["others_move"] or 0.0), 1), "n_others": sh["n_others"],
+                      "fair_price": sh.get("pin_fair_price"), "ev_vs_fair_pct": round(100 * sh["ev_vs_pin"], 1)}
+                     if ps else None),
         "reason": clean(it.get("reason")), "settled": it["state"],
         "settled_text": engine.SETTLED_TEXT.get(it["state"], it["state"]),
         "flags": {"price_final": pf, "weather": weather_flag(inp, sh["game_id"])},
@@ -102,7 +112,8 @@ def build_slate(inp, events, extra, facts):
     cfg, now = inp.cfg, inp.now
     items = record.fold(events)
     cur = gg.era(cfg)
-    week = {i: it for i, it in items.items() if it["slate"] == inp.slate and it["kind"] == "single" and it["era"] == cur}
+    eras = (cur, watch.ps_era(cfg))                     # Gap + Guard picks, and Pinnacle-moves picks when that switch was on
+    week = {i: it for i, it in items.items() if it["slate"] == inp.slate and it["kind"] == "single" and it["era"] in eras}
     live = extra["live"] if extra else {}
     by_day = {}
     for i in live:
@@ -126,7 +137,9 @@ def build_slate(inp, events, extra, facts):
     open_picks = [p for p in picks if p["state"] == "open"]
     empty = None if open_picks else empty_state(inp, games, facts)
     season, week_no = facts.get("season"), facts.get("week")
-    return {"schema": SCHEMA, "era": cur, "season": season, "week": week_no,
+    return {"schema": SCHEMA, "era": cur, "methods": {"gap_guard": {"era": cur, "live": True},
+                                                      "pin_solo": {"era": watch.ps_era(cfg), "live": watch.pin_live(cfg, inp.slate)}},
+            "season": season, "week": week_no,
             "label": "Week %d" % week_no if week_no else "This week",
             "generated_at": common.iso(now), "status_at": common.iso(now), "valid_until": facts.get("valid_until"),
             "next_check": facts.get("next_check"), "status": facts["status"], "banners": banners, "empty": empty,
@@ -178,6 +191,9 @@ def rules_doc(cfg):
         "At most %d pick per player." % t["max_per_player"],
         "A pick is pulled if the player is ruled out or inactive, Hard Rock moves the line or takes it down, the price goes "
         "past %s, or the market stops agreeing with it." % common.fmt_price(t["price_gate"]),
+        ("Backup method on: a Pinnacle-moves pick appears when Pinnacle's chance moves 2 or more points toward a side while the other "
+         "books move less than 2, and Hard Rock's price is at or better than Pinnacle's fair price. Tagged Pinnacle moves; counted "
+         "on its own. Still one pick per player.") if watch.pin_live(cfg, "9999") else None,
         "Picks lock at kickoff. Results come from the official stats once the game is final.",
         "The Record grades every pick at the Hard Rock price it was posted at, 1 unit each. Pulled picks are graded too and "
         "shown as pulled.",

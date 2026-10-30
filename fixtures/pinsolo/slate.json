@@ -1,0 +1,659 @@
+{
+ "schema": 2,
+ "era": "gg1",
+ "season": 2026,
+ "week": 13,
+ "label": "Week 13",
+ "generated_at": "2026-12-06T13:10:00-05:00",
+ "status_at": "2026-12-06T13:10:00-05:00",
+ "valid_until": "2026-12-08T06:00:00-05:00",
+ "next_check": "2026-12-06T14:30:00-05:00",
+ "status": {
+  "odds": {
+   "state": "ok",
+   "at": "2026-12-06T11:32:00-05:00",
+   "next_at": "2026-12-06T14:30:00-05:00"
+  },
+  "injuries": {
+   "state": "ok",
+   "at": "2026-12-04T16:12:00-05:00"
+  },
+  "inactives": {
+   "state": "ok",
+   "at": "2026-12-06T11:44:00-05:00",
+   "note": "Posted for the 1:00 PM games."
+  },
+  "stats": {
+   "state": "ok",
+   "through_week": 12,
+   "at": null
+  },
+  "pool": {
+   "credits_left": 640,
+   "keys": 6,
+   "keys_live": 4,
+   "keys_shared": 1,
+   "days_left": 14,
+   "low": false,
+   "empty": false
+  },
+  "last_run": {
+   "ok": true,
+   "at": "2026-12-06T13:10:00-05:00",
+   "failed_step": null
+  }
+ },
+ "banners": [],
+ "empty": null,
+ "games": [
+  {
+   "id": "2026_13_BAL_CLE",
+   "away": "BAL",
+   "home": "CLE",
+   "kickoff": "2026-12-03T20:15:00-05:00",
+   "day": "2026-12-03",
+   "roof": "outdoors",
+   "started": true,
+   "final": true,
+   "score": {
+    "away": 17,
+    "home": 23
+   },
+   "settled": "inactives",
+   "props_state": "closed",
+   "props_at": null,
+   "note": null,
+   "picks": 0
+  },
+  {
+   "id": "2026_13_ATL_CAR",
+   "away": "ATL",
+   "home": "CAR",
+   "kickoff": "2026-12-06T13:00:00-05:00",
+   "day": "2026-12-06",
+   "roof": "outdoors",
+   "started": true,
+   "final": false,
+   "score": null,
+   "settled": "inactives",
+   "props_state": "ok",
+   "props_at": "2026-12-06T11:32:00-05:00",
+   "note": null,
+   "picks": 1
+  },
+  {
+   "id": "2026_13_HOU_TEN",
+   "away": "HOU",
+   "home": "TEN",
+   "kickoff": "2026-12-06T13:00:00-05:00",
+   "day": "2026-12-06",
+   "roof": "outdoors",
+   "started": true,
+   "final": false,
+   "score": null,
+   "settled": "inactives",
+   "props_state": "closed",
+   "props_at": null,
+   "note": null,
+   "picks": 0
+  },
+  {
+   "id": "2026_13_DET_MIN",
+   "away": "DET",
+   "home": "MIN",
+   "kickoff": "2026-12-06T13:00:00-05:00",
+   "day": "2026-12-06",
+   "roof": "dome",
+   "started": true,
+   "final": false,
+   "score": null,
+   "settled": "inactives",
+   "props_state": "ok",
+   "props_at": "2026-12-06T11:32:00-05:00",
+   "note": null,
+   "picks": 0
+  },
+  {
+   "id": "2026_13_SEA_DEN",
+   "away": "SEA",
+   "home": "DEN",
+   "kickoff": "2026-12-06T16:05:00-05:00",
+   "day": "2026-12-06",
+   "roof": "outdoors",
+   "started": false,
+   "final": false,
+   "score": null,
+   "settled": "injury_report",
+   "props_state": "ok",
+   "props_at": "2026-12-06T11:32:00-05:00",
+   "note": null,
+   "picks": 2
+  },
+  {
+   "id": "2026_13_DAL_PHI",
+   "away": "DAL",
+   "home": "PHI",
+   "kickoff": "2026-12-06T16:25:00-05:00",
+   "day": "2026-12-06",
+   "roof": "outdoors",
+   "started": false,
+   "final": false,
+   "score": null,
+   "settled": "injury_report",
+   "props_state": "ok",
+   "props_at": "2026-12-06T11:32:00-05:00",
+   "note": null,
+   "picks": 2
+  },
+  {
+   "id": "2026_13_BUF_KC",
+   "away": "BUF",
+   "home": "KC",
+   "kickoff": "2026-12-06T16:25:00-05:00",
+   "day": "2026-12-06",
+   "roof": "outdoors",
+   "started": false,
+   "final": false,
+   "score": null,
+   "settled": "injury_report",
+   "props_state": "none_yet",
+   "props_at": null,
+   "note": "No Hard Rock player props yet. Next check 2:30 PM.",
+   "picks": 0
+  },
+  {
+   "id": "2026_13_GB_PIT",
+   "away": "GB",
+   "home": "PIT",
+   "kickoff": "2026-12-06T20:20:00-05:00",
+   "day": "2026-12-06",
+   "roof": "outdoors",
+   "started": false,
+   "final": false,
+   "score": null,
+   "settled": "injury_report",
+   "props_state": "not_pulled",
+   "props_at": null,
+   "note": "Not priced yet: saving odds credits.",
+   "picks": 0
+  },
+  {
+   "id": "2026_13_LAR_SF",
+   "away": "LAR",
+   "home": "SF",
+   "kickoff": "2026-12-07T20:15:00-05:00",
+   "day": "2026-12-07",
+   "roof": "outdoors",
+   "started": false,
+   "final": false,
+   "score": null,
+   "settled": "injury_report",
+   "props_state": "ok",
+   "props_at": "2026-12-06T11:32:00-05:00",
+   "note": null,
+   "picks": 2
+  }
+ ],
+ "picks": [
+  {
+   "id": "2026-W13:2026_13_DAL_PHI:00-0040936:pass_yds:FG:241.5:under:ps",
+   "era": "ps1",
+   "rank": 1,
+   "state": "open",
+   "game_id": "2026_13_DAL_PHI",
+   "day": "2026-12-06",
+   "kickoff": "2026-12-06T16:25:00-05:00",
+   "game": "PHI vs DAL",
+   "player": "Marcus Hale",
+   "player_short": "M. Hale",
+   "player_id": "00-0040936",
+   "pos": "QB",
+   "team": "PHI",
+   "opp": "DAL",
+   "home": true,
+   "market": "pass_yds",
+   "market_label": "Passing yards",
+   "side": "under",
+   "line": 241.5,
+   "bet": "Under 241.5 passing yards",
+   "book": "Hard Rock",
+   "price": -110,
+   "read_at": "2026-12-06T11:32:00-05:00",
+   "read_pull": "R",
+   "vs": "Pinnacle +3 pts, other books +0.9",
+   "gap_pct": null,
+   "n_books": 8,
+   "pinnacle": true,
+   "final_ev_pct": null,
+   "reason": "Pinnacle moved 3 pts toward Under 241.5 passing yards; the other books moved 0.9; Hard Rock is still at -110, better than Pinnacle's fair -122.",
+   "settled": "injury_report",
+   "settled_text": "Injury report in",
+   "flags": {
+    "price_final": false,
+    "weather": {
+     "state": "checked",
+     "text": "54°F, wind 6 mph",
+     "wind_mph": 6
+    }
+   },
+   "pulled": null,
+   "graded": null,
+   "history": [
+    {
+     "at": "2026-12-06T11:32:00-05:00",
+     "text": "Posted at -110"
+    }
+   ],
+   "method": "pin_solo",
+   "pin_solo": {
+    "window": "R→C",
+    "pin_move_pts": 3.0,
+    "others_move_pts": 0.9,
+    "n_others": 5,
+    "fair_price": -122,
+    "ev_vs_fair_pct": 2.4
+   }
+  },
+  {
+   "id": "2026-W13:2026_13_DAL_PHI:00-0038502:rec_yds:FG:44.5:under:ps",
+   "era": "ps1",
+   "rank": 2,
+   "state": "open",
+   "game_id": "2026_13_DAL_PHI",
+   "day": "2026-12-06",
+   "kickoff": "2026-12-06T16:25:00-05:00",
+   "game": "DAL @ PHI",
+   "player": "Jerome Castile",
+   "player_short": "J. Castile",
+   "player_id": "00-0038502",
+   "pos": "TE",
+   "team": "DAL",
+   "opp": "PHI",
+   "home": false,
+   "market": "rec_yds",
+   "market_label": "Receiving yards",
+   "side": "under",
+   "line": 44.5,
+   "bet": "Under 44.5 receiving yards",
+   "book": "Hard Rock",
+   "price": -120,
+   "read_at": "2026-12-06T11:32:00-05:00",
+   "read_pull": "R",
+   "vs": "Pinnacle +2.5 pts, other books +0.4",
+   "gap_pct": null,
+   "n_books": 8,
+   "pinnacle": true,
+   "final_ev_pct": null,
+   "reason": "Pinnacle moved 2.5 pts toward Under 44.5 receiving yards; the other books moved 0.4; Hard Rock is still at -120, better than Pinnacle's fair -122.",
+   "settled": "injury_report",
+   "settled_text": "Injury report in",
+   "flags": {
+    "price_final": false,
+    "weather": {
+     "state": "checked",
+     "text": "54°F, wind 6 mph",
+     "wind_mph": 6
+    }
+   },
+   "pulled": null,
+   "graded": null,
+   "history": [
+    {
+     "at": "2026-12-06T11:32:00-05:00",
+     "text": "Posted at -120"
+    }
+   ],
+   "method": "pin_solo",
+   "pin_solo": {
+    "window": "R→C",
+    "pin_move_pts": 2.5,
+    "others_move_pts": 0.4,
+    "n_others": 5,
+    "fair_price": -122,
+    "ev_vs_fair_pct": 2.4
+   }
+  },
+  {
+   "id": "2026-W13:2026_13_SEA_DEN:00-0004075:rush_att:FG:17.5:under",
+   "era": "gg1",
+   "rank": 3,
+   "state": "open",
+   "game_id": "2026_13_SEA_DEN",
+   "day": "2026-12-06",
+   "kickoff": "2026-12-06T16:05:00-05:00",
+   "game": "DEN vs SEA",
+   "player": "Dalton Pryce",
+   "player_short": "D. Pryce",
+   "player_id": "00-0004075",
+   "pos": "RB",
+   "team": "DEN",
+   "opp": "SEA",
+   "home": true,
+   "market": "rush_att",
+   "market_label": "Carries",
+   "side": "under",
+   "line": 17.5,
+   "bet": "Under 17.5 carries",
+   "book": "Hard Rock",
+   "price": -115,
+   "read_at": "2026-12-06T11:32:00-05:00",
+   "read_pull": "R",
+   "vs": "+3.9% vs 6 books (Pinnacle in)",
+   "gap_pct": 3.9,
+   "n_books": 6,
+   "pinnacle": true,
+   "final_ev_pct": 2.8,
+   "reason": "His carries have dropped each week and the team is a big favorite, so a backup should see more of the game.",
+   "settled": "injury_report",
+   "settled_text": "Injury report in",
+   "flags": {
+    "price_final": false,
+    "weather": {
+     "state": "not_checked",
+     "text": null,
+     "wind_mph": null
+    }
+   },
+   "pulled": null,
+   "graded": null,
+   "history": [
+    {
+     "at": "2026-12-06T11:32:00-05:00",
+     "text": "Posted at -115"
+    }
+   ],
+   "method": "gap_guard",
+   "pin_solo": null
+  },
+  {
+   "id": "2026-W13:2026_13_SEA_DEN:00-0082039:rush_yds:FG:62.5:over",
+   "era": "gg1",
+   "rank": 4,
+   "state": "open",
+   "game_id": "2026_13_SEA_DEN",
+   "day": "2026-12-06",
+   "kickoff": "2026-12-06T16:05:00-05:00",
+   "game": "SEA @ DEN",
+   "player": "Andre Whitlock",
+   "player_short": "A. Whitlock",
+   "player_id": "00-0082039",
+   "pos": "RB",
+   "team": "SEA",
+   "opp": "DEN",
+   "home": false,
+   "market": "rush_yds",
+   "market_label": "Rushing yards",
+   "side": "over",
+   "line": 62.5,
+   "bet": "Over 62.5 rushing yards",
+   "book": "Hard Rock",
+   "price": 105,
+   "read_at": "2026-12-06T11:32:00-05:00",
+   "read_pull": "R",
+   "vs": "+5.4% vs 4 books (Pinnacle in)",
+   "gap_pct": 5.4,
+   "n_books": 4,
+   "pinnacle": true,
+   "final_ev_pct": 2.4,
+   "reason": "The other defense is allowing a lot on the ground and he has cleared this number in 4 of his last 5.",
+   "settled": "injury_report",
+   "settled_text": "Injury report in",
+   "flags": {
+    "price_final": false,
+    "weather": {
+     "state": "checked",
+     "text": "54°F, wind 6 mph",
+     "wind_mph": 6
+    }
+   },
+   "pulled": null,
+   "graded": null,
+   "history": [
+    {
+     "at": "2026-12-06T11:32:00-05:00",
+     "text": "Posted at +105"
+    }
+   ],
+   "method": "gap_guard",
+   "pin_solo": null
+  },
+  {
+   "id": "2026-W13:2026_13_ATL_CAR:00-0077475:rec:FG:5.5:over",
+   "era": "gg1",
+   "rank": null,
+   "state": "locked",
+   "game_id": "2026_13_ATL_CAR",
+   "day": "2026-12-06",
+   "kickoff": "2026-12-06T13:00:00-05:00",
+   "game": "CAR vs ATL",
+   "player": "Terrell Voss",
+   "player_short": "T. Voss",
+   "player_id": "00-0077475",
+   "pos": "WR",
+   "team": "CAR",
+   "opp": "ATL",
+   "home": true,
+   "market": "rec",
+   "market_label": "Receptions",
+   "side": "over",
+   "line": 5.5,
+   "bet": "Over 5.5 receptions",
+   "book": "Hard Rock",
+   "price": -125,
+   "read_at": "2026-12-06T11:32:00-05:00",
+   "read_pull": "R",
+   "vs": "+3.4% vs 5 books (Pinnacle in)",
+   "gap_pct": 3.4,
+   "n_books": 5,
+   "pinnacle": true,
+   "final_ev_pct": 2.4,
+   "reason": "He has gone under this number in 5 of his last 6 games, and this defense gives up few catches to receivers.",
+   "settled": "inactives",
+   "settled_text": "Inactives confirmed",
+   "flags": {
+    "price_final": false,
+    "weather": {
+     "state": "checked",
+     "text": "54°F, wind 6 mph",
+     "wind_mph": 6
+    }
+   },
+   "pulled": null,
+   "graded": null,
+   "history": [
+    {
+     "at": "2026-12-06T11:32:00-05:00",
+     "text": "Posted at -125"
+    },
+    {
+     "at": "2026-12-06T11:44:00-05:00",
+     "text": "Inactives confirmed"
+    },
+    {
+     "at": "2026-12-06T13:00:00-05:00",
+     "text": "Locked"
+    }
+   ],
+   "method": "gap_guard",
+   "pin_solo": null
+  },
+  {
+   "id": "2026-W13:2026_13_SEA_DEN:00-0045008:pass_td:FG:1.5:under",
+   "era": "gg1",
+   "rank": null,
+   "state": "pulled",
+   "game_id": "2026_13_SEA_DEN",
+   "day": "2026-12-06",
+   "kickoff": "2026-12-06T16:05:00-05:00",
+   "game": "DEN vs SEA",
+   "player": "Cade Brennan",
+   "player_short": "C. Brennan",
+   "player_id": "00-0045008",
+   "pos": "QB",
+   "team": "DEN",
+   "opp": "SEA",
+   "home": true,
+   "market": "pass_td",
+   "market_label": "Passing TDs",
+   "side": "under",
+   "line": 1.5,
+   "bet": "Under 1.5 passing TDs",
+   "book": "Hard Rock",
+   "price": -135,
+   "read_at": "2026-12-06T11:32:00-05:00",
+   "read_pull": "R",
+   "vs": "+3.4% vs 6 books (Pinnacle in)",
+   "gap_pct": 3.4,
+   "n_books": 6,
+   "pinnacle": true,
+   "final_ev_pct": 2.8,
+   "reason": "This offense runs through the ground game and the weather is cold, so fewer passing scores.",
+   "settled": "injury_report",
+   "settled_text": "Injury report in",
+   "flags": {
+    "price_final": false,
+    "weather": {
+     "state": "checked",
+     "text": "54°F, wind 6 mph",
+     "wind_mph": 6
+    }
+   },
+   "pulled": {
+    "at": "2026-12-06T12:50:00-05:00",
+    "reason": "Hard Rock moved the line to 2.5.",
+    "code": "line_moved",
+    "if_bet": "If you already bet it at -135: your bet stands at that number. Hard Rock no longer offers this line.",
+    "now_price": null
+   },
+   "graded": null,
+   "history": [
+    {
+     "at": "2026-12-06T11:32:00-05:00",
+     "text": "Posted at -135"
+    },
+    {
+     "at": "2026-12-06T12:50:00-05:00",
+     "text": "Pulled. Hard Rock moved the line to 2.5."
+    }
+   ],
+   "method": "gap_guard",
+   "pin_solo": null
+  },
+  {
+   "id": "2026-W13:2026_13_LAR_SF:00-0024607:rec_yds:FG:58.5:over",
+   "era": "gg1",
+   "rank": 1,
+   "state": "open",
+   "game_id": "2026_13_LAR_SF",
+   "day": "2026-12-07",
+   "kickoff": "2026-12-07T20:15:00-05:00",
+   "game": "LAR @ SF",
+   "player": "Devon Okafor",
+   "player_short": "D. Okafor",
+   "player_id": "00-0024607",
+   "pos": "WR",
+   "team": "LAR",
+   "opp": "SF",
+   "home": false,
+   "market": "rec_yds",
+   "market_label": "Receiving yards",
+   "side": "over",
+   "line": 58.5,
+   "bet": "Over 58.5 receiving yards",
+   "book": "Hard Rock",
+   "price": -110,
+   "read_at": "2026-12-06T11:32:00-05:00",
+   "read_pull": "R",
+   "vs": "+3.9% vs 7 books (Pinnacle in)",
+   "gap_pct": 3.9,
+   "n_books": 7,
+   "pinnacle": true,
+   "final_ev_pct": 3.2,
+   "reason": "He has gone over this number in 4 of his last 5 and the opponent is weak against his type of receiver.",
+   "settled": "injury_report",
+   "settled_text": "Injury report in",
+   "flags": {
+    "price_final": false,
+    "weather": {
+     "state": "dome",
+     "text": "Indoors",
+     "wind_mph": null
+    }
+   },
+   "pulled": null,
+   "graded": null,
+   "history": [
+    {
+     "at": "2026-12-06T11:32:00-05:00",
+     "text": "Posted at -110"
+    }
+   ],
+   "method": "gap_guard",
+   "pin_solo": null
+  },
+  {
+   "id": "2026-W13:2026_13_LAR_SF:00-0020302:rec:FG:4.5:under",
+   "era": "gg1",
+   "rank": 2,
+   "state": "open",
+   "game_id": "2026_13_LAR_SF",
+   "day": "2026-12-07",
+   "kickoff": "2026-12-07T20:15:00-05:00",
+   "game": "SF vs LAR",
+   "player": "Lamar Tibbs",
+   "player_short": "L. Tibbs",
+   "player_id": "00-0020302",
+   "pos": "WR",
+   "team": "SF",
+   "opp": "LAR",
+   "home": true,
+   "market": "rec",
+   "market_label": "Receptions",
+   "side": "under",
+   "line": 4.5,
+   "bet": "Under 4.5 receptions",
+   "book": "Hard Rock",
+   "price": 100,
+   "read_at": "2026-12-06T11:32:00-05:00",
+   "read_pull": "R",
+   "vs": "+3.0% vs 8 books (Pinnacle in)",
+   "gap_pct": 3.0,
+   "n_books": 8,
+   "pinnacle": true,
+   "final_ev_pct": 2.1,
+   "reason": "He only gets a short role in this offense, and the number is high for what he has been doing.",
+   "settled": "injury_report",
+   "settled_text": "Injury report in",
+   "flags": {
+    "price_final": false,
+    "weather": {
+     "state": "checked",
+     "text": "54°F, wind 6 mph",
+     "wind_mph": 6
+    }
+   },
+   "pulled": null,
+   "graded": null,
+   "history": [
+    {
+     "at": "2026-12-06T11:32:00-05:00",
+     "text": "Posted at +100"
+    }
+   ],
+   "method": "gap_guard",
+   "pin_solo": null
+  }
+ ],
+ "fixture": true,
+ "fixture_now": "2026-12-06T13:20:00-05:00",
+ "methods": {
+  "gap_guard": {
+   "era": "gg1",
+   "live": true
+  },
+  "pin_solo": {
+   "era": "ps1",
+   "live": true
+  }
+ }
+}
