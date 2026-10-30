@@ -1,0 +1,141 @@
+{
+ "schema": 2,
+ "era": "gg1",
+ "season": 2026,
+ "week": 13,
+ "label": "Week 13",
+ "generated_at": "2026-12-06T12:05:00-05:00",
+ "status_at": "2026-12-06T12:05:00-05:00",
+ "valid_until": "2026-12-08T06:00:00-05:00",
+ "next_check": "2026-12-06T14:00:00-05:00",
+ "status": {
+  "odds": {
+   "state": "ok",
+   "at": "2026-12-06T09:05:00-05:00",
+   "next_at": "2026-12-06T14:00:00-05:00"
+  },
+  "injuries": {
+   "state": "ok",
+   "at": "2026-12-04T16:10:00-05:00"
+  },
+  "inactives": {
+   "state": "not_yet",
+   "at": null,
+   "note": "Not posted yet. They come out about 90 minutes before kickoff."
+  },
+  "stats": {
+   "state": "ok",
+   "through_week": 12,
+   "at": null
+  },
+  "pool": {
+   "credits_left": 640,
+   "keys": 6,
+   "keys_live": 4,
+   "keys_shared": 1,
+   "days_left": 14,
+   "low": false,
+   "empty": false
+  },
+  "last_run": {
+   "ok": true,
+   "at": "2026-12-06T12:05:00-05:00",
+   "failed_step": null
+  }
+ },
+ "banners": [
+  {
+   "level": "warn",
+   "text": "New picks are stopped: the Record is down 10 units or more."
+  }
+ ],
+ "empty": null,
+ "games": [
+  {
+   "id": "2026_13_SEA_DEN",
+   "away": "SEA",
+   "home": "DEN",
+   "kickoff": "2026-12-06T16:05:00-05:00",
+   "day": "2026-12-06",
+   "roof": "outdoors",
+   "started": false,
+   "final": false,
+   "score": null,
+   "settled": "injury_report",
+   "props_state": "ok",
+   "props_at": "2026-12-06T09:05:00-05:00",
+   "note": null,
+   "picks": 1
+  },
+  {
+   "id": "2026_13_DAL_PHI",
+   "away": "DAL",
+   "home": "PHI",
+   "kickoff": "2026-12-06T16:25:00-05:00",
+   "day": "2026-12-06",
+   "roof": "outdoors",
+   "started": false,
+   "final": false,
+   "score": null,
+   "settled": "injury_report",
+   "props_state": "ok",
+   "props_at": "2026-12-06T09:05:00-05:00",
+   "note": null,
+   "picks": 0
+  }
+ ],
+ "picks": [
+  {
+   "id": "2026-W13:2026_13_SEA_DEN:00-0038502:rec_yds:FG:44.5:under",
+   "era": "gg1",
+   "rank": 1,
+   "state": "open",
+   "game_id": "2026_13_SEA_DEN",
+   "day": "2026-12-06",
+   "kickoff": "2026-12-06T16:05:00-05:00",
+   "game": "DEN vs SEA",
+   "player": "Jerome Castile",
+   "player_short": "J. Castile",
+   "player_id": "00-0038502",
+   "pos": "TE",
+   "team": "DEN",
+   "opp": "SEA",
+   "home": true,
+   "market": "rec_yds",
+   "market_label": "Receiving yards",
+   "side": "under",
+   "line": 44.5,
+   "bet": "Under 44.5 receiving yards",
+   "book": "Hard Rock",
+   "price": -120,
+   "read_at": "2026-12-06T09:05:00-05:00",
+   "read_pull": "R",
+   "vs": "+4.9% vs 8 books (Pinnacle in)",
+   "gap_pct": 4.9,
+   "n_books": 8,
+   "pinnacle": true,
+   "final_ev_pct": 3.6,
+   "reason": "Hard Rock is a step above the other books here, and his target share is down since the new receiver arrived.",
+   "settled": "injury_report",
+   "settled_text": "Injury report in",
+   "flags": {
+    "price_final": false,
+    "weather": {
+     "state": "checked",
+     "text": "54°F, wind 6 mph",
+     "wind_mph": 6
+    }
+   },
+   "pulled": null,
+   "graded": null,
+   "history": [
+    {
+     "at": "2026-12-06T09:05:00-05:00",
+     "text": "Posted at -120"
+    }
+   ]
+  }
+ ],
+ "fixture": true,
+ "fixture_now": "2026-12-06T12:10:00-05:00"
+}

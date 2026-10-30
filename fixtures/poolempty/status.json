@@ -1,0 +1,40 @@
+{
+ "ok": true,
+ "season": 2026,
+ "week": 13,
+ "slate": "2026-W13",
+ "started_at": "2026-12-06T12:05:00-05:00",
+ "status_at": "2026-12-06T12:05:00-05:00",
+ "finished_at": "2026-12-06T12:05:00-05:00",
+ "last_ok_at": "2026-12-06T12:05:00-05:00",
+ "failed_step": null,
+ "steps": [
+  {
+   "step": "rules",
+   "status": "skipped",
+   "note": "unchanged"
+  },
+  {
+   "step": "odds",
+   "status": "ok",
+   "note": "fixture"
+  },
+  {
+   "step": "slate",
+   "status": "ok",
+   "note": "fixture"
+  }
+ ],
+ "sources": {
+  "odds": "ok",
+  "espn_injuries": "ok"
+ },
+ "odds": {
+  "state": "pool_empty"
+ },
+ "live_page": {
+  "checked_at": "2026-12-06T12:05:00-05:00",
+  "http": 200,
+  "is_page": true
+ }
+}

@@ -1,0 +1,87 @@
+{
+ "weeks": [
+  {
+   "week": 9,
+   "slate": "2026-W09",
+   "label": "Week 9",
+   "graded": true,
+   "w": 3,
+   "l": 1,
+   "units": 1.6998,
+   "entries": [
+    {
+     "id": "2026-W09:g0:p0:rec_yds:FG:44.5:under",
+     "kind": "single",
+     "era": "gg1",
+     "date": "2026-11-08",
+     "game": "HOU at TEN",
+     "player": "J. Castile",
+     "team": "HOU",
+     "market": "rec_yds",
+     "period": "FG",
+     "bet": "Under 44.5 receiving yards",
+     "price": -120,
+     "result": "L",
+     "actual": "had 44",
+     "units": -1.0,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-W09:g1:p1:rush_yds:FG:62.5:over",
+     "kind": "single",
+     "era": "gg1",
+     "date": "2026-11-08",
+     "game": "DET at MIN",
+     "player": "A. Whitlock",
+     "team": "DET",
+     "market": "rush_yds",
+     "period": "FG",
+     "bet": "Over 62.5 rushing yards",
+     "price": 105,
+     "result": "W",
+     "actual": "had 63",
+     "units": 1.05,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-W09:g2:p2:pass_td:FG:1.5:under",
+     "kind": "single",
+     "era": "gg1",
+     "date": "2026-11-08",
+     "game": "SEA at DEN",
+     "player": "C. Brennan",
+     "team": "SEA",
+     "market": "pass_td",
+     "period": "FG",
+     "bet": "Under 1.5 passing TDs",
+     "price": -135,
+     "result": "W",
+     "actual": "had 0",
+     "units": 0.7407,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-W09:g3:p3:rec_yds:FG:58.5:over",
+     "kind": "single",
+     "era": "gg1",
+     "date": "2026-11-08",
+     "game": "DAL at PHI",
+     "player": "D. Okafor",
+     "team": "DAL",
+     "market": "rec_yds",
+     "period": "FG",
+     "bet": "Over 58.5 receiving yards",
+     "price": -110,
+     "result": "W",
+     "actual": "had 59",
+     "units": 0.9091,
+     "pulled": null,
+     "legs": []
+    }
+   ]
+  }
+ ]
+}

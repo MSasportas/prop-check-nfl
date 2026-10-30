@@ -1,0 +1,220 @@
+{
+ "version": "2.0",
+ "updated": "2026-10-30",
+ "values": {
+  "price_gate": -150,
+  "max_price": 120,
+  "shrink": {
+   "pass_yds|FG|O": 0.03,
+   "pass_yds|FG|U": 0.07,
+   "pass_td|FG|O": 0.03,
+   "pass_td|FG|U": 0.03,
+   "rush_yds|FG|O": 0.05,
+   "rush_yds|FG|U": 0.03,
+   "rush_att|FG|O": 0.03,
+   "rush_att|FG|U": 0.06,
+   "rec|FG|O": 0.04,
+   "rec|FG|U": 0.06,
+   "rec_yds|FG|O": 0.06,
+   "rec_yds|FG|U": 0.06
+  },
+  "jump_penalty": 0.03,
+  "hold_min": 0.03,
+  "hold_max": 0.1,
+  "elig": {
+   "min_games": 6,
+   "min_games_over": 8,
+   "max_missed": 2,
+   "min_games_with_team": 3,
+   "max_role_cv": 0.6,
+   "jump": 0.4,
+   "role_cv_blocks": "both"
+  },
+  "status_no_pick": [
+   "Questionable",
+   "Doubtful",
+   "Out",
+   "Injured Reserve",
+   "Physically Unable to Perform",
+   "Non-Football Injury",
+   "Suspension",
+   "Reserve-Ret",
+   "Inactive"
+  ],
+  "final_report": {
+   "Mon": "Sat 16:00",
+   "Tue": "Sun 16:00",
+   "Wed": "Mon 16:00",
+   "Thu": "Wed 16:00",
+   "Fri": "Wed 16:00",
+   "Sat": "Thu 16:00",
+   "Sun": "Fri 16:00"
+  },
+  "final_report_grace_min": 60,
+  "inactives_earliest_min": 100,
+  "inactives_deadline_min": 60,
+  "inactives_min_per_team": 3,
+  "reason_max_chars": 140,
+  "stale_min": 120,
+  "stale_min_others": 120,
+  "stake": 1,
+  "key_out": {
+   "target_share": 0.2,
+   "carry_share": 0.35,
+   "lookback_games": 4,
+   "only_if_played_last_game": true,
+   "statuses": [
+    "Doubtful",
+    "Out",
+    "Injured Reserve",
+    "Inactive"
+   ],
+   "effect": "that team's legs in the same room are blocked until inactives are confirmed (the book has priced the absence; our model has not)",
+   "rooms": {
+    "receiving": [
+     "rec",
+     "rec_yds"
+    ],
+    "rushing": [
+     "rush_yds",
+     "rush_att"
+    ]
+   }
+  },
+  "room_change": {
+   "target_share": 0.08,
+   "carry_share": 0.25,
+   "lookback_games": 4,
+   "team_games_after": 2,
+   "positions": [
+    "WR",
+    "TE",
+    "RB"
+   ],
+   "leave_statuses": [
+    "RES"
+   ],
+   "max_wait_team_games": 6,
+   "effect": "a WR/TE/RB with target_share+ of his team's targets or carry_share+ of its carries over his last lookback_games games for that team joins a new team or leaves one: no new picks (over or under) in that team's same room (key_out.rooms) until the team has played team_games_after games since the change. Join: rows or the weekly roster put him on a new team; it clears once he has played team_games_after games for it (or the team has played max_wait_team_games games since his last old-team game without him playing). Leave: he has rows for another team after his last game for this one, is on another team's roster, is off every weekly roster (cut, released, traded), or his roster status is in leave_statuses (RES = IR, PUP, NFI); clears once his old team has played team_games_after games since his last game for it. A weekly Out is not a leave. Shown picks in the room are pulled."
+  },
+  "qb_change": {
+   "statuses": [
+    "Doubtful",
+    "Out",
+    "Injured Reserve",
+    "Inactive"
+   ],
+   "blocks": "over",
+   "markets": "all of that team's six picked markets",
+   "questionable_starter": "no new overs for that team until inactives confirm him active"
+  },
+  "weather": {
+   "wind_mph": 15,
+   "hours_before": 48,
+   "roofs": [
+    "outdoors",
+    "open"
+   ],
+   "markets": [
+    "pass_yds",
+    "pass_td",
+    "rec_yds"
+   ],
+   "blocks": "over",
+   "source": "open-meteo hourly wind_speed_10m at the kickoff hour, wind_speed_unit=mph, stadium lat/lon",
+   "pulls_shown": true
+  },
+  "line_move": "pull (code line_moved, reason 'Hard Rock moved the line to X'); the new line is a fresh candidate with its own id and must qualify on its own",
+  "grading": {
+   "fg": "whole game incl. overtime",
+   "dnp": "void (no offensive snap and no stat)",
+   "tie": "push (whole-number line, which is never picked)",
+   "price": "the frozen Hard Rock price at the flag",
+   "units": "win = decimal(price)-1, loss = -1, push/void = 0, stake 1",
+   "pulled": "graded too, shown separately, never counted in the hit rate",
+   "when": "after ESPN marks the game final, from nflverse play-by-play (next morning); ESPN box score fallback for full-game stats if nflverse is 36h+ late"
+  },
+  "questionable": {
+   "new_picks": "none for that game, even if he is later active",
+   "shown_pick": "pulled when he is listed Questionable or worse (code injury)"
+  },
+  "inactives_source": "ESPN game summary/roster for that event (Builder to confirm the exact field from the runner); confirmed = both teams list inactives_min_per_team+ inactives",
+  "missed_last": "missed his team's last game (any reason) -> no new pick until state is injury or later and he carries no designation",
+  "stats_behind": "nflverse rows missing the team's most recent game -> no new picks for that team; page names the team",
+  "inactives_rule": "state 'inactives' when ESPN lists inactives_min_per_team+ inactives for BOTH teams, checked from inactives_earliest_min before kickoff. Not confirmed by inactives_deadline_min before kickoff: the pick stays 'injury_report', the page says 'Inactives not confirmed yet', and it locks as 'locked_unconfirmed'.",
+  "near_pick": "passes every pre-price veto and clears the gap line by pull_ev (0.015) or more; used only to choose what pull C re-checks when credits are tight"
+ },
+ "gap_guard": {
+  "_about": "THE live rule: Gap + Guard (NHL method, TEAM.md). Every pick comes from this block and nothing else. All EV% = fair_prob x Hard Rock decimal payout - 1; every threshold inclusive. Step 1 (gap): Hard Rock EV vs the other books' median proportional no-vig fair >= gap_ev, >= books_min other books with both sides on the same player/line/side, Pinnacle one of them and its own fair EV on Hard Rock's price >= pin_ev_min. Step 2 (guard): final = market_weight x market fair + model_weight x model side chance (after shrink and jump penalty); the model can only veto; pass iff final EV >= final_ev. No model = no pick. A pick is made only from a price read taken at or after the final injury report counts as in, and is frozen at the first passing read.",
+  "active": true,
+  "live_from": "2026-W08",
+  "era": "gg1",
+  "markets": [
+   "rec",
+   "rec_yds",
+   "rush_yds",
+   "rush_att",
+   "pass_yds",
+   "pass_td"
+  ],
+  "thresholds": {
+   "price_gate": -150,
+   "max_price": 120,
+   "gap_ev": 0.03,
+   "books_min": 4,
+   "pin_ev_min": 0.0,
+   "pull_ev": 0.015,
+   "market_weight": 0.8,
+   "model_weight": 0.2,
+   "final_ev": 0.02,
+   "flag_pulls": [
+    "R",
+    "C"
+   ],
+   "max_per_player": 1,
+   "max_per_team": null,
+   "max_per_game": null,
+   "max_read_age_min": 120,
+   "cons_hold_max": 0.15,
+   "cons_hold_min": 0.0,
+   "skip_whole_lines": true
+  }
+ },
+ "text": [
+  "Every pick is a full game player prop at Hard Rock (Florida), main line only, priced -150 or better and no longer than +120. No parlays, no 1st half, no alternate lines.",
+  "Markets we pick: receptions, receiving yards, rushing yards, carries, passing yards, passing tds.",
+  "Hard Rock's price must beat what the other books say is fair (their prices with the vig removed, the middle one) by 3% or more. At least 4 other books must quote the same line, and Pinnacle must be one and must not disagree.",
+  "Then our model gets a say: it can only veto. It counts for 20% of the final number, and the pick must still be worth at least 2% on it.",
+  "A pick appears only after the final injury report is in. Its price is frozen at the first check that passes.",
+  "No pick on a player listed questionable or worse at any point this week, or who missed his team's last game until the injury report clears him.",
+  "No overs on a player with fewer than 8 recent games, a new team, or a new starting QB.",
+  "No pick either way on a player whose role swings a lot from game to game.",
+  "When a receiver or back with a big share of his team's targets or carries joins or leaves a team, that team's receiving or rushing picks wait 2 games.",
+  "When a teammate with a big share of the targets or carries is out, that room's picks wait for inactives.",
+  "No passing or receiving-yard overs in wind of 15 mph or more at kickoff.",
+  "At most 1 pick per player.",
+  "A pick is pulled if the player is ruled out or inactive, Hard Rock moves the line or takes it down, the price goes past -150, or the market stops agreeing with it.",
+  "Picks lock at kickoff. Results come from the official stats once the game is final.",
+  "The Record grades every pick at the Hard Rock price it was posted at, 1 unit each. Pulled picks are graded too and shown as pulled."
+ ],
+ "ui": {
+  "stale_after_min": 90,
+  "refresh_sec": 120,
+  "state_labels": {
+   "injury": "Injury report in",
+   "inactives": "Inactives confirmed",
+   "locked": "Locked",
+   "locked_unconfirmed": "Locked: inactives not confirmed"
+  },
+  "messages": {
+   "not_yet": "Hard Rock hasn't posted player props for this game yet. Next check %s.",
+   "not_pulled": "No prices pulled for this game (odds credits are low).",
+   "price_age": "Price as of %s.",
+   "inactives_missing": "Inactives not confirmed yet.",
+   "keys_low": "Odds credits are running low: some games get fewer price checks."
+  },
+  "picks_open": 8,
+  "reason_rule": "One plain sentence from the model's context (recent games, opponent). No jargon, no em dashes, no probabilities.",
+  "picks_open_per_day": 6
+ }
+}
