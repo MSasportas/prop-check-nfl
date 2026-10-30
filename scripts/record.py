@@ -88,7 +88,7 @@ def fold(events):
                 continue                                    # a second "shown" for the same id is ignored
             body = e.get("pick") or e.get("parlay") or {}
             items[i] = {"id": i, "kind": e.get("kind", "single"), "slate": e.get("slate"), "shown_at": e["at"],
-                        "shown": body,
+                        "shown": body, "era": body.get("era") or "v1",
                         "prices": [{"at": body.get("price_at") or e["at"], "price": body.get("price"),
                                     "legs": body.get("leg_prices")}],
                         "p_pct": body.get("p_pct"), "breakeven_pct": body.get("breakeven_pct"),
@@ -116,7 +116,8 @@ def fold(events):
                 it["reason"] = e["reason"]
         elif t == "pulled":
             if it["pulled"] is None and it["locked_at"] is None:
-                it["pulled"] = {"at": e["at"], "reason": e.get("reason"), "code": e.get("code"), "legs": e.get("legs")}
+                it["pulled"] = {"at": e["at"], "reason": e.get("reason"), "code": e.get("code"), "legs": e.get("legs"),
+                                "if_bet": e.get("if_bet"), "now_price": e.get("now_price"), "yours_ev": e.get("yours_ev")}
         elif t == "locked":
             if it["locked_at"] is None:
                 it["locked_at"] = e["at"]                   # the settledness at lock stays as it was
@@ -197,6 +198,8 @@ def _pulled(it):
     if not it["pulled"]:
         return None
     out = {"at": it["pulled"]["at"], "reason": it["pulled"]["reason"]}
+    if it["pulled"].get("if_bet"):
+        out["if_bet"] = it["pulled"]["if_bet"]
     return out
 
 
@@ -219,12 +222,13 @@ def _entry(it, items):
     if it["kind"] == "parlay":
         legs = [items[l] for l in sh.get("legs", []) if l in items]
         dates = sorted((l["shown"].get("start") or "")[:10] for l in legs if l["shown"].get("start"))
-        return {"id": it["id"], "kind": "parlay", "date": dates[0] if dates else (sh.get("start") or "")[:10] or None,
+        return {"id": it["id"], "kind": "parlay", "era": it["era"], "date": dates[0] if dates else (sh.get("start") or "")[:10] or None,
                 "game": None, "player": None, "team": None, "market": "parlay", "period": None,
                 "bet": "%d legs" % len(sh.get("legs", [])), "price": grade_price(it), "result": g.get("result"),
                 "actual": g.get("actual_text"), "units": g.get("units"), "pulled": _pulled(it),
                 "legs": [_leg(l) for l in legs]}
-    return {"id": it["id"], "kind": "single", "date": (sh.get("start") or "")[:10] or None, "game": _game_text(sh),
+    return {"id": it["id"], "kind": "single", "era": it["era"], "date": (sh.get("start") or "")[:10] or None,
+            "game": _game_text(sh),
             "player": sh.get("player_short") or sh.get("player"), "team": sh.get("team"), "market": sh.get("market"),
             "period": sh.get("period"), "bet": sh.get("bet"), "price": grade_price(it), "result": g.get("result"),
             "actual": g.get("actual_text"), "units": g.get("units"), "pulled": _pulled(it), "legs": []}
@@ -260,16 +264,17 @@ def _week_no(slate):
         return None
 
 
-def build_views(events, cfg):
-    """-> (record.json dict, {"2026-W05": {"weeks": [week]}, ...}) per CONTRACT.md section 2."""
-    items = fold(events)
-    by_week = {}
-    for it in items.values():
-        if on_record(it):
-            by_week.setdefault(it["slate"], []).append(it)
+def era_units(events, era):
+    """Units of the graded, not pulled singles of one era (the safety pause counts the new era only)."""
+    return round(sum((it["graded"].get("units") or 0.0) for it in fold(events).values()
+                     if it["kind"] == "single" and it["era"] == era and it["graded"] and not it["pulled"]), 4)
+
+
+def _block(items, its_by_week, cfg):
+    """Weeks (newest first, every entry) and the summary rows/headline for one set of items."""
     weeks = []
-    for slate in sorted(by_week, key=lambda s: (str(s)), reverse=True):
-        its = sorted(by_week[slate], key=lambda x: (x["shown_at"], x["kind"] != "single", x["id"]))
+    for slate in sorted(its_by_week, key=lambda s: (str(s)), reverse=True):
+        its = sorted(its_by_week[slate], key=lambda x: (x["shown_at"], x["kind"] != "single", x["id"]))
         entries = [_entry(x, items) for x in its]
         counted = [e for e in entries if e["kind"] == "single" and not e["pulled"]]
         wk = _week_no(slate)
@@ -280,8 +285,7 @@ def build_views(events, cfg):
                       "units": round(sum(e["units"] or 0 for e in counted), 4), "entries": entries})
     every = [e for w in weeks for e in w["entries"]]
     singles = [e for e in every if e["kind"] == "single" and not e["pulled"]]
-    rows = []
-    keys = []
+    rows, keys = [], []
     for e in singles:
         k = "%s|%s" % (e["market"], e["period"])
         if k not in keys:
@@ -300,24 +304,59 @@ def build_views(events, cfg):
     if any(e["result"] for e in pulled):
         rows.append(_row("pulled", "Pulled", pulled))
     head = _row("headline", "Singles", singles)
-    head.pop("key"); head.pop("label")
+    head.pop("key")
+    head.pop("label")
     pr = [e for e in par if e["result"]]
     head["parlays"] = {"w": sum(1 for e in pr if e["result"] == "W"), "l": sum(1 for e in pr if e["result"] == "L"),
                        "units": round(sum(e["units"] or 0 for e in pr), 4)}
+    return weeks, {"headline": head, "rows": rows}
+
+
+def _short_date(d):
+    y, m, dd = [int(x) for x in d.split("-")]
+    return "%s %d" % (("Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec").split()[m - 1], dd)
+
+
+def build_views(events, cfg):
+    """-> (record.json dict, {"2026-W09": {"weeks": [week]}, ...}).
+    Headline, rows and weeks are the current era only (ops.gap_guard.era, "gg1"). Everything shown under the retired rules
+    (Oct 18-25: blended chance, parlays, 1st half) stays in the log and appears as one labelled `retired` block with its own
+    summary; it never counts toward the headline or the safety pause."""
+    items = fold(events)
+    cur = gg_era(cfg)
+    by_week, old_by_week = {}, {}
+    for it in items.values():
+        if on_record(it):
+            (by_week if it["era"] == cur else old_by_week).setdefault(it["slate"], []).append(it)
+    weeks, summary = _block(items, by_week, cfg)
     keep = cfg["ops"].get("record_weeks", 4)
     older = {}
     for w in weeks[keep:]:
         older[w["slate"]] = {"weeks": [w]}
     season = None
-    for slate in by_week:
+    for slate in list(by_week) + list(old_by_week):
         try:
             season = int(str(slate)[:4])
         except ValueError:
             pass
-    rec = {"generated_at": events[-1]["at"] if events else None, "season": season,
-           "summary": {"headline": head, "rows": rows}, "weeks": weeks[:keep],
-           "older": ["record/%s.json" % s for s in sorted(older, reverse=True)]}
+    rec = {"generated_at": events[-1]["at"] if events else None, "season": season, "era": cur,
+           "summary": summary, "weeks": weeks[:keep],
+           "older": ["record/%s.json" % s for s in sorted(older, reverse=True)], "retired": None}
+    if old_by_week:
+        owks, osum = _block(items, old_by_week, cfg)
+        dates = sorted(e["date"] for w in owks for e in w["entries"] if e["date"])
+        span = "%s-%s" % (_short_date(dates[0]), _short_date(dates[-1]).split(" ")[-1]) if dates and \
+            _short_date(dates[0]).split(" ")[0] == _short_date(dates[-1]).split(" ")[0] else \
+            ("%s - %s" % (_short_date(dates[0]), _short_date(dates[-1])) if dates else "")
+        rec["retired"] = {"label": "Retired rules (%s)" % span if span else "Retired rules",
+                          "note": "Picks and parlays from the first rules (blended chance, 1st half, parlays). Kept exactly as shown. "
+                                  "Not part of the current record.",
+                          "summary": osum, "weeks": owks}
     return rec, older
+
+
+def gg_era(cfg):
+    return ((cfg.get("ops") or {}).get("gap_guard") or {}).get("era") or "gg1"
 
 
 def write_views(cfg, events=None):

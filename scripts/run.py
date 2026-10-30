@@ -16,11 +16,10 @@ Steps, in order, each allowed to fail without stopping the others:
     roster     nflverse weekly rosters (names -> gsis ids)
     injuries   ESPN injuries (nflverse fallback) + inactives for games inside their window
     weather    open-meteo at kickoff for outdoor games
-    odds       Hard Rock prices, if a pull is due and the budget allows
-    engine     lock / pull / keep shown picks, add new ones, parlays      -> appends to the Record
+    odds       Hard Rock + other books' prices (pulls R and C), if one is due and the budget allows
+    engine     lock / pull / keep shown picks, add new Gap + Guard picks  -> appends to the Record (and data/gg/)
     grade      results for final games                                    -> appends to the Record
     slate      data/slate.json
-    research   data/research/index.json and one file per game
     record     data/record.json and older-week files
     status     data/status.json
 Safe to run twice in a row: every decision is made from files on disk, and every write is temp + rename.
@@ -37,6 +36,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import common      # noqa: E402
 import emit        # noqa: E402
 import engine      # noqa: E402
+import gg          # noqa: E402
 import grade       # noqa: E402
 import injuries    # noqa: E402
 import names       # noqa: E402
@@ -47,8 +47,8 @@ import sched       # noqa: E402
 import stats       # noqa: E402
 import weather     # noqa: E402
 
-STEPS = ["rules", "schedule", "stats", "roster", "injuries", "weather", "odds", "engine", "grade", "slate", "research",
-         "record", "status"]
+STEPS = ["rules", "schedule", "stats", "roster", "injuries", "weather", "odds", "engine", "grade", "slate", "record",
+         "status"]
 
 
 PAGE_URL = "https://msasportas.github.io/prop-check-nfl/"
@@ -86,7 +86,7 @@ class Run:
         self.view = None
         self.new_events = 0
         self.wrote_slate = False
-        self.paused, self.tighten = {}, 0.0
+        self.paused = {}
         self.slate_doc = None
         self.step_res = {}
 
@@ -212,8 +212,19 @@ class Run:
         return weather.check(self.now, self.games, self.cfg)
 
     def report_times(self):
-        """{game id: final injury report time} (R runs r_after_report_min after it)."""
-        return {g["id"]: injuries.final_report_time(g, self.cfg) for g in self.games}
+        """{game id: when the final injury report counts as in} (R runs from then, on a fresh injury read)."""
+        return {g["id"]: injuries.report_counts_at(g, self.cfg) for g in self.games}
+
+    def report_ok(self):
+        inj = self.inj if self.inj is not None else injuries.load()
+        return {g["id"] for g in self.games if injuries.report_in(g, self.cfg, inj, self.now)}
+
+    def confirmed(self):
+        ina = self.ina if self.ina is not None else injuries.load_inactives()
+        return {g["id"] for g in self.games if injuries.game_confirmed(ina, g)}
+
+    def by_game(self):
+        return gg.reads_by_game(odds.load_fetches(self.games, self.now), self.now)
 
     def do_odds(self):
         self.load_schedule()
@@ -221,13 +232,13 @@ class Run:
             return {"status": "skipped", "note": "no schedule"}
         inp = self.build_inputs()
         items = record.fold(self.load_events())
-        open_ids = [i for i, it in items.items() if it["slate"] == self.slate and record.is_open(it)
-                    and it["kind"] == "single"]
-        focus = engine.focus_markets(inp, open_ids)
-        open_games = engine.focus_markets(inp, open_ids, near=False)
+        open_items = [it for it in items.values() if it["slate"] == self.slate and record.is_open(it)
+                      and it["kind"] == "single" and it["era"] == gg.era(self.cfg)]
+        focus = engine.focus_markets(inp, self.by_game(), open_items)
         left = len(sched.games_left_before_reset(self.cache, self.now))
         self.odds_res = odds.run_pulls(self.now, self.slate, self.games, left, self.cfg, self.matcher_for, focus,
-                                       open_games, self.report_times(), self.started, dry_run=self.dry_run)
+                                       self.report_times(), self.report_ok(), self.confirmed(), self.started,
+                                       dry_run=self.dry_run)
         self.inp = None                                     # prices changed: rebuild the inputs for the engine
         return {"status": self.odds_res["status"], "note": self.odds_res["note"]}
 
@@ -243,24 +254,32 @@ class Run:
         self.inp = engine.Inputs(self.cfg, self.now, self.slate, self.season, self.games,
                                  self.store or stats.Store(), self.behind, self.view, self.inj, self.ina, self.people(),
                                  self.load_events(), cache=self.cache, weather=weather.load())
-        self.inp.tighten = self.tighten
         return self.inp
 
     def do_engine(self):
         self.load_schedule()
         if not self.cache:
             return {"status": "skipped", "note": "no schedule"}
-        self.paused, self.tighten = engine.paused_markets(self.load_events(), self.cfg)
+        events = self.load_events()
+        pause = engine.safety_pause(events, self.cfg)
+        self.paused = {"safety": pause} if pause else {}
         inp = self.build_inputs()
-        block = bool(self.stats_problems)
-        new, self.extra = engine.evaluate(inp, paused=self.paused, block_new=block)
+        block = bool(self.stats_problems) or bool(pause)
+        log_items = gg.fold(gg.read_events())
+        new, self.extra = engine.evaluate(inp, self.by_game(), block_new=block, log_items=log_items)
         record.append(new)
+        gg.append(self.extra.get("log") or [])
         self.events = inp.events + new
         self.new_events += len(new)
         shown = sum(1 for e in new if e["t"] == "shown")
         pulled = sum(1 for e in new if e["t"] == "pulled")
-        note = "%d new event(s): %d shown, %d pulled" % (len(new), shown, pulled) if new else "no change"
-        return {"note": note + ("; new picks blocked (%s)" % "; ".join(self.stats_problems) if block else "")}
+        locked = sum(1 for e in new if e["t"] == "locked")
+        note = "%d new event(s): %d shown, %d pulled, %d locked" % (len(new), shown, pulled, locked) if new else "no change"
+        if pause:
+            note += "; new picks stopped (safety pause)"
+        elif self.stats_problems:
+            note += "; new picks blocked (%s)" % "; ".join(self.stats_problems)
+        return {"note": note}
 
     def do_grade(self):
         self.load_schedule()
@@ -300,7 +319,7 @@ class Run:
         nxt = (self.odds_res or {}).get("next_at")
         if nxt is None and plan and not refused:
             nxt = odds.next_check_at(now, self.games, plan, cfg, odds.done_map(st), self.report_times(), self.started,
-                                     st.get("markets", {}), odds.m_map(st))
+                                     self.confirmed())
         # odds state
         if refused:
             ost = "keys_refused"
@@ -389,7 +408,7 @@ class Run:
             banners.append({"level": "warn", "text": "The odds feed did not answer at %s. Trying again on the next "
                                                      "check." % common.fmt_time(common.parse_iso(st["last_fail_at"]))})
         if inj_down:
-            banners.append({"level": "warn", "text": "Injury news isn't loading. Picks stay Early until it does."})
+            banners.append({"level": "warn", "text": "Injury news isn't loading. No new picks until it does."})
         behind = sorted({t for g in upcoming for t in (g["away"], g["home"]) if t in self.behind})
         if behind:
             banners.append({"level": "warn", "text": "No new picks on %s yet: last game's stats are not in." %
@@ -398,11 +417,13 @@ class Run:
             banners.append({"level": "warn", "text": text})
         unmatched = sorted({n for gv in view.values() for n in gv.get("unmatched", set())})
         wk = self.games[0]["week"] if self.games else None
+        done = odds.done_map(st)
+        price_final = {gid: any(f["pull"] == "C" and f.get("ina") for f in reads) for gid, reads in done.items()}
         anchor = sched.slate_anchor(now, cfg)
         valid_until = common.iso(anchor + timedelta(days=7, hours=1))
         return {"status": status, "banners": banners, "props": props, "season": self.season, "week": wk,
                 "valid_until": valid_until, "next_check": common.iso(nxt) if nxt else None,
-                "injuries_down": inj_down,
+                "injuries_down": inj_down, "price_final": price_final,
                 "_keys": [{"n": k["n"], "left": k.get("left"), "shared": bool(k.get("shared"))} for k in key_state], "_plan": plan, "_pool": pool,
                 "_unmatched": unmatched, "_unknown_teams": st.get("unknown_teams", []),
                 "_spent_today": sum(e["cost"] for e in led.get("spent", []) if e["date"] == now.date().isoformat())}
@@ -421,30 +442,8 @@ class Run:
             return {"status": "skipped", "note": "unchanged"}
         common.write_json(path, doc)
         self.wrote_slate = True
-        return {"note": "%d open pick(s), %d parlay(s)" % (sum(1 for p in doc["picks"] if p["rank"]),
-                                                         sum(1 for p in doc["parlays"] if p["state"] == "open"))}
-
-    def do_research(self, facts):
-        if self.inp is None or self.slate_doc is None:
-            return {"status": "skipped", "note": "slate not built"}
-        index, files = emit.build_research(self.inp, self.load_roster(), self.slate_doc, facts)
-        n = 0
-        for gid, doc in files.items():
-            p = common.dpath("research", "%s.json" % gid)
-            if _essence(common.read_json(p) or {}) != _essence(doc):
-                common.write_json(p, doc, pretty=False)
-                n += 1
-        p = common.dpath("research", "index.json")
-        old = common.read_json(p) or {}
-        if _essence(old) != _essence(index) or n:
-            common.write_json(p, index, pretty=False)
-        keep = {"index.json"} | {"%s.json" % g for g in files}
-        rdir = common.dpath("research")
-        if os.path.isdir(rdir):
-            for f in os.listdir(rdir):
-                if f.endswith(".json") and f not in keep:
-                    os.unlink(os.path.join(rdir, f))
-        return {"note": "%d game file(s) written" % n}
+        return {"note": "%d open pick(s), %d pulled" % (sum(1 for p in doc["picks"] if p["state"] == "open"),
+                                                        sum(1 for p in doc["picks"] if p["state"] == "pulled"))}
 
     def _heartbeat_due(self, stamp):
         last = common.parse_iso(stamp) if stamp else None
@@ -576,7 +575,6 @@ def run(only=None, dry_run=False):
             raise
     if facts is not None:
         r.step("slate", lambda: r.do_slate(facts))
-        r.step("research", lambda: r.do_research(facts))
     if record_before is not None and not r.wrote_slate and record.read_raw() != record_before:
         common.write_bytes(record.events_path(), record_before)
         r.events = record.parse(record_before)
@@ -626,9 +624,9 @@ def dry_run_main():
         print("  new Record events: %d" % r.new_events)
         sl = common.read_json(os.path.join(dst, "slate.json")) or {}
         for p in sl.get("picks", []):
-            print("  %s %s %s %s %s  chance %s needs %s  [%s]" % (
-                p.get("rank") or "-", p["player"], p["period"], p["bet"], common.fmt_price(p["price"]), p["p_pct"],
-                p["breakeven_pct"], "pulled" if p["pulled"] else p["settled"]))
+            print("  %s %s %s %s  %s  final EV %s%%  [%s]" % (
+                p.get("rank") or "-", p["player"], p["bet"], common.fmt_price(p["price"]), p["vs"], p["final_ev_pct"],
+                "pulled" if p["pulled"] else p["settled_text"]))
         if sl.get("empty"):
             print("  empty: %s %s" % (sl["empty"]["text"], sl["empty"].get("sub") or ""))
         for b in sl.get("banners", []):
@@ -641,13 +639,12 @@ def dry_run_main():
 def explain_main():
     r = Run(common.load_config(), common.now(), readonly=True)
     r.load_schedule()
-    r.paused, r.tighten = engine.paused_markets(r.load_events(), r.cfg)
-    rows = engine.explain(r.build_inputs())
-    cols = ("player", "team", "market", "line", "side", "price", "model", "model_adj", "fair", "p", "b", "margin",
-            "gap", "settled", "verdict")
+    rows = engine.explain(r.build_inputs(), r.by_game())
+    cols = ("player", "team", "market", "line", "side", "price", "read", "n_books", "market_fair", "gap_ev", "final_ev",
+            "verdict")
     print(" | ".join(cols))
-    for x in sorted(rows, key=lambda x: -(x.get("margin", -9))):
-        print(" | ".join(str(x.get(c, "")) for c in cols))
+    for x in sorted(rows, key=lambda x: -(x.get("gap_ev") if x.get("gap_ev") is not None else -9)):
+        print(" | ".join(("%.4f" % x[c]) if isinstance(x.get(c), float) else str(x.get(c, "")) for c in cols))
     from collections import Counter
     print(Counter(x["verdict"].split(":")[0] for x in rows).most_common())
     return 0
