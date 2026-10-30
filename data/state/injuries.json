@@ -1,5 +1,5 @@
 {
- "at": "2026-10-30T18:30:01-04:00",
+ "at": "2026-10-30T19:00:01-04:00",
  "source": "espn",
  "players": {
   "00-0037157": {
@@ -338,6 +338,16 @@
    "detail": null,
    "espn_id": "4360248"
   },
+  "00-0035993": {
+   "name": "Tyler Huntley",
+   "team": "BAL",
+   "pos": "QB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-30T18:20:00-04:00",
+   "detail": null,
+   "espn_id": "4035671"
+  },
   "name:BAL:jaylinnhawkins": {
    "name": "Jaylinn Hawkins",
    "team": "BAL",
@@ -448,16 +458,6 @@
    "date": "2026-10-25T22:08:00-04:00",
    "detail": null,
    "espn_id": "3116365"
-  },
-  "00-0035993": {
-   "name": "Tyler Huntley",
-   "team": "BAL",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-25T18:49:00-04:00",
-   "detail": null,
-   "espn_id": "4035671"
   },
   "00-0032764": {
    "name": "Derrick Henry",
@@ -1433,6 +1433,27 @@
    "detail": "Forearm",
    "espn_id": "4427816"
   },
+  "00-0036158": {
+   "name": "J.K. Dobbins",
+   "team": "DEN",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-30T18:38:00-04:00",
+   "detail": null,
+   "espn_id": "4241985"
+  },
+  "00-0040730": {
+   "name": "RJ Harvey",
+   "team": "DEN",
+   "pos": "RB",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-10-30T18:38:00-04:00",
+   "detail": "Knee",
+   "espn_id": "4568490",
+   "comment": "Harvey (knee) is ruled out for Sunday's game against the Chiefs, but his injury isn't considered severe or long term, Sam Jane of The Denver Post reports."
+  },
   "00-0041496": {
    "name": "Jonah Coleman",
    "team": "DEN",
@@ -1453,17 +1474,6 @@
    "detail": "Chest",
    "espn_id": "4372016",
    "comment": "Waddle (chest) is listed as questionable for Sunday's game against the Chiefs after he was a limited participant in Friday's practice."
-  },
-  "00-0040730": {
-   "name": "RJ Harvey",
-   "team": "DEN",
-   "pos": "RB",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-30T16:53:00-04:00",
-   "detail": "Knee",
-   "espn_id": "4568490",
-   "comment": "Harvey (knee) has been ruled out for Sunday's game against the Chiefs, Chris Tomasson of the Denver Gazette reports."
   },
   "name:DEN:talanoahufanga": {
    "name": "Talanoa Hufanga",
@@ -1554,16 +1564,6 @@
    "date": "2026-10-25T22:02:00-04:00",
    "detail": null,
    "espn_id": "3128429"
-  },
-  "00-0036158": {
-   "name": "J.K. Dobbins",
-   "team": "DEN",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-25T20:32:00-04:00",
-   "detail": null,
-   "espn_id": "4241985"
   },
   "00-0039732": {
    "name": "Bo Nix",
@@ -2396,6 +2396,16 @@
    "detail": null,
    "espn_id": "2576336"
   },
+  "00-0039894": {
+   "name": "Xavier Worthy",
+   "team": "KC",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-30T18:42:00-04:00",
+   "detail": null,
+   "espn_id": "4683062"
+  },
   "00-0030506": {
    "name": "Travis Kelce",
    "team": "KC",
@@ -2505,16 +2515,6 @@
    "date": "2026-10-26T14:35:00-04:00",
    "detail": null,
    "espn_id": "4372070"
-  },
-  "00-0039894": {
-   "name": "Xavier Worthy",
-   "team": "KC",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-26T00:01:00-04:00",
-   "detail": null,
-   "espn_id": "4683062"
   },
   "00-0033873": {
    "name": "Patrick Mahomes",
@@ -3960,6 +3960,16 @@
    "detail": "Quadriceps",
    "espn_id": "4700136"
   },
+  "00-0040867": {
+   "name": "Makai Lemon",
+   "team": "PHI",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-30T18:33:00-04:00",
+   "detail": null,
+   "espn_id": "4870795"
+  },
   "00-0038393": {
    "name": "Dontayvion Wicks",
    "team": "PHI",
@@ -4083,16 +4093,6 @@
    "date": "2026-10-27T19:06:00-04:00",
    "detail": null,
    "espn_id": "4715355"
-  },
-  "00-0035662": {
-   "name": "Hollywood Brown",
-   "team": "PHI",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-27T00:22:00-04:00",
-   "detail": null,
-   "espn_id": "4241372"
   },
   "00-0036862": {
    "name": "Ben Skowronek",
