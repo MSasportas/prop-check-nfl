@@ -1,33 +1,25 @@
-"""engine.py: stats + Hard Rock prices + injury news -> this week's picks, kept honest through the week.
+"""engine.py: Gap + Guard picks kept honest through the week, written to the Record.
 
-The method is the Sharp standard (config/rules.json "values"; every number is read from there). For one side of
-one Hard Rock main line:
-    b          break-even of the Hard Rock price
-    fair       Hard Rock's own chance with the vig removed (needs both sides; a one-sided price is never a pick)
-    model      the DS model's chance for this side (model.prob_over, calibrated) from the player's rows, the
-               opponent, and the game's Hard Rock total and spread
-    model_adj  model - shrink[market|period|side] (- jump_penalty on an over after a role jump)
-    gap        model_adj - fair            (values.gap_uses = "model_adj")
-    p          model_weight x model_adj + market_weight x fair                 <- "our chance" on the card
-A NEW pick needs, in this order (judge() is the one place this lives):
-    market picks=true and side allowed (ops.markets[*].sides), main line (alt_lines_picks false), both sides posted,
-    feed checks (hold, staleness), game not started, team stats complete, player status not in status_no_pick,
-    missed his team's last game -> waits for inactives (missed_last_waits), DS eligibility flags (model.pick_ok on
-    values.elig), wind (weather_*), price inside -200..max_price, model_adj >= min_model, gap <= too_good,
-    gap <= news_gap unless the injury report is in, p >= min_p, p - b >= margin for the pick's settledness
-    (margin_early / margin_injury / margin_inactives, + board_tighten when the whole board is running cold).
-Then caps: 1 per player, max_per_team, max_per_game; ranked by chance, then margin, then settledness.
+gg.py decides what is a NEW pick (Hard Rock's price vs the other books' no-vig median, then the model's veto). This file owns
+everything around it:
+  Inputs        stats + prices + injury news, as the engine reads them (model, status, settledness, key-out, room change, wind)
+  pre_check     the NFL vetoes that come BEFORE any price talk (status, missed last game, QB, eligibility, room change, wind,
+                key teammate out until inactives are in)
+  evaluate      lock / pull / keep the picks already shown, add the new ones gg.py found, sweep old open items
+  safety_pause  new-era singles down 10 units or more: no new picks until a person reviews
 
-Settledness per player's team: early -> injury_report -> inactives (only moves forward).
-A shown pick is never silently removed: each run it keeps its price (a new one is appended to the Record), is
-pulled with a plain reason, or locks at kickoff. slate.json is rebuilt from the Record each run.
+A pick is never silently removed: each run it is kept (frozen at the price of the first passing read), pulled with a plain
+reason and an "if you already bet it" sentence, or locked at kickoff. slate.json is rebuilt from the Record each run.
+Settledness (per game): injury_report -> inactives (only moves forward). There is no "early" pick: nothing is made before
+the final injury report counts as in.
 """
 import re
-import hashlib
-import itertools
+import math
+import sys
 from datetime import timedelta
 
 import common
+import gg
 import injuries
 import model
 import names
@@ -36,6 +28,7 @@ import record
 import sched
 
 EPS = 1e-9
+SELF = sys.modules[__name__]                       # gg.py calls back into pre_check / model_side through this
 SETTLED_RANK = {"early": 0, "injury_report": 1, "inactives": 2}
 SETTLED_TEXT = {"early": "Early", "injury_report": "Injury report in", "inactives": "Inactives confirmed"}
 
@@ -45,22 +38,27 @@ class ConfigError(Exception):
 
 
 def check_config(cfg):
-    v = cfg["values"]
-    if abs(v["model_weight"] + v["market_weight"] - 1.0) > 1e-9:
+    v, t = cfg["values"], gg.T(cfg)
+    if abs(t["model_weight"] + t["market_weight"] - 1.0) > 1e-9:
         raise ConfigError("model_weight + market_weight must equal 1")
-    for k in ("min_p", "min_model", "margin_early", "margin_injury", "margin_inactives", "news_gap", "too_good",
-              "drift_pull", "parlay_leg_min_p", "parlay_min_p_2", "parlay_min_p_3", "parlay_edge", "hold_min",
-              "hold_max"):
+    for k in ("gap_ev", "pin_ev_min", "pull_ev", "final_ev"):
+        if not (0 <= t[k] <= 1):
+            raise ConfigError("%s must be between 0 and 1" % k)
+    for k in ("hold_min", "hold_max"):
         if not (0 <= v[k] <= 1):
             raise ConfigError("%s must be between 0 and 1" % k)
-    if v["price_gate"] < -200 or v["parlay_leg_min_price"] < -200:
-        raise ConfigError("no leg can be priced worse than -200 (customer rule)")
-    if v["price_gate"] >= 0 or v["max_price"] < 100:
+    if t["price_gate"] < -150:
+        raise ConfigError("no leg can be priced worse than -150 (customer rule)")
+    if t["price_gate"] >= 0 or t["max_price"] < 100:
         raise ConfigError("price_gate must be negative and max_price +100 or longer")
-    if v["parlay_max_legs"] > 3 or v["parlay_min_legs"] < 2:
-        raise ConfigError("parlays are 2-3 legs (customer rule)")
-    if v["news_gap"] > v["too_good"] + 1e-9:
-        raise ConfigError("news_gap must not be above too_good (equal = no 'wait' zone)")
+    if t["books_min"] < 4:
+        raise ConfigError("books_min must be 4 or more")
+    if set(t["flag_pulls"]) - {"R", "C"}:
+        raise ConfigError("only R and C reads can flag")
+    for m in gg.market_names(cfg):
+        md = cfg["ops"]["markets"][m]
+        if md.get("period", "FG") != "FG" or md.get("alt_key"):
+            raise ConfigError("market %s: picks are full game, main line only" % m)
 
 
 # ---------------------------------------------------------------- market names
@@ -69,70 +67,33 @@ def mdef(cfg, mkey):
 
 
 def contract_market(cfg, mkey):
-    """ops.markets key ('rec_yds_1h') -> (contract market 'rec_yds', period '1H')."""
+    """ops.markets key ('rec_yds') -> (model market 'rec_yds', period 'FG')."""
     m = mdef(cfg, mkey)
-    return m.get("model") or mkey.replace("_1h", ""), m.get("period", "FG")
+    return m.get("model") or mkey, m.get("period", "FG")
 
 
 def market_label(cfg, market, period):
     for k, m in cfg["ops"]["markets"].items():
-        if (m.get("model") or k) == market and m.get("period") == period:
-            base = m["label"]
-            if period == "1H":
-                base = base.replace("1H ", "")
-                return "%s (1st half)" % (base[0].upper() + base[1:])
-            return base
+        if (m.get("model") or k) == market and m.get("period", "FG") == period:
+            return m["label"]
     return "%s %s" % (market, period)
 
 
-# ---------------------------------------------------------------- the edge rule (pure arithmetic)
+# ---------------------------------------------------------------- the model's side chance (the guard's input)
 def shrink_for(market, period, side, v):
     return v["shrink"].get("%s|%s|%s" % (market, period, "O" if side == "over" else "U"), 0.05)
 
 
-def edge(model_side, side, market, period, price, other_price, v, fair=None, jump=False):
-    b = odds.break_even(price)
-    if other_price is not None:
-        fair = odds.fair_two_sided(price, other_price)
-    adj = model_side - shrink_for(market, period, side, v)
-    if side == "over" and jump:
+def model_side(inp, mm, side, mname):
+    """The model's chance for the side, minus the DS shrink for market/side, minus jump_penalty on an over after a role jump.
+    This is the number the guard uses (20%); it can only veto."""
+    v = inp.v
+    market, period = contract_market(inp.cfg, mname)
+    ms = mm["p_over"] if side == "over" else 1.0 - mm["p_over"]
+    adj = ms - shrink_for(market, period, side, v)
+    if side == "over" and mm["jump"]:
         adj -= v["jump_penalty"]
-    if fair is None:
-        fair = b
-    p = v["model_weight"] * adj + v["market_weight"] * fair
-    gap = (adj if v.get("gap_uses", "model_adj") == "model_adj" else model_side) - fair
-    return {"b": b, "fair": fair, "model": model_side, "model_adj": adj, "gap": gap, "p": p, "margin": p - b}
-
-
-def inside_gate(price, v):
-    d = odds.decimal(price)
-    return odds.decimal(v["price_gate"]) - EPS <= d <= odds.decimal(v["max_price"]) + EPS
-
-
-def margin_need(settled, v, tighten=0.0):
-    return {"early": v["margin_early"], "injury_report": v["margin_injury"],
-            "inactives": v["margin_inactives"]}[settled] + tighten
-
-
-def qualifies(e, price, settled, v, tighten=0.0):
-    """Price and chance test for a NEW pick. Returns (True, None) or (False, why)."""
-    if not inside_gate(price, v):
-        return False, "price outside -200..+%d" % v["max_price"]
-    if e["model_adj"] < v["min_model"] - EPS:
-        return False, "model chance under the minimum"
-    if e["gap"] > v["too_good"] + EPS:
-        return False, "too good: assume the book knows"
-    if e["gap"] > v["news_gap"] + EPS and settled == "early":
-        return False, "big gap waits for the injury report"
-    if e["p"] < v["min_p"] - EPS:
-        return False, "chance under the minimum"
-    if e["margin"] < margin_need(settled, v, tighten) - EPS:
-        return False, "margin too small"
-    return True, None
-
-
-def rank_key(p, b, settled):
-    return (-round(p, 6), -(round(p - b, 6)), -SETTLED_RANK.get(settled, 0))
+    return min(0.999, max(0.001, adj))
 
 
 # ---------------------------------------------------------------- wording (plain, no dashes)
@@ -142,24 +103,15 @@ def fmt_line(line):
 
 def bet_text(side, line, mkey, cfg):
     m = mdef(cfg, mkey)
-    market, _ = contract_market(cfg, mkey)
-    if market == "anytime_td":
-        return "Scores a TD" if side in ("over", "yes") else "No TD"
     return "%s %s %s" % ("Over" if side == "over" else "Under", fmt_line(line), m.get("bet_noun") or m["noun"])
 
 
 def pct_floor(x):
-    import math
     return int(math.floor(x * 100 + 1e-7))
 
 
 def pct_round(x):
-    import math
     return int(math.floor(x * 100 + 0.5))
-
-
-def pcts(e):
-    return pct_floor(e["p"]), pct_round(e["b"])
 
 
 def _supports(part, side):
@@ -185,29 +137,11 @@ def reason_text(why_parts, limit=120, side=None):
     out = cap(parts[0]) + "."
     if len(parts) > 1 and len(out) + 1 + len(parts[1]) + 1 <= limit:
         out += " " + cap(parts[1]) + "."
-    return out.replace("—", ",").replace("–", "-")
+    return out.replace("\u2014", ",").replace("\u2013", "-")
 
 
-def pick_id(slate, game_id, pid, market, period, line, side):
-    return "%s:%s:%s:%s:%s:%s:%s" % (slate, game_id, pid, market, period, fmt_line(line), side)
-
-
-def parlay_id(slate, leg_ids):
-    h = hashlib.sha1("|".join(sorted(leg_ids)).encode()).hexdigest()[:10]
-    return "%s:P:%s" % (slate, h)
-
-
-STALE = "price too old for a new pick"
-
-
-def stale_price(now, price_at, v):
-    """values.new_pick_max_price_age_hours: no NEW pick from a Hard Rock price older than this. Shown picks keep
-    their 'Price as of' note instead."""
-    h = v.get("new_pick_max_price_age_hours")
-    if h is None or price_at is None:
-        return False
-    at = common.parse_iso(price_at) if isinstance(price_at, str) else price_at
-    return now - at > timedelta(hours=h)
+def rank_key(final_ev, settled, i=""):
+    return (-round(final_ev, 6), -SETTLED_RANK.get(settled, 0), i)
 
 
 # ---------------------------------------------------------------- what the engine reads
@@ -224,7 +158,6 @@ class Inputs:
         self.events, self.cache = events, cache
         self.weather = (weather or {}).get("games", {}) if isinstance(weather, dict) else {}
         self.facts = facts or {}
-        self.tighten = 0.0
         self._c = {}
 
     def pos(self, pid):
@@ -518,172 +451,51 @@ class Inputs:
         return full or feed_name, short
 
 
-# ---------------------------------------------------------------- one side, every rule, in order
-def judge(inp, g, mkey, pid, line, pair, side, mv_at):
-    """-> (candidate or None, verdict text, numbers or None). The single place the entry rules live."""
+
+# ---------------------------------------------------------------- the NFL vetoes that come before any price talk
+def pre_check(inp, g, mkey, pid, line, pair, side, settled):
+    """-> dict(reason, mm, status). reason is None when nothing blocks this side; mm is the model dict (None = no model)."""
     v, cfg = inp.v, inp.cfg
     m = mdef(cfg, mkey)
     team = pair.get("team")
-    if team not in (g["away"], g["home"]):
-        return None, "player not on either team", None
+    out = {"reason": None, "mm": None, "status": None}
+
+    def block(text):
+        out["reason"] = text
+        return out
     if not m.get("picks"):
-        return None, "market not picked (%s)" % m.get("why", "display only"), None
+        return block("market not picked")
     if m.get("sides", "both") not in ("both", side):
-        return None, "this side is never picked", None
-    price = pair.get(side)
-    if price is None:
-        return None, "Hard Rock has no %s price" % side, None
-    if pair.get(("under" if side == "over" else "over")) is None:
-        return None, "one-sided price: no fair", None
-    if not pair.get("ok"):
-        return None, "feed check: %s" % pair.get("why"), None
-    if inp.started(g):
-        return None, "game started", None
-    if team in inp.behind:
-        return None, "team excluded: %s" % inp.behind[team], None
+        return block("this side is never picked")
     mm = inp.model(pid, team, g["id"], mkey, line)
     if mm is None:
-        return None, "no model for this player or market", None
+        return block("no model for this player or market")
+    out["mm"] = mm
     status = inp.status(g, team, pid, pair.get("name"))
-    settled = inp.settled(g, team)
+    out["status"] = status
     if status in v["status_no_pick"]:
-        return None, "listed %s" % status.lower(), None
+        return block("listed %s" % status.lower())
     flagged = inp.flagged(pid, team, pair.get("name"))
     if flagged in v["status_no_pick"]:
-        return None, "listed %s this week" % flagged.lower(), None
+        return block("listed %s this week" % flagged.lower())
     if mm["missed"] >= 1 and (settled == "early" or status is not None):
-        return None, "missed his last game: waits for the injury report", None
-    if side == "over":                                      # the News rule names the cause (the qb_change
-        qb = inp.qb_block(g, team)                          # eligibility flag below says the same, less plainly)
+        return block("missed his last game: waits for the injury report")
+    if side == "over":
+        qb = inp.qb_block(g, team)
         if qb:
-            return None, qb, None
+            return block(qb)
     if not model.pick_ok(mm["flags"], side, v["elig"].get("role_cv_blocks", "over")):
-        return None, "eligibility: %s" % ", ".join(f for f in mm["flags"] if f != "role_jump"), None
+        return block("eligibility: %s" % ", ".join(f for f in mm["flags"] if f != "role_jump"))
     rc = inp.room_change(g, team, mkey)
     if rc:
-        return None, "room change: %s" % rc, None
+        return block("room change: %s" % rc)
     wind = inp.wind_blocks(g, mkey, side)
     if wind:
-        return None, wind, None
-    other = pair.get("under" if side == "over" else "over")
-    ms = mm["p_over"] if side == "over" else 1.0 - mm["p_over"]
-    market, period = contract_market(cfg, mkey)
-    e = edge(ms, side, market, period, price, other, v, jump=mm["jump"])
-    ok, why = qualifies(e, price, settled, v, inp.tighten)
-    if ok and e["gap"] > v["news_gap"] + EPS:
+        return block(wind)
+    if settled != "inactives":
         ko = inp.key_out(g, team, mkey, pid)
         if ko:
-            ok, why = False, "big gap with %s out: the book has priced it" % ko
-    if ok and stale_price(inp.now, mv_at, v):
-        ok, why = False, STALE
-    nums = {"e": e, "m": mm, "settled": settled, "status": status}
-    if not ok:
-        return None, why, nums
-    c = {"id": pick_id(inp.slate, g["id"], pid, market, period, line, side), "game_id": g["id"], "pid": pid,
-         "team": team, "opp": g["away"] if team == g["home"] else g["home"], "home": team == g["home"],
-         "mkey": mkey, "market": market, "period": period, "line": line, "side": side, "price": price,
-         "price_at": mv_at, "e": e, "m": mm, "settled": settled, "name": pair["name"]}
-    return c, "QUALIFIES", nums
-
-
-def _pairs(inp):
-    for gid, g in inp.games.items():
-        props = (inp.view.get(gid) or {}).get("props") or {}
-        for mkey in inp.cfg["ops"]["markets"]:
-            mv = props.get(mkey)
-            if not mv or mv.get("gone") or not mv.get("posted"):
-                continue
-            for (pid, line), pair in mv["pairs"].items():
-                yield gid, g, mkey, mv, pid, line, pair
-
-
-def candidates(inp, paused=()):
-    out, counts = [], {"checked": 0, "failed": 0}
-    for gid in inp.games:
-        for mkey, mv in ((inp.view.get(gid) or {}).get("props") or {}).items():
-            if mv.get("posted") and not mv.get("gone"):
-                counts["checked"] += mv["checked"]
-                counts["failed"] += mv["failed"]
-    for gid, g, mkey, mv, pid, line, pair in _pairs(inp):
-        if mkey in paused or not mdef(inp.cfg, mkey).get("picks"):
-            continue
-        for side in ("over", "under"):
-            c, _, _ = judge(inp, g, mkey, pid, line, pair, side, mv["at"])
-            if c:
-                out.append(c)
-    return out, counts
-
-
-def explain(inp):
-    rows = []
-    for gid, g, mkey, mv, pid, line, pair in _pairs(inp):
-        for side in ("over", "under"):
-            if pair.get(side) is None:
-                continue
-            c, verdict, nums = judge(inp, g, mkey, pid, line, pair, side, mv["at"])
-            row = {"player": pair["name"], "team": pair.get("team"), "market": mkey, "line": line, "side": side,
-                   "price": pair[side], "verdict": verdict}
-            if nums:
-                row.update({k: round(nums["e"][k], 4) for k in nums["e"]})
-                row.update(settled=nums["settled"], n=nums["m"]["n"], mu=round(nums["m"]["mu"], 2),
-                           flags=",".join(nums["m"]["flags"]))
-            rows.append(row)
-    return rows
-
-
-def focus_markets(inp, open_ids=(), near=True):
-    """{game_id: set(feed keys)} for pull C: markets holding an open pick, and markets with a side that cleared
-    every rule except the price ones and came within near_pick_margin of its margin."""
-    v, out = inp.v, {}
-    items = record.fold(inp.events)
-    feed = {k: m.get("feed_key") for k, m in inp.cfg["ops"]["markets"].items()}
-    for i in open_ids:
-        it = items.get(i)
-        if it and it["kind"] == "single" and feed.get(it["shown"].get("mkey")):
-            out.setdefault(it["shown"]["game_id"], set()).add(feed[it["shown"]["mkey"]])
-    if not near:
-        return out
-    for gid, g, mkey, mv, pid, line, pair in _pairs(inp):
-        if not mdef(inp.cfg, mkey).get("picks"):
-            continue
-        for side in ("over", "under"):
-            if pair.get(side) is None:
-                continue
-            c, verdict, nums = judge(inp, g, mkey, pid, line, pair, side, mv["at"])
-            near = nums is not None and verdict in ("margin too small", "chance under the minimum", STALE) and \
-                nums["e"]["margin"] - margin_need(nums["settled"], v, inp.tighten) >= v["near_pick_margin"] - EPS
-            if c or near:
-                out.setdefault(gid, set()).add(feed[mkey])
-    return out
-
-
-def apply_caps(cands, v, live, pulled_players=()):
-    """Best line per player and market, then 1 per player, max_per_team, max_per_game (counting open picks).
-    pulled_players: players whose pick was pulled this week (not for a line move): they count toward the 1 per
-    player cap, so a pulled player does not come back in another market the same week."""
-    by = {}
-    for c in cands:
-        k = (c["pid"], c["mkey"])
-        if k not in by or rank_key(c["e"]["p"], c["e"]["b"], c["settled"]) < rank_key(by[k]["e"]["p"], by[k]["e"]["b"], by[k]["settled"]):
-            by[k] = c
-    ranked = sorted(by.values(), key=lambda c: rank_key(c["e"]["p"], c["e"]["b"], c["settled"]) + (c["id"],))
-    per_p, per_t, per_g = {}, {}, {}
-    for pid in pulled_players:
-        per_p[pid] = per_p.get(pid, 0) + 1
-    for x in live.values():
-        per_p[x["pid"]] = per_p.get(x["pid"], 0) + 1
-        per_t[(x["game_id"], x["team"])] = per_t.get((x["game_id"], x["team"]), 0) + 1
-        per_g[x["game_id"]] = per_g.get(x["game_id"], 0) + 1
-    out = []
-    for c in ranked:
-        tk = (c["game_id"], c["team"])
-        if per_p.get(c["pid"], 0) >= v["max_per_player"] or per_t.get(tk, 0) >= v["max_per_team"] or \
-                per_g.get(c["game_id"], 0) >= v["max_per_game"]:
-            continue
-        per_p[c["pid"]] = per_p.get(c["pid"], 0) + 1
-        per_t[tk] = per_t.get(tk, 0) + 1
-        per_g[c["game_id"]] = per_g.get(c["game_id"], 0) + 1
-        out.append(c)
+            return block("key teammate %s is out: waits for inactives" % ko)
     return out
 
 
@@ -693,40 +505,97 @@ def pull_reason(code, **kw):
         return "Inactive today."
     if code == "status":
         return "Listed %s." % kw["status"].lower()
-    if code == "gate":
-        return "Hard Rock moved it to %s, past our %s limit." % (common.fmt_price(kw["price"]),
-                                                                 common.fmt_price(kw["gate"]))
-    if code == "max_price":
-        return "Hard Rock moved it to %s, longer than we take." % common.fmt_price(kw["price"])
     if code == "line_moved":
         return "Hard Rock moved the line to %s." % fmt_line(kw["line"])
     if code == "line_gone":
         return "Hard Rock took this line down."
     if code == "market_gone":
         return "Hard Rock took this market down."
-    if code == "margin":
-        return "The price at %s no longer clears the bar." % common.fmt_price(kw["price"])
-    if code == "drift":
-        return "The price moved against this side before inactives were in."
     if code == "wind":
         return "Strong %s." % kw["wind"]
-    if code == "leg":
-        return "%s leg pulled." % kw["who"]
     return "Pulled."
 
 
+# ---------------------------------------------------------------- the safety switch
+def safety_pause(events, cfg):
+    """The page sentence when the new era's graded singles (not pulled) are down ops.safety_pause.units or more, else None.
+    New picks stop; shown picks are still looked after."""
+    sp = (cfg["ops"].get("safety_pause") or {})
+    if sp.get("units") is None:
+        return None
+    units = record.era_units(events, gg.era(cfg))
+    return sp.get("text") if units <= sp["units"] + EPS else None
+
+
+# ---------------------------------------------------------------- focus markets (tight tier: C only where it matters)
+def focus_markets(inp, by_game, open_items, near=True):
+    """{game_id: set(feed keys)} for pull C when credits are tight: markets holding an open pick, and markets with a side that
+    passes every veto and clears the gap line by pull_ev (near-pick), on the newest usable read."""
+    cfg, t = inp.cfg, gg.T(inp.cfg)
+    out = {}
+    for it in open_items:
+        sh = it["shown"]
+        feed = mdef(cfg, sh["mkey"]).get("feed_key")
+        if feed:
+            out.setdefault(sh["game_id"], set()).add(feed)
+    if not near:
+        return out
+    for gid, g in inp.games.items():
+        if inp.started(g):
+            continue
+        f = gg.newest_read(by_game.get(gid, []), g, cfg)
+        if f is None:
+            continue
+        for mname in gg.market_names(cfg):
+            pairs, others = gg.hr_market(f, mname, cfg), gg.other_lines(f, mname, cfg)
+            for (pid, line), pair in (pairs or {}).items():
+                if pair["over"] is None or pair["under"] is None or pair["why"] is not None:
+                    continue
+                for side in ("over", "under"):
+                    a = gg.assess(side, line, pair[side], (others or {}).get((pid, line)), lambda: None, t)
+                    ok_gap = a["step1"] or (set(a["fails"]) == {"gap"} and a["gap_ev"] is not None
+                                            and a["gap_ev"] >= t["pull_ev"] - EPS)
+                    if ok_gap and not pre_check(inp, g, mname, pid, line, pair, side, inp.settled(g, pair["team"]))["reason"]:
+                        out.setdefault(gid, set()).add(mdef(cfg, mname)["feed_key"])
+    return out
+
+
 # ---------------------------------------------------------------- one run of the engine
-def evaluate(inp, paused=(), block_new=False):
-    """Returns (new_events, state). Writes nothing."""
-    v, now = inp.v, inp.now
+def _count_toward_caps(items, slate, cfg):
+    """This slate's new-era singles that count toward the caps: open, locked, and pulled (but a pull for a line move does not)."""
+    mine = []
+    for it in items.values():
+        sh = it["shown"]
+        if it["kind"] != "single" or it["slate"] != slate or sh.get("era") != gg.era(cfg):
+            continue
+        if it["pulled"] and it["pulled"].get("code") == "line_moved":
+            continue
+        mine.append({"pid": sh["player_id"], "game_id": sh["game_id"], "team": sh["team"]})
+    return mine
+
+
+def evaluate(inp, by_game, block_new=False, log_items=None):
+    """Returns (new Record events, extra). Writes nothing. extra: live picks, ranks, the research-log events, what was blocked.
+    by_game: gg.reads_by_game(fetches, now). block_new: stats problems or the safety pause (nothing new, shown picks still
+    looked after)."""
+    v, cfg, now = inp.v, inp.cfg, inp.now
+    t = gg.T(cfg)
     at = common.iso(now)
     items = record.fold(inp.events)
-    week = {i: it for i, it in items.items() if it["slate"] == inp.slate}
-    singles = {i: it for i, it in week.items() if it["kind"] == "single"}
+    log_items = log_items if log_items is not None else {}
     new, live = [], {}
 
-    # ---- 1. picks already shown: lock, pull, or carry on with the newest price
-    for i, it in sorted(singles.items()):
+    # ---- 0. old open items (retired rules, or any slate that is over): lock them once their kickoff has passed
+    for i, it in sorted(items.items()):
+        if it["slate"] == inp.slate or not record.is_open(it):
+            continue
+        start = common.parse_iso((it["shown"].get("start") or "")) if it["shown"].get("start") else None
+        if start is not None and now >= start:
+            new.append({"t": "locked", "id": i, "at": at, "state": it["state"]})
+
+    # ---- 1. new-era picks already shown this slate: lock, pull, or carry on
+    week = {i: it for i, it in items.items() if it["slate"] == inp.slate and it["kind"] == "single"}
+    for i, it in sorted(week.items()):
         if not record.is_open(it):
             continue
         sh = it["shown"]
@@ -734,267 +603,138 @@ def evaluate(inp, paused=(), block_new=False):
         if g is None or inp.started(g):
             new.append({"t": "locked", "id": i, "at": at, "state": it["state"]})
             continue
+        if sh.get("era") != gg.era(cfg):
+            continue                                        # a retired-rules pick of this slate: only locked (above on kickoff)
         status = inp.status(g, sh["team"], sh["player_id"], sh.get("feed_name"))
         if status == "Inactive":
-            new.append({"t": "pulled", "id": i, "at": at, "code": "inactive", "reason": pull_reason("inactive")})
+            new.append(_pull(i, at, "inactive", pull_reason("inactive"), sh, it, status=status))
             continue
         if status in v["status_no_pick"]:
-            new.append({"t": "pulled", "id": i, "at": at, "code": "injury", "reason": pull_reason("status", status=status)})
+            new.append(_pull(i, at, "injury", pull_reason("status", status=status), sh, it, status=status))
             continue
         settled = inp.settled(g, sh["team"])
         if SETTLED_RANK.get(settled, 0) < SETTLED_RANK.get(it["state"], 0):
             settled = it["state"]                           # only moves forward
         wind = inp.wind_blocks(g, sh["mkey"], sh["side"]) if (v.get("weather") or {}).get("pulls_shown") else None
         if wind:
-            new.append({"t": "pulled", "id": i, "at": at, "code": "wind", "reason": pull_reason("wind", wind=wind)})
+            new.append(_pull(i, at, "wind", pull_reason("wind", wind=wind), sh, it))
             continue
-        mv = ((inp.view.get(sh["game_id"]) or {}).get("props") or {}).get(sh["mkey"])
-        last_read = common.parse_iso(it["prices"][-1]["at"])
-        price, price_at, other = record.last_price(it), last_read, None
-        pair = None if mv is None or mv.get("gone") else mv["pairs"].get((sh["player_id"], sh["line"]))
-        bad_pair = pair is not None and pair.get(sh["side"]) is not None and not pair.get("ok")
-        newer = mv is not None and mv.get("at") is not None and mv["at"] > last_read
-        if newer and bad_pair:
-            pass                                            # newest read failed the feed checks: keep the last good one
-        elif newer:
-            if mv.get("gone"):
-                new.append({"t": "pulled", "id": i, "at": at, "code": "market_gone", "reason": pull_reason("market_gone")})
-                continue
-            if pair is None or pair.get(sh["side"]) is None:
-                moved = sorted(l for (pid, l), p in mv["pairs"].items()
-                               if pid == sh["player_id"] and l != sh["line"] and p.get(sh["side"]) is not None)
-                if moved:
-                    new.append({"t": "pulled", "id": i, "at": at, "code": "line_moved",
-                                "reason": pull_reason("line_moved", line=moved[0])})
-                else:
-                    new.append({"t": "pulled", "id": i, "at": at, "code": "line_gone", "reason": pull_reason("line_gone")})
-                continue
-            price, price_at = pair[sh["side"]], mv["at"]
-            other = pair.get("under" if sh["side"] == "over" else "over")
-        elif pair is not None and pair.get("ok"):
-            other = pair.get("under" if sh["side"] == "over" else "over")
         mm = inp.model(sh["player_id"], sh["team"], sh["game_id"], sh["mkey"], sh["line"])
-        if mm is None:
-            ms, jump, why = sh.get("model"), False, None
-        else:
-            ms = mm["p_over"] if sh["side"] == "over" else 1.0 - mm["p_over"]
-            jump, why = mm["jump"], mm["why"]
-        e = edge(ms, sh["side"], sh["market"], sh["period"], price, other, v, fair=it.get("fair") or sh.get("fair"),
-                 jump=jump)
-        tight = None                                        # v1.1 rules re-checked on shown picks
+        tight = None
         if mm is not None and "role_unstable" in mm["flags"] and \
                 not model.pick_ok(mm["flags"], sh["side"], v["elig"].get("role_cv_blocks", "over")):
             tight = "his role swings too much game to game"
         if tight is None:
-            rc = inp.room_change(g, sh["team"], sh["mkey"])
-            if rc:
-                tight = rc
-        if tight is None and e["gap"] > v["too_good"] + EPS:
-            tight = "our model is too far from Hard Rock's price (the book likely knows something)"
+            tight = inp.room_change(g, sh["team"], sh["mkey"])
         if tight:
-            pre = "Rules tightened: " if it["shown_at"][:10] <= inp.cfg.get("updated", "") else ""
-            text = pre + tight[0].upper() + tight[1:] + "."
-            new.append({"t": "pulled", "id": i, "at": at, "code": "rules", "reason": text, "seen_price": price})
+            new.append(_pull(i, at, "rules", tight[0].upper() + tight[1:] + ".", sh, it))
             continue
-        code = None
-        if odds.decimal(price) < odds.decimal(v["price_gate"]) - EPS:
-            code, text = "gate", pull_reason("gate", price=price, gate=v["price_gate"])
-        elif odds.decimal(price) > odds.decimal(v["max_price"]) + EPS:
-            code, text = "max_price", pull_reason("max_price", price=price)
-        elif e["margin"] < v["pull_margin"] - EPS:
-            code, text = "margin", pull_reason("margin", price=price)
-        elif settled != "inactives" and odds.break_even(record.first_price(it)) - e["b"] >= v["drift_pull"] - EPS:
-            code, text = "drift", pull_reason("drift")
-        if code:
-            new.append({"t": "pulled", "id": i, "at": at, "code": code, "reason": text, "seen_price": price})
-            continue
-        reason = (reason_text(why, v.get("reason_max_chars", 120), sh["side"]) if why else None) or it["reason"]
-        p_pct, b_pct = pcts(e)
-        if price != record.last_price(it):
-            new.append({"t": "price", "id": i, "at": at, "price": price, "price_at": common.iso(price_at),
-                        "p": round(e["p"], 4), "breakeven": round(e["b"], 4), "fair": round(e["fair"], 4),
-                        "p_pct": p_pct, "breakeven_pct": b_pct, "reason": reason})
-        elif round(e["p"], 4) != it["p"] or reason != it["reason"] or p_pct != it.get("p_pct"):
-            new.append({"t": "update", "id": i, "at": at, "p": round(e["p"], 4), "breakeven": round(e["b"], 4),
-                        "fair": round(e["fair"], 4), "p_pct": p_pct, "breakeven_pct": b_pct, "reason": reason})
+        # a newer read can only take the pick back (it keeps its frozen price)
+        f = gg.newest_read(by_game.get(sh["game_id"], []), g, cfg)
+        if f is not None and common.parse_iso(f["at"]) > common.parse_iso(sh.get("read_at") or it["shown_at"]):
+            pulled = _judge_read(inp, g, f, sh, it, i, at, t)
+            if pulled:
+                new.append(pulled)
+                continue
         if settled != it["state"]:
             new.append({"t": "state", "id": i, "at": at, "state": settled})
-        live[i] = {"p": e["p"], "b": e["b"], "settled": settled, "price": price, "price_at": price_at,
+        live[i] = {"final_ev": sh.get("final_ev") or 0.0, "settled": settled, "price": it["prices"][0]["price"],
                    "pid": sh["player_id"], "team": sh["team"], "game_id": sh["game_id"], "start": sh["start"]}
 
-    # ---- 2. new picks, inside the caps
-    cands, counts = candidates(inp, paused)
-    if block_new:
-        cands = []
-    items_now = record.fold(inp.events + new)
-    pulled_players = {it["shown"]["player_id"] for it in items_now.values()
-                      if it["slate"] == inp.slate and it["kind"] == "single" and it["pulled"]
-                      and it["pulled"].get("code") != "line_moved"}
-    fresh = apply_caps([c for c in cands if c["id"] not in singles], v, live, pulled_players)
-    for c in fresh:
-        live[c["id"]] = {"p": c["e"]["p"], "b": c["e"]["b"], "settled": c["settled"], "price": c["price"],
-                         "price_at": c["price_at"], "pid": c["pid"], "team": c["team"], "game_id": c["game_id"],
-                         "start": inp.games[c["game_id"]]["start"]}
-    order = sorted(live, key=lambda i: rank_key(live[i]["p"], live[i]["b"], live[i]["settled"]) + (i,))
+    # ---- 2. new picks
+    found = {"flags": [], "vetoes": [], "capped": [], "blocked": {}, "considered": 0}
+    if not block_new:
+        items_now = record.fold(inp.events + new)
+        posted = {"ids": set(items_now), "mine": _count_toward_caps(items_now, inp.slate, cfg)}
+        found = gg.find_flags(inp, SELF, by_game, posted, log_items)
+    for a in found["flags"]:
+        g = a["game"]
+        live[a["id"]] = {"final_ev": a["final_ev"], "settled": a["settled"], "price": a["price"], "pid": a["pid"],
+                         "team": a["team"], "game_id": g["id"], "start": g["start"]}
+    order = sorted(live, key=lambda i: rank_key(live[i]["final_ev"], live[i]["settled"], i))
     ranks = {i: n + 1 for n, i in enumerate(order)}
-    for c in fresh:
-        g, e, mm = inp.games[c["game_id"]], c["e"], c["m"]
-        full, short = inp.name_parts(c["pid"], c["name"])
-        body = {
-            "id": c["id"], "rank": ranks[c["id"]], "game_id": c["game_id"], "player": full, "player_short": short,
-            "feed_name": c["name"], "player_id": c["pid"], "pos": inp.pos(c["pid"]), "team": c["team"],
-            "opp": c["opp"], "home": c["home"], "start": g["start"], "mkey": c["mkey"], "market": c["market"],
-            "period": c["period"], "line": c["line"], "side": c["side"],
-            "bet": bet_text(c["side"], c["line"], c["mkey"], inp.cfg), "book": "Hard Rock", "price": c["price"],
-            "price_at": common.iso(c["price_at"]), "p": round(e["p"], 4), "breakeven": round(e["b"], 4),
-            "fair": round(e["fair"], 4), "p_pct": pcts(e)[0], "breakeven_pct": pcts(e)[1],
-            "model": round(e["model"], 4), "model_adj": round(e["model_adj"], 4), "mu": round(mm["mu"], 2),
-            "reason": reason_text(mm["why"], v.get("reason_max_chars", 120), c["side"]), "state": c["settled"], "thin": bool(mm["thin"]),
-            "games_used": mm["n"], "games_this_season": mm["n_season"], "flags": mm["flags"],
-            "lines_from": mm["ctx_source"],
-        }
-        new.append({"t": "shown", "kind": "single", "id": c["id"], "at": at, "slate": inp.slate, "pick": body})
+    for a in found["flags"]:
+        new.append(_shown(inp, a, ranks[a["id"]], at))
 
-    # ---- 3. parlays
-    new += _parlays(inp, record.fold(inp.events + new), live, at)
-    return new, {"counts": counts, "ranks": ranks, "live": live}
+    # ---- 3. research log: vetoes, capped rows, closes
+    log = [gg.log_event("veto", dict(a, slate=inp.slate), now, guard="veto") for a in found["vetoes"]]
+    log += [gg.log_event("capped", dict(a, slate=inp.slate), now, cap=a["cap"]) for a in found["capped"]]
+    merged = {i: dict(d) for i, d in log_items.items()}
+    for e in log:
+        merged.setdefault(e["id"], {}).setdefault(e["t"], e)
+    log += gg.close_events(inp, record.fold(inp.events + new), merged, by_game, cfg, now)
+    return new, {"ranks": ranks, "live": live, "log": log, "blocked": found["blocked"], "considered": found["considered"]}
 
 
-def _parlay_numbers(leg_ids, live):
-    dec = p = b = 1.0
-    for l in leg_ids:
-        dec *= odds.decimal(live[l]["price"])
-        p *= live[l]["p"]
-        b *= live[l]["b"]
-    least = min((live[l]["settled"] for l in leg_ids), key=lambda s: SETTLED_RANK.get(s, 0))
-    return {"price": odds.american(dec), "p": p, "b": b, "legs": {l: live[l]["price"] for l in leg_ids},
-            "price_at": max(live[l]["price_at"] for l in leg_ids), "state": least}
+def _pull(i, at, code, text, sh, it, status=None, yours=None, now_price=None):
+    e = {"t": "pulled", "id": i, "at": at, "code": code, "reason": text}
+    if sh.get("era"):
+        e["if_bet"] = gg.if_bet_text(code, it["prices"][0]["price"], now_price, yours, status=status)
+        if now_price is not None:
+            e["now_price"] = now_price
+        if yours and yours.get("yours_ev") is not None:
+            e["yours_ev"] = round(yours["yours_ev"], 4)
+    return e
 
 
-def _parlays(inp, items, live, at):
-    v, new = inp.v, []
-    week = {i: it for i, it in items.items() if it["slate"] == inp.slate}
-    # posted = every parlay shown this week (open, pulled or locked) as (legs, game day). Both caps (parlay_cap per
-    # game day, parlay_leg_max_use per leg) count all of them, not only the open ones.
-    posted, use = [], {}
-
-    def leg_day(l):
-        if l in live:
-            return live[l]["start"][:10]
-        return ((week.get(l) or {}).get("shown") or {}).get("start", "")[:10]
-
-    def post(legs, day=None):
-        posted.append((list(legs), day or min(leg_day(l) for l in legs)))
-        for l in legs:
-            use[l] = use.get(l, 0) + 1
-
-    for i, it in sorted(week.items()):
-        if it["kind"] != "parlay":
-            continue
-        if not record.is_open(it):
-            post(it["shown"]["legs"], (it["shown"].get("start") or "")[:10] or None)
-            continue
-        legs = it["shown"]["legs"]
-        pulled = [l for l in legs if l in week and week[l]["pulled"]]
-        locked = [l for l in legs if l in week and week[l]["locked_at"]]
-        post(legs, (it["shown"].get("start") or "")[:10] or None)
-        if pulled:
-            who = week[pulled[0]]["shown"].get("player_short") or week[pulled[0]]["shown"]["player"]
-            new.append({"t": "pulled", "id": i, "at": at, "code": "leg", "reason": pull_reason("leg", who=who),
-                        "legs": pulled})
-            continue
-        if locked or any(l not in live for l in legs):
-            new.append({"t": "locked", "id": i, "at": at, "state": it["state"]})
-            continue
-        n = _parlay_numbers(legs, live)
-        if n["legs"] != it["prices"][-1].get("legs") or n["price"] != record.last_price(it):
-            new.append({"t": "price", "id": i, "at": at, "price": n["price"], "price_at": common.iso(n["price_at"]),
-                        "leg_prices": n["legs"], "p": round(n["p"], 4), "breakeven": round(n["b"], 4),
-                        "p_pct": pct_floor(n["p"]), "breakeven_pct": pct_round(n["b"])})
-        elif round(n["p"], 4) != it["p"]:
-            new.append({"t": "update", "id": i, "at": at, "p": round(n["p"], 4), "breakeven": round(n["b"], 4),
-                        "p_pct": pct_floor(n["p"]), "breakeven_pct": pct_round(n["b"])})
-        if n["state"] != it["state"]:
-            new.append({"t": "state", "id": i, "at": at, "state": n["state"]})
-
-    lo, hi = odds.decimal(v["parlay_leg_min_price"]), odds.decimal(v["parlay_leg_max_price"])
-    legs_ok = [i for i, x in live.items() if x["p"] >= v["parlay_leg_min_p"] - EPS
-               and lo - EPS <= odds.decimal(x["price"]) <= hi + EPS]
-    legs_ok.sort(key=lambda i: rank_key(live[i]["p"], live[i]["b"], live[i]["settled"]) + (i,))
-
-    def best(size, pool, forbid_shared_with=()):
-        top = None
-        for combo in itertools.combinations(pool, size):
-            if v["parlay_one_per_game"] and len({live[l]["game_id"] for l in combo}) < size:
-                continue
-            if len({live[l]["pid"] for l in combo}) < size:
-                continue
-            if any(use.get(l, 0) >= v["parlay_leg_max_use"] for l in combo):
-                continue
-            if any(set(combo) & set(o) for o in forbid_shared_with):
-                continue
-            pid_ = parlay_id(inp.slate, combo)
-            if pid_ in week:
-                continue
-            n = _parlay_numbers(combo, live)
-            floor = v["parlay_min_p_2"] if size == 2 else v["parlay_min_p_3"]
-            if n["p"] < floor - EPS or n["p"] < n["b"] + v["parlay_edge"] - EPS:
-                continue
-            key = (-(round(n["p"] - n["b"], 6)), -round(n["p"], 6), pid_)
-            if top is None or key < top[0]:
-                top = (key, combo, n, pid_)
-        return top
-
-    def add(found):
-        _, combo, n, pid_ = found
-        legs = sorted(combo, key=lambda l: rank_key(live[l]["p"], live[l]["b"], live[l]["settled"]) + (l,))
-        body = {"id": pid_, "legs": legs, "n": len(legs), "price": n["price"], "price_at": common.iso(n["price_at"]),
-                "leg_prices": n["legs"], "p": round(n["p"], 4), "breakeven": round(n["b"], 4),
-                "p_pct": pct_floor(n["p"]), "breakeven_pct": pct_round(n["b"]), "state": n["state"],
-                "start": min(live[l]["start"] for l in legs)}
-        new.append({"t": "shown", "kind": "parlay", "id": pid_, "at": at, "slate": inp.slate, "parlay": body})
-        post(legs, body["start"][:10])
-
-    # Same game day only; the cap (up to parlay_cap) is per game day.
-    for day in sorted({live[i]["start"][:10] for i in legs_ok}):
-        pool = [i for i in legs_ok if live[i]["start"][:10] == day][:12]
-
-        def today():
-            return [o for o, d in posted if d == day]
-
-        if v["parlay_min_legs"] <= 2:
-            while sum(1 for o in today() if len(o) == 2) < 2 and len(today()) < v["parlay_cap"]:
-                f = best(2, pool, [o for o in today() if len(o) == 2])
-                if not f:
-                    break
-                add(f)
-        if v["parlay_max_legs"] >= 3:
-            if not any(len(o) == 3 for o in today()) and len(today()) < v["parlay_cap"]:
-                f = best(3, pool)
-                if f:
-                    add(f)
-    return new
+def _judge_read(inp, g, f, sh, it, i, at, t):
+    """A newer R / C read for a pick that is alive: a pulled event, or None."""
+    cfg = inp.cfg
+    mname = sh["mkey"]
+    pairs = gg.hr_market(f, mname, cfg)
+    if pairs is None:
+        hr_any = any(mk.get("outcomes") for mk in (f.get("props") or {}).values())
+        if hr_any:
+            return _pull(i, at, "market_gone", pull_reason("market_gone"), sh, it)
+        return None                                         # Hard Rock sent no props on this read: a feed gap, not news
+    pair = pairs.get((sh["player_id"], sh["line"]))
+    side = sh["side"]
+    if pair is None or pair.get(side) is None:
+        moved = sorted(l for (pid, l), p in pairs.items()
+                       if pid == sh["player_id"] and l != sh["line"] and p.get(side) is not None)
+        if moved:
+            return _pull(i, at, "line_moved", pull_reason("line_moved", line=moved[0]), sh, it)
+        return _pull(i, at, "line_gone", pull_reason("line_gone"), sh, it)
+    if pair["why"] is not None or pair.get("over") is None or pair.get("under") is None:
+        return None                                         # a stale / odd Hard Rock read says nothing
+    entry = (gg.other_lines(f, mname, cfg) or {}).get((sh["player_id"], sh["line"]))
+    mm = inp.model(sh["player_id"], sh["team"], sh["game_id"], mname, sh["line"])
+    fn = (lambda: model_side(inp, mm, side, mname)) if mm is not None else (lambda: None)
+    frozen = it["prices"][0]["price"]
+    reason, a = gg.judge_alive(side, sh["line"], pair[side], frozen, entry, fn, t)
+    if not reason:
+        return None
+    yours = gg.at_your_price(side, sh["line"], frozen, entry, fn, t)
+    return _pull(i, at, reason[0], reason[1], sh, it, yours=yours, now_price=pair[side])
 
 
-# ---------------------------------------------------------------- the safety switches
-def paused_markets(events, cfg):
-    """Per market: pause after pause_legs graded if hit rate is pause_gap under needed or units <= pause_units.
-    Whole board: after board_legs graded, if board_gap under needed, margins go up by board_tighten.
-    Returns ({ops market key: sentence}, tighten)."""
-    v = cfg["values"]
-    rec, _ = record.build_views(events, cfg)
-    out = {}
-    for r in rec["summary"]["rows"]:
-        if r["key"] in ("parlays", "pulled") or r["n"] < v["pause_legs"]:
-            continue
-        if (r["needed"] is not None and r["hit_rate"] <= r["needed"] - v["pause_gap"] + EPS) or r["units"] <= v["pause_units"]:
-            market, _, period = r["key"].partition("|")
-            for k, m in cfg["ops"]["markets"].items():
-                if (m.get("model") or k) == market and m.get("period") == period:
-                    out[k] = "%s picks are paused: results are running too far under the price." % r["label"]
-    h = rec["summary"]["headline"]
-    tighten = 0.0
-    if h["n"] >= v.get("board_legs", 10 ** 9) and h["needed"] is not None and h["hit_rate"] is not None and \
-            h["hit_rate"] <= h["needed"] - v["board_gap"] + EPS:
-        tighten = v["board_tighten"]
-    return out, tighten
+def _shown(inp, a, rank, at):
+    cfg, v = inp.cfg, inp.v
+    g, f, mm = a["game"], a["read"], a["mm"]
+    full, short = inp.name_parts(a["pid"], a["name"])
+    mname = a["mname"]
+    market, period = contract_market(cfg, mname)
+    price = a["price"]
+    reason = reason_text(mm["why"], v.get("reason_max_chars", 120), a["side"]) or \
+        "Hard Rock's price beats what %d other books say is fair." % a["n_books"]
+    opp = g["away"] if a["team"] == g["home"] else g["home"]
+    body = {
+        "id": a["id"], "era": gg.era(cfg), "rank": rank, "game_id": g["id"], "player": full, "player_short": short,
+        "feed_name": a["name"], "player_id": a["pid"], "pos": inp.pos(a["pid"]), "team": a["team"], "opp": opp,
+        "home": a["team"] == g["home"], "start": g["start"], "mkey": mname, "market": market, "period": period,
+        "market_label": a["market_label"], "line": a["line"], "side": a["side"],
+        "bet": bet_text(a["side"], a["line"], mname, cfg), "book": "Hard Rock", "price": price,
+        "price_at": f["at"], "read_at": f["at"], "read_pull": f["pull"],
+        "p": round(a["final"], 4), "breakeven": round(odds.break_even(price), 4), "fair": round(a["market_fair"], 4),
+        "p_pct": pct_floor(a["final"]), "breakeven_pct": pct_round(odds.break_even(price)),
+        "market_fair": round(a["market_fair"], 5), "n_books": a["n_books"], "books": a["books"],
+        "pin_fair": round(a["pin_fair"], 5), "pin_ev": round(a["pin_ev"], 5), "gap_ev": round(a["gap_ev"], 5),
+        "model_side": round(a["model_side"], 5), "final": round(a["final"], 5), "final_ev": round(a["final_ev"], 5),
+        "guard": "pass", "reason": reason, "state": a["settled"], "thin": bool(mm["thin"]), "mu": round(mm["mu"], 2),
+        "games_used": mm["n"], "games_this_season": mm["n_season"], "flags": mm["flags"], "lines_from": mm["ctx_source"],
+    }
+    return {"t": "shown", "kind": "single", "id": a["id"], "at": at, "slate": inp.slate, "pick": body}
+
+
+def explain(inp, by_game):
+    return gg.explain_rows(inp, SELF, by_game)

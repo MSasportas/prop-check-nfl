@@ -1,29 +1,25 @@
-"""odds.py: Hard Rock prices from the-odds-api (americanfootball_nfl, bookmaker hardrockbet_fl).
+"""odds.py: Hard Rock Florida prices AND the other books' prices from the-odds-api (americanfootball_nfl).
 
 What lives here
   keys      env ODDS_API_KEYS (then optional ODDS_API_KEYS_2), comma separated. Never printed, never written. A key that is used up or
             refused (401 / 429) is skipped and the next one is tried.
   ledger    data/state/credits.json: what each key has left (by POSITION, never the key text) and what we spent.
-            The x-requests-remaining header is trusted on every answer (the keys may be shared with other tools).
+            The x-requests-remaining and x-requests-last headers are trusted on every answer (the keys are shared with Prop
+            Check NHL).
   shared    Some keys are also spent by another tool (Prop Check NHL). After every answer the ledger keeps the key's
             remaining (after_us). If a later answer shows less than after_us minus what that call cost, someone else
             spent on it: the key is marked shared for the rest of the month (sticky; cleared when keys refill on the
             1st). Shared keys are tried LAST, and in the allowance their credits count at ops.shared_key_weight.
-            Every ops.keys_refresh_hours the free events call reads every key, so sharing shows up even on keys we
-            have not spent from yet.
-  plan      allowance = pool credits left (shared keys weighted) / games not started before the keys reset on the
-            1st. The allowance picks a tier (config ops.tiers); the tier decides which pulls run and which markets
-            they ask for. A game whose read failed rests ops.fail_retry_min before it is asked again.
-  pulls     F  full pull of the tier's market set + game lines, once props are posted (from f_hours_before
-               kickoff, 8 AM-midnight). A market not posted yet costs nothing and is asked again later.
-            R  refresh after the game's final injury report: markets holding a live pick or a near-pick
-               (+ main game lines), tiers with r.
-            C  check after inactives: same markets, once both teams posted inactives (from c_before_min before
-               kickoff) or at c_fallback_min regardless.
-            Never a game that has kicked off. Every answer is saved to data/odds/<date>.json (our price history).
-  calls     player props: bookmakers=hardrockbet_fl only. Game lines: bookmakers=hardrockbet_fl,draftkings
-            (DraftKings is used ONLY for spreads_h1, labelled; it can never be a pick). Cost = unique markets
-            returned, so two calls cost the same as one. player_receptions_h1 is never requested (it fails the call).
+  plan      allowance = NFL credits (shared keys weighted, capped by ops.monthly_cap) / games not started before the keys reset
+            on the 1st. The allowance picks a tier (ops.tiers): full = R + C on every game, tight = R on every game and C only for
+            games holding a pick or near-pick, below = R only.
+  pulls     R  right after the game's final injury report counts as in (Hard Rock + consensus books, the six picked markets).
+            C  pre-kickoff: ops.pulls.c_target_min before kickoff once inactives are confirmed, else c_fallback_min before.
+            Never a game that has kicked off. No M / F / D pulls, no game lines, no 1H, no alternate lines.
+  calls     ONE call per pull per game: bookmakers = Hard Rock Florida + up to 9 consensus books (the feed bills up to 10 books as ONE
+            region), markets = the six picked player markets. Cost = unique markets returned x regions billed, read from
+            x-requests-last; a read billed more than that is noted in status.json (odds_notes).
+            Every answer is saved to data/odds/<date>.json: "props" (Hard Rock) and "others" {book: {feed key: market}}.
 
 With PC_ODDS_FIXTURE_DIR set nothing here touches the network (see _fixture_*).
 """
@@ -40,7 +36,7 @@ import teams
 API = "https://api.the-odds-api.com/v4/sports/americanfootball_nfl"
 SOURCE = {"ok": 0, "failed": 0}
 KEYS_REFUSED_TEXT = "Hard Rock prices are off: the odds keys were refused. New keys are needed."
-GAME_KEYS = ("h2h", "spreads", "totals", "spreads_h1", "totals_h1", "team_totals", "team_totals_h1")
+MAX_BOOKS_PER_REGION = 10     # the feed bills each group of up to 10 bookmakers as one region
 
 
 # ---------------------------------------------------------------- price arithmetic
@@ -215,7 +211,7 @@ class Client:
         self.pool, self.cfg = pool, cfg
         self.errors = []
 
-    def _get(self, path, params, need, pull=None, game_id=None):
+    def _get(self, path, params, need, pull=None, game_id=None, books=None):
         """Try keys in order until one answers. Returns (json or None, cost)."""
         for i in self.pool.candidates(need):
             q = urllib.parse.urlencode(dict(params, apiKey=self.pool.keys[i]))
@@ -226,7 +222,7 @@ class Client:
                     self.errors.append("odds feed sent an unreadable answer")
                     SOURCE["failed"] += 1
                     return None, 0
-                returned = markets_returned(js) if need else 0
+                returned = cost_estimate(js, books) if (need and books) else (markets_returned(js) if need else 0)
                 cost = self.pool.note_headers(i, r.headers, pull, game_id, returned)
                 SOURCE["ok"] += 1
                 return js, cost
@@ -306,32 +302,10 @@ class Client:
                 SOURCE["failed"] += 1
         return events
 
-    def event_markets(self, event_id, game_id):
-        """The market keys Hard Rock lists for one event (costs 1). Returns a sorted list, or None."""
-        ops = self.cfg["ops"]
-        if self.pool.fixture:
-            js = self._fixture_json("markets_%s.json" % event_id) or self._fixture_json("markets_%s.json" % game_id) \
-                or self._fixture_json("markets_default.json")
-            if js is None:
-                self.errors.append("odds feed did not answer (no markets fixture for %s)" % game_id)
-                SOURCE["failed"] += 1
-                return None
-            if not self._fixture_spend(1, "M", game_id):
-                return None
-        else:
-            js, _ = self._get("/events/%s/markets" % event_id, {"bookmakers": ops["book"], "dateFormat": "iso"},
-                              1, "M", game_id)
-            if not js:
-                return None
-        for b in js.get("bookmakers", []) or []:
-            if b.get("key") == ops["book"]:
-                return sorted(m.get("key") for m in b.get("markets", []) if m.get("key"))
-        return []
-
     def event_odds(self, event_id, game, market_keys, books, pull):
-        """Prices for one game. Returns (payload or None, cost). None = the feed failed (retry later)."""
-        bad = set(self.cfg["ops"].get("never_request", []))
-        market_keys = [m for m in market_keys if m not in bad]
+        """Prices for one game from `books` (Hard Rock first, see request_books). Returns (payload or None, cost).
+        None = the feed failed (retry later)."""
+        market_keys = list(market_keys)
         if not market_keys:
             return {"bookmakers": []}, 0
         if self.pool.fixture:
@@ -344,7 +318,7 @@ class Client:
             js["bookmakers"] = [b for b in js.get("bookmakers", []) if b.get("key") in books]
             for b in js["bookmakers"]:                      # the real feed returns only what was asked for
                 b["markets"] = [m for m in b.get("markets", []) if m["key"] in market_keys]
-            cost = markets_returned(js)
+            cost = cost_estimate(js, books)
             if not self._fixture_spend(cost, pull, game["id"]):
                 self.errors.append("no odds key with credits left")
                 return None, 0
@@ -352,7 +326,37 @@ class Client:
             return js, cost
         params = {"bookmakers": ",".join(books), "markets": ",".join(market_keys), "oddsFormat": "american",
                   "dateFormat": "iso"}
-        return self._get("/events/%s/odds" % event_id, params, len(market_keys), pull, game["id"])
+        js, cost = self._get("/events/%s/odds" % event_id, params, len(market_keys), pull, game["id"],
+                             books=books)
+        if js:
+            n_mk = markets_returned(js)
+            if n_mk and cost > n_mk * regions_billed(len(books)):
+                self.errors.append("a read billed %d credits for %d market(s): more than one region?" % (cost, n_mk))
+        return js, cost
+
+
+def request_books(cfg, others=True):
+    """The bookmakers= list for a price read: Hard Rock Florida first, then ops.consensus_books, never more than
+    MAX_BOOKS_PER_REGION in all so the read is billed as one region. The national 'hardrockbet' key is the same operator
+    as hardrockbet_fl and is never asked for."""
+    ops = cfg["ops"]
+    never = set(ops.get("never_book") or ())
+    books = [ops["book"]]
+    if others:
+        for b in ops.get("consensus_books") or []:
+            if b not in books and b not in never and len(books) < MAX_BOOKS_PER_REGION:
+                books.append(b)
+    return books
+
+
+def regions_billed(n_books):
+    """The feed bills each group of up to 10 bookmakers as one region (minimum 1)."""
+    return max(1, -(-int(n_books) // MAX_BOOKS_PER_REGION))
+
+
+def cost_estimate(js, books):
+    """What a price read costs when the feed sends no x-requests-last header: markets returned x regions billed."""
+    return markets_returned(js) * regions_billed(len(books or []) or 1)
 
 
 def markets_returned(js):
@@ -382,23 +386,20 @@ def is_player_key(k):
 
 
 # ---------------------------------------------------------------- the plan (pure functions, easy to test)
-# Which pulls each tier runs (Sharp, ops._tiers). M markets check, F full pull, D daily 10 AM re-check of markets
-# holding open picks, R refresh after the final injury report, C pre-kickoff check; "c" = C only for games that
-# hold an open pick. "below" = under the lite threshold: R only, earliest kickoff first, while credits last.
-TIER_PULLS = {"full_plus": "MFDRC", "full": "MFRC", "standard": "MFC", "basic": "MFc", "lite": "MRC", "below": "MR"}
+# Which pulls each tier runs (ops.tiers): R after the final injury report, C pre-kickoff. "c" = C only for games that hold
+# a pick or a near-pick. "below" = under the tight threshold: R only, earliest kickoff first while credits last.
+TIER_PULLS = {"full": "RC", "tight": "Rc", "below": "R"}
 
 
 def make_plan(pool_left, games_left, cfg):
-    v = cfg["values"]
-    share = v.get("pool_share", 1.0)
-    allowance = (share * pool_left / float(games_left)) if games_left else float(pool_left or 0)
+    t = cfg["ops"]["tiers"]
+    allowance = (pool_left / float(games_left)) if games_left else float(pool_left or 0)
     name = "below"
-    for t, lo in sorted(v["tiers"].items(), key=lambda kv: -kv[1]):
-        if allowance >= lo:
-            name = t
+    for tier in ("full", "tight"):
+        if allowance >= t[tier]:
+            name = tier
             break
-    pulls = (cfg["ops"].get("tier_pulls") or TIER_PULLS).get(name, "MR")
-    return {"allowance": round(allowance, 2), "tier": name, "pulls": pulls, "pool_at_plan": pool_left,
+    return {"allowance": round(allowance, 2), "tier": name, "pulls": TIER_PULLS[name], "pool_at_plan": pool_left,
             "games_left": games_left}
 
 
@@ -407,192 +408,91 @@ def _at_clock(day, hhmm):
     return datetime(day.year, day.month, day.day, hh, mm, tzinfo=common.ET)
 
 
-def check_slot(now, game, cfg):
-    """The latest f_check_times slot at or before now, inside the window that opens f_days_before days before
-    kickoff. None before the window opens."""
-    v = cfg["values"]
-    k = common.parse_iso(game["start"])
-    first_day = (k - timedelta(days=v["f_days_before"])).date()
-    best = None
-    for back in range(0, 8):
-        d = (now - timedelta(days=back)).date()
-        if d < first_day:
-            break
-        for t in v["f_check_times"]:
-            at = _at_clock(d, t)
-            if at <= now and (best is None or at > best):
-                best = at
-        if best is not None:
-            break
-    return best
-
-
-def next_slot(now, game, cfg):
-    v = cfg["values"]
-    k = common.parse_iso(game["start"])
-    first_day = (k - timedelta(days=v["f_days_before"])).date()
-    for add in range(0, 9):
-        d = (now + timedelta(days=add)).date()
-        if d < first_day:
-            continue
-        for t in sorted(v["f_check_times"]):
-            at = _at_clock(d, t)
-            if at > now:
-                return at
-    return None
-
-
-def n_player(keys):
-    return sum(1 for m in keys or () if is_player_key(m))
-
-
-def props_up(listed, cfg):
-    return listed is not None and n_player(listed) >= cfg["values"]["f_min_player_markets"]
-
-
-def sentinels(games):
-    """{ET date: the earliest game that day} (the game whose markets check decides the day)."""
-    out = {}
-    for g in sorted(games, key=lambda x: (x["start"], x["id"])):
-        out.setdefault(common.parse_iso(g["start"]).date().isoformat(), g)
+def pick_keys(cfg):
+    """The feed keys of the picked markets (ops.gap_guard.markets that are picks=true): what R and C ask for."""
+    out = []
+    for name in cfg["ops"]["gap_guard"]["markets"]:
+        m = cfg["ops"]["markets"].get(name) or {}
+        if m.get("picks") and m.get("feed_key"):
+            out.append(m["feed_key"])
     return out
 
 
-def due_pulls(now, games, plan, cfg, done, focus, open_games, report_times, started, listed, m_done):
+def c_target(k, confirmed, pc):
+    """When C is due for a game kicking off at k: c_target_min before kickoff if inactives are confirmed (or as soon as
+    they are, if later), else c_fallback_min before kickoff."""
+    return k - timedelta(minutes=pc["c_target_min"]) if confirmed else k - timedelta(minutes=pc["c_fallback_min"])
+
+
+def due_pulls(now, games, plan, cfg, done, focus, started, report_times, report_ok, confirmed):
     """Which pull each game needs right now. One action per game per run at most.
 
-    done: {gid: [dict(pull, at datetime, asked [keys], returned [keys])]} every read already made.
-    focus: {gid: set(feed keys)} markets holding an open pick or a near-pick (C).
-    open_games: {gid: set(feed keys)} markets holding an OPEN pick (D, and "c" in the basic tier).
-    report_times: {gid: datetime} when the final injury report counts as in (R starts r_after_report_min later).
-    listed: {gid: [keys]} Hard Rock's market list from M. m_done: {gid: datetime} last M per game.
-    Returns [dict(pull, game, keys [feed keys, player and game], books [bookmakers])] in kickoff order.
-    Every key is intersected with Hard Rock's list for the event (an unlisted key fails the whole call)."""
-    v, ops = cfg["values"], cfg["ops"]
+    done: {gid: [dict(pull, at datetime, asked [keys], returned [keys], hr [Hard Rock keys], ina bool)]} every read so far.
+    focus: {gid: set(feed keys)} markets holding an open pick or a near-pick (the tight tier's C).
+    report_times: {gid: datetime} when the final injury report counts as in (R is due from then).
+    report_ok: set of game ids whose injury read is fresh enough to say the report is in.
+    confirmed: set of game ids with both teams' inactives posted.
+    Returns [dict(pull, game, keys [feed keys], books [bookmakers])] in kickoff order."""
+    ops = cfg["ops"]
+    pc = ops["pulls"]
     pulls = plan["pulls"]
-    retry = timedelta(minutes=ops.get("empty_retry_min", 180))
-    never = set(ops.get("never_request", []))
-    sent = sentinels(games)
+    keys = pick_keys(cfg)
+    books = request_books(cfg)
     out = []
     for g in sorted(games, key=lambda x: (x["start"], x["id"])):
         if started.get(g["id"]):
             continue
         k = common.parse_iso(g["start"])
-        if now >= k - timedelta(minutes=v["c_latest_min"]):
+        if now >= k - timedelta(minutes=pc["c_latest_min"]):
             continue
         reads = done.get(g["id"], [])
-        lst = listed.get(g["id"])
-        hr = set(lst or [])
-        mt = m_done.get(g["id"])
-
-        def allowed(keys):
-            return [m for m in keys if m in hr and m not in never]
-
-        def got_since(since):
-            got = set()
-            for f in reads:
-                if f["at"] >= since:
-                    got |= set(f["returned"])
-            return got
-
-        def read_since(kind, since):
-            return any(f["pull"] == kind and f["at"] >= since for f in reads)
-
-        f_ok = any(f["pull"] == "F" and n_player(f["returned"]) >= v["f_min_player_markets"] for f in reads)
-        forced = now >= k - timedelta(hours=v["f_force_hours"])
-        slot = check_slot(now, g, cfg)
-        c_at = k - timedelta(minutes=v["c_min"])
-        rt = report_times.get(g["id"])
-        r_at = rt + timedelta(minutes=v["r_after_report_min"]) if rt else None
+        conf = g["id"] in confirmed
         choice = None
-
-        def need_m(fresh_after):
-            """M is due when we have no list, or the list shows no props and is older than fresh_after."""
-            if mt is None:
-                return True
-            return not props_up(lst, cfg) and fresh_after is not None and mt < fresh_after
-
-        # C: pre-kickoff check (markets holding open picks or near-picks + spreads/totals)
-        want_c = "C" in pulls or ("c" in pulls and open_games.get(g["id"]))
-        if want_c and now >= c_at:
-            fc = sorted(focus.get(g["id"], ()) if "C" in pulls else open_games.get(g["id"], ()))
-            pl = [m for m in allowed(fc) if m not in got_since(c_at)]
-            if pl and not read_since("C", c_at):
-                choice = ("C", pl + allowed(ops["pull_check_lines_keys"]), [ops["book"]])
-        # R: after the final injury report
-        if choice is None and "R" in pulls and r_at is not None and r_at <= now < c_at and not read_since("R", r_at):
-            if lst is None:
-                choice = ("M", [], [])
-            else:
-                pl = allowed(ops["pull_lite_keys"])
-                if pl:
-                    choice = ("R", pl, ops.get("pull_lite_bookmakers") or [ops["book"]])
-        # D: 10 AM daily re-check of markets holding open picks (not on the R / C path)
-        if choice is None and "D" in pulls and open_games.get(g["id"]) and now < c_at:
-            d_at = _at_clock(now.date(), v.get("d_time", "10:00"))
-            if d_at <= now < d_at + timedelta(hours=2) and not any(f["at"] >= d_at for f in reads):
-                pl = allowed(sorted(open_games[g["id"]]))
-                if pl:
-                    choice = ("D", pl, [ops["book"]])
-        # F: the full pull, once Hard Rock lists enough player markets (checked at f_check_times, sentinel first)
-        if choice is None and "F" in pulls and not f_ok and (slot is not None or forced):
-            s = sent.get(k.date().isoformat())
-            day_up = s is None or s["id"] == g["id"] or started.get(s["id"]) or props_up(listed.get(s["id"]), cfg)
-            if day_up or forced:
-                fresh = slot if not forced else max(slot or now - retry, now - retry)
-                if need_m(fresh):
-                    choice = ("M", [], [])
-                elif props_up(lst, cfg) or (forced and n_player(lst)):
-                    last_f = max([f["at"] for f in reads if f["pull"] == "F"] or [None], key=lambda x: x or k - timedelta(days=99))
-                    if last_f is None or (slot is not None and last_f < slot) or (forced and now - last_f >= retry):
-                        pl = allowed(ops["pull_full_keys"])
-                        if pl:
-                            choice = ("F", pl, ops.get("pull_full_bookmakers") or [ops["book"]])
-        # lite tier: no F; the markets list is still needed before R / C can ask anything
-        if choice is None and "F" not in pulls and lst is None and (slot is not None or forced) and \
-                (mt is None or now - mt >= retry):
-            s = sent.get(k.date().isoformat())
-            if s is None or s["id"] == g["id"] or forced:
-                choice = ("M", [], [])
+        # C: pre-kickoff. A second C is allowed when the first was made before inactives were in and they are in now.
+        want_c = "C" in pulls or ("c" in pulls and focus.get(g["id"]))
+        if want_c and now >= c_target(k, conf, pc):
+            cs = sorted((f for f in reads if f["pull"] == "C"), key=lambda f: f["at"])
+            again = bool(cs) and conf and not cs[-1].get("ina") and now - cs[-1]["at"] >= timedelta(minutes=5)
+            if not cs or again:
+                ks = keys if "C" in pulls else [m for m in keys if m in focus.get(g["id"], ())]
+                if ks:
+                    choice = ("C", ks)
+        # R: after the final injury report counts as in
+        rt = report_times.get(g["id"])
+        if choice is None and "R" in pulls and rt is not None and rt <= now and g["id"] in report_ok:
+            rs = sorted((f for f in reads if f["pull"] == "R" and f["at"] >= rt), key=lambda f: f["at"])
+            hr_up = any(f.get("hr") for f in rs)
+            retry = timedelta(minutes=pc["r_retry_min"])
+            if not rs or (not hr_up and len(rs) < pc["r_max_reads"] and now - rs[-1]["at"] >= retry):
+                choice = ("R", keys)
         if choice:
-            books = list(choice[2])
-            if not any(x in choice[1] for x in ops.get("display_only", {})):
-                books = [ops["book"]]                       # other books are only ever read for display_only keys
-            out.append({"pull": choice[0], "game": g, "keys": choice[1], "books": books or [ops["book"]]})
+            out.append({"pull": choice[0], "game": g, "keys": choice[1], "books": books})
     return out
 
 
 def est_cost(d):
-    return 1 if d["pull"] == "M" else len(d["keys"])
+    return len(d["keys"]) * regions_billed(len(d["books"]))
 
 
-def next_check_at(now, games, plan, cfg, done, report_times, started, listed, m_done, open_games=None):
+def next_check_at(now, games, plan, cfg, done, report_times, started, confirmed=()):
     """When the next price read is expected (page: "next check"). None when none is coming."""
     if not plan:
         return None
-    v = cfg["values"]
+    pc = cfg["ops"]["pulls"]
     pulls = plan["pulls"]
     cands = []
     for g in games:
         if started.get(g["id"]):
             continue
         k = common.parse_iso(g["start"])
-        if k - timedelta(minutes=v["c_latest_min"]) <= now:
+        if k - timedelta(minutes=pc["c_latest_min"]) <= now:
             continue
         reads = done.get(g["id"], [])
-        f_ok = any(f["pull"] == "F" and n_player(f["returned"]) >= v["f_min_player_markets"] for f in reads)
-        if "F" in pulls and not f_ok:
-            ns = next_slot(now, g, cfg)
-            if ns:
-                cands.append(ns)
-            cands.append(k - timedelta(hours=v["f_force_hours"]))
         rt = report_times.get(g["id"])
-        if "R" in pulls and rt:
-            r_at = rt + timedelta(minutes=v["r_after_report_min"])
-            if not any(f["pull"] == "R" and f["at"] >= r_at for f in reads):
-                cands.append(r_at)
-        if "C" in pulls or ("c" in pulls and (open_games or {}).get(g["id"])):
-            cands.append(k - timedelta(minutes=v["c_min"]))
+        if "R" in pulls and rt is not None and not any(f["pull"] == "R" and f["at"] >= rt for f in reads):
+            cands.append(rt)
+        if "C" in pulls or "c" in pulls:
+            cands.append(c_target(k, g["id"] in confirmed, pc))
     cands = [c for c in cands if c > now]
     return min(cands) if cands else None
 
@@ -620,20 +520,54 @@ def match_events(events, games, hours):
     return out, unknown
 
 
+def _rows(m, find, unmatched=None, keep_unmatched=True):
+    """One market's feed outcomes -> rows {name, pid, team, side, line, price}. find(name) -> player or None.
+    unmatched: list that collects names no roster player matched (None = do not collect)."""
+    rows = []
+    for o in m.get("outcomes", []) or []:
+        who = o.get("description") or ""
+        side = (o.get("name") or "").lower()
+        side = {"yes": "over", "no": "under"}.get(side, side)
+        if side not in ("over", "under") or o.get("price") is None:
+            continue
+        pp = find(who)
+        if pp is None and unmatched is not None and who not in unmatched:
+            unmatched.append(who)
+        if pp is None and not keep_unmatched:
+            continue
+        try:
+            price = int(round(float(o["price"])))
+            line = float(o["point"]) if o.get("point") is not None else 0.5
+        except (TypeError, ValueError):
+            continue
+        rows.append({"name": who, "pid": pp["id"] if pp else None, "team": pp["team"] if pp else None,
+                     "side": side, "line": line, "price": price})
+    return rows
+
+
 def normalize(payload, game, matcher, asked, pull, at, cost, cfg):
-    """One game's raw answer(s) -> the record kept in data/odds/<date>.json (every price, all markets).
-    props[feed key] = {market, alt, last_update, outcomes [{name, pid, team, side, line, price}]}
-    lines[feed key] = {book, last_update, outcomes [{side, point, price}]}; DraftKings rows land under
-    "<key>@draftkings" and are display only."""
+    """One game's raw answer -> the record kept in data/odds/<date>.json (every price, all markets).
+    props[feed key] = {market, alt, last_update, outcomes [{name, pid, team, side, line, price}]}  (Hard Rock Florida only)
+    others[book][feed key] = {last_update, outcomes [{pid, side, line, price}]}  every other book that answered, matched
+        players only. The national 'hardrockbet' key (same operator as hardrockbet_fl) is never kept as an 'other'.
+    lines[feed key] = {book, last_update, outcomes [{side, point, price}]} (game lines, none asked today; old files only)."""
     ops = cfg["ops"]
     f2m = feed_to_market(cfg)
+    never = set(ops.get("never_book") or ())
     out = {"game_id": game["id"], "away": game["away"], "home": game["home"], "pull": pull, "at": common.iso(at),
            "cost": cost, "asked": sorted(asked), "book": None, "returned": [], "props": {}, "lines": {},
-           "unmatched": []}
+           "others": {}, "unmatched": []}
     books = {b.get("key"): b for b in (payload or {}).get("bookmakers", []) or []}
     hr = books.get(ops["book"])
     out["book"] = ops["book"] if hr else None
     out["returned"] = sorted({m.get("key") for b in books.values() for m in b.get("markets", []) or [] if m.get("key")})
+    seen = {}
+
+    def find(who):
+        if who not in seen:
+            seen[who] = matcher.find(who) if matcher else None
+        return seen[who]
+
     for m in (hr or {}).get("markets", []) or []:
         key = m.get("key")
         if not key:
@@ -642,30 +576,21 @@ def normalize(payload, game, matcher, asked, pull, at, cost, cfg):
             out["lines"][key] = _line_market(m, "hardrock")
             continue
         name, alt = f2m.get(key, (None, False))
-        rows = []
-        for o in m.get("outcomes", []) or []:
-            who = o.get("description") or ""
-            side = (o.get("name") or "").lower()
-            side = {"yes": "over", "no": "under"}.get(side, side)
-            if side not in ("over", "under") or o.get("price") is None:
-                continue
-            pp = matcher.find(who) if matcher else None
-            if pp is None and who not in out["unmatched"]:
-                out["unmatched"].append(who)
-            try:
-                price = int(round(float(o["price"])))
-                line = float(o["point"]) if o.get("point") is not None else 0.5
-            except (TypeError, ValueError):
-                continue
-            rows.append({"name": who, "pid": pp["id"] if pp else None, "team": pp["team"] if pp else None,
-                         "side": side, "line": line, "price": price})
-        out["props"][key] = {"market": name, "alt": alt, "last_update": m.get("last_update"), "outcomes": rows}
+        out["props"][key] = {"market": name, "alt": alt, "last_update": m.get("last_update"),
+                             "outcomes": _rows(m, find, out["unmatched"])}
     for bk, b in books.items():
-        if bk == ops["book"]:
+        if bk == ops["book"] or bk in never:
             continue
+        mk = {}
         for m in b.get("markets", []) or []:
-            if ops.get("display_only", {}).get(m.get("key")) == bk:
-                out["lines"]["%s@%s" % (m["key"], bk)] = _line_market(m, bk)
+            key = m.get("key")
+            if not key or not is_player_key(key) or f2m.get(key, (None, True))[1]:
+                continue                                        # main lines only
+            rows = [{"pid": r["pid"], "side": r["side"], "line": r["line"], "price": r["price"]}
+                    for r in _rows(m, find, None, keep_unmatched=False)]
+            mk[key] = {"last_update": m.get("last_update"), "outcomes": rows}
+        if mk:
+            out["others"][bk] = mk
     return out
 
 
@@ -700,11 +625,33 @@ def check_pair(over, under, last_update, read_at, v):
     return None
 
 
-def is_stale(last_update, read_at, v):
+def is_stale(last_update, read_at, v, key="stale_min"):
+    """key 'stale_min' = Hard Rock; 'stale_min_others' = the other books (untuned: the book probe did not store last_update)."""
     lu = common.parse_iso(last_update) if last_update else None
     if lu is None:
         return True
-    return (read_at - lu).total_seconds() / 60.0 >= v.get("stale_min", 120)
+    return (read_at - lu).total_seconds() / 60.0 >= v.get(key, 120)
+
+
+def pairs_of(outcomes):
+    """Outcome rows -> {(pid, line): dict(over, under, name, team)} for matched players."""
+    pairs = {}
+    for o in outcomes or []:
+        if o.get("pid") is None:
+            continue
+        pr = pairs.setdefault((o["pid"], o["line"]), {"over": None, "under": None, "name": o.get("name"),
+                                                      "team": o.get("team")})
+        pr[o["side"]] = o["price"]
+    return pairs
+
+
+def checked_pairs(mk, at, v):
+    """One Hard Rock market of one read -> pairs with the feed checks applied (why = None when usable)."""
+    pairs = pairs_of(mk.get("outcomes"))
+    for pr in pairs.values():
+        pr["why"] = check_pair(pr["over"], pr["under"], mk.get("last_update"), at, v)
+        pr["ok"] = pr["why"] is None
+    return pairs
 
 
 def build_view(fetches, cfg):
@@ -756,18 +703,8 @@ def build_view(fetches, cfg):
             if stale and mv["posted"] and not mv["gone"]:
                 mv["stale_read_at"] = at                    # keep the last good read
                 continue
-            pairs = {}
-            for o in mk["outcomes"]:
-                if o["pid"] is None:
-                    continue
-                pr = pairs.setdefault((o["pid"], o["line"]), {"over": None, "under": None, "name": o["name"],
-                                                              "team": o["team"]})
-                pr[o["side"]] = o["price"]
-            failed = 0
-            for pr in pairs.values():
-                pr["why"] = check_pair(pr["over"], pr["under"], mk.get("last_update"), at, v)
-                pr["ok"] = pr["why"] is None
-                failed += 0 if pr["ok"] else 1
+            pairs = checked_pairs(mk, at, v)
+            failed = sum(0 if pr["ok"] else 1 for pr in pairs.values())
             mv.update(at=at, pull=f["pull"], gone=False, stale=stale, posted=True, pairs=pairs,
                       checked=len(pairs), failed=failed)
             gv["props_at"] = at
@@ -856,10 +793,8 @@ def load_state(slate):
     d = common.read_json(state_path(), {}) or {}
     if d.get("slate") != slate:
         d = {"slate": slate, "events": {}, "events_at": None, "unknown_teams": [], "done": {}, "tried": {},
-             "skipped": {}, "markets": {}, "markets_at": {}, "last_fail_at": None, "fail_note": None,
-             "key_count": None, "plan": None, "failed": {}}
-    for k, dv in (("events", {}), ("done", {}), ("tried", {}), ("skipped", {}), ("markets", {}),
-                  ("markets_at", {}), ("unknown_teams", []), ("failed", {})):
+             "skipped": {}, "last_fail_at": None, "fail_note": None, "key_count": None, "plan": None, "failed": {}}
+    for k, dv in (("events", {}), ("done", {}), ("tried", {}), ("skipped", {}), ("unknown_teams", []), ("failed", {})):
         d.setdefault(k, dv)
     return d
 
@@ -870,15 +805,11 @@ def done_map(st):
     for gid, lst in (st.get("done") or {}).items():
         for f in lst:
             out.setdefault(gid, []).append({"pull": f["pull"], "at": common.parse_iso(f["at"]), "asked": f["asked"],
-                                            "returned": f["returned"]})
+                                            "returned": f["returned"], "hr": f.get("hr") or [], "ina": bool(f.get("ina"))})
     for gid, f in (st.get("tried") or {}).items():
         out.setdefault(gid, []).append({"pull": f["pull"], "at": common.parse_iso(f["at"]), "asked": f["asked"],
-                                        "returned": []})
+                                        "returned": [], "hr": [], "ina": False})
     return out
-
-
-def m_map(st):
-    return {gid: common.parse_iso(t) for gid, t in (st.get("markets_at") or {}).items()}
 
 
 def load_fetches(games, now, days=9):
@@ -894,8 +825,12 @@ def load_fetches(games, now, days=9):
     return out
 
 
-def run_pulls(now, slate, games, games_left, cfg, matcher_for, focus, held, report_times, started, dry_run=False):
-    """The whole odds step. Returns a result dict for status.json and the engine."""
+def run_pulls(now, slate, games, games_left, cfg, matcher_for, focus, report_times, report_ok, confirmed, started,
+              dry_run=False):
+    """The whole odds step. Returns a result dict for status.json and the engine.
+    focus {gid: set(feed keys)}: markets holding an open pick or near-pick (tight tier's C). report_times {gid: when the final
+    injury report counts as in}. report_ok: game ids whose injury read is fresh after that time. confirmed: game ids with
+    both teams' inactives posted."""
     ops = cfg["ops"]
     keys = load_keys()
     pool = Pool(keys, now)
@@ -950,37 +885,19 @@ def run_pulls(now, slate, games, games_left, cfg, matcher_for, focus, held, repo
         t = common.parse_iso((st["failed"].get(gid) or {}).get("at"))
         return t is not None and t <= now < t + rest
 
-    due = [d for d in due_pulls(now, games, plan, cfg, done_map(st), focus, held, report_times, started,
-                                st["markets"], m_map(st)) if not resting(d["game"]["id"])]
+    due = [d for d in due_pulls(now, games, plan, cfg, done_map(st), focus, started, report_times, report_ok,
+                                confirmed) if not resting(d["game"]["id"])]
     res["due"] = [{"pull": d["pull"], "game_id": d["game"]["id"], "cost_max": est_cost(d)} for d in due]
     failed, no_budget = [], []
     day = now.date().isoformat()
     doc = None
     cap = plan["allowance"] * ops.get("game_cap_factor", 1.6)
-    queue = list(due)
-    acted = {}                                               # game id -> pulls made this run
-    passes = 0
-    while queue or (passes < 2 and any("M" in a for a in acted.values()) and not dry_run):
-        if not queue:
-            # markets lists came in: what they unlock (F or R for these games, M for the rest of a sentinel's day)
-            # runs in this same cycle. A game that already made a price read this run is left alone.
-            passes += 1
-            again = due_pulls(now, games, plan, cfg, done_map(st), focus, held, report_times, started,
-                              st["markets"], m_map(st))
-            queue = [x for x in again if not resting(x["game"]["id"])
-                     and not (set(acted.get(x["game"]["id"], [])) - {"M"})
-                     and not (x["pull"] == "M" and "M" in acted.get(x["game"]["id"], []))
-                     and x["game"]["id"] not in failed and x["game"]["id"] not in no_budget]
-            res["due"] += [{"pull": x["pull"], "game_id": x["game"]["id"], "cost_max": est_cost(x)} for x in queue]
-            if not queue:
-                break
-            continue
-        d = queue.pop(0)
+    for d in due:
         g = d["game"]
         if dry_run:
             continue
         cost_max = est_cost(d)
-        over_cap = d["pull"] in ("F", "R", "D") and pool.spent_on_game(g["id"]) > 0 and \
+        over_cap = d["pull"] == "R" and pool.spent_on_game(g["id"]) > 0 and \
             pool.spent_on_game(g["id"]) + cost_max > cap
         if pool.total_left() < cost_max or over_cap:
             no_budget.append(g["id"])
@@ -991,20 +908,6 @@ def run_pulls(now, slate, games, games_left, cfg, matcher_for, focus, held, repo
             failed.append(g["id"])
             st["failed"][g["id"]] = {"pull": d["pull"], "at": common.iso(now)}
             client.errors.append("no odds event yet for %s at %s" % (g["away"], g["home"]))
-            continue
-        if d["pull"] == "M":
-            mk = client.event_markets(ev, g["id"])
-            if mk is None:
-                failed.append(g["id"])
-                st["failed"][g["id"]] = {"pull": "M", "at": common.iso(now)}
-                continue
-            st["failed"].pop(g["id"], None)
-            st["markets"][g["id"]] = mk
-            st["markets_at"][g["id"]] = common.iso(now)
-            pool.save()
-            common.write_json(state_path(), st)
-            res["fetched_now"] += 1
-            acted.setdefault(g["id"], []).append("M")
             continue
         payload, cost = client.event_odds(ev, g, d["keys"], d["books"], d["pull"])
         if payload is None:
@@ -1022,11 +925,12 @@ def run_pulls(now, slate, games, games_left, cfg, matcher_for, focus, held, repo
             doc = common.read_json(odds_path(day)) or {"date": day, "fetches": []}
         doc["fetches"].append(rec)
         common.write_json(odds_path(day), doc, pretty=False)       # credits were spent: keep the answer right away
+        hr_keys = sorted(k for k, mk in rec["props"].items() if not mk.get("alt") and mk.get("outcomes"))
         st["done"].setdefault(g["id"], []).append({"pull": d["pull"], "at": rec["at"], "asked": rec["asked"],
-                                                   "returned": rec["returned"], "cost": cost})
+                                                   "returned": rec["returned"], "cost": cost, "hr": hr_keys,
+                                                   "ina": g["id"] in confirmed, "n_others": len(rec["others"])})
         st["skipped"].pop(g["id"], None)
         res["fetched_now"] += 1
-        acted.setdefault(g["id"], []).append(d["pull"])
         pool.save()
         common.write_json(state_path(), st)
     if failed:
@@ -1052,15 +956,27 @@ def run_pulls(now, slate, games, games_left, cfg, matcher_for, focus, held, repo
     if res["fetched_now"]:
         plan = _set_plan(st, pool, games_left, cfg, now)    # the plan the next run will find: no churn from it
         res["plan"] = plan
-    res["next_at"] = next_check_at(now, games, plan, cfg, done_map(st), report_times, started, st["markets"], m_map(st),
-                                   held)
+    res["next_at"] = next_check_at(now, games, plan, cfg, done_map(st), report_times, started, confirmed)
     return _finish(st, pool, res, write=not dry_run)
 
 
+def month_spent(pool, cfg, now):
+    """Credits the NFL plan has spent this calendar month, counted from ops.monthly_cap_from when that is later."""
+    first = now.date().replace(day=1).isoformat()
+    since = max(first, cfg["ops"].get("monthly_cap_from") or first)
+    return sum(e["cost"] for e in pool.spent if e["date"] >= since and e["date"][:7] == first[:7])
+
+
 def _set_plan(st, pool, games_left, cfg, now):
-    """The plan from the pool as it stands (shared keys weighted). made_at moves only when the plan changed."""
-    w = cfg["ops"].get("shared_key_weight", 0.5)
-    plan = make_plan(round(pool.weighted_left(w), 2), games_left, cfg)
+    """The plan from the pool as it stands (shared keys weighted, and no more than ops.monthly_cap minus this month's
+    spend: the keys are shared with Prop Check NHL). made_at moves only when the plan changed."""
+    ops = cfg["ops"]
+    w = ops.get("shared_key_weight", 0.5)
+    avail = pool.weighted_left(w)
+    cap = ops.get("monthly_cap")
+    if cap is not None:
+        avail = min(avail, max(0.0, cap - month_spent(pool, cfg, now)))
+    plan = make_plan(round(avail, 2), games_left, cfg)
     plan["pool_raw"] = pool.total_left()
     plan["keys_shared"] = pool.shared_count()
     old = st.get("plan") or {}
@@ -1103,6 +1019,6 @@ def pool_summary(key_state, plan, games_left, cfg, spent=(), now=None):
         cap = (first - now.date()).days
         days_left = cap if days_left is None and left > 0 else (min(days_left, cap) if days_left is not None else 0)
     allowance = plan["allowance"] if plan else None
-    low = (allowance is not None and allowance < cfg["values"]["pool_low_allowance"]) and not empty
+    low = (allowance is not None and allowance < cfg["ops"]["tiers"]["pool_low_allowance"]) and not empty
     return {"credits_left": left, "keys": len(key_state), "keys_live": live, "keys_shared": shared,
             "days_left": days_left, "low": low, "empty": empty, "allowance": allowance, "tier": plan["tier"] if plan else None, "games_left": games_left}
