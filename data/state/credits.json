@@ -5,7 +5,7 @@
    "n": 1,
    "left": 0,
    "status": "empty",
-   "checked_at": "2026-10-30T16:25:57-04:00",
+   "checked_at": "2026-10-30T17:27:58-04:00",
    "month": "2026-10",
    "after_us": 0,
    "shared": false,
@@ -16,7 +16,7 @@
    "n": 2,
    "left": 0,
    "status": "empty",
-   "checked_at": "2026-10-30T16:25:57-04:00",
+   "checked_at": "2026-10-30T17:27:58-04:00",
    "month": "2026-10",
    "after_us": 0,
    "shared": false,
@@ -27,7 +27,7 @@
    "n": 3,
    "left": 0,
    "status": "empty",
-   "checked_at": "2026-10-30T16:25:57-04:00",
+   "checked_at": "2026-10-30T17:27:58-04:00",
    "month": "2026-10",
    "after_us": 0,
    "shared": false,
@@ -38,7 +38,7 @@
    "n": 4,
    "left": 0,
    "status": "empty",
-   "checked_at": "2026-10-30T16:25:57-04:00",
+   "checked_at": "2026-10-30T17:27:58-04:00",
    "month": "2026-10",
    "after_us": 0,
    "shared": true,
@@ -49,7 +49,7 @@
    "n": 5,
    "left": 0,
    "status": "empty",
-   "checked_at": "2026-10-30T16:25:57-04:00",
+   "checked_at": "2026-10-30T17:27:58-04:00",
    "month": "2026-10",
    "after_us": 0,
    "shared": false,
@@ -58,25 +58,25 @@
   },
   {
    "n": 6,
-   "left": 151,
+   "left": 79,
    "status": "ok",
-   "checked_at": "2026-10-30T16:25:57-04:00",
+   "checked_at": "2026-10-30T17:27:58-04:00",
    "month": "2026-10",
-   "after_us": 151,
+   "after_us": 79,
    "shared": true,
    "shared_at": "2026-10-30T16:25:57-04:00",
    "others_spent": 67
   },
   {
    "n": 7,
-   "left": 347,
+   "left": 343,
    "status": "ok",
-   "checked_at": "2026-10-30T16:25:57-04:00",
+   "checked_at": "2026-10-30T17:27:58-04:00",
    "month": "2026-10",
-   "after_us": 347,
+   "after_us": 343,
    "shared": true,
    "shared_at": "2026-10-30T16:25:57-04:00",
-   "others_spent": 68
+   "others_spent": 72
   }
  ],
  "spent": [
@@ -886,6 +886,102 @@
    "pull": "P",
    "game_id": "Indianapolis Colts@Jacksonville Jaguars",
    "cost": 35,
+   "key": 6
+  },
+  {
+   "at": "2026-10-30T17:27:58-04:00",
+   "date": "2026-10-30",
+   "pull": "R",
+   "game_id": "2026_08_ARI_DAL",
+   "cost": 6,
+   "key": 6
+  },
+  {
+   "at": "2026-10-30T17:27:58-04:00",
+   "date": "2026-10-30",
+   "pull": "R",
+   "game_id": "2026_08_ATL_TB",
+   "cost": 6,
+   "key": 6
+  },
+  {
+   "at": "2026-10-30T17:27:58-04:00",
+   "date": "2026-10-30",
+   "pull": "R",
+   "game_id": "2026_08_BAL_BUF",
+   "cost": 6,
+   "key": 6
+  },
+  {
+   "at": "2026-10-30T17:27:58-04:00",
+   "date": "2026-10-30",
+   "pull": "R",
+   "game_id": "2026_08_CLE_PIT",
+   "cost": 6,
+   "key": 6
+  },
+  {
+   "at": "2026-10-30T17:27:58-04:00",
+   "date": "2026-10-30",
+   "pull": "R",
+   "game_id": "2026_08_IND_JAX",
+   "cost": 6,
+   "key": 6
+  },
+  {
+   "at": "2026-10-30T17:27:58-04:00",
+   "date": "2026-10-30",
+   "pull": "R",
+   "game_id": "2026_08_LV_NYJ",
+   "cost": 6,
+   "key": 6
+  },
+  {
+   "at": "2026-10-30T17:27:58-04:00",
+   "date": "2026-10-30",
+   "pull": "R",
+   "game_id": "2026_08_MIN_DET",
+   "cost": 6,
+   "key": 6
+  },
+  {
+   "at": "2026-10-30T17:27:58-04:00",
+   "date": "2026-10-30",
+   "pull": "R",
+   "game_id": "2026_08_TEN_CIN",
+   "cost": 6,
+   "key": 6
+  },
+  {
+   "at": "2026-10-30T17:27:58-04:00",
+   "date": "2026-10-30",
+   "pull": "R",
+   "game_id": "2026_08_LAC_LA",
+   "cost": 6,
+   "key": 6
+  },
+  {
+   "at": "2026-10-30T17:27:58-04:00",
+   "date": "2026-10-30",
+   "pull": "R",
+   "game_id": "2026_08_KC_DEN",
+   "cost": 6,
+   "key": 6
+  },
+  {
+   "at": "2026-10-30T17:27:58-04:00",
+   "date": "2026-10-30",
+   "pull": "R",
+   "game_id": "2026_08_NE_MIA",
+   "cost": 6,
+   "key": 6
+  },
+  {
+   "at": "2026-10-30T17:27:58-04:00",
+   "date": "2026-10-30",
+   "pull": "R",
+   "game_id": "2026_08_PHI_WAS",
+   "cost": 6,
    "key": 6
   }
  ]
