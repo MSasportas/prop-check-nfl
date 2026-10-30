@@ -102,7 +102,8 @@ def status_json(wk, finished, ok=True, last_ok=None, failed=None, odds=None):
 # ---------------------------------------------------------------- record
 def entry(p, result=None, actual=None, units=None, pulled=None):
     away, home = (p["opp"], p["team"]) if p["home"] else (p["team"], p["opp"])
-    return {"id": p["id"], "kind": "single", "era": "gg1", "date": p["day"], "game": "%s at %s" % (away, home), "player": p["player_short"],
+    state = "pulled" if pulled else ("graded" if result else "locked")
+    return {"id": p["id"], "kind": "single", "era": "gg1", "state": state, "date": p["day"], "game": "%s at %s" % (away, home), "player": p["player_short"],
             "team": p["team"], "market": p["market"], "period": "FG", "bet": p["bet"], "price": p["price"], "result": result,
             "actual": actual, "units": units, "pulled": ({k: v for k, v in pulled.items() if k in ("at", "reason", "if_bet")} if pulled else None),
             "legs": []}
@@ -148,7 +149,6 @@ def summary(weeks):
         rows.append(row("pulled", "Pulled", pulled))
     head = row("headline", "Singles", singles)
     head.pop("key"), head.pop("label")
-    head["parlays"] = {"w": 0, "l": 0, "units": 0.0}
     return {"headline": head, "rows": rows}
 
 
@@ -215,7 +215,7 @@ def build_normal():
                    status_obj("ok", rd, "2026-12-06T14:30:00-05:00", ("ok", "2026-12-04T16:12:00-05:00"), ("ok", "2026-12-06T11:44:00-05:00", "Posted for the 1:00 PM games."),
                               run_at="2026-12-06T13:10:00-05:00"),
                    valid_until="2026-12-08T06:00:00-05:00", next_check="2026-12-06T14:30:00-05:00")
-    cur = [entry(p, pulled=p["pulled"]) for p in picks]
+    cur = on_record(picks)
     return sl, cur, "2026-12-06T13:10:00-05:00"
 
 
@@ -234,14 +234,14 @@ def history_weeks(upto, seed=7, loss_bias=0.45):
             day = "2026-%s" % (("11-%02d" % (1 + 7 * (wk - 8))) if wk < 13 else "12-06")
             res = "W" if rnd.random() > loss_bias else "L"
             a = int(line) + (1 if (res == "W") == (side == "over") else 0)
-            ents.append({"id": "2026-W%02d:g%d:p%d:%s:FG:%s:%s" % (wk, k, k, mkt, line, side), "kind": "single", "era": "gg1", "date": day,
+            ents.append({"id": "2026-W%02d:g%d:p%d:%s:FG:%s:%s" % (wk, k, k, mkt, line, side), "kind": "single", "era": "gg1", "state": "graded", "date": day,
                          "game": "%s at %s" % TEAMS[(wk + k) % len(TEAMS)], "player": s, "team": TEAMS[(wk + k) % len(TEAMS)][0], "market": mkt, "period": "FG",
                          "bet": "%s %s %s" % (side.capitalize(), line, NOUN[mkt]), "price": pr, "result": res,
                          "actual": "had %d" % (a if res == "W" and side == "over" else max(a - 1, 0)), "units": units_for(pr, res),
                          "pulled": None, "legs": []})
         if wk % 2 == 0:  # one pulled, graded, apart
             e = dict(ents[0])
-            e.update(id=e["id"] + ":x", player="K. Mercer", result="L", units=-1.0, actual="had 8",
+            e.update(id=e["id"] + ":x", state="pulled", player="K. Mercer", result="L", units=-1.0, actual="had 8",
                      pulled={"at": "%sT12:00:00-05:00" % e["date"], "reason": "Listed questionable."})
             ents.append(e)
         weeks.append(week_doc(wk, ents))
@@ -256,16 +256,21 @@ def retired_block():
             ("2026-10-18", "BAL at CLE", "L. Jackson", "Over 1st half 118.5 passing yards", -110, "L", "had 96"),
             ("2026-10-22", "NE at CHI", "R. Stevenson", "Under 7.5 receiving yards (1st half)", -110, "L", "had 12")]
     for i, (d, g, pl, bet, pr, res, act) in enumerate(plan):
-        ents.append({"id": "2026-W06:r%d" % i, "kind": "single", "era": "v1", "date": d, "game": g, "player": pl, "team": "AAA", "market": "rec_yds",
+        ents.append({"id": "2026-W06:r%d" % i, "kind": "single", "era": "v1", "state": "graded", "date": d, "game": g, "player": pl, "team": "AAA", "market": "rec_yds",
                      "period": "FG", "bet": bet, "price": pr, "result": res, "actual": act, "units": units_for(pr, res), "pulled": None, "legs": []})
     wk = week_doc(6, ents)
     return {"label": "Retired rules (Oct 18-22)", "note": "Picks and parlays from the first rules (blended chance, 1st half, parlays). Kept exactly as shown. Not part of the current record.",
             "summary": summary([wk]), "weeks": [wk]}
 
 
+def on_record(picks):
+    """Only started (locked/graded) or pulled picks are on the Record; open ones are not there yet."""
+    return [entry(x, pulled=x["pulled"]) for x in picks if x["state"] != "open"]
+
+
 def record_doc(season_weeks, current_entries, current_wk, gen, retired=True, older_paths=(), keep=4):
     weeks = list(season_weeks)
-    if current_entries is not None and current_wk is not None:
+    if current_entries and current_wk is not None:
         weeks.append(week_doc(current_wk, current_entries))
     weeks.sort(key=lambda w: w["week"], reverse=True)
     shown, older = weeks[:keep], weeks[keep:]
@@ -317,7 +322,7 @@ def main():
                               pl=pool(left=118, keys=6, live=2, days=9, low=True), run_at="2026-12-04T17:15:00-05:00"),
                    banners=[{"level": "warn", "text": "Odds keys running low: about 9 days of Hard Rock pulls left. Fewer price checks until more keys are added."}],
                    valid_until="2026-12-08T06:00:00-05:00", next_check="2026-12-04T21:00:00-05:00")
-    rec, older = record_doc(hw, [entry(x) for x in p], 13, "2026-12-04T17:15:00-05:00")
+    rec, older = record_doc(hw, on_record(p), 13, "2026-12-04T17:15:00-05:00")
     write("fresh", sl, rec, status_json(13, "2026-12-04T17:15:00-05:00"), older)
 
     # ---- nopicks: Sunday morning, all priced, nothing clears the bar
@@ -366,7 +371,7 @@ def main():
     sl = slate_doc(wk, now, "2026-11-01T10:15:00-05:00", g, p, off,
                    status_obj("ok", rd, "2026-11-01T16:00:00-05:00", ("ok", "2026-10-30T16:10:00-04:00"), ("not_yet", None, "Not posted yet. They come out about 90 minutes before kickoff."), run_at="2026-11-01T10:15:00-05:00"),
                    valid_until="2026-11-03T06:00:00-05:00", next_check="2026-11-01T16:00:00-05:00")
-    rec, older = record_doc([], [entry(x) for x in p], 8, "2026-11-01T10:15:00-05:00")
+    rec, older = record_doc([], on_record(p), 8, "2026-11-01T10:15:00-05:00")
     write("recordempty", sl, rec, status_json(8, "2026-11-01T10:15:00-05:00"), older)
 
     # ---- stale: Friday data on Sunday, the last run failed
@@ -381,7 +386,7 @@ def main():
                               run_ok=False, run_at="2026-12-06T11:30:00-05:00", failed="odds"),
                    banners=[{"level": "stop", "text": "The last update failed at 11:30 AM (odds). Showing 5:15 PM data."}],
                    valid_until="2026-12-08T06:00:00-05:00", next_check="2026-12-04T21:00:00-05:00")
-    rec, older = record_doc(hw, [entry(x) for x in p], 13, "2026-12-04T17:15:00-05:00")
+    rec, older = record_doc(hw, on_record(p), 13, "2026-12-04T17:15:00-05:00")
     write("stale", sl, rec, status_json(13, "2026-12-06T11:30:00-05:00", ok=False, last_ok="2026-12-04T17:15:00-05:00", failed="odds", odds={"state": "feed_down"}), older)
 
     # ---- poolempty: out of odds keys, shown picks still listed
@@ -396,7 +401,7 @@ def main():
                               pl=pool(left=0, keys=6, live=0, days=0, low=True, empty=True), run_at="2026-12-06T12:05:00-05:00"),
                    banners=[{"level": "stop", "text": "Out of odds keys: no new Hard Rock prices until more keys are added. No new picks."}],
                    valid_until="2026-12-08T06:00:00-05:00", next_check=None)
-    rec, older = record_doc(hw, [entry(x) for x in p], 13, "2026-12-06T12:05:00-05:00")
+    rec, older = record_doc(hw, on_record(p), 13, "2026-12-06T12:05:00-05:00")
     write("poolempty", sl, rec, status_json(13, "2026-12-06T12:05:00-05:00", odds={"state": "pool_empty"}), older)
 
     # ---- safetypause: Record down 10+, no new picks, shown ones still looked after
@@ -408,7 +413,7 @@ def main():
                    banners=[{"level": "warn", "text": "New picks are stopped: the Record is down 10 units or more."}],
                    valid_until="2026-12-08T06:00:00-05:00", next_check="2026-12-06T14:00:00-05:00")
     bad = history_weeks(12, seed=3, loss_bias=0.85)
-    rec, older = record_doc(bad, [entry(x) for x in p], 13, "2026-12-06T12:05:00-05:00")
+    rec, older = record_doc(bad, on_record(p), 13, "2026-12-06T12:05:00-05:00")
     write("safetypause", sl, rec, status_json(13, "2026-12-06T12:05:00-05:00"), older)
 
     # ---- many: 11 open picks on one day (the More button) plus a long name and long bet text
@@ -427,7 +432,7 @@ def main():
     sl = slate_doc(wk, now, "2026-12-06T10:20:00-05:00", g, p, off,
                    status_obj("ok", rd, "2026-12-06T12:00:00-05:00", ("ok", "2026-12-04T16:10:00-05:00"), ("not_yet", None, "Not posted yet. They come out about 90 minutes before kickoff."), run_at="2026-12-06T10:20:00-05:00"),
                    valid_until="2026-12-08T06:00:00-05:00", next_check="2026-12-06T12:00:00-05:00")
-    rec, older = record_doc(hw, [entry(x) for x in p], 13, "2026-12-06T10:20:00-05:00")
+    rec, older = record_doc(hw, on_record(p), 13, "2026-12-06T10:20:00-05:00")
     write("many", sl, rec, status_json(13, "2026-12-06T10:20:00-05:00"), older)
 
 

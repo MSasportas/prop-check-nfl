@@ -633,10 +633,11 @@ function entryRow(e) {
   var sub = [e.game, e.date ? (plainDay(e.date) ? plainDay(e.date).md : e.date) : null, odds(e.price)].filter(Boolean).join(' · ');
   var e2 = [sub, e.actual ? str(e.actual) : null].filter(Boolean).join(' · ');
   return h('div', { class: 'ent' + (pulled ? ' dim' : '') },
-    h('div', { class: 'tg ' + r, text: r === 'none' ? (pulled ? 'Pulled' : 'Pending') : r }),
+    h('div', { class: 'tg ' + r, text: r === 'none' ? (pulled || e.state === 'pulled' ? 'Pulled' : 'Started') : r }),
     h('div', { class: 'bd' },
       h('div', { class: 'e1' }, h('b', { text: str(e.player) }), ' ', str(e.bet)),
       h('div', { class: 'e2', text: e2 }),
+      e.state === 'locked' && !pulled ? h('div', { class: 'e2', text: 'Started, grading after the game.' }) : null,
       pulled && e.pulled.reason ? h('div', { class: 'e2', text: 'Pulled: ' + str(e.pulled.reason) }) : null,
       pulled && e.pulled.if_bet ? h('div', { class: 'e2', text: str(e.pulled.if_bet) }) : null),
     h('div', { class: 'u ' + signCls(e.units), text: e.result ? units(e.units) || '' : '' }));

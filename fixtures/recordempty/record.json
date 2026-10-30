@@ -11,64 +11,11 @@
    "n": 0,
    "units": 0,
    "hit_rate": null,
-   "needed": null,
-   "parlays": {
-    "w": 0,
-    "l": 0,
-    "units": 0.0
-   }
+   "needed": null
   },
   "rows": []
  },
- "weeks": [
-  {
-   "week": 8,
-   "slate": "2026-W08",
-   "label": "Week 8",
-   "graded": false,
-   "w": 0,
-   "l": 0,
-   "units": 0,
-   "entries": [
-    {
-     "id": "2026-W08:2026_08_NYJ_MIA:00-0004075:rush_att:FG:17.5:under",
-     "kind": "single",
-     "era": "gg1",
-     "date": "2026-11-01",
-     "game": "NYJ at MIA",
-     "player": "D. Pryce",
-     "team": "MIA",
-     "market": "rush_att",
-     "period": "FG",
-     "bet": "Under 17.5 carries",
-     "price": -115,
-     "result": null,
-     "actual": null,
-     "units": null,
-     "pulled": null,
-     "legs": []
-    },
-    {
-     "id": "2026-W08:2026_08_HOU_TEN:00-0038502:rec_yds:FG:44.5:under",
-     "kind": "single",
-     "era": "gg1",
-     "date": "2026-11-01",
-     "game": "HOU at TEN",
-     "player": "J. Castile",
-     "team": "TEN",
-     "market": "rec_yds",
-     "period": "FG",
-     "bet": "Under 44.5 receiving yards",
-     "price": -120,
-     "result": null,
-     "actual": null,
-     "units": null,
-     "pulled": null,
-     "legs": []
-    }
-   ]
-  }
- ],
+ "weeks": [],
  "older": [],
  "retired": {
   "label": "Retired rules (Oct 18-22)",
@@ -82,12 +29,7 @@
     "n": 5,
     "units": -1.2608,
     "hit_rate": 0.4,
-    "needed": 0.5305,
-    "parlays": {
-     "w": 0,
-     "l": 0,
-     "units": 0.0
-    }
+    "needed": 0.5305
    },
    "rows": [
     {
@@ -118,6 +60,7 @@
       "id": "2026-W06:r0",
       "kind": "single",
       "era": "v1",
+      "state": "graded",
       "date": "2026-10-18",
       "game": "ARI at LA",
       "player": "K. Bourne",
@@ -136,6 +79,7 @@
       "id": "2026-W06:r1",
       "kind": "single",
       "era": "v1",
+      "state": "graded",
       "date": "2026-10-18",
       "game": "ARI at LA",
       "player": "J. Brooks",
@@ -154,6 +98,7 @@
       "id": "2026-W06:r2",
       "kind": "single",
       "era": "v1",
+      "state": "graded",
       "date": "2026-10-18",
       "game": "ARI at LA",
       "player": "B. Corum",
@@ -172,6 +117,7 @@
       "id": "2026-W06:r3",
       "kind": "single",
       "era": "v1",
+      "state": "graded",
       "date": "2026-10-18",
       "game": "BAL at CLE",
       "player": "L. Jackson",
@@ -190,6 +136,7 @@
       "id": "2026-W06:r4",
       "kind": "single",
       "era": "v1",
+      "state": "graded",
       "date": "2026-10-22",
       "game": "NE at CHI",
       "player": "R. Stevenson",

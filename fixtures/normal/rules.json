@@ -214,7 +214,6 @@
    "keys_low": "Odds credits are running low: some games get fewer price checks."
   },
   "picks_open": 8,
-  "reason_rule": "One plain sentence from the model's context (recent games, opponent). No jargon, no em dashes, no probabilities.",
-  "picks_open_per_day": 6
+  "reason_rule": "One plain sentence from the model's context (recent games, opponent). No jargon, no em dashes, no probabilities."
  }
 }
