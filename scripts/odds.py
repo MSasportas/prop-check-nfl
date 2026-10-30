@@ -1013,11 +1013,12 @@ def pool_summary(key_state, plan, games_left, cfg, spent=(), now=None):
             if e["date"] < now.date().isoformat():
                 by_day[e["date"]] = by_day.get(e["date"], 0) + e["cost"]
         recent = [c for d, c in sorted(by_day.items())[-7:] if c > 0]
+        window = cfg["ops"].get("plan_window_days", 7)       # the plan looks one week ahead, so "days left" stops there
         if recent:
-            days_left = int(math.floor(left / (sum(recent) / float(len(recent))) + 1e-9))
-        first = (now.date().replace(day=1) + timedelta(days=32)).replace(day=1)
-        cap = (first - now.date()).days
-        days_left = cap if days_left is None and left > 0 else (min(days_left, cap) if days_left is not None else 0)
+            pace = sum(recent) / float(len(recent))
+        else:                                                # no history yet: the R-only cost of the week's games, per day
+            pace = games_left * len(pick_keys(cfg)) * regions_billed(len(request_books(cfg))) / float(window)
+        days_left = window if pace <= 0 else min(window, int(math.floor(left / pace + 1e-9)))
     allowance = plan["allowance"] if plan else None
     low = (allowance is not None and allowance < cfg["ops"]["tiers"]["pool_low_allowance"]) and not empty
     return {"credits_left": left, "keys": len(key_state), "keys_live": live, "keys_shared": shared,

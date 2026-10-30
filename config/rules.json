@@ -305,17 +305,18 @@
    "r_max_reads": 3,
    "c_target_min": 70,
    "c_fallback_min": 45,
-   "c_latest_min": 20,
-   "empty_retry_min": 180
+   "c_latest_min": 20
   },
   "tiers": {
-   "_about": "Allowance = credits the NFL plan may spend (min of pool left with shared keys weighted, and monthly_cap minus this month's spend) / games not started before the keys reset on the 1st. full: R + C every game. tight: R every game, C only for games holding a pick or near-pick. below: R only, earliest kickoff first while credits last.",
+   "_about": "Allowance = credits the NFL plan may spend (min of pool left with shared keys weighted, and monthly_cap minus this month's spend) / games not started yet that kick off in the next plan_window_days (7) days. full: R + C every game. tight: R every game, C only for games holding a pick or near-pick. below: R only, earliest kickoff first while credits last.",
    "full": 12,
    "tight": 7,
    "pool_low_allowance": 7
   },
   "monthly_cap": 1000,
   "shared_key_weight": 0.5,
+  "plan_window_days": 7,
+  "injury_fresh_min": 120,
   "event_match_hours": 6,
   "heartbeat_min": 20,
   "record_days": 14,

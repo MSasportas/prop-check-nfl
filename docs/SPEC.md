@@ -19,17 +19,18 @@ All numbers from `config/rules.json` (`ops.gap_guard.thresholds`). EV = fair pro
 2. **Guard.** final = 0.8 x market fair + 0.2 x model chance (model side chance = model p minus the shrink for that
    market and side, minus the jump penalty on role-jump overs). Pass iff final EV >= +2.0%. The model can only veto.
    No model means no pick.
-3. **Timing.** Only R and C reads taken at or after the final injury report counts in can flag (`gg.can_flag`). A new pick
+3. **Injury gate.** No NEW pick unless the injury feed's last good read is at most `ops.injury_fresh_min` (120) minutes old and has not failed since; the page shows "Injury news isn't loading. No new picks until it does.". Shown picks are still looked after.
+4. **Timing.** Only R and C reads taken at or after the final injury report counts in can flag (`gg.can_flag`). A new pick
    comes from the newest usable read (not older than 120 min). The price is frozen at the first passing read. Later reads can
    only PULL (gap gone, line moved, line or market gone, price out of the window, player status, wind, rules).
-4. **Settled level** shown on every pick: `injury_report` ("Injury report in") or `inactives` ("Inactives confirmed").
+5. **Settled level** shown on every pick: `injury_report` ("Injury report in") or `inactives` ("Inactives confirmed").
    `flags.price_final` is true once the pre-kickoff C read has been taken with inactives in.
-5. **Pre-price vetoes** (engine.pre_check): market not on the list, no model, questionable-or-worse this week, missed last
+6. **Pre-price vetoes** (engine.pre_check): market not on the list, no model, questionable-or-worse this week, missed last
    game, starting QB out (no overs), eligibility / role unstable, room change, wind (overs on pass_yds, pass_td, rec_yds),
    key teammate out (blocks that room until inactives are confirmed). One pick per player.
-6. **Safety pause.** New-era graded singles (not pulled) down 10 units or more: no NEW picks (shown ones are still looked
+7. **Safety pause.** New-era graded singles (not pulled) down 10 units or more: no NEW picks (shown ones are still looked
    after) and a banner. Retired-era results never count.
-7. Sharp's markets (config `ops.gap_guard.markets`, add or drop there): `pass_yds`, `pass_td`, `rush_yds`, `rush_att`,
+8. Sharp's markets (config `ops.gap_guard.markets`, add or drop there): `pass_yds`, `pass_td`, `rush_yds`, `rush_att`,
    `rec`, `rec_yds` = Odds API `player_pass_yds`, `player_pass_tds`, `player_rush_yds`, `player_rush_attempts`,
    `player_receptions`, `player_reception_yds`.
 
@@ -38,7 +39,7 @@ One the-odds-api call per game per pull, six markets, Hard Rock + 9 other books 
 one billed region), about 6 credits a game. **R**: first read once the final injury report counts in (retry every 240 min
 while Hard Rock has not posted, 3 reads max). **C**: kickoff - 70 min once both teams' inactives are confirmed, else
 kickoff - 45 (never later than 20 min before kickoff). Never a game that has kicked off. Tiers by allowance (credits per
-game left before the monthly reset): `full` >= 12 (R + C everywhere), `tight` >= 7 (R everywhere, C only where a pick or
+unstarted game in the next 7 days, `ops.plan_window_days`): `full` >= 12 (R + C everywhere), `tight` >= 7 (R everywhere, C only where a pick or
 near-pick sits), below = R only. The plan is capped by `ops.monthly_cap` (1,000 credits a month) and shared keys count at
 0.5. Keys come from env `ODDS_API_KEYS` and `ODDS_API_KEYS_2` (comma-separated), are never printed or written, and the
 ledger (`data/state/credits.json`) is by position. Every read is saved in `data/odds/<date>.json` (our price history).
@@ -100,15 +101,15 @@ settled level.
 ## 6. data/record.json
 ```
 {generated_at, season, era "gg1",
- summary {headline {w,l,push,void,n,units,hit_rate,needed,parlays{w,l,units}}, rows [ {key,label,w,l,push,void,n,units,hit_rate,needed} ]},
+ summary {headline {w,l,push,void,n,units,hit_rate,needed}, rows [ {key,label,w,l,push,void,n,units,hit_rate,needed} ]},
  weeks [ {week, slate, label, graded, w, l, units, entries [ENTRY]} ]   // newest first, last 4 weeks
  older ["record/2026-W04.json"], 
  retired null | {label, note, summary, weeks}}
-ENTRY {id, kind "single", era, date, game, player, team, market, period "FG", bet, price, result, actual, units, pulled null|{at,reason,...}, legs []}
+ENTRY {id, kind "single", era, state "locked"|"graded"|"pulled", date, game, player, team, market, period "FG", bet, price, result, actual, units, pulled null|{at,reason,...}, legs []}
 ```
 Headline, rows and weeks are the current era (gg1) only. Everything shown under the first rules (Oct 18-25: blended chance,
 parlays, 1st half) is a labelled `retired` block with its own summary; it never counts toward the headline or the pause.
-Rows are per market (`pulled` row separate). `parlays` in the headline is always zero now (kept for old readers).
+Rows are per market (`pulled` row separate). There is no `parlays` in the headline. Each ENTRY has `state`: `locked` (game started, not graded yet, not counted), `graded`, or `pulled` (never counted).
 
 ## 7. data/rules.json
 `{version, updated, values, gap_guard (thresholds), text [plain-language rules for the Rules screen], ui}`, generated from

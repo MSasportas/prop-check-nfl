@@ -24,7 +24,7 @@ chance, parlays, 1st half) stays in the log as a labelled "retired" block and ne
 1. Picks hit, at the price posted. Fewer picks beats picks that miss.
 2. Always current; anything missing or stale is said plainly on the page.
 3. A usable set of picks every game week.
-4. Readable on a phone in seconds; Research fast.
+4. Readable on a phone in seconds.
 
 ## 3. The team (subagents run by the CEO; any chat in the project is the CEO)
 Sharp (betting standard, final call on rules) · Data Scientist (data, model, samples, judging the Record) · UX
@@ -41,10 +41,10 @@ round). Rule changes: the DS names the sample first; the Sharp decides; log it i
 | Timing | Only R and C reads taken at or after the final injury report counts in (final report + 60 min grace) create a pick; from the newest usable read (<= 120 min old). Price frozen at the first passing read. Later reads can only pull. No Early level |
 | Vetoes | Questionable or worse this week; missed his last game; eligibility (games, new team, QB change); role swings (both sides); room change; starting QB out (no overs); key teammate out (room blocked until inactives); wind 15+ mph (overs on pass yds, pass TDs, rec yds); stats missing his team's last game |
 | Caps | 1 pick per player. No team or game cap (config values, off) |
-| Pulls | Player ruled out or inactive; listed questionable or worse; Hard Rock moved or removed the line or market; price outside the window; gap gone on a newer R or C read (pull EV 1.5%); rules tightened. Pulled text carries "if you bet at the posted price" and the price now |
+| Pulls | Player ruled out or inactive; listed questionable or worse; Hard Rock moved or removed the line or market; price outside the window; gap gone on a newer R or C read (pull EV 1.5%); rules tightened. Pulled text carries "if you already bet it at the posted price" and what to check (open the slip; we make no claim about how Hard Rock settles a player who does not play) |
 | Settled | `injury_report` or `inactives`. Inactives confirmed = ESPN lists 3+ inactives for both teams. Not confirmed by 60 min before kickoff: locks as "Locked: inactives not confirmed" |
 | Lock and grading | Locks at kickoff. Full game incl. OT. Did not play = void; push on a whole number (never picked). Graded from nflverse play-by-play, ESPN box score if nflverse is 36h+ late. Posted price = the frozen Hard Rock price. 1 unit flat. Pulled picks are graded, shown apart, never in the hit rate |
-| Odds pulls | R after the final injury report (~6 credits a game: six markets, 10 books, one region); C at kickoff - 70 min once inactives are confirmed, else kickoff - 45. Tiers by credits per game left: full >= 12, tight >= 7 (C only for games holding a pick or near-pick), below = R only. Monthly cap 1,000 credits; shared keys at 0.5. Keys: `ODDS_API_KEYS` + `ODDS_API_KEYS_2` |
+| Odds pulls | R after the final injury report (~6 credits a game: six markets, 10 books, one region); C at kickoff - 70 min once inactives are confirmed, else kickoff - 45. Tiers by credits per game in the NEXT 7 DAYS (unstarted games, `ops.plan_window_days`; not the whole month): full >= 12, tight >= 7 (C only for games holding a pick or near-pick), below = R only. Monthly cap 1,000 credits; shared keys at 0.5. Keys: `ODDS_API_KEYS` + `ODDS_API_KEYS_2` |
 | Safety pause | New-era graded singles (not pulled) at -10 units: no NEW picks until a person reviews, banner on the page. Retired-era results never count |
 | Research log | `data/gg/events.jsonl` (vetoes, capped, closing prices for CLV). Not on the page, not the Record, append-only and guarded |
 
@@ -75,8 +75,8 @@ Retired v1.1 (Oct 13-25: blended chance, parlays, 1st half, M/F/D pulls) is kept
   discount. Page warns when the pool is low.
 - **Files:** `index.html` (page), `data/slate.json`, `data/record.json`, `data/rules.json`, `data/status.json`,
   `data/odds/<date>.json` (every price pulled, others included), `data/gg/events.jsonl` (research log), `data/state/`.
-  `fixtures/` = OLD page test data (schema 1, has parlays and research): the UX agent replaces it.
-  Tests: `python -m unittest discover -s tests` (122), incl. a full replayed Thursday on a synthetic 7-book consensus. Tests use frozen stat rows
+  `fixtures/` = page test data, schema 2 (`?fixture=NAME`, built by `fixtures/make_fixtures.py`).
+  Tests: `python -m unittest discover -s tests` (130), incl. a full replayed Thursday on a synthetic 7-book consensus. Tests use frozen stat rows
   in `tests/fixtures/rows/`, never the live data.
 
 ## 6. Reviews (scheduled tasks; each reads this file first and updates it last)
@@ -87,17 +87,19 @@ Retired v1.1 (Oct 13-25: blended chance, parlays, 1st half, M/F/D pulls) is kept
   agreed fixes through QA; log changes in section 8.
 
 ## 7. Known gaps and risks
-1. **Odds credits are thin.** About 500 credits across the keys, mostly shared with NHL (weighted 0.5), and the monthly cap is 1,000. At ~6 credits per read and 2 reads per game the Nov 1 slate may run in the tight or below tier. The page says when games get fewer checks. More keys (or ODDS_API_KEYS_2) are Matt's call.
+1. **Odds credits are thin.** About 500 credits across the keys, mostly shared with NHL (weighted 0.5), and the monthly cap is 1,000. The plan divides credits by the games in the next 7 days (about 13 this Sunday week = full tier, R then C). If credits run short the tier drops to tight, then R only, and the page says "Odds credits are low: N left for M games this week". More keys (or ODDS_API_KEYS_2) are Matt's call.
 2. **Other books' staleness is untuned.** The book probe did not store `last_update`, so `stale_min_others` is 120 by guess. Tune from the first real reads in `data/odds/`.
 3. **The Gap + Guard thresholds are NHL's, untested on NFL prices.** Expect few picks; fewer beats misses. First review after week 8 grades.
 4. **No model, no pick:** rookies and thin samples never appear. By design.
-5. Hard Rock house rules not verified (longest-style props are not picked, so mainly DNP = void).
+5. Hard Rock house rules not verified (what happens to a prop if the player does not play): pulled text only says to check the slip.
 6. Inactives depend on ESPN's pre-game feed; if not confirmed 60 min before kickoff the pick locks as "inactives not confirmed".
-7. Thanksgiving week needs an injury-report override (report is Tuesday). Playoffs: the week and slate numbering after week 18 is untested.
-8. Key pool shared with Prop Check NHL; both step down together if it runs low. Keys reset on the 1st.
-9. Timer chain holds one runner most of the day (free on public repos; GitHub discourages always-on use).
-10. `fixtures/` and the page (index.html) are still schema 1 until UX rebuilds them from docs/SPEC.md.
-11. The Record's retired block label is derived from entry dates ("Retired rules (Oct 18-22)"); the brief says Oct 18-25.
+7. **`values.final_report` offsets are unverified for odd weeks.** Wed (Mon 16:00), Fri (Wed 16:00) and Sat (Thu 16:00) entries are copied from the old build, not checked against a real report. Thanksgiving (Thu Nov 26 games, report likely Tue/Wed), Black Friday Nov 27, Dec 19 (Sat) and Dec 25 (Fri) games are the risk: check the report day by hand the week before and fix the config; no value was changed because none can be verified here.
+8. **Weeks 19-22 (playoffs) are untested:** slate numbering, week labels and Saturday/Sunday playoff kickoffs have no test and no real data yet.
+9. **Open-Meteo fails open:** if the weather feed is down, the wind veto does not apply and the pick shows weather "not checked". The page shows that flag; nothing blocks the pick.
+10. **Injury news gate:** no NEW pick unless the last good injury read is within `ops.injury_fresh_min` (120 min) and the feed has not failed since. Shown picks are still looked after. Page banner: "Injury news isn't loading."
+11. Key pool shared with Prop Check NHL; both step down together if it runs low. Keys reset on the 1st.
+12. Timer chain holds one runner most of the day (free on public repos; GitHub discourages always-on use).
+13. The Record's retired block label is derived from entry dates ("Retired rules (Oct 18-22)"); the brief says Oct 18-25.
 
 ## 8. Rule-change log
 | Date | Change | Why | Sample |

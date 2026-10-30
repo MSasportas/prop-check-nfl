@@ -219,6 +219,20 @@ class Run:
         inj = self.inj if self.inj is not None else injuries.load()
         return {g["id"] for g in self.games if injuries.report_in(g, self.cfg, inj, self.now)}
 
+    def injuries_problem(self):
+        """None when the injury read is good enough to make a NEW pick on, else why not: the feed failed after the last good
+        read, there has been no read yet, or the last good read is older than ops.injury_fresh_min."""
+        inj = self.inj if self.inj is not None else injuries.load()
+        at = common.parse_iso(inj.get("at"))
+        if at is None:
+            return "no injury read yet"
+        fail = common.parse_iso(inj.get("last_fail_at"))
+        if fail is not None and fail > at:
+            return "the injury feed is not answering"
+        if (self.now - at).total_seconds() / 60.0 > self.cfg["ops"].get("injury_fresh_min", 120):
+            return "the last injury read is old"
+        return None
+
     def confirmed(self):
         ina = self.ina if self.ina is not None else injuries.load_inactives()
         return {g["id"] for g in self.games if injuries.game_confirmed(ina, g)}
@@ -235,7 +249,7 @@ class Run:
         open_items = [it for it in items.values() if it["slate"] == self.slate and record.is_open(it)
                       and it["kind"] == "single" and it["era"] == gg.era(self.cfg)]
         focus = engine.focus_markets(inp, self.by_game(), open_items)
-        left = len(sched.games_left_before_reset(self.cache, self.now))
+        left = len(sched.games_in_window(self.cache, self.now, self.cfg))
         self.odds_res = odds.run_pulls(self.now, self.slate, self.games, left, self.cfg, self.matcher_for, focus,
                                        self.report_times(), self.report_ok(), self.confirmed(), self.started,
                                        dry_run=self.dry_run)
@@ -264,7 +278,8 @@ class Run:
         pause = engine.safety_pause(events, self.cfg)
         self.paused = {"safety": pause} if pause else {}
         inp = self.build_inputs()
-        block = bool(self.stats_problems) or bool(pause)
+        inj_problem = self.injuries_problem()
+        block = bool(self.stats_problems) or bool(pause) or bool(inj_problem)
         log_items = gg.fold(gg.read_events())
         new, self.extra = engine.evaluate(inp, self.by_game(), block_new=block, log_items=log_items)
         record.append(new)
@@ -277,6 +292,8 @@ class Run:
         note = "%d new event(s): %d shown, %d pulled, %d locked" % (len(new), shown, pulled, locked) if new else "no change"
         if pause:
             note += "; new picks stopped (safety pause)"
+        elif inj_problem:
+            note += "; new picks blocked (%s)" % inj_problem
         elif self.stats_problems:
             note += "; new picks blocked (%s)" % "; ".join(self.stats_problems)
         return {"note": note}
@@ -306,7 +323,7 @@ class Run:
         keys = odds.load_keys()
         fixture = bool(odds.fixture_dir())
         no_keys = not keys and not fixture
-        left_games = len(sched.games_left_before_reset(self.cache, now)) if self.cache else 0
+        left_games = len(sched.games_in_window(self.cache, now, cfg)) if self.cache else 0
         plan = st.get("plan")
         pool = odds.pool_summary(key_state, plan, left_games, cfg, led.get("spent", []), now)
         refused = not no_keys and odds.keys_refused(key_state, len(keys or key_state))
@@ -356,6 +373,8 @@ class Run:
         inj = self.inj if self.inj is not None else injuries.load()
         ina = self.ina if self.ina is not None else injuries.load_inactives()
         inj_down = bool(inj.get("last_fail_at")) and (not inj.get("at") or inj["last_fail_at"] > inj["at"])
+        if not inj_down and inj.get("at") and self.injuries_problem() == "the last injury read is old":
+            inj_down = True
         inj_state = "down" if inj_down else ("ok" if inj.get("at") else "not_yet")
         posted = [g for g in self.games if all(injuries.team_confirmed(ina, g, t) for t in (g["away"], g["home"]))]
         ina_at = max([t.get("confirmed_at") for rec in ina.values() if isinstance(rec, dict)
@@ -399,11 +418,10 @@ class Run:
             banners.append({"level": "stop", "text": "Out of odds keys: no new Hard Rock prices until more keys are "
                                                      "added. No new picks."})
         elif pool["low"]:
-            d = pool["days_left"]
-            banners.append({"level": "warn", "text": "Odds keys running low: about %s of Hard Rock pulls left. Fewer "
-                                                     "price checks until more keys are added." % (
-                                                         "%d day%s" % (d, "" if d == 1 else "s") if d is not None
-                                                         else "a few days")})
+            n = left_games
+            banners.append({"level": "warn", "text": "Odds credits are low: %s left for %d game%s this week. Some games get "
+                                                     "fewer price checks until more keys are added." % (
+                                                         "{:,}".format(pool["credits_left"]), n, "" if n == 1 else "s")})
         if ost == "feed_down":
             banners.append({"level": "warn", "text": "The odds feed did not answer at %s. Trying again on the next "
                                                      "check." % common.fmt_time(common.parse_iso(st["last_fail_at"]))})

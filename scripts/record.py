@@ -217,17 +217,22 @@ def _leg(it):
             "actual": g.get("actual_text")}
 
 
+def _state(it):
+    """On the Record: 'pulled' (graded or not, never counted), 'graded', or 'locked' (game started, result not in yet)."""
+    return "pulled" if it["pulled"] else ("graded" if it["graded"] else "locked")
+
+
 def _entry(it, items):
     sh, g = it["shown"], it["graded"] or {}
     if it["kind"] == "parlay":
         legs = [items[l] for l in sh.get("legs", []) if l in items]
         dates = sorted((l["shown"].get("start") or "")[:10] for l in legs if l["shown"].get("start"))
-        return {"id": it["id"], "kind": "parlay", "era": it["era"], "date": dates[0] if dates else (sh.get("start") or "")[:10] or None,
+        return {"id": it["id"], "kind": "parlay", "era": it["era"], "state": _state(it), "date": dates[0] if dates else (sh.get("start") or "")[:10] or None,
                 "game": None, "player": None, "team": None, "market": "parlay", "period": None,
                 "bet": "%d legs" % len(sh.get("legs", [])), "price": grade_price(it), "result": g.get("result"),
                 "actual": g.get("actual_text"), "units": g.get("units"), "pulled": _pulled(it),
                 "legs": [_leg(l) for l in legs]}
-    return {"id": it["id"], "kind": "single", "era": it["era"], "date": (sh.get("start") or "")[:10] or None,
+    return {"id": it["id"], "kind": "single", "era": it["era"], "state": _state(it), "date": (sh.get("start") or "")[:10] or None,
             "game": _game_text(sh),
             "player": sh.get("player_short") or sh.get("player"), "team": sh.get("team"), "market": sh.get("market"),
             "period": sh.get("period"), "bet": sh.get("bet"), "price": grade_price(it), "result": g.get("result"),
@@ -306,9 +311,6 @@ def _block(items, its_by_week, cfg):
     head = _row("headline", "Singles", singles)
     head.pop("key")
     head.pop("label")
-    pr = [e for e in par if e["result"]]
-    head["parlays"] = {"w": sum(1 for e in pr if e["result"] == "W"), "l": sum(1 for e in pr if e["result"] == "L"),
-                       "units": round(sum(e["units"] or 0 for e in pr), 4)}
     return weeks, {"headline": head, "rows": rows}
 
 

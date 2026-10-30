@@ -301,9 +301,11 @@ def if_bet_text(code, frozen_price, now_price, yours, status=None):
     fp = common.fmt_price(frozen_price)
     if code in ("inactive", "injury"):
         who = "He is %s." % (("listed " + status.lower()) if status and code == "injury" else "inactive")
-        return "If you already bet it at %s: %s Hard Rock normally voids a prop if the player does not play; check your slip." % (fp, who)
+        return "If you already bet it at %s: %s Open your bet slip at Hard Rock and check how it is shown; we do not know how Hard Rock settles it." % (fp, who)
     if code == "wind":
         return "If you already bet it at %s: it stands. The wind forecast got worse, which hurts passing and receiving overs." % fp
+    if code == "rules":
+        return "If you already bet it at %s: open your bet slip at Hard Rock and check the line and price. We pulled it because it no longer fits our rules, not because of a price move." % fp
     if code in ("line_moved", "line_gone", "market_gone"):
         return "If you already bet it at %s: your bet stands at that number. Hard Rock no longer offers this line." % fp
     ev_ = (yours or {}).get("yours_ev")

@@ -124,7 +124,7 @@ class RecordLog(unittest.TestCase):
         h = rec["summary"]["headline"]
         self.assertEqual((h["w"], h["l"], h["push"], h["void"], h["n"]), (1, 1, 0, 1, 2))
         self.assertAlmostEqual(h["units"], -0.1667, places=4)
-        self.assertEqual(h["parlays"], {"w": 0, "l": 0, "units": 0})
+        self.assertNotIn("parlays", h)
         rows = {r["key"]: r for r in rec["summary"]["rows"]}
         self.assertEqual(sorted(rows), ["pulled", "rec|FG", "rush_yds|FG"])
         self.assertEqual(rows["rec|FG"]["label"], "Receptions")
@@ -136,6 +136,7 @@ class RecordLog(unittest.TestCase):
         self.assertNotIn("e", ids)                       # joins the Record at kickoff or when pulled
         d = next(e for e in wk["entries"] if e["id"] == "d")
         self.assertEqual(d["pulled"], {"at": "2026-10-14T11:00:00-04:00", "reason": "Listed questionable."})
+        self.assertEqual(d["state"], "pulled")
         a = next(e for e in wk["entries"] if e["id"] == "a")
         self.assertEqual((a["date"], a["game"], a["player"], a["market"], a["period"], a["price"]),
                          ("2026-10-15", "SEA at DEN", "J. Smith-Njigba", "rec", "FG", -120))
@@ -166,6 +167,15 @@ class RecordLog(unittest.TestCase):
         self.assertEqual((r["summary"]["headline"]["w"], r["summary"]["headline"]["l"]), (0, 1))
         self.assertEqual([w["week"] for w in r["weeks"]], [7])
         self.assertEqual(record.era_units(ev, "gg1"), 0.8333)
+
+    def test_entry_state_locked_until_graded(self):
+        ev = [shown("a"), {"t": "locked", "id": "a", "at": "2026-10-15T20:15:00-04:00", "state": "inactives"},
+              shown("b", pid="p2"), {"t": "locked", "id": "b", "at": "2026-10-15T20:15:00-04:00", "state": "inactives"},
+              graded("b", "W", -120, 0.8333)]
+        rec, _ = record.build_views(ev, CFG)
+        st = {e["id"]: e["state"] for e in rec["weeks"][0]["entries"]}
+        self.assertEqual(st, {"a": "locked", "b": "graded"})
+        self.assertEqual(rec["summary"]["headline"]["n"], 1)               # locked is on the Record but not yet counted
 
     def test_empty_record_at_cutover(self):
         rec, older = record.build_views([], CFG)

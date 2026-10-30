@@ -126,6 +126,29 @@ class Plan(unittest.TestCase):
         self.assertEqual(odds.make_plan(1000, 58, CFG)["tier"], "full")
         self.assertEqual(odds.make_plan(498, 0, CFG)["tier"], "full")                 # no games before the reset: all of it
 
+    def test_five_hundred_credits_for_a_weeks_thirteen_games_is_the_full_tier(self):
+        p = odds.make_plan(498, 13, CFG)
+        self.assertEqual((p["tier"], p["pulls"]), ("full", "RC"))
+        self.assertAlmostEqual(p["allowance"], 38.31, places=2)
+        self.assertEqual(odds.make_plan(498, 71, CFG)["tier"], "tight")        # the old divisor: the whole month
+        self.assertEqual(odds.make_plan(60, 13, CFG)["pulls"], "R")             # short on credits: R only
+
+    def test_the_plan_counts_only_games_in_the_next_seven_days(self):
+        w = World()
+        try:
+            import run, sched
+            w.at("2026-10-14T17:10")
+            r = run.Run(helpers.cfg(), T("2026-10-14T17:10:00-04:00"), readonly=True)
+            r.load_schedule()
+            win = sched.games_in_window(r.cache, r.now, r.cfg)
+            month = sched.games_left_before_reset(r.cache, r.now)
+            self.assertTrue(0 < len(win) < len(month), (len(win), len(month)))
+            self.assertTrue(all(r.now < common.parse_iso(g["start"]) <= r.now + timedelta(days=7) for g in win))
+            late = sched.games_in_window(r.cache, T("2026-10-15T21:00:00-04:00"), r.cfg)
+            self.assertNotIn(SEA_DEN, [g["id"] for g in late])               # a started game is not in the window
+        finally:
+            w.close()
+
     def test_monthly_cap_limits_the_plan_not_the_pool(self):
         pool = odds.Pool(["k1", "k2"], T("2026-11-03T10:00:00-05:00"))
         pool.state[0].update(left=900, status="ok")
@@ -330,6 +353,23 @@ class Pulls(unittest.TestCase):
             self.assertEqual(st["tier"], "below")                     # 4 credits across the week's games
             self.assertEqual(st["pool_total"], 4)
             self.assertEqual(w.slate()["picks"], [])
+        finally:
+            w.close()
+
+    def test_short_credits_degrade_to_r_only_with_a_plain_banner(self):
+        w = World(pool=(13,))                                         # 13 credits for the week's games: far under 7 each
+        try:
+            s = w.at("2026-10-14T17:10")
+            st = w.status()
+            self.assertEqual(st["tier"], "below")
+            self.assertEqual([d["pull"] for d in st["due"]], ["R"])
+            self.assertTrue(s["status"]["pool"]["low"])
+            self.assertTrue([b["text"] for b in s["banners"] if "Odds credits are low" in b["text"]][0]
+                            .startswith("Odds credits are low: 7 left for "))
+            self.assertTrue(any("fewer price checks" in b["text"] for b in s["banners"]))
+            w.at("2026-10-15T19:30")                                  # kickoff - 45: a C read is never planned in this tier
+            self.assertEqual([d["pull"] for d in w.status()["due"] if d["game_id"] == SEA_DEN], [])
+            self.assertEqual(w.status()["pool_total"], 7)
         finally:
             w.close()
 

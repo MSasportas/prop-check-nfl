@@ -183,6 +183,5 @@ def rules_doc(cfg):
         "shown as pulled.",
     ]
     ui = dict(cfg["ui"])
-    ui.setdefault("picks_open_per_day", 6)
     return {"version": cfg["version"], "updated": cfg["updated"], "values": dict(v), "gap_guard": gg.P(cfg),
             "text": [clean(x) for x in text if x], "ui": ui}

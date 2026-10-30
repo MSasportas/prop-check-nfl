@@ -211,5 +211,44 @@ class Week(unittest.TestCase):
         self.assertEqual(p["pulled"]["reason"], "Hard Rock moved the line to 18.5.")
 
 
+class InjuriesDown(unittest.TestCase):
+    """The injury feed dies after Tuesday. A later C read (odds fixtures unchanged) must not create a pick; once injuries
+    answer again, the same read does."""
+
+    def test_no_new_pick_without_a_fresh_injury_read(self):
+        w = World(pool=(29, 500, 500, 326, 109, 500, 415))
+        try:
+            w.set_odds(SEA_DEN, add_books(w.sea_den, {}), "2026-10-14T21:00:00Z")      # no gap anywhere on the R read
+            s = w.at("2026-10-14T17:10")                                 # final report in, injuries read fine, no pick
+            self.assertEqual(s["picks"], [])
+            w.set_odds(SEA_DEN, add_books(w.sea_den, EDGES, last_update_z="2026-10-15T23:00:00Z"), "2026-10-15T23:00:00Z")
+            os.unlink(os.path.join(w.feed, "espn_injuries.json"))        # then the injury feed stops answering
+            s = w.at("2026-10-15T19:30")
+            self.assertTrue(any(d["pull"] == "C" and d["game_id"] == SEA_DEN for d in w.status()["due"]), w.status()["due"])
+            self.assertEqual([e for e in w.events() if e["t"] == "shown"], [])
+            self.assertEqual(s["picks"], [])
+            self.assertTrue(any("Injury news isn't loading" in b["text"] for b in s["banners"]), s["banners"])
+            self.assertEqual(s["status"]["injuries"]["state"], "down")
+            helpers.write(os.path.join(w.feed, "espn_injuries.json"), w.injuries)      # the feed is back
+            s = w.at("2026-10-15T19:40")
+            self.assertEqual(s["status"]["injuries"]["state"], "ok")
+            self.assertEqual([p["player_id"] for p in s["picks"] if p["state"] == "open"], [WILSON])
+            self.assertFalse(any("Injury news" in b["text"] for b in s["banners"]))
+        finally:
+            w.close()
+
+    def test_an_old_injury_read_also_blocks(self):
+        w = World(pool=(29, 500, 500, 326, 109, 500, 415))
+        try:
+            import run, common
+            w.at("2026-10-14T17:10")
+            r = run.Run(helpers.cfg(), common.parse_iso("2026-10-14T19:20:00-04:00"), readonly=True)
+            self.assertEqual(r.injuries_problem(), "the last injury read is old")      # 130 min after the last good read
+            r = run.Run(helpers.cfg(), common.parse_iso("2026-10-14T18:30:00-04:00"), readonly=True)
+            self.assertIsNone(r.injuries_problem())
+        finally:
+            w.close()
+
+
 if __name__ == "__main__":
     unittest.main()

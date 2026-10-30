@@ -141,6 +141,20 @@ class WhenAReadCounts(unittest.TestCase):
         self.assertFalse(gg.can_flag(self.read("2026-10-14T18:00:00-04:00", pull="M"), GAME, CFG))
 
 
+class PulledText(unittest.TestCase):
+    def test_if_bet_text_makes_no_claim_about_how_hard_rock_settles(self):
+        for code, status in (("inactive", None), ("injury", "Questionable")):
+            txt = gg.if_bet_text(code, -120, None, None, status=status)
+            self.assertNotIn("void", txt.lower())
+            self.assertIn("check", txt)
+            self.assertTrue(txt.startswith("If you already bet it at -120:"))
+
+    def test_rules_pull_says_what_to_do(self):
+        txt = gg.if_bet_text("rules", 105, None, None)
+        self.assertIn("open your bet slip at Hard Rock and check the line and price", txt)
+        self.assertTrue(txt.startswith("If you already bet it at +105:"))
+
+
 class SafetyPauseAndSweep(unittest.TestCase):
     def shown(self, i, slate, era, start="2026-10-25T13:00:00-04:00", price=-120):
         body = {"id": i, "game_id": "g" + i, "player_id": "p" + i, "player_short": "P. Name", "team": "SEA", "opp": "DEN", "home": False, "start": start, "price": price,

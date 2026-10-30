@@ -229,6 +229,16 @@ def games_left_before_reset(cache, now):
     return sorted(out, key=lambda g: (g["start"], g["id"]))
 
 
+def games_in_window(cache, now, cfg):
+    """Games not started yet that kick off in the next ops.plan_window_days (7) days, sorted by kickoff. The credit plan
+    divides the pool by these, not by the rest of the month (the monthly cap and the keys' reset on the 1st still apply)."""
+    days = ((cfg or {}).get("ops") or {}).get("plan_window_days", 7)
+    end = now + timedelta(days=days)
+    out = [g for g in (cache or {}).get("games", {}).values()
+           if now < common.parse_iso(g["start"]) <= end and not is_postponed(g, cache)]
+    return sorted(out, key=lambda g: (g["start"], g["id"]))
+
+
 def game_days(games):
     per = {}
     for g in games:
