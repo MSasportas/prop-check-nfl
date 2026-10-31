@@ -1,5 +1,5 @@
 {
- "at": "2026-10-31T19:00:14-04:00",
+ "at": "2026-10-31T19:30:15-04:00",
  "source": "espn",
  "players": {
   "name:ARI:jongaines": {
@@ -505,7 +505,7 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-10-31T18:39:00-04:00",
+   "date": "2026-10-31T19:13:00-04:00",
    "detail": "Suspension",
    "espn_id": "4034953"
   },
@@ -829,11 +829,21 @@
    "name": "Anthony Johnson Jr.",
    "team": "CHI",
    "pos": "S",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-31T18:39:00-04:00",
+   "status": "Injured Reserve",
+   "fantasy": "IR",
+   "date": "2026-10-31T19:13:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
+  },
+  "name:CHI:dmarcojackson": {
+   "name": "D'Marco Jackson",
+   "team": "CHI",
+   "pos": "LB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-31T19:08:00-04:00",
+   "detail": "Ankle",
+   "espn_id": "4241007"
   },
   "00-0040126": {
    "name": "Colston Loveland",
@@ -855,16 +865,6 @@
    "detail": "Thumb",
    "espn_id": "4608686",
    "comment": "Head coach Ben Johnson told reporters Saturday that Monangai (thumb/toe) will not play against the Seahawks on Monday, Courtney Cronin of ESPN.com reports."
-  },
-  "name:CHI:dmarcojackson": {
-   "name": "D'Marco Jackson",
-   "team": "CHI",
-   "pos": "LB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-29T16:13:00-04:00",
-   "detail": "Ankle",
-   "espn_id": "4241007"
   },
   "name:CHI:cobybryant": {
    "name": "Coby Bryant",
@@ -1726,6 +1726,16 @@
    "detail": "Forearm",
    "espn_id": "4035434"
   },
+  "00-0035700": {
+   "name": "Josh Jacobs",
+   "team": "GB",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-31T19:04:00-04:00",
+   "detail": null,
+   "espn_id": "4047365"
+  },
   "name:GB:micahparsons": {
    "name": "Micah Parsons",
    "team": "GB",
@@ -1786,16 +1796,6 @@
    "date": "2026-10-29T23:52:00-04:00",
    "detail": null,
    "espn_id": "4701936"
-  },
-  "00-0035700": {
-   "name": "Josh Jacobs",
-   "team": "GB",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-29T23:33:00-04:00",
-   "detail": null,
-   "espn_id": "4047365"
   },
   "00-0040142": {
    "name": "Kaleb Johnson",
@@ -2375,25 +2375,25 @@
    "detail": null,
    "espn_id": "2576336"
   },
-  "name:KC:ljariussneed": {
-   "name": "L'Jarius Sneed",
-   "team": "KC",
-   "pos": "CB",
-   "status": "Injured Reserve",
-   "fantasy": "IR",
-   "date": "2026-10-30T19:49:00-04:00",
-   "detail": "Knee",
-   "espn_id": "4040432"
-  },
   "name:KC:mansoordelane": {
    "name": "Mansoor Delane",
    "team": "KC",
    "pos": "CB",
    "status": "Out",
    "fantasy": "OUT",
-   "date": "2026-10-30T19:46:00-04:00",
+   "date": "2026-10-31T19:10:00-04:00",
    "detail": "Shoulder",
    "espn_id": "4880124"
+  },
+  "name:KC:ljariussneed": {
+   "name": "L'Jarius Sneed",
+   "team": "KC",
+   "pos": "CB",
+   "status": "Injured Reserve",
+   "fantasy": "IR",
+   "date": "2026-10-31T19:04:00-04:00",
+   "detail": "Knee",
+   "espn_id": "4040432"
   },
   "00-0039894": {
    "name": "Xavier Worthy",
@@ -2414,16 +2414,6 @@
    "date": "2026-10-30T15:18:00-04:00",
    "detail": null,
    "espn_id": "15847"
-  },
-  "name:KC:rmasonthomas": {
-   "name": "R Mason Thomas",
-   "team": "KC",
-   "pos": "DE",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-30T15:11:00-04:00",
-   "detail": "Personal",
-   "espn_id": "5081927"
   },
   "00-0039067": {
    "name": "Rashee Rice",
@@ -3021,16 +3011,6 @@
    "date": "2026-10-25T20:48:00-04:00",
    "detail": null,
    "espn_id": "4426515"
-  },
-  "00-0041568": {
-   "name": "Ty Simpson",
-   "team": "LA",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-25T15:27:00-04:00",
-   "detail": null,
-   "espn_id": "4685522"
   },
   "name:MIA:reesetaylor": {
    "name": "Reese Taylor",
