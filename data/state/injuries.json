@@ -1,5 +1,5 @@
 {
- "at": "2026-10-31T10:00:13-04:00",
+ "at": "2026-10-31T11:00:01-04:00",
  "source": "espn",
  "players": {
   "name:ARI:jongaines": {
@@ -505,7 +505,7 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-10-31T09:01:00-04:00",
+   "date": "2026-10-31T10:47:00-04:00",
    "detail": "Suspension",
    "espn_id": "4034953"
   },
@@ -839,9 +839,9 @@
    "name": "Anthony Johnson Jr.",
    "team": "CHI",
    "pos": "S",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-31T09:01:00-04:00",
+   "status": "Injured Reserve",
+   "fantasy": "IR",
+   "date": "2026-10-31T10:47:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
@@ -1757,6 +1757,16 @@
    "detail": "Forearm",
    "espn_id": "4035434"
   },
+  "name:GB:micahparsons": {
+   "name": "Micah Parsons",
+   "team": "GB",
+   "pos": "DE",
+   "status": "Out",
+   "fantasy": "PUP-R",
+   "date": "2026-10-31T10:09:00-04:00",
+   "detail": "Knee - ACL",
+   "espn_id": "4361423"
+  },
   "00-0039811": {
    "name": "MarShawn Lloyd",
    "team": "GB",
@@ -1879,16 +1889,6 @@
    "date": "2026-10-29T18:54:00-04:00",
    "detail": "Shin",
    "espn_id": "3124005"
-  },
-  "name:GB:micahparsons": {
-   "name": "Micah Parsons",
-   "team": "GB",
-   "pos": "DE",
-   "status": "Out",
-   "fantasy": "PUP-R",
-   "date": "2026-10-28T19:12:00-04:00",
-   "detail": "Knee - ACL",
-   "espn_id": "4361423"
   },
   "00-0037091": {
    "name": "Bo Melton",
