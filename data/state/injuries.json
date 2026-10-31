@@ -1,5 +1,5 @@
 {
- "at": "2026-10-30T22:30:11-04:00",
+ "at": "2026-10-30T23:00:11-04:00",
  "source": "espn",
  "players": {
   "name:ARI:jongaines": {
@@ -175,6 +175,16 @@
    "detail": null,
    "espn_id": "4361307"
   },
+  "name:ATL:anteriothompson": {
+   "name": "Anterio Thompson",
+   "team": "ATL",
+   "pos": "DT",
+   "status": "Out",
+   "fantasy": "NFI-R",
+   "date": "2026-10-30T22:43:00-04:00",
+   "detail": "Undisclosed",
+   "espn_id": "5150660"
+  },
   "00-0040432": {
    "name": "Beaux Collins",
    "team": "ATL",
@@ -327,16 +337,6 @@
    "date": "2026-10-26T13:25:00-04:00",
    "detail": null,
    "espn_id": "14012"
-  },
-  "00-0036970": {
-   "name": "Kyle Pitts Sr.",
-   "team": "ATL",
-   "pos": "TE",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-25T19:09:00-04:00",
-   "detail": null,
-   "espn_id": "4360248"
   },
   "name:BAL:olaivavegaioane": {
    "name": "Olaivavega Ioane",
@@ -2719,6 +2719,26 @@
    "detail": null,
    "espn_id": "4890973"
   },
+  "name:LAC:kayodeawosika": {
+   "name": "Kayode Awosika",
+   "team": "LAC",
+   "pos": "G",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-10-30T22:28:00-04:00",
+   "detail": "Lower Leg",
+   "espn_id": "4040842"
+  },
+  "name:LAC:deaneleonard": {
+   "name": "Deane Leonard",
+   "team": "LAC",
+   "pos": "CB",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-10-30T22:27:00-04:00",
+   "detail": "Concussion",
+   "espn_id": "4690171"
+  },
   "name:LAC:dontejackson": {
    "name": "Donte Jackson",
    "team": "LAC",
@@ -2789,26 +2809,6 @@
    "date": "2026-10-30T16:28:00-04:00",
    "detail": null,
    "espn_id": "4686612"
-  },
-  "name:LAC:deaneleonard": {
-   "name": "Deane Leonard",
-   "team": "LAC",
-   "pos": "CB",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-30T16:20:00-04:00",
-   "detail": "Concussion",
-   "espn_id": "4690171"
-  },
-  "name:LAC:kayodeawosika": {
-   "name": "Kayode Awosika",
-   "team": "LAC",
-   "pos": "G",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-30T16:19:00-04:00",
-   "detail": "Lower Leg",
-   "espn_id": "4040842"
   },
   "name:LAC:denzelperryman": {
    "name": "Denzel Perryman",
@@ -3064,6 +3064,26 @@
    "detail": null,
    "espn_id": "4685522"
   },
+  "name:MIA:reesetaylor": {
+   "name": "Reese Taylor",
+   "team": "MIA",
+   "pos": "CB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-30T22:21:00-04:00",
+   "detail": "Quadriceps",
+   "espn_id": "4371946"
+  },
+  "name:MIA:kadynproctor": {
+   "name": "Kadyn Proctor",
+   "team": "MIA",
+   "pos": "OT",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-10-30T22:20:00-04:00",
+   "detail": "Concussion",
+   "espn_id": "4870976"
+  },
   "00-0041524": {
    "name": "Will Kacmarek",
    "team": "MIA",
@@ -3114,16 +3134,6 @@
    "detail": null,
    "espn_id": "4367209"
   },
-  "name:MIA:kadynproctor": {
-   "name": "Kadyn Proctor",
-   "team": "MIA",
-   "pos": "OT",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-30T16:10:00-04:00",
-   "detail": "Concussion",
-   "espn_id": "4870976"
-  },
   "00-0039874": {
    "name": "Jaylen Wright",
    "team": "MIA",
@@ -3133,16 +3143,6 @@
    "date": "2026-10-28T16:51:00-04:00",
    "detail": null,
    "espn_id": "4682745"
-  },
-  "name:MIA:reesetaylor": {
-   "name": "Reese Taylor",
-   "team": "MIA",
-   "pos": "CB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-27T09:11:00-04:00",
-   "detail": "Quadriceps",
-   "espn_id": "4371946"
   },
   "00-0041529": {
    "name": "Kevin Coleman Jr.",
