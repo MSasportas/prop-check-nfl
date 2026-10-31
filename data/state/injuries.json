@@ -1,5 +1,5 @@
 {
- "at": "2026-10-31T14:30:01-04:00",
+ "at": "2026-10-31T15:00:01-04:00",
  "source": "espn",
  "players": {
   "name:ARI:jongaines": {
@@ -505,7 +505,7 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-10-31T14:15:00-04:00",
+   "date": "2026-10-31T14:38:00-04:00",
    "detail": "Suspension",
    "espn_id": "4034953"
   },
@@ -841,9 +841,19 @@
    "pos": "S",
    "status": "Out",
    "fantasy": "OUT",
-   "date": "2026-10-31T14:15:00-04:00",
+   "date": "2026-10-31T14:54:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
+  },
+  "00-0040126": {
+   "name": "Colston Loveland",
+   "team": "CHI",
+   "pos": "TE",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-31T14:54:00-04:00",
+   "detail": null,
+   "espn_id": "4723086"
   },
   "00-0040236": {
    "name": "Kyle Monangai",
@@ -855,17 +865,6 @@
    "detail": "Thumb",
    "espn_id": "4608686",
    "comment": "Head coach Ben Johnson told reporters Saturday that Monangai (thumb/toe) will not play against the Seahawks on Monday, Courtney Cronin of ESPN.com reports."
-  },
-  "00-0040126": {
-   "name": "Colston Loveland",
-   "team": "CHI",
-   "pos": "TE",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-30T15:31:00-04:00",
-   "detail": "Neck",
-   "espn_id": "4723086",
-   "comment": "Loveland was limited at Friday's practice due to a neck injury, Kevin Fishbain of The Athletic reports."
   },
   "name:CHI:dmarcojackson": {
    "name": "D'Marco Jackson",
@@ -2561,8 +2560,8 @@
    "name": "Jack Bech",
    "team": "LV",
    "pos": "WR",
-   "status": "Injured Reserve",
-   "fantasy": "IR-R",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
    "date": "2026-10-31T13:53:00-04:00",
    "detail": "Forearm",
    "espn_id": "4603186",
@@ -2572,8 +2571,8 @@
    "name": "Patrick Johnson",
    "team": "LV",
    "pos": "DE",
-   "status": "Out",
-   "fantasy": "OUT",
+   "status": "Injured Reserve",
+   "fantasy": "IR",
    "date": "2026-10-30T22:03:00-04:00",
    "detail": "Neck",
    "espn_id": "4243916"
