@@ -1,5 +1,5 @@
 {
- "at": "2026-10-31T15:00:01-04:00",
+ "at": "2026-10-31T15:30:01-04:00",
  "source": "espn",
  "players": {
   "name:ARI:jongaines": {
@@ -505,7 +505,7 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-10-31T14:38:00-04:00",
+   "date": "2026-10-31T15:10:00-04:00",
    "detail": "Suspension",
    "espn_id": "4034953"
   },
@@ -839,9 +839,9 @@
    "name": "Anthony Johnson Jr.",
    "team": "CHI",
    "pos": "S",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-31T14:54:00-04:00",
+   "status": "Injured Reserve",
+   "fantasy": "IR",
+   "date": "2026-10-31T15:26:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
@@ -851,7 +851,7 @@
    "pos": "TE",
    "status": "Active",
    "fantasy": null,
-   "date": "2026-10-31T14:54:00-04:00",
+   "date": "2026-10-31T14:57:00-04:00",
    "detail": null,
    "espn_id": "4723086"
   },
@@ -2395,25 +2395,25 @@
    "detail": null,
    "espn_id": "2576336"
   },
-  "name:KC:ljariussneed": {
-   "name": "L'Jarius Sneed",
-   "team": "KC",
-   "pos": "CB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-30T19:49:00-04:00",
-   "detail": "Knee",
-   "espn_id": "4040432"
-  },
   "name:KC:mansoordelane": {
    "name": "Mansoor Delane",
    "team": "KC",
    "pos": "CB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-30T19:46:00-04:00",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-10-31T15:15:00-04:00",
    "detail": "Shoulder",
    "espn_id": "4880124"
+  },
+  "name:KC:ljariussneed": {
+   "name": "L'Jarius Sneed",
+   "team": "KC",
+   "pos": "CB",
+   "status": "Injured Reserve",
+   "fantasy": "IR",
+   "date": "2026-10-30T19:49:00-04:00",
+   "detail": "Knee",
+   "espn_id": "4040432"
   },
   "00-0039894": {
    "name": "Xavier Worthy",
@@ -3823,8 +3823,8 @@
    "name": "T'Vondre Sweat",
    "team": "NYJ",
    "pos": "DT",
-   "status": "Out",
-   "fantasy": "OUT",
+   "status": "Injured Reserve",
+   "fantasy": "IR",
    "date": "2026-10-30T18:12:00-04:00",
    "detail": "Knee",
    "espn_id": "4428617"
