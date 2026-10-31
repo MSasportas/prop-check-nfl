@@ -1,5 +1,5 @@
 {
- "at": "2026-10-30T20:00:01-04:00",
+ "at": "2026-10-30T20:30:42-04:00",
  "source": "espn",
  "players": {
   "00-0037157": {
@@ -505,7 +505,7 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-10-30T19:48:00-04:00",
+   "date": "2026-10-30T20:00:00-04:00",
    "detail": "Suspension",
    "espn_id": "4034953"
   },
@@ -839,9 +839,9 @@
    "name": "Anthony Johnson Jr.",
    "team": "CHI",
    "pos": "S",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-30T19:48:00-04:00",
+   "status": "Injured Reserve",
+   "fantasy": "IR",
+   "date": "2026-10-30T20:00:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
@@ -1616,6 +1616,16 @@
    "detail": "Ankle",
    "espn_id": "4687592"
   },
+  "name:DET:rogermccreary": {
+   "name": "Roger McCreary",
+   "team": "DET",
+   "pos": "CB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-30T19:54:00-04:00",
+   "detail": "Foot",
+   "espn_id": "4371973"
+  },
   "name:DET:kerbyjoseph": {
    "name": "Kerby Joseph",
    "team": "DET",
@@ -1625,16 +1635,6 @@
    "date": "2026-10-30T19:52:00-04:00",
    "detail": "Knee",
    "espn_id": "4360383"
-  },
-  "name:DET:rogermccreary": {
-   "name": "Roger McCreary",
-   "team": "DET",
-   "pos": "CB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-30T15:34:00-04:00",
-   "detail": "Foot",
-   "espn_id": "4371973"
   },
   "00-0037197": {
    "name": "Isiah Pacheco",
@@ -2082,6 +2082,16 @@
    "detail": null,
    "espn_id": "4362504"
   },
+  "00-0038997": {
+   "name": "Josh Downs",
+   "team": "IND",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-30T20:16:00-04:00",
+   "detail": null,
+   "espn_id": "4688813"
+  },
   "name:IND:bryceboettcher": {
    "name": "Bryce Boettcher",
    "team": "IND",
@@ -2123,16 +2133,6 @@
    "date": "2026-10-30T19:38:00-04:00",
    "detail": "Knee",
    "espn_id": "4682909"
-  },
-  "00-0038997": {
-   "name": "Josh Downs",
-   "team": "IND",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-30T13:23:00-04:00",
-   "detail": null,
-   "espn_id": "4688813"
   },
   "00-0040128": {
    "name": "Tyler Warren",
@@ -2567,6 +2567,27 @@
    "espn_id": "4596602",
    "comment": "The Chiefs placed Smith (hamstring) on injured reserve Saturday."
   },
+  "00-0034365": {
+   "name": "Ian Thomas",
+   "team": "LV",
+   "pos": "TE",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-30T19:58:00-04:00",
+   "detail": null,
+   "espn_id": "4045305"
+  },
+  "00-0040488": {
+   "name": "Carter Runyon",
+   "team": "LV",
+   "pos": "TE",
+   "status": "Injured Reserve",
+   "fantasy": "IR-R",
+   "date": "2026-10-30T19:56:00-04:00",
+   "detail": "Foot",
+   "espn_id": "5155825",
+   "comment": "Runyon (foot) has been ruled out for Sunday's game against the Jets, Sam Warren of The Athletic reports."
+  },
   "00-0040729": {
    "name": "Jack Bech",
    "team": "LV",
@@ -2587,16 +2608,6 @@
    "date": "2026-10-30T15:44:00-04:00",
    "detail": "Neck",
    "espn_id": "4243916"
-  },
-  "00-0034365": {
-   "name": "Ian Thomas",
-   "team": "LV",
-   "pos": "TE",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-29T20:25:00-04:00",
-   "detail": null,
-   "espn_id": "4045305"
   },
   "00-0039338": {
    "name": "Brock Bowers",
@@ -2708,15 +2719,15 @@
    "detail": null,
    "espn_id": "4890973"
   },
-  "00-0038579": {
-   "name": "Aidan O'Connell",
-   "team": "LV",
-   "pos": "QB",
+  "00-0040184": {
+   "name": "KeAndre Lambert-Smith",
+   "team": "LAC",
+   "pos": "WR",
    "status": "Active",
    "fantasy": null,
-   "date": "2026-10-25T15:24:00-04:00",
+   "date": "2026-10-30T20:03:00-04:00",
    "detail": null,
-   "espn_id": "4260394"
+   "espn_id": "4430870"
   },
   "00-0038544": {
    "name": "Quentin Johnston",
@@ -2808,16 +2819,6 @@
    "date": "2026-10-28T21:38:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "2579621"
-  },
-  "00-0040184": {
-   "name": "KeAndre Lambert-Smith",
-   "team": "LAC",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-20T21:09:00-04:00",
-   "detail": null,
-   "espn_id": "4430870"
   },
   "name:LAC:rodneyshelley": {
    "name": "Rodney Shelley",
@@ -3120,7 +3121,7 @@
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
    "date": "2026-10-29T20:09:00-04:00",
-   "detail": "Concussion",
+   "detail": "Neck",
    "espn_id": "4360488"
   },
   "00-0039874": {
@@ -3970,6 +3971,27 @@
    "detail": "Quadriceps",
    "espn_id": "4700136"
   },
+  "name:PHI:jihaadcampbell": {
+   "name": "Jihaad Campbell",
+   "team": "PHI",
+   "pos": "LB",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-10-30T20:16:00-04:00",
+   "detail": "Hamstring",
+   "espn_id": "4685287"
+  },
+  "00-0037132": {
+   "name": "Britain Covey",
+   "team": "PHI",
+   "pos": "WR",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-10-30T20:11:00-04:00",
+   "detail": "Knee",
+   "espn_id": "3926231",
+   "comment": "Covey (knee) has been ruled out for Sunday's game against the Commanders."
+  },
   "00-0040867": {
    "name": "Makai Lemon",
    "team": "PHI",
@@ -4021,27 +4043,6 @@
    "date": "2026-10-30T15:55:00-04:00",
    "detail": "Hamstring",
    "espn_id": "2971027"
-  },
-  "00-0037132": {
-   "name": "Britain Covey",
-   "team": "PHI",
-   "pos": "WR",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-30T15:55:00-04:00",
-   "detail": "Knee",
-   "espn_id": "3926231",
-   "comment": "out"
-  },
-  "name:PHI:jihaadcampbell": {
-   "name": "Jihaad Campbell",
-   "team": "PHI",
-   "pos": "LB",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-30T15:54:00-04:00",
-   "detail": "Hamstring",
-   "espn_id": "4685287"
   },
   "00-0036567": {
    "name": "Elijah Mitchell",
@@ -4787,6 +4788,16 @@
    "detail": null,
    "espn_id": "3871102"
   },
+  "name:TEN:johnfranklinmyers": {
+   "name": "John Franklin-Myers",
+   "team": "TEN",
+   "pos": "DE",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-30T20:01:00-04:00",
+   "detail": "Groin",
+   "espn_id": "3120464"
+  },
   "00-0034837": {
    "name": "Calvin Ridley",
    "team": "TEN",
@@ -4869,16 +4880,6 @@
    "date": "2026-10-30T15:49:00-04:00",
    "detail": "Knee",
    "espn_id": "3915398"
-  },
-  "name:TEN:johnfranklinmyers": {
-   "name": "John Franklin-Myers",
-   "team": "TEN",
-   "pos": "DE",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-28T16:03:00-04:00",
-   "detail": "Groin",
-   "espn_id": "3120464"
   },
   "00-0036876": {
    "name": "Kylen Granson",
@@ -5405,6 +5406,10 @@
   "00-0040164": {
    "status": "Injured Reserve",
    "at": "2026-10-30T17:27:58-04:00"
+  },
+  "00-0040488": {
+   "status": "Injured Reserve",
+   "at": "2026-10-30T20:30:42-04:00"
   }
  }
 }
