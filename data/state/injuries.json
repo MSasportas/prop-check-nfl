@@ -1,5 +1,5 @@
 {
- "at": "2026-10-31T08:00:00-04:00",
+ "at": "2026-10-31T08:30:01-04:00",
  "source": "espn",
  "players": {
   "name:ARI:jongaines": {
@@ -505,7 +505,7 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-10-31T07:00:00-04:00",
+   "date": "2026-10-31T08:01:00-04:00",
    "detail": "Suspension",
    "espn_id": "4034953"
   },
@@ -839,9 +839,9 @@
    "name": "Anthony Johnson Jr.",
    "team": "CHI",
    "pos": "S",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-31T07:00:00-04:00",
+   "status": "Injured Reserve",
+   "fantasy": "IR",
+   "date": "2026-10-31T08:01:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
@@ -2082,6 +2082,16 @@
    "detail": null,
    "espn_id": "4362504"
   },
+  "00-0036223": {
+   "name": "Jonathan Taylor",
+   "team": "IND",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-31T08:03:00-04:00",
+   "detail": null,
+   "espn_id": "4242335"
+  },
   "00-0038997": {
    "name": "Josh Downs",
    "team": "IND",
@@ -2143,16 +2153,6 @@
    "date": "2026-10-30T12:49:00-04:00",
    "detail": null,
    "espn_id": "4431459"
-  },
-  "00-0036223": {
-   "name": "Jonathan Taylor",
-   "team": "IND",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-29T15:28:00-04:00",
-   "detail": null,
-   "espn_id": "4242335"
   },
   "name:IND:camtaylorbritt": {
    "name": "Cam Taylor-Britt",
