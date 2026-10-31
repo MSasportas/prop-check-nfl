@@ -1,5 +1,5 @@
 {
- "at": "2026-10-31T14:00:00-04:00",
+ "at": "2026-10-31T14:30:01-04:00",
  "source": "espn",
  "players": {
   "name:ARI:jongaines": {
@@ -505,7 +505,7 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-10-31T13:51:00-04:00",
+   "date": "2026-10-31T14:15:00-04:00",
    "detail": "Suspension",
    "espn_id": "4034953"
   },
@@ -841,7 +841,7 @@
    "pos": "S",
    "status": "Out",
    "fantasy": "OUT",
-   "date": "2026-10-31T13:51:00-04:00",
+   "date": "2026-10-31T14:15:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
@@ -1180,16 +1180,6 @@
    "detail": null,
    "espn_id": "5081397"
   },
-  "name:CLE:tytushoward": {
-   "name": "Tytus Howard",
-   "team": "CLE",
-   "pos": "OT",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-28T21:18:00-04:00",
-   "detail": "Concussion",
-   "espn_id": "3131498"
-  },
   "00-0036407": {
    "name": "Jerry Jeudy",
    "team": "CLE",
@@ -1289,6 +1279,16 @@
    "date": "2026-10-25T18:36:00-04:00",
    "detail": null,
    "espn_id": "4870653"
+  },
+  "name:DAL:pjlocke": {
+   "name": "P.J. Locke",
+   "team": "DAL",
+   "pos": "S",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-31T14:15:00-04:00",
+   "detail": "Foot",
+   "espn_id": "3929850"
   },
   "name:DAL:kennyclark": {
    "name": "Kenny Clark",
@@ -1422,16 +1422,6 @@
    "date": "2026-10-26T23:39:00-04:00",
    "detail": null,
    "espn_id": "4241389"
-  },
-  "name:DAL:pjlocke": {
-   "name": "P.J. Locke",
-   "team": "DAL",
-   "pos": "S",
-   "status": "Injured Reserve",
-   "fantasy": "IR-R",
-   "date": "2026-10-25T14:33:00-04:00",
-   "detail": "Foot",
-   "espn_id": "3929850"
   },
   "name:DAL:maristliufau": {
    "name": "Marist Liufau",
