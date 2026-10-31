@@ -1,5 +1,5 @@
 {
- "at": "2026-10-31T17:30:00-04:00",
+ "at": "2026-10-31T18:00:01-04:00",
  "source": "espn",
  "players": {
   "name:ARI:jongaines": {
@@ -499,16 +499,6 @@
    "detail": null,
    "espn_id": "4432260"
   },
-  "name:BUF:cjgardnerjohnson": {
-   "name": "C.J. Gardner-Johnson",
-   "team": "BUF",
-   "pos": "S",
-   "status": "Suspension",
-   "fantasy": "RESERVE-SUS",
-   "date": "2026-10-31T17:16:00-04:00",
-   "detail": "Suspension",
-   "espn_id": "4034953"
-  },
   "name:BUF:spencerbrown": {
    "name": "Spencer Brown",
    "team": "BUF",
@@ -831,7 +821,7 @@
    "pos": "S",
    "status": "Injured Reserve",
    "fantasy": "IR",
-   "date": "2026-10-31T17:16:00-04:00",
+   "date": "2026-10-31T17:48:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
@@ -2697,16 +2687,6 @@
    "detail": null,
    "espn_id": "4890973"
   },
-  "name:LAC:derwinjames": {
-   "name": "Derwin James Jr.",
-   "team": "LAC",
-   "pos": "S",
-   "status": "Injured Reserve",
-   "fantasy": "IR",
-   "date": "2026-10-31T16:04:00-04:00",
-   "detail": "Hamstring",
-   "espn_id": "3691739"
-  },
   "name:LAC:kayodeawosika": {
    "name": "Kayode Awosika",
    "team": "LAC",
@@ -2736,6 +2716,16 @@
    "date": "2026-10-30T20:39:00-04:00",
    "detail": "Hamstring",
    "espn_id": "3843769"
+  },
+  "name:LAC:derwinjames": {
+   "name": "Derwin James Jr.",
+   "team": "LAC",
+   "pos": "S",
+   "status": "Injured Reserve",
+   "fantasy": "IR",
+   "date": "2026-10-30T20:39:00-04:00",
+   "detail": "Hamstring",
+   "espn_id": "3691739"
   },
   "00-0041550": {
    "name": "Brenen Thompson",
@@ -4521,16 +4511,6 @@
    "date": "2026-10-31T16:49:00-04:00",
    "detail": null,
    "espn_id": "4426385"
-  },
-  "name:SEA:byronmurphy": {
-   "name": "Byron Murphy II",
-   "team": "SEA",
-   "pos": "DT",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-30T21:25:00-04:00",
-   "detail": "Back",
-   "espn_id": "4570040"
   },
   "00-0035704": {
    "name": "Drew Lock",
