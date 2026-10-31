@@ -1,7 +1,17 @@
 {
- "at": "2026-10-30T21:30:01-04:00",
+ "at": "2026-10-30T22:00:01-04:00",
  "source": "espn",
  "players": {
+  "name:ARI:jongaines": {
+   "name": "Jon Gaines II",
+   "team": "ARI",
+   "pos": "G",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-10-30T21:30:00-04:00",
+   "detail": "Ankle",
+   "espn_id": "4367199"
+  },
   "name:ARI:maxmelton": {
    "name": "Max Melton",
    "team": "ARI",
@@ -71,16 +81,6 @@
    "date": "2026-10-30T17:13:00-04:00",
    "detail": null,
    "espn_id": "4870808"
-  },
-  "name:ARI:jongaines": {
-   "name": "Jon Gaines II",
-   "team": "ARI",
-   "pos": "G",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-30T14:01:00-04:00",
-   "detail": "Ankle",
-   "espn_id": "4367199"
   },
   "00-0041561": {
    "name": "Carson Beck",
@@ -1290,6 +1290,16 @@
    "detail": null,
    "espn_id": "4870653"
   },
+  "name:DAL:kennyclark": {
+   "name": "Kenny Clark",
+   "team": "DAL",
+   "pos": "DT",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-30T21:19:00-04:00",
+   "detail": "Back",
+   "espn_id": "3122752"
+  },
   "name:DAL:deewinters": {
    "name": "Dee Winters",
    "team": "DAL",
@@ -1310,16 +1320,6 @@
    "detail": "Ribs",
    "espn_id": "3676833",
    "comment": "Turpin (ribs) has been ruled out for Sunday's game against the Cardinals, Tommy Yarrish of the Cowboys' official site reports."
-  },
-  "name:DAL:kennyclark": {
-   "name": "Kenny Clark",
-   "team": "DAL",
-   "pos": "DT",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-30T19:12:00-04:00",
-   "detail": "Back",
-   "espn_id": "3122752"
   },
   "00-0037247": {
    "name": "George Pickens",
@@ -4115,6 +4115,16 @@
    "detail": null,
    "espn_id": "4715355"
   },
+  "name:PIT:brandinechols": {
+   "name": "Brandin Echols",
+   "team": "PIT",
+   "pos": "CB",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-10-30T21:35:00-04:00",
+   "detail": "Hamstring",
+   "espn_id": "4567979"
+  },
   "00-0036862": {
    "name": "Ben Skowronek",
    "team": "PIT",
@@ -4135,16 +4145,6 @@
    "date": "2026-10-30T14:33:00-04:00",
    "detail": "Hamstring",
    "espn_id": "4692628"
-  },
-  "name:PIT:brandinechols": {
-   "name": "Brandin Echols",
-   "team": "PIT",
-   "pos": "CB",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-30T14:33:00-04:00",
-   "detail": "Hamstring",
-   "espn_id": "4567979"
   },
   "00-0041489": {
    "name": "Germie Bernard",
@@ -4656,6 +4656,16 @@
    "detail": null,
    "espn_id": "3912547"
   },
+  "name:TB:lukegoedeke": {
+   "name": "Luke Goedeke",
+   "team": "TB",
+   "pos": "OT",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-30T21:45:00-04:00",
+   "detail": "Calf",
+   "espn_id": "4380507"
+  },
   "00-0036919": {
    "name": "Kenny Gainwell",
    "team": "TB",
@@ -4677,16 +4687,6 @@
    "detail": "Foot",
    "espn_id": "4567750",
    "comment": "Egbuka (foot) has been ruled out for Sunday's game against the Falcons, Scott Smith of the Bucs' official site reports."
-  },
-  "name:TB:lukegoedeke": {
-   "name": "Luke Goedeke",
-   "team": "TB",
-   "pos": "OT",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-29T21:16:00-04:00",
-   "detail": "Calf",
-   "espn_id": "4380507"
   },
   "name:TB:joshhayes": {
    "name": "Josh Hayes",
