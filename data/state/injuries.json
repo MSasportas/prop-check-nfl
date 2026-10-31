@@ -1,5 +1,5 @@
 {
- "at": "2026-10-30T22:00:01-04:00",
+ "at": "2026-10-30T22:30:11-04:00",
  "source": "espn",
  "players": {
   "name:ARI:jongaines": {
@@ -338,6 +338,16 @@
    "detail": null,
    "espn_id": "4360248"
   },
+  "name:BAL:olaivavegaioane": {
+   "name": "Olaivavega Ioane",
+   "team": "BAL",
+   "pos": "G",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-10-30T21:55:00-04:00",
+   "detail": "Knee - MCL",
+   "espn_id": "4832793"
+  },
   "00-0040888": {
    "name": "Adam Randall",
    "team": "BAL",
@@ -378,16 +388,6 @@
    "date": "2026-10-30T13:36:00-04:00",
    "detail": null,
    "espn_id": "3916387"
-  },
-  "name:BAL:olaivavegaioane": {
-   "name": "Olaivavega Ioane",
-   "team": "BAL",
-   "pos": "G",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-29T21:31:00-04:00",
-   "detail": "Knee - MCL",
-   "espn_id": "4832793"
   },
   "name:BAL:tjtampa": {
    "name": "T.J. Tampa",
@@ -505,9 +505,19 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-10-30T21:00:00-04:00",
+   "date": "2026-10-30T22:01:00-04:00",
    "detail": "Suspension",
    "espn_id": "4034953"
+  },
+  "name:BUF:spencerbrown": {
+   "name": "Spencer Brown",
+   "team": "BUF",
+   "pos": "OT",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-30T21:53:00-04:00",
+   "detail": "Back",
+   "espn_id": "4030899"
   },
   "name:BUF:deealford": {
    "name": "Dee Alford",
@@ -581,16 +591,6 @@
    "date": "2026-10-28T17:22:00-04:00",
    "detail": "Knee",
    "espn_id": "4870886"
-  },
-  "name:BUF:spencerbrown": {
-   "name": "Spencer Brown",
-   "team": "BUF",
-   "pos": "OT",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-28T17:20:00-04:00",
-   "detail": "Back",
-   "espn_id": "4030899"
   },
   "00-0035689": {
    "name": "Dawson Knox",
@@ -839,9 +839,9 @@
    "name": "Anthony Johnson Jr.",
    "team": "CHI",
    "pos": "S",
-   "status": "Injured Reserve",
-   "fantasy": "IR",
-   "date": "2026-10-30T21:00:00-04:00",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-10-30T22:01:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
@@ -1150,6 +1150,16 @@
    "detail": null,
    "espn_id": "5092508"
   },
+  "name:CLE:danielthomas": {
+   "name": "Daniel Thomas",
+   "team": "CLE",
+   "pos": "S",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-30T22:01:00-04:00",
+   "detail": "Ankle",
+   "espn_id": "4035505"
+  },
   "name:CLE:mylesharden": {
    "name": "Myles Harden",
    "team": "CLE",
@@ -1189,16 +1199,6 @@
    "date": "2026-10-28T19:08:00-04:00",
    "detail": null,
    "espn_id": "4241463"
-  },
-  "name:CLE:danielthomas": {
-   "name": "Daniel Thomas",
-   "team": "CLE",
-   "pos": "S",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-28T17:58:00-04:00",
-   "detail": "Ankle",
-   "espn_id": "4035505"
   },
   "name:CLE:kaliadavis": {
    "name": "Kalia Davis",
@@ -2567,6 +2567,16 @@
    "espn_id": "4596602",
    "comment": "The Chiefs placed Smith (hamstring) on injured reserve Saturday."
   },
+  "name:LV:patrickjohnson": {
+   "name": "Patrick Johnson",
+   "team": "LV",
+   "pos": "DE",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-10-30T22:03:00-04:00",
+   "detail": "Neck",
+   "espn_id": "4243916"
+  },
   "00-0034365": {
    "name": "Ian Thomas",
    "team": "LV",
@@ -2598,16 +2608,6 @@
    "detail": "Forearm",
    "espn_id": "4603186",
    "comment": "Bech (forearm) is listed as questionable for Sunday's game at the Jets, Sam Warren of The Athletic reports."
-  },
-  "name:LV:patrickjohnson": {
-   "name": "Patrick Johnson",
-   "team": "LV",
-   "pos": "DE",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-30T15:44:00-04:00",
-   "detail": "Neck",
-   "espn_id": "4243916"
   },
   "00-0039338": {
    "name": "Brock Bowers",
@@ -3810,6 +3810,16 @@
    "detail": "Chest",
    "espn_id": "3929950"
   },
+  "name:NYJ:maxmitchell": {
+   "name": "Max Mitchell",
+   "team": "NYJ",
+   "pos": "OT",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-10-30T21:58:00-04:00",
+   "detail": "Concussion",
+   "espn_id": "4373656"
+  },
   "name:NYJ:davidbailey": {
    "name": "David Bailey",
    "team": "NYJ",
@@ -3839,16 +3849,6 @@
    "date": "2026-10-30T18:10:00-04:00",
    "detail": "Ankle",
    "espn_id": "4362094"
-  },
-  "name:NYJ:maxmitchell": {
-   "name": "Max Mitchell",
-   "team": "NYJ",
-   "pos": "OT",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-30T15:17:00-04:00",
-   "detail": "Concussion",
-   "espn_id": "4373656"
   },
   "00-0038120": {
    "name": "Breece Hall",
@@ -4115,6 +4115,16 @@
    "detail": null,
    "espn_id": "4715355"
   },
+  "name:PIT:doneikoslaughter": {
+   "name": "Doneiko Slaughter",
+   "team": "PIT",
+   "pos": "CB",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-10-30T21:44:00-04:00",
+   "detail": "Hamstring",
+   "espn_id": "4692628"
+  },
   "name:PIT:brandinechols": {
    "name": "Brandin Echols",
    "team": "PIT",
@@ -4135,16 +4145,6 @@
    "detail": "Calf",
    "espn_id": "4035656",
    "comment": "Skowronek (calf) is questionable for Sunday's game against the Browns, Mike DeFabo of The Athletic reports."
-  },
-  "name:PIT:doneikoslaughter": {
-   "name": "Doneiko Slaughter",
-   "team": "PIT",
-   "pos": "CB",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-30T14:33:00-04:00",
-   "detail": "Hamstring",
-   "espn_id": "4692628"
   },
   "00-0041489": {
    "name": "Germie Bernard",
@@ -4798,6 +4798,16 @@
    "detail": null,
    "espn_id": "3871102"
   },
+  "name:TEN:tommytownsend": {
+   "name": "Tommy Townsend",
+   "team": "TEN",
+   "pos": "P",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-10-30T22:12:00-04:00",
+   "detail": "Knee",
+   "espn_id": "3915398"
+  },
   "name:TEN:johnfranklinmyers": {
    "name": "John Franklin-Myers",
    "team": "TEN",
@@ -4880,16 +4890,6 @@
    "date": "2026-10-30T15:50:00-04:00",
    "detail": "Knee",
    "espn_id": "4685145"
-  },
-  "name:TEN:tommytownsend": {
-   "name": "Tommy Townsend",
-   "team": "TEN",
-   "pos": "P",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-30T15:49:00-04:00",
-   "detail": "Knee",
-   "espn_id": "3915398"
   },
   "00-0036876": {
    "name": "Kylen Granson",
