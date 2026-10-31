@@ -58,11 +58,11 @@
   },
   {
    "n": 6,
-   "left": 79,
+   "left": 73,
    "status": "ok",
-   "checked_at": "2026-10-31T12:00:00-04:00",
+   "checked_at": "2026-10-31T17:00:00-04:00",
    "month": "2026-10",
-   "after_us": 79,
+   "after_us": 73,
    "shared": true,
    "shared_at": "2026-10-30T16:25:57-04:00",
    "others_spent": 67
@@ -981,6 +981,14 @@
    "date": "2026-10-30",
    "pull": "R",
    "game_id": "2026_08_PHI_WAS",
+   "cost": 6,
+   "key": 6
+  },
+  {
+   "at": "2026-10-31T17:00:00-04:00",
+   "date": "2026-10-31",
+   "pull": "R",
+   "game_id": "2026_08_CHI_SEA",
    "cost": 6,
    "key": 6
   }

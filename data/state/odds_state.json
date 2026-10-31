@@ -413,6 +413,39 @@
     "ina": false,
     "n_others": 9
    }
+  ],
+  "2026_08_CHI_SEA": [
+   {
+    "pull": "R",
+    "at": "2026-10-31T17:00:00-04:00",
+    "asked": [
+     "player_pass_tds",
+     "player_pass_yds",
+     "player_reception_yds",
+     "player_receptions",
+     "player_rush_attempts",
+     "player_rush_yds"
+    ],
+    "returned": [
+     "player_pass_tds",
+     "player_pass_yds",
+     "player_reception_yds",
+     "player_receptions",
+     "player_rush_attempts",
+     "player_rush_yds"
+    ],
+    "cost": 6,
+    "hr": [
+     "player_pass_tds",
+     "player_pass_yds",
+     "player_reception_yds",
+     "player_receptions",
+     "player_rush_attempts",
+     "player_rush_yds"
+    ],
+    "ina": false,
+    "n_others": 9
+   }
   ]
  },
  "tried": {},
@@ -426,9 +459,9 @@
   "pulls": "R",
   "pool_at_plan": 0.0,
   "games_left": 14,
-  "pool_raw": 400,
+  "pool_raw": 394,
   "keys_shared": 3,
-  "made_at": "2026-10-31T12:00:00-04:00"
+  "made_at": "2026-10-31T17:00:00-04:00"
  },
  "failed": {}
 }

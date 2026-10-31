@@ -1,5 +1,5 @@
 {
- "at": "2026-10-31T16:00:14-04:00",
+ "at": "2026-10-31T17:00:00-04:00",
  "source": "espn",
  "players": {
   "name:ARI:jongaines": {
@@ -175,6 +175,16 @@
    "detail": null,
    "espn_id": "4361307"
   },
+  "name:ATL:billybowman": {
+   "name": "Billy Bowman Jr.",
+   "team": "ATL",
+   "pos": "CB",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-10-31T16:03:00-04:00",
+   "detail": "Hamstring",
+   "espn_id": "4431194"
+  },
   "name:ATL:anteriothompson": {
    "name": "Anterio Thompson",
    "team": "ATL",
@@ -200,8 +210,8 @@
    "name": "Divine Deablo",
    "team": "ATL",
    "pos": "LB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
+   "status": "Out",
+   "fantasy": "OUT",
    "date": "2026-10-30T17:15:00-04:00",
    "detail": "Forearm",
    "espn_id": "4037626"
@@ -257,16 +267,6 @@
    "date": "2026-10-27T09:11:00-04:00",
    "detail": "Illness",
    "espn_id": "4870988"
-  },
-  "name:ATL:billybowman": {
-   "name": "Billy Bowman Jr.",
-   "team": "ATL",
-   "pos": "CB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-27T09:11:00-04:00",
-   "detail": "Hamstring",
-   "espn_id": "4431194"
   },
   "00-0041044": {
    "name": "Zachariah Branch",
@@ -338,6 +338,16 @@
    "detail": null,
    "espn_id": "14012"
   },
+  "name:BAL:tjtampa": {
+   "name": "T.J. Tampa",
+   "team": "BAL",
+   "pos": "CB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-31T16:06:00-04:00",
+   "detail": "Knee",
+   "espn_id": "4575483"
+  },
   "name:BAL:olaivavegaioane": {
    "name": "Olaivavega Ioane",
    "team": "BAL",
@@ -388,16 +398,6 @@
    "date": "2026-10-30T13:36:00-04:00",
    "detail": null,
    "espn_id": "3916387"
-  },
-  "name:BAL:tjtampa": {
-   "name": "T.J. Tampa",
-   "team": "BAL",
-   "pos": "CB",
-   "status": "Injured Reserve",
-   "fantasy": "IR-R",
-   "date": "2026-10-29T21:26:00-04:00",
-   "detail": "Knee",
-   "espn_id": "4575483"
   },
   "00-0040887": {
    "name": "Josh Cuevas",
@@ -505,7 +505,7 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-10-31T15:26:00-04:00",
+   "date": "2026-10-31T16:56:00-04:00",
    "detail": "Suspension",
    "espn_id": "4034953"
   },
@@ -631,16 +631,6 @@
    "date": "2026-10-19T06:00:00-04:00",
    "detail": null,
    "espn_id": "4635008"
-  },
-  "00-0037261": {
-   "name": "Khalil Shakir",
-   "team": "BUF",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-19T05:56:00-04:00",
-   "detail": null,
-   "espn_id": "4373678"
   },
   "00-0039150": {
    "name": "Bryce Young",
@@ -839,9 +829,9 @@
    "name": "Anthony Johnson Jr.",
    "team": "CHI",
    "pos": "S",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-31T15:51:00-04:00",
+   "status": "Injured Reserve",
+   "fantasy": "IR",
+   "date": "2026-10-31T16:45:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
@@ -1432,6 +1422,17 @@
    "detail": "Forearm",
    "espn_id": "4427816"
   },
+  "00-0040730": {
+   "name": "RJ Harvey",
+   "team": "DEN",
+   "pos": "RB",
+   "status": "Injured Reserve",
+   "fantasy": "IR",
+   "date": "2026-10-31T16:18:00-04:00",
+   "detail": "Knee",
+   "espn_id": "4568490",
+   "comment": "The Broncos placed Harvey (knee) on injured reserve Saturday, Ian Rapoport of NFL Network reports."
+  },
   "name:DEN:zachallen": {
    "name": "Zach Allen",
    "team": "DEN",
@@ -1471,17 +1472,6 @@
    "date": "2026-10-30T18:38:00-04:00",
    "detail": null,
    "espn_id": "4241985"
-  },
-  "00-0040730": {
-   "name": "RJ Harvey",
-   "team": "DEN",
-   "pos": "RB",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-30T18:38:00-04:00",
-   "detail": "Knee",
-   "espn_id": "4568490",
-   "comment": "Harvey (knee) is ruled out for Sunday's game against the Chiefs, but his injury isn't considered severe or long term, Sam Jane of The Denver Post reports."
   },
   "00-0041496": {
    "name": "Jonah Coleman",
@@ -2562,7 +2552,7 @@
    "pos": "WR",
    "status": "Active",
    "fantasy": null,
-   "date": "2026-10-31T13:53:00-04:00",
+   "date": "2026-10-31T15:53:00-04:00",
    "detail": null,
    "espn_id": "4603186"
   },
@@ -2707,6 +2697,16 @@
    "detail": null,
    "espn_id": "4890973"
   },
+  "name:LAC:derwinjames": {
+   "name": "Derwin James Jr.",
+   "team": "LAC",
+   "pos": "S",
+   "status": "Injured Reserve",
+   "fantasy": "IR",
+   "date": "2026-10-31T16:04:00-04:00",
+   "detail": "Hamstring",
+   "espn_id": "3691739"
+  },
   "name:LAC:kayodeawosika": {
    "name": "Kayode Awosika",
    "team": "LAC",
@@ -2736,16 +2736,6 @@
    "date": "2026-10-30T20:39:00-04:00",
    "detail": "Hamstring",
    "espn_id": "3843769"
-  },
-  "name:LAC:derwinjames": {
-   "name": "Derwin James Jr.",
-   "team": "LAC",
-   "pos": "S",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-30T20:39:00-04:00",
-   "detail": "Hamstring",
-   "espn_id": "3691739"
   },
   "00-0041550": {
    "name": "Brenen Thompson",
@@ -4469,6 +4459,48 @@
    "detail": null,
    "espn_id": "3040151"
   },
+  "name:SEA:charlescross": {
+   "name": "Charles Cross",
+   "team": "SEA",
+   "pos": "OT",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-10-31T16:56:00-04:00",
+   "detail": "Ankle",
+   "espn_id": "4426376"
+  },
+  "00-0037545": {
+   "name": "Rashid Shaheed",
+   "team": "SEA",
+   "pos": "WR",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-10-31T16:53:00-04:00",
+   "detail": "Knee",
+   "espn_id": "4032473",
+   "comment": "Shaheed (knee) has been ruled out for Monday's game against the Bears, Curtis Crabtree of FOX 13 Seattle reports."
+  },
+  "00-0041512": {
+   "name": "Jadarian Price",
+   "team": "SEA",
+   "pos": "RB",
+   "status": "Injured Reserve",
+   "fantasy": "IR-R",
+   "date": "2026-10-31T16:50:00-04:00",
+   "detail": "Chest",
+   "espn_id": "4685512",
+   "comment": "Price (chest) doesn't have a designation for Monday's game against the Bears, but he remains on injured reserve, John Boyle of the Seahawks' official site repor"
+  },
+  "00-0039165": {
+   "name": "Zach Charbonnet",
+   "team": "SEA",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-31T16:49:00-04:00",
+   "detail": null,
+   "espn_id": "4426385"
+  },
   "name:SEA:byronmurphy": {
    "name": "Byron Murphy II",
    "team": "SEA",
@@ -4489,39 +4521,6 @@
    "detail": "Elbow",
    "espn_id": "3924327",
    "comment": "Lock (elbow) was a limited participant in Friday's practice, John Boyle of the Seahawks' official site reports."
-  },
-  "00-0037545": {
-   "name": "Rashid Shaheed",
-   "team": "SEA",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-30T19:29:00-04:00",
-   "detail": "Knee",
-   "espn_id": "4032473",
-   "comment": "Shaheed (knee) didn't practice Friday, John Boyle of the Seahawks' official site reports."
-  },
-  "00-0041512": {
-   "name": "Jadarian Price",
-   "team": "SEA",
-   "pos": "RB",
-   "status": "Injured Reserve",
-   "fantasy": "IR-R",
-   "date": "2026-10-30T19:24:00-04:00",
-   "detail": "Chest",
-   "espn_id": "4685512",
-   "comment": "Price (chest) was a full participant in Friday's practice, John Boyle of the Seahawks' official site reports."
-  },
-  "00-0039165": {
-   "name": "Zach Charbonnet",
-   "team": "SEA",
-   "pos": "RB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-30T19:18:00-04:00",
-   "detail": "Knee - ACL",
-   "espn_id": "4426385",
-   "comment": "Charbonnet (knee) was a limited participant in Friday's practice, John Boyle of the Seahawks' official site reports."
   },
   "name:SEA:brandonpili": {
    "name": "Brandon Pili",
@@ -4613,16 +4612,6 @@
    "date": "2026-10-26T20:41:00-04:00",
    "detail": null,
    "espn_id": "4597703"
-  },
-  "name:SEA:charlescross": {
-   "name": "Charles Cross",
-   "team": "SEA",
-   "pos": "OT",
-   "status": "Doubtful",
-   "fantasy": "DOUBTFUL",
-   "date": "2026-10-26T17:41:00-04:00",
-   "detail": "Ankle",
-   "espn_id": "4426376"
   },
   "00-0041178": {
    "name": "Robert Henry Jr.",

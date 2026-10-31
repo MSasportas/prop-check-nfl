@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated_at": "2026-10-30T18:30:01-04:00",
+ "updated_at": "2026-10-31T17:00:00-04:00",
  "note": "Research only. Never on the Picks tab, never in the Record. Promotion to a live rule needs Matt.",
  "reads": {
   "games_with_pairs": 0,
@@ -71,7 +71,7 @@
    },
    "by_market": [],
    "seen": {
-    "reads_scanned": 12,
+    "reads_scanned": 13,
     "candidates": 1,
     "distinct_sides": 1,
     "would_fire": 0,
