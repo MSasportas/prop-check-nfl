@@ -1,5 +1,5 @@
 {
- "at": "2026-10-31T11:00:01-04:00",
+ "at": "2026-10-31T11:30:01-04:00",
  "source": "espn",
  "players": {
   "name:ARI:jongaines": {
@@ -505,7 +505,7 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-10-31T10:47:00-04:00",
+   "date": "2026-10-31T11:00:00-04:00",
    "detail": "Suspension",
    "espn_id": "4034953"
   },
@@ -839,9 +839,9 @@
    "name": "Anthony Johnson Jr.",
    "team": "CHI",
    "pos": "S",
-   "status": "Injured Reserve",
-   "fantasy": "IR",
-   "date": "2026-10-31T10:47:00-04:00",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-10-31T11:00:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
@@ -4798,6 +4798,17 @@
    "detail": null,
    "espn_id": "3871102"
   },
+  "00-0041438": {
+   "name": "Carnell Tate",
+   "team": "TEN",
+   "pos": "WR",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-10-31T11:10:00-04:00",
+   "detail": "Shoulder",
+   "espn_id": "4871023",
+   "comment": "Tate (shoulder) will not play against the Bengals on Sunday but is expected to be back in action following the Titans' bye for Week 10 against the Jaguars on Su"
+  },
   "name:TEN:tommytownsend": {
    "name": "Tommy Townsend",
    "team": "TEN",
@@ -4869,17 +4880,6 @@
    "detail": "Knee",
    "espn_id": "4428557",
    "comment": "Spears (knee) has been ruled out for Sunday's game against the Bengals."
-  },
-  "00-0041438": {
-   "name": "Carnell Tate",
-   "team": "TEN",
-   "pos": "WR",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-30T16:03:00-04:00",
-   "detail": "Shoulder",
-   "espn_id": "4871023",
-   "comment": "Tate (shoulder) has been ruled out for Sunday's game against the Bengals, Ben Arthur of FoxSports.com reports."
   },
   "name:TEN:jaylonjones": {
    "name": "Jaylon Jones",
