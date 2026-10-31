@@ -1,5 +1,5 @@
 {
- "at": "2026-10-31T18:00:01-04:00",
+ "at": "2026-10-31T18:30:13-04:00",
  "source": "espn",
  "players": {
   "name:ARI:jongaines": {
@@ -499,6 +499,16 @@
    "detail": null,
    "espn_id": "4432260"
   },
+  "name:BUF:cjgardnerjohnson": {
+   "name": "C.J. Gardner-Johnson",
+   "team": "BUF",
+   "pos": "S",
+   "status": "Suspension",
+   "fantasy": "RESERVE-SUS",
+   "date": "2026-10-31T18:00:00-04:00",
+   "detail": "Suspension",
+   "espn_id": "4034953"
+  },
   "name:BUF:spencerbrown": {
    "name": "Spencer Brown",
    "team": "BUF",
@@ -819,9 +829,9 @@
    "name": "Anthony Johnson Jr.",
    "team": "CHI",
    "pos": "S",
-   "status": "Injured Reserve",
-   "fantasy": "IR",
-   "date": "2026-10-31T17:48:00-04:00",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-10-31T18:00:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
@@ -4745,6 +4755,16 @@
    "detail": null,
    "espn_id": "3871102"
   },
+  "00-0040522": {
+   "name": "Xavier Restrepo",
+   "team": "TEN",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-31T18:21:00-04:00",
+   "detail": null,
+   "espn_id": "4431353"
+  },
   "00-0041438": {
    "name": "Carnell Tate",
    "team": "TEN",
@@ -4894,7 +4914,7 @@
    "pos": "DT",
    "status": "Out",
    "fantasy": "OUT",
-   "date": "2026-10-30T21:14:00-04:00",
+   "date": "2026-10-31T17:59:00-04:00",
    "detail": "Foot",
    "espn_id": "3925354"
   },
