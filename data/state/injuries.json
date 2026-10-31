@@ -1,5 +1,5 @@
 {
- "at": "2026-10-30T19:30:01-04:00",
+ "at": "2026-10-30T20:00:01-04:00",
  "source": "espn",
  "players": {
   "00-0037157": {
@@ -338,6 +338,17 @@
    "detail": null,
    "espn_id": "4360248"
   },
+  "00-0040888": {
+   "name": "Adam Randall",
+   "team": "BAL",
+   "pos": "RB",
+   "status": "Injured Reserve",
+   "fantasy": "IR-R",
+   "date": "2026-10-30T19:36:00-04:00",
+   "detail": "Neck",
+   "espn_id": "4685526",
+   "comment": "Randall (neck) is questionable for Sunday's game against the Bills."
+  },
   "00-0035993": {
    "name": "Tyler Huntley",
    "team": "BAL",
@@ -387,17 +398,6 @@
    "date": "2026-10-29T21:26:00-04:00",
    "detail": "Knee",
    "espn_id": "4575483"
-  },
-  "00-0040888": {
-   "name": "Adam Randall",
-   "team": "BAL",
-   "pos": "RB",
-   "status": "Injured Reserve",
-   "fantasy": "IR-R",
-   "date": "2026-10-28T21:00:00-04:00",
-   "detail": "Neck",
-   "espn_id": "4685526",
-   "comment": "The Ravens opened Randall's (neck) 21-day practice window Wednesday."
   },
   "00-0040887": {
    "name": "Josh Cuevas",
@@ -505,7 +505,7 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-10-30T19:16:00-04:00",
+   "date": "2026-10-30T19:48:00-04:00",
    "detail": "Suspension",
    "espn_id": "4034953"
   },
@@ -839,9 +839,9 @@
    "name": "Anthony Johnson Jr.",
    "team": "CHI",
    "pos": "S",
-   "status": "Injured Reserve",
-   "fantasy": "IR",
-   "date": "2026-10-30T19:16:00-04:00",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-10-30T19:48:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
@@ -1150,6 +1150,16 @@
    "detail": null,
    "espn_id": "5092508"
   },
+  "name:CLE:mylesharden": {
+   "name": "Myles Harden",
+   "team": "CLE",
+   "pos": "CB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-30T19:33:00-04:00",
+   "detail": "Hamstring",
+   "espn_id": "4695783"
+  },
   "00-0040162": {
    "name": "Dylan Sampson",
    "team": "CLE",
@@ -1169,16 +1179,6 @@
    "date": "2026-10-28T21:18:00-04:00",
    "detail": "Concussion",
    "espn_id": "3131498"
-  },
-  "name:CLE:mylesharden": {
-   "name": "Myles Harden",
-   "team": "CLE",
-   "pos": "CB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-28T20:30:00-04:00",
-   "detail": "Hamstring",
-   "espn_id": "4695783"
   },
   "00-0036407": {
    "name": "Jerry Jeudy",
@@ -1616,6 +1616,16 @@
    "detail": "Ankle",
    "espn_id": "4687592"
   },
+  "name:DET:kerbyjoseph": {
+   "name": "Kerby Joseph",
+   "team": "DET",
+   "pos": "S",
+   "status": "Out",
+   "fantasy": "PUP-R",
+   "date": "2026-10-30T19:52:00-04:00",
+   "detail": "Knee",
+   "espn_id": "4360383"
+  },
   "name:DET:rogermccreary": {
    "name": "Roger McCreary",
    "team": "DET",
@@ -1636,16 +1646,6 @@
    "detail": "Back",
    "espn_id": "4361529",
    "comment": "Lions coach Dan Campbell said Friday that Pacheco (back) has a chance to return in late December, Justin Rogers of DetroitFootball.net reports."
-  },
-  "name:DET:kerbyjoseph": {
-   "name": "Kerby Joseph",
-   "team": "DET",
-   "pos": "S",
-   "status": "Out",
-   "fantasy": "PUP-R",
-   "date": "2026-10-29T20:15:00-04:00",
-   "detail": "Knee",
-   "espn_id": "4360383"
   },
   "00-0038896": {
    "name": "Jacob Saylors",
@@ -2082,13 +2082,45 @@
    "detail": null,
    "espn_id": "4362504"
   },
+  "name:IND:bryceboettcher": {
+   "name": "Bryce Boettcher",
+   "team": "IND",
+   "pos": "LB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-30T19:45:00-04:00",
+   "detail": "Groin",
+   "espn_id": "5088571"
+  },
+  "00-0039816": {
+   "name": "Anthony Gould",
+   "team": "IND",
+   "pos": "WR",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-10-30T19:41:00-04:00",
+   "detail": "Concussion",
+   "espn_id": "4429684",
+   "comment": "Gould (concussion) has been ruled out for Sunday's Week 8 tilt against Jacksonville."
+  },
+  "00-0037292": {
+   "name": "Drew Ogletree",
+   "team": "IND",
+   "pos": "TE",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-30T19:41:00-04:00",
+   "detail": "Knee",
+   "espn_id": "4722908",
+   "comment": "Ogletree (knee) is listed as questionable for Sunday's game against the Jaguars."
+  },
   "name:IND:justinwalley": {
    "name": "Justin Walley",
    "team": "IND",
    "pos": "CB",
    "status": "Out",
    "fantasy": "OUT",
-   "date": "2026-10-30T15:28:00-04:00",
+   "date": "2026-10-30T19:38:00-04:00",
    "detail": "Knee",
    "espn_id": "4682909"
   },
@@ -2112,28 +2144,6 @@
    "detail": null,
    "espn_id": "4431459"
   },
-  "00-0039816": {
-   "name": "Anthony Gould",
-   "team": "IND",
-   "pos": "WR",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-29T20:07:00-04:00",
-   "detail": "Concussion",
-   "espn_id": "4429684",
-   "comment": "Gould (concussion) was a full participant in Thursday's practice."
-  },
-  "00-0037292": {
-   "name": "Drew Ogletree",
-   "team": "IND",
-   "pos": "TE",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-29T20:01:00-04:00",
-   "detail": "Knee",
-   "espn_id": "4722908",
-   "comment": "Ogletree (knee) was a limited participant in Thursday's practice."
-  },
   "00-0036223": {
    "name": "Jonathan Taylor",
    "team": "IND",
@@ -2153,16 +2163,6 @@
    "date": "2026-10-27T19:40:00-04:00",
    "detail": "Groin",
    "espn_id": "4361196"
-  },
-  "name:IND:bryceboettcher": {
-   "name": "Bryce Boettcher",
-   "team": "IND",
-   "pos": "LB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-27T09:11:00-04:00",
-   "detail": "Groin",
-   "espn_id": "5088571"
   },
   "00-0040179": {
    "name": "DJ Giddens",
@@ -2255,6 +2255,26 @@
    "detail": null,
    "espn_id": "3917792"
   },
+  "00-0040238": {
+   "name": "LeQuint Allen Jr.",
+   "team": "JAX",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-30T19:29:00-04:00",
+   "detail": null,
+   "espn_id": "4911851"
+  },
+  "name:JAX:antoniojohnson": {
+   "name": "Antonio Johnson",
+   "team": "JAX",
+   "pos": "S",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-10-30T19:27:00-04:00",
+   "detail": "Ankle",
+   "espn_id": "4429168"
+  },
   "00-0034960": {
    "name": "Jakobi Meyers",
    "team": "JAX",
@@ -2265,26 +2285,6 @@
    "detail": "Hamstring",
    "espn_id": "3916433",
    "comment": "Meyers (hamstring/ankle) is questionable for Sunday's game against the Colts."
-  },
-  "name:JAX:antoniojohnson": {
-   "name": "Antonio Johnson",
-   "team": "JAX",
-   "pos": "S",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-29T19:34:00-04:00",
-   "detail": "Ankle",
-   "espn_id": "4429168"
-  },
-  "00-0040238": {
-   "name": "LeQuint Allen Jr.",
-   "team": "JAX",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-29T19:26:00-04:00",
-   "detail": null,
-   "espn_id": "4911851"
   },
   "name:JAX:antonharrison": {
    "name": "Anton Harrison",
@@ -2406,6 +2406,26 @@
    "detail": null,
    "espn_id": "2576336"
   },
+  "name:KC:ljariussneed": {
+   "name": "L'Jarius Sneed",
+   "team": "KC",
+   "pos": "CB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-30T19:49:00-04:00",
+   "detail": "Knee",
+   "espn_id": "4040432"
+  },
+  "name:KC:mansoordelane": {
+   "name": "Mansoor Delane",
+   "team": "KC",
+   "pos": "CB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-30T19:46:00-04:00",
+   "detail": "Shoulder",
+   "espn_id": "4880124"
+  },
   "00-0039894": {
    "name": "Xavier Worthy",
    "team": "KC",
@@ -2446,16 +2466,6 @@
    "detail": null,
    "espn_id": "4428331"
   },
-  "name:KC:mansoordelane": {
-   "name": "Mansoor Delane",
-   "team": "KC",
-   "pos": "CB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-29T18:12:00-04:00",
-   "detail": "Shoulder",
-   "espn_id": "4880124"
-  },
   "name:KC:omarrnormanlott": {
    "name": "Omarr Norman-Lott",
    "team": "KC",
@@ -2465,16 +2475,6 @@
    "date": "2026-10-28T21:48:00-04:00",
    "detail": "Knee - ACL",
    "espn_id": "4591008"
-  },
-  "name:KC:ljariussneed": {
-   "name": "L'Jarius Sneed",
-   "team": "KC",
-   "pos": "CB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-28T16:45:00-04:00",
-   "detail": "Knee",
-   "espn_id": "4040432"
   },
   "00-0040890": {
    "name": "Cyrus Allen",
@@ -3371,7 +3371,7 @@
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
    "date": "2026-10-30T13:14:00-04:00",
-   "detail": "Knee",
+   "detail": "Ankle",
    "espn_id": "4047646",
    "comment": "Brown (ankle/knee) is questionable for Sunday's game at Miami, Evan Lazar of the Patriots' official site reports."
   },
@@ -4470,6 +4470,28 @@
    "detail": null,
    "espn_id": "3040151"
   },
+  "00-0037545": {
+   "name": "Rashid Shaheed",
+   "team": "SEA",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-30T19:29:00-04:00",
+   "detail": "Knee",
+   "espn_id": "4032473",
+   "comment": "Shaheed (knee) didn't practice Friday, John Boyle of the Seahawks' official site reports."
+  },
+  "00-0041512": {
+   "name": "Jadarian Price",
+   "team": "SEA",
+   "pos": "RB",
+   "status": "Injured Reserve",
+   "fantasy": "IR-R",
+   "date": "2026-10-30T19:24:00-04:00",
+   "detail": "Chest",
+   "espn_id": "4685512",
+   "comment": "Price (chest) was a full participant in Friday's practice, John Boyle of the Seahawks' official site reports."
+  },
   "00-0039165": {
    "name": "Zach Charbonnet",
    "team": "SEA",
@@ -4542,28 +4564,6 @@
    "date": "2026-10-29T19:22:00-04:00",
    "detail": "Knee",
    "espn_id": "4429211"
-  },
-  "00-0037545": {
-   "name": "Rashid Shaheed",
-   "team": "SEA",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-29T19:11:00-04:00",
-   "detail": "Knee",
-   "espn_id": "4032473",
-   "comment": "Shaheed (knee) did not practice Thursday, John Boyle of the Seahawks' official site reports."
-  },
-  "00-0041512": {
-   "name": "Jadarian Price",
-   "team": "SEA",
-   "pos": "RB",
-   "status": "Injured Reserve",
-   "fantasy": "IR-R",
-   "date": "2026-10-29T19:10:00-04:00",
-   "detail": "Chest",
-   "espn_id": "4685512",
-   "comment": "Price (chest) was limited in Thursday's practice, John Boyle of the Seahawks' official site reports."
   },
   "name:SEA:uchennanwosu": {
    "name": "Uchenna Nwosu",
@@ -4787,6 +4787,27 @@
    "detail": null,
    "espn_id": "3871102"
   },
+  "00-0034837": {
+   "name": "Calvin Ridley",
+   "team": "TEN",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-30T19:34:00-04:00",
+   "detail": "Hip",
+   "espn_id": "3925357",
+   "comment": "Ridley (hip) is officially questionable for Sunday's matchup against Cincinnati."
+  },
+  "00-0040170": {
+   "name": "Elic Ayomanor",
+   "team": "TEN",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-30T19:20:00-04:00",
+   "detail": null,
+   "espn_id": "4883647"
+  },
   "00-0038117": {
    "name": "Wan'Dale Robinson",
    "team": "TEN",
@@ -4849,17 +4870,6 @@
    "detail": "Knee",
    "espn_id": "3915398"
   },
-  "00-0034837": {
-   "name": "Calvin Ridley",
-   "team": "TEN",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-29T18:10:00-04:00",
-   "detail": "Hip",
-   "espn_id": "3925357",
-   "comment": "Ridley (hip) was limited at practice Thursday, Jim Wyatt of the Titans' official site reports."
-  },
   "name:TEN:johnfranklinmyers": {
    "name": "John Franklin-Myers",
    "team": "TEN",
@@ -4869,16 +4879,6 @@
    "date": "2026-10-28T16:03:00-04:00",
    "detail": "Groin",
    "espn_id": "3120464"
-  },
-  "00-0040170": {
-   "name": "Elic Ayomanor",
-   "team": "TEN",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-26T20:34:00-04:00",
-   "detail": null,
-   "espn_id": "4883647"
   },
   "00-0036876": {
    "name": "Kylen Granson",
@@ -4992,16 +4992,6 @@
    "date": "2026-10-29T17:43:00-04:00",
    "detail": null,
    "espn_id": "2976212"
-  },
-  "name:WAS:nickallegretti": {
-   "name": "Nick Allegretti",
-   "team": "WAS",
-   "pos": "G",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-29T17:34:00-04:00",
-   "detail": "Back",
-   "espn_id": "3115922"
   },
   "name:WAS:laremytunsil": {
    "name": "Laremy Tunsil",
