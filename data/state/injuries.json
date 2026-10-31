@@ -1,5 +1,5 @@
 {
- "at": "2026-10-31T15:30:01-04:00",
+ "at": "2026-10-31T16:00:14-04:00",
  "source": "espn",
  "players": {
   "name:ARI:jongaines": {
@@ -505,7 +505,7 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-10-31T15:10:00-04:00",
+   "date": "2026-10-31T15:26:00-04:00",
    "detail": "Suspension",
    "espn_id": "4034953"
   },
@@ -839,9 +839,9 @@
    "name": "Anthony Johnson Jr.",
    "team": "CHI",
    "pos": "S",
-   "status": "Injured Reserve",
-   "fantasy": "IR",
-   "date": "2026-10-31T15:26:00-04:00",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-10-31T15:51:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "4361748"
   },
@@ -2395,16 +2395,6 @@
    "detail": null,
    "espn_id": "2576336"
   },
-  "name:KC:mansoordelane": {
-   "name": "Mansoor Delane",
-   "team": "KC",
-   "pos": "CB",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-31T15:15:00-04:00",
-   "detail": "Shoulder",
-   "espn_id": "4880124"
-  },
   "name:KC:ljariussneed": {
    "name": "L'Jarius Sneed",
    "team": "KC",
@@ -2414,6 +2404,16 @@
    "date": "2026-10-30T19:49:00-04:00",
    "detail": "Knee",
    "espn_id": "4040432"
+  },
+  "name:KC:mansoordelane": {
+   "name": "Mansoor Delane",
+   "team": "KC",
+   "pos": "CB",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-10-30T19:46:00-04:00",
+   "detail": "Shoulder",
+   "espn_id": "4880124"
   },
   "00-0039894": {
    "name": "Xavier Worthy",
@@ -2560,12 +2560,11 @@
    "name": "Jack Bech",
    "team": "LV",
    "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
+   "status": "Active",
+   "fantasy": null,
    "date": "2026-10-31T13:53:00-04:00",
-   "detail": "Forearm",
-   "espn_id": "4603186",
-   "comment": "The Raiders are expected to activate Bech (forearm) injured reserve Saturday ahead of Sunday's game against the Jets, Ian Rapoport of NFL Network reports."
+   "detail": null,
+   "espn_id": "4603186"
   },
   "name:LV:patrickjohnson": {
    "name": "Patrick Johnson",
