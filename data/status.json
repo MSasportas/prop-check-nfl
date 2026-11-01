@@ -3,10 +3,10 @@
  "season": 2026,
  "week": 8,
  "slate": "2026-W08",
- "started_at": "2026-11-01T12:50:00-05:00",
- "status_at": "2026-11-01T12:50:00-05:00",
- "finished_at": "2026-11-01T12:50:02-05:00",
- "last_ok_at": "2026-11-01T12:50:00-05:00",
+ "started_at": "2026-11-01T13:00:00-05:00",
+ "status_at": "2026-11-01T13:00:00-05:00",
+ "finished_at": "2026-11-01T13:00:12-05:00",
+ "last_ok_at": "2026-11-01T13:00:00-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -36,8 +36,8 @@
   },
   {
    "step": "weather",
-   "status": "skipped",
-   "note": "nothing due (2 indoors)"
+   "status": "ok",
+   "note": "11 read, 0 failed, 2 indoors"
   },
   {
    "step": "odds",
@@ -120,9 +120,9 @@
   }
  ],
  "pool_total": 3399,
- "allowance": 60.67,
+ "allowance": 65.0,
  "tier": "full",
- "games_left_before_reset": 15,
+ "games_left_before_reset": 14,
  "budget_used_today": 90,
  "odds": {
   "state": "ok",
@@ -142,7 +142,7 @@
  "runner": {
   "event": "workflow_dispatch",
   "run_id": "41330933347",
-  "iteration": 4,
+  "iteration": 5,
   "chain_link": 841,
   "chain_started_at": "2026-10-30T17:27:57-04:00",
   "run_started_at": "2026-11-01T12:20:13-05:00"

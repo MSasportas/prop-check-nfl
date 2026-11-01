@@ -919,14 +919,14 @@
  "fail_note": null,
  "key_count": 7,
  "plan": {
-  "allowance": 60.67,
+  "allowance": 65.0,
   "tier": "full",
   "pulls": "RC",
   "pool_at_plan": 910,
-  "games_left": 15,
+  "games_left": 14,
   "pool_raw": 3399,
   "keys_shared": 1,
-  "made_at": "2026-11-01T12:10:00-05:00"
+  "made_at": "2026-11-01T13:00:00-05:00"
  },
  "failed": {}
 }

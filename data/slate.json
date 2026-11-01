@@ -14,8 +14,8 @@
  "season": 2026,
  "week": 8,
  "label": "Week 8",
- "generated_at": "2026-11-01T12:50:00-05:00",
- "status_at": "2026-11-01T12:50:00-05:00",
+ "generated_at": "2026-11-01T13:00:00-05:00",
+ "status_at": "2026-11-01T13:00:00-05:00",
  "valid_until": "2026-11-03T06:00:00-05:00",
  "next_check": "2026-11-01T15:20:00-05:00",
  "status": {
@@ -26,12 +26,12 @@
   },
   "injuries": {
    "state": "ok",
-   "at": "2026-11-01T12:50:00-05:00"
+   "at": "2026-11-01T13:00:00-05:00"
   },
   "inactives": {
    "state": "ok",
    "at": "2026-11-01T12:00:00-05:00",
-   "note": "Posted for the 1:00 PM game."
+   "note": null
   },
   "stats": {
    "state": "ok",
@@ -49,7 +49,7 @@
   },
   "last_run": {
    "ok": true,
-   "at": "2026-11-01T12:50:00-05:00",
+   "at": "2026-11-01T13:00:00-05:00",
    "failed_step": null
   }
  },
@@ -86,7 +86,7 @@
    "kickoff": "2026-11-01T13:00:00-05:00",
    "day": "2026-11-01",
    "roof": null,
-   "started": false,
+   "started": true,
    "final": false,
    "score": null,
    "settled": "inactives",
@@ -102,7 +102,7 @@
    "kickoff": "2026-11-01T13:00:00-05:00",
    "day": "2026-11-01",
    "roof": "outdoors",
-   "started": false,
+   "started": true,
    "final": false,
    "score": null,
    "settled": "inactives",
@@ -118,7 +118,7 @@
    "kickoff": "2026-11-01T13:00:00-05:00",
    "day": "2026-11-01",
    "roof": "outdoors",
-   "started": false,
+   "started": true,
    "final": false,
    "score": null,
    "settled": "inactives",
@@ -134,7 +134,7 @@
    "kickoff": "2026-11-01T13:00:00-05:00",
    "day": "2026-11-01",
    "roof": "outdoors",
-   "started": false,
+   "started": true,
    "final": false,
    "score": null,
    "settled": "inactives",
@@ -150,7 +150,7 @@
    "kickoff": "2026-11-01T13:00:00-05:00",
    "day": "2026-11-01",
    "roof": "outdoors",
-   "started": false,
+   "started": true,
    "final": false,
    "score": null,
    "settled": "inactives",
@@ -166,7 +166,7 @@
    "kickoff": "2026-11-01T13:00:00-05:00",
    "day": "2026-11-01",
    "roof": "outdoors",
-   "started": false,
+   "started": true,
    "final": false,
    "score": null,
    "settled": "inactives",
@@ -182,7 +182,7 @@
    "kickoff": "2026-11-01T13:00:00-05:00",
    "day": "2026-11-01",
    "roof": "dome",
-   "started": false,
+   "started": true,
    "final": false,
    "score": null,
    "settled": "inactives",
@@ -198,7 +198,7 @@
    "kickoff": "2026-11-01T13:00:00-05:00",
    "day": "2026-11-01",
    "roof": "outdoors",
-   "started": false,
+   "started": true,
    "final": false,
    "score": null,
    "settled": "inactives",
