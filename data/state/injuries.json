@@ -1,5 +1,5 @@
 {
- "at": "2026-11-01T18:40:01-05:00",
+ "at": "2026-11-01T18:50:00-05:00",
  "source": "espn",
  "players": {
   "00-0037263": {
@@ -334,6 +334,17 @@
    "detail": "Undisclosed",
    "espn_id": "5150660"
   },
+  "00-0035993": {
+   "name": "Tyler Huntley",
+   "team": "BAL",
+   "pos": "QB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-01T18:37:00-05:00",
+   "detail": "Toe",
+   "espn_id": "4035671",
+   "comment": "Huntley sustained what could be a turf-toe injury during Sunday's 36-10 loss at Buffalo, Adam Schefter of ESPN reports."
+  },
   "00-0040981": {
    "name": "Joe Fagnano",
    "team": "BAL",
@@ -354,17 +365,6 @@
    "date": "2026-11-01T17:18:00-05:00",
    "detail": null,
    "espn_id": "3043078"
-  },
-  "00-0035993": {
-   "name": "Tyler Huntley",
-   "team": "BAL",
-   "pos": "QB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-01T17:03:00-05:00",
-   "detail": "Toe",
-   "espn_id": "4035671",
-   "comment": "The status of Huntley (toe) is uncertain ahead of Thursday night's game against the Jaguars,  Tom Pelissero of Netflix reports"
   },
   "00-0034796": {
    "name": "Lamar Jackson",
@@ -515,7 +515,7 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-11-01T18:24:00-05:00",
+   "date": "2026-11-01T18:42:00-05:00",
    "detail": "Suspension",
    "espn_id": "4034953"
   },
@@ -1018,6 +1018,16 @@
    "detail": null,
    "espn_id": "4431611"
   },
+  "00-0038597": {
+   "name": "Chase Brown",
+   "team": "CIN",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T18:38:00-05:00",
+   "detail": null,
+   "espn_id": "4362238"
+  },
   "00-0036410": {
    "name": "Tee Higgins",
    "team": "CIN",
@@ -1181,15 +1191,15 @@
    "detail": null,
    "espn_id": "3116164"
   },
-  "00-0033526": {
-   "name": "Samaje Perine",
-   "team": "CIN",
-   "pos": "RB",
+  "00-0040663": {
+   "name": "Harold Fannin Jr.",
+   "team": "CLE",
+   "pos": "TE",
    "status": "Active",
    "fantasy": null,
-   "date": "2026-10-25T21:29:00-04:00",
+   "date": "2026-11-01T18:31:00-05:00",
    "detail": null,
-   "espn_id": "3116389"
+   "espn_id": "5083076"
   },
   "00-0033537": {
    "name": "Deshaun Watson",
@@ -1303,16 +1313,6 @@
    "date": "2026-10-27T20:26:00-04:00",
    "detail": "Quadriceps",
    "espn_id": "4243541"
-  },
-  "00-0038794": {
-   "name": "Jaleel McLaughlin",
-   "team": "CLE",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-26T21:10:00-04:00",
-   "detail": null,
-   "espn_id": "4722893"
   },
   "name:DAL:calebdowns": {
    "name": "Caleb Downs",
@@ -1503,7 +1503,7 @@
    "pos": "S",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-01T18:24:00-05:00",
+   "date": "2026-11-01T18:34:00-05:00",
    "detail": "Hamstring",
    "espn_id": "4039059"
   },
@@ -3649,6 +3649,16 @@
    "detail": null,
    "espn_id": "4430656"
   },
+  "name:NE:gabejacas": {
+   "name": "Gabe Jacas",
+   "team": "NE",
+   "pos": "LB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-01T18:42:00-05:00",
+   "detail": "Knee",
+   "espn_id": "4837244"
+  },
   "00-0033090": {
    "name": "Hunter Henry",
    "team": "NE",
@@ -3812,16 +3822,6 @@
    "date": "2026-10-23T00:04:00-04:00",
    "detail": null,
    "espn_id": "4569173"
-  },
-  "00-0039851": {
-   "name": "Drake Maye",
-   "team": "NE",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-22T23:42:00-04:00",
-   "detail": null,
-   "espn_id": "4431452"
   },
   "00-0041029": {
    "name": "Jordyn Tyson",
