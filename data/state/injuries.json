@@ -1,5 +1,5 @@
 {
- "at": "2026-10-31T23:00:14-04:00",
+ "at": "2026-10-31T23:30:14-04:00",
  "source": "espn",
  "players": {
   "00-0036510": {
@@ -175,6 +175,16 @@
    "detail": null,
    "espn_id": "2578570"
   },
+  "name:ATL:cameronwilliams": {
+   "name": "Cameron Williams",
+   "team": "ATL",
+   "pos": "OL",
+   "status": "Injured Reserve",
+   "fantasy": "IR-R",
+   "date": "2026-10-31T23:11:00-04:00",
+   "detail": "Ankle",
+   "espn_id": "4685590"
+  },
   "name:ATL:billybowman": {
    "name": "Billy Bowman Jr.",
    "team": "ATL",
@@ -328,23 +338,13 @@
    "detail": null,
    "espn_id": "5344782"
   },
-  "00-0027973": {
-   "name": "Andy Dalton",
-   "team": "ATL",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-26T13:25:00-04:00",
-   "detail": null,
-   "espn_id": "14012"
-  },
   "name:BAL:tjtampa": {
    "name": "T.J. Tampa",
    "team": "BAL",
    "pos": "CB",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-10-31T16:06:00-04:00",
+   "date": "2026-10-31T23:08:00-04:00",
    "detail": "Knee",
    "espn_id": "4575483"
   },
@@ -505,7 +505,7 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-10-31T22:01:00-04:00",
+   "date": "2026-10-31T23:00:00-04:00",
    "detail": "Suspension",
    "espn_id": "4034953"
   },
@@ -825,6 +825,16 @@
    "detail": "Lower Leg",
    "espn_id": "2973051"
   },
+  "name:CHI:malikmuhammad": {
+   "name": "Malik Muhammad II",
+   "team": "CHI",
+   "pos": "CB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-31T22:54:00-04:00",
+   "detail": "Toe",
+   "espn_id": "4870953"
+  },
   "name:CHI:dmarcojackson": {
    "name": "D'Marco Jackson",
    "team": "CHI",
@@ -966,16 +976,6 @@
    "date": "2026-10-22T23:50:00-04:00",
    "detail": null,
    "espn_id": "4431611"
-  },
-  "name:CHI:malikmuhammad": {
-   "name": "Malik Muhammad II",
-   "team": "CHI",
-   "pos": "CB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-22T22:42:00-04:00",
-   "detail": "Toe",
-   "espn_id": "4870953"
   },
   "00-0038619": {
    "name": "Andrei Iosivas",
@@ -3969,6 +3969,16 @@
    "detail": "Quadriceps",
    "espn_id": "4700136"
   },
+  "name:PHI:jakorianbennett": {
+   "name": "Jakorian Bennett",
+   "team": "PHI",
+   "pos": "CB",
+   "status": "Injured Reserve",
+   "fantasy": "IR-R",
+   "date": "2026-10-31T23:12:00-04:00",
+   "detail": "Knee",
+   "espn_id": "4686911"
+  },
   "00-0036567": {
    "name": "Elijah Mitchell",
    "team": "PHI",
@@ -4479,6 +4489,16 @@
    "detail": null,
    "espn_id": "3040151"
   },
+  "name:SEA:charlescross": {
+   "name": "Charles Cross",
+   "team": "SEA",
+   "pos": "OT",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-10-31T23:18:00-04:00",
+   "detail": "Ankle",
+   "espn_id": "4426376"
+  },
   "00-0037745": {
    "name": "Velus Jones Jr.",
    "team": "SEA",
@@ -4510,16 +4530,6 @@
    "date": "2026-10-31T16:57:00-04:00",
    "detail": "Ankle",
    "espn_id": "3120358"
-  },
-  "name:SEA:charlescross": {
-   "name": "Charles Cross",
-   "team": "SEA",
-   "pos": "OT",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-31T16:56:00-04:00",
-   "detail": "Ankle",
-   "espn_id": "4426376"
   },
   "00-0037545": {
    "name": "Rashid Shaheed",
