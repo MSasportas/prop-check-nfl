@@ -1,5 +1,5 @@
 {
- "at": "2026-10-31T19:30:15-04:00",
+ "at": "2026-10-31T20:30:01-04:00",
  "source": "espn",
  "players": {
   "name:ARI:jongaines": {
@@ -505,7 +505,7 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-10-31T19:13:00-04:00",
+   "date": "2026-10-31T20:01:00-04:00",
    "detail": "Suspension",
    "espn_id": "4034953"
   },
@@ -824,16 +824,6 @@
    "date": "2026-10-26T19:15:00-04:00",
    "detail": "Lower Leg",
    "espn_id": "2973051"
-  },
-  "name:CHI:anthonyjohnson": {
-   "name": "Anthony Johnson Jr.",
-   "team": "CHI",
-   "pos": "S",
-   "status": "Injured Reserve",
-   "fantasy": "IR",
-   "date": "2026-10-31T19:13:00-04:00",
-   "detail": "Undisclosed",
-   "espn_id": "4361748"
   },
   "name:CHI:dmarcojackson": {
    "name": "D'Marco Jackson",
@@ -2677,6 +2667,16 @@
    "detail": null,
    "espn_id": "4890973"
   },
+  "name:LAC:derwinjames": {
+   "name": "Derwin James Jr.",
+   "team": "LAC",
+   "pos": "S",
+   "status": "Injured Reserve",
+   "fantasy": "IR",
+   "date": "2026-10-31T20:11:00-04:00",
+   "detail": "Hamstring",
+   "espn_id": "3691739"
+  },
   "name:LAC:kayodeawosika": {
    "name": "Kayode Awosika",
    "team": "LAC",
@@ -2706,16 +2706,6 @@
    "date": "2026-10-30T20:39:00-04:00",
    "detail": "Hamstring",
    "espn_id": "3843769"
-  },
-  "name:LAC:derwinjames": {
-   "name": "Derwin James Jr.",
-   "team": "LAC",
-   "pos": "S",
-   "status": "Injured Reserve",
-   "fantasy": "IR",
-   "date": "2026-10-30T20:39:00-04:00",
-   "detail": "Hamstring",
-   "espn_id": "3691739"
   },
   "00-0041550": {
    "name": "Brenen Thompson",
@@ -3292,6 +3282,26 @@
    "detail": null,
    "espn_id": "4433959"
   },
+  "00-0038824": {
+   "name": "Ryan Miller",
+   "team": "NE",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-31T20:19:00-04:00",
+   "detail": null,
+   "espn_id": "4369466"
+  },
+  "00-0040568": {
+   "name": "Lan Larison",
+   "team": "NE",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-31T20:17:00-04:00",
+   "detail": null,
+   "espn_id": "4698253"
+  },
   "00-0040734": {
    "name": "TreVeyon Henderson",
    "team": "NE",
@@ -3758,6 +3768,16 @@
    "detail": "Chest",
    "espn_id": "3929950"
   },
+  "name:NYJ:tvondresweat": {
+   "name": "T'Vondre Sweat",
+   "team": "NYJ",
+   "pos": "DT",
+   "status": "Injured Reserve",
+   "fantasy": "IR",
+   "date": "2026-10-31T19:39:00-04:00",
+   "detail": "Knee",
+   "espn_id": "4428617"
+  },
   "name:NYJ:maxmitchell": {
    "name": "Max Mitchell",
    "team": "NYJ",
@@ -3777,16 +3797,6 @@
    "date": "2026-10-30T18:15:00-04:00",
    "detail": "Groin",
    "espn_id": "4685248"
-  },
-  "name:NYJ:tvondresweat": {
-   "name": "T'Vondre Sweat",
-   "team": "NYJ",
-   "pos": "DT",
-   "status": "Injured Reserve",
-   "fantasy": "IR",
-   "date": "2026-10-30T18:12:00-04:00",
-   "detail": "Knee",
-   "espn_id": "4428617"
   },
   "name:NYJ:josephossai": {
    "name": "Joseph Ossai",
@@ -4063,6 +4073,26 @@
    "detail": null,
    "espn_id": "4715355"
   },
+  "00-0037382": {
+   "name": "Brandon Johnson",
+   "team": "PIT",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-31T19:47:00-04:00",
+   "detail": null,
+   "espn_id": "4035198"
+  },
+  "00-0036775": {
+   "name": "Brandon Smith",
+   "team": "PIT",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-31T19:44:00-04:00",
+   "detail": null,
+   "espn_id": "4240577"
+  },
   "name:PIT:doneikoslaughter": {
    "name": "Doneiko Slaughter",
    "team": "PIT",
@@ -4103,16 +4133,6 @@
    "date": "2026-10-26T19:49:00-04:00",
    "detail": null,
    "espn_id": "4685261"
-  },
-  "00-0036775": {
-   "name": "Brandon Smith",
-   "team": "PIT",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-26T19:48:00-04:00",
-   "detail": null,
-   "espn_id": "4240577"
   },
   "00-0038558": {
    "name": "Darnell Washington",
