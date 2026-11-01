@@ -1,5 +1,5 @@
 {
- "at": "2026-11-01T14:40:01-05:00",
+ "at": "2026-11-01T14:50:01-05:00",
  "source": "espn",
  "players": {
   "00-0033307": {
@@ -111,9 +111,9 @@
    "team": "ARI",
    "pos": "RB",
    "status": "Active",
-   "fantasy": null,
+   "fantasy": "QUESTIONABLE",
    "date": "2026-10-30T17:47:00-04:00",
-   "detail": null,
+   "detail": "Undisclosed",
    "espn_id": "4427728"
   },
   "00-0037263": {
@@ -1139,13 +1139,23 @@
    "detail": null,
    "espn_id": "4239993"
   },
+  "name:CLE:tysoncampbell": {
+   "name": "Tyson Campbell",
+   "team": "CLE",
+   "pos": "CB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-01T14:47:00-05:00",
+   "detail": "Neck",
+   "espn_id": "4379397"
+  },
   "name:CLE:maliekcollins": {
    "name": "Maliek Collins",
    "team": "CLE",
    "pos": "DT",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-01T14:17:00-05:00",
+   "date": "2026-11-01T14:38:00-05:00",
    "detail": "Elbow",
    "espn_id": "3040471"
   },
@@ -1271,16 +1281,6 @@
    "date": "2026-10-26T21:10:00-04:00",
    "detail": null,
    "espn_id": "4722893"
-  },
-  "00-0041037": {
-   "name": "Denzel Boston",
-   "team": "CLE",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-25T22:23:00-04:00",
-   "detail": null,
-   "espn_id": "4832800"
   },
   "00-0038041": {
    "name": "Jake Ferguson",
@@ -1638,6 +1638,17 @@
    "detail": "Ankle",
    "espn_id": "4687592"
   },
+  "00-0038896": {
+   "name": "Jacob Saylors",
+   "team": "DET",
+   "pos": "RB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-01T14:29:00-05:00",
+   "detail": "Neck",
+   "espn_id": "4383429",
+   "comment": "Saylors (neck) is questionable to return to Sunday's game against the Vikings."
+  },
   "name:DET:djwonnum": {
    "name": "DJ Wonnum",
    "team": "DET",
@@ -1657,17 +1668,6 @@
    "date": "2026-11-01T14:22:00-05:00",
    "detail": "Head",
    "espn_id": "4692025"
-  },
-  "00-0038896": {
-   "name": "Jacob Saylors",
-   "team": "DET",
-   "pos": "RB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-01T14:08:00-05:00",
-   "detail": "Neck",
-   "espn_id": "4383429",
-   "comment": "questionable"
   },
   "name:DET:cademays": {
    "name": "Cade Mays",
@@ -2845,6 +2845,68 @@
    "detail": null,
    "espn_id": "14880"
   },
+  "00-0040311": {
+   "name": "Theo Wease Jr.",
+   "team": "LAC",
+   "pos": "WR",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T14:40:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4426535",
+   "comment": "inactive"
+  },
+  "name:LAC:rodneyshelley": {
+   "name": "Rodney Shelley",
+   "team": "LAC",
+   "pos": "CB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T14:40:00-05:00",
+   "detail": "Hamstring",
+   "espn_id": "4838693"
+  },
+  "00-0041550": {
+   "name": "Brenen Thompson",
+   "team": "LAC",
+   "pos": "WR",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T14:40:00-05:00",
+   "detail": "Quadriceps",
+   "espn_id": "4685553",
+   "comment": "inactive"
+  },
+  "name:LAC:dontejackson": {
+   "name": "Donte Jackson",
+   "team": "LAC",
+   "pos": "CB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T14:40:00-05:00",
+   "detail": "Hamstring",
+   "espn_id": "3843769"
+  },
+  "name:LAC:deaneleonard": {
+   "name": "Deane Leonard",
+   "team": "LAC",
+   "pos": "CB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T14:40:00-05:00",
+   "detail": "Concussion",
+   "espn_id": "4690171"
+  },
+  "name:LAC:kayodeawosika": {
+   "name": "Kayode Awosika",
+   "team": "LAC",
+   "pos": "G",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T14:40:00-05:00",
+   "detail": "Lower Leg",
+   "espn_id": "4040842"
+  },
   "name:LAC:derwinjames": {
    "name": "Derwin James Jr.",
    "team": "LAC",
@@ -2854,47 +2916,6 @@
    "date": "2026-10-31T20:11:00-04:00",
    "detail": "Hamstring",
    "espn_id": "3691739"
-  },
-  "name:LAC:kayodeawosika": {
-   "name": "Kayode Awosika",
-   "team": "LAC",
-   "pos": "G",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-30T22:28:00-04:00",
-   "detail": "Lower Leg",
-   "espn_id": "4040842"
-  },
-  "name:LAC:deaneleonard": {
-   "name": "Deane Leonard",
-   "team": "LAC",
-   "pos": "CB",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-30T22:27:00-04:00",
-   "detail": "Concussion",
-   "espn_id": "4690171"
-  },
-  "name:LAC:dontejackson": {
-   "name": "Donte Jackson",
-   "team": "LAC",
-   "pos": "CB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-30T20:39:00-04:00",
-   "detail": "Hamstring",
-   "espn_id": "3843769"
-  },
-  "00-0041550": {
-   "name": "Brenen Thompson",
-   "team": "LAC",
-   "pos": "WR",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-30T20:35:00-04:00",
-   "detail": "Quadriceps",
-   "espn_id": "4685553",
-   "comment": "Thompson (quadriceps/hamstring) has been ruled out for Sunday's game against the Rams, Eric Smith of the Chargers' official site reports."
   },
   "00-0040184": {
    "name": "KeAndre Lambert-Smith",
@@ -2946,16 +2967,6 @@
    "detail": "Undisclosed",
    "espn_id": "2579621"
   },
-  "name:LAC:rodneyshelley": {
-   "name": "Rodney Shelley",
-   "team": "LAC",
-   "pos": "CB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-20T12:10:00-04:00",
-   "detail": "Hamstring",
-   "espn_id": "4838693"
-  },
   "00-0038046": {
    "name": "Charlie Kolar",
    "team": "LAC",
@@ -3006,6 +3017,78 @@
    "detail": null,
    "espn_id": "4685382"
   },
+  "00-0039751": {
+   "name": "Jordan Whittington",
+   "team": "LA",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T14:42:00-05:00",
+   "detail": null,
+   "espn_id": "4569382"
+  },
+  "00-0041568": {
+   "name": "Ty Simpson",
+   "team": "LA",
+   "pos": "QB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T14:41:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4685522",
+   "comment": "inactive"
+  },
+  "name:LA:keagentrost": {
+   "name": "Keagen Trost",
+   "team": "LA",
+   "pos": "OT",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T14:41:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4575003"
+  },
+  "name:LA:billmurray": {
+   "name": "Bill Murray",
+   "team": "LA",
+   "pos": "G",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T14:41:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "3912189"
+  },
+  "00-0036244": {
+   "name": "Colby Parkinson",
+   "team": "LA",
+   "pos": "TE",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T14:41:00-05:00",
+   "detail": "Ribs",
+   "espn_id": "4242557",
+   "comment": "inactive"
+  },
+  "name:LA:desjuanjohnson": {
+   "name": "Desjuan Johnson",
+   "team": "LA",
+   "pos": "DE",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T14:41:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4362294"
+  },
+  "name:LA:joecardona": {
+   "name": "Joe Cardona",
+   "team": "LA",
+   "pos": "LS",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T14:41:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "2575907"
+  },
   "name:LA:mylesgarrett": {
    "name": "Myles Garrett",
    "team": "LA",
@@ -3015,58 +3098,6 @@
    "date": "2026-11-01T09:24:00-05:00",
    "detail": "Knee",
    "espn_id": "3122132"
-  },
-  "name:LA:trentmcduffie": {
-   "name": "Trent McDuffie",
-   "team": "LA",
-   "pos": "CB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-30T17:40:00-04:00",
-   "detail": "Groin",
-   "espn_id": "4426405"
-  },
-  "00-0039751": {
-   "name": "Jordan Whittington",
-   "team": "LA",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-30T17:38:00-04:00",
-   "detail": "Back",
-   "espn_id": "4569382",
-   "comment": "Whittington (back) is questionable for Sunday's game against the Chargers, Nate Atkins of The Athletic reports."
-  },
-  "00-0036244": {
-   "name": "Colby Parkinson",
-   "team": "LA",
-   "pos": "TE",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-30T14:39:00-04:00",
-   "detail": "Ribs",
-   "espn_id": "4242557",
-   "comment": "Parkinson (ribs) is questionable for Sunday's game against the Chargers, Nate Atkins of The Athletic reports."
-  },
-  "name:LA:joecardona": {
-   "name": "Joe Cardona",
-   "team": "LA",
-   "pos": "LS",
-   "status": "Doubtful",
-   "fantasy": "DOUBTFUL",
-   "date": "2026-10-30T14:33:00-04:00",
-   "detail": "Ankle",
-   "espn_id": "2575907"
-  },
-  "name:LA:colemanshelton": {
-   "name": "Coleman Shelton",
-   "team": "LA",
-   "pos": "C",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-28T19:32:00-04:00",
-   "detail": "Hip",
-   "espn_id": "3052180"
   },
   "00-0040737": {
    "name": "Terrance Ferguson",
@@ -4854,7 +4885,7 @@
    "pos": "LB",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-01T13:59:00-05:00",
+   "date": "2026-11-01T14:33:00-05:00",
    "detail": "Knee",
    "espn_id": "4686334"
   },
@@ -5821,6 +5852,14 @@
   "00-0033307": {
    "status": "Questionable",
    "at": "2026-11-01T14:40:01-05:00"
+  },
+  "00-0040311": {
+   "status": "Out",
+   "at": "2026-11-01T14:50:01-05:00"
+  },
+  "00-0041568": {
+   "status": "Out",
+   "at": "2026-11-01T14:50:01-05:00"
   }
  }
 }

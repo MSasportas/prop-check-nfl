@@ -633,12 +633,104 @@
  "2026_08_LAC_LA": {
   "_kickoff": "2026-11-01T16:05:00-05:00",
   "LAC": {
+   "confirmed": true,
+   "count": 6,
+   "players": [
+    {
+     "pid": "00-0041550",
+     "name": "Brenen Thompson",
+     "pos": "WR"
+    },
+    {
+     "pid": null,
+     "name": "Deane Leonard",
+     "pos": "CB"
+    },
+    {
+     "pid": null,
+     "name": "Donte Jackson",
+     "pos": "CB"
+    },
+    {
+     "pid": null,
+     "name": "Kayode Awosika",
+     "pos": "G"
+    },
+    {
+     "pid": null,
+     "name": "Rodney Shelley",
+     "pos": "CB"
+    },
+    {
+     "pid": "00-0040311",
+     "name": "Theo Wease Jr.",
+     "pos": "WR"
+    }
+   ],
+   "confirmed_at": "2026-11-01T14:50:01-05:00"
+  },
+  "LA": {
+   "confirmed": true,
+   "count": 6,
+   "players": [
+    {
+     "pid": null,
+     "name": "Bill Murray",
+     "pos": "G"
+    },
+    {
+     "pid": "00-0036244",
+     "name": "Colby Parkinson",
+     "pos": "TE"
+    },
+    {
+     "pid": null,
+     "name": "Desjuan Johnson",
+     "pos": "DE"
+    },
+    {
+     "pid": null,
+     "name": "Joe Cardona",
+     "pos": "LS"
+    },
+    {
+     "pid": null,
+     "name": "Keagen Trost",
+     "pos": "OT"
+    },
+    {
+     "pid": "00-0041568",
+     "name": "Ty Simpson",
+     "pos": "QB"
+    }
+   ],
+   "confirmed_at": "2026-11-01T14:50:01-05:00"
+  }
+ },
+ "2026_08_KC_DEN": {
+  "_kickoff": "2026-11-01T16:25:00-05:00",
+  "KC": {
    "confirmed": false,
    "count": 0,
    "players": [],
    "confirmed_at": null
   },
-  "LA": {
+  "DEN": {
+   "confirmed": false,
+   "count": 0,
+   "players": [],
+   "confirmed_at": null
+  }
+ },
+ "2026_08_NE_MIA": {
+  "_kickoff": "2026-11-01T16:25:00-05:00",
+  "NE": {
+   "confirmed": false,
+   "count": 0,
+   "players": [],
+   "confirmed_at": null
+  },
+  "MIA": {
    "confirmed": false,
    "count": 0,
    "players": [],
