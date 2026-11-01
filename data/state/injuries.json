@@ -1,7 +1,17 @@
 {
- "at": "2026-11-01T18:00:01-05:00",
+ "at": "2026-11-01T18:40:01-05:00",
  "source": "espn",
  "players": {
+  "00-0037263": {
+   "name": "Tyler Allgeier",
+   "team": "ARI",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T18:25:00-05:00",
+   "detail": null,
+   "espn_id": "4373626"
+  },
   "00-0038559": {
    "name": "Michael Wilson",
    "team": "ARI",
@@ -137,16 +147,6 @@
    "date": "2026-10-31T20:49:00-04:00",
    "detail": null,
    "espn_id": "4044144"
-  },
-  "00-0037263": {
-   "name": "Tyler Allgeier",
-   "team": "ARI",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-30T17:28:00-04:00",
-   "detail": null,
-   "espn_id": "4373626"
   },
   "00-0038640": {
    "name": "Jalen Brooks",
@@ -364,7 +364,7 @@
    "date": "2026-11-01T17:03:00-05:00",
    "detail": "Toe",
    "espn_id": "4035671",
-   "comment": "The status of Huntley (toe) is uncertain ahead of Thursday night's game against the Jaguars , Tom Pelissero of Netflix reports"
+   "comment": "The status of Huntley (toe) is uncertain ahead of Thursday night's game against the Jaguars,  Tom Pelissero of Netflix reports"
   },
   "00-0034796": {
    "name": "Lamar Jackson",
@@ -375,7 +375,7 @@
    "date": "2026-11-01T16:50:00-05:00",
    "detail": "Thumb",
    "espn_id": "3916387",
-   "comment": "Jackson is slated to have surgery to address his right thumb injury and will be placed on injured reserve, Brian Wacker of The Baltimore Sun reports."
+   "comment": "Jackson is slated to have surgery to address his right thumb injury and will be placed on injured reserve, per coach Jesse Minter,  Brian Wacker of The Baltimor"
   },
   "name:BAL:natewiggins": {
    "name": "Nate Wiggins",
@@ -515,7 +515,7 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-11-01T17:48:00-05:00",
+   "date": "2026-11-01T18:24:00-05:00",
    "detail": "Suspension",
    "espn_id": "4034953"
   },
@@ -1497,15 +1497,35 @@
    "detail": "Forearm",
    "espn_id": "4427816"
   },
+  "name:DEN:brandonjones": {
+   "name": "Brandon Jones",
+   "team": "DEN",
+   "pos": "S",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-01T18:24:00-05:00",
+   "detail": "Hamstring",
+   "espn_id": "4039059"
+  },
   "name:DEN:krisabramsdraine": {
    "name": "Kris Abrams-Draine",
    "team": "DEN",
    "pos": "CB",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-01T17:47:00-05:00",
+   "date": "2026-11-01T17:59:00-05:00",
    "detail": "Ankle",
    "espn_id": "4429193"
+  },
+  "00-0034348": {
+   "name": "Courtland Sutton",
+   "team": "DEN",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T17:58:00-05:00",
+   "detail": null,
+   "espn_id": "3128429"
   },
   "00-0036879": {
    "name": "Sam Ehlinger",
@@ -1659,16 +1679,6 @@
    "date": "2026-10-26T20:24:00-04:00",
    "detail": null,
    "espn_id": "4431280"
-  },
-  "00-0034348": {
-   "name": "Courtland Sutton",
-   "team": "DEN",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-25T22:02:00-04:00",
-   "detail": null,
-   "espn_id": "3128429"
   },
   "00-0039732": {
    "name": "Bo Nix",
@@ -2208,6 +2218,16 @@
    "detail": null,
    "espn_id": "4362504"
   },
+  "00-0036223": {
+   "name": "Jonathan Taylor",
+   "team": "IND",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T18:03:00-05:00",
+   "detail": null,
+   "espn_id": "4242335"
+  },
   "00-0035710": {
    "name": "Daniel Jones",
    "team": "IND",
@@ -2301,16 +2321,6 @@
    "espn_id": "2971281",
    "comment": "inactive"
   },
-  "00-0036223": {
-   "name": "Jonathan Taylor",
-   "team": "IND",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-01T10:34:00-05:00",
-   "detail": null,
-   "espn_id": "4242335"
-  },
   "00-0038997": {
    "name": "Josh Downs",
    "team": "IND",
@@ -2390,6 +2400,16 @@
    "date": "2026-10-26T21:11:00-04:00",
    "detail": null,
    "espn_id": "4686468"
+  },
+  "00-0040719": {
+   "name": "Bhayshul Tuten",
+   "team": "JAX",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T18:10:00-05:00",
+   "detail": null,
+   "espn_id": "4882093"
   },
   "name:JAX:travonwalker": {
    "name": "Travon Walker",
@@ -2561,16 +2581,6 @@
    "date": "2026-10-18T22:07:00-04:00",
    "detail": null,
    "espn_id": "4362619"
-  },
-  "00-0040718": {
-   "name": "Travis Hunter",
-   "team": "JAX",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-18T13:56:00-04:00",
-   "detail": null,
-   "espn_id": "4685415"
   },
   "name:KC:peterwoods": {
    "name": "Peter Woods",
@@ -3110,6 +3120,26 @@
    "detail": null,
    "espn_id": "4685382"
   },
+  "name:LA:trentmcduffie": {
+   "name": "Trent McDuffie",
+   "team": "LA",
+   "pos": "CB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-01T18:28:00-05:00",
+   "detail": "Back",
+   "espn_id": "4426405"
+  },
+  "name:LA:jaylenwatson": {
+   "name": "Jaylen Watson",
+   "team": "LA",
+   "pos": "CB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-01T18:25:00-05:00",
+   "detail": "Shoulder",
+   "espn_id": "4697639"
+  },
   "name:LA:joecardona": {
    "name": "Joe Cardona",
    "team": "LA",
@@ -3293,16 +3323,6 @@
    "date": "2026-10-25T20:55:00-04:00",
    "detail": null,
    "espn_id": "4430737"
-  },
-  "00-0039075": {
-   "name": "Puka Nacua",
-   "team": "LA",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-25T20:48:00-04:00",
-   "detail": null,
-   "espn_id": "4426515"
   },
   "name:MIA:malikherring": {
    "name": "Malik Herring",
@@ -4454,6 +4474,16 @@
    "detail": null,
    "espn_id": "4715355"
   },
+  "00-0037228": {
+   "name": "Jaylen Warren",
+   "team": "PIT",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T18:27:00-05:00",
+   "detail": null,
+   "espn_id": "4569987"
+  },
   "00-0040203": {
    "name": "Will Howard",
    "team": "PIT",
@@ -4597,16 +4627,6 @@
    "date": "2026-10-25T13:52:00-04:00",
    "detail": null,
    "espn_id": "8439"
-  },
-  "00-0037228": {
-   "name": "Jaylen Warren",
-   "team": "PIT",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-25T13:45:00-04:00",
-   "detail": null,
-   "espn_id": "4569987"
   },
   "00-0034771": {
    "name": "Mason Rudolph",
@@ -4987,6 +5007,16 @@
    "detail": null,
    "espn_id": "3912547"
   },
+  "00-0039361": {
+   "name": "Bucky Irving",
+   "team": "TB",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T17:56:00-05:00",
+   "detail": null,
+   "espn_id": "4596448"
+  },
   "name:TB:yayadiaby": {
    "name": "Yaya Diaby",
    "team": "TB",
@@ -5137,16 +5167,6 @@
    "date": "2026-10-25T21:32:00-04:00",
    "detail": null,
    "espn_id": "4430871"
-  },
-  "00-0039361": {
-   "name": "Bucky Irving",
-   "team": "TB",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-25T17:20:00-04:00",
-   "detail": null,
-   "espn_id": "4596448"
   },
   "name:TB:christianrozeboom": {
    "name": "Christian Rozeboom",
