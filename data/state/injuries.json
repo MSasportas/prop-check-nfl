@@ -1,5 +1,5 @@
 {
- "at": "2026-11-01T15:40:15-05:00",
+ "at": "2026-11-01T15:50:00-05:00",
  "source": "espn",
  "players": {
   "00-0038559": {
@@ -1630,6 +1630,26 @@
    "espn_id": "4362748",
    "comment": "The Broncos placed Badie (thumb) on injured reserve Saturday, Aric DiLalla of the team's official site reports."
   },
+  "name:DET:brianbranch": {
+   "name": "Brian Branch",
+   "team": "DET",
+   "pos": "S",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-01T15:35:00-05:00",
+   "detail": "Concussion",
+   "espn_id": "4692025"
+  },
+  "name:DET:djwonnum": {
+   "name": "DJ Wonnum",
+   "team": "DET",
+   "pos": "LB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-01T15:34:00-05:00",
+   "detail": "Concussion",
+   "espn_id": "4038849"
+  },
   "00-0038896": {
    "name": "Jacob Saylors",
    "team": "DET",
@@ -1640,26 +1660,6 @@
    "detail": "Neck",
    "espn_id": "4383429",
    "comment": "Saylors (neck) is questionable to return to Sunday's game against the Vikings."
-  },
-  "name:DET:djwonnum": {
-   "name": "DJ Wonnum",
-   "team": "DET",
-   "pos": "LB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-01T14:22:00-05:00",
-   "detail": "Concussion",
-   "espn_id": "4038849"
-  },
-  "name:DET:brianbranch": {
-   "name": "Brian Branch",
-   "team": "DET",
-   "pos": "S",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-01T14:22:00-05:00",
-   "detail": "Concussion",
-   "espn_id": "4692025"
   },
   "name:DET:cademays": {
    "name": "Cade Mays",
@@ -2337,7 +2337,7 @@
    "pos": "DE",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-01T15:10:00-05:00",
+   "date": "2026-11-01T15:42:00-05:00",
    "detail": "Ribs",
    "espn_id": "4426349"
   },
@@ -2512,6 +2512,17 @@
    "detail": null,
    "espn_id": "4685415"
   },
+  "00-0040906": {
+   "name": "Garrett Nussmeier",
+   "team": "KC",
+   "pos": "QB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T15:25:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4567747",
+   "comment": "Nussmeier (coach's decision) is inactive for Sunday's game against Denver, though he will be available as the team's emergency quarterback."
+  },
   "00-0038489": {
    "name": "Ben VanSumeren",
    "team": "KC",
@@ -2552,17 +2563,6 @@
    "date": "2026-11-01T15:06:00-05:00",
    "detail": "Coach's Decision",
    "espn_id": "4361340"
-  },
-  "00-0040906": {
-   "name": "Garrett Nussmeier",
-   "team": "KC",
-   "pos": "QB",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-11-01T15:06:00-05:00",
-   "detail": "Coach's Decision",
-   "espn_id": "4567747",
-   "comment": "inactive"
   },
   "name:KC:mansoordelane": {
    "name": "Mansoor Delane",
@@ -3040,6 +3040,16 @@
    "detail": null,
    "espn_id": "4685382"
   },
+  "name:LA:joecardona": {
+   "name": "Joe Cardona",
+   "team": "LA",
+   "pos": "LS",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T15:28:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "2575907"
+  },
   "00-0041568": {
    "name": "Ty Simpson",
    "team": "LA",
@@ -3101,16 +3111,6 @@
    "date": "2026-11-01T14:41:00-05:00",
    "detail": "Coach's Decision",
    "espn_id": "4362294"
-  },
-  "name:LA:joecardona": {
-   "name": "Joe Cardona",
-   "team": "LA",
-   "pos": "LS",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-11-01T14:41:00-05:00",
-   "detail": "Ankle",
-   "espn_id": "2575907"
   },
   "name:LA:mylesgarrett": {
    "name": "Myles Garrett",
@@ -3382,7 +3382,7 @@
    "pos": "S",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-01T14:54:00-05:00",
+   "date": "2026-11-01T15:38:00-05:00",
    "detail": "Quadriceps",
    "espn_id": "4242436"
   },
@@ -5085,6 +5085,16 @@
    "date": "2026-10-22T20:24:00-04:00",
    "detail": null,
    "espn_id": "3871102"
+  },
+  "name:TEN:kevinwinston": {
+   "name": "Kevin Winston Jr.",
+   "team": "TEN",
+   "pos": "S",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-01T15:31:00-05:00",
+   "detail": "Shoulder",
+   "espn_id": "4685617"
   },
   "name:TEN:jclatham": {
    "name": "JC Latham",
