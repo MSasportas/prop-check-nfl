@@ -1,7 +1,17 @@
 {
- "at": "2026-10-31T21:00:22-04:00",
+ "at": "2026-10-31T22:00:01-04:00",
  "source": "espn",
  "players": {
+  "00-0036510": {
+   "name": "Kenny Yeboah",
+   "team": "ARI",
+   "pos": "TE",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-31T20:49:00-04:00",
+   "detail": null,
+   "espn_id": "4044144"
+  },
   "name:ARI:jongaines": {
    "name": "Jon Gaines II",
    "team": "ARI",
@@ -164,16 +174,6 @@
    "date": "2026-10-25T20:51:00-04:00",
    "detail": null,
    "espn_id": "2578570"
-  },
-  "00-0037744": {
-   "name": "Trey McBride",
-   "team": "ARI",
-   "pos": "TE",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-25T19:39:00-04:00",
-   "detail": null,
-   "espn_id": "4361307"
   },
   "name:ATL:billybowman": {
    "name": "Billy Bowman Jr.",
@@ -505,7 +505,7 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-10-31T20:01:00-04:00",
+   "date": "2026-10-31T21:01:00-04:00",
    "detail": "Suspension",
    "espn_id": "4034953"
   },
@@ -1401,6 +1401,16 @@
    "date": "2026-10-25T14:30:00-04:00",
    "detail": "Forearm",
    "espn_id": "4427816"
+  },
+  "00-0039703": {
+   "name": "Cody Schrader",
+   "team": "DEN",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-31T21:24:00-04:00",
+   "detail": null,
+   "espn_id": "4391845"
   },
   "00-0040730": {
    "name": "RJ Harvey",
@@ -3152,6 +3162,16 @@
    "detail": null,
    "espn_id": "4711533"
   },
+  "00-0036425": {
+   "name": "DeeJay Dallas",
+   "team": "MIN",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-31T21:30:00-04:00",
+   "detail": null,
+   "espn_id": "4240631"
+  },
   "00-0037525": {
    "name": "Jordan Mason",
    "team": "MIN",
@@ -3271,16 +3291,6 @@
    "date": "2026-10-25T13:49:00-04:00",
    "detail": null,
    "espn_id": "4430656"
-  },
-  "00-0040509": {
-   "name": "Ben Yurosek",
-   "team": "MIN",
-   "pos": "TE",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-11T12:20:00-04:00",
-   "detail": null,
-   "espn_id": "4433959"
   },
   "00-0038824": {
    "name": "Ryan Miller",
@@ -4455,10 +4465,21 @@
    "pos": "RB",
    "status": "Out",
    "fantasy": "OUT",
-   "date": "2026-10-31T16:57:00-04:00",
+   "date": "2026-10-31T21:38:00-04:00",
    "detail": "Hamstring",
    "espn_id": "4035693",
-   "comment": "out"
+   "comment": "Jones (hamstring) has been ruled out for Monday's game against the Bears, John Boyle of the Seahawks' official site reports."
+  },
+  "00-0035704": {
+   "name": "Drew Lock",
+   "team": "SEA",
+   "pos": "QB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-10-31T21:35:00-04:00",
+   "detail": "Elbow",
+   "espn_id": "3924327",
+   "comment": "Lock (elbow) is listed as questionable for Monday's game against the Bears, Curtis Crabtree of Fox 13 Seattle reports."
   },
   "name:SEA:uchennanwosu": {
    "name": "Uchenna Nwosu",
@@ -4511,17 +4532,6 @@
    "date": "2026-10-31T16:49:00-04:00",
    "detail": null,
    "espn_id": "4426385"
-  },
-  "00-0035704": {
-   "name": "Drew Lock",
-   "team": "SEA",
-   "pos": "QB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-30T21:21:00-04:00",
-   "detail": "Elbow",
-   "espn_id": "3924327",
-   "comment": "Lock (elbow) was a limited participant in Friday's practice, John Boyle of the Seahawks' official site reports."
   },
   "name:SEA:brandonpili": {
    "name": "Brandon Pili",
@@ -4898,6 +4908,16 @@
    "detail": "Foot",
    "espn_id": "4573318"
   },
+  "name:WAS:jerzhannewton": {
+   "name": "Jer'Zhan Newton",
+   "team": "WAS",
+   "pos": "DT",
+   "status": "Injured Reserve",
+   "fantasy": "IR-R",
+   "date": "2026-10-31T20:58:00-04:00",
+   "detail": "Pectoral",
+   "espn_id": "4430560"
+  },
   "name:WAS:daronpayne": {
    "name": "Daron Payne",
    "team": "WAS",
@@ -4907,16 +4927,6 @@
    "date": "2026-10-31T17:59:00-04:00",
    "detail": "Foot",
    "espn_id": "3925354"
-  },
-  "name:WAS:jerzhannewton": {
-   "name": "Jer'Zhan Newton",
-   "team": "WAS",
-   "pos": "DT",
-   "status": "Injured Reserve",
-   "fantasy": "IR-R",
-   "date": "2026-10-30T20:25:00-04:00",
-   "detail": "Pectoral",
-   "espn_id": "4430560"
   },
   "name:WAS:javonkinlaw": {
    "name": "Javon Kinlaw",
