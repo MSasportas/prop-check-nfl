@@ -1,7 +1,17 @@
 {
- "at": "2026-11-01T15:50:00-05:00",
+ "at": "2026-11-01T16:00:00-05:00",
  "source": "espn",
  "players": {
+  "name:ARI:jaydenwilliams": {
+   "name": "Jayden Williams",
+   "team": "ARI",
+   "pos": "OT",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-01T15:46:00-05:00",
+   "detail": "Knee",
+   "espn_id": "4709718"
+  },
   "00-0038559": {
    "name": "Michael Wilson",
    "team": "ARI",
@@ -157,17 +167,6 @@
    "date": "2026-10-26T21:11:00-04:00",
    "detail": null,
    "espn_id": "4426844"
-  },
-  "00-0039737": {
-   "name": "Tip Reiman",
-   "team": "ARI",
-   "pos": "TE",
-   "status": "Out",
-   "fantasy": "PUP-R",
-   "date": "2026-10-26T18:29:00-04:00",
-   "detail": "Ankle",
-   "espn_id": "4696700",
-   "comment": "Head coach Mike LaFleur stated he's \"not too sure\" if Reiman (ankle) will play this season, Dani Sureck of the Cardinals' official site reports."
   },
   "name:ATL:samsonebukam": {
    "name": "Samson Ebukam",
@@ -495,9 +494,20 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-11-01T15:35:00-05:00",
+   "date": "2026-11-01T15:51:00-05:00",
    "detail": "Suspension",
    "espn_id": "4034953"
+  },
+  "00-0037248": {
+   "name": "James Cook III",
+   "team": "BUF",
+   "pos": "RB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-01T15:51:00-05:00",
+   "detail": "Undisclosed",
+   "espn_id": "4379399",
+   "comment": "questionable"
   },
   "00-0036988": {
    "name": "Joshua Palmer",
@@ -631,16 +641,6 @@
    "date": "2026-10-20T20:48:00-04:00",
    "detail": null,
    "espn_id": "3930086"
-  },
-  "00-0035537": {
-   "name": "Ty Johnson",
-   "team": "BUF",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-19T20:47:00-04:00",
-   "detail": null,
-   "espn_id": "3915411"
   },
   "00-0039150": {
    "name": "Bryce Young",
@@ -987,6 +987,26 @@
    "detail": null,
    "espn_id": "4431611"
   },
+  "name:CIN:cashiushowell": {
+   "name": "Cashius Howell",
+   "team": "CIN",
+   "pos": "DE",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-01T15:45:00-05:00",
+   "detail": "Wrist",
+   "espn_id": "4710752"
+  },
+  "name:CIN:cedricjohnson": {
+   "name": "Cedric Johnson",
+   "team": "CIN",
+   "pos": "DE",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-01T15:44:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "4430065"
+  },
   "00-0038839": {
    "name": "Mitchell Tinsley",
    "team": "CIN",
@@ -1130,26 +1150,6 @@
    "detail": null,
    "espn_id": "4362238"
   },
-  "00-0036442": {
-   "name": "Joe Burrow",
-   "team": "CIN",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-25T17:45:00-04:00",
-   "detail": null,
-   "espn_id": "3915511"
-  },
-  "00-0036410": {
-   "name": "Tee Higgins",
-   "team": "CIN",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-25T17:30:00-04:00",
-   "detail": null,
-   "espn_id": "4239993"
-  },
   "00-0033537": {
    "name": "Deshaun Watson",
    "team": "CLE",
@@ -1272,6 +1272,16 @@
    "date": "2026-10-26T21:10:00-04:00",
    "detail": null,
    "espn_id": "4722893"
+  },
+  "name:DAL:calebdowns": {
+   "name": "Caleb Downs",
+   "team": "DAL",
+   "pos": "S",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-01T15:52:00-05:00",
+   "detail": "Head",
+   "espn_id": "4870706"
   },
   "00-0038041": {
    "name": "Jake Ferguson",
@@ -1630,6 +1640,37 @@
    "espn_id": "4362748",
    "comment": "The Broncos placed Badie (thumb) on injured reserve Saturday, Aric DiLalla of the team's official site reports."
   },
+  "name:DET:jimmyrolder": {
+   "name": "Jimmy Rolder",
+   "team": "DET",
+   "pos": "LB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-01T15:54:00-05:00",
+   "detail": "Hamstring",
+   "espn_id": "4896353"
+  },
+  "name:DET:jackcampbell": {
+   "name": "Jack Campbell",
+   "team": "DET",
+   "pos": "LB",
+   "status": "Doubtful",
+   "fantasy": "DOUBTFUL",
+   "date": "2026-11-01T15:49:00-05:00",
+   "detail": "Undisclosed",
+   "espn_id": "4569465"
+  },
+  "00-0038896": {
+   "name": "Jacob Saylors",
+   "team": "DET",
+   "pos": "RB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-01T15:44:00-05:00",
+   "detail": "Neck",
+   "espn_id": "4383429",
+   "comment": "Saylors (neck) has been ruled out for the rest of Sunday's game against the Vikings, Nolan Bianchi of The Detroit News reports."
+  },
   "name:DET:brianbranch": {
    "name": "Brian Branch",
    "team": "DET",
@@ -1649,17 +1690,6 @@
    "date": "2026-11-01T15:34:00-05:00",
    "detail": "Concussion",
    "espn_id": "4038849"
-  },
-  "00-0038896": {
-   "name": "Jacob Saylors",
-   "team": "DET",
-   "pos": "RB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-01T14:29:00-05:00",
-   "detail": "Neck",
-   "espn_id": "4383429",
-   "comment": "Saylors (neck) is questionable to return to Sunday's game against the Vikings."
   },
   "name:DET:cademays": {
    "name": "Cade Mays",
@@ -1812,16 +1842,6 @@
    "date": "2026-10-22T17:05:00-04:00",
    "detail": null,
    "espn_id": "2580216"
-  },
-  "name:DET:benbartch": {
-   "name": "Ben Bartch",
-   "team": "DET",
-   "pos": "G",
-   "status": "Injured Reserve",
-   "fantasy": "IR",
-   "date": "2026-10-17T00:09:00-04:00",
-   "detail": "Foot",
-   "espn_id": "4611506"
   },
   "00-0035700": {
    "name": "Josh Jacobs",
@@ -5086,15 +5106,15 @@
    "detail": null,
    "espn_id": "3871102"
   },
-  "name:TEN:kevinwinston": {
-   "name": "Kevin Winston Jr.",
+  "name:TEN:marcusharris": {
+   "name": "Marcus Harris",
    "team": "TEN",
-   "pos": "S",
+   "pos": "CB",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-01T15:31:00-05:00",
-   "detail": "Shoulder",
-   "espn_id": "4685617"
+   "date": "2026-11-01T15:39:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "4570469"
   },
   "name:TEN:jclatham": {
    "name": "JC Latham",
@@ -5115,16 +5135,6 @@
    "date": "2026-11-01T14:56:00-05:00",
    "detail": "Groin",
    "espn_id": "4431613"
-  },
-  "name:TEN:marcusharris": {
-   "name": "Marcus Harris",
-   "team": "TEN",
-   "pos": "CB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-01T14:21:00-05:00",
-   "detail": "Ankle",
-   "espn_id": "4570469"
   },
   "name:TEN:jaylonjones": {
    "name": "Jaylon Jones",
@@ -5948,6 +5958,10 @@
   "00-0041077": {
    "status": "Out",
    "at": "2026-11-01T15:20:00-05:00"
+  },
+  "00-0037248": {
+   "status": "Questionable",
+   "at": "2026-11-01T16:00:00-05:00"
   }
  }
 }
