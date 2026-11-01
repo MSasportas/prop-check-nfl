@@ -3,10 +3,10 @@
  "season": 2026,
  "week": 8,
  "slate": "2026-W08",
- "started_at": "2026-11-01T16:40:00-05:00",
- "status_at": "2026-11-01T16:40:00-05:00",
- "finished_at": "2026-11-01T16:40:00-05:00",
- "last_ok_at": "2026-11-01T16:40:00-05:00",
+ "started_at": "2026-11-01T16:50:00-05:00",
+ "status_at": "2026-11-01T16:50:00-05:00",
+ "finished_at": "2026-11-01T16:50:00-05:00",
+ "last_ok_at": "2026-11-01T16:50:00-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -17,7 +17,7 @@
   {
    "step": "schedule",
    "status": "ok",
-   "note": "14 game(s) this week (2026-W08); live state for 5 game(s)"
+   "note": "14 game(s) this week (2026-W08); live state for 4 game(s)"
   },
   {
    "step": "stats",
@@ -136,6 +136,8 @@
  "behind": {
   "BAL": "last game's stats are not in yet",
   "BUF": "last game's stats are not in yet",
+  "TEN": "last game's stats are not in yet",
+  "CIN": "last game's stats are not in yet",
   "ARI": "last game's stats are not in yet",
   "DAL": "last game's stats are not in yet",
   "MIN": "last game's stats are not in yet",
@@ -157,7 +159,7 @@
  "runner": {
   "event": "workflow_dispatch",
   "run_id": "41352312830",
-  "iteration": 2,
+  "iteration": 3,
   "chain_link": 846,
   "chain_started_at": "2026-10-30T17:27:57-04:00",
   "run_started_at": "2026-11-01T16:30:13-05:00"
