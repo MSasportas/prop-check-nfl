@@ -1,7 +1,28 @@
 {
- "at": "2026-11-01T15:30:01-05:00",
+ "at": "2026-11-01T15:40:01-05:00",
  "source": "espn",
  "players": {
+  "00-0038559": {
+   "name": "Michael Wilson",
+   "team": "ARI",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T15:28:00-05:00",
+   "detail": null,
+   "espn_id": "4360761"
+  },
+  "00-0037157": {
+   "name": "Bam Knight",
+   "team": "ARI",
+   "pos": "RB",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-11-01T15:22:00-05:00",
+   "detail": "Concussion",
+   "espn_id": "4427728",
+   "comment": "Knight (concussion) has been ruled out for the rest of Sunday's game against the Cowboys."
+  },
   "00-0033307": {
    "name": "Kendrick Bourne",
    "team": "ARI",
@@ -12,17 +33,6 @@
    "detail": "Ankle",
    "espn_id": "3045523",
    "comment": "Bourne won't return to Sunday's contest at Dallas due to a right high-ankle sprain, Theo Mackie of The Arizona Republic reports."
-  },
-  "00-0037157": {
-   "name": "Bam Knight",
-   "team": "ARI",
-   "pos": "RB",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-11-01T14:37:00-05:00",
-   "detail": "Concussion",
-   "espn_id": "4427728",
-   "comment": "Knight headed to the locker room during Sunday's game against the Cowboys after sustaining an unspecified injury, Josh Weinfuss of ESPN.com reports."
   },
   "00-0041027": {
    "name": "Jeremiyah Love",
@@ -126,16 +136,6 @@
    "date": "2026-10-30T17:28:00-04:00",
    "detail": null,
    "espn_id": "4373626"
-  },
-  "00-0038559": {
-   "name": "Michael Wilson",
-   "team": "ARI",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-30T17:23:00-04:00",
-   "detail": null,
-   "espn_id": "4360761"
   },
   "00-0038640": {
    "name": "Jalen Brooks",
@@ -495,9 +495,20 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-11-01T15:21:00-05:00",
+   "date": "2026-11-01T15:35:00-05:00",
    "detail": "Suspension",
    "espn_id": "4034953"
+  },
+  "00-0036988": {
+   "name": "Joshua Palmer",
+   "team": "BUF",
+   "pos": "WR",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-11-01T15:28:00-05:00",
+   "detail": "Hamstring",
+   "espn_id": "4242433",
+   "comment": "Palmer (hamstring) has been ruled out for the rest of Sunday's game against the Ravens."
   },
   "name:BUF:deealford": {
    "name": "Dee Alford",
@@ -508,17 +519,6 @@
    "date": "2026-11-01T14:47:00-05:00",
    "detail": "Ankle",
    "espn_id": "4401823"
-  },
-  "00-0036988": {
-   "name": "Joshua Palmer",
-   "team": "BUF",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "OUT",
-   "date": "2026-11-01T14:04:00-05:00",
-   "detail": "Hamstring",
-   "espn_id": "4242433",
-   "comment": "Palmer exited Sunday's game against the Ravens after sustaining a hamstring injury."
   },
   "name:BUF:greggaines": {
    "name": "Greg Gaines",
@@ -2690,7 +2690,7 @@
    "pos": "CB",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-01T13:28:00-05:00",
+   "date": "2026-11-01T15:32:00-05:00",
    "detail": "Groin",
    "espn_id": "4430330"
   },
@@ -3554,10 +3554,10 @@
    "pos": "QB",
    "status": "Out",
    "fantasy": "INACTIVE",
-   "date": "2026-11-01T14:57:00-05:00",
+   "date": "2026-11-01T15:20:00-05:00",
    "detail": "Coach's Decision",
    "espn_id": "4431465",
-   "comment": "inactive"
+   "comment": "Morton (coach's decision) is inactive but will serve as the Patriots' emergency third quarterback against the Dolphins on Sunday."
   },
   "name:NE:karonprunty": {
    "name": "Karon Prunty",
