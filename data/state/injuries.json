@@ -1,5 +1,5 @@
 {
- "at": "2026-11-01T13:00:00-05:00",
+ "at": "2026-11-01T13:30:00-05:00",
  "source": "espn",
  "players": {
   "00-0041561": {
@@ -463,6 +463,16 @@
    "detail": null,
    "espn_id": "3043078"
   },
+  "name:BUF:cjgardnerjohnson": {
+   "name": "C.J. Gardner-Johnson",
+   "team": "BUF",
+   "pos": "S",
+   "status": "Suspension",
+   "fantasy": "RESERVE-SUS",
+   "date": "2026-11-01T13:15:00-05:00",
+   "detail": "Suspension",
+   "espn_id": "4034953"
+  },
   "name:BUF:greggaines": {
    "name": "Greg Gaines",
    "team": "BUF",
@@ -482,16 +492,6 @@
    "date": "2026-11-01T12:20:00-05:00",
    "detail": "Back",
    "espn_id": "4030899"
-  },
-  "name:BUF:cjgardnerjohnson": {
-   "name": "C.J. Gardner-Johnson",
-   "team": "BUF",
-   "pos": "S",
-   "status": "Suspension",
-   "fantasy": "RESERVE-SUS",
-   "date": "2026-11-01T12:16:00-05:00",
-   "detail": "Suspension",
-   "espn_id": "4034953"
   },
   "name:BUF:armajreedadams": {
    "name": "Ar'maj Reed-Adams",
@@ -1123,6 +1123,16 @@
    "detail": null,
    "espn_id": "4239993"
   },
+  "00-0033537": {
+   "name": "Deshaun Watson",
+   "team": "CLE",
+   "pos": "QB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T13:27:00-05:00",
+   "detail": null,
+   "espn_id": "3122840"
+  },
   "00-0040704": {
    "name": "Dillon Gabriel",
    "team": "CLE",
@@ -1256,15 +1266,16 @@
    "detail": null,
    "espn_id": "5083076"
   },
-  "00-0033537": {
-   "name": "Deshaun Watson",
-   "team": "CLE",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-25T18:46:00-04:00",
-   "detail": null,
-   "espn_id": "3122840"
+  "00-0038041": {
+   "name": "Jake Ferguson",
+   "team": "DAL",
+   "pos": "TE",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-01T13:14:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "4242355",
+   "comment": "questionable"
   },
   "00-0038547": {
    "name": "Luke Schoonmaker",
@@ -1357,16 +1368,6 @@
    "date": "2026-10-29T20:34:00-04:00",
    "detail": "Calf",
    "espn_id": "2980097"
-  },
-  "00-0038041": {
-   "name": "Jake Ferguson",
-   "team": "DAL",
-   "pos": "TE",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-27T19:34:00-04:00",
-   "detail": null,
-   "espn_id": "4242355"
   },
   "00-0037120": {
    "name": "Tyler Goodson",
@@ -2301,6 +2302,16 @@
    "detail": null,
    "espn_id": "15818"
   },
+  "name:JAX:ericmurray": {
+   "name": "Eric Murray",
+   "team": "JAX",
+   "pos": "S",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-01T13:15:00-05:00",
+   "detail": "Elbow",
+   "espn_id": "2970716"
+  },
   "00-0041106": {
    "name": "CJ Williams",
    "team": "JAX",
@@ -2471,16 +2482,6 @@
    "date": "2026-10-18T13:36:00-04:00",
    "detail": null,
    "espn_id": "4360310"
-  },
-  "00-0040719": {
-   "name": "Bhayshul Tuten",
-   "team": "JAX",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-18T13:31:00-04:00",
-   "detail": null,
-   "espn_id": "4882093"
   },
   "name:KC:mansoordelane": {
    "name": "Mansoor Delane",
@@ -5717,6 +5718,10 @@
   "00-0041029": {
    "status": "Injured Reserve",
    "at": "2026-11-01T12:10:00-05:00"
+  },
+  "00-0038041": {
+   "status": "Questionable",
+   "at": "2026-11-01T13:30:00-05:00"
   }
  }
 }
