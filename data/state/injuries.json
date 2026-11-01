@@ -1,5 +1,5 @@
 {
- "at": "2026-11-01T12:20:13-05:00",
+ "at": "2026-11-01T12:30:00-05:00",
  "source": "espn",
  "players": {
   "name:ARI:walternolen": {
@@ -1123,6 +1123,17 @@
    "detail": null,
    "espn_id": "4239993"
   },
+  "00-0040704": {
+   "name": "Dillon Gabriel",
+   "team": "CLE",
+   "pos": "QB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T12:19:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4427238",
+   "comment": "Gabriel (coach's decision) is inactive but will be the emergency third quarterback against the Steelers on Sunday, Kelsey Russo of the Browns' official site rep"
+  },
   "00-0041092": {
    "name": "Taylen Green",
    "team": "CLE",
@@ -1173,17 +1184,6 @@
    "date": "2026-11-01T11:32:00-05:00",
    "detail": "Coach's Decision",
    "espn_id": "4569682",
-   "comment": "inactive"
-  },
-  "00-0040704": {
-   "name": "Dillon Gabriel",
-   "team": "CLE",
-   "pos": "QB",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-11-01T11:32:00-05:00",
-   "detail": "Coach's Decision",
-   "espn_id": "4427238",
    "comment": "inactive"
   },
   "00-0041131": {
