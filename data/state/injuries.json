@@ -1,5 +1,5 @@
 {
- "at": "2026-11-01T15:20:00-05:00",
+ "at": "2026-11-01T15:30:01-05:00",
  "source": "espn",
  "players": {
   "00-0033307": {
@@ -17,10 +17,10 @@
    "name": "Bam Knight",
    "team": "ARI",
    "pos": "RB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
+   "status": "Out",
+   "fantasy": "OUT",
    "date": "2026-11-01T14:37:00-05:00",
-   "detail": "Undisclosed",
+   "detail": "Concussion",
    "espn_id": "4427728",
    "comment": "Knight headed to the locker room during Sunday's game against the Cowboys after sustaining an unspecified injury, Josh Weinfuss of ESPN.com reports."
   },
@@ -330,10 +330,10 @@
    "pos": "QB",
    "status": "Out",
    "fantasy": "OUT",
-   "date": "2026-11-01T14:17:00-05:00",
+   "date": "2026-11-01T15:09:00-05:00",
    "detail": "Toe",
    "espn_id": "4035671",
-   "comment": "Huntley (toe) is questionable to return to Sunday's game against the Bills."
+   "comment": "Huntley (toe) has been ruled out for the rest of Sunday's game against the Bills."
   },
   "00-0034796": {
    "name": "Lamar Jackson",
@@ -495,7 +495,7 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-11-01T15:06:00-05:00",
+   "date": "2026-11-01T15:21:00-05:00",
    "detail": "Suspension",
    "espn_id": "4034953"
   },
@@ -514,7 +514,7 @@
    "team": "BUF",
    "pos": "WR",
    "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
+   "fantasy": "OUT",
    "date": "2026-11-01T14:04:00-05:00",
    "detail": "Hamstring",
    "espn_id": "4242433",
@@ -1446,6 +1446,17 @@
    "detail": "Forearm",
    "espn_id": "4427816"
   },
+  "00-0036879": {
+   "name": "Sam Ehlinger",
+   "team": "DEN",
+   "pos": "QB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T15:22:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4241820",
+   "comment": "Ehlinger (coach's decision) is inactive but will be the third emergency quarterback against the Chiefs on Sunday, Aric DiLalla of the Broncos' official site rep"
+  },
   "name:DEN:tyleronyedim": {
    "name": "Tyler Onyedim",
    "team": "DEN",
@@ -1506,17 +1517,6 @@
    "date": "2026-11-01T15:01:00-05:00",
    "detail": "Coach's Decision",
    "espn_id": "4868598"
-  },
-  "00-0036879": {
-   "name": "Sam Ehlinger",
-   "team": "DEN",
-   "pos": "QB",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-11-01T15:01:00-05:00",
-   "detail": "Coach's Decision",
-   "espn_id": "4241820",
-   "comment": "inactive"
   },
   "00-0036613": {
    "name": "Jaylen Waddle",
@@ -2858,6 +2858,26 @@
    "detail": null,
    "espn_id": "14880"
   },
+  "name:LAC:rodneyshelley": {
+   "name": "Rodney Shelley",
+   "team": "LAC",
+   "pos": "CB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T15:13:00-05:00",
+   "detail": "Hamstring",
+   "espn_id": "4838693"
+  },
+  "name:LAC:dontejackson": {
+   "name": "Donte Jackson",
+   "team": "LAC",
+   "pos": "CB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T15:09:00-05:00",
+   "detail": "Hamstring",
+   "espn_id": "3843769"
+  },
   "00-0040189": {
    "name": "Oronde Gadsden",
    "team": "LAC",
@@ -2879,16 +2899,6 @@
    "espn_id": "4426535",
    "comment": "inactive"
   },
-  "name:LAC:rodneyshelley": {
-   "name": "Rodney Shelley",
-   "team": "LAC",
-   "pos": "CB",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-11-01T14:40:00-05:00",
-   "detail": "Hamstring",
-   "espn_id": "4838693"
-  },
   "00-0041550": {
    "name": "Brenen Thompson",
    "team": "LAC",
@@ -2899,16 +2909,6 @@
    "detail": "Quadriceps",
    "espn_id": "4685553",
    "comment": "inactive"
-  },
-  "name:LAC:dontejackson": {
-   "name": "Donte Jackson",
-   "team": "LAC",
-   "pos": "CB",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-11-01T14:40:00-05:00",
-   "detail": "Hamstring",
-   "espn_id": "3843769"
   },
   "name:LAC:deaneleonard": {
    "name": "Deane Leonard",
@@ -3234,6 +3234,17 @@
    "detail": null,
    "espn_id": "4426515"
   },
+  "00-0038728": {
+   "name": "Jared Wayne",
+   "team": "MIA",
+   "pos": "WR",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T15:22:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4430681",
+   "comment": "Wayne (coach's decision) is inactive for Sunday's game versus the Patriots."
+  },
   "name:MIA:jaylinsimpson": {
    "name": "Jaylin Simpson",
    "team": "MIA",
@@ -3243,17 +3254,6 @@
    "date": "2026-11-01T14:59:00-05:00",
    "detail": "Coach's Decision",
    "espn_id": "4567225"
-  },
-  "00-0038728": {
-   "name": "Jared Wayne",
-   "team": "MIA",
-   "pos": "WR",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-11-01T14:59:00-05:00",
-   "detail": "Coach's Decision",
-   "espn_id": "4430681",
-   "comment": "inactive"
   },
   "name:MIA:kadynproctor": {
    "name": "Kadyn Proctor",
@@ -5085,6 +5085,16 @@
    "date": "2026-10-22T20:24:00-04:00",
    "detail": null,
    "espn_id": "3871102"
+  },
+  "name:TEN:jclatham": {
+   "name": "JC Latham",
+   "team": "TEN",
+   "pos": "OT",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-01T15:18:00-05:00",
+   "detail": "Finger",
+   "espn_id": "4431437"
   },
   "name:TEN:jameswilliams": {
    "name": "James Williams Sr.",

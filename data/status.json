@@ -3,10 +3,10 @@
  "season": 2026,
  "week": 8,
  "slate": "2026-W08",
- "started_at": "2026-11-01T15:20:00-05:00",
- "status_at": "2026-11-01T15:20:00-05:00",
- "finished_at": "2026-11-01T15:20:01-05:00",
- "last_ok_at": "2026-11-01T15:20:00-05:00",
+ "started_at": "2026-11-01T15:30:01-05:00",
+ "status_at": "2026-11-01T15:30:01-05:00",
+ "finished_at": "2026-11-01T15:30:01-05:00",
+ "last_ok_at": "2026-11-01T15:30:01-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -22,7 +22,7 @@
   {
    "step": "stats",
    "status": "skipped",
-   "note": "checked at 2:30 PM"
+   "note": "play-by-play unchanged (7433373 bytes)"
   },
   {
    "step": "roster",
@@ -32,7 +32,7 @@
   {
    "step": "injuries",
    "status": "ok",
-   "note": "espn: 221 out, 50 questionable; inactives posted for 22 team(s)"
+   "note": "espn: 222 out, 50 questionable; inactives posted for 22 team(s)"
   },
   {
    "step": "weather",
@@ -42,7 +42,7 @@
   {
    "step": "odds",
    "status": "ok",
-   "note": "2 read(s) (C)"
+   "note": "no pull due"
   },
   {
    "step": "engine",
@@ -56,8 +56,8 @@
   },
   {
    "step": "watch",
-   "status": "ok",
-   "note": "11 move(s)/side(s) scanned, 0 flagged, 0 graded"
+   "status": "skipped",
+   "note": "0 move(s)/side(s) scanned, 0 flagged, 0 graded"
   },
   {
    "step": "slate",
@@ -129,18 +129,7 @@
   "at": "2026-11-01T15:20:00-05:00",
   "next_at": "2026-11-01T19:35:00-05:00"
  },
- "due": [
-  {
-   "pull": "C",
-   "game_id": "2026_08_KC_DEN",
-   "cost_max": 6
-  },
-  {
-   "pull": "C",
-   "game_id": "2026_08_NE_MIA",
-   "cost_max": 6
-  }
- ],
+ "due": [],
  "skipped_games": [],
  "unmatched_names": [],
  "unknown_teams": [],
@@ -153,13 +142,13 @@
  "runner": {
   "event": "workflow_dispatch",
   "run_id": "41343731036",
-  "iteration": 4,
+  "iteration": 5,
   "chain_link": 844,
   "chain_started_at": "2026-10-30T17:27:57-04:00",
   "run_started_at": "2026-11-01T14:50:15-05:00"
  },
  "live_page": {
-  "checked_at": "2026-11-01T14:30:01-05:00",
+  "checked_at": "2026-11-01T15:30:01-05:00",
   "http": 200,
   "is_page": true
  }
