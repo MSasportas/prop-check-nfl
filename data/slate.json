@@ -14,8 +14,8 @@
  "season": 2026,
  "week": 8,
  "label": "Week 8",
- "generated_at": "2026-11-01T16:00:00-05:00",
- "status_at": "2026-11-01T16:00:00-05:00",
+ "generated_at": "2026-11-01T16:10:01-05:00",
+ "status_at": "2026-11-01T16:10:01-05:00",
  "valid_until": "2026-11-03T06:00:00-05:00",
  "next_check": "2026-11-01T19:35:00-05:00",
  "status": {
@@ -26,12 +26,12 @@
   },
   "injuries": {
    "state": "ok",
-   "at": "2026-11-01T16:00:00-05:00"
+   "at": "2026-11-01T16:10:01-05:00"
   },
   "inactives": {
    "state": "ok",
    "at": "2026-11-01T15:20:00-05:00",
-   "note": "Posted for the 4:05 PM, 4:25 PM games."
+   "note": "Posted for the 4:25 PM game."
   },
   "stats": {
    "state": "ok",
@@ -49,7 +49,7 @@
   },
   "last_run": {
    "ok": true,
-   "at": "2026-11-01T16:00:00-05:00",
+   "at": "2026-11-01T16:10:01-05:00",
    "failed_step": null
   }
  },
@@ -138,8 +138,11 @@
    "day": "2026-11-01",
    "roof": "outdoors",
    "started": true,
-   "final": false,
-   "score": null,
+   "final": true,
+   "score": {
+    "away": 6,
+    "home": 27
+   },
    "settled": "inactives",
    "props_state": "ok",
    "props_at": "2026-11-01T11:50:00-05:00",
@@ -154,8 +157,11 @@
    "day": "2026-11-01",
    "roof": "outdoors",
    "started": true,
-   "final": false,
-   "score": null,
+   "final": true,
+   "score": {
+    "away": 7,
+    "home": 42
+   },
    "settled": "inactives",
    "props_state": "ok",
    "props_at": "2026-11-01T11:50:00-05:00",
@@ -170,8 +176,11 @@
    "day": "2026-11-01",
    "roof": "outdoors",
    "started": true,
-   "final": false,
-   "score": null,
+   "final": true,
+   "score": {
+    "away": 38,
+    "home": 33
+   },
    "settled": "inactives",
    "props_state": "ok",
    "props_at": "2026-11-01T12:00:00-05:00",
@@ -186,8 +195,11 @@
    "day": "2026-11-01",
    "roof": "dome",
    "started": true,
-   "final": false,
-   "score": null,
+   "final": true,
+   "score": {
+    "away": 15,
+    "home": 19
+   },
    "settled": "inactives",
    "props_state": "ok",
    "props_at": "2026-11-01T12:00:00-05:00",
@@ -217,7 +229,7 @@
    "kickoff": "2026-11-01T16:05:00-05:00",
    "day": "2026-11-01",
    "roof": "dome",
-   "started": false,
+   "started": true,
    "final": false,
    "score": null,
    "settled": "inactives",

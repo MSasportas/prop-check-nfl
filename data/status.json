@@ -3,10 +3,10 @@
  "season": 2026,
  "week": 8,
  "slate": "2026-W08",
- "started_at": "2026-11-01T16:00:00-05:00",
- "status_at": "2026-11-01T16:00:00-05:00",
- "finished_at": "2026-11-01T16:00:04-05:00",
- "last_ok_at": "2026-11-01T16:00:00-05:00",
+ "started_at": "2026-11-01T16:10:01-05:00",
+ "status_at": "2026-11-01T16:10:01-05:00",
+ "finished_at": "2026-11-01T16:10:01-05:00",
+ "last_ok_at": "2026-11-01T16:10:01-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -36,8 +36,8 @@
   },
   {
    "step": "weather",
-   "status": "ok",
-   "note": "4 read, 0 failed, 1 indoors"
+   "status": "skipped",
+   "note": "nothing due (0 indoors)"
   },
   {
    "step": "odds",
@@ -120,9 +120,9 @@
   }
  ],
  "pool_total": 3381,
- "allowance": 63.71,
+ "allowance": 59.47,
  "tier": "full",
- "games_left_before_reset": 14,
+ "games_left_before_reset": 15,
  "budget_used_today": 108,
  "odds": {
   "state": "ok",
@@ -134,6 +134,14 @@
  "unmatched_names": [],
  "unknown_teams": [],
  "behind": {
+  "MIN": "last game's stats are not in yet",
+  "DET": "last game's stats are not in yet",
+  "IND": "last game's stats are not in yet",
+  "JAX": "last game's stats are not in yet",
+  "LV": "last game's stats are not in yet",
+  "NYJ": "last game's stats are not in yet",
+  "CLE": "last game's stats are not in yet",
+  "PIT": "last game's stats are not in yet",
   "ATL": "last game's stats are not in yet",
   "TB": "last game's stats are not in yet"
  },
@@ -145,7 +153,7 @@
  "runner": {
   "event": "workflow_dispatch",
   "run_id": "41348028410",
-  "iteration": 3,
+  "iteration": 4,
   "chain_link": 845,
   "chain_started_at": "2026-10-30T17:27:57-04:00",
   "run_started_at": "2026-11-01T15:40:14-05:00"

@@ -1012,14 +1012,14 @@
  "fail_note": null,
  "key_count": 7,
  "plan": {
-  "allowance": 63.71,
+  "allowance": 59.47,
   "tier": "full",
   "pulls": "RC",
   "pool_at_plan": 892,
-  "games_left": 14,
+  "games_left": 15,
   "pool_raw": 3381,
   "keys_shared": 1,
-  "made_at": "2026-11-01T15:20:00-05:00"
+  "made_at": "2026-11-01T16:10:01-05:00"
  },
  "failed": {}
 }
