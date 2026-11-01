@@ -1,5 +1,5 @@
 {
- "at": "2026-11-01T12:00:00-05:00",
+ "at": "2026-11-01T12:10:00-05:00",
  "source": "espn",
  "players": {
   "name:ARI:walternolen": {
@@ -166,6 +166,17 @@
    "espn_id": "4696700",
    "comment": "Head coach Mike LaFleur stated he's \"not too sure\" if Reiman (ankle) will play this season, Dani Sureck of the Cardinals' official site reports."
   },
+  "00-0027973": {
+   "name": "Andy Dalton",
+   "team": "ATL",
+   "pos": "QB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T11:57:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "14012",
+   "comment": "Dalton is inactive for Sunday's game versus the Buccaneers, though he will be available as the team's emergency backup if necessary."
+  },
   "00-0041194": {
    "name": "Jack Strand",
    "team": "ATL",
@@ -207,17 +218,6 @@
    "date": "2026-11-01T11:35:00-05:00",
    "detail": "Coach's Decision",
    "espn_id": "4569511"
-  },
-  "00-0027973": {
-   "name": "Andy Dalton",
-   "team": "ATL",
-   "pos": "QB",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-11-01T11:35:00-05:00",
-   "detail": "Coach's Decision",
-   "espn_id": "14012",
-   "comment": "inactive"
   },
   "00-0035208": {
    "name": "Olamide Zaccheaus",
@@ -469,7 +469,7 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-11-01T11:50:00-05:00",
+   "date": "2026-11-01T12:04:00-05:00",
    "detail": "Suspension",
    "espn_id": "4034953"
   },
@@ -3616,6 +3616,17 @@
    "detail": "Hamstring",
    "espn_id": "4259646"
   },
+  "00-0041029": {
+   "name": "Jordyn Tyson",
+   "team": "NO",
+   "pos": "WR",
+   "status": "Injured Reserve",
+   "fantasy": "IR-R",
+   "date": "2026-11-01T11:50:00-05:00",
+   "detail": "Hamstring",
+   "espn_id": "4880281",
+   "comment": "Tyson (hamstring) could be reinstated from injured reserve and make his season debut as soon as next Sunday versus the Browns, Adam Schefter of ESPN reports."
+  },
   "name:NO:cesarruiz": {
    "name": "Cesar Ruiz",
    "team": "NO",
@@ -5702,6 +5713,10 @@
   "00-0041104": {
    "status": "Out",
    "at": "2026-11-01T12:00:00-05:00"
+  },
+  "00-0041029": {
+   "status": "Injured Reserve",
+   "at": "2026-11-01T12:10:00-05:00"
   }
  }
 }
