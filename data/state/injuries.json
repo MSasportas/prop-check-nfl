@@ -1,7 +1,18 @@
 {
- "at": "2026-11-01T14:00:00-05:00",
+ "at": "2026-11-01T14:30:01-05:00",
  "source": "espn",
  "players": {
+  "00-0041027": {
+   "name": "Jeremiyah Love",
+   "team": "ARI",
+   "pos": "RB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-01T14:08:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "4870808",
+   "comment": "Love (ankle) is questionable to return to Sunday's game at Dallas, Theo Mackie of The Arizona Republic reports."
+  },
   "00-0041561": {
    "name": "Carson Beck",
    "team": "ARI",
@@ -114,16 +125,6 @@
    "detail": null,
    "espn_id": "4360761"
   },
-  "00-0041027": {
-   "name": "Jeremiyah Love",
-   "team": "ARI",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-30T17:13:00-04:00",
-   "detail": "Undisclosed",
-   "espn_id": "4870808"
-  },
   "00-0038640": {
    "name": "Jalen Brooks",
    "team": "ARI",
@@ -172,10 +173,10 @@
    "pos": "WR",
    "status": "Out",
    "fantasy": "OUT",
-   "date": "2026-11-01T13:43:00-05:00",
+   "date": "2026-11-01T13:58:00-05:00",
    "detail": "Hamstring",
    "espn_id": "4870612",
-   "comment": "out"
+   "comment": "Branch (hamstring) was forced out Sunday's game against the Buccaneers with a hamstring injury, Tori McElhaney of the Falcons' official site reports."
   },
   "00-0037238": {
    "name": "Drake London",
@@ -311,6 +312,17 @@
    "detail": "Undisclosed",
    "espn_id": "5150660"
   },
+  "00-0035993": {
+   "name": "Tyler Huntley",
+   "team": "BAL",
+   "pos": "QB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-01T14:17:00-05:00",
+   "detail": "Toe",
+   "espn_id": "4035671",
+   "comment": "Huntley (toe) is questionable to return to Sunday's game against the Bills."
+  },
   "00-0034796": {
    "name": "Lamar Jackson",
    "team": "BAL",
@@ -405,16 +417,6 @@
    "espn_id": "4685526",
    "comment": "Randall (neck) wasn't activated from injured reserve Saturday and won't be available for Sunday's game against the Bills, Jeff Zrebiec of The Athletic reports."
   },
-  "00-0035993": {
-   "name": "Tyler Huntley",
-   "team": "BAL",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-30T18:20:00-04:00",
-   "detail": null,
-   "espn_id": "4035671"
-  },
   "00-0040887": {
    "name": "Josh Cuevas",
    "team": "BAL",
@@ -481,9 +483,20 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-11-01T13:43:00-05:00",
+   "date": "2026-11-01T14:21:00-05:00",
    "detail": "Suspension",
    "espn_id": "4034953"
+  },
+  "00-0036988": {
+   "name": "Joshua Palmer",
+   "team": "BUF",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-01T14:04:00-05:00",
+   "detail": "Hamstring",
+   "espn_id": "4242433",
+   "comment": "Palmer exited Sunday's game against the Ravens after sustaining a hamstring injury."
   },
   "name:BUF:greggaines": {
    "name": "Greg Gaines",
@@ -616,16 +629,6 @@
    "date": "2026-10-19T20:47:00-04:00",
    "detail": null,
    "espn_id": "3915411"
-  },
-  "00-0036988": {
-   "name": "Joshua Palmer",
-   "team": "BUF",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": "DOUBTFUL",
-   "date": "2026-10-19T20:42:00-04:00",
-   "detail": "Hamstring",
-   "espn_id": "4242433"
   },
   "00-0039150": {
    "name": "Bryce Young",
@@ -1135,6 +1138,16 @@
    "detail": null,
    "espn_id": "4239993"
   },
+  "name:CLE:maliekcollins": {
+   "name": "Maliek Collins",
+   "team": "CLE",
+   "pos": "DT",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-01T14:17:00-05:00",
+   "detail": "Elbow",
+   "espn_id": "3040471"
+  },
   "00-0033537": {
    "name": "Deshaun Watson",
    "team": "CLE",
@@ -1267,16 +1280,6 @@
    "date": "2026-10-25T22:23:00-04:00",
    "detail": null,
    "espn_id": "4832800"
-  },
-  "00-0040663": {
-   "name": "Harold Fannin Jr.",
-   "team": "CLE",
-   "pos": "TE",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-25T19:18:00-04:00",
-   "detail": null,
-   "espn_id": "5083076"
   },
   "00-0038041": {
    "name": "Jake Ferguson",
@@ -1634,16 +1637,56 @@
    "detail": "Ankle",
    "espn_id": "4687592"
   },
+  "name:DET:djwonnum": {
+   "name": "DJ Wonnum",
+   "team": "DET",
+   "pos": "LB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-01T14:22:00-05:00",
+   "detail": "Head",
+   "espn_id": "4038849"
+  },
+  "name:DET:brianbranch": {
+   "name": "Brian Branch",
+   "team": "DET",
+   "pos": "S",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-01T14:22:00-05:00",
+   "detail": "Head",
+   "espn_id": "4692025"
+  },
+  "00-0038896": {
+   "name": "Jacob Saylors",
+   "team": "DET",
+   "pos": "RB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-01T14:08:00-05:00",
+   "detail": "Neck",
+   "espn_id": "4383429",
+   "comment": "questionable"
+  },
+  "name:DET:cademays": {
+   "name": "Cade Mays",
+   "team": "DET",
+   "pos": "C",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-01T14:02:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "4361788"
+  },
   "00-0036963": {
    "name": "Amon-Ra St. Brown",
    "team": "DET",
    "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-01T13:38:00-05:00",
-   "detail": "Undisclosed",
-   "espn_id": "4374302",
-   "comment": "St. Brown headed to the locker room in the first quarter of Sunday's game against the Vikings due to an apparent injury, Nolan Bianchi of The Detroit News repor"
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T14:01:00-05:00",
+   "detail": null,
+   "espn_id": "4374302"
   },
   "name:DET:mekhiwingo": {
    "name": "Mekhi Wingo",
@@ -1717,16 +1760,6 @@
    "espn_id": "4361529",
    "comment": "Lions coach Dan Campbell said Friday that Pacheco (back) has a chance to return in late December, Justin Rogers of DetroitFootball.net reports."
   },
-  "00-0038896": {
-   "name": "Jacob Saylors",
-   "team": "DET",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-29T16:25:00-04:00",
-   "detail": null,
-   "espn_id": "4383429"
-  },
   "00-0039139": {
    "name": "Jahmyr Gibbs",
    "team": "DET",
@@ -1796,16 +1829,6 @@
    "date": "2026-10-17T00:09:00-04:00",
    "detail": "Foot",
    "espn_id": "4611506"
-  },
-  "name:DET:devinwhite": {
-   "name": "Devin White",
-   "team": "DET",
-   "pos": "LB",
-   "status": "Injured Reserve",
-   "fantasy": "IR",
-   "date": "2026-10-16T22:00:00-04:00",
-   "detail": "Forearm",
-   "espn_id": "4035434"
   },
   "00-0035700": {
    "name": "Josh Jacobs",
@@ -2315,6 +2338,26 @@
    "detail": null,
    "espn_id": "15818"
   },
+  "name:JAX:ezracleveland": {
+   "name": "Ezra Cleveland",
+   "team": "JAX",
+   "pos": "G",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-01T14:05:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "4048231"
+  },
+  "name:JAX:davonhamilton": {
+   "name": "DaVon Hamilton",
+   "team": "JAX",
+   "pos": "DT",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-01T14:04:00-05:00",
+   "detail": "Knee",
+   "espn_id": "3915520"
+  },
   "name:JAX:ericmurray": {
    "name": "Eric Murray",
    "team": "JAX",
@@ -2475,26 +2518,6 @@
    "date": "2026-10-18T13:53:00-04:00",
    "detail": null,
    "espn_id": "4432773"
-  },
-  "00-0038606": {
-   "name": "Parker Washington",
-   "team": "JAX",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-18T13:39:00-04:00",
-   "detail": null,
-   "espn_id": "4432620"
-  },
-  "00-0036971": {
-   "name": "Trevor Lawrence",
-   "team": "JAX",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-18T13:36:00-04:00",
-   "detail": null,
-   "espn_id": "4360310"
   },
   "name:KC:mansoordelane": {
    "name": "Mansoor Delane",
@@ -4830,7 +4853,7 @@
    "pos": "LB",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-01T13:36:00-05:00",
+   "date": "2026-11-01T13:59:00-05:00",
    "detail": "Knee",
    "espn_id": "4686334"
   },
@@ -5004,6 +5027,16 @@
    "date": "2026-10-22T20:24:00-04:00",
    "detail": null,
    "espn_id": "3871102"
+  },
+  "name:TEN:marcusharris": {
+   "name": "Marcus Harris",
+   "team": "TEN",
+   "pos": "CB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-01T14:21:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "4570469"
   },
   "name:TEN:jaylonjones": {
    "name": "Jaylon Jones",
@@ -5767,6 +5800,22 @@
   "00-0036963": {
    "status": "Questionable",
    "at": "2026-11-01T14:00:00-05:00"
+  },
+  "00-0041027": {
+   "status": "Questionable",
+   "at": "2026-11-01T14:30:01-05:00"
+  },
+  "00-0035993": {
+   "status": "Questionable",
+   "at": "2026-11-01T14:30:01-05:00"
+  },
+  "00-0036988": {
+   "status": "Questionable",
+   "at": "2026-11-01T14:30:01-05:00"
+  },
+  "00-0038896": {
+   "status": "Questionable",
+   "at": "2026-11-01T14:30:01-05:00"
   }
  }
 }
