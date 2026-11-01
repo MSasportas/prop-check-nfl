@@ -1,5 +1,5 @@
 {
- "at": "2026-11-01T08:00:01-05:00",
+ "at": "2026-11-01T08:30:01-05:00",
  "source": "espn",
  "players": {
   "00-0036510": {
@@ -505,7 +505,7 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-11-01T07:00:00-05:00",
+   "date": "2026-11-01T08:00:00-05:00",
    "detail": "Suspension",
    "espn_id": "4034953"
   },
@@ -4643,6 +4643,17 @@
    "detail": null,
    "espn_id": "3912547"
   },
+  "00-0036919": {
+   "name": "Kenny Gainwell",
+   "team": "TB",
+   "pos": "RB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-01T07:54:00-05:00",
+   "detail": "Hip",
+   "espn_id": "4371733",
+   "comment": "Gainwell (hip) is in line to play in Sunday's game against the Falcons, Jeremy Fowler of ESPN reports."
+  },
   "name:TB:lukegoedeke": {
    "name": "Luke Goedeke",
    "team": "TB",
@@ -4652,17 +4663,6 @@
    "date": "2026-10-30T21:45:00-04:00",
    "detail": "Calf",
    "espn_id": "4380507"
-  },
-  "00-0036919": {
-   "name": "Kenny Gainwell",
-   "team": "TB",
-   "pos": "RB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-30T14:13:00-04:00",
-   "detail": "Hip",
-   "espn_id": "4371733",
-   "comment": "Gainwell (hip) is questionable for Sunday's game against the Falcons."
   },
   "00-0040129": {
    "name": "Emeka Egbuka",
