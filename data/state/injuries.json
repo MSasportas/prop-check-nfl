@@ -1,5 +1,5 @@
 {
- "at": "2026-11-01T12:20:00-05:00",
+ "at": "2026-11-01T12:20:13-05:00",
  "source": "espn",
  "players": {
   "name:ARI:walternolen": {
@@ -166,6 +166,16 @@
    "espn_id": "4696700",
    "comment": "Head coach Mike LaFleur stated he's \"not too sure\" if Reiman (ankle) will play this season, Dani Sureck of the Cardinals' official site reports."
   },
+  "00-0035208": {
+   "name": "Olamide Zaccheaus",
+   "team": "ATL",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T12:10:00-05:00",
+   "detail": null,
+   "espn_id": "3917914"
+  },
   "00-0027973": {
    "name": "Andy Dalton",
    "team": "ATL",
@@ -218,16 +228,6 @@
    "date": "2026-11-01T11:35:00-05:00",
    "detail": "Coach's Decision",
    "espn_id": "4569511"
-  },
-  "00-0035208": {
-   "name": "Olamide Zaccheaus",
-   "team": "ATL",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-01T11:35:00-05:00",
-   "detail": null,
-   "espn_id": "3917914"
   },
   "name:ATL:cameronwilliams": {
    "name": "Cameron Williams",
@@ -300,6 +300,17 @@
    "detail": null,
    "espn_id": "4870612"
   },
+  "00-0040981": {
+   "name": "Joe Fagnano",
+   "team": "BAL",
+   "pos": "QB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T12:07:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4429582",
+   "comment": "Fagnano (coach's decision) is inactive but will serve as the Ravens' emergency third quarterback Sunday against the Bills."
+  },
   "name:BAL:aeneaspeebles": {
    "name": "Aeneas Peebles",
    "team": "BAL",
@@ -360,17 +371,6 @@
    "date": "2026-11-01T11:34:00-05:00",
    "detail": "Coach's Decision",
    "espn_id": "4685736"
-  },
-  "00-0040981": {
-   "name": "Joe Fagnano",
-   "team": "BAL",
-   "pos": "QB",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-11-01T11:34:00-05:00",
-   "detail": "Coach's Decision",
-   "espn_id": "4429582",
-   "comment": "inactive"
   },
   "00-0040888": {
    "name": "Adam Randall",
@@ -469,7 +469,7 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-11-01T12:04:00-05:00",
+   "date": "2026-11-01T12:16:00-05:00",
    "detail": "Suspension",
    "espn_id": "4034953"
   },
@@ -2633,6 +2633,28 @@
    "espn_id": "4596602",
    "comment": "The Chiefs placed Smith (hamstring) on injured reserve Saturday."
   },
+  "00-0040894": {
+   "name": "Malik Benson",
+   "team": "LV",
+   "pos": "WR",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T12:12:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "5150247",
+   "comment": "Benson (coach's decision) is inactive for Sunday's game against the Jets."
+  },
+  "00-0040581": {
+   "name": "Dont'e Thornton Jr.",
+   "team": "LV",
+   "pos": "WR",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T12:10:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4432775",
+   "comment": "Thornton (coach's decision) is inactive for Sunday's game against the Jets."
+  },
   "00-0038579": {
    "name": "Aidan O'Connell",
    "team": "LV",
@@ -2653,17 +2675,6 @@
    "date": "2026-11-01T11:40:00-05:00",
    "detail": "Coach's Decision",
    "espn_id": "4430896"
-  },
-  "00-0040581": {
-   "name": "Dont'e Thornton Jr.",
-   "team": "LV",
-   "pos": "WR",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-11-01T11:40:00-05:00",
-   "detail": "Coach's Decision",
-   "espn_id": "4432775",
-   "comment": "inactive"
   },
   "name:LV:daltonjohnson": {
    "name": "Dalton Johnson",
@@ -2694,17 +2705,6 @@
    "date": "2026-11-01T11:40:00-05:00",
    "detail": "Coach's Decision",
    "espn_id": "4612077"
-  },
-  "00-0040894": {
-   "name": "Malik Benson",
-   "team": "LV",
-   "pos": "WR",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-11-01T11:40:00-05:00",
-   "detail": "Coach's Decision",
-   "espn_id": "5150247",
-   "comment": "inactive"
   },
   "name:LV:patrickjohnson": {
    "name": "Patrick Johnson",
@@ -3282,6 +3282,16 @@
    "detail": null,
    "espn_id": "4711533"
   },
+  "00-0036259": {
+   "name": "Jauan Jennings",
+   "team": "MIN",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T12:10:00-05:00",
+   "detail": null,
+   "espn_id": "3886598"
+  },
   "name:MIN:jakobethomas": {
    "name": "Jakobe Thomas",
    "team": "MIN",
@@ -3383,16 +3393,6 @@
    "date": "2026-10-30T14:16:00-04:00",
    "detail": null,
    "espn_id": "3042519"
-  },
-  "00-0036259": {
-   "name": "Jauan Jennings",
-   "team": "MIN",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-25T22:51:00-04:00",
-   "detail": null,
-   "espn_id": "3886598"
   },
   "00-0035229": {
    "name": "T.J. Hockenson",
