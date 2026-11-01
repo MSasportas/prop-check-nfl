@@ -1,5 +1,5 @@
 {
- "at": "2026-11-01T09:40:00-05:00",
+ "at": "2026-11-01T10:10:00-05:00",
  "source": "espn",
  "players": {
   "00-0036510": {
@@ -505,9 +505,20 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-11-01T09:00:00-05:00",
+   "date": "2026-11-01T10:01:00-05:00",
    "detail": "Suspension",
    "espn_id": "4034953"
+  },
+  "00-0034827": {
+   "name": "DJ Moore",
+   "team": "BUF",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-01T09:44:00-05:00",
+   "detail": "Shoulder - AC Joint",
+   "espn_id": "3915416",
+   "comment": "Moore (shoulder) remains listed as questionable for Sunday's game against the Ravens but is expected to play, Adam Schefter of ESPN reports."
   },
   "name:BUF:spencerbrown": {
    "name": "Spencer Brown",
@@ -559,17 +570,6 @@
    "detail": "Chest",
    "espn_id": "4385690",
    "comment": "Kincaid (chest) is listed as questionable for Sunday's game against the Ravens, Katherine Fitzgerald of The Buffalo News reports."
-  },
-  "00-0034827": {
-   "name": "DJ Moore",
-   "team": "BUF",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-30T13:46:00-04:00",
-   "detail": "Shoulder - AC Joint",
-   "espn_id": "3915416",
-   "comment": "Moore (shoulder) is questionable for Sunday's game against the Ravens, Katherine Fitzgerald of The Buffalo News reports."
   },
   "00-0038679": {
    "name": "Tyrell Shavers",
@@ -2848,6 +2848,16 @@
    "detail": null,
    "espn_id": "4685382"
   },
+  "name:LA:mylesgarrett": {
+   "name": "Myles Garrett",
+   "team": "LA",
+   "pos": "DE",
+   "status": "Injured Reserve",
+   "fantasy": "IR",
+   "date": "2026-11-01T09:24:00-05:00",
+   "detail": "Knee",
+   "espn_id": "3122132"
+  },
   "name:LA:trentmcduffie": {
    "name": "Trent McDuffie",
    "team": "LA",
@@ -2921,16 +2931,6 @@
    "detail": "Hamstring",
    "espn_id": "16800",
    "comment": "Head coach Sean McVay said Wednesday that Adams had successful surgery on his left hamstring, and the Rams are hopeful that the wide receiver will be able to re"
-  },
-  "name:LA:mylesgarrett": {
-   "name": "Myles Garrett",
-   "team": "LA",
-   "pos": "DE",
-   "status": "Injured Reserve",
-   "fantasy": "IR",
-   "date": "2026-10-28T16:52:00-04:00",
-   "detail": "Knee",
-   "espn_id": "3122132"
   },
   "00-0036849": {
    "name": "Tutu Atwell",
@@ -4551,7 +4551,7 @@
    "date": "2026-10-31T16:50:00-04:00",
    "detail": "Chest",
    "espn_id": "4685512",
-   "comment": "Price (chest) doesn't have a designation for Monday's game against the Bears, but he remains on injured reserve, John Boyle of the Seahawks' official site repor"
+   "comment": "Price (chest) doesn't have a designation for Monday's game against the Bears but remains on injured reserve, John Boyle of the Seahawks' official site reports."
   },
   "00-0039165": {
    "name": "Zach Charbonnet",
