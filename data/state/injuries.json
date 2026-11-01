@@ -1,5 +1,5 @@
 {
- "at": "2026-10-31T22:00:01-04:00",
+ "at": "2026-10-31T22:30:12-04:00",
  "source": "espn",
  "players": {
   "00-0036510": {
@@ -505,7 +505,7 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-10-31T21:01:00-04:00",
+   "date": "2026-10-31T22:01:00-04:00",
    "detail": "Suspension",
    "espn_id": "4034953"
   },
@@ -3292,6 +3292,16 @@
    "detail": null,
    "espn_id": "4430656"
   },
+  "name:NE:marcusbryant": {
+   "name": "Marcus Bryant",
+   "team": "NE",
+   "pos": "OT",
+   "status": "Injured Reserve",
+   "fantasy": "IR-R",
+   "date": "2026-10-31T22:00:00-04:00",
+   "detail": "Ankle",
+   "espn_id": "4565293"
+  },
   "00-0038824": {
    "name": "Ryan Miller",
    "team": "NE",
@@ -4755,6 +4765,16 @@
    "detail": null,
    "espn_id": "3871102"
   },
+  "name:TEN:dorianmausi": {
+   "name": "Dorian Mausi",
+   "team": "TEN",
+   "pos": "LB",
+   "status": "Injured Reserve",
+   "fantasy": "IR-R",
+   "date": "2026-10-31T22:07:00-04:00",
+   "detail": "Foot",
+   "espn_id": "4573318"
+  },
   "00-0040522": {
    "name": "Xavier Restrepo",
    "team": "TEN",
@@ -4897,16 +4917,6 @@
    "date": "2026-10-25T19:30:00-04:00",
    "detail": null,
    "espn_id": "4688380"
-  },
-  "name:TEN:dorianmausi": {
-   "name": "Dorian Mausi",
-   "team": "TEN",
-   "pos": "LB",
-   "status": "Injured Reserve",
-   "fantasy": "IR-R",
-   "date": "2026-10-21T21:35:00-04:00",
-   "detail": "Foot",
-   "espn_id": "4573318"
   },
   "name:WAS:jerzhannewton": {
    "name": "Jer'Zhan Newton",
