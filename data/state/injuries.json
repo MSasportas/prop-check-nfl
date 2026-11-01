@@ -1,5 +1,5 @@
 {
- "at": "2026-11-01T11:30:14-05:00",
+ "at": "2026-11-01T11:40:00-05:00",
  "source": "espn",
  "players": {
   "00-0036510": {
@@ -175,6 +175,89 @@
    "detail": null,
    "espn_id": "2578570"
   },
+  "00-0041194": {
+   "name": "Jack Strand",
+   "team": "ATL",
+   "pos": "QB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T11:35:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "5344782",
+   "comment": "inactive"
+  },
+  "name:ATL:robertlongerbeam": {
+   "name": "Robert Longerbeam",
+   "team": "ATL",
+   "pos": "CB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T11:35:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4575860"
+  },
+  "00-0037746": {
+   "name": "Brian Robinson Jr.",
+   "team": "ATL",
+   "pos": "RB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T11:35:00-05:00",
+   "detail": "Hamstring",
+   "espn_id": "4241474",
+   "comment": "inactive"
+  },
+  "name:ATL:drakejackson": {
+   "name": "Drake Jackson",
+   "team": "ATL",
+   "pos": "DE",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T11:35:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4569511"
+  },
+  "name:ATL:billybowman": {
+   "name": "Billy Bowman Jr.",
+   "team": "ATL",
+   "pos": "CB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T11:35:00-05:00",
+   "detail": "Hamstring",
+   "espn_id": "4431194"
+  },
+  "00-0027973": {
+   "name": "Andy Dalton",
+   "team": "ATL",
+   "pos": "QB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T11:35:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "14012",
+   "comment": "inactive"
+  },
+  "name:ATL:divinedeablo": {
+   "name": "Divine Deablo",
+   "team": "ATL",
+   "pos": "LB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T11:35:00-05:00",
+   "detail": "Forearm",
+   "espn_id": "4037626"
+  },
+  "00-0035208": {
+   "name": "Olamide Zaccheaus",
+   "team": "ATL",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T11:35:00-05:00",
+   "detail": null,
+   "espn_id": "3917914"
+  },
   "name:ATL:cameronwilliams": {
    "name": "Cameron Williams",
    "team": "ATL",
@@ -184,26 +267,6 @@
    "date": "2026-10-31T23:11:00-04:00",
    "detail": "Ankle",
    "espn_id": "4685590"
-  },
-  "name:ATL:billybowman": {
-   "name": "Billy Bowman Jr.",
-   "team": "ATL",
-   "pos": "CB",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-31T20:39:00-04:00",
-   "detail": "Hamstring",
-   "espn_id": "4431194"
-  },
-  "name:ATL:divinedeablo": {
-   "name": "Divine Deablo",
-   "team": "ATL",
-   "pos": "LB",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-31T20:36:00-04:00",
-   "detail": "Forearm",
-   "espn_id": "4037626"
   },
   "00-0040432": {
    "name": "Beaux Collins",
@@ -236,58 +299,6 @@
    "detail": "Undisclosed",
    "espn_id": "5150660"
   },
-  "00-0035208": {
-   "name": "Olamide Zaccheaus",
-   "team": "ATL",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-30T17:11:00-04:00",
-   "detail": "Shoulder",
-   "espn_id": "3917914",
-   "comment": "Zaccheaus (shoulder) is listed as questionable for Sunday's game against the Buccaneers, Will McFadden of the Falcons' official site reports."
-  },
-  "00-0037746": {
-   "name": "Brian Robinson Jr.",
-   "team": "ATL",
-   "pos": "RB",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-30T13:22:00-04:00",
-   "detail": "Hamstring",
-   "espn_id": "4241474",
-   "comment": "Robinson (hamstring) has been ruled out for Sunday's game at Tampa Bay, Will McFadden of the Falcons' official site reports."
-  },
-  "name:ATL:charlessnowden": {
-   "name": "Charles Snowden",
-   "team": "ATL",
-   "pos": "LB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-28T16:01:00-04:00",
-   "detail": "Back",
-   "espn_id": "4240849"
-  },
-  "name:ATL:samsonebukam": {
-   "name": "Samson Ebukam",
-   "team": "ATL",
-   "pos": "DE",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-28T16:00:00-04:00",
-   "detail": "Hamstring",
-   "espn_id": "3045527"
-  },
-  "name:ATL:avieonterrell": {
-   "name": "Avieon Terrell",
-   "team": "ATL",
-   "pos": "CB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-27T09:11:00-04:00",
-   "detail": "Illness",
-   "espn_id": "4870988"
-  },
   "00-0041044": {
    "name": "Zachariah Branch",
    "team": "ATL",
@@ -298,45 +309,77 @@
    "detail": null,
    "espn_id": "4870612"
   },
-  "00-0032392": {
-   "name": "Austin Hooper",
-   "team": "ATL",
-   "pos": "TE",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-26T20:02:00-04:00",
-   "detail": null,
-   "espn_id": "3043275"
+  "name:BAL:aeneaspeebles": {
+   "name": "Aeneas Peebles",
+   "team": "BAL",
+   "pos": "DT",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T11:34:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4565311"
   },
-  "00-0037741": {
-   "name": "Jahan Dotson",
-   "team": "ATL",
+  "name:BAL:chandlerrivers": {
+   "name": "Chandler Rivers",
+   "team": "BAL",
+   "pos": "CB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T11:34:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4702918"
+  },
+  "00-0040876": {
+   "name": "Elijah Sarratt",
+   "team": "BAL",
    "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-26T19:57:00-04:00",
-   "detail": null,
-   "espn_id": "4361409"
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T11:34:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "5088338",
+   "comment": "inactive"
   },
-  "00-0037317": {
-   "name": "Nick Muse",
-   "team": "ATL",
-   "pos": "TE",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-26T19:57:00-04:00",
-   "detail": null,
-   "espn_id": "4249624"
+  "name:BAL:jaylinnhawkins": {
+   "name": "Jaylinn Hawkins",
+   "team": "BAL",
+   "pos": "S",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T11:34:00-05:00",
+   "detail": "Knee",
+   "espn_id": "3858276"
   },
-  "00-0041194": {
-   "name": "Jack Strand",
-   "team": "ATL",
+  "name:BAL:olaivavegaioane": {
+   "name": "Olaivavega Ioane",
+   "team": "BAL",
+   "pos": "G",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T11:34:00-05:00",
+   "detail": "Knee - MCL",
+   "espn_id": "4832793"
+  },
+  "name:BAL:emeryjones": {
+   "name": "Emery Jones Jr.",
+   "team": "BAL",
+   "pos": "OT",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T11:34:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4685736"
+  },
+  "00-0040981": {
+   "name": "Joe Fagnano",
+   "team": "BAL",
    "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-26T13:25:00-04:00",
-   "detail": null,
-   "espn_id": "5344782"
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T11:34:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4429582",
+   "comment": "inactive"
   },
   "00-0040888": {
    "name": "Adam Randall",
@@ -349,26 +392,6 @@
    "espn_id": "4685526",
    "comment": "Randall (neck) wasn't activated from injured reserve Saturday and won't be available for Sunday's game against the Bills, Jeff Zrebiec of The Athletic reports."
   },
-  "name:BAL:tjtampa": {
-   "name": "T.J. Tampa",
-   "team": "BAL",
-   "pos": "CB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-31T23:08:00-04:00",
-   "detail": "Knee",
-   "espn_id": "4575483"
-  },
-  "name:BAL:olaivavegaioane": {
-   "name": "Olaivavega Ioane",
-   "team": "BAL",
-   "pos": "G",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-30T21:55:00-04:00",
-   "detail": "Knee - MCL",
-   "espn_id": "4832793"
-  },
   "00-0035993": {
    "name": "Tyler Huntley",
    "team": "BAL",
@@ -378,16 +401,6 @@
    "date": "2026-10-30T18:20:00-04:00",
    "detail": null,
    "espn_id": "4035671"
-  },
-  "name:BAL:jaylinnhawkins": {
-   "name": "Jaylinn Hawkins",
-   "team": "BAL",
-   "pos": "S",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-30T18:05:00-04:00",
-   "detail": "Knee",
-   "espn_id": "3858276"
   },
   "00-0034796": {
    "name": "Lamar Jackson",
@@ -439,16 +452,6 @@
    "detail": null,
    "espn_id": "4360939"
   },
-  "00-0040876": {
-   "name": "Elijah Sarratt",
-   "team": "BAL",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-26T13:29:00-04:00",
-   "detail": null,
-   "espn_id": "5088338"
-  },
   "00-0034753": {
    "name": "Mark Andrews",
    "team": "BAL",
@@ -469,45 +472,86 @@
    "detail": null,
    "espn_id": "3043078"
   },
-  "00-0039064": {
-   "name": "Zay Flowers",
-   "team": "BAL",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-25T17:39:00-04:00",
-   "detail": null,
-   "espn_id": "4429615"
-  },
-  "name:BAL:taviusrobinson": {
-   "name": "Tavius Robinson",
-   "team": "BAL",
-   "pos": "LB",
-   "status": "Injured Reserve",
-   "fantasy": "IR",
-   "date": "2026-10-24T16:50:00-04:00",
-   "detail": "Pectoral",
-   "espn_id": "4690179"
-  },
-  "00-0040879": {
-   "name": "Matt Hibner",
-   "team": "BAL",
-   "pos": "TE",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-22T20:03:00-04:00",
-   "detail": null,
-   "espn_id": "4432260"
-  },
   "name:BUF:cjgardnerjohnson": {
    "name": "C.J. Gardner-Johnson",
    "team": "BUF",
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-11-01T11:00:00-05:00",
+   "date": "2026-11-01T11:35:00-05:00",
    "detail": "Suspension",
    "espn_id": "4034953"
+  },
+  "name:BUF:armajreedadams": {
+   "name": "Ar'maj Reed-Adams",
+   "team": "BUF",
+   "pos": "G",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T11:33:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4606712"
+  },
+  "name:BUF:jalonkilgore": {
+   "name": "Jalon Kilgore",
+   "team": "BUF",
+   "pos": "S",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T11:33:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "5076951"
+  },
+  "00-0041443": {
+   "name": "Skyler Bell",
+   "team": "BUF",
+   "pos": "WR",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T11:33:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4683153",
+   "comment": "inactive"
+  },
+  "name:BUF:spencerbrown": {
+   "name": "Spencer Brown",
+   "team": "BUF",
+   "pos": "OT",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T11:33:00-05:00",
+   "detail": "Back",
+   "espn_id": "4030899"
+  },
+  "name:BUF:mikedanna": {
+   "name": "Mike Danna",
+   "team": "BUF",
+   "pos": "DE",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T11:33:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "3915487"
+  },
+  "name:BUF:greggaines": {
+   "name": "Greg Gaines",
+   "team": "BUF",
+   "pos": "DT",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T11:33:00-05:00",
+   "detail": "Calf",
+   "espn_id": "3127294"
+  },
+  "name:BUF:deealford": {
+   "name": "Dee Alford",
+   "team": "BUF",
+   "pos": "CB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T11:33:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "4401823"
   },
   "00-0038933": {
    "name": "Dalton Kincaid",
@@ -515,10 +559,10 @@
    "pos": "TE",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-01T10:00:00-05:00",
+   "date": "2026-11-01T11:27:00-05:00",
    "detail": "Chest",
    "espn_id": "4385690",
-   "comment": "The Bills are optimistic that Kincaid (chest), who is listed as questionable for Sunday's game against the Ravens, will be able to play, Jeremy Fowler of ESPN.c"
+   "comment": "Kincaid (chest) is active for Sunday's game against the Ravens."
   },
   "00-0034827": {
    "name": "DJ Moore",
@@ -526,30 +570,10 @@
    "pos": "WR",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-01T09:44:00-05:00",
-   "detail": "Shoulder - AC Joint",
+   "date": "2026-11-01T11:26:00-05:00",
+   "detail": "Shoulder",
    "espn_id": "3915416",
-   "comment": "Moore (shoulder) remains listed as questionable for Sunday's game against the Ravens but is expected to play, Adam Schefter of ESPN reports."
-  },
-  "name:BUF:spencerbrown": {
-   "name": "Spencer Brown",
-   "team": "BUF",
-   "pos": "OT",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-30T21:53:00-04:00",
-   "detail": "Back",
-   "espn_id": "4030899"
-  },
-  "name:BUF:deealford": {
-   "name": "Dee Alford",
-   "team": "BUF",
-   "pos": "CB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-30T17:56:00-04:00",
-   "detail": "Ankle",
-   "espn_id": "4401823"
+   "comment": "Moore (shoulder) is active for Sunday's game against the Ravens, Cameron Wolfe of NFL Network reports."
   },
   "00-0039875": {
    "name": "Ray Davis",
@@ -561,16 +585,6 @@
    "detail": null,
    "espn_id": "4429501"
   },
-  "name:BUF:greggaines": {
-   "name": "Greg Gaines",
-   "team": "BUF",
-   "pos": "DT",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-30T15:12:00-04:00",
-   "detail": "Calf",
-   "espn_id": "3127294"
-  },
   "00-0038679": {
    "name": "Tyrell Shavers",
    "team": "BUF",
@@ -581,16 +595,6 @@
    "detail": "Knee - ACL",
    "espn_id": "4241476",
    "comment": "The Bills designated Shavers (knee) to return from the reserve/PUP list Wednesday, but he will not play against the Ravens on Sunday, Cameron Wolfe of NFL Netwo"
-  },
-  "name:BUF:tjparker": {
-   "name": "TJ Parker",
-   "team": "BUF",
-   "pos": "LB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-28T17:22:00-04:00",
-   "detail": "Knee",
-   "espn_id": "4870886"
   },
   "00-0035689": {
    "name": "Dawson Knox",
@@ -621,16 +625,6 @@
    "date": "2026-10-19T20:42:00-04:00",
    "detail": null,
    "espn_id": "4242433"
-  },
-  "00-0039901": {
-   "name": "Keon Coleman",
-   "team": "BUF",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-19T06:00:00-04:00",
-   "detail": null,
-   "espn_id": "4635008"
   },
   "00-0039150": {
    "name": "Bryce Young",
@@ -1134,9 +1128,9 @@
    "team": "CLE",
    "pos": "S",
    "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
+   "fantasy": null,
    "date": "2026-10-30T22:01:00-04:00",
-   "detail": "Ankle",
+   "detail": null,
    "espn_id": "4035505"
   },
   "name:CLE:mylesharden": {
@@ -1144,9 +1138,9 @@
    "team": "CLE",
    "pos": "CB",
    "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
+   "fantasy": null,
    "date": "2026-10-30T19:33:00-04:00",
-   "detail": "Hamstring",
+   "detail": null,
    "espn_id": "4695783"
   },
   "00-0040162": {
@@ -2300,9 +2294,9 @@
    "team": "JAX",
    "pos": "WR",
    "status": "Active",
-   "fantasy": null,
+   "fantasy": "INACTIVE",
    "date": "2026-10-19T12:43:00-04:00",
-   "detail": null,
+   "detail": "Coach's Decision",
    "espn_id": "5085024"
   },
   "00-0038935": {
@@ -4659,9 +4653,9 @@
    "team": "TB",
    "pos": "OT",
    "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
+   "fantasy": null,
    "date": "2026-10-30T21:45:00-04:00",
-   "detail": "Calf",
+   "detail": null,
    "espn_id": "4380507"
   },
   "00-0040129": {
@@ -4785,16 +4779,88 @@
    "detail": null,
    "espn_id": "3871102"
   },
+  "00-0039032": {
+   "name": "Tyjae Spears",
+   "team": "TEN",
+   "pos": "RB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T11:35:00-05:00",
+   "detail": "Knee",
+   "espn_id": "4428557",
+   "comment": "inactive"
+  },
+  "00-0041438": {
+   "name": "Carnell Tate",
+   "team": "TEN",
+   "pos": "WR",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T11:35:00-05:00",
+   "detail": "Shoulder",
+   "espn_id": "4871023",
+   "comment": "inactive"
+  },
+  "name:TEN:tommytownsend": {
+   "name": "Tommy Townsend",
+   "team": "TEN",
+   "pos": "P",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T11:35:00-05:00",
+   "detail": "Knee",
+   "espn_id": "3915398"
+  },
+  "name:TEN:jackiemarshall": {
+   "name": "Jackie Marshall",
+   "team": "TEN",
+   "pos": "DT",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T11:35:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "5081785"
+  },
+  "00-0036876": {
+   "name": "Kylen Granson",
+   "team": "TEN",
+   "pos": "TE",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T11:35:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4039160",
+   "comment": "inactive"
+  },
+  "name:TEN:jaylonjones": {
+   "name": "Jaylon Jones",
+   "team": "TEN",
+   "pos": "CB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T11:35:00-05:00",
+   "detail": "Knee",
+   "espn_id": "4685145"
+  },
+  "name:TEN:brandoncrenshawdickson": {
+   "name": "Brandon Crenshaw-Dickson",
+   "team": "TEN",
+   "pos": "OT",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T11:35:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4426987"
+  },
   "00-0034837": {
    "name": "Calvin Ridley",
    "team": "TEN",
    "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-01T07:35:00-05:00",
-   "detail": "Hip",
-   "espn_id": "3925357",
-   "comment": "Ridley (hip) is in line to play in Sunday's game against the Bengals, Ian Rapoport of NFL Network reports."
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T11:33:00-05:00",
+   "detail": null,
+   "espn_id": "3925357"
   },
   "name:TEN:dorianmausi": {
    "name": "Dorian Mausi",
@@ -4815,37 +4881,6 @@
    "date": "2026-10-31T18:21:00-04:00",
    "detail": null,
    "espn_id": "4431353"
-  },
-  "00-0041438": {
-   "name": "Carnell Tate",
-   "team": "TEN",
-   "pos": "WR",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-31T11:10:00-04:00",
-   "detail": "Shoulder",
-   "espn_id": "4871023",
-   "comment": "Tate (shoulder) will not play against the Bengals on Sunday but is expected to be back in action following the Titans' bye for Week 10 against the Jaguars on Su"
-  },
-  "name:TEN:tommytownsend": {
-   "name": "Tommy Townsend",
-   "team": "TEN",
-   "pos": "P",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-30T22:12:00-04:00",
-   "detail": "Knee",
-   "espn_id": "3915398"
-  },
-  "name:TEN:johnfranklinmyers": {
-   "name": "John Franklin-Myers",
-   "team": "TEN",
-   "pos": "DE",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-30T20:01:00-04:00",
-   "detail": "Groin",
-   "espn_id": "3120464"
   },
   "00-0040170": {
    "name": "Elic Ayomanor",
@@ -4876,37 +4911,6 @@
    "date": "2026-10-30T19:06:00-04:00",
    "detail": null,
    "espn_id": "3916148"
-  },
-  "00-0039032": {
-   "name": "Tyjae Spears",
-   "team": "TEN",
-   "pos": "RB",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-30T16:15:00-04:00",
-   "detail": "Knee",
-   "espn_id": "4428557",
-   "comment": "Spears (knee) has been ruled out for Sunday's game against the Bengals."
-  },
-  "name:TEN:jaylonjones": {
-   "name": "Jaylon Jones",
-   "team": "TEN",
-   "pos": "CB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-30T15:50:00-04:00",
-   "detail": "Knee",
-   "espn_id": "4685145"
-  },
-  "00-0036876": {
-   "name": "Kylen Granson",
-   "team": "TEN",
-   "pos": "TE",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-26T15:21:00-04:00",
-   "detail": null,
-   "espn_id": "4039160"
   },
   "00-0040886": {
    "name": "Nicholas Singleton",
@@ -5417,6 +5421,30 @@
   "00-0040488": {
    "status": "Injured Reserve",
    "at": "2026-10-30T20:30:42-04:00"
+  },
+  "00-0041194": {
+   "status": "Out",
+   "at": "2026-11-01T11:40:00-05:00"
+  },
+  "00-0027973": {
+   "status": "Out",
+   "at": "2026-11-01T11:40:00-05:00"
+  },
+  "00-0040876": {
+   "status": "Out",
+   "at": "2026-11-01T11:40:00-05:00"
+  },
+  "00-0040981": {
+   "status": "Out",
+   "at": "2026-11-01T11:40:00-05:00"
+  },
+  "00-0041443": {
+   "status": "Out",
+   "at": "2026-11-01T11:40:00-05:00"
+  },
+  "00-0036876": {
+   "status": "Out",
+   "at": "2026-11-01T11:40:00-05:00"
   }
  }
 }
