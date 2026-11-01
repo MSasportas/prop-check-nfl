@@ -1,5 +1,5 @@
 {
- "at": "2026-11-01T16:10:01-05:00",
+ "at": "2026-11-01T16:20:01-05:00",
  "source": "espn",
  "players": {
   "name:ARI:jaydenwilliams": {
@@ -49,7 +49,7 @@
    "team": "ARI",
    "pos": "RB",
    "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
+   "fantasy": "OUT",
    "date": "2026-11-01T14:08:00-05:00",
    "detail": "Ankle",
    "espn_id": "4870808",
@@ -168,26 +168,26 @@
    "detail": null,
    "espn_id": "4426844"
   },
+  "00-0041044": {
+   "name": "Zachariah Branch",
+   "team": "ATL",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-01T15:59:00-05:00",
+   "detail": "Hamstring",
+   "espn_id": "4870612",
+   "comment": "questionable"
+  },
   "name:ATL:samsonebukam": {
    "name": "Samson Ebukam",
    "team": "ATL",
    "pos": "DE",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-01T14:57:00-05:00",
+   "date": "2026-11-01T15:56:00-05:00",
    "detail": "Hamstring",
    "espn_id": "3045527"
-  },
-  "00-0041044": {
-   "name": "Zachariah Branch",
-   "team": "ATL",
-   "pos": "WR",
-   "status": "Out",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-01T13:58:00-05:00",
-   "detail": "Hamstring",
-   "espn_id": "4870612",
-   "comment": "Branch (hamstring) was forced out Sunday's game against the Buccaneers with a hamstring injury, Tori McElhaney of the Falcons' official site reports."
   },
   "00-0037238": {
    "name": "Drake London",
@@ -986,6 +986,26 @@
    "detail": null,
    "espn_id": "4431611"
   },
+  "name:CIN:cedricjohnson": {
+   "name": "Cedric Johnson",
+   "team": "CIN",
+   "pos": "DE",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-01T16:10:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "4430065"
+  },
+  "name:CIN:djturner": {
+   "name": "DJ Turner II",
+   "team": "CIN",
+   "pos": "CB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-01T16:08:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "4572036"
+  },
   "name:CIN:cashiushowell": {
    "name": "Cashius Howell",
    "team": "CIN",
@@ -995,16 +1015,6 @@
    "date": "2026-11-01T15:45:00-05:00",
    "detail": "Wrist",
    "espn_id": "4710752"
-  },
-  "name:CIN:cedricjohnson": {
-   "name": "Cedric Johnson",
-   "team": "CIN",
-   "pos": "DE",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-01T15:44:00-05:00",
-   "detail": "Ankle",
-   "espn_id": "4430065"
   },
   "00-0038839": {
    "name": "Mitchell Tinsley",
@@ -1279,7 +1289,7 @@
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
    "date": "2026-11-01T15:52:00-05:00",
-   "detail": "Head",
+   "detail": "Concussion",
    "espn_id": "4870706"
   },
   "00-0038041": {
@@ -1639,6 +1649,36 @@
    "espn_id": "4362748",
    "comment": "The Broncos placed Badie (thumb) on injured reserve Saturday, Aric DiLalla of the team's official site reports."
   },
+  "name:DET:cademays": {
+   "name": "Cade Mays",
+   "team": "DET",
+   "pos": "C",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-01T16:03:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "4361788"
+  },
+  "name:DET:djreed": {
+   "name": "D.J. Reed",
+   "team": "DET",
+   "pos": "CB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-01T16:02:00-05:00",
+   "detail": "Hip",
+   "espn_id": "3139387"
+  },
+  "name:DET:jackcampbell": {
+   "name": "Jack Campbell",
+   "team": "DET",
+   "pos": "LB",
+   "status": "Doubtful",
+   "fantasy": "DOUBTFUL",
+   "date": "2026-11-01T16:01:00-05:00",
+   "detail": "Neck",
+   "espn_id": "4569465"
+  },
   "name:DET:jimmyrolder": {
    "name": "Jimmy Rolder",
    "team": "DET",
@@ -1648,16 +1688,6 @@
    "date": "2026-11-01T15:54:00-05:00",
    "detail": "Hamstring",
    "espn_id": "4896353"
-  },
-  "name:DET:jackcampbell": {
-   "name": "Jack Campbell",
-   "team": "DET",
-   "pos": "LB",
-   "status": "Doubtful",
-   "fantasy": "DOUBTFUL",
-   "date": "2026-11-01T15:49:00-05:00",
-   "detail": "Undisclosed",
-   "espn_id": "4569465"
   },
   "00-0038896": {
    "name": "Jacob Saylors",
@@ -1689,16 +1719,6 @@
    "date": "2026-11-01T15:34:00-05:00",
    "detail": "Concussion",
    "espn_id": "4038849"
-  },
-  "name:DET:cademays": {
-   "name": "Cade Mays",
-   "team": "DET",
-   "pos": "C",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-01T14:02:00-05:00",
-   "detail": "Ankle",
-   "espn_id": "4361788"
   },
   "00-0036963": {
    "name": "Amon-Ra St. Brown",
@@ -1831,16 +1851,6 @@
    "date": "2026-10-25T22:06:00-04:00",
    "detail": null,
    "espn_id": "3046779"
-  },
-  "00-0031763": {
-   "name": "DeAndre Carter",
-   "team": "DET",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-22T17:05:00-04:00",
-   "detail": null,
-   "espn_id": "2580216"
   },
   "00-0035700": {
    "name": "Josh Jacobs",
@@ -5105,6 +5115,36 @@
    "detail": null,
    "espn_id": "3871102"
   },
+  "name:TEN:jclatham": {
+   "name": "JC Latham",
+   "team": "TEN",
+   "pos": "OT",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-01T16:06:00-05:00",
+   "detail": "Finger",
+   "espn_id": "4431437"
+  },
+  "name:TEN:peterskoronski": {
+   "name": "Peter Skoronski",
+   "team": "TEN",
+   "pos": "G",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-01T16:02:00-05:00",
+   "detail": "Hamstring",
+   "espn_id": "4429100"
+  },
+  "name:TEN:jameswilliams": {
+   "name": "James Williams Sr.",
+   "team": "TEN",
+   "pos": "LB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-01T15:55:00-05:00",
+   "detail": "Groin",
+   "espn_id": "4431613"
+  },
   "name:TEN:marcusharris": {
    "name": "Marcus Harris",
    "team": "TEN",
@@ -5114,26 +5154,6 @@
    "date": "2026-11-01T15:39:00-05:00",
    "detail": "Ankle",
    "espn_id": "4570469"
-  },
-  "name:TEN:jclatham": {
-   "name": "JC Latham",
-   "team": "TEN",
-   "pos": "OT",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-01T15:18:00-05:00",
-   "detail": "Finger",
-   "espn_id": "4431437"
-  },
-  "name:TEN:jameswilliams": {
-   "name": "James Williams Sr.",
-   "team": "TEN",
-   "pos": "LB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-01T14:56:00-05:00",
-   "detail": "Groin",
-   "espn_id": "4431613"
   },
   "name:TEN:jaylonjones": {
    "name": "Jaylon Jones",
@@ -5287,16 +5307,6 @@
    "date": "2026-10-25T22:29:00-04:00",
    "detail": null,
    "espn_id": "4686728"
-  },
-  "00-0040676": {
-   "name": "Cam Ward",
-   "team": "TEN",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-25T19:30:00-04:00",
-   "detail": null,
-   "espn_id": "4688380"
   },
   "00-0037742": {
    "name": "Treylon Burks",
