@@ -3,10 +3,10 @@
  "season": 2026,
  "week": 8,
  "slate": "2026-W08",
- "started_at": "2026-10-31T23:30:01-04:00",
- "status_at": "2026-10-31T23:30:01-04:00",
- "finished_at": "2026-10-31T23:30:01-04:00",
- "last_ok_at": "2026-10-31T23:30:01-04:00",
+ "started_at": "2026-11-01T00:00:01-04:00",
+ "status_at": "2026-11-01T00:00:01-04:00",
+ "finished_at": "2026-11-01T00:00:06-04:00",
+ "last_ok_at": "2026-11-01T00:00:01-04:00",
  "failed_step": null,
  "steps": [
   {
@@ -32,7 +32,7 @@
   {
    "step": "injuries",
    "status": "skipped",
-   "note": "read at 11:00 PM"
+   "note": "read at 11:30 PM"
   },
   {
    "step": "weather",
@@ -85,49 +85,49 @@
  "keys": [
   {
    "n": 1,
-   "left": 0,
+   "left": 500,
    "shared": false
   },
   {
    "n": 2,
-   "left": 0,
+   "left": 500,
    "shared": false
   },
   {
    "n": 3,
-   "left": 0,
+   "left": 500,
    "shared": false
   },
   {
    "n": 4,
-   "left": 0,
-   "shared": true
+   "left": 500,
+   "shared": false
   },
   {
    "n": 5,
-   "left": 0,
+   "left": 500,
    "shared": false
   },
   {
    "n": 6,
-   "left": 73,
-   "shared": true
+   "left": 500,
+   "shared": false
   },
   {
    "n": 7,
-   "left": 297,
-   "shared": true
+   "left": 496,
+   "shared": false
   }
  ],
- "pool_total": 370,
- "allowance": 0.0,
- "tier": "below",
+ "pool_total": 3496,
+ "allowance": 71.43,
+ "tier": "full",
  "games_left_before_reset": 14,
- "budget_used_today": 6,
+ "budget_used_today": 0,
  "odds": {
   "state": "ok",
   "at": "2026-10-31T17:00:00-04:00",
-  "next_at": null
+  "next_at": "2026-11-01T12:15:00-05:00"
  },
  "due": [],
  "skipped_games": [],
@@ -141,11 +141,11 @@
  "odds_notes": [],
  "runner": {
   "event": "workflow_dispatch",
-  "run_id": "41267386715",
+  "run_id": "41269421628",
   "iteration": 2,
-  "chain_link": 402,
+  "chain_link": 403,
   "chain_started_at": "2026-10-30T17:27:57-04:00",
-  "run_started_at": "2026-10-31T23:00:13-04:00"
+  "run_started_at": "2026-10-31T23:30:13-04:00"
  },
  "live_page": {
   "checked_at": "2026-10-31T23:00:14-04:00",

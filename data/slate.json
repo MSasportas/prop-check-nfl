@@ -14,15 +14,15 @@
  "season": 2026,
  "week": 8,
  "label": "Week 8",
- "generated_at": "2026-10-31T23:30:14-04:00",
- "status_at": "2026-10-31T23:30:14-04:00",
+ "generated_at": "2026-11-01T00:00:01-04:00",
+ "status_at": "2026-11-01T00:00:01-04:00",
  "valid_until": "2026-11-03T06:00:00-05:00",
- "next_check": null,
+ "next_check": "2026-11-01T12:15:00-05:00",
  "status": {
   "odds": {
    "state": "ok",
    "at": "2026-10-31T17:00:00-04:00",
-   "next_at": null
+   "next_at": "2026-11-01T12:15:00-05:00"
   },
   "injuries": {
    "state": "ok",
@@ -39,30 +39,25 @@
    "at": "2026-10-31T12:00:28-04:00"
   },
   "pool": {
-   "credits_left": 370,
+   "credits_left": 3496,
    "keys": 7,
-   "keys_live": 2,
-   "keys_shared": 3,
-   "days_left": 1,
-   "low": true,
+   "keys_live": 7,
+   "keys_shared": 0,
+   "days_left": 7,
+   "low": false,
    "empty": false
   },
   "last_run": {
    "ok": true,
-   "at": "2026-10-31T23:30:14-04:00",
+   "at": "2026-11-01T00:00:01-04:00",
    "failed_step": null
   }
  },
- "banners": [
-  {
-   "level": "warn",
-   "text": "Odds credits are low: 370 left for 14 games this week. Some games get fewer price checks until more keys are added."
-  }
- ],
+ "banners": [],
  "empty": {
   "code": "no_picks_yet",
   "text": "No picks right now. Nothing beats the other books by enough at Hard Rock's prices.",
-  "sub": null
+  "sub": "Next check 12:15 PM."
  },
  "games": [
   {
