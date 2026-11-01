@@ -93,7 +93,7 @@ def scrub(text):
     """Replace every known key with ***. Used on anything printed or written."""
     if not isinstance(text, str):
         text = str(text)
-    for s in _SECRETS:
+    for s in sorted(_SECRETS, key=len, reverse=True):      # longest first: a full URL goes before its own token
         if s in text:
             text = text.replace(s, "***")
     return text

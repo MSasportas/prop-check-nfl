@@ -78,6 +78,19 @@ Retired v1.1 (Oct 13-25: blended chance, parlays, 1st half, M/F/D pulls) is kept
   logs; passed by name only (never `toJSON(secrets)`: GitHub holds the run). The ledger trusts
   `x-requests-remaining` every call; a key spent by another tool (Prop Check NHL) is marked shared and counted at a
   discount. Page warns when the pool is low.
+- **Discord notifications (2026-11-01, copied from NHL/NBA):** `scripts/notify.py`, called at the end of `run.py` (never fails or slows a
+  run: 5 s timeout, one retry, whole run capped at 14 s). Webhook = GitHub secret `DISCORD_WEBHOOK` (read from env `DISCORD_WEBHOOK_URL`,
+  passed to the loop step in `run.yml`); env only, scrubbed from stdout/files, never in the repo or state; unset or empty = does nothing.
+  Sends only: NEW PICKS (one batched message per cycle, 8 blocks then "+N more": bold bet line, game, kickoff, Injury report in /
+  Inactives confirmed, "+X% vs N books, we say Y%, price needs Z%", link), PULLED (only picks already told, before kickoff, with the
+  `if_bet` line), PRICE FINAL (once per told pick after the C read; a pick first shown at that read says "Price final" in its NEW block),
+  ACTION NEEDED (keys refused / pool low or empty: the page's own sentence, once per ET day), a one-time hello. Never no-pick days,
+  heartbeats, injury checks, grading, errors, vetoes. Quiet 12:30-8:00 AM ET (held items go out at 8 if still ahead). Max 12 messages per ET
+  day (PRICE FINAL stops at 9). State `data/state/notified.json` (ids and timestamps only, kept 8 days so a Friday pick is not told again on
+  Monday night; marked only after a 2xx; 429/5xx = retry next cycle). Tests: `tests/test_notify.py` (20, local fake server only; in
+  `PC_NOW`/`PC_DATA_DIR` mode nothing reaches Discord without `PC_DISCORD_FIXTURE_URL`). Secret to add: repo Settings > Secrets and
+  variables > Actions > New repository secret, name `DISCORD_WEBHOOK`, value = the Discord channel webhook URL. Secrets load only when a
+  run starts, so after adding it push any commit touching `scripts/` or `config/` (or wait for the next chain link).
 - **Files:** `index.html` (page), `data/slate.json`, `data/record.json`, `data/rules.json`, `data/status.json`,
   `data/odds/<date>.json` (every price pulled, others included), `data/gg/events.jsonl` (research log), `data/watch/` (behind-the-scenes tracks), `data/state/`.
   `fixtures/` = page test data, schema 2 (`?fixture=NAME`, built by `fixtures/make_fixtures.py`).
@@ -110,6 +123,7 @@ Retired v1.1 (Oct 13-25: blended chance, parlays, 1st half, M/F/D pulls) is kept
 16. The watch tracks use the live eligibility vetoes as they stand NOW when a read is first scanned (a later change of a player's status does not rewrite old rows). Candidate rows are read-level: a side that stays a candidate on R, W and C is counted three times (`distinct_sides` counts it once).
 17. **The fallback switch is untested on real NFL reads.** Tested on the synthetic world only (off = nothing; on = pick, blocked by a held Gap + Guard pick, pulled on price, locked and graded on its own ps1 line). The page shows a pin_solo pick from `vs` and `reason` without change (fixture `pinsolo`). Needs two usable reads after the final injury report, so on a Sunday game it only fires when R and W/C both exist (W is zero before the Nov 1 credit reset, section 15 above).
 18. **`data/watch/events.jsonl` is append-only at write time** (watch.append runs guard_record.check on the old bytes before every write, like data/gg) but `guard_record.py --history` walks only the Record, not the watch log or its git history.
+19. **Discord is built but OFF until Matt adds the `DISCORD_WEBHOOK` secret** (2026-11-01: he could not add it right then). Until then `notify.py` does nothing and no message is lost: picks open at the time are told on the first cycle after the secret loads (the hello first). The webhook URL was shared in chat only; it is not in the repo. If it was ever pasted anywhere public, make a new one in Discord (channel settings > Integrations > Webhooks).
 
 ## 8. Rule-change log
 | Date | Change | Why | Sample |
@@ -124,6 +138,7 @@ Retired v1.1 (Oct 13-25: blended chance, parlays, 1st half, M/F/D pulls) is kept
 | 2026-10-13 | v1.0 set (section 4) | First build. Sharp standard from the DS backtest and one live Hard Rock pull. Spotlight rules dropped | Backtest only; 0 graded live legs |
 
 ## 9. Session log (newest first, one line each)
+- 2026-11-01 ~10 AM (CEO, Matt: do what NHL and NBA do, send Discord messages): ported `notify.py` (NEW PICK, PULLED, PRICE FINAL, ACTION, hello) to the NFL slate shape, wired it at the end of `run.py`, `DISCORD_WEBHOOK` added to `run.yml`, `common.scrub` now replaces the longest secret first, 20 tests (187 pass). No rule, pick or Record change. Off until the secret exists (section 7 item 19).
 - 2026-10-30 night: Builder prebuilt the Pinnacle-moves-alone fallback switch (`ops.pin_solo.live`, OFF): ps1 picks, own Record line, own pause, one pick per player across methods; SPEC section 11; page fixture `pinsolo` renders unchanged; 164 tests. Do not turn on without Matt.
 - 2026-10-30 night (QA fixes): page shows the ps1 line on the Record tab and a method tag on pin_solo cards (fixtures `pinsolo`, `pinsolo_empty`, 380px clean); `skip_whole_lines` true on both watch tracks; ps1 picks count as holding a focus market for the C read; switch needs a literal `true`; pair `gap_min` from UTC times; 167 tests. **To flip: file `config/rules.json`, key `ops.pin_solo.live`, value `true` (false = off). Only when Matt says so.**
 - 2026-10-30 evening: Builder added the behind-the-scenes watch tracks (`pin_solo`, `pin_judge`, watch-only W read, `data/watch/summary.json`; SPEC section 10). The watch step is soft (never marks the run failed). Live values untouched. Page tab for it is the UX agent's job.

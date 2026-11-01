@@ -4,7 +4,7 @@
 # other days, hourly overnight), then its last step starts the next run with workflow_dispatch. The hourly schedule
 # and code pushes only (re)start the chain. The concurrency group keeps one run going and at most one waiting.
 # Off switch: commit a file named config/stop_timer.
-# Secrets: only ODDS_API_KEYS and ODDS_API_KEYS_2, passed by name to the loop step. Never dump the whole secrets object.
+# Secrets: only ODDS_API_KEYS, ODDS_API_KEYS_2 and DISCORD_WEBHOOK, passed by name to the loop step. Never dump the whole secrets object.
 name: run
 on:
   workflow_dispatch:
@@ -45,6 +45,7 @@ jobs:
         env:
           ODDS_API_KEYS: ${{ secrets.ODDS_API_KEYS }}    # the only place the keys exist; never echoed
           ODDS_API_KEYS_2: ${{ secrets.ODDS_API_KEYS_2 }}   # second pool (optional, may be empty)
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK }}   # optional; notifications only, never echoed
           GITHUB_TOKEN: ${{ github.token }}              # GitHub API (nflverse release info) rate limit; scrubbed
           PC_RUNNER_EVENT: ${{ github.event_name }}
           PC_RUNNER_RUN_ID: ${{ github.run_id }}

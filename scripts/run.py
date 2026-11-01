@@ -42,6 +42,7 @@ import grade       # noqa: E402
 import watch       # noqa: E402
 import injuries    # noqa: E402
 import names       # noqa: E402
+import notify      # noqa: E402
 import odds        # noqa: E402
 import record      # noqa: E402
 import roster      # noqa: E402
@@ -602,7 +603,7 @@ def run(only=None, dry_run=False):
     now = common.now()
     started_at = now
     odds.load_keys()                                        # registers the keys so nothing can print them
-    for k in ("GITHUB_TOKEN", "GH_TOKEN"):
+    for k in ("GITHUB_TOKEN", "GH_TOKEN", "DISCORD_WEBHOOK_URL"):
         common.register_secret(os.environ.get(k))
     common.SOURCES.clear()
     odds.SOURCE.update(ok=0, failed=0)
@@ -650,6 +651,11 @@ def run(only=None, dry_run=False):
     except Exception as e:
         common.log("status write failed: %s" % common.short_err(e))
         raise
+    if only is None and not dry_run:
+        try:
+            notify.notify()                                 # Discord; never raises, 5 s timeout per post
+        except Exception:
+            pass
     for s in r.steps:
         common.log("%-9s %-8s %s" % (s["step"], s["status"], s["note"]))
     return r
