@@ -3,10 +3,10 @@
  "season": 2026,
  "week": 8,
  "slate": "2026-W08",
- "started_at": "2026-11-01T09:20:00-05:00",
- "status_at": "2026-11-01T09:20:00-05:00",
- "finished_at": "2026-11-01T09:20:00-05:00",
- "last_ok_at": "2026-11-01T09:20:00-05:00",
+ "started_at": "2026-11-01T09:30:00-05:00",
+ "status_at": "2026-11-01T09:30:00-05:00",
+ "finished_at": "2026-11-01T09:30:00-05:00",
+ "last_ok_at": "2026-11-01T09:30:00-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -22,7 +22,7 @@
   {
    "step": "stats",
    "status": "skipped",
-   "note": "play-by-play unchanged (7433377 bytes)"
+   "note": "checked at 9:20 AM"
   },
   {
    "step": "roster",
@@ -61,8 +61,8 @@
   },
   {
    "step": "slate",
-   "status": "skipped",
-   "note": "unchanged"
+   "status": "ok",
+   "note": "0 open pick(s), 0 pulled"
   },
   {
    "step": "record",
@@ -120,9 +120,9 @@
   }
  ],
  "pool_total": 3496,
- "allowance": 71.43,
+ "allowance": 66.67,
  "tier": "full",
- "games_left_before_reset": 14,
+ "games_left_before_reset": 15,
  "budget_used_today": 0,
  "odds": {
   "state": "ok",
@@ -142,7 +142,7 @@
  "runner": {
   "event": "workflow_dispatch",
   "run_id": "41313167754",
-  "iteration": 4,
+  "iteration": 5,
   "chain_link": 836,
   "chain_started_at": "2026-10-30T17:27:57-04:00",
   "run_started_at": "2026-11-01T08:50:12-05:00"

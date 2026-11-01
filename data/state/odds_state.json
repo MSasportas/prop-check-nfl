@@ -454,14 +454,14 @@
  "fail_note": null,
  "key_count": 7,
  "plan": {
-  "allowance": 71.43,
+  "allowance": 66.67,
   "tier": "full",
   "pulls": "RC",
   "pool_at_plan": 1000,
-  "games_left": 14,
+  "games_left": 15,
   "pool_raw": 3496,
   "keys_shared": 0,
-  "made_at": "2026-11-01T00:00:01-04:00"
+  "made_at": "2026-11-01T09:30:00-05:00"
  },
  "failed": {}
 }
