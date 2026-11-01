@@ -1,7 +1,79 @@
 {
- "at": "2026-11-01T11:50:00-05:00",
+ "at": "2026-11-01T12:00:00-05:00",
  "source": "espn",
  "players": {
+  "name:ARI:walternolen": {
+   "name": "Walter Nolen III",
+   "team": "ARI",
+   "pos": "DT",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T11:39:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "4685503"
+  },
+  "name:ARI:albertreese": {
+   "name": "Albert Reese IV",
+   "team": "ARI",
+   "pos": "OT",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T11:39:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4683506"
+  },
+  "name:ARI:starlingthomas": {
+   "name": "Starling Thomas V",
+   "team": "ARI",
+   "pos": "CB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T11:39:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4363408"
+  },
+  "00-0038397": {
+   "name": "Evan Hull",
+   "team": "ARI",
+   "pos": "RB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T11:39:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4569609",
+   "comment": "inactive"
+  },
+  "name:ARI:ekuleota": {
+   "name": "Eku Leota",
+   "team": "ARI",
+   "pos": "LB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T11:39:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4361272"
+  },
+  "name:ARI:jongaines": {
+   "name": "Jon Gaines II",
+   "team": "ARI",
+   "pos": "G",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T11:39:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "4367199"
+  },
+  "00-0041561": {
+   "name": "Carson Beck",
+   "team": "ARI",
+   "pos": "QB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T11:39:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4430841",
+   "comment": "inactive"
+  },
   "00-0036510": {
    "name": "Kenny Yeboah",
    "team": "ARI",
@@ -11,36 +83,6 @@
    "date": "2026-10-31T20:49:00-04:00",
    "detail": null,
    "espn_id": "4044144"
-  },
-  "name:ARI:jongaines": {
-   "name": "Jon Gaines II",
-   "team": "ARI",
-   "pos": "G",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-30T21:30:00-04:00",
-   "detail": "Ankle",
-   "espn_id": "4367199"
-  },
-  "name:ARI:maxmelton": {
-   "name": "Max Melton",
-   "team": "ARI",
-   "pos": "CB",
-   "status": "Questionable",
-   "fantasy": null,
-   "date": "2026-10-30T21:11:00-04:00",
-   "detail": null,
-   "espn_id": "4698113"
-  },
-  "name:ARI:andrewwingard": {
-   "name": "Andrew Wingard",
-   "team": "ARI",
-   "pos": "S",
-   "status": "Questionable",
-   "fantasy": null,
-   "date": "2026-10-30T21:09:00-04:00",
-   "detail": null,
-   "espn_id": "3918331"
   },
   "00-0037157": {
    "name": "Bam Knight",
@@ -62,16 +104,6 @@
    "detail": null,
    "espn_id": "4373626"
   },
-  "name:ARI:walternolen": {
-   "name": "Walter Nolen III",
-   "team": "ARI",
-   "pos": "DT",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-10-30T17:28:00-04:00",
-   "detail": "Ankle",
-   "espn_id": "4685503"
-  },
   "00-0038559": {
    "name": "Michael Wilson",
    "team": "ARI",
@@ -91,26 +123,6 @@
    "date": "2026-10-30T17:13:00-04:00",
    "detail": null,
    "espn_id": "4870808"
-  },
-  "00-0041561": {
-   "name": "Carson Beck",
-   "team": "ARI",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": "INACTIVE",
-   "date": "2026-10-29T21:19:00-04:00",
-   "detail": "Coach's Decision",
-   "espn_id": "4430841"
-  },
-  "name:ARI:hjaltefroholdt": {
-   "name": "Hjalte Froholdt",
-   "team": "ARI",
-   "pos": "C",
-   "status": "Questionable",
-   "fantasy": null,
-   "date": "2026-10-29T19:08:00-04:00",
-   "detail": null,
-   "espn_id": "3886633"
   },
   "00-0038640": {
    "name": "Jalen Brooks",
@@ -154,27 +166,6 @@
    "espn_id": "4696700",
    "comment": "Head coach Mike LaFleur stated he's \"not too sure\" if Reiman (ankle) will play this season, Dani Sureck of the Cardinals' official site reports."
   },
-  "00-0033553": {
-   "name": "James Conner",
-   "team": "ARI",
-   "pos": "RB",
-   "status": "Injured Reserve",
-   "fantasy": "IR-R",
-   "date": "2026-10-26T18:03:00-04:00",
-   "detail": "Foot",
-   "espn_id": "3045147",
-   "comment": "When asked Monday if Conner (foot) will play this season, coach Mike LaFleur said \"potentially,\" Dani Sureck of the Cardinals' official site reports."
-  },
-  "00-0033119": {
-   "name": "Jacoby Brissett",
-   "team": "ARI",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-25T20:51:00-04:00",
-   "detail": null,
-   "espn_id": "2578570"
-  },
   "00-0041194": {
    "name": "Jack Strand",
    "team": "ATL",
@@ -217,16 +208,6 @@
    "detail": "Coach's Decision",
    "espn_id": "4569511"
   },
-  "name:ATL:billybowman": {
-   "name": "Billy Bowman Jr.",
-   "team": "ATL",
-   "pos": "CB",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-11-01T11:35:00-05:00",
-   "detail": "Hamstring",
-   "espn_id": "4431194"
-  },
   "00-0027973": {
    "name": "Andy Dalton",
    "team": "ATL",
@@ -237,16 +218,6 @@
    "detail": "Coach's Decision",
    "espn_id": "14012",
    "comment": "inactive"
-  },
-  "name:ATL:divinedeablo": {
-   "name": "Divine Deablo",
-   "team": "ATL",
-   "pos": "LB",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-11-01T11:35:00-05:00",
-   "detail": "Forearm",
-   "espn_id": "4037626"
   },
   "00-0035208": {
    "name": "Olamide Zaccheaus",
@@ -267,6 +238,26 @@
    "date": "2026-10-31T23:11:00-04:00",
    "detail": "Ankle",
    "espn_id": "4685590"
+  },
+  "name:ATL:billybowman": {
+   "name": "Billy Bowman Jr.",
+   "team": "ATL",
+   "pos": "CB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-31T20:39:00-04:00",
+   "detail": "Hamstring",
+   "espn_id": "4431194"
+  },
+  "name:ATL:divinedeablo": {
+   "name": "Divine Deablo",
+   "team": "ATL",
+   "pos": "LB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-10-31T20:36:00-04:00",
+   "detail": "Forearm",
+   "espn_id": "4037626"
   },
   "00-0040432": {
    "name": "Beaux Collins",
@@ -478,7 +469,7 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-11-01T11:35:00-05:00",
+   "date": "2026-11-01T11:50:00-05:00",
    "detail": "Suspension",
    "espn_id": "4034953"
   },
@@ -975,10 +966,10 @@
    "pos": "WR",
    "status": "Out",
    "fantasy": "INACTIVE",
-   "date": "2026-11-01T11:37:00-05:00",
+   "date": "2026-11-01T11:51:00-05:00",
    "detail": "Coach's Decision",
    "espn_id": "4690070",
-   "comment": "inactive"
+   "comment": "Tinsley (coach's decision) is inactive for Sunday's game against Tennessee."
   },
   "name:CIN:landonrobinson": {
    "name": "Landon Robinson",
@@ -1356,16 +1347,6 @@
    "date": "2026-10-31T22:46:00-04:00",
    "detail": null,
    "espn_id": "4361988"
-  },
-  "name:DAL:pjlocke": {
-   "name": "P.J. Locke",
-   "team": "DAL",
-   "pos": "S",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-31T22:44:00-04:00",
-   "detail": "Foot",
-   "espn_id": "3929850"
   },
   "name:DAL:jonathanbullard": {
    "name": "Jonathan Bullard",
@@ -2652,6 +2633,79 @@
    "espn_id": "4596602",
    "comment": "The Chiefs placed Smith (hamstring) on injured reserve Saturday."
   },
+  "00-0038579": {
+   "name": "Aidan O'Connell",
+   "team": "LV",
+   "pos": "QB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T11:40:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4260394",
+   "comment": "inactive"
+  },
+  "name:LV:jjpegues": {
+   "name": "JJ Pegues",
+   "team": "LV",
+   "pos": "DT",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T11:40:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4430896"
+  },
+  "00-0040581": {
+   "name": "Dont'e Thornton Jr.",
+   "team": "LV",
+   "pos": "WR",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T11:40:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4432775",
+   "comment": "inactive"
+  },
+  "name:LV:daltonjohnson": {
+   "name": "Dalton Johnson",
+   "team": "LV",
+   "pos": "S",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T11:40:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4682488"
+  },
+  "name:LV:tristinmccollum": {
+   "name": "Tristin McCollum",
+   "team": "LV",
+   "pos": "S",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T11:40:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4250393"
+  },
+  "name:LV:brycecabeldue": {
+   "name": "Bryce Cabeldue",
+   "team": "LV",
+   "pos": "G",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T11:40:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4612077"
+  },
+  "00-0040894": {
+   "name": "Malik Benson",
+   "team": "LV",
+   "pos": "WR",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T11:40:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "5150247",
+   "comment": "inactive"
+  },
   "name:LV:patrickjohnson": {
    "name": "Patrick Johnson",
    "team": "LV",
@@ -2703,26 +2757,6 @@
    "detail": null,
    "espn_id": "4432665"
   },
-  "name:LV:jacksonpowersjohnson": {
-   "name": "Jackson Powers-Johnson",
-   "team": "LV",
-   "pos": "G",
-   "status": "Questionable",
-   "fantasy": null,
-   "date": "2026-10-29T16:44:00-04:00",
-   "detail": null,
-   "espn_id": "4875295"
-  },
-  "00-0040581": {
-   "name": "Dont'e Thornton Jr.",
-   "team": "LV",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": "INACTIVE",
-   "date": "2026-10-27T16:08:00-04:00",
-   "detail": "Coach's Decision",
-   "espn_id": "4432775"
-  },
   "00-0035891": {
    "name": "Cody White",
    "team": "LV",
@@ -2762,36 +2796,6 @@
    "date": "2026-10-26T15:53:00-04:00",
    "detail": null,
    "espn_id": "14880"
-  },
-  "00-0038563": {
-   "name": "Tre Tucker",
-   "team": "LV",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-25T22:54:00-04:00",
-   "detail": null,
-   "espn_id": "4428718"
-  },
-  "00-0039066": {
-   "name": "Michael Mayer",
-   "team": "LV",
-   "pos": "TE",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-25T22:34:00-04:00",
-   "detail": null,
-   "espn_id": "4429086"
-  },
-  "00-0040878": {
-   "name": "Mike Washington Jr.",
-   "team": "LV",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-25T22:32:00-04:00",
-   "detail": null,
-   "espn_id": "4686658"
   },
   "name:LAC:derwinjames": {
    "name": "Derwin James Jr.",
@@ -3278,6 +3282,68 @@
    "detail": null,
    "espn_id": "4711533"
   },
+  "name:MIN:jakobethomas": {
+   "name": "Jakobe Thomas",
+   "team": "MIN",
+   "pos": "S",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T11:43:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4710865"
+  },
+  "name:MIN:calebtiernan": {
+   "name": "Caleb Tiernan",
+   "team": "MIN",
+   "pos": "OT",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T11:43:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4592836"
+  },
+  "name:MIN:elijahwilliams": {
+   "name": "Elijah Williams",
+   "team": "MIN",
+   "pos": "DE",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T11:43:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4696782"
+  },
+  "00-0040494": {
+   "name": "Max Brosmer",
+   "team": "MIN",
+   "pos": "QB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T11:43:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4573398",
+   "comment": "inactive"
+  },
+  "00-0041104": {
+   "name": "Demond Claiborne",
+   "team": "MIN",
+   "pos": "RB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T11:43:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4832846",
+   "comment": "inactive"
+  },
+  "name:MIN:charlesdemmings": {
+   "name": "Charles Demmings",
+   "team": "MIN",
+   "pos": "CB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T11:43:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "5091793"
+  },
   "00-0036425": {
    "name": "DeeJay Dallas",
    "team": "MIN",
@@ -3298,16 +3364,6 @@
    "detail": null,
    "espn_id": "4360569"
   },
-  "name:MIN:jayward": {
-   "name": "Jay Ward",
-   "team": "MIN",
-   "pos": "S",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-30T14:18:00-04:00",
-   "detail": "Knee",
-   "espn_id": "4568007"
-  },
   "00-0040215": {
    "name": "Gavin Bartholomew",
    "team": "MIN",
@@ -3327,26 +3383,6 @@
    "date": "2026-10-30T14:16:00-04:00",
    "detail": null,
    "espn_id": "3042519"
-  },
-  "00-0041104": {
-   "name": "Demond Claiborne",
-   "team": "MIN",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": "INACTIVE",
-   "date": "2026-10-26T14:39:00-04:00",
-   "detail": "Coach's Decision",
-   "espn_id": "4832846"
-  },
-  "00-0040494": {
-   "name": "Max Brosmer",
-   "team": "MIN",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": "INACTIVE",
-   "date": "2026-10-26T14:39:00-04:00",
-   "detail": "Coach's Decision",
-   "espn_id": "4573398"
   },
   "00-0036259": {
    "name": "Jauan Jennings",
@@ -3904,6 +3940,27 @@
    "detail": "Chest",
    "espn_id": "3929950"
   },
+  "name:NYJ:davidbailey": {
+   "name": "David Bailey",
+   "team": "NYJ",
+   "pos": "LB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T11:51:00-05:00",
+   "detail": "Groin",
+   "espn_id": "4685248"
+  },
+  "00-0033375": {
+   "name": "Tim Patrick",
+   "team": "NYJ",
+   "pos": "WR",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T11:48:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "3134353",
+   "comment": "Patrick (coach's decision) is inactive for Sunday's game versus the Raiders."
+  },
   "name:NYJ:nahshonwright": {
    "name": "Nahshon Wright",
    "team": "NYJ",
@@ -3934,17 +3991,6 @@
    "detail": "Ankle",
    "espn_id": "4362094"
   },
-  "00-0033375": {
-   "name": "Tim Patrick",
-   "team": "NYJ",
-   "pos": "WR",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-11-01T11:37:00-05:00",
-   "detail": "Coach's Decision",
-   "espn_id": "3134353",
-   "comment": "inactive"
-  },
   "name:NYJ:kohllevao": {
    "name": "Kohl Levao",
    "team": "NYJ",
@@ -3954,16 +4000,6 @@
    "date": "2026-11-01T11:37:00-05:00",
    "detail": "Coach's Decision",
    "espn_id": "4373951"
-  },
-  "name:NYJ:davidbailey": {
-   "name": "David Bailey",
-   "team": "NYJ",
-   "pos": "LB",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-11-01T11:37:00-05:00",
-   "detail": "Groin",
-   "espn_id": "4685248"
   },
   "00-0038120": {
    "name": "Breece Hall",
@@ -4753,6 +4789,26 @@
    "detail": null,
    "espn_id": "3912547"
   },
+  "00-0033921": {
+   "name": "Chris Godwin Jr.",
+   "team": "TB",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T11:51:00-05:00",
+   "detail": null,
+   "espn_id": "3116165"
+  },
+  "00-0036919": {
+   "name": "Kenny Gainwell",
+   "team": "TB",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T11:44:00-05:00",
+   "detail": null,
+   "espn_id": "4371733"
+  },
   "name:TB:billyschrauth": {
    "name": "Billy Schrauth",
    "team": "TB",
@@ -4803,26 +4859,6 @@
    "detail": "Foot",
    "espn_id": "4567750",
    "comment": "inactive"
-  },
-  "name:TB:grahambarton": {
-   "name": "Graham Barton",
-   "team": "TB",
-   "pos": "C",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-01T10:17:00-05:00",
-   "detail": "Illness",
-   "espn_id": "4429251"
-  },
-  "00-0036919": {
-   "name": "Kenny Gainwell",
-   "team": "TB",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-01T07:54:00-05:00",
-   "detail": null,
-   "espn_id": "4371733"
   },
   "name:TB:joshhayes": {
    "name": "Josh Hayes",
@@ -4894,16 +4930,6 @@
    "detail": null,
    "espn_id": "4608810"
   },
-  "00-0033921": {
-   "name": "Chris Godwin Jr.",
-   "team": "TB",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-25T20:12:00-04:00",
-   "detail": null,
-   "espn_id": "3116165"
-  },
   "00-0039361": {
    "name": "Bucky Irving",
    "team": "TB",
@@ -4933,6 +4959,17 @@
    "date": "2026-10-22T20:24:00-04:00",
    "detail": null,
    "espn_id": "3871102"
+  },
+  "00-0036876": {
+   "name": "Kylen Granson",
+   "team": "TEN",
+   "pos": "TE",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T11:48:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4039160",
+   "comment": "Granson (coach's decision) is inactive for Sunday's game against the Bengals, Jim Wyatt of the Titans' official site reports."
   },
   "00-0039032": {
    "name": "Tyjae Spears",
@@ -4975,17 +5012,6 @@
    "date": "2026-11-01T11:35:00-05:00",
    "detail": "Coach's Decision",
    "espn_id": "5081785"
-  },
-  "00-0036876": {
-   "name": "Kylen Granson",
-   "team": "TEN",
-   "pos": "TE",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-11-01T11:35:00-05:00",
-   "detail": "Coach's Decision",
-   "espn_id": "4039160",
-   "comment": "inactive"
   },
   "name:TEN:jaylonjones": {
    "name": "Jaylon Jones",
@@ -5648,6 +5674,34 @@
   "00-0041565": {
    "status": "Out",
    "at": "2026-11-01T11:50:00-05:00"
+  },
+  "00-0038397": {
+   "status": "Out",
+   "at": "2026-11-01T12:00:00-05:00"
+  },
+  "00-0041561": {
+   "status": "Out",
+   "at": "2026-11-01T12:00:00-05:00"
+  },
+  "00-0038579": {
+   "status": "Out",
+   "at": "2026-11-01T12:00:00-05:00"
+  },
+  "00-0040581": {
+   "status": "Out",
+   "at": "2026-11-01T12:00:00-05:00"
+  },
+  "00-0040894": {
+   "status": "Out",
+   "at": "2026-11-01T12:00:00-05:00"
+  },
+  "00-0040494": {
+   "status": "Out",
+   "at": "2026-11-01T12:00:00-05:00"
+  },
+  "00-0041104": {
+   "status": "Out",
+   "at": "2026-11-01T12:00:00-05:00"
   }
  }
 }

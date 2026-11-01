@@ -2,10 +2,46 @@
  "2026_08_ARI_DAL": {
   "_kickoff": "2026-11-01T13:00:00-05:00",
   "ARI": {
-   "confirmed": false,
-   "count": 0,
-   "players": [],
-   "confirmed_at": null
+   "confirmed": true,
+   "count": 7,
+   "players": [
+    {
+     "pid": null,
+     "name": "Albert Reese IV",
+     "pos": "OT"
+    },
+    {
+     "pid": "00-0041561",
+     "name": "Carson Beck",
+     "pos": "QB"
+    },
+    {
+     "pid": null,
+     "name": "Eku Leota",
+     "pos": "LB"
+    },
+    {
+     "pid": "00-0038397",
+     "name": "Evan Hull",
+     "pos": "RB"
+    },
+    {
+     "pid": null,
+     "name": "Jon Gaines II",
+     "pos": "G"
+    },
+    {
+     "pid": null,
+     "name": "Starling Thomas V",
+     "pos": "CB"
+    },
+    {
+     "pid": null,
+     "name": "Walter Nolen III",
+     "pos": "DT"
+    }
+   ],
+   "confirmed_at": "2026-11-01T12:00:00-05:00"
   },
   "DAL": {
    "confirmed": true,
@@ -49,7 +85,7 @@
   "_kickoff": "2026-11-01T13:00:00-05:00",
   "ATL": {
    "confirmed": true,
-   "count": 7,
+   "count": 5,
    "players": [
     {
      "pid": "00-0027973",
@@ -57,19 +93,9 @@
      "pos": "QB"
     },
     {
-     "pid": null,
-     "name": "Billy Bowman Jr.",
-     "pos": "CB"
-    },
-    {
      "pid": "00-0037746",
      "name": "Brian Robinson Jr.",
      "pos": "RB"
-    },
-    {
-     "pid": null,
-     "name": "Divine Deablo",
-     "pos": "LB"
     },
     {
      "pid": null,
@@ -371,10 +397,46 @@
  "2026_08_LV_NYJ": {
   "_kickoff": "2026-11-01T13:00:00-05:00",
   "LV": {
-   "confirmed": false,
-   "count": 0,
-   "players": [],
-   "confirmed_at": null
+   "confirmed": true,
+   "count": 7,
+   "players": [
+    {
+     "pid": "00-0038579",
+     "name": "Aidan O'Connell",
+     "pos": "QB"
+    },
+    {
+     "pid": null,
+     "name": "Bryce Cabeldue",
+     "pos": "G"
+    },
+    {
+     "pid": null,
+     "name": "Dalton Johnson",
+     "pos": "S"
+    },
+    {
+     "pid": "00-0040581",
+     "name": "Dont'e Thornton Jr.",
+     "pos": "WR"
+    },
+    {
+     "pid": null,
+     "name": "JJ Pegues",
+     "pos": "DT"
+    },
+    {
+     "pid": "00-0040894",
+     "name": "Malik Benson",
+     "pos": "WR"
+    },
+    {
+     "pid": null,
+     "name": "Tristin McCollum",
+     "pos": "S"
+    }
+   ],
+   "confirmed_at": "2026-11-01T12:00:00-05:00"
   },
   "NYJ": {
    "confirmed": true,
@@ -422,10 +484,41 @@
  "2026_08_MIN_DET": {
   "_kickoff": "2026-11-01T13:00:00-05:00",
   "MIN": {
-   "confirmed": false,
-   "count": 0,
-   "players": [],
-   "confirmed_at": null
+   "confirmed": true,
+   "count": 6,
+   "players": [
+    {
+     "pid": null,
+     "name": "Caleb Tiernan",
+     "pos": "OT"
+    },
+    {
+     "pid": null,
+     "name": "Charles Demmings",
+     "pos": "CB"
+    },
+    {
+     "pid": "00-0041104",
+     "name": "Demond Claiborne",
+     "pos": "RB"
+    },
+    {
+     "pid": null,
+     "name": "Elijah Williams",
+     "pos": "DE"
+    },
+    {
+     "pid": null,
+     "name": "Jakobe Thomas",
+     "pos": "S"
+    },
+    {
+     "pid": "00-0040494",
+     "name": "Max Brosmer",
+     "pos": "QB"
+    }
+   ],
+   "confirmed_at": "2026-11-01T12:00:00-05:00"
   },
   "DET": {
    "confirmed": true,

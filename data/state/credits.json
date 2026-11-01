@@ -3,11 +3,11 @@
  "keys": [
   {
    "n": 1,
-   "left": 428,
+   "left": 410,
    "status": "ok",
-   "checked_at": "2026-11-01T11:50:00-05:00",
+   "checked_at": "2026-11-01T12:00:00-05:00",
    "month": "2026-11",
-   "after_us": 428,
+   "after_us": 410,
    "shared": false,
    "shared_at": null,
    "others_spent": 0
@@ -1085,6 +1085,30 @@
    "date": "2026-11-01",
    "pull": "C",
    "game_id": "2026_08_TEN_CIN",
+   "cost": 6,
+   "key": 1
+  },
+  {
+   "at": "2026-11-01T12:00:00-05:00",
+   "date": "2026-11-01",
+   "pull": "C",
+   "game_id": "2026_08_ARI_DAL",
+   "cost": 6,
+   "key": 1
+  },
+  {
+   "at": "2026-11-01T12:00:00-05:00",
+   "date": "2026-11-01",
+   "pull": "C",
+   "game_id": "2026_08_LV_NYJ",
+   "cost": 6,
+   "key": 1
+  },
+  {
+   "at": "2026-11-01T12:00:00-05:00",
+   "date": "2026-11-01",
+   "pull": "C",
+   "game_id": "2026_08_MIN_DET",
    "cost": 6,
    "key": 1
   }
