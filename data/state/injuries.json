@@ -1,5 +1,5 @@
 {
- "at": "2026-11-01T10:10:00-05:00",
+ "at": "2026-11-01T10:40:00-05:00",
  "source": "espn",
  "players": {
   "00-0036510": {
@@ -338,6 +338,17 @@
    "detail": null,
    "espn_id": "5344782"
   },
+  "00-0040888": {
+   "name": "Adam Randall",
+   "team": "BAL",
+   "pos": "RB",
+   "status": "Injured Reserve",
+   "fantasy": "IR-R",
+   "date": "2026-11-01T10:14:00-05:00",
+   "detail": "Neck",
+   "espn_id": "4685526",
+   "comment": "Randall (neck) was not activated from injured reserve and will not be available for Sunday's game against the Bills, Jeff Zrebiec of The Athletic reports."
+  },
   "name:BAL:tjtampa": {
    "name": "T.J. Tampa",
    "team": "BAL",
@@ -357,17 +368,6 @@
    "date": "2026-10-30T21:55:00-04:00",
    "detail": "Knee - MCL",
    "espn_id": "4832793"
-  },
-  "00-0040888": {
-   "name": "Adam Randall",
-   "team": "BAL",
-   "pos": "RB",
-   "status": "Injured Reserve",
-   "fantasy": "IR-R",
-   "date": "2026-10-30T19:36:00-04:00",
-   "detail": "Neck",
-   "espn_id": "4685526",
-   "comment": "Randall (neck) is questionable for Sunday's game against the Bills."
   },
   "00-0035993": {
    "name": "Tyler Huntley",
@@ -505,9 +505,20 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-11-01T10:01:00-05:00",
+   "date": "2026-11-01T10:18:00-05:00",
    "detail": "Suspension",
    "espn_id": "4034953"
+  },
+  "00-0038933": {
+   "name": "Dalton Kincaid",
+   "team": "BUF",
+   "pos": "TE",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-01T10:00:00-05:00",
+   "detail": "Chest",
+   "espn_id": "4385690",
+   "comment": "The Bills are optimistic that Kincaid (chest), who is listed as questionable for Sunday's game against the Ravens, will be able to play, Jeremy Fowler of ESPN.c"
   },
   "00-0034827": {
    "name": "DJ Moore",
@@ -559,17 +570,6 @@
    "date": "2026-10-30T15:12:00-04:00",
    "detail": "Calf",
    "espn_id": "3127294"
-  },
-  "00-0038933": {
-   "name": "Dalton Kincaid",
-   "team": "BUF",
-   "pos": "TE",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-30T13:48:00-04:00",
-   "detail": "Chest",
-   "espn_id": "4385690",
-   "comment": "Kincaid (chest) is listed as questionable for Sunday's game against the Ravens, Katherine Fitzgerald of The Buffalo News reports."
   },
   "00-0038679": {
    "name": "Tyrell Shavers",
@@ -4642,6 +4642,16 @@
    "date": "2026-10-25T23:52:00-04:00",
    "detail": null,
    "espn_id": "3912547"
+  },
+  "name:TB:grahambarton": {
+   "name": "Graham Barton",
+   "team": "TB",
+   "pos": "C",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-01T10:17:00-05:00",
+   "detail": "Illness",
+   "espn_id": "4429251"
   },
   "00-0036919": {
    "name": "Kenny Gainwell",
