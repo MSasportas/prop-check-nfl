@@ -725,10 +725,41 @@
  "2026_08_NE_MIA": {
   "_kickoff": "2026-11-01T16:25:00-05:00",
   "NE": {
-   "confirmed": false,
-   "count": 0,
-   "players": [],
-   "confirmed_at": null
+   "confirmed": true,
+   "count": 6,
+   "players": [
+    {
+     "pid": "00-0035676",
+     "name": "A.J. Brown",
+     "pos": "WR"
+    },
+    {
+     "pid": "00-0041123",
+     "name": "Behren Morton",
+     "pos": "QB"
+    },
+    {
+     "pid": null,
+     "name": "Channing Canada",
+     "pos": "CB"
+    },
+    {
+     "pid": null,
+     "name": "Elliott Davison",
+     "pos": "S"
+    },
+    {
+     "pid": null,
+     "name": "Karon Prunty",
+     "pos": "CB"
+    },
+    {
+     "pid": "00-0040734",
+     "name": "TreVeyon Henderson",
+     "pos": "RB"
+    }
+   ],
+   "confirmed_at": "2026-11-01T15:10:00-05:00"
   },
   "MIA": {
    "confirmed": false,
