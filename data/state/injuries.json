@@ -1,5 +1,5 @@
 {
- "at": "2026-10-31T23:30:14-04:00",
+ "at": "2026-11-01T00:10:00-04:00",
  "source": "espn",
  "players": {
   "00-0036510": {
@@ -214,7 +214,7 @@
    "date": "2026-10-31T20:31:00-04:00",
    "detail": "Hip",
    "espn_id": "4431210",
-   "comment": "Collins (hip) has been ruled out for Sundays' game against the Buccaneers and will remain on injured reserve, Tori McElhaney of the Falcons' official site repor"
+   "comment": "Collins (hip) has been ruled out for Sunday's game against the Buccaneers and will remain on injured reserve, Tori McElhaney of the Falcons' official site repor"
   },
   "00-0036906": {
    "name": "Khalil Herbert",
@@ -505,7 +505,7 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-10-31T23:00:00-04:00",
+   "date": "2026-11-01T00:00:00-04:00",
    "detail": "Suspension",
    "espn_id": "4034953"
   },
