@@ -1,5 +1,5 @@
 {
- "at": "2026-11-01T08:30:01-05:00",
+ "at": "2026-11-01T09:00:01-05:00",
  "source": "espn",
  "players": {
   "00-0036510": {
@@ -505,7 +505,7 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-11-01T08:00:00-05:00",
+   "date": "2026-11-01T08:45:00-05:00",
    "detail": "Suspension",
    "espn_id": "4034953"
   },
@@ -4938,6 +4938,17 @@
    "detail": null,
    "espn_id": "4688380"
   },
+  "00-0037742": {
+   "name": "Treylon Burks",
+   "team": "WAS",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-01T08:26:00-05:00",
+   "detail": "Foot",
+   "espn_id": "4567156",
+   "comment": "Burks (foot), who is listed as questionable for Sunday's game against the Eagles, is expected to play, Adam Schefter of ESPN reports."
+  },
   "name:WAS:jerzhannewton": {
    "name": "Jer'Zhan Newton",
    "team": "WAS",
@@ -4978,17 +4989,6 @@
    "detail": "Shoulder",
    "espn_id": "4048228",
    "comment": "Bates (shoulder) is listed as questionable for Sunday's game against the Eagles."
-  },
-  "00-0037742": {
-   "name": "Treylon Burks",
-   "team": "WAS",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-30T16:21:00-04:00",
-   "detail": "Foot",
-   "espn_id": "4567156",
-   "comment": "Burks (foot) is questionable for Sunday night's game against the Eagles."
   },
   "00-0035659": {
    "name": "Terry McLaurin",
