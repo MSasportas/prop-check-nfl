@@ -1,17 +1,28 @@
 {
- "at": "2026-11-01T14:50:16-05:00",
+ "at": "2026-11-01T15:00:01-05:00",
  "source": "espn",
  "players": {
   "00-0033307": {
    "name": "Kendrick Bourne",
    "team": "ARI",
    "pos": "WR",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-11-01T14:49:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "3045523",
+   "comment": "out"
+  },
+  "00-0037157": {
+   "name": "Bam Knight",
+   "team": "ARI",
+   "pos": "RB",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-01T14:34:00-05:00",
+   "date": "2026-11-01T14:37:00-05:00",
    "detail": "Undisclosed",
-   "espn_id": "3045523",
-   "comment": "questionable"
+   "espn_id": "4427728",
+   "comment": "Knight headed to the locker room during Sunday's game against the Cowboys after sustaining an unspecified injury, Josh Weinfuss of ESPN.com reports."
   },
   "00-0041027": {
    "name": "Jeremiyah Love",
@@ -105,16 +116,6 @@
    "date": "2026-10-31T20:49:00-04:00",
    "detail": null,
    "espn_id": "4044144"
-  },
-  "00-0037157": {
-   "name": "Bam Knight",
-   "team": "ARI",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-30T17:47:00-04:00",
-   "detail": "Undisclosed",
-   "espn_id": "4427728"
   },
   "00-0037263": {
    "name": "Tyler Allgeier",
@@ -484,9 +485,19 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-11-01T14:36:00-05:00",
+   "date": "2026-11-01T14:51:00-05:00",
    "detail": "Suspension",
    "espn_id": "4034953"
+  },
+  "name:BUF:deealford": {
+   "name": "Dee Alford",
+   "team": "BUF",
+   "pos": "CB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T14:47:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "4401823"
   },
   "00-0036988": {
    "name": "Joshua Palmer",
@@ -559,16 +570,6 @@
    "date": "2026-11-01T11:33:00-05:00",
    "detail": "Coach's Decision",
    "espn_id": "3915487"
-  },
-  "name:BUF:deealford": {
-   "name": "Dee Alford",
-   "team": "BUF",
-   "pos": "CB",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-11-01T11:33:00-05:00",
-   "detail": "Ankle",
-   "espn_id": "4401823"
   },
   "00-0038933": {
    "name": "Dalton Kincaid",
@@ -1149,16 +1150,6 @@
    "detail": "Neck",
    "espn_id": "4379397"
   },
-  "name:CLE:maliekcollins": {
-   "name": "Maliek Collins",
-   "team": "CLE",
-   "pos": "DT",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-01T14:38:00-05:00",
-   "detail": "Elbow",
-   "espn_id": "3040471"
-  },
   "00-0033537": {
    "name": "Deshaun Watson",
    "team": "CLE",
@@ -1286,12 +1277,12 @@
    "name": "Jake Ferguson",
    "team": "DAL",
    "pos": "TE",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-01T13:18:00-05:00",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-11-01T14:55:00-05:00",
    "detail": "Ankle",
    "espn_id": "4242355",
-   "comment": "Ferguson suffered an ankle injury during Sunday's game against the Cardinals, Tommy Yarrish of the Cowboys' official site reports."
+   "comment": "Ferguson (ankle) won't return to Sunday's game against the Cardinals, Joe Hoyt reports."
   },
   "00-0038547": {
    "name": "Luke Schoonmaker",
@@ -1656,7 +1647,7 @@
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
    "date": "2026-11-01T14:22:00-05:00",
-   "detail": "Head",
+   "detail": "Concussion",
    "espn_id": "4038849"
   },
   "name:DET:brianbranch": {
@@ -1666,7 +1657,7 @@
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
    "date": "2026-11-01T14:22:00-05:00",
-   "detail": "Head",
+   "detail": "Concussion",
    "espn_id": "4692025"
   },
   "name:DET:cademays": {
@@ -3017,6 +3008,17 @@
    "detail": null,
    "espn_id": "4685382"
   },
+  "00-0036244": {
+   "name": "Colby Parkinson",
+   "team": "LA",
+   "pos": "TE",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T14:50:00-05:00",
+   "detail": "Ribs",
+   "espn_id": "4242557",
+   "comment": "Parkinson (ribs) is inactive for Sunday's Week 8 matchup against the Chargers."
+  },
   "00-0039751": {
    "name": "Jordan Whittington",
    "team": "LA",
@@ -3057,17 +3059,6 @@
    "date": "2026-11-01T14:41:00-05:00",
    "detail": "Coach's Decision",
    "espn_id": "3912189"
-  },
-  "00-0036244": {
-   "name": "Colby Parkinson",
-   "team": "LA",
-   "pos": "TE",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-11-01T14:41:00-05:00",
-   "detail": "Ribs",
-   "espn_id": "4242557",
-   "comment": "inactive"
   },
   "name:LA:desjuanjohnson": {
    "name": "Desjuan Johnson",
@@ -3360,6 +3351,16 @@
    "date": "2026-10-25T16:31:00-04:00",
    "detail": null,
    "espn_id": "4711533"
+  },
+  "name:MIN:theojackson": {
+   "name": "Theo Jackson",
+   "team": "MIN",
+   "pos": "S",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-01T14:54:00-05:00",
+   "detail": "Quadriceps",
+   "espn_id": "4242436"
   },
   "00-0040494": {
    "name": "Max Brosmer",
@@ -5860,6 +5861,10 @@
   "00-0041568": {
    "status": "Out",
    "at": "2026-11-01T14:50:01-05:00"
+  },
+  "00-0037157": {
+   "status": "Questionable",
+   "at": "2026-11-01T15:00:01-05:00"
   }
  }
 }

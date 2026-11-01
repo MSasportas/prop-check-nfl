@@ -778,6 +778,37 @@
     ],
     "ina": false,
     "n_others": 9
+   },
+   {
+    "pull": "C",
+    "at": "2026-11-01T15:00:01-05:00",
+    "asked": [
+     "player_pass_tds",
+     "player_pass_yds",
+     "player_reception_yds",
+     "player_receptions",
+     "player_rush_attempts",
+     "player_rush_yds"
+    ],
+    "returned": [
+     "player_pass_tds",
+     "player_pass_yds",
+     "player_reception_yds",
+     "player_receptions",
+     "player_rush_attempts",
+     "player_rush_yds"
+    ],
+    "cost": 6,
+    "hr": [
+     "player_pass_tds",
+     "player_pass_yds",
+     "player_reception_yds",
+     "player_receptions",
+     "player_rush_attempts",
+     "player_rush_yds"
+    ],
+    "ina": true,
+    "n_others": 9
    }
   ],
   "2026_08_KC_DEN": [
@@ -919,14 +950,14 @@
  "fail_note": null,
  "key_count": 7,
  "plan": {
-  "allowance": 65.0,
+  "allowance": 64.57,
   "tier": "full",
   "pulls": "RC",
-  "pool_at_plan": 910,
+  "pool_at_plan": 904,
   "games_left": 14,
-  "pool_raw": 3399,
+  "pool_raw": 3393,
   "keys_shared": 1,
-  "made_at": "2026-11-01T13:00:00-05:00"
+  "made_at": "2026-11-01T15:00:01-05:00"
  },
  "failed": {}
 }
