@@ -1,5 +1,5 @@
 {
- "at": "2026-11-01T07:00:00-05:00",
+ "at": "2026-11-01T08:00:01-05:00",
  "source": "espn",
  "players": {
   "00-0036510": {
@@ -505,7 +505,7 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-11-01T06:01:00-05:00",
+   "date": "2026-11-01T07:00:00-05:00",
    "detail": "Suspension",
    "espn_id": "4034953"
   },
@@ -1249,6 +1249,17 @@
    "detail": null,
    "espn_id": "3122840"
   },
+  "00-0037247": {
+   "name": "George Pickens",
+   "team": "DAL",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-01T07:39:00-05:00",
+   "detail": "Shoulder",
+   "espn_id": "4426354",
+   "comment": "Pickens (shoulder/hamstring) is expected to play Sunday against the Cardinals, Adam Schefter of ESPN reports."
+  },
   "00-0037282": {
    "name": "James Mitchell",
    "team": "DAL",
@@ -1299,17 +1310,6 @@
    "detail": "Ribs",
    "espn_id": "3676833",
    "comment": "Turpin (ribs) has been ruled out for Sunday's game against the Cardinals, Tommy Yarrish of the Cowboys' official site reports."
-  },
-  "00-0037247": {
-   "name": "George Pickens",
-   "team": "DAL",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-30T17:18:00-04:00",
-   "detail": "Shoulder",
-   "espn_id": "4426354",
-   "comment": "Pickens (shoulder/hamstring) is listed as questionable for Sunday's game against the Cardinals, Patrik Walker of the Cowboys' official site reports."
   },
   "name:DAL:jonathanbullard": {
    "name": "Jonathan Bullard",
@@ -1412,6 +1412,17 @@
    "detail": "Forearm",
    "espn_id": "4427816"
   },
+  "00-0036613": {
+   "name": "Jaylen Waddle",
+   "team": "DEN",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-01T07:18:00-05:00",
+   "detail": "Chest",
+   "espn_id": "4372016",
+   "comment": "Waddle (chest) is trending in a positive direction for Sunday's game against the Chiefs, Ian Rapoport of NFL Network reports."
+  },
   "00-0039703": {
    "name": "Cody Schrader",
    "team": "DEN",
@@ -1482,17 +1493,6 @@
    "date": "2026-10-30T18:16:00-04:00",
    "detail": null,
    "espn_id": "4702555"
-  },
-  "00-0036613": {
-   "name": "Jaylen Waddle",
-   "team": "DEN",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-30T18:00:00-04:00",
-   "detail": "Chest",
-   "espn_id": "4372016",
-   "comment": "Waddle (chest) is listed as questionable for Sunday's game against the Chiefs after he was a limited participant in Friday's practice."
   },
   "00-0038976": {
    "name": "Marvin Mims Jr.",
@@ -2234,6 +2234,17 @@
    "detail": null,
    "espn_id": "3917792"
   },
+  "00-0034960": {
+   "name": "Jakobi Meyers",
+   "team": "JAX",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-01T07:23:00-05:00",
+   "detail": "Hamstring",
+   "espn_id": "3916433",
+   "comment": "Meyers (hamstring/ankle) is expected to play in Sunday's game against the Colts, Ian Rapoport of NFL Network reports."
+  },
   "00-0040238": {
    "name": "LeQuint Allen Jr.",
    "team": "JAX",
@@ -2253,17 +2264,6 @@
    "date": "2026-10-30T19:27:00-04:00",
    "detail": "Ankle",
    "espn_id": "4429168"
-  },
-  "00-0034960": {
-   "name": "Jakobi Meyers",
-   "team": "JAX",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-30T15:39:00-04:00",
-   "detail": "Hamstring",
-   "espn_id": "3916433",
-   "comment": "Meyers (hamstring/ankle) is questionable for Sunday's game against the Colts."
   },
   "name:JAX:antonharrison": {
    "name": "Anton Harrison",
@@ -3798,6 +3798,16 @@
    "detail": "Chest",
    "espn_id": "3929950"
   },
+  "00-0039794": {
+   "name": "Braelon Allen",
+   "team": "NYJ",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T07:29:00-05:00",
+   "detail": null,
+   "espn_id": "4685247"
+  },
   "name:NYJ:tvondresweat": {
    "name": "T'Vondre Sweat",
    "team": "NYJ",
@@ -3848,16 +3858,6 @@
    "detail": "Quadriceps",
    "espn_id": "4427366",
    "comment": "Hall (quadriceps) is listed as questionable for Sunday's game against the Raiders, Brian Costello of the New York Post reports."
-  },
-  "00-0039794": {
-   "name": "Braelon Allen",
-   "team": "NYJ",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-29T16:48:00-04:00",
-   "detail": null,
-   "espn_id": "4685247"
   },
   "00-0036842": {
    "name": "Kene Nwangwu",
@@ -3969,6 +3969,16 @@
    "detail": "Quadriceps",
    "espn_id": "4700136"
   },
+  "00-0034844": {
+   "name": "Saquon Barkley",
+   "team": "PHI",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T07:48:00-05:00",
+   "detail": null,
+   "espn_id": "3929630"
+  },
   "name:PHI:jakorianbennett": {
    "name": "Jakorian Bennett",
    "team": "PHI",
@@ -4041,16 +4051,6 @@
    "detail": "Hamstring",
    "espn_id": "4241478",
    "comment": "Smith (hamstring) is listed as out for Sunday night's game against the Commanders."
-  },
-  "00-0034844": {
-   "name": "Saquon Barkley",
-   "team": "PHI",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-30T15:59:00-04:00",
-   "detail": null,
-   "espn_id": "3929630"
   },
   "name:PHI:jonathanjones": {
    "name": "Jonathan Jones",
@@ -4785,6 +4785,17 @@
    "detail": null,
    "espn_id": "3871102"
   },
+  "00-0034837": {
+   "name": "Calvin Ridley",
+   "team": "TEN",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-01T07:35:00-05:00",
+   "detail": "Hip",
+   "espn_id": "3925357",
+   "comment": "Ridley (hip) is in line to play in Sunday's game against the Bengals, Ian Rapoport of NFL Network reports."
+  },
   "name:TEN:dorianmausi": {
    "name": "Dorian Mausi",
    "team": "TEN",
@@ -4835,17 +4846,6 @@
    "date": "2026-10-30T20:01:00-04:00",
    "detail": "Groin",
    "espn_id": "3120464"
-  },
-  "00-0034837": {
-   "name": "Calvin Ridley",
-   "team": "TEN",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-30T19:34:00-04:00",
-   "detail": "Hip",
-   "espn_id": "3925357",
-   "comment": "Ridley (hip) is officially questionable for Sunday's matchup against Cincinnati."
   },
   "00-0040170": {
    "name": "Elic Ayomanor",
