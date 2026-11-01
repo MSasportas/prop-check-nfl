@@ -1,5 +1,5 @@
 {
- "at": "2026-11-01T10:40:00-05:00",
+ "at": "2026-11-01T11:10:01-05:00",
  "source": "espn",
  "players": {
   "00-0036510": {
@@ -347,7 +347,7 @@
    "date": "2026-11-01T10:14:00-05:00",
    "detail": "Neck",
    "espn_id": "4685526",
-   "comment": "Randall (neck) was not activated from injured reserve and will not be available for Sunday's game against the Bills, Jeff Zrebiec of The Athletic reports."
+   "comment": "Randall (neck) wasn't activated from injured reserve Saturday and won't be available for Sunday's game against the Bills, Jeff Zrebiec of The Athletic reports."
   },
   "name:BAL:tjtampa": {
    "name": "T.J. Tampa",
@@ -505,7 +505,7 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-11-01T10:18:00-05:00",
+   "date": "2026-11-01T11:00:00-05:00",
    "detail": "Suspension",
    "espn_id": "4034953"
   },
@@ -2067,7 +2067,7 @@
    "pos": "RB",
    "status": "Active",
    "fantasy": null,
-   "date": "2026-10-31T08:03:00-04:00",
+   "date": "2026-11-01T10:34:00-05:00",
    "detail": null,
    "espn_id": "4242335"
   },
@@ -2676,16 +2676,6 @@
    "date": "2026-10-25T22:32:00-04:00",
    "detail": null,
    "espn_id": "4686658"
-  },
-  "00-0040122": {
-   "name": "Ashton Jeanty",
-   "team": "LV",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-25T21:14:00-04:00",
-   "detail": null,
-   "espn_id": "4890973"
   },
   "name:LAC:derwinjames": {
    "name": "Derwin James Jr.",
