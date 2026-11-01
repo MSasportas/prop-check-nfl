@@ -710,16 +710,78 @@
  "2026_08_KC_DEN": {
   "_kickoff": "2026-11-01T16:25:00-05:00",
   "KC": {
-   "confirmed": false,
-   "count": 0,
-   "players": [],
-   "confirmed_at": null
+   "confirmed": true,
+   "count": 5,
+   "players": [
+    {
+     "pid": "00-0038489",
+     "name": "Ben VanSumeren",
+     "pos": "FB"
+    },
+    {
+     "pid": null,
+     "name": "Diego Pounds",
+     "pos": "OT"
+    },
+    {
+     "pid": "00-0040906",
+     "name": "Garrett Nussmeier",
+     "pos": "QB"
+    },
+    {
+     "pid": null,
+     "name": "Jack Pyburn",
+     "pos": "LB"
+    },
+    {
+     "pid": null,
+     "name": "Tyreke Smith",
+     "pos": "DE"
+    }
+   ],
+   "confirmed_at": "2026-11-01T15:20:00-05:00"
   },
   "DEN": {
-   "confirmed": false,
-   "count": 0,
-   "players": [],
-   "confirmed_at": null
+   "confirmed": true,
+   "count": 7,
+   "players": [
+    {
+     "pid": "00-0041133",
+     "name": "Dallen Bentley",
+     "pos": "TE"
+    },
+    {
+     "pid": null,
+     "name": "Gavin Ortega",
+     "pos": "OT"
+    },
+    {
+     "pid": null,
+     "name": "Jordan Jackson",
+     "pos": "DT"
+    },
+    {
+     "pid": null,
+     "name": "Kage Casey",
+     "pos": "OT"
+    },
+    {
+     "pid": "00-0036879",
+     "name": "Sam Ehlinger",
+     "pos": "QB"
+    },
+    {
+     "pid": null,
+     "name": "Talanoa Hufanga",
+     "pos": "S"
+    },
+    {
+     "pid": null,
+     "name": "Tyler Onyedim",
+     "pos": "DT"
+    }
+   ],
+   "confirmed_at": "2026-11-01T15:20:00-05:00"
   }
  },
  "2026_08_NE_MIA": {
@@ -762,10 +824,41 @@
    "confirmed_at": "2026-11-01T15:10:00-05:00"
   },
   "MIA": {
-   "confirmed": false,
-   "count": 0,
-   "players": [],
-   "confirmed_at": null
+   "confirmed": true,
+   "count": 6,
+   "players": [
+    {
+     "pid": null,
+     "name": "Jamree Kromah",
+     "pos": "DE"
+    },
+    {
+     "pid": "00-0038728",
+     "name": "Jared Wayne",
+     "pos": "WR"
+    },
+    {
+     "pid": null,
+     "name": "Jaylin Simpson",
+     "pos": "S"
+    },
+    {
+     "pid": "00-0041077",
+     "name": "Justin Joly",
+     "pos": "TE"
+    },
+    {
+     "pid": null,
+     "name": "Kadyn Proctor",
+     "pos": "OT"
+    },
+    {
+     "pid": null,
+     "name": "Marcellas Dial Jr.",
+     "pos": "CB"
+    }
+   ],
+   "confirmed_at": "2026-11-01T15:20:00-05:00"
   }
  }
 }

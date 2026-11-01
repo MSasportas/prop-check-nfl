@@ -1,5 +1,5 @@
 {
- "at": "2026-11-01T15:10:00-05:00",
+ "at": "2026-11-01T15:20:00-05:00",
  "source": "espn",
  "players": {
   "00-0033307": {
@@ -168,6 +168,16 @@
    "detail": "Ankle",
    "espn_id": "4696700",
    "comment": "Head coach Mike LaFleur stated he's \"not too sure\" if Reiman (ankle) will play this season, Dani Sureck of the Cardinals' official site reports."
+  },
+  "name:ATL:samsonebukam": {
+   "name": "Samson Ebukam",
+   "team": "ATL",
+   "pos": "DE",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-01T14:57:00-05:00",
+   "detail": "Hamstring",
+   "espn_id": "3045527"
   },
   "00-0041044": {
    "name": "Zachariah Branch",
@@ -1140,16 +1150,6 @@
    "detail": null,
    "espn_id": "4239993"
   },
-  "name:CLE:tysoncampbell": {
-   "name": "Tyson Campbell",
-   "team": "CLE",
-   "pos": "CB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-01T14:47:00-05:00",
-   "detail": "Neck",
-   "espn_id": "4379397"
-  },
   "00-0033537": {
    "name": "Deshaun Watson",
    "team": "CLE",
@@ -1446,16 +1446,87 @@
    "detail": "Forearm",
    "espn_id": "4427816"
   },
+  "name:DEN:tyleronyedim": {
+   "name": "Tyler Onyedim",
+   "team": "DEN",
+   "pos": "DT",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T15:01:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4683535"
+  },
+  "name:DEN:gavinortega": {
+   "name": "Gavin Ortega",
+   "team": "DEN",
+   "pos": "OT",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T15:01:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "5085625"
+  },
+  "name:DEN:talanoahufanga": {
+   "name": "Talanoa Hufanga",
+   "team": "DEN",
+   "pos": "S",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T15:01:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "4360853"
+  },
+  "name:DEN:jordanjackson": {
+   "name": "Jordan Jackson",
+   "team": "DEN",
+   "pos": "DT",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T15:01:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4261090"
+  },
+  "00-0041133": {
+   "name": "Dallen Bentley",
+   "team": "DEN",
+   "pos": "TE",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T15:01:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "5159802",
+   "comment": "inactive"
+  },
+  "name:DEN:kagecasey": {
+   "name": "Kage Casey",
+   "team": "DEN",
+   "pos": "OT",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T15:01:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4868598"
+  },
+  "00-0036879": {
+   "name": "Sam Ehlinger",
+   "team": "DEN",
+   "pos": "QB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T15:01:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4241820",
+   "comment": "inactive"
+  },
   "00-0036613": {
    "name": "Jaylen Waddle",
    "team": "DEN",
    "pos": "WR",
-   "status": "Questionable",
+   "status": "Active",
    "fantasy": null,
-   "date": "2026-11-01T07:18:00-05:00",
+   "date": "2026-11-01T14:59:00-05:00",
    "detail": null,
-   "espn_id": "4372016",
-   "comment": "Waddle (chest) is trending in a positive direction for Sunday's game against the Chiefs, Ian Rapoport of NFL Network reports."
+   "espn_id": "4372016"
   },
   "00-0039703": {
    "name": "Cody Schrader",
@@ -1477,36 +1548,6 @@
    "detail": "Knee",
    "espn_id": "4568490",
    "comment": "The Broncos placed Harvey (knee) on injured reserve Saturday, Ian Rapoport of NFL Network reports."
-  },
-  "name:DEN:zachallen": {
-   "name": "Zach Allen",
-   "team": "DEN",
-   "pos": "DE",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-30T20:53:00-04:00",
-   "detail": "Hamstring",
-   "espn_id": "3915282"
-  },
-  "name:DEN:talanoahufanga": {
-   "name": "Talanoa Hufanga",
-   "team": "DEN",
-   "pos": "S",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-30T20:53:00-04:00",
-   "detail": "Ankle",
-   "espn_id": "4360853"
-  },
-  "name:DEN:brandonjones": {
-   "name": "Brandon Jones",
-   "team": "DEN",
-   "pos": "S",
-   "status": "Questionable",
-   "fantasy": null,
-   "date": "2026-10-30T20:48:00-04:00",
-   "detail": null,
-   "espn_id": "4039059"
   },
   "00-0036158": {
    "name": "J.K. Dobbins",
@@ -1538,16 +1579,6 @@
    "detail": null,
    "espn_id": "4686472"
   },
-  "name:DEN:garettbolles": {
-   "name": "Garett Bolles",
-   "team": "DEN",
-   "pos": "OT",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-28T17:53:00-04:00",
-   "detail": "Hip",
-   "espn_id": "4035662"
-  },
   "00-0033881": {
    "name": "Evan Engram",
    "team": "DEN",
@@ -1567,16 +1598,6 @@
    "date": "2026-10-26T20:24:00-04:00",
    "detail": null,
    "espn_id": "4431280"
-  },
-  "00-0041133": {
-   "name": "Dallen Bentley",
-   "team": "DEN",
-   "pos": "TE",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-26T13:58:00-04:00",
-   "detail": null,
-   "espn_id": "5159802"
   },
   "00-0034348": {
    "name": "Courtland Sutton",
@@ -1598,16 +1619,6 @@
    "detail": null,
    "espn_id": "4426338"
   },
-  "00-0036879": {
-   "name": "Sam Ehlinger",
-   "team": "DEN",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-25T14:57:00-04:00",
-   "detail": null,
-   "espn_id": "4241820"
-  },
   "00-0037085": {
    "name": "Tyler Badie",
    "team": "DEN",
@@ -1618,16 +1629,6 @@
    "detail": "Thumb",
    "espn_id": "4362748",
    "comment": "The Broncos placed Badie (thumb) on injured reserve Saturday, Aric DiLalla of the team's official site reports."
-  },
-  "name:DEN:jonahelliss": {
-   "name": "Jonah Elliss",
-   "team": "DEN",
-   "pos": "LB",
-   "status": "Injured Reserve",
-   "fantasy": "IR",
-   "date": "2026-10-24T19:23:00-04:00",
-   "detail": "Ankle",
-   "espn_id": "4687592"
   },
   "00-0038896": {
    "name": "Jacob Saylors",
@@ -2330,6 +2331,16 @@
    "detail": null,
    "espn_id": "15818"
   },
+  "name:JAX:travonwalker": {
+   "name": "Travon Walker",
+   "team": "JAX",
+   "pos": "DE",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-01T15:10:00-05:00",
+   "detail": "Ribs",
+   "espn_id": "4426349"
+  },
   "name:JAX:davonhamilton": {
    "name": "DaVon Hamilton",
    "team": "JAX",
@@ -2501,22 +2512,64 @@
    "detail": null,
    "espn_id": "4685415"
   },
-  "00-0039893": {
-   "name": "Brian Thomas Jr.",
-   "team": "JAX",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-18T13:53:00-04:00",
-   "detail": null,
-   "espn_id": "4432773"
+  "00-0038489": {
+   "name": "Ben VanSumeren",
+   "team": "KC",
+   "pos": "FB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T15:06:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4372070",
+   "comment": "inactive"
+  },
+  "name:KC:diegopounds": {
+   "name": "Diego Pounds",
+   "team": "KC",
+   "pos": "OT",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T15:06:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4602984"
+  },
+  "name:KC:jackpyburn": {
+   "name": "Jack Pyburn",
+   "team": "KC",
+   "pos": "LB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T15:06:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4837252"
+  },
+  "name:KC:tyrekesmith": {
+   "name": "Tyreke Smith",
+   "team": "KC",
+   "pos": "DE",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T15:06:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4361340"
+  },
+  "00-0040906": {
+   "name": "Garrett Nussmeier",
+   "team": "KC",
+   "pos": "QB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T15:06:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4567747",
+   "comment": "inactive"
   },
   "name:KC:mansoordelane": {
    "name": "Mansoor Delane",
    "team": "KC",
    "pos": "CB",
    "status": "Out",
-   "fantasy": "OUT",
+   "fantasy": "INACTIVE",
    "date": "2026-10-31T19:10:00-04:00",
    "detail": "Shoulder",
    "espn_id": "4880124"
@@ -2611,16 +2664,6 @@
    "detail": null,
    "espn_id": "4832955"
   },
-  "00-0038489": {
-   "name": "Ben VanSumeren",
-   "team": "KC",
-   "pos": "FB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-26T14:35:00-04:00",
-   "detail": null,
-   "espn_id": "4372070"
-  },
   "00-0033873": {
    "name": "Patrick Mahomes",
    "team": "KC",
@@ -2640,27 +2683,6 @@
    "date": "2026-10-25T23:36:00-04:00",
    "detail": null,
    "espn_id": "4567048"
-  },
-  "00-0040906": {
-   "name": "Garrett Nussmeier",
-   "team": "KC",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-25T19:10:00-04:00",
-   "detail": null,
-   "espn_id": "4567747"
-  },
-  "00-0040078": {
-   "name": "Brashard Smith",
-   "team": "KC",
-   "pos": "RB",
-   "status": "Injured Reserve",
-   "fantasy": "IR",
-   "date": "2026-10-24T14:05:00-04:00",
-   "detail": "Hamstring",
-   "espn_id": "4596602",
-   "comment": "The Chiefs placed Smith (hamstring) on injured reserve Saturday."
   },
   "name:LV:darienporter": {
    "name": "Darien Porter",
@@ -3018,6 +3040,17 @@
    "detail": null,
    "espn_id": "4685382"
   },
+  "00-0041568": {
+   "name": "Ty Simpson",
+   "team": "LA",
+   "pos": "QB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T14:57:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4685522",
+   "comment": "Simpson (coach's decision) is inactive for Sunday's game against the Chargers but will serve as the team's emergency quarterback if needed."
+  },
   "00-0036244": {
    "name": "Colby Parkinson",
    "team": "LA",
@@ -3038,17 +3071,6 @@
    "date": "2026-11-01T14:42:00-05:00",
    "detail": null,
    "espn_id": "4569382"
-  },
-  "00-0041568": {
-   "name": "Ty Simpson",
-   "team": "LA",
-   "pos": "QB",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-11-01T14:41:00-05:00",
-   "detail": "Coach's Decision",
-   "espn_id": "4685522",
-   "comment": "inactive"
   },
   "name:LA:keagentrost": {
    "name": "Keagen Trost",
@@ -3212,25 +3234,67 @@
    "detail": null,
    "espn_id": "4426515"
   },
-  "name:MIA:reesetaylor": {
-   "name": "Reese Taylor",
+  "name:MIA:jaylinsimpson": {
+   "name": "Jaylin Simpson",
    "team": "MIA",
-   "pos": "CB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-30T22:21:00-04:00",
-   "detail": "Quadriceps",
-   "espn_id": "4371946"
+   "pos": "S",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T14:59:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4567225"
+  },
+  "00-0038728": {
+   "name": "Jared Wayne",
+   "team": "MIA",
+   "pos": "WR",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T14:59:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4430681",
+   "comment": "inactive"
   },
   "name:MIA:kadynproctor": {
    "name": "Kadyn Proctor",
    "team": "MIA",
    "pos": "OT",
    "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-30T22:20:00-04:00",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T14:59:00-05:00",
    "detail": "Concussion",
    "espn_id": "4870976"
+  },
+  "00-0041077": {
+   "name": "Justin Joly",
+   "team": "MIA",
+   "pos": "TE",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T14:59:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4912052",
+   "comment": "inactive"
+  },
+  "name:MIA:jamreekromah": {
+   "name": "Jamree Kromah",
+   "team": "MIA",
+   "pos": "DE",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T14:59:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4372463"
+  },
+  "name:MIA:marcellasdial": {
+   "name": "Marcellas Dial Jr.",
+   "team": "MIA",
+   "pos": "CB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T14:59:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4875079"
   },
   "00-0041524": {
    "name": "Will Kacmarek",
@@ -3241,26 +3305,6 @@
    "date": "2026-10-30T20:32:00-04:00",
    "detail": null,
    "espn_id": "4880236"
-  },
-  "00-0038728": {
-   "name": "Jared Wayne",
-   "team": "MIA",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": "INACTIVE",
-   "date": "2026-10-30T20:30:00-04:00",
-   "detail": "Coach's Decision",
-   "espn_id": "4430681"
-  },
-  "name:MIA:jujubrents": {
-   "name": "JuJu Brents",
-   "team": "MIA",
-   "pos": "CB",
-   "status": "Questionable",
-   "fantasy": null,
-   "date": "2026-10-30T20:28:00-04:00",
-   "detail": null,
-   "espn_id": "4360488"
   },
   "00-0039880": {
    "name": "Malik Washington",
@@ -3331,36 +3375,6 @@
    "date": "2026-10-26T14:38:00-04:00",
    "detail": null,
    "espn_id": "4249417"
-  },
-  "00-0041523": {
-   "name": "Caleb Douglas",
-   "team": "MIA",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-25T17:01:00-04:00",
-   "detail": null,
-   "espn_id": "4869645"
-  },
-  "00-0038128": {
-   "name": "Malik Willis",
-   "team": "MIA",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-25T16:59:00-04:00",
-   "detail": null,
-   "espn_id": "4242512"
-  },
-  "00-0040198": {
-   "name": "Ollie Gordon II",
-   "team": "MIA",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-25T16:31:00-04:00",
-   "detail": null,
-   "espn_id": "4711533"
   },
   "name:MIN:theojackson": {
    "name": "Theo Jackson",
@@ -5072,6 +5086,16 @@
    "detail": null,
    "espn_id": "3871102"
   },
+  "name:TEN:jameswilliams": {
+   "name": "James Williams Sr.",
+   "team": "TEN",
+   "pos": "LB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-01T14:56:00-05:00",
+   "detail": "Groin",
+   "espn_id": "4431613"
+  },
   "name:TEN:marcusharris": {
    "name": "Marcus Harris",
    "team": "TEN",
@@ -5880,6 +5904,30 @@
   "00-0041123": {
    "status": "Out",
    "at": "2026-11-01T15:10:00-05:00"
+  },
+  "00-0041133": {
+   "status": "Out",
+   "at": "2026-11-01T15:20:00-05:00"
+  },
+  "00-0036879": {
+   "status": "Out",
+   "at": "2026-11-01T15:20:00-05:00"
+  },
+  "00-0038489": {
+   "status": "Out",
+   "at": "2026-11-01T15:20:00-05:00"
+  },
+  "00-0040906": {
+   "status": "Out",
+   "at": "2026-11-01T15:20:00-05:00"
+  },
+  "00-0038728": {
+   "status": "Out",
+   "at": "2026-11-01T15:20:00-05:00"
+  },
+  "00-0041077": {
+   "status": "Out",
+   "at": "2026-11-01T15:20:00-05:00"
   }
  }
 }
