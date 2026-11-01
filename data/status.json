@@ -3,10 +3,10 @@
  "season": 2026,
  "week": 8,
  "slate": "2026-W08",
- "started_at": "2026-11-01T11:40:00-05:00",
- "status_at": "2026-11-01T11:40:00-05:00",
- "finished_at": "2026-11-01T11:40:01-05:00",
- "last_ok_at": "2026-11-01T11:40:00-05:00",
+ "started_at": "2026-11-01T11:50:00-05:00",
+ "status_at": "2026-11-01T11:50:00-05:00",
+ "finished_at": "2026-11-01T11:50:02-05:00",
+ "last_ok_at": "2026-11-01T11:50:00-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -32,7 +32,7 @@
   {
    "step": "injuries",
    "status": "ok",
-   "note": "espn: 135 out, 71 questionable; inactives posted for 4 team(s)"
+   "note": "espn: 174 out, 54 questionable; inactives posted for 13 team(s)"
   },
   {
    "step": "weather",
@@ -42,7 +42,7 @@
   {
    "step": "odds",
    "status": "ok",
-   "note": "no pull due"
+   "note": "5 read(s) (C)"
   },
   {
    "step": "engine",
@@ -56,8 +56,8 @@
   },
   {
    "step": "watch",
-   "status": "skipped",
-   "note": "0 move(s)/side(s) scanned, 0 flagged, 0 graded"
+   "status": "ok",
+   "note": "17 move(s)/side(s) scanned, 0 flagged, 0 graded"
   },
   {
    "step": "slate",
@@ -85,7 +85,7 @@
  "keys": [
   {
    "n": 1,
-   "left": 458,
+   "left": 428,
    "shared": false
   },
   {
@@ -119,17 +119,43 @@
    "shared": false
   }
  ],
- "pool_total": 3454,
- "allowance": 63.87,
+ "pool_total": 3424,
+ "allowance": 61.87,
  "tier": "full",
  "games_left_before_reset": 15,
- "budget_used_today": 42,
+ "budget_used_today": 72,
  "odds": {
   "state": "ok",
-  "at": "2026-11-01T10:00:00-05:00",
-  "next_at": "2026-11-01T11:50:00-05:00"
+  "at": "2026-11-01T11:50:00-05:00",
+  "next_at": "2026-11-01T12:15:00-05:00"
  },
- "due": [],
+ "due": [
+  {
+   "pull": "C",
+   "game_id": "2026_08_ATL_TB",
+   "cost_max": 6
+  },
+  {
+   "pull": "C",
+   "game_id": "2026_08_BAL_BUF",
+   "cost_max": 6
+  },
+  {
+   "pull": "C",
+   "game_id": "2026_08_CLE_PIT",
+   "cost_max": 6
+  },
+  {
+   "pull": "C",
+   "game_id": "2026_08_IND_JAX",
+   "cost_max": 6
+  },
+  {
+   "pull": "C",
+   "game_id": "2026_08_TEN_CIN",
+   "cost_max": 6
+  }
+ ],
  "skipped_games": [],
  "unmatched_names": [],
  "unknown_teams": [],
@@ -142,7 +168,7 @@
  "runner": {
   "event": "workflow_dispatch",
   "run_id": "41326638666",
-  "iteration": 2,
+  "iteration": 3,
   "chain_link": 840,
   "chain_started_at": "2026-10-30T17:27:57-04:00",
   "run_started_at": "2026-11-01T11:30:13-05:00"

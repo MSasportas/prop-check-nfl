@@ -144,6 +144,37 @@
     ],
     "ina": false,
     "n_others": 9
+   },
+   {
+    "pull": "C",
+    "at": "2026-11-01T11:50:00-05:00",
+    "asked": [
+     "player_pass_tds",
+     "player_pass_yds",
+     "player_reception_yds",
+     "player_receptions",
+     "player_rush_attempts",
+     "player_rush_yds"
+    ],
+    "returned": [
+     "player_pass_tds",
+     "player_pass_yds",
+     "player_reception_yds",
+     "player_receptions",
+     "player_rush_attempts",
+     "player_rush_yds"
+    ],
+    "cost": 6,
+    "hr": [
+     "player_pass_tds",
+     "player_pass_yds",
+     "player_reception_yds",
+     "player_receptions",
+     "player_rush_attempts",
+     "player_rush_yds"
+    ],
+    "ina": true,
+    "n_others": 9
    }
   ],
   "2026_08_BAL_BUF": [
@@ -207,6 +238,37 @@
      "player_rush_yds"
     ],
     "ina": false,
+    "n_others": 9
+   },
+   {
+    "pull": "C",
+    "at": "2026-11-01T11:50:00-05:00",
+    "asked": [
+     "player_pass_tds",
+     "player_pass_yds",
+     "player_reception_yds",
+     "player_receptions",
+     "player_rush_attempts",
+     "player_rush_yds"
+    ],
+    "returned": [
+     "player_pass_tds",
+     "player_pass_yds",
+     "player_reception_yds",
+     "player_receptions",
+     "player_rush_attempts",
+     "player_rush_yds"
+    ],
+    "cost": 6,
+    "hr": [
+     "player_pass_tds",
+     "player_pass_yds",
+     "player_reception_yds",
+     "player_receptions",
+     "player_rush_attempts",
+     "player_rush_yds"
+    ],
+    "ina": true,
     "n_others": 9
    }
   ],
@@ -272,6 +334,37 @@
     ],
     "ina": false,
     "n_others": 9
+   },
+   {
+    "pull": "C",
+    "at": "2026-11-01T11:50:00-05:00",
+    "asked": [
+     "player_pass_tds",
+     "player_pass_yds",
+     "player_reception_yds",
+     "player_receptions",
+     "player_rush_attempts",
+     "player_rush_yds"
+    ],
+    "returned": [
+     "player_pass_tds",
+     "player_pass_yds",
+     "player_reception_yds",
+     "player_receptions",
+     "player_rush_attempts",
+     "player_rush_yds"
+    ],
+    "cost": 6,
+    "hr": [
+     "player_pass_tds",
+     "player_pass_yds",
+     "player_reception_yds",
+     "player_receptions",
+     "player_rush_attempts",
+     "player_rush_yds"
+    ],
+    "ina": true,
+    "n_others": 9
    }
   ],
   "2026_08_IND_JAX": [
@@ -335,6 +428,37 @@
      "player_rush_yds"
     ],
     "ina": false,
+    "n_others": 9
+   },
+   {
+    "pull": "C",
+    "at": "2026-11-01T11:50:00-05:00",
+    "asked": [
+     "player_pass_tds",
+     "player_pass_yds",
+     "player_reception_yds",
+     "player_receptions",
+     "player_rush_attempts",
+     "player_rush_yds"
+    ],
+    "returned": [
+     "player_pass_tds",
+     "player_pass_yds",
+     "player_reception_yds",
+     "player_receptions",
+     "player_rush_attempts",
+     "player_rush_yds"
+    ],
+    "cost": 6,
+    "hr": [
+     "player_pass_tds",
+     "player_pass_yds",
+     "player_reception_yds",
+     "player_receptions",
+     "player_rush_attempts",
+     "player_rush_yds"
+    ],
+    "ina": true,
     "n_others": 9
    }
   ],
@@ -496,6 +620,37 @@
      "player_rush_yds"
     ],
     "ina": false,
+    "n_others": 9
+   },
+   {
+    "pull": "C",
+    "at": "2026-11-01T11:50:00-05:00",
+    "asked": [
+     "player_pass_tds",
+     "player_pass_yds",
+     "player_reception_yds",
+     "player_receptions",
+     "player_rush_attempts",
+     "player_rush_yds"
+    ],
+    "returned": [
+     "player_pass_tds",
+     "player_pass_yds",
+     "player_reception_yds",
+     "player_receptions",
+     "player_rush_attempts",
+     "player_rush_yds"
+    ],
+    "cost": 6,
+    "hr": [
+     "player_pass_tds",
+     "player_pass_yds",
+     "player_reception_yds",
+     "player_receptions",
+     "player_rush_attempts",
+     "player_rush_yds"
+    ],
+    "ina": true,
     "n_others": 9
    }
   ],
@@ -671,14 +826,14 @@
  "fail_note": null,
  "key_count": 7,
  "plan": {
-  "allowance": 63.87,
+  "allowance": 61.87,
   "tier": "full",
   "pulls": "RC",
-  "pool_at_plan": 958,
+  "pool_at_plan": 928,
   "games_left": 15,
-  "pool_raw": 3454,
+  "pool_raw": 3424,
   "keys_shared": 0,
-  "made_at": "2026-11-01T10:00:00-05:00"
+  "made_at": "2026-11-01T11:50:00-05:00"
  },
  "failed": {}
 }
