@@ -1,7 +1,18 @@
 {
- "at": "2026-11-01T12:30:00-05:00",
+ "at": "2026-11-01T12:40:00-05:00",
  "source": "espn",
  "players": {
+  "00-0041561": {
+   "name": "Carson Beck",
+   "team": "ARI",
+   "pos": "QB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T12:15:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4430841",
+   "comment": "Beck (coach's decision) is inactive for Sunday's game in Dallas, though he will be available as the team's QB3, Darren Urban of the team's official site reports"
+  },
   "name:ARI:walternolen": {
    "name": "Walter Nolen III",
    "team": "ARI",
@@ -62,17 +73,6 @@
    "date": "2026-11-01T11:39:00-05:00",
    "detail": "Ankle",
    "espn_id": "4367199"
-  },
-  "00-0041561": {
-   "name": "Carson Beck",
-   "team": "ARI",
-   "pos": "QB",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-11-01T11:39:00-05:00",
-   "detail": "Coach's Decision",
-   "espn_id": "4430841",
-   "comment": "inactive"
   },
   "00-0036510": {
    "name": "Kenny Yeboah",
@@ -463,6 +463,16 @@
    "detail": null,
    "espn_id": "3043078"
   },
+  "name:BUF:spencerbrown": {
+   "name": "Spencer Brown",
+   "team": "BUF",
+   "pos": "OT",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T12:20:00-05:00",
+   "detail": "Back",
+   "espn_id": "4030899"
+  },
   "name:BUF:cjgardnerjohnson": {
    "name": "C.J. Gardner-Johnson",
    "team": "BUF",
@@ -503,16 +513,6 @@
    "detail": "Coach's Decision",
    "espn_id": "4683153",
    "comment": "inactive"
-  },
-  "name:BUF:spencerbrown": {
-   "name": "Spencer Brown",
-   "team": "BUF",
-   "pos": "OT",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-11-01T11:33:00-05:00",
-   "detail": "Back",
-   "espn_id": "4030899"
   },
   "name:BUF:mikedanna": {
    "name": "Mike Danna",
@@ -2118,6 +2118,17 @@
    "detail": null,
    "espn_id": "4362504"
   },
+  "00-0040206": {
+   "name": "Riley Leonard",
+   "team": "IND",
+   "pos": "QB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T12:23:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4683423",
+   "comment": "Leonard (coach's decision) is inactive but will serve as the emergency third quarterback against the Jaguars on Sunday, JJ Stankevitz of the Colts' official sit"
+  },
   "00-0037292": {
    "name": "Drew Ogletree",
    "team": "IND",
@@ -2178,17 +2189,6 @@
    "date": "2026-11-01T11:36:00-05:00",
    "detail": "Coach's Decision",
    "espn_id": "3895840"
-  },
-  "00-0040206": {
-   "name": "Riley Leonard",
-   "team": "IND",
-   "pos": "QB",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-11-01T11:36:00-05:00",
-   "detail": "Coach's Decision",
-   "espn_id": "4683423",
-   "comment": "inactive"
   },
   "00-0033439": {
    "name": "Pharaoh Brown",
@@ -3282,6 +3282,17 @@
    "detail": null,
    "espn_id": "4711533"
   },
+  "00-0040494": {
+   "name": "Max Brosmer",
+   "team": "MIN",
+   "pos": "QB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T12:22:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4573398",
+   "comment": "Brosmer (coach's decision) is inactive but will serve as the Vikings' emergency third quarterback against the Lions on Sunday."
+  },
   "00-0036259": {
    "name": "Jauan Jennings",
    "team": "MIN",
@@ -3321,17 +3332,6 @@
    "date": "2026-11-01T11:43:00-05:00",
    "detail": "Coach's Decision",
    "espn_id": "4696782"
-  },
-  "00-0040494": {
-   "name": "Max Brosmer",
-   "team": "MIN",
-   "pos": "QB",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-11-01T11:43:00-05:00",
-   "detail": "Coach's Decision",
-   "espn_id": "4573398",
-   "comment": "inactive"
   },
   "00-0041104": {
    "name": "Demond Claiborne",
