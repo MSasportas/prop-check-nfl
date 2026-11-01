@@ -1,1 +1,122 @@
-{}
+{
+ "2026_08_ARI_DAL": {
+  "_kickoff": "2026-11-01T13:00:00-05:00",
+  "ARI": {
+   "confirmed": false,
+   "count": 0,
+   "players": [],
+   "confirmed_at": null
+  },
+  "DAL": {
+   "confirmed": false,
+   "count": 0,
+   "players": [],
+   "confirmed_at": null
+  }
+ },
+ "2026_08_ATL_TB": {
+  "_kickoff": "2026-11-01T13:00:00-05:00",
+  "ATL": {
+   "confirmed": false,
+   "count": 0,
+   "players": [],
+   "confirmed_at": null
+  },
+  "TB": {
+   "confirmed": false,
+   "count": 0,
+   "players": [],
+   "confirmed_at": null
+  }
+ },
+ "2026_08_BAL_BUF": {
+  "_kickoff": "2026-11-01T13:00:00-05:00",
+  "BAL": {
+   "confirmed": false,
+   "count": 0,
+   "players": [],
+   "confirmed_at": null
+  },
+  "BUF": {
+   "confirmed": false,
+   "count": 0,
+   "players": [],
+   "confirmed_at": null
+  }
+ },
+ "2026_08_CLE_PIT": {
+  "_kickoff": "2026-11-01T13:00:00-05:00",
+  "CLE": {
+   "confirmed": false,
+   "count": 0,
+   "players": [],
+   "confirmed_at": null
+  },
+  "PIT": {
+   "confirmed": false,
+   "count": 0,
+   "players": [],
+   "confirmed_at": null
+  }
+ },
+ "2026_08_IND_JAX": {
+  "_kickoff": "2026-11-01T13:00:00-05:00",
+  "IND": {
+   "confirmed": false,
+   "count": 0,
+   "players": [],
+   "confirmed_at": null
+  },
+  "JAX": {
+   "confirmed": false,
+   "count": 0,
+   "players": [],
+   "confirmed_at": null
+  }
+ },
+ "2026_08_LV_NYJ": {
+  "_kickoff": "2026-11-01T13:00:00-05:00",
+  "LV": {
+   "confirmed": false,
+   "count": 0,
+   "players": [],
+   "confirmed_at": null
+  },
+  "NYJ": {
+   "confirmed": false,
+   "count": 0,
+   "players": [],
+   "confirmed_at": null
+  }
+ },
+ "2026_08_MIN_DET": {
+  "_kickoff": "2026-11-01T13:00:00-05:00",
+  "MIN": {
+   "confirmed": false,
+   "count": 0,
+   "players": [],
+   "confirmed_at": null
+  },
+  "DET": {
+   "confirmed": false,
+   "count": 0,
+   "players": [],
+   "confirmed_at": null
+  }
+ },
+ "2026_08_TEN_CIN": {
+  "_kickoff": "2026-11-01T13:00:00-05:00",
+  "TEN": {
+   "confirmed": false,
+   "count": 0,
+   "players": [],
+   "confirmed_at": null
+  },
+  "CIN": {
+   "confirmed": false,
+   "count": 0,
+   "players": [],
+   "confirmed_at": null
+  }
+ }
+}
