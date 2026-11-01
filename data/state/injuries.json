@@ -1,5 +1,5 @@
 {
- "at": "2026-11-01T12:40:00-05:00",
+ "at": "2026-11-01T12:50:00-05:00",
  "source": "espn",
  "players": {
   "00-0041561": {
@@ -463,6 +463,16 @@
    "detail": null,
    "espn_id": "3043078"
   },
+  "name:BUF:greggaines": {
+   "name": "Greg Gaines",
+   "team": "BUF",
+   "pos": "DT",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T12:33:00-05:00",
+   "detail": "Calf",
+   "espn_id": "3127294"
+  },
   "name:BUF:spencerbrown": {
    "name": "Spencer Brown",
    "team": "BUF",
@@ -523,16 +533,6 @@
    "date": "2026-11-01T11:33:00-05:00",
    "detail": "Coach's Decision",
    "espn_id": "3915487"
-  },
-  "name:BUF:greggaines": {
-   "name": "Greg Gaines",
-   "team": "BUF",
-   "pos": "DT",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-11-01T11:33:00-05:00",
-   "detail": "Calf",
-   "espn_id": "3127294"
   },
   "name:BUF:deealford": {
    "name": "Dee Alford",
@@ -4971,6 +4971,16 @@
    "detail": null,
    "espn_id": "3871102"
   },
+  "name:TEN:jaylonjones": {
+   "name": "Jaylon Jones",
+   "team": "TEN",
+   "pos": "CB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T12:32:00-05:00",
+   "detail": "Knee",
+   "espn_id": "4685145"
+  },
   "00-0036876": {
    "name": "Kylen Granson",
    "team": "TEN",
@@ -5023,16 +5033,6 @@
    "date": "2026-11-01T11:35:00-05:00",
    "detail": "Coach's Decision",
    "espn_id": "5081785"
-  },
-  "name:TEN:jaylonjones": {
-   "name": "Jaylon Jones",
-   "team": "TEN",
-   "pos": "CB",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-11-01T11:35:00-05:00",
-   "detail": "Knee",
-   "espn_id": "4685145"
   },
   "name:TEN:brandoncrenshawdickson": {
    "name": "Brandon Crenshaw-Dickson",
