@@ -1,5 +1,5 @@
 {
- "at": "2026-10-31T22:30:12-04:00",
+ "at": "2026-10-31T23:00:14-04:00",
  "source": "espn",
  "players": {
   "00-0036510": {
@@ -1249,13 +1249,23 @@
    "detail": null,
    "espn_id": "3122840"
   },
+  "00-0037282": {
+   "name": "James Mitchell",
+   "team": "DAL",
+   "pos": "TE",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-31T22:46:00-04:00",
+   "detail": null,
+   "espn_id": "4361988"
+  },
   "name:DAL:pjlocke": {
    "name": "P.J. Locke",
    "team": "DAL",
    "pos": "S",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-10-31T14:15:00-04:00",
+   "date": "2026-10-31T22:44:00-04:00",
    "detail": "Foot",
    "espn_id": "3929850"
   },
@@ -2526,6 +2536,16 @@
    "espn_id": "4596602",
    "comment": "The Chiefs placed Smith (hamstring) on injured reserve Saturday."
   },
+  "name:LV:patrickjohnson": {
+   "name": "Patrick Johnson",
+   "team": "LV",
+   "pos": "DE",
+   "status": "Injured Reserve",
+   "fantasy": "IR",
+   "date": "2026-10-31T22:52:00-04:00",
+   "detail": "Neck",
+   "espn_id": "4243916"
+  },
   "00-0040729": {
    "name": "Jack Bech",
    "team": "LV",
@@ -2535,16 +2555,6 @@
    "date": "2026-10-31T15:53:00-04:00",
    "detail": null,
    "espn_id": "4603186"
-  },
-  "name:LV:patrickjohnson": {
-   "name": "Patrick Johnson",
-   "team": "LV",
-   "pos": "DE",
-   "status": "Injured Reserve",
-   "fantasy": "IR",
-   "date": "2026-10-30T22:03:00-04:00",
-   "detail": "Neck",
-   "espn_id": "4243916"
   },
   "00-0034365": {
    "name": "Ian Thomas",
