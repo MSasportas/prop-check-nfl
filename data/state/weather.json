@@ -7,18 +7,18 @@
    "rain_pct": 3,
    "rain_in": 0.0,
    "roof": "retractable",
-   "at": "2026-10-31T18:30:13-04:00",
+   "at": "2026-10-31T21:30:18-04:00",
    "text": "73\u00b0F, wind 3 mph (roof may be closed)"
   },
   "2026_08_ATL_TB": {
    "temp_f": 81.5,
    "wind_mph": 13.9,
    "gust_mph": 21.3,
-   "rain_pct": 36,
+   "rain_pct": 29,
    "rain_in": 0.0,
    "roof": "outdoors",
-   "at": "2026-10-31T18:30:13-04:00",
-   "text": "82\u00b0F, wind 14 mph, 36% chance of rain"
+   "at": "2026-10-31T21:30:18-04:00",
+   "text": "82\u00b0F, wind 14 mph"
   },
   "2026_08_BAL_BUF": {
    "temp_f": 67.8,
@@ -27,27 +27,27 @@
    "rain_pct": 3,
    "rain_in": 0.0,
    "roof": "outdoors",
-   "at": "2026-10-31T18:30:13-04:00",
+   "at": "2026-10-31T21:30:18-04:00",
    "text": "68\u00b0F, wind 8 mph"
   },
   "2026_08_CLE_PIT": {
    "temp_f": 58.9,
    "wind_mph": 3.6,
    "gust_mph": 12.1,
-   "rain_pct": 7,
+   "rain_pct": 6,
    "rain_in": 0.0,
    "roof": "outdoors",
-   "at": "2026-10-31T18:30:13-04:00",
+   "at": "2026-10-31T21:30:18-04:00",
    "text": "59\u00b0F, wind 4 mph"
   },
   "2026_08_IND_JAX": {
    "temp_f": 78.8,
    "wind_mph": 12.5,
    "gust_mph": 19.2,
-   "rain_pct": 26,
+   "rain_pct": 19,
    "rain_in": 0.0,
    "roof": "outdoors",
-   "at": "2026-10-31T18:30:13-04:00",
+   "at": "2026-10-31T21:30:18-04:00",
    "text": "79\u00b0F, wind 12 mph"
   },
   "2026_08_LV_NYJ": {
@@ -57,7 +57,7 @@
    "rain_pct": 0,
    "rain_in": 0.0,
    "roof": "outdoors",
-   "at": "2026-10-31T18:30:13-04:00",
+   "at": "2026-10-31T21:30:18-04:00",
    "text": "61\u00b0F, wind 3 mph"
   },
   "2026_08_MIN_DET": {
@@ -68,10 +68,10 @@
    "temp_f": 70.1,
    "wind_mph": 4.8,
    "gust_mph": 7.4,
-   "rain_pct": 7,
+   "rain_pct": 6,
    "rain_in": 0.0,
    "roof": "outdoors",
-   "at": "2026-10-31T18:30:13-04:00",
+   "at": "2026-10-31T21:30:18-04:00",
    "text": "70\u00b0F, wind 5 mph"
   },
   "2026_08_LAC_LA": {
@@ -85,18 +85,18 @@
    "rain_pct": 2,
    "rain_in": 0.0,
    "roof": "outdoors",
-   "at": "2026-10-31T18:30:13-04:00",
+   "at": "2026-10-31T21:30:18-04:00",
    "text": "61\u00b0F, wind 5 mph"
   },
   "2026_08_NE_MIA": {
    "temp_f": 78.3,
    "wind_mph": 8.6,
    "gust_mph": 23.3,
-   "rain_pct": 46,
+   "rain_pct": 43,
    "rain_in": 0.0,
    "roof": "outdoors",
-   "at": "2026-10-31T18:30:13-04:00",
-   "text": "78\u00b0F, wind 9 mph, 46% chance of rain"
+   "at": "2026-10-31T21:30:18-04:00",
+   "text": "78\u00b0F, wind 9 mph, 43% chance of rain"
   },
   "2026_08_PHI_WAS": {
    "temp_f": 51.5,
@@ -105,18 +105,18 @@
    "rain_pct": 2,
    "rain_in": 0.0,
    "roof": "outdoors",
-   "at": "2026-10-31T18:30:13-04:00",
+   "at": "2026-10-31T21:30:18-04:00",
    "text": "52\u00b0F, wind 5 mph"
   },
   "2026_08_CHI_SEA": {
-   "temp_f": 50.5,
-   "wind_mph": 1.4,
-   "gust_mph": 1.3,
+   "temp_f": 50.7,
+   "wind_mph": 1.2,
+   "gust_mph": 0.7,
    "rain_pct": 0,
    "rain_in": 0.0,
    "roof": "outdoors",
-   "at": "2026-10-31T18:30:13-04:00",
-   "text": "50\u00b0F, wind 1 mph"
+   "at": "2026-10-31T21:30:18-04:00",
+   "text": "51\u00b0F, wind 1 mph"
   }
  }
 }
