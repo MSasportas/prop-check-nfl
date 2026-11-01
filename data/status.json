@@ -3,10 +3,10 @@
  "season": 2026,
  "week": 8,
  "slate": "2026-W08",
- "started_at": "2026-11-01T09:50:01-05:00",
- "status_at": "2026-11-01T09:50:01-05:00",
- "finished_at": "2026-11-01T09:50:01-05:00",
- "last_ok_at": "2026-11-01T09:50:01-05:00",
+ "started_at": "2026-11-01T10:00:00-05:00",
+ "status_at": "2026-11-01T10:00:00-05:00",
+ "finished_at": "2026-11-01T10:00:41-05:00",
+ "last_ok_at": "2026-11-01T10:00:00-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -36,13 +36,13 @@
   },
   {
    "step": "weather",
-   "status": "skipped",
-   "note": "nothing due (2 indoors)"
+   "status": "ok",
+   "note": "11 read, 0 failed, 2 indoors"
   },
   {
    "step": "odds",
    "status": "ok",
-   "note": "no pull due"
+   "note": "7 read(s) (W)"
   },
   {
    "step": "engine",
@@ -56,13 +56,13 @@
   },
   {
    "step": "watch",
-   "status": "skipped",
-   "note": "0 move(s)/side(s) scanned, 0 flagged, 0 graded"
+   "status": "ok",
+   "note": "34 move(s)/side(s) scanned, 0 flagged, 0 graded"
   },
   {
    "step": "slate",
-   "status": "skipped",
-   "note": "unchanged"
+   "status": "ok",
+   "note": "0 open pick(s), 0 pulled"
   },
   {
    "step": "record",
@@ -85,7 +85,7 @@
  "keys": [
   {
    "n": 1,
-   "left": 500,
+   "left": 458,
    "shared": false
   },
   {
@@ -119,17 +119,53 @@
    "shared": false
   }
  ],
- "pool_total": 3496,
- "allowance": 66.67,
+ "pool_total": 3454,
+ "allowance": 63.87,
  "tier": "full",
  "games_left_before_reset": 15,
- "budget_used_today": 0,
+ "budget_used_today": 42,
  "odds": {
   "state": "ok",
-  "at": "2026-10-31T17:00:00-04:00",
+  "at": "2026-11-01T10:00:00-05:00",
   "next_at": "2026-11-01T12:15:00-05:00"
  },
- "due": [],
+ "due": [
+  {
+   "pull": "W",
+   "game_id": "2026_08_ARI_DAL",
+   "cost_max": 6
+  },
+  {
+   "pull": "W",
+   "game_id": "2026_08_ATL_TB",
+   "cost_max": 6
+  },
+  {
+   "pull": "W",
+   "game_id": "2026_08_BAL_BUF",
+   "cost_max": 6
+  },
+  {
+   "pull": "W",
+   "game_id": "2026_08_CLE_PIT",
+   "cost_max": 6
+  },
+  {
+   "pull": "W",
+   "game_id": "2026_08_IND_JAX",
+   "cost_max": 6
+  },
+  {
+   "pull": "W",
+   "game_id": "2026_08_LV_NYJ",
+   "cost_max": 6
+  },
+  {
+   "pull": "W",
+   "game_id": "2026_08_MIN_DET",
+   "cost_max": 6
+  }
+ ],
  "skipped_games": [],
  "unmatched_names": [],
  "unknown_teams": [],
@@ -141,11 +177,11 @@
  "odds_notes": [],
  "runner": {
   "event": "workflow_dispatch",
-  "run_id": "41317323634",
+  "run_id": "41318139718",
   "iteration": 2,
-  "chain_link": 837,
+  "chain_link": 838,
   "chain_started_at": "2026-10-30T17:27:57-04:00",
-  "run_started_at": "2026-11-01T09:40:12-05:00"
+  "run_started_at": "2026-11-01T09:50:10-05:00"
  },
  "live_page": {
   "checked_at": "2026-11-01T09:20:00-05:00",

@@ -1,15 +1,23 @@
 {
  "schema": 1,
- "updated_at": "2026-11-01T00:00:01-04:00",
+ "updated_at": "2026-11-01T10:00:00-05:00",
  "note": "Research only. Never on the Picks tab, never in the Record. Promotion to a live rule needs Matt.",
  "reads": {
-  "games_with_pairs": 0,
-  "pairs": 0,
-  "by_window": []
+  "games_with_pairs": 7,
+  "pairs": 7,
+  "by_window": [
+   {
+    "window": "R\u2192W",
+    "pairs": 7,
+    "avg_gap_hours": 41.5,
+    "avg_pin_lines": 16.4,
+    "avg_moves": 4.7
+   }
+  ]
  },
  "credits": {
-  "w_reads": 0,
-  "w_credits": 0,
+  "w_reads": 7,
+  "w_credits": 42,
   "month": "2026-11"
  },
  "tracks": [
@@ -38,11 +46,32 @@
    },
    "by_market": [],
    "seen": {
-    "reads_scanned": 0,
-    "candidates": 0,
-    "distinct_sides": 0,
+    "reads_scanned": 7,
+    "candidates": 33,
+    "distinct_sides": 33,
     "would_fire": 0,
-    "by_gate": []
+    "by_gate": [
+     {
+      "gate": "hr_line",
+      "label": "Hard Rock did not quote this line on both reads",
+      "n": 17
+     },
+     {
+      "gate": "worse_than_fair",
+      "label": "Hard Rock price worse than Pinnacle's fair price",
+      "n": 9
+     },
+     {
+      "gate": "others_moved",
+      "label": "the other books moved too",
+      "n": 5
+     },
+     {
+      "gate": "books",
+      "label": "fewer than 4 other books on this line",
+      "n": 2
+     }
+    ]
    },
    "weeks": []
   },
@@ -71,15 +100,15 @@
    },
    "by_market": [],
    "seen": {
-    "reads_scanned": 13,
-    "candidates": 1,
-    "distinct_sides": 1,
+    "reads_scanned": 20,
+    "candidates": 2,
+    "distinct_sides": 2,
     "would_fire": 0,
     "by_gate": [
      {
       "gate": "price_window",
       "label": "Hard Rock price outside the price window",
-      "n": 1
+      "n": 2
      }
     ]
    },
