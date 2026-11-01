@@ -1,7 +1,18 @@
 {
- "at": "2026-11-01T16:20:01-05:00",
+ "at": "2026-11-01T17:00:00-05:00",
  "source": "espn",
  "players": {
+  "00-0041027": {
+   "name": "Jeremiyah Love",
+   "team": "ARI",
+   "pos": "RB",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-11-01T16:11:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "4870808",
+   "comment": "Love (ankle) was ruled out for Sunday's game against the Cowboys to begin the second half, Alex Weiner of ArizonaSports.com reports."
+  },
   "name:ARI:jaydenwilliams": {
    "name": "Jayden Williams",
    "team": "ARI",
@@ -43,17 +54,6 @@
    "detail": "Ankle",
    "espn_id": "3045523",
    "comment": "Bourne won't return to Sunday's contest at Dallas due to a right high-ankle sprain, Theo Mackie of The Arizona Republic reports."
-  },
-  "00-0041027": {
-   "name": "Jeremiyah Love",
-   "team": "ARI",
-   "pos": "RB",
-   "status": "Questionable",
-   "fantasy": "OUT",
-   "date": "2026-11-01T14:08:00-05:00",
-   "detail": "Ankle",
-   "espn_id": "4870808",
-   "comment": "Love (ankle) is questionable to return to Sunday's game at Dallas, Theo Mackie of The Arizona Republic reports."
   },
   "00-0041561": {
    "name": "Carson Beck",
@@ -337,8 +337,8 @@
    "name": "Tyler Huntley",
    "team": "BAL",
    "pos": "QB",
-   "status": "Out",
-   "fantasy": "OUT",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
    "date": "2026-11-01T15:09:00-05:00",
    "detail": "Toe",
    "espn_id": "4035671",
@@ -494,9 +494,20 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-11-01T16:05:00-05:00",
+   "date": "2026-11-01T16:42:00-05:00",
    "detail": "Suspension",
    "espn_id": "4034953"
+  },
+  "00-0034827": {
+   "name": "DJ Moore",
+   "team": "BUF",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-01T16:17:00-05:00",
+   "detail": "Undisclosed",
+   "espn_id": "3915416",
+   "comment": "Moore (undisclosed) headed to the medical tent during Sunday's game against the Ravens, Katherine Fitzgerald of The Buffalo News reports."
   },
   "00-0037248": {
    "name": "James Cook III",
@@ -504,7 +515,7 @@
    "pos": "RB",
    "status": "Active",
    "fantasy": null,
-   "date": "2026-11-01T15:59:00-05:00",
+   "date": "2026-11-01T16:06:00-05:00",
    "detail": null,
    "espn_id": "4379399"
   },
@@ -512,8 +523,8 @@
    "name": "Joshua Palmer",
    "team": "BUF",
    "pos": "WR",
-   "status": "Out",
-   "fantasy": "OUT",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
    "date": "2026-11-01T15:28:00-05:00",
    "detail": "Hamstring",
    "espn_id": "4242433",
@@ -599,16 +610,6 @@
    "date": "2026-11-01T11:27:00-05:00",
    "detail": null,
    "espn_id": "4385690"
-  },
-  "00-0034827": {
-   "name": "DJ Moore",
-   "team": "BUF",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-01T11:26:00-05:00",
-   "detail": null,
-   "espn_id": "3915416"
   },
   "00-0039875": {
    "name": "Ray Davis",
@@ -986,6 +987,16 @@
    "detail": null,
    "espn_id": "4431611"
   },
+  "name:CIN:cashiushowell": {
+   "name": "Cashius Howell",
+   "team": "CIN",
+   "pos": "DE",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-01T16:12:00-05:00",
+   "detail": "Wrist",
+   "espn_id": "4710752"
+  },
   "name:CIN:cedricjohnson": {
    "name": "Cedric Johnson",
    "team": "CIN",
@@ -1005,16 +1016,6 @@
    "date": "2026-11-01T16:08:00-05:00",
    "detail": "Ankle",
    "espn_id": "4572036"
-  },
-  "name:CIN:cashiushowell": {
-   "name": "Cashius Howell",
-   "team": "CIN",
-   "pos": "DE",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-01T15:45:00-05:00",
-   "detail": "Wrist",
-   "espn_id": "4710752"
   },
   "00-0038839": {
    "name": "Mitchell Tinsley",
@@ -1649,6 +1650,16 @@
    "espn_id": "4362748",
    "comment": "The Broncos placed Badie (thumb) on injured reserve Saturday, Aric DiLalla of the team's official site reports."
   },
+  "name:DET:jimmyrolder": {
+   "name": "Jimmy Rolder",
+   "team": "DET",
+   "pos": "LB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-01T16:13:00-05:00",
+   "detail": "Hamstring",
+   "espn_id": "4896353"
+  },
   "name:DET:cademays": {
    "name": "Cade Mays",
    "team": "DET",
@@ -1678,16 +1689,6 @@
    "date": "2026-11-01T16:01:00-05:00",
    "detail": "Neck",
    "espn_id": "4569465"
-  },
-  "name:DET:jimmyrolder": {
-   "name": "Jimmy Rolder",
-   "team": "DET",
-   "pos": "LB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-01T15:54:00-05:00",
-   "detail": "Hamstring",
-   "espn_id": "4896353"
   },
   "00-0038896": {
    "name": "Jacob Saylors",
@@ -2713,6 +2714,26 @@
    "detail": null,
    "espn_id": "4567048"
   },
+  "00-0039338": {
+   "name": "Brock Bowers",
+   "team": "LV",
+   "pos": "TE",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T16:42:00-05:00",
+   "detail": null,
+   "espn_id": "4432665"
+  },
+  "00-0040122": {
+   "name": "Ashton Jeanty",
+   "team": "LV",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T16:37:00-05:00",
+   "detail": null,
+   "espn_id": "4890973"
+  },
   "name:LV:darienporter": {
    "name": "Darien Porter",
    "team": "LV",
@@ -2837,16 +2858,6 @@
    "espn_id": "5155825",
    "comment": "Runyon (foot) has been ruled out for Sunday's game against the Jets, Sam Warren of The Athletic reports."
   },
-  "00-0039338": {
-   "name": "Brock Bowers",
-   "team": "LV",
-   "pos": "TE",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-29T17:10:00-04:00",
-   "detail": null,
-   "espn_id": "4432665"
-  },
   "00-0035891": {
    "name": "Cody White",
    "team": "LV",
@@ -2886,6 +2897,16 @@
    "date": "2026-10-26T15:53:00-04:00",
    "detail": null,
    "espn_id": "14880"
+  },
+  "name:LAC:daiyanhenley": {
+   "name": "Daiyan Henley",
+   "team": "LAC",
+   "pos": "LB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-01T16:22:00-05:00",
+   "detail": "Shoulder",
+   "espn_id": "4241597"
   },
   "name:LAC:rodneyshelley": {
    "name": "Rodney Shelley",
@@ -3294,6 +3315,16 @@
    "detail": "Concussion",
    "espn_id": "4870976"
   },
+  "name:MIA:christianhaynes": {
+   "name": "Christian Haynes",
+   "team": "MIA",
+   "pos": "G",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T14:59:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4362135"
+  },
   "00-0041077": {
    "name": "Justin Joly",
    "team": "MIA",
@@ -3394,16 +3425,6 @@
    "date": "2026-10-26T20:30:00-04:00",
    "detail": null,
    "espn_id": "4685246"
-  },
-  "00-0037666": {
-   "name": "Jalen Tolbert",
-   "team": "MIA",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-26T14:38:00-04:00",
-   "detail": null,
-   "espn_id": "4249417"
   },
   "name:MIN:theojackson": {
    "name": "Theo Jackson",
@@ -3552,9 +3573,9 @@
    "team": "MIN",
    "pos": "QB",
    "status": "Active",
-   "fantasy": null,
+   "fantasy": "QUESTIONABLE",
    "date": "2026-10-25T18:02:00-04:00",
-   "detail": null,
+   "detail": "Hamstring",
    "espn_id": "3917315"
   },
   "00-0036322": {
@@ -5115,6 +5136,16 @@
    "detail": null,
    "espn_id": "3871102"
   },
+  "name:TEN:peterskoronski": {
+   "name": "Peter Skoronski",
+   "team": "TEN",
+   "pos": "G",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-01T16:14:00-05:00",
+   "detail": "Hamstring",
+   "espn_id": "4429100"
+  },
   "name:TEN:jclatham": {
    "name": "JC Latham",
    "team": "TEN",
@@ -5124,16 +5155,6 @@
    "date": "2026-11-01T16:06:00-05:00",
    "detail": "Finger",
    "espn_id": "4431437"
-  },
-  "name:TEN:peterskoronski": {
-   "name": "Peter Skoronski",
-   "team": "TEN",
-   "pos": "G",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-01T16:02:00-05:00",
-   "detail": "Hamstring",
-   "espn_id": "4429100"
   },
   "name:TEN:jameswilliams": {
    "name": "James Williams Sr.",
