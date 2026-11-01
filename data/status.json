@@ -3,10 +3,10 @@
  "season": 2026,
  "week": 8,
  "slate": "2026-W08",
- "started_at": "2026-11-01T16:10:01-05:00",
- "status_at": "2026-11-01T16:10:01-05:00",
- "finished_at": "2026-11-01T16:10:01-05:00",
- "last_ok_at": "2026-11-01T16:10:01-05:00",
+ "started_at": "2026-11-01T16:30:00-05:00",
+ "status_at": "2026-11-01T16:30:00-05:00",
+ "finished_at": "2026-11-01T16:30:01-05:00",
+ "last_ok_at": "2026-11-01T16:30:00-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -17,7 +17,7 @@
   {
    "step": "schedule",
    "status": "ok",
-   "note": "14 game(s) this week (2026-W08); live state for 8 game(s)"
+   "note": "14 game(s) this week (2026-W08); live state for 6 game(s)"
   },
   {
    "step": "stats",
@@ -31,8 +31,8 @@
   },
   {
    "step": "injuries",
-   "status": "ok",
-   "note": "espn: 222 out, 55 questionable; inactives posted for 22 team(s)"
+   "status": "skipped",
+   "note": "read at 4:20 PM; inactives posted for 22 team(s)"
   },
   {
    "step": "weather",
@@ -134,6 +134,8 @@
  "unmatched_names": [],
  "unknown_teams": [],
  "behind": {
+  "BAL": "last game's stats are not in yet",
+  "BUF": "last game's stats are not in yet",
   "MIN": "last game's stats are not in yet",
   "DET": "last game's stats are not in yet",
   "IND": "last game's stats are not in yet",
@@ -153,7 +155,7 @@
  "runner": {
   "event": "workflow_dispatch",
   "run_id": "41348028410",
-  "iteration": 4,
+  "iteration": 6,
   "chain_link": 845,
   "chain_started_at": "2026-10-30T17:27:57-04:00",
   "run_started_at": "2026-11-01T15:40:14-05:00"
