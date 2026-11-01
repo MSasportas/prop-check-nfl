@@ -14,8 +14,8 @@
  "season": 2026,
  "week": 8,
  "label": "Week 8",
- "generated_at": "2026-11-01T16:30:00-05:00",
- "status_at": "2026-11-01T16:30:00-05:00",
+ "generated_at": "2026-11-01T16:40:00-05:00",
+ "status_at": "2026-11-01T16:40:00-05:00",
  "valid_until": "2026-11-03T06:00:00-05:00",
  "next_check": "2026-11-01T19:35:00-05:00",
  "status": {
@@ -49,7 +49,7 @@
   },
   "last_run": {
    "ok": true,
-   "at": "2026-11-01T16:30:00-05:00",
+   "at": "2026-11-01T16:40:00-05:00",
    "failed_step": null
   }
  },
@@ -87,8 +87,11 @@
    "day": "2026-11-01",
    "roof": null,
    "started": true,
-   "final": false,
-   "score": null,
+   "final": true,
+   "score": {
+    "away": 33,
+    "home": 30
+   },
    "settled": "inactives",
    "props_state": "ok",
    "props_at": "2026-11-01T12:00:00-05:00",
