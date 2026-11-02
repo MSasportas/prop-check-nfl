@@ -1,7 +1,39 @@
 {
- "at": "2026-11-02T16:30:00-05:00",
+ "at": "2026-11-02T17:00:00-05:00",
  "source": "espn",
  "players": {
+  "00-0041027": {
+   "name": "Jeremiyah Love",
+   "team": "ARI",
+   "pos": "RB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-02T16:48:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "4870808",
+   "comment": "Head coach Mike LaFleur said Monday that Love suffered a \"new\" ankle injury during Sunday's overtime win at Dallas, and that he'll have an update on the running"
+  },
+  "00-0035289": {
+   "name": "Gardner Minshew II",
+   "team": "ARI",
+   "pos": "QB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-02T16:46:00-05:00",
+   "detail": null,
+   "espn_id": "4038524"
+  },
+  "00-0033307": {
+   "name": "Kendrick Bourne",
+   "team": "ARI",
+   "pos": "WR",
+   "status": "Doubtful",
+   "fantasy": "DOUBTFUL",
+   "date": "2026-11-02T16:44:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "3045523",
+   "comment": "doubtful"
+  },
   "name:ARI:walternolen": {
    "name": "Walter Nolen III",
    "team": "ARI",
@@ -41,16 +73,6 @@
    "date": "2026-11-02T13:31:00-05:00",
    "detail": null,
    "espn_id": "4430841"
-  },
-  "00-0035289": {
-   "name": "Gardner Minshew II",
-   "team": "ARI",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-01T20:38:00-05:00",
-   "detail": null,
-   "espn_id": "4038524"
   },
   "00-0033119": {
    "name": "Jacoby Brissett",
@@ -93,17 +115,6 @@
    "espn_id": "4360761",
    "comment": "Wilson said after Sunday's 33-30 win at Dallas that he suffered two broken ribs during the contest, Josh Weinfuss of ESPN.com reports."
   },
-  "00-0041027": {
-   "name": "Jeremiyah Love",
-   "team": "ARI",
-   "pos": "RB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-01T16:11:00-05:00",
-   "detail": "Ankle",
-   "espn_id": "4870808",
-   "comment": "Love (ankle) was ruled out for Sunday's game against the Cowboys to begin the second half, Alex Weiner of ArizonaSports.com reports."
-  },
   "name:ARI:jaydenwilliams": {
    "name": "Jayden Williams",
    "team": "ARI",
@@ -124,17 +135,6 @@
    "detail": "Concussion",
    "espn_id": "4427728",
    "comment": "Knight (concussion) has been ruled out for the rest of Sunday's game against the Cowboys."
-  },
-  "00-0033307": {
-   "name": "Kendrick Bourne",
-   "team": "ARI",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-01T14:52:00-05:00",
-   "detail": "Ankle",
-   "espn_id": "3045523",
-   "comment": "Bourne won't return to Sunday's contest at Dallas due to a right high-ankle sprain, Theo Mackie of The Arizona Republic reports."
   },
   "00-0036510": {
    "name": "Kenny Yeboah",
@@ -489,7 +489,7 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-11-02T16:21:00-05:00",
+   "date": "2026-11-02T16:44:00-05:00",
    "detail": "Suspension",
    "espn_id": "4034953"
   },
@@ -2257,6 +2257,16 @@
    "detail": null,
    "espn_id": "2998565"
   },
+  "name:JAX:ericmurray": {
+   "name": "Eric Murray",
+   "team": "JAX",
+   "pos": "S",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-11-02T16:54:00-05:00",
+   "detail": "Elbow",
+   "espn_id": "2970716"
+  },
   "name:JAX:antoniojohnson": {
    "name": "Antonio Johnson",
    "team": "JAX",
@@ -2376,16 +2386,6 @@
    "date": "2026-11-01T14:05:00-05:00",
    "detail": "Ankle",
    "espn_id": "4048231"
-  },
-  "name:JAX:ericmurray": {
-   "name": "Eric Murray",
-   "team": "JAX",
-   "pos": "S",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-01T13:47:00-05:00",
-   "detail": "Elbow",
-   "espn_id": "2970716"
   },
   "00-0034960": {
    "name": "Jakobi Meyers",
@@ -3974,6 +3974,16 @@
    "detail": null,
    "espn_id": "5083315"
   },
+  "00-0038400": {
+   "name": "Tanner McKee",
+   "team": "PHI",
+   "pos": "QB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-02T16:37:00-05:00",
+   "detail": null,
+   "espn_id": "4685201"
+  },
   "00-0038393": {
    "name": "Dontayvion Wicks",
    "team": "PHI",
@@ -4046,16 +4056,6 @@
    "date": "2026-11-02T00:06:00-05:00",
    "detail": null,
    "espn_id": "4241555"
-  },
-  "00-0038400": {
-   "name": "Tanner McKee",
-   "team": "PHI",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-01T23:56:00-05:00",
-   "detail": null,
-   "espn_id": "4685201"
   },
   "00-0040867": {
    "name": "Makai Lemon",
@@ -4522,7 +4522,7 @@
    "pos": "RB",
    "status": "Active",
    "fantasy": null,
-   "date": "2026-11-02T16:21:00-05:00",
+   "date": "2026-11-02T16:20:00-05:00",
    "detail": null,
    "espn_id": "4685512"
   },
