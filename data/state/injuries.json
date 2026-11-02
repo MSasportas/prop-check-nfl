@@ -1,5 +1,5 @@
 {
- "at": "2026-11-01T19:50:00-05:00",
+ "at": "2026-11-01T19:50:14-05:00",
  "source": "espn",
  "players": {
   "00-0037744": {
@@ -5007,6 +5007,16 @@
    "detail": null,
    "espn_id": "3912547"
   },
+  "00-0036919": {
+   "name": "Kenny Gainwell",
+   "team": "TB",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T19:43:00-05:00",
+   "detail": null,
+   "espn_id": "4371733"
+  },
   "00-0039361": {
    "name": "Bucky Irving",
    "team": "TB",
@@ -5046,16 +5056,6 @@
    "date": "2026-11-01T11:51:00-05:00",
    "detail": null,
    "espn_id": "3116165"
-  },
-  "00-0036919": {
-   "name": "Kenny Gainwell",
-   "team": "TB",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-01T11:44:00-05:00",
-   "detail": null,
-   "espn_id": "4371733"
   },
   "name:TB:billyschrauth": {
    "name": "Billy Schrauth",
