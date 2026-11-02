@@ -1,5 +1,5 @@
 {
- "at": "2026-11-02T10:00:01-05:00",
+ "at": "2026-11-02T10:30:15-05:00",
  "source": "espn",
  "players": {
   "00-0035289": {
@@ -177,6 +177,16 @@
    "date": "2026-10-31T20:49:00-04:00",
    "detail": null,
    "espn_id": "4044144"
+  },
+  "00-0036463": {
+   "name": "Chris Blair",
+   "team": "ATL",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-02T10:02:00-05:00",
+   "detail": null,
+   "espn_id": "4369886"
   },
   "00-0037741": {
    "name": "Jahan Dotson",
@@ -373,6 +383,16 @@
    "detail": "Undisclosed",
    "espn_id": "5150660"
   },
+  "00-0040075": {
+   "name": "LaJohntay Wester",
+   "team": "BAL",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-02T10:05:00-05:00",
+   "detail": null,
+   "espn_id": "4690143"
+  },
   "00-0034975": {
    "name": "Justice Hill",
    "team": "BAL",
@@ -548,15 +568,15 @@
    "detail": null,
    "espn_id": "4870847"
   },
-  "00-0036550": {
-   "name": "Rashod Bateman",
-   "team": "BAL",
+  "00-0035500": {
+   "name": "Greg Dortch",
+   "team": "BUF",
    "pos": "WR",
    "status": "Active",
    "fantasy": null,
-   "date": "2026-10-26T20:38:00-04:00",
+   "date": "2026-11-02T10:08:00-05:00",
    "detail": null,
-   "espn_id": "4360939"
+   "espn_id": "4037235"
   },
   "name:BUF:cjgardnerjohnson": {
    "name": "C.J. Gardner-Johnson",
@@ -564,7 +584,7 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-11-02T09:49:00-05:00",
+   "date": "2026-11-02T10:01:00-05:00",
    "detail": "Suspension",
    "espn_id": "4034953"
   },
@@ -722,6 +742,36 @@
    "espn_id": "4241476",
    "comment": "The Bills designated Shavers (knee) to return from the reserve/PUP list Wednesday, but he will not play against the Ravens on Sunday, Cameron Wolfe of NFL Netwo"
   },
+  "00-0038840": {
+   "name": "Brycen Tremayne",
+   "team": "CAR",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-02T10:17:00-05:00",
+   "detail": null,
+   "espn_id": "4360763"
+  },
+  "00-0037614": {
+   "name": "John Metchie III",
+   "team": "CAR",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-02T10:15:00-05:00",
+   "detail": null,
+   "espn_id": "4567096"
+  },
+  "00-0033589": {
+   "name": "David Moore",
+   "team": "CAR",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-02T10:12:00-05:00",
+   "detail": null,
+   "espn_id": "4212909"
+  },
   "00-0039150": {
    "name": "Bryce Young",
    "team": "CAR",
@@ -864,16 +914,6 @@
    "date": "2026-10-28T19:41:00-04:00",
    "detail": "Hamstring",
    "espn_id": "4242975"
-  },
-  "00-0037614": {
-   "name": "John Metchie III",
-   "team": "CAR",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-26T20:44:00-04:00",
-   "detail": null,
-   "espn_id": "4567096"
   },
   "00-0040187": {
    "name": "Mitchell Evans",
