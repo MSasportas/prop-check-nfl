@@ -1,7 +1,47 @@
 {
- "at": "2026-11-02T13:20:01-05:00",
+ "at": "2026-11-02T13:50:01-05:00",
  "source": "espn",
  "players": {
+  "name:ARI:walternolen": {
+   "name": "Walter Nolen III",
+   "team": "ARI",
+   "pos": "DT",
+   "status": "Out",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-02T13:31:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "4685503"
+  },
+  "name:ARI:jongaines": {
+   "name": "Jon Gaines II",
+   "team": "ARI",
+   "pos": "G",
+   "status": "Out",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-02T13:31:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "4367199"
+  },
+  "00-0038397": {
+   "name": "Evan Hull",
+   "team": "ARI",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-02T13:31:00-05:00",
+   "detail": null,
+   "espn_id": "4569609"
+  },
+  "00-0041561": {
+   "name": "Carson Beck",
+   "team": "ARI",
+   "pos": "QB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-02T13:31:00-05:00",
+   "detail": null,
+   "espn_id": "4430841"
+  },
   "00-0035289": {
    "name": "Gardner Minshew II",
    "team": "ARI",
@@ -96,78 +136,6 @@
    "espn_id": "3045523",
    "comment": "Bourne won't return to Sunday's contest at Dallas due to a right high-ankle sprain, Theo Mackie of The Arizona Republic reports."
   },
-  "00-0041561": {
-   "name": "Carson Beck",
-   "team": "ARI",
-   "pos": "QB",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-11-01T12:15:00-05:00",
-   "detail": "Coach's Decision",
-   "espn_id": "4430841",
-   "comment": "Beck (coach's decision) is inactive for Sunday's game in Dallas, though he will be available as the team's QB3, Darren Urban of the team's official site reports"
-  },
-  "name:ARI:walternolen": {
-   "name": "Walter Nolen III",
-   "team": "ARI",
-   "pos": "DT",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-11-01T11:39:00-05:00",
-   "detail": "Ankle",
-   "espn_id": "4685503"
-  },
-  "name:ARI:albertreese": {
-   "name": "Albert Reese IV",
-   "team": "ARI",
-   "pos": "OT",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-11-01T11:39:00-05:00",
-   "detail": "Coach's Decision",
-   "espn_id": "4683506"
-  },
-  "name:ARI:starlingthomas": {
-   "name": "Starling Thomas V",
-   "team": "ARI",
-   "pos": "CB",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-11-01T11:39:00-05:00",
-   "detail": "Coach's Decision",
-   "espn_id": "4363408"
-  },
-  "00-0038397": {
-   "name": "Evan Hull",
-   "team": "ARI",
-   "pos": "RB",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-11-01T11:39:00-05:00",
-   "detail": "Coach's Decision",
-   "espn_id": "4569609",
-   "comment": "inactive"
-  },
-  "name:ARI:ekuleota": {
-   "name": "Eku Leota",
-   "team": "ARI",
-   "pos": "LB",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-11-01T11:39:00-05:00",
-   "detail": "Coach's Decision",
-   "espn_id": "4361272"
-  },
-  "name:ARI:jongaines": {
-   "name": "Jon Gaines II",
-   "team": "ARI",
-   "pos": "G",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-11-01T11:39:00-05:00",
-   "detail": "Ankle",
-   "espn_id": "4367199"
-  },
   "00-0036510": {
    "name": "Kenny Yeboah",
    "team": "ARI",
@@ -177,6 +145,57 @@
    "date": "2026-10-31T20:49:00-04:00",
    "detail": null,
    "espn_id": "4044144"
+  },
+  "00-0037746": {
+   "name": "Brian Robinson Jr.",
+   "team": "ATL",
+   "pos": "RB",
+   "status": "Out",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-02T13:33:00-05:00",
+   "detail": "Hamstring",
+   "espn_id": "4241474",
+   "comment": "out"
+  },
+  "name:ATL:billybowman": {
+   "name": "Billy Bowman Jr.",
+   "team": "ATL",
+   "pos": "CB",
+   "status": "Out",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-02T13:33:00-05:00",
+   "detail": "Hamstring",
+   "espn_id": "4431194"
+  },
+  "name:ATL:divinedeablo": {
+   "name": "Divine Deablo",
+   "team": "ATL",
+   "pos": "LB",
+   "status": "Out",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-02T13:33:00-05:00",
+   "detail": "Forearm",
+   "espn_id": "4037626"
+  },
+  "00-0041194": {
+   "name": "Jack Strand",
+   "team": "ATL",
+   "pos": "QB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-02T13:33:00-05:00",
+   "detail": null,
+   "espn_id": "5344782"
+  },
+  "00-0027973": {
+   "name": "Andy Dalton",
+   "team": "ATL",
+   "pos": "QB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-02T13:33:00-05:00",
+   "detail": null,
+   "espn_id": "14012"
   },
   "00-0036463": {
    "name": "Chris Blair",
@@ -269,59 +288,6 @@
    "detail": null,
    "espn_id": "3917914"
   },
-  "00-0027973": {
-   "name": "Andy Dalton",
-   "team": "ATL",
-   "pos": "QB",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-11-01T11:57:00-05:00",
-   "detail": "Coach's Decision",
-   "espn_id": "14012",
-   "comment": "Dalton is inactive for Sunday's game versus the Buccaneers, though he will be available as the team's emergency backup if necessary."
-  },
-  "00-0041194": {
-   "name": "Jack Strand",
-   "team": "ATL",
-   "pos": "QB",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-11-01T11:35:00-05:00",
-   "detail": "Coach's Decision",
-   "espn_id": "5344782",
-   "comment": "inactive"
-  },
-  "name:ATL:robertlongerbeam": {
-   "name": "Robert Longerbeam",
-   "team": "ATL",
-   "pos": "CB",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-11-01T11:35:00-05:00",
-   "detail": "Coach's Decision",
-   "espn_id": "4575860"
-  },
-  "00-0037746": {
-   "name": "Brian Robinson Jr.",
-   "team": "ATL",
-   "pos": "RB",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-11-01T11:35:00-05:00",
-   "detail": "Hamstring",
-   "espn_id": "4241474",
-   "comment": "inactive"
-  },
-  "name:ATL:drakejackson": {
-   "name": "Drake Jackson",
-   "team": "ATL",
-   "pos": "DE",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-11-01T11:35:00-05:00",
-   "detail": "Coach's Decision",
-   "espn_id": "4569511"
-  },
   "name:ATL:cameronwilliams": {
    "name": "Cameron Williams",
    "team": "ATL",
@@ -331,26 +297,6 @@
    "date": "2026-10-31T23:11:00-04:00",
    "detail": "Ankle",
    "espn_id": "4685590"
-  },
-  "name:ATL:billybowman": {
-   "name": "Billy Bowman Jr.",
-   "team": "ATL",
-   "pos": "CB",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-10-31T20:39:00-04:00",
-   "detail": "Hamstring",
-   "espn_id": "4431194"
-  },
-  "name:ATL:divinedeablo": {
-   "name": "Divine Deablo",
-   "team": "ATL",
-   "pos": "LB",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-10-31T20:36:00-04:00",
-   "detail": "Forearm",
-   "espn_id": "4037626"
   },
   "00-0040432": {
    "name": "Beaux Collins",
@@ -574,7 +520,7 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-11-02T13:00:00-05:00",
+   "date": "2026-11-02T13:33:00-05:00",
    "detail": "Suspension",
    "espn_id": "4034953"
   },
@@ -665,7 +611,7 @@
    "team": "BUF",
    "pos": "DT",
    "status": "Out",
-   "fantasy": "INACTIVE",
+   "fantasy": "QUESTIONABLE",
    "date": "2026-11-01T12:33:00-05:00",
    "detail": "Calf",
    "espn_id": "3127294"
@@ -685,9 +631,9 @@
    "team": "BUF",
    "pos": "G",
    "status": "Out",
-   "fantasy": "INACTIVE",
+   "fantasy": null,
    "date": "2026-11-01T11:33:00-05:00",
-   "detail": "Coach's Decision",
+   "detail": null,
    "espn_id": "4606712"
   },
   "name:BUF:jalonkilgore": {
@@ -1427,9 +1373,9 @@
    "team": "CLE",
    "pos": "C",
    "status": "Out",
-   "fantasy": "INACTIVE",
+   "fantasy": null,
    "date": "2026-11-01T11:32:00-05:00",
-   "detail": "Coach's Decision",
+   "detail": null,
    "espn_id": "4816090"
   },
   "00-0039373": {
