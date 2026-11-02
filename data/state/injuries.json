@@ -1,5 +1,5 @@
 {
- "at": "2026-11-02T18:40:01-05:00",
+ "at": "2026-11-02T18:50:01-05:00",
  "source": "espn",
  "players": {
   "00-0033307": {
@@ -329,6 +329,27 @@
    "detail": "Undisclosed",
    "espn_id": "5150660"
   },
+  "name:BAL:tylerloop": {
+   "name": "Tyler Loop",
+   "team": "BAL",
+   "pos": "PK",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-02T18:43:00-05:00",
+   "detail": "Undisclosed",
+   "espn_id": "4697745"
+  },
+  "00-0040981": {
+   "name": "Joe Fagnano",
+   "team": "BAL",
+   "pos": "QB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-02T18:43:00-05:00",
+   "detail": "Knee",
+   "espn_id": "4429582",
+   "comment": "Coach Jesse Minter said Monday that Fagnano (knee) \"is fighting through a couple things\" but has a chance to play Thursday against the Jaguars."
+  },
   "name:BAL:jaylinnhawkins": {
    "name": "Jaylinn Hawkins",
    "team": "BAL",
@@ -410,17 +431,6 @@
    "espn_id": "4035671",
    "comment": "Huntley may have sustained a right turf toe injury during Sunday's 36-10 loss at Buffalo, Adam Schefter of ESPN reports."
   },
-  "00-0040981": {
-   "name": "Joe Fagnano",
-   "team": "BAL",
-   "pos": "QB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-01T17:29:00-05:00",
-   "detail": "Knee",
-   "espn_id": "4429582",
-   "comment": "Fagnano acknowledged that he's not 100 percent healthy after taking a hit to his left knee during Sunday's 36-10 loss to the Bills, but he said that he hopes to"
-  },
   "00-0032764": {
    "name": "Derrick Henry",
    "team": "BAL",
@@ -472,16 +482,6 @@
    "date": "2026-10-26T21:46:00-04:00",
    "detail": null,
    "espn_id": "4876132"
-  },
-  "00-0040870": {
-   "name": "Ja'Kobi Lane",
-   "team": "BAL",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-26T21:00:00-04:00",
-   "detail": null,
-   "espn_id": "4870847"
   },
   "name:BUF:spencerbrown": {
    "name": "Spencer Brown",
@@ -2717,6 +2717,17 @@
    "detail": "Foot",
    "espn_id": "5155825",
    "comment": "Runyon (foot) has been ruled out for Sunday's game against the Jets, Sam Warren of The Athletic reports."
+  },
+  "00-0033885": {
+   "name": "David Njoku",
+   "team": "LAC",
+   "pos": "TE",
+   "status": "Injured Reserve",
+   "fantasy": "IR",
+   "date": "2026-11-02T18:38:00-05:00",
+   "detail": "Lower Leg",
+   "espn_id": "3123076",
+   "comment": "Coach Jim Harbaugh said Monday that the Chargers will likely open the return window for Njoku (fibula) this week, Alex Insdorf of BoltBeat.com reports."
   },
   "00-0041550": {
    "name": "Brenen Thompson",
@@ -5718,6 +5729,10 @@
   "00-0026498": {
    "status": "Questionable",
    "at": "2026-11-02T18:40:01-05:00"
+  },
+  "00-0033885": {
+   "status": "Injured Reserve",
+   "at": "2026-11-02T18:50:01-05:00"
   }
  }
 }
