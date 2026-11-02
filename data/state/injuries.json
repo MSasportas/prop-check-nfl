@@ -1,5 +1,5 @@
 {
- "at": "2026-11-01T19:40:00-05:00",
+ "at": "2026-11-01T19:50:00-05:00",
  "source": "espn",
  "players": {
   "00-0037744": {
@@ -1314,6 +1314,26 @@
    "detail": "Quadriceps",
    "espn_id": "4243541"
   },
+  "00-0037247": {
+   "name": "George Pickens",
+   "team": "DAL",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T19:43:00-05:00",
+   "detail": null,
+   "espn_id": "4426354"
+  },
+  "00-0036997": {
+   "name": "Javonte Williams",
+   "team": "DAL",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T19:35:00-05:00",
+   "detail": null,
+   "espn_id": "4361579"
+  },
   "00-0036358": {
    "name": "CeeDee Lamb",
    "team": "DAL",
@@ -1407,16 +1427,6 @@
    "detail": "Coach's Decision",
    "espn_id": "4685554"
   },
-  "00-0037247": {
-   "name": "George Pickens",
-   "team": "DAL",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-01T11:32:00-05:00",
-   "detail": null,
-   "espn_id": "4426354"
-  },
   "00-0037282": {
    "name": "James Mitchell",
    "team": "DAL",
@@ -1466,16 +1476,6 @@
    "date": "2026-10-27T00:19:00-04:00",
    "detail": null,
    "espn_id": "5083754"
-  },
-  "00-0036997": {
-   "name": "Javonte Williams",
-   "team": "DAL",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-26T23:53:00-04:00",
-   "detail": null,
-   "espn_id": "4361579"
   },
   "00-0033077": {
    "name": "Dak Prescott",
