@@ -1,5 +1,5 @@
 {
- "at": "2026-11-01T20:00:01-05:00",
+ "at": "2026-11-01T20:10:00-05:00",
  "source": "espn",
  "players": {
   "00-0037744": {
@@ -169,6 +169,16 @@
    "espn_id": "4692835",
    "comment": "The Cardinals placed Brooks (wrist) on injured reserve Tuesday."
   },
+  "00-0037238": {
+   "name": "Drake London",
+   "team": "ATL",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T19:50:00-05:00",
+   "detail": null,
+   "espn_id": "4426502"
+  },
   "00-0038542": {
    "name": "Bijan Robinson",
    "team": "ATL",
@@ -199,16 +209,6 @@
    "date": "2026-11-01T15:56:00-05:00",
    "detail": "Hamstring",
    "espn_id": "3045527"
-  },
-  "00-0037238": {
-   "name": "Drake London",
-   "team": "ATL",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-01T13:31:00-05:00",
-   "detail": null,
-   "espn_id": "4426502"
   },
   "00-0035208": {
    "name": "Olamide Zaccheaus",
@@ -515,7 +515,7 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-11-01T19:15:00-05:00",
+   "date": "2026-11-01T20:01:00-05:00",
    "detail": "Suspension",
    "espn_id": "4034953"
   },
