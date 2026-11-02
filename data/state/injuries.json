@@ -1,5 +1,5 @@
 {
- "at": "2026-11-02T15:30:00-05:00",
+ "at": "2026-11-02T16:00:00-05:00",
  "source": "espn",
  "players": {
   "name:ARI:walternolen": {
@@ -489,7 +489,7 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-11-02T15:17:00-05:00",
+   "date": "2026-11-02T15:43:00-05:00",
    "detail": "Suspension",
    "espn_id": "4034953"
   },
@@ -1599,6 +1599,16 @@
    "detail": null,
    "espn_id": "4431280"
   },
+  "name:DET:jackcampbell": {
+   "name": "Jack Campbell",
+   "team": "DET",
+   "pos": "LB",
+   "status": "Doubtful",
+   "fantasy": "DOUBTFUL",
+   "date": "2026-11-02T15:33:00-05:00",
+   "detail": "Neck",
+   "espn_id": "4569465"
+  },
   "00-0040390": {
    "name": "Jackson Meeks",
    "team": "DET",
@@ -1648,16 +1658,6 @@
    "date": "2026-11-01T20:17:00-05:00",
    "detail": null,
    "espn_id": "3046779"
-  },
-  "name:DET:jackcampbell": {
-   "name": "Jack Campbell",
-   "team": "DET",
-   "pos": "LB",
-   "status": "Doubtful",
-   "fantasy": "DOUBTFUL",
-   "date": "2026-11-01T19:19:00-05:00",
-   "detail": "Neck",
-   "espn_id": "4569465"
   },
   "00-0036963": {
    "name": "Amon-Ra St. Brown",
@@ -4301,6 +4301,16 @@
    "espn_id": "4360438",
    "comment": "Aiyuk is close to hiring new representation and is expected to file for reinstatement to the NFL in the near future, according to NFL reporter Jordan Schultz."
   },
+  "name:SF:khadarelhodge": {
+   "name": "KhaDarel Hodge",
+   "team": "SF",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-02T14:20:00-05:00",
+   "detail": null,
+   "espn_id": "3047876"
+  },
   "name:SF:marquessigle": {
    "name": "Marques Sigle",
    "team": "SF",
@@ -4983,6 +4993,17 @@
    "detail": null,
    "espn_id": "4883647"
   },
+  "00-0033955": {
+   "name": "Jeremy McNichols",
+   "team": "WAS",
+   "pos": "RB",
+   "status": "Doubtful",
+   "fantasy": "DOUBTFUL",
+   "date": "2026-11-02T15:31:00-05:00",
+   "detail": "Foot",
+   "espn_id": "3127586",
+   "comment": "Commanders head coach Dan Quinn said Monday that McNichols has a \"mid-foot\" injury and is concerned that the running back is dealing with something \"serious,\" N"
+  },
   "name:WAS:daronpayne": {
    "name": "Daron Payne",
    "team": "WAS",
@@ -5062,17 +5083,6 @@
    "date": "2026-11-01T23:49:00-05:00",
    "detail": null,
    "espn_id": "4426348"
-  },
-  "00-0033955": {
-   "name": "Jeremy McNichols",
-   "team": "WAS",
-   "pos": "RB",
-   "status": "Doubtful",
-   "fantasy": "DOUBTFUL",
-   "date": "2026-11-01T22:42:00-05:00",
-   "detail": "Foot",
-   "espn_id": "3127586",
-   "comment": "McNichols (foot) is questionable to return to Sunday's game against the Eagles."
   },
   "00-0041117": {
    "name": "Athan Kaliakmanis",
