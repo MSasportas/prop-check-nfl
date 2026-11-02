@@ -15,7 +15,7 @@
   "2026_08_PHI_WAS": "b9c60db63b1a19ad319f24b33c0defe8",
   "2026_08_CHI_SEA": "7d664fbcd39350e559d83c0068ba7169"
  },
- "events_at": "2026-11-01T18:10:00-05:00",
+ "events_at": "2026-11-02T00:10:00-05:00",
  "unknown_teams": [],
  "done": {
   "2026_08_ARI_DAL": [
@@ -1048,9 +1048,9 @@
   "pulls": "RC",
   "pool_at_plan": 886,
   "games_left": 15,
-  "pool_raw": 3361,
+  "pool_raw": 3357,
   "keys_shared": 1,
-  "made_at": "2026-11-01T19:10:01-05:00"
+  "made_at": "2026-11-02T00:10:00-05:00"
  },
  "failed": {}
 }
