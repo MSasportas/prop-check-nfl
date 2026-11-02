@@ -1,5 +1,5 @@
 {
- "at": "2026-11-02T00:00:01-05:00",
+ "at": "2026-11-02T00:40:00-05:00",
  "source": "espn",
  "players": {
   "00-0035289": {
@@ -564,7 +564,7 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-11-01T23:32:00-05:00",
+   "date": "2026-11-02T00:00:00-05:00",
    "detail": "Suspension",
    "espn_id": "4034953"
   },
@@ -1566,6 +1566,16 @@
    "detail": "Forearm",
    "espn_id": "4427816"
   },
+  "00-0038783": {
+   "name": "Nate Adkins",
+   "team": "DEN",
+   "pos": "TE",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-02T00:15:00-05:00",
+   "detail": null,
+   "espn_id": "4383440"
+  },
   "00-0036613": {
    "name": "Jaylen Waddle",
    "team": "DEN",
@@ -1758,6 +1768,16 @@
    "date": "2026-10-26T20:24:00-04:00",
    "detail": null,
    "espn_id": "4431280"
+  },
+  "00-0039364": {
+   "name": "Sione Vaki",
+   "team": "DET",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-02T00:11:00-05:00",
+   "detail": null,
+   "espn_id": "4912274"
   },
   "00-0039065": {
    "name": "Sam LaPorta",
@@ -2470,6 +2490,16 @@
    "detail": null,
    "espn_id": "2998565"
   },
+  "00-0038935": {
+   "name": "Brenton Strange",
+   "team": "JAX",
+   "pos": "TE",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-02T00:19:00-05:00",
+   "detail": null,
+   "espn_id": "4430539"
+  },
   "00-0041503": {
    "name": "Nate Boerkircher",
    "team": "JAX",
@@ -2661,16 +2691,6 @@
    "detail": "Knee",
    "espn_id": "4692525"
   },
-  "00-0041100": {
-   "name": "Josh Cameron",
-   "team": "JAX",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-19T22:26:00-04:00",
-   "detail": null,
-   "espn_id": "4879194"
-  },
   "00-0036637": {
    "name": "Noah Gray",
    "team": "KC",
@@ -2853,6 +2873,16 @@
    "detail": null,
    "espn_id": "5093923"
   },
+  "00-0039066": {
+   "name": "Michael Mayer",
+   "team": "LV",
+   "pos": "TE",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-02T00:07:00-05:00",
+   "detail": null,
+   "espn_id": "4429086"
+  },
   "00-0037291": {
    "name": "Jalen Nailor",
    "team": "LV",
@@ -3027,15 +3057,25 @@
    "espn_id": "5155825",
    "comment": "Runyon (foot) has been ruled out for Sunday's game against the Jets, Sam Warren of The Athletic reports."
   },
-  "00-0035891": {
-   "name": "Cody White",
-   "team": "LV",
+  "00-0038544": {
+   "name": "Quentin Johnston",
+   "team": "LAC",
    "pos": "WR",
    "status": "Active",
    "fantasy": null,
-   "date": "2026-10-26T21:44:00-04:00",
+   "date": "2026-11-02T00:19:00-05:00",
    "detail": null,
-   "espn_id": "4241983"
+   "espn_id": "4429025"
+  },
+  "00-0040189": {
+   "name": "Oronde Gadsden",
+   "team": "LAC",
+   "pos": "TE",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-02T00:13:00-05:00",
+   "detail": null,
+   "espn_id": "4595342"
   },
   "00-0040666": {
    "name": "Omarion Hampton",
@@ -3086,16 +3126,6 @@
    "date": "2026-11-01T15:09:00-05:00",
    "detail": "Hamstring",
    "espn_id": "3843769"
-  },
-  "00-0040189": {
-   "name": "Oronde Gadsden",
-   "team": "LAC",
-   "pos": "TE",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-01T14:56:00-05:00",
-   "detail": null,
-   "espn_id": "4595342"
   },
   "00-0040311": {
    "name": "Theo Wease Jr.",
@@ -3158,16 +3188,6 @@
    "date": "2026-10-30T20:03:00-04:00",
    "detail": null,
    "espn_id": "4430870"
-  },
-  "00-0038544": {
-   "name": "Quentin Johnston",
-   "team": "LAC",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-30T18:53:00-04:00",
-   "detail": null,
-   "espn_id": "4429025"
   },
   "00-0040727": {
    "name": "Tre' Harris",
@@ -4277,6 +4297,16 @@
    "detail": "Chest",
    "espn_id": "3929950"
   },
+  "00-0039451": {
+   "name": "Isaiah Williams",
+   "team": "NYJ",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T23:55:00-05:00",
+   "detail": null,
+   "espn_id": "4569371"
+  },
   "00-0041511": {
    "name": "Omar Cooper Jr.",
    "team": "NYJ",
@@ -4439,15 +4469,45 @@
    "detail": null,
    "espn_id": "5083315"
   },
-  "00-0040736": {
-   "name": "Mason Taylor",
-   "team": "NYJ",
+  "00-0036567": {
+   "name": "Elijah Mitchell",
+   "team": "PHI",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-02T00:06:00-05:00",
+   "detail": null,
+   "espn_id": "4241555"
+  },
+  "00-0038400": {
+   "name": "Tanner McKee",
+   "team": "PHI",
+   "pos": "QB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T23:56:00-05:00",
+   "detail": null,
+   "espn_id": "4685201"
+  },
+  "00-0040867": {
+   "name": "Makai Lemon",
+   "team": "PHI",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T23:53:00-05:00",
+   "detail": null,
+   "espn_id": "4870795"
+  },
+  "00-0034351": {
+   "name": "Dallas Goedert",
+   "team": "PHI",
    "pos": "TE",
    "status": "Active",
    "fantasy": null,
-   "date": "2026-10-25T17:27:00-04:00",
+   "date": "2026-11-01T23:52:00-05:00",
    "detail": null,
-   "espn_id": "4808766"
+   "espn_id": "3121023"
   },
   "00-0034844": {
    "name": "Saquon Barkley",
@@ -4542,26 +4602,6 @@
    "detail": "Knee",
    "espn_id": "4686911"
   },
-  "00-0036567": {
-   "name": "Elijah Mitchell",
-   "team": "PHI",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-31T20:42:00-04:00",
-   "detail": null,
-   "espn_id": "4241555"
-  },
-  "00-0040867": {
-   "name": "Makai Lemon",
-   "team": "PHI",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-30T18:33:00-04:00",
-   "detail": null,
-   "espn_id": "4870795"
-  },
   "00-0040586": {
    "name": "Jaydon Blue",
    "team": "PHI",
@@ -4583,25 +4623,15 @@
    "espn_id": "4360238",
    "comment": "The Eagles placed Pierce (undisclosed) on injured reserve Wednesday"
   },
-  "00-0036980": {
-   "name": "Elijah Moore",
-   "team": "PHI",
+  "00-0041489": {
+   "name": "Germie Bernard",
+   "team": "PIT",
    "pos": "WR",
    "status": "Active",
    "fantasy": null,
-   "date": "2026-10-27T19:21:00-04:00",
+   "date": "2026-11-02T00:26:00-05:00",
    "detail": null,
-   "espn_id": "4372414"
-  },
-  "00-0041483": {
-   "name": "Eli Stowers",
-   "team": "PHI",
-   "pos": "TE",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-27T19:12:00-04:00",
-   "detail": null,
-   "espn_id": "4431574"
+   "espn_id": "4685261"
   },
   "00-0036894": {
    "name": "Pat Freiermuth",
@@ -4746,16 +4776,6 @@
    "date": "2026-10-31T19:44:00-04:00",
    "detail": null,
    "espn_id": "4240577"
-  },
-  "00-0041489": {
-   "name": "Germie Bernard",
-   "team": "PIT",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-26T19:49:00-04:00",
-   "detail": null,
-   "espn_id": "4685261"
   },
   "00-0034771": {
    "name": "Mason Rudolph",
@@ -5520,6 +5540,66 @@
    "detail": null,
    "espn_id": "4883647"
   },
+  "00-0037742": {
+   "name": "Treylon Burks",
+   "team": "WAS",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-02T00:05:00-05:00",
+   "detail": null,
+   "espn_id": "4567156"
+  },
+  "00-0041040": {
+   "name": "Antonio Williams",
+   "team": "WAS",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-02T00:04:00-05:00",
+   "detail": null,
+   "espn_id": "5081432"
+  },
+  "00-0033699": {
+   "name": "Austin Ekeler",
+   "team": "WAS",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-02T00:01:00-05:00",
+   "detail": null,
+   "espn_id": "3068267"
+  },
+  "00-0037256": {
+   "name": "Rachaad White",
+   "team": "WAS",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T23:51:00-05:00",
+   "detail": null,
+   "espn_id": "4697815"
+  },
+  "00-0031588": {
+   "name": "Stefon Diggs",
+   "team": "WAS",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T23:50:00-05:00",
+   "detail": null,
+   "espn_id": "2976212"
+  },
+  "00-0039910": {
+   "name": "Jayden Daniels",
+   "team": "WAS",
+   "pos": "QB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T23:49:00-05:00",
+   "detail": null,
+   "espn_id": "4426348"
+  },
   "00-0033955": {
    "name": "Jeremy McNichols",
    "team": "WAS",
@@ -5551,16 +5631,6 @@
    "date": "2026-11-01T19:03:00-05:00",
    "detail": null,
    "espn_id": "4048228"
-  },
-  "00-0037742": {
-   "name": "Treylon Burks",
-   "team": "WAS",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-01T18:57:00-05:00",
-   "detail": null,
-   "espn_id": "4567156"
   },
   "name:WAS:isaacyiadom": {
    "name": "Isaac Yiadom",
@@ -5633,16 +5703,6 @@
    "espn_id": "3121422",
    "comment": "McLaurin (knee) underwent surgery Friday to repair the torn patellar tendon in his left knee, Nicki Jhabvala of The Athletic reports."
   },
-  "00-0031588": {
-   "name": "Stefon Diggs",
-   "team": "WAS",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-29T17:43:00-04:00",
-   "detail": null,
-   "espn_id": "2976212"
-  },
   "name:WAS:laremytunsil": {
    "name": "Laremy Tunsil",
    "team": "WAS",
@@ -5673,16 +5733,6 @@
    "detail": null,
    "espn_id": "2576980"
   },
-  "00-0041040": {
-   "name": "Antonio Williams",
-   "team": "WAS",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-26T13:41:00-04:00",
-   "detail": null,
-   "espn_id": "5081432"
-  },
   "00-0040164": {
    "name": "Jaylin Lane",
    "team": "WAS",
@@ -5694,16 +5744,6 @@
    "espn_id": "4602667",
    "comment": "Lane underwent surgery Oct. 9 to repair his fractured and dislocated ankle, and he is expected to be cleared for activities before OTAs, Tashan Reed of The Wash"
   },
-  "00-0033699": {
-   "name": "Austin Ekeler",
-   "team": "WAS",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-20T19:14:00-04:00",
-   "detail": null,
-   "espn_id": "3068267"
-  },
   "00-0036626": {
    "name": "Dyami Brown",
    "team": "WAS",
@@ -5713,16 +5753,6 @@
    "date": "2026-10-20T17:44:00-04:00",
    "detail": null,
    "espn_id": "4361577"
-  },
-  "00-0037809": {
-   "name": "Chig Okonkwo",
-   "team": "WAS",
-   "pos": "TE",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-20T00:18:00-04:00",
-   "detail": null,
-   "espn_id": "4360635"
   }
  },
  "last_fail_at": null,
