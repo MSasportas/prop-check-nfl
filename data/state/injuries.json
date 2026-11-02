@@ -1,7 +1,27 @@
 {
- "at": "2026-11-01T20:20:00-05:00",
+ "at": "2026-11-01T20:50:01-05:00",
  "source": "espn",
  "players": {
+  "00-0035289": {
+   "name": "Gardner Minshew II",
+   "team": "ARI",
+   "pos": "QB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T20:38:00-05:00",
+   "detail": null,
+   "espn_id": "4038524"
+  },
+  "00-0033119": {
+   "name": "Jacoby Brissett",
+   "team": "ARI",
+   "pos": "QB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T20:29:00-05:00",
+   "detail": null,
+   "espn_id": "2578570"
+  },
   "00-0037744": {
    "name": "Trey McBride",
    "team": "ARI",
@@ -157,17 +177,6 @@
    "date": "2026-10-31T20:49:00-04:00",
    "detail": null,
    "espn_id": "4044144"
-  },
-  "00-0038640": {
-   "name": "Jalen Brooks",
-   "team": "ARI",
-   "pos": "WR",
-   "status": "Injured Reserve",
-   "fantasy": "IR",
-   "date": "2026-10-27T17:53:00-04:00",
-   "detail": "Wrist",
-   "espn_id": "4692835",
-   "comment": "The Cardinals placed Brooks (wrist) on injured reserve Tuesday."
   },
   "00-0037238": {
    "name": "Drake London",
@@ -515,7 +524,7 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-11-01T20:01:00-05:00",
+   "date": "2026-11-01T20:42:00-05:00",
    "detail": "Suspension",
    "espn_id": "4034953"
   },
@@ -1690,6 +1699,26 @@
    "detail": null,
    "espn_id": "4426338"
   },
+  "00-0037240": {
+   "name": "Jameson Williams",
+   "team": "DET",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T20:22:00-05:00",
+   "detail": null,
+   "espn_id": "4426388"
+  },
+  "00-0033106": {
+   "name": "Jared Goff",
+   "team": "DET",
+   "pos": "QB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T20:17:00-05:00",
+   "detail": null,
+   "espn_id": "3046779"
+  },
   "name:DET:jackcampbell": {
    "name": "Jack Campbell",
    "team": "DET",
@@ -1872,26 +1901,6 @@
    "date": "2026-10-25T22:14:00-04:00",
    "detail": null,
    "espn_id": "4430027"
-  },
-  "00-0037240": {
-   "name": "Jameson Williams",
-   "team": "DET",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-25T22:10:00-04:00",
-   "detail": null,
-   "espn_id": "4426388"
-  },
-  "00-0033106": {
-   "name": "Jared Goff",
-   "team": "DET",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-25T22:06:00-04:00",
-   "detail": null,
-   "espn_id": "3046779"
   },
   "00-0035700": {
    "name": "Josh Jacobs",
@@ -3120,6 +3129,26 @@
    "detail": null,
    "espn_id": "4685382"
   },
+  "00-0037840": {
+   "name": "Kyren Williams",
+   "team": "LA",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T20:33:00-05:00",
+   "detail": null,
+   "espn_id": "4430737"
+  },
+  "00-0039075": {
+   "name": "Puka Nacua",
+   "team": "LA",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T20:29:00-05:00",
+   "detail": null,
+   "espn_id": "4426515"
+  },
   "name:LA:trentmcduffie": {
    "name": "Trent McDuffie",
    "team": "LA",
@@ -3304,26 +3333,6 @@
    "detail": null,
    "espn_id": "4429096"
   },
-  "00-0039074": {
-   "name": "Davis Allen",
-   "team": "LA",
-   "pos": "TE",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-25T21:14:00-04:00",
-   "detail": null,
-   "espn_id": "4426553"
-  },
-  "00-0037840": {
-   "name": "Kyren Williams",
-   "team": "LA",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-25T20:55:00-04:00",
-   "detail": null,
-   "espn_id": "4430737"
-  },
   "name:MIA:malikherring": {
    "name": "Malik Herring",
    "team": "MIA",
@@ -3476,6 +3485,26 @@
    "detail": null,
    "espn_id": "4685246"
   },
+  "00-0033293": {
+   "name": "Aaron Jones Sr.",
+   "team": "MIN",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T20:12:00-05:00",
+   "detail": null,
+   "espn_id": "3042519"
+  },
+  "00-0037525": {
+   "name": "Jordan Mason",
+   "team": "MIN",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T20:06:00-05:00",
+   "detail": null,
+   "espn_id": "4360569"
+  },
   "00-0036322": {
    "name": "Justin Jefferson",
    "team": "MIN",
@@ -3589,16 +3618,6 @@
    "detail": null,
    "espn_id": "4240631"
   },
-  "00-0037525": {
-   "name": "Jordan Mason",
-   "team": "MIN",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-30T18:57:00-04:00",
-   "detail": null,
-   "espn_id": "4360569"
-  },
   "00-0040215": {
    "name": "Gavin Bartholomew",
    "team": "MIN",
@@ -3608,16 +3627,6 @@
    "date": "2026-10-30T14:18:00-04:00",
    "detail": null,
    "espn_id": "4708049"
-  },
-  "00-0033293": {
-   "name": "Aaron Jones Sr.",
-   "team": "MIN",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-30T14:16:00-04:00",
-   "detail": null,
-   "espn_id": "3042519"
   },
   "00-0035229": {
    "name": "T.J. Hockenson",
@@ -3653,8 +3662,8 @@
    "name": "Hunter Henry",
    "team": "NE",
    "pos": "TE",
-   "status": "Out",
-   "fantasy": "OUT",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
    "date": "2026-11-01T19:11:00-05:00",
    "detail": "Foot",
    "espn_id": "3046439",

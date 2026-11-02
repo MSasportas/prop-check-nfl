@@ -3,10 +3,10 @@
  "season": 2026,
  "week": 8,
  "slate": "2026-W08",
- "started_at": "2026-11-01T20:40:17-05:00",
- "status_at": "2026-11-01T20:40:17-05:00",
- "finished_at": "2026-11-01T20:40:17-05:00",
- "last_ok_at": "2026-11-01T20:40:17-05:00",
+ "started_at": "2026-11-01T20:50:01-05:00",
+ "status_at": "2026-11-01T20:50:01-05:00",
+ "finished_at": "2026-11-01T20:50:03-05:00",
+ "last_ok_at": "2026-11-01T20:50:01-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -17,12 +17,12 @@
   {
    "step": "schedule",
    "status": "ok",
-   "note": "14 game(s) this week (2026-W08); schedule read"
+   "note": "14 game(s) this week (2026-W08); live state for 1 game(s)"
   },
   {
    "step": "stats",
-   "status": "skipped",
-   "note": "checked at 7:50 PM"
+   "status": "ok",
+   "note": "119 games through 2026-11-01"
   },
   {
    "step": "roster",
@@ -31,8 +31,8 @@
   },
   {
    "step": "injuries",
-   "status": "skipped",
-   "note": "read at 8:20 PM; inactives posted for 24 team(s)"
+   "status": "ok",
+   "note": "espn: 220 out, 72 questionable; inactives posted for 24 team(s)"
   },
   {
    "step": "weather",
@@ -61,8 +61,8 @@
   },
   {
    "step": "slate",
-   "status": "skipped",
-   "note": "unchanged"
+   "status": "ok",
+   "note": "0 open pick(s), 0 pulled"
   },
   {
    "step": "record",
@@ -133,14 +133,7 @@
  "skipped_games": [],
  "unmatched_names": [],
  "unknown_teams": [],
- "behind": {
-  "LAC": "last game's stats are not in yet",
-  "LA": "last game's stats are not in yet",
-  "KC": "last game's stats are not in yet",
-  "DEN": "last game's stats are not in yet",
-  "NE": "last game's stats are not in yet",
-  "MIA": "last game's stats are not in yet"
- },
+ "behind": {},
  "stats_problems": [],
  "games_this_week": 14,
  "record_events": 209,
@@ -149,13 +142,13 @@
  "runner": {
   "event": "workflow_dispatch",
   "run_id": "41373668416",
-  "iteration": 1,
+  "iteration": 2,
   "chain_link": 851,
   "chain_started_at": "2026-10-30T17:27:57-04:00",
   "run_started_at": "2026-11-01T20:40:15-05:00"
  },
  "live_page": {
-  "checked_at": "2026-11-01T19:50:00-05:00",
+  "checked_at": "2026-11-01T20:50:01-05:00",
   "http": 200,
   "is_page": true
  }
