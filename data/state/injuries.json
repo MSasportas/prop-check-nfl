@@ -1,5 +1,5 @@
 {
- "at": "2026-11-01T20:10:00-05:00",
+ "at": "2026-11-01T20:20:00-05:00",
  "source": "espn",
  "players": {
   "00-0037744": {
@@ -1314,6 +1314,16 @@
    "detail": "Quadriceps",
    "espn_id": "4243541"
   },
+  "00-0033077": {
+   "name": "Dak Prescott",
+   "team": "DAL",
+   "pos": "QB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T19:59:00-05:00",
+   "detail": null,
+   "espn_id": "2577417"
+  },
   "00-0037247": {
    "name": "George Pickens",
    "team": "DAL",
@@ -1476,16 +1486,6 @@
    "date": "2026-10-27T00:19:00-04:00",
    "detail": null,
    "espn_id": "5083754"
-  },
-  "00-0033077": {
-   "name": "Dak Prescott",
-   "team": "DAL",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-26T23:45:00-04:00",
-   "detail": null,
-   "espn_id": "2577417"
   },
   "name:DAL:maristliufau": {
    "name": "Marist Liufau",
