@@ -1,7 +1,49 @@
 {
- "at": "2026-11-02T17:00:00-05:00",
+ "at": "2026-11-02T17:30:00-05:00",
  "source": "espn",
  "players": {
+  "00-0041561": {
+   "name": "Carson Beck",
+   "team": "ARI",
+   "pos": "QB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-02T17:12:00-05:00",
+   "detail": null,
+   "espn_id": "4430841"
+  },
+  "00-0033119": {
+   "name": "Jacoby Brissett",
+   "team": "ARI",
+   "pos": "QB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-02T17:01:00-05:00",
+   "detail": null,
+   "espn_id": "2578570"
+  },
+  "00-0037157": {
+   "name": "Bam Knight",
+   "team": "ARI",
+   "pos": "RB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-02T16:53:00-05:00",
+   "detail": "Concussion",
+   "espn_id": "4427728",
+   "comment": "Head coach Mike LaFleur revealed Monday that Knight is in the concussion protocol following Sunday's overtime win in Dallas, Josh Weinfuss of ESPN.com reports."
+  },
+  "00-0033307": {
+   "name": "Kendrick Bourne",
+   "team": "ARI",
+   "pos": "WR",
+   "status": "Doubtful",
+   "fantasy": "DOUBTFUL",
+   "date": "2026-11-02T16:53:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "3045523",
+   "comment": "Coach Mike LaFleur noted Monday that the ankle injury Bourne suffered Sunday against the Cowboys could be season-ending,  Darren Urban of Cardschatter reports."
+  },
   "00-0041027": {
    "name": "Jeremiyah Love",
    "team": "ARI",
@@ -22,17 +64,6 @@
    "date": "2026-11-02T16:46:00-05:00",
    "detail": null,
    "espn_id": "4038524"
-  },
-  "00-0033307": {
-   "name": "Kendrick Bourne",
-   "team": "ARI",
-   "pos": "WR",
-   "status": "Doubtful",
-   "fantasy": "DOUBTFUL",
-   "date": "2026-11-02T16:44:00-05:00",
-   "detail": "Ankle",
-   "espn_id": "3045523",
-   "comment": "doubtful"
   },
   "name:ARI:walternolen": {
    "name": "Walter Nolen III",
@@ -63,26 +94,6 @@
    "date": "2026-11-02T13:31:00-05:00",
    "detail": null,
    "espn_id": "4569609"
-  },
-  "00-0041561": {
-   "name": "Carson Beck",
-   "team": "ARI",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-02T13:31:00-05:00",
-   "detail": null,
-   "espn_id": "4430841"
-  },
-  "00-0033119": {
-   "name": "Jacoby Brissett",
-   "team": "ARI",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-01T20:29:00-05:00",
-   "detail": null,
-   "espn_id": "2578570"
   },
   "00-0037744": {
    "name": "Trey McBride",
@@ -124,17 +135,6 @@
    "date": "2026-11-01T15:46:00-05:00",
    "detail": "Knee",
    "espn_id": "4709718"
-  },
-  "00-0037157": {
-   "name": "Bam Knight",
-   "team": "ARI",
-   "pos": "RB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-01T15:22:00-05:00",
-   "detail": "Concussion",
-   "espn_id": "4427728",
-   "comment": "Knight (concussion) has been ruled out for the rest of Sunday's game against the Cowboys."
   },
   "00-0036510": {
    "name": "Kenny Yeboah",
@@ -488,9 +488,9 @@
    "team": "BUF",
    "pos": "S",
    "status": "Suspension",
-   "fantasy": "RESERVE-SUS",
-   "date": "2026-11-02T16:44:00-05:00",
-   "detail": "Suspension",
+   "fantasy": null,
+   "date": "2026-11-02T17:13:00-05:00",
+   "detail": null,
    "espn_id": "4034953"
   },
   "name:BUF:spencerbrown": {
@@ -2257,6 +2257,16 @@
    "detail": null,
    "espn_id": "2998565"
   },
+  "name:JAX:davonhamilton": {
+   "name": "DaVon Hamilton",
+   "team": "JAX",
+   "pos": "DT",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-11-02T17:16:00-05:00",
+   "detail": "Quadriceps",
+   "espn_id": "3915520"
+  },
   "name:JAX:ericmurray": {
    "name": "Eric Murray",
    "team": "JAX",
@@ -2286,16 +2296,6 @@
    "date": "2026-11-02T13:53:00-05:00",
    "detail": null,
    "espn_id": "5085024"
-  },
-  "name:JAX:davonhamilton": {
-   "name": "DaVon Hamilton",
-   "team": "JAX",
-   "pos": "DT",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-11-02T09:49:00-05:00",
-   "detail": "Quadriceps",
-   "espn_id": "3915520"
   },
   "00-0038935": {
    "name": "Brenton Strange",
@@ -2889,6 +2889,27 @@
    "detail": null,
    "espn_id": "4596334"
   },
+  "name:LA:grantstuard": {
+   "name": "Grant Stuard",
+   "team": "LA",
+   "pos": "LB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-02T17:13:00-05:00",
+   "detail": "Hamstring",
+   "espn_id": "4240255"
+  },
+  "00-0041415": {
+   "name": "Dean Connors",
+   "team": "LA",
+   "pos": "RB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-02T17:13:00-05:00",
+   "detail": "Hand",
+   "espn_id": "5082269",
+   "comment": "questionable"
+  },
   "00-0036244": {
    "name": "Colby Parkinson",
    "team": "LA",
@@ -3041,26 +3062,6 @@
    "date": "2026-10-26T20:10:00-04:00",
    "detail": null,
    "espn_id": "4710855"
-  },
-  "00-0033110": {
-   "name": "Tyler Higbee",
-   "team": "LA",
-   "pos": "TE",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-26T19:50:00-04:00",
-   "detail": null,
-   "espn_id": "2573401"
-  },
-  "00-0041510": {
-   "name": "Max Klare",
-   "team": "LA",
-   "pos": "TE",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-26T14:37:00-04:00",
-   "detail": null,
-   "espn_id": "4833029"
   },
   "name:MIA:kadynproctor": {
    "name": "Kadyn Proctor",
@@ -4290,6 +4291,17 @@
    "detail": null,
    "espn_id": "3116407"
   },
+  "00-0041035": {
+   "name": "De'Zhaun Stribling",
+   "team": "SF",
+   "pos": "WR",
+   "status": "Injured Reserve",
+   "fantasy": "IR",
+   "date": "2026-11-02T17:05:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "4710714",
+   "comment": "Stribling (ankle) was spotted Monday walking without crutches or a brace on his lower leg, Matt Barrows of The Athletic reports."
+  },
   "name:SF:brandonaiyuk": {
    "name": "Brandon Aiyuk",
    "team": "SF",
@@ -4422,17 +4434,6 @@
    "detail": "Ankle",
    "espn_id": "3043116",
    "comment": "49ers coach Kyle Shanahan reiterated Monday that Robinson (ankle) has a chance to return following the team's Week 8 bye, David Lombardi of SFStandard.com repor"
-  },
-  "00-0041035": {
-   "name": "De'Zhaun Stribling",
-   "team": "SF",
-   "pos": "WR",
-   "status": "Injured Reserve",
-   "fantasy": "IR",
-   "date": "2026-10-26T18:17:00-04:00",
-   "detail": "Ankle",
-   "espn_id": "4710714",
-   "comment": "Stribling (ankle) remains on track to return in December, David Lombardi of SFStandard.com reports."
   },
   "00-0031408": {
    "name": "Mike Evans",
@@ -5698,6 +5699,10 @@
   "name:SF:brandonaiyuk": {
    "status": "Out",
    "at": "2026-11-02T15:30:00-05:00"
+  },
+  "00-0041415": {
+   "status": "Questionable",
+   "at": "2026-11-02T17:30:00-05:00"
   }
  }
 }
