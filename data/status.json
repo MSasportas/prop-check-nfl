@@ -3,10 +3,10 @@
  "season": 2026,
  "week": 8,
  "slate": "2026-W08",
- "started_at": "2026-11-01T19:00:00-05:00",
- "status_at": "2026-11-01T19:00:00-05:00",
- "finished_at": "2026-11-01T19:00:03-05:00",
- "last_ok_at": "2026-11-01T19:00:00-05:00",
+ "started_at": "2026-11-01T19:10:01-05:00",
+ "status_at": "2026-11-01T19:10:01-05:00",
+ "finished_at": "2026-11-01T19:10:02-05:00",
+ "last_ok_at": "2026-11-01T19:10:01-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -17,7 +17,7 @@
   {
    "step": "schedule",
    "status": "ok",
-   "note": "14 game(s) this week (2026-W08); live state for 3 game(s)"
+   "note": "14 game(s) this week (2026-W08); live state for 2 game(s)"
   },
   {
    "step": "stats",
@@ -32,17 +32,17 @@
   {
    "step": "injuries",
    "status": "ok",
-   "note": "espn: 216 out, 74 questionable; inactives posted for 22 team(s)"
+   "note": "espn: 221 out, 72 questionable; inactives posted for 24 team(s)"
   },
   {
    "step": "weather",
-   "status": "ok",
-   "note": "2 read, 0 failed, 0 indoors"
+   "status": "skipped",
+   "note": "nothing due (0 indoors)"
   },
   {
    "step": "odds",
    "status": "ok",
-   "note": "no pull due"
+   "note": "1 read(s) (C)"
   },
   {
    "step": "engine",
@@ -56,8 +56,8 @@
   },
   {
    "step": "watch",
-   "status": "skipped",
-   "note": "0 move(s)/side(s) scanned, 0 flagged, 0 graded"
+   "status": "ok",
+   "note": "3 move(s)/side(s) scanned, 0 flagged, 0 graded"
   },
   {
    "step": "slate",
@@ -85,7 +85,7 @@
  "keys": [
   {
    "n": 1,
-   "left": 392,
+   "left": 386,
    "shared": false
   },
   {
@@ -119,17 +119,23 @@
    "shared": false
   }
  ],
- "pool_total": 3367,
- "allowance": 59.47,
+ "pool_total": 3361,
+ "allowance": 59.07,
  "tier": "full",
  "games_left_before_reset": 15,
- "budget_used_today": 108,
+ "budget_used_today": 114,
  "odds": {
   "state": "ok",
-  "at": "2026-11-01T15:20:00-05:00",
-  "next_at": "2026-11-01T19:35:00-05:00"
+  "at": "2026-11-01T19:10:01-05:00",
+  "next_at": "2026-11-02T19:30:00-05:00"
  },
- "due": [],
+ "due": [
+  {
+   "pull": "C",
+   "game_id": "2026_08_PHI_WAS",
+   "cost_max": 6
+  }
+ ],
  "skipped_games": [],
  "unmatched_names": [],
  "unknown_teams": [],
@@ -144,11 +150,11 @@
  "odds_notes": [],
  "runner": {
   "event": "workflow_dispatch",
-  "run_id": "41360756532",
-  "iteration": 6,
-  "chain_link": 848,
+  "run_id": "41364808482",
+  "iteration": 2,
+  "chain_link": 849,
   "chain_started_at": "2026-10-30T17:27:57-04:00",
-  "run_started_at": "2026-11-01T18:10:15-05:00"
+  "run_started_at": "2026-11-01T19:00:15-05:00"
  },
  "live_page": {
   "checked_at": "2026-11-01T18:40:01-05:00",

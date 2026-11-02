@@ -864,16 +864,78 @@
  "2026_08_PHI_WAS": {
   "_kickoff": "2026-11-01T20:20:00-05:00",
   "PHI": {
-   "confirmed": false,
-   "count": 0,
-   "players": [],
-   "confirmed_at": null
+   "confirmed": true,
+   "count": 6,
+   "players": [
+    {
+     "pid": "00-0037132",
+     "name": "Britain Covey",
+     "pos": "WR"
+    },
+    {
+     "pid": "00-0036912",
+     "name": "DeVonta Smith",
+     "pos": "WR"
+    },
+    {
+     "pid": "00-0038393",
+     "name": "Dontayvion Wicks",
+     "pos": "WR"
+    },
+    {
+     "pid": null,
+     "name": "Jake Majors",
+     "pos": "C"
+    },
+    {
+     "pid": null,
+     "name": "Jihaad Campbell",
+     "pos": "LB"
+    },
+    {
+     "pid": null,
+     "name": "Jonathan Jones",
+     "pos": "CB"
+    }
+   ],
+   "confirmed_at": "2026-11-01T19:10:01-05:00"
   },
   "WAS": {
-   "confirmed": false,
-   "count": 0,
-   "players": [],
-   "confirmed_at": null
+   "confirmed": true,
+   "count": 6,
+   "players": [
+    {
+     "pid": "00-0041117",
+     "name": "Athan Kaliakmanis",
+     "pos": "QB"
+    },
+    {
+     "pid": null,
+     "name": "Daron Payne",
+     "pos": "DT"
+    },
+    {
+     "pid": null,
+     "name": "Fabian Moreau",
+     "pos": "CB"
+    },
+    {
+     "pid": null,
+     "name": "Isaac Yiadom",
+     "pos": "CB"
+    },
+    {
+     "pid": null,
+     "name": "Javon Kinlaw",
+     "pos": "DT"
+    },
+    {
+     "pid": null,
+     "name": "Tanoa Togiai",
+     "pos": "G"
+    }
+   ],
+   "confirmed_at": "2026-11-01T19:10:01-05:00"
   }
  }
 }

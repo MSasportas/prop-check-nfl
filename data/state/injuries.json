@@ -1,5 +1,5 @@
 {
- "at": "2026-11-01T19:00:16-05:00",
+ "at": "2026-11-01T19:10:01-05:00",
  "source": "espn",
  "players": {
   "00-0037744": {
@@ -515,7 +515,7 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-11-01T18:50:00-05:00",
+   "date": "2026-11-01T19:07:00-05:00",
    "detail": "Suspension",
    "espn_id": "4034953"
   },
@@ -3655,7 +3655,7 @@
    "pos": "LB",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-01T18:42:00-05:00",
+   "date": "2026-11-01T18:50:00-05:00",
    "detail": "Knee",
    "espn_id": "4837244"
   },
@@ -4330,6 +4330,69 @@
    "detail": null,
    "espn_id": "4723820"
   },
+  "00-0038393": {
+   "name": "Dontayvion Wicks",
+   "team": "PHI",
+   "pos": "WR",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T18:55:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "4428850",
+   "comment": "inactive"
+  },
+  "00-0036912": {
+   "name": "DeVonta Smith",
+   "team": "PHI",
+   "pos": "WR",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T18:55:00-05:00",
+   "detail": "Hamstring",
+   "espn_id": "4241478",
+   "comment": "inactive"
+  },
+  "name:PHI:jakemajors": {
+   "name": "Jake Majors",
+   "team": "PHI",
+   "pos": "C",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T18:55:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4430814"
+  },
+  "name:PHI:jonathanjones": {
+   "name": "Jonathan Jones",
+   "team": "PHI",
+   "pos": "CB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T18:55:00-05:00",
+   "detail": "Hamstring",
+   "espn_id": "2971027"
+  },
+  "name:PHI:jihaadcampbell": {
+   "name": "Jihaad Campbell",
+   "team": "PHI",
+   "pos": "LB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T18:55:00-05:00",
+   "detail": "Hamstring",
+   "espn_id": "4685287"
+  },
+  "00-0037132": {
+   "name": "Britain Covey",
+   "team": "PHI",
+   "pos": "WR",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T18:55:00-05:00",
+   "detail": "Knee",
+   "espn_id": "3926231",
+   "comment": "inactive"
+  },
   "00-0034844": {
    "name": "Saquon Barkley",
    "team": "PHI",
@@ -4360,27 +4423,6 @@
    "detail": null,
    "espn_id": "4241555"
   },
-  "name:PHI:jihaadcampbell": {
-   "name": "Jihaad Campbell",
-   "team": "PHI",
-   "pos": "LB",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-30T20:16:00-04:00",
-   "detail": "Hamstring",
-   "espn_id": "4685287"
-  },
-  "00-0037132": {
-   "name": "Britain Covey",
-   "team": "PHI",
-   "pos": "WR",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-30T20:11:00-04:00",
-   "detail": "Knee",
-   "espn_id": "3926231",
-   "comment": "Covey (knee) has been ruled out for Sunday's game against the Commanders."
-  },
   "00-0040867": {
    "name": "Makai Lemon",
    "team": "PHI",
@@ -4390,38 +4432,6 @@
    "date": "2026-10-30T18:33:00-04:00",
    "detail": null,
    "espn_id": "4870795"
-  },
-  "00-0038393": {
-   "name": "Dontayvion Wicks",
-   "team": "PHI",
-   "pos": "WR",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-30T16:19:00-04:00",
-   "detail": "Ankle",
-   "espn_id": "4428850",
-   "comment": "Wicks (ankle) has been ruled out for Sunday night's game against the Commanders."
-  },
-  "00-0036912": {
-   "name": "DeVonta Smith",
-   "team": "PHI",
-   "pos": "WR",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-30T16:17:00-04:00",
-   "detail": "Hamstring",
-   "espn_id": "4241478",
-   "comment": "Smith (hamstring) is listed as out for Sunday night's game against the Commanders."
-  },
-  "name:PHI:jonathanjones": {
-   "name": "Jonathan Jones",
-   "team": "PHI",
-   "pos": "CB",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-30T15:55:00-04:00",
-   "detail": "Hamstring",
-   "espn_id": "2971027"
   },
   "00-0040586": {
    "name": "Jaydon Blue",
@@ -4463,16 +4473,6 @@
    "date": "2026-10-27T19:12:00-04:00",
    "detail": null,
    "espn_id": "4431574"
-  },
-  "00-0040024": {
-   "name": "Darius Cooper",
-   "team": "PHI",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-27T19:06:00-04:00",
-   "detail": null,
-   "espn_id": "4715355"
   },
   "00-0037228": {
    "name": "Jaylen Warren",
@@ -5381,16 +5381,86 @@
    "detail": null,
    "espn_id": "4685555"
   },
+  "00-0036628": {
+   "name": "John Bates",
+   "team": "WAS",
+   "pos": "TE",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T19:03:00-05:00",
+   "detail": null,
+   "espn_id": "4048228"
+  },
   "00-0037742": {
    "name": "Treylon Burks",
    "team": "WAS",
    "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-01T08:26:00-05:00",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T18:57:00-05:00",
+   "detail": null,
+   "espn_id": "4567156"
+  },
+  "name:WAS:isaacyiadom": {
+   "name": "Isaac Yiadom",
+   "team": "WAS",
+   "pos": "CB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T18:53:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "3122797"
+  },
+  "name:WAS:tanoatogiai": {
+   "name": "Tanoa Togiai",
+   "team": "WAS",
+   "pos": "G",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T18:53:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4605488"
+  },
+  "name:WAS:fabianmoreau": {
+   "name": "Fabian Moreau",
+   "team": "WAS",
+   "pos": "CB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T18:53:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "2971586"
+  },
+  "name:WAS:daronpayne": {
+   "name": "Daron Payne",
+   "team": "WAS",
+   "pos": "DT",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T18:53:00-05:00",
    "detail": "Foot",
-   "espn_id": "4567156",
-   "comment": "Burks (foot), who is listed as questionable for Sunday's game against the Eagles, is expected to play, Adam Schefter of ESPN reports."
+   "espn_id": "3925354"
+  },
+  "00-0041117": {
+   "name": "Athan Kaliakmanis",
+   "team": "WAS",
+   "pos": "QB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T18:53:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4432722",
+   "comment": "inactive"
+  },
+  "name:WAS:javonkinlaw": {
+   "name": "Javon Kinlaw",
+   "team": "WAS",
+   "pos": "DT",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T18:53:00-05:00",
+   "detail": "Knee",
+   "espn_id": "4259491"
   },
   "name:WAS:jerzhannewton": {
    "name": "Jer'Zhan Newton",
@@ -5401,37 +5471,6 @@
    "date": "2026-10-31T20:58:00-04:00",
    "detail": "Pectoral",
    "espn_id": "4430560"
-  },
-  "name:WAS:daronpayne": {
-   "name": "Daron Payne",
-   "team": "WAS",
-   "pos": "DT",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-31T17:59:00-04:00",
-   "detail": "Foot",
-   "espn_id": "3925354"
-  },
-  "name:WAS:javonkinlaw": {
-   "name": "Javon Kinlaw",
-   "team": "WAS",
-   "pos": "DT",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-10-30T17:07:00-04:00",
-   "detail": "Knee",
-   "espn_id": "4259491"
-  },
-  "00-0036628": {
-   "name": "John Bates",
-   "team": "WAS",
-   "pos": "TE",
-   "status": "Questionable",
-   "fantasy": null,
-   "date": "2026-10-30T17:05:00-04:00",
-   "detail": null,
-   "espn_id": "4048228",
-   "comment": "Bates (shoulder) is listed as questionable for Sunday's game against the Eagles."
   },
   "00-0035659": {
    "name": "Terry McLaurin",
@@ -5535,16 +5574,6 @@
    "detail": null,
    "espn_id": "3127586"
   },
-  "name:WAS:charlesomenihu": {
-   "name": "Charles Omenihu",
-   "team": "WAS",
-   "pos": "DE",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-20T12:10:00-04:00",
-   "detail": "Groin",
-   "espn_id": "3929865"
-  },
   "00-0037809": {
    "name": "Chig Okonkwo",
    "team": "WAS",
@@ -5554,16 +5583,6 @@
    "date": "2026-10-20T00:18:00-04:00",
    "detail": null,
    "espn_id": "4360635"
-  },
-  "00-0037256": {
-   "name": "Rachaad White",
-   "team": "WAS",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-20T00:13:00-04:00",
-   "detail": null,
-   "espn_id": "4697815"
   }
  },
  "last_fail_at": null,
@@ -6056,6 +6075,10 @@
   "00-0033090": {
    "status": "Questionable",
    "at": "2026-11-01T18:00:01-05:00"
+  },
+  "00-0041117": {
+   "status": "Out",
+   "at": "2026-11-01T19:10:01-05:00"
   }
  }
 }

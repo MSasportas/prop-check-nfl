@@ -3,11 +3,11 @@
  "keys": [
   {
    "n": 1,
-   "left": 392,
+   "left": 386,
    "status": "ok",
-   "checked_at": "2026-11-01T18:10:00-05:00",
+   "checked_at": "2026-11-01T19:10:01-05:00",
    "month": "2026-11",
-   "after_us": 392,
+   "after_us": 386,
    "shared": false,
    "shared_at": null,
    "others_spent": 0
@@ -1133,6 +1133,14 @@
    "date": "2026-11-01",
    "pull": "C",
    "game_id": "2026_08_NE_MIA",
+   "cost": 6,
+   "key": 1
+  },
+  {
+   "at": "2026-11-01T19:10:01-05:00",
+   "date": "2026-11-01",
+   "pull": "C",
+   "game_id": "2026_08_PHI_WAS",
    "cost": 6,
    "key": 1
   }
