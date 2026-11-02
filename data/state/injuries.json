@@ -1,5 +1,5 @@
 {
- "at": "2026-11-01T19:10:01-05:00",
+ "at": "2026-11-01T19:20:01-05:00",
  "source": "espn",
  "players": {
   "00-0037744": {
@@ -1314,6 +1314,17 @@
    "detail": "Quadriceps",
    "espn_id": "4243541"
   },
+  "00-0038041": {
+   "name": "Jake Ferguson",
+   "team": "DAL",
+   "pos": "TE",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-01T19:06:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "4242355",
+   "comment": "Ferguson suffered a low-ankle sprain during Sunday's loss to the Cardinals, Jeremy Fowler of ESPN reports."
+  },
   "name:DAL:calebdowns": {
    "name": "Caleb Downs",
    "team": "DAL",
@@ -1323,17 +1334,6 @@
    "date": "2026-11-01T15:52:00-05:00",
    "detail": "Concussion",
    "espn_id": "4870706"
-  },
-  "00-0038041": {
-   "name": "Jake Ferguson",
-   "team": "DAL",
-   "pos": "TE",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-01T14:55:00-05:00",
-   "detail": "Ankle",
-   "espn_id": "4242355",
-   "comment": "Ferguson (ankle) won't return to Sunday's game against the Cardinals, Joe Hoyt reports."
   },
   "00-0038547": {
    "name": "Luke Schoonmaker",
@@ -2588,7 +2588,7 @@
    "pos": "DT",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-01T17:14:00-05:00",
+   "date": "2026-11-01T18:54:00-05:00",
    "detail": "Neck",
    "espn_id": "4871063"
   },
@@ -3664,7 +3664,7 @@
    "team": "NE",
    "pos": "TE",
    "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
+   "fantasy": "OUT",
    "date": "2026-11-01T17:34:00-05:00",
    "detail": "Foot",
    "espn_id": "3046439",
