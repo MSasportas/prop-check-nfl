@@ -1,5 +1,5 @@
 {
- "at": "2026-11-01T19:20:01-05:00",
+ "at": "2026-11-01T19:30:01-05:00",
  "source": "espn",
  "players": {
   "00-0037744": {
@@ -515,7 +515,7 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-11-01T19:07:00-05:00",
+   "date": "2026-11-01T19:15:00-05:00",
    "detail": "Suspension",
    "espn_id": "4034953"
   },
@@ -1690,6 +1690,16 @@
    "detail": null,
    "espn_id": "4426338"
   },
+  "name:DET:jackcampbell": {
+   "name": "Jack Campbell",
+   "team": "DET",
+   "pos": "LB",
+   "status": "Doubtful",
+   "fantasy": "DOUBTFUL",
+   "date": "2026-11-01T19:19:00-05:00",
+   "detail": "Neck",
+   "espn_id": "4569465"
+  },
   "00-0036963": {
    "name": "Amon-Ra St. Brown",
    "team": "DET",
@@ -1739,16 +1749,6 @@
    "date": "2026-11-01T16:02:00-05:00",
    "detail": "Hip",
    "espn_id": "3139387"
-  },
-  "name:DET:jackcampbell": {
-   "name": "Jack Campbell",
-   "team": "DET",
-   "pos": "LB",
-   "status": "Doubtful",
-   "fantasy": "DOUBTFUL",
-   "date": "2026-11-01T16:01:00-05:00",
-   "detail": "Neck",
-   "espn_id": "4569465"
   },
   "00-0038896": {
    "name": "Jacob Saylors",
@@ -3649,6 +3649,17 @@
    "detail": null,
    "espn_id": "4430656"
   },
+  "00-0033090": {
+   "name": "Hunter Henry",
+   "team": "NE",
+   "pos": "TE",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-11-01T19:11:00-05:00",
+   "detail": "Foot",
+   "espn_id": "3046439",
+   "comment": "Henry (foot) has been ruled out for the rest of Sunday's game at Miami."
+  },
   "name:NE:gabejacas": {
    "name": "Gabe Jacas",
    "team": "NE",
@@ -3658,17 +3669,6 @@
    "date": "2026-11-01T18:50:00-05:00",
    "detail": "Knee",
    "espn_id": "4837244"
-  },
-  "00-0033090": {
-   "name": "Hunter Henry",
-   "team": "NE",
-   "pos": "TE",
-   "status": "Questionable",
-   "fantasy": "OUT",
-   "date": "2026-11-01T17:34:00-05:00",
-   "detail": "Foot",
-   "espn_id": "3046439",
-   "comment": "Henry (foot) is questionable to return to Sunday's game against the Dolphins."
   },
   "00-0041123": {
    "name": "Behren Morton",
@@ -5381,6 +5381,17 @@
    "detail": null,
    "espn_id": "4685555"
   },
+  "00-0041117": {
+   "name": "Athan Kaliakmanis",
+   "team": "WAS",
+   "pos": "QB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-01T19:08:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4432722",
+   "comment": "Kaliakmanis (coach's decision) is inactive but serving as the Commanders' emergency third quarterback Sunday night against the Eagles."
+  },
   "00-0036628": {
    "name": "John Bates",
    "team": "WAS",
@@ -5440,17 +5451,6 @@
    "date": "2026-11-01T18:53:00-05:00",
    "detail": "Foot",
    "espn_id": "3925354"
-  },
-  "00-0041117": {
-   "name": "Athan Kaliakmanis",
-   "team": "WAS",
-   "pos": "QB",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-11-01T18:53:00-05:00",
-   "detail": "Coach's Decision",
-   "espn_id": "4432722",
-   "comment": "inactive"
   },
   "name:WAS:javonkinlaw": {
    "name": "Javon Kinlaw",
