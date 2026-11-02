@@ -1,7 +1,17 @@
 {
- "at": "2026-11-01T19:00:00-05:00",
+ "at": "2026-11-01T19:00:16-05:00",
  "source": "espn",
  "players": {
+  "00-0037744": {
+   "name": "Trey McBride",
+   "team": "ARI",
+   "pos": "TE",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T18:48:00-05:00",
+   "detail": null,
+   "espn_id": "4361307"
+  },
   "00-0037263": {
    "name": "Tyler Allgeier",
    "team": "ARI",
@@ -158,16 +168,6 @@
    "detail": "Wrist",
    "espn_id": "4692835",
    "comment": "The Cardinals placed Brooks (wrist) on injured reserve Tuesday."
-  },
-  "00-0039041": {
-   "name": "Elijah Higgins",
-   "team": "ARI",
-   "pos": "TE",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-26T21:11:00-04:00",
-   "detail": null,
-   "espn_id": "4426844"
   },
   "00-0038542": {
    "name": "Bijan Robinson",
@@ -515,7 +515,7 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-11-01T18:42:00-05:00",
+   "date": "2026-11-01T18:50:00-05:00",
    "detail": "Suspension",
    "espn_id": "4034953"
   },
@@ -4396,7 +4396,7 @@
    "team": "PHI",
    "pos": "WR",
    "status": "Out",
-   "fantasy": "INACTIVE",
+   "fantasy": "OUT",
    "date": "2026-10-30T16:19:00-04:00",
    "detail": "Ankle",
    "espn_id": "4428850",
@@ -4418,7 +4418,7 @@
    "team": "PHI",
    "pos": "CB",
    "status": "Out",
-   "fantasy": "INACTIVE",
+   "fantasy": "OUT",
    "date": "2026-10-30T15:55:00-04:00",
    "detail": "Hamstring",
    "espn_id": "2971027"
@@ -5385,11 +5385,12 @@
    "name": "Treylon Burks",
    "team": "WAS",
    "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
    "date": "2026-11-01T08:26:00-05:00",
-   "detail": null,
-   "espn_id": "4567156"
+   "detail": "Foot",
+   "espn_id": "4567156",
+   "comment": "Burks (foot), who is listed as questionable for Sunday's game against the Eagles, is expected to play, Adam Schefter of ESPN reports."
   },
   "name:WAS:jerzhannewton": {
    "name": "Jer'Zhan Newton",
@@ -5406,7 +5407,7 @@
    "team": "WAS",
    "pos": "DT",
    "status": "Out",
-   "fantasy": "INACTIVE",
+   "fantasy": "OUT",
    "date": "2026-10-31T17:59:00-04:00",
    "detail": "Foot",
    "espn_id": "3925354"
