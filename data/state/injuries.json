@@ -1,5 +1,5 @@
 {
- "at": "2026-11-02T09:00:01-05:00",
+ "at": "2026-11-02T09:30:01-05:00",
  "source": "espn",
  "players": {
   "00-0035289": {
@@ -403,14 +403,25 @@
    "detail": null,
    "espn_id": "4429615"
   },
+  "00-0035993": {
+   "name": "Tyler Huntley",
+   "team": "BAL",
+   "pos": "QB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-01T18:37:00-05:00",
+   "detail": "Toe",
+   "espn_id": "4035671",
+   "comment": "Huntley may have sustained a right turf toe injury during Sunday's 36-10 loss at Buffalo, Adam Schefter of ESPN reports."
+  },
   "00-0040981": {
    "name": "Joe Fagnano",
    "team": "BAL",
    "pos": "QB",
-   "status": "Out",
-   "fantasy": "INACTIVE",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
    "date": "2026-11-01T17:29:00-05:00",
-   "detail": "Coach's Decision",
+   "detail": "Knee",
    "espn_id": "4429582",
    "comment": "Fagnano (undisclosed) said that he hopes to be ready for Thursday's game against the Jaguars, but acknowledged he's not 100 percent following Sunday's loss to t"
   },
@@ -424,17 +435,6 @@
    "detail": null,
    "espn_id": "3043078"
   },
-  "00-0035993": {
-   "name": "Tyler Huntley",
-   "team": "BAL",
-   "pos": "QB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-01T17:03:00-05:00",
-   "detail": "Toe",
-   "espn_id": "4035671",
-   "comment": "The status of Huntley (toe) is uncertain ahead of Thursday night's game against the Jaguars,  Tom Pelissero of Netflix reports"
-  },
   "00-0034796": {
    "name": "Lamar Jackson",
    "team": "BAL",
@@ -444,7 +444,7 @@
    "date": "2026-11-01T16:50:00-05:00",
    "detail": "Thumb",
    "espn_id": "3916387",
-   "comment": "Jackson is slated to have surgery to address his right thumb injury and will be placed on injured reserve, per coach Jesse Minter,  Brian Wacker of The Baltimor"
+   "comment": "Ravens head coach Jesse Minter said after Sunday's 36-10 loss to the Bills that Jackson will undergo surgery to address his right thumb injury and will be place"
   },
   "name:BAL:natewiggins": {
    "name": "Nate Wiggins",
@@ -564,7 +564,7 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-11-02T08:00:00-05:00",
+   "date": "2026-11-02T09:13:00-05:00",
    "detail": "Suspension",
    "espn_id": "4034953"
   },
@@ -5203,7 +5203,7 @@
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
    "date": "2026-11-01T14:33:00-05:00",
-   "detail": "Knee",
+   "detail": "Knee - MCL",
    "espn_id": "4686334"
   },
   "00-0040237": {
