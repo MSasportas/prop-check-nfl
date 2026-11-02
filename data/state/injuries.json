@@ -1,5 +1,5 @@
 {
- "at": "2026-11-02T12:10:17-05:00",
+ "at": "2026-11-02T12:50:01-05:00",
  "source": "espn",
  "players": {
   "00-0035289": {
@@ -574,7 +574,7 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-11-02T12:00:00-05:00",
+   "date": "2026-11-02T12:32:00-05:00",
    "detail": "Suspension",
    "espn_id": "4034953"
   },
@@ -4033,16 +4033,27 @@
    "detail": null,
    "espn_id": "4831959"
   },
+  "00-0036973": {
+   "name": "Travis Etienne Jr.",
+   "team": "NO",
+   "pos": "RB",
+   "status": "Injured Reserve",
+   "fantasy": "IR",
+   "date": "2026-11-02T12:20:00-05:00",
+   "detail": "Hamstring",
+   "espn_id": "4239996",
+   "comment": "Head coach Kellen Moore said that Etienne (hamstring) will be evaluated Monday before the Saints make a determination whether he practices this week, Ross Jacks"
+  },
   "00-0041029": {
    "name": "Jordyn Tyson",
    "team": "NO",
    "pos": "WR",
    "status": "Injured Reserve",
    "fantasy": "IR-R",
-   "date": "2026-11-01T11:50:00-05:00",
+   "date": "2026-11-02T12:14:00-05:00",
    "detail": "Hamstring",
    "espn_id": "4880281",
-   "comment": "Tyson (hamstring) could be reinstated from injured reserve and make his season debut as soon as next Sunday versus the Browns, Adam Schefter of ESPN reports."
+   "comment": "Saints head coach Kellen Moore said that the Saints will decide by Wednesday whether to open Tyson's (hamstring) 21-day practice window this week, Nick Underhil"
   },
   "name:NO:cesarruiz": {
    "name": "Cesar Ruiz",
@@ -5272,8 +5283,8 @@
    "name": "Yaya Diaby",
    "team": "TB",
    "pos": "LB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
+   "status": "Doubtful",
+   "fantasy": "DOUBTFUL",
    "date": "2026-11-01T14:33:00-05:00",
    "detail": "Knee - MCL",
    "espn_id": "4686334"
@@ -6333,6 +6344,10 @@
   "00-0033555": {
    "status": "Injured Reserve",
    "at": "2026-11-02T12:10:17-05:00"
+  },
+  "00-0036973": {
+   "status": "Injured Reserve",
+   "at": "2026-11-02T12:50:01-05:00"
   }
  }
 }
