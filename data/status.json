@@ -3,10 +3,10 @@
  "season": 2026,
  "week": 8,
  "slate": "2026-W08",
- "started_at": "2026-11-01T19:10:01-05:00",
- "status_at": "2026-11-01T19:10:01-05:00",
- "finished_at": "2026-11-01T19:10:02-05:00",
- "last_ok_at": "2026-11-01T19:10:01-05:00",
+ "started_at": "2026-11-01T19:40:00-05:00",
+ "status_at": "2026-11-01T19:40:00-05:00",
+ "finished_at": "2026-11-01T19:40:01-05:00",
+ "last_ok_at": "2026-11-01T19:40:00-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -32,7 +32,7 @@
   {
    "step": "injuries",
    "status": "ok",
-   "note": "espn: 221 out, 72 questionable; inactives posted for 24 team(s)"
+   "note": "espn: 222 out, 71 questionable; inactives posted for 24 team(s)"
   },
   {
    "step": "weather",
@@ -42,7 +42,7 @@
   {
    "step": "odds",
    "status": "ok",
-   "note": "1 read(s) (C)"
+   "note": "no pull due"
   },
   {
    "step": "engine",
@@ -56,8 +56,8 @@
   },
   {
    "step": "watch",
-   "status": "ok",
-   "note": "3 move(s)/side(s) scanned, 0 flagged, 0 graded"
+   "status": "skipped",
+   "note": "0 move(s)/side(s) scanned, 0 flagged, 0 graded"
   },
   {
    "step": "slate",
@@ -129,19 +129,17 @@
   "at": "2026-11-01T19:10:01-05:00",
   "next_at": "2026-11-02T19:30:00-05:00"
  },
- "due": [
-  {
-   "pull": "C",
-   "game_id": "2026_08_PHI_WAS",
-   "cost_max": 6
-  }
- ],
+ "due": [],
  "skipped_games": [],
  "unmatched_names": [],
  "unknown_teams": [],
  "behind": {
   "LAC": "last game's stats are not in yet",
-  "LA": "last game's stats are not in yet"
+  "LA": "last game's stats are not in yet",
+  "KC": "last game's stats are not in yet",
+  "DEN": "last game's stats are not in yet",
+  "NE": "last game's stats are not in yet",
+  "MIA": "last game's stats are not in yet"
  },
  "stats_problems": [],
  "games_this_week": 14,
@@ -151,7 +149,7 @@
  "runner": {
   "event": "workflow_dispatch",
   "run_id": "41364808482",
-  "iteration": 2,
+  "iteration": 5,
   "chain_link": 849,
   "chain_started_at": "2026-10-30T17:27:57-04:00",
   "run_started_at": "2026-11-01T19:00:15-05:00"
