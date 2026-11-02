@@ -1,17 +1,17 @@
 {
- "at": "2026-11-02T18:00:01-05:00",
+ "at": "2026-11-02T18:40:01-05:00",
  "source": "espn",
  "players": {
   "00-0033307": {
    "name": "Kendrick Bourne",
    "team": "ARI",
    "pos": "WR",
-   "status": "Doubtful",
-   "fantasy": "DOUBTFUL",
-   "date": "2026-11-02T17:40:00-05:00",
-   "detail": "Ankle",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-11-02T18:02:00-05:00",
+   "detail": "Lower Leg",
    "espn_id": "3045523",
-   "comment": "Bourne (ankle) is expected to miss the remainder of the season, Jonathan Jones of The Athletic reports."
+   "comment": "Bourne suffered a fractured right tibia during Sunday's overtime win at Dallas that won't require surgery but will sideline him for three months, ending his 202"
   },
   "00-0041561": {
    "name": "Carson Beck",
@@ -1275,6 +1275,26 @@
    "detail": null,
    "espn_id": "4685540"
   },
+  "name:DAL:malachilawrence": {
+   "name": "Malachi Lawrence",
+   "team": "DAL",
+   "pos": "LB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-02T18:12:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "4710067"
+  },
+  "name:DAL:pjlocke": {
+   "name": "P.J. Locke",
+   "team": "DAL",
+   "pos": "S",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-02T18:11:00-05:00",
+   "detail": "Concussion",
+   "espn_id": "3929850"
+  },
   "name:DAL:deewinters": {
    "name": "Dee Winters",
    "team": "DAL",
@@ -1589,6 +1609,26 @@
    "detail": null,
    "espn_id": "4431280"
   },
+  "name:DET:jimmyrolder": {
+   "name": "Jimmy Rolder",
+   "team": "DET",
+   "pos": "LB",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-11-02T18:23:00-05:00",
+   "detail": "Hamstring",
+   "espn_id": "4896353"
+  },
+  "name:DET:cademays": {
+   "name": "Cade Mays",
+   "team": "DET",
+   "pos": "C",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-02T18:16:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "4361788"
+  },
   "name:DET:jackcampbell": {
    "name": "Jack Campbell",
    "team": "DET",
@@ -1668,26 +1708,6 @@
    "date": "2026-11-01T17:01:00-05:00",
    "detail": null,
    "espn_id": "4429795"
-  },
-  "name:DET:jimmyrolder": {
-   "name": "Jimmy Rolder",
-   "team": "DET",
-   "pos": "LB",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-11-01T16:13:00-05:00",
-   "detail": "Hamstring",
-   "espn_id": "4896353"
-  },
-  "name:DET:cademays": {
-   "name": "Cade Mays",
-   "team": "DET",
-   "pos": "C",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-01T16:03:00-05:00",
-   "detail": "Ankle",
-   "espn_id": "4361788"
   },
   "name:DET:djreed": {
    "name": "D.J. Reed",
@@ -2879,6 +2899,17 @@
    "detail": null,
    "espn_id": "4596334"
   },
+  "00-0026498": {
+   "name": "Matthew Stafford",
+   "team": "LA",
+   "pos": "QB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-02T18:11:00-05:00",
+   "detail": "Arm",
+   "espn_id": "12483",
+   "comment": "Stafford left the locker room after Sunday's 24-9 win over the Charger with a bag of ice wrapped to his right arm, and Rams coach Sean McVay acknowledged Monday"
+  },
   "00-0040737": {
    "name": "Terrance Ferguson",
    "team": "LA",
@@ -2961,16 +2992,6 @@
    "date": "2026-11-01T21:59:00-05:00",
    "detail": null,
    "espn_id": "4429096"
-  },
-  "00-0026498": {
-   "name": "Matthew Stafford",
-   "team": "LA",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-01T21:09:00-05:00",
-   "detail": null,
-   "espn_id": "12483"
   },
   "00-0037840": {
    "name": "Kyren Williams",
@@ -4507,6 +4528,16 @@
    "detail": null,
    "espn_id": "3040151"
   },
+  "00-0038797": {
+   "name": "Emanuel Wilson",
+   "team": "SEA",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-02T18:10:00-05:00",
+   "detail": null,
+   "espn_id": "4887558"
+  },
   "00-0041512": {
    "name": "Jadarian Price",
    "team": "SEA",
@@ -4649,16 +4680,6 @@
    "date": "2026-10-26T15:11:00-04:00",
    "detail": null,
    "espn_id": "5151317"
-  },
-  "00-0034869": {
-   "name": "Sam Darnold",
-   "team": "SEA",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-25T23:52:00-04:00",
-   "detail": null,
-   "espn_id": "3912547"
   },
   "name:TB:yayadiaby": {
    "name": "Yaya Diaby",
@@ -5693,6 +5714,10 @@
   "00-0041415": {
    "status": "Questionable",
    "at": "2026-11-02T17:30:00-05:00"
+  },
+  "00-0026498": {
+   "status": "Questionable",
+   "at": "2026-11-02T18:40:01-05:00"
   }
  }
 }
