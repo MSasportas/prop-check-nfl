@@ -1,5 +1,5 @@
 {
- "at": "2026-11-02T10:30:15-05:00",
+ "at": "2026-11-02T11:10:01-05:00",
  "source": "espn",
  "players": {
   "00-0035289": {
@@ -568,6 +568,16 @@
    "detail": null,
    "espn_id": "4870847"
   },
+  "name:BUF:cjgardnerjohnson": {
+   "name": "C.J. Gardner-Johnson",
+   "team": "BUF",
+   "pos": "S",
+   "status": "Suspension",
+   "fantasy": "RESERVE-SUS",
+   "date": "2026-11-02T11:01:00-05:00",
+   "detail": "Suspension",
+   "espn_id": "4034953"
+  },
   "00-0035500": {
    "name": "Greg Dortch",
    "team": "BUF",
@@ -577,16 +587,6 @@
    "date": "2026-11-02T10:08:00-05:00",
    "detail": null,
    "espn_id": "4037235"
-  },
-  "name:BUF:cjgardnerjohnson": {
-   "name": "C.J. Gardner-Johnson",
-   "team": "BUF",
-   "pos": "S",
-   "status": "Suspension",
-   "fantasy": "RESERVE-SUS",
-   "date": "2026-11-02T10:01:00-05:00",
-   "detail": "Suspension",
-   "espn_id": "4034953"
   },
   "00-0037261": {
    "name": "Khalil Shakir",
@@ -1107,6 +1107,16 @@
    "detail": null,
    "espn_id": "4431611"
   },
+  "00-0041069": {
+   "name": "Colbie Young",
+   "team": "CIN",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-02T10:53:00-05:00",
+   "detail": null,
+   "espn_id": "5092508"
+  },
   "00-0034829": {
    "name": "Mike Gesicki",
    "team": "CIN",
@@ -1280,6 +1290,26 @@
    "detail": null,
    "espn_id": "4700712"
   },
+  "00-0036630": {
+   "name": "Tylan Wallace",
+   "team": "CLE",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-02T11:00:00-05:00",
+   "detail": null,
+   "espn_id": "4241424"
+  },
+  "00-0040782": {
+   "name": "Isaiah Bond",
+   "team": "CLE",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-02T10:56:00-05:00",
+   "detail": null,
+   "espn_id": "4808839"
+  },
   "00-0040162": {
    "name": "Dylan Sampson",
    "team": "CLE",
@@ -1412,16 +1442,6 @@
    "date": "2026-10-31T18:42:00-04:00",
    "detail": null,
    "espn_id": "4685540"
-  },
-  "00-0036407": {
-   "name": "Jerry Jeudy",
-   "team": "CLE",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-28T19:08:00-04:00",
-   "detail": null,
-   "espn_id": "4241463"
   },
   "00-0039410": {
    "name": "Ryan Flournoy",
@@ -4337,6 +4357,17 @@
    "detail": "Chest",
    "espn_id": "3929950"
   },
+  "00-0038120": {
+   "name": "Breece Hall",
+   "team": "NYJ",
+   "pos": "RB",
+   "status": "Out",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-02T10:35:00-05:00",
+   "detail": "Quadriceps",
+   "espn_id": "4427366",
+   "comment": "Hall (quadriceps) is considered \"good to go\" and is expected to return to action in next Sunday's game against the Chiefs, Ian Rapoport of NFL Network reports."
+  },
   "00-0039451": {
    "name": "Isaiah Williams",
    "team": "NYJ",
@@ -4457,17 +4488,6 @@
    "date": "2026-11-01T11:37:00-05:00",
    "detail": "Coach's Decision",
    "espn_id": "4373951"
-  },
-  "00-0038120": {
-   "name": "Breece Hall",
-   "team": "NYJ",
-   "pos": "RB",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-11-01T11:32:00-05:00",
-   "detail": "Quadriceps",
-   "espn_id": "4427366",
-   "comment": "Hall (quadriceps) is inactive for Sunday's game against the Raiders."
   },
   "name:NYJ:tvondresweat": {
    "name": "T'Vondre Sweat",
@@ -4663,6 +4683,17 @@
    "espn_id": "4360238",
    "comment": "The Eagles placed Pierce (undisclosed) on injured reserve Wednesday"
   },
+  "00-0036252": {
+   "name": "Michael Pittman Jr.",
+   "team": "PIT",
+   "pos": "WR",
+   "status": "Injured Reserve",
+   "fantasy": "IR",
+   "date": "2026-11-02T10:44:00-05:00",
+   "detail": "Foot",
+   "espn_id": "4035687",
+   "comment": "Pittman (foot) said Monday that he resumed running last week as part of a program to return, but the wideout acknowledged that he's without a clear timeline to "
+  },
   "00-0041489": {
    "name": "Germie Bernard",
    "team": "PIT",
@@ -4826,16 +4857,6 @@
    "date": "2026-10-25T08:26:00-04:00",
    "detail": null,
    "espn_id": "3116407"
-  },
-  "name:PIT:sebastianjosephday": {
-   "name": "Sebastian Joseph-Day",
-   "team": "PIT",
-   "pos": "DT",
-   "status": "Injured Reserve",
-   "fantasy": "IR",
-   "date": "2026-10-22T20:28:00-04:00",
-   "detail": "Triceps",
-   "espn_id": "3047495"
   },
   "name:SF:marquessigle": {
    "name": "Marques Sigle",
@@ -6293,6 +6314,10 @@
   "00-0033955": {
    "status": "Questionable",
    "at": "2026-11-01T23:00:00-05:00"
+  },
+  "00-0036252": {
+   "status": "Injured Reserve",
+   "at": "2026-11-02T11:10:01-05:00"
   }
  }
 }
