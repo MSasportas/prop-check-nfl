@@ -1,5 +1,5 @@
 {
- "at": "2026-11-01T21:30:00-05:00",
+ "at": "2026-11-01T22:00:00-05:00",
  "source": "espn",
  "players": {
   "00-0035289": {
@@ -178,6 +178,26 @@
    "detail": null,
    "espn_id": "4044144"
   },
+  "00-0036970": {
+   "name": "Kyle Pitts Sr.",
+   "team": "ATL",
+   "pos": "TE",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T21:23:00-05:00",
+   "detail": null,
+   "espn_id": "4360248"
+  },
+  "00-0039917": {
+   "name": "Michael Penix Jr.",
+   "team": "ATL",
+   "pos": "QB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T21:20:00-05:00",
+   "detail": null,
+   "espn_id": "4360423"
+  },
   "00-0037238": {
    "name": "Drake London",
    "team": "ATL",
@@ -342,6 +362,16 @@
    "date": "2026-10-30T22:43:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "5150660"
+  },
+  "00-0034753": {
+   "name": "Mark Andrews",
+   "team": "BAL",
+   "pos": "TE",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T21:48:00-05:00",
+   "detail": null,
+   "espn_id": "3116365"
   },
   "00-0039064": {
    "name": "Zay Flowers",
@@ -518,6 +548,16 @@
    "detail": null,
    "espn_id": "4360939"
   },
+  "00-0038933": {
+   "name": "Dalton Kincaid",
+   "team": "BUF",
+   "pos": "TE",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T21:45:00-05:00",
+   "detail": null,
+   "espn_id": "4385690"
+  },
   "name:BUF:cjgardnerjohnson": {
    "name": "C.J. Gardner-Johnson",
    "team": "BUF",
@@ -640,16 +680,6 @@
    "date": "2026-11-01T11:33:00-05:00",
    "detail": "Coach's Decision",
    "espn_id": "3915487"
-  },
-  "00-0038933": {
-   "name": "Dalton Kincaid",
-   "team": "BUF",
-   "pos": "TE",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-01T11:27:00-05:00",
-   "detail": null,
-   "espn_id": "4385690"
   },
   "00-0039875": {
    "name": "Ray Davis",
@@ -1200,6 +1230,26 @@
    "detail": null,
    "espn_id": "3116164"
   },
+  "00-0033537": {
+   "name": "Deshaun Watson",
+   "team": "CLE",
+   "pos": "QB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T21:38:00-05:00",
+   "detail": null,
+   "espn_id": "3122840"
+  },
+  "00-0040784": {
+   "name": "Quinshon Judkins",
+   "team": "CLE",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T21:32:00-05:00",
+   "detail": null,
+   "espn_id": "4685702"
+  },
   "00-0040663": {
    "name": "Harold Fannin Jr.",
    "team": "CLE",
@@ -1209,16 +1259,6 @@
    "date": "2026-11-01T18:31:00-05:00",
    "detail": null,
    "espn_id": "5083076"
-  },
-  "00-0033537": {
-   "name": "Deshaun Watson",
-   "team": "CLE",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-01T13:27:00-05:00",
-   "detail": null,
-   "espn_id": "3122840"
   },
   "00-0040704": {
    "name": "Dillon Gabriel",
@@ -1312,16 +1352,6 @@
    "date": "2026-10-28T19:08:00-04:00",
    "detail": null,
    "espn_id": "4241463"
-  },
-  "name:CLE:kaliadavis": {
-   "name": "Kalia Davis",
-   "team": "CLE",
-   "pos": "DT",
-   "status": "Injured Reserve",
-   "fantasy": "IR",
-   "date": "2026-10-27T20:26:00-04:00",
-   "detail": "Quadriceps",
-   "espn_id": "4243541"
   },
   "00-0033077": {
    "name": "Dak Prescott",
@@ -1699,6 +1729,16 @@
    "detail": null,
    "espn_id": "4426338"
   },
+  "00-0039065": {
+   "name": "Sam LaPorta",
+   "team": "DET",
+   "pos": "TE",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T21:20:00-05:00",
+   "detail": null,
+   "espn_id": "4430027"
+  },
   "00-0037240": {
    "name": "Jameson Williams",
    "team": "DET",
@@ -1891,16 +1931,6 @@
    "date": "2026-10-26T21:40:00-04:00",
    "detail": null,
    "espn_id": "5123663"
-  },
-  "00-0039065": {
-   "name": "Sam LaPorta",
-   "team": "DET",
-   "pos": "TE",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-25T22:14:00-04:00",
-   "detail": null,
-   "espn_id": "4430027"
   },
   "00-0035700": {
    "name": "Josh Jacobs",
@@ -2410,6 +2440,16 @@
    "detail": null,
    "espn_id": "3051889"
   },
+  "00-0039893": {
+   "name": "Brian Thomas Jr.",
+   "team": "JAX",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T21:31:00-05:00",
+   "detail": null,
+   "espn_id": "4432773"
+  },
   "00-0036971": {
    "name": "Trevor Lawrence",
    "team": "JAX",
@@ -2591,6 +2631,56 @@
    "detail": null,
    "espn_id": "4686248"
   },
+  "00-0030506": {
+   "name": "Travis Kelce",
+   "team": "KC",
+   "pos": "TE",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T21:42:00-05:00",
+   "detail": null,
+   "espn_id": "15847"
+  },
+  "00-0041013": {
+   "name": "Emmett Johnson",
+   "team": "KC",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T21:34:00-05:00",
+   "detail": null,
+   "espn_id": "4832955"
+  },
+  "00-0039894": {
+   "name": "Xavier Worthy",
+   "team": "KC",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T21:33:00-05:00",
+   "detail": null,
+   "espn_id": "4683062"
+  },
+  "00-0039067": {
+   "name": "Rashee Rice",
+   "team": "KC",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T21:30:00-05:00",
+   "detail": null,
+   "espn_id": "4428331"
+  },
+  "00-0038134": {
+   "name": "Kenneth Walker III",
+   "team": "KC",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T21:25:00-05:00",
+   "detail": null,
+   "espn_id": "4567048"
+  },
   "00-0033873": {
    "name": "Patrick Mahomes",
    "team": "KC",
@@ -2683,36 +2773,6 @@
    "detail": "Knee",
    "espn_id": "4040432"
   },
-  "00-0039894": {
-   "name": "Xavier Worthy",
-   "team": "KC",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-30T18:42:00-04:00",
-   "detail": null,
-   "espn_id": "4683062"
-  },
-  "00-0030506": {
-   "name": "Travis Kelce",
-   "team": "KC",
-   "pos": "TE",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-30T15:18:00-04:00",
-   "detail": null,
-   "espn_id": "15847"
-  },
-  "00-0039067": {
-   "name": "Rashee Rice",
-   "team": "KC",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-30T14:15:00-04:00",
-   "detail": null,
-   "espn_id": "4428331"
-  },
   "name:KC:omarrnormanlott": {
    "name": "Omarr Norman-Lott",
    "team": "KC",
@@ -2752,16 +2812,6 @@
    "date": "2026-10-26T20:55:00-04:00",
    "detail": null,
    "espn_id": "4240472"
-  },
-  "00-0041013": {
-   "name": "Emmett Johnson",
-   "team": "KC",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-26T20:37:00-04:00",
-   "detail": null,
-   "espn_id": "4832955"
   },
   "00-0040878": {
    "name": "Mike Washington Jr.",
@@ -2947,6 +2997,16 @@
    "detail": null,
    "espn_id": "4837248"
   },
+  "00-0036355": {
+   "name": "Justin Herbert",
+   "team": "LAC",
+   "pos": "QB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T21:14:00-05:00",
+   "detail": null,
+   "espn_id": "4038941"
+  },
   "name:LAC:rodneyshelley": {
    "name": "Rodney Shelley",
    "team": "LAC",
@@ -3108,16 +3168,6 @@
    "date": "2026-10-19T20:58:00-04:00",
    "detail": null,
    "espn_id": "4596334"
-  },
-  "00-0036355": {
-   "name": "Justin Herbert",
-   "team": "LAC",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-18T20:49:00-04:00",
-   "detail": null,
-   "espn_id": "4038941"
   },
   "00-0040666": {
    "name": "Omarion Hampton",
@@ -3485,6 +3535,16 @@
    "detail": null,
    "espn_id": "4685246"
   },
+  "00-0038994": {
+   "name": "Jordan Addison",
+   "team": "MIN",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T21:41:00-05:00",
+   "detail": null,
+   "espn_id": "4429205"
+  },
   "00-0033293": {
    "name": "Aaron Jones Sr.",
    "team": "MIN",
@@ -3637,16 +3697,6 @@
    "date": "2026-10-25T18:20:00-04:00",
    "detail": null,
    "espn_id": "4036133"
-  },
-  "00-0038994": {
-   "name": "Jordan Addison",
-   "team": "MIN",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-25T18:15:00-04:00",
-   "detail": null,
-   "espn_id": "4429205"
   },
   "00-0040506": {
    "name": "Myles Price",
@@ -4483,6 +4533,16 @@
    "detail": null,
    "espn_id": "4431574"
   },
+  "00-0023459": {
+   "name": "Aaron Rodgers",
+   "team": "PIT",
+   "pos": "QB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T21:43:00-05:00",
+   "detail": null,
+   "espn_id": "8439"
+  },
   "00-0037228": {
    "name": "Jaylen Warren",
    "team": "PIT",
@@ -4626,16 +4686,6 @@
    "date": "2026-10-25T13:57:00-04:00",
    "detail": null,
    "espn_id": "4038815"
-  },
-  "00-0023459": {
-   "name": "Aaron Rodgers",
-   "team": "PIT",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-25T13:52:00-04:00",
-   "detail": null,
-   "espn_id": "8439"
   },
   "00-0034771": {
    "name": "Mason Rudolph",
@@ -5016,6 +5066,26 @@
    "detail": null,
    "espn_id": "3912547"
   },
+  "00-0034855": {
+   "name": "Baker Mayfield",
+   "team": "TB",
+   "pos": "QB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T21:26:00-05:00",
+   "detail": null,
+   "espn_id": "3052587"
+  },
+  "00-0033921": {
+   "name": "Chris Godwin Jr.",
+   "team": "TB",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T21:24:00-05:00",
+   "detail": null,
+   "espn_id": "3116165"
+  },
   "00-0036919": {
    "name": "Kenny Gainwell",
    "team": "TB",
@@ -5055,16 +5125,6 @@
    "date": "2026-11-01T11:57:00-05:00",
    "detail": null,
    "espn_id": "4608810"
-  },
-  "00-0033921": {
-   "name": "Chris Godwin Jr.",
-   "team": "TB",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-01T11:51:00-05:00",
-   "detail": null,
-   "espn_id": "3116165"
   },
   "name:TB:billyschrauth": {
    "name": "Billy Schrauth",
@@ -5127,16 +5187,6 @@
    "detail": "Knee",
    "espn_id": "4248533"
   },
-  "00-0034855": {
-   "name": "Baker Mayfield",
-   "team": "TB",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-28T19:16:00-04:00",
-   "detail": null,
-   "espn_id": "3052587"
-  },
   "00-0041048": {
    "name": "Ted Hurst III",
    "team": "TB",
@@ -5196,6 +5246,16 @@
    "date": "2026-10-22T20:24:00-04:00",
    "detail": null,
    "espn_id": "3871102"
+  },
+  "00-0038117": {
+   "name": "Wan'Dale Robinson",
+   "team": "TEN",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T21:38:00-05:00",
+   "detail": null,
+   "espn_id": "4569587"
   },
   "00-0040676": {
    "name": "Cam Ward",
@@ -5369,16 +5429,6 @@
    "date": "2026-10-30T19:20:00-04:00",
    "detail": null,
    "espn_id": "4883647"
-  },
-  "00-0038117": {
-   "name": "Wan'Dale Robinson",
-   "team": "TEN",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-30T19:10:00-04:00",
-   "detail": null,
-   "espn_id": "4569587"
   },
   "00-0040886": {
    "name": "Nicholas Singleton",
