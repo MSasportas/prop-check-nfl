@@ -1,5 +1,5 @@
 {
- "at": "2026-11-01T20:50:01-05:00",
+ "at": "2026-11-01T21:30:00-05:00",
  "source": "espn",
  "players": {
   "00-0035289": {
@@ -524,7 +524,7 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-11-01T20:42:00-05:00",
+   "date": "2026-11-01T21:00:00-05:00",
    "detail": "Suspension",
    "espn_id": "4034953"
   },
@@ -2227,6 +2227,26 @@
    "detail": null,
    "espn_id": "4362504"
   },
+  "00-0039164": {
+   "name": "Anthony Richardson Sr.",
+   "team": "IND",
+   "pos": "QB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T21:01:00-05:00",
+   "detail": null,
+   "espn_id": "4429084"
+  },
+  "00-0040128": {
+   "name": "Tyler Warren",
+   "team": "IND",
+   "pos": "TE",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T20:47:00-05:00",
+   "detail": null,
+   "espn_id": "4431459"
+  },
   "00-0036223": {
    "name": "Jonathan Taylor",
    "team": "IND",
@@ -2340,16 +2360,6 @@
    "detail": null,
    "espn_id": "4688813"
   },
-  "00-0040128": {
-   "name": "Tyler Warren",
-   "team": "IND",
-   "pos": "TE",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-30T12:49:00-04:00",
-   "detail": null,
-   "espn_id": "4431459"
-  },
   "name:IND:camtaylorbritt": {
    "name": "Cam Taylor-Britt",
    "team": "IND",
@@ -2400,15 +2410,25 @@
    "detail": null,
    "espn_id": "3051889"
   },
-  "00-0041125": {
-   "name": "Seth McGowan",
-   "team": "IND",
-   "pos": "RB",
+  "00-0036971": {
+   "name": "Trevor Lawrence",
+   "team": "JAX",
+   "pos": "QB",
    "status": "Active",
    "fantasy": null,
-   "date": "2026-10-26T21:11:00-04:00",
+   "date": "2026-11-01T20:52:00-05:00",
    "detail": null,
-   "espn_id": "4686468"
+   "espn_id": "4360310"
+  },
+  "00-0038606": {
+   "name": "Parker Washington",
+   "team": "JAX",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T20:40:00-05:00",
+   "detail": null,
+   "espn_id": "4432620"
   },
   "00-0040719": {
    "name": "Bhayshul Tuten",
@@ -2571,25 +2591,15 @@
    "detail": null,
    "espn_id": "4686248"
   },
-  "00-0038935": {
-   "name": "Brenton Strange",
-   "team": "JAX",
-   "pos": "TE",
+  "00-0033873": {
+   "name": "Patrick Mahomes",
+   "team": "KC",
+   "pos": "QB",
    "status": "Active",
    "fantasy": null,
-   "date": "2026-10-18T22:36:00-04:00",
+   "date": "2026-11-01T21:15:00-05:00",
    "detail": null,
-   "espn_id": "4430539"
-  },
-  "00-0038611": {
-   "name": "Chris Rodriguez Jr.",
-   "team": "JAX",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-18T22:07:00-04:00",
-   "detail": null,
-   "espn_id": "4362619"
+   "espn_id": "3139477"
   },
   "name:KC:peterwoods": {
    "name": "Peter Woods",
@@ -2752,16 +2762,6 @@
    "date": "2026-10-26T20:37:00-04:00",
    "detail": null,
    "espn_id": "4832955"
-  },
-  "00-0033873": {
-   "name": "Patrick Mahomes",
-   "team": "KC",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-25T23:55:00-04:00",
-   "detail": null,
-   "espn_id": "3139477"
   },
   "00-0040878": {
    "name": "Mike Washington Jr.",
@@ -3129,6 +3129,16 @@
    "detail": null,
    "espn_id": "4685382"
   },
+  "00-0026498": {
+   "name": "Matthew Stafford",
+   "team": "LA",
+   "pos": "QB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T21:09:00-05:00",
+   "detail": null,
+   "espn_id": "12483"
+  },
   "00-0037840": {
    "name": "Kyren Williams",
    "team": "LA",
@@ -3312,16 +3322,6 @@
    "date": "2026-10-26T14:37:00-04:00",
    "detail": null,
    "espn_id": "4833029"
-  },
-  "00-0026498": {
-   "name": "Matthew Stafford",
-   "team": "LA",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-25T23:11:00-04:00",
-   "detail": null,
-   "espn_id": "12483"
   },
   "00-0039738": {
    "name": "Blake Corum",
