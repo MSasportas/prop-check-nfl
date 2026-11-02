@@ -1,5 +1,5 @@
 {
- "at": "2026-11-02T12:50:01-05:00",
+ "at": "2026-11-02T13:20:01-05:00",
  "source": "espn",
  "players": {
   "00-0035289": {
@@ -574,7 +574,7 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-11-02T12:32:00-05:00",
+   "date": "2026-11-02T13:00:00-05:00",
    "detail": "Suspension",
    "espn_id": "4034953"
   },
@@ -5283,8 +5283,8 @@
    "name": "Yaya Diaby",
    "team": "TB",
    "pos": "LB",
-   "status": "Doubtful",
-   "fantasy": "DOUBTFUL",
+   "status": "Out",
+   "fantasy": "OUT",
    "date": "2026-11-01T14:33:00-05:00",
    "detail": "Knee - MCL",
    "espn_id": "4686334"
