@@ -1,5 +1,5 @@
 {
- "at": "2026-11-01T22:00:00-05:00",
+ "at": "2026-11-01T22:30:00-05:00",
  "source": "espn",
  "players": {
   "00-0035289": {
@@ -548,6 +548,26 @@
    "detail": null,
    "espn_id": "4360939"
   },
+  "00-0037261": {
+   "name": "Khalil Shakir",
+   "team": "BUF",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T22:06:00-05:00",
+   "detail": null,
+   "espn_id": "4373678"
+  },
+  "name:BUF:cjgardnerjohnson": {
+   "name": "C.J. Gardner-Johnson",
+   "team": "BUF",
+   "pos": "S",
+   "status": "Suspension",
+   "fantasy": "RESERVE-SUS",
+   "date": "2026-11-01T22:00:00-05:00",
+   "detail": "Suspension",
+   "espn_id": "4034953"
+  },
   "00-0038933": {
    "name": "Dalton Kincaid",
    "team": "BUF",
@@ -557,16 +577,6 @@
    "date": "2026-11-01T21:45:00-05:00",
    "detail": null,
    "espn_id": "4385690"
-  },
-  "name:BUF:cjgardnerjohnson": {
-   "name": "C.J. Gardner-Johnson",
-   "team": "BUF",
-   "pos": "S",
-   "status": "Suspension",
-   "fantasy": "RESERVE-SUS",
-   "date": "2026-11-01T21:00:00-05:00",
-   "detail": "Suspension",
-   "espn_id": "4034953"
   },
   "00-0037248": {
    "name": "James Cook III",
@@ -701,16 +711,6 @@
    "detail": "Knee - ACL",
    "espn_id": "4241476",
    "comment": "The Bills designated Shavers (knee) to return from the reserve/PUP list Wednesday, but he will not play against the Ravens on Sunday, Cameron Wolfe of NFL Netwo"
-  },
-  "00-0035689": {
-   "name": "Dawson Knox",
-   "team": "BUF",
-   "pos": "TE",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-20T20:48:00-04:00",
-   "detail": null,
-   "espn_id": "3930086"
   },
   "00-0039150": {
    "name": "Bryce Young",
@@ -1057,6 +1057,16 @@
    "detail": null,
    "espn_id": "4431611"
   },
+  "00-0034829": {
+   "name": "Mike Gesicki",
+   "team": "CIN",
+   "pos": "TE",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T22:04:00-05:00",
+   "detail": null,
+   "espn_id": "3116164"
+  },
   "00-0038597": {
    "name": "Chase Brown",
    "team": "CIN",
@@ -1220,15 +1230,25 @@
    "detail": null,
    "espn_id": "4700712"
   },
-  "00-0034829": {
-   "name": "Mike Gesicki",
-   "team": "CIN",
-   "pos": "TE",
+  "00-0041547": {
+   "name": "KC Concepcion",
+   "team": "CLE",
+   "pos": "WR",
    "status": "Active",
    "fantasy": null,
-   "date": "2026-10-25T21:33:00-04:00",
+   "date": "2026-11-01T21:54:00-05:00",
    "detail": null,
-   "espn_id": "3116164"
+   "espn_id": "4870653"
+  },
+  "00-0041037": {
+   "name": "Denzel Boston",
+   "team": "CLE",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T21:45:00-05:00",
+   "detail": null,
+   "espn_id": "4832800"
   },
   "00-0033537": {
    "name": "Deshaun Watson",
@@ -1536,6 +1556,26 @@
    "detail": "Forearm",
    "espn_id": "4427816"
   },
+  "00-0041496": {
+   "name": "Jonah Coleman",
+   "team": "DEN",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T22:11:00-05:00",
+   "detail": null,
+   "espn_id": "4702555"
+  },
+  "00-0039732": {
+   "name": "Bo Nix",
+   "team": "DEN",
+   "pos": "QB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T21:58:00-05:00",
+   "detail": null,
+   "espn_id": "4426338"
+  },
   "name:DEN:brandonjones": {
    "name": "Brandon Jones",
    "team": "DEN",
@@ -1679,16 +1719,6 @@
    "detail": null,
    "espn_id": "4241985"
   },
-  "00-0041496": {
-   "name": "Jonah Coleman",
-   "team": "DEN",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-30T18:16:00-04:00",
-   "detail": null,
-   "espn_id": "4702555"
-  },
   "00-0038976": {
    "name": "Marvin Mims Jr.",
    "team": "DEN",
@@ -1718,16 +1748,6 @@
    "date": "2026-10-26T20:24:00-04:00",
    "detail": null,
    "espn_id": "4431280"
-  },
-  "00-0039732": {
-   "name": "Bo Nix",
-   "team": "DEN",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-25T20:29:00-04:00",
-   "detail": null,
-   "espn_id": "4426338"
   },
   "00-0039065": {
    "name": "Sam LaPorta",
@@ -2257,6 +2277,16 @@
    "detail": null,
    "espn_id": "4362504"
   },
+  "00-0038997": {
+   "name": "Josh Downs",
+   "team": "IND",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T21:53:00-05:00",
+   "detail": null,
+   "espn_id": "4688813"
+  },
   "00-0039164": {
    "name": "Anthony Richardson Sr.",
    "team": "IND",
@@ -2379,16 +2409,6 @@
    "detail": "Coach's Decision",
    "espn_id": "2971281",
    "comment": "inactive"
-  },
-  "00-0038997": {
-   "name": "Josh Downs",
-   "team": "IND",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-30T20:16:00-04:00",
-   "detail": null,
-   "espn_id": "4688813"
   },
   "name:IND:camtaylorbritt": {
    "name": "Cam Taylor-Britt",
@@ -3179,6 +3199,16 @@
    "detail": null,
    "espn_id": "4685382"
   },
+  "00-0039738": {
+   "name": "Blake Corum",
+   "team": "LA",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T21:59:00-05:00",
+   "detail": null,
+   "espn_id": "4429096"
+  },
   "00-0026498": {
    "name": "Matthew Stafford",
    "team": "LA",
@@ -3372,16 +3402,6 @@
    "date": "2026-10-26T14:37:00-04:00",
    "detail": null,
    "espn_id": "4833029"
-  },
-  "00-0039738": {
-   "name": "Blake Corum",
-   "team": "LA",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-25T22:45:00-04:00",
-   "detail": null,
-   "espn_id": "4429096"
   },
   "name:MIA:malikherring": {
    "name": "Malik Herring",
@@ -3717,7 +3737,7 @@
    "date": "2026-11-01T19:11:00-05:00",
    "detail": "Foot",
    "espn_id": "3046439",
-   "comment": "Henry (foot) has been ruled out for the rest of Sunday's game at Miami."
+   "comment": "Henry (foot) has been ruled out for the rest of Sunday's game in Miami."
   },
   "name:NE:gabejacas": {
    "name": "Gabe Jacas",
@@ -4533,6 +4553,26 @@
    "detail": null,
    "espn_id": "4431574"
   },
+  "00-0036139": {
+   "name": "Rico Dowdle",
+   "team": "PIT",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T21:55:00-05:00",
+   "detail": null,
+   "espn_id": "4038815"
+  },
+  "00-0035640": {
+   "name": "DK Metcalf",
+   "team": "PIT",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-01T21:50:00-05:00",
+   "detail": null,
+   "espn_id": "4047650"
+  },
   "00-0023459": {
    "name": "Aaron Rodgers",
    "team": "PIT",
@@ -4666,26 +4706,6 @@
    "date": "2026-10-25T22:58:00-04:00",
    "detail": null,
    "espn_id": "4361411"
-  },
-  "00-0035640": {
-   "name": "DK Metcalf",
-   "team": "PIT",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-25T14:04:00-04:00",
-   "detail": null,
-   "espn_id": "4047650"
-  },
-  "00-0036139": {
-   "name": "Rico Dowdle",
-   "team": "PIT",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-25T13:57:00-04:00",
-   "detail": null,
-   "espn_id": "4038815"
   },
   "00-0034771": {
    "name": "Mason Rudolph",
