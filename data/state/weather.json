@@ -109,14 +109,14 @@
    "text": "52\u00b0F, wind 5 mph"
   },
   "2026_08_CHI_SEA": {
-   "temp_f": 50.5,
-   "wind_mph": 4.2,
-   "gust_mph": 5.1,
+   "temp_f": 49.5,
+   "wind_mph": 3.2,
+   "gust_mph": 3.6,
    "rain_pct": 1,
    "rain_in": 0.0,
    "roof": "outdoors",
-   "at": "2026-11-02T01:00:00-05:00",
-   "text": "50\u00b0F, wind 4 mph"
+   "at": "2026-11-02T04:00:00-05:00",
+   "text": "50\u00b0F, wind 3 mph"
   }
  }
 }
