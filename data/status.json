@@ -3,10 +3,10 @@
  "season": 2026,
  "week": 8,
  "slate": "2026-W08",
- "started_at": "2026-11-01T18:40:01-05:00",
- "status_at": "2026-11-01T18:40:01-05:00",
- "finished_at": "2026-11-01T18:40:02-05:00",
- "last_ok_at": "2026-11-01T18:40:01-05:00",
+ "started_at": "2026-11-01T19:00:00-05:00",
+ "status_at": "2026-11-01T19:00:00-05:00",
+ "finished_at": "2026-11-01T19:00:03-05:00",
+ "last_ok_at": "2026-11-01T19:00:00-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -22,7 +22,7 @@
   {
    "step": "stats",
    "status": "skipped",
-   "note": "play-by-play unchanged (7978486 bytes)"
+   "note": "checked at 6:40 PM"
   },
   {
    "step": "roster",
@@ -36,8 +36,8 @@
   },
   {
    "step": "weather",
-   "status": "skipped",
-   "note": "nothing due (0 indoors)"
+   "status": "ok",
+   "note": "2 read, 0 failed, 0 indoors"
   },
   {
    "step": "odds",
@@ -133,7 +133,10 @@
  "skipped_games": [],
  "unmatched_names": [],
  "unknown_teams": [],
- "behind": {},
+ "behind": {
+  "LAC": "last game's stats are not in yet",
+  "LA": "last game's stats are not in yet"
+ },
  "stats_problems": [],
  "games_this_week": 14,
  "record_events": 209,
@@ -142,7 +145,7 @@
  "runner": {
   "event": "workflow_dispatch",
   "run_id": "41360756532",
-  "iteration": 4,
+  "iteration": 6,
   "chain_link": 848,
   "chain_started_at": "2026-10-30T17:27:57-04:00",
   "run_started_at": "2026-11-01T18:10:15-05:00"

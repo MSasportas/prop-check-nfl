@@ -99,14 +99,14 @@
    "text": "76\u00b0F, wind 6 mph, 76% chance of rain"
   },
   "2026_08_PHI_WAS": {
-   "temp_f": 51.1,
-   "wind_mph": 4.3,
-   "gust_mph": 5.4,
+   "temp_f": 52.4,
+   "wind_mph": 4.7,
+   "gust_mph": 6.7,
    "rain_pct": 0,
    "rain_in": 0.0,
    "roof": "outdoors",
-   "at": "2026-11-01T16:00:00-05:00",
-   "text": "51\u00b0F, wind 4 mph"
+   "at": "2026-11-01T19:00:00-05:00",
+   "text": "52\u00b0F, wind 5 mph"
   },
   "2026_08_CHI_SEA": {
    "temp_f": 50.5,
@@ -115,7 +115,7 @@
    "rain_pct": 1,
    "rain_in": 0.0,
    "roof": "outdoors",
-   "at": "2026-11-01T16:00:00-05:00",
+   "at": "2026-11-01T19:00:00-05:00",
    "text": "50\u00b0F, wind 2 mph"
   }
  }
