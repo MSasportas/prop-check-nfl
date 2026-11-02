@@ -1,5 +1,5 @@
 {
- "at": "2026-11-02T16:00:00-05:00",
+ "at": "2026-11-02T16:30:00-05:00",
  "source": "espn",
  "players": {
   "name:ARI:walternolen": {
@@ -489,7 +489,7 @@
    "pos": "S",
    "status": "Suspension",
    "fantasy": "RESERVE-SUS",
-   "date": "2026-11-02T15:43:00-05:00",
+   "date": "2026-11-02T16:21:00-05:00",
    "detail": "Suspension",
    "espn_id": "4034953"
   },
@@ -1780,7 +1780,7 @@
    "date": "2026-11-02T15:13:00-05:00",
    "detail": "Ribs",
    "espn_id": "4248528",
-   "comment": "Packers passing game coordinator Jason Vrable said Monday that Watson (ribs) is sore but \"doing great\" Matt Schneidman of The Athletic reports."
+   "comment": "Packers passing game coordinator Jason Vrable said Monday that Watson (ribs) is sore but \"doing great,\" Matt Schneidman of The Athletic reports."
   },
   "00-0035700": {
    "name": "Josh Jacobs",
@@ -3666,10 +3666,10 @@
    "pos": "RB",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-02T15:10:00-05:00",
+   "date": "2026-11-02T16:11:00-05:00",
    "detail": "Hamstring",
    "espn_id": "4696981",
-   "comment": "Skattebo (hamstring) was spotted working out off to the side during the Giants' unofficial practice session Monday, Jordan Raanan of ESPN.com reports."
+   "comment": "Giants head coach John Harbaugh said that Skattebo (hamstring) is day-to-day and could end up being a game-time decision for Sunday's tilt with the Eagles, Jord"
   },
   "00-0035250": {
    "name": "Devin Singletary",
@@ -4516,6 +4516,16 @@
    "detail": null,
    "espn_id": "3040151"
   },
+  "00-0041512": {
+   "name": "Jadarian Price",
+   "team": "SEA",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-02T16:21:00-05:00",
+   "detail": null,
+   "espn_id": "4685512"
+  },
   "name:SEA:charlescross": {
    "name": "Charles Cross",
    "team": "SEA",
@@ -4568,17 +4578,6 @@
    "detail": "Knee",
    "espn_id": "4032473",
    "comment": "Shaheed (knee) has been ruled out for Monday's game against the Bears, Curtis Crabtree of FOX 13 Seattle reports."
-  },
-  "00-0041512": {
-   "name": "Jadarian Price",
-   "team": "SEA",
-   "pos": "RB",
-   "status": "Injured Reserve",
-   "fantasy": "IR-R",
-   "date": "2026-10-31T16:50:00-04:00",
-   "detail": "Chest",
-   "espn_id": "4685512",
-   "comment": "Price (chest) doesn't have a designation for Monday's game against the Bears but remains on injured reserve, John Boyle of the Seahawks' official site reports."
   },
   "00-0039165": {
    "name": "Zach Charbonnet",
@@ -4670,6 +4669,16 @@
    "detail": null,
    "espn_id": "3912547"
   },
+  "name:TB:yayadiaby": {
+   "name": "Yaya Diaby",
+   "team": "TB",
+   "pos": "LB",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-11-02T15:53:00-05:00",
+   "detail": "Knee - MCL",
+   "espn_id": "4686334"
+  },
   "00-0040129": {
    "name": "Emeka Egbuka",
    "team": "TB",
@@ -4720,16 +4729,6 @@
    "date": "2026-11-01T17:56:00-05:00",
    "detail": null,
    "espn_id": "4596448"
-  },
-  "name:TB:yayadiaby": {
-   "name": "Yaya Diaby",
-   "team": "TB",
-   "pos": "LB",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-11-01T14:33:00-05:00",
-   "detail": "Knee - MCL",
-   "espn_id": "4686334"
   },
   "00-0040237": {
    "name": "Tez Johnson",
