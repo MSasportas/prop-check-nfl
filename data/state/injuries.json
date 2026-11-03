@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T14:30:21-05:00",
+ "at": "2026-11-03T15:00:52-05:00",
  "source": "espn",
  "players": {
   "00-0041027": {
@@ -655,6 +655,17 @@
    "espn_id": "4242433",
    "comment": "Palmer (hamstring) has been ruled out for the rest of Sunday's game against the Ravens."
   },
+  "00-0039344": {
+   "name": "Jonathon Brooks",
+   "team": "CAR",
+   "pos": "RB",
+   "status": "Injured Reserve",
+   "fantasy": "IR",
+   "date": "2026-11-03T14:22:00-05:00",
+   "detail": "Abdomen",
+   "espn_id": "4678008",
+   "comment": "Brooks (core) was seen working off to the side during the Panthers' unofficial practice Tuesday, Joe Person of The Athletic reports."
+  },
   "name:CAR:torricellisimpkins": {
    "name": "Torricelli Simpkins III",
    "team": "CAR",
@@ -755,17 +766,6 @@
    "detail": "Knee",
    "espn_id": "4430034",
    "comment": "Panthers head coach Dave Canales said Monday that Legette (knee) will \"potentially\" be designated for return from injured reserve this week, Joe Person of The A"
-  },
-  "00-0039344": {
-   "name": "Jonathon Brooks",
-   "team": "CAR",
-   "pos": "RB",
-   "status": "Injured Reserve",
-   "fantasy": "IR",
-   "date": "2026-11-02T14:14:00-05:00",
-   "detail": "Abdomen",
-   "espn_id": "4678008",
-   "comment": "Panthers head coach Dave Canales said Monday that Brooks (core) will \"potentially\" be designated for return from injured reserve this week, Joe Person of The At"
   },
   "00-0038840": {
    "name": "Brycen Tremayne",
