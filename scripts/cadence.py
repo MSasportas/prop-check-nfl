@@ -2,7 +2,7 @@
 """cadence.py: how long the timer sleeps before the next cycle (prints whole seconds). Stdlib only, no imports from
 the rest of scripts/, so a broken engine never stops the timer.
 
-  every 10 min  on a game day (any kickoff that Eastern date) from 8 AM to 1 AM, and from 3 hours before any kickoff
+  every 10 min  on a game day (any kickoff that Eastern date) from 8 AM to 1 AM, and from 3.5 hours before any kickoff
                 to 4 hours after it (late games, finals, grading)
   every 30 min  on other days from 8 AM to 1 AM
   every 60 min  1 AM to 8 AM when no game is near
@@ -32,7 +32,7 @@ def kickoffs():
 
 
 def step_for(now, kicks):
-    if any(k - timedelta(hours=3) <= now <= k + timedelta(hours=4) for k in kicks):
+    if any(k - timedelta(hours=3, minutes=30) <= now <= k + timedelta(hours=4) for k in kicks):
         return 600
     awake = now.hour >= 8 or now.hour < 1
     gameday = any(k.date() == now.date() for k in kicks) or \

@@ -617,7 +617,7 @@ def plain_reason(r, bet):
         what = ""
     d_hr, d_pin = odds.decimal(r["price"]), odds.decimal(pin)
     cmp_ = "better than" if d_hr > d_pin + 1e-9 else ("level with" if abs(d_hr - d_pin) <= 1e-9 else "worse than")
-    since = {"R": "since yesterday", "W": "since this morning's read"}.get(r.get("prev_read"), "since the last read")
+    since = {"R": "since yesterday", "W": "since the 3-hour read"}.get(r.get("prev_read"), "since the last read")
     return "Pinnacle moved %s pts toward %s %s; Hard Rock is %s %s, %s Pinnacle's %s%s." % (
         g(r["pin_after"] - r["pin_before"]), bet, since, "still at" if still else "now at",
         common.fmt_price(r["price"]), cmp_, what, common.fmt_price(pin))

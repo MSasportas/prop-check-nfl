@@ -259,7 +259,7 @@ def reads_by_game(fetches, now):
 
 
 def newest_read(reads, game, cfg):
-    """The newest read of this game that can be used to look after a pick (an R or C read with others and Hard Rock)."""
+    """The newest read of this game that can be used to look after a pick (an R, W or C read with others and Hard Rock)."""
     ok = [f for f in reads if can_flag(f, game, cfg)]
     return ok[-1] if ok else None
 

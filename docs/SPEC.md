@@ -58,7 +58,7 @@ data/state/*                   schedule, stats, injuries, rosters, credits ledge
 ## 5. data/slate.json (schema 2)
 Rewritten every run. Top level:
 ```
-schema 2, era "gg1", methods {gap_guard {era "gg1", live true}, pin_solo {era "ps1", live false}},   // see section 11
+schema 2, era "gg1", methods {gap_guard {era "gg1", live true}, pin_solo {era "ps1", live true}},   // see section 11
 season 2026, week 8, label "Week 8",
 generated_at, status_at, valid_until (ISO, next Tuesday 6 AM ET rollover), next_check (ISO|null),
 status { odds, injuries, inactives, stats, pool, last_run },
@@ -88,7 +88,7 @@ PICK (one row per bet, no legs):
  market (our key), market_label ("Carries"), side "over"|"under", line (always x.5), bet "Under 17.5 carries",
  book "Hard Rock", price (American int, FROZEN at first passing read), read_at, read_pull "R"|"C",
  vs "+3.9% vs 7 books (Pinnacle in)", gap_pct, n_books, pinnacle true, final_ev_pct,   // pin_solo: gap_pct and final_ev_pct are null
- pin_solo null | {window "R→C", pin_move_pts, others_move_pts, n_others, fair_price, ev_vs_fair_pct},   // only on method pin_solo
+ pin_solo null | {window "R→W", pin_move_pts, others_move_pts, n_others, fair_price, pin_price, ev_vs_fair_pct},   // only on method pin_solo; pin_price = Pinnacle's posted price on the side (2026-11-03)
  reason (one plain sentence), settled "injury_report"|"inactives", settled_text,
  flags {price_final bool, weather {state "checked"|"dome"|"not_checked", text, wind_mph}},
  pulled null | {at, reason, code, if_bet, now_price},     // code: inactive, injury, rules, wind, line_moved, line_gone,
@@ -175,7 +175,15 @@ Pinnacle's fair; `price_window`; `whole_line` (off by default); `ineligible` a l
 `superseded` a newer read existed; `already_flagged`. A row with no gate is a flag (`would_fire`).
 Event types in events.jsonl: `pair`/`scan` (a pair of reads / one read was scanned), `cand`, `flag`, `close`, `graded`.
 
-## 11. The fallback switch: "Pinnacle moves alone" as a live method (OFF by default)
+## 11. The fallback switch: "Pinnacle moves alone" as a live method (ON since 2026-11-03, Matt)
+
+**2026-11-03: LIVE, with new gates** (`ops.watch.tracks.pin_solo`): Pinnacle's de-vigged move >= `min_move` (1 pt) and < `max_move`
+(5 pts, gate `too_big`); `price_test` "posted": Hard Rock's price at or better than Pinnacle's POSTED price on that side on the later
+read (gate `worse_than_posted`); `others_min` 0 and `others_max` null: the other books' move is logged, not a gate. Reads are timed
+off kickoff (`ops.pulls`): R = `r_before_min` (24 h) before, never before the final report counts in; W = `w_target_min` (3 h)
+before, standard for every game; C = 70 min before once inactives are in. `vs` = "Pinnacle moved +3 pts · Pinnacle -104, Hard Rock
++105"; `reason` = "Pinnacle moved 3 pts toward Under 17.5 carries since yesterday; Hard Rock is still at +105, better than
+Pinnacle's -104." The text below is the original (2026-10-30) design and still describes the path.
 `config/rules.json` `ops.pin_solo.live` (false). Flipped to true only when Matt says so; nothing else turns it on. It also needs
 the watch track `pin_solo` active (`ops.watch.tracks.pin_solo`). While false: no pin_solo pick is ever made, `record.json.pin_solo`
 is null and `slate.methods.pin_solo.live` is false. The page can ignore all of it.

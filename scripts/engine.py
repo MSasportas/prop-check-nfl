@@ -54,8 +54,8 @@ def check_config(cfg):
         raise ConfigError("price_gate must be negative and max_price +100 or longer")
     if t["books_min"] < 4:
         raise ConfigError("books_min must be 4 or more")
-    if set(t["flag_pulls"]) - {"R", "C"}:
-        raise ConfigError("only R and C reads can flag")
+    if set(t["flag_pulls"]) - {"R", "W", "C"}:
+        raise ConfigError("only R, W and C reads can flag")
     for m in gg.market_names(cfg):
         md = cfg["ops"]["markets"][m]
         if md.get("period", "FG") != "FG" or md.get("alt_key"):

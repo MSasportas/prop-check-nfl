@@ -291,7 +291,12 @@
     "cons_hold_max": 0.15,
     "cons_hold_min": 0.0,
     "skip_whole_lines": true
-   }
+   },
+   "flag_pulls": [
+    "R",
+    "W",
+    "C"
+   ]
   },
   "safety_pause": {
    "_about": "Automatic safeguard, not a rule about what qualifies: when the new era's graded singles (not pulled) are down this many units, no NEW picks are added (shown picks are still looked after) until a person reviews.",
@@ -359,7 +364,7 @@
     }
    }
   },
-  "monthly_cap": 1300,
+  "monthly_cap": 1400,
   "shared_key_weight": 0.5,
   "plan_window_days": 7,
   "injury_fresh_min": 120,

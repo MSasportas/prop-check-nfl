@@ -258,7 +258,9 @@ class Run:
         reserve.update({g["id"]: g for g in sched.games_left_before_reset(self.cache, self.now)})
         self.odds_res = odds.run_pulls(self.now, self.slate, self.games, left, self.cfg, self.matcher_for, focus,
                                        self.report_times(), self.report_ok(), self.confirmed(), self.started,
-                                       dry_run=self.dry_run, reserve_games=list(reserve.values()))
+                                       dry_run=self.dry_run, reserve_games=list(reserve.values()),
+                                       games_this_month=sum(1 for g in window if common.parse_iso(g["start"]).astimezone(
+                                           common.ET).strftime("%Y-%m") == self.now.astimezone(common.ET).strftime("%Y-%m")))
         self.inp = None                                     # prices changed: rebuild the inputs for the engine
         return {"status": self.odds_res["status"], "note": self.odds_res["note"]}
 

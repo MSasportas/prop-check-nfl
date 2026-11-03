@@ -194,9 +194,11 @@ def rules_doc(cfg):
         "At most %d pick per player." % t["max_per_player"],
         "A pick is pulled if the player is ruled out or inactive, Hard Rock moves the line or takes it down, the price goes "
         "past %s, or the market stops agreeing with it." % common.fmt_price(t["price_gate"]),
-        ("Backup method on: a Pinnacle-moves pick appears when Pinnacle's chance moves 2 or more points toward a side while the other "
-         "books move less than 2, and Hard Rock's price is at or better than Pinnacle's fair price. Tagged Pinnacle moves; counted "
-         "on its own. Still one pick per player.") if watch.pin_live(cfg, "9999") else None,
+        ("Pinnacle-moves picks: we read the prices 24 hours, 3 hours and 70 minutes before kickoff. A pick appears when "
+         "Pinnacle's chance moves %g to under %g points toward a side between two reads and Hard Rock's price is at or better "
+         "than Pinnacle's posted price. Tagged Pinnacle moved; counted on its own line. Still one pick per player."
+         % (100 * watch.tcfg(cfg, watch.SOLO).get("min_move", 0.01), 100 * (watch.tcfg(cfg, watch.SOLO).get("max_move") or 1)))
+        if watch.pin_live(cfg, "9999") else None,
         "Picks lock at kickoff. Results come from the official stats once the game is final.",
         "The Record grades every pick at the Hard Rock price it was posted at, 1 unit each. Pulled picks are graded too and "
         "shown as pulled.",

@@ -848,7 +848,7 @@ def load_fetches(games, now, days=9):
 
 
 def run_pulls(now, slate, games, games_left, cfg, matcher_for, focus, report_times, report_ok, confirmed, started,
-              dry_run=False, reserve_games=None):
+              dry_run=False, reserve_games=None, games_this_month=None):
     """The whole odds step. Returns a result dict for status.json and the engine.
     focus {gid: set(feed keys)}: markets holding an open pick or near-pick (tight tier's C). report_times {gid: when the final
     injury report counts as in}. report_ok: game ids whose injury read is fresh after that time. confirmed: game ids with
@@ -898,7 +898,7 @@ def run_pulls(now, slate, games, games_left, cfg, matcher_for, focus, report_tim
         res.update(status="skipped" if refused or not client.errors else "failed",
                    note="every odds key was refused" if refused else "could not read the odds keys yet")
         return _finish(st, pool, res, write=not dry_run)
-    plan = _set_plan(st, pool, games_left, cfg, now)
+    plan = _set_plan(st, pool, games_left, cfg, now, games_this_month)
     res["plan"] = plan
 
     # 3. what is due (a game whose read just failed rests fail_retry_min before it is asked again)
@@ -920,26 +920,21 @@ def run_pulls(now, slate, games, games_left, cfg, matcher_for, focus, report_tim
         if dry_run:
             continue
         cost_max = est_cost(d)
-        is_w = d["pull"] == "W"
         over_cap = d["pull"] == "R" and pool.spent_on_game(g["id"]) > 0 and \
             pool.spent_on_game(g["id"]) + cost_max > cap
         if pool.total_left() < cost_max or over_cap:
-            if not is_w:                                    # a watch read that cannot be paid is simply not made
-                no_budget.append(g["id"])
-                st["skipped"][g["id"]] = {"pull": d["pull"], "why": "no budget", "at": common.iso(now)}
+            no_budget.append(g["id"])
+            st["skipped"][g["id"]] = {"pull": d["pull"], "why": "no budget", "at": common.iso(now)}
             continue
         ev = st["events"].get(g["id"])
         if not ev:
-            if is_w:
-                continue
             failed.append(g["id"])
             st["failed"][g["id"]] = {"pull": d["pull"], "at": common.iso(now)}
             client.errors.append("no odds event yet for %s at %s" % (g["away"], g["home"]))
             continue
         payload, cost = client.event_odds(ev, g, d["keys"], d["books"], d["pull"])
         if payload is None:
-            if not is_w:                                    # a failed watch read never marks the odds step or the page
-                failed.append(g["id"])
+            failed.append(g["id"])
             st["failed"][g["id"]] = {"pull": d["pull"], "at": common.iso(now)}
             continue
         st["failed"].pop(g["id"], None)
@@ -982,7 +977,7 @@ def run_pulls(now, slate, games, games_left, cfg, matcher_for, focus, report_tim
         res["note"] = ", ".join(bits) or "no pull due"
     res["failed_games"], res["no_budget"] = failed, no_budget
     if res["fetched_now"]:
-        plan = _set_plan(st, pool, games_left, cfg, now)    # the plan the next run will find: no churn from it
+        plan = _set_plan(st, pool, games_left, cfg, now, games_this_month)    # the plan the next run will find: no churn from it
         res["plan"] = plan
     res["next_at"] = next_check_at(now, games, plan, cfg, done_map(st), report_times, started, confirmed)
     return _finish(st, pool, res, write=not dry_run)
@@ -995,15 +990,21 @@ def month_spent(pool, cfg, now):
     return sum(e["cost"] for e in pool.spent if e["date"] >= since and e["date"][:7] == first[:7])
 
 
-def _set_plan(st, pool, games_left, cfg, now):
+def _set_plan(st, pool, games_left, cfg, now, games_this_month=None):
     """The plan from the pool as it stands (shared keys weighted, and no more than ops.monthly_cap minus this month's
-    spend: the keys are shared with Prop Check NHL). made_at moves only when the plan changed."""
+    spend: the keys are shared with Prop Check NHL). This month's cap pays only for this month's games: when the cap is
+    the binding limit and the window runs into next month, it is shared over this month's games in the window only (the
+    keys reset on the 1st). made_at moves only when the plan changed."""
     ops = cfg["ops"]
     w = ops.get("shared_key_weight", 0.5)
     avail = pool.weighted_left(w)
     cap = ops.get("monthly_cap")
     if cap is not None:
-        avail = min(avail, max(0.0, cap - month_spent(pool, cfg, now)))
+        cap_left = max(0.0, cap - month_spent(pool, cfg, now))
+        if cap_left < avail:
+            avail = cap_left
+            if games_this_month is not None and 0 < games_this_month < games_left:
+                avail = cap_left * games_left / float(games_this_month)     # same allowance as cap_left / this month's games
     plan = make_plan(round(avail, 2), games_left, cfg)
     plan["pool_raw"] = pool.total_left()
     plan["keys_shared"] = pool.shared_count()
