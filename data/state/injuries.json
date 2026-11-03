@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T12:00:20-05:00",
+ "at": "2026-11-03T12:30:40-05:00",
  "source": "espn",
  "players": {
   "name:ARI:walternolen": {
@@ -4554,6 +4554,16 @@
    "date": "2026-10-25T18:55:00-04:00",
    "detail": null,
    "espn_id": "3040151"
+  },
+  "00-0040648": {
+   "name": "Tory Horton",
+   "team": "SEA",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-03T12:16:00-05:00",
+   "detail": null,
+   "espn_id": "4597703"
   },
   "00-0039299": {
    "name": "George Holani",
