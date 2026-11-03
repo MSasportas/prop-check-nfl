@@ -3,10 +3,10 @@
  "season": 2026,
  "week": 8,
  "slate": "2026-W08",
- "started_at": "2026-11-03T00:00:00-05:00",
- "status_at": "2026-11-03T00:00:00-05:00",
- "finished_at": "2026-11-03T00:00:01-05:00",
- "last_ok_at": "2026-11-03T00:00:00-05:00",
+ "started_at": "2026-11-03T00:30:01-05:00",
+ "status_at": "2026-11-03T00:30:01-05:00",
+ "finished_at": "2026-11-03T00:30:01-05:00",
+ "last_ok_at": "2026-11-03T00:30:01-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -32,7 +32,7 @@
   {
    "step": "injuries",
    "status": "skipped",
-   "note": "read at 11:40 PM; inactives posted for 26 team(s)"
+   "note": "read at 12:10 AM; inactives posted for 26 team(s)"
   },
   {
    "step": "weather",
@@ -61,8 +61,8 @@
   },
   {
    "step": "slate",
-   "status": "skipped",
-   "note": "unchanged"
+   "status": "ok",
+   "note": "0 open pick(s), 0 pulled"
   },
   {
    "step": "record",
@@ -145,7 +145,7 @@
  "runner": {
   "event": "workflow_dispatch",
   "run_id": "41580386065",
-  "iteration": 2,
+  "iteration": 5,
   "chain_link": 1169,
   "chain_started_at": "2026-10-30T17:27:57-04:00",
   "run_started_at": "2026-11-02T23:50:11-05:00"
