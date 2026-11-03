@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T17:00:37-05:00",
+ "at": "2026-11-03T18:00:00-05:00",
  "source": "espn",
  "players": {
   "00-0041027": {
@@ -319,6 +319,16 @@
    "detail": "Undisclosed",
    "espn_id": "5150660"
   },
+  "name:BAL:tylerloop": {
+   "name": "Tyler Loop",
+   "team": "BAL",
+   "pos": "PK",
+   "status": "Injured Reserve",
+   "fantasy": "IR",
+   "date": "2026-11-03T16:44:00-05:00",
+   "detail": "Groin",
+   "espn_id": "4697745"
+  },
   "00-0035993": {
    "name": "Tyler Huntley",
    "team": "BAL",
@@ -390,16 +400,6 @@
    "date": "2026-11-02T21:13:00-05:00",
    "detail": "Foot",
    "espn_id": "3915189"
-  },
-  "name:BAL:tylerloop": {
-   "name": "Tyler Loop",
-   "team": "BAL",
-   "pos": "PK",
-   "status": "Injured Reserve",
-   "fantasy": "IR",
-   "date": "2026-11-02T20:54:00-05:00",
-   "detail": "Groin",
-   "espn_id": "4697745"
   },
   "00-0034975": {
    "name": "Justice Hill",
@@ -654,6 +654,17 @@
    "detail": "Hamstring",
    "espn_id": "4242433",
    "comment": "Palmer (hamstring) has been ruled out for the rest of Sunday's game against the Ravens."
+  },
+  "00-0038679": {
+   "name": "Tyrell Shavers",
+   "team": "BUF",
+   "pos": "WR",
+   "status": "Out",
+   "fantasy": "PUP-R",
+   "date": "2026-10-28T19:45:00-04:00",
+   "detail": "Knee - ACL",
+   "espn_id": "4241476",
+   "comment": "The Bills designated Shavers (knee) to return from the reserve/PUP list Wednesday, but he will not play against the Ravens on Sunday, Cameron Wolfe of NFL Netwo"
   },
   "00-0039344": {
    "name": "Jonathon Brooks",
@@ -1624,6 +1635,16 @@
    "detail": null,
    "espn_id": "4686472"
   },
+  "name:DET:kerbyjoseph": {
+   "name": "Kerby Joseph",
+   "team": "DET",
+   "pos": "S",
+   "status": "Out",
+   "fantasy": "PUP-R",
+   "date": "2026-11-03T17:13:00-05:00",
+   "detail": "Knee",
+   "espn_id": "4360383"
+  },
   "name:DET:jimmyrolder": {
    "name": "Jimmy Rolder",
    "team": "DET",
@@ -1764,16 +1785,6 @@
    "date": "2026-11-01T15:34:00-05:00",
    "detail": "Concussion",
    "espn_id": "4038849"
-  },
-  "name:DET:kerbyjoseph": {
-   "name": "Kerby Joseph",
-   "team": "DET",
-   "pos": "S",
-   "status": "Out",
-   "fantasy": "PUP-R",
-   "date": "2026-10-30T19:52:00-04:00",
-   "detail": "Knee",
-   "espn_id": "4360383"
   },
   "00-0037197": {
    "name": "Isiah Pacheco",
@@ -2260,16 +2271,38 @@
    "detail": "Groin",
    "espn_id": "4361196"
   },
+  "00-0034960": {
+   "name": "Jakobi Meyers",
+   "team": "JAX",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-03T16:57:00-05:00",
+   "detail": "Hamstring",
+   "espn_id": "3916433",
+   "comment": "Meyers (hamstring/ankle) was listed as a limited participant in Tuesday's practice."
+  },
+  "00-0038611": {
+   "name": "Chris Rodriguez Jr.",
+   "team": "JAX",
+   "pos": "RB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-03T16:54:00-05:00",
+   "detail": "Hand",
+   "espn_id": "4362619",
+   "comment": "Rodriguez (hand) was listed as a limited participant in Tuesday's practice."
+  },
   "00-0040719": {
    "name": "Bhayshul Tuten",
    "team": "JAX",
    "pos": "RB",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-03T13:16:00-05:00",
+   "date": "2026-11-03T16:49:00-05:00",
    "detail": "Ankle",
    "espn_id": "4882093",
-   "comment": "Tuten (ankle/foot) was not spotted during the portion of Tuesday's practice open to the media, according to Michael DiRocco of ESPN.com."
+   "comment": "The Jaguars listed Tuten (ankle/foot) as a non-participant in Tuesday's practice."
   },
   "name:JAX:antoniojohnson": {
    "name": "Antonio Johnson",
@@ -2311,44 +2344,22 @@
    "detail": "Ankle",
    "espn_id": "4426448"
   },
-  "00-0038611": {
-   "name": "Chris Rodriguez Jr.",
-   "team": "JAX",
-   "pos": "RB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-02T19:48:00-05:00",
-   "detail": "Hand",
-   "espn_id": "4362619",
-   "comment": "Rodriguez was listed as limited on Monday's practice estimate due to a hand injury."
-  },
   "name:JAX:ericmurray": {
    "name": "Eric Murray",
    "team": "JAX",
    "pos": "S",
-   "status": "Out",
-   "fantasy": "OUT",
+   "status": "Injured Reserve",
+   "fantasy": "IR",
    "date": "2026-11-02T19:29:00-05:00",
    "detail": "Elbow",
    "espn_id": "2970716"
-  },
-  "00-0034960": {
-   "name": "Jakobi Meyers",
-   "team": "JAX",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-02T19:19:00-05:00",
-   "detail": "Hamstring",
-   "espn_id": "3916433",
-   "comment": "Meyers logged two catches for 24 yards on three targets in Sunday's 42-7 win against Indianapolis."
   },
   "name:JAX:davonhamilton": {
    "name": "DaVon Hamilton",
    "team": "JAX",
    "pos": "DT",
-   "status": "Out",
-   "fantasy": "OUT",
+   "status": "Injured Reserve",
+   "fantasy": "IR",
    "date": "2026-11-02T17:16:00-05:00",
    "detail": "Knee",
    "espn_id": "3915520"
@@ -2971,12 +2982,12 @@
    "name": "Dean Connors",
    "team": "LA",
    "pos": "RB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
+   "status": "Injured Reserve",
+   "fantasy": "IR",
    "date": "2026-11-02T21:03:00-05:00",
    "detail": "Hand",
    "espn_id": "5082269",
-   "comment": "Connors suffered a broken hand in Sunday's 24-9 win over the Chargers."
+   "comment": "Rams head coach Sean McVay said Monday that Connors sustained a broken hand in Sunday's 24-9 win over the Chargers and will require surgery, Nate Atkins of The "
   },
   "00-0039751": {
    "name": "Jordan Whittington",
@@ -3486,16 +3497,6 @@
    "detail": null,
    "espn_id": "4431465"
   },
-  "name:NE:marcusbryant": {
-   "name": "Marcus Bryant",
-   "team": "NE",
-   "pos": "OT",
-   "status": "Injured Reserve",
-   "fantasy": "IR-R",
-   "date": "2026-10-31T22:00:00-04:00",
-   "detail": "Ankle",
-   "espn_id": "4565293"
-  },
   "00-0040568": {
    "name": "Lan Larison",
    "team": "NE",
@@ -3699,6 +3700,16 @@
    "detail": null,
    "espn_id": "4426339"
   },
+  "name:NYG:gregnewsome": {
+   "name": "Greg Newsome II",
+   "team": "NYG",
+   "pos": "CB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-03T17:37:00-05:00",
+   "detail": "Concussion",
+   "espn_id": "4361266"
+  },
   "00-0039847": {
    "name": "Theo Johnson",
    "team": "NYG",
@@ -3761,16 +3772,6 @@
    "date": "2026-10-27T09:11:00-04:00",
    "detail": "Knee",
    "espn_id": "4686362"
-  },
-  "name:NYG:gregnewsome": {
-   "name": "Greg Newsome II",
-   "team": "NYG",
-   "pos": "CB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-27T09:11:00-04:00",
-   "detail": "Concussion",
-   "espn_id": "4361266"
   },
   "name:NYG:jevonholland": {
    "name": "Jevon Holland",
@@ -3861,6 +3862,16 @@
    "date": "2026-10-24T19:28:00-04:00",
    "detail": "Chest",
    "espn_id": "3929950"
+  },
+  "name:NYJ:trebrown": {
+   "name": "Tre Brown",
+   "team": "NYJ",
+   "pos": "CB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-03T17:30:00-05:00",
+   "detail": "Finger",
+   "espn_id": "4241373"
   },
   "name:NYJ:maxmitchell": {
    "name": "Max Mitchell",
@@ -4155,16 +4166,6 @@
    "date": "2026-11-01T23:02:00-05:00",
    "detail": "Abdomen",
    "espn_id": "4240456"
-  },
-  "name:PHI:jakorianbennett": {
-   "name": "Jakorian Bennett",
-   "team": "PHI",
-   "pos": "CB",
-   "status": "Injured Reserve",
-   "fantasy": "IR-R",
-   "date": "2026-10-31T23:12:00-04:00",
-   "detail": "Knee",
-   "espn_id": "4686911"
   },
   "00-0037258": {
    "name": "Dameon Pierce",
@@ -5549,6 +5550,10 @@
   "00-0040164": {
    "status": "Injured Reserve",
    "at": "2026-11-03T05:00:00-05:00"
+  },
+  "00-0038679": {
+   "status": "Out",
+   "at": "2026-11-03T18:00:00-05:00"
   }
  }
 }
