@@ -1,5 +1,5 @@
 {
- "at": "2026-11-02T21:20:01-05:00",
+ "at": "2026-11-02T21:50:01-05:00",
  "source": "espn",
  "players": {
   "00-0033307": {
@@ -136,15 +136,15 @@
    "detail": "Knee",
    "espn_id": "4709718"
   },
-  "00-0036510": {
-   "name": "Kenny Yeboah",
-   "team": "ARI",
-   "pos": "TE",
+  "00-0036906": {
+   "name": "Khalil Herbert",
+   "team": "ATL",
+   "pos": "RB",
    "status": "Active",
    "fantasy": null,
-   "date": "2026-10-31T20:49:00-04:00",
+   "date": "2026-11-02T21:20:00-05:00",
    "detail": null,
-   "espn_id": "4044144"
+   "espn_id": "4035886"
   },
   "name:ATL:samsonebukam": {
    "name": "Samson Ebukam",
@@ -309,16 +309,6 @@
    "espn_id": "4431210",
    "comment": "Collins (hip) has been ruled out for Sunday's game against the Buccaneers and will remain on injured reserve, Tori McElhaney of the Falcons' official site repor"
   },
-  "00-0036906": {
-   "name": "Khalil Herbert",
-   "team": "ATL",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-31T20:27:00-04:00",
-   "detail": null,
-   "espn_id": "4035886"
-  },
   "name:ATL:anteriothompson": {
    "name": "Anterio Thompson",
    "team": "ATL",
@@ -328,6 +318,26 @@
    "date": "2026-10-30T22:43:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "5150660"
+  },
+  "name:BAL:jaylinnhawkins": {
+   "name": "Jaylinn Hawkins",
+   "team": "BAL",
+   "pos": "S",
+   "status": "Out",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-02T21:15:00-05:00",
+   "detail": "Knee",
+   "espn_id": "3858276"
+  },
+  "name:BAL:roquansmith": {
+   "name": "Roquan Smith",
+   "team": "BAL",
+   "pos": "LB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-02T21:13:00-05:00",
+   "detail": "Foot",
+   "espn_id": "3915189"
   },
   "name:BAL:tylerloop": {
    "name": "Tyler Loop",
@@ -381,16 +391,6 @@
    "detail": "Back",
    "espn_id": "4035479"
   },
-  "name:BAL:roquansmith": {
-   "name": "Roquan Smith",
-   "team": "BAL",
-   "pos": "LB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-02T20:05:00-05:00",
-   "detail": "Foot",
-   "espn_id": "3915189"
-  },
   "name:BAL:johnjenkins": {
    "name": "John Jenkins",
    "team": "BAL",
@@ -421,16 +421,6 @@
    "detail": "Toe",
    "espn_id": "4035671",
    "comment": "Head coach Jesse Minter said Monday that Huntley (toe) \"probably\" won't play Thursday versus the Jaguars, and the Ravens then will \"see how it goes from a long-"
-  },
-  "name:BAL:jaylinnhawkins": {
-   "name": "Jaylinn Hawkins",
-   "team": "BAL",
-   "pos": "S",
-   "status": "Out",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-02T13:42:00-05:00",
-   "detail": "Knee",
-   "espn_id": "3858276"
   },
   "name:BAL:olaivavegaioane": {
    "name": "Olaivavega Ioane",
@@ -513,6 +503,16 @@
    "detail": "Neck",
    "espn_id": "4685526",
    "comment": "Randall (neck) wasn't activated from injured reserve Saturday and won't be available for Sunday's game against the Bills, Jeff Zrebiec of The Athletic reports."
+  },
+  "00-0039875": {
+   "name": "Ray Davis",
+   "team": "BUF",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-02T21:33:00-05:00",
+   "detail": null,
+   "espn_id": "4429501"
   },
   "00-0039901": {
    "name": "Keon Coleman",
@@ -635,16 +635,6 @@
    "date": "2026-11-01T14:47:00-05:00",
    "detail": "Ankle",
    "espn_id": "4401823"
-  },
-  "00-0039875": {
-   "name": "Ray Davis",
-   "team": "BUF",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-30T15:20:00-04:00",
-   "detail": null,
-   "espn_id": "4429501"
   },
   "00-0038679": {
    "name": "Tyrell Shavers",
@@ -1327,16 +1317,6 @@
    "detail": null,
    "espn_id": "5083076"
   },
-  "00-0041131": {
-   "name": "Carsen Ryan",
-   "team": "CLE",
-   "pos": "TE",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-31T18:42:00-04:00",
-   "detail": null,
-   "espn_id": "4685540"
-  },
   "00-0038041": {
    "name": "Jake Ferguson",
    "team": "DAL",
@@ -1459,16 +1439,6 @@
    "date": "2026-11-01T15:52:00-05:00",
    "detail": "Concussion",
    "espn_id": "4870706"
-  },
-  "00-0037282": {
-   "name": "James Mitchell",
-   "team": "DAL",
-   "pos": "TE",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-31T22:46:00-04:00",
-   "detail": null,
-   "espn_id": "4361988"
   },
   "name:DAL:jonathanbullard": {
    "name": "Jonathan Bullard",
@@ -2793,6 +2763,17 @@
    "espn_id": "5155825",
    "comment": "Runyon (foot) has been ruled out for Sunday's game against the Jets, Sam Warren of The Athletic reports."
   },
+  "00-0041550": {
+   "name": "Brenen Thompson",
+   "team": "LAC",
+   "pos": "WR",
+   "status": "Out",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-02T21:10:00-05:00",
+   "detail": "Quadriceps",
+   "espn_id": "4685553",
+   "comment": "Thompson (quadriceps/hamstring) is not expected to practice this week, Noah Furtado of The Athletic reports."
+  },
   "00-0039391": {
    "name": "Kimani Vidal",
    "team": "LAC",
@@ -2813,17 +2794,6 @@
    "detail": "Lower Leg",
    "espn_id": "3123076",
    "comment": "Coach Jim Harbaugh said Monday that the Chargers will likely open the return window for Njoku (fibula) this week, Alex Insdorf of BoltBeat.com reports."
-  },
-  "00-0041550": {
-   "name": "Brenen Thompson",
-   "team": "LAC",
-   "pos": "WR",
-   "status": "Out",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-02T14:07:00-05:00",
-   "detail": "Quadriceps",
-   "espn_id": "4685553",
-   "comment": "out"
   },
   "name:LAC:deaneleonard": {
    "name": "Deane Leonard",
@@ -3280,6 +3250,16 @@
    "detail": null,
    "espn_id": "4682745"
   },
+  "00-0036259": {
+   "name": "Jauan Jennings",
+   "team": "MIN",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-02T21:37:00-05:00",
+   "detail": null,
+   "espn_id": "3886598"
+  },
   "name:MIN:christiandarrisaw": {
    "name": "Christian Darrisaw",
    "team": "MIN",
@@ -3380,16 +3360,6 @@
    "date": "2026-11-01T15:38:00-05:00",
    "detail": "Quadriceps",
    "espn_id": "4242436"
-  },
-  "00-0036259": {
-   "name": "Jauan Jennings",
-   "team": "MIN",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-01T12:10:00-05:00",
-   "detail": null,
-   "espn_id": "3886598"
   },
   "00-0036425": {
    "name": "DeeJay Dallas",
