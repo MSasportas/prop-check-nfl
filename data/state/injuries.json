@@ -1,5 +1,5 @@
 {
- "at": "2026-11-02T19:40:00-05:00",
+ "at": "2026-11-02T19:40:15-05:00",
  "source": "espn",
  "players": {
   "00-0033307": {
@@ -606,16 +606,6 @@
    "espn_id": "4241476",
    "comment": "The Bills designated Shavers (knee) to return from the reserve/PUP list Wednesday, but he will not play against the Ravens on Sunday, Cameron Wolfe of NFL Netwo"
   },
-  "00-0031610": {
-   "name": "Darren Waller",
-   "team": "CAR",
-   "pos": "TE",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-02T19:35:00-05:00",
-   "detail": null,
-   "espn_id": "2576925"
-  },
   "00-0039342": {
    "name": "Xavier Legette",
    "team": "CAR",
@@ -830,6 +820,16 @@
    "date": "2026-10-26T20:33:00-04:00",
    "detail": null,
    "espn_id": "4685350"
+  },
+  "00-0037005": {
+   "name": "Tommy Tremble",
+   "team": "CAR",
+   "pos": "TE",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-26T20:24:00-04:00",
+   "detail": null,
+   "espn_id": "4372780"
   },
   "name:CHI:malikmuhammad": {
    "name": "Malik Muhammad II",
@@ -5022,10 +5022,10 @@
    "pos": "RB",
    "status": "Doubtful",
    "fantasy": "DOUBTFUL",
-   "date": "2026-11-02T19:29:00-05:00",
+   "date": "2026-11-02T15:31:00-05:00",
    "detail": "Foot",
    "espn_id": "3127586",
-   "comment": "McNichols is getting additional opinions on the foot injury that he suffered Sunday against the Eagles, but there's an expectation that he'll miss multiple mont"
+   "comment": "Commanders head coach Dan Quinn said Monday that McNichols has a \"mid-foot\" injury and is concerned that the running back is dealing with something \"serious,\" N"
   },
   "name:WAS:daronpayne": {
    "name": "Daron Payne",
