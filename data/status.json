@@ -3,10 +3,10 @@
  "season": 2026,
  "week": 8,
  "slate": "2026-W08",
- "started_at": "2026-11-02T20:00:01-05:00",
- "status_at": "2026-11-02T20:00:01-05:00",
- "finished_at": "2026-11-02T20:00:01-05:00",
- "last_ok_at": "2026-11-02T20:00:01-05:00",
+ "started_at": "2026-11-02T20:20:01-05:00",
+ "status_at": "2026-11-02T20:20:01-05:00",
+ "finished_at": "2026-11-02T20:20:01-05:00",
+ "last_ok_at": "2026-11-02T20:20:01-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -17,7 +17,7 @@
   {
    "step": "schedule",
    "status": "ok",
-   "note": "14 game(s) this week (2026-W08); schedule read"
+   "note": "14 game(s) this week (2026-W08); live state for 1 game(s)"
   },
   {
    "step": "stats",
@@ -31,8 +31,8 @@
   },
   {
    "step": "injuries",
-   "status": "ok",
-   "note": "espn: 136 out, 72 questionable; inactives posted for 26 team(s)"
+   "status": "skipped",
+   "note": "read at 8:10 PM; inactives posted for 26 team(s)"
   },
   {
    "step": "weather",
@@ -41,8 +41,8 @@
   },
   {
    "step": "odds",
-   "status": "ok",
-   "note": "no pull due"
+   "status": "skipped",
+   "note": "no games left to price this week"
   },
   {
    "step": "engine",
@@ -129,7 +129,7 @@
   "at": "2026-11-02T19:10:00-05:00",
   "next_at": null
  },
- "due": [],
+ "due": null,
  "skipped_games": [],
  "unmatched_names": [],
  "unknown_teams": [],
@@ -142,7 +142,7 @@
  "runner": {
   "event": "workflow_dispatch",
   "run_id": "41554476021",
-  "iteration": 3,
+  "iteration": 5,
   "chain_link": 1164,
   "chain_started_at": "2026-10-30T17:27:57-04:00",
   "run_started_at": "2026-11-02T19:40:14-05:00"
