@@ -1,5 +1,5 @@
 {
- "at": "2026-11-02T23:40:01-05:00",
+ "at": "2026-11-03T00:10:01-05:00",
  "source": "espn",
  "players": {
   "00-0033307": {
@@ -8,10 +8,10 @@
    "pos": "WR",
    "status": "Out",
    "fantasy": "OUT",
-   "date": "2026-11-02T18:02:00-05:00",
+   "date": "2026-11-02T17:40:00-05:00",
    "detail": "Lower Leg",
    "espn_id": "3045523",
-   "comment": "Bourne suffered a fractured right tibia during Sunday's overtime win at Dallas that won't require surgery but will sideline him for three months, ending his 202"
+   "comment": "Bourne (ankle) is expected to miss the remainder of the season, Jonathan Jones of The Athletic reports."
   },
   "00-0041561": {
    "name": "Carson Beck",
@@ -165,7 +165,7 @@
    "date": "2026-11-02T13:55:00-05:00",
    "detail": "Hamstring",
    "espn_id": "4870612",
-   "comment": "Coach Kevin Stefanski noted Monday that  Branch (hamstring) won't play Sunday against the Bengals, William McFadden of the Falcons' official site reports."
+   "comment": "Coach Kevin Stefanski noted Monday that Branch (hamstring) won't play Sunday against the Bengals, William McFadden of the Falcons' official site reports."
   },
   "00-0037746": {
    "name": "Brian Robinson Jr.",
@@ -359,16 +359,6 @@
    "detail": "Foot",
    "espn_id": "3915189"
   },
-  "name:BAL:tylerloop": {
-   "name": "Tyler Loop",
-   "team": "BAL",
-   "pos": "PK",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-02T20:54:00-05:00",
-   "detail": "Groin",
-   "espn_id": "4697745"
-  },
   "00-0034975": {
    "name": "Justice Hill",
    "team": "BAL",
@@ -441,6 +431,16 @@
    "detail": "Toe",
    "espn_id": "4035671",
    "comment": "Head coach Jesse Minter said Monday that Huntley (toe) \"probably\" won't play Thursday versus the Jaguars, and the Ravens then will \"see how it goes from a long-"
+  },
+  "name:BAL:tylerloop": {
+   "name": "Tyler Loop",
+   "team": "BAL",
+   "pos": "PK",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-02T18:50:00-05:00",
+   "detail": "Groin",
+   "espn_id": "4697745"
   },
   "name:BAL:olaivavegaioane": {
    "name": "Olaivavega Ioane",
@@ -880,6 +880,46 @@
    "detail": null,
    "espn_id": "4685350"
   },
+  "00-0039919": {
+   "name": "Rome Odunze",
+   "team": "CHI",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-03T00:02:00-05:00",
+   "detail": null,
+   "espn_id": "4431299"
+  },
+  "00-0040735": {
+   "name": "Luther Burden III",
+   "team": "CHI",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-02T23:55:00-05:00",
+   "detail": null,
+   "espn_id": "4685278"
+  },
+  "00-0040126": {
+   "name": "Colston Loveland",
+   "team": "CHI",
+   "pos": "TE",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-02T23:49:00-05:00",
+   "detail": null,
+   "espn_id": "4723086"
+  },
+  "00-0036275": {
+   "name": "D'Andre Swift",
+   "team": "CHI",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-02T23:43:00-05:00",
+   "detail": null,
+   "espn_id": "4259545"
+  },
   "name:CHI:kentaviusstreet": {
    "name": "Kentavius Street",
    "team": "CHI",
@@ -894,8 +934,8 @@
    "name": "Grady Jarrett",
    "team": "CHI",
    "pos": "DE",
-   "status": "Doubtful",
-   "fantasy": "DOUBTFUL",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
    "date": "2026-11-02T23:23:00-05:00",
    "detail": "Groin",
    "espn_id": "2576492"
@@ -972,16 +1012,6 @@
    "espn_id": "4608686",
    "comment": "inactive"
   },
-  "00-0040126": {
-   "name": "Colston Loveland",
-   "team": "CHI",
-   "pos": "TE",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-31T14:57:00-04:00",
-   "detail": null,
-   "espn_id": "4723086"
-  },
   "name:CHI:cobybryant": {
    "name": "Coby Bryant",
    "team": "CHI",
@@ -1031,27 +1061,6 @@
    "date": "2026-10-23T22:30:00-04:00",
    "detail": null,
    "espn_id": "4426386"
-  },
-  "00-0036290": {
-   "name": "Cole Kmet",
-   "team": "CHI",
-   "pos": "TE",
-   "status": "Injured Reserve",
-   "fantasy": "IR",
-   "date": "2026-10-23T17:36:00-04:00",
-   "detail": "Knee",
-   "espn_id": "4258595",
-   "comment": "The Bears placed Kmet (knee) on injured reserve Friday."
-  },
-  "00-0039919": {
-   "name": "Rome Odunze",
-   "team": "CHI",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-23T00:31:00-04:00",
-   "detail": null,
-   "espn_id": "4431299"
   },
   "00-0033526": {
    "name": "Samaje Perine",
@@ -2841,7 +2850,7 @@
    "date": "2026-11-02T18:38:00-05:00",
    "detail": "Lower Leg",
    "espn_id": "3123076",
-   "comment": "Coach Jim Harbaugh said Monday that the Chargers will likely open the return window for Njoku (fibula) this week, Alex Insdorf of BoltBeat.com reports."
+   "comment": "Coach Jim Harbaugh said Monday that the Chargers likely will open the 21-day window for Njoku (fibula) this week, Alex Insdorf of BoltBeat.com reports."
   },
   "name:LAC:deaneleonard": {
    "name": "Deane Leonard",
@@ -3429,7 +3438,7 @@
    "date": "2026-11-02T11:55:00-05:00",
    "detail": "Calf",
    "espn_id": "2991662",
-   "comment": "Hollins (calf), who is eligible to be activated from IR this week, per Doug Kyed of the Boston Herald, could return to practice this week, Evan Lazar of the Pat"
+   "comment": "Hollins (calf), who is eligible to be activated from IR this week, per Doug Kyed of the Boston Herald, could return to practice Wednesday, Evan Lazar of the Pat"
   },
   "00-0035676": {
    "name": "A.J. Brown",
@@ -4591,6 +4600,16 @@
    "date": "2026-10-25T18:55:00-04:00",
    "detail": null,
    "espn_id": "3040151"
+  },
+  "00-0038543": {
+   "name": "Jaxon Smith-Njigba",
+   "team": "SEA",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-02T23:36:00-05:00",
+   "detail": null,
+   "espn_id": "4430878"
   },
   "name:SEA:leonardwilliams": {
    "name": "Leonard Williams",
