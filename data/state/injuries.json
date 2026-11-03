@@ -1,5 +1,5 @@
 {
- "at": "2026-11-02T19:40:15-05:00",
+ "at": "2026-11-02T19:50:01-05:00",
  "source": "espn",
  "players": {
   "00-0033307": {
@@ -146,6 +146,16 @@
    "detail": null,
    "espn_id": "4044144"
   },
+  "name:ATL:samsonebukam": {
+   "name": "Samson Ebukam",
+   "team": "ATL",
+   "pos": "DE",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-11-02T19:40:00-05:00",
+   "detail": "Hamstring",
+   "espn_id": "3045527"
+  },
   "00-0041044": {
    "name": "Zachariah Branch",
    "team": "ATL",
@@ -267,16 +277,6 @@
    "date": "2026-11-01T17:50:00-05:00",
    "detail": null,
    "espn_id": "4430807"
-  },
-  "name:ATL:samsonebukam": {
-   "name": "Samson Ebukam",
-   "team": "ATL",
-   "pos": "DE",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-11-01T15:56:00-05:00",
-   "detail": "Hamstring",
-   "espn_id": "3045527"
   },
   "00-0035208": {
    "name": "Olamide Zaccheaus",
@@ -606,6 +606,16 @@
    "espn_id": "4241476",
    "comment": "The Bills designated Shavers (knee) to return from the reserve/PUP list Wednesday, but he will not play against the Ravens on Sunday, Cameron Wolfe of NFL Netwo"
   },
+  "00-0031610": {
+   "name": "Darren Waller",
+   "team": "CAR",
+   "pos": "TE",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-02T19:35:00-05:00",
+   "detail": null,
+   "espn_id": "2576925"
+  },
   "00-0039342": {
    "name": "Xavier Legette",
    "team": "CAR",
@@ -820,16 +830,6 @@
    "date": "2026-10-26T20:33:00-04:00",
    "detail": null,
    "espn_id": "4685350"
-  },
-  "00-0037005": {
-   "name": "Tommy Tremble",
-   "team": "CAR",
-   "pos": "TE",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-26T20:24:00-04:00",
-   "detail": null,
-   "espn_id": "4372780"
   },
   "name:CHI:malikmuhammad": {
    "name": "Malik Muhammad II",
@@ -2278,6 +2278,27 @@
    "detail": null,
    "espn_id": "2998565"
   },
+  "00-0040719": {
+   "name": "Bhayshul Tuten",
+   "team": "JAX",
+   "pos": "RB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-02T19:37:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "4882093",
+   "comment": "questionable"
+  },
+  "name:JAX:ericmurray": {
+   "name": "Eric Murray",
+   "team": "JAX",
+   "pos": "S",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-11-02T19:29:00-05:00",
+   "detail": "Elbow",
+   "espn_id": "2970716"
+  },
   "00-0034960": {
    "name": "Jakobi Meyers",
    "team": "JAX",
@@ -2297,16 +2318,6 @@
    "date": "2026-11-02T17:16:00-05:00",
    "detail": "Quadriceps",
    "espn_id": "3915520"
-  },
-  "name:JAX:ericmurray": {
-   "name": "Eric Murray",
-   "team": "JAX",
-   "pos": "S",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-11-02T16:54:00-05:00",
-   "detail": "Elbow",
-   "espn_id": "2970716"
   },
   "name:JAX:antoniojohnson": {
    "name": "Antonio Johnson",
@@ -2387,16 +2398,6 @@
    "date": "2026-11-01T20:40:00-05:00",
    "detail": null,
    "espn_id": "4432620"
-  },
-  "00-0040719": {
-   "name": "Bhayshul Tuten",
-   "team": "JAX",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-01T18:10:00-05:00",
-   "detail": null,
-   "espn_id": "4882093"
   },
   "name:JAX:travonwalker": {
    "name": "Travon Walker",
@@ -2587,6 +2588,16 @@
    "date": "2026-10-26T21:57:00-04:00",
    "detail": null,
    "espn_id": "5093923"
+  },
+  "00-0038563": {
+   "name": "Tre Tucker",
+   "team": "LV",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-02T19:38:00-05:00",
+   "detail": null,
+   "espn_id": "4428718"
   },
   "00-0038579": {
    "name": "Aidan O'Connell",
@@ -5022,10 +5033,10 @@
    "pos": "RB",
    "status": "Doubtful",
    "fantasy": "DOUBTFUL",
-   "date": "2026-11-02T15:31:00-05:00",
+   "date": "2026-11-02T19:29:00-05:00",
    "detail": "Foot",
    "espn_id": "3127586",
-   "comment": "Commanders head coach Dan Quinn said Monday that McNichols has a \"mid-foot\" injury and is concerned that the running back is dealing with something \"serious,\" N"
+   "comment": "McNichols is getting additional opinions on the foot injury that he suffered Sunday against the Eagles, but there's an expectation that he'll miss multiple mont"
   },
   "name:WAS:daronpayne": {
    "name": "Daron Payne",
@@ -5738,6 +5749,10 @@
   "00-0028986": {
    "status": "Out",
    "at": "2026-11-02T19:00:00-05:00"
+  },
+  "00-0040719": {
+   "status": "Questionable",
+   "at": "2026-11-02T19:50:01-05:00"
   }
  }
 }
