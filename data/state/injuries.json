@@ -1,5 +1,5 @@
 {
- "at": "2026-11-02T18:50:18-05:00",
+ "at": "2026-11-02T19:00:00-05:00",
  "source": "espn",
  "players": {
   "00-0033307": {
@@ -329,6 +329,27 @@
    "detail": "Undisclosed",
    "espn_id": "5150660"
   },
+  "name:BAL:tylerloop": {
+   "name": "Tyler Loop",
+   "team": "BAL",
+   "pos": "PK",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-02T18:50:00-05:00",
+   "detail": "Undisclosed",
+   "espn_id": "4697745"
+  },
+  "00-0040981": {
+   "name": "Joe Fagnano",
+   "team": "BAL",
+   "pos": "QB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-02T18:43:00-05:00",
+   "detail": "Knee",
+   "espn_id": "4429582",
+   "comment": "Coach Jesse Minter said Monday that Fagnano (knee) \"is fighting through a couple things\" but has a chance to play Thursday against the Jaguars."
+  },
   "name:BAL:jaylinnhawkins": {
    "name": "Jaylinn Hawkins",
    "team": "BAL",
@@ -410,17 +431,6 @@
    "espn_id": "4035671",
    "comment": "Huntley may have sustained a right turf toe injury during Sunday's 36-10 loss at Buffalo, Adam Schefter of ESPN reports."
   },
-  "00-0040981": {
-   "name": "Joe Fagnano",
-   "team": "BAL",
-   "pos": "QB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-01T17:29:00-05:00",
-   "detail": "Knee",
-   "espn_id": "4429582",
-   "comment": "Fagnano acknowledged that he's not 100 percent healthy after taking a hit to his left knee during Sunday's 36-10 loss to the Bills, but he said that he hopes to"
-  },
   "00-0032764": {
    "name": "Derrick Henry",
    "team": "BAL",
@@ -472,16 +482,6 @@
    "date": "2026-10-26T21:46:00-04:00",
    "detail": null,
    "espn_id": "4876132"
-  },
-  "00-0040870": {
-   "name": "Ja'Kobi Lane",
-   "team": "BAL",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-26T21:00:00-04:00",
-   "detail": null,
-   "espn_id": "4870847"
   },
   "name:BUF:spencerbrown": {
    "name": "Spencer Brown",
@@ -841,25 +841,67 @@
    "detail": null,
    "espn_id": "4372780"
   },
+  "name:CHI:jordanvandenberg": {
+   "name": "Jordan van den Berg",
+   "team": "CHI",
+   "pos": "DT",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-02T18:47:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4875381"
+  },
+  "00-0028986": {
+   "name": "Case Keenum",
+   "team": "CHI",
+   "pos": "QB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-02T18:47:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "15168",
+   "comment": "inactive"
+  },
+  "name:CHI:jaydenloving": {
+   "name": "Jayden Loving",
+   "team": "CHI",
+   "pos": "DT",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-02T18:47:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4877376"
+  },
+  "name:CHI:jordanmcfadden": {
+   "name": "Jordan McFadden",
+   "team": "CHI",
+   "pos": "G",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-02T18:47:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4360319"
+  },
+  "00-0040236": {
+   "name": "Kyle Monangai",
+   "team": "CHI",
+   "pos": "RB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-02T18:47:00-05:00",
+   "detail": "Thumb",
+   "espn_id": "4608686",
+   "comment": "inactive"
+  },
   "name:CHI:malikmuhammad": {
    "name": "Malik Muhammad II",
    "team": "CHI",
    "pos": "CB",
-   "status": "Questionable",
+   "status": "Out",
    "fantasy": "INACTIVE",
-   "date": "2026-10-31T22:54:00-04:00",
+   "date": "2026-11-02T18:47:00-05:00",
    "detail": "Toe",
    "espn_id": "4870953"
-  },
-  "name:CHI:dmarcojackson": {
-   "name": "D'Marco Jackson",
-   "team": "CHI",
-   "pos": "LB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-31T19:08:00-04:00",
-   "detail": "Ankle",
-   "espn_id": "4241007"
   },
   "00-0040126": {
    "name": "Colston Loveland",
@@ -870,17 +912,6 @@
    "date": "2026-10-31T14:57:00-04:00",
    "detail": null,
    "espn_id": "4723086"
-  },
-  "00-0040236": {
-   "name": "Kyle Monangai",
-   "team": "CHI",
-   "pos": "RB",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-31T12:55:00-04:00",
-   "detail": "Thumb",
-   "espn_id": "4608686",
-   "comment": "Head coach Ben Johnson told reporters Saturday that Monangai (thumb/toe) will not play against the Seahawks on Monday, Courtney Cronin of ESPN.com reports."
   },
   "name:CHI:cobybryant": {
    "name": "Coby Bryant",
@@ -901,16 +932,6 @@
    "date": "2026-10-27T19:08:00-04:00",
    "detail": null,
    "espn_id": "4257364"
-  },
-  "00-0028986": {
-   "name": "Case Keenum",
-   "team": "CHI",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-26T13:55:00-04:00",
-   "detail": null,
-   "espn_id": "15168"
   },
   "00-0041558": {
    "name": "Sam Roush",
@@ -1275,6 +1296,17 @@
    "detail": null,
    "espn_id": "4685540"
   },
+  "00-0038041": {
+   "name": "Jake Ferguson",
+   "team": "DAL",
+   "pos": "TE",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-02T18:35:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "4242355",
+   "comment": "Head coach Brian Schottenheimer said Monday that Ferguson (ankle) has a chance to play Sunday at Indianapolis, Jon Machota of The Athletic reports."
+  },
   "name:DAL:malachilawrence": {
    "name": "Malachi Lawrence",
    "team": "DAL",
@@ -1376,17 +1408,6 @@
    "date": "2026-11-01T19:27:00-05:00",
    "detail": null,
    "espn_id": "4241389"
-  },
-  "00-0038041": {
-   "name": "Jake Ferguson",
-   "team": "DAL",
-   "pos": "TE",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-01T19:06:00-05:00",
-   "detail": "Ankle",
-   "espn_id": "4242355",
-   "comment": "Ferguson suffered a low-ankle sprain during Sunday's loss to the Cardinals, Jeremy Fowler of ESPN reports."
   },
   "name:DAL:calebdowns": {
    "name": "Caleb Downs",
@@ -2718,6 +2739,17 @@
    "espn_id": "5155825",
    "comment": "Runyon (foot) has been ruled out for Sunday's game against the Jets, Sam Warren of The Athletic reports."
   },
+  "00-0033885": {
+   "name": "David Njoku",
+   "team": "LAC",
+   "pos": "TE",
+   "status": "Injured Reserve",
+   "fantasy": "IR",
+   "date": "2026-11-02T18:38:00-05:00",
+   "detail": "Lower Leg",
+   "espn_id": "3123076",
+   "comment": "Coach Jim Harbaugh said Monday that the Chargers will likely open the return window for Njoku (fibula) this week, Alex Insdorf of BoltBeat.com reports."
+  },
   "00-0041550": {
    "name": "Brenen Thompson",
    "team": "LAC",
@@ -2899,6 +2931,16 @@
    "detail": null,
    "espn_id": "4596334"
   },
+  "name:LA:grantstuard": {
+   "name": "Grant Stuard",
+   "team": "LA",
+   "pos": "LB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-02T18:46:00-05:00",
+   "detail": "Hamstring",
+   "espn_id": "4240255"
+  },
   "00-0026498": {
    "name": "Matthew Stafford",
    "team": "LA",
@@ -2930,16 +2972,6 @@
    "date": "2026-11-02T17:20:00-05:00",
    "detail": "Knee",
    "espn_id": "3122132"
-  },
-  "name:LA:grantstuard": {
-   "name": "Grant Stuard",
-   "team": "LA",
-   "pos": "LB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-02T17:13:00-05:00",
-   "detail": "Hamstring",
-   "espn_id": "4240255"
   },
   "00-0041415": {
    "name": "Dean Connors",
@@ -4528,6 +4560,79 @@
    "detail": null,
    "espn_id": "3040151"
   },
+  "name:SEA:brandonpili": {
+   "name": "Brandon Pili",
+   "team": "SEA",
+   "pos": "DT",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-02T18:51:00-05:00",
+   "detail": "Back",
+   "espn_id": "4259651"
+  },
+  "00-0037545": {
+   "name": "Rashid Shaheed",
+   "team": "SEA",
+   "pos": "WR",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-02T18:51:00-05:00",
+   "detail": "Knee",
+   "espn_id": "4032473",
+   "comment": "inactive"
+  },
+  "name:SEA:beaustephens": {
+   "name": "Beau Stephens",
+   "team": "SEA",
+   "pos": "G",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-02T18:51:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4592823"
+  },
+  "00-0037745": {
+   "name": "Velus Jones Jr.",
+   "team": "SEA",
+   "pos": "RB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-02T18:51:00-05:00",
+   "detail": "Hamstring",
+   "espn_id": "4035693",
+   "comment": "inactive"
+  },
+  "00-0035704": {
+   "name": "Drew Lock",
+   "team": "SEA",
+   "pos": "QB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-02T18:51:00-05:00",
+   "detail": "Elbow",
+   "espn_id": "3924327",
+   "comment": "inactive"
+  },
+  "name:SEA:uchennanwosu": {
+   "name": "Uchenna Nwosu",
+   "team": "SEA",
+   "pos": "LB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-02T18:51:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "3120358"
+  },
+  "name:SEA:charlescross": {
+   "name": "Charles Cross",
+   "team": "SEA",
+   "pos": "OT",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-02T18:51:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "4426376"
+  },
   "00-0038797": {
    "name": "Emanuel Wilson",
    "team": "SEA",
@@ -4548,59 +4653,6 @@
    "detail": null,
    "espn_id": "4685512"
   },
-  "name:SEA:charlescross": {
-   "name": "Charles Cross",
-   "team": "SEA",
-   "pos": "OT",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-31T23:18:00-04:00",
-   "detail": "Ankle",
-   "espn_id": "4426376"
-  },
-  "00-0037745": {
-   "name": "Velus Jones Jr.",
-   "team": "SEA",
-   "pos": "RB",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-31T21:38:00-04:00",
-   "detail": "Hamstring",
-   "espn_id": "4035693",
-   "comment": "Jones (hamstring) has been ruled out for Monday's game against the Bears, John Boyle of the Seahawks' official site reports."
-  },
-  "00-0035704": {
-   "name": "Drew Lock",
-   "team": "SEA",
-   "pos": "QB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-31T21:35:00-04:00",
-   "detail": "Elbow",
-   "espn_id": "3924327",
-   "comment": "Lock (elbow) is listed as questionable for Monday's game against the Bears, Curtis Crabtree of Fox 13 Seattle reports."
-  },
-  "name:SEA:uchennanwosu": {
-   "name": "Uchenna Nwosu",
-   "team": "SEA",
-   "pos": "LB",
-   "status": "Doubtful",
-   "fantasy": "DOUBTFUL",
-   "date": "2026-10-31T16:57:00-04:00",
-   "detail": "Ankle",
-   "espn_id": "3120358"
-  },
-  "00-0037545": {
-   "name": "Rashid Shaheed",
-   "team": "SEA",
-   "pos": "WR",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-10-31T16:53:00-04:00",
-   "detail": "Knee",
-   "espn_id": "4032473",
-   "comment": "Shaheed (knee) has been ruled out for Monday's game against the Bears, Curtis Crabtree of FOX 13 Seattle reports."
-  },
   "00-0039165": {
    "name": "Zach Charbonnet",
    "team": "SEA",
@@ -4610,36 +4662,6 @@
    "date": "2026-10-31T16:49:00-04:00",
    "detail": null,
    "espn_id": "4426385"
-  },
-  "name:SEA:brandonpili": {
-   "name": "Brandon Pili",
-   "team": "SEA",
-   "pos": "DT",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-30T19:15:00-04:00",
-   "detail": "Back",
-   "espn_id": "4259651"
-  },
-  "name:SEA:anthonybradford": {
-   "name": "Anthony Bradford",
-   "team": "SEA",
-   "pos": "G",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-29T19:22:00-04:00",
-   "detail": "Knee",
-   "espn_id": "4429211"
-  },
-  "name:SEA:patrickoconnell": {
-   "name": "Patrick O'Connell",
-   "team": "SEA",
-   "pos": "LB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-29T18:54:00-04:00",
-   "detail": "Toe",
-   "espn_id": "4364623"
   },
   "00-0039299": {
    "name": "George Holani",
@@ -5722,6 +5744,10 @@
   "00-0033885": {
    "status": "Injured Reserve",
    "at": "2026-11-02T18:50:01-05:00"
+  },
+  "00-0028986": {
+   "status": "Out",
+   "at": "2026-11-02T19:00:00-05:00"
   }
  }
 }

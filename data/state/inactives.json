@@ -941,16 +941,83 @@
  "2026_08_CHI_SEA": {
   "_kickoff": "2026-11-02T20:15:00-05:00",
   "CHI": {
-   "confirmed": false,
-   "count": 0,
-   "players": [],
-   "confirmed_at": null
+   "confirmed": true,
+   "count": 6,
+   "players": [
+    {
+     "pid": "00-0028986",
+     "name": "Case Keenum",
+     "pos": "QB"
+    },
+    {
+     "pid": null,
+     "name": "Jayden Loving",
+     "pos": "DT"
+    },
+    {
+     "pid": null,
+     "name": "Jordan McFadden",
+     "pos": "G"
+    },
+    {
+     "pid": null,
+     "name": "Jordan van den Berg",
+     "pos": "DT"
+    },
+    {
+     "pid": "00-0040236",
+     "name": "Kyle Monangai",
+     "pos": "RB"
+    },
+    {
+     "pid": null,
+     "name": "Malik Muhammad II",
+     "pos": "CB"
+    }
+   ],
+   "confirmed_at": "2026-11-02T19:00:00-05:00"
   },
   "SEA": {
-   "confirmed": false,
-   "count": 0,
-   "players": [],
-   "confirmed_at": null
+   "confirmed": true,
+   "count": 7,
+   "players": [
+    {
+     "pid": null,
+     "name": "Beau Stephens",
+     "pos": "G"
+    },
+    {
+     "pid": null,
+     "name": "Brandon Pili",
+     "pos": "DT"
+    },
+    {
+     "pid": null,
+     "name": "Charles Cross",
+     "pos": "OT"
+    },
+    {
+     "pid": "00-0035704",
+     "name": "Drew Lock",
+     "pos": "QB"
+    },
+    {
+     "pid": "00-0037545",
+     "name": "Rashid Shaheed",
+     "pos": "WR"
+    },
+    {
+     "pid": null,
+     "name": "Uchenna Nwosu",
+     "pos": "LB"
+    },
+    {
+     "pid": "00-0037745",
+     "name": "Velus Jones Jr.",
+     "pos": "RB"
+    }
+   ],
+   "confirmed_at": "2026-11-02T19:00:00-05:00"
   }
  }
 }
