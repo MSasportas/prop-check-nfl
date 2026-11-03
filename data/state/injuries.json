@@ -1,17 +1,28 @@
 {
- "at": "2026-11-03T15:31:41-05:00",
+ "at": "2026-11-03T16:30:07-05:00",
  "source": "espn",
  "players": {
   "00-0041027": {
    "name": "Jeremiyah Love",
    "team": "ARI",
    "pos": "RB",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-11-03T13:57:00-05:00",
+   "status": "Injured Reserve",
+   "fantasy": "IR",
+   "date": "2026-11-03T16:13:00-05:00",
    "detail": "Ankle",
    "espn_id": "4870808",
-   "comment": "Love was diagnosed Tuesday with a right high-ankle sprain, which is expected to send him to injured reserve and keep him out for 4-to-5 weeks, Ian Rapoport of N"
+   "comment": "Arizona placed Love (ankle) on injured reserve Tuesday, Darren Urban of the Cardinals' official site reports."
+  },
+  "00-0033307": {
+   "name": "Kendrick Bourne",
+   "team": "ARI",
+   "pos": "WR",
+   "status": "Injured Reserve",
+   "fantasy": "IR",
+   "date": "2026-11-03T16:12:00-05:00",
+   "detail": "Lower Leg",
+   "espn_id": "3045523",
+   "comment": "Arizona placed Bourne (tibia) on injured reserve Tuesday, Darren Urban of the Cardinals' official site reports."
   },
   "name:ARI:walternolen": {
    "name": "Walter Nolen III",
@@ -32,17 +43,6 @@
    "date": "2026-11-03T08:03:00-05:00",
    "detail": "Ankle",
    "espn_id": "4367199"
-  },
-  "00-0033307": {
-   "name": "Kendrick Bourne",
-   "team": "ARI",
-   "pos": "WR",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-11-02T17:40:00-05:00",
-   "detail": "Lower Leg",
-   "espn_id": "3045523",
-   "comment": "Bourne (ankle) is expected to miss the remainder of the season, Jonathan Jones of The Athletic reports."
   },
   "00-0041561": {
    "name": "Carson Beck",
@@ -181,8 +181,8 @@
    "name": "Samson Ebukam",
    "team": "ATL",
    "pos": "DE",
-   "status": "Out",
-   "fantasy": "OUT",
+   "status": "Injured Reserve",
+   "fantasy": "IR",
    "date": "2026-11-02T19:40:00-05:00",
    "detail": "Hamstring",
    "espn_id": "3045527"
@@ -325,10 +325,10 @@
    "pos": "QB",
    "status": "Doubtful",
    "fantasy": "DOUBTFUL",
-   "date": "2026-11-03T14:07:00-05:00",
+   "date": "2026-11-03T15:47:00-05:00",
    "detail": "Toe",
    "espn_id": "4035671",
-   "comment": "Huntley (toe) wasn't spotted practicing Tuesday, Jamison Hensley of ESPN.com reports."
+   "comment": "Ravens head coach Jesse Minter said Tuesday that Huntley (toe) could be a candidate for injured reserve, Sam Cohn of The Baltimore Sunreports."
   },
   "00-0040981": {
    "name": "Joe Fagnano",
@@ -336,10 +336,10 @@
    "pos": "QB",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-03T13:52:00-05:00",
+   "date": "2026-11-03T15:39:00-05:00",
    "detail": "Ankle",
    "espn_id": "4429582",
-   "comment": "Fagnano practiced Tuesday \"with a significant guard/brace on his right ankle,\" Jeff Zrebiec of The Athletic reports."
+   "comment": "Ravens head coach Jesse Minter confirmed Tuesday that Fagnano (ankle) will start Thursday's game against the Jaguars, Jamison Hensley of ESPN.com reports."
   },
   "name:BAL:olaivavegaioane": {
    "name": "Olaivavega Ioane",
@@ -1624,6 +1624,16 @@
    "detail": null,
    "espn_id": "4686472"
   },
+  "name:DET:jimmyrolder": {
+   "name": "Jimmy Rolder",
+   "team": "DET",
+   "pos": "LB",
+   "status": "Injured Reserve",
+   "fantasy": "IR",
+   "date": "2026-11-03T16:24:00-05:00",
+   "detail": "Hamstring",
+   "espn_id": "4896353"
+  },
   "name:DET:djreed": {
    "name": "D.J. Reed",
    "team": "DET",
@@ -1644,16 +1654,6 @@
    "detail": "Neck",
    "espn_id": "4383429",
    "comment": "Saylors (neck) is not expected to practice Wednesday, Nolan Bianchi of The Detroit News reports."
-  },
-  "name:DET:jimmyrolder": {
-   "name": "Jimmy Rolder",
-   "team": "DET",
-   "pos": "LB",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-11-02T18:23:00-05:00",
-   "detail": "Hamstring",
-   "espn_id": "4896353"
   },
   "name:DET:cademays": {
    "name": "Cade Mays",
@@ -3866,9 +3866,9 @@
    "name": "Max Mitchell",
    "team": "NYJ",
    "pos": "OT",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-03T08:03:00-05:00",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-11-03T15:55:00-05:00",
    "detail": "Concussion",
    "espn_id": "4373656"
   },
