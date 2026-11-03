@@ -1,5 +1,5 @@
 {
- "at": "2026-11-02T19:50:01-05:00",
+ "at": "2026-11-02T20:00:01-05:00",
  "source": "espn",
  "players": {
   "00-0033307": {
@@ -606,6 +606,16 @@
    "espn_id": "4241476",
    "comment": "The Bills designated Shavers (knee) to return from the reserve/PUP list Wednesday, but he will not play against the Ravens on Sunday, Cameron Wolfe of NFL Netwo"
   },
+  "name:CAR:jaelanphillips": {
+   "name": "Jaelan Phillips",
+   "team": "CAR",
+   "pos": "LB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-02T19:51:00-05:00",
+   "detail": "Hamstring",
+   "espn_id": "4242975"
+  },
   "00-0031610": {
    "name": "Darren Waller",
    "team": "CAR",
@@ -801,16 +811,6 @@
    "detail": "Knee",
    "espn_id": "4362647"
   },
-  "name:CAR:jaelanphillips": {
-   "name": "Jaelan Phillips",
-   "team": "CAR",
-   "pos": "LB",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-10-28T19:41:00-04:00",
-   "detail": "Hamstring",
-   "espn_id": "4242975"
-  },
   "00-0040187": {
    "name": "Mitchell Evans",
    "team": "CAR",
@@ -1004,6 +1004,16 @@
    "detail": null,
    "espn_id": "4685278"
   },
+  "name:CIN:djturner": {
+   "name": "DJ Turner II",
+   "team": "CIN",
+   "pos": "CB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-02T19:47:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "4572036"
+  },
   "name:CIN:kyledugger": {
    "name": "Kyle Dugger",
    "team": "CIN",
@@ -1103,16 +1113,6 @@
    "date": "2026-11-01T16:10:00-05:00",
    "detail": "Ankle",
    "espn_id": "4430065"
-  },
-  "name:CIN:djturner": {
-   "name": "DJ Turner II",
-   "team": "CIN",
-   "pos": "CB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-01T16:08:00-05:00",
-   "detail": "Ankle",
-   "espn_id": "4572036"
   },
   "00-0038619": {
    "name": "Andrei Iosivas",
@@ -2278,16 +2278,37 @@
    "detail": null,
    "espn_id": "2998565"
   },
+  "name:JAX:jarrianjones": {
+   "name": "Jarrian Jones",
+   "team": "JAX",
+   "pos": "CB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-02T19:57:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "4426448"
+  },
+  "00-0038611": {
+   "name": "Chris Rodriguez Jr.",
+   "team": "JAX",
+   "pos": "RB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-02T19:48:00-05:00",
+   "detail": "Hand",
+   "espn_id": "4362619",
+   "comment": "Rodriguez was listed as limited on Monday's practice estimate due to a hand injury."
+  },
   "00-0040719": {
    "name": "Bhayshul Tuten",
    "team": "JAX",
    "pos": "RB",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-02T19:37:00-05:00",
+   "date": "2026-11-02T19:43:00-05:00",
    "detail": "Ankle",
    "espn_id": "4882093",
-   "comment": "questionable"
+   "comment": "Tuten was a non-participant at Monday's walkthrough due to ankle and foot injuries."
   },
   "name:JAX:ericmurray": {
    "name": "Eric Murray",
@@ -2303,11 +2324,12 @@
    "name": "Jakobi Meyers",
    "team": "JAX",
    "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
    "date": "2026-11-02T19:19:00-05:00",
-   "detail": null,
-   "espn_id": "3916433"
+   "detail": "Hamstring",
+   "espn_id": "3916433",
+   "comment": "Meyers logged two catches for 24 yards on three targets in Sunday's 42-7 win against Indianapolis."
   },
   "name:JAX:davonhamilton": {
    "name": "DaVon Hamilton",
@@ -2358,16 +2380,6 @@
    "date": "2026-11-01T23:46:00-05:00",
    "detail": null,
    "espn_id": "4686248"
-  },
-  "00-0038611": {
-   "name": "Chris Rodriguez Jr.",
-   "team": "JAX",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-01T23:23:00-05:00",
-   "detail": null,
-   "espn_id": "4362619"
   },
   "00-0039893": {
    "name": "Brian Thomas Jr.",
@@ -2932,6 +2944,16 @@
    "detail": null,
    "espn_id": "4596334"
   },
+  "00-0039751": {
+   "name": "Jordan Whittington",
+   "team": "LA",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-02T19:35:00-05:00",
+   "detail": null,
+   "espn_id": "4569382"
+  },
   "name:LA:grantstuard": {
    "name": "Grant Stuard",
    "team": "LA",
@@ -3065,16 +3087,6 @@
    "date": "2026-11-01T18:25:00-05:00",
    "detail": "Shoulder",
    "espn_id": "4697639"
-  },
-  "00-0039751": {
-   "name": "Jordan Whittington",
-   "team": "LA",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-01T14:42:00-05:00",
-   "detail": null,
-   "espn_id": "4569382"
   },
   "00-0031381": {
    "name": "Davante Adams",
@@ -5753,6 +5765,10 @@
   "00-0040719": {
    "status": "Questionable",
    "at": "2026-11-02T19:50:01-05:00"
+  },
+  "00-0038611": {
+   "status": "Questionable",
+   "at": "2026-11-02T20:00:01-05:00"
   }
  }
 }
