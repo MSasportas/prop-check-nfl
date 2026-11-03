@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T00:10:01-05:00",
+ "at": "2026-11-03T00:40:11-05:00",
  "source": "espn",
  "players": {
   "00-0033307": {
@@ -880,6 +880,26 @@
    "detail": null,
    "espn_id": "4685350"
   },
+  "00-0039918": {
+   "name": "Caleb Williams",
+   "team": "CHI",
+   "pos": "QB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-03T00:10:00-05:00",
+   "detail": null,
+   "espn_id": "4431611"
+  },
+  "00-0032464": {
+   "name": "Kalif Raymond",
+   "team": "CHI",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-03T00:09:00-05:00",
+   "detail": null,
+   "espn_id": "2973405"
+  },
   "00-0039919": {
    "name": "Rome Odunze",
    "team": "CHI",
@@ -1041,26 +1061,6 @@
    "date": "2026-10-24T00:13:00-04:00",
    "detail": null,
    "espn_id": "4685504"
-  },
-  "00-0032464": {
-   "name": "Kalif Raymond",
-   "team": "CHI",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-23T23:43:00-04:00",
-   "detail": null,
-   "espn_id": "2973405"
-  },
-  "00-0039021": {
-   "name": "Roschon Johnson",
-   "team": "CHI",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-23T22:30:00-04:00",
-   "detail": null,
-   "espn_id": "4426386"
   },
   "00-0033526": {
    "name": "Samaje Perine",
@@ -4601,6 +4601,36 @@
    "detail": null,
    "espn_id": "3040151"
   },
+  "00-0039165": {
+   "name": "Zach Charbonnet",
+   "team": "SEA",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-03T00:19:00-05:00",
+   "detail": null,
+   "espn_id": "4426385"
+  },
+  "00-0033908": {
+   "name": "Cooper Kupp",
+   "team": "SEA",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-03T00:18:00-05:00",
+   "detail": null,
+   "espn_id": "2977187"
+  },
+  "00-0041512": {
+   "name": "Jadarian Price",
+   "team": "SEA",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-03T00:13:00-05:00",
+   "detail": null,
+   "espn_id": "4685512"
+  },
   "00-0038543": {
    "name": "Jaxon Smith-Njigba",
    "team": "SEA",
@@ -4620,16 +4650,6 @@
    "date": "2026-11-02T22:36:00-05:00",
    "detail": "Shoulder",
    "espn_id": "2971622"
-  },
-  "00-0039165": {
-   "name": "Zach Charbonnet",
-   "team": "SEA",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-02T19:49:00-05:00",
-   "detail": null,
-   "espn_id": "4426385"
   },
   "name:SEA:brandonpili": {
    "name": "Brandon Pili",
@@ -4724,16 +4744,6 @@
    "detail": null,
    "espn_id": "4887558"
   },
-  "00-0041512": {
-   "name": "Jadarian Price",
-   "team": "SEA",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-02T16:20:00-05:00",
-   "detail": null,
-   "espn_id": "4685512"
-  },
   "00-0039299": {
    "name": "George Holani",
    "team": "SEA",
@@ -4743,26 +4753,6 @@
    "date": "2026-10-26T21:00:00-04:00",
    "detail": null,
    "espn_id": "4429835"
-  },
-  "00-0033908": {
-   "name": "Cooper Kupp",
-   "team": "SEA",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-26T20:48:00-04:00",
-   "detail": null,
-   "espn_id": "2977187"
-  },
-  "00-0040648": {
-   "name": "Tory Horton",
-   "team": "SEA",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-26T20:41:00-04:00",
-   "detail": null,
-   "espn_id": "4597703"
   },
   "00-0041048": {
    "name": "Ted Hurst III",

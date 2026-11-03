@@ -3,10 +3,10 @@
  "season": 2026,
  "week": 8,
  "slate": "2026-W08",
- "started_at": "2026-11-03T00:30:01-05:00",
- "status_at": "2026-11-03T00:30:01-05:00",
- "finished_at": "2026-11-03T00:30:01-05:00",
- "last_ok_at": "2026-11-03T00:30:01-05:00",
+ "started_at": "2026-11-03T00:40:11-05:00",
+ "status_at": "2026-11-03T00:40:11-05:00",
+ "finished_at": "2026-11-03T00:40:14-05:00",
+ "last_ok_at": "2026-11-03T00:40:11-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -21,8 +21,8 @@
   },
   {
    "step": "stats",
-   "status": "skipped",
-   "note": "checked at 11:40 PM"
+   "status": "ok",
+   "note": "121 games through 2026-11-02"
   },
   {
    "step": "roster",
@@ -31,8 +31,8 @@
   },
   {
    "step": "injuries",
-   "status": "skipped",
-   "note": "read at 12:10 AM; inactives posted for 26 team(s)"
+   "status": "ok",
+   "note": "espn: 133 out, 81 questionable; inactives posted for 26 team(s)"
   },
   {
    "step": "weather",
@@ -133,10 +133,7 @@
  "skipped_games": [],
  "unmatched_names": [],
  "unknown_teams": [],
- "behind": {
-  "CHI": "last game's stats are not in yet",
-  "SEA": "last game's stats are not in yet"
- },
+ "behind": {},
  "stats_problems": [],
  "games_this_week": 14,
  "record_events": 209,
@@ -144,14 +141,14 @@
  "odds_notes": [],
  "runner": {
   "event": "workflow_dispatch",
-  "run_id": "41580386065",
-  "iteration": 5,
-  "chain_link": 1169,
+  "run_id": "41585231353",
+  "iteration": 1,
+  "chain_link": 1170,
   "chain_started_at": "2026-10-30T17:27:57-04:00",
-  "run_started_at": "2026-11-02T23:50:11-05:00"
+  "run_started_at": "2026-11-03T00:40:11-05:00"
  },
  "live_page": {
-  "checked_at": "2026-11-02T23:40:01-05:00",
+  "checked_at": "2026-11-03T00:40:11-05:00",
   "http": 200,
   "is_page": true
  }
