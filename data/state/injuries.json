@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T14:00:12-05:00",
+ "at": "2026-11-03T14:30:21-05:00",
  "source": "espn",
  "players": {
   "00-0041027": {
@@ -319,6 +319,17 @@
    "detail": "Undisclosed",
    "espn_id": "5150660"
   },
+  "00-0035993": {
+   "name": "Tyler Huntley",
+   "team": "BAL",
+   "pos": "QB",
+   "status": "Doubtful",
+   "fantasy": "DOUBTFUL",
+   "date": "2026-11-03T14:07:00-05:00",
+   "detail": "Toe",
+   "espn_id": "4035671",
+   "comment": "Huntley (toe) wasn't spotted practicing Tuesday, Jamison Hensley of ESPN.com reports."
+  },
   "00-0040981": {
    "name": "Joe Fagnano",
    "team": "BAL",
@@ -440,17 +451,6 @@
    "date": "2026-11-02T20:03:00-05:00",
    "detail": "Finger",
    "espn_id": "3052743"
-  },
-  "00-0035993": {
-   "name": "Tyler Huntley",
-   "team": "BAL",
-   "pos": "QB",
-   "status": "Doubtful",
-   "fantasy": "DOUBTFUL",
-   "date": "2026-11-02T19:02:00-05:00",
-   "detail": "Toe",
-   "espn_id": "4035671",
-   "comment": "Head coach Jesse Minter said Monday that Huntley (toe) \"probably\" won't play Thursday versus the Jaguars, and the Ravens then will \"see how it goes from a long-"
   },
   "00-0040876": {
    "name": "Elijah Sarratt",
