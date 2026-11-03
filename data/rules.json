@@ -199,7 +199,7 @@
   "No passing or receiving-yard overs in wind of 15 mph or more at kickoff.",
   "At most 1 pick per player.",
   "A pick is pulled if the player is ruled out or inactive, Hard Rock moves the line or takes it down, the price goes past -150, or the market stops agreeing with it.",
-  "Pinnacle-moves picks: we read the prices 24 hours, 3 hours and 70 minutes before kickoff. A pick appears when Pinnacle's chance moves 1 to under 5 points toward a side between two reads and Hard Rock's price is at or better than Pinnacle's posted price. Tagged Pinnacle moved; counted on its own line. Still one pick per player.",
+  "Pinnacle-moves picks: we read the prices 24 hours, 3 hours and 70 minutes before kickoff. A pick appears when Pinnacle's chance moves 2 to under 5 points toward a side between two reads and Hard Rock's price beats Pinnacle's fair (no-vig) price. Tagged Pinnacle moved; counted on its own line. Still one pick per player.",
   "Picks lock at kickoff. Results come from the official stats once the game is final.",
   "The Record grades every pick at the Hard Rock price it was posted at, 1 unit each. Pulled picks are graded too and shown as pulled."
  ],

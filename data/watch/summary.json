@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated_at": "2026-11-03T02:00:01-05:00",
+ "updated_at": "2026-11-03T07:00:00-05:00",
  "note": "Research only. Never on the Picks tab, never in the Record. Promotion to a live rule needs Matt.",
  "reads": {
   "games_with_pairs": 13,
@@ -38,7 +38,7 @@
   {
    "track": "pin_solo",
    "label": "Pinnacle moves alone",
-   "about": "LIVE RULE since 2026-11-03 (Matt). Between two reads of a game (R 24 h -> W 3 h -> C 70 min before kickoff), Pinnacle's de-vigged chance moves 1 to under 5 pts toward a side, and Hard Rock's price on that side is at or better than Pinnacle's POSTED price on the later read. Price window -150..+120, half-point lines only, live eligibility vetoes. The other books' move is logged, not a gate. Flat 1 unit at Hard Rock's price on the later read.",
+   "about": "LIVE RULE since 2026-11-03 (Matt; tightened 2026-11-03 6:43 AM). Between two reads of a game (R 24 h -> W 3 h -> C 70 min before kickoff), Pinnacle's de-vigged chance moves 2 to under 5 pts toward a side, and Hard Rock's price on that side BEATS Pinnacle's fair (no-vig) price on the later read (EV vs Pinnacle's fair > 0). Price window -150..+120, half-point lines only, live eligibility vetoes. The other books' move is logged, not a gate. Flat 1 unit at Hard Rock's price on the later read.",
    "from_slate": "2026-W08",
    "active": true,
    "total": {
