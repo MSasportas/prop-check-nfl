@@ -1,5 +1,5 @@
 {
- "at": "2026-11-02T19:20:00-05:00",
+ "at": "2026-11-02T19:30:01-05:00",
  "source": "espn",
  "players": {
   "00-0033307": {
@@ -831,6 +831,27 @@
    "detail": null,
    "espn_id": "4372780"
   },
+  "name:CHI:malikmuhammad": {
+   "name": "Malik Muhammad II",
+   "team": "CHI",
+   "pos": "CB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-02T19:11:00-05:00",
+   "detail": "Toe",
+   "espn_id": "4870953"
+  },
+  "00-0028986": {
+   "name": "Case Keenum",
+   "team": "CHI",
+   "pos": "QB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-02T19:07:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "15168",
+   "comment": "Keenum (coach's decision) is inactive but will operate as the Bears' emergency third quarterback for Monday night's matchup against the Seahawks."
+  },
   "00-0035039": {
    "name": "Stephen Carlson",
    "team": "CHI",
@@ -850,17 +871,6 @@
    "date": "2026-11-02T18:47:00-05:00",
    "detail": "Coach's Decision",
    "espn_id": "4875381"
-  },
-  "00-0028986": {
-   "name": "Case Keenum",
-   "team": "CHI",
-   "pos": "QB",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-11-02T18:47:00-05:00",
-   "detail": "Coach's Decision",
-   "espn_id": "15168",
-   "comment": "inactive"
   },
   "name:CHI:jaydenloving": {
    "name": "Jayden Loving",
@@ -892,16 +902,6 @@
    "detail": "Thumb",
    "espn_id": "4608686",
    "comment": "inactive"
-  },
-  "name:CHI:malikmuhammad": {
-   "name": "Malik Muhammad II",
-   "team": "CHI",
-   "pos": "CB",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-11-02T18:47:00-05:00",
-   "detail": "Toe",
-   "espn_id": "4870953"
   },
   "00-0040126": {
    "name": "Colston Loveland",
@@ -2278,6 +2278,16 @@
    "detail": null,
    "espn_id": "2998565"
   },
+  "00-0034960": {
+   "name": "Jakobi Meyers",
+   "team": "JAX",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-02T19:19:00-05:00",
+   "detail": null,
+   "espn_id": "3916433"
+  },
   "name:JAX:davonhamilton": {
    "name": "DaVon Hamilton",
    "team": "JAX",
@@ -2407,16 +2417,6 @@
    "date": "2026-11-01T14:05:00-05:00",
    "detail": "Ankle",
    "espn_id": "4048231"
-  },
-  "00-0034960": {
-   "name": "Jakobi Meyers",
-   "team": "JAX",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-01T11:33:00-05:00",
-   "detail": null,
-   "espn_id": "3916433"
   },
   "00-0040238": {
    "name": "LeQuint Allen Jr.",
@@ -4556,9 +4556,40 @@
    "pos": "DT",
    "status": "Out",
    "fantasy": "INACTIVE",
-   "date": "2026-11-02T18:51:00-05:00",
+   "date": "2026-11-02T19:20:00-05:00",
    "detail": "Back",
    "espn_id": "4259651"
+  },
+  "name:SEA:uchennanwosu": {
+   "name": "Uchenna Nwosu",
+   "team": "SEA",
+   "pos": "LB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-02T19:16:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "3120358"
+  },
+  "00-0040621": {
+   "name": "Montorie Foster Jr.",
+   "team": "SEA",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-02T19:12:00-05:00",
+   "detail": null,
+   "espn_id": "4600597"
+  },
+  "00-0035704": {
+   "name": "Drew Lock",
+   "team": "SEA",
+   "pos": "QB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-02T19:11:00-05:00",
+   "detail": "Elbow",
+   "espn_id": "3924327",
+   "comment": "Lock (coach's decision) is inactive for Monday's matchup with the Bears, John Boyle of the Seahawks' official site reports."
   },
   "00-0037545": {
    "name": "Rashid Shaheed",
@@ -4591,27 +4622,6 @@
    "detail": "Hamstring",
    "espn_id": "4035693",
    "comment": "inactive"
-  },
-  "00-0035704": {
-   "name": "Drew Lock",
-   "team": "SEA",
-   "pos": "QB",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-11-02T18:51:00-05:00",
-   "detail": "Elbow",
-   "espn_id": "3924327",
-   "comment": "inactive"
-  },
-  "name:SEA:uchennanwosu": {
-   "name": "Uchenna Nwosu",
-   "team": "SEA",
-   "pos": "LB",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-11-02T18:51:00-05:00",
-   "detail": "Ankle",
-   "espn_id": "3120358"
   },
   "name:SEA:charlescross": {
    "name": "Charles Cross",
@@ -4682,16 +4692,6 @@
    "date": "2026-10-26T20:41:00-04:00",
    "detail": null,
    "espn_id": "4597703"
-  },
-  "00-0041178": {
-   "name": "Robert Henry Jr.",
-   "team": "SEA",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-26T15:11:00-04:00",
-   "detail": null,
-   "espn_id": "5151317"
   },
   "name:TB:yayadiaby": {
    "name": "Yaya Diaby",

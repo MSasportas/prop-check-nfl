@@ -3,10 +3,10 @@
  "season": 2026,
  "week": 8,
  "slate": "2026-W08",
- "started_at": "2026-11-02T19:10:00-05:00",
- "status_at": "2026-11-02T19:10:00-05:00",
- "finished_at": "2026-11-02T19:10:01-05:00",
- "last_ok_at": "2026-11-02T19:10:00-05:00",
+ "started_at": "2026-11-02T19:30:01-05:00",
+ "status_at": "2026-11-02T19:30:01-05:00",
+ "finished_at": "2026-11-02T19:30:02-05:00",
+ "last_ok_at": "2026-11-02T19:30:01-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -22,7 +22,7 @@
   {
    "step": "stats",
    "status": "skipped",
-   "note": "checked at 6:30 PM"
+   "note": "play-by-play unchanged (8245812 bytes)"
   },
   {
    "step": "roster",
@@ -36,13 +36,13 @@
   },
   {
    "step": "weather",
-   "status": "ok",
-   "note": "1 read, 0 failed, 0 indoors"
+   "status": "skipped",
+   "note": "nothing due (0 indoors)"
   },
   {
    "step": "odds",
    "status": "ok",
-   "note": "1 read(s) (C)"
+   "note": "no pull due"
   },
   {
    "step": "engine",
@@ -56,8 +56,8 @@
   },
   {
    "step": "watch",
-   "status": "ok",
-   "note": "7 move(s)/side(s) scanned, 0 flagged, 0 graded"
+   "status": "skipped",
+   "note": "0 move(s)/side(s) scanned, 0 flagged, 0 graded"
   },
   {
    "step": "slate",
@@ -129,13 +129,7 @@
   "at": "2026-11-02T19:10:00-05:00",
   "next_at": null
  },
- "due": [
-  {
-   "pull": "C",
-   "game_id": "2026_08_CHI_SEA",
-   "cost_max": 6
-  }
- ],
+ "due": [],
  "skipped_games": [],
  "unmatched_names": [],
  "unknown_teams": [],
@@ -148,13 +142,13 @@
  "runner": {
   "event": "workflow_dispatch",
   "run_id": "41548415842",
-  "iteration": 3,
+  "iteration": 5,
   "chain_link": 1163,
   "chain_started_at": "2026-10-30T17:27:57-04:00",
   "run_started_at": "2026-11-02T18:50:17-05:00"
  },
  "live_page": {
-  "checked_at": "2026-11-02T18:30:00-05:00",
+  "checked_at": "2026-11-02T19:30:01-05:00",
   "http": 200,
   "is_page": true
  }
