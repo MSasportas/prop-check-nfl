@@ -3,10 +3,10 @@
  "season": 2026,
  "week": 8,
  "slate": "2026-W08",
- "started_at": "2026-11-02T19:00:00-05:00",
- "status_at": "2026-11-02T19:00:00-05:00",
- "finished_at": "2026-11-02T19:00:01-05:00",
- "last_ok_at": "2026-11-02T19:00:00-05:00",
+ "started_at": "2026-11-02T19:10:00-05:00",
+ "status_at": "2026-11-02T19:10:00-05:00",
+ "finished_at": "2026-11-02T19:10:01-05:00",
+ "last_ok_at": "2026-11-02T19:10:00-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -36,13 +36,13 @@
   },
   {
    "step": "weather",
-   "status": "skipped",
-   "note": "nothing due (0 indoors)"
+   "status": "ok",
+   "note": "1 read, 0 failed, 0 indoors"
   },
   {
    "step": "odds",
    "status": "ok",
-   "note": "no pull due"
+   "note": "1 read(s) (C)"
   },
   {
    "step": "engine",
@@ -56,8 +56,8 @@
   },
   {
    "step": "watch",
-   "status": "skipped",
-   "note": "0 move(s)/side(s) scanned, 0 flagged, 0 graded"
+   "status": "ok",
+   "note": "7 move(s)/side(s) scanned, 0 flagged, 0 graded"
   },
   {
    "step": "slate",
@@ -85,7 +85,7 @@
  "keys": [
   {
    "n": 1,
-   "left": 386,
+   "left": 380,
    "shared": false
   },
   {
@@ -119,17 +119,23 @@
    "shared": false
   }
  ],
- "pool_total": 3348,
- "allowance": 59.07,
+ "pool_total": 3342,
+ "allowance": 58.67,
  "tier": "full",
  "games_left_before_reset": 15,
- "budget_used_today": 0,
+ "budget_used_today": 6,
  "odds": {
   "state": "ok",
-  "at": "2026-11-01T19:10:01-05:00",
-  "next_at": "2026-11-02T19:05:00-05:00"
+  "at": "2026-11-02T19:10:00-05:00",
+  "next_at": null
  },
- "due": [],
+ "due": [
+  {
+   "pull": "C",
+   "game_id": "2026_08_CHI_SEA",
+   "cost_max": 6
+  }
+ ],
  "skipped_games": [],
  "unmatched_names": [],
  "unknown_teams": [],
@@ -142,7 +148,7 @@
  "runner": {
   "event": "workflow_dispatch",
   "run_id": "41548415842",
-  "iteration": 2,
+  "iteration": 3,
   "chain_link": 1163,
   "chain_started_at": "2026-10-30T17:27:57-04:00",
   "run_started_at": "2026-11-02T18:50:17-05:00"

@@ -1,5 +1,5 @@
 {
- "at": "2026-11-02T19:00:00-05:00",
+ "at": "2026-11-02T19:10:00-05:00",
  "source": "espn",
  "players": {
   "00-0033307": {
@@ -329,6 +329,17 @@
    "detail": "Undisclosed",
    "espn_id": "5150660"
   },
+  "00-0035993": {
+   "name": "Tyler Huntley",
+   "team": "BAL",
+   "pos": "QB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-02T19:02:00-05:00",
+   "detail": "Toe",
+   "espn_id": "4035671",
+   "comment": "Head coach Jesse Minter said Monday that Huntley (toe) \"probably\" won't play Thursday versus the Jaguars, and the Ravens then will \"see how it goes from a long-"
+  },
   "name:BAL:tylerloop": {
    "name": "Tyler Loop",
    "team": "BAL",
@@ -420,17 +431,6 @@
    "detail": null,
    "espn_id": "4429615"
   },
-  "00-0035993": {
-   "name": "Tyler Huntley",
-   "team": "BAL",
-   "pos": "QB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-01T18:37:00-05:00",
-   "detail": "Toe",
-   "espn_id": "4035671",
-   "comment": "Huntley may have sustained a right turf toe injury during Sunday's 36-10 loss at Buffalo, Adam Schefter of ESPN reports."
-  },
   "00-0032764": {
    "name": "Derrick Henry",
    "team": "BAL",
@@ -472,16 +472,6 @@
    "detail": "Neck",
    "espn_id": "4685526",
    "comment": "Randall (neck) wasn't activated from injured reserve Saturday and won't be available for Sunday's game against the Bills, Jeff Zrebiec of The Athletic reports."
-  },
-  "00-0040887": {
-   "name": "Josh Cuevas",
-   "team": "BAL",
-   "pos": "TE",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-26T21:46:00-04:00",
-   "detail": null,
-   "espn_id": "4876132"
   },
   "name:BUF:spencerbrown": {
    "name": "Spencer Brown",
@@ -841,6 +831,16 @@
    "detail": null,
    "espn_id": "4372780"
   },
+  "00-0035039": {
+   "name": "Stephen Carlson",
+   "team": "CHI",
+   "pos": "TE",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-02T19:01:00-05:00",
+   "detail": null,
+   "espn_id": "3948283"
+  },
   "name:CHI:jordanvandenberg": {
    "name": "Jordan van den Berg",
    "team": "CHI",
@@ -1003,16 +1003,6 @@
    "date": "2026-10-22T23:59:00-04:00",
    "detail": null,
    "espn_id": "4685278"
-  },
-  "00-0039918": {
-   "name": "Caleb Williams",
-   "team": "CHI",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-22T23:50:00-04:00",
-   "detail": null,
-   "espn_id": "4431611"
   },
   "name:CIN:kyledugger": {
    "name": "Kyle Dugger",

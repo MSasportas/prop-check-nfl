@@ -3,11 +3,11 @@
  "keys": [
   {
    "n": 1,
-   "left": 386,
+   "left": 380,
    "status": "ok",
-   "checked_at": "2026-11-02T18:20:01-05:00",
+   "checked_at": "2026-11-02T19:10:00-05:00",
    "month": "2026-11",
-   "after_us": 386,
+   "after_us": 380,
    "shared": false,
    "shared_at": null,
    "others_spent": 0
@@ -1141,6 +1141,14 @@
    "date": "2026-11-01",
    "pull": "C",
    "game_id": "2026_08_PHI_WAS",
+   "cost": 6,
+   "key": 1
+  },
+  {
+   "at": "2026-11-02T19:10:00-05:00",
+   "date": "2026-11-02",
+   "pull": "C",
+   "game_id": "2026_08_CHI_SEA",
    "cost": 6,
    "key": 1
   }

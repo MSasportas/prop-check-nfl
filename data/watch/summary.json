@@ -1,17 +1,17 @@
 {
  "schema": 1,
- "updated_at": "2026-11-01T19:10:01-05:00",
+ "updated_at": "2026-11-02T19:10:00-05:00",
  "note": "Research only. Never on the Picks tab, never in the Record. Promotion to a live rule needs Matt.",
  "reads": {
-  "games_with_pairs": 12,
-  "pairs": 19,
+  "games_with_pairs": 13,
+  "pairs": 20,
   "by_window": [
    {
     "window": "R\u2192C",
-    "pairs": 5,
-    "avg_gap_hours": 46.9,
-    "avg_pin_lines": 14.8,
-    "avg_moves": 5.2
+    "pairs": 6,
+    "avg_gap_hours": 47.6,
+    "avg_pin_lines": 14.0,
+    "avg_moves": 5.5
    },
    {
     "window": "R\u2192W",
@@ -60,20 +60,20 @@
    },
    "by_market": [],
    "seen": {
-    "reads_scanned": 19,
-    "candidates": 75,
-    "distinct_sides": 75,
+    "reads_scanned": 20,
+    "candidates": 82,
+    "distinct_sides": 82,
     "would_fire": 0,
     "by_gate": [
      {
       "gate": "hr_line",
       "label": "Hard Rock did not quote this line on both reads",
-      "n": 37
+      "n": 39
      },
      {
       "gate": "worse_than_fair",
       "label": "Hard Rock price worse than Pinnacle's fair price",
-      "n": 21
+      "n": 26
      },
      {
       "gate": "others_moved",
@@ -114,7 +114,7 @@
    },
    "by_market": [],
    "seen": {
-    "reads_scanned": 32,
+    "reads_scanned": 33,
     "candidates": 2,
     "distinct_sides": 2,
     "would_fire": 0,
