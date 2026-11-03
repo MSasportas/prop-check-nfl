@@ -493,7 +493,6 @@ def main():
             d["vs"] = "Pinnacle moved %+g pts · Pinnacle fair -122, DraftKings -112" % mv
             d["reason"] = x["reason"].replace("Hard Rock is still at %s" % price_txt(x["price"]), "DraftKings is still at -112")
             d["link"] = {"url": "https://sportsbook.draftkings.com/event/123", "kind": "page"}
-            d["rank"] = (x.get("rank") or 1) + 1
             extra.append(d)
     for x in sl["picks"]:
         x.setdefault("method", "gap_guard")
@@ -502,6 +501,11 @@ def main():
         x.setdefault("book_key", "hardrock")
         x.setdefault("link", None)
     sl["picks"] = sl["picks"][:1] + extra + sl["picks"][1:]
+    day0 = sl["picks"][0]["day"]
+    nxt = 1
+    for x in sl["picks"]:                                       # ranks again, the DraftKings twin second
+        if x["day"] == day0 and x["state"] == "open":
+            x["rank"], nxt = nxt, nxt + 1
     sl["methods"] = {"gap_guard": {"era": "gg1", "live": True}, "pin_solo": {"era": "ps1", "live": True},
                      "draftkings": {"era": "pd1", "live": True}}
     hw = history_weeks(12, seed=11, loss_bias=0.42)

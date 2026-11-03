@@ -189,12 +189,13 @@ def pick_line(p, now):
     if p.get("method") == "pin_solo" and isinstance(p.get("pin_solo"), dict):
         ps = p["pin_solo"]
         if ps.get("price_test") == "posted" and ps.get("pin_price") is not None:
-            nums = "Pinnacle moved %+.1f pts; Pinnacle %s, Hard Rock %s" % (
-                ps.get("pin_move_pts") or 0.0, common.fmt_price(ps["pin_price"]), common.fmt_price(p["price"]))
+            nums = "Pinnacle moved %+.1f pts; Pinnacle %s, %s %s" % (
+                ps.get("pin_move_pts") or 0.0, common.fmt_price(ps["pin_price"]), p.get("book") or "Hard Rock",
+                common.fmt_price(p["price"]))
         else:
-            nums = "Pinnacle moved %+.1f pts, other books %+.1f; Hard Rock %s is %+.1f%% vs Pinnacle's fair price" % (
-                ps.get("pin_move_pts") or 0.0, ps.get("others_move_pts") or 0.0, common.fmt_price(p["price"]),
-                ps.get("ev_vs_fair_pct") or 0.0)
+            nums = "Pinnacle moved %+.1f pts, other books %+.1f; %s %s is %+.1f%% vs Pinnacle's fair price" % (
+                ps.get("pin_move_pts") or 0.0, ps.get("others_move_pts") or 0.0, p.get("book") or "Hard Rock",
+                common.fmt_price(p["price"]), ps.get("ev_vs_fair_pct") or 0.0)
     else:
         say = we_say_pct(p)
         nums = "%s, %s%s" % (p.get("vs") or "Gap vs market", ("we say %s%%, " % ("%g" % say)) if say is not None else "", need)

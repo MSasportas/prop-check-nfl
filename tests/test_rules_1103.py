@@ -158,6 +158,7 @@ class DraftKings(unittest.TestCase):
             self.assertEqual(dk["book"], "DraftKings")
             self.assertTrue(dk["link"]["url"].startswith("https://sportsbook.draftkings.com"))
             self.assertIn("DraftKings is still at", dk["reason"])
+            self.assertRegex(dk["vs"], r"DraftKings [+-]\d+$")
             w.at("2026-10-15T20:30")                                   # kicked off: both lock onto the Record
             rec = common.read_json(w.path("record.json"))
             self.assertIsNotNone(rec["draftkings"])

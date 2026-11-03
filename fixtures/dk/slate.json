@@ -330,7 +330,7 @@
   {
    "id": "2026-W13:2026_13_DAL_PHI:00-0038502:rec_yds:FG:44.5:under:ps",
    "era": "ps1",
-   "rank": 2,
+   "rank": 3,
    "state": "open",
    "game_id": "2026_13_DAL_PHI",
    "day": "2026-12-06",
@@ -396,7 +396,7 @@
   {
    "id": "2026-W13:2026_13_SEA_DEN:00-0004075:rush_att:FG:17.5:under",
    "era": "gg1",
-   "rank": 3,
+   "rank": 4,
    "state": "open",
    "game_id": "2026_13_SEA_DEN",
    "day": "2026-12-06",
@@ -450,7 +450,7 @@
   {
    "id": "2026-W13:2026_13_SEA_DEN:00-0082039:rush_yds:FG:62.5:over",
    "era": "gg1",
-   "rank": 4,
+   "rank": 5,
    "state": "open",
    "game_id": "2026_13_SEA_DEN",
    "day": "2026-12-06",

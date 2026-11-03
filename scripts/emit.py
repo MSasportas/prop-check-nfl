@@ -43,11 +43,11 @@ def vs_text(sh):
     if sh.get("method") == "pin_solo":
         mv = round(100 * (sh["pin_after"] - sh["pin_before"]), 1)
         if sh.get("price_test") == "posted" and sh.get("pin_price") is not None:
-            return "Pinnacle moved %+g pts · Pinnacle %s, Hard Rock %s" % (mv, common.fmt_price(sh["pin_price"]),
-                                                                       common.fmt_price(sh["price"]))
+            return "Pinnacle moved %+g pts · Pinnacle %s, %s %s" % (mv, common.fmt_price(sh["pin_price"]),
+                                                                sh.get("book") or "Hard Rock", common.fmt_price(sh["price"]))
         if sh.get("price_test") == "fair" and sh.get("pin_fair_price") is not None:
-            return "Pinnacle moved %+g pts · Pinnacle fair %s, Hard Rock %s" % (mv, common.fmt_price(sh["pin_fair_price"]),
-                                                                            common.fmt_price(sh["price"]))
+            return "Pinnacle moved %+g pts · Pinnacle fair %s, %s %s" % (mv, common.fmt_price(sh["pin_fair_price"]),
+                                                                     sh.get("book") or "Hard Rock", common.fmt_price(sh["price"]))
         return "Pinnacle %+g pts, other books %+g" % (mv, round(100 * (sh["others_move"] or 0.0), 1))
     return "%+.1f%% vs %d books (Pinnacle in)" % (100 * sh["gap_ev"], sh["n_books"])
 
@@ -202,7 +202,8 @@ def rules_doc(cfg):
         "past %s, or the market stops agreeing with it." % common.fmt_price(t["price_gate"]),
         ("Pinnacle-moves picks: we read the prices 24 hours, 3 hours and 70 minutes before kickoff. A pick appears when "
          "Pinnacle's chance moves %g to under %g points toward a side between two reads and Hard Rock's price %s. Tagged "
-         "Pinnacle moved; counted on its own line. Still one pick per player."
+         "Pinnacle moved; counted on its own line. Still one pick per player. The same rule is also checked at DraftKings: a "
+         "DraftKings pick is marked DraftKings and kept on its own Record line."
          % (100 * watch.tcfg(cfg, watch.SOLO).get("min_move", 0.01), 100 * (watch.tcfg(cfg, watch.SOLO).get("max_move") or 1),
             "is at or better than Pinnacle's posted price" if watch.tcfg(cfg, watch.SOLO).get("price_test") == "posted"
             else "beats Pinnacle's fair (no-vig) price"))

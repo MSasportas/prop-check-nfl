@@ -330,6 +330,11 @@ class Client:
             params["includeLinks"] = "true"                 # bet-slip links for the pick cards (no extra credits per the docs)
         js, cost = self._get("/events/%s/odds" % event_id, params, len(market_keys), pull, game["id"],
                              books=books)
+        if js == {} and "includeLinks" in params:            # a 422 on the links option: ask again without it
+            params.pop("includeLinks")
+            self.errors.append("odds feed refused includeLinks; asked again without links")
+            js, cost = self._get("/events/%s/odds" % event_id, params, len(market_keys), pull, game["id"],
+                                 books=books)
         if js:
             n_mk = markets_returned(js)
             if n_mk and cost > n_mk * regions_billed(len(books)):
