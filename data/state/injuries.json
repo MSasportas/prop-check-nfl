@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T12:30:40-05:00",
+ "at": "2026-11-03T13:02:12-05:00",
  "source": "espn",
  "players": {
   "name:ARI:walternolen": {
@@ -877,6 +877,16 @@
    "detail": null,
    "espn_id": "4685350"
   },
+  "00-0039021": {
+   "name": "Roschon Johnson",
+   "team": "CHI",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-03T12:26:00-05:00",
+   "detail": null,
+   "espn_id": "4426386"
+  },
   "00-0040236": {
    "name": "Kyle Monangai",
    "team": "CHI",
@@ -884,7 +894,7 @@
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
    "date": "2026-11-03T08:03:00-05:00",
-   "detail": "Thumb",
+   "detail": "Toe",
    "espn_id": "4608686",
    "comment": "questionable"
   },
@@ -1017,16 +1027,6 @@
    "date": "2026-10-27T19:08:00-04:00",
    "detail": null,
    "espn_id": "4257364"
-  },
-  "00-0041558": {
-   "name": "Sam Roush",
-   "team": "CHI",
-   "pos": "TE",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-24T00:13:00-04:00",
-   "detail": null,
-   "espn_id": "4685504"
   },
   "name:CIN:cashiushowell": {
    "name": "Cashius Howell",
@@ -2966,7 +2966,7 @@
    "date": "2026-11-02T21:03:00-05:00",
    "detail": "Hand",
    "espn_id": "5082269",
-   "comment": "Connors suffered a broken hand in Sunday's 24-9 win over the Rams."
+   "comment": "Connors suffered a broken hand in Sunday's 24-9 win over the Chargers."
   },
   "00-0039751": {
    "name": "Jordan Whittington",
@@ -4726,7 +4726,7 @@
    "date": "2026-11-02T19:11:00-05:00",
    "detail": "Elbow",
    "espn_id": "3924327",
-   "comment": "Lock (coach's decision) is inactive for Monday's matchup with the Bears, John Boyle of the Seahawks' official site reports."
+   "comment": "Lock (coach's decision/elbow) is inactive for Monday's matchup with the Bears but serving as the team's emergency quarterback, John Boyle of the Seahawks' offic"
   },
   "00-0040129": {
    "name": "Emeka Egbuka",
