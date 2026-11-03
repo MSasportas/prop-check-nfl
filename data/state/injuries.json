@@ -1,5 +1,5 @@
 {
- "at": "2026-11-02T20:00:01-05:00",
+ "at": "2026-11-02T20:10:01-05:00",
  "source": "espn",
  "players": {
   "00-0033307": {
@@ -357,7 +357,7 @@
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
    "date": "2026-11-02T18:43:00-05:00",
-   "detail": "Knee",
+   "detail": "Ankle",
    "espn_id": "4429582",
    "comment": "Coach Jesse Minter said Monday that Fagnano (knee) \"is fighting through a couple things\" but has a chance to play Thursday against the Jaguars."
   },
@@ -1945,6 +1945,16 @@
    "detail": null,
    "espn_id": "4431487"
   },
+  "name:HOU:reedblankenship": {
+   "name": "Reed Blankenship",
+   "team": "HOU",
+   "pos": "S",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-02T19:50:00-05:00",
+   "detail": "Concussion",
+   "espn_id": "4243956"
+  },
   "00-0035685": {
    "name": "David Montgomery",
    "team": "HOU",
@@ -1976,16 +1986,6 @@
    "date": "2026-10-27T09:11:00-04:00",
    "detail": "Shoulder - AC Joint",
    "espn_id": "4241223"
-  },
-  "name:HOU:reedblankenship": {
-   "name": "Reed Blankenship",
-   "team": "HOU",
-   "pos": "S",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-27T09:11:00-04:00",
-   "detail": "Concussion",
-   "espn_id": "4243956"
   },
   "name:HOU:blakefisher": {
    "name": "Blake Fisher",
@@ -2338,7 +2338,7 @@
    "status": "Out",
    "fantasy": "OUT",
    "date": "2026-11-02T17:16:00-05:00",
-   "detail": "Quadriceps",
+   "detail": "Knee",
    "espn_id": "3915520"
   },
   "name:JAX:antoniojohnson": {
@@ -2428,7 +2428,7 @@
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
    "date": "2026-11-01T14:05:00-05:00",
-   "detail": "Ankle",
+   "detail": "Knee",
    "espn_id": "4048231"
   },
   "00-0040238": {
@@ -4573,6 +4573,16 @@
    "detail": null,
    "espn_id": "3040151"
   },
+  "00-0039165": {
+   "name": "Zach Charbonnet",
+   "team": "SEA",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-02T19:49:00-05:00",
+   "detail": null,
+   "espn_id": "4426385"
+  },
   "name:SEA:brandonpili": {
    "name": "Brandon Pili",
    "team": "SEA",
@@ -4675,16 +4685,6 @@
    "date": "2026-11-02T16:20:00-05:00",
    "detail": null,
    "espn_id": "4685512"
-  },
-  "00-0039165": {
-   "name": "Zach Charbonnet",
-   "team": "SEA",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-31T16:49:00-04:00",
-   "detail": null,
-   "espn_id": "4426385"
   },
   "00-0039299": {
    "name": "George Holani",
