@@ -209,7 +209,8 @@
        "at": "2026-10-20T11:30:04-04:00",
        "reason": "Rules tightened: His role swings too much game to game."
       },
-      "legs": []
+      "legs": [],
+      "book": "Hard Rock"
      },
      {
       "id": "2026-W07:2026_07_SF_ATL:00-0033280:rush_att:FG:15.5:under",
@@ -229,7 +230,8 @@
       "actual": "had 7",
       "units": 0.8696,
       "pulled": null,
-      "legs": []
+      "legs": [],
+      "book": "Hard Rock"
      },
      {
       "id": "2026-W07:2026_07_TB_CAR:00-0036555:rush_yds:1H:30.5:under",
@@ -249,7 +251,8 @@
       "actual": "had 23",
       "units": 0.8696,
       "pulled": null,
-      "legs": []
+      "legs": [],
+      "book": "Hard Rock"
      },
      {
       "id": "2026-W07:2026_07_MIA_NYJ:00-0030565:pass_yds:1H:110.5:under",
@@ -269,7 +272,8 @@
       "actual": "had 86",
       "units": 0.8696,
       "pulled": null,
-      "legs": []
+      "legs": [],
+      "book": "Hard Rock"
      },
      {
       "id": "2026-W07:2026_07_MIA_NYJ:00-0040198:rush_yds:FG:48.5:under",
@@ -289,7 +293,8 @@
       "actual": "had 103",
       "units": -1.0,
       "pulled": null,
-      "legs": []
+      "legs": [],
+      "book": "Hard Rock"
      },
      {
       "id": "2026-W07:P:915cca9575",
@@ -363,7 +368,8 @@
        "at": "2026-10-18T14:50:00-04:00",
        "reason": "Hard Rock moved the line to 15.5."
       },
-      "legs": []
+      "legs": [],
+      "book": "Hard Rock"
      },
      {
       "id": "2026-W06:2026_06_ARI_LA:00-0038640:rec_yds:FG:20.5:under",
@@ -386,7 +392,8 @@
        "at": "2026-10-18T14:50:00-04:00",
        "reason": "Hard Rock moved the line to 21.5."
       },
-      "legs": []
+      "legs": [],
+      "book": "Hard Rock"
      },
      {
       "id": "2026-W06:2026_06_ARI_LA:00-0039738:rush_att:FG:9.5:under",
@@ -406,7 +413,8 @@
       "actual": "had 9",
       "units": 0.8696,
       "pulled": null,
-      "legs": []
+      "legs": [],
+      "book": "Hard Rock"
      },
      {
       "id": "2026-W06:2026_06_BAL_CLE:00-0035993:pass_int:FG:0.5:under",
@@ -426,7 +434,8 @@
       "actual": "had 0",
       "units": 0.7407,
       "pulled": null,
-      "legs": []
+      "legs": [],
+      "book": "Hard Rock"
      },
      {
       "id": "2026-W06:2026_06_BUF_LV:00-0038933:rec:FG:4.5:under",
@@ -446,7 +455,8 @@
       "actual": "had 7",
       "units": -1.0,
       "pulled": null,
-      "legs": []
+      "legs": [],
+      "book": "Hard Rock"
      },
      {
       "id": "2026-W06:2026_06_BUF_LV:00-0039338:long_rec:FG:24.5:under",
@@ -466,7 +476,8 @@
       "actual": "had 29",
       "units": -1.0,
       "pulled": null,
-      "legs": []
+      "legs": [],
+      "book": "Hard Rock"
      },
      {
       "id": "2026-W06:2026_06_BUF_LV:00-0039875:rush_yds:FG:9.5:under",
@@ -486,7 +497,8 @@
       "actual": "had 4",
       "units": 0.8333,
       "pulled": null,
-      "legs": []
+      "legs": [],
+      "book": "Hard Rock"
      },
      {
       "id": "2026-W06:2026_06_CAR_PHI:00-0036555:rush_att:FG:17.5:under",
@@ -509,7 +521,8 @@
        "at": "2026-10-18T11:50:01-04:00",
        "reason": "Hard Rock moved the line to 18.5."
       },
-      "legs": []
+      "legs": [],
+      "book": "Hard Rock"
      },
      {
       "id": "2026-W06:2026_06_CAR_PHI:00-0039150:rush_yds:FG:10.5:under",
@@ -529,7 +542,8 @@
       "actual": "had 6",
       "units": 0.8333,
       "pulled": null,
-      "legs": []
+      "legs": [],
+      "book": "Hard Rock"
      },
      {
       "id": "2026-W06:2026_06_CHI_ATL:00-0040126:long_rec:FG:18.5:under",
@@ -549,7 +563,8 @@
       "actual": "had 16",
       "units": 0.8333,
       "pulled": null,
-      "legs": []
+      "legs": [],
+      "book": "Hard Rock"
      },
      {
       "id": "2026-W06:2026_06_DAL_GB:00-0033077:pass_yds:1H:137.5:under",
@@ -569,7 +584,8 @@
       "actual": "had 86",
       "units": 0.8696,
       "pulled": null,
-      "legs": []
+      "legs": [],
+      "book": "Hard Rock"
      },
      {
       "id": "2026-W06:2026_06_DAL_GB:00-0036264:rush_att:FG:2.5:under",
@@ -589,7 +605,8 @@
       "actual": "had 4",
       "units": -1.0,
       "pulled": null,
-      "legs": []
+      "legs": [],
+      "book": "Hard Rock"
      },
      {
       "id": "2026-W06:2026_06_DAL_GB:00-0040667:rec_yds:1H:29.5:under",
@@ -609,7 +626,8 @@
       "actual": "had 71",
       "units": -1.0,
       "pulled": null,
-      "legs": []
+      "legs": [],
+      "book": "Hard Rock"
      },
      {
       "id": "2026-W06:2026_06_HOU_JAX:00-0038618:long_rec:FG:10.5:over",
@@ -629,7 +647,8 @@
       "actual": "had 5",
       "units": -1.0,
       "pulled": null,
-      "legs": []
+      "legs": [],
+      "book": "Hard Rock"
      },
      {
       "id": "2026-W06:2026_06_HOU_JAX:00-0040719:rec_yds:1H:4.5:under",
@@ -652,7 +671,8 @@
        "at": "2026-10-18T08:20:01-04:00",
        "reason": "Hard Rock moved the line to 3.5."
       },
-      "legs": []
+      "legs": [],
+      "book": "Hard Rock"
      },
      {
       "id": "2026-W06:2026_06_LAC_KC:00-0038046:rec:FG:2.5:under",
@@ -672,7 +692,8 @@
       "actual": "had 3",
       "units": -1.0,
       "pulled": null,
-      "legs": []
+      "legs": [],
+      "book": "Hard Rock"
      },
      {
       "id": "2026-W06:2026_06_LAC_KC:00-0039894:rec:FG:4.5:under",
@@ -692,7 +713,8 @@
       "actual": "had 7",
       "units": -1.0,
       "pulled": null,
-      "legs": []
+      "legs": [],
+      "book": "Hard Rock"
      },
      {
       "id": "2026-W06:2026_06_LAC_KC:00-0040666:rush_att:FG:9.5:over",
@@ -712,7 +734,8 @@
       "actual": "had 7",
       "units": -1.0,
       "pulled": null,
-      "legs": []
+      "legs": [],
+      "book": "Hard Rock"
      },
      {
       "id": "2026-W06:2026_06_NO_NYG:00-0038551:rush_att:FG:9.5:under",
@@ -732,7 +755,8 @@
       "actual": "had 20",
       "units": -1.0,
       "pulled": null,
-      "legs": []
+      "legs": [],
+      "book": "Hard Rock"
      },
      {
       "id": "2026-W06:2026_06_NO_NYG:00-0039337:long_rec:FG:24.5:under",
@@ -752,7 +776,8 @@
       "actual": "had 46",
       "units": -1.0,
       "pulled": null,
-      "legs": []
+      "legs": [],
+      "book": "Hard Rock"
      },
      {
       "id": "2026-W06:2026_06_NYJ_NE:00-0036875:rush_att:FG:14.5:under",
@@ -772,7 +797,8 @@
       "actual": "had 14",
       "units": 0.7692,
       "pulled": null,
-      "legs": []
+      "legs": [],
+      "book": "Hard Rock"
      },
      {
       "id": "2026-W06:2026_06_NYJ_NE:00-0039794:rec:FG:2.5:under",
@@ -792,7 +818,8 @@
       "actual": "had 2",
       "units": 0.9524,
       "pulled": null,
-      "legs": []
+      "legs": [],
+      "book": "Hard Rock"
      },
      {
       "id": "2026-W06:2026_06_TEN_IND:00-0040676:rush_yds:1H:3.5:under",
@@ -812,7 +839,8 @@
       "actual": "had 4",
       "units": -1.0,
       "pulled": null,
-      "legs": []
+      "legs": [],
+      "book": "Hard Rock"
      },
      {
       "id": "2026-W06:2026_06_WAS_SF:00-0033280:long_rec:FG:15.5:under",
@@ -832,7 +860,8 @@
       "actual": "had 13",
       "units": 0.8696,
       "pulled": null,
-      "legs": []
+      "legs": [],
+      "book": "Hard Rock"
      },
      {
       "id": "2026-W06:2026_06_WAS_SF:00-0039910:pass_td:FG:1.5:under",
@@ -852,7 +881,8 @@
       "actual": "had 2",
       "units": -1.0,
       "pulled": null,
-      "legs": []
+      "legs": [],
+      "book": "Hard Rock"
      },
      {
       "id": "2026-W06:P:3d54c23d94",
@@ -1002,7 +1032,8 @@
       "actual": "had 28",
       "units": -1.0,
       "pulled": null,
-      "legs": []
+      "legs": [],
+      "book": "Hard Rock"
      },
      {
       "id": "2026-W06:2026_06_CHI_ATL:00-0036970:long_rec:FG:15.5:under",
@@ -1022,7 +1053,8 @@
       "actual": "had 29",
       "units": -1.0,
       "pulled": null,
-      "legs": []
+      "legs": [],
+      "book": "Hard Rock"
      },
      {
       "id": "2026-W06:2026_06_CHI_ATL:00-0037238:rec_yds:FG:90.5:under",
@@ -1042,7 +1074,8 @@
       "actual": "had 62",
       "units": 0.8696,
       "pulled": null,
-      "legs": []
+      "legs": [],
+      "book": "Hard Rock"
      },
      {
       "id": "2026-W06:2026_06_NYJ_NE:00-0039851:pass_yds:1H:124.5:under",
@@ -1062,7 +1095,8 @@
       "actual": "had 130",
       "units": -1.0,
       "pulled": null,
-      "legs": []
+      "legs": [],
+      "book": "Hard Rock"
      },
      {
       "id": "2026-W06:P:6704ca6d85",
@@ -1172,7 +1206,8 @@
       "actual": "had 1",
       "units": 0.8696,
       "pulled": null,
-      "legs": []
+      "legs": [],
+      "book": "Hard Rock"
      },
      {
       "id": "2026-W06:2026_06_ARI_LA:00-0038640:rec_yds:FG:21.5:under",
@@ -1192,7 +1227,8 @@
       "actual": "had 30",
       "units": -1.0,
       "pulled": null,
-      "legs": []
+      "legs": [],
+      "book": "Hard Rock"
      },
      {
       "id": "2026-W06:P:1839d42db7",
@@ -1292,11 +1328,13 @@
       "actual": "had 5",
       "units": 0.7692,
       "pulled": null,
-      "legs": []
+      "legs": [],
+      "book": "Hard Rock"
      }
     ]
    }
   ]
  },
- "pin_solo": null
+ "pin_solo": null,
+ "draftkings": null
 }
