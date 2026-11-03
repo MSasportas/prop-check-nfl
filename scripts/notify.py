@@ -188,7 +188,7 @@ def pick_line(p, now):
     need = "price needs %s%%" % ("%g" % breakeven_pct(p["price"]))
     if p.get("method") == "pin_solo" and isinstance(p.get("pin_solo"), dict):
         ps = p["pin_solo"]
-        if ps.get("pin_price") is not None:
+        if ps.get("price_test") == "posted" and ps.get("pin_price") is not None:
             nums = "Pinnacle moved %+.1f pts; Pinnacle %s, Hard Rock %s" % (
                 ps.get("pin_move_pts") or 0.0, common.fmt_price(ps["pin_price"]), common.fmt_price(p["price"]))
         else:

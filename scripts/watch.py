@@ -255,6 +255,7 @@ def solo_rows(a, b, g, inp, eng, cfg):
                     why = "ineligible"
                     r["detail"] = bad
             r["gate"] = why
+            r["price_test"] = ps.get("price_test") or "fair"
             rows.append(r)
     return rows, n_lines
 
@@ -610,7 +611,7 @@ def plain_reason(r, bet):
     """'Pinnacle moved 3 pts toward Over 5.5 receptions since Saturday; Hard Rock is still at -115, better than Pinnacle's -122.'"""
     g = lambda x: "%g" % round(abs(x) * 100, 1)                 # noqa: E731
     still = r.get("price_before") == r["price"]
-    pin = r.get("pin_price_after")
+    pin = r.get("pin_price_after") if r.get("price_test") == "posted" else None
     if pin is None:
         pin, what = fair_price(r["pin_after"]), "fair "
     else:

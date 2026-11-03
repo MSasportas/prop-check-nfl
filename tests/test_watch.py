@@ -392,7 +392,7 @@ class LiveSwitch(unittest.TestCase):
                              ("pin_solo", "ps1", WILSON, "rush_att", "under", 17.5, 105, "C"))
             self.assertTrue(sh[0]["id"].endswith(":ps"))
             self.assertRegex(b["reason"], r"^Pinnacle moved 3 pts toward Under 17\.5 carries since yesterday; "
-                                          r"Hard Rock is still at \+105, better than Pinnacle's [+-]\d+\.$")
+                                          r"Hard Rock is still at \+105, better than Pinnacle's fair [+-]\d+\.$")
             p = [x for x in s["picks"] if x["state"] == "open"][0]
             self.assertEqual((p["method"], p["era"], p["settled_text"], p["price"], p["rank"]),
                              ("pin_solo", "ps1", "Inactives confirmed", 105, 1))
@@ -400,7 +400,7 @@ class LiveSwitch(unittest.TestCase):
             self.assertEqual(p["pin_solo"]["others_move_pts"], 0.9)
             self.assertIsNone(p["gap_pct"])
             self.assertIsNone(p["final_ev_pct"])
-            self.assertRegex(p["vs"], r"^Pinnacle moved \+3 pts · Pinnacle [+-]\d+, Hard Rock \+105$")
+            self.assertRegex(p["vs"], r"^Pinnacle moved \+3 pts · Pinnacle fair [+-]\d+, Hard Rock \+105$")
             self.assertTrue(s["methods"]["pin_solo"]["live"])
             self.assertTrue(p["flags"]["price_final"])
             rec = common.read_json(w.path("record.json"))

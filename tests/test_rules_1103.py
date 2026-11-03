@@ -28,7 +28,8 @@ class Shipped(unittest.TestCase):
         self.assertIs(o["pin_solo"]["live"], True)
         t = o["watch"]["tracks"]["pin_solo"]
         self.assertEqual((t["min_move"], t["max_move"], t["price_test"], t["others_min"], t["others_max"]),
-                         (0.01, 0.05, "posted", 0, None))
+                         (0.02, 0.05, "fair", 0, None))
+        self.assertGreater(t["min_ev_vs_pin"], 0)                 # Hard Rock must BEAT Pinnacle's fair, not tie it
         self.assertIs(t["skip_whole_lines"], True)
         self.assertEqual((o["pulls"]["r_before_min"], o["pulls"]["w_target_min"], o["pulls"]["c_target_min"]), (1440, 180, 70))
         self.assertEqual(o["tiers"]["full"], 18)
@@ -60,7 +61,7 @@ class Live(unittest.TestCase):
         finally:
             w.close()
 
-    def test_three_pt_move_hard_rock_at_or_better_than_posted_is_a_pick_at_w(self):
+    def test_three_pt_move_hard_rock_beating_pinnacles_fair_is_a_pick_at_w(self):
         w, s = self.run_w(-0.03)
         try:
             sh = self.shown(w)
@@ -69,10 +70,10 @@ class Live(unittest.TestCase):
             self.assertEqual((b["method"], b["era"], b["player_id"], b["side"], b["line"], b["price"], b["read_pull"]),
                              ("pin_solo", "ps1", WILSON, "under", 17.5, 105, "W"))
             self.assertRegex(b["reason"], r"^Pinnacle moved 3 pts toward Under 17\.5 carries since yesterday; Hard Rock is "
-                                          r"still at \+105, (better than|level with) Pinnacle's [+-]\d+\.$")
+                                          r"still at \+105, better than Pinnacle's fair [+-]\d+\.$")
             p = [x for x in s["picks"] if x["state"] == "open"][0]
             self.assertEqual(p["pin_solo"]["pin_price"], b["pin_price"])
-            self.assertRegex(p["vs"], r"^Pinnacle moved \+3 pts · Pinnacle [+-]\d+, Hard Rock \+105$")
+            self.assertRegex(p["vs"], r"^Pinnacle moved \+3 pts · Pinnacle fair [+-]\d+, Hard Rock \+105$")
         finally:
             w.close()
 
@@ -91,6 +92,14 @@ class Live(unittest.TestCase):
         finally:
             w.close()
 
+    def test_a_one_and_a_half_pt_move_is_not_enough(self):
+        w, _ = self.run_w(-0.015)
+        try:
+            self.assertEqual(self.shown(w), [])
+            self.assertEqual(self.cand(w), [])
+        finally:
+            w.close()
+
     def test_under_one_pt_is_nothing(self):
         w, _ = self.run_w(-0.005)
         try:
@@ -99,7 +108,7 @@ class Live(unittest.TestCase):
         finally:
             w.close()
 
-    def test_hard_rock_worse_than_pinnacles_posted_price_is_not_a_pick(self):
+    def test_hard_rock_not_beating_pinnacles_fair_price_is_not_a_pick(self):
         w = World(pool=(500, 500, 500, 500), config=cfg())
         try:
             build(w, hr_under=105, lu=LU_R)
@@ -108,7 +117,7 @@ class Live(unittest.TestCase):
             w.set_price(SEA_DEN, "player_rush_attempts", "Emanuel Wilson", "under", -110, last_update_z=LU_W)   # Hard Rock only
             w.at(W_AT)
             self.assertEqual(self.shown(w), [])
-            self.assertEqual([c["gate"] for c in self.cand(w)], ["worse_than_posted"])
+            self.assertEqual([c["gate"] for c in self.cand(w)], ["worse_than_fair"])
         finally:
             w.close()
 

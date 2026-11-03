@@ -42,9 +42,12 @@ def vs_text(sh):
     """'+3.4% vs 5 books (Pinnacle in)'; for a Pinnacle-moves pick 'Pinnacle moved +3 pts · Pinnacle -126, Hard Rock -120'."""
     if sh.get("method") == "pin_solo":
         mv = round(100 * (sh["pin_after"] - sh["pin_before"]), 1)
-        if sh.get("pin_price") is not None:
+        if sh.get("price_test") == "posted" and sh.get("pin_price") is not None:
             return "Pinnacle moved %+g pts · Pinnacle %s, Hard Rock %s" % (mv, common.fmt_price(sh["pin_price"]),
                                                                        common.fmt_price(sh["price"]))
+        if sh.get("price_test") == "fair" and sh.get("pin_fair_price") is not None:
+            return "Pinnacle moved %+g pts · Pinnacle fair %s, Hard Rock %s" % (mv, common.fmt_price(sh["pin_fair_price"]),
+                                                                            common.fmt_price(sh["price"]))
         return "Pinnacle %+g pts, other books %+g" % (mv, round(100 * (sh["others_move"] or 0.0), 1))
     return "%+.1f%% vs %d books (Pinnacle in)" % (100 * sh["gap_ev"], sh["n_books"])
 
@@ -78,7 +81,7 @@ def pick_doc(it, rank, inp, price_final):
         "final_ev_pct": None if ps else round(100 * sh["final_ev"], 1),
         "pin_solo": ({"window": sh.get("window"), "pin_move_pts": round(100 * (sh["pin_after"] - sh["pin_before"]), 1),
                       "others_move_pts": round(100 * (sh["others_move"] or 0.0), 1), "n_others": sh["n_others"],
-                      "fair_price": sh.get("pin_fair_price"), "pin_price": sh.get("pin_price"), "ev_vs_fair_pct": round(100 * sh["ev_vs_pin"], 1)}
+                      "fair_price": sh.get("pin_fair_price"), "pin_price": sh.get("pin_price"), "price_test": sh.get("price_test"), "ev_vs_fair_pct": round(100 * sh["ev_vs_pin"], 1)}
                      if ps else None),
         "reason": clean(it.get("reason")), "settled": it["state"],
         "settled_text": engine.SETTLED_TEXT.get(it["state"], it["state"]),
@@ -195,9 +198,11 @@ def rules_doc(cfg):
         "A pick is pulled if the player is ruled out or inactive, Hard Rock moves the line or takes it down, the price goes "
         "past %s, or the market stops agreeing with it." % common.fmt_price(t["price_gate"]),
         ("Pinnacle-moves picks: we read the prices 24 hours, 3 hours and 70 minutes before kickoff. A pick appears when "
-         "Pinnacle's chance moves %g to under %g points toward a side between two reads and Hard Rock's price is at or better "
-         "than Pinnacle's posted price. Tagged Pinnacle moved; counted on its own line. Still one pick per player."
-         % (100 * watch.tcfg(cfg, watch.SOLO).get("min_move", 0.01), 100 * (watch.tcfg(cfg, watch.SOLO).get("max_move") or 1)))
+         "Pinnacle's chance moves %g to under %g points toward a side between two reads and Hard Rock's price %s. Tagged "
+         "Pinnacle moved; counted on its own line. Still one pick per player."
+         % (100 * watch.tcfg(cfg, watch.SOLO).get("min_move", 0.01), 100 * (watch.tcfg(cfg, watch.SOLO).get("max_move") or 1),
+            "is at or better than Pinnacle's posted price" if watch.tcfg(cfg, watch.SOLO).get("price_test") == "posted"
+            else "beats Pinnacle's fair (no-vig) price"))
         if watch.pin_live(cfg, "9999") else None,
         "Picks lock at kickoff. Results come from the official stats once the game is final.",
         "The Record grades every pick at the Hard Rock price it was posted at, 1 unit each. Pulled picks are graded too and "
