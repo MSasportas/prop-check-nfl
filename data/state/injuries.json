@@ -1,7 +1,18 @@
 {
- "at": "2026-11-03T13:02:12-05:00",
+ "at": "2026-11-03T14:00:12-05:00",
  "source": "espn",
  "players": {
+  "00-0041027": {
+   "name": "Jeremiyah Love",
+   "team": "ARI",
+   "pos": "RB",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-11-03T13:57:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "4870808",
+   "comment": "Love was diagnosed Tuesday with a right high-ankle sprain, which is expected to send him to injured reserve and keep him out for 4-to-5 weeks, Ian Rapoport of N"
+  },
   "name:ARI:walternolen": {
    "name": "Walter Nolen III",
    "team": "ARI",
@@ -63,17 +74,6 @@
    "detail": "Concussion",
    "espn_id": "4427728",
    "comment": "Head coach Mike LaFleur revealed Monday that Knight is in the concussion protocol following Sunday's overtime win in Dallas, Josh Weinfuss of ESPN.com reports."
-  },
-  "00-0041027": {
-   "name": "Jeremiyah Love",
-   "team": "ARI",
-   "pos": "RB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-02T16:48:00-05:00",
-   "detail": "Ankle",
-   "espn_id": "4870808",
-   "comment": "Head coach Mike LaFleur said Monday that Love suffered a \"new\" ankle injury during Sunday's overtime win at Dallas, and that he'll have an update on the running"
   },
   "00-0035289": {
    "name": "Gardner Minshew II",
@@ -319,6 +319,17 @@
    "detail": "Undisclosed",
    "espn_id": "5150660"
   },
+  "00-0040981": {
+   "name": "Joe Fagnano",
+   "team": "BAL",
+   "pos": "QB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-03T13:52:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "4429582",
+   "comment": "Fagnano practiced Tuesday \"with a significant guard/brace on his right ankle,\" Jeff Zrebiec of The Athletic reports."
+  },
   "name:BAL:olaivavegaioane": {
    "name": "Olaivavega Ioane",
    "team": "BAL",
@@ -389,17 +400,6 @@
    "detail": "Groin",
    "espn_id": "4038441",
    "comment": "Hill (groin) was estimated as a limited participant on Monday's practice report."
-  },
-  "00-0040981": {
-   "name": "Joe Fagnano",
-   "team": "BAL",
-   "pos": "QB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-02T20:15:00-05:00",
-   "detail": "Ankle",
-   "espn_id": "4429582",
-   "comment": "Fagnano was limited at Monday's walkthrough due to an ankle injury."
   },
   "name:BAL:rogerrosengarten": {
    "name": "Roger Rosengarten",
@@ -2250,6 +2250,17 @@
    "detail": "Groin",
    "espn_id": "4361196"
   },
+  "00-0040719": {
+   "name": "Bhayshul Tuten",
+   "team": "JAX",
+   "pos": "RB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-03T13:16:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "4882093",
+   "comment": "Tuten (ankle/foot) was not spotted during the portion of Tuesday's practice open to the media, according to Michael DiRocco of ESPN.com."
+  },
   "name:JAX:antoniojohnson": {
    "name": "Antonio Johnson",
    "team": "JAX",
@@ -2300,17 +2311,6 @@
    "detail": "Hand",
    "espn_id": "4362619",
    "comment": "Rodriguez was listed as limited on Monday's practice estimate due to a hand injury."
-  },
-  "00-0040719": {
-   "name": "Bhayshul Tuten",
-   "team": "JAX",
-   "pos": "RB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-02T19:43:00-05:00",
-   "detail": "Ankle",
-   "espn_id": "4882093",
-   "comment": "Tuten was a non-participant at Monday's walkthrough due to ankle and foot injuries."
   },
   "name:JAX:ericmurray": {
    "name": "Eric Murray",
@@ -4555,6 +4555,17 @@
    "detail": null,
    "espn_id": "3040151"
   },
+  "00-0037545": {
+   "name": "Rashid Shaheed",
+   "team": "SEA",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-03T13:55:00-05:00",
+   "detail": "Knee",
+   "espn_id": "4032473",
+   "comment": "Seahawks head coach Mike Macdonald said Tuesday that Shaheed (knee) has a chance to play Sunday against the Cardinals, Brady Henderson of ESPN.com reports."
+  },
   "00-0040648": {
    "name": "Tory Horton",
    "team": "SEA",
@@ -4584,17 +4595,6 @@
    "date": "2026-11-03T10:18:00-05:00",
    "detail": null,
    "espn_id": "4887558"
-  },
-  "00-0037545": {
-   "name": "Rashid Shaheed",
-   "team": "SEA",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-03T08:03:00-05:00",
-   "detail": "Knee",
-   "espn_id": "4032473",
-   "comment": "questionable"
   },
   "00-0037745": {
    "name": "Velus Jones Jr.",
