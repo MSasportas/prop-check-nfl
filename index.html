@@ -79,6 +79,8 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;margin:0;te
 .r2{display:flex;align-items:flex-start;gap:10px;margin-top:4px}
 .bet{font:700 20px/24px var(--font);letter-spacing:-.01em;flex:1;min-width:0;overflow-wrap:anywhere;padding-top:2px}
 .pbox{flex:none;text-align:right;min-width:68px}
+.betlink{display:flex;align-items:center;justify-content:center;min-height:44px;margin-top:10px;border:1px solid var(--accent);border-radius:10px;color:var(--accent);font-weight:600;font-size:14px;text-decoration:none}
+.mtag.dk{color:var(--warn);border-color:var(--warn)}
 .pbox .pl{font-size:11px;line-height:14px;color:var(--muted)}
 .pbox .pv{font:700 30px/32px var(--font);letter-spacing:-.02em;white-space:nowrap}
 .pbox .pb{font-size:11px;line-height:14px;color:var(--muted)}
@@ -471,12 +473,17 @@ function pickCard(p) {
     h('span', { class: 'meta', text: [p.team, p.pos].filter(Boolean).join(' · ') })));
   body.push(h('div', { class: 'r2' }, h('div', { class: 'bet', text: p.bet || '' }),
     h('div', { class: 'pbox' },
-      h('div', { class: 'pl', text: pulled ? 'Was posted at' : 'Bet at' }),
+      h('div', { class: 'pl', text: pulled ? 'Was posted at' : (p.book || 'Hard Rock') }),
       h('div', { class: 'pv', text: odds(p.price) }),
-      h('div', { class: 'pb', text: pulled ? 'Hard Rock' : 'or better' }))));
-  if (p.method === 'pin_solo') body.push(h('div', {}, h('span', { class: 'mtag', text: "Pinnacle moved, Hard Rock didn't" })));
+      h('div', { class: 'pb', text: pulled ? (p.book || 'Hard Rock') : 'or better' }))));
+  if (p.method === 'pin_solo') body.push(h('div', {}, h('span', { class: 'mtag' + (p.book_key === 'draftkings' ? ' dk' : ''),
+    text: p.book_key === 'draftkings' ? 'DraftKings · Pinnacle moved' : 'Pinnacle moved' })));
   if (p.vs) body.push(h('div', { class: 'vs', text: p.vs }));
   if (p.reason) body.push(h('div', { class: 'reason', text: p.reason }));
+  if (!pulled && !locked && isObj(p.link) && /^https:\/\//.test(str(p.link.url))) {
+    body.push(h('a', { class: 'betlink', href: str(p.link.url), target: '_blank', rel: 'noopener noreferrer' },
+      'Open ' + (p.book || 'Hard Rock') + (p.link.kind === 'betslip' ? ' bet slip' : '') + ' \u2197'));
+  }
   if (!pulled) {
     var chips = [settledChip(p)];
     if (p.flags && p.flags.price_final) chips.push(chip('ok', 'check', 'Price final'));
@@ -625,7 +632,7 @@ function viewPicks() {
   ordered.forEach(function (d) { out.push(dayBlock(d, anyOpen)); });
   out.push(gamesSection(sl));
   out.push(rulesSection());
-  out.push(h('div', { class: 'foot' }, 'Prices are Hard Rock Florida, singles only. Times are Eastern. Picks are for betting after the injury reports.'));
+  out.push(h('div', { class: 'foot' }, 'Prices are Hard Rock Florida' + (S.slate && S.slate.methods && S.slate.methods.draftkings && S.slate.methods.draftkings.live ? ', plus DraftKings picks marked DraftKings' : '') + ', singles only. Times are Eastern. Picks are for betting after the injury reports.'));
   return out;
 }
 
@@ -699,7 +706,7 @@ function retiredBlock(rt) {
   }
   return h('div', { class: 'retired' }, kids);
 }
-function pinSoloBlock(ps) {
+function pinSoloBlock(ps, title, capText) {
   /* the fallback method (era ps1): its own line, never added to the headline above; hidden until it has an entry */
   if (!isObj(ps)) return null;
   var weeks = arr(ps.weeks).filter(isObj);
@@ -708,8 +715,8 @@ function pinSoloBlock(ps) {
   if (!has) return null;
   var n = num(hd.n) || 0, kids = [];
   kids.push(h('div', { class: 'hl ps' },
-    h('h2', { text: "Pinnacle moved, Hard Rock didn't" }),
-    h('div', { class: 'cap', text: 'Separate method, kept apart from the record above' }),
+    h('h2', { text: title || 'Pinnacle moved: Hard Rock' }),
+    h('div', { class: 'cap', text: capText || 'Separate method, kept apart from the record above' }),
     h('div', { class: 'row' },
       h('div', { class: 'wl', text: (hd.w || 0) + '-' + (hd.l || 0) + '-' + (hd.push || 0) }),
       h('div', { class: 'un ' + signCls(hd.units), text: units(hd.units) || '0.00u' })),
@@ -752,9 +759,10 @@ function viewRecord() {
       if (S.olderErr) out.push(h('div', { class: 'note', text: "Some older weeks didn't load. Tap to try again." }));
     }
   }
-  out.push(pinSoloBlock(r.pin_solo));
+  out.push(pinSoloBlock(r.pin_solo, 'Pinnacle moved: Hard Rock', 'Your Hard Rock picks from the Pinnacle-moves rule'));
+  out.push(pinSoloBlock(r.draftkings, 'Pinnacle moved: DraftKings', 'Same rule at DraftKings, kept on its own line'));
   out.push(retiredBlock(r.retired));
-  out.push(h('div', { class: 'foot' }, 'Every pick is graded at the Hard Rock price it was posted at. Pulled picks are kept and marked, and never counted.'));
+  out.push(h('div', { class: 'foot' }, 'Every pick is graded at the price it was posted at, at its own book. Pulled picks are kept and marked, and never counted.'));
   return out;
 }
 

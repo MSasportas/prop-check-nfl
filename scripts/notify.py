@@ -198,7 +198,10 @@ def pick_line(p, now):
     else:
         say = we_say_pct(p)
         nums = "%s, %s%s" % (p.get("vs") or "Gap vs market", ("we say %s%%, " % ("%g" % say)) if say is not None else "", need)
-    return "\n".join(["**%s %s  %s**" % (p["player"], _bet(p), common.fmt_price(p["price"])), when, nums])
+    book = p.get("book") or "Hard Rock"
+    top = "**%s %s  %s%s**" % (p["player"], _bet(p), common.fmt_price(p["price"]), "" if book == "Hard Rock" else " at " + book)
+    link = (p.get("link") or {}).get("url") if isinstance(p.get("link"), dict) else None
+    return "\n".join([top, when, nums] + (["<%s>" % link] if link and str(link).startswith("https://") else []))
 
 
 def _open(x):

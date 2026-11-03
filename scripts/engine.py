@@ -567,11 +567,12 @@ def _count_toward_caps(items, slate, cfg):
     mine = []
     for it in items.values():
         sh = it["shown"]
-        if it["kind"] != "single" or it["slate"] != slate or sh.get("era") not in (gg.era(cfg), watch.ps_era(cfg)):
-            continue                                        # one pick per player across BOTH methods
+        if it["kind"] != "single" or it["slate"] != slate or sh.get("era") not in (gg.era(cfg),) + tuple(watch.ps_eras(cfg)):
+            continue                                        # one pick per player across BOTH methods (per book)
         if it["pulled"] and it["pulled"].get("code") == "line_moved":
             continue
-        mine.append({"pid": sh["player_id"], "game_id": sh["game_id"], "team": sh["team"]})
+        mine.append({"pid": sh["player_id"], "game_id": sh["game_id"], "team": sh["team"],
+                     "book": sh.get("book_key") or "hardrock"})
     return mine
 
 
@@ -604,7 +605,7 @@ def evaluate(inp, by_game, block_new=False, log_items=None):
         if g is None or inp.started(g):
             new.append({"t": "locked", "id": i, "at": at, "state": it["state"]})
             continue
-        is_ps = sh.get("era") == watch.ps_era(cfg) and sh.get("method") == "pin_solo"
+        is_ps = sh.get("era") in watch.ps_eras(cfg) and sh.get("method") == "pin_solo"
         if sh.get("era") != gg.era(cfg) and not is_ps:
             continue                                        # a retired-rules pick of this slate: only locked (above on kickoff)
         status = inp.status(g, sh["team"], sh["player_id"], sh.get("feed_name"))
@@ -648,30 +649,43 @@ def evaluate(inp, by_game, block_new=False, log_items=None):
     found = {"flags": [], "vetoes": [], "capped": [], "blocked": {}, "considered": 0}
     if not block_new:
         items_now = record.fold(inp.events + new)
-        posted = {"ids": set(items_now), "mine": _count_toward_caps(items_now, inp.slate, cfg)}
+        posted = {"ids": set(items_now), "mine": [m for m in _count_toward_caps(items_now, inp.slate, cfg)
+                                                  if m["book"] == "hardrock"]}
         found = gg.find_flags(inp, SELF, by_game, posted, log_items)
     for a in found["flags"]:
         g = a["game"]
         live[a["id"]] = {"final_ev": a["final_ev"], "settled": a["settled"], "price": a["price"], "pid": a["pid"],
                          "team": a["team"], "game_id": g["id"], "start": g["start"]}
     # Pinnacle moves alone (ops.pin_solo.live, OFF by default): after Gap + Guard, one pick per player across both methods
-    ps_picks, ps_pause = [], None
+    ps_picks, ps_pause, dk_pause = [], None, None
     if watch.pin_live(cfg, inp.slate):
         pcfg = watch.ps(cfg)
         units = record.era_units(inp.events, watch.ps_era(cfg))
         if pcfg.get("safety_pause_units") is not None and units <= pcfg["safety_pause_units"] + EPS:
             ps_pause = pcfg.get("safety_pause_text")
-        elif not block_new:
-            mine = _count_toward_caps(record.fold(inp.events), inp.slate, cfg) + \
+        dcfg = watch.dk(cfg)
+        if watch.dk_live(cfg) and dcfg.get("safety_pause_units") is not None and \
+                record.era_units(inp.events, watch.dk_era(cfg)) <= dcfg["safety_pause_units"] + EPS:
+            dk_pause = dcfg.get("safety_pause_text")
+        if not block_new and not (ps_pause and (dk_pause or not watch.dk_live(cfg))):
+            folded = record.fold(inp.events)
+            # Hard Rock: one pick per player across Gap + Guard and Pinnacle-moves. DraftKings: its own count.
+            mine = [m for m in _count_toward_caps(folded, inp.slate, cfg) if m["book"] == "hardrock"] + \
                 [{"pid": a["pid"], "game_id": a["game"]["id"], "team": a["team"]} for a in found["flags"]]
+            mine_dk = [m for m in _count_toward_caps(folded, inp.slate, cfg) if m.get("book") == watch.DK]
             have = {e["id"] for e in inp.events if e["t"] == "shown"}
             for r in watch.live_candidates(inp, SELF, by_game, cfg, now):
                 g = r["g"]
-                r["_id"] = gg.pick_id(inp.slate, g["id"], r["pid"], r["market"], r["line"], r["side"]) + ":ps"
-                if r["_id"] in have or gg.cap_reason({"pid": r["pid"]}, mine, t, g["id"], r["team"]):
+                is_dk = r.get("book") == watch.DK
+                if (ps_pause and not is_dk) or (dk_pause and is_dk):
+                    continue
+                r["_id"] = gg.pick_id(inp.slate, g["id"], r["pid"], r["market"], r["line"], r["side"]) + \
+                    (":ps:dk" if is_dk else ":ps")
+                pool = mine_dk if is_dk else mine
+                if r["_id"] in have or gg.cap_reason({"pid": r["pid"]}, pool, t, g["id"], r["team"]):
                     continue
                 ps_picks.append(r)
-                mine.append({"pid": r["pid"], "game_id": g["id"], "team": r["team"]})
+                pool.append({"pid": r["pid"], "game_id": g["id"], "team": r["team"], "book": r.get("book")})
                 live[r["_id"]] = {"final_ev": r["ev_vs_pin"], "settled": inp.settled(g, r["team"]), "price": r["price"],
                                   "pid": r["pid"], "team": r["team"], "game_id": g["id"], "start": g["start"]}
     order = sorted(live, key=lambda i: rank_key(live[i]["final_ev"], live[i]["settled"], i))
@@ -689,13 +703,15 @@ def evaluate(inp, by_game, block_new=False, log_items=None):
         merged.setdefault(e["id"], {}).setdefault(e["t"], e)
     log += gg.close_events(inp, record.fold(inp.events + new), merged, by_game, cfg, now)
     return new, {"ranks": ranks, "live": live, "log": log, "blocked": found["blocked"], "considered": found["considered"],
-                 "ps_pause": ps_pause}
+                 "ps_pause": ps_pause, "dk_pause": dk_pause}
 
 
 def _pull(i, at, code, text, sh, it, status=None, yours=None, now_price=None):
     e = {"t": "pulled", "id": i, "at": at, "code": code, "reason": text}
     if sh.get("era"):
         e["if_bet"] = gg.if_bet_text(code, it["prices"][0]["price"], now_price, yours, status=status)
+        if sh.get("book_key") == watch.DK:
+            e["if_bet"] = e["if_bet"].replace("Hard Rock", "DraftKings")
         if now_price is not None:
             e["now_price"] = now_price
         if yours and yours.get("yours_ev") is not None:
@@ -707,6 +723,8 @@ def _judge_read(inp, g, f, sh, it, i, at, t):
     """A newer R / C read for a pick that is alive: a pulled event, or None."""
     cfg = inp.cfg
     mname = sh["mkey"]
+    if sh.get("book_key") == watch.DK:
+        return _judge_dk(inp, f, sh, it, i, at, t)
     pairs = gg.hr_market(f, mname, cfg)
     if pairs is None:
         hr_any = any(mk.get("outcomes") for mk in (f.get("props") or {}).values())
@@ -752,6 +770,30 @@ def _judge_ps(inp, f, sh, it, i, at, pair, t):
     return _pull(i, at, code, text, sh, it, yours=yours, now_price=now_price)
 
 
+def _judge_dk(inp, f, sh, it, i, at, t):
+    """A newer read for a DraftKings pick: DraftKings moved the line or its price left the window -> pulled. DraftKings missing
+    from a read (or the player missing from its market) is a feed gap, not news: nothing happens."""
+    cfg = inp.cfg
+    mk = ((f.get("others") or {}).get(watch.DK) or {}).get(cfg["ops"]["markets"][sh["mkey"]]["feed_key"])
+    if not mk:
+        return None
+    pairs = odds.pairs_of(mk.get("outcomes"))
+    side = sh["side"]
+    p = pairs.get((sh["player_id"], sh["line"]))
+    if p is None or p.get(side) is None:
+        moved = sorted(l for (pid, l), q in pairs.items() if pid == sh["player_id"] and l != sh["line"] and q.get(side) is not None)
+        if moved:
+            return _pull(i, at, "line_moved", "DraftKings moved the line to %s." % gg.fmt_line(moved[0]), sh, it)
+        return None
+    now_price = p[side]
+    if gg.inside_gate(now_price, t):
+        return None
+    code = "gate" if odds.decimal(now_price) < odds.decimal(t["price_gate"]) else "max_price"
+    text = ("DraftKings moved it to %s, past our %s limit." % (common.fmt_price(now_price), common.fmt_price(t["price_gate"]))
+            if code == "gate" else "DraftKings moved it to %s, longer than we take." % common.fmt_price(now_price))
+    return _pull(i, at, code, text, sh, it, now_price=now_price)
+
+
 def _shown_ps(inp, r, rank, at):
     """A Pinnacle-moves pick (ops.pin_solo.live): the same body the Record needs, tagged method pin_solo, era ps1."""
     cfg, v = inp.cfg, inp.v
@@ -763,11 +805,13 @@ def _shown_ps(inp, r, rank, at):
     opp = g["away"] if r["team"] == g["home"] else g["home"]
     bet = bet_text(side, r["line"], mname, cfg)
     body = {
-        "id": r["_id"], "era": watch.ps_era(cfg), "method": "pin_solo", "rank": rank, "game_id": g["id"], "player": full,
+        "id": r["_id"], "era": watch.dk_era(cfg) if r.get("book") == watch.DK else watch.ps_era(cfg), "method": "pin_solo",
+        "rank": rank, "game_id": g["id"], "player": full,
         "player_short": short, "feed_name": r["player"], "player_id": r["pid"], "pos": inp.pos(r["pid"]), "team": r["team"],
         "opp": opp, "home": r["team"] == g["home"], "start": g["start"], "mkey": mname, "market": market, "period": period,
         "market_label": cfg["ops"]["markets"][mname]["label"], "line": r["line"], "side": side, "bet": bet,
-        "book": "Hard Rock", "price": price, "price_at": r["read_at"], "read_at": r["read_at"], "read_pull": r["read"],
+        "book": r.get("book_name") or "Hard Rock", "book_key": r.get("book") or "hardrock", "link": r.get("link"),
+        "price": price, "price_at": r["read_at"], "read_at": r["read_at"], "read_pull": r["read"],
         "p": round(r["pin_after"], 4), "breakeven": round(odds.break_even(price), 4),
         "p_pct": pct_floor(r["pin_after"]), "breakeven_pct": pct_round(odds.break_even(price)),
         "pin_before": r["pin_before"], "pin_after": r["pin_after"], "others_move": r["others_move"],

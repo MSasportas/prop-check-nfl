@@ -470,6 +470,54 @@ def main():
     rec2["pin_solo"] = {"era": "ps1", "label": "Pinnacle moves alone", "summary": summary([]), "weeks": []}
     write("pinsolo_empty", sl, rec2, status_json(13, gen), older)
 
+    # ---- dk: 2026-11-03 rules. Pinnacle-moves picks at Hard Rock and DraftKings (both books when both qualify, a DK-only one),
+    # each with its bet link; the Record has a Hard Rock line and a DraftKings line.
+    sl, cur, gen = build_normal()
+    open_ones = [x for x in sl["picks"] if x["state"] == "open"]
+    extra = []
+    for n, (x, mv) in enumerate(zip(open_ones[:2], (3.1, 2.4))):
+        x["id"] += ":ps"
+        x["era"], x["method"], x["book"], x["book_key"] = "ps1", "pin_solo", "Hard Rock", "hardrock"
+        x["vs"] = "Pinnacle moved %+g pts · Pinnacle fair -122, Hard Rock %s" % (mv, price_txt(x["price"]))
+        x["gap_pct"], x["final_ev_pct"] = None, None
+        x["pin_solo"] = {"window": "R\u2192W", "pin_move_pts": mv, "others_move_pts": 0.4, "n_others": 6, "fair_price": -122,
+                         "pin_price": -130, "price_test": "fair", "ev_vs_fair_pct": 2.4}
+        x["reason"] = ("Pinnacle moved %g pts toward %s since yesterday; Hard Rock is still at %s, better than Pinnacle's "
+                       "fair -122." % (mv, x["bet"], price_txt(x["price"])))
+        x["link"] = {"url": "https://app.hardrock.bet/", "kind": "home"}
+        if n == 0:                                              # both books qualify: the DraftKings twin
+            d = json.loads(json.dumps(x))
+            d["id"] += ":dk"
+            d["era"], d["book"], d["book_key"] = "pd1", "DraftKings", "draftkings"
+            d["price"] = -112
+            d["vs"] = "Pinnacle moved %+g pts · Pinnacle fair -122, DraftKings -112" % mv
+            d["reason"] = x["reason"].replace("Hard Rock is still at %s" % price_txt(x["price"]), "DraftKings is still at -112")
+            d["link"] = {"url": "https://sportsbook.draftkings.com/event/123", "kind": "page"}
+            d["rank"] = (x.get("rank") or 1) + 1
+            extra.append(d)
+    for x in sl["picks"]:
+        x.setdefault("method", "gap_guard")
+        x.setdefault("pin_solo", None)
+        x.setdefault("book", "Hard Rock")
+        x.setdefault("book_key", "hardrock")
+        x.setdefault("link", None)
+    sl["picks"] = sl["picks"][:1] + extra + sl["picks"][1:]
+    sl["methods"] = {"gap_guard": {"era": "gg1", "live": True}, "pin_solo": {"era": "ps1", "live": True},
+                     "draftkings": {"era": "pd1", "live": True}}
+    hw = history_weeks(12, seed=11, loss_bias=0.42)
+    rec, older = record_doc(hw, cur, 13, gen)
+    for key, era, book, results in (("pin_solo", "ps1", "Hard Rock", ("W", "L", None)), ("draftkings", "pd1", "DraftKings", ("W", None))):
+        ents = []
+        for x, res in zip(sl["picks"][:len(results)], results):
+            e = entry(x)
+            e.update({"era": era, "method": "pin_solo", "book": book, "state": "graded" if res else "locked", "result": res,
+                      "actual": ("had 3" if res == "W" else "had 6") if res else None,
+                      "units": units_for(x["price"], res) if res else None})
+            ents.append(e)
+        wk12 = week_doc(12, ents)
+        rec[key] = {"era": era, "label": "Pinnacle moved: " + book, "summary": summary([wk12]), "weeks": [wk12]}
+    write("dk", sl, rec, status_json(13, gen), older)
+
 
 if __name__ == "__main__":
     main()

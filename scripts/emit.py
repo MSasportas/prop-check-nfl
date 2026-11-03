@@ -74,7 +74,8 @@ def pick_doc(it, rank, inp, price_final):
         "player": sh.get("player"), "player_short": sh.get("player_short"), "player_id": sh.get("player_id"),
         "pos": sh.get("pos"), "team": sh["team"], "opp": sh["opp"], "home": sh["home"],
         "market": sh["mkey"], "market_label": sh.get("market_label") or engine.market_label(inp.cfg, sh["market"], sh["period"]),
-        "side": sh["side"], "line": sh["line"], "bet": sh["bet"], "book": "Hard Rock",
+        "side": sh["side"], "line": sh["line"], "bet": sh["bet"], "book": sh.get("book") or "Hard Rock",
+        "book_key": sh.get("book_key") or "hardrock", "link": sh.get("link"),
         "price": record.first_price(it), "read_at": sh.get("read_at") or it["shown_at"], "read_pull": sh.get("read_pull"),
         "method": sh.get("method") or "gap_guard",
         "vs": vs_text(sh), "gap_pct": None if ps else round(100 * sh["gap_ev"], 1), "n_books": sh["n_books"], "pinnacle": True,
@@ -118,7 +119,7 @@ def build_slate(inp, events, extra, facts):
     cfg, now = inp.cfg, inp.now
     items = record.fold(events)
     cur = gg.era(cfg)
-    eras = (cur, watch.ps_era(cfg))                     # Gap + Guard picks, and Pinnacle-moves picks when that switch was on
+    eras = (cur,) + tuple(watch.ps_eras(cfg))           # Gap + Guard picks, and Pinnacle-moves picks (Hard Rock and DraftKings)
     week = {i: it for i, it in items.items() if it["slate"] == inp.slate and it["kind"] == "single" and it["era"] in eras}
     live = extra["live"] if extra else {}
     by_day = {}
@@ -144,7 +145,9 @@ def build_slate(inp, events, extra, facts):
     empty = None if open_picks else empty_state(inp, games, facts)
     season, week_no = facts.get("season"), facts.get("week")
     return {"schema": SCHEMA, "era": cur, "methods": {"gap_guard": {"era": cur, "live": True},
-                                                      "pin_solo": {"era": watch.ps_era(cfg), "live": watch.pin_live(cfg, inp.slate)}},
+                                                      "pin_solo": {"era": watch.ps_era(cfg), "live": watch.pin_live(cfg, inp.slate)},
+                                                      "draftkings": {"era": watch.dk_era(cfg),
+                                                                     "live": watch.pin_live(cfg, inp.slate) and watch.dk_live(cfg)}},
             "season": season, "week": week_no,
             "label": "Week %d" % week_no if week_no else "This week",
             "generated_at": common.iso(now), "status_at": common.iso(now), "valid_until": facts.get("valid_until"),

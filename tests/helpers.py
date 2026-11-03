@@ -130,6 +130,7 @@ def pre_1103(c):
     o["watch"]["tracks"]["pin_solo"].update({"min_move": 0.02, "max_move": None, "others_min": 4, "others_max": 0.02,
                                              "price_test": "fair"})
     o["pin_solo"]["live"] = False
+    o.setdefault("draftkings", {})["live"] = False
     return c
 
 

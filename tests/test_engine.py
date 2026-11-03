@@ -211,10 +211,11 @@ class PageFiles(unittest.TestCase):
         want = {"id", "era", "rank", "state", "game_id", "day", "kickoff", "game", "player", "player_short", "player_id",
                 "pos", "team", "opp", "home", "market", "market_label", "side", "line", "bet", "book", "price", "read_at",
                 "read_pull", "vs", "gap_pct", "n_books", "pinnacle", "final_ev_pct", "reason", "settled", "settled_text",
-                "flags", "pulled", "graded", "history", "method", "pin_solo"}
+                "flags", "pulled", "graded", "history", "method", "pin_solo", "book_key", "link"}
         self.assertEqual(set(p), want)
         self.assertEqual((p["method"], p["pin_solo"]), ("gap_guard", None))
-        self.assertEqual(s["methods"], {"gap_guard": {"era": "gg1", "live": True}, "pin_solo": {"era": "ps1", "live": False}})
+        self.assertEqual(s["methods"], {"gap_guard": {"era": "gg1", "live": True}, "pin_solo": {"era": "ps1", "live": False},
+                                        "draftkings": {"era": "pd1", "live": False}})
         self.assertEqual(set(p["flags"]), {"price_final", "weather"})
         self.assertIsInstance(p["price"], int)
         self.assertEqual(p["market_label"], "Carries")

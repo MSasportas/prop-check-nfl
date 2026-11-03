@@ -326,6 +326,8 @@ class Client:
             return js, cost
         params = {"bookmakers": ",".join(books), "markets": ",".join(market_keys), "oddsFormat": "american",
                   "dateFormat": "iso"}
+        if self.cfg["ops"].get("include_links"):
+            params["includeLinks"] = "true"                 # bet-slip links for the pick cards (no extra credits per the docs)
         js, cost = self._get("/events/%s/odds" % event_id, params, len(market_keys), pull, game["id"],
                              books=books)
         if js:
@@ -562,8 +564,11 @@ def _rows(m, find, unmatched=None, keep_unmatched=True):
             line = float(o["point"]) if o.get("point") is not None else 0.5
         except (TypeError, ValueError):
             continue
-        rows.append({"name": who, "pid": pp["id"] if pp else None, "team": pp["team"] if pp else None,
-                     "side": side, "line": line, "price": price})
+        row = {"name": who, "pid": pp["id"] if pp else None, "team": pp["team"] if pp else None,
+               "side": side, "line": line, "price": price}
+        if o.get("link"):
+            row["link"] = o["link"]                         # bet-slip deep link (includeLinks), when the book gives one
+        rows.append(row)
     return rows
 
 
@@ -600,6 +605,10 @@ def normalize(payload, game, matcher, asked, pull, at, cost, cfg):
         name, alt = f2m.get(key, (None, False))
         out["props"][key] = {"market": name, "alt": alt, "last_update": m.get("last_update"),
                              "outcomes": _rows(m, find, out["unmatched"])}
+        if m.get("link"):
+            out["props"][key]["link"] = m["link"]
+    if hr and hr.get("link"):
+        out.setdefault("book_links", {})[ops["book"]] = hr["link"]
     for bk, b in books.items():
         if bk == ops["book"] or bk in never:
             continue
@@ -608,11 +617,17 @@ def normalize(payload, game, matcher, asked, pull, at, cost, cfg):
             key = m.get("key")
             if not key or not is_player_key(key) or f2m.get(key, (None, True))[1]:
                 continue                                        # main lines only
-            rows = [{"pid": r["pid"], "side": r["side"], "line": r["line"], "price": r["price"]}
+            keep_links = bk in set(ops.get("link_books") or ())
+            rows = [dict({"pid": r["pid"], "side": r["side"], "line": r["line"], "price": r["price"]},
+                         **({"link": r["link"]} if keep_links and r.get("link") else {}))
                     for r in _rows(m, find, None, keep_unmatched=False)]
             mk[key] = {"last_update": m.get("last_update"), "outcomes": rows}
+            if keep_links and m.get("link"):
+                mk[key]["link"] = m["link"]
         if mk:
             out["others"][bk] = mk
+        if bk in set(ops.get("link_books") or ()) and b.get("link"):
+            out.setdefault("book_links", {})[bk] = b["link"]    # the book's event page
     return out
 
 

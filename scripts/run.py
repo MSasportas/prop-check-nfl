@@ -250,7 +250,7 @@ class Run:
         inp = self.build_inputs()
         items = record.fold(self.load_events())
         open_items = [it for it in items.values() if it["slate"] == self.slate and record.is_open(it)
-                      and it["kind"] == "single" and it["era"] in (gg.era(self.cfg), watch.ps_era(self.cfg))]
+                      and it["kind"] == "single" and it["era"] in (gg.era(self.cfg),) + tuple(watch.ps_eras(self.cfg))]
         focus = engine.focus_markets(inp, self.by_game(), open_items)
         window = sched.games_in_window(self.cache, self.now, self.cfg)
         left = len(window)
@@ -292,6 +292,8 @@ class Run:
         new, self.extra = engine.evaluate(inp, self.by_game(), block_new=block, log_items=log_items)
         if self.extra.get("ps_pause"):
             self.paused["pin_solo"] = self.extra["ps_pause"]
+        if self.extra.get("dk_pause"):
+            self.paused["draftkings"] = self.extra["dk_pause"]
         record.append(new)
         gg.append(self.extra.get("log") or [])
         self.events = inp.events + new

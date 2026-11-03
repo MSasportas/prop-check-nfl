@@ -236,7 +236,8 @@ def _entry(it, items):
             "game": _game_text(sh),
             "player": sh.get("player_short") or sh.get("player"), "team": sh.get("team"), "market": sh.get("market"),
             "period": sh.get("period"), "bet": sh.get("bet"), "price": grade_price(it), "result": g.get("result"),
-            "actual": g.get("actual_text"), "units": g.get("units"), "pulled": _pulled(it), "legs": []}
+            "actual": g.get("actual_text"), "units": g.get("units"), "pulled": _pulled(it), "legs": [],
+            "book": sh.get("book") or "Hard Rock"}
 
 
 def _row(key, label, entries):
@@ -326,12 +327,13 @@ def build_views(events, cfg):
     summary; it never counts toward the headline or the safety pause."""
     items = fold(events)
     cur = gg_era(cfg)
-    by_week, old_by_week, ps_by_week = {}, {}, {}
+    by_week, old_by_week, ps_by_week, dk_by_week = {}, {}, {}, {}
     ps_era = ps_era_of(cfg)
+    dk_era = dk_era_of(cfg)
     for it in items.values():
         if on_record(it):
-            (by_week if it["era"] == cur else ps_by_week if it["era"] == ps_era else old_by_week).setdefault(
-                it["slate"], []).append(it)
+            (by_week if it["era"] == cur else ps_by_week if it["era"] == ps_era else
+             dk_by_week if it["era"] == dk_era else old_by_week).setdefault(it["slate"], []).append(it)
     weeks, summary = _block(items, by_week, cfg)
     keep = cfg["ops"].get("record_weeks", 4)
     older = {}
@@ -345,12 +347,18 @@ def build_views(events, cfg):
             pass
     rec = {"generated_at": events[-1]["at"] if events else None, "season": season, "era": cur,
            "summary": summary, "weeks": weeks[:keep],
-           "older": ["record/%s.json" % s for s in sorted(older, reverse=True)], "retired": None, "pin_solo": None}
+           "older": ["record/%s.json" % s for s in sorted(older, reverse=True)], "retired": None, "pin_solo": None,
+           "draftkings": None}
     if ps_by_week:                                          # the fallback method (ops.pin_solo.live): its own headline, never in gg1
         pwks, psum = _block(items, ps_by_week, cfg)
         rec["pin_solo"] = {"era": ps_era, "label": "Pinnacle moves alone", "method": "pin_solo",
                            "note": "Picks made by the Pinnacle-moves method. Counted on their own, never in the main record.",
                            "summary": psum, "weeks": pwks}
+    if dk_by_week:                                          # DraftKings picks (for someone out of state): one entry per book
+        dwks, dsum = _block(items, dk_by_week, cfg)
+        rec["draftkings"] = {"era": dk_era, "label": "Pinnacle moved: DraftKings", "method": "pin_solo", "book": "DraftKings",
+                             "note": "The same Pinnacle-moves picks at DraftKings' price. Its own line, never in the records above.",
+                             "summary": dsum, "weeks": dwks}
     if old_by_week:
         owks, osum = _block(items, old_by_week, cfg)
         dates = sorted(e["date"] for w in owks for e in w["entries"] if e["date"])
@@ -366,6 +374,10 @@ def build_views(events, cfg):
 
 def ps_era_of(cfg):
     return ((cfg.get("ops") or {}).get("pin_solo") or {}).get("era") or "ps1"
+
+
+def dk_era_of(cfg):
+    return ((cfg.get("ops") or {}).get("draftkings") or {}).get("era") or "pd1"
 
 
 def gg_era(cfg):

@@ -380,6 +380,18 @@
   "grade_wait_hours": 36,
   "game_cap_factor": 1.6,
   "record_weeks": 4,
-  "final_report_note": "values.final_report: game weekday -> 'Day HH:MM' of the final injury report (Eastern)"
+  "final_report_note": "values.final_report: game weekday -> 'Day HH:MM' of the final injury report (Eastern)",
+  "draftkings": {
+   "_about": "DraftKings picks (Matt, 2026-11-03: for someone out of state; Matt himself bets Hard Rock only). The Pinnacle-moves rule judged on DraftKings' own price on the later read (same move gates, same -150..+120 window, half-point lines, same vetoes). If both books qualify, both show. One Record entry per book: era pd1, its own Record line and its own -10 unit pause; never in Matt's Hard Rock lines. One DraftKings pick per player per game. state = the two-letter state for DraftKings links that carry a {state} placeholder (null = use the event page or the home page).",
+   "live": true,
+   "era": "pd1",
+   "state": null,
+   "safety_pause_units": -10,
+   "safety_pause_text": "New DraftKings picks are stopped: that line is down 10 units or more."
+  },
+  "include_links": true,
+  "link_books": [
+   "draftkings"
+  ]
  }
 }

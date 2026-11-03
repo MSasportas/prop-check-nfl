@@ -3,6 +3,7 @@ method, reads are timed off kickoff (R 24 h, W 3 h, C 70 min before), and a pick
 1 to under 5 pts toward a side between two reads with Hard Rock at or better than Pinnacle's POSTED price on that side.
 
 SEA at DEN (Thu Oct 15, 8:15 PM ET): R Wed ~8:20 PM, W Thu ~5:20 PM, C Thu ~7:05 PM."""
+import os
 import unittest
 
 import helpers
@@ -46,8 +47,8 @@ class Live(unittest.TestCase):
         s = w.at(W_AT)
         return w, s
 
-    def shown(self, w):
-        return [e for e in w.events() if e["t"] == "shown"]
+    def shown(self, w, book="hardrock"):
+        return [e for e in w.events() if e["t"] == "shown" and (book is None or e["pick"].get("book_key", "hardrock") == book)]
 
     def cand(self, w):
         return [e for e in events(w) if e["t"] == "cand" and e["track"] == "pin_solo" and e["pid"] == WILSON
@@ -117,6 +118,7 @@ class Live(unittest.TestCase):
             w.set_price(SEA_DEN, "player_rush_attempts", "Emanuel Wilson", "under", -110, last_update_z=LU_W)   # Hard Rock only
             w.at(W_AT)
             self.assertEqual(self.shown(w), [])
+            self.assertEqual(len(self.shown(w, "draftkings")), 1)              # DraftKings still beats Pinnacle's fair: its own pick
             self.assertEqual([c["gate"] for c in self.cand(w)], ["worse_than_fair"])
         finally:
             w.close()
@@ -128,11 +130,101 @@ class Live(unittest.TestCase):
             build(w, pin=-0.03, others=0.0, hr_under=105, lu=LU_C)
             s = w.at(C_AT)
             self.assertEqual(len(self.shown(w)), 1)                       # C adds nothing for the same player
-            p = [x for x in s["picks"] if x["method"] == "pin_solo"][0]
+            p = [x for x in s["picks"] if x["method"] == "pin_solo" and x["book_key"] == "hardrock"][0]
             self.assertEqual((p["state"], p["settled_text"]), ("open", "Inactives confirmed"))
             self.assertEqual(common.read_json(w.path("record.json"))["weeks"], [])     # nothing in gg1
         finally:
             w.close()
+
+
+class DraftKings(unittest.TestCase):
+    """DraftKings (Matt 2026-11-03, for someone out of state): same move, judged on DraftKings' own price; both books show
+    when both qualify; one Record entry per book (era pd1, own line)."""
+
+    def run_w(self, pin, others=0.0, config=None):
+        w = World(pool=(500, 500, 500, 500), config=config or cfg())
+        build(w, hr_under=105, lu=LU_R)
+        w.at(R_AT)
+        build(w, pin=pin, others=others, hr_under=105, lu=LU_W)
+        return w, w.at(W_AT)
+
+    def test_both_books_qualify_both_show_one_entry_each(self):
+        w, s = self.run_w(-0.03)
+        try:
+            sh = [e for e in w.events() if e["t"] == "shown"]
+            self.assertEqual(sorted((e["pick"]["book"], e["pick"]["era"], e["id"][-6:]) for e in sh),
+                             [("DraftKings", "pd1", ":ps:dk"), ("Hard Rock", "ps1", "der:ps")])
+            dk = next(p for p in s["picks"] if p["book_key"] == "draftkings")
+            self.assertEqual(dk["book"], "DraftKings")
+            self.assertTrue(dk["link"]["url"].startswith("https://sportsbook.draftkings.com"))
+            self.assertIn("DraftKings is still at", dk["reason"])
+            w.at("2026-10-15T20:30")                                   # kicked off: both lock onto the Record
+            rec = common.read_json(w.path("record.json"))
+            self.assertIsNotNone(rec["draftkings"])
+            self.assertIsNotNone(rec["pin_solo"])
+            self.assertEqual([e["book"] for wk in rec["draftkings"]["weeks"] for e in wk["entries"]], ["DraftKings"])
+            self.assertEqual([e["book"] for wk in rec["pin_solo"]["weeks"] for e in wk["entries"]], ["Hard Rock"])
+            self.assertEqual(rec["draftkings"]["era"], "pd1")
+            self.assertEqual(rec["weeks"], [])                         # never in gg1
+        finally:
+            w.close()
+
+    def test_other_books_moving_with_pinnacle_means_no_draftkings_pick(self):
+        w, s = self.run_w(-0.03, others=-0.03)                       # DraftKings moved too: no longer beats the fair
+        try:
+            self.assertEqual([e["pick"]["book"] for e in w.events() if e["t"] == "shown"], ["Hard Rock"])
+        finally:
+            w.close()
+
+    def test_draftkings_off_makes_no_draftkings_pick(self):
+        c = cfg()
+        c["ops"]["draftkings"]["live"] = False
+        w, s = self.run_w(-0.03, config=c)
+        try:
+            self.assertEqual([e["pick"]["book"] for e in w.events() if e["t"] == "shown"], ["Hard Rock"])
+            self.assertFalse(s["methods"]["draftkings"]["live"])
+        finally:
+            w.close()
+
+    def test_draftkings_moving_its_line_pulls_only_its_pick(self):
+        w, s = self.run_w(-0.03)
+        try:
+            inactives(w)
+            js = helpers.load(os.path.join(w.odds, "odds_%s.json" % SEA_DEN))
+            for b in js["bookmakers"]:
+                if b["key"] == "draftkings":
+                    for m in b["markets"]:
+                        for o in m["outcomes"]:
+                            if o["description"] == "Emanuel Wilson" and m["key"] == "player_rush_attempts":
+                                o["point"] = 16.5
+                    b["last_update"] = LU_C
+                    for m in b["markets"]:
+                        m["last_update"] = LU_C
+            w.set_odds(SEA_DEN, js, LU_C)
+            w.at(C_AT)
+            pulled = [e for e in w.events() if e["t"] == "pulled"]
+            self.assertEqual(len(pulled), 1)
+            self.assertTrue(pulled[0]["id"].endswith(":ps:dk"))
+            self.assertEqual(pulled[0]["code"], "line_moved")
+            self.assertIn("DraftKings", pulled[0]["if_bet"])
+        finally:
+            w.close()
+
+    def test_bet_link_prefers_the_betslip_and_fills_the_state(self):
+        c = cfg()
+        f = {"props": {"player_receptions": {"outcomes": [{"pid": "p", "side": "over", "line": 4.5,
+                                                           "link": "https://hr.example/{state}/slip/1"}]}},
+             "others": {"draftkings": {"player_receptions": {"outcomes": [
+                 {"pid": "p", "side": "over", "line": 4.5, "price": -110, "link": "https://dk.example/{state}/slip/9"}]}}},
+             "book_links": {"draftkings": "https://dk.example/event/5"}}
+        self.assertEqual(watch.bet_link(f, "hardrock", "player_receptions", "p", 4.5, "over", c),
+                         {"url": "https://hr.example/fl/slip/1", "kind": "betslip"})
+        self.assertEqual(watch.bet_link(f, "draftkings", "player_receptions", "p", 4.5, "over", c),
+                         {"url": "https://dk.example/event/5", "kind": "page"})        # no state set: the event page
+        c["ops"]["draftkings"]["state"] = "nj"
+        self.assertEqual(watch.bet_link(f, "draftkings", "player_receptions", "p", 4.5, "over", c)["url"],
+                         "https://dk.example/nj/slip/9")
+        self.assertEqual(watch.bet_link({}, "draftkings", "player_receptions", "p", 4.5, "over", c)["kind"], "home")
 
 
 if __name__ == "__main__":

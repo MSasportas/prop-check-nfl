@@ -154,6 +154,59 @@ def _pin(oth, key):
     return ((oth.get(key) or {}).get("pairs") or {}).get(gg.PINNACLE)
 
 
+DK = "draftkings"
+
+
+def _book_pair(oth, key, book):
+    return ((oth.get(key) or {}).get("pairs") or {}).get(book)
+
+
+def dk(cfg):
+    return (cfg.get("ops") or {}).get("draftkings") or {}
+
+
+def dk_live(cfg):
+    """DraftKings picks (Matt, 2026-11-03): only with a literal true and the Pinnacle-moves method on."""
+    return dk(cfg).get("live") is True
+
+
+def dk_era(cfg):
+    return dk(cfg).get("era") or "pd1"
+
+
+HOME = {"hardrock": "https://app.hardrock.bet/", DK: "https://sportsbook.draftkings.com/"}
+
+
+def bet_link(f, book, feed, pid, line, side, cfg):
+    """The best link we have for one bet on read f: the bet-slip link of that outcome, else the market's, else the book's
+    event page, else the book's home page. A '{state}' placeholder is filled from config (Hard Rock 'fl'; DraftKings
+    ops.draftkings.state) or the link is skipped for the next one down."""
+    ops = cfg["ops"]
+    state = {"hardrock": "fl", DK: dk(cfg).get("state")}.get(book)
+    if book == "hardrock":
+        mk = (f.get("props") or {}).get(feed) or {}
+        ev_link = (f.get("book_links") or {}).get(ops["book"])
+    else:
+        mk = ((f.get("others") or {}).get(book) or {}).get(feed) or {}
+        ev_link = (f.get("book_links") or {}).get(book)
+    out = [o.get("link") for o in mk.get("outcomes") or []
+           if o.get("pid") == pid and o.get("side") == side and abs((o.get("line") or 0) - line) < 1e-9]
+    for kind, cand in [("betslip", x) for x in out] + [("page", mk.get("link")), ("page", ev_link)]:
+        if not cand:
+            continue
+        if "{state}" in cand:
+            if not state:
+                continue
+            cand = cand.replace("{state}", state)
+        return {"url": cand, "kind": kind}
+    return {"url": HOME[book], "kind": "home"} if book in HOME else None
+
+
+def ps_eras(cfg):
+    """The eras made by the Pinnacle-moves method: Hard Rock (ps1) and, when on, DraftKings (pd1)."""
+    return (ps_era(cfg), dk_era(cfg))
+
+
 def _fair_over(pair):
     return odds.fair_two_sided(pair[0], pair[1])
 
@@ -192,6 +245,7 @@ def solo_rows(a, b, g, inp, eng, cfg):
     ps = tcfg(cfg, SOLO)
     t = gg.T(cfg)
     v = cfg["values"]
+    dk_on = dk_live(cfg)
     rows, n_lines = [], 0
     for mname in gg.market_names(cfg):
         ha = gg.hr_market(a, mname, cfg) or {}
@@ -202,7 +256,11 @@ def solo_rows(a, b, g, inp, eng, cfg):
         for key in sorted(set(oa) & set(ob), key=lambda k: (str(k[0]), k[1])):
             pid, line = key
             pa, pb = _pin(oa, key), _pin(ob, key)
-            if pa is None or pb is None or pid not in hr_pids:
+            if pa is None or pb is None:
+                continue
+            dk_b = _book_pair(ob, key, DK)
+            people = getattr(inp, "people", None) or {}
+            if pid not in hr_pids and not (dk_on and dk_b is not None and pid in people):
                 continue
             fa, fb = _fair_over(pa), _fair_over(pb)
             if key in hb and key in ha:
@@ -221,6 +279,9 @@ def solo_rows(a, b, g, inp, eng, cfg):
             pin_b = fb if side == "over" else 1.0 - fb
             pair = hb.get(key) or ha.get(key) or next((p for k, p in hb.items() if k[0] == pid), None) \
                 or next((p for k, p in ha.items() if k[0] == pid), None) or {}
+            if not pair.get("team") and pid in people:                  # a DraftKings-only player: name and team from the roster
+                pp = people[pid]
+                pair = {"team": pp.get("team"), "name": pp.get("name") or ("%s %s" % (pp.get("first", ""), pp.get("last", ""))).strip()}
             price = (hb.get(key) or {}).get(side)
             r = _base(g, b, mname, pid, line, side, pair, price)
             pa_hr = (ha.get(key) or {}).get(side)
@@ -229,33 +290,57 @@ def solo_rows(a, b, g, inp, eng, cfg):
                      pin_price_after=pb[0] if side == "over" else pb[1],
                      others_move=round(statistics.median(mv), 4) if mv else None, n_others=len(mv),
                      ev_vs_pin=round(gg.ev(pin_b, price), 4) if price is not None else None)
+            pin_post = pb[0] if side == "over" else pb[1]
+            # gates on the move itself (both books)
+            mg = None
+            if ps.get("max_move") is not None and abs(fb - fa) >= ps["max_move"] - EPS:
+                mg = "too_big"
+            elif ps.get("others_min") and len(mv) < ps["others_min"]:
+                mg = "books"
+            elif mv and ps.get("others_max") is not None and statistics.median(mv) >= ps["others_max"] - EPS:
+                mg = "others_moved"
+            elig = {}
+
+            def eligible():
+                if "r" not in elig:
+                    elig["r"] = _eligible(inp, eng, g, mname, pid, line, pair, side)
+                return elig["r"]
+
+            def price_gate(pr):
+                if ps.get("price_test") == "posted" and odds.decimal(pr) < odds.decimal(pin_post) - EPS:
+                    return "worse_than_posted"
+                if ps.get("price_test") != "posted" and gg.ev(pin_b, pr) < ps.get("min_ev_vs_pin", 0.0) - EPS:
+                    return "worse_than_fair"
+                if not gg.inside_gate(pr, t):
+                    return "price_window"
+                if ps.get("skip_whole_lines") and gg.whole_line(line):
+                    return "whole_line"
+                return None
             why = None
             if key not in hb or key not in ha:
                 why = "hr_line"
             elif hb[key]["why"] is not None or price is None:
                 why = "hr_feed"
-            elif ps.get("max_move") is not None and abs(fb - fa) >= ps["max_move"] - EPS:
-                why = "too_big"
-            elif ps.get("others_min") and len(mv) < ps["others_min"]:
-                why = "books"
-            elif mv and ps.get("others_max") is not None and statistics.median(mv) >= ps["others_max"] - EPS:
-                why = "others_moved"
-            elif ps.get("price_test") == "posted" and \
-                    odds.decimal(price) < odds.decimal(pb[0] if side == "over" else pb[1]) - EPS:
-                why = "worse_than_posted"
-            elif ps.get("price_test") != "posted" and gg.ev(pin_b, price) < ps.get("min_ev_vs_pin", 0.0) - EPS:
-                why = "worse_than_fair"
-            elif not gg.inside_gate(price, t):
-                why = "price_window"
-            elif ps.get("skip_whole_lines") and gg.whole_line(line):
-                why = "whole_line"
+            elif mg:
+                why = mg
             else:
-                bad = _eligible(inp, eng, g, mname, pid, line, pair, side)
-                if bad:
+                why = price_gate(price)
+                if why is None and eligible():
                     why = "ineligible"
-                    r["detail"] = bad
+                    r["detail"] = eligible()
             r["gate"] = why
             r["price_test"] = ps.get("price_test") or "fair"
+            if dk_on:
+                # DraftKings (Matt, 2026-11-03, for someone out of state): the same move, judged on DraftKings' own price
+                # on the later read. Its own pick and its own Record line.
+                dpr = None if dk_b is None else (dk_b[0] if side == "over" else dk_b[1])
+                dk_a = _book_pair(oa, key, DK)
+                dg = "dk_line" if dpr is None else (mg or price_gate(dpr))
+                if dg is None and eligible():
+                    dg = "ineligible"
+                r["dk"] = {"price": dpr, "gate": dg,
+                           "price_before": None if dk_a is None else (dk_a[0] if side == "over" else dk_a[1]),
+                           "ev_vs_pin": round(gg.ev(pin_b, dpr), 4) if dpr is not None else None}
             rows.append(r)
     return rows, n_lines
 
@@ -322,7 +407,7 @@ def _cand_event(track, now, g, r, a_at, cid):
          "line": r["line"], "side": r["side"], "price": r["price"], "read": r["read"], "read_at": r["read_at"],
          "gate": r["gate"]}
     for k in ("window", "pin_before", "pin_after", "others_move", "n_others", "ev_vs_pin", "pin_fair", "pin_ev",
-              "detail"):
+              "detail", "dk"):
         if r.get(k) is not None:
             e[k] = r[k]
     return e
@@ -600,10 +685,16 @@ def live_candidates(inp, eng, by_game, cfg, now):
             continue
         rows, _ = solo_rows(a, b, g, inp, eng, cfg)
         for r in rows:
+            feed = cfg["ops"]["markets"][r["market"]]["feed_key"]
             if r["gate"] is None:
-                r["g"] = g
-                out.append(r)
-    out.sort(key=lambda r: (-abs(r["pin_after"] - r["pin_before"]), str(r["pid"]), r["market"]))
+                out.append(dict(r, g=g, book="hardrock", book_name="Hard Rock",
+                                link=bet_link(b, "hardrock", feed, r["pid"], r["line"], r["side"], cfg)))
+            d = r.get("dk") or {}
+            if d and d.get("gate") is None and d.get("price") is not None:
+                out.append(dict(r, g=g, book=DK, book_name="DraftKings", price=d["price"], price_before=d.get("price_before"),
+                                ev_vs_pin=d.get("ev_vs_pin"), gate=None,
+                                link=bet_link(b, DK, feed, r["pid"], r["line"], r["side"], cfg)))
+    out.sort(key=lambda r: (-abs(r["pin_after"] - r["pin_before"]), str(r["pid"]), r["market"], r["book"]))
     return out
 
 
@@ -619,6 +710,6 @@ def plain_reason(r, bet):
     d_hr, d_pin = odds.decimal(r["price"]), odds.decimal(pin)
     cmp_ = "better than" if d_hr > d_pin + 1e-9 else ("level with" if abs(d_hr - d_pin) <= 1e-9 else "worse than")
     since = {"R": "since yesterday", "W": "since the 3-hour read"}.get(r.get("prev_read"), "since the last read")
-    return "Pinnacle moved %s pts toward %s %s; Hard Rock is %s %s, %s Pinnacle's %s%s." % (
-        g(r["pin_after"] - r["pin_before"]), bet, since, "still at" if still else "now at",
+    return "Pinnacle moved %s pts toward %s %s; %s is %s %s, %s Pinnacle's %s%s." % (
+        g(r["pin_after"] - r["pin_before"]), bet, since, r.get("book_name") or "Hard Rock", "still at" if still else "now at",
         common.fmt_price(r["price"]), cmp_, what, common.fmt_price(pin))
