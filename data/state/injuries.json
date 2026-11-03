@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T09:30:17-05:00",
+ "at": "2026-11-03T10:30:00-05:00",
  "source": "espn",
  "players": {
   "name:ARI:walternolen": {
@@ -3362,6 +3362,17 @@
    "detail": null,
    "espn_id": "4430656"
   },
+  "00-0033090": {
+   "name": "Hunter Henry",
+   "team": "NE",
+   "pos": "TE",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-03T10:14:00-05:00",
+   "detail": "Foot",
+   "espn_id": "3046439",
+   "comment": "Patriots head coach Mike Vrabel said Monday that he had no update on Henry's (foot) status heading into Sunday's game against the Packers, Karen Guregian of Mas"
+  },
   "00-0040734": {
    "name": "TreVeyon Henderson",
    "team": "NE",
@@ -3444,17 +3455,6 @@
    "date": "2026-11-01T22:30:00-05:00",
    "detail": null,
    "espn_id": "4431452"
-  },
-  "00-0033090": {
-   "name": "Hunter Henry",
-   "team": "NE",
-   "pos": "TE",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-01T19:11:00-05:00",
-   "detail": "Foot",
-   "espn_id": "3046439",
-   "comment": "Henry (foot) has been ruled out for the rest of Sunday's game in Miami."
   },
   "name:NE:gabejacas": {
    "name": "Gabe Jacas",
@@ -4555,6 +4555,16 @@
    "detail": null,
    "espn_id": "3040151"
   },
+  "00-0038797": {
+   "name": "Emanuel Wilson",
+   "team": "SEA",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-03T10:18:00-05:00",
+   "detail": null,
+   "espn_id": "4887558"
+  },
   "00-0037545": {
    "name": "Rashid Shaheed",
    "team": "SEA",
@@ -4697,16 +4707,6 @@
    "detail": "Elbow",
    "espn_id": "3924327",
    "comment": "Lock (coach's decision) is inactive for Monday's matchup with the Bears, John Boyle of the Seahawks' official site reports."
-  },
-  "00-0038797": {
-   "name": "Emanuel Wilson",
-   "team": "SEA",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-02T18:10:00-05:00",
-   "detail": null,
-   "espn_id": "4887558"
   },
   "00-0040129": {
    "name": "Emeka Egbuka",
