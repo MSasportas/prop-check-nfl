@@ -3,11 +3,11 @@
   "2026_09_JAX_BAL": {
    "temp_f": 68.9,
    "wind_mph": 3.6,
-   "gust_mph": 13.0,
-   "rain_pct": 24,
+   "gust_mph": 14.5,
+   "rain_pct": 17,
    "rain_in": 0.004,
    "roof": "outdoors",
-   "at": "2026-11-03T14:00:12-05:00",
+   "at": "2026-11-03T17:00:37-05:00",
    "text": "69\u00b0F, wind 4 mph"
   }
  }
