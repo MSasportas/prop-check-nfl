@@ -1,5 +1,5 @@
 {
- "at": "2026-11-02T21:50:01-05:00",
+ "at": "2026-11-02T22:30:00-05:00",
  "source": "espn",
  "players": {
   "00-0033307": {
@@ -1045,6 +1045,16 @@
    "detail": null,
    "espn_id": "4685278"
   },
+  "00-0033526": {
+   "name": "Samaje Perine",
+   "team": "CIN",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-02T22:07:00-05:00",
+   "detail": null,
+   "espn_id": "3116389"
+  },
   "name:CIN:djturner": {
    "name": "DJ Turner II",
    "team": "CIN",
@@ -1186,16 +1196,6 @@
    "date": "2026-10-26T21:58:00-04:00",
    "detail": null,
    "espn_id": "4384852"
-  },
-  "00-0039631": {
-   "name": "Cam Grandy",
-   "team": "CIN",
-   "pos": "TE",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-26T17:14:00-04:00",
-   "detail": null,
-   "espn_id": "4700712"
   },
   "00-0036407": {
    "name": "Jerry Jeudy",
@@ -2289,6 +2289,16 @@
    "detail": null,
    "espn_id": "4362523"
   },
+  "00-0040718": {
+   "name": "Travis Hunter",
+   "team": "JAX",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-02T22:10:00-05:00",
+   "detail": null,
+   "espn_id": "4685415"
+  },
   "name:JAX:bransoncombs": {
    "name": "Branson Combs",
    "team": "JAX",
@@ -2612,6 +2622,16 @@
    "detail": null,
    "espn_id": "5093923"
   },
+  "00-0041562": {
+   "name": "Fernando Mendoza",
+   "team": "LV",
+   "pos": "QB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-02T21:56:00-05:00",
+   "detail": null,
+   "espn_id": "4837248"
+  },
   "00-0038563": {
    "name": "Tre Tucker",
    "team": "LV",
@@ -2762,6 +2782,36 @@
    "detail": "Foot",
    "espn_id": "5155825",
    "comment": "Runyon (foot) has been ruled out for Sunday's game against the Jets, Sam Warren of The Athletic reports."
+  },
+  "00-0038046": {
+   "name": "Charlie Kolar",
+   "team": "LAC",
+   "pos": "TE",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-02T22:18:00-05:00",
+   "detail": null,
+   "espn_id": "4241263"
+  },
+  "00-0040727": {
+   "name": "Tre' Harris",
+   "team": "LAC",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-02T22:14:00-05:00",
+   "detail": null,
+   "espn_id": "4686612"
+  },
+  "00-0038454": {
+   "name": "Keaton Mitchell",
+   "team": "LAC",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-02T21:39:00-05:00",
+   "detail": null,
+   "espn_id": "4596334"
   },
   "00-0041550": {
    "name": "Brenen Thompson",
@@ -2915,16 +2965,6 @@
    "detail": null,
    "espn_id": "4430870"
   },
-  "00-0040727": {
-   "name": "Tre' Harris",
-   "team": "LAC",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-30T16:28:00-04:00",
-   "detail": null,
-   "espn_id": "4686612"
-  },
   "name:LAC:denzelperryman": {
    "name": "Denzel Perryman",
    "team": "LAC",
@@ -2934,26 +2974,6 @@
    "date": "2026-10-28T21:38:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "2579621"
-  },
-  "00-0038046": {
-   "name": "Charlie Kolar",
-   "team": "LAC",
-   "pos": "TE",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-19T21:26:00-04:00",
-   "detail": null,
-   "espn_id": "4241263"
-  },
-  "00-0038454": {
-   "name": "Keaton Mitchell",
-   "team": "LAC",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-19T20:58:00-04:00",
-   "detail": null,
-   "espn_id": "4596334"
   },
   "00-0041415": {
    "name": "Dean Connors",
@@ -3361,16 +3381,6 @@
    "detail": "Quadriceps",
    "espn_id": "4242436"
   },
-  "00-0036425": {
-   "name": "DeeJay Dallas",
-   "team": "MIN",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-31T21:30:00-04:00",
-   "detail": null,
-   "espn_id": "4240631"
-  },
   "00-0040215": {
    "name": "Gavin Bartholomew",
    "team": "MIN",
@@ -3515,16 +3525,6 @@
    "detail": "Ankle",
    "espn_id": "4565293"
   },
-  "00-0038824": {
-   "name": "Ryan Miller",
-   "team": "NE",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-31T20:19:00-04:00",
-   "detail": null,
-   "espn_id": "4369466"
-  },
   "00-0040568": {
    "name": "Lan Larison",
    "team": "NE",
@@ -3544,6 +3544,16 @@
    "date": "2026-10-23T23:22:00-04:00",
    "detail": null,
    "espn_id": "4431431"
+  },
+  "00-0040563": {
+   "name": "Efton Chism III",
+   "team": "NE",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-23T22:33:00-04:00",
+   "detail": null,
+   "espn_id": "4695193"
   },
   "00-0036973": {
    "name": "Travis Etienne Jr.",
@@ -3891,6 +3901,36 @@
    "detail": "Chest",
    "espn_id": "3929950"
   },
+  "00-0039798": {
+   "name": "Isaiah Davis",
+   "team": "NYJ",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-02T22:01:00-05:00",
+   "detail": null,
+   "espn_id": "4695404"
+  },
+  "00-0040736": {
+   "name": "Mason Taylor",
+   "team": "NYJ",
+   "pos": "TE",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-02T21:50:00-05:00",
+   "detail": null,
+   "espn_id": "4808766"
+  },
+  "00-0041032": {
+   "name": "Kenyon Sadiq",
+   "team": "NYJ",
+   "pos": "TE",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-02T21:48:00-05:00",
+   "detail": null,
+   "espn_id": "5083315"
+  },
   "name:NYJ:maxmitchell": {
    "name": "Max Mitchell",
    "team": "NYJ",
@@ -4022,25 +4062,15 @@
    "detail": null,
    "espn_id": "4035537"
   },
-  "00-0039798": {
-   "name": "Isaiah Davis",
-   "team": "NYJ",
+  "00-0036567": {
+   "name": "Elijah Mitchell",
+   "team": "PHI",
    "pos": "RB",
    "status": "Active",
    "fantasy": null,
-   "date": "2026-10-26T20:14:00-04:00",
+   "date": "2026-11-02T21:48:00-05:00",
    "detail": null,
-   "espn_id": "4695404"
-  },
-  "00-0041032": {
-   "name": "Kenyon Sadiq",
-   "team": "NYJ",
-   "pos": "TE",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-25T23:01:00-04:00",
-   "detail": null,
-   "espn_id": "5083315"
+   "espn_id": "4241555"
   },
   "00-0038400": {
    "name": "Tanner McKee",
@@ -4114,16 +4144,6 @@
    "date": "2026-11-02T09:47:00-05:00",
    "detail": null,
    "espn_id": "3929630"
-  },
-  "00-0036567": {
-   "name": "Elijah Mitchell",
-   "team": "PHI",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-02T00:06:00-05:00",
-   "detail": null,
-   "espn_id": "4241555"
   },
   "00-0040867": {
    "name": "Makai Lemon",
@@ -4328,16 +4348,6 @@
    "detail": null,
    "espn_id": "4569987"
   },
-  "00-0037382": {
-   "name": "Brandon Johnson",
-   "team": "PIT",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-31T19:47:00-04:00",
-   "detail": null,
-   "espn_id": "4035198"
-  },
   "00-0036775": {
    "name": "Brandon Smith",
    "team": "PIT",
@@ -4357,6 +4367,16 @@
    "date": "2026-10-25T08:26:00-04:00",
    "detail": null,
    "espn_id": "3116407"
+  },
+  "name:PIT:sebastianjosephday": {
+   "name": "Sebastian Joseph-Day",
+   "team": "PIT",
+   "pos": "DT",
+   "status": "Injured Reserve",
+   "fantasy": "IR",
+   "date": "2026-10-22T20:28:00-04:00",
+   "detail": "Triceps",
+   "espn_id": "3047495"
   },
   "00-0041035": {
    "name": "De'Zhaun Stribling",
@@ -4717,6 +4737,36 @@
    "detail": null,
    "espn_id": "4597703"
   },
+  "00-0041048": {
+   "name": "Ted Hurst III",
+   "team": "TB",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-02T22:22:00-05:00",
+   "detail": null,
+   "espn_id": "5220680"
+  },
+  "00-0038951": {
+   "name": "Sean Tucker",
+   "team": "TB",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-02T22:20:00-05:00",
+   "detail": null,
+   "espn_id": "4430871"
+  },
+  "00-0038129": {
+   "name": "Cade Otton",
+   "team": "TB",
+   "pos": "TE",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-02T21:42:00-05:00",
+   "detail": null,
+   "espn_id": "4243331"
+  },
   "name:TB:yayadiaby": {
    "name": "Yaya Diaby",
    "team": "TB",
@@ -4798,16 +4848,6 @@
    "detail": "Knee",
    "espn_id": "4248533"
   },
-  "00-0041048": {
-   "name": "Ted Hurst III",
-   "team": "TB",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-26T21:53:00-04:00",
-   "detail": null,
-   "espn_id": "5220680"
-  },
   "00-0041251": {
    "name": "Jalon Daniels",
    "team": "TB",
@@ -4817,26 +4857,6 @@
    "date": "2026-10-26T21:25:00-04:00",
    "detail": null,
    "espn_id": "4596472"
-  },
-  "00-0038129": {
-   "name": "Cade Otton",
-   "team": "TB",
-   "pos": "TE",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-25T23:05:00-04:00",
-   "detail": null,
-   "espn_id": "4243331"
-  },
-  "00-0038951": {
-   "name": "Sean Tucker",
-   "team": "TB",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-25T21:32:00-04:00",
-   "detail": null,
-   "espn_id": "4430871"
   },
   "name:TB:christianrozeboom": {
    "name": "Christian Rozeboom",
@@ -4857,6 +4877,16 @@
    "date": "2026-10-22T20:24:00-04:00",
    "detail": null,
    "espn_id": "3871102"
+  },
+  "00-0034837": {
+   "name": "Calvin Ridley",
+   "team": "TEN",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-02T22:04:00-05:00",
+   "detail": null,
+   "espn_id": "3925357"
   },
   "00-0040170": {
    "name": "Elic Ayomanor",
@@ -5010,16 +5040,6 @@
    "detail": "Ankle",
    "espn_id": "4570469"
   },
-  "00-0034837": {
-   "name": "Calvin Ridley",
-   "team": "TEN",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-01T11:33:00-05:00",
-   "detail": null,
-   "espn_id": "3925357"
-  },
   "name:TEN:dorianmausi": {
    "name": "Dorian Mausi",
    "team": "TEN",
@@ -5029,16 +5049,6 @@
    "date": "2026-10-31T22:07:00-04:00",
    "detail": "Foot",
    "espn_id": "4573318"
-  },
-  "00-0040522": {
-   "name": "Xavier Restrepo",
-   "team": "TEN",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-31T18:21:00-04:00",
-   "detail": null,
-   "espn_id": "4431353"
   },
   "00-0037809": {
    "name": "Chig Okonkwo",
