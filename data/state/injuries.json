@@ -1,5 +1,5 @@
 {
- "at": "2026-11-02T20:40:01-05:00",
+ "at": "2026-11-02T21:20:01-05:00",
  "source": "espn",
  "players": {
   "00-0033307": {
@@ -329,6 +329,27 @@
    "detail": "Undisclosed",
    "espn_id": "5150660"
   },
+  "name:BAL:tylerloop": {
+   "name": "Tyler Loop",
+   "team": "BAL",
+   "pos": "PK",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-02T20:54:00-05:00",
+   "detail": "Groin",
+   "espn_id": "4697745"
+  },
+  "00-0034975": {
+   "name": "Justice Hill",
+   "team": "BAL",
+   "pos": "RB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-02T20:52:00-05:00",
+   "detail": "Groin",
+   "espn_id": "4038441",
+   "comment": "Hill (groin) was estimated as a limited participant on Monday's practice report."
+  },
   "00-0040981": {
    "name": "Joe Fagnano",
    "team": "BAL",
@@ -380,17 +401,6 @@
    "detail": "Knee",
    "espn_id": "15846"
   },
-  "00-0034975": {
-   "name": "Justice Hill",
-   "team": "BAL",
-   "pos": "RB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-02T20:04:00-05:00",
-   "detail": "Groin",
-   "espn_id": "4038441",
-   "comment": "questionable"
-  },
   "name:BAL:treyhendrickson": {
    "name": "Trey Hendrickson",
    "team": "BAL",
@@ -411,16 +421,6 @@
    "detail": "Toe",
    "espn_id": "4035671",
    "comment": "Head coach Jesse Minter said Monday that Huntley (toe) \"probably\" won't play Thursday versus the Jaguars, and the Ravens then will \"see how it goes from a long-"
-  },
-  "name:BAL:tylerloop": {
-   "name": "Tyler Loop",
-   "team": "BAL",
-   "pos": "PK",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-02T18:50:00-05:00",
-   "detail": "Groin",
-   "espn_id": "4697745"
   },
   "name:BAL:jaylinnhawkins": {
    "name": "Jaylinn Hawkins",
@@ -1661,16 +1661,6 @@
    "detail": null,
    "espn_id": "3051876"
   },
-  "00-0039868": {
-   "name": "Troy Franklin",
-   "team": "DEN",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-26T20:24:00-04:00",
-   "detail": null,
-   "espn_id": "4431280"
-  },
   "name:DET:djreed": {
    "name": "D.J. Reed",
    "team": "DET",
@@ -2168,6 +2158,16 @@
    "detail": null,
    "espn_id": "4362504"
   },
+  "00-0040179": {
+   "name": "DJ Giddens",
+   "team": "IND",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-02T20:45:00-05:00",
+   "detail": null,
+   "espn_id": "4874509"
+  },
   "00-0041125": {
    "name": "Seth McGowan",
    "team": "IND",
@@ -2308,16 +2308,6 @@
    "date": "2026-10-27T19:40:00-04:00",
    "detail": "Groin",
    "espn_id": "4361196"
-  },
-  "00-0040179": {
-   "name": "DJ Giddens",
-   "team": "IND",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-26T21:56:00-04:00",
-   "detail": null,
-   "espn_id": "4874509"
   },
   "00-0038394": {
    "name": "Will Mallory",
@@ -2803,6 +2793,16 @@
    "espn_id": "5155825",
    "comment": "Runyon (foot) has been ruled out for Sunday's game against the Jets, Sam Warren of The Athletic reports."
   },
+  "00-0039391": {
+   "name": "Kimani Vidal",
+   "team": "LAC",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-02T20:50:00-05:00",
+   "detail": null,
+   "espn_id": "4430968"
+  },
   "00-0033885": {
    "name": "David Njoku",
    "team": "LAC",
@@ -2975,16 +2975,6 @@
    "detail": null,
    "espn_id": "4241263"
   },
-  "00-0039391": {
-   "name": "Kimani Vidal",
-   "team": "LAC",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-19T21:11:00-04:00",
-   "detail": null,
-   "espn_id": "4430968"
-  },
   "00-0038454": {
    "name": "Keaton Mitchell",
    "team": "LAC",
@@ -2994,6 +2984,17 @@
    "date": "2026-10-19T20:58:00-04:00",
    "detail": null,
    "espn_id": "4596334"
+  },
+  "00-0041415": {
+   "name": "Dean Connors",
+   "team": "LA",
+   "pos": "RB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-02T21:03:00-05:00",
+   "detail": "Hand",
+   "espn_id": "5082269",
+   "comment": "Connors suffered a broken hand in Sunday's 24-9 win over the Rams."
   },
   "00-0039751": {
    "name": "Jordan Whittington",
@@ -3046,17 +3047,6 @@
    "date": "2026-11-02T17:20:00-05:00",
    "detail": "Knee",
    "espn_id": "3122132"
-  },
-  "00-0041415": {
-   "name": "Dean Connors",
-   "team": "LA",
-   "pos": "RB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-02T17:13:00-05:00",
-   "detail": "Hand",
-   "espn_id": "5082269",
-   "comment": "questionable"
   },
   "00-0036244": {
    "name": "Colby Parkinson",
@@ -3431,6 +3421,16 @@
    "detail": null,
    "espn_id": "4430656"
   },
+  "00-0041395": {
+   "name": "Eli Raridon",
+   "team": "NE",
+   "pos": "TE",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-02T20:59:00-05:00",
+   "detail": null,
+   "espn_id": "4831959"
+  },
   "00-0040734": {
    "name": "TreVeyon Henderson",
    "team": "NE",
@@ -3574,16 +3574,6 @@
    "date": "2026-10-23T23:22:00-04:00",
    "detail": null,
    "espn_id": "4431431"
-  },
-  "00-0041395": {
-   "name": "Eli Raridon",
-   "team": "NE",
-   "pos": "TE",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-23T22:34:00-04:00",
-   "detail": null,
-   "espn_id": "4831959"
   },
   "00-0036973": {
    "name": "Travis Etienne Jr.",
@@ -4898,6 +4888,16 @@
    "detail": null,
    "espn_id": "3871102"
   },
+  "00-0040170": {
+   "name": "Elic Ayomanor",
+   "team": "TEN",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-02T20:46:00-05:00",
+   "detail": null,
+   "espn_id": "4883647"
+  },
   "name:TEN:tommytownsend": {
    "name": "Tommy Townsend",
    "team": "TEN",
@@ -5069,16 +5069,6 @@
    "date": "2026-10-31T18:21:00-04:00",
    "detail": null,
    "espn_id": "4431353"
-  },
-  "00-0040170": {
-   "name": "Elic Ayomanor",
-   "team": "TEN",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-30T19:20:00-04:00",
-   "detail": null,
-   "espn_id": "4883647"
   },
   "00-0037809": {
    "name": "Chig Okonkwo",
