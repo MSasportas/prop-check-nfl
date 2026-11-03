@@ -1,5 +1,5 @@
 {
- "at": "2026-11-02T22:30:00-05:00",
+ "at": "2026-11-02T23:00:01-05:00",
  "source": "espn",
  "players": {
   "00-0033307": {
@@ -319,6 +319,26 @@
    "detail": "Undisclosed",
    "espn_id": "5150660"
   },
+  "00-0040870": {
+   "name": "Ja'Kobi Lane",
+   "team": "BAL",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-02T22:32:00-05:00",
+   "detail": null,
+   "espn_id": "4870847"
+  },
+  "00-0036550": {
+   "name": "Rashod Bateman",
+   "team": "BAL",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-02T22:26:00-05:00",
+   "detail": null,
+   "espn_id": "4360939"
+  },
   "name:BAL:jaylinnhawkins": {
    "name": "Jaylinn Hawkins",
    "team": "BAL",
@@ -493,16 +513,15 @@
    "espn_id": "3916387",
    "comment": "Ravens head coach Jesse Minter said after Sunday's 36-10 loss to the Bills that Jackson will undergo surgery to address his right thumb injury and will be place"
   },
-  "00-0040888": {
-   "name": "Adam Randall",
-   "team": "BAL",
-   "pos": "RB",
-   "status": "Injured Reserve",
-   "fantasy": "IR-R",
-   "date": "2026-11-01T10:14:00-05:00",
-   "detail": "Neck",
-   "espn_id": "4685526",
-   "comment": "Randall (neck) wasn't activated from injured reserve Saturday and won't be available for Sunday's game against the Bills, Jeff Zrebiec of The Athletic reports."
+  "00-0035689": {
+   "name": "Dawson Knox",
+   "team": "BUF",
+   "pos": "TE",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-02T22:28:00-05:00",
+   "detail": null,
+   "espn_id": "3930086"
   },
   "00-0039875": {
    "name": "Ray Davis",
@@ -635,17 +654,6 @@
    "date": "2026-11-01T14:47:00-05:00",
    "detail": "Ankle",
    "espn_id": "4401823"
-  },
-  "00-0038679": {
-   "name": "Tyrell Shavers",
-   "team": "BUF",
-   "pos": "WR",
-   "status": "Out",
-   "fantasy": "PUP-R",
-   "date": "2026-10-28T19:45:00-04:00",
-   "detail": "Knee - ACL",
-   "espn_id": "4241476",
-   "comment": "The Bills designated Shavers (knee) to return from the reserve/PUP list Wednesday, but he will not play against the Ravens on Sunday, Cameron Wolfe of NFL Netwo"
   },
   "name:CAR:willlee": {
    "name": "Will Lee III",
@@ -1480,6 +1488,16 @@
    "detail": "Forearm",
    "espn_id": "4427816"
   },
+  "00-0033881": {
+   "name": "Evan Engram",
+   "team": "DEN",
+   "pos": "TE",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-02T22:39:00-05:00",
+   "detail": null,
+   "espn_id": "3051876"
+  },
   "name:DEN:talanoahufanga": {
    "name": "Talanoa Hufanga",
    "team": "DEN",
@@ -1620,16 +1638,6 @@
    "date": "2026-10-29T18:51:00-04:00",
    "detail": null,
    "espn_id": "4686472"
-  },
-  "00-0033881": {
-   "name": "Evan Engram",
-   "team": "DEN",
-   "pos": "TE",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-26T20:31:00-04:00",
-   "detail": null,
-   "espn_id": "3051876"
   },
   "name:DET:djreed": {
    "name": "D.J. Reed",
@@ -2279,16 +2287,6 @@
    "detail": "Groin",
    "espn_id": "4361196"
   },
-  "00-0038394": {
-   "name": "Will Mallory",
-   "team": "IND",
-   "pos": "TE",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-26T21:38:00-04:00",
-   "detail": null,
-   "espn_id": "4362523"
-  },
   "00-0040718": {
    "name": "Travis Hunter",
    "team": "JAX",
@@ -2472,6 +2470,16 @@
    "detail": null,
    "espn_id": "4911851"
   },
+  "00-0040890": {
+   "name": "Cyrus Allen",
+   "team": "KC",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-02T22:41:00-05:00",
+   "detail": null,
+   "espn_id": "4912218"
+  },
   "name:KC:mansoordelane": {
    "name": "Mansoor Delane",
    "team": "KC",
@@ -2601,16 +2609,6 @@
    "date": "2026-10-28T21:48:00-04:00",
    "detail": "Knee - ACL",
    "espn_id": "4591008"
-  },
-  "00-0040890": {
-   "name": "Cyrus Allen",
-   "team": "KC",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-28T15:37:00-04:00",
-   "detail": null,
-   "espn_id": "4912218"
   },
   "00-0040298": {
    "name": "Andrew Armstrong",
@@ -3545,16 +3543,6 @@
    "detail": null,
    "espn_id": "4431431"
   },
-  "00-0040563": {
-   "name": "Efton Chism III",
-   "team": "NE",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-23T22:33:00-04:00",
-   "detail": null,
-   "espn_id": "4695193"
-  },
   "00-0036973": {
    "name": "Travis Etienne Jr.",
    "team": "NO",
@@ -4062,6 +4050,16 @@
    "detail": null,
    "espn_id": "4035537"
   },
+  "00-0040586": {
+   "name": "Jaydon Blue",
+   "team": "PHI",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-02T22:45:00-05:00",
+   "detail": null,
+   "espn_id": "4685279"
+  },
   "00-0036567": {
    "name": "Elijah Mitchell",
    "team": "PHI",
@@ -4184,16 +4182,6 @@
    "date": "2026-10-31T23:12:00-04:00",
    "detail": "Knee",
    "espn_id": "4686911"
-  },
-  "00-0040586": {
-   "name": "Jaydon Blue",
-   "team": "PHI",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-28T17:23:00-04:00",
-   "detail": null,
-   "espn_id": "4685279"
   },
   "00-0037258": {
    "name": "Dameon Pierce",
@@ -4593,6 +4581,16 @@
    "date": "2026-10-25T18:55:00-04:00",
    "detail": null,
    "espn_id": "3040151"
+  },
+  "name:SEA:leonardwilliams": {
+   "name": "Leonard Williams",
+   "team": "SEA",
+   "pos": "DT",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-02T22:36:00-05:00",
+   "detail": "Shoulder",
+   "espn_id": "2971622"
   },
   "00-0039165": {
    "name": "Zach Charbonnet",
