@@ -31,8 +31,14 @@ DARNOLD = "00-0034869"
 NIX = "00-0039732"
 
 
-def cfg():
+def shipped():
     return common.load_config()
+
+
+def cfg():
+    """The rules most tests were written against: the shipped config with the pre-2026-11-03 read timing and pin_solo
+    gates (see pre_1103). Tests of the shipped values use shipped() / cfg_1103()."""
+    return pre_1103(common.load_config())
 
 
 def load(path):
@@ -111,11 +117,36 @@ def add_books(payload, edges=None, books=BOOKS7, last_update_z="2026-10-14T21:00
     return js
 
 
+def pre_1103(c):
+    """The read timing and Pinnacle-moves gates as they stood before 2026-11-03 (R right after the final injury report, C
+    pre-kickoff, no standard W; pin_solo 2+ pts, 4+ other books moving under 2, Hard Rock at or above Pinnacle's FAIR price,
+    switch off). The world tests were built on those; the 2026-11-03 rules have their own tests (test_rules_1103.py)."""
+    c = copy.deepcopy(c)
+    o = c["ops"]
+    o["pulls"]["r_before_min"] = 10 ** 6                 # R due as soon as the report counts in
+    o["tiers"].update({"full": 12, "tight": 7, "pool_low_allowance": 7,
+                       "pulls": {"full": "RC", "tight": "Rc", "below": "R"}})
+    o["monthly_cap"] = 1000
+    o["watch"]["tracks"]["pin_solo"].update({"min_move": 0.02, "max_move": None, "others_min": 4, "others_max": 0.02,
+                                             "price_test": "fair"})
+    o["pin_solo"]["live"] = False
+    return c
+
+
+def cfg_1103():
+    """The shipped config with the test world's slates switched on (weeks 5-8 of 2026, before the real go-live)."""
+    c = shipped()
+    c["ops"]["gap_guard"]["live_from"] = "2020-W01"
+    for t in c["ops"]["watch"]["tracks"].values():
+        t["from_slate"] = "2020-W01"
+    return c
+
+
 def legacy_role_cfg():
     """The live rules with the v1.0 role rule (role_unstable blocks overs only). The replayed Thursday is built
     around one pick (E. Wilson under 1.5 catches) whose role is jumpy; v1.1 blocks it. The v1.1 rule has its own
     tests (test_engine.Tightened); the replay keeps testing everything else on the live rules."""
-    c = cfg()
+    c = pre_1103(cfg())
     c["values"]["elig"]["role_cv_blocks"] = "over"
     c["ops"]["gap_guard"]["live_from"] = "2020-W01"       # the test world is weeks 5-8 of 2026, before the real go-live
     for t in c["ops"]["watch"]["tracks"].values():

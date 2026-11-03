@@ -300,49 +300,53 @@
    "sub": "The team has to review before picks resume. Picks already shown are unaffected."
   },
   "pulls": {
-   "_about": "Price reads. R = right after the final injury report counts as in (the six picked markets, Hard Rock + consensus books, ~6 credits a game). C = pre-kickoff: c_target_min before kickoff once inactives are confirmed, else c_fallback_min before kickoff (a game needs inactives for C to be 'price final'). Never a game that has kicked off. No M, F or D pulls, no game lines, no 1H, no alt lines.",
+   "_about": "Price reads, all timed off kickoff (Matt 2026-11-03). R = baseline, r_before_min (24 h) before kickoff, never before the final injury report counts as in. W = bet read, w_target_min (3 h) before kickoff, no later than w_latest_min. C = final, c_target_min before kickoff once inactives are confirmed, else c_fallback_min. Six picked markets, Hard Rock + consensus books, ~6 credits a read, ~18 a game.",
    "r_retry_min": 240,
    "r_max_reads": 3,
    "c_target_min": 70,
    "c_fallback_min": 45,
-   "c_latest_min": 20
+   "c_latest_min": 20,
+   "r_before_min": 1440,
+   "w_target_min": 180,
+   "w_latest_min": 100
   },
   "tiers": {
-   "_about": "Allowance = credits the NFL plan may spend (min of pool left with shared keys weighted, and monthly_cap minus this month's spend) / games not started yet that kick off in the next plan_window_days (7) days. full: R + C every game. tight: R every game, C only for games holding a pick or near-pick. below: R only, earliest kickoff first while credits last.",
-   "full": 12,
-   "tight": 7,
-   "pool_low_allowance": 7
+   "_about": "Allowance = credits the NFL plan may spend (min of pool left with shared keys weighted, and monthly_cap minus this month's spend) / games not started yet that kick off in the next plan_window_days (7) days. full: R + W + C every game (~18). tight: R + W every game, C only for games holding a pick or near-pick. below: R + W only.",
+   "full": 18,
+   "tight": 12,
+   "pool_low_allowance": 12
   },
   "pin_solo": {
-   "_about": "THE FALLBACK SWITCH (Matt, 2026-10-30), OFF. Set live to true and the watch track pin_solo (ops.watch.tracks.pin_solo: same gates, same -150..+120 window, same eligibility vetoes, same after-injury-report timing) also makes real picks through the normal pick and Record path, tagged method pin_solo and era ps1 (its own Record headline, never mixed into gg1). Gap + Guard keeps running; one pick per player across both methods. Needs ops.watch.active and the pin_solo track active, otherwise it stays off. Reads that may make a pick: R, W, C (the reads the research used).",
-   "live": false,
+   "_about": "LIVE since 2026-11-03 (Matt: 'A, let's get this live by Thursday'). The rule is ops.watch.tracks.pin_solo (gates) on R/W/C reads timed off kickoff (ops.pulls). Picks go through the normal pick and Record path, tagged method pin_solo, era ps1 (own Record headline, never mixed into gg1). Gap + Guard keeps running beside it; one pick per player across both methods. Safety pause at -10 units for ps1. false = off.",
+   "live": true,
    "era": "ps1",
    "method": "pin_solo",
    "safety_pause_units": -10,
    "safety_pause_text": "New Pinnacle-moves picks are stopped: that method is down 10 units or more."
   },
   "watch": {
-   "_about": "BEHIND THE SCENES research tracks (scripts/watch.py, docs/SPEC.md section 10). They never make a pick, never touch the Picks tab, the Record or era gg1; they write only data/watch/. Ported from Prop Check NBA. W = an optional extra price read (same cost as R or C: 6 credits, Hard Rock + 9 books) about w_target_min before kickoff, made ONLY when the credits left after reserving R and C for every game that has not started and kicks off before the keys reset (and for the whole plan window) still cover it. w_reads caps W reads per game; w_margin is credits kept in hand besides the reserve. w_pace shares out the spare over the weeks of games still to come this month, so one week cannot use it all.",
+   "_about": "BEHIND THE SCENES research tracks (scripts/watch.py, docs/SPEC.md section 10). They never make a pick, never touch the Picks tab, the Record or era gg1; they write only data/watch/. Ported from Prop Check NBA. W = an optional extra price read (same cost as R or C: 6 credits, Hard Rock + 9 books) about w_target_min before kickoff, made ONLY when the credits left after reserving R and C for every game that has not started and kicks off before the keys reset (and for the whole plan window) still cover it. w_reads caps W reads per game; w_margin is credits kept in hand besides the reserve. w_pace shares out the spare over the weeks of games still to come this month, so one week cannot use it all. Since 2026-11-03 the W read is a standard read for every game (ops.pulls.w_target_min); the watch-only W budget is gone.",
    "active": true,
-   "reads": ["R", "W", "C"],
-   "w_reads": 1,
-   "w_target_min": 180,
-   "w_latest_min": 100,
-   "w_margin": 12,
-   "w_pace": true,
+   "reads": [
+    "R",
+    "W",
+    "C"
+   ],
    "summary_weeks": 6,
    "tracks": {
     "pin_solo": {
      "active": true,
      "label": "Pinnacle moves alone",
-     "about": "Fallback option (NBA live rule since 2026-10-28). Between two reads of a game, Pinnacle's de-vigged chance moves 2+ pts toward a side while the median of the other books (4+, same line) moves under 2 pts, and Hard Rock's price on that side is at or better than Pinnacle's new fair price. Flat 1 unit at Hard Rock's price on the later read.",
+     "about": "LIVE RULE since 2026-11-03 (Matt). Between two reads of a game (R 24 h -> W 3 h -> C 70 min before kickoff), Pinnacle's de-vigged chance moves 1 to under 5 pts toward a side, and Hard Rock's price on that side is at or better than Pinnacle's POSTED price on the later read. Price window -150..+120, half-point lines only, live eligibility vetoes. The other books' move is logged, not a gate. Flat 1 unit at Hard Rock's price on the later read.",
      "from_slate": "2026-W08",
-     "min_move": 0.02,
-     "others_max": 0.02,
-     "others_min": 4,
+     "min_move": 0.01,
+     "others_max": null,
+     "others_min": 0,
      "min_ev_vs_pin": 0.0,
      "max_age_min": 60,
-     "skip_whole_lines": true
+     "skip_whole_lines": true,
+     "max_move": 0.05,
+     "price_test": "posted"
     },
     "pin_judge": {
      "active": true,
@@ -355,7 +359,7 @@
     }
    }
   },
-  "monthly_cap": 1000,
+  "monthly_cap": 1300,
   "shared_key_weight": 0.5,
   "plan_window_days": 7,
   "injury_fresh_min": 120,

@@ -386,9 +386,17 @@ def is_player_key(k):
 
 
 # ---------------------------------------------------------------- the plan (pure functions, easy to test)
-# Which pulls each tier runs (ops.tiers): R after the final injury report, C pre-kickoff. "c" = C only for games that hold
-# a pick or a near-pick. "below" = under the tight threshold: R only, earliest kickoff first while credits last.
-TIER_PULLS = {"full": "RC", "tight": "Rc", "below": "R"}
+# Which pulls each tier runs (ops.tiers). All three are timed off kickoff (2026-11-03, Matt: "a specific time prior to lock"):
+# R = baseline, r_before_min (24 h) before kickoff, never before the final injury report counts as in; W = bet read,
+# w_target_min (3 h) before kickoff; C = final, c_target_min (70 min) before kickoff once inactives are in. "c" = C only for
+# games that hold a pick or a near-pick. "below" = under the tight threshold: R and W only.
+TIER_PULLS = {"full": "RWC", "tight": "RWc", "below": "RW"}
+
+
+def r_due_at(k, rt, pc):
+    """When R is due for a game kicking off at k: r_before_min before kickoff, or when the final report counts as in if later."""
+    base = k - timedelta(minutes=pc.get("r_before_min", 1440))
+    return base if rt is None or rt <= base else rt
 
 
 def make_plan(pool_left, games_left, cfg):
@@ -399,7 +407,8 @@ def make_plan(pool_left, games_left, cfg):
         if allowance >= t[tier]:
             name = tier
             break
-    return {"allowance": round(allowance, 2), "tier": name, "pulls": TIER_PULLS[name], "pool_at_plan": pool_left,
+    pulls = (t.get("pulls") or {}).get(name) or TIER_PULLS[name]
+    return {"allowance": round(allowance, 2), "tier": name, "pulls": pulls, "pool_at_plan": pool_left,
             "games_left": games_left}
 
 
@@ -424,33 +433,6 @@ def c_target(k, confirmed, pc):
     return k - timedelta(minutes=pc["c_target_min"]) if confirmed else k - timedelta(minutes=pc["c_fallback_min"])
 
 
-def watch_budget(plan, pool_avail, reserve_games, done, cfg, report_times=None, now=None):
-    """Credits the watch-only W reads may spend now: what the plan can pay (weighted, capped) minus the R and C still owed to
-    EVERY unstarted game in reserve_games (the plan window and the games before the keys reset), minus ops.watch.w_margin.
-    Never negative. None when W reads are off or the plan is not in the full tier."""
-    wc = (cfg.get("ops") or {}).get("watch") or {}
-    if not wc.get("active") or not plan or plan.get("tier") != "full" or pool_avail is None:
-        return None
-    per = len(pick_keys(cfg)) * regions_billed(len(request_books(cfg)))
-    last = timedelta(minutes=cfg["ops"]["pulls"]["c_latest_min"])
-    owed, weeks = 0, set()
-    w_spent = per * sum(1 for reads in done.values() for f in reads if f["pull"] == "W")     # this slate's W reads so far
-    for g in reserve_games:
-        reads = done.get(g["id"], [])
-        if now is not None and now >= common.parse_iso(g["start"]) - last:
-            continue                                        # no read can still be made for it
-        weeks.add(g.get("week"))
-        rt = (report_times or {}).get(g["id"])
-        r_done = any(f["pull"] == "R" and (rt is None or f["at"] >= rt) for f in reads)
-        c_done = any(f["pull"] == "C" for f in reads)
-        owed += (0 if r_done else per) + (0 if c_done else per)
-    spare = max(0.0, float(pool_avail) - owed - float(wc.get("w_margin", 12)))
-    if wc.get("w_pace", True) and weeks:
-        # share out what is spare over the weeks of games still to come this month: this week may use its share
-        spare = max(0.0, (spare + w_spent) / len(weeks) - w_spent)
-    return spare
-
-
 def due_pulls(now, games, plan, cfg, done, focus, started, report_times, report_ok, confirmed, watch=None):
     """Which pull each game needs right now. One action per game per run at most.
 
@@ -459,7 +441,7 @@ def due_pulls(now, games, plan, cfg, done, focus, started, report_times, report_
     report_times: {gid: datetime} when the final injury report counts as in (R is due from then).
     report_ok: set of game ids whose injury read is fresh enough to say the report is in.
     confirmed: set of game ids with both teams' inactives posted.
-    watch: None, or {"spare": credits} from watch_budget(): lets a game with no R or C due take one watch-only W read.
+    watch: unused (kept for callers). W is a standard read now, part of the plan's pulls.
     Returns [dict(pull, game, keys [feed keys], books [bookmakers])] in kickoff order."""
     ops = cfg["ops"]
     pc = ops["pulls"]
@@ -485,27 +467,24 @@ def due_pulls(now, games, plan, cfg, done, focus, started, report_times, report_
                 ks = keys if "C" in pulls else [m for m in keys if m in focus.get(g["id"], ())]
                 if ks:
                     choice = ("C", ks)
-        # R: after the final injury report counts as in
+        # W: the bet read, w_target_min before kickoff (never later than w_latest_min before). Needs the report in.
         rt = report_times.get(g["id"])
-        if choice is None and "R" in pulls and rt is not None and rt <= now and g["id"] in report_ok:
+        w_from = k - timedelta(minutes=pc.get("w_target_min", 180))
+        w_to = k - timedelta(minutes=pc.get("w_latest_min", 100))
+        if choice is None and "W" in pulls and rt is not None and rt <= now and g["id"] in report_ok \
+                and w_from <= now < w_to:
+            ws = sorted((f for f in reads if f["pull"] == "W"), key=lambda f: f["at"])
+            # one W; a second only when the first came back without Hard Rock and 20 minutes have passed
+            if not ws or (len(ws) == 1 and not ws[0].get("hr") and now - ws[0]["at"] >= timedelta(minutes=20)):
+                choice = ("W", keys)
+        # R: the baseline, r_before_min before kickoff and after the final injury report counts as in; not once W is due
+        if choice is None and "R" in pulls and rt is not None and r_due_at(k, rt, pc) <= now \
+                and ("W" not in pulls or now < w_from) and g["id"] in report_ok:
             rs = sorted((f for f in reads if f["pull"] == "R" and f["at"] >= rt), key=lambda f: f["at"])
             hr_up = any(f.get("hr") for f in rs)
             retry = timedelta(minutes=pc["r_retry_min"])
             if not rs or (not hr_up and len(rs) < pc["r_max_reads"] and now - rs[-1]["at"] >= retry):
                 choice = ("R", keys)
-        # W: watch-only read about w_target_min before kickoff, after R, never later than w_latest_min before kickoff, and only
-        # while the budget (credits left after reserving R and C for every game) covers it. It never feeds a live pick.
-        wc = ops.get("watch") or {}
-        if choice is None and watch is not None and wc.get("active") and g["id"] in report_ok:
-            ws = [f for f in reads if f["pull"] == "W"]
-            rt = report_times.get(g["id"])
-            has_r = any(f["pull"] == "R" and (rt is None or f["at"] >= rt) for f in reads)
-            if has_r and len(ws) < wc.get("w_reads", 1) and \
-                    k - timedelta(minutes=wc.get("w_target_min", 180)) <= now < k - timedelta(minutes=wc.get("w_latest_min", 100)):
-                cost = len(keys) * regions_billed(len(books))
-                if watch["spare"] >= cost:
-                    watch["spare"] -= cost
-                    choice = ("W", keys)
         if choice:
             out.append({"pull": choice[0], "game": g, "keys": choice[1], "books": books})
     return out
@@ -531,7 +510,9 @@ def next_check_at(now, games, plan, cfg, done, report_times, started, confirmed=
         reads = done.get(g["id"], [])
         rt = report_times.get(g["id"])
         if "R" in pulls and rt is not None and not any(f["pull"] == "R" and f["at"] >= rt for f in reads):
-            cands.append(rt)
+            cands.append(r_due_at(k, rt, pc))
+        if "W" in pulls and not any(f["pull"] == "W" for f in reads):
+            cands.append(k - timedelta(minutes=pc.get("w_target_min", 180)))
         if "C" in pulls or "c" in pulls:
             cands.append(c_target(k, g["id"] in confirmed, pc))
     cands = [c for c in cands if c > now]
@@ -872,7 +853,7 @@ def run_pulls(now, slate, games, games_left, cfg, matcher_for, focus, report_tim
     focus {gid: set(feed keys)}: markets holding an open pick or near-pick (tight tier's C). report_times {gid: when the final
     injury report counts as in}. report_ok: game ids whose injury read is fresh after that time. confirmed: game ids with
     both teams' inactives posted. reserve_games: every game that has not started and kicks off in the plan window or before the
-    keys reset (dicts with id, start): the R and C still owed to them are held back before any watch-only W read is made."""
+    keys reset (dicts with id, start). Unused since W became a standard read (2026-11-03)."""
     ops = cfg["ops"]
     keys = load_keys()
     pool = Pool(keys, now)
@@ -927,11 +908,7 @@ def run_pulls(now, slate, games, games_left, cfg, matcher_for, focus, report_tim
         t = common.parse_iso((st["failed"].get(gid) or {}).get("at"))
         return t is not None and t <= now < t + rest
 
-    spare = watch_budget(plan, plan.get("pool_at_plan"),
-                         [g for g in (reserve_games if reserve_games is not None else games) if not started.get(g["id"])],
-                         done_map(st), cfg, report_times, now)
-    due = [d for d in due_pulls(now, games, plan, cfg, done_map(st), focus, started, report_times, report_ok,
-                                confirmed, None if spare is None else {"spare": spare})
+    due = [d for d in due_pulls(now, games, plan, cfg, done_map(st), focus, started, report_times, report_ok, confirmed)
            if not resting(d["game"]["id"])]
     res["due"] = [{"pull": d["pull"], "game_id": d["game"]["id"], "cost_max": est_cost(d)} for d in due]
     failed, no_budget = [], []

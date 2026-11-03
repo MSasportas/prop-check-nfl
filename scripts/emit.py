@@ -39,10 +39,13 @@ def history(it, cfg):
 
 
 def vs_text(sh):
-    """'+3.4% vs 5 books (Pinnacle in)'; for a Pinnacle-moves pick 'Pinnacle +3 pts, other books +1'."""
+    """'+3.4% vs 5 books (Pinnacle in)'; for a Pinnacle-moves pick 'Pinnacle moved +3 pts · Pinnacle -126, Hard Rock -120'."""
     if sh.get("method") == "pin_solo":
-        return "Pinnacle %+g pts, other books %+g" % (round(100 * (sh["pin_after"] - sh["pin_before"]), 1),
-                                                       round(100 * (sh["others_move"] or 0.0), 1))
+        mv = round(100 * (sh["pin_after"] - sh["pin_before"]), 1)
+        if sh.get("pin_price") is not None:
+            return "Pinnacle moved %+g pts · Pinnacle %s, Hard Rock %s" % (mv, common.fmt_price(sh["pin_price"]),
+                                                                       common.fmt_price(sh["price"]))
+        return "Pinnacle %+g pts, other books %+g" % (mv, round(100 * (sh["others_move"] or 0.0), 1))
     return "%+.1f%% vs %d books (Pinnacle in)" % (100 * sh["gap_ev"], sh["n_books"])
 
 
@@ -75,7 +78,7 @@ def pick_doc(it, rank, inp, price_final):
         "final_ev_pct": None if ps else round(100 * sh["final_ev"], 1),
         "pin_solo": ({"window": sh.get("window"), "pin_move_pts": round(100 * (sh["pin_after"] - sh["pin_before"]), 1),
                       "others_move_pts": round(100 * (sh["others_move"] or 0.0), 1), "n_others": sh["n_others"],
-                      "fair_price": sh.get("pin_fair_price"), "ev_vs_fair_pct": round(100 * sh["ev_vs_pin"], 1)}
+                      "fair_price": sh.get("pin_fair_price"), "pin_price": sh.get("pin_price"), "ev_vs_fair_pct": round(100 * sh["ev_vs_pin"], 1)}
                      if ps else None),
         "reason": clean(it.get("reason")), "settled": it["state"],
         "settled_text": engine.SETTLED_TEXT.get(it["state"], it["state"]),

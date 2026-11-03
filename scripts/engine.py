@@ -772,7 +772,7 @@ def _shown_ps(inp, r, rank, at):
         "p_pct": pct_floor(r["pin_after"]), "breakeven_pct": pct_round(odds.break_even(price)),
         "pin_before": r["pin_before"], "pin_after": r["pin_after"], "others_move": r["others_move"],
         "n_others": r["n_others"], "n_books": r["n_others"], "ev_vs_pin": r["ev_vs_pin"],
-        "pin_fair_price": watch.fair_price(r["pin_after"]), "window": r["window"], "prev_read": r["prev_read"],
+        "pin_fair_price": watch.fair_price(r["pin_after"]), "pin_price": r.get("pin_price_after"), "window": r["window"], "prev_read": r["prev_read"],
         "price_before": r.get("price_before"), "final_ev": r["ev_vs_pin"],
         "reason": watch.plain_reason(r, bet), "state": inp.settled(g, r["team"]), "thin": bool(mm["thin"]),
         "mu": round(mm["mu"], 2), "games_used": mm["n"], "games_this_season": mm["n_season"], "flags": mm["flags"],

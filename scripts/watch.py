@@ -46,6 +46,8 @@ GATES = {
     "books": "fewer than 4 other books on this line",
     "others_moved": "the other books moved too",
     "worse_than_fair": "Hard Rock price worse than Pinnacle's fair price",
+    "worse_than_posted": "Hard Rock price worse than Pinnacle's posted price",
+    "too_big": "Pinnacle moved too far (max_move or more)",
     "price_window": "Hard Rock price outside the price window",
     "whole_line": "whole-number line",
     "ineligible": "blocked by the live eligibility rules",
@@ -232,11 +234,16 @@ def solo_rows(a, b, g, inp, eng, cfg):
                 why = "hr_line"
             elif hb[key]["why"] is not None or price is None:
                 why = "hr_feed"
-            elif len(mv) < ps["others_min"]:
+            elif ps.get("max_move") is not None and abs(fb - fa) >= ps["max_move"] - EPS:
+                why = "too_big"
+            elif ps.get("others_min") and len(mv) < ps["others_min"]:
                 why = "books"
-            elif statistics.median(mv) >= ps["others_max"] - EPS:
+            elif mv and ps.get("others_max") is not None and statistics.median(mv) >= ps["others_max"] - EPS:
                 why = "others_moved"
-            elif gg.ev(pin_b, price) < ps.get("min_ev_vs_pin", 0.0) - EPS:
+            elif ps.get("price_test") == "posted" and \
+                    odds.decimal(price) < odds.decimal(pb[0] if side == "over" else pb[1]) - EPS:
+                why = "worse_than_posted"
+            elif ps.get("price_test") != "posted" and gg.ev(pin_b, price) < ps.get("min_ev_vs_pin", 0.0) - EPS:
                 why = "worse_than_fair"
             elif not gg.inside_gate(price, t):
                 why = "price_window"
@@ -600,14 +607,17 @@ def live_candidates(inp, eng, by_game, cfg, now):
 
 
 def plain_reason(r, bet):
-    """'Pinnacle moved 3 pts toward Over 5.5 receptions; the other books moved 1; Hard Rock is still at -115, better than
-    Pinnacle's fair -122.'"""
+    """'Pinnacle moved 3 pts toward Over 5.5 receptions since Saturday; Hard Rock is still at -115, better than Pinnacle's -122.'"""
     g = lambda x: "%g" % round(abs(x) * 100, 1)                 # noqa: E731
-    fair = fair_price(r["pin_after"])
     still = r.get("price_before") == r["price"]
-    cmp_ = "better than" if (r.get("ev_vs_pin") or 0) > 1e-4 else "level with"
-    om = r["others_move"] or 0.0
-    others = g(om) if om >= 0 else "%s the other way" % g(om)
-    return "Pinnacle moved %s pts toward %s; the other books moved %s; Hard Rock is %s %s, %s Pinnacle's fair %s." % (
-        g(r["pin_after"] - r["pin_before"]), bet, others, "still at" if still else "now at",
-        common.fmt_price(r["price"]), cmp_, common.fmt_price(fair))
+    pin = r.get("pin_price_after")
+    if pin is None:
+        pin, what = fair_price(r["pin_after"]), "fair "
+    else:
+        what = ""
+    d_hr, d_pin = odds.decimal(r["price"]), odds.decimal(pin)
+    cmp_ = "better than" if d_hr > d_pin + 1e-9 else ("level with" if abs(d_hr - d_pin) <= 1e-9 else "worse than")
+    since = {"R": "since yesterday", "W": "since this morning's read"}.get(r.get("prev_read"), "since the last read")
+    return "Pinnacle moved %s pts toward %s %s; Hard Rock is %s %s, %s Pinnacle's %s%s." % (
+        g(r["pin_after"] - r["pin_before"]), bet, since, "still at" if still else "now at",
+        common.fmt_price(r["price"]), cmp_, what, common.fmt_price(pin))

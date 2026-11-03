@@ -22,9 +22,7 @@ LU_R, LU_C = "2026-10-14T21:00:00Z", "2026-10-15T23:00:00Z"
 
 
 def cfg_no_w():
-    c = helpers.legacy_role_cfg()
-    c["ops"]["watch"]["w_reads"] = 0                      # these tests run R and C only
-    return c
+    return helpers.legacy_role_cfg()                      # these tests run R and C only (tiers RC)
 
 
 def shifted(payload, pin=0.0, others=0.0, feed=RA, who=WHO):
@@ -304,6 +302,12 @@ class SoftAndSeparate(Base):
                                       "date": "2026-10-15"}, helpers.cfg()))
 
 
+def with_w(c):
+    """Standard W read (2026-11-03): R, W and C in the plan."""
+    c["ops"]["tiers"]["pulls"] = {"full": "RWC", "tight": "RWc", "below": "RW"}
+    return c
+
+
 def cfg_live(live=True, **ps):
     c = cfg_no_w()
     c["ops"]["pin_solo"]["live"] = live
@@ -324,7 +328,7 @@ class LiveSwitch(unittest.TestCase):
         build(w, pin=pin, others=others, hr_under=hr_under, lu=LU_C)
         return w.at(C_AT)
 
-    def test_the_shipped_switch_is_off(self):
+    def test_the_pre_1103_test_config_has_the_switch_off(self):
         c = helpers.cfg()
         self.assertIs(c["ops"]["pin_solo"]["live"], False)
         self.assertFalse(watch.pin_live(c, "2026-W08"))
@@ -387,8 +391,8 @@ class LiveSwitch(unittest.TestCase):
             self.assertEqual((b["method"], b["era"], b["player_id"], b["mkey"], b["side"], b["line"], b["price"], b["read_pull"]),
                              ("pin_solo", "ps1", WILSON, "rush_att", "under", 17.5, 105, "C"))
             self.assertTrue(sh[0]["id"].endswith(":ps"))
-            self.assertRegex(b["reason"], r"^Pinnacle moved 3 pts toward Under 17\.5 carries; the other books moved 0\.9; "
-                                          r"Hard Rock is still at \+105, better than Pinnacle's fair [+-]\d+\.$")
+            self.assertRegex(b["reason"], r"^Pinnacle moved 3 pts toward Under 17\.5 carries since yesterday; "
+                                          r"Hard Rock is still at \+105, better than Pinnacle's [+-]\d+\.$")
             p = [x for x in s["picks"] if x["state"] == "open"][0]
             self.assertEqual((p["method"], p["era"], p["settled_text"], p["price"], p["rank"]),
                              ("pin_solo", "ps1", "Inactives confirmed", 105, 1))
@@ -396,7 +400,7 @@ class LiveSwitch(unittest.TestCase):
             self.assertEqual(p["pin_solo"]["others_move_pts"], 0.9)
             self.assertIsNone(p["gap_pct"])
             self.assertIsNone(p["final_ev_pct"])
-            self.assertEqual(p["vs"], "Pinnacle +3 pts, other books +0.9")
+            self.assertRegex(p["vs"], r"^Pinnacle moved \+3 pts · Pinnacle [+-]\d+, Hard Rock \+105$")
             self.assertTrue(s["methods"]["pin_solo"]["live"])
             self.assertTrue(p["flags"]["price_final"])
             rec = common.read_json(w.path("record.json"))
@@ -428,8 +432,7 @@ class LiveSwitch(unittest.TestCase):
             w.close()
 
     def test_price_out_of_the_window_pulls_the_pick(self):
-        c = cfg_live(True)
-        c["ops"]["watch"]["w_reads"] = 1
+        c = with_w(cfg_live(True))
         w = World(pool=(500, 500, 500, 500), config=c)
         try:
             build(w)
@@ -521,7 +524,8 @@ class LiveSwitch(unittest.TestCase):
 
 
 class WRead(unittest.TestCase):
-    """The optional W read: ~3 hours before kickoff, only with credits to spare after reserving R and C for every game."""
+    """The W read (standard since 2026-11-03): w_target_min (3 h) before kickoff, up to w_latest_min before, once per game
+    (a second only when the first had no Hard Rock), with the report in. R is the baseline 24 h before kickoff."""
 
     def games(self, n, day="2026-11-01"):
         return [{"id": "g%d" % i, "start": day + "T13:00:00-05:00", "away": "A%d" % i, "home": "B%d" % i} for i in range(n)]
@@ -529,78 +533,80 @@ class WRead(unittest.TestCase):
     def plan(self, tier="full"):
         return {"tier": tier, "pulls": odds.TIER_PULLS[tier], "pool_at_plan": 200.0}
 
-    def test_budget_is_what_is_left_after_r_and_c_for_every_game(self):
-        cfg = helpers.cfg()
-        now = common.parse_iso("2026-11-01T09:00:00-05:00")
-        gs = self.games(13)
-        per = 6
-        self.assertEqual(odds.watch_budget(self.plan(), 500, gs, {}, cfg, None, now), 500 - 13 * 2 * per - 12)
-        r_done = {g["id"]: [{"pull": "R", "at": common.parse_iso("2026-10-30T17:30:00-04:00")}] for g in gs}
-        self.assertEqual(odds.watch_budget(self.plan(), 211, gs, r_done, cfg, None, now), 211 - 13 * per - 12)
-        self.assertEqual(odds.watch_budget(self.plan(), 100, gs, r_done, cfg, None, now), 10.0)              # 100 - 78 - 12
-        self.assertEqual(odds.watch_budget(self.plan(), 50, gs, r_done, cfg, None, now), 0.0)             # never negative
-        self.assertIsNone(odds.watch_budget(self.plan("tight"), 500, gs, {}, cfg, None, now))
-        c = copy.deepcopy(cfg)
-        c["ops"]["watch"]["active"] = False
-        self.assertIsNone(odds.watch_budget(self.plan(), 500, gs, {}, c, None, now))
-
-    def test_the_spare_is_spread_over_the_weeks_still_to_come(self):
-        cfg = helpers.cfg()
-        now = common.parse_iso("2026-11-01T09:00:00-05:00")
-        gs = []
-        for wk, day in ((8, "2026-11-01"), (9, "2026-11-08"), (10, "2026-11-15"), (11, "2026-11-22"), (12, "2026-11-29")):
-            gs += [dict(g, week=wk, id="%s_%d" % (g["id"], wk), start=day + "T13:00:00-05:00") for g in self.games(2)]
-        r_done = {g["id"]: [{"pull": "R", "at": common.parse_iso("2026-10-30T17:30:00-04:00")}]
-                  for g in gs if g["week"] == 8}
-        owed = (2 * 12 * 4) + 2 * 6                               # four weeks owe R+C, week 8 owes C only
-        base = 400 - owed - 12
-        self.assertEqual(odds.watch_budget(self.plan(), 400, gs, r_done, cfg, None, now), base / 5.0)
-        # one W already made this week (6 credits): the week's share counts it
-        one = {k: list(v) for k, v in r_done.items()}
-        one[gs[0]["id"]].append({"pull": "W", "at": common.parse_iso("2026-11-01T10:05:00-05:00")})
-        got = odds.watch_budget(self.plan(), 394, gs, one, cfg, None, now)       # the 6 credits are out of the pool now
-        self.assertAlmostEqual(got, max(0.0, (394 - owed - 12 + 6) / 5.0 - 6))
-        c = copy.deepcopy(cfg)
-        c["ops"]["watch"]["w_pace"] = False
-        self.assertEqual(odds.watch_budget(self.plan(), 400, gs, r_done, c, None, now), base)
-        last = [g for g in gs if g["week"] == 12]
-        self.assertEqual(odds.watch_budget(self.plan(), 400, last, {}, cfg, None, now), 400 - 2 * 12 - 12)   # last week: all of it
-
-    def test_w_is_due_in_its_window_only_after_r_and_only_while_the_spare_lasts(self):
-        cfg = helpers.cfg()
+    def test_w_is_due_in_its_window_for_every_game(self):
+        cfg = helpers.shipped()
         gs = self.games(3)
         k = common.parse_iso(gs[0]["start"])
         rt = {g["id"]: common.parse_iso("2026-10-30T17:00:00-04:00") for g in gs}
-        done = {g["id"]: [{"pull": "R", "at": common.parse_iso("2026-10-30T17:30:00-04:00"),
-                                  "ina": False, "hr": ["player_receptions"]}] for g in gs}
+        done = {g["id"]: [{"pull": "R", "at": k - timedelta(hours=24), "ina": False, "hr": ["player_receptions"]}] for g in gs}
         ok = {g["id"] for g in gs}
 
-        def due(now, spare, done=done):
+        def due(now, done=done):
             return [(d["pull"], d["game"]["id"], odds.est_cost(d)) for d in odds.due_pulls(
-                now, gs, self.plan(), cfg, done, {}, {}, rt, ok, set(), {"spare": spare})]
-        self.assertEqual(due(k - timedelta(minutes=181), 100), [])
-        self.assertEqual(due(k - timedelta(minutes=179), 100), [("W", "g0", 6), ("W", "g1", 6), ("W", "g2", 6)])
-        self.assertEqual(due(k - timedelta(minutes=179), 13), [("W", "g0", 6), ("W", "g1", 6)])      # spare runs out
-        self.assertEqual(due(k - timedelta(minutes=179), 5), [])
-        self.assertEqual(due(k - timedelta(minutes=99), 100), [])                                  # too close to C
-        self.assertNotIn("W", [x[0] for x in due(k - timedelta(minutes=179), 100, done={})])     # no R yet: not W
-        two = {g: [dict(f) for f in fs] + [{"pull": "W", "at": common.parse_iso("2026-11-01T10:05:00-05:00"),
-                                             "ina": False}] for g, fs in done.items()}
-        self.assertEqual(due(k - timedelta(minutes=170), 100, done=two), [])                       # w_reads = 1
-        self.assertEqual(odds.due_pulls(k - timedelta(minutes=179), gs, self.plan(), cfg, done, {}, {}, rt, ok, set()), [])  # no watch arg
+                now, gs, self.plan(), cfg, done, {}, {}, rt, ok, set())]
+        self.assertEqual(due(k - timedelta(minutes=181)), [])
+        self.assertEqual(due(k - timedelta(minutes=179)), [("W", "g0", 6), ("W", "g1", 6), ("W", "g2", 6)])
+        self.assertEqual(due(k - timedelta(minutes=99)), [])                                       # too close to C
+        self.assertEqual([x[0] for x in due(k - timedelta(minutes=179), done={})], ["W", "W", "W"])  # no R: W still made
+        two = {g: [dict(f) for f in fs] + [{"pull": "W", "at": k - timedelta(minutes=179), "ina": False,
+                                             "hr": ["player_receptions"]}] for g, fs in done.items()}
+        self.assertEqual(due(k - timedelta(minutes=150), done=two), [])                            # one W
+        empty = {g: [dict(f) for f in fs] + [{"pull": "W", "at": k - timedelta(minutes=179), "ina": False, "hr": []}]
+                 for g, fs in done.items()}
+        self.assertEqual(due(k - timedelta(minutes=165), done=empty), [])                          # 20 minutes first
+        self.assertEqual(len(due(k - timedelta(minutes=155), done=empty)), 3)                      # Hard Rock was missing
 
-    def test_c_and_r_always_win_over_w(self):
-        cfg = helpers.cfg()
+    def test_r_is_24_hours_before_kickoff_and_never_before_the_report(self):
+        cfg = helpers.shipped()
+        gs = self.games(1)
+        k = common.parse_iso(gs[0]["start"])
+        ok = {"g0"}
+
+        def due(now, rt):
+            return [d["pull"] for d in odds.due_pulls(now, gs, self.plan(), cfg, {}, {}, {}, {"g0": rt}, ok, set())]
+        friday = common.parse_iso("2026-10-30T16:00:00-04:00")
+        self.assertEqual(due(k - timedelta(hours=25), friday), [])                 # report in, but not 24 h out yet
+        self.assertEqual(due(k - timedelta(hours=23, minutes=55), friday), ["R"])
+        late = k - timedelta(hours=10)                                             # a late report (holiday week)
+        self.assertEqual(due(k - timedelta(hours=20), late), [])
+        self.assertEqual(due(late + timedelta(minutes=5), late), ["R"])
+        self.assertEqual(odds.r_due_at(k, late, cfg["ops"]["pulls"]), late)
+
+    def test_c_wins_over_w_and_r_stops_once_w_is_due(self):
+        cfg = helpers.shipped()
         gs = self.games(1)
         k = common.parse_iso(gs[0]["start"])
         rt = {"g0": common.parse_iso("2026-10-30T17:00:00-04:00")}
-        d = odds.due_pulls(k - timedelta(minutes=170), gs, self.plan(), cfg, {}, {}, {}, rt, {"g0"}, set(), {"spare": 99})
-        self.assertEqual([x["pull"] for x in d], ["R"])
+        d = odds.due_pulls(k - timedelta(minutes=170), gs, self.plan(), cfg, {}, {}, {}, rt, {"g0"}, set())
+        self.assertEqual([x["pull"] for x in d], ["W"])
+        d = odds.due_pulls(k - timedelta(minutes=70), gs, self.plan(), cfg, {}, {}, {}, rt, {"g0"}, {"g0"})
+        self.assertEqual([x["pull"] for x in d], ["C"])
+
+    def test_every_game_type_gets_three_reads_off_its_own_kickoff(self):
+        cfg = helpers.shipped()
+        pc = cfg["ops"]["pulls"]
+        for start in ("2026-11-08T09:30:00-05:00", "2026-11-08T13:00:00-05:00", "2026-11-08T16:25:00-05:00",
+                      "2026-11-08T20:20:00-05:00", "2026-11-09T20:15:00-05:00", "2026-11-12T20:15:00-05:00"):
+            g = [{"id": "x", "start": start, "away": "A", "home": "B"}]
+            k = common.parse_iso(start)
+            rt = {"x": k - timedelta(hours=40)}
+            got = []
+            done = {"x": []}
+            t = k - timedelta(hours=30)
+            while t < k:
+                for d in odds.due_pulls(t, g, self.plan(), cfg, done, {}, {}, rt, {"x"}, {"x"}):
+                    got.append((d["pull"], round((k - t).total_seconds() / 60)))
+                    done["x"].append({"pull": d["pull"], "at": t, "ina": True, "hr": ["player_receptions"]})
+                t += timedelta(minutes=10)
+            self.assertEqual([p for p, _ in got], ["R", "W", "C"], start)
+            self.assertTrue(pc["r_before_min"] - 10 < got[0][1] <= pc["r_before_min"], got)
+            self.assertTrue(pc["w_target_min"] - 10 < got[1][1] <= pc["w_target_min"], got)
+            self.assertTrue(pc["c_target_min"] - 10 < got[2][1] <= pc["c_target_min"], got)
 
 
 class WReadInTheWorld(unittest.TestCase):
-    def test_w_read_is_made_logged_as_w_and_used_by_the_watch_tracks_only(self):
-        c = helpers.legacy_role_cfg()
+    def test_w_read_is_made_logged_as_w_and_used_by_the_watch_tracks(self):
+        c = with_w(helpers.legacy_role_cfg())
         w = World(pool=(500, 500, 500, 500), config=c)
         try:
             build(w, hr_under=105)
@@ -612,18 +618,18 @@ class WReadInTheWorld(unittest.TestCase):
             self.assertEqual(w.status()["pool_total"], spent_r - 6)
             ledger = common.read_json(w.path("state", "credits.json"))
             self.assertEqual([e["pull"] for e in ledger["spent"] if e["game_id"] == SEA_DEN], ["R", "W"])
-            w.at("2026-10-15T17:30")                         # w_reads = 1: not again
+            w.at("2026-10-15T17:30")                         # one W: not again
             self.assertEqual(w.status()["pool_total"], spent_r - 6)
             f = [e for e in events(w) if e["t"] == "flag" and e["track"] == "pin_solo"]
             self.assertEqual([(e["read"], e["window"]) for e in f], [("W", "R→W")])
             self.assertEqual(summary(w)["credits"]["w_reads"], 1)
             self.assertEqual(summary(w)["credits"]["w_credits"], 6)
-            self.assertEqual([e for e in w.events() if e["t"] == "shown"], [])
+            self.assertEqual([e for e in w.events() if e["t"] == "shown"], [])     # switch off in this config
         finally:
             w.close()
 
     def test_clv_against_pinnacles_closing_fair_comes_from_the_c_read(self):
-        c = helpers.legacy_role_cfg()
+        c = with_w(helpers.legacy_role_cfg())
         w = World(pool=(500, 500, 500, 500), config=c)
         try:
             build(w, hr_under=105)
@@ -640,18 +646,6 @@ class WReadInTheWorld(unittest.TestCase):
             t = track(w, "pin_solo")
             self.assertEqual((t["total"]["clv"]["n"], t["total"]["clv"]["positive"]), (1, 1))
             self.assertEqual(t["weeks"][0]["bets"][0]["clv"], cl[0]["clv"])
-        finally:
-            w.close()
-
-    def test_no_w_when_credits_do_not_cover_r_and_c_for_every_game(self):
-        w = World(pool=(40,), config=helpers.legacy_role_cfg())
-        try:
-            build(w, hr_under=105)
-            w.at(R_AT)
-            w.at("2026-10-15T17:20")
-            self.assertEqual([d["pull"] for d in w.status()["due"] if d["game_id"] == SEA_DEN], [])
-            ledger = common.read_json(w.path("state", "credits.json"))
-            self.assertNotIn("W", [e["pull"] for e in ledger["spent"]])
         finally:
             w.close()
 
