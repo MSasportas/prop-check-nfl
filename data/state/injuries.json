@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T11:30:19-05:00",
+ "at": "2026-11-03T12:00:20-05:00",
  "source": "espn",
  "players": {
   "name:ARI:walternolen": {
@@ -319,17 +319,6 @@
    "detail": "Undisclosed",
    "espn_id": "5150660"
   },
-  "00-0035993": {
-   "name": "Tyler Huntley",
-   "team": "BAL",
-   "pos": "QB",
-   "status": "Doubtful",
-   "fantasy": "DOUBTFUL",
-   "date": "2026-11-03T11:20:00-05:00",
-   "detail": "Toe",
-   "espn_id": "4035671",
-   "comment": "doubtful"
-  },
   "name:BAL:olaivavegaioane": {
    "name": "Olaivavega Ioane",
    "team": "BAL",
@@ -379,6 +368,16 @@
    "date": "2026-11-02T21:13:00-05:00",
    "detail": "Foot",
    "espn_id": "3915189"
+  },
+  "name:BAL:tylerloop": {
+   "name": "Tyler Loop",
+   "team": "BAL",
+   "pos": "PK",
+   "status": "Doubtful",
+   "fantasy": "DOUBTFUL",
+   "date": "2026-11-02T20:54:00-05:00",
+   "detail": "Groin",
+   "espn_id": "4697745"
   },
   "00-0034975": {
    "name": "Justice Hill",
@@ -442,15 +441,16 @@
    "detail": "Finger",
    "espn_id": "3052743"
   },
-  "name:BAL:tylerloop": {
-   "name": "Tyler Loop",
+  "00-0035993": {
+   "name": "Tyler Huntley",
    "team": "BAL",
-   "pos": "PK",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-02T18:50:00-05:00",
-   "detail": "Groin",
-   "espn_id": "4697745"
+   "pos": "QB",
+   "status": "Doubtful",
+   "fantasy": "DOUBTFUL",
+   "date": "2026-11-02T19:02:00-05:00",
+   "detail": "Toe",
+   "espn_id": "4035671",
+   "comment": "Head coach Jesse Minter said Monday that Huntley (toe) \"probably\" won't play Thursday versus the Jaguars, and the Ravens then will \"see how it goes from a long-"
   },
   "00-0040876": {
    "name": "Elijah Sarratt",
@@ -3260,7 +3260,7 @@
    "date": "2026-11-02T14:57:00-05:00",
    "detail": "Hamstring",
    "espn_id": "3917315",
-   "comment": "Murray (hamstring), who is dealing with a sore hamstring, is undergoing a full evaluation to determine the extent of the issue, Alec Lewis of The Athletic repor"
+   "comment": "Head coach Kevin O'Connell said Monday that Murray has a sore hamstring and will undergo a full evaluation as the Vikings look to determine the extent of the is"
   },
   "00-0041104": {
    "name": "Demond Claiborne",
@@ -4554,6 +4554,16 @@
    "date": "2026-10-25T18:55:00-04:00",
    "detail": null,
    "espn_id": "3040151"
+  },
+  "00-0039299": {
+   "name": "George Holani",
+   "team": "SEA",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-03T11:58:00-05:00",
+   "detail": null,
+   "espn_id": "4429835"
   },
   "00-0038797": {
    "name": "Emanuel Wilson",
