@@ -1,7 +1,27 @@
 {
- "at": "2026-11-03T21:30:01-05:00",
+ "at": "2026-11-03T22:00:01-05:00",
  "source": "espn",
  "players": {
+  "00-0041070": {
+   "name": "Reggie Virgil",
+   "team": "ARI",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-03T21:35:00-05:00",
+   "detail": null,
+   "espn_id": "4869132"
+  },
+  "00-0036331": {
+   "name": "Devin Duvernay",
+   "team": "ARI",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-03T21:30:00-05:00",
+   "detail": null,
+   "espn_id": "4039050"
+  },
   "00-0036646": {
    "name": "Simi Fehoko",
    "team": "ARI",
@@ -360,6 +380,16 @@
    "detail": "Undisclosed",
    "espn_id": "5150660"
   },
+  "00-0040887": {
+   "name": "Josh Cuevas",
+   "team": "BAL",
+   "pos": "TE",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-03T21:52:00-05:00",
+   "detail": null,
+   "espn_id": "4876132"
+  },
   "00-0034975": {
    "name": "Justice Hill",
    "team": "BAL",
@@ -522,6 +552,16 @@
    "espn_id": "3916387",
    "comment": "Ravens head coach Jesse Minter said after Sunday's 36-10 loss to the Bills that Jackson will undergo surgery to address his right thumb injury and will be place"
   },
+  "00-0035537": {
+   "name": "Ty Johnson",
+   "team": "BUF",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-03T21:39:00-05:00",
+   "detail": null,
+   "espn_id": "3915411"
+  },
   "name:BUF:greggaines": {
    "name": "Greg Gaines",
    "team": "BUF",
@@ -663,17 +703,6 @@
    "detail": "Hamstring",
    "espn_id": "4242433",
    "comment": "Palmer (hamstring) has been ruled out for the rest of Sunday's game against the Ravens."
-  },
-  "00-0038679": {
-   "name": "Tyrell Shavers",
-   "team": "BUF",
-   "pos": "WR",
-   "status": "Out",
-   "fantasy": "PUP-R",
-   "date": "2026-10-28T19:45:00-04:00",
-   "detail": "Knee - ACL",
-   "espn_id": "4241476",
-   "comment": "The Bills designated Shavers (knee) to return from the reserve/PUP list Wednesday, but he will not play against the Ravens on Sunday, Cameron Wolfe of NFL Netwo"
   },
   "name:CAR:bradychristensen": {
    "name": "Brady Christensen",
@@ -4033,6 +4062,26 @@
    "detail": null,
    "espn_id": "4035537"
   },
+  "00-0036980": {
+   "name": "Elijah Moore",
+   "team": "PHI",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-03T21:43:00-05:00",
+   "detail": null,
+   "espn_id": "4372414"
+  },
+  "00-0035662": {
+   "name": "Hollywood Brown",
+   "team": "PHI",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-03T21:36:00-05:00",
+   "detail": null,
+   "espn_id": "4241372"
+  },
   "00-0040024": {
    "name": "Darius Cooper",
    "team": "PHI",
@@ -4175,17 +4224,6 @@
    "date": "2026-11-01T23:02:00-05:00",
    "detail": "Abdomen",
    "espn_id": "4240456"
-  },
-  "00-0037258": {
-   "name": "Dameon Pierce",
-   "team": "PHI",
-   "pos": "RB",
-   "status": "Injured Reserve",
-   "fantasy": "IR",
-   "date": "2026-10-28T17:17:00-04:00",
-   "detail": "Undisclosed",
-   "espn_id": "4360238",
-   "comment": "The Eagles placed Pierce (undisclosed) on injured reserve Wednesday"
   },
   "name:PIT:doneikoslaughter": {
    "name": "Doneiko Slaughter",
