@@ -1,5 +1,5 @@
 {
- "at": "2026-11-04T09:00:01-05:00",
+ "at": "2026-11-04T09:30:01-05:00",
  "source": "espn",
  "players": {
   "00-0039041": {
@@ -390,6 +390,17 @@
    "detail": "Undisclosed",
    "espn_id": "5150660"
   },
+  "00-0035993": {
+   "name": "Tyler Huntley",
+   "team": "BAL",
+   "pos": "QB",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-11-04T09:00:00-05:00",
+   "detail": "Toe",
+   "espn_id": "4035671",
+   "comment": "Huntley (toe) has reportedly sustained a season-ending turf toe injury, Adam Schefter of ESPN reports."
+  },
   "00-0040887": {
    "name": "Josh Cuevas",
    "team": "BAL",
@@ -419,17 +430,6 @@
    "date": "2026-11-03T16:44:00-05:00",
    "detail": "Groin",
    "espn_id": "4697745"
-  },
-  "00-0035993": {
-   "name": "Tyler Huntley",
-   "team": "BAL",
-   "pos": "QB",
-   "status": "Doubtful",
-   "fantasy": "DOUBTFUL",
-   "date": "2026-11-03T15:47:00-05:00",
-   "detail": "Toe",
-   "espn_id": "4035671",
-   "comment": "Ravens head coach Jesse Minter said Tuesday that Huntley (toe) could be a candidate for injured reserve, Sam Cohn of The Baltimore Sunreports."
   },
   "00-0040981": {
    "name": "Joe Fagnano",
