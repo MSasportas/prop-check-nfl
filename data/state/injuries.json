@@ -1,5 +1,5 @@
 {
- "at": "2026-11-04T13:00:17-05:00",
+ "at": "2026-11-04T14:00:01-05:00",
  "source": "espn",
  "players": {
   "00-0039041": {
@@ -1845,6 +1845,16 @@
    "detail": null,
    "espn_id": "5123663"
   },
+  "name:GB:micahparsons": {
+   "name": "Micah Parsons",
+   "team": "GB",
+   "pos": "DE",
+   "status": "Out",
+   "fantasy": "PUP-R",
+   "date": "2026-11-04T12:59:00-05:00",
+   "detail": "Knee - ACL",
+   "espn_id": "4361423"
+  },
   "name:GB:seanrhyan": {
    "name": "Sean Rhyan",
    "team": "GB",
@@ -1915,16 +1925,6 @@
    "date": "2026-11-02T14:48:00-05:00",
    "detail": null,
    "espn_id": "4047365"
-  },
-  "name:GB:micahparsons": {
-   "name": "Micah Parsons",
-   "team": "GB",
-   "pos": "DE",
-   "status": "Out",
-   "fantasy": "PUP-R",
-   "date": "2026-11-02T14:39:00-05:00",
-   "detail": "Knee - ACL",
-   "espn_id": "4361423"
   },
   "00-0039811": {
    "name": "MarShawn Lloyd",
@@ -2157,6 +2157,17 @@
    "date": "2026-10-23T20:15:00-04:00",
    "detail": null,
    "espn_id": "4362504"
+  },
+  "00-0037664": {
+   "name": "Alec Pierce",
+   "team": "IND",
+   "pos": "WR",
+   "status": "Injured Reserve",
+   "fantasy": "IR",
+   "date": "2026-11-04T12:54:00-05:00",
+   "detail": "Heel",
+   "espn_id": "4360078",
+   "comment": "When asked Wednesday when Pierce (heel) might be able to resume to practice, Colts head coach Shane Steichen noted that he \"can't put a timetable on it right no"
   },
   "00-0032951": {
    "name": "Laquon Treadwell",
@@ -3411,12 +3422,34 @@
    "detail": null,
    "espn_id": "4708049"
   },
+  "00-0040734": {
+   "name": "TreVeyon Henderson",
+   "team": "NE",
+   "pos": "RB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-04T13:21:00-05:00",
+   "detail": "Illness",
+   "espn_id": "4432710",
+   "comment": "Henderson (illness) won't practice Wednesday, Doug Kyed of the Boston Herald reports."
+  },
+  "00-0035676": {
+   "name": "A.J. Brown",
+   "team": "NE",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-04T13:13:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "4047646",
+   "comment": "Brown (ankle/knee) won't practice Wednesday, Doug Kyed of the Boston Herald reports."
+  },
   "00-0033555": {
    "name": "Mack Hollins",
    "team": "NE",
    "pos": "WR",
    "status": "Injured Reserve",
-   "fantasy": "IR",
+   "fantasy": "IR-R",
    "date": "2026-11-04T09:14:00-05:00",
    "detail": "Calf",
    "espn_id": "2991662",
@@ -3453,17 +3486,6 @@
    "espn_id": "3046439",
    "comment": "Patriots head coach Mike Vrabel said Monday that he had no update on Henry's (foot) status heading into Sunday's game against the Packers, Karen Guregian of Mas"
   },
-  "00-0040734": {
-   "name": "TreVeyon Henderson",
-   "team": "NE",
-   "pos": "RB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-03T08:03:00-05:00",
-   "detail": "Illness",
-   "espn_id": "4432710",
-   "comment": "questionable"
-  },
   "00-0041395": {
    "name": "Eli Raridon",
    "team": "NE",
@@ -3473,17 +3495,6 @@
    "date": "2026-11-02T20:59:00-05:00",
    "detail": null,
    "espn_id": "4831959"
-  },
-  "00-0035676": {
-   "name": "A.J. Brown",
-   "team": "NE",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-02T11:43:00-05:00",
-   "detail": "Ankle",
-   "espn_id": "4047646",
-   "comment": "When asked whether Brown (ankle/knee) might practice at some point this week, coach Mike Vrabel said Monday, \"We'll see,\" Doug Kyed of the Boston Herald reports"
   },
   "00-0040131": {
    "name": "Kyle Williams",
@@ -4691,9 +4702,9 @@
    "team": "SEA",
    "pos": "QB",
    "status": "Active",
-   "fantasy": null,
+   "fantasy": "OUT",
    "date": "2026-11-03T00:24:00-05:00",
-   "detail": null,
+   "detail": "Quadriceps",
    "espn_id": "3912547"
   },
   "00-0039165": {
@@ -4783,10 +4794,10 @@
    "pos": "WR",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T12:17:00-05:00",
+   "date": "2026-11-04T13:29:00-05:00",
    "detail": "Foot",
    "espn_id": "4567750",
-   "comment": "Egbuka (foot) was spotted running on the side with a trainer Wednesday, Greg Auman of Fox Sports reports."
+   "comment": "Head coach Todd Bowles said Egbuka (foot) didn't practice Wednesday, but the wide receiver was able to run on a side field, and the Buccaneers will see how he f"
   },
   "00-0040237": {
    "name": "Tez Johnson",
@@ -5614,6 +5625,10 @@
   "00-0037740": {
    "status": "Questionable",
    "at": "2026-11-04T12:30:01-05:00"
+  },
+  "00-0037664": {
+   "status": "Injured Reserve",
+   "at": "2026-11-04T14:00:01-05:00"
   }
  }
 }
