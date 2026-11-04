@@ -1,7 +1,17 @@
 {
- "at": "2026-11-03T22:00:01-05:00",
+ "at": "2026-11-03T22:30:14-05:00",
  "source": "espn",
  "players": {
+  "00-0039041": {
+   "name": "Elijah Higgins",
+   "team": "ARI",
+   "pos": "TE",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-03T21:55:00-05:00",
+   "detail": null,
+   "espn_id": "4426844"
+  },
   "00-0041070": {
    "name": "Reggie Virgil",
    "team": "ARI",
@@ -2148,6 +2158,16 @@
    "detail": null,
    "espn_id": "4362504"
   },
+  "00-0032951": {
+   "name": "Laquon Treadwell",
+   "team": "IND",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-03T21:56:00-05:00",
+   "detail": null,
+   "espn_id": "3051889"
+  },
   "name:IND:justinwalley": {
    "name": "Justin Walley",
    "team": "IND",
@@ -2288,16 +2308,6 @@
    "date": "2026-11-01T11:42:00-05:00",
    "detail": null,
    "espn_id": "4722908"
-  },
-  "name:IND:camtaylorbritt": {
-   "name": "Cam Taylor-Britt",
-   "team": "IND",
-   "pos": "CB",
-   "status": "Injured Reserve",
-   "fantasy": "IR",
-   "date": "2026-10-27T19:40:00-04:00",
-   "detail": "Groin",
-   "espn_id": "4361196"
   },
   "name:JAX:travonwalker": {
    "name": "Travon Walker",
@@ -2632,6 +2642,16 @@
    "detail": null,
    "espn_id": "5093923"
   },
+  "00-0040729": {
+   "name": "Jack Bech",
+   "team": "LV",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-03T22:21:00-05:00",
+   "detail": null,
+   "espn_id": "4603186"
+  },
   "00-0041562": {
    "name": "Fernando Mendoza",
    "team": "LV",
@@ -2762,16 +2782,6 @@
    "detail": "Neck",
    "espn_id": "4243916"
   },
-  "00-0040729": {
-   "name": "Jack Bech",
-   "team": "LV",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-31T15:53:00-04:00",
-   "detail": null,
-   "espn_id": "4603186"
-  },
   "00-0034365": {
    "name": "Ian Thomas",
    "team": "LV",
@@ -2792,6 +2802,16 @@
    "detail": "Foot",
    "espn_id": "5155825",
    "comment": "Runyon (foot) has been ruled out for Sunday's game against the Jets, Sam Warren of The Athletic reports."
+  },
+  "00-0040184": {
+   "name": "KeAndre Lambert-Smith",
+   "team": "LAC",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-03T22:16:00-05:00",
+   "detail": null,
+   "espn_id": "4430870"
   },
   "name:LAC:rodneyshelley": {
    "name": "Rodney Shelley",
@@ -2965,16 +2985,6 @@
    "detail": "Hamstring",
    "espn_id": "3691739"
   },
-  "00-0040184": {
-   "name": "KeAndre Lambert-Smith",
-   "team": "LAC",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-30T20:03:00-04:00",
-   "detail": null,
-   "espn_id": "4430870"
-  },
   "name:LAC:denzelperryman": {
    "name": "Denzel Perryman",
    "team": "LAC",
@@ -2984,6 +2994,16 @@
    "date": "2026-10-28T21:38:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "2579621"
+  },
+  "00-0033110": {
+   "name": "Tyler Higbee",
+   "team": "LA",
+   "pos": "TE",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-03T22:07:00-05:00",
+   "detail": null,
+   "espn_id": "2573401"
   },
   "00-0041415": {
    "name": "Dean Connors",
@@ -3149,16 +3169,6 @@
    "date": "2026-10-26T21:47:00-04:00",
    "detail": null,
    "espn_id": "4360797"
-  },
-  "00-0040590": {
-   "name": "Konata Mumpfield",
-   "team": "LA",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-26T20:10:00-04:00",
-   "detail": null,
-   "espn_id": "4710855"
   },
   "name:MIA:kadynproctor": {
    "name": "Kadyn Proctor",
@@ -4776,6 +4786,16 @@
    "espn_id": "3924327",
    "comment": "Lock (coach's decision/elbow) is inactive for Monday's matchup with the Bears but serving as the team's emergency quarterback, John Boyle of the Seahawks' offic"
   },
+  "00-0040237": {
+   "name": "Tez Johnson",
+   "team": "TB",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-03T22:07:00-05:00",
+   "detail": null,
+   "espn_id": "4608810"
+  },
   "00-0040129": {
    "name": "Emeka Egbuka",
    "team": "TB",
@@ -4866,16 +4886,6 @@
    "date": "2026-11-01T17:56:00-05:00",
    "detail": null,
    "espn_id": "4596448"
-  },
-  "00-0040237": {
-   "name": "Tez Johnson",
-   "team": "TB",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-01T11:57:00-05:00",
-   "detail": null,
-   "espn_id": "4608810"
   },
   "name:TB:joshhayes": {
    "name": "Josh Hayes",
