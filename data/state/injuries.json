@@ -1,5 +1,5 @@
 {
- "at": "2026-11-04T11:00:00-05:00",
+ "at": "2026-11-04T11:30:00-05:00",
  "source": "espn",
  "players": {
   "00-0039041": {
@@ -5069,6 +5069,16 @@
    "detail": "Foot",
    "espn_id": "4573318"
   },
+  "name:WAS:javonkinlaw": {
+   "name": "Javon Kinlaw",
+   "team": "WAS",
+   "pos": "DT",
+   "status": "Injured Reserve",
+   "fantasy": "IR",
+   "date": "2026-11-04T11:10:00-05:00",
+   "detail": "Knee - MCL",
+   "espn_id": "4259491"
+  },
   "name:WAS:daronpayne": {
    "name": "Daron Payne",
    "team": "WAS",
@@ -5078,16 +5088,6 @@
    "date": "2026-11-03T19:17:00-05:00",
    "detail": "Foot",
    "espn_id": "3925354"
-  },
-  "name:WAS:javonkinlaw": {
-   "name": "Javon Kinlaw",
-   "team": "WAS",
-   "pos": "DT",
-   "status": "Injured Reserve",
-   "fantasy": "IR",
-   "date": "2026-11-03T19:13:00-05:00",
-   "detail": "Knee - MCL",
-   "espn_id": "4259491"
   },
   "name:WAS:roberthenry": {
    "name": "Robert Henry Jr.",
