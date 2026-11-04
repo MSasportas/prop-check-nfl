@@ -1,5 +1,5 @@
 {
- "at": "2026-11-04T18:00:00-05:00",
+ "at": "2026-11-04T18:30:01-05:00",
  "source": "espn",
  "players": {
   "00-0038559": {
@@ -1584,6 +1584,16 @@
    "detail": "Forearm",
    "espn_id": "4427816"
   },
+  "name:DEN:eyiomauwazurike": {
+   "name": "Eyioma Uwazurike",
+   "team": "DEN",
+   "pos": "DE",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-04T17:53:00-05:00",
+   "detail": "Shoulder",
+   "espn_id": "4066109"
+  },
   "00-0040134": {
    "name": "Pat Bryant",
    "team": "DEN",
@@ -1735,16 +1745,6 @@
    "detail": "Knee",
    "espn_id": "4568490",
    "comment": "The Broncos placed Harvey (knee) on injured reserve Saturday, Ian Rapoport of NFL Network reports."
-  },
-  "00-0038976": {
-   "name": "Marvin Mims Jr.",
-   "team": "DEN",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-29T18:51:00-04:00",
-   "detail": null,
-   "espn_id": "4686472"
   },
   "00-0036963": {
    "name": "Amon-Ra St. Brown",
@@ -3072,6 +3072,47 @@
    "detail": "Undisclosed",
    "espn_id": "2579621"
   },
+  "name:LA:kamcurl": {
+   "name": "Kam Curl",
+   "team": "LA",
+   "pos": "S",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-04T18:13:00-05:00",
+   "detail": "Foot",
+   "espn_id": "4242154"
+  },
+  "00-0039751": {
+   "name": "Jordan Whittington",
+   "team": "LA",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-04T18:11:00-05:00",
+   "detail": "Back",
+   "espn_id": "4569382",
+   "comment": "questionable"
+  },
+  "name:LA:steveavila": {
+   "name": "Steve Avila",
+   "team": "LA",
+   "pos": "G",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-04T18:11:00-05:00",
+   "detail": "Hamstring",
+   "espn_id": "4362474"
+  },
+  "name:LA:mylesgarrett": {
+   "name": "Myles Garrett",
+   "team": "LA",
+   "pos": "DE",
+   "status": "Injured Reserve",
+   "fantasy": "IR-R",
+   "date": "2026-11-04T17:56:00-05:00",
+   "detail": "Knee",
+   "espn_id": "3122132"
+  },
   "00-0040737": {
    "name": "Terrance Ferguson",
    "team": "LA",
@@ -3135,16 +3176,6 @@
    "detail": "Ankle",
    "espn_id": "2575907"
   },
-  "00-0039751": {
-   "name": "Jordan Whittington",
-   "team": "LA",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-02T19:35:00-05:00",
-   "detail": null,
-   "espn_id": "4569382"
-  },
   "name:LA:grantstuard": {
    "name": "Grant Stuard",
    "team": "LA",
@@ -3165,16 +3196,6 @@
    "detail": "Arm",
    "espn_id": "12483",
    "comment": "Stafford left the locker room after Sunday's 24-9 win over the Chargers with a bag of ice wrapped on his right arm, and Rams coach Sean McVay acknowledged Monda"
-  },
-  "name:LA:mylesgarrett": {
-   "name": "Myles Garrett",
-   "team": "LA",
-   "pos": "DE",
-   "status": "Injured Reserve",
-   "fantasy": "IR-R",
-   "date": "2026-11-02T17:20:00-05:00",
-   "detail": "Knee",
-   "espn_id": "3122132"
   },
   "00-0041568": {
    "name": "Ty Simpson",
@@ -3236,16 +3257,6 @@
    "detail": "Hamstring",
    "espn_id": "16800",
    "comment": "Head coach Sean McVay said Wednesday that Adams had successful surgery on his left hamstring, and the Rams are hopeful that the wide receiver will be able to re"
-  },
-  "00-0036849": {
-   "name": "Tutu Atwell",
-   "team": "LA",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-26T21:47:00-04:00",
-   "detail": null,
-   "espn_id": "4360797"
   },
   "name:MIA:michaeltaaffe": {
    "name": "Michael Taaffe",
@@ -3643,7 +3654,7 @@
    "date": "2026-11-04T09:14:00-05:00",
    "detail": "Calf",
    "espn_id": "2991662",
-   "comment": "Hollins (calf) is slated to return to practice Wednesday, Ian Rapoport of NFL Network reports."
+   "comment": "The Patriots are expected to designate Hollins (calf) for return from injured reserve Wednesday, Ian Rapoport of NFL Network reports."
   },
   "00-0040563": {
    "name": "Efton Chism III",
@@ -3798,26 +3809,6 @@
    "espn_id": "4239996",
    "comment": "Head coach Kellen Moore said Wednesday that the Saints haven't opened Etienne's (hamstring) practice window just yet, Jeff Nowak of WWL Louisiana reports."
   },
-  "name:NO:cesarruiz": {
-   "name": "Cesar Ruiz",
-   "team": "NO",
-   "pos": "G",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-27T09:11:00-04:00",
-   "detail": "Knee",
-   "espn_id": "4258199"
-  },
-  "name:NO:nathanshepherd": {
-   "name": "Nathan Shepherd",
-   "team": "NO",
-   "pos": "DT",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-27T09:11:00-04:00",
-   "detail": "Illness",
-   "espn_id": "4076951"
-  },
   "00-0035644": {
    "name": "Noah Fant",
    "team": "NO",
@@ -3934,7 +3925,7 @@
    "pos": "OT",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T17:48:00-05:00",
+   "date": "2026-11-04T18:17:00-05:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
@@ -4117,10 +4108,10 @@
    "pos": "TE",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T16:53:00-05:00",
+   "date": "2026-11-04T17:53:00-05:00",
    "detail": "Back",
    "espn_id": "4808766",
-   "comment": "questionable"
+   "comment": "Taylor was a limited participant in Wednesday's practice due to a back injury."
   },
   "name:NYJ:trevinwallace": {
    "name": "Trevin Wallace",
@@ -4172,7 +4163,7 @@
    "date": "2026-11-04T12:25:00-05:00",
    "detail": "Concussion",
    "espn_id": "4569618",
-   "comment": "Wilson, who is in the NFL's concussion protocol, is considered day-to-day,  Zack Rosenblatt of The Athletic reports."
+   "comment": "Jets head coach Aaron Glenn said that Wilson is in the NFL's concussion protocol and is considered day-to-day,  Zack Rosenblatt of The Athletic reports."
   },
   "name:NYJ:maxmitchell": {
    "name": "Max Mitchell",
@@ -4321,9 +4312,9 @@
    "team": "PHI",
    "pos": "RB",
    "status": "Active",
-   "fantasy": null,
+   "fantasy": "QUESTIONABLE",
    "date": "2026-11-04T15:28:00-05:00",
-   "detail": null,
+   "detail": "Hamstring",
    "espn_id": "3929630"
   },
   "00-0038400": {
@@ -5924,6 +5915,10 @@
   "00-0040736": {
    "status": "Questionable",
    "at": "2026-11-04T17:30:00-05:00"
+  },
+  "00-0039751": {
+   "status": "Questionable",
+   "at": "2026-11-04T18:30:01-05:00"
   }
  }
 }
