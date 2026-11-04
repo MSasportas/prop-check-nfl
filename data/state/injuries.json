@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T22:30:14-05:00",
+ "at": "2026-11-03T23:00:14-05:00",
  "source": "espn",
  "players": {
   "00-0039041": {
@@ -2309,6 +2309,16 @@
    "detail": null,
    "espn_id": "4722908"
   },
+  "00-0041100": {
+   "name": "Josh Cameron",
+   "team": "JAX",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-03T22:37:00-05:00",
+   "detail": null,
+   "espn_id": "4879194"
+  },
   "name:JAX:travonwalker": {
    "name": "Travon Walker",
    "team": "JAX",
@@ -2481,16 +2491,6 @@
    "date": "2026-11-01T14:05:00-05:00",
    "detail": "Knee",
    "espn_id": "4048231"
-  },
-  "00-0040238": {
-   "name": "LeQuint Allen Jr.",
-   "team": "JAX",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-30T19:29:00-04:00",
-   "detail": null,
-   "espn_id": "4911851"
   },
   "name:KC:mansoordelane": {
    "name": "Mansoor Delane",
