@@ -1,7 +1,17 @@
 {
- "at": "2026-11-04T15:00:19-05:00",
+ "at": "2026-11-04T16:00:01-05:00",
  "source": "espn",
  "players": {
+  "00-0033119": {
+   "name": "Jacoby Brissett",
+   "team": "ARI",
+   "pos": "QB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-04T14:50:00-05:00",
+   "detail": null,
+   "espn_id": "2578570"
+  },
   "00-0039041": {
    "name": "Elijah Higgins",
    "team": "ARI",
@@ -124,16 +134,6 @@
    "date": "2026-11-02T17:12:00-05:00",
    "detail": null,
    "espn_id": "4430841"
-  },
-  "00-0033119": {
-   "name": "Jacoby Brissett",
-   "team": "ARI",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": "OUT",
-   "date": "2026-11-02T17:01:00-05:00",
-   "detail": "Coach's Decision",
-   "espn_id": "2578570"
   },
   "00-0037157": {
    "name": "Bam Knight",
@@ -380,6 +380,26 @@
    "detail": "Undisclosed",
    "espn_id": "5150660"
   },
+  "name:BAL:natewiggins": {
+   "name": "Nate Wiggins",
+   "team": "BAL",
+   "pos": "CB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-04T15:17:00-05:00",
+   "detail": "Illness",
+   "espn_id": "4601278"
+  },
+  "name:BAL:jaylinnhawkins": {
+   "name": "Jaylinn Hawkins",
+   "team": "BAL",
+   "pos": "S",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-11-04T15:14:00-05:00",
+   "detail": "Knee",
+   "espn_id": "3858276"
+  },
   "00-0035993": {
    "name": "Tyler Huntley",
    "team": "BAL",
@@ -460,46 +480,6 @@
    "date": "2026-11-02T22:26:00-05:00",
    "detail": null,
    "espn_id": "4360939"
-  },
-  "name:BAL:jaylinnhawkins": {
-   "name": "Jaylinn Hawkins",
-   "team": "BAL",
-   "pos": "S",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-02T21:15:00-05:00",
-   "detail": "Knee",
-   "espn_id": "3858276"
-  },
-  "name:BAL:rogerrosengarten": {
-   "name": "Roger Rosengarten",
-   "team": "BAL",
-   "pos": "OT",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-02T20:05:00-05:00",
-   "detail": "Ankle",
-   "espn_id": "4430876"
-  },
-  "name:BAL:johnsimpson": {
-   "name": "John Simpson",
-   "team": "BAL",
-   "pos": "G",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-02T20:05:00-05:00",
-   "detail": "Back",
-   "espn_id": "4035479"
-  },
-  "name:BAL:johnjenkins": {
-   "name": "John Jenkins",
-   "team": "BAL",
-   "pos": "DT",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-02T20:04:00-05:00",
-   "detail": "Knee",
-   "espn_id": "15846"
   },
   "00-0040876": {
    "name": "Elijah Sarratt",
@@ -2000,8 +1980,8 @@
    "name": "David Montgomery",
    "team": "HOU",
    "pos": "RB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
+   "status": "Out",
+   "fantasy": "OUT",
    "date": "2026-11-04T14:09:00-05:00",
    "detail": "Groin",
    "espn_id": "4035538",
@@ -2168,6 +2148,27 @@
    "detail": null,
    "espn_id": "4362504"
   },
+  "00-0037292": {
+   "name": "Drew Ogletree",
+   "team": "IND",
+   "pos": "TE",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-04T15:42:00-05:00",
+   "detail": "Knee",
+   "espn_id": "4722908",
+   "comment": "questionable"
+  },
+  "name:IND:akeemdavisgaither": {
+   "name": "Akeem Davis-Gaither",
+   "team": "IND",
+   "pos": "LB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-04T15:42:00-05:00",
+   "detail": "Knee",
+   "espn_id": "3917142"
+  },
   "00-0037664": {
    "name": "Alec Pierce",
    "team": "IND",
@@ -2209,16 +2210,6 @@
    "detail": "Concussion",
    "espn_id": "4429684",
    "comment": "questionable"
-  },
-  "name:IND:bryceboettcher": {
-   "name": "Bryce Boettcher",
-   "team": "IND",
-   "pos": "LB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-03T08:03:00-05:00",
-   "detail": "Groin",
-   "espn_id": "5088571"
   },
   "00-0040179": {
    "name": "DJ Giddens",
@@ -2320,15 +2311,25 @@
    "detail": null,
    "espn_id": "4242335"
   },
-  "00-0037292": {
-   "name": "Drew Ogletree",
-   "team": "IND",
-   "pos": "TE",
+  "00-0038611": {
+   "name": "Chris Rodriguez Jr.",
+   "team": "JAX",
+   "pos": "RB",
    "status": "Active",
    "fantasy": null,
-   "date": "2026-11-01T11:42:00-05:00",
+   "date": "2026-11-04T15:33:00-05:00",
    "detail": null,
-   "espn_id": "4722908"
+   "espn_id": "4362619"
+  },
+  "00-0034960": {
+   "name": "Jakobi Meyers",
+   "team": "JAX",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-04T15:32:00-05:00",
+   "detail": null,
+   "espn_id": "3916433"
   },
   "00-0040719": {
    "name": "Bhayshul Tuten",
@@ -2336,10 +2337,10 @@
    "pos": "RB",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T10:38:00-05:00",
+   "date": "2026-11-04T15:07:00-05:00",
    "detail": "Ankle",
    "espn_id": "4882093",
-   "comment": "Jaguars head coach Liam Coen said Wednesday that Tuten (ankle/foot) is feeling better, but the running back's status for Thursday's contest versus the Ravens is"
+   "comment": "Tuten (ankle/foot) is listed questionable for Thursday's game against the Ravens."
   },
   "00-0041100": {
    "name": "Josh Cameron",
@@ -2391,38 +2392,6 @@
    "detail": null,
    "espn_id": "4432773"
   },
-  "00-0034960": {
-   "name": "Jakobi Meyers",
-   "team": "JAX",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-03T16:57:00-05:00",
-   "detail": "Hamstring",
-   "espn_id": "3916433",
-   "comment": "Meyers (hamstring/ankle) was listed as a limited participant in Tuesday's practice."
-  },
-  "00-0038611": {
-   "name": "Chris Rodriguez Jr.",
-   "team": "JAX",
-   "pos": "RB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-03T16:54:00-05:00",
-   "detail": "Hand",
-   "espn_id": "4362619",
-   "comment": "Rodriguez (hand) was listed as a limited participant in Tuesday's practice."
-  },
-  "name:JAX:antoniojohnson": {
-   "name": "Antonio Johnson",
-   "team": "JAX",
-   "pos": "S",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-03T08:03:00-05:00",
-   "detail": "Ankle",
-   "espn_id": "4429168"
-  },
   "00-0040718": {
    "name": "Travis Hunter",
    "team": "JAX",
@@ -2432,26 +2401,6 @@
    "date": "2026-11-02T22:10:00-05:00",
    "detail": null,
    "espn_id": "4685415"
-  },
-  "name:JAX:bransoncombs": {
-   "name": "Branson Combs",
-   "team": "JAX",
-   "pos": "LB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-02T19:59:00-05:00",
-   "detail": "Shoulder",
-   "espn_id": "4572704"
-  },
-  "name:JAX:jarrianjones": {
-   "name": "Jarrian Jones",
-   "team": "JAX",
-   "pos": "CB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-02T19:57:00-05:00",
-   "detail": "Ankle",
-   "espn_id": "4426448"
   },
   "00-0041106": {
    "name": "CJ Williams",
@@ -2502,16 +2451,6 @@
    "date": "2026-11-01T20:40:00-05:00",
    "detail": null,
    "espn_id": "4432620"
-  },
-  "name:JAX:ezracleveland": {
-   "name": "Ezra Cleveland",
-   "team": "JAX",
-   "pos": "G",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-01T14:05:00-05:00",
-   "detail": "Knee",
-   "espn_id": "4048231"
   },
   "name:KC:mansoordelane": {
    "name": "Mansoor Delane",
@@ -2824,6 +2763,28 @@
    "espn_id": "5155825",
    "comment": "Runyon (foot) has been ruled out for Sunday's game against the Jets, Sam Warren of The Athletic reports."
   },
+  "00-0041550": {
+   "name": "Brenen Thompson",
+   "team": "LAC",
+   "pos": "WR",
+   "status": "Doubtful",
+   "fantasy": "DOUBTFUL",
+   "date": "2026-11-04T15:38:00-05:00",
+   "detail": "Quadriceps",
+   "espn_id": "4685553",
+   "comment": "doubtful"
+  },
+  "00-0033885": {
+   "name": "David Njoku",
+   "team": "LAC",
+   "pos": "TE",
+   "status": "Injured Reserve",
+   "fantasy": "IR-R",
+   "date": "2026-11-04T15:30:00-05:00",
+   "detail": "Lower Leg",
+   "espn_id": "3123076",
+   "comment": "Chargers head coach Jim Harbaugh said Wednesday that Njoku (fibula) has been designated for return from injured reserve, Alex Insdorf of BoltBeat.com reports."
+  },
   "00-0040184": {
    "name": "KeAndre Lambert-Smith",
    "team": "LAC",
@@ -2904,17 +2865,6 @@
    "detail": null,
    "espn_id": "4596334"
   },
-  "00-0041550": {
-   "name": "Brenen Thompson",
-   "team": "LAC",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-02T21:10:00-05:00",
-   "detail": "Quadriceps",
-   "espn_id": "4685553",
-   "comment": "Thompson (quadriceps/hamstring) is not expected to practice this week, Noah Furtado of The Athletic reports."
-  },
   "00-0039391": {
    "name": "Kimani Vidal",
    "team": "LAC",
@@ -2924,17 +2874,6 @@
    "date": "2026-11-02T20:50:00-05:00",
    "detail": null,
    "espn_id": "4430968"
-  },
-  "00-0033885": {
-   "name": "David Njoku",
-   "team": "LAC",
-   "pos": "TE",
-   "status": "Injured Reserve",
-   "fantasy": "IR",
-   "date": "2026-11-02T18:38:00-05:00",
-   "detail": "Lower Leg",
-   "espn_id": "3123076",
-   "comment": "Coach Jim Harbaugh said Monday that the Chargers likely will open the 21-day window for Njoku (fibula) this week, Alex Insdorf of BoltBeat.com reports."
   },
   "00-0040311": {
    "name": "Theo Wease Jr.",
@@ -3011,7 +2950,7 @@
    "team": "LAC",
    "pos": "LB",
    "status": "Injured Reserve",
-   "fantasy": "IR",
+   "fantasy": "IR-R",
    "date": "2026-10-28T21:38:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "2579621"
@@ -3922,6 +3861,16 @@
    "detail": "Chest",
    "espn_id": "3929950"
   },
+  "name:NYJ:davidbailey": {
+   "name": "David Bailey",
+   "team": "NYJ",
+   "pos": "LB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-04T15:39:00-05:00",
+   "detail": "Groin",
+   "espn_id": "4685248"
+  },
   "00-0038120": {
    "name": "Breece Hall",
    "team": "NYJ",
@@ -3963,16 +3912,6 @@
    "date": "2026-11-03T08:03:00-05:00",
    "detail": "Ankle",
    "espn_id": "4362094"
-  },
-  "name:NYJ:davidbailey": {
-   "name": "David Bailey",
-   "team": "NYJ",
-   "pos": "LB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-03T08:03:00-05:00",
-   "detail": "Groin",
-   "espn_id": "4685248"
   },
   "00-0039798": {
    "name": "Isaiah Davis",
@@ -4084,6 +4023,38 @@
    "detail": null,
    "espn_id": "4035537"
   },
+  "00-0038393": {
+   "name": "Dontayvion Wicks",
+   "team": "PHI",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-04T15:43:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "4428850",
+   "comment": "Wicks (ankle) wasn't spotted at Wednesday's practice, Brooks Kubena of The Athletic reports."
+  },
+  "00-0036912": {
+   "name": "DeVonta Smith",
+   "team": "PHI",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-04T15:35:00-05:00",
+   "detail": "Hamstring",
+   "espn_id": "4241478",
+   "comment": "Smith (hamstring) wasn't spotted at Wednesday's practice, Brooks Kubena of The Athletic reports."
+  },
+  "00-0034844": {
+   "name": "Saquon Barkley",
+   "team": "PHI",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-04T15:28:00-05:00",
+   "detail": null,
+   "espn_id": "3929630"
+  },
   "00-0038400": {
    "name": "Tanner McKee",
    "team": "PHI",
@@ -4133,28 +4104,6 @@
    "date": "2026-11-03T21:21:00-05:00",
    "detail": null,
    "espn_id": "4715355"
-  },
-  "00-0038393": {
-   "name": "Dontayvion Wicks",
-   "team": "PHI",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-03T08:03:00-05:00",
-   "detail": "Ankle",
-   "espn_id": "4428850",
-   "comment": "questionable"
-  },
-  "00-0036912": {
-   "name": "DeVonta Smith",
-   "team": "PHI",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-03T08:03:00-05:00",
-   "detail": "Hamstring",
-   "espn_id": "4241478",
-   "comment": "questionable"
   },
   "name:PHI:jonathanjones": {
    "name": "Jonathan Jones",
@@ -4216,16 +4165,6 @@
    "date": "2026-11-02T21:48:00-05:00",
    "detail": null,
    "espn_id": "4241555"
-  },
-  "00-0034844": {
-   "name": "Saquon Barkley",
-   "team": "PHI",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-02T09:47:00-05:00",
-   "detail": null,
-   "espn_id": "3929630"
   },
   "00-0040867": {
    "name": "Makai Lemon",
@@ -4557,7 +4496,7 @@
    "team": "SF",
    "pos": "WR",
    "status": "Injured Reserve",
-   "fantasy": "IR",
+   "fantasy": "IR-R",
    "date": "2026-10-26T18:25:00-04:00",
    "detail": "Ankle",
    "espn_id": "3043116",
@@ -5654,6 +5593,10 @@
   "00-0034869": {
    "status": "Out",
    "at": "2026-11-04T14:30:14-05:00"
+  },
+  "00-0037292": {
+   "status": "Questionable",
+   "at": "2026-11-04T16:00:01-05:00"
   }
  }
 }
