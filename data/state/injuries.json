@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T21:00:00-05:00",
+ "at": "2026-11-03T21:30:01-05:00",
  "source": "espn",
  "players": {
   "00-0036646": {
@@ -166,6 +166,16 @@
    "date": "2026-11-01T15:46:00-05:00",
    "detail": "Knee",
    "espn_id": "4709718"
+  },
+  "name:ATL:yasirabdullah": {
+   "name": "Yasir Abdullah",
+   "team": "ATL",
+   "pos": "LB",
+   "status": "Injured Reserve",
+   "fantasy": "IR-R",
+   "date": "2026-11-03T20:50:00-05:00",
+   "detail": "Hamstring",
+   "espn_id": "4360807"
   },
   "name:ATL:samsonebukam": {
    "name": "Samson Ebukam",
@@ -665,6 +675,16 @@
    "espn_id": "4241476",
    "comment": "The Bills designated Shavers (knee) to return from the reserve/PUP list Wednesday, but he will not play against the Ravens on Sunday, Cameron Wolfe of NFL Netwo"
   },
+  "name:CAR:bradychristensen": {
+   "name": "Brady Christensen",
+   "team": "CAR",
+   "pos": "G",
+   "status": "Injured Reserve",
+   "fantasy": "IR-R",
+   "date": "2026-11-03T20:46:00-05:00",
+   "detail": "Hamstring",
+   "espn_id": "4256062"
+  },
   "00-0039344": {
    "name": "Jonathon Brooks",
    "team": "CAR",
@@ -876,16 +896,6 @@
    "date": "2026-10-26T20:38:00-04:00",
    "detail": null,
    "espn_id": "4683243"
-  },
-  "00-0040644": {
-   "name": "Trevor Etienne",
-   "team": "CAR",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-26T20:33:00-04:00",
-   "detail": null,
-   "espn_id": "4685350"
   },
   "00-0041558": {
    "name": "Sam Roush",
@@ -1310,6 +1320,26 @@
    "detail": null,
    "espn_id": "5083076"
   },
+  "00-0037120": {
+   "name": "Tyler Goodson",
+   "team": "DAL",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-03T21:19:00-05:00",
+   "detail": null,
+   "espn_id": "4429676"
+  },
+  "00-0039530": {
+   "name": "Brevyn Spann-Ford",
+   "team": "DAL",
+   "pos": "TE",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-03T21:10:00-05:00",
+   "detail": null,
+   "espn_id": "4360967"
+  },
   "name:DAL:deewinters": {
    "name": "Dee Winters",
    "team": "DAL",
@@ -1442,26 +1472,6 @@
    "date": "2026-10-29T20:34:00-04:00",
    "detail": "Calf",
    "espn_id": "2980097"
-  },
-  "00-0037120": {
-   "name": "Tyler Goodson",
-   "team": "DAL",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-27T19:28:00-04:00",
-   "detail": null,
-   "espn_id": "4429676"
-  },
-  "00-0039530": {
-   "name": "Brevyn Spann-Ford",
-   "team": "DAL",
-   "pos": "TE",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-27T10:48:00-04:00",
-   "detail": null,
-   "espn_id": "4360967"
   },
   "name:DAL:maristliufau": {
    "name": "Marist Liufau",
@@ -1624,6 +1634,16 @@
    "detail": null,
    "espn_id": "4686472"
   },
+  "name:DET:jimmyrolder": {
+   "name": "Jimmy Rolder",
+   "team": "DET",
+   "pos": "LB",
+   "status": "Injured Reserve",
+   "fantasy": "IR",
+   "date": "2026-11-03T21:07:00-05:00",
+   "detail": "Hamstring",
+   "espn_id": "4896353"
+  },
   "name:DET:kerbyjoseph": {
    "name": "Kerby Joseph",
    "team": "DET",
@@ -1633,16 +1653,6 @@
    "date": "2026-11-03T17:13:00-05:00",
    "detail": "Knee",
    "espn_id": "4360383"
-  },
-  "name:DET:jimmyrolder": {
-   "name": "Jimmy Rolder",
-   "team": "DET",
-   "pos": "LB",
-   "status": "Injured Reserve",
-   "fantasy": "IR",
-   "date": "2026-11-03T16:24:00-05:00",
-   "detail": "Hamstring",
-   "espn_id": "4896353"
   },
   "name:DET:djreed": {
    "name": "D.J. Reed",
@@ -3372,6 +3382,26 @@
    "detail": null,
    "espn_id": "4430656"
   },
+  "00-0040563": {
+   "name": "Efton Chism III",
+   "team": "NE",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-03T21:17:00-05:00",
+   "detail": null,
+   "espn_id": "4695193"
+  },
+  "00-0040556": {
+   "name": "Corey Kiner",
+   "team": "NE",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-03T21:12:00-05:00",
+   "detail": null,
+   "espn_id": "4431431"
+  },
   "00-0033090": {
    "name": "Hunter Henry",
    "team": "NE",
@@ -3495,16 +3525,6 @@
    "date": "2026-10-31T20:17:00-04:00",
    "detail": null,
    "espn_id": "4698253"
-  },
-  "00-0040556": {
-   "name": "Corey Kiner",
-   "team": "NE",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-23T23:22:00-04:00",
-   "detail": null,
-   "espn_id": "4431431"
   },
   "00-0039373": {
    "name": "Audric Estime",
@@ -3852,23 +3872,13 @@
    "detail": "Chest",
    "espn_id": "3929950"
   },
-  "name:NYJ:trebrown": {
-   "name": "Tre Brown",
-   "team": "NYJ",
-   "pos": "CB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-03T17:30:00-05:00",
-   "detail": "Finger",
-   "espn_id": "4241373"
-  },
   "name:NYJ:maxmitchell": {
    "name": "Max Mitchell",
    "team": "NYJ",
    "pos": "OT",
    "status": "Injured Reserve",
    "fantasy": "IR",
-   "date": "2026-11-03T16:43:00-05:00",
+   "date": "2026-11-03T20:56:00-05:00",
    "detail": "Concussion",
    "espn_id": "4373656"
   },
@@ -4022,6 +4032,16 @@
    "date": "2026-10-28T20:29:00-04:00",
    "detail": null,
    "espn_id": "4035537"
+  },
+  "00-0040024": {
+   "name": "Darius Cooper",
+   "team": "PHI",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-03T21:21:00-05:00",
+   "detail": null,
+   "espn_id": "4715355"
   },
   "00-0038393": {
    "name": "Dontayvion Wicks",
