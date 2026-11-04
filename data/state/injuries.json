@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T19:00:00-05:00",
+ "at": "2026-11-03T19:30:00-05:00",
  "source": "espn",
  "players": {
   "00-0041368": {
@@ -329,6 +329,16 @@
    "detail": "Undisclosed",
    "espn_id": "5150660"
   },
+  "00-0034975": {
+   "name": "Justice Hill",
+   "team": "BAL",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-03T19:05:00-05:00",
+   "detail": null,
+   "espn_id": "4038441"
+  },
   "name:BAL:tylerloop": {
    "name": "Tyler Loop",
    "team": "BAL",
@@ -389,16 +399,6 @@
    "date": "2026-11-02T21:15:00-05:00",
    "detail": "Knee",
    "espn_id": "3858276"
-  },
-  "00-0034975": {
-   "name": "Justice Hill",
-   "team": "BAL",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-02T20:52:00-05:00",
-   "detail": null,
-   "espn_id": "4038441"
   },
   "name:BAL:rogerrosengarten": {
    "name": "Roger Rosengarten",
@@ -2249,6 +2249,16 @@
    "detail": "Groin",
    "espn_id": "4361196"
   },
+  "00-0039893": {
+   "name": "Brian Thomas Jr.",
+   "team": "JAX",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-03T18:56:00-05:00",
+   "detail": null,
+   "espn_id": "4432773"
+  },
   "00-0034960": {
    "name": "Jakobi Meyers",
    "team": "JAX",
@@ -2371,16 +2381,6 @@
    "date": "2026-11-01T23:46:00-05:00",
    "detail": null,
    "espn_id": "4686248"
-  },
-  "00-0039893": {
-   "name": "Brian Thomas Jr.",
-   "team": "JAX",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-01T21:31:00-05:00",
-   "detail": null,
-   "espn_id": "4432773"
   },
   "00-0036971": {
    "name": "Trevor Lawrence",
@@ -3495,6 +3495,16 @@
    "detail": null,
    "espn_id": "4431431"
   },
+  "00-0039373": {
+   "name": "Audric Estime",
+   "team": "NO",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-03T18:40:00-05:00",
+   "detail": null,
+   "espn_id": "4569682"
+  },
   "00-0036973": {
    "name": "Travis Etienne Jr.",
    "team": "NO",
@@ -3667,16 +3677,6 @@
    "detail": "Shoulder",
    "espn_id": "5081999",
    "comment": "Donaldson (shoulder) is questionable to return to Sunday's game against the Steelers in Paris."
-  },
-  "00-0039376": {
-   "name": "Spencer Rattler",
-   "team": "NO",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-25T08:45:00-04:00",
-   "detail": null,
-   "espn_id": "4426339"
   },
   "name:NYG:gregnewsome": {
    "name": "Greg Newsome II",
@@ -5030,25 +5030,25 @@
    "detail": "Foot",
    "espn_id": "4573318"
   },
-  "name:WAS:javonkinlaw": {
-   "name": "Javon Kinlaw",
-   "team": "WAS",
-   "pos": "DT",
-   "status": "Injured Reserve",
-   "fantasy": "IR",
-   "date": "2026-11-03T16:33:00-05:00",
-   "detail": "Knee",
-   "espn_id": "4259491"
-  },
   "name:WAS:daronpayne": {
    "name": "Daron Payne",
    "team": "WAS",
    "pos": "DT",
    "status": "Injured Reserve",
    "fantasy": "IR",
-   "date": "2026-11-03T16:32:00-05:00",
+   "date": "2026-11-03T19:17:00-05:00",
    "detail": "Foot",
    "espn_id": "3925354"
+  },
+  "name:WAS:javonkinlaw": {
+   "name": "Javon Kinlaw",
+   "team": "WAS",
+   "pos": "DT",
+   "status": "Injured Reserve",
+   "fantasy": "IR",
+   "date": "2026-11-03T19:13:00-05:00",
+   "detail": "Knee",
+   "espn_id": "4259491"
   },
   "00-0033955": {
    "name": "Jeremy McNichols",
