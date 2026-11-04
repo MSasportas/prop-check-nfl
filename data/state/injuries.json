@@ -1,5 +1,5 @@
 {
- "at": "2026-11-04T11:30:00-05:00",
+ "at": "2026-11-04T12:00:00-05:00",
  "source": "espn",
  "players": {
   "00-0039041": {
@@ -1056,6 +1056,16 @@
    "detail": null,
    "espn_id": "4257364"
   },
+  "name:CIN:jordanbattle": {
+   "name": "Jordan Battle",
+   "team": "CIN",
+   "pos": "S",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-04T11:32:00-05:00",
+   "detail": "Hamstring",
+   "espn_id": "4567098"
+  },
   "name:CIN:cashiushowell": {
    "name": "Cashius Howell",
    "team": "CIN",
@@ -1093,7 +1103,7 @@
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
    "date": "2026-11-02T19:47:00-05:00",
-   "detail": "Ankle",
+   "detail": "Heel",
    "espn_id": "4572036"
   },
   "00-0038839": {
@@ -3535,6 +3545,17 @@
    "detail": null,
    "espn_id": "4698253"
   },
+  "00-0041029": {
+   "name": "Jordyn Tyson",
+   "team": "NO",
+   "pos": "WR",
+   "status": "Injured Reserve",
+   "fantasy": "IR-R",
+   "date": "2026-11-04T11:18:00-05:00",
+   "detail": "Hamstring",
+   "espn_id": "4880281",
+   "comment": "Tyson (hamstring) is slated to resume practicing with the Saints on Wednesday, Nick Underhill of NewOrleans.Football reports."
+  },
   "00-0039373": {
    "name": "Audric Estime",
    "team": "NO",
@@ -3555,17 +3576,6 @@
    "detail": "Hamstring",
    "espn_id": "4239996",
    "comment": "Head coach Kellen Moore said that Etienne (hamstring) will be evaluated Monday before the Saints make a determination whether he practices this week, Ross Jacks"
-  },
-  "00-0041029": {
-   "name": "Jordyn Tyson",
-   "team": "NO",
-   "pos": "WR",
-   "status": "Injured Reserve",
-   "fantasy": "IR-R",
-   "date": "2026-11-02T12:14:00-05:00",
-   "detail": "Hamstring",
-   "espn_id": "4880281",
-   "comment": "Saints head coach Kellen Moore said that the Saints will decide by Wednesday whether to open Tyson's (hamstring) 21-day practice window this week, Nick Underhil"
   },
   "name:NO:cesarruiz": {
    "name": "Cesar Ruiz",
