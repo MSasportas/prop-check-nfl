@@ -1,5 +1,5 @@
 {
- "at": "2026-11-04T16:00:01-05:00",
+ "at": "2026-11-04T16:30:01-05:00",
  "source": "espn",
  "players": {
   "00-0033119": {
@@ -1198,6 +1198,16 @@
    "detail": null,
    "espn_id": "4384852"
   },
+  "name:CLE:quincywilliams": {
+   "name": "Quincy Williams",
+   "team": "CLE",
+   "pos": "LB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-04T15:49:00-05:00",
+   "detail": "Hamstring",
+   "espn_id": "3110565"
+  },
   "00-0041131": {
    "name": "Carsen Ryan",
    "team": "CLE",
@@ -1207,16 +1217,6 @@
    "date": "2026-11-04T14:29:00-05:00",
    "detail": null,
    "espn_id": "4685540"
-  },
-  "name:CLE:quincywilliams": {
-   "name": "Quincy Williams",
-   "team": "CLE",
-   "pos": "LB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T12:21:00-05:00",
-   "detail": "Hamstring",
-   "espn_id": "3110565"
   },
   "00-0033537": {
    "name": "Deshaun Watson",
@@ -1663,6 +1663,27 @@
    "detail": null,
    "espn_id": "4686472"
   },
+  "00-0036963": {
+   "name": "Amon-Ra St. Brown",
+   "team": "DET",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-04T16:05:00-05:00",
+   "detail": "Ribs",
+   "espn_id": "4374302",
+   "comment": "St. Brown was a limited participant at Wednesday's walkthrough due to a rib injury, Nolan Bianchi of The Detroit News reports."
+  },
+  "name:DET:amenogbongbemiga": {
+   "name": "Amen Ogbongbemiga",
+   "team": "DET",
+   "pos": "LB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-04T16:02:00-05:00",
+   "detail": "Toe",
+   "espn_id": "4038432"
+  },
   "name:DET:jimmyrolder": {
    "name": "Jimmy Rolder",
    "team": "DET",
@@ -1774,16 +1795,6 @@
    "detail": null,
    "espn_id": "3046779"
   },
-  "00-0036963": {
-   "name": "Amon-Ra St. Brown",
-   "team": "DET",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-01T17:40:00-05:00",
-   "detail": null,
-   "espn_id": "4374302"
-  },
   "00-0039139": {
    "name": "Jahmyr Gibbs",
    "team": "DET",
@@ -1835,6 +1846,16 @@
    "detail": null,
    "espn_id": "5123663"
   },
+  "name:GB:zairefranklin": {
+   "name": "Zaire Franklin",
+   "team": "GB",
+   "pos": "LB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-04T15:59:00-05:00",
+   "detail": "Shin",
+   "espn_id": "3124005"
+  },
   "name:GB:micahparsons": {
    "name": "Micah Parsons",
    "team": "GB",
@@ -1854,16 +1875,6 @@
    "date": "2026-11-03T08:03:00-05:00",
    "detail": "Ankle",
    "espn_id": "4426411"
-  },
-  "name:GB:zairefranklin": {
-   "name": "Zaire Franklin",
-   "team": "GB",
-   "pos": "LB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-03T08:03:00-05:00",
-   "detail": "Shin",
-   "espn_id": "3124005"
   },
   "name:GB:travisglover": {
    "name": "Travis Glover",
@@ -1982,10 +1993,10 @@
    "pos": "RB",
    "status": "Out",
    "fantasy": "OUT",
-   "date": "2026-11-04T14:09:00-05:00",
+   "date": "2026-11-04T15:52:00-05:00",
    "detail": "Groin",
    "espn_id": "4035538",
-   "comment": "Montgomery (groin) wasn't present for the portion of Wednesday's practice open to the media, Jonathan M. Alexander of the Houston Chronicle reports."
+   "comment": "While Montgomery (groin) has made some progress, coach DeMeco Ryans noted Wednesday that the running back will remain out for Sunday's game against the Chargers"
   },
   "name:HOU:reedblankenship": {
    "name": "Reed Blankenship",
@@ -3227,7 +3238,7 @@
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
    "date": "2026-11-01T17:38:00-05:00",
-   "detail": "Undisclosed",
+   "detail": "Neck",
    "espn_id": "4259547"
   },
   "00-0038728": {
@@ -4368,6 +4379,39 @@
    "detail": "Triceps",
    "espn_id": "3047495"
   },
+  "00-0035719": {
+   "name": "Deebo Samuel Sr.",
+   "team": "SF",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-04T15:59:00-05:00",
+   "detail": "Hamstring",
+   "espn_id": "3126486",
+   "comment": "Samuel (hamstring) won't take part in practice Wednesday, Cam Inman of The San Jose Mercury News reports."
+  },
+  "00-0031408": {
+   "name": "Mike Evans",
+   "team": "SF",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-04T15:53:00-05:00",
+   "detail": "Achilles",
+   "espn_id": "16737",
+   "comment": "Head coach Kyle Shanahan said Evans (Achilles) won't practice Wednesday, NFL reporter Andrew Siciliano reports."
+  },
+  "00-0033280": {
+   "name": "Christian McCaffrey",
+   "team": "SF",
+   "pos": "RB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-04T15:51:00-05:00",
+   "detail": "Hamstring",
+   "espn_id": "3117251",
+   "comment": "McCaffrey (hamstring) will not participate in Wednesday's practice, Cam Inman of Bay Area News Group reports."
+  },
   "name:SF:brandonaiyuk": {
    "name": "Brandon Aiyuk",
    "team": "SF",
@@ -4477,19 +4521,8 @@
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
    "date": "2026-10-26T19:05:00-04:00",
-   "detail": "Knee",
+   "detail": "Calf",
    "espn_id": "4040605"
-  },
-  "00-0035719": {
-   "name": "Deebo Samuel Sr.",
-   "team": "SF",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-26T18:35:00-04:00",
-   "detail": "Hamstring",
-   "espn_id": "3126486",
-   "comment": "Samuel (hamstring) has a chance to return following the 49ers' Week 8 bye, Matt Maiocco of NBC Sports Bay Area reports."
   },
   "00-0032775": {
    "name": "Demarcus Robinson",
@@ -4501,28 +4534,6 @@
    "detail": "Ankle",
    "espn_id": "3043116",
    "comment": "49ers coach Kyle Shanahan reiterated Monday that Robinson (ankle) has a chance to return following the team's Week 8 bye, David Lombardi of SFStandard.com repor"
-  },
-  "00-0031408": {
-   "name": "Mike Evans",
-   "team": "SF",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-26T18:15:00-04:00",
-   "detail": "Achilles",
-   "espn_id": "16737",
-   "comment": "Evans (Achilles) is expected to return after San Francisco's Week 8 bye, David Lombardi of SF Standard reports."
-  },
-  "00-0033280": {
-   "name": "Christian McCaffrey",
-   "team": "SF",
-   "pos": "RB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-26T18:12:00-04:00",
-   "detail": "Hamstring",
-   "espn_id": "3117251",
-   "comment": "McCaffrey is dealing with a mild hamstring strain rather than a quadriceps injury, and the 49ers believe he'll be ready following the team's Week 8 bye, David L"
   },
   "00-0040589": {
    "name": "Kurtis Rourke",
@@ -5597,6 +5608,10 @@
   "00-0037292": {
    "status": "Questionable",
    "at": "2026-11-04T16:00:01-05:00"
+  },
+  "00-0036963": {
+   "status": "Questionable",
+   "at": "2026-11-04T16:30:01-05:00"
   }
  }
 }
