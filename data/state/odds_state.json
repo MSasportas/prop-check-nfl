@@ -17,7 +17,7 @@
   "2026_09_TB_CHI": "9760d8f19f84bfee300a74ceb656c95d",
   "2026_09_BUF_MIN": "17ad7eff2f7875e20a8109abe40470e3"
  },
- "events_at": "2026-11-04T11:30:00-05:00",
+ "events_at": "2026-11-04T17:30:00-05:00",
  "unknown_teams": [],
  "done": {},
  "tried": {},
@@ -31,9 +31,9 @@
   "pulls": "RWC",
   "pool_at_plan": 1280,
   "games_left": 15,
-  "pool_raw": 3248,
+  "pool_raw": 3241,
   "keys_shared": 1,
-  "made_at": "2026-11-03T23:00:14-05:00"
+  "made_at": "2026-11-04T17:30:00-05:00"
  },
  "failed": {}
 }
