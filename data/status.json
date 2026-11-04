@@ -3,10 +3,10 @@
  "season": 2026,
  "week": 9,
  "slate": "2026-W09",
- "started_at": "2026-11-04T10:00:00-05:00",
- "status_at": "2026-11-04T10:00:00-05:00",
- "finished_at": "2026-11-04T10:00:01-05:00",
- "last_ok_at": "2026-11-04T10:00:00-05:00",
+ "started_at": "2026-11-04T10:30:00-05:00",
+ "status_at": "2026-11-04T10:30:00-05:00",
+ "finished_at": "2026-11-04T10:30:01-05:00",
+ "last_ok_at": "2026-11-04T10:30:00-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -32,7 +32,7 @@
   {
    "step": "injuries",
    "status": "skipped",
-   "note": "read at 9:30 AM"
+   "note": "read at 10:00 AM"
   },
   {
    "step": "weather",
@@ -141,11 +141,11 @@
  "odds_notes": [],
  "runner": {
   "event": "workflow_dispatch",
-  "run_id": "41848189994",
+  "run_id": "41853197727",
   "iteration": 2,
-  "chain_link": 1831,
+  "chain_link": 1832,
   "chain_started_at": "2026-10-30T17:27:57-04:00",
-  "run_started_at": "2026-11-04T09:30:22-05:00"
+  "run_started_at": "2026-11-04T10:00:20-05:00"
  },
  "live_page": {
   "checked_at": "2026-11-04T09:30:01-05:00",
