@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T20:00:00-05:00",
+ "at": "2026-11-03T20:30:00-05:00",
  "source": "espn",
  "players": {
   "00-0036646": {
@@ -2270,6 +2270,26 @@
    "detail": "Groin",
    "espn_id": "4361196"
   },
+  "name:JAX:ericmurray": {
+   "name": "Eric Murray",
+   "team": "JAX",
+   "pos": "S",
+   "status": "Injured Reserve",
+   "fantasy": "IR",
+   "date": "2026-11-03T20:11:00-05:00",
+   "detail": "Elbow",
+   "espn_id": "2970716"
+  },
+  "name:JAX:davonhamilton": {
+   "name": "DaVon Hamilton",
+   "team": "JAX",
+   "pos": "DT",
+   "status": "Injured Reserve",
+   "fantasy": "IR",
+   "date": "2026-11-03T20:05:00-05:00",
+   "detail": "Knee",
+   "espn_id": "3915520"
+  },
   "00-0039893": {
    "name": "Brian Thomas Jr.",
    "team": "JAX",
@@ -2352,26 +2372,6 @@
    "date": "2026-11-02T19:57:00-05:00",
    "detail": "Ankle",
    "espn_id": "4426448"
-  },
-  "name:JAX:ericmurray": {
-   "name": "Eric Murray",
-   "team": "JAX",
-   "pos": "S",
-   "status": "Injured Reserve",
-   "fantasy": "IR",
-   "date": "2026-11-02T19:29:00-05:00",
-   "detail": "Elbow",
-   "espn_id": "2970716"
-  },
-  "name:JAX:davonhamilton": {
-   "name": "DaVon Hamilton",
-   "team": "JAX",
-   "pos": "DT",
-   "status": "Injured Reserve",
-   "fantasy": "IR",
-   "date": "2026-11-02T17:16:00-05:00",
-   "detail": "Knee",
-   "espn_id": "3915520"
   },
   "00-0041106": {
    "name": "CJ Williams",
