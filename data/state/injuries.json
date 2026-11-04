@@ -1,7 +1,18 @@
 {
- "at": "2026-11-04T17:30:00-05:00",
+ "at": "2026-11-04T18:00:00-05:00",
  "source": "espn",
  "players": {
+  "00-0038559": {
+   "name": "Michael Wilson",
+   "team": "ARI",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-04T17:35:00-05:00",
+   "detail": "Ribs",
+   "espn_id": "4360761",
+   "comment": "Wilson (ribs) wore a yellow non-contact jersey at Wednesday's practice, Bo Brack of GoPHNX.com reports."
+  },
   "00-0033119": {
    "name": "Jacoby Brissett",
    "team": "ARI",
@@ -175,17 +186,6 @@
    "date": "2026-11-01T18:48:00-05:00",
    "detail": null,
    "espn_id": "4361307"
-  },
-  "00-0038559": {
-   "name": "Michael Wilson",
-   "team": "ARI",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-01T17:47:00-05:00",
-   "detail": "Ribs",
-   "espn_id": "4360761",
-   "comment": "Wilson said after Sunday's 33-30 win at Dallas that he suffered two broken ribs during the contest, Josh Weinfuss of ESPN.com reports."
   },
   "name:ARI:jaydenwilliams": {
    "name": "Jayden Williams",
@@ -673,6 +673,16 @@
    "espn_id": "4242433",
    "comment": "Palmer (hamstring) has been ruled out for the rest of Sunday's game against the Ravens."
   },
+  "name:CAR:bobbyokereke": {
+   "name": "Bobby Okereke",
+   "team": "CAR",
+   "pos": "LB",
+   "status": "Doubtful",
+   "fantasy": "DOUBTFUL",
+   "date": "2026-11-04T17:19:00-05:00",
+   "detail": "Foot",
+   "espn_id": "3117253"
+  },
   "name:CAR:bradychristensen": {
    "name": "Brady Christensen",
    "team": "CAR",
@@ -713,16 +723,6 @@
    "date": "2026-11-03T08:03:00-05:00",
    "detail": "Knee",
    "espn_id": "4362647"
-  },
-  "name:CAR:bobbybrown": {
-   "name": "Bobby Brown III",
-   "team": "CAR",
-   "pos": "DT",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-03T08:03:00-05:00",
-   "detail": "Hand",
-   "espn_id": "4372518"
   },
   "00-0039356": {
    "name": "Ja'Tavion Sanders",
@@ -885,6 +885,16 @@
    "detail": "Triceps",
    "espn_id": "4244607"
   },
+  "name:CHI:kentaviusstreet": {
+   "name": "Kentavius Street",
+   "team": "CHI",
+   "pos": "DT",
+   "status": "Injured Reserve",
+   "fantasy": "IR",
+   "date": "2026-11-04T17:35:00-05:00",
+   "detail": "Knee",
+   "espn_id": "3116726"
+  },
   "00-0041558": {
    "name": "Sam Roush",
    "team": "CHI",
@@ -975,16 +985,6 @@
    "date": "2026-11-02T23:43:00-05:00",
    "detail": null,
    "espn_id": "4259545"
-  },
-  "name:CHI:kentaviusstreet": {
-   "name": "Kentavius Street",
-   "team": "CHI",
-   "pos": "DT",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-02T23:25:00-05:00",
-   "detail": "Knee",
-   "espn_id": "3116726"
   },
   "name:CHI:gradyjarrett": {
    "name": "Grady Jarrett",
@@ -1198,6 +1198,28 @@
    "detail": null,
    "espn_id": "4384852"
   },
+  "00-0033537": {
+   "name": "Deshaun Watson",
+   "team": "CLE",
+   "pos": "QB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-04T17:36:00-05:00",
+   "detail": "Concussion",
+   "espn_id": "3122840",
+   "comment": "The Browns listed Watson (concussion) as a non-participant in Wednesday's practice."
+  },
+  "00-0041037": {
+   "name": "Denzel Boston",
+   "team": "CLE",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-04T17:24:00-05:00",
+   "detail": "Calf",
+   "espn_id": "4832800",
+   "comment": "Boston was a limited participant in Wednesday's practice due to a calf injury, Scott Petrak of the Elyria Chronicle-Telegram reports."
+  },
   "name:CLE:carsonschwesinger": {
    "name": "Carson Schwesinger",
    "team": "CLE",
@@ -1258,17 +1280,6 @@
    "detail": "Elbow",
    "espn_id": "3040471"
   },
-  "00-0041037": {
-   "name": "Denzel Boston",
-   "team": "CLE",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T16:58:00-05:00",
-   "detail": "Calf",
-   "espn_id": "4832800",
-   "comment": "questionable"
-  },
   "name:CLE:quincywilliams": {
    "name": "Quincy Williams",
    "team": "CLE",
@@ -1288,17 +1299,6 @@
    "date": "2026-11-04T14:29:00-05:00",
    "detail": null,
    "espn_id": "4685540"
-  },
-  "00-0033537": {
-   "name": "Deshaun Watson",
-   "team": "CLE",
-   "pos": "QB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T12:01:00-05:00",
-   "detail": "Concussion",
-   "espn_id": "3122840",
-   "comment": "Mary Kay Cabot of the Cleveland Plain Dealer suggests that Watson may have difficulty clearing the NFL's concussion protocol ahead of Sunday's game against the "
   },
   "00-0040668": {
    "name": "Shedeur Sanders",
@@ -2720,6 +2720,16 @@
    "detail": "Knee - ACL",
    "espn_id": "4591008"
   },
+  "00-0040488": {
+   "name": "Carter Runyon",
+   "team": "LV",
+   "pos": "TE",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-04T17:27:00-05:00",
+   "detail": null,
+   "espn_id": "5155825"
+  },
   "00-0040878": {
    "name": "Mike Washington Jr.",
    "team": "LV",
@@ -2869,17 +2879,6 @@
    "date": "2026-10-30T19:58:00-04:00",
    "detail": null,
    "espn_id": "4045305"
-  },
-  "00-0040488": {
-   "name": "Carter Runyon",
-   "team": "LV",
-   "pos": "TE",
-   "status": "Injured Reserve",
-   "fantasy": "IR-R",
-   "date": "2026-10-30T19:56:00-04:00",
-   "detail": "Foot",
-   "espn_id": "5155825",
-   "comment": "Runyon (foot) has been ruled out for Sunday's game against the Jets, Sam Warren of The Athletic reports."
   },
   "00-0041550": {
    "name": "Brenen Thompson",
@@ -3746,6 +3745,17 @@
    "detail": null,
    "espn_id": "4698253"
   },
+  "00-0033906": {
+   "name": "Alvin Kamara",
+   "team": "NO",
+   "pos": "RB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-04T17:19:00-05:00",
+   "detail": "Back",
+   "espn_id": "3054850",
+   "comment": "Kamara (rest/back) didn't practice Wednesday."
+  },
   "name:NO:asimrichards": {
    "name": "Asim Richards",
    "team": "NO",
@@ -3765,17 +3775,6 @@
    "date": "2026-11-04T17:03:00-05:00",
    "detail": "Shin",
    "espn_id": "4429568"
-  },
-  "00-0033906": {
-   "name": "Alvin Kamara",
-   "team": "NO",
-   "pos": "RB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T17:02:00-05:00",
-   "detail": "Back",
-   "espn_id": "3054850",
-   "comment": "questionable"
   },
   "00-0041029": {
    "name": "Jordyn Tyson",
@@ -3935,7 +3934,7 @@
    "pos": "OT",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T17:16:00-05:00",
+   "date": "2026-11-04T17:48:00-05:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
@@ -4162,7 +4161,7 @@
    "date": "2026-11-04T12:36:00-05:00",
    "detail": "Quadriceps",
    "espn_id": "4427366",
-   "comment": "Hall (quadriceps) is slated to be limited at practice Wednesday, ack Rosenblatt of The Athletic reports."
+   "comment": "Jets head coach Aaron Glenn said that Hall (quadriceps) will be a limited practice participant Wednesday, Zack Rosenblatt of The Athletic reports."
   },
   "00-0037740": {
    "name": "Garrett Wilson",
