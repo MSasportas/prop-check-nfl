@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T20:30:00-05:00",
+ "at": "2026-11-03T21:00:00-05:00",
  "source": "espn",
  "players": {
   "00-0036646": {
@@ -1018,16 +1018,6 @@
    "detail": null,
    "espn_id": "15168"
   },
-  "00-0035039": {
-   "name": "Stephen Carlson",
-   "team": "CHI",
-   "pos": "TE",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-02T19:01:00-05:00",
-   "detail": null,
-   "espn_id": "3948283"
-  },
   "name:CHI:cobybryant": {
    "name": "Coby Bryant",
    "team": "CHI",
@@ -1054,7 +1044,7 @@
    "pos": "DE",
    "status": "Injured Reserve",
    "fantasy": "IR",
-   "date": "2026-11-03T10:32:00-05:00",
+   "date": "2026-11-03T20:35:00-05:00",
    "detail": "Wrist",
    "espn_id": "4710752"
   },
@@ -2270,6 +2260,16 @@
    "detail": "Groin",
    "espn_id": "4361196"
   },
+  "name:JAX:travonwalker": {
+   "name": "Travon Walker",
+   "team": "JAX",
+   "pos": "DE",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-03T20:30:00-05:00",
+   "detail": "Ribs",
+   "espn_id": "4426349"
+  },
   "name:JAX:ericmurray": {
    "name": "Eric Murray",
    "team": "JAX",
@@ -2422,16 +2422,6 @@
    "date": "2026-11-01T20:40:00-05:00",
    "detail": null,
    "espn_id": "4432620"
-  },
-  "name:JAX:travonwalker": {
-   "name": "Travon Walker",
-   "team": "JAX",
-   "pos": "DE",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-01T15:42:00-05:00",
-   "detail": "Ribs",
-   "espn_id": "4426349"
   },
   "name:JAX:ezracleveland": {
    "name": "Ezra Cleveland",
@@ -2956,6 +2946,17 @@
    "detail": "Undisclosed",
    "espn_id": "2579621"
   },
+  "00-0041415": {
+   "name": "Dean Connors",
+   "team": "LA",
+   "pos": "RB",
+   "status": "Injured Reserve",
+   "fantasy": "IR",
+   "date": "2026-11-03T20:20:00-05:00",
+   "detail": "Hand",
+   "espn_id": "5082269",
+   "comment": "Connors (hand) was placed on IR on Tuesday, Blaine Grisak of SI.com reports."
+  },
   "00-0036244": {
    "name": "Colby Parkinson",
    "team": "LA",
@@ -2976,17 +2977,6 @@
    "date": "2026-11-03T08:03:00-05:00",
    "detail": "Ankle",
    "espn_id": "2575907"
-  },
-  "00-0041415": {
-   "name": "Dean Connors",
-   "team": "LA",
-   "pos": "RB",
-   "status": "Injured Reserve",
-   "fantasy": "IR",
-   "date": "2026-11-02T21:03:00-05:00",
-   "detail": "Hand",
-   "espn_id": "5082269",
-   "comment": "Rams head coach Sean McVay said Monday that Connors sustained a broken hand in Sunday's 24-9 win over the Chargers and will require surgery, Nate Atkins of The "
   },
   "00-0039751": {
    "name": "Jordan Whittington",
@@ -3251,6 +3241,16 @@
    "detail": null,
    "espn_id": "4880236"
   },
+  "name:MIN:christiandarrisaw": {
+   "name": "Christian Darrisaw",
+   "team": "MIN",
+   "pos": "OT",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-03T20:35:00-05:00",
+   "detail": "Shoulder",
+   "espn_id": "4361985"
+  },
   "00-0036259": {
    "name": "Jauan Jennings",
    "team": "MIN",
@@ -3260,16 +3260,6 @@
    "date": "2026-11-02T21:37:00-05:00",
    "detail": null,
    "espn_id": "3886598"
-  },
-  "name:MIN:christiandarrisaw": {
-   "name": "Christian Darrisaw",
-   "team": "MIN",
-   "pos": "OT",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-02T15:04:00-05:00",
-   "detail": "Shoulder",
-   "espn_id": "4361985"
   },
   "00-0035228": {
    "name": "Kyler Murray",
@@ -4716,16 +4706,6 @@
    "date": "2026-11-02T19:16:00-05:00",
    "detail": "Ankle",
    "espn_id": "3120358"
-  },
-  "00-0040621": {
-   "name": "Montorie Foster Jr.",
-   "team": "SEA",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-02T19:12:00-05:00",
-   "detail": null,
-   "espn_id": "4600597"
   },
   "00-0035704": {
    "name": "Drew Lock",
