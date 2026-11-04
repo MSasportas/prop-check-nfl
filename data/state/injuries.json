@@ -1,5 +1,5 @@
 {
- "at": "2026-11-04T14:30:14-05:00",
+ "at": "2026-11-04T15:00:19-05:00",
  "source": "espn",
  "players": {
   "00-0039041": {
@@ -130,9 +130,9 @@
    "team": "ARI",
    "pos": "QB",
    "status": "Active",
-   "fantasy": null,
+   "fantasy": "OUT",
    "date": "2026-11-02T17:01:00-05:00",
-   "detail": null,
+   "detail": "Coach's Decision",
    "espn_id": "2578570"
   },
   "00-0037157": {
@@ -1217,6 +1217,16 @@
    "date": "2026-10-26T21:58:00-04:00",
    "detail": null,
    "espn_id": "4384852"
+  },
+  "00-0041131": {
+   "name": "Carsen Ryan",
+   "team": "CLE",
+   "pos": "TE",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-04T14:29:00-05:00",
+   "detail": null,
+   "espn_id": "4685540"
   },
   "name:CLE:quincywilliams": {
    "name": "Quincy Williams",
@@ -3422,6 +3432,17 @@
    "detail": null,
    "espn_id": "4708049"
   },
+  "00-0033090": {
+   "name": "Hunter Henry",
+   "team": "NE",
+   "pos": "TE",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-04T14:41:00-05:00",
+   "detail": "Foot",
+   "espn_id": "3046439",
+   "comment": "Henry (foot) wasn't on the field for the media-access portion of Wednesday's practice, Mike Reiss of ESPN.com reports."
+  },
   "00-0040734": {
    "name": "TreVeyon Henderson",
    "team": "NE",
@@ -3449,7 +3470,7 @@
    "team": "NE",
    "pos": "WR",
    "status": "Injured Reserve",
-   "fantasy": "IR-R",
+   "fantasy": "IR",
    "date": "2026-11-04T09:14:00-05:00",
    "detail": "Calf",
    "espn_id": "2991662",
@@ -3474,17 +3495,6 @@
    "date": "2026-11-03T21:12:00-05:00",
    "detail": null,
    "espn_id": "4431431"
-  },
-  "00-0033090": {
-   "name": "Hunter Henry",
-   "team": "NE",
-   "pos": "TE",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-03T10:14:00-05:00",
-   "detail": "Foot",
-   "espn_id": "3046439",
-   "comment": "Patriots head coach Mike Vrabel said Monday that he had no update on Henry's (foot) status heading into Sunday's game against the Packers, Karen Guregian of Mas"
   },
   "00-0041395": {
    "name": "Eli Raridon",
@@ -3576,16 +3586,6 @@
    "detail": "Hamstring",
    "espn_id": "4880281",
    "comment": "Tyson (hamstring) is slated to resume practicing with the Saints on Wednesday, Nick Underhill of NewOrleans.Football reports."
-  },
-  "00-0039373": {
-   "name": "Audric Estime",
-   "team": "NO",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-03T18:40:00-05:00",
-   "detail": null,
-   "espn_id": "4569682"
   },
   "00-0036973": {
    "name": "Travis Etienne Jr.",
@@ -3748,6 +3748,16 @@
    "detail": "Shoulder",
    "espn_id": "5081999",
    "comment": "Donaldson (shoulder) is questionable to return to Sunday's game against the Steelers in Paris."
+  },
+  "00-0039376": {
+   "name": "Spencer Rattler",
+   "team": "NO",
+   "pos": "QB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-10-25T08:45:00-04:00",
+   "detail": null,
+   "espn_id": "4426339"
   },
   "00-0040715": {
    "name": "Cam Skattebo",
@@ -4074,6 +4084,26 @@
    "detail": null,
    "espn_id": "4035537"
   },
+  "00-0038400": {
+   "name": "Tanner McKee",
+   "team": "PHI",
+   "pos": "QB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-04T14:24:00-05:00",
+   "detail": null,
+   "espn_id": "4685201"
+  },
+  "00-0039398": {
+   "name": "Joe Milton",
+   "team": "PHI",
+   "pos": "QB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-04T14:16:00-05:00",
+   "detail": null,
+   "espn_id": "4360698"
+  },
   "00-0036980": {
    "name": "Elijah Moore",
    "team": "PHI",
@@ -4186,16 +4216,6 @@
    "date": "2026-11-02T21:48:00-05:00",
    "detail": null,
    "espn_id": "4241555"
-  },
-  "00-0038400": {
-   "name": "Tanner McKee",
-   "team": "PHI",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-02T16:37:00-05:00",
-   "detail": null,
-   "espn_id": "4685201"
   },
   "00-0034844": {
    "name": "Saquon Barkley",
