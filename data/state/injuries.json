@@ -1,7 +1,38 @@
 {
- "at": "2026-11-03T19:30:00-05:00",
+ "at": "2026-11-03T20:00:00-05:00",
  "source": "espn",
  "players": {
+  "00-0036646": {
+   "name": "Simi Fehoko",
+   "team": "ARI",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-03T19:32:00-05:00",
+   "detail": null,
+   "espn_id": "4360739"
+  },
+  "00-0033553": {
+   "name": "James Conner",
+   "team": "ARI",
+   "pos": "RB",
+   "status": "Injured Reserve",
+   "fantasy": "IR-R",
+   "date": "2026-11-03T19:31:00-05:00",
+   "detail": "Foot",
+   "espn_id": "3045147",
+   "comment": "Cardinals head coach Mike LaFleur said Tuesday that Conner (foot) won't return from IR this week, Darren Urban of the team's official site reports."
+  },
+  "00-0037263": {
+   "name": "Tyler Allgeier",
+   "team": "ARI",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-03T19:17:00-05:00",
+   "detail": null,
+   "espn_id": "4373626"
+  },
   "00-0041368": {
    "name": "Harrison Wallace III",
    "team": "ARI",
@@ -115,16 +146,6 @@
    "detail": null,
    "espn_id": "4361307"
   },
-  "00-0037263": {
-   "name": "Tyler Allgeier",
-   "team": "ARI",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-01T18:25:00-05:00",
-   "detail": null,
-   "espn_id": "4373626"
-  },
   "00-0038559": {
    "name": "Michael Wilson",
    "team": "ARI",
@@ -145,6 +166,16 @@
    "date": "2026-11-01T15:46:00-05:00",
    "detail": "Knee",
    "espn_id": "4709718"
+  },
+  "name:ATL:samsonebukam": {
+   "name": "Samson Ebukam",
+   "team": "ATL",
+   "pos": "DE",
+   "status": "Injured Reserve",
+   "fantasy": "IR",
+   "date": "2026-11-03T19:37:00-05:00",
+   "detail": "Hamstring",
+   "espn_id": "3045527"
   },
   "00-0037746": {
    "name": "Brian Robinson Jr.",
@@ -186,16 +217,6 @@
    "date": "2026-11-02T21:20:00-05:00",
    "detail": null,
    "espn_id": "4035886"
-  },
-  "name:ATL:samsonebukam": {
-   "name": "Samson Ebukam",
-   "team": "ATL",
-   "pos": "DE",
-   "status": "Injured Reserve",
-   "fantasy": "IR",
-   "date": "2026-11-02T19:40:00-05:00",
-   "detail": "Hamstring",
-   "espn_id": "3045527"
   },
   "00-0041044": {
    "name": "Zachariah Branch",
@@ -5532,6 +5553,10 @@
   "00-0038679": {
    "status": "Out",
    "at": "2026-11-03T18:00:00-05:00"
+  },
+  "00-0033553": {
+   "status": "Injured Reserve",
+   "at": "2026-11-03T20:00:00-05:00"
   }
  }
 }
