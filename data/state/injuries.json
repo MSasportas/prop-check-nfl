@@ -1,5 +1,5 @@
 {
- "at": "2026-11-04T20:00:15-05:00",
+ "at": "2026-11-04T20:30:16-05:00",
  "source": "espn",
  "players": {
   "00-0037157": {
@@ -380,6 +380,37 @@
    "detail": "Undisclosed",
    "espn_id": "5150660"
   },
+  "name:BAL:jaylinnhawkins": {
+   "name": "Jaylinn Hawkins",
+   "team": "BAL",
+   "pos": "S",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-11-04T20:14:00-05:00",
+   "detail": "Knee",
+   "espn_id": "3858276"
+  },
+  "00-0040888": {
+   "name": "Adam Randall",
+   "team": "BAL",
+   "pos": "RB",
+   "status": "Injured Reserve",
+   "fantasy": "IR-R",
+   "date": "2026-11-04T20:10:00-05:00",
+   "detail": "Neck",
+   "espn_id": "4685526",
+   "comment": "Randall (neck) is officially listed as questionable for Thursday's game versus the Jaguars, Ryan Mink of the Ravens' official site reports."
+  },
+  "name:BAL:natewiggins": {
+   "name": "Nate Wiggins",
+   "team": "BAL",
+   "pos": "CB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-04T20:06:00-05:00",
+   "detail": "Illness",
+   "espn_id": "4601278"
+  },
   "00-0040981": {
    "name": "Joe Fagnano",
    "team": "BAL",
@@ -389,26 +420,6 @@
    "date": "2026-11-04T19:14:00-05:00",
    "detail": null,
    "espn_id": "4429582"
-  },
-  "name:BAL:natewiggins": {
-   "name": "Nate Wiggins",
-   "team": "BAL",
-   "pos": "CB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T15:17:00-05:00",
-   "detail": "Illness",
-   "espn_id": "4601278"
-  },
-  "name:BAL:jaylinnhawkins": {
-   "name": "Jaylinn Hawkins",
-   "team": "BAL",
-   "pos": "S",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-11-04T15:14:00-05:00",
-   "detail": "Knee",
-   "espn_id": "3858276"
   },
   "00-0035993": {
    "name": "Tyler Huntley",
@@ -510,16 +521,6 @@
    "date": "2026-11-01T21:48:00-05:00",
    "detail": null,
    "espn_id": "3116365"
-  },
-  "00-0039064": {
-   "name": "Zay Flowers",
-   "team": "BAL",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-01T19:27:00-05:00",
-   "detail": null,
-   "espn_id": "4429615"
   },
   "00-0035537": {
    "name": "Ty Johnson",
@@ -1410,6 +1411,16 @@
    "detail": null,
    "espn_id": "5083076"
   },
+  "name:DAL:pjlocke": {
+   "name": "P.J. Locke",
+   "team": "DAL",
+   "pos": "S",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-04T19:55:00-05:00",
+   "detail": "Concussion",
+   "espn_id": "3929850"
+  },
   "name:DAL:calebdowns": {
    "name": "Caleb Downs",
    "team": "DAL",
@@ -1503,16 +1514,6 @@
    "detail": "Ribs",
    "espn_id": "3676833",
    "comment": "questionable"
-  },
-  "name:DAL:pjlocke": {
-   "name": "P.J. Locke",
-   "team": "DAL",
-   "pos": "S",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-02T23:05:00-05:00",
-   "detail": "Concussion",
-   "espn_id": "3929850"
   },
   "name:DAL:malachilawrence": {
    "name": "Malachi Lawrence",
@@ -2427,6 +2428,16 @@
    "detail": null,
    "espn_id": "4242335"
   },
+  "name:JAX:travonwalker": {
+   "name": "Travon Walker",
+   "team": "JAX",
+   "pos": "DE",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-04T19:51:00-05:00",
+   "detail": "Ribs",
+   "espn_id": "4426349"
+  },
   "00-0038611": {
    "name": "Chris Rodriguez Jr.",
    "team": "JAX",
@@ -2467,16 +2478,6 @@
    "date": "2026-11-03T22:37:00-05:00",
    "detail": null,
    "espn_id": "4879194"
-  },
-  "name:JAX:travonwalker": {
-   "name": "Travon Walker",
-   "team": "JAX",
-   "pos": "DE",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-03T20:30:00-05:00",
-   "detail": "Ribs",
-   "espn_id": "4426349"
   },
   "name:JAX:ericmurray": {
    "name": "Eric Murray",
@@ -2902,6 +2903,16 @@
    "detail": "Neck",
    "espn_id": "4243916"
   },
+  "name:LAC:denzelperryman": {
+   "name": "Denzel Perryman",
+   "team": "LAC",
+   "pos": "LB",
+   "status": "Injured Reserve",
+   "fantasy": "IR-R",
+   "date": "2026-11-04T19:59:00-05:00",
+   "detail": "Undisclosed",
+   "espn_id": "2579621"
+  },
   "name:LAC:buddupree": {
    "name": "Bud Dupree",
    "team": "LAC",
@@ -3113,16 +3124,6 @@
    "date": "2026-10-31T20:11:00-04:00",
    "detail": "Hamstring",
    "espn_id": "3691739"
-  },
-  "name:LAC:denzelperryman": {
-   "name": "Denzel Perryman",
-   "team": "LAC",
-   "pos": "LB",
-   "status": "Injured Reserve",
-   "fantasy": "IR-R",
-   "date": "2026-10-28T21:38:00-04:00",
-   "detail": "Undisclosed",
-   "espn_id": "2579621"
   },
   "00-0026498": {
    "name": "Matthew Stafford",
@@ -3987,7 +3988,7 @@
    "pos": "OT",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T19:44:00-05:00",
+   "date": "2026-11-04T20:01:00-05:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
@@ -4713,6 +4714,17 @@
    "detail": "Triceps",
    "espn_id": "3047495"
   },
+  "00-0032775": {
+   "name": "Demarcus Robinson",
+   "team": "SF",
+   "pos": "WR",
+   "status": "Injured Reserve",
+   "fantasy": "IR-R",
+   "date": "2026-11-04T20:08:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "3043116",
+   "comment": "Robinson (ankle) was designated to return from injured reserve Wednesday, Matt Maiocco of NBC Sports Bay Area reports."
+  },
   "00-0034775": {
    "name": "Christian Kirk",
    "team": "SF",
@@ -4868,17 +4880,6 @@
    "date": "2026-10-26T19:07:00-04:00",
    "detail": "Shoulder - AC Joint",
    "espn_id": "4565200"
-  },
-  "00-0032775": {
-   "name": "Demarcus Robinson",
-   "team": "SF",
-   "pos": "WR",
-   "status": "Injured Reserve",
-   "fantasy": "IR-R",
-   "date": "2026-10-26T18:25:00-04:00",
-   "detail": "Ankle",
-   "espn_id": "3043116",
-   "comment": "49ers coach Kyle Shanahan reiterated Monday that Robinson (ankle) has a chance to return following the team's Week 8 bye, David Lombardi of SFStandard.com repor"
   },
   "00-0040589": {
    "name": "Kurtis Rourke",
@@ -6048,6 +6049,10 @@
   "00-0036628": {
    "status": "Questionable",
    "at": "2026-11-04T20:00:15-05:00"
+  },
+  "00-0040888": {
+   "status": "Injured Reserve",
+   "at": "2026-11-04T20:30:16-05:00"
   }
  }
 }
