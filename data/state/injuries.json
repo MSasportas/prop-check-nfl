@@ -1,5 +1,5 @@
 {
- "at": "2026-11-04T19:00:01-05:00",
+ "at": "2026-11-04T19:30:15-05:00",
  "source": "espn",
  "players": {
   "00-0038559": {
@@ -380,6 +380,16 @@
    "detail": "Undisclosed",
    "espn_id": "5150660"
   },
+  "00-0040981": {
+   "name": "Joe Fagnano",
+   "team": "BAL",
+   "pos": "QB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-04T19:14:00-05:00",
+   "detail": null,
+   "espn_id": "4429582"
+  },
   "name:BAL:natewiggins": {
    "name": "Nate Wiggins",
    "team": "BAL",
@@ -440,16 +450,6 @@
    "date": "2026-11-03T16:44:00-05:00",
    "detail": "Groin",
    "espn_id": "4697745"
-  },
-  "00-0040981": {
-   "name": "Joe Fagnano",
-   "team": "BAL",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-03T15:39:00-05:00",
-   "detail": null,
-   "espn_id": "4429582"
   },
   "00-0039577": {
    "name": "Kedon Slovis",
@@ -677,9 +677,9 @@
    "name": "Bobby Okereke",
    "team": "CAR",
    "pos": "LB",
-   "status": "Doubtful",
-   "fantasy": "DOUBTFUL",
-   "date": "2026-11-04T17:19:00-05:00",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-04T19:07:00-05:00",
    "detail": "Foot",
    "espn_id": "3117253"
   },
@@ -1410,6 +1410,17 @@
    "detail": null,
    "espn_id": "5083076"
   },
+  "00-0038041": {
+   "name": "Jake Ferguson",
+   "team": "DAL",
+   "pos": "TE",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-04T19:11:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "4242355",
+   "comment": "Ferguson (ankle) did not participate at the Cowboys' practice Wednesday, Patrik Walker of the team's official site reports."
+  },
   "00-0037247": {
    "name": "George Pickens",
    "team": "DAL",
@@ -1430,17 +1441,6 @@
    "date": "2026-11-04T16:51:00-05:00",
    "detail": "Ankle",
    "espn_id": "4568652"
-  },
-  "00-0038041": {
-   "name": "Jake Ferguson",
-   "team": "DAL",
-   "pos": "TE",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T13:51:00-05:00",
-   "detail": "Ankle",
-   "espn_id": "4242355",
-   "comment": "Head coach Brian Schottenheimer said Ferguson (ankle) will work with the Cowboys' training staff during Wednesday's practice, Briana Aldridge of CBS News Texas "
   },
   "00-0037120": {
    "name": "Tyler Goodson",
@@ -2091,6 +2091,37 @@
    "detail": null,
    "espn_id": "4259305"
   },
+  "name:HOU:bradensmith": {
+   "name": "Braden Smith",
+   "team": "HOU",
+   "pos": "OT",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-04T18:56:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "3121595"
+  },
+  "00-0036556": {
+   "name": "Brevin Jordan",
+   "team": "HOU",
+   "pos": "TE",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-04T18:55:00-05:00",
+   "detail": "Finger",
+   "espn_id": "4362504",
+   "comment": "questionable"
+  },
+  "name:HOU:azeezalshaair": {
+   "name": "Azeez Al-Shaair",
+   "team": "HOU",
+   "pos": "LB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-04T18:55:00-05:00",
+   "detail": "Groin",
+   "espn_id": "3919117"
+  },
   "00-0035685": {
    "name": "David Montgomery",
    "team": "HOU",
@@ -2232,16 +2263,6 @@
    "date": "2026-10-25T17:20:00-04:00",
    "detail": null,
    "espn_id": "4258173"
-  },
-  "00-0036556": {
-   "name": "Brevin Jordan",
-   "team": "HOU",
-   "pos": "TE",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-23T20:15:00-04:00",
-   "detail": null,
-   "espn_id": "4362504"
   },
   "00-0037292": {
    "name": "Drew Ogletree",
@@ -2700,6 +2721,26 @@
    "detail": "Knee - ACL",
    "espn_id": "4591008"
   },
+  "name:LV:folorunsofatukasi": {
+   "name": "Folorunso Fatukasi",
+   "team": "LV",
+   "pos": "DT",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-04T19:00:00-05:00",
+   "detail": "Shoulder",
+   "espn_id": "3045172"
+  },
+  "name:LV:thomasbooker": {
+   "name": "Thomas Booker IV",
+   "team": "LV",
+   "pos": "DT",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-04T18:59:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "4360749"
+  },
   "00-0034365": {
    "name": "Ian Thomas",
    "team": "LV",
@@ -3083,6 +3124,28 @@
    "detail": "Undisclosed",
    "espn_id": "2579621"
   },
+  "00-0040737": {
+   "name": "Terrance Ferguson",
+   "team": "LA",
+   "pos": "TE",
+   "status": "Injured Reserve",
+   "fantasy": "IR-R",
+   "date": "2026-11-04T19:14:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "4570037",
+   "comment": "Ferguson (ankle) was limited in Wednesday's practice."
+  },
+  "00-0036244": {
+   "name": "Colby Parkinson",
+   "team": "LA",
+   "pos": "TE",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-04T19:12:00-05:00",
+   "detail": "Ribs",
+   "espn_id": "4242557",
+   "comment": "Parkinson (ribs) did not practice Wednesday, Sarah Barshop of ESPN.com reports."
+  },
   "name:LA:kamcurl": {
    "name": "Kam Curl",
    "team": "LA",
@@ -3124,17 +3187,6 @@
    "detail": "Knee",
    "espn_id": "3122132"
   },
-  "00-0040737": {
-   "name": "Terrance Ferguson",
-   "team": "LA",
-   "pos": "TE",
-   "status": "Injured Reserve",
-   "fantasy": "IR-R",
-   "date": "2026-11-04T17:06:00-05:00",
-   "detail": "Ankle",
-   "espn_id": "4570037",
-   "comment": "Ferguson (ankle) is returning to practice Wednesday, opening his 21-day window to return, Gary Klein of the LA Times reports."
-  },
   "name:LA:jaylenwatson": {
    "name": "Jaylen Watson",
    "team": "LA",
@@ -3165,17 +3217,6 @@
    "detail": "Hand",
    "espn_id": "5082269",
    "comment": "Connors (hand) was placed on IR on Tuesday, Blaine Grisak of SI.com reports."
-  },
-  "00-0036244": {
-   "name": "Colby Parkinson",
-   "team": "LA",
-   "pos": "TE",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-03T08:03:00-05:00",
-   "detail": "Ribs",
-   "espn_id": "4242557",
-   "comment": "questionable"
   },
   "name:LA:joecardona": {
    "name": "Joe Cardona",
@@ -3767,6 +3808,17 @@
    "detail": null,
    "espn_id": "4698253"
   },
+  "00-0041326": {
+   "name": "CJ Donaldson",
+   "team": "NO",
+   "pos": "RB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-04T19:09:00-05:00",
+   "detail": "Shoulder",
+   "espn_id": "5081999",
+   "comment": "Donaldson (shoulder) was limited in Wednesday's practice."
+  },
   "00-0033906": {
    "name": "Alvin Kamara",
    "team": "NO",
@@ -3920,23 +3972,13 @@
    "detail": null,
    "espn_id": "4361370"
   },
-  "name:NO:justinreid": {
-   "name": "Justin Reid",
-   "team": "NO",
-   "pos": "S",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-25T11:28:00-04:00",
-   "detail": "Concussion",
-   "espn_id": "3931399"
-  },
   "name:NYG:jermaineeluemunor": {
    "name": "Jermaine Eluemunor",
    "team": "NYG",
    "pos": "OT",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T18:48:00-05:00",
+   "date": "2026-11-04T19:07:00-05:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
@@ -4662,6 +4704,16 @@
    "detail": "Triceps",
    "espn_id": "3047495"
   },
+  "name:SF:nickbosa": {
+   "name": "Nick Bosa",
+   "team": "SF",
+   "pos": "DE",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-04T19:07:00-05:00",
+   "detail": "Knee",
+   "espn_id": "4040605"
+  },
   "name:SF:siranneal": {
    "name": "Siran Neal",
    "team": "SF",
@@ -4808,16 +4860,6 @@
    "detail": "Shoulder - AC Joint",
    "espn_id": "4565200"
   },
-  "name:SF:nickbosa": {
-   "name": "Nick Bosa",
-   "team": "SF",
-   "pos": "DE",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-26T19:05:00-04:00",
-   "detail": "Knee",
-   "espn_id": "4040605"
-  },
   "00-0032775": {
    "name": "Demarcus Robinson",
    "team": "SF",
@@ -4888,6 +4930,16 @@
    "date": "2026-10-25T18:55:00-04:00",
    "detail": null,
    "espn_id": "3040151"
+  },
+  "00-0040673": {
+   "name": "Jalen Milroe",
+   "team": "SEA",
+   "pos": "QB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-04T19:05:00-05:00",
+   "detail": null,
+   "espn_id": "4432734"
   },
   "00-0035704": {
    "name": "Drew Lock",
@@ -5974,6 +6026,10 @@
   "00-0034775": {
    "status": "Questionable",
    "at": "2026-11-04T19:00:01-05:00"
+  },
+  "00-0036556": {
+   "status": "Questionable",
+   "at": "2026-11-04T19:30:15-05:00"
   }
  }
 }
