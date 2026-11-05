@@ -1,5 +1,5 @@
 {
- "at": "2026-11-05T12:10:01-05:00",
+ "at": "2026-11-05T12:50:00-05:00",
  "source": "espn",
  "players": {
   "name:ARI:isaiahadams": {
@@ -3546,16 +3546,6 @@
    "detail": null,
    "espn_id": "4367209"
   },
-  "00-0038728": {
-   "name": "Jared Wayne",
-   "team": "MIA",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-01T15:22:00-05:00",
-   "detail": null,
-   "espn_id": "4430681"
-  },
   "00-0036425": {
    "name": "DeeJay Dallas",
    "team": "MIN",
@@ -4051,7 +4041,7 @@
    "pos": "OT",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T11:51:00-05:00",
+   "date": "2026-11-05T12:01:00-05:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
@@ -5218,6 +5208,17 @@
    "detail": "Ankle",
    "espn_id": "3120358"
   },
+  "00-0040129": {
+   "name": "Emeka Egbuka",
+   "team": "TB",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-05T12:04:00-05:00",
+   "detail": "Foot",
+   "espn_id": "4567750",
+   "comment": "Egbuka, who was present for practice Thursday, was spotted testing his injured foot, Greg Auman of Fox Sports reports."
+  },
   "00-0039855": {
    "name": "Jalen McMillan",
    "team": "TB",
@@ -5259,17 +5260,6 @@
    "date": "2026-11-04T14:17:00-05:00",
    "detail": null,
    "espn_id": "4890373"
-  },
-  "00-0040129": {
-   "name": "Emeka Egbuka",
-   "team": "TB",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T12:17:00-05:00",
-   "detail": "Foot",
-   "espn_id": "4567750",
-   "comment": "Egbuka (foot) was spotted running on the side with a trainer Wednesday, Greg Auman of Fox Sports reports."
   },
   "00-0040237": {
    "name": "Tez Johnson",
