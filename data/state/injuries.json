@@ -1,5 +1,5 @@
 {
- "at": "2026-11-05T18:20:01-05:00",
+ "at": "2026-11-05T18:40:00-05:00",
  "source": "espn",
  "players": {
   "00-0038559": {
@@ -708,6 +708,16 @@
    "detail": null,
    "espn_id": "3918298"
   },
+  "name:CAR:willlee": {
+   "name": "Will Lee III",
+   "team": "CAR",
+   "pos": "CB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-05T18:13:00-05:00",
+   "detail": "Hamstring",
+   "espn_id": "5151083"
+  },
   "name:CAR:bobbyokereke": {
    "name": "Bobby Okereke",
    "team": "CAR",
@@ -778,16 +788,6 @@
    "date": "2026-11-03T07:59:00-05:00",
    "detail": null,
    "espn_id": "4239934"
-  },
-  "name:CAR:willlee": {
-   "name": "Will Lee III",
-   "team": "CAR",
-   "pos": "CB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-02T20:02:00-05:00",
-   "detail": "Hamstring",
-   "espn_id": "5151083"
   },
   "name:CAR:jaelanphillips": {
    "name": "Jaelan Phillips",
@@ -2421,10 +2421,10 @@
    "pos": "RB",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T16:51:00-05:00",
+   "date": "2026-11-05T18:25:00-05:00",
    "detail": "Ankle",
    "espn_id": "4882093",
-   "comment": "Tuten (ankle/foot) 'should be' available for Thursday night's game against the Ravens barring any pregame setbacks, Jeremy Fowler of ESPN reports."
+   "comment": "Tuten (ankle) is on track to play in Thursday night's game against the Ravens, after going through a pregame workout, Ian Rapoport of NFL Network reports."
   },
   "name:JAX:travonwalker": {
    "name": "Travon Walker",
@@ -2877,16 +2877,6 @@
    "date": "2026-11-04T19:59:00-05:00",
    "detail": "Undisclosed",
    "espn_id": "2579621"
-  },
-  "name:LAC:buddupree": {
-   "name": "Bud Dupree",
-   "team": "LAC",
-   "pos": "LB",
-   "status": "Questionable",
-   "fantasy": null,
-   "date": "2026-11-04T18:48:00-05:00",
-   "detail": null,
-   "espn_id": "2576702"
   },
   "name:LAC:kendallwilliamson": {
    "name": "Kendall Williamson",
