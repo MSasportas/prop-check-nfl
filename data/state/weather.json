@@ -11,14 +11,14 @@
    "text": "68\u00b0F, wind 1 mph"
   },
   "2026_09_CIN_ATL": {
-   "temp_f": 57.4,
-   "wind_mph": 5.9,
-   "gust_mph": 13.0,
-   "rain_pct": 25,
+   "temp_f": 61.2,
+   "wind_mph": 4.8,
+   "gust_mph": 12.1,
+   "rain_pct": 13,
    "rain_in": 0.0,
    "roof": "retractable",
-   "at": "2026-11-05T09:30:00-05:00",
-   "text": "57\u00b0F, wind 6 mph (roof may be closed)"
+   "at": "2026-11-05T12:30:00-05:00",
+   "text": "61\u00b0F, wind 5 mph (roof may be closed)"
   }
  }
 }

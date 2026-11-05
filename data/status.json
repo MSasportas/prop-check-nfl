@@ -3,10 +3,10 @@
  "season": 2026,
  "week": 9,
  "slate": "2026-W09",
- "started_at": "2026-11-05T12:10:01-05:00",
- "status_at": "2026-11-05T12:10:01-05:00",
- "finished_at": "2026-11-05T12:10:02-05:00",
- "last_ok_at": "2026-11-05T12:10:01-05:00",
+ "started_at": "2026-11-05T12:30:00-05:00",
+ "status_at": "2026-11-05T12:30:00-05:00",
+ "finished_at": "2026-11-05T12:30:03-05:00",
+ "last_ok_at": "2026-11-05T12:30:00-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -21,8 +21,8 @@
   },
   {
    "step": "stats",
-   "status": "skipped",
-   "note": "checked at 11:20 AM"
+   "status": "ok",
+   "note": "121 games through 2026-11-02"
   },
   {
    "step": "roster",
@@ -31,13 +31,13 @@
   },
   {
    "step": "injuries",
-   "status": "ok",
-   "note": "espn: 86 out, 179 questionable"
+   "status": "skipped",
+   "note": "read at 12:10 PM"
   },
   {
    "step": "weather",
-   "status": "skipped",
-   "note": "nothing due (0 indoors)"
+   "status": "ok",
+   "note": "1 read, 0 failed, 0 indoors"
   },
   {
    "step": "odds",
@@ -141,14 +141,14 @@
  "odds_notes": [],
  "runner": {
   "event": "workflow_dispatch",
-  "run_id": "42063340917",
-  "iteration": 6,
-  "chain_link": 2197,
+  "run_id": "42071920136",
+  "iteration": 3,
+  "chain_link": 2198,
   "chain_started_at": "2026-10-30T17:27:57-04:00",
-  "run_started_at": "2026-11-05T11:20:18-05:00"
+  "run_started_at": "2026-11-05T12:10:16-05:00"
  },
  "live_page": {
-  "checked_at": "2026-11-05T11:20:01-05:00",
+  "checked_at": "2026-11-05T12:30:00-05:00",
   "http": 200,
   "is_page": true
  }
