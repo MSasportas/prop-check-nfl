@@ -1,5 +1,5 @@
 {
- "at": "2026-11-05T00:00:01-05:00",
+ "at": "2026-11-05T00:40:01-05:00",
  "source": "espn",
  "players": {
   "name:ARI:isaiahadams": {
@@ -906,6 +906,16 @@
    "detail": "Triceps",
    "espn_id": "4244607"
   },
+  "name:CHI:kentaviusstreet": {
+   "name": "Kentavius Street",
+   "team": "CHI",
+   "pos": "DT",
+   "status": "Injured Reserve",
+   "fantasy": "IR",
+   "date": "2026-11-04T23:55:00-05:00",
+   "detail": "Knee",
+   "espn_id": "3116726"
+  },
   "name:CHI:braxtonjones": {
    "name": "Braxton Jones",
    "team": "CHI",
@@ -967,16 +977,6 @@
    "detail": "Toe",
    "espn_id": "4608686",
    "comment": "Monangai (thumb/toe) didn't participate in Wednesday's walkthrough."
-  },
-  "name:CHI:kentaviusstreet": {
-   "name": "Kentavius Street",
-   "team": "CHI",
-   "pos": "DT",
-   "status": "Injured Reserve",
-   "fantasy": "IR",
-   "date": "2026-11-04T17:35:00-05:00",
-   "detail": "Knee",
-   "espn_id": "3116726"
   },
   "00-0041558": {
    "name": "Sam Roush",
@@ -3881,6 +3881,16 @@
    "detail": null,
    "espn_id": "4431465"
   },
+  "name:NO:kelvinbanks": {
+   "name": "Kelvin Banks Jr.",
+   "team": "NO",
+   "pos": "OT",
+   "status": "Injured Reserve",
+   "fantasy": "IR-R",
+   "date": "2026-11-04T23:52:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "4685260"
+  },
   "name:NO:justinreid": {
    "name": "Justin Reid",
    "team": "NO",
@@ -4035,23 +4045,13 @@
    "detail": null,
    "espn_id": "4569559"
   },
-  "00-0040743": {
-   "name": "Tyler Shough",
-   "team": "NO",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-25T14:17:00-04:00",
-   "detail": null,
-   "espn_id": "4360689"
-  },
   "name:NYG:jermaineeluemunor": {
    "name": "Jermaine Eluemunor",
    "team": "NYG",
    "pos": "OT",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T23:01:00-05:00",
+   "date": "2026-11-05T00:01:00-05:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
