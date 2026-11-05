@@ -1,5 +1,5 @@
 {
- "at": "2026-11-05T12:50:00-05:00",
+ "at": "2026-11-05T13:54:24-05:00",
  "source": "espn",
  "players": {
   "name:ARI:isaiahadams": {
@@ -1118,16 +1118,6 @@
    "detail": null,
    "espn_id": "3116389"
   },
-  "name:CIN:djturner": {
-   "name": "DJ Turner II",
-   "team": "CIN",
-   "pos": "CB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-02T19:47:00-05:00",
-   "detail": "Heel",
-   "espn_id": "4572036"
-  },
   "00-0038839": {
    "name": "Mitchell Tinsley",
    "team": "CIN",
@@ -1240,6 +1230,17 @@
    "detail": null,
    "espn_id": "4384852"
   },
+  "00-0033537": {
+   "name": "Deshaun Watson",
+   "team": "CLE",
+   "pos": "QB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-05T13:10:00-05:00",
+   "detail": "Concussion",
+   "espn_id": "3122840",
+   "comment": "Watson (concussion) remained sidelined from practice Thursday, Daniel Oyefusi of ESPN.com reports."
+  },
   "name:CLE:carsonschwesinger": {
    "name": "Carson Schwesinger",
    "team": "CLE",
@@ -1249,17 +1250,6 @@
    "date": "2026-11-05T12:04:00-05:00",
    "detail": "Wrist",
    "espn_id": "4876017"
-  },
-  "00-0033537": {
-   "name": "Deshaun Watson",
-   "team": "CLE",
-   "pos": "QB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T17:36:00-05:00",
-   "detail": "Concussion",
-   "espn_id": "3122840",
-   "comment": "The Browns listed Watson (concussion) as a non-participant in Wednesday's practice."
   },
   "00-0041037": {
    "name": "Denzel Boston",
@@ -1971,6 +1961,17 @@
    "detail": null,
    "espn_id": "5123663"
   },
+  "00-0038124": {
+   "name": "Christian Watson",
+   "team": "GB",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-05T13:10:00-05:00",
+   "detail": "Ribs",
+   "espn_id": "4248528",
+   "comment": "Watson (ribs) is wearing pads for Thursday's practice, Wes Hodkiewicz of the Packers' official site reports."
+  },
   "00-0035700": {
    "name": "Josh Jacobs",
    "team": "GB",
@@ -2011,17 +2012,6 @@
    "date": "2026-11-04T18:10:00-05:00",
    "detail": "Knee - ACL",
    "espn_id": "4361423"
-  },
-  "00-0038124": {
-   "name": "Christian Watson",
-   "team": "GB",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T17:09:00-05:00",
-   "detail": "Ribs",
-   "espn_id": "4248528",
-   "comment": "Watson (ribs) practiced in a limited capacity Wednesday, Matt Schneidman of The Athletic reports."
   },
   "00-0038589": {
    "name": "Josh Whyle",
@@ -3352,17 +3342,6 @@
    "detail": null,
    "espn_id": "4426515"
   },
-  "00-0031381": {
-   "name": "Davante Adams",
-   "team": "LA",
-   "pos": "WR",
-   "status": "Injured Reserve",
-   "fantasy": "IR",
-   "date": "2026-10-28T16:59:00-04:00",
-   "detail": "Hamstring",
-   "espn_id": "16800",
-   "comment": "Head coach Sean McVay said Wednesday that Adams had successful surgery on his left hamstring, and the Rams are hopeful that the wide receiver will be able to re"
-  },
   "name:MIA:kadynproctor": {
    "name": "Kadyn Proctor",
    "team": "MIA",
@@ -3546,6 +3525,27 @@
    "detail": null,
    "espn_id": "4367209"
   },
+  "00-0035228": {
+   "name": "Kyler Murray",
+   "team": "MIN",
+   "pos": "QB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-05T13:36:00-05:00",
+   "detail": "Hamstring",
+   "espn_id": "3917315",
+   "comment": "Murray (hamstring) won't play Monday against the Bills, Alec Lewis of The Athletic reports."
+  },
+  "00-0032950": {
+   "name": "Carson Wentz",
+   "team": "MIN",
+   "pos": "QB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-05T13:30:00-05:00",
+   "detail": null,
+   "espn_id": "2573079"
+  },
   "00-0036425": {
    "name": "DeeJay Dallas",
    "team": "MIN",
@@ -3575,17 +3575,6 @@
    "date": "2026-11-02T21:37:00-05:00",
    "detail": null,
    "espn_id": "3886598"
-  },
-  "00-0035228": {
-   "name": "Kyler Murray",
-   "team": "MIN",
-   "pos": "QB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-02T14:57:00-05:00",
-   "detail": "Hamstring",
-   "espn_id": "3917315",
-   "comment": "Head coach Kevin O'Connell said Monday that Murray has a sore hamstring and will undergo a full evaluation as the Vikings look to determine the extent of the is"
   },
   "00-0041104": {
    "name": "Demond Claiborne",
@@ -4041,7 +4030,7 @@
    "pos": "OT",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T12:01:00-05:00",
+   "date": "2026-11-05T13:01:00-05:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
@@ -4208,6 +4197,28 @@
    "detail": null,
    "espn_id": "4433970"
   },
+  "00-0037740": {
+   "name": "Garrett Wilson",
+   "team": "NYJ",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-05T13:03:00-05:00",
+   "detail": "Concussion",
+   "espn_id": "4569618",
+   "comment": "Wilson, who is in the NFL's concussion protocol, wasn't seen at Thursday's practice, , Antwan Staley of the New York Daily News reports."
+  },
+  "00-0038120": {
+   "name": "Breece Hall",
+   "team": "NYJ",
+   "pos": "RB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-05T13:02:00-05:00",
+   "detail": "Quadriceps",
+   "espn_id": "4427366",
+   "comment": "Hall (quadriceps) is participating in Thursday's practice, Rich Cimini of ESPN.com reports."
+  },
   "name:NYJ:vjpayne": {
    "name": "VJ Payne",
    "team": "NYJ",
@@ -4268,28 +4279,6 @@
    "date": "2026-11-04T15:39:00-05:00",
    "detail": "Groin",
    "espn_id": "4685248"
-  },
-  "00-0038120": {
-   "name": "Breece Hall",
-   "team": "NYJ",
-   "pos": "RB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T12:36:00-05:00",
-   "detail": "Quadriceps",
-   "espn_id": "4427366",
-   "comment": "Jets head coach Aaron Glenn said that Hall (quadriceps) will be a limited practice participant Wednesday, Zack Rosenblatt of The Athletic reports."
-  },
-  "00-0037740": {
-   "name": "Garrett Wilson",
-   "team": "NYJ",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T12:25:00-05:00",
-   "detail": "Concussion",
-   "espn_id": "4569618",
-   "comment": "Jets head coach Aaron Glenn said that Wilson is in the NFL's concussion protocol and is considered day-to-day,  Zack Rosenblatt of The Athletic reports."
   },
   "name:NYJ:maxmitchell": {
    "name": "Max Mitchell",
