@@ -1,5 +1,5 @@
 {
- "at": "2026-11-05T10:10:01-05:00",
+ "at": "2026-11-05T10:40:01-05:00",
  "source": "espn",
  "players": {
   "name:ARI:isaiahadams": {
@@ -4051,7 +4051,7 @@
    "pos": "OT",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T09:01:00-05:00",
+   "date": "2026-11-05T10:01:00-05:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
