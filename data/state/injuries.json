@@ -1,5 +1,5 @@
 {
- "at": "2026-11-04T22:00:01-05:00",
+ "at": "2026-11-04T22:30:20-05:00",
  "source": "espn",
  "players": {
   "00-0037157": {
@@ -2114,6 +2114,26 @@
    "detail": null,
    "espn_id": "4701936"
   },
+  "name:HOU:reedblankenship": {
+   "name": "Reed Blankenship",
+   "team": "HOU",
+   "pos": "S",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-04T22:08:00-05:00",
+   "detail": "Concussion",
+   "espn_id": "4243956"
+  },
+  "name:HOU:azeezalshaair": {
+   "name": "Azeez Al-Shaair",
+   "team": "HOU",
+   "pos": "LB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-04T21:57:00-05:00",
+   "detail": "Groin",
+   "espn_id": "3919117"
+  },
   "name:HOU:bradensmith": {
    "name": "Braden Smith",
    "team": "HOU",
@@ -2135,16 +2155,6 @@
    "espn_id": "4362504",
    "comment": "questionable"
   },
-  "name:HOU:azeezalshaair": {
-   "name": "Azeez Al-Shaair",
-   "team": "HOU",
-   "pos": "LB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T18:55:00-05:00",
-   "detail": "Groin",
-   "espn_id": "3919117"
-  },
   "00-0035685": {
    "name": "David Montgomery",
    "team": "HOU",
@@ -2155,16 +2165,6 @@
    "detail": "Groin",
    "espn_id": "4035538",
    "comment": "While Montgomery (groin) has made some progress, coach DeMeco Ryans noted Wednesday that the running back will remain out for Sunday's game against the Chargers"
-  },
-  "name:HOU:reedblankenship": {
-   "name": "Reed Blankenship",
-   "team": "HOU",
-   "pos": "S",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-02T19:50:00-05:00",
-   "detail": "Concussion",
-   "espn_id": "4243956"
   },
   "00-0040138": {
    "name": "Jaylin Noel",
@@ -3147,6 +3147,27 @@
    "detail": "Hamstring",
    "espn_id": "3691739"
   },
+  "name:LA:kamcurl": {
+   "name": "Kam Curl",
+   "team": "LA",
+   "pos": "S",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-04T22:18:00-05:00",
+   "detail": "Foot",
+   "espn_id": "4242154"
+  },
+  "00-0039751": {
+   "name": "Jordan Whittington",
+   "team": "LA",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-04T22:15:00-05:00",
+   "detail": "Back",
+   "espn_id": "4569382",
+   "comment": "Whittington (back) was a limited participant at the Rams' practice Wednesday, Sarah Barshop of ESPN.com reports."
+  },
   "00-0037557": {
    "name": "Ronnie Rivers",
    "team": "LA",
@@ -3199,27 +3220,6 @@
    "detail": "Ribs",
    "espn_id": "4242557",
    "comment": "Parkinson (ribs) did not practice Wednesday, Sarah Barshop of ESPN.com reports."
-  },
-  "name:LA:kamcurl": {
-   "name": "Kam Curl",
-   "team": "LA",
-   "pos": "S",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T18:13:00-05:00",
-   "detail": "Foot",
-   "espn_id": "4242154"
-  },
-  "00-0039751": {
-   "name": "Jordan Whittington",
-   "team": "LA",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T18:11:00-05:00",
-   "detail": "Back",
-   "espn_id": "4569382",
-   "comment": "questionable"
   },
   "name:LA:steveavila": {
    "name": "Steve Avila",
@@ -4031,7 +4031,7 @@
    "pos": "OT",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T21:35:00-05:00",
+   "date": "2026-11-04T22:02:00-05:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
@@ -4381,6 +4381,16 @@
    "detail": null,
    "espn_id": "4035537"
   },
+  "name:PHI:jihaadcampbell": {
+   "name": "Jihaad Campbell",
+   "team": "PHI",
+   "pos": "LB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-04T21:51:00-05:00",
+   "detail": "Hamstring",
+   "espn_id": "4685287"
+  },
   "name:PHI:jakeelliott": {
    "name": "Jake Elliott",
    "team": "PHI",
@@ -4503,16 +4513,6 @@
    "date": "2026-11-03T08:03:00-05:00",
    "detail": "Hamstring",
    "espn_id": "2971027"
-  },
-  "name:PHI:jihaadcampbell": {
-   "name": "Jihaad Campbell",
-   "team": "PHI",
-   "pos": "LB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-03T08:03:00-05:00",
-   "detail": "Hamstring",
-   "espn_id": "4685287"
   },
   "00-0037132": {
    "name": "Britain Covey",
