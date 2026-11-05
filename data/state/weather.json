@@ -19,6 +19,70 @@
    "roof": "retractable",
    "at": "2026-11-05T12:30:00-05:00",
    "text": "61\u00b0F, wind 5 mph (roof may be closed)"
+  },
+  "2026_09_CLE_NO": {
+   "roof": "dome",
+   "text": "Indoors"
+  },
+  "2026_09_DAL_IND": {
+   "temp_f": 57.2,
+   "wind_mph": 8.3,
+   "gust_mph": 9.2,
+   "rain_pct": 0,
+   "rain_in": 0.0,
+   "roof": "retractable",
+   "at": "2026-11-05T13:00:00-05:00",
+   "text": "57\u00b0F, wind 8 mph (roof may be closed)"
+  },
+  "2026_09_DEN_CAR": {
+   "temp_f": 63.3,
+   "wind_mph": 4.9,
+   "gust_mph": 6.5,
+   "rain_pct": 0,
+   "rain_in": 0.0,
+   "roof": "outdoors",
+   "at": "2026-11-05T13:00:00-05:00",
+   "text": "63\u00b0F, wind 5 mph"
+  },
+  "2026_09_DET_MIA": {
+   "temp_f": 82.3,
+   "wind_mph": 11.2,
+   "gust_mph": 9.6,
+   "rain_pct": 11,
+   "rain_in": 0.0,
+   "roof": "outdoors",
+   "at": "2026-11-05T13:00:00-05:00",
+   "text": "82\u00b0F, wind 11 mph"
+  },
+  "2026_09_LA_WAS": {
+   "temp_f": 60.9,
+   "wind_mph": 13.5,
+   "gust_mph": 19.0,
+   "rain_pct": 0,
+   "rain_in": 0.0,
+   "roof": "outdoors",
+   "at": "2026-11-05T13:00:00-05:00",
+   "text": "61\u00b0F, wind 14 mph"
+  },
+  "2026_09_NYG_PHI": {
+   "temp_f": 60.2,
+   "wind_mph": 14.1,
+   "gust_mph": 19.7,
+   "rain_pct": 1,
+   "rain_in": 0.0,
+   "roof": "outdoors",
+   "at": "2026-11-05T13:00:00-05:00",
+   "text": "60\u00b0F, wind 14 mph"
+  },
+  "2026_09_NYJ_KC": {
+   "temp_f": 62.3,
+   "wind_mph": 7.8,
+   "gust_mph": 10.7,
+   "rain_pct": 0,
+   "rain_in": 0.0,
+   "roof": "outdoors",
+   "at": "2026-11-05T13:00:00-05:00",
+   "text": "62\u00b0F, wind 8 mph"
   }
  }
 }
