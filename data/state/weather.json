@@ -97,6 +97,26 @@
    "roof": "outdoors",
    "at": "2026-11-05T16:10:00-05:00",
    "text": "72\u00b0F, wind 5 mph"
+  },
+  "2026_09_ARI_SEA": {
+   "temp_f": 55.2,
+   "wind_mph": 9.4,
+   "gust_mph": 15.0,
+   "rain_pct": 12,
+   "rain_in": 0.008,
+   "roof": "outdoors",
+   "at": "2026-11-05T16:30:00-05:00",
+   "text": "55\u00b0F, wind 9 mph"
+  },
+  "2026_09_GB_NE": {
+   "temp_f": 49.0,
+   "wind_mph": 12.2,
+   "gust_mph": 28.2,
+   "rain_pct": 2,
+   "rain_in": 0.0,
+   "roof": "outdoors",
+   "at": "2026-11-05T16:30:00-05:00",
+   "text": "49\u00b0F, wind 12 mph"
   }
  }
 }
