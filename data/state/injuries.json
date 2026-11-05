@@ -1,5 +1,5 @@
 {
- "at": "2026-11-05T11:40:01-05:00",
+ "at": "2026-11-05T12:10:01-05:00",
  "source": "espn",
  "players": {
   "name:ARI:isaiahadams": {
@@ -207,6 +207,17 @@
    "detail": "Knee",
    "espn_id": "4709718"
   },
+  "00-0037746": {
+   "name": "Brian Robinson Jr.",
+   "team": "ATL",
+   "pos": "RB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-05T11:27:00-05:00",
+   "detail": "Hamstring",
+   "espn_id": "4241474",
+   "comment": "Robinson (hamstring) was a limited participant in Thursday's practice, Tori McElhaney of the Falcons' official website reports."
+  },
   "name:ATL:divinedeablo": {
    "name": "Divine Deablo",
    "team": "ATL",
@@ -226,17 +237,6 @@
    "date": "2026-11-04T21:45:00-05:00",
    "detail": "Hamstring",
    "espn_id": "4360807"
-  },
-  "00-0037746": {
-   "name": "Brian Robinson Jr.",
-   "team": "ATL",
-   "pos": "RB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T10:12:00-05:00",
-   "detail": "Hamstring",
-   "espn_id": "4241474",
-   "comment": "The Falcons listed Robinson (hamstring) as a limited participant on Wednesday's estimated practice report, Tori McElhaney of the team's official site reports."
   },
   "name:ATL:samsonebukam": {
    "name": "Samson Ebukam",
@@ -1240,6 +1240,16 @@
    "detail": null,
    "espn_id": "4384852"
   },
+  "name:CLE:carsonschwesinger": {
+   "name": "Carson Schwesinger",
+   "team": "CLE",
+   "pos": "LB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-05T12:04:00-05:00",
+   "detail": "Wrist",
+   "espn_id": "4876017"
+  },
   "00-0033537": {
    "name": "Deshaun Watson",
    "team": "CLE",
@@ -1261,16 +1271,6 @@
    "detail": "Calf",
    "espn_id": "4832800",
    "comment": "Boston was a limited participant in Wednesday's practice due to a calf injury, Scott Petrak of the Elyria Chronicle-Telegram reports."
-  },
-  "name:CLE:carsonschwesinger": {
-   "name": "Carson Schwesinger",
-   "team": "CLE",
-   "pos": "LB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T17:09:00-05:00",
-   "detail": "Wrist",
-   "espn_id": "4876017"
   },
   "name:CLE:jaredverse": {
    "name": "Jared Verse",
@@ -4051,7 +4051,7 @@
    "pos": "OT",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T11:01:00-05:00",
+   "date": "2026-11-05T11:51:00-05:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
@@ -4791,12 +4791,23 @@
    "name": "Mike Evans",
    "team": "SF",
    "pos": "WR",
-   "status": "Doubtful",
-   "fantasy": "DOUBTFUL",
-   "date": "2026-11-05T11:37:00-05:00",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-05T11:51:00-05:00",
    "detail": "Achilles",
    "espn_id": "16737",
-   "comment": "doubtful"
+   "comment": "questionable"
+  },
+  "00-0035719": {
+   "name": "Deebo Samuel Sr.",
+   "team": "SF",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-05T11:44:00-05:00",
+   "detail": "Hamstring",
+   "espn_id": "3126486",
+   "comment": "According to GM John Lynch, Samuel (hamstring) is unlikely to be available for Sunday's game against the Raiders, Matt Maiocco of NBC Sports Bay Area reports."
   },
   "name:SF:marquessigle": {
    "name": "Marques Sigle",
@@ -4859,17 +4870,6 @@
    "date": "2026-11-04T18:29:00-05:00",
    "detail": "Knee",
    "espn_id": "3057524"
-  },
-  "00-0035719": {
-   "name": "Deebo Samuel Sr.",
-   "team": "SF",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T15:59:00-05:00",
-   "detail": "Hamstring",
-   "espn_id": "3126486",
-   "comment": "Samuel (hamstring) won't take part in practice Wednesday, Cam Inman of The San Jose Mercury News reports."
   },
   "00-0033280": {
    "name": "Christian McCaffrey",
