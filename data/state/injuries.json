@@ -1,5 +1,5 @@
 {
- "at": "2026-11-05T14:30:01-05:00",
+ "at": "2026-11-05T15:10:00-05:00",
  "source": "espn",
  "players": {
   "name:ARI:isaiahadams": {
@@ -216,7 +216,7 @@
    "date": "2026-11-05T11:27:00-05:00",
    "detail": "Hamstring",
    "espn_id": "4241474",
-   "comment": "Robinson (hamstring) was a limited participant in Thursday's practice, Tori McElhaney of the Falcons' official website reports."
+   "comment": "Robinson (hamstring) was a limited participant in Thursday's practice, Tori McElhaney of the Falcons' official site reports."
   },
   "name:ATL:divinedeablo": {
    "name": "Divine Deablo",
@@ -3544,7 +3544,7 @@
    "date": "2026-11-05T13:36:00-05:00",
    "detail": "Hamstring",
    "espn_id": "3917315",
-   "comment": "Murray (hamstring) won't play Monday against the Bills, Alec Lewis of The Athletic reports."
+   "comment": "Murray likely won't play Monday against the Bills due to a hamstring strain, Alec Lewis of The Athletic reports."
   },
   "00-0032950": {
    "name": "Carson Wentz",
@@ -3666,6 +3666,39 @@
    "detail": null,
    "espn_id": "4708049"
   },
+  "00-0040734": {
+   "name": "TreVeyon Henderson",
+   "team": "NE",
+   "pos": "RB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-05T14:38:00-05:00",
+   "detail": "Illness",
+   "espn_id": "4432710",
+   "comment": "Henderson (illness) was not seen at Thursday's practice, Evan Lazar of the Patriots' official site reports."
+  },
+  "00-0033090": {
+   "name": "Hunter Henry",
+   "team": "NE",
+   "pos": "TE",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-05T14:37:00-05:00",
+   "detail": "Foot",
+   "espn_id": "3046439",
+   "comment": "Henry (foot) wasn't spotted at Thursday's practice, Evan Lazar of the Patriots' official site reports."
+  },
+  "00-0035676": {
+   "name": "A.J. Brown",
+   "team": "NE",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-05T14:32:00-05:00",
+   "detail": "Knee",
+   "espn_id": "4047646",
+   "comment": "Brown (ankle/knee) isn't present for the portion of Thursday's practice open to media viewing, Evan Lazar of the Patriots' official site reports."
+  },
   "name:NE:gregvanroten": {
    "name": "Greg Van Roten",
    "team": "NE",
@@ -3725,39 +3758,6 @@
    "date": "2026-11-04T16:55:00-05:00",
    "detail": "Chest",
    "espn_id": "2574056"
-  },
-  "00-0033090": {
-   "name": "Hunter Henry",
-   "team": "NE",
-   "pos": "TE",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T14:41:00-05:00",
-   "detail": "Foot",
-   "espn_id": "3046439",
-   "comment": "Henry (foot) wasn't on the field for the media-access portion of Wednesday's practice, Mike Reiss of ESPN.com reports."
-  },
-  "00-0040734": {
-   "name": "TreVeyon Henderson",
-   "team": "NE",
-   "pos": "RB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T13:21:00-05:00",
-   "detail": "Illness",
-   "espn_id": "4432710",
-   "comment": "Patriots head coach Mike Vrabel said that Henderson (illness) won't practice Wednesday, Doug Kyed of the Boston Herald reports."
-  },
-  "00-0035676": {
-   "name": "A.J. Brown",
-   "team": "NE",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T13:13:00-05:00",
-   "detail": "Knee",
-   "espn_id": "4047646",
-   "comment": "Patriots head coach Mike Vrabel said that Brown (knee/ankle) won't practice Wednesday, Doug Kyed of the Boston Herald reports."
   },
   "00-0033555": {
    "name": "Mack Hollins",
@@ -4391,6 +4391,39 @@
    "detail": null,
    "espn_id": "4035537"
   },
+  "00-0038393": {
+   "name": "Dontayvion Wicks",
+   "team": "PHI",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-05T14:33:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "4428850",
+   "comment": "Wicks (ankle) wasn't present for Thursday's practice, Brooks Kubena of The Athletic reports."
+  },
+  "00-0036912": {
+   "name": "DeVonta Smith",
+   "team": "PHI",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-05T14:29:00-05:00",
+   "detail": "Hamstring",
+   "espn_id": "4241478",
+   "comment": "Smith (hamstring) wasn't spotted at practice Thursday, Brooks Kubena of The Athletic reports."
+  },
+  "00-0034844": {
+   "name": "Saquon Barkley",
+   "team": "PHI",
+   "pos": "RB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-05T14:27:00-05:00",
+   "detail": "Hamstring",
+   "espn_id": "3929630",
+   "comment": "Barkley (hamstring/back) is participating in Thursday's practice, Brooks Kubena of The Athletic reports."
+  },
   "name:PHI:jihaadcampbell": {
    "name": "Jihaad Campbell",
    "team": "PHI",
@@ -4410,39 +4443,6 @@
    "date": "2026-11-04T21:44:00-05:00",
    "detail": "Ankle",
    "espn_id": "3050478"
-  },
-  "00-0038393": {
-   "name": "Dontayvion Wicks",
-   "team": "PHI",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T18:29:00-05:00",
-   "detail": "Ankle",
-   "espn_id": "4428850",
-   "comment": "Wicks (ankle) was a non-participant at Wednesday's practice."
-  },
-  "00-0036912": {
-   "name": "DeVonta Smith",
-   "team": "PHI",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T18:25:00-05:00",
-   "detail": "Hamstring",
-   "espn_id": "4241478",
-   "comment": "Smith (hamstring) didn't practice Wednesday."
-  },
-  "00-0034844": {
-   "name": "Saquon Barkley",
-   "team": "PHI",
-   "pos": "RB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T18:20:00-05:00",
-   "detail": "Hamstring",
-   "espn_id": "3929630",
-   "comment": "Barkley (hamstring/back) officially didn't practice Wednesday."
   },
   "name:PHI:jonathangreenard": {
    "name": "Jonathan Greenard",
