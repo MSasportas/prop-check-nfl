@@ -1,5 +1,5 @@
 {
- "at": "2026-11-05T00:40:01-05:00",
+ "at": "2026-11-05T01:10:04-05:00",
  "source": "espn",
  "players": {
   "name:ARI:isaiahadams": {
@@ -4051,7 +4051,7 @@
    "pos": "OT",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T00:01:00-05:00",
+   "date": "2026-11-05T01:01:00-05:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
@@ -5055,17 +5055,6 @@
    "detail": "Foot",
    "espn_id": "4605491"
   },
-  "00-0035704": {
-   "name": "Drew Lock",
-   "team": "SEA",
-   "pos": "QB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T21:21:00-05:00",
-   "detail": "Elbow",
-   "espn_id": "3924327",
-   "comment": "Lock (right elbow) was limited at Wednesday's walkthrough, John Boyle of the Seahawks' official site reports."
-  },
   "00-0040673": {
    "name": "Jalen Milroe",
    "team": "SEA",
@@ -5075,6 +5064,17 @@
    "date": "2026-11-04T19:05:00-05:00",
    "detail": null,
    "espn_id": "4432734"
+  },
+  "00-0035704": {
+   "name": "Drew Lock",
+   "team": "SEA",
+   "pos": "QB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-04T14:03:00-05:00",
+   "detail": "Elbow",
+   "espn_id": "3924327",
+   "comment": "Lock (elbow) is slated to start Sunday's game against the Cardinals, per NFL reporter Andrew Siciliano."
   },
   "00-0034869": {
    "name": "Sam Darnold",
