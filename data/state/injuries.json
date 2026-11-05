@@ -1,5 +1,5 @@
 {
- "at": "2026-11-05T13:54:24-05:00",
+ "at": "2026-11-05T14:30:01-05:00",
  "source": "espn",
  "players": {
   "name:ARI:isaiahadams": {
@@ -532,6 +532,17 @@
    "detail": null,
    "espn_id": "3116365"
   },
+  "00-0034827": {
+   "name": "DJ Moore",
+   "team": "BUF",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-05T13:49:00-05:00",
+   "detail": "Knee",
+   "espn_id": "3915416",
+   "comment": "Moore (knee) is line to practice in some capacity Thursday, Sal Capaccio of WGR Sports Radio 550 Buffalo reports."
+  },
   "name:BUF:jordanhancock": {
    "name": "Jordan Hancock",
    "team": "BUF",
@@ -671,17 +682,6 @@
    "date": "2026-11-01T17:28:00-05:00",
    "detail": null,
    "espn_id": "3918298"
-  },
-  "00-0034827": {
-   "name": "DJ Moore",
-   "team": "BUF",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-01T17:13:00-05:00",
-   "detail": "Knee",
-   "espn_id": "3915416",
-   "comment": "Moore indicated following Sunday's 36-10 win over the Ravens that he's okay in the wake of his late-game exit due to a knee issue, Cameron Wolfe of NFL Network "
   },
   "00-0036988": {
    "name": "Joshua Palmer",
@@ -906,6 +906,17 @@
    "detail": "Triceps",
    "espn_id": "4244607"
   },
+  "00-0038440": {
+   "name": "Zavier Scott",
+   "team": "CHI",
+   "pos": "RB",
+   "status": "Injured Reserve",
+   "fantasy": "IR",
+   "date": "2026-11-05T13:54:00-05:00",
+   "detail": "Wrist",
+   "espn_id": "4257364",
+   "comment": "ir"
+  },
   "name:CHI:kentaviusstreet": {
    "name": "Kentavius Street",
    "team": "CHI",
@@ -935,17 +946,6 @@
    "date": "2026-11-04T22:28:00-05:00",
    "detail": "Toe",
    "espn_id": "4870953"
-  },
-  "00-0038440": {
-   "name": "Zavier Scott",
-   "team": "CHI",
-   "pos": "RB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T21:28:00-05:00",
-   "detail": "Wrist",
-   "espn_id": "4257364",
-   "comment": "questionable"
   },
   "name:CHI:theobenedet": {
    "name": "Theo Benedet",
@@ -3342,6 +3342,17 @@
    "detail": null,
    "espn_id": "4426515"
   },
+  "00-0039874": {
+   "name": "Jaylen Wright",
+   "team": "MIA",
+   "pos": "RB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-05T14:16:00-05:00",
+   "detail": "Quadriceps",
+   "espn_id": "4682745",
+   "comment": "Wright (quadriceps) is taking part in practice Thursday, David Furones of the South Florida Sun Sentinel reports."
+  },
   "name:MIA:kadynproctor": {
    "name": "Kadyn Proctor",
    "team": "MIA",
@@ -3444,17 +3455,6 @@
    "detail": "Shoulder",
    "espn_id": "4034729"
   },
-  "00-0039874": {
-   "name": "Jaylen Wright",
-   "team": "MIA",
-   "pos": "RB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T16:29:00-05:00",
-   "detail": "Quadriceps",
-   "espn_id": "4682745",
-   "comment": "Wright (quadriceps) was a non-participant in Wednesday's practice, David Furones of the South Florida Sun Sentinel reports."
-  },
   "00-0041077": {
    "name": "Justin Joly",
    "team": "MIA",
@@ -3525,6 +3525,16 @@
    "detail": null,
    "espn_id": "4367209"
   },
+  "00-0040494": {
+   "name": "Max Brosmer",
+   "team": "MIN",
+   "pos": "QB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-05T13:49:00-05:00",
+   "detail": null,
+   "espn_id": "4573398"
+  },
   "00-0035228": {
    "name": "Kyler Murray",
    "team": "MIN",
@@ -3585,16 +3595,6 @@
    "date": "2026-11-02T14:12:00-05:00",
    "detail": null,
    "espn_id": "4832846"
-  },
-  "00-0040494": {
-   "name": "Max Brosmer",
-   "team": "MIN",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-02T14:12:00-05:00",
-   "detail": null,
-   "espn_id": "4573398"
   },
   "00-0035229": {
    "name": "T.J. Hockenson",
@@ -4030,9 +4030,31 @@
    "pos": "OT",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T13:01:00-05:00",
+   "date": "2026-11-05T14:01:00-05:00",
    "detail": "Calf",
    "espn_id": "3115303"
+  },
+  "00-0039337": {
+   "name": "Malik Nabers",
+   "team": "NYG",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-05T13:46:00-05:00",
+   "detail": "Undisclosed",
+   "espn_id": "4595348",
+   "comment": "questionable"
+  },
+  "00-0040715": {
+   "name": "Cam Skattebo",
+   "team": "NYG",
+   "pos": "RB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-05T13:43:00-05:00",
+   "detail": "Hamstring",
+   "espn_id": "4696981",
+   "comment": "Skattebo (hamstring) was spotted working off to the side with the Giants' training staff Thursday, Art Stapleton of The Bergen Record reports."
   },
   "00-0039847": {
    "name": "Theo Johnson",
@@ -4043,17 +4065,6 @@
    "date": "2026-11-04T20:35:00-05:00",
    "detail": null,
    "espn_id": "4429148"
-  },
-  "00-0040715": {
-   "name": "Cam Skattebo",
-   "team": "NYG",
-   "pos": "RB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T16:31:00-05:00",
-   "detail": "Hamstring",
-   "espn_id": "4696981",
-   "comment": "Skattebo (hamstring) did not participate in Wednesday's practice, Dan Salomone of the Giants' official site reports."
   },
   "name:NYG:andrewthomas": {
    "name": "Andrew Thomas",
@@ -4186,16 +4197,6 @@
    "date": "2026-10-25T20:00:00-04:00",
    "detail": null,
    "espn_id": "4682648"
-  },
-  "00-0039923": {
-   "name": "J.J. McCarthy",
-   "team": "NYG",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-25T19:50:00-04:00",
-   "detail": null,
-   "espn_id": "4433970"
   },
   "00-0037740": {
    "name": "Garrett Wilson",
@@ -4766,6 +4767,17 @@
    "detail": "Triceps",
    "espn_id": "3047495"
   },
+  "name:SF:brandonaiyuk": {
+   "name": "Brandon Aiyuk",
+   "team": "SF",
+   "pos": "WR",
+   "status": "Out",
+   "fantasy": "RESERVE-DNR",
+   "date": "2026-11-05T14:09:00-05:00",
+   "detail": "Personal",
+   "espn_id": "4360438",
+   "comment": "Head coach Kyle Shanahan and GM John Lynch both declined to get into specifics when discussing the future of Aiyuk, who has filed his paperwork for reinstatemen"
+  },
   "00-0031408": {
    "name": "Mike Evans",
    "team": "SF",
@@ -4860,17 +4872,6 @@
    "detail": "Hamstring",
    "espn_id": "3117251",
    "comment": "McCaffrey (hamstring) will not participate in Wednesday's practice, Cam Inman of Bay Area News Group reports."
-  },
-  "name:SF:brandonaiyuk": {
-   "name": "Brandon Aiyuk",
-   "team": "SF",
-   "pos": "WR",
-   "status": "Out",
-   "fantasy": "RESERVE-DNR",
-   "date": "2026-11-04T09:25:00-05:00",
-   "detail": "Personal",
-   "espn_id": "4360438",
-   "comment": "Aiyuk, who who currently is on the 49ers' Reserve/Left Squad list, has turned in paperwork to be reinstated, Adam Schefter of ESPN reports."
   },
   "00-0041035": {
    "name": "De'Zhaun Stribling",
@@ -6167,6 +6168,10 @@
   "00-0039855": {
    "status": "Injured Reserve",
    "at": "2026-11-05T11:40:01-05:00"
+  },
+  "00-0039337": {
+   "status": "Questionable",
+   "at": "2026-11-05T14:30:01-05:00"
   }
  }
 }
