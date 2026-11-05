@@ -1,5 +1,5 @@
 {
- "at": "2026-11-05T10:40:01-05:00",
+ "at": "2026-11-05T11:10:01-05:00",
  "source": "espn",
  "players": {
   "name:ARI:isaiahadams": {
@@ -1971,6 +1971,16 @@
    "detail": null,
    "espn_id": "5123663"
   },
+  "00-0035700": {
+   "name": "Josh Jacobs",
+   "team": "GB",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-05T10:49:00-05:00",
+   "detail": null,
+   "espn_id": "4047365"
+  },
   "name:GB:keiseannixon": {
    "name": "Keisean Nixon",
    "team": "GB",
@@ -2083,16 +2093,6 @@
    "date": "2026-11-03T07:58:00-05:00",
    "detail": null,
    "espn_id": "3054212"
-  },
-  "00-0035700": {
-   "name": "Josh Jacobs",
-   "team": "GB",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-02T14:48:00-05:00",
-   "detail": null,
-   "espn_id": "4047365"
   },
   "00-0039811": {
    "name": "MarShawn Lloyd",
@@ -5014,6 +5014,17 @@
    "detail": null,
    "espn_id": "4696044"
   },
+  "00-0034869": {
+   "name": "Sam Darnold",
+   "team": "SEA",
+   "pos": "QB",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-11-05T10:41:00-05:00",
+   "detail": "Quadriceps",
+   "espn_id": "3912547",
+   "comment": "Darnold (quadriceps), who has been ruled out for Sunday's game against the Cardinals, is considered week-to-week, Brady Henderson of ESPN.com reports."
+  },
   "00-0037545": {
    "name": "Rashid Shaheed",
    "team": "SEA",
@@ -5075,17 +5086,6 @@
    "detail": "Elbow",
    "espn_id": "3924327",
    "comment": "Lock (elbow) is slated to start Sunday's game against the Cardinals, per NFL reporter Andrew Siciliano."
-  },
-  "00-0034869": {
-   "name": "Sam Darnold",
-   "team": "SEA",
-   "pos": "QB",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-11-04T14:02:00-05:00",
-   "detail": "Quadriceps",
-   "espn_id": "3912547",
-   "comment": "Head coach Mike Macdonald announced that Darnold won't play Sunday against the Cardinals due to a quadriceps injury, NFL reporter Andrew Siciliano reports."
   },
   "00-0040648": {
    "name": "Tory Horton",
