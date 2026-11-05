@@ -1,5 +1,5 @@
 {
- "at": "2026-11-05T18:40:00-05:00",
+ "at": "2026-11-05T18:50:01-05:00",
  "source": "espn",
  "players": {
   "00-0038559": {
@@ -1423,9 +1423,19 @@
    "pos": "LB",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T17:21:00-05:00",
+   "date": "2026-11-05T18:32:00-05:00",
    "detail": "Hamstring",
    "espn_id": "4362088"
+  },
+  "name:DAL:calebdowns": {
+   "name": "Caleb Downs",
+   "team": "DAL",
+   "pos": "S",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-05T18:25:00-05:00",
+   "detail": "Concussion",
+   "espn_id": "4870706"
   },
   "name:DAL:joeyporter": {
    "name": "Joey Porter Jr.",
@@ -1489,16 +1499,6 @@
    "date": "2026-11-04T19:55:00-05:00",
    "detail": "Concussion",
    "espn_id": "3929850"
-  },
-  "name:DAL:calebdowns": {
-   "name": "Caleb Downs",
-   "team": "DAL",
-   "pos": "S",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T19:49:00-05:00",
-   "detail": "Concussion",
-   "espn_id": "4870706"
   },
   "name:DAL:tylersmith": {
    "name": "Tyler Smith",
@@ -2424,7 +2424,7 @@
    "date": "2026-11-05T18:25:00-05:00",
    "detail": "Ankle",
    "espn_id": "4882093",
-   "comment": "Tuten (ankle) is on track to play in Thursday night's game against the Ravens, after going through a pregame workout, Ian Rapoport of NFL Network reports."
+   "comment": "Tuten (ankle) is on track to play in Thursday night's game against the Ravens, after going through what Jeremy Fowler of ESPN.com describes as an extensive preg"
   },
   "name:JAX:travonwalker": {
    "name": "Travon Walker",
@@ -3438,6 +3438,27 @@
    "detail": null,
    "espn_id": "4367209"
   },
+  "name:MIN:andrewvanginkel": {
+   "name": "Andrew Van Ginkel",
+   "team": "MIN",
+   "pos": "LB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-05T18:38:00-05:00",
+   "detail": "Chest",
+   "espn_id": "3133487"
+  },
+  "00-0036259": {
+   "name": "Jauan Jennings",
+   "team": "MIN",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-05T18:36:00-05:00",
+   "detail": "Calf",
+   "espn_id": "3886598",
+   "comment": "Jennings (calf) was limited in Thursday's practice."
+  },
   "name:MIN:jayward": {
    "name": "Jay Ward",
    "team": "MIN",
@@ -3447,16 +3468,6 @@
    "date": "2026-11-05T17:32:00-05:00",
    "detail": "Knee",
    "espn_id": "4568007"
-  },
-  "name:MIN:andrewvanginkel": {
-   "name": "Andrew Van Ginkel",
-   "team": "MIN",
-   "pos": "LB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T17:31:00-05:00",
-   "detail": "Chest",
-   "espn_id": "3133487"
   },
   "name:MIN:isaiahrodgers": {
    "name": "Isaiah Rodgers",
@@ -3477,17 +3488,6 @@
    "date": "2026-11-05T17:30:00-05:00",
    "detail": "Calf",
    "espn_id": "4877652"
-  },
-  "00-0036259": {
-   "name": "Jauan Jennings",
-   "team": "MIN",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T17:30:00-05:00",
-   "detail": "Calf",
-   "espn_id": "3886598",
-   "comment": "questionable"
   },
   "00-0041104": {
    "name": "Demond Claiborne",
@@ -3965,7 +3965,7 @@
    "pos": "OT",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T18:10:00-05:00",
+   "date": "2026-11-05T18:39:00-05:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
@@ -5425,6 +5425,17 @@
    "detail": "Foot",
    "espn_id": "4573318"
   },
+  "00-0036626": {
+   "name": "Dyami Brown",
+   "team": "WAS",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-05T18:39:00-05:00",
+   "detail": "Calf",
+   "espn_id": "4361577",
+   "comment": "questionable"
+  },
   "name:WAS:jerzhannewton": {
    "name": "Jer'Zhan Newton",
    "team": "WAS",
@@ -5608,16 +5619,6 @@
    "date": "2026-10-28T21:29:00-04:00",
    "detail": "Triceps",
    "espn_id": "3051890"
-  },
-  "00-0036415": {
-   "name": "Van Jefferson",
-   "team": "WAS",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-28T19:33:00-04:00",
-   "detail": null,
-   "espn_id": "3930066"
   }
  },
  "last_fail_at": null,
@@ -6110,6 +6111,10 @@
   "00-0038400": {
    "status": "Questionable",
    "at": "2026-11-05T18:20:01-05:00"
+  },
+  "00-0036626": {
+   "status": "Questionable",
+   "at": "2026-11-05T18:50:01-05:00"
   }
  }
 }
