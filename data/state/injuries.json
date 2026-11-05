@@ -1,5 +1,5 @@
 {
- "at": "2026-11-05T16:40:00-05:00",
+ "at": "2026-11-05T17:10:01-05:00",
  "source": "espn",
  "players": {
   "00-0038559": {
@@ -559,9 +559,9 @@
    "team": "BUF",
    "pos": "RB",
    "status": "Active",
-   "fantasy": null,
+   "fantasy": "QUESTIONABLE",
    "date": "2026-11-03T21:39:00-05:00",
-   "detail": null,
+   "detail": "Illness",
    "espn_id": "3915411"
   },
   "name:BUF:greggaines": {
@@ -579,9 +579,9 @@
    "team": "BUF",
    "pos": "CB",
    "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
+   "fantasy": null,
    "date": "2026-11-03T08:03:00-05:00",
-   "detail": "Ankle",
+   "detail": null,
    "espn_id": "4401823"
   },
   "name:BUF:spencerbrown": {
@@ -659,9 +659,9 @@
    "team": "BUF",
    "pos": "TE",
    "status": "Active",
-   "fantasy": null,
+   "fantasy": "QUESTIONABLE",
    "date": "2026-11-01T21:45:00-05:00",
-   "detail": null,
+   "detail": "Chest",
    "espn_id": "4385690"
   },
   "00-0037248": {
@@ -1424,6 +1424,28 @@
    "detail": null,
    "espn_id": "4685702"
   },
+  "00-0038041": {
+   "name": "Jake Ferguson",
+   "team": "DAL",
+   "pos": "TE",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-05T16:57:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "4242355",
+   "comment": "Ferguson (ankle) did not practice Thursday, Todd Archer of ESPN.com reports."
+  },
+  "00-0037247": {
+   "name": "George Pickens",
+   "team": "DAL",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-05T16:51:00-05:00",
+   "detail": "Hamstring",
+   "espn_id": "4426354",
+   "comment": "Pickens (hamstring) was limited at Thursday's practice, Todd Archer of ESPN.com reports."
+  },
   "name:DAL:jalenthompson": {
    "name": "Jalen Thompson",
    "team": "DAL",
@@ -1474,28 +1496,6 @@
    "date": "2026-11-04T19:49:00-05:00",
    "detail": "Concussion",
    "espn_id": "4870706"
-  },
-  "00-0038041": {
-   "name": "Jake Ferguson",
-   "team": "DAL",
-   "pos": "TE",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T19:11:00-05:00",
-   "detail": "Ankle",
-   "espn_id": "4242355",
-   "comment": "Ferguson (ankle) did not participate at the Cowboys' practice Wednesday, Patrik Walker of the team's official site reports."
-  },
-  "00-0037247": {
-   "name": "George Pickens",
-   "team": "DAL",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T17:02:00-05:00",
-   "detail": "Hamstring",
-   "espn_id": "4426354",
-   "comment": "Pickens (hamstring) was a limited participant in Wednesday's practice, Patrik Walker of the Cowboys' official site reports."
   },
   "name:DAL:tylersmith": {
    "name": "Tyler Smith",
@@ -1801,16 +1801,6 @@
    "detail": "Neck",
    "espn_id": "4569465"
   },
-  "name:DET:amenogbongbemiga": {
-   "name": "Amen Ogbongbemiga",
-   "team": "DET",
-   "pos": "LB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T16:02:00-05:00",
-   "detail": "Toe",
-   "espn_id": "4038432"
-  },
   "name:DET:jimmyrolder": {
    "name": "Jimmy Rolder",
    "team": "DET",
@@ -1949,10 +1939,21 @@
    "pos": "RB",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T16:39:00-05:00",
+   "date": "2026-11-05T16:45:00-05:00",
    "detail": "Knee",
    "espn_id": "4429023",
-   "comment": "questionable"
+   "comment": "Lloyd was limited at practice Thursday due to a knee injury."
+  },
+  "00-0038124": {
+   "name": "Christian Watson",
+   "team": "GB",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-05T16:36:00-05:00",
+   "detail": "Ribs",
+   "espn_id": "4248528",
+   "comment": "Watson (ribs) was a limited practice participant Thursday, Rob Demovsky of ESPN.com reports."
   },
   "name:GB:keiseannixon": {
    "name": "Keisean Nixon",
@@ -1963,17 +1964,6 @@
    "date": "2026-11-05T15:35:00-05:00",
    "detail": "Groin",
    "espn_id": "4259493"
-  },
-  "00-0038124": {
-   "name": "Christian Watson",
-   "team": "GB",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T13:10:00-05:00",
-   "detail": "Ribs",
-   "espn_id": "4248528",
-   "comment": "Watson (ribs) is wearing pads for Thursday's practice, Wes Hodkiewicz of the Packers' official site reports."
   },
   "00-0035700": {
    "name": "Josh Jacobs",
@@ -2280,6 +2270,17 @@
    "detail": null,
    "espn_id": "4258173"
   },
+  "00-0037292": {
+   "name": "Drew Ogletree",
+   "team": "IND",
+   "pos": "TE",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-05T16:47:00-05:00",
+   "detail": "Knee",
+   "espn_id": "4722908",
+   "comment": "Ogletree (knee) upgraded to a limited practice Thursday."
+  },
   "00-0036223": {
    "name": "Jonathan Taylor",
    "team": "IND",
@@ -2299,17 +2300,6 @@
    "date": "2026-11-05T15:46:00-05:00",
    "detail": "Knee",
    "espn_id": "3917142"
-  },
-  "00-0037292": {
-   "name": "Drew Ogletree",
-   "team": "IND",
-   "pos": "TE",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T20:18:00-05:00",
-   "detail": "Knee",
-   "espn_id": "4722908",
-   "comment": "Ogletree (knee) did not participate at the Colts' practice Wednesday."
   },
   "00-0037664": {
    "name": "Alec Pierce",
@@ -2443,6 +2433,17 @@
    "detail": null,
    "espn_id": "4431459"
   },
+  "00-0040719": {
+   "name": "Bhayshul Tuten",
+   "team": "JAX",
+   "pos": "RB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-05T16:51:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "4882093",
+   "comment": "Tuten (ankle/foot) 'should be' available for Thursday night's game against the Ravens barring any pregame setbacks, Jeremy Fowler of ESPN reports."
+  },
   "name:JAX:travonwalker": {
    "name": "Travon Walker",
    "team": "JAX",
@@ -2472,17 +2473,6 @@
    "date": "2026-11-04T15:32:00-05:00",
    "detail": null,
    "espn_id": "3916433"
-  },
-  "00-0040719": {
-   "name": "Bhayshul Tuten",
-   "team": "JAX",
-   "pos": "RB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T15:07:00-05:00",
-   "detail": "Ankle",
-   "espn_id": "4882093",
-   "comment": "Tuten (ankle/foot) is listed questionable for Thursday's game against the Ravens."
   },
   "00-0041100": {
    "name": "Josh Cameron",
@@ -2584,6 +2574,26 @@
    "detail": null,
    "espn_id": "4432620"
   },
+  "00-0030506": {
+   "name": "Travis Kelce",
+   "team": "KC",
+   "pos": "TE",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-05T16:39:00-05:00",
+   "detail": null,
+   "espn_id": "15847"
+  },
+  "00-0039067": {
+   "name": "Rashee Rice",
+   "team": "KC",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-05T16:34:00-05:00",
+   "detail": null,
+   "espn_id": "4428331"
+  },
   "00-0038519": {
    "name": "Nikko Remigio",
    "team": "KC",
@@ -2594,28 +2604,6 @@
    "detail": "Hip",
    "espn_id": "4372716",
    "comment": "Remigio (hip) was limited in Wednesday's practice."
-  },
-  "00-0039067": {
-   "name": "Rashee Rice",
-   "team": "KC",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": null,
-   "date": "2026-11-04T16:47:00-05:00",
-   "detail": null,
-   "espn_id": "4428331",
-   "comment": "Rice (hamstring/knee) was limited in Wednesday's practice."
-  },
-  "00-0030506": {
-   "name": "Travis Kelce",
-   "team": "KC",
-   "pos": "TE",
-   "status": "Questionable",
-   "fantasy": null,
-   "date": "2026-11-04T16:41:00-05:00",
-   "detail": null,
-   "espn_id": "15847",
-   "comment": "Kelce (ankle) was listed as limited in Wednesday's practice."
   },
   "name:KC:mansoordelane": {
    "name": "Mansoor Delane",
@@ -3331,10 +3319,10 @@
    "pos": "RB",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T14:16:00-05:00",
+   "date": "2026-11-05T17:01:00-05:00",
    "detail": "Quadriceps",
    "espn_id": "4682745",
-   "comment": "Wright (quadriceps) is taking part in practice Thursday, David Furones of the South Florida Sun Sentinel reports."
+   "comment": "Wright (quadriceps) was limited in Thursday's practice, Marcel Louis-Jacques of ESPN.com reports."
   },
   "name:MIA:kadynproctor": {
    "name": "Kadyn Proctor",
@@ -3649,16 +3637,47 @@
    "detail": null,
    "espn_id": "4708049"
   },
+  "name:NE:brendenschooler": {
+   "name": "Brenden Schooler",
+   "team": "NE",
+   "pos": "S",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-05T16:55:00-05:00",
+   "detail": "Hamstring",
+   "espn_id": "4047941"
+  },
+  "name:NE:marcusjones": {
+   "name": "Marcus Jones",
+   "team": "NE",
+   "pos": "CB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-05T16:54:00-05:00",
+   "detail": "Foot",
+   "espn_id": "4241720"
+  },
   "00-0040734": {
    "name": "TreVeyon Henderson",
    "team": "NE",
    "pos": "RB",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T14:38:00-05:00",
+   "date": "2026-11-05T16:48:00-05:00",
    "detail": "Illness",
    "espn_id": "4432710",
-   "comment": "Henderson (illness) was not seen at Thursday's practice, Evan Lazar of the Patriots' official site reports."
+   "comment": "Henderson (illness) was listed as a non-participant in Thursday's practice, ESPN's Rob Demovsky reports."
+  },
+  "00-0035676": {
+   "name": "A.J. Brown",
+   "team": "NE",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-05T16:38:00-05:00",
+   "detail": "Knee",
+   "espn_id": "4047646",
+   "comment": "Brown (ankle/knee) was a non-participant at Thursday's practice, Rob Demovsky of ESPN.com reports."
   },
   "00-0033090": {
    "name": "Hunter Henry",
@@ -3670,17 +3689,6 @@
    "detail": "Foot",
    "espn_id": "3046439",
    "comment": "Henry (foot) wasn't spotted at Thursday's practice, Evan Lazar of the Patriots' official site reports."
-  },
-  "00-0035676": {
-   "name": "A.J. Brown",
-   "team": "NE",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T14:32:00-05:00",
-   "detail": "Knee",
-   "espn_id": "4047646",
-   "comment": "Brown (ankle/knee) isn't present for the portion of Thursday's practice open to media viewing, Evan Lazar of the Patriots' official site reports."
   },
   "name:NE:gregvanroten": {
    "name": "Greg Van Roten",
@@ -3721,16 +3729,6 @@
    "date": "2026-11-04T16:56:00-05:00",
    "detail": "Neck",
    "espn_id": "3916923"
-  },
-  "name:NE:christianbarmore": {
-   "name": "Christian Barmore",
-   "team": "NE",
-   "pos": "DT",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T16:55:00-05:00",
-   "detail": "Illness",
-   "espn_id": "4372030"
   },
   "name:NE:kevinbyard": {
    "name": "Kevin Byard",
@@ -3833,15 +3831,27 @@
    "detail": "Knee",
    "espn_id": "4837244"
   },
-  "00-0041123": {
-   "name": "Behren Morton",
-   "team": "NE",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-01T15:20:00-05:00",
-   "detail": null,
-   "espn_id": "4431465"
+  "00-0041326": {
+   "name": "CJ Donaldson",
+   "team": "NO",
+   "pos": "RB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-05T16:50:00-05:00",
+   "detail": "Shoulder",
+   "espn_id": "5081999",
+   "comment": "Donaldson (shoulder/concussion) did not practice Thursday, Katherine Terrell of ESPN.com reports."
+  },
+  "00-0033906": {
+   "name": "Alvin Kamara",
+   "team": "NO",
+   "pos": "RB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-05T16:42:00-05:00",
+   "detail": "Back",
+   "espn_id": "3054850",
+   "comment": "Kamara (rest/back) was limited at Thursday's practice, Katherine Terrell of ESPN.com reports."
   },
   "00-0041029": {
    "name": "Jordyn Tyson",
@@ -3853,17 +3863,6 @@
    "detail": "Hamstring",
    "espn_id": "4880281",
    "comment": "Tyson (hamstring) remained a limited participant at Thursday's practice, Katherine Terrell of ESPN.com reports."
-  },
-  "00-0033906": {
-   "name": "Alvin Kamara",
-   "team": "NO",
-   "pos": "RB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T16:02:00-05:00",
-   "detail": "Back",
-   "espn_id": "3054850",
-   "comment": "Kamara (rest/back) returned to practice Thursday, Nick Underhill of NewOrleans.Football reports."
   },
   "name:NO:kelvinbanks": {
    "name": "Kelvin Banks Jr.",
@@ -3884,17 +3883,6 @@
    "date": "2026-11-04T21:39:00-05:00",
    "detail": "Concussion",
    "espn_id": "3931399"
-  },
-  "00-0041326": {
-   "name": "CJ Donaldson",
-   "team": "NO",
-   "pos": "RB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T19:09:00-05:00",
-   "detail": "Shoulder",
-   "espn_id": "5081999",
-   "comment": "Donaldson (shoulder) was limited in Wednesday's practice."
   },
   "name:NO:asimrichards": {
    "name": "Asim Richards",
@@ -4007,6 +3995,27 @@
    "detail": null,
    "espn_id": "4569559"
   },
+  "name:NYG:jermaineeluemunor": {
+   "name": "Jermaine Eluemunor",
+   "team": "NYG",
+   "pos": "OT",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-05T16:55:00-05:00",
+   "detail": "Calf",
+   "espn_id": "3115303"
+  },
+  "00-0040715": {
+   "name": "Cam Skattebo",
+   "team": "NYG",
+   "pos": "RB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-05T16:29:00-05:00",
+   "detail": "Hamstring",
+   "espn_id": "4696981",
+   "comment": "Skattebo (hamstring) was a non-participant at Thursday's practice, Dan Salomone of the Giants' official site reports."
+  },
   "00-0039337": {
    "name": "Malik Nabers",
    "team": "NYG",
@@ -4018,36 +4027,15 @@
    "espn_id": "4595348",
    "comment": "Nabers didn't practice Thursday due to a knee injury, Dan Salomone of the Giants' official site reports."
   },
-  "name:NYG:jermaineeluemunor": {
-   "name": "Jermaine Eluemunor",
-   "team": "NYG",
-   "pos": "OT",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T16:21:00-05:00",
-   "detail": "Calf",
-   "espn_id": "3115303"
-  },
   "name:NYG:abdulcarter": {
    "name": "Abdul Carter",
    "team": "NYG",
    "pos": "LB",
    "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
+   "fantasy": null,
    "date": "2026-11-05T15:59:00-05:00",
-   "detail": "Illness",
+   "detail": null,
    "espn_id": "4725996"
-  },
-  "00-0040715": {
-   "name": "Cam Skattebo",
-   "team": "NYG",
-   "pos": "RB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T13:43:00-05:00",
-   "detail": "Hamstring",
-   "espn_id": "4696981",
-   "comment": "Skattebo (hamstring) was spotted working off to the side with the Giants' training staff Thursday, Art Stapleton of The Bergen Record reports."
   },
   "00-0039847": {
    "name": "Theo Johnson",
