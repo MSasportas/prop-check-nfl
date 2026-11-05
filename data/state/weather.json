@@ -1,14 +1,14 @@
 {
  "games": {
   "2026_09_JAX_BAL": {
-   "temp_f": 68.2,
-   "wind_mph": 3.5,
-   "gust_mph": 11.6,
-   "rain_pct": 32,
+   "temp_f": 68.7,
+   "wind_mph": 2.9,
+   "gust_mph": 11.2,
+   "rain_pct": 25,
    "rain_in": 0.0,
    "roof": "outdoors",
-   "at": "2026-11-05T04:00:01-05:00",
-   "text": "68\u00b0F, wind 4 mph, 32% chance of rain"
+   "at": "2026-11-05T07:00:01-05:00",
+   "text": "69\u00b0F, wind 3 mph"
   }
  }
 }

@@ -1,5 +1,5 @@
 {
- "at": "2026-11-05T06:00:01-05:00",
+ "at": "2026-11-05T07:00:01-05:00",
  "source": "espn",
  "players": {
   "name:ARI:isaiahadams": {
@@ -4051,7 +4051,7 @@
    "pos": "OT",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T05:01:00-05:00",
+   "date": "2026-11-05T06:02:00-05:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
@@ -4137,7 +4137,7 @@
    "detail": null,
    "espn_id": "4040761"
   },
-  "name:NYG:gregdesrosiers": {
+  "00-0041376": {
    "name": "Greg Desrosiers Jr.",
    "team": "NYG",
    "pos": "RB",
@@ -5625,7 +5625,7 @@
    "detail": "Knee - MCL",
    "espn_id": "4259491"
   },
-  "name:WAS:roberthenry": {
+  "00-0041178": {
    "name": "Robert Henry Jr.",
    "team": "WAS",
    "pos": "RB",
