@@ -1,5 +1,5 @@
 {
- "at": "2026-11-05T04:00:01-05:00",
+ "at": "2026-11-05T05:00:00-05:00",
  "source": "espn",
  "players": {
   "name:ARI:isaiahadams": {
@@ -1645,7 +1645,7 @@
    "date": "2026-11-04T19:17:00-05:00",
    "detail": "Ankle",
    "espn_id": "4600981",
-   "comment": "Bryant (ankle) was a full participant at the Broncos' practice Wednesday, Aric DiLalla of the team's official website reports."
+   "comment": "Bryant (ankle) was a full participant at the Broncos' practice Wednesday, Aric DiLalla of the team's official site reports."
   },
   "name:DEN:eyiomauwazurike": {
    "name": "Eyioma Uwazurike",
@@ -3767,7 +3767,7 @@
    "date": "2026-11-04T13:21:00-05:00",
    "detail": "Illness",
    "espn_id": "4432710",
-   "comment": "Henderson (illness) won't practice Wednesday, Doug Kyed of the Boston Herald reports."
+   "comment": "Patriots head coach Mike Vrabel said that Henderson (illness) won't practice Wednesday, Doug Kyed of the Boston Herald reports."
   },
   "00-0035676": {
    "name": "A.J. Brown",
@@ -3776,9 +3776,9 @@
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
    "date": "2026-11-04T13:13:00-05:00",
-   "detail": "Ankle",
+   "detail": "Knee",
    "espn_id": "4047646",
-   "comment": "Brown (ankle/knee) won't practice Wednesday, Doug Kyed of the Boston Herald reports."
+   "comment": "Patriots head coach Mike Vrabel said that Brown (knee/ankle) won't practice Wednesday, Doug Kyed of the Boston Herald reports."
   },
   "00-0033555": {
    "name": "Mack Hollins",
@@ -3952,7 +3952,7 @@
    "date": "2026-11-04T16:41:00-05:00",
    "detail": "Hamstring",
    "espn_id": "4880281",
-   "comment": "Tyson (hamstring) turned in a limited practice Wednesday, Adam Schefter of ESPN reports."
+   "comment": "Tyson (hamstring) had his 21-day practice window opened and was a limited participant in Wednesday's session."
   },
   "00-0036973": {
    "name": "Travis Etienne Jr.",
@@ -4051,7 +4051,7 @@
    "pos": "OT",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T03:01:00-05:00",
+   "date": "2026-11-05T04:21:00-05:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
