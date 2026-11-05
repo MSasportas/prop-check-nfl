@@ -1,5 +1,5 @@
 {
- "at": "2026-11-04T18:30:01-05:00",
+ "at": "2026-11-04T19:00:01-05:00",
  "source": "espn",
  "players": {
   "00-0038559": {
@@ -1929,6 +1929,16 @@
    "detail": null,
    "espn_id": "5123663"
   },
+  "name:GB:micahparsons": {
+   "name": "Micah Parsons",
+   "team": "GB",
+   "pos": "DE",
+   "status": "Out",
+   "fantasy": "PUP-R",
+   "date": "2026-11-04T18:10:00-05:00",
+   "detail": "Knee - ACL",
+   "espn_id": "4361423"
+  },
   "00-0038124": {
    "name": "Christian Watson",
    "team": "GB",
@@ -1980,16 +1990,6 @@
    "date": "2026-11-04T15:59:00-05:00",
    "detail": "Shin",
    "espn_id": "3124005"
-  },
-  "name:GB:micahparsons": {
-   "name": "Micah Parsons",
-   "team": "GB",
-   "pos": "DE",
-   "status": "Out",
-   "fantasy": "PUP-R",
-   "date": "2026-11-04T12:59:00-05:00",
-   "detail": "Knee - ACL",
-   "espn_id": "4361423"
   },
   "name:GB:seanrhyan": {
    "name": "Sean Rhyan",
@@ -2122,26 +2122,6 @@
    "detail": "Toe",
    "espn_id": "4586312",
    "comment": "Noel, who was placed on injured reserve earlier Wednesday, is expected to require surgery to address his toe injury and will miss the remainder of the season, J"
-  },
-  "name:HOU:jalenpitre": {
-   "name": "Jalen Pitre",
-   "team": "HOU",
-   "pos": "S",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-27T09:11:00-04:00",
-   "detail": "Shoulder - AC Joint",
-   "espn_id": "4241223"
-  },
-  "name:HOU:blakefisher": {
-   "name": "Blake Fisher",
-   "team": "HOU",
-   "pos": "OT",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-10-27T09:11:00-04:00",
-   "detail": "Thumb",
-   "espn_id": "4432699"
   },
   "00-0034981": {
    "name": "Foster Moreau",
@@ -2720,6 +2700,17 @@
    "detail": "Knee - ACL",
    "espn_id": "4591008"
   },
+  "00-0034365": {
+   "name": "Ian Thomas",
+   "team": "LV",
+   "pos": "TE",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-04T18:45:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "4045305",
+   "comment": "questionable"
+  },
   "00-0040488": {
    "name": "Carter Runyon",
    "team": "LV",
@@ -2870,15 +2861,35 @@
    "detail": "Neck",
    "espn_id": "4243916"
   },
-  "00-0034365": {
-   "name": "Ian Thomas",
-   "team": "LV",
-   "pos": "TE",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-30T19:58:00-04:00",
-   "detail": null,
-   "espn_id": "4045305"
+  "name:LAC:buddupree": {
+   "name": "Bud Dupree",
+   "team": "LAC",
+   "pos": "LB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-04T18:48:00-05:00",
+   "detail": "Illness",
+   "espn_id": "2576702"
+  },
+  "name:LAC:daiyanhenley": {
+   "name": "Daiyan Henley",
+   "team": "LAC",
+   "pos": "LB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-04T18:48:00-05:00",
+   "detail": "Shoulder",
+   "espn_id": "4241597"
+  },
+  "name:LAC:kendallwilliamson": {
+   "name": "Kendall Williamson",
+   "team": "LAC",
+   "pos": "S",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-04T18:47:00-05:00",
+   "detail": "Calf",
+   "espn_id": "4360745"
   },
   "00-0041550": {
    "name": "Brenen Thompson",
@@ -3925,7 +3936,7 @@
    "pos": "OT",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T18:17:00-05:00",
+   "date": "2026-11-04T18:48:00-05:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
@@ -3967,7 +3978,7 @@
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
    "date": "2026-11-04T16:27:00-05:00",
-   "detail": "Head",
+   "detail": "Hand",
    "espn_id": "4257188",
    "comment": "questionable"
   },
@@ -4000,16 +4011,6 @@
    "date": "2026-11-04T16:23:00-05:00",
    "detail": "Illness",
    "espn_id": "4725996"
-  },
-  "name:NYG:gregnewsome": {
-   "name": "Greg Newsome II",
-   "team": "NYG",
-   "pos": "CB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-03T17:37:00-05:00",
-   "detail": "Concussion",
-   "espn_id": "4361266"
   },
   "00-0035250": {
    "name": "Devin Singletary",
@@ -4291,10 +4292,10 @@
    "pos": "WR",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T15:43:00-05:00",
+   "date": "2026-11-04T18:29:00-05:00",
    "detail": "Ankle",
    "espn_id": "4428850",
-   "comment": "Wicks (ankle) wasn't spotted at Wednesday's practice, Brooks Kubena of The Athletic reports."
+   "comment": "Wicks (ankle) was a non-participant at Wednesday's practice."
   },
   "00-0036912": {
    "name": "DeVonta Smith",
@@ -4302,20 +4303,51 @@
    "pos": "WR",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T15:35:00-05:00",
+   "date": "2026-11-04T18:25:00-05:00",
    "detail": "Hamstring",
    "espn_id": "4241478",
-   "comment": "Smith (hamstring) wasn't spotted at Wednesday's practice, Brooks Kubena of The Athletic reports."
+   "comment": "Smith (hamstring) didn't practice Wednesday."
   },
   "00-0034844": {
    "name": "Saquon Barkley",
    "team": "PHI",
    "pos": "RB",
-   "status": "Active",
+   "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T15:28:00-05:00",
+   "date": "2026-11-04T18:20:00-05:00",
    "detail": "Hamstring",
-   "espn_id": "3929630"
+   "espn_id": "3929630",
+   "comment": "Barkley (hamstring/back) officially didn't practice Wednesday."
+  },
+  "name:PHI:jonathangreenard": {
+   "name": "Jonathan Greenard",
+   "team": "PHI",
+   "pos": "LB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-04T18:18:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "3916409"
+  },
+  "name:PHI:jalyxhunt": {
+   "name": "Jalyx Hunt",
+   "team": "PHI",
+   "pos": "LB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-04T18:18:00-05:00",
+   "detail": "Knee",
+   "espn_id": "4571162"
+  },
+  "name:PHI:jakeelliott": {
+   "name": "Jake Elliott",
+   "team": "PHI",
+   "pos": "PK",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-04T18:17:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "3050478"
   },
   "00-0038400": {
    "name": "Tanner McKee",
@@ -4630,6 +4662,27 @@
    "detail": "Triceps",
    "espn_id": "3047495"
   },
+  "name:SF:siranneal": {
+   "name": "Siran Neal",
+   "team": "SF",
+   "pos": "S",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-04T18:29:00-05:00",
+   "detail": "Knee",
+   "espn_id": "3057524"
+  },
+  "00-0034775": {
+   "name": "Christian Kirk",
+   "team": "SF",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-04T18:28:00-05:00",
+   "detail": "Knee",
+   "espn_id": "3895856",
+   "comment": "questionable"
+  },
   "00-0033280": {
    "name": "Christian McCaffrey",
    "team": "SF",
@@ -4661,7 +4714,7 @@
    "date": "2026-11-04T15:53:00-05:00",
    "detail": "Achilles",
    "espn_id": "16737",
-   "comment": "Head coach Kyle Shanahan said Evans (Achilles) won't practice Wednesday, NFL reporter Andrew Siciliano reports."
+   "comment": "Head coach Kyle Shanahan said Evans (Achilles/ribs) won't practice Wednesday, NFL reporter Andrew Siciliano reports."
   },
   "name:SF:brandonaiyuk": {
    "name": "Brandon Aiyuk",
@@ -4715,16 +4768,6 @@
    "detail": "Groin",
    "espn_id": "3116097"
   },
-  "00-0034775": {
-   "name": "Christian Kirk",
-   "team": "SF",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-26T19:48:00-04:00",
-   "detail": null,
-   "espn_id": "3895856"
-  },
   "00-0031236": {
    "name": "Brandin Cooks",
    "team": "SF",
@@ -4772,7 +4815,7 @@
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
    "date": "2026-10-26T19:05:00-04:00",
-   "detail": "Calf",
+   "detail": "Knee",
    "espn_id": "4040605"
   },
   "00-0032775": {
@@ -5919,6 +5962,18 @@
   "00-0039751": {
    "status": "Questionable",
    "at": "2026-11-04T18:30:01-05:00"
+  },
+  "00-0034365": {
+   "status": "Questionable",
+   "at": "2026-11-04T19:00:01-05:00"
+  },
+  "00-0034844": {
+   "status": "Questionable",
+   "at": "2026-11-04T19:00:01-05:00"
+  },
+  "00-0034775": {
+   "status": "Questionable",
+   "at": "2026-11-04T19:00:01-05:00"
   }
  }
 }
