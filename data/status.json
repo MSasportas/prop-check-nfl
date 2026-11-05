@@ -3,10 +3,10 @@
  "season": 2026,
  "week": 9,
  "slate": "2026-W09",
- "started_at": "2026-11-05T17:10:01-05:00",
- "status_at": "2026-11-05T17:10:01-05:00",
- "finished_at": "2026-11-05T17:10:03-05:00",
- "last_ok_at": "2026-11-05T17:10:01-05:00",
+ "started_at": "2026-11-05T17:20:00-05:00",
+ "status_at": "2026-11-05T17:20:00-05:00",
+ "finished_at": "2026-11-05T17:20:00-05:00",
+ "last_ok_at": "2026-11-05T17:20:00-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -22,7 +22,7 @@
   {
    "step": "stats",
    "status": "skipped",
-   "note": "play-by-play unchanged (8313305 bytes)"
+   "note": "checked at 5:10 PM"
   },
   {
    "step": "roster",
@@ -31,8 +31,8 @@
   },
   {
    "step": "injuries",
-   "status": "ok",
-   "note": "espn: 87 out, 174 questionable"
+   "status": "skipped",
+   "note": "read at 5:10 PM"
   },
   {
    "step": "weather",
@@ -42,7 +42,7 @@
   {
    "step": "odds",
    "status": "ok",
-   "note": "no pull due"
+   "note": "1 read(s) (W)"
   },
   {
    "step": "engine",
@@ -56,8 +56,8 @@
   },
   {
    "step": "watch",
-   "status": "skipped",
-   "note": "0 move(s)/side(s) scanned, 0 flagged, 0 graded"
+   "status": "ok",
+   "note": "10 move(s)/side(s) scanned, 0 flagged, 0 graded"
   },
   {
    "step": "slate",
@@ -85,7 +85,7 @@
  "keys": [
   {
    "n": 1,
-   "left": 374,
+   "left": 368,
    "shared": false
   },
   {
@@ -119,17 +119,23 @@
    "shared": false
   }
  ],
- "pool_total": 3207,
- "allowance": 84.93,
+ "pool_total": 3201,
+ "allowance": 84.53,
  "tier": "full",
  "games_left_before_reset": 15,
- "budget_used_today": 0,
+ "budget_used_today": 6,
  "odds": {
   "state": "ok",
-  "at": "2026-11-04T20:30:01-05:00",
-  "next_at": "2026-11-05T17:15:00-05:00"
+  "at": "2026-11-05T17:20:00-05:00",
+  "next_at": "2026-11-05T19:30:00-05:00"
  },
- "due": [],
+ "due": [
+  {
+   "pull": "W",
+   "game_id": "2026_09_JAX_BAL",
+   "cost_max": 6
+  }
+ ],
  "skipped_games": [],
  "unmatched_names": [],
  "unknown_teams": [],
@@ -141,11 +147,11 @@
  "odds_notes": [],
  "runner": {
   "event": "workflow_dispatch",
-  "run_id": "42111670694",
-  "iteration": 6,
-  "chain_link": 3,
+  "run_id": "42119140485",
+  "iteration": 2,
+  "chain_link": 4,
   "chain_started_at": "2026-11-05T13:54:23-05:00",
-  "run_started_at": "2026-11-05T16:20:13-05:00"
+  "run_started_at": "2026-11-05T17:10:17-05:00"
  },
  "live_page": {
   "checked_at": "2026-11-05T17:10:01-05:00",

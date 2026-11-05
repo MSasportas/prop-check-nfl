@@ -3,11 +3,11 @@
  "keys": [
   {
    "n": 1,
-   "left": 374,
+   "left": 368,
    "status": "ok",
-   "checked_at": "2026-11-05T12:10:01-05:00",
+   "checked_at": "2026-11-05T17:20:00-05:00",
    "month": "2026-11",
-   "after_us": 374,
+   "after_us": 368,
    "shared": false,
    "shared_at": null,
    "others_spent": 0
@@ -1156,6 +1156,14 @@
    "at": "2026-11-04T20:30:01-05:00",
    "date": "2026-11-04",
    "pull": "R",
+   "game_id": "2026_09_JAX_BAL",
+   "cost": 6,
+   "key": 1
+  },
+  {
+   "at": "2026-11-05T17:20:00-05:00",
+   "date": "2026-11-05",
+   "pull": "W",
    "game_id": "2026_09_JAX_BAL",
    "cost": 6,
    "key": 1
