@@ -19,21 +19,55 @@
  },
  "events_at": "2026-11-04T17:30:00-05:00",
  "unknown_teams": [],
- "done": {},
+ "done": {
+  "2026_09_JAX_BAL": [
+   {
+    "pull": "R",
+    "at": "2026-11-04T20:30:01-05:00",
+    "asked": [
+     "player_pass_tds",
+     "player_pass_yds",
+     "player_reception_yds",
+     "player_receptions",
+     "player_rush_attempts",
+     "player_rush_yds"
+    ],
+    "returned": [
+     "player_pass_tds",
+     "player_pass_yds",
+     "player_reception_yds",
+     "player_receptions",
+     "player_rush_attempts",
+     "player_rush_yds"
+    ],
+    "cost": 6,
+    "hr": [
+     "player_pass_tds",
+     "player_pass_yds",
+     "player_reception_yds",
+     "player_receptions",
+     "player_rush_attempts",
+     "player_rush_yds"
+    ],
+    "ina": false,
+    "n_others": 9
+   }
+  ]
+ },
  "tried": {},
  "skipped": {},
  "last_fail_at": null,
  "fail_note": null,
  "key_count": 7,
  "plan": {
-  "allowance": 85.33,
+  "allowance": 84.93,
   "tier": "full",
   "pulls": "RWC",
-  "pool_at_plan": 1280,
+  "pool_at_plan": 1274,
   "games_left": 15,
-  "pool_raw": 3241,
+  "pool_raw": 3235,
   "keys_shared": 1,
-  "made_at": "2026-11-04T17:30:00-05:00"
+  "made_at": "2026-11-04T20:30:01-05:00"
  },
  "failed": {}
 }
