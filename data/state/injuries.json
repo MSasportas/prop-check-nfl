@@ -1,5 +1,5 @@
 {
- "at": "2026-11-05T02:00:00-05:00",
+ "at": "2026-11-05T03:00:00-05:00",
  "source": "espn",
  "players": {
   "name:ARI:isaiahadams": {
@@ -4051,7 +4051,7 @@
    "pos": "OT",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T01:01:00-05:00",
+   "date": "2026-11-05T02:01:00-05:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
@@ -4431,6 +4431,17 @@
    "detail": "Ankle",
    "espn_id": "3050478"
   },
+  "00-0038393": {
+   "name": "Dontayvion Wicks",
+   "team": "PHI",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-04T18:29:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "4428850",
+   "comment": "Wicks (ankle) was a non-participant at Wednesday's practice."
+  },
   "00-0036912": {
    "name": "DeVonta Smith",
    "team": "PHI",
@@ -4472,17 +4483,6 @@
    "date": "2026-11-04T18:18:00-05:00",
    "detail": "Knee",
    "espn_id": "4571162"
-  },
-  "00-0038393": {
-   "name": "Dontayvion Wicks",
-   "team": "PHI",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T15:43:00-05:00",
-   "detail": "Ankle",
-   "espn_id": "4428850",
-   "comment": "Wicks (ankle) wasn't spotted at Wednesday's practice, Brooks Kubena of The Athletic reports."
   },
   "00-0038400": {
    "name": "Tanner McKee",
