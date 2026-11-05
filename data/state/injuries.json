@@ -1,7 +1,18 @@
 {
- "at": "2026-11-05T15:10:00-05:00",
+ "at": "2026-11-05T15:40:00-05:00",
  "source": "espn",
  "players": {
+  "00-0037157": {
+   "name": "Bam Knight",
+   "team": "ARI",
+   "pos": "RB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-05T15:12:00-05:00",
+   "detail": "Concussion",
+   "espn_id": "4427728",
+   "comment": "Knight (concussion) wasn't present for Thursday's practice, Theo Mackie of The Arizona Republic reports."
+  },
   "name:ARI:isaiahadams": {
    "name": "Isaiah Adams",
    "team": "ARI",
@@ -11,17 +22,6 @@
    "date": "2026-11-04T22:52:00-05:00",
    "detail": "Ankle",
    "espn_id": "5084939"
-  },
-  "00-0037157": {
-   "name": "Bam Knight",
-   "team": "ARI",
-   "pos": "RB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T21:37:00-05:00",
-   "detail": "Concussion",
-   "espn_id": "4427728",
-   "comment": "Knight (concussion) did not practice Wednesday, Theo Mackie of The Arizona Republic reports."
   },
   "00-0038559": {
    "name": "Michael Wilson",
@@ -207,6 +207,17 @@
    "detail": "Knee",
    "espn_id": "4709718"
   },
+  "00-0040432": {
+   "name": "Beaux Collins",
+   "team": "ATL",
+   "pos": "WR",
+   "status": "Injured Reserve",
+   "fantasy": "IR-R",
+   "date": "2026-11-05T15:16:00-05:00",
+   "detail": "Hip",
+   "espn_id": "4431210",
+   "comment": "Collins (hip) was a full participant in Thursday's practice, D. Orlando Ledbetter of BowTieSports.com reports."
+  },
   "00-0037746": {
    "name": "Brian Robinson Jr.",
    "team": "ATL",
@@ -368,17 +379,6 @@
    "date": "2026-10-31T23:11:00-04:00",
    "detail": "Ankle",
    "espn_id": "4685590"
-  },
-  "00-0040432": {
-   "name": "Beaux Collins",
-   "team": "ATL",
-   "pos": "WR",
-   "status": "Injured Reserve",
-   "fantasy": "IR-R",
-   "date": "2026-10-31T20:31:00-04:00",
-   "detail": "Hip",
-   "espn_id": "4431210",
-   "comment": "Collins (hip) has been ruled out for Sunday's game against the Buccaneers and will remain on injured reserve, Tori McElhaney of the Falcons' official site repor"
   },
   "name:ATL:anteriothompson": {
    "name": "Anterio Thompson",
@@ -4030,7 +4030,7 @@
    "pos": "OT",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T14:01:00-05:00",
+   "date": "2026-11-05T15:01:00-05:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
@@ -4040,10 +4040,10 @@
    "pos": "WR",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T13:46:00-05:00",
+   "date": "2026-11-05T13:44:00-05:00",
    "detail": "Undisclosed",
    "espn_id": "4595348",
-   "comment": "questionable"
+   "comment": "Nabers had his jersey and helmet on but worked with the Giants' training staff during the portion of Thursday's practice open to the media, Pat Leonard of the N"
   },
   "00-0040715": {
    "name": "Cam Skattebo",
@@ -4198,6 +4198,17 @@
    "detail": null,
    "espn_id": "4682648"
   },
+  "00-0038120": {
+   "name": "Breece Hall",
+   "team": "NYJ",
+   "pos": "RB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-05T15:20:00-05:00",
+   "detail": "Quadriceps",
+   "espn_id": "4427366",
+   "comment": "Hall (quadriceps) indicated Thursday that he's ready to play Sunday against the Chiefs, Rich Cimini of ESPN.com reports."
+  },
   "00-0037740": {
    "name": "Garrett Wilson",
    "team": "NYJ",
@@ -4207,18 +4218,7 @@
    "date": "2026-11-05T13:03:00-05:00",
    "detail": "Concussion",
    "espn_id": "4569618",
-   "comment": "Wilson, who is in the NFL's concussion protocol, wasn't seen at Thursday's practice, , Antwan Staley of the New York Daily News reports."
-  },
-  "00-0038120": {
-   "name": "Breece Hall",
-   "team": "NYJ",
-   "pos": "RB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T13:02:00-05:00",
-   "detail": "Quadriceps",
-   "espn_id": "4427366",
-   "comment": "Hall (quadriceps) is participating in Thursday's practice, Rich Cimini of ESPN.com reports."
+   "comment": "Wilson, who is in the NFL's concussion protocol, wasn't seen at Thursday's practice, Antwan Staley of the New York Daily News reports."
   },
   "name:NYJ:vjpayne": {
    "name": "VJ Payne",
