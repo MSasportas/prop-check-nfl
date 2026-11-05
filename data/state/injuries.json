@@ -1,7 +1,18 @@
 {
- "at": "2026-11-05T15:40:00-05:00",
+ "at": "2026-11-05T16:10:00-05:00",
  "source": "espn",
  "players": {
+  "00-0038559": {
+   "name": "Michael Wilson",
+   "team": "ARI",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-05T15:23:00-05:00",
+   "detail": "Ribs",
+   "espn_id": "4360761",
+   "comment": "Wilson (ribs) remained in a yellow non-contact jersey at Thursday's practice, Bo Brack of GoPHNX.com reports."
+  },
   "00-0037157": {
    "name": "Bam Knight",
    "team": "ARI",
@@ -22,17 +33,6 @@
    "date": "2026-11-04T22:52:00-05:00",
    "detail": "Ankle",
    "espn_id": "5084939"
-  },
-  "00-0038559": {
-   "name": "Michael Wilson",
-   "team": "ARI",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T21:25:00-05:00",
-   "detail": "Ribs",
-   "espn_id": "4360761",
-   "comment": "Wilson (rest/ribs) practiced in a limited capacity Wednesday, Theo Mackie of The Arizona Republic reports."
   },
   "00-0033119": {
    "name": "Jacoby Brissett",
@@ -906,6 +906,27 @@
    "detail": "Triceps",
    "espn_id": "4244607"
   },
+  "name:CHI:dmarcojackson": {
+   "name": "D'Marco Jackson",
+   "team": "CHI",
+   "pos": "LB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-05T15:44:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "4241007"
+  },
+  "00-0040236": {
+   "name": "Kyle Monangai",
+   "team": "CHI",
+   "pos": "RB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-05T15:40:00-05:00",
+   "detail": "Toe",
+   "espn_id": "4608686",
+   "comment": "Monangai (thumb/toe) didn't practice Thursday."
+  },
   "00-0038440": {
    "name": "Zavier Scott",
    "team": "CHI",
@@ -966,17 +987,6 @@
    "date": "2026-11-04T21:12:00-05:00",
    "detail": null,
    "espn_id": "3948283"
-  },
-  "00-0040236": {
-   "name": "Kyle Monangai",
-   "team": "CHI",
-   "pos": "RB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T21:02:00-05:00",
-   "detail": "Toe",
-   "espn_id": "4608686",
-   "comment": "Monangai (thumb/toe) didn't participate in Wednesday's walkthrough."
   },
   "00-0041558": {
    "name": "Sam Roush",
@@ -1961,6 +1971,16 @@
    "detail": null,
    "espn_id": "5123663"
   },
+  "name:GB:keiseannixon": {
+   "name": "Keisean Nixon",
+   "team": "GB",
+   "pos": "CB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-05T15:35:00-05:00",
+   "detail": "Groin",
+   "espn_id": "4259493"
+  },
   "00-0038124": {
    "name": "Christian Watson",
    "team": "GB",
@@ -1981,16 +2001,6 @@
    "date": "2026-11-05T10:49:00-05:00",
    "detail": null,
    "espn_id": "4047365"
-  },
-  "name:GB:keiseannixon": {
-   "name": "Keisean Nixon",
-   "team": "GB",
-   "pos": "CB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T21:35:00-05:00",
-   "detail": "Groin",
-   "espn_id": "4259493"
   },
   "00-0038685": {
    "name": "Chris Brooks",
@@ -2297,6 +2307,26 @@
    "detail": null,
    "espn_id": "4258173"
   },
+  "00-0036223": {
+   "name": "Jonathan Taylor",
+   "team": "IND",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-05T15:59:00-05:00",
+   "detail": null,
+   "espn_id": "4242335"
+  },
+  "name:IND:akeemdavisgaither": {
+   "name": "Akeem Davis-Gaither",
+   "team": "IND",
+   "pos": "LB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-05T15:46:00-05:00",
+   "detail": "Knee",
+   "espn_id": "3917142"
+  },
   "00-0037292": {
    "name": "Drew Ogletree",
    "team": "IND",
@@ -2307,16 +2337,6 @@
    "detail": "Knee",
    "espn_id": "4722908",
    "comment": "Ogletree (knee) did not participate at the Colts' practice Wednesday."
-  },
-  "name:IND:akeemdavisgaither": {
-   "name": "Akeem Davis-Gaither",
-   "team": "IND",
-   "pos": "LB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T15:42:00-05:00",
-   "detail": "Knee",
-   "espn_id": "3917142"
   },
   "00-0037664": {
    "name": "Alec Pierce",
@@ -2449,16 +2469,6 @@
    "date": "2026-11-01T20:47:00-05:00",
    "detail": null,
    "espn_id": "4431459"
-  },
-  "00-0036223": {
-   "name": "Jonathan Taylor",
-   "team": "IND",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-01T18:03:00-05:00",
-   "detail": null,
-   "espn_id": "4242335"
   },
   "name:JAX:travonwalker": {
    "name": "Travon Walker",
@@ -3860,6 +3870,17 @@
    "detail": null,
    "espn_id": "4431465"
   },
+  "00-0033906": {
+   "name": "Alvin Kamara",
+   "team": "NO",
+   "pos": "RB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-05T16:02:00-05:00",
+   "detail": "Back",
+   "espn_id": "3054850",
+   "comment": "Kamara (rest/back) returned to practice Thursday, Nick Underhill of NewOrleans.Football reports."
+  },
   "name:NO:kelvinbanks": {
    "name": "Kelvin Banks Jr.",
    "team": "NO",
@@ -3890,17 +3911,6 @@
    "detail": "Shoulder",
    "espn_id": "5081999",
    "comment": "Donaldson (shoulder) was limited in Wednesday's practice."
-  },
-  "00-0033906": {
-   "name": "Alvin Kamara",
-   "team": "NO",
-   "pos": "RB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T17:19:00-05:00",
-   "detail": "Back",
-   "espn_id": "3054850",
-   "comment": "Kamara (rest/back) didn't practice Wednesday."
   },
   "name:NO:asimrichards": {
    "name": "Asim Richards",
@@ -4030,7 +4040,7 @@
    "pos": "OT",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T15:01:00-05:00",
+   "date": "2026-11-05T15:52:00-05:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
@@ -4040,10 +4050,10 @@
    "pos": "WR",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T13:44:00-05:00",
+   "date": "2026-11-05T15:30:00-05:00",
    "detail": "Undisclosed",
    "espn_id": "4595348",
-   "comment": "Nabers had his jersey and helmet on but worked with the Giants' training staff during the portion of Thursday's practice open to the media, Pat Leonard of the N"
+   "comment": "Nabers (undisclosed) said Thursday, \"I'll be good,\" for Sunday's game at Philadelphia, Art Stapleton of USA Today reports."
   },
   "00-0040715": {
    "name": "Cam Skattebo",
@@ -5198,16 +5208,25 @@
    "detail": "Ankle",
    "espn_id": "3120358"
   },
+  "00-0036919": {
+   "name": "Kenny Gainwell",
+   "team": "TB",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-05T15:57:00-05:00",
+   "detail": null,
+   "espn_id": "4371733"
+  },
   "00-0040129": {
    "name": "Emeka Egbuka",
    "team": "TB",
    "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T12:04:00-05:00",
-   "detail": "Foot",
-   "espn_id": "4567750",
-   "comment": "Egbuka, who was present for practice Thursday, was spotted testing his injured foot, Greg Auman of Fox Sports reports."
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-05T15:55:00-05:00",
+   "detail": null,
+   "espn_id": "4567750"
   },
   "00-0039855": {
    "name": "Jalen McMillan",
@@ -5229,17 +5248,6 @@
    "date": "2026-11-04T22:32:00-05:00",
    "detail": "Ankle",
    "espn_id": "4428522"
-  },
-  "00-0036919": {
-   "name": "Kenny Gainwell",
-   "team": "TB",
-   "pos": "RB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T21:15:00-05:00",
-   "detail": "Hip",
-   "espn_id": "4371733",
-   "comment": "Gainwell (hip) was listed as limited on Wednesday's injury report."
   },
   "00-0041094": {
    "name": "Bauer Sharp",
