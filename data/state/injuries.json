@@ -1,5 +1,5 @@
 {
- "at": "2026-11-05T08:30:01-05:00",
+ "at": "2026-11-05T09:10:00-05:00",
  "source": "espn",
  "players": {
   "name:ARI:isaiahadams": {
@@ -2945,6 +2945,16 @@
    "detail": "Neck",
    "espn_id": "4243916"
   },
+  "name:LAC:daiyanhenley": {
+   "name": "Daiyan Henley",
+   "team": "LAC",
+   "pos": "LB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-05T08:54:00-05:00",
+   "detail": "Shoulder",
+   "espn_id": "4241597"
+  },
   "name:LAC:denzelperryman": {
    "name": "Denzel Perryman",
    "team": "LAC",
@@ -2964,16 +2974,6 @@
    "date": "2026-11-04T18:48:00-05:00",
    "detail": "Illness",
    "espn_id": "2576702"
-  },
-  "name:LAC:daiyanhenley": {
-   "name": "Daiyan Henley",
-   "team": "LAC",
-   "pos": "LB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T18:48:00-05:00",
-   "detail": "Shoulder",
-   "espn_id": "4241597"
   },
   "name:LAC:kendallwilliamson": {
    "name": "Kendall Williamson",
@@ -4051,7 +4051,7 @@
    "pos": "OT",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T08:01:00-05:00",
+   "date": "2026-11-05T09:01:00-05:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
