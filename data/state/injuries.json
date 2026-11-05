@@ -1,7 +1,18 @@
 {
- "at": "2026-11-04T19:30:15-05:00",
+ "at": "2026-11-04T20:00:15-05:00",
  "source": "espn",
  "players": {
+  "00-0037157": {
+   "name": "Bam Knight",
+   "team": "ARI",
+   "pos": "RB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-04T19:29:00-05:00",
+   "detail": "Concussion",
+   "espn_id": "4427728",
+   "comment": "Coach Mike LaFleur said Wednesday that the Cardinals planned on Knight (concussion) being one of their top two backs before he and Jeremiyah Love (ankle) suffer"
+  },
   "00-0038559": {
    "name": "Michael Wilson",
    "team": "ARI",
@@ -145,17 +156,6 @@
    "date": "2026-11-02T17:12:00-05:00",
    "detail": null,
    "espn_id": "4430841"
-  },
-  "00-0037157": {
-   "name": "Bam Knight",
-   "team": "ARI",
-   "pos": "RB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-02T16:53:00-05:00",
-   "detail": "Concussion",
-   "espn_id": "4427728",
-   "comment": "Head coach Mike LaFleur revealed Monday that Knight is in the concussion protocol following Sunday's overtime win in Dallas, Josh Weinfuss of ESPN.com reports."
   },
   "00-0035289": {
    "name": "Gardner Minshew II",
@@ -1410,6 +1410,16 @@
    "detail": null,
    "espn_id": "5083076"
   },
+  "name:DAL:calebdowns": {
+   "name": "Caleb Downs",
+   "team": "DAL",
+   "pos": "S",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-04T19:49:00-05:00",
+   "detail": "Concussion",
+   "espn_id": "4870706"
+  },
   "00-0038041": {
    "name": "Jake Ferguson",
    "team": "DAL",
@@ -1504,16 +1514,6 @@
    "detail": "Concussion",
    "espn_id": "3929850"
   },
-  "name:DAL:calebdowns": {
-   "name": "Caleb Downs",
-   "team": "DAL",
-   "pos": "S",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-02T23:03:00-05:00",
-   "detail": "Concussion",
-   "espn_id": "4870706"
-  },
   "name:DAL:malachilawrence": {
    "name": "Malachi Lawrence",
    "team": "DAL",
@@ -1584,6 +1584,17 @@
    "detail": "Forearm",
    "espn_id": "4427816"
   },
+  "00-0040134": {
+   "name": "Pat Bryant",
+   "team": "DEN",
+   "pos": "WR",
+   "status": "Injured Reserve",
+   "fantasy": "IR-R",
+   "date": "2026-11-04T19:17:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "4600981",
+   "comment": "Bryant (ankle) was a full participant at the Broncos' practice Wednesday, Aric DiLalla of the team's official website reports."
+  },
   "name:DEN:eyiomauwazurike": {
    "name": "Eyioma Uwazurike",
    "team": "DEN",
@@ -1593,17 +1604,6 @@
    "date": "2026-11-04T17:53:00-05:00",
    "detail": "Shoulder",
    "espn_id": "4066109"
-  },
-  "00-0040134": {
-   "name": "Pat Bryant",
-   "team": "DEN",
-   "pos": "WR",
-   "status": "Injured Reserve",
-   "fantasy": "IR-R",
-   "date": "2026-11-04T16:58:00-05:00",
-   "detail": "Ankle",
-   "espn_id": "4600981",
-   "comment": "Bryant (ankle) was designated to return from injured reserve Wednesday and returned to practice, Zac Stevens of TheDNVR.com reports."
   },
   "name:DEN:talanoahufanga": {
    "name": "Talanoa Hufanga",
@@ -1746,6 +1746,16 @@
    "espn_id": "4568490",
    "comment": "The Broncos placed Harvey (knee) on injured reserve Saturday, Ian Rapoport of NFL Network reports."
   },
+  "name:DET:jackcampbell": {
+   "name": "Jack Campbell",
+   "team": "DET",
+   "pos": "LB",
+   "status": "Doubtful",
+   "fantasy": "DOUBTFUL",
+   "date": "2026-11-04T19:43:00-05:00",
+   "detail": "Neck",
+   "espn_id": "4569465"
+  },
   "00-0036963": {
    "name": "Amon-Ra St. Brown",
    "team": "DET",
@@ -1817,16 +1827,6 @@
    "date": "2026-11-02T18:16:00-05:00",
    "detail": "Ankle",
    "espn_id": "4361788"
-  },
-  "name:DET:jackcampbell": {
-   "name": "Jack Campbell",
-   "team": "DET",
-   "pos": "LB",
-   "status": "Doubtful",
-   "fantasy": "DOUBTFUL",
-   "date": "2026-11-02T15:33:00-05:00",
-   "detail": "Neck",
-   "espn_id": "4569465"
   },
   "00-0040390": {
    "name": "Jackson Meeks",
@@ -3124,6 +3124,16 @@
    "detail": "Undisclosed",
    "espn_id": "2579621"
   },
+  "00-0026498": {
+   "name": "Matthew Stafford",
+   "team": "LA",
+   "pos": "QB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-04T19:36:00-05:00",
+   "detail": null,
+   "espn_id": "12483"
+  },
   "00-0040737": {
    "name": "Terrance Ferguson",
    "team": "LA",
@@ -3238,17 +3248,6 @@
    "detail": "Hamstring",
    "espn_id": "4240255"
   },
-  "00-0026498": {
-   "name": "Matthew Stafford",
-   "team": "LA",
-   "pos": "QB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-02T18:11:00-05:00",
-   "detail": "Arm",
-   "espn_id": "12483",
-   "comment": "Stafford left the locker room after Sunday's 24-9 win over the Chargers with a bag of ice wrapped on his right arm, and Rams coach Sean McVay acknowledged Monda"
-  },
   "00-0041568": {
    "name": "Ty Simpson",
    "team": "LA",
@@ -3309,6 +3308,16 @@
    "detail": "Hamstring",
    "espn_id": "16800",
    "comment": "Head coach Sean McVay said Wednesday that Adams had successful surgery on his left hamstring, and the Rams are hopeful that the wide receiver will be able to re"
+  },
+  "name:MIA:darrellbaker": {
+   "name": "Darrell Baker Jr.",
+   "team": "MIA",
+   "pos": "CB",
+   "status": "Out",
+   "fantasy": "PUP-R",
+   "date": "2026-11-04T19:35:00-05:00",
+   "detail": "Undisclosed",
+   "espn_id": "4036660"
   },
   "name:MIA:michaeltaaffe": {
    "name": "Michael Taaffe",
@@ -3978,7 +3987,7 @@
    "pos": "OT",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T19:07:00-05:00",
+   "date": "2026-11-04T19:44:00-05:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
@@ -4704,6 +4713,17 @@
    "detail": "Triceps",
    "espn_id": "3047495"
   },
+  "00-0034775": {
+   "name": "Christian Kirk",
+   "team": "SF",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-04T19:17:00-05:00",
+   "detail": "Knee",
+   "espn_id": "3895856",
+   "comment": "Kirk (knee) was limited in Wednesday's practice, Sam Warren of The Athletic reports."
+  },
   "name:SF:nickbosa": {
    "name": "Nick Bosa",
    "team": "SF",
@@ -4723,17 +4743,6 @@
    "date": "2026-11-04T18:29:00-05:00",
    "detail": "Knee",
    "espn_id": "3057524"
-  },
-  "00-0034775": {
-   "name": "Christian Kirk",
-   "team": "SF",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T18:28:00-05:00",
-   "detail": "Knee",
-   "espn_id": "3895856",
-   "comment": "questionable"
   },
   "00-0033280": {
    "name": "Christian McCaffrey",
@@ -4777,7 +4786,7 @@
    "date": "2026-11-04T09:25:00-05:00",
    "detail": "Personal",
    "espn_id": "4360438",
-   "comment": "Aiyuk, who who is currently is on the 49ers' Reserve/Left Squad list, has turned in paperwork to be reinstated, Adam Schefter of ESPN reports."
+   "comment": "Aiyuk, who who currently is on the 49ers' Reserve/Left Squad list, has turned in paperwork to be reinstated, Adam Schefter of ESPN reports."
   },
   "00-0041035": {
    "name": "De'Zhaun Stribling",
@@ -5418,6 +5427,48 @@
    "detail": "Foot",
    "espn_id": "4573318"
   },
+  "00-0037742": {
+   "name": "Treylon Burks",
+   "team": "WAS",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-04T19:39:00-05:00",
+   "detail": "Foot",
+   "espn_id": "4567156",
+   "comment": "Burks (foot) did not practice Wednesday, Ben Standig of The Team 980 Washington D.C. reports."
+  },
+  "name:WAS:shytuttle": {
+   "name": "Shy Tuttle",
+   "team": "WAS",
+   "pos": "DT",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-04T19:33:00-05:00",
+   "detail": "Shoulder",
+   "espn_id": "3886601"
+  },
+  "00-0036628": {
+   "name": "John Bates",
+   "team": "WAS",
+   "pos": "TE",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-04T19:33:00-05:00",
+   "detail": "Shoulder",
+   "espn_id": "4048228",
+   "comment": "questionable"
+  },
+  "name:WAS:samcosmi": {
+   "name": "Sam Cosmi",
+   "team": "WAS",
+   "pos": "G",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-04T19:33:00-05:00",
+   "detail": "Knee",
+   "espn_id": "4262199"
+  },
   "name:WAS:daronpayne": {
    "name": "Daron Payne",
    "team": "WAS",
@@ -5468,16 +5519,6 @@
    "date": "2026-11-02T20:22:00-05:00",
    "detail": null,
    "espn_id": "4360635"
-  },
-  "00-0037742": {
-   "name": "Treylon Burks",
-   "team": "WAS",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-02T00:05:00-05:00",
-   "detail": null,
-   "espn_id": "4567156"
   },
   "00-0041040": {
    "name": "Antonio Williams",
@@ -5539,16 +5580,6 @@
    "detail": null,
    "espn_id": "4432722"
   },
-  "00-0036628": {
-   "name": "John Bates",
-   "team": "WAS",
-   "pos": "TE",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-01T19:03:00-05:00",
-   "detail": null,
-   "espn_id": "4048228"
-  },
   "name:WAS:jerzhannewton": {
    "name": "Jer'Zhan Newton",
    "team": "WAS",
@@ -5589,27 +5620,6 @@
    "date": "2026-10-28T19:33:00-04:00",
    "detail": null,
    "espn_id": "3930066"
-  },
-  "00-0032268": {
-   "name": "Marcus Mariota",
-   "team": "WAS",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-28T19:15:00-04:00",
-   "detail": null,
-   "espn_id": "2576980"
-  },
-  "00-0040164": {
-   "name": "Jaylin Lane",
-   "team": "WAS",
-   "pos": "WR",
-   "status": "Injured Reserve",
-   "fantasy": "IR",
-   "date": "2026-10-21T20:47:00-04:00",
-   "detail": "Ankle",
-   "espn_id": "4602667",
-   "comment": "Lane underwent surgery Oct. 9 to repair his fractured and dislocated ankle, and he is expected to be cleared for activities before OTAs, Tashan Reed of The Wash"
   }
  },
  "last_fail_at": null,
@@ -6030,6 +6040,14 @@
   "00-0036556": {
    "status": "Questionable",
    "at": "2026-11-04T19:30:15-05:00"
+  },
+  "00-0037742": {
+   "status": "Questionable",
+   "at": "2026-11-04T20:00:15-05:00"
+  },
+  "00-0036628": {
+   "status": "Questionable",
+   "at": "2026-11-04T20:00:15-05:00"
   }
  }
 }
