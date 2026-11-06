@@ -1,5 +1,5 @@
 {
- "at": "2026-11-06T14:30:00-05:00",
+ "at": "2026-11-06T15:00:01-05:00",
  "source": "espn",
  "players": {
   "00-0037157": {
@@ -615,6 +615,17 @@
    "espn_id": "4685526",
    "comment": "Randall (neck) is officially listed as questionable for Thursday's game versus the Jaguars, Ryan Mink of the Ravens' official site reports."
   },
+  "00-0038933": {
+   "name": "Dalton Kincaid",
+   "team": "BUF",
+   "pos": "TE",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-06T14:43:00-05:00",
+   "detail": "Chest",
+   "espn_id": "4385690",
+   "comment": "Kincaid (chest) is no longer in a red non-contact jersey at Friday's practice, Sal Capaccio of WGR Sports Radio 550 Buffalo reports."
+  },
   "00-0035537": {
    "name": "Ty Johnson",
    "team": "BUF",
@@ -668,17 +679,6 @@
    "espn_id": "4242433",
    "comment": "Palmer (hamstring) did not practice Thursday."
   },
-  "00-0038933": {
-   "name": "Dalton Kincaid",
-   "team": "BUF",
-   "pos": "TE",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T17:10:00-05:00",
-   "detail": "Chest",
-   "espn_id": "4385690",
-   "comment": "Kincaid (chest) was listed as a limited participant in Thursday's practice,."
-  },
   "00-0034827": {
    "name": "DJ Moore",
    "team": "BUF",
@@ -686,9 +686,9 @@
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
    "date": "2026-11-05T17:04:00-05:00",
-   "detail": "Knee",
+   "detail": "Shoulder",
    "espn_id": "3915416",
-   "comment": "Moore (knee) was a limited participant in Thursday's practice."
+   "comment": "Moore (shoulder) was a limited participant in Thursday's practice."
   },
   "name:BUF:jordanhancock": {
    "name": "Jordan Hancock",
@@ -1306,16 +1306,25 @@
    "detail": null,
    "espn_id": "4384852"
   },
+  "name:CLE:maliekcollins": {
+   "name": "Maliek Collins",
+   "team": "CLE",
+   "pos": "DT",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-11-06T14:45:00-05:00",
+   "detail": "Elbow",
+   "espn_id": "3040471"
+  },
   "00-0040663": {
    "name": "Harold Fannin Jr.",
    "team": "CLE",
    "pos": "TE",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
+   "status": "Active",
+   "fantasy": null,
    "date": "2026-11-06T13:28:00-05:00",
-   "detail": "Groin",
-   "espn_id": "5083076",
-   "comment": "Fannin (groin) will play Sunday against the Saints, Daniel Oyefusi of ESPN.com reports."
+   "detail": null,
+   "espn_id": "5083076"
   },
   "00-0033537": {
    "name": "Deshaun Watson",
@@ -1338,66 +1347,15 @@
    "detail": null,
    "espn_id": "4432762"
   },
-  "name:CLE:quincywilliams": {
-   "name": "Quincy Williams",
-   "team": "CLE",
-   "pos": "LB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T17:33:00-05:00",
-   "detail": "Hamstring",
-   "espn_id": "3110565"
-  },
   "00-0041037": {
    "name": "Denzel Boston",
    "team": "CLE",
    "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
+   "status": "Active",
+   "fantasy": null,
    "date": "2026-11-05T16:32:00-05:00",
-   "detail": "Calf",
-   "espn_id": "4832800",
-   "comment": "Boston (calf) remained limited in Thursday's practice, Mary Kay Cabot of The Cleveland Plain Dealer reports."
-  },
-  "name:CLE:emmanuelmcneilwarren": {
-   "name": "Emmanuel McNeil-Warren",
-   "team": "CLE",
-   "pos": "S",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T16:28:00-05:00",
-   "detail": "Hip",
-   "espn_id": "4837186"
-  },
-  "name:CLE:carsonschwesinger": {
-   "name": "Carson Schwesinger",
-   "team": "CLE",
-   "pos": "LB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T12:04:00-05:00",
-   "detail": "Wrist",
-   "espn_id": "4876017"
-  },
-  "name:CLE:austinbarber": {
-   "name": "Austin Barber",
-   "team": "CLE",
-   "pos": "OT",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T17:08:00-05:00",
-   "detail": "Calf",
-   "espn_id": "4597310"
-  },
-  "name:CLE:maliekcollins": {
-   "name": "Maliek Collins",
-   "team": "CLE",
-   "pos": "DT",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T17:08:00-05:00",
-   "detail": "Elbow",
-   "espn_id": "3040471"
+   "detail": null,
+   "espn_id": "4832800"
   },
   "00-0036407": {
    "name": "Jerry Jeudy",
@@ -2324,6 +2282,16 @@
    "detail": null,
    "espn_id": "4258173"
   },
+  "name:IND:akeemdavisgaither": {
+   "name": "Akeem Davis-Gaither",
+   "team": "IND",
+   "pos": "LB",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-11-06T14:29:00-05:00",
+   "detail": "Knee",
+   "espn_id": "3917142"
+  },
   "name:IND:justinwalley": {
    "name": "Justin Walley",
    "team": "IND",
@@ -2354,16 +2322,6 @@
    "date": "2026-11-05T15:59:00-05:00",
    "detail": null,
    "espn_id": "4242335"
-  },
-  "name:IND:akeemdavisgaither": {
-   "name": "Akeem Davis-Gaither",
-   "team": "IND",
-   "pos": "LB",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-11-05T15:46:00-05:00",
-   "detail": "Knee",
-   "espn_id": "3917142"
   },
   "00-0037664": {
    "name": "Alec Pierce",
@@ -3719,10 +3677,10 @@
    "pos": "WR",
    "status": "Out",
    "fantasy": "OUT",
-   "date": "2026-11-06T13:22:00-05:00",
+   "date": "2026-11-06T12:09:00-05:00",
    "detail": "Knee",
    "espn_id": "4047646",
-   "comment": "Brown (knee) won't be available for Sunday's game against the Packers, Mark Daniels of Masslive.comreports."
+   "comment": "Brown (knee/ankle) remained sidelined at practice Friday, Doug Kyed of the Boston Herald reports."
   },
   "00-0040734": {
    "name": "TreVeyon Henderson",
@@ -4056,7 +4014,7 @@
    "pos": "OT",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-06T14:11:00-05:00",
+   "date": "2026-11-06T14:45:00-05:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
@@ -4090,7 +4048,7 @@
    "date": "2026-11-06T12:19:00-05:00",
    "detail": "Knee",
    "espn_id": "4595348",
-   "comment": "Nabers (knee) was catching passes during Friday's walkthrough and \"should be 'good' to go\" For Sunday's game against the Eagles, Ryan Dunleavy of the New York P"
+   "comment": "Nabers (knee) was catching passes during Friday's walkthrough and should be \"good\" to go For Sunday's game against the Eagles, Ryan Dunleavy of the New York Pos"
   },
   "name:NYG:andrewthomas": {
    "name": "Andrew Thomas",
