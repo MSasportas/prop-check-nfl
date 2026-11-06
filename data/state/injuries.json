@@ -1,5 +1,5 @@
 {
- "at": "2026-11-05T20:40:01-05:00",
+ "at": "2026-11-05T21:10:01-05:00",
  "source": "espn",
  "players": {
   "name:ARI:maxmelton": {
@@ -1968,6 +1968,36 @@
    "detail": null,
    "espn_id": "5123663"
   },
+  "name:GB:travisglover": {
+   "name": "Travis Glover",
+   "team": "GB",
+   "pos": "OT",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-05T20:29:00-05:00",
+   "detail": "Knee",
+   "espn_id": "4361904"
+  },
+  "name:GB:seanrhyan": {
+   "name": "Sean Rhyan",
+   "team": "GB",
+   "pos": "G",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-05T20:25:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "4426411"
+  },
+  "name:GB:aaronbanks": {
+   "name": "Aaron Banks",
+   "team": "GB",
+   "pos": "G",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-05T20:20:00-05:00",
+   "detail": "Knee",
+   "espn_id": "4242390"
+  },
   "00-0039811": {
    "name": "MarShawn Lloyd",
    "team": "GB",
@@ -2042,16 +2072,6 @@
    "espn_id": "4360086",
    "comment": "questionable"
   },
-  "name:GB:aaronbanks": {
-   "name": "Aaron Banks",
-   "team": "GB",
-   "pos": "G",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T16:59:00-05:00",
-   "detail": "Knee",
-   "espn_id": "4242390"
-  },
   "name:GB:zairefranklin": {
    "name": "Zaire Franklin",
    "team": "GB",
@@ -2061,26 +2081,6 @@
    "date": "2026-11-04T15:59:00-05:00",
    "detail": "Shin",
    "espn_id": "3124005"
-  },
-  "name:GB:seanrhyan": {
-   "name": "Sean Rhyan",
-   "team": "GB",
-   "pos": "G",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-03T08:03:00-05:00",
-   "detail": "Ankle",
-   "espn_id": "4426411"
-  },
-  "name:GB:travisglover": {
-   "name": "Travis Glover",
-   "team": "GB",
-   "pos": "OT",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-03T08:03:00-05:00",
-   "detail": "Knee",
-   "espn_id": "4361904"
   },
   "00-0040142": {
    "name": "Kaleb Johnson",
@@ -2447,16 +2447,6 @@
    "detail": null,
    "espn_id": "4431459"
   },
-  "00-0040719": {
-   "name": "Bhayshul Tuten",
-   "team": "JAX",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-05T18:50:00-05:00",
-   "detail": null,
-   "espn_id": "4882093"
-  },
   "name:JAX:wesleywilliams": {
    "name": "Wesley Williams",
    "team": "JAX",
@@ -2497,6 +2487,16 @@
    "date": "2026-11-05T18:48:00-05:00",
    "detail": "Coach's Decision",
    "espn_id": "4577494"
+  },
+  "00-0040719": {
+   "name": "Bhayshul Tuten",
+   "team": "JAX",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-05T18:25:00-05:00",
+   "detail": null,
+   "espn_id": "4882093"
   },
   "00-0038611": {
    "name": "Chris Rodriguez Jr.",
@@ -4154,16 +4154,6 @@
    "detail": null,
    "espn_id": "4808766"
   },
-  "00-0038120": {
-   "name": "Breece Hall",
-   "team": "NYJ",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-05T16:08:00-05:00",
-   "detail": null,
-   "espn_id": "4427366"
-  },
   "00-0037740": {
    "name": "Garrett Wilson",
    "team": "NYJ",
@@ -4174,6 +4164,16 @@
    "detail": "Concussion",
    "espn_id": "4569618",
    "comment": "Wilson (concussion) did not practice Thursday."
+  },
+  "00-0038120": {
+   "name": "Breece Hall",
+   "team": "NYJ",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-05T15:20:00-05:00",
+   "detail": null,
+   "espn_id": "4427366"
   },
   "name:NYJ:vjpayne": {
    "name": "VJ Payne",
@@ -4929,6 +4929,26 @@
    "detail": null,
    "espn_id": "4696044"
   },
+  "name:SEA:quentonnelson": {
+   "name": "Quenton Nelson",
+   "team": "SEA",
+   "pos": "G",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-05T20:51:00-05:00",
+   "detail": "Knee",
+   "espn_id": "3129308"
+  },
+  "name:SEA:charlescross": {
+   "name": "Charles Cross",
+   "team": "SEA",
+   "pos": "OT",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-05T20:39:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "4426376"
+  },
   "name:SEA:leonardwilliams": {
    "name": "Leonard Williams",
    "team": "SEA",
@@ -4992,16 +5012,6 @@
    "espn_id": "3912547",
    "comment": "Darnold (quadriceps), who has been ruled out for Sunday's game against the Cardinals, is considered week-to-week, Brady Henderson of ESPN.com reports."
   },
-  "name:SEA:quentonnelson": {
-   "name": "Quenton Nelson",
-   "team": "SEA",
-   "pos": "G",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T21:35:00-05:00",
-   "detail": "Knee",
-   "espn_id": "3129308"
-  },
   "name:SEA:connorotoole": {
    "name": "Connor O'Toole",
    "team": "SEA",
@@ -5062,16 +5072,6 @@
    "detail": "Hamstring",
    "espn_id": "4035693",
    "comment": "questionable"
-  },
-  "name:SEA:charlescross": {
-   "name": "Charles Cross",
-   "team": "SEA",
-   "pos": "OT",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-03T08:03:00-05:00",
-   "detail": "Ankle",
-   "espn_id": "4426376"
   },
   "00-0039793": {
    "name": "AJ Barner",
