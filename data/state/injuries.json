@@ -1,5 +1,5 @@
 {
- "at": "2026-11-06T10:00:17-05:00",
+ "at": "2026-11-06T10:30:19-05:00",
  "source": "espn",
  "players": {
   "name:ARI:jaydenwilliams": {
@@ -1479,6 +1479,17 @@
    "detail": null,
    "espn_id": "4685702"
   },
+  "00-0038041": {
+   "name": "Jake Ferguson",
+   "team": "DAL",
+   "pos": "TE",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-06T09:52:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "4242355",
+   "comment": "Head coach Brian Schottenheimer hopes that Ferguson (ankle) will be \"back on the field\" Friday, Tommy Yarrish of the Cowboys' official site reports."
+  },
   "00-0037247": {
    "name": "George Pickens",
    "team": "DAL",
@@ -1529,17 +1540,6 @@
    "date": "2026-11-05T17:21:00-05:00",
    "detail": "Ankle",
    "espn_id": "4426506"
-  },
-  "00-0038041": {
-   "name": "Jake Ferguson",
-   "team": "DAL",
-   "pos": "TE",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T16:57:00-05:00",
-   "detail": "Ankle",
-   "espn_id": "4242355",
-   "comment": "Ferguson (ankle) did not practice Thursday, Todd Archer of ESPN.com reports."
   },
   "name:DAL:jalenthompson": {
    "name": "Jalen Thompson",
@@ -4026,9 +4026,20 @@
    "pos": "OT",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-06T09:02:00-05:00",
+   "date": "2026-11-06T10:01:00-05:00",
    "detail": "Calf",
    "espn_id": "3115303"
+  },
+  "00-0040715": {
+   "name": "Cam Skattebo",
+   "team": "NYG",
+   "pos": "RB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-06T09:47:00-05:00",
+   "detail": "Hamstring",
+   "espn_id": "4696981",
+   "comment": "\"It does not seem\" that Skattebo (hamstring) will play Sunday against the Eagles, Ian Rapoport of NFL Network reports."
   },
   "name:NYG:andrewthomas": {
    "name": "Andrew Thomas",
@@ -4049,17 +4060,6 @@
    "date": "2026-11-05T17:00:00-05:00",
    "detail": "Foot",
    "espn_id": "4426542"
-  },
-  "00-0040715": {
-   "name": "Cam Skattebo",
-   "team": "NYG",
-   "pos": "RB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T16:29:00-05:00",
-   "detail": "Hamstring",
-   "espn_id": "4696981",
-   "comment": "Skattebo (hamstring) was a non-participant at Thursday's practice, Dan Salomone of the Giants' official site reports."
   },
   "00-0039337": {
    "name": "Malik Nabers",
