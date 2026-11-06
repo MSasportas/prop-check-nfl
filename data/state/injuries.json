@@ -1,13 +1,24 @@
 {
- "at": "2026-11-06T13:01:10-05:00",
+ "at": "2026-11-06T14:00:00-05:00",
  "source": "espn",
  "players": {
+  "00-0037157": {
+   "name": "Bam Knight",
+   "team": "ARI",
+   "pos": "RB",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-11-06T12:58:00-05:00",
+   "detail": "Concussion",
+   "espn_id": "4427728",
+   "comment": "Knight (concussion) is out for Sunday's game against the Seahawks, Josh Weinfuss of ESPN.com reports."
+  },
   "name:ARI:jaydenwilliams": {
    "name": "Jayden Williams",
    "team": "ARI",
    "pos": "OT",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
+   "status": "Out",
+   "fantasy": "OUT",
    "date": "2026-11-05T21:07:00-05:00",
    "detail": "Knee",
    "espn_id": "4709718"
@@ -16,8 +27,8 @@
    "name": "Jon Gaines II",
    "team": "ARI",
    "pos": "G",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
+   "status": "Out",
+   "fantasy": "OUT",
    "date": "2026-11-05T21:01:00-05:00",
    "detail": "Ankle",
    "espn_id": "4367199"
@@ -41,17 +52,6 @@
    "date": "2026-11-05T19:38:00-05:00",
    "detail": "Knee",
    "espn_id": "4698113"
-  },
-  "00-0037157": {
-   "name": "Bam Knight",
-   "team": "ARI",
-   "pos": "RB",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-11-05T19:22:00-05:00",
-   "detail": "Concussion",
-   "espn_id": "4427728",
-   "comment": "Knight (concussion) officially didn't practice Thursday, Darren Urban of the Cardinals' official site reports."
   },
   "00-0038559": {
    "name": "Michael Wilson",
@@ -400,6 +400,16 @@
    "detail": "Undisclosed",
    "espn_id": "5150660"
   },
+  "00-0039792": {
+   "name": "Devontez Walker",
+   "team": "BAL",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-06T13:44:00-05:00",
+   "detail": null,
+   "espn_id": "4696882"
+  },
   "00-0036550": {
    "name": "Rashod Bateman",
    "team": "BAL",
@@ -595,16 +605,6 @@
    "espn_id": "4685526",
    "comment": "Randall (neck) is officially listed as questionable for Thursday's game versus the Jaguars, Ryan Mink of the Ravens' official site reports."
   },
-  "00-0040887": {
-   "name": "Josh Cuevas",
-   "team": "BAL",
-   "pos": "TE",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-03T21:52:00-05:00",
-   "detail": null,
-   "espn_id": "4876132"
-  },
   "00-0035537": {
    "name": "Ty Johnson",
    "team": "BUF",
@@ -780,6 +780,16 @@
    "detail": null,
    "espn_id": "3918298"
   },
+  "00-0039150": {
+   "name": "Bryce Young",
+   "team": "CAR",
+   "pos": "QB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-06T13:02:00-05:00",
+   "detail": null,
+   "espn_id": "4685720"
+  },
   "name:CAR:bradychristensen": {
    "name": "Brady Christensen",
    "team": "CAR",
@@ -921,16 +931,6 @@
    "date": "2026-11-02T10:12:00-05:00",
    "detail": null,
    "espn_id": "4212909"
-  },
-  "00-0039150": {
-   "name": "Bryce Young",
-   "team": "CAR",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-30T12:01:00-04:00",
-   "detail": null,
-   "espn_id": "4685720"
   },
   "00-0039491": {
    "name": "Jalen Coker",
@@ -1302,10 +1302,10 @@
    "pos": "TE",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-06T12:20:00-05:00",
+   "date": "2026-11-06T13:28:00-05:00",
    "detail": "Groin",
    "espn_id": "5083076",
-   "comment": "Fannin (groin) is practicing Friday, Daniel Oyefusi of ESPN.com reports."
+   "comment": "Fannin (groin) will play Sunday against the Saints, Daniel Oyefusi of ESPN.com reports."
   },
   "00-0033537": {
    "name": "Deshaun Watson",
@@ -1313,10 +1313,20 @@
    "pos": "QB",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-06T12:19:00-05:00",
+   "date": "2026-11-06T13:27:00-05:00",
    "detail": "Concussion",
    "espn_id": "3122840",
-   "comment": "Watson (concussion) was present for practice Friday, Daniel Oyefusi of ESPN.com reports."
+   "comment": "Watson (concussion) is listed as questionable for Sunday's game against the Saints, but Shedeur Sanders will start even if Watson is active Kelsey Russo of the "
+  },
+  "00-0040668": {
+   "name": "Shedeur Sanders",
+   "team": "CLE",
+   "pos": "QB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-06T13:23:00-05:00",
+   "detail": null,
+   "espn_id": "4432762"
   },
   "name:CLE:quincywilliams": {
    "name": "Quincy Williams",
@@ -1378,16 +1388,6 @@
    "date": "2026-11-04T17:08:00-05:00",
    "detail": "Elbow",
    "espn_id": "3040471"
-  },
-  "00-0040668": {
-   "name": "Shedeur Sanders",
-   "team": "CLE",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-04T10:07:00-05:00",
-   "detail": null,
-   "espn_id": "4432762"
   },
   "00-0036407": {
    "name": "Jerry Jeudy",
@@ -2162,6 +2162,16 @@
    "detail": null,
    "espn_id": "4701936"
   },
+  "00-0040583": {
+   "name": "Woody Marks",
+   "team": "HOU",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-06T13:11:00-05:00",
+   "detail": null,
+   "espn_id": "4429059"
+  },
   "00-0036556": {
    "name": "Brevin Jordan",
    "team": "HOU",
@@ -2294,16 +2304,6 @@
    "detail": null,
    "espn_id": "4432577"
   },
-  "00-0040583": {
-   "name": "Woody Marks",
-   "team": "HOU",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-25T17:21:00-04:00",
-   "detail": null,
-   "espn_id": "4429059"
-  },
   "00-0036554": {
    "name": "Nico Collins",
    "team": "HOU",
@@ -2349,7 +2349,7 @@
    "name": "Akeem Davis-Gaither",
    "team": "IND",
    "pos": "LB",
-   "status": "Questionable",
+   "status": "Out",
    "fantasy": "OUT",
    "date": "2026-11-05T15:46:00-05:00",
    "detail": "Knee",
@@ -2476,6 +2476,26 @@
    "date": "2026-11-01T20:47:00-05:00",
    "detail": null,
    "espn_id": "4431459"
+  },
+  "00-0041503": {
+   "name": "Nate Boerkircher",
+   "team": "JAX",
+   "pos": "TE",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-06T13:22:00-05:00",
+   "detail": null,
+   "espn_id": "4686248"
+  },
+  "00-0041100": {
+   "name": "Josh Cameron",
+   "team": "JAX",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-06T12:58:00-05:00",
+   "detail": null,
+   "espn_id": "4879194"
   },
   "00-0032104": {
    "name": "Ameer Abdullah",
@@ -2607,16 +2627,6 @@
    "date": "2026-11-05T18:48:00-05:00",
    "detail": "Coach's Decision",
    "espn_id": "4577494"
-  },
-  "00-0041100": {
-   "name": "Josh Cameron",
-   "team": "JAX",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-03T22:37:00-05:00",
-   "detail": null,
-   "espn_id": "4879194"
   },
   "name:JAX:ericmurray": {
    "name": "Eric Murray",
@@ -3672,16 +3682,16 @@
    "detail": null,
    "espn_id": "4262921"
   },
-  "00-0035676": {
-   "name": "A.J. Brown",
+  "00-0040734": {
+   "name": "TreVeyon Henderson",
    "team": "NE",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-06T12:09:00-05:00",
-   "detail": "Knee",
-   "espn_id": "4047646",
-   "comment": "Brown (knee/ankle) remained sidelined at practice Friday, Doug Kyed of the Boston Herald reports."
+   "pos": "RB",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-11-06T13:30:00-05:00",
+   "detail": "Illness",
+   "espn_id": "4432710",
+   "comment": "Henderson (illness) won't play Sunday against the Packers, Evan Lazar of the Patriots' official site reports."
   },
   "00-0033090": {
    "name": "Hunter Henry",
@@ -3689,21 +3699,21 @@
    "pos": "TE",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-06T12:02:00-05:00",
+   "date": "2026-11-06T13:25:00-05:00",
    "detail": "Foot",
    "espn_id": "3046439",
-   "comment": "Henry (foot) is present for the media-access portion of Friday's practice, Mike Reiss of ESPN.com reports."
+   "comment": "Henry (foot) is listed as questionable for Sunday's game against the Packers, Doug Kyed of the Boston Herald reports."
   },
-  "00-0040734": {
-   "name": "TreVeyon Henderson",
+  "00-0035676": {
+   "name": "A.J. Brown",
    "team": "NE",
-   "pos": "RB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-06T11:39:00-05:00",
-   "detail": "Illness",
-   "espn_id": "4432710",
-   "comment": "In a statement posted to social media on Friday, Henderson -- who hasn't practiced since last Wednesday -- noted that he recently experienced \"an unexpected and"
+   "pos": "WR",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-11-06T13:22:00-05:00",
+   "detail": "Knee",
+   "espn_id": "4047646",
+   "comment": "Brown (knee) won't be available for Sunday's game against the Packers, Mark Daniels of Masslive.comreports."
   },
   "name:NE:brendenschooler": {
    "name": "Brenden Schooler",
@@ -4036,10 +4046,20 @@
    "pos": "RB",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-06T12:23:00-05:00",
+   "date": "2026-11-06T13:30:00-05:00",
    "detail": "Hamstring",
    "espn_id": "4696981",
-   "comment": "Skattebo (hamstring) was in uniform but not participating at the start of Friday's practice, Jordan Raanan of ESPN reports."
+   "comment": "Head coach John Harbaugh said Skattebo (hamstring) didn't practice Friday, but the Giants are \"keeping the door open\" for the running back to play Sunday at Phi"
+  },
+  "name:NYG:jermaineeluemunor": {
+   "name": "Jermaine Eluemunor",
+   "team": "NYG",
+   "pos": "OT",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-06T13:19:00-05:00",
+   "detail": "Calf",
+   "espn_id": "3115303"
   },
   "00-0039337": {
    "name": "Malik Nabers",
@@ -4051,16 +4071,6 @@
    "detail": "Knee",
    "espn_id": "4595348",
    "comment": "Nabers (knee) was catching passes during Friday's walkthrough and \"should be 'good' to go\" For Sunday's game against the Eagles, Ryan Dunleavy of the New York P"
-  },
-  "name:NYG:jermaineeluemunor": {
-   "name": "Jermaine Eluemunor",
-   "team": "NYG",
-   "pos": "OT",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-06T12:17:00-05:00",
-   "detail": "Calf",
-   "espn_id": "3115303"
   },
   "name:NYG:andrewthomas": {
    "name": "Andrew Thomas",
@@ -4173,6 +4183,16 @@
    "date": "2026-10-25T20:00:00-04:00",
    "detail": null,
    "espn_id": "4682648"
+  },
+  "00-0041511": {
+   "name": "Omar Cooper Jr.",
+   "team": "NYJ",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-06T13:24:00-05:00",
+   "detail": null,
+   "espn_id": "4723820"
   },
   "00-0037740": {
    "name": "Garrett Wilson",
@@ -4294,16 +4314,6 @@
    "date": "2026-11-01T23:55:00-05:00",
    "detail": null,
    "espn_id": "4569371"
-  },
-  "00-0041511": {
-   "name": "Omar Cooper Jr.",
-   "team": "NYJ",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-01T22:19:00-05:00",
-   "detail": null,
-   "espn_id": "4723820"
   },
   "00-0030565": {
    "name": "Geno Smith",
