@@ -1,5 +1,5 @@
 {
- "at": "2026-11-06T15:00:01-05:00",
+ "at": "2026-11-06T15:30:01-05:00",
  "source": "espn",
  "players": {
   "00-0037157": {
@@ -615,6 +615,17 @@
    "espn_id": "4685526",
    "comment": "Randall (neck) is officially listed as questionable for Thursday's game versus the Jaguars, Ryan Mink of the Ravens' official site reports."
   },
+  "00-0034827": {
+   "name": "DJ Moore",
+   "team": "BUF",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-06T14:47:00-05:00",
+   "detail": "Shoulder",
+   "espn_id": "3915416",
+   "comment": "Moore (shoulder) was still wearing a non-contact jersey at Friday's practice, Sal Capaccio of WGR Sports Radio 550 Buffalo reports."
+  },
   "00-0038933": {
    "name": "Dalton Kincaid",
    "team": "BUF",
@@ -678,17 +689,6 @@
    "detail": "Hamstring",
    "espn_id": "4242433",
    "comment": "Palmer (hamstring) did not practice Thursday."
-  },
-  "00-0034827": {
-   "name": "DJ Moore",
-   "team": "BUF",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T17:04:00-05:00",
-   "detail": "Shoulder",
-   "espn_id": "3915416",
-   "comment": "Moore (shoulder) was a limited participant in Thursday's practice."
   },
   "name:BUF:jordanhancock": {
    "name": "Jordan Hancock",
@@ -982,6 +982,27 @@
    "detail": "Triceps",
    "espn_id": "4244607"
   },
+  "name:CHI:tyriquestevenson": {
+   "name": "Tyrique Stevenson Sr.",
+   "team": "CHI",
+   "pos": "CB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-06T15:02:00-05:00",
+   "detail": "Thumb",
+   "espn_id": "4426374"
+  },
+  "00-0040236": {
+   "name": "Kyle Monangai",
+   "team": "CHI",
+   "pos": "RB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-06T14:58:00-05:00",
+   "detail": "Toe",
+   "espn_id": "4608686",
+   "comment": "Monangai (thumb/toe) is listed as questionable for Sunday's game against the Buccaneers."
+  },
   "00-0038440": {
    "name": "Zavier Scott",
    "team": "CHI",
@@ -992,27 +1013,6 @@
    "detail": "Wrist",
    "espn_id": "4257364",
    "comment": "The Bears placed Scott (wrist) on injured reserve Thursday."
-  },
-  "name:CHI:dmarcojackson": {
-   "name": "D'Marco Jackson",
-   "team": "CHI",
-   "pos": "LB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T15:44:00-05:00",
-   "detail": "Ankle",
-   "espn_id": "4241007"
-  },
-  "00-0040236": {
-   "name": "Kyle Monangai",
-   "team": "CHI",
-   "pos": "RB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T15:40:00-05:00",
-   "detail": "Toe",
-   "espn_id": "4608686",
-   "comment": "Monangai (thumb/toe) didn't practice Thursday."
   },
   "name:CHI:kentaviusstreet": {
    "name": "Kentavius Street",
@@ -1043,16 +1043,6 @@
    "date": "2026-11-04T22:28:00-05:00",
    "detail": "Toe",
    "espn_id": "4870953"
-  },
-  "name:CHI:theobenedet": {
-   "name": "Theo Benedet",
-   "team": "CHI",
-   "pos": "OT",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T21:27:00-05:00",
-   "detail": "Shoulder",
-   "espn_id": "5125873"
   },
   "00-0035039": {
    "name": "Stephen Carlson",
@@ -1143,16 +1133,6 @@
    "date": "2026-11-02T23:43:00-05:00",
    "detail": null,
    "espn_id": "4259545"
-  },
-  "name:CHI:gradyjarrett": {
-   "name": "Grady Jarrett",
-   "team": "CHI",
-   "pos": "DE",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-02T23:23:00-05:00",
-   "detail": "Groin",
-   "espn_id": "2576492"
   },
   "00-0028986": {
    "name": "Case Keenum",
@@ -1306,6 +1286,16 @@
    "detail": null,
    "espn_id": "4384852"
   },
+  "00-0041037": {
+   "name": "Denzel Boston",
+   "team": "CLE",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-06T14:47:00-05:00",
+   "detail": null,
+   "espn_id": "4832800"
+  },
   "name:CLE:maliekcollins": {
    "name": "Maliek Collins",
    "team": "CLE",
@@ -1346,16 +1336,6 @@
    "date": "2026-11-06T13:23:00-05:00",
    "detail": null,
    "espn_id": "4432762"
-  },
-  "00-0041037": {
-   "name": "Denzel Boston",
-   "team": "CLE",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-05T16:32:00-05:00",
-   "detail": null,
-   "espn_id": "4832800"
   },
   "00-0036407": {
    "name": "Jerry Jeudy",
@@ -1453,10 +1433,10 @@
    "pos": "TE",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-06T09:52:00-05:00",
+   "date": "2026-11-06T15:13:00-05:00",
    "detail": "Ankle",
    "espn_id": "4242355",
-   "comment": "Head coach Brian Schottenheimer hopes that Ferguson (ankle) will be \"back on the field\" Friday, Tommy Yarrish of the Cowboys' official site reports."
+   "comment": "Ferguson (ankle) is listed as questionable for Sunday's game against the Colts, Tommy Yarrish of the Cowboys' official site reports."
   },
   "00-0037247": {
    "name": "George Pickens",
@@ -1464,10 +1444,10 @@
    "pos": "WR",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-06T09:49:00-05:00",
+   "date": "2026-11-06T15:09:00-05:00",
    "detail": "Hamstring",
    "espn_id": "4426354",
-   "comment": "Pickens (hamstring) \"will be a little bit limited\" Friday, but head coach Brian Schottenheimer is \"hopeful\" he will play Sunday against the Colts, Tommy Yarrish"
+   "comment": "Pickens (hamstring) is listed as questionable for Sunday's game at Indianapolis, Tommy Yarrish of the Cowboys' official site reports."
   },
   "name:DAL:tylersmith": {
    "name": "Tyler Smith",
@@ -3129,6 +3109,26 @@
    "detail": "Hamstring",
    "espn_id": "3691739"
   },
+  "name:LA:kamcurl": {
+   "name": "Kam Curl",
+   "team": "LA",
+   "pos": "S",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-06T15:10:00-05:00",
+   "detail": "Foot",
+   "espn_id": "4242154"
+  },
+  "name:LA:trentmcduffie": {
+   "name": "Trent McDuffie",
+   "team": "LA",
+   "pos": "CB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-06T14:57:00-05:00",
+   "detail": "Back",
+   "espn_id": "4426405"
+  },
   "00-0040737": {
    "name": "Terrance Ferguson",
    "team": "LA",
@@ -3160,26 +3160,6 @@
    "detail": "Ribs",
    "espn_id": "4242557",
    "comment": "Parkinson (ribs) remained sidelined for Thursday's practice, Greg Beacham of the Associated Press reports."
-  },
-  "name:LA:trentmcduffie": {
-   "name": "Trent McDuffie",
-   "team": "LA",
-   "pos": "CB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T22:21:00-05:00",
-   "detail": "Back",
-   "espn_id": "4426405"
-  },
-  "name:LA:kamcurl": {
-   "name": "Kam Curl",
-   "team": "LA",
-   "pos": "S",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T22:18:00-05:00",
-   "detail": "Foot",
-   "espn_id": "4242154"
   },
   "00-0039751": {
    "name": "Jordan Whittington",
@@ -3880,12 +3860,11 @@
    "name": "Alvin Kamara",
    "team": "NO",
    "pos": "RB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T16:02:00-05:00",
-   "detail": "Back",
-   "espn_id": "3054850",
-   "comment": "Kamara (rest/back) returned to practice Thursday, Nick Underhill of NewOrleans.Football reports."
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-05T16:42:00-05:00",
+   "detail": null,
+   "espn_id": "3054850"
   },
   "name:NO:justinreid": {
    "name": "Justin Reid",
@@ -4014,7 +3993,7 @@
    "pos": "OT",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-06T14:45:00-05:00",
+   "date": "2026-11-06T15:17:00-05:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
@@ -4151,6 +4130,26 @@
    "date": "2026-10-25T20:00:00-04:00",
    "detail": null,
    "espn_id": "4682648"
+  },
+  "00-0039890": {
+   "name": "Adonai Mitchell",
+   "team": "NYJ",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-06T15:17:00-05:00",
+   "detail": null,
+   "espn_id": "4597500"
+  },
+  "name:NYJ:nahshonwright": {
+   "name": "Nahshon Wright",
+   "team": "NYJ",
+   "pos": "CB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-06T15:17:00-05:00",
+   "detail": "Back",
+   "espn_id": "4570470"
   },
   "00-0041511": {
    "name": "Omar Cooper Jr.",
@@ -4292,16 +4291,6 @@
    "date": "2026-11-01T17:50:00-05:00",
    "detail": null,
    "espn_id": "15864"
-  },
-  "00-0039890": {
-   "name": "Adonai Mitchell",
-   "team": "NYJ",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-01T17:12:00-05:00",
-   "detail": null,
-   "espn_id": "4597500"
   },
   "00-0039794": {
    "name": "Braelon Allen",
