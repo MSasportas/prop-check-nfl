@@ -1,5 +1,5 @@
 {
- "at": "2026-11-06T09:00:15-05:00",
+ "at": "2026-11-06T09:30:15-05:00",
  "source": "espn",
  "players": {
   "name:ARI:jaydenwilliams": {
@@ -4026,7 +4026,7 @@
    "pos": "OT",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-06T08:35:00-05:00",
+   "date": "2026-11-06T09:02:00-05:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
