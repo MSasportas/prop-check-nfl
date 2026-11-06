@@ -1,7 +1,17 @@
 {
- "at": "2026-11-05T19:40:14-05:00",
+ "at": "2026-11-05T19:50:00-05:00",
  "source": "espn",
  "players": {
+  "name:ARI:maxmelton": {
+   "name": "Max Melton",
+   "team": "ARI",
+   "pos": "CB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-05T19:38:00-05:00",
+   "detail": "Knee",
+   "espn_id": "4698113"
+  },
   "00-0037157": {
    "name": "Bam Knight",
    "team": "ARI",
@@ -2588,6 +2598,16 @@
    "detail": null,
    "espn_id": "4360310"
   },
+  "00-0038519": {
+   "name": "Nikko Remigio",
+   "team": "KC",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-05T19:37:00-05:00",
+   "detail": null,
+   "espn_id": "4372716"
+  },
   "00-0030506": {
    "name": "Travis Kelce",
    "team": "KC",
@@ -2607,16 +2627,6 @@
    "date": "2026-11-05T16:34:00-05:00",
    "detail": null,
    "espn_id": "4428331"
-  },
-  "00-0038519": {
-   "name": "Nikko Remigio",
-   "team": "KC",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-04T20:47:00-05:00",
-   "detail": null,
-   "espn_id": "4372716"
   },
   "name:KC:mansoordelane": {
    "name": "Mansoor Delane",
@@ -2737,6 +2747,16 @@
    "date": "2026-10-28T21:48:00-04:00",
    "detail": "Knee - ACL",
    "espn_id": "4591008"
+  },
+  "00-0035891": {
+   "name": "Cody White",
+   "team": "LV",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-05T19:36:00-05:00",
+   "detail": null,
+   "espn_id": "4241983"
   },
   "00-0040581": {
    "name": "Dont'e Thornton Jr.",
@@ -2899,6 +2919,17 @@
    "detail": "Neck",
    "espn_id": "4243916"
   },
+  "00-0033885": {
+   "name": "David Njoku",
+   "team": "LAC",
+   "pos": "TE",
+   "status": "Injured Reserve",
+   "fantasy": "IR-R",
+   "date": "2026-11-05T19:25:00-05:00",
+   "detail": "Lower Leg",
+   "espn_id": "3123076",
+   "comment": "Njoku (fibula) was limited in Thursday's practice."
+  },
   "name:LAC:denzelperryman": {
    "name": "Denzel Perryman",
    "team": "LAC",
@@ -2929,17 +2960,6 @@
    "detail": "Quadriceps",
    "espn_id": "4685553",
    "comment": "doubtful"
-  },
-  "00-0033885": {
-   "name": "David Njoku",
-   "team": "LAC",
-   "pos": "TE",
-   "status": "Injured Reserve",
-   "fantasy": "IR-R",
-   "date": "2026-11-04T15:30:00-05:00",
-   "detail": "Lower Leg",
-   "espn_id": "3123076",
-   "comment": "Chargers head coach Jim Harbaugh said Wednesday that Njoku (fibula) has been designated for return from injured reserve, Alex Insdorf of BoltBeat.com reports."
   },
   "00-0040184": {
    "name": "KeAndre Lambert-Smith",
@@ -3986,7 +4006,7 @@
    "pos": "OT",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T19:26:00-05:00",
+   "date": "2026-11-05T19:38:00-05:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
@@ -4017,10 +4037,10 @@
    "pos": "WR",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T16:23:00-05:00",
+   "date": "2026-11-05T15:30:00-05:00",
    "detail": "Knee",
    "espn_id": "4595348",
-   "comment": "Nabers didn't practice Thursday due to a knee injury, Dan Salomone of the Giants' official site reports."
+   "comment": "Nabers (undisclosed) said Thursday, \"I'll be good,\" for Sunday's game at Philadelphia, Art Stapleton of USA Today reports."
   },
   "00-0039847": {
    "name": "Theo Johnson",
@@ -4305,6 +4325,16 @@
    "detail": null,
    "espn_id": "4035537"
   },
+  "name:PHI:jakeelliott": {
+   "name": "Jake Elliott",
+   "team": "PHI",
+   "pos": "PK",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-05T19:22:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "3050478"
+  },
   "00-0038400": {
    "name": "Tanner McKee",
    "team": "PHI",
@@ -4358,16 +4388,6 @@
    "date": "2026-11-04T21:51:00-05:00",
    "detail": "Hamstring",
    "espn_id": "4685287"
-  },
-  "name:PHI:jakeelliott": {
-   "name": "Jake Elliott",
-   "team": "PHI",
-   "pos": "PK",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T21:44:00-05:00",
-   "detail": "Ankle",
-   "espn_id": "3050478"
   },
   "name:PHI:jonathangreenard": {
    "name": "Jonathan Greenard",
@@ -4909,6 +4929,37 @@
    "detail": null,
    "espn_id": "4696044"
   },
+  "name:SEA:ernestjones": {
+   "name": "Ernest Jones IV",
+   "team": "SEA",
+   "pos": "LB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-05T19:33:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "4362851"
+  },
+  "name:SEA:derickhall": {
+   "name": "Derick Hall",
+   "team": "SEA",
+   "pos": "LB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-05T19:32:00-05:00",
+   "detail": "Back",
+   "espn_id": "4567226"
+  },
+  "00-0037545": {
+   "name": "Rashid Shaheed",
+   "team": "SEA",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-05T19:25:00-05:00",
+   "detail": "Knee",
+   "espn_id": "4032473",
+   "comment": "Shaheed (knee) didn't participate at the Seahawks' practice Thursday, John Boyle of the team's official site reports."
+  },
   "00-0035704": {
    "name": "Drew Lock",
    "team": "SEA",
@@ -4931,17 +4982,6 @@
    "espn_id": "3912547",
    "comment": "Darnold (quadriceps), who has been ruled out for Sunday's game against the Cardinals, is considered week-to-week, Brady Henderson of ESPN.com reports."
   },
-  "00-0037545": {
-   "name": "Rashid Shaheed",
-   "team": "SEA",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T21:39:00-05:00",
-   "detail": "Knee",
-   "espn_id": "4032473",
-   "comment": "Shaheed (knee) did not practice Wednesday, John Boyle of the Seahawks' official site reports."
-  },
   "name:SEA:quentonnelson": {
    "name": "Quenton Nelson",
    "team": "SEA",
@@ -4951,16 +4991,6 @@
    "date": "2026-11-04T21:35:00-05:00",
    "detail": "Knee",
    "espn_id": "3129308"
-  },
-  "name:SEA:anthonybradford": {
-   "name": "Anthony Bradford",
-   "team": "SEA",
-   "pos": "G",
-   "status": "Questionable",
-   "fantasy": null,
-   "date": "2026-11-04T21:35:00-05:00",
-   "detail": null,
-   "espn_id": "4429211"
   },
   "name:SEA:connorotoole": {
    "name": "Connor O'Toole",
@@ -5446,6 +5476,17 @@
    "detail": "Foot",
    "espn_id": "4573318"
   },
+  "00-0037742": {
+   "name": "Treylon Burks",
+   "team": "WAS",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-05T19:26:00-05:00",
+   "detail": "Foot",
+   "espn_id": "4567156",
+   "comment": "Burks (foot) was a non-participant at Thursday's practice."
+  },
   "00-0036626": {
    "name": "Dyami Brown",
    "team": "WAS",
@@ -5466,17 +5507,6 @@
    "date": "2026-11-04T22:19:00-05:00",
    "detail": "Pectoral",
    "espn_id": "4430560"
-  },
-  "00-0037742": {
-   "name": "Treylon Burks",
-   "team": "WAS",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T19:39:00-05:00",
-   "detail": "Foot",
-   "espn_id": "4567156",
-   "comment": "Burks (foot) did not practice Wednesday, Ben Standig of The Team 980 Washington D.C. reports."
   },
   "name:WAS:shytuttle": {
    "name": "Shy Tuttle",
