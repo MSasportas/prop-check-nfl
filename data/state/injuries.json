@@ -1,5 +1,5 @@
 {
- "at": "2026-11-06T12:30:14-05:00",
+ "at": "2026-11-06T13:01:10-05:00",
  "source": "espn",
  "players": {
   "name:ARI:jaydenwilliams": {
@@ -46,8 +46,8 @@
    "name": "Bam Knight",
    "team": "ARI",
    "pos": "RB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
+   "status": "Out",
+   "fantasy": "OUT",
    "date": "2026-11-05T19:22:00-05:00",
    "detail": "Concussion",
    "espn_id": "4427728",
@@ -207,6 +207,16 @@
    "detail": null,
    "espn_id": "4361307"
   },
+  "name:ATL:jamespearce": {
+   "name": "James Pearce Jr.",
+   "team": "ATL",
+   "pos": "LB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-06T12:18:00-05:00",
+   "detail": "Back",
+   "espn_id": "5081394"
+  },
   "name:ATL:divinedeablo": {
    "name": "Divine Deablo",
    "team": "ATL",
@@ -227,16 +237,6 @@
    "detail": "Hamstring",
    "espn_id": "4241474",
    "comment": "Robinson (hamstring) has been ruled out for Sunday's game against the Bengals, Tori McElhaney of the Falcons' official site reports."
-  },
-  "name:ATL:jamespearce": {
-   "name": "James Pearce Jr.",
-   "team": "ATL",
-   "pos": "LB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-06T08:26:00-05:00",
-   "detail": "Back",
-   "espn_id": "5081394"
   },
   "00-0040432": {
    "name": "Beaux Collins",
@@ -399,6 +399,16 @@
    "date": "2026-10-30T22:43:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "5150660"
+  },
+  "00-0036550": {
+   "name": "Rashod Bateman",
+   "team": "BAL",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-06T12:38:00-05:00",
+   "detail": null,
+   "espn_id": "4360939"
   },
   "00-0033119": {
    "name": "Jacoby Brissett",
@@ -1286,16 +1296,27 @@
    "detail": null,
    "espn_id": "4384852"
   },
+  "00-0040663": {
+   "name": "Harold Fannin Jr.",
+   "team": "CLE",
+   "pos": "TE",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-06T12:20:00-05:00",
+   "detail": "Groin",
+   "espn_id": "5083076",
+   "comment": "Fannin (groin) is practicing Friday, Daniel Oyefusi of ESPN.com reports."
+  },
   "00-0033537": {
    "name": "Deshaun Watson",
    "team": "CLE",
    "pos": "QB",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-06T09:39:00-05:00",
+   "date": "2026-11-06T12:19:00-05:00",
    "detail": "Concussion",
    "espn_id": "3122840",
-   "comment": "Watson (concussion) \"is unlikely to start\" Sunday's game against the Saints, Ian Rapoport of NFL Network reports."
+   "comment": "Watson (concussion) was present for practice Friday, Daniel Oyefusi of ESPN.com reports."
   },
   "name:CLE:quincywilliams": {
    "name": "Quincy Williams",
@@ -1327,17 +1348,6 @@
    "date": "2026-11-05T16:28:00-05:00",
    "detail": "Hip",
    "espn_id": "4837186"
-  },
-  "00-0040663": {
-   "name": "Harold Fannin Jr.",
-   "team": "CLE",
-   "pos": "TE",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T16:26:00-05:00",
-   "detail": "Groin",
-   "espn_id": "5083076",
-   "comment": "Fannin (groin) was a limited participant in Thursday's practice, Scott Petrak of the Elyria Chronicle-Telegram reports."
   },
   "name:CLE:carsonschwesinger": {
    "name": "Carson Schwesinger",
@@ -2304,6 +2314,16 @@
    "detail": null,
    "espn_id": "4258173"
   },
+  "name:IND:justinwalley": {
+   "name": "Justin Walley",
+   "team": "IND",
+   "pos": "CB",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-11-06T12:54:00-05:00",
+   "detail": "Knee",
+   "espn_id": "4682909"
+  },
   "00-0037292": {
    "name": "Drew Ogletree",
    "team": "IND",
@@ -2330,7 +2350,7 @@
    "team": "IND",
    "pos": "LB",
    "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
+   "fantasy": "OUT",
    "date": "2026-11-05T15:46:00-05:00",
    "detail": "Knee",
    "espn_id": "3917142"
@@ -2355,16 +2375,6 @@
    "date": "2026-11-03T21:56:00-05:00",
    "detail": null,
    "espn_id": "3051889"
-  },
-  "name:IND:justinwalley": {
-   "name": "Justin Walley",
-   "team": "IND",
-   "pos": "CB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-03T08:03:00-05:00",
-   "detail": "Knee",
-   "espn_id": "4682909"
   },
   "00-0039816": {
    "name": "Anthony Gould",
@@ -2466,6 +2476,16 @@
    "date": "2026-11-01T20:47:00-05:00",
    "detail": null,
    "espn_id": "4431459"
+  },
+  "00-0032104": {
+   "name": "Ameer Abdullah",
+   "team": "JAX",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-06T12:39:00-05:00",
+   "detail": null,
+   "espn_id": "2576336"
   },
   "00-0038935": {
    "name": "Brenton Strange",
@@ -3137,7 +3157,7 @@
    "pos": "DE",
    "status": "Injured Reserve",
    "fantasy": "IR-R",
-   "date": "2026-11-05T19:07:00-05:00",
+   "date": "2026-11-06T12:37:00-05:00",
    "detail": "Knee",
    "espn_id": "3122132"
   },
@@ -4010,6 +4030,28 @@
    "detail": null,
    "espn_id": "4569559"
   },
+  "00-0040715": {
+   "name": "Cam Skattebo",
+   "team": "NYG",
+   "pos": "RB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-06T12:23:00-05:00",
+   "detail": "Hamstring",
+   "espn_id": "4696981",
+   "comment": "Skattebo (hamstring) was in uniform but not participating at the start of Friday's practice, Jordan Raanan of ESPN reports."
+  },
+  "00-0039337": {
+   "name": "Malik Nabers",
+   "team": "NYG",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-06T12:19:00-05:00",
+   "detail": "Knee",
+   "espn_id": "4595348",
+   "comment": "Nabers (knee) was catching passes during Friday's walkthrough and \"should be 'good' to go\" For Sunday's game against the Eagles, Ryan Dunleavy of the New York P"
+  },
   "name:NYG:jermaineeluemunor": {
    "name": "Jermaine Eluemunor",
    "team": "NYG",
@@ -4019,17 +4061,6 @@
    "date": "2026-11-06T12:17:00-05:00",
    "detail": "Calf",
    "espn_id": "3115303"
-  },
-  "00-0040715": {
-   "name": "Cam Skattebo",
-   "team": "NYG",
-   "pos": "RB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-06T09:47:00-05:00",
-   "detail": "Hamstring",
-   "espn_id": "4696981",
-   "comment": "\"It does not seem\" that Skattebo (hamstring) will play Sunday against the Eagles, Ian Rapoport of NFL Network reports."
   },
   "name:NYG:andrewthomas": {
    "name": "Andrew Thomas",
@@ -4050,17 +4081,6 @@
    "date": "2026-11-05T17:00:00-05:00",
    "detail": "Foot",
    "espn_id": "4426542"
-  },
-  "00-0039337": {
-   "name": "Malik Nabers",
-   "team": "NYG",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T15:30:00-05:00",
-   "detail": "Knee",
-   "espn_id": "4595348",
-   "comment": "Nabers (undisclosed) said Thursday, \"I'll be good,\" for Sunday's game at Philadelphia, Art Stapleton of USA Today reports."
   },
   "00-0039847": {
    "name": "Theo Johnson",
@@ -4335,6 +4355,39 @@
    "detail": null,
    "espn_id": "4035537"
   },
+  "00-0036912": {
+   "name": "DeVonta Smith",
+   "team": "PHI",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-06T12:32:00-05:00",
+   "detail": "Hamstring",
+   "espn_id": "4241478",
+   "comment": "Smith (hamstring) was not seen at Friday's practice, Jeff McLane of the Philadelphia Inquirer reports."
+  },
+  "00-0038393": {
+   "name": "Dontayvion Wicks",
+   "team": "PHI",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-06T12:23:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "4428850",
+   "comment": "Wicks (ankle) is not practicing Friday, Andrew DiCecco of InsideTheBirds.com reports."
+  },
+  "00-0034844": {
+   "name": "Saquon Barkley",
+   "team": "PHI",
+   "pos": "RB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-06T12:21:00-05:00",
+   "detail": "Hamstring",
+   "espn_id": "3929630",
+   "comment": "Barkley (hamstring/back) is practicing again Friday, Dave Zangaro of NBC Sports Philadelphia reports."
+  },
   "name:PHI:jakeelliott": {
    "name": "Jake Elliott",
    "team": "PHI",
@@ -4355,39 +4408,6 @@
    "detail": "Ribs",
    "espn_id": "4685201",
    "comment": "McKee (rib) was limited in Thursday's practice."
-  },
-  "00-0038393": {
-   "name": "Dontayvion Wicks",
-   "team": "PHI",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T17:48:00-05:00",
-   "detail": "Ankle",
-   "espn_id": "4428850",
-   "comment": "Wicks (ankle) did not practice Thursday."
-  },
-  "00-0036912": {
-   "name": "DeVonta Smith",
-   "team": "PHI",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T17:38:00-05:00",
-   "detail": "Hamstring",
-   "espn_id": "4241478",
-   "comment": "Smith (hamstring) officially didn't practice Thursday."
-  },
-  "00-0034844": {
-   "name": "Saquon Barkley",
-   "team": "PHI",
-   "pos": "RB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T17:33:00-05:00",
-   "detail": "Hamstring",
-   "espn_id": "3929630",
-   "comment": "Barkley (hamstring/back) practiced in a limited capacity Thursday."
   },
   "name:PHI:jihaadcampbell": {
    "name": "Jihaad Campbell",
@@ -5483,10 +5503,10 @@
    "pos": "WR",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T19:43:00-05:00",
+   "date": "2026-11-06T12:28:00-05:00",
    "detail": "Calf",
    "espn_id": "4361577",
-   "comment": "Brown (calf) was a limited participant in Thursday's practice."
+   "comment": "Brown (calf) was injured in practice Friday, Martenzie Johnson of The Washington Sun reports."
   },
   "00-0037742": {
    "name": "Treylon Burks",
