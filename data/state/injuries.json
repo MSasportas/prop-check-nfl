@@ -1,5 +1,5 @@
 {
- "at": "2026-11-05T19:10:00-05:00",
+ "at": "2026-11-05T19:20:01-05:00",
  "source": "espn",
  "players": {
   "00-0038559": {
@@ -390,6 +390,27 @@
    "detail": "Undisclosed",
    "espn_id": "5150660"
   },
+  "00-0039577": {
+   "name": "Kedon Slovis",
+   "team": "BAL",
+   "pos": "QB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-05T19:09:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4428512",
+   "comment": "Slovis (coach's decision) is inactive for Thursday's game against Jacksonville but will serve as the team's emergency quarterback."
+  },
+  "00-0039464": {
+   "name": "Austin Reed",
+   "team": "BAL",
+   "pos": "QB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-05T19:03:00-05:00",
+   "detail": null,
+   "espn_id": "4368343"
+  },
   "00-0040876": {
    "name": "Elijah Sarratt",
    "team": "BAL",
@@ -399,17 +420,6 @@
    "date": "2026-11-05T18:53:00-05:00",
    "detail": "Coach's Decision",
    "espn_id": "5088338",
-   "comment": "inactive"
-  },
-  "00-0039577": {
-   "name": "Kedon Slovis",
-   "team": "BAL",
-   "pos": "QB",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-11-05T18:53:00-05:00",
-   "detail": "Coach's Decision",
-   "espn_id": "4428512",
    "comment": "inactive"
   },
   "name:BAL:emeryjones": {
@@ -431,16 +441,6 @@
    "date": "2026-11-05T18:53:00-05:00",
    "detail": "Coach's Decision",
    "espn_id": "4565311"
-  },
-  "00-0039464": {
-   "name": "Austin Reed",
-   "team": "BAL",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-05T17:23:00-05:00",
-   "detail": null,
-   "espn_id": "4368343"
   },
   "00-0035993": {
    "name": "Tyler Huntley",
@@ -3102,6 +3102,38 @@
    "detail": "Hamstring",
    "espn_id": "3691739"
   },
+  "name:LA:mylesgarrett": {
+   "name": "Myles Garrett",
+   "team": "LA",
+   "pos": "DE",
+   "status": "Injured Reserve",
+   "fantasy": "IR-R",
+   "date": "2026-11-05T19:07:00-05:00",
+   "detail": "Knee",
+   "espn_id": "3122132"
+  },
+  "00-0036244": {
+   "name": "Colby Parkinson",
+   "team": "LA",
+   "pos": "TE",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-05T19:05:00-05:00",
+   "detail": "Ribs",
+   "espn_id": "4242557",
+   "comment": "Parkinson (ribs) remained sidelined for Thursday's practice, Greg Beacham of the Associated Press reports."
+  },
+  "00-0040737": {
+   "name": "Terrance Ferguson",
+   "team": "LA",
+   "pos": "TE",
+   "status": "Injured Reserve",
+   "fantasy": "IR-R",
+   "date": "2026-11-05T19:00:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "4570037",
+   "comment": "Ferguson (ankle) was a limited practice participant Thursday, Greg Beacham of the Associated Press reports."
+  },
   "name:LA:trentmcduffie": {
    "name": "Trent McDuffie",
    "team": "LA",
@@ -3163,48 +3195,6 @@
    "date": "2026-11-04T19:36:00-05:00",
    "detail": null,
    "espn_id": "12483"
-  },
-  "00-0040737": {
-   "name": "Terrance Ferguson",
-   "team": "LA",
-   "pos": "TE",
-   "status": "Injured Reserve",
-   "fantasy": "IR-R",
-   "date": "2026-11-04T19:14:00-05:00",
-   "detail": "Ankle",
-   "espn_id": "4570037",
-   "comment": "Ferguson (ankle) was limited in Wednesday's practice."
-  },
-  "00-0036244": {
-   "name": "Colby Parkinson",
-   "team": "LA",
-   "pos": "TE",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T19:12:00-05:00",
-   "detail": "Ribs",
-   "espn_id": "4242557",
-   "comment": "Parkinson (ribs) did not practice Wednesday, Sarah Barshop of ESPN.com reports."
-  },
-  "name:LA:steveavila": {
-   "name": "Steve Avila",
-   "team": "LA",
-   "pos": "G",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T18:11:00-05:00",
-   "detail": "Hamstring",
-   "espn_id": "4362474"
-  },
-  "name:LA:mylesgarrett": {
-   "name": "Myles Garrett",
-   "team": "LA",
-   "pos": "DE",
-   "status": "Injured Reserve",
-   "fantasy": "IR-R",
-   "date": "2026-11-04T17:56:00-05:00",
-   "detail": "Knee",
-   "espn_id": "3122132"
   },
   "00-0033110": {
    "name": "Tyler Higbee",
@@ -3997,7 +3987,7 @@
    "pos": "OT",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T18:54:00-05:00",
+   "date": "2026-11-05T19:05:00-05:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
@@ -4322,10 +4312,10 @@
    "pos": "QB",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T18:08:00-05:00",
+   "date": "2026-11-05T18:51:00-05:00",
    "detail": "Ribs",
    "espn_id": "4685201",
-   "comment": "questionable"
+   "comment": "McKee (rib) was limited in Thursday's practice."
   },
   "00-0038393": {
    "name": "Dontayvion Wicks",
