@@ -1,5 +1,5 @@
 {
- "at": "2026-11-05T21:50:01-05:00",
+ "at": "2026-11-05T22:30:00-05:00",
  "source": "espn",
  "players": {
   "name:ARI:jaydenwilliams": {
@@ -400,6 +400,26 @@
    "detail": "Undisclosed",
    "espn_id": "5150660"
   },
+  "name:BAL:kylehamilton": {
+   "name": "Kyle Hamilton",
+   "team": "BAL",
+   "pos": "S",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-11-05T22:27:00-05:00",
+   "detail": "Hip",
+   "espn_id": "4575517"
+  },
+  "name:BAL:adisaisaac": {
+   "name": "Adisa Isaac",
+   "team": "BAL",
+   "pos": "LB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-05T22:14:00-05:00",
+   "detail": "Hamstring",
+   "espn_id": "4426372"
+  },
   "name:BAL:natewiggins": {
    "name": "Nate Wiggins",
    "team": "BAL",
@@ -554,16 +574,6 @@
    "date": "2026-11-02T22:32:00-05:00",
    "detail": null,
    "espn_id": "4870847"
-  },
-  "00-0036550": {
-   "name": "Rashod Bateman",
-   "team": "BAL",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-02T22:26:00-05:00",
-   "detail": null,
-   "espn_id": "4360939"
   },
   "00-0035537": {
    "name": "Ty Johnson",
@@ -2909,16 +2919,6 @@
    "detail": "Groin",
    "espn_id": "4430330"
   },
-  "name:LV:patrickjohnson": {
-   "name": "Patrick Johnson",
-   "team": "LV",
-   "pos": "DE",
-   "status": "Injured Reserve",
-   "fantasy": "IR",
-   "date": "2026-10-31T22:52:00-04:00",
-   "detail": "Neck",
-   "espn_id": "4243916"
-  },
   "00-0033885": {
    "name": "David Njoku",
    "team": "LAC",
@@ -4006,7 +4006,7 @@
    "pos": "OT",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T21:01:00-05:00",
+   "date": "2026-11-05T22:27:00-05:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
@@ -4702,6 +4702,17 @@
    "detail": "Triceps",
    "espn_id": "3047495"
   },
+  "name:SF:brandonaiyuk": {
+   "name": "Brandon Aiyuk",
+   "team": "SF",
+   "pos": "WR",
+   "status": "Out",
+   "fantasy": "RESERVE-DNR",
+   "date": "2026-11-05T21:40:00-05:00",
+   "detail": "Personal",
+   "espn_id": "4360438",
+   "comment": "Aiyuk's effort to secure his release by reporting to the 49ers' facility Friday could be complicated by roughly $13 million in bonus forfeiture he owes the team"
+  },
   "00-0032775": {
    "name": "Demarcus Robinson",
    "team": "SF",
@@ -4756,17 +4767,6 @@
    "detail": "Hamstring",
    "espn_id": "3117251",
    "comment": "McCaffrey (hamstring) was a limited participant at Thursday's practice, Sam Warren of The Athletic reports."
-  },
-  "name:SF:brandonaiyuk": {
-   "name": "Brandon Aiyuk",
-   "team": "SF",
-   "pos": "WR",
-   "status": "Out",
-   "fantasy": "RESERVE-DNR",
-   "date": "2026-11-05T14:09:00-05:00",
-   "detail": "Personal",
-   "espn_id": "4360438",
-   "comment": "Head coach Kyle Shanahan and GM John Lynch both declined to get into specifics when discussing the future of Aiyuk, who has filed his paperwork for reinstatemen"
   },
   "name:SF:marquessigle": {
    "name": "Marques Sigle",
@@ -5293,16 +5293,6 @@
    "date": "2026-10-28T21:52:00-04:00",
    "detail": "Knee",
    "espn_id": "4248533"
-  },
-  "00-0041251": {
-   "name": "Jalon Daniels",
-   "team": "TB",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-10-26T21:25:00-04:00",
-   "detail": null,
-   "espn_id": "4596472"
   },
   "name:TEN:tommytownsend": {
    "name": "Tommy Townsend",
