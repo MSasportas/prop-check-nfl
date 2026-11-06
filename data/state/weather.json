@@ -89,14 +89,14 @@
    "text": "Indoors"
   },
   "2026_09_LV_SF": {
-   "temp_f": 71.5,
-   "wind_mph": 5.7,
+   "temp_f": 71.9,
+   "wind_mph": 5.2,
    "gust_mph": 6.5,
    "rain_pct": 0,
    "rain_in": 0.0,
    "roof": "outdoors",
-   "at": "2026-11-05T22:10:00-05:00",
-   "text": "72\u00b0F, wind 6 mph"
+   "at": "2026-11-06T01:10:02-05:00",
+   "text": "72\u00b0F, wind 5 mph"
   },
   "2026_09_ARI_SEA": {
    "temp_f": 54.6,
