@@ -1,5 +1,5 @@
 {
- "at": "2026-11-05T19:50:00-05:00",
+ "at": "2026-11-05T20:00:01-05:00",
  "source": "espn",
  "players": {
   "name:ARI:maxmelton": {
@@ -4006,7 +4006,7 @@
    "pos": "OT",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T19:38:00-05:00",
+   "date": "2026-11-05T19:43:00-05:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
@@ -4929,13 +4929,23 @@
    "detail": null,
    "espn_id": "4696044"
   },
+  "name:SEA:leonardwilliams": {
+   "name": "Leonard Williams",
+   "team": "SEA",
+   "pos": "DT",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-05T19:46:00-05:00",
+   "detail": "Shoulder",
+   "espn_id": "2971622"
+  },
   "name:SEA:ernestjones": {
    "name": "Ernest Jones IV",
    "team": "SEA",
    "pos": "LB",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T19:33:00-05:00",
+   "date": "2026-11-05T19:42:00-05:00",
    "detail": "Ankle",
    "espn_id": "4362851"
   },
@@ -5112,16 +5122,6 @@
    "date": "2026-11-02T23:36:00-05:00",
    "detail": null,
    "espn_id": "4430878"
-  },
-  "name:SEA:leonardwilliams": {
-   "name": "Leonard Williams",
-   "team": "SEA",
-   "pos": "DT",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-02T22:36:00-05:00",
-   "detail": "Shoulder",
-   "espn_id": "2971622"
   },
   "name:SEA:brandonpili": {
    "name": "Brandon Pili",
@@ -5476,6 +5476,17 @@
    "detail": "Foot",
    "espn_id": "4573318"
   },
+  "00-0036626": {
+   "name": "Dyami Brown",
+   "team": "WAS",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-05T19:43:00-05:00",
+   "detail": "Calf",
+   "espn_id": "4361577",
+   "comment": "Brown (calf) was a limited participant in Thursday's practice."
+  },
   "00-0037742": {
    "name": "Treylon Burks",
    "team": "WAS",
@@ -5486,17 +5497,6 @@
    "detail": "Foot",
    "espn_id": "4567156",
    "comment": "Burks (foot) was a non-participant at Thursday's practice."
-  },
-  "00-0036626": {
-   "name": "Dyami Brown",
-   "team": "WAS",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T18:39:00-05:00",
-   "detail": "Calf",
-   "espn_id": "4361577",
-   "comment": "questionable"
   },
   "name:WAS:jerzhannewton": {
    "name": "Jer'Zhan Newton",
