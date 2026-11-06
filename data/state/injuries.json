@@ -1,5 +1,5 @@
 {
- "at": "2026-11-06T11:30:00-05:00",
+ "at": "2026-11-06T12:00:01-05:00",
  "source": "espn",
  "players": {
   "name:ARI:jaydenwilliams": {
@@ -1169,7 +1169,7 @@
    "team": "CIN",
    "pos": "S",
    "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
+   "fantasy": "OUT",
    "date": "2026-11-03T08:03:00-05:00",
    "detail": "Quadriceps",
    "espn_id": "4401811"
@@ -3322,10 +3322,10 @@
    "pos": "RB",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T17:01:00-05:00",
+   "date": "2026-11-06T11:13:00-05:00",
    "detail": "Quadriceps",
    "espn_id": "4682745",
-   "comment": "Wright (quadriceps) was limited in Thursday's practice, Marcel Louis-Jacques of ESPN.com reports."
+   "comment": "Wright (quadriceps) will practice Friday, Barry Jackson of the Miami Herald reports."
   },
   "name:MIA:kadynproctor": {
    "name": "Kadyn Proctor",
@@ -3662,6 +3662,17 @@
    "detail": null,
    "espn_id": "4262921"
   },
+  "00-0040734": {
+   "name": "TreVeyon Henderson",
+   "team": "NE",
+   "pos": "RB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-06T11:39:00-05:00",
+   "detail": "Illness",
+   "espn_id": "4432710",
+   "comment": "In a statement posted to social media on Friday, Henderson -- who hasn't practiced since last Wednesday -- noted that he recently experienced \"an unexpected and"
+  },
   "name:NE:brendenschooler": {
    "name": "Brenden Schooler",
    "team": "NE",
@@ -3681,17 +3692,6 @@
    "date": "2026-11-05T16:54:00-05:00",
    "detail": "Foot",
    "espn_id": "4241720"
-  },
-  "00-0040734": {
-   "name": "TreVeyon Henderson",
-   "team": "NE",
-   "pos": "RB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T16:48:00-05:00",
-   "detail": "Illness",
-   "espn_id": "4432710",
-   "comment": "Henderson (illness) was listed as a non-participant in Thursday's practice, ESPN's Rob Demovsky reports."
   },
   "00-0035676": {
    "name": "A.J. Brown",
@@ -4026,7 +4026,7 @@
    "pos": "OT",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-06T11:01:00-05:00",
+   "date": "2026-11-06T11:16:00-05:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
@@ -4173,7 +4173,7 @@
    "date": "2026-11-06T11:16:00-05:00",
    "detail": "Concussion",
    "espn_id": "4569618",
-   "comment": "out"
+   "comment": "Wilson (concussion) is out for Sunday's game against the Chiefs, Brian Costello of the New York Post reports."
   },
   "name:NYJ:trevinwallace": {
    "name": "Trevin Wallace",
@@ -5163,6 +5163,16 @@
    "detail": "Ankle",
    "espn_id": "3120358"
   },
+  "00-0040129": {
+   "name": "Emeka Egbuka",
+   "team": "TB",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-06T11:37:00-05:00",
+   "detail": null,
+   "espn_id": "4567750"
+  },
   "name:TB:tristanwirfs": {
    "name": "Tristan Wirfs",
    "team": "TB",
@@ -5182,16 +5192,6 @@
    "date": "2026-11-05T15:57:00-05:00",
    "detail": null,
    "espn_id": "4371733"
-  },
-  "00-0040129": {
-   "name": "Emeka Egbuka",
-   "team": "TB",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-05T15:55:00-05:00",
-   "detail": null,
-   "espn_id": "4567750"
   },
   "00-0039855": {
    "name": "Jalen McMillan",
