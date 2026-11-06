@@ -3,10 +3,10 @@
  "season": 2026,
  "week": 9,
  "slate": "2026-W09",
- "started_at": "2026-11-06T12:00:01-05:00",
- "status_at": "2026-11-06T12:00:01-05:00",
- "finished_at": "2026-11-06T12:00:04-05:00",
- "last_ok_at": "2026-11-06T12:00:01-05:00",
+ "started_at": "2026-11-06T12:30:00-05:00",
+ "status_at": "2026-11-06T12:30:00-05:00",
+ "finished_at": "2026-11-06T12:30:00-05:00",
+ "last_ok_at": "2026-11-06T12:30:00-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -31,13 +31,13 @@
   },
   {
    "step": "injuries",
-   "status": "ok",
-   "note": "espn: 97 out, 172 questionable; inactives posted for 2 team(s)"
+   "status": "skipped",
+   "note": "read at 12:00 PM; inactives posted for 2 team(s)"
   },
   {
    "step": "weather",
-   "status": "ok",
-   "note": "1 read, 0 failed, 2 indoors"
+   "status": "skipped",
+   "note": "nothing due (2 indoors)"
   },
   {
    "step": "odds",
@@ -141,11 +141,11 @@
  "odds_notes": [],
  "runner": {
   "event": "workflow_dispatch",
-  "run_id": "42252939658",
+  "run_id": "42257557322",
   "iteration": 2,
-  "chain_link": 370,
+  "chain_link": 371,
   "chain_started_at": "2026-11-05T13:54:23-05:00",
-  "run_started_at": "2026-11-06T11:30:13-05:00"
+  "run_started_at": "2026-11-06T12:00:16-05:00"
  },
  "live_page": {
   "checked_at": "2026-11-06T11:30:13-05:00",
