@@ -1,5 +1,5 @@
 {
- "at": "2026-11-05T19:00:01-05:00",
+ "at": "2026-11-05T19:10:00-05:00",
  "source": "espn",
  "players": {
   "00-0038559": {
@@ -469,7 +469,7 @@
    "team": "BAL",
    "pos": "S",
    "status": "Out",
-   "fantasy": "OUT",
+   "fantasy": "INACTIVE",
    "date": "2026-11-04T20:14:00-05:00",
    "detail": "Knee",
    "espn_id": "3858276"
@@ -2441,12 +2441,52 @@
    "name": "Bhayshul Tuten",
    "team": "JAX",
    "pos": "RB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T18:25:00-05:00",
-   "detail": "Ankle",
-   "espn_id": "4882093",
-   "comment": "Tuten (ankle) is on track to play in Thursday night's game against the Ravens, after going through what Jeremy Fowler of ESPN.com describes as an extensive preg"
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-05T18:50:00-05:00",
+   "detail": null,
+   "espn_id": "4882093"
+  },
+  "name:JAX:wesleywilliams": {
+   "name": "Wesley Williams",
+   "team": "JAX",
+   "pos": "DE",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-05T18:48:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4832922"
+  },
+  "00-0041106": {
+   "name": "CJ Williams",
+   "team": "JAX",
+   "pos": "WR",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-05T18:48:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "5085024",
+   "comment": "inactive"
+  },
+  "name:JAX:camronsilmoncraig": {
+   "name": "Cam'Ron Silmon-Craig",
+   "team": "JAX",
+   "pos": "S",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-05T18:48:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4877475"
+  },
+  "name:JAX:alijahhuzzie": {
+   "name": "Alijah Huzzie",
+   "team": "JAX",
+   "pos": "CB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-05T18:48:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4577494"
   },
   "00-0038611": {
    "name": "Chris Rodriguez Jr.",
@@ -2518,16 +2558,6 @@
    "detail": null,
    "espn_id": "4685415"
   },
-  "00-0041106": {
-   "name": "CJ Williams",
-   "team": "JAX",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": "INACTIVE",
-   "date": "2026-11-02T13:53:00-05:00",
-   "detail": "Coach's Decision",
-   "espn_id": "5085024"
-  },
   "00-0038935": {
    "name": "Brenton Strange",
    "team": "JAX",
@@ -2557,16 +2587,6 @@
    "date": "2026-11-01T20:52:00-05:00",
    "detail": null,
    "espn_id": "4360310"
-  },
-  "00-0038606": {
-   "name": "Parker Washington",
-   "team": "JAX",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-01T20:40:00-05:00",
-   "detail": null,
-   "espn_id": "4432620"
   },
   "00-0030506": {
    "name": "Travis Kelce",
@@ -6135,6 +6155,10 @@
   "00-0039577": {
    "status": "Out",
    "at": "2026-11-05T19:00:01-05:00"
+  },
+  "00-0041106": {
+   "status": "Out",
+   "at": "2026-11-05T19:10:00-05:00"
   }
  }
 }
