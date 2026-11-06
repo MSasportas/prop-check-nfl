@@ -1,7 +1,37 @@
 {
- "at": "2026-11-05T21:10:01-05:00",
+ "at": "2026-11-05T21:50:01-05:00",
  "source": "espn",
  "players": {
+  "name:ARI:jaydenwilliams": {
+   "name": "Jayden Williams",
+   "team": "ARI",
+   "pos": "OT",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-05T21:07:00-05:00",
+   "detail": "Knee",
+   "espn_id": "4709718"
+  },
+  "name:ARI:jongaines": {
+   "name": "Jon Gaines II",
+   "team": "ARI",
+   "pos": "G",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-05T21:01:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "4367199"
+  },
+  "name:ARI:isaiahadams": {
+   "name": "Isaiah Adams",
+   "team": "ARI",
+   "pos": "G",
+   "status": "Injured Reserve",
+   "fantasy": "IR-R",
+   "date": "2026-11-05T20:55:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "5084939"
+  },
   "name:ARI:maxmelton": {
    "name": "Max Melton",
    "team": "ARI",
@@ -33,16 +63,6 @@
    "detail": "Ribs",
    "espn_id": "4360761",
    "comment": "Wilson (rest/ribs) was a limited practice participant Thursday, Darren Urban of the Cardinals' official site reports."
-  },
-  "name:ARI:isaiahadams": {
-   "name": "Isaiah Adams",
-   "team": "ARI",
-   "pos": "G",
-   "status": "Injured Reserve",
-   "fantasy": "IR-R",
-   "date": "2026-11-04T22:52:00-05:00",
-   "detail": "Ankle",
-   "espn_id": "5084939"
   },
   "00-0033119": {
    "name": "Jacoby Brissett",
@@ -157,16 +177,6 @@
    "detail": "Ankle",
    "espn_id": "4685503"
   },
-  "name:ARI:jongaines": {
-   "name": "Jon Gaines II",
-   "team": "ARI",
-   "pos": "G",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-03T08:03:00-05:00",
-   "detail": "Ankle",
-   "espn_id": "4367199"
-  },
   "00-0041561": {
    "name": "Carson Beck",
    "team": "ARI",
@@ -206,16 +216,6 @@
    "date": "2026-11-01T18:48:00-05:00",
    "detail": null,
    "espn_id": "4361307"
-  },
-  "name:ARI:jaydenwilliams": {
-   "name": "Jayden Williams",
-   "team": "ARI",
-   "pos": "OT",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-01T15:46:00-05:00",
-   "detail": "Knee",
-   "espn_id": "4709718"
   },
   "00-0040432": {
    "name": "Beaux Collins",
@@ -421,16 +421,6 @@
    "espn_id": "4428512",
    "comment": "Slovis (coach's decision) is inactive for Thursday's game against Jacksonville but will serve as the team's emergency quarterback."
   },
-  "00-0039464": {
-   "name": "Austin Reed",
-   "team": "BAL",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-05T19:03:00-05:00",
-   "detail": null,
-   "espn_id": "4368343"
-  },
   "00-0040876": {
    "name": "Elijah Sarratt",
    "team": "BAL",
@@ -461,6 +451,16 @@
    "date": "2026-11-05T18:53:00-05:00",
    "detail": "Coach's Decision",
    "espn_id": "4565311"
+  },
+  "00-0039464": {
+   "name": "Austin Reed",
+   "team": "BAL",
+   "pos": "QB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-05T17:23:00-05:00",
+   "detail": null,
+   "espn_id": "4368343"
   },
   "00-0035993": {
    "name": "Tyler Huntley",
@@ -2447,6 +2447,16 @@
    "detail": null,
    "espn_id": "4431459"
   },
+  "00-0040719": {
+   "name": "Bhayshul Tuten",
+   "team": "JAX",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-05T18:50:00-05:00",
+   "detail": null,
+   "espn_id": "4882093"
+  },
   "name:JAX:wesleywilliams": {
    "name": "Wesley Williams",
    "team": "JAX",
@@ -2487,16 +2497,6 @@
    "date": "2026-11-05T18:48:00-05:00",
    "detail": "Coach's Decision",
    "espn_id": "4577494"
-  },
-  "00-0040719": {
-   "name": "Bhayshul Tuten",
-   "team": "JAX",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-05T18:25:00-05:00",
-   "detail": null,
-   "espn_id": "4882093"
   },
   "00-0038611": {
    "name": "Chris Rodriguez Jr.",
@@ -4000,6 +4000,16 @@
    "detail": null,
    "espn_id": "4569559"
   },
+  "name:NYG:jermaineeluemunor": {
+   "name": "Jermaine Eluemunor",
+   "team": "NYG",
+   "pos": "OT",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-05T21:01:00-05:00",
+   "detail": "Calf",
+   "espn_id": "3115303"
+  },
   "name:NYG:andrewthomas": {
    "name": "Andrew Thomas",
    "team": "NYG",
@@ -4009,16 +4019,6 @@
    "date": "2026-11-05T20:12:00-05:00",
    "detail": "Groin",
    "espn_id": "4259566"
-  },
-  "name:NYG:jermaineeluemunor": {
-   "name": "Jermaine Eluemunor",
-   "team": "NYG",
-   "pos": "OT",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T20:01:00-05:00",
-   "detail": "Calf",
-   "espn_id": "3115303"
   },
   "name:NYG:dariusalexander": {
    "name": "Darius Alexander",
