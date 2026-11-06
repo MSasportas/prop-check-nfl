@@ -18,8 +18,8 @@
  "season": 2026,
  "week": 9,
  "label": "Week 9",
- "generated_at": "2026-11-05T20:10:01-05:00",
- "status_at": "2026-11-05T20:10:01-05:00",
+ "generated_at": "2026-11-05T20:20:00-05:00",
+ "status_at": "2026-11-05T20:20:00-05:00",
  "valid_until": "2026-11-10T06:00:00-05:00",
  "next_check": "2026-11-07T09:30:00-05:00",
  "status": {
@@ -35,7 +35,7 @@
   "inactives": {
    "state": "ok",
    "at": "2026-11-05T19:10:00-05:00",
-   "note": "Posted for the 8:15 PM game."
+   "note": null
   },
   "stats": {
    "state": "ok",
@@ -53,14 +53,14 @@
   },
   "last_run": {
    "ok": true,
-   "at": "2026-11-05T20:10:01-05:00",
+   "at": "2026-11-05T20:20:00-05:00",
    "failed_step": null
   }
  },
  "banners": [],
  "empty": {
   "code": "no_picks_yet",
-  "text": "No picks right now. Nothing beats the other books by enough at Hard Rock's prices.",
+  "text": "No picks yet for Week 9. Picks only come after the final injury report.",
   "sub": "Next check 9:30 AM."
  },
  "games": [
@@ -71,7 +71,7 @@
    "kickoff": "2026-11-05T20:15:00-05:00",
    "day": "2026-11-05",
    "roof": "outdoors",
-   "started": false,
+   "started": true,
    "final": false,
    "score": null,
    "settled": "inactives",

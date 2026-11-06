@@ -117,6 +117,16 @@
    "roof": "outdoors",
    "at": "2026-11-05T19:30:00-05:00",
    "text": "50\u00b0F, wind 12 mph"
+  },
+  "2026_09_TB_CHI": {
+   "temp_f": 55.1,
+   "wind_mph": 7.7,
+   "gust_mph": 25.3,
+   "rain_pct": 0,
+   "rain_in": 0.0,
+   "roof": "outdoors",
+   "at": "2026-11-05T20:20:00-05:00",
+   "text": "55\u00b0F, wind 8 mph"
   }
  }
 }
