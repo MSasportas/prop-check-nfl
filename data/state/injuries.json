@@ -1,5 +1,5 @@
 {
- "at": "2026-11-06T10:30:19-05:00",
+ "at": "2026-11-06T11:30:00-05:00",
  "source": "espn",
  "players": {
   "name:ARI:jaydenwilliams": {
@@ -4026,7 +4026,7 @@
    "pos": "OT",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-06T10:01:00-05:00",
+   "date": "2026-11-06T11:01:00-05:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
@@ -4164,6 +4164,27 @@
    "detail": null,
    "espn_id": "4682648"
   },
+  "00-0037740": {
+   "name": "Garrett Wilson",
+   "team": "NYJ",
+   "pos": "WR",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-11-06T11:16:00-05:00",
+   "detail": "Concussion",
+   "espn_id": "4569618",
+   "comment": "out"
+  },
+  "name:NYJ:trevinwallace": {
+   "name": "Trevin Wallace",
+   "team": "NYJ",
+   "pos": "LB",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-11-06T10:50:00-05:00",
+   "detail": "Groin",
+   "espn_id": "4683815"
+  },
   "00-0038120": {
    "name": "Breece Hall",
    "team": "NYJ",
@@ -4184,17 +4205,6 @@
    "detail": null,
    "espn_id": "4808766"
   },
-  "00-0037740": {
-   "name": "Garrett Wilson",
-   "team": "NYJ",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T16:07:00-05:00",
-   "detail": "Concussion",
-   "espn_id": "4569618",
-   "comment": "Wilson (concussion) did not practice Thursday."
-  },
   "name:NYJ:vjpayne": {
    "name": "VJ Payne",
    "team": "NYJ",
@@ -4214,16 +4224,6 @@
    "date": "2026-11-04T22:35:00-05:00",
    "detail": "Ankle",
    "espn_id": "4362094"
-  },
-  "name:NYJ:trevinwallace": {
-   "name": "Trevin Wallace",
-   "team": "NYJ",
-   "pos": "LB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T16:47:00-05:00",
-   "detail": "Groin",
-   "espn_id": "4683815"
   },
   "name:NYJ:harrisonphillips": {
    "name": "Harrison Phillips",
