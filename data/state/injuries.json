@@ -1,5 +1,5 @@
 {
- "at": "2026-11-05T23:30:00-05:00",
+ "at": "2026-11-06T00:00:00-05:00",
  "source": "espn",
  "players": {
   "name:ARI:jaydenwilliams": {
@@ -400,6 +400,16 @@
    "detail": "Undisclosed",
    "espn_id": "5150660"
   },
+  "00-0032764": {
+   "name": "Derrick Henry",
+   "team": "BAL",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-05T23:42:00-05:00",
+   "detail": null,
+   "espn_id": "3043078"
+  },
   "name:BAL:kylehamilton": {
    "name": "Kyle Hamilton",
    "team": "BAL",
@@ -564,16 +574,6 @@
    "date": "2026-11-03T16:44:00-05:00",
    "detail": "Groin",
    "espn_id": "4697745"
-  },
-  "00-0040870": {
-   "name": "Ja'Kobi Lane",
-   "team": "BAL",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-02T22:32:00-05:00",
-   "detail": null,
-   "espn_id": "4870847"
   },
   "00-0035537": {
    "name": "Ty Johnson",
@@ -2463,7 +2463,7 @@
    "pos": "RB",
    "status": "Active",
    "fantasy": null,
-   "date": "2026-11-05T18:50:00-05:00",
+   "date": "2026-11-05T23:49:00-05:00",
    "detail": null,
    "espn_id": "4882093"
   },
