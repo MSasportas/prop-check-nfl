@@ -1,7 +1,17 @@
 {
- "at": "2026-11-06T17:30:01-05:00",
+ "at": "2026-11-06T18:00:13-05:00",
  "source": "espn",
  "players": {
+  "00-0038559": {
+   "name": "Michael Wilson",
+   "team": "ARI",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-06T17:18:00-05:00",
+   "detail": null,
+   "espn_id": "4360761"
+  },
   "00-0037157": {
    "name": "Bam Knight",
    "team": "ARI",
@@ -52,16 +62,6 @@
    "date": "2026-11-05T19:38:00-05:00",
    "detail": "Knee",
    "espn_id": "4698113"
-  },
-  "00-0038559": {
-   "name": "Michael Wilson",
-   "team": "ARI",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-05T19:19:00-05:00",
-   "detail": null,
-   "espn_id": "4360761"
   },
   "00-0039041": {
    "name": "Elijah Higgins",
@@ -1749,6 +1749,17 @@
    "detail": null,
    "espn_id": "4391845"
   },
+  "00-0039364": {
+   "name": "Sione Vaki",
+   "team": "DET",
+   "pos": "RB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-06T17:30:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "4912274",
+   "comment": "questionable"
+  },
   "00-0036963": {
    "name": "Amon-Ra St. Brown",
    "team": "DET",
@@ -1775,9 +1786,9 @@
    "team": "DET",
    "pos": "S",
    "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
+   "fantasy": null,
    "date": "2026-11-05T17:35:00-05:00",
-   "detail": "Concussion",
+   "detail": null,
    "espn_id": "4692025"
   },
   "name:DET:jackcampbell": {
@@ -1785,7 +1796,7 @@
    "team": "DET",
    "pos": "LB",
    "status": "Doubtful",
-   "fantasy": "DOUBTFUL",
+   "fantasy": "OUT",
    "date": "2026-11-04T19:43:00-05:00",
    "detail": "Neck",
    "espn_id": "4569465"
@@ -1805,7 +1816,7 @@
    "team": "DET",
    "pos": "CB",
    "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
+   "fantasy": "OUT",
    "date": "2026-11-02T20:21:00-05:00",
    "detail": "Hip",
    "espn_id": "3139387"
@@ -1826,7 +1837,7 @@
    "team": "DET",
    "pos": "C",
    "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
+   "fantasy": "OUT",
    "date": "2026-11-02T18:16:00-05:00",
    "detail": "Ankle",
    "espn_id": "4361788"
@@ -1840,16 +1851,6 @@
    "date": "2026-11-02T13:51:00-05:00",
    "detail": null,
    "espn_id": "4602788"
-  },
-  "00-0039364": {
-   "name": "Sione Vaki",
-   "team": "DET",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-02T00:11:00-05:00",
-   "detail": null,
-   "espn_id": "4912274"
   },
   "00-0039065": {
    "name": "Sam LaPorta",
@@ -1896,7 +1897,7 @@
    "team": "DET",
    "pos": "LB",
    "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
+   "fantasy": "OUT",
    "date": "2026-11-01T15:34:00-05:00",
    "detail": "Concussion",
    "espn_id": "4038849"
@@ -2729,6 +2730,16 @@
    "detail": "Knee - ACL",
    "espn_id": "4591008"
   },
+  "name:LV:thomasbooker": {
+   "name": "Thomas Booker IV",
+   "team": "LV",
+   "pos": "DT",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-11-06T17:41:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "4360749"
+  },
   "name:LV:codywhite": {
    "name": "Cody White",
    "team": "LV",
@@ -2743,12 +2754,11 @@
    "name": "Dont'e Thornton Jr.",
    "team": "LV",
    "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
+   "status": "Active",
+   "fantasy": null,
    "date": "2026-11-05T19:11:00-05:00",
-   "detail": "Back",
-   "espn_id": "4432775",
-   "comment": "Thornton (back) was a limited participant at the Raiders' practice Thursday, Paul Gutierrez of the team's official site reports."
+   "detail": null,
+   "espn_id": "4432775"
   },
   "00-0034365": {
    "name": "Ian Thomas",
@@ -2759,16 +2769,6 @@
    "date": "2026-11-05T17:42:00-05:00",
    "detail": null,
    "espn_id": "4045305"
-  },
-  "name:LV:thomasbooker": {
-   "name": "Thomas Booker IV",
-   "team": "LV",
-   "pos": "DT",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T18:59:00-05:00",
-   "detail": "Ankle",
-   "espn_id": "4360749"
   },
   "00-0040878": {
    "name": "Mike Washington Jr.",
@@ -3078,10 +3078,10 @@
    "pos": "TE",
    "status": "Injured Reserve",
    "fantasy": "IR-R",
-   "date": "2026-11-06T17:02:00-05:00",
+   "date": "2026-11-06T17:29:00-05:00",
    "detail": "Hamstring",
    "espn_id": "4570037",
-   "comment": "Ferguson (ankle) doesn't have an injury designation for Sunday's game against the Commanders, Adam Caplan of SiriusXM NFL Radio reports."
+   "comment": "Ferguson (ankle) was expected to return for Sunday's game against Washington, but he's been ruled out after injuring his hamstring during Friday's practice, Cam"
   },
   "name:LA:mylesgarrett": {
    "name": "Myles Garrett",
@@ -3855,7 +3855,7 @@
    "pos": "OT",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-06T17:16:00-05:00",
+   "date": "2026-11-06T17:47:00-05:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
@@ -4183,6 +4183,36 @@
    "detail": null,
    "espn_id": "4035537"
   },
+  "name:PHI:jonathanjones": {
+   "name": "Jonathan Jones",
+   "team": "PHI",
+   "pos": "CB",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-11-06T17:32:00-05:00",
+   "detail": "Hamstring",
+   "espn_id": "2971027"
+  },
+  "name:PHI:michaelcarter": {
+   "name": "Michael Carter II",
+   "team": "PHI",
+   "pos": "CB",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-11-06T17:32:00-05:00",
+   "detail": "Abdomen",
+   "espn_id": "4240456"
+  },
+  "name:PHI:jihaadcampbell": {
+   "name": "Jihaad Campbell",
+   "team": "PHI",
+   "pos": "LB",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-11-06T17:31:00-05:00",
+   "detail": "Hamstring",
+   "espn_id": "4685287"
+  },
   "00-0036912": {
    "name": "DeVonta Smith",
    "team": "PHI",
@@ -4226,16 +4256,6 @@
    "espn_id": "3926231",
    "comment": "out"
   },
-  "name:PHI:jakeelliott": {
-   "name": "Jake Elliott",
-   "team": "PHI",
-   "pos": "PK",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T19:22:00-05:00",
-   "detail": "Ankle",
-   "espn_id": "3050478"
-  },
   "00-0038400": {
    "name": "Tanner McKee",
    "team": "PHI",
@@ -4246,36 +4266,6 @@
    "detail": "Ribs",
    "espn_id": "4685201",
    "comment": "McKee (rib) was limited in Thursday's practice."
-  },
-  "name:PHI:jihaadcampbell": {
-   "name": "Jihaad Campbell",
-   "team": "PHI",
-   "pos": "LB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T21:51:00-05:00",
-   "detail": "Hamstring",
-   "espn_id": "4685287"
-  },
-  "name:PHI:jonathangreenard": {
-   "name": "Jonathan Greenard",
-   "team": "PHI",
-   "pos": "LB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T18:18:00-05:00",
-   "detail": "Ankle",
-   "espn_id": "3916409"
-  },
-  "name:PHI:jalyxhunt": {
-   "name": "Jalyx Hunt",
-   "team": "PHI",
-   "pos": "LB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T18:18:00-05:00",
-   "detail": "Knee",
-   "espn_id": "4571162"
   },
   "00-0039398": {
    "name": "Joe Milton",
@@ -4316,16 +4306,6 @@
    "date": "2026-11-03T21:21:00-05:00",
    "detail": null,
    "espn_id": "4715355"
-  },
-  "name:PHI:jonathanjones": {
-   "name": "Jonathan Jones",
-   "team": "PHI",
-   "pos": "CB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-03T08:03:00-05:00",
-   "detail": "Hamstring",
-   "espn_id": "2971027"
   },
   "00-0041483": {
    "name": "Eli Stowers",
@@ -4376,16 +4356,6 @@
    "date": "2026-11-01T23:52:00-05:00",
    "detail": null,
    "espn_id": "3121023"
-  },
-  "name:PHI:michaelcarter": {
-   "name": "Michael Carter II",
-   "team": "PHI",
-   "pos": "CB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-01T23:02:00-05:00",
-   "detail": "Abdomen",
-   "espn_id": "4240456"
   },
   "name:PIT:doneikoslaughter": {
    "name": "Doneiko Slaughter",
@@ -4785,6 +4755,16 @@
    "detail": null,
    "espn_id": "4696044"
   },
+  "00-0035704": {
+   "name": "Drew Lock",
+   "team": "SEA",
+   "pos": "QB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-06T17:26:00-05:00",
+   "detail": null,
+   "espn_id": "3924327"
+  },
   "00-0037545": {
    "name": "Rashid Shaheed",
    "team": "SEA",
@@ -4845,17 +4825,6 @@
    "date": "2026-11-05T19:32:00-05:00",
    "detail": "Back",
    "espn_id": "4567226"
-  },
-  "00-0035704": {
-   "name": "Drew Lock",
-   "team": "SEA",
-   "pos": "QB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T19:13:00-05:00",
-   "detail": "Elbow",
-   "espn_id": "3924327",
-   "comment": "Lock (right elbow) practiced in a limited capacity Thursday, John Boyle of the Seahawks' official site reports."
   },
   "00-0034869": {
    "name": "Sam Darnold",
@@ -5303,6 +5272,16 @@
    "detail": "Foot",
    "espn_id": "4573318"
   },
+  "00-0036628": {
+   "name": "John Bates",
+   "team": "WAS",
+   "pos": "TE",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-06T17:41:00-05:00",
+   "detail": null,
+   "espn_id": "4048228"
+  },
   "00-0037742": {
    "name": "Treylon Burks",
    "team": "WAS",
@@ -5334,37 +5313,6 @@
    "date": "2026-11-04T22:19:00-05:00",
    "detail": "Pectoral",
    "espn_id": "4430560"
-  },
-  "name:WAS:shytuttle": {
-   "name": "Shy Tuttle",
-   "team": "WAS",
-   "pos": "DT",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T19:33:00-05:00",
-   "detail": "Shoulder",
-   "espn_id": "3886601"
-  },
-  "00-0036628": {
-   "name": "John Bates",
-   "team": "WAS",
-   "pos": "TE",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T19:33:00-05:00",
-   "detail": "Shoulder",
-   "espn_id": "4048228",
-   "comment": "questionable"
-  },
-  "name:WAS:samcosmi": {
-   "name": "Sam Cosmi",
-   "team": "WAS",
-   "pos": "G",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T19:33:00-05:00",
-   "detail": "Knee",
-   "espn_id": "4262199"
   },
   "name:WAS:daronpayne": {
    "name": "Daron Payne",
@@ -6005,6 +5953,10 @@
   "00-0041106": {
    "status": "Out",
    "at": "2026-11-05T19:10:00-05:00"
+  },
+  "00-0039364": {
+   "status": "Questionable",
+   "at": "2026-11-06T18:00:13-05:00"
   }
  }
 }

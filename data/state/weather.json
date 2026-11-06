@@ -121,11 +121,11 @@
   "2026_09_TB_CHI": {
    "temp_f": 54.7,
    "wind_mph": 9.0,
-   "gust_mph": 21.3,
+   "gust_mph": 23.0,
    "rain_pct": 0,
    "rain_in": 0.0,
    "roof": "outdoors",
-   "at": "2026-11-06T15:00:01-05:00",
+   "at": "2026-11-06T18:00:13-05:00",
    "text": "55\u00b0F, wind 9 mph"
   }
  }
