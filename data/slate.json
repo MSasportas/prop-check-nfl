@@ -18,8 +18,8 @@
  "season": 2026,
  "week": 9,
  "label": "Week 9",
- "generated_at": "2026-11-06T00:00:00-05:00",
- "status_at": "2026-11-06T00:00:00-05:00",
+ "generated_at": "2026-11-06T00:20:01-05:00",
+ "status_at": "2026-11-06T00:20:01-05:00",
  "valid_until": "2026-11-10T06:00:00-05:00",
  "next_check": "2026-11-07T09:30:00-05:00",
  "status": {
@@ -43,17 +43,17 @@
    "at": "2026-11-05T12:30:00-05:00"
   },
   "pool": {
-   "credits_left": 3150,
+   "credits_left": 3114,
    "keys": 7,
    "keys_live": 7,
-   "keys_shared": 1,
+   "keys_shared": 2,
    "days_left": 7,
    "low": false,
    "empty": false
   },
   "last_run": {
    "ok": true,
-   "at": "2026-11-06T00:00:00-05:00",
+   "at": "2026-11-06T00:20:01-05:00",
    "failed_step": null
   }
  },

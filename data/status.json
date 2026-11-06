@@ -3,10 +3,10 @@
  "season": 2026,
  "week": 9,
  "slate": "2026-W09",
- "started_at": "2026-11-06T00:00:00-05:00",
- "status_at": "2026-11-06T00:00:00-05:00",
- "finished_at": "2026-11-06T00:00:01-05:00",
- "last_ok_at": "2026-11-06T00:00:00-05:00",
+ "started_at": "2026-11-06T00:20:01-05:00",
+ "status_at": "2026-11-06T00:20:01-05:00",
+ "finished_at": "2026-11-06T00:20:02-05:00",
+ "last_ok_at": "2026-11-06T00:20:01-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -31,8 +31,8 @@
   },
   {
    "step": "injuries",
-   "status": "ok",
-   "note": "espn: 95 out, 174 questionable; inactives posted for 2 team(s)"
+   "status": "skipped",
+   "note": "read at 12:00 AM; inactives posted for 2 team(s)"
   },
   {
    "step": "weather",
@@ -100,12 +100,12 @@
   },
   {
    "n": 4,
-   "left": 500,
-   "shared": false
+   "left": 495,
+   "shared": true
   },
   {
    "n": 5,
-   "left": 292,
+   "left": 261,
    "shared": true
   },
   {
@@ -119,7 +119,7 @@
    "shared": false
   }
  ],
- "pool_total": 3150,
+ "pool_total": 3114,
  "allowance": 84.13,
  "tier": "full",
  "games_left_before_reset": 15,
@@ -145,7 +145,7 @@
  "runner": {
   "event": "workflow_dispatch",
   "run_id": "42164817026",
-  "iteration": 2,
+  "iteration": 4,
   "chain_link": 12,
   "chain_started_at": "2026-11-05T13:54:23-05:00",
   "run_started_at": "2026-11-05T23:50:13-05:00"
