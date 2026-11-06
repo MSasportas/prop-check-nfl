@@ -11,14 +11,14 @@
    "text": "69\u00b0F, wind 4 mph"
   },
   "2026_09_CIN_ATL": {
-   "temp_f": 59.3,
-   "wind_mph": 5.0,
-   "gust_mph": 14.3,
-   "rain_pct": 8,
+   "temp_f": 59.2,
+   "wind_mph": 4.3,
+   "gust_mph": 14.5,
+   "rain_pct": 6,
    "rain_in": 0.0,
    "roof": "retractable",
-   "at": "2026-11-06T04:00:00-05:00",
-   "text": "59\u00b0F, wind 5 mph (roof may be closed)"
+   "at": "2026-11-06T07:00:00-05:00",
+   "text": "59\u00b0F, wind 4 mph (roof may be closed)"
   },
   "2026_09_CLE_NO": {
    "roof": "dome",
