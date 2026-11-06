@@ -3,10 +3,10 @@
  "season": 2026,
  "week": 9,
  "slate": "2026-W09",
- "started_at": "2026-11-06T04:00:00-05:00",
- "status_at": "2026-11-06T04:00:00-05:00",
- "finished_at": "2026-11-06T04:00:03-05:00",
- "last_ok_at": "2026-11-06T04:00:00-05:00",
+ "started_at": "2026-11-06T05:00:01-05:00",
+ "status_at": "2026-11-06T05:00:01-05:00",
+ "finished_at": "2026-11-06T05:00:02-05:00",
+ "last_ok_at": "2026-11-06T05:00:01-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -37,7 +37,7 @@
   {
    "step": "weather",
    "status": "ok",
-   "note": "1 read, 0 failed, 2 indoors"
+   "note": "2 read, 0 failed, 2 indoors"
   },
   {
    "step": "odds",
@@ -141,14 +141,14 @@
  "odds_notes": [],
  "runner": {
   "event": "workflow_dispatch",
-  "run_id": "42185723014",
+  "run_id": "42192951697",
   "iteration": 2,
-  "chain_link": 162,
+  "chain_link": 210,
   "chain_started_at": "2026-11-05T13:54:23-05:00",
-  "run_started_at": "2026-11-06T03:10:05-05:00"
+  "run_started_at": "2026-11-06T04:10:05-05:00"
  },
  "live_page": {
-  "checked_at": "2026-11-06T04:00:00-05:00",
+  "checked_at": "2026-11-06T05:00:01-05:00",
   "http": 200,
   "is_page": true
  }
