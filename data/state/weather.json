@@ -91,21 +91,21 @@
   "2026_09_LV_SF": {
    "temp_f": 72.2,
    "wind_mph": 5.5,
-   "gust_mph": 5.6,
+   "gust_mph": 6.3,
    "rain_pct": 0,
    "rain_in": 0.0,
    "roof": "outdoors",
-   "at": "2026-11-06T14:00:14-05:00",
+   "at": "2026-11-06T17:30:01-05:00",
    "text": "72\u00b0F, wind 6 mph"
   },
   "2026_09_ARI_SEA": {
    "temp_f": 54.7,
    "wind_mph": 12.9,
-   "gust_mph": 25.3,
-   "rain_pct": 6,
+   "gust_mph": 23.7,
+   "rain_pct": 28,
    "rain_in": 0.004,
    "roof": "outdoors",
-   "at": "2026-11-06T14:00:14-05:00",
+   "at": "2026-11-06T17:30:01-05:00",
    "text": "55\u00b0F, wind 13 mph"
   },
   "2026_09_GB_NE": {
@@ -115,7 +115,7 @@
    "rain_pct": 0,
    "rain_in": 0.0,
    "roof": "outdoors",
-   "at": "2026-11-06T14:00:14-05:00",
+   "at": "2026-11-06T17:30:01-05:00",
    "text": "53\u00b0F, wind 12 mph"
   },
   "2026_09_TB_CHI": {

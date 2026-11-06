@@ -1,5 +1,5 @@
 {
- "at": "2026-11-06T17:00:00-05:00",
+ "at": "2026-11-06T17:30:01-05:00",
  "source": "espn",
  "players": {
   "00-0037157": {
@@ -57,12 +57,11 @@
    "name": "Michael Wilson",
    "team": "ARI",
    "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
+   "status": "Active",
+   "fantasy": null,
    "date": "2026-11-05T19:19:00-05:00",
-   "detail": "Ribs",
-   "espn_id": "4360761",
-   "comment": "Wilson (rest/ribs) was a limited practice participant Thursday, Darren Urban of the Cardinals' official site reports."
+   "detail": null,
+   "espn_id": "4360761"
   },
   "00-0039041": {
    "name": "Elijah Higgins",
@@ -615,13 +614,44 @@
    "espn_id": "4685526",
    "comment": "Randall (neck) is officially listed as questionable for Thursday's game versus the Jaguars, Ryan Mink of the Ravens' official site reports."
   },
+  "00-0039901": {
+   "name": "Keon Coleman",
+   "team": "BUF",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-06T17:05:00-05:00",
+   "detail": "Shoulder",
+   "espn_id": "4635008",
+   "comment": "Coleman (shoulder) was a limited practice participant Friday."
+  },
+  "00-0035537": {
+   "name": "Ty Johnson",
+   "team": "BUF",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-06T17:03:00-05:00",
+   "detail": null,
+   "espn_id": "3915411"
+  },
+  "name:BUF:samfranklin": {
+   "name": "Sam Franklin Jr.",
+   "team": "BUF",
+   "pos": "S",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-06T17:01:00-05:00",
+   "detail": "Illness",
+   "espn_id": "4044133"
+  },
   "00-0038933": {
    "name": "Dalton Kincaid",
    "team": "BUF",
    "pos": "TE",
    "status": "Active",
    "fantasy": null,
-   "date": "2026-11-06T16:48:00-05:00",
+   "date": "2026-11-06T16:59:00-05:00",
    "detail": null,
    "espn_id": "4385690"
   },
@@ -631,32 +661,10 @@
    "pos": "WR",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-06T14:47:00-05:00",
+   "date": "2026-11-06T16:55:00-05:00",
    "detail": "Shoulder",
    "espn_id": "3915416",
-   "comment": "Moore (shoulder) was still wearing a non-contact jersey at Friday's practice, Sal Capaccio of WGR Sports Radio 550 Buffalo reports."
-  },
-  "00-0035537": {
-   "name": "Ty Johnson",
-   "team": "BUF",
-   "pos": "RB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T17:23:00-05:00",
-   "detail": "Illness",
-   "espn_id": "3915411",
-   "comment": "Johnson (illness) did not practice Thursday."
-  },
-  "00-0039901": {
-   "name": "Keon Coleman",
-   "team": "BUF",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T17:21:00-05:00",
-   "detail": "Shoulder",
-   "espn_id": "4635008",
-   "comment": "Coleman (shoulder) was limited in practice Thursday."
+   "comment": "Moore (shoulder) was a limited practice participant Friday."
   },
   "name:BUF:diondawkins": {
    "name": "Dion Dawkins",
@@ -1914,6 +1922,37 @@
    "detail": null,
    "espn_id": "5123663"
   },
+  "name:GB:seanrhyan": {
+   "name": "Sean Rhyan",
+   "team": "GB",
+   "pos": "G",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-11-06T16:51:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "4426411"
+  },
+  "name:GB:zairefranklin": {
+   "name": "Zaire Franklin",
+   "team": "GB",
+   "pos": "LB",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-11-06T16:51:00-05:00",
+   "detail": "Shin",
+   "espn_id": "3124005"
+  },
+  "00-0038589": {
+   "name": "Josh Whyle",
+   "team": "GB",
+   "pos": "TE",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-11-06T16:50:00-05:00",
+   "detail": "Concussion",
+   "espn_id": "4360086",
+   "comment": "out"
+  },
   "00-0039811": {
    "name": "MarShawn Lloyd",
    "team": "GB",
@@ -1949,31 +1988,11 @@
    "name": "Travis Glover",
    "team": "GB",
    "pos": "OT",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
+   "status": "Out",
+   "fantasy": "OUT",
    "date": "2026-11-05T20:29:00-05:00",
    "detail": "Knee",
    "espn_id": "4361904"
-  },
-  "name:GB:seanrhyan": {
-   "name": "Sean Rhyan",
-   "team": "GB",
-   "pos": "G",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T20:25:00-05:00",
-   "detail": "Ankle",
-   "espn_id": "4426411"
-  },
-  "name:GB:aaronbanks": {
-   "name": "Aaron Banks",
-   "team": "GB",
-   "pos": "G",
-   "status": "Questionable",
-   "fantasy": null,
-   "date": "2026-11-05T20:20:00-05:00",
-   "detail": null,
-   "espn_id": "4242390"
   },
   "name:GB:keiseannixon": {
    "name": "Keisean Nixon",
@@ -2005,27 +2024,6 @@
    "detail": "Ankle",
    "espn_id": "3149687",
    "comment": "Brooks (ankle) was designated to return from injured reserve by the Packers on Wednesday, per the NFL's official transaction log."
-  },
-  "00-0038589": {
-   "name": "Josh Whyle",
-   "team": "GB",
-   "pos": "TE",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T16:59:00-05:00",
-   "detail": "Concussion",
-   "espn_id": "4360086",
-   "comment": "questionable"
-  },
-  "name:GB:zairefranklin": {
-   "name": "Zaire Franklin",
-   "team": "GB",
-   "pos": "LB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T15:59:00-05:00",
-   "detail": "Shin",
-   "espn_id": "3124005"
   },
   "00-0040142": {
    "name": "Kaleb Johnson",
@@ -2077,6 +2075,16 @@
    "detail": null,
    "espn_id": "4701936"
   },
+  "name:HOU:reedblankenship": {
+   "name": "Reed Blankenship",
+   "team": "HOU",
+   "pos": "S",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-11-06T17:06:00-05:00",
+   "detail": "Concussion",
+   "espn_id": "4243956"
+  },
   "00-0040583": {
    "name": "Woody Marks",
    "team": "HOU",
@@ -2096,16 +2104,6 @@
    "date": "2026-11-05T18:05:00-05:00",
    "detail": null,
    "espn_id": "4362504"
-  },
-  "name:HOU:reedblankenship": {
-   "name": "Reed Blankenship",
-   "team": "HOU",
-   "pos": "S",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T22:08:00-05:00",
-   "detail": "Concussion",
-   "espn_id": "4243956"
   },
   "00-0035685": {
    "name": "David Montgomery",
@@ -2892,6 +2890,36 @@
    "detail": "Groin",
    "espn_id": "4430330"
   },
+  "name:LAC:kayodeawosika": {
+   "name": "Kayode Awosika",
+   "team": "LAC",
+   "pos": "G",
+   "status": "Doubtful",
+   "fantasy": "DOUBTFUL",
+   "date": "2026-11-06T17:13:00-05:00",
+   "detail": "Lower Leg",
+   "espn_id": "4040842"
+  },
+  "name:LAC:kendallwilliamson": {
+   "name": "Kendall Williamson",
+   "team": "LAC",
+   "pos": "S",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-11-06T17:12:00-05:00",
+   "detail": "Calf",
+   "espn_id": "4360745"
+  },
+  "name:LAC:deaneleonard": {
+   "name": "Deane Leonard",
+   "team": "LAC",
+   "pos": "CB",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-11-06T17:12:00-05:00",
+   "detail": "Concussion",
+   "espn_id": "4690171"
+  },
   "00-0033885": {
    "name": "David Njoku",
    "team": "LAC",
@@ -2913,16 +2941,6 @@
    "detail": "Undisclosed",
    "espn_id": "2579621"
   },
-  "name:LAC:kendallwilliamson": {
-   "name": "Kendall Williamson",
-   "team": "LAC",
-   "pos": "S",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T18:47:00-05:00",
-   "detail": "Calf",
-   "espn_id": "4360745"
-  },
   "00-0041550": {
    "name": "Brenen Thompson",
    "team": "LAC",
@@ -2943,46 +2961,6 @@
    "date": "2026-11-03T22:16:00-05:00",
    "detail": null,
    "espn_id": "4430870"
-  },
-  "name:LAC:rodneyshelley": {
-   "name": "Rodney Shelley",
-   "team": "LAC",
-   "pos": "CB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-03T08:03:00-05:00",
-   "detail": "Hamstring",
-   "espn_id": "4838693"
-  },
-  "name:LAC:dontejackson": {
-   "name": "Donte Jackson",
-   "team": "LAC",
-   "pos": "CB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-03T08:03:00-05:00",
-   "detail": "Hamstring",
-   "espn_id": "3843769"
-  },
-  "name:LAC:deaneleonard": {
-   "name": "Deane Leonard",
-   "team": "LAC",
-   "pos": "CB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-03T08:03:00-05:00",
-   "detail": "Concussion",
-   "espn_id": "4690171"
-  },
-  "name:LAC:kayodeawosika": {
-   "name": "Kayode Awosika",
-   "team": "LAC",
-   "pos": "G",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-03T08:03:00-05:00",
-   "detail": "Lower Leg",
-   "espn_id": "4040842"
   },
   "00-0038046": {
    "name": "Charlie Kolar",
@@ -3094,6 +3072,17 @@
    "detail": "Hamstring",
    "espn_id": "3691739"
   },
+  "00-0040737": {
+   "name": "Terrance Ferguson",
+   "team": "LA",
+   "pos": "TE",
+   "status": "Injured Reserve",
+   "fantasy": "IR-R",
+   "date": "2026-11-06T17:02:00-05:00",
+   "detail": "Hamstring",
+   "espn_id": "4570037",
+   "comment": "Ferguson (ankle) doesn't have an injury designation for Sunday's game against the Commanders, Adam Caplan of SiriusXM NFL Radio reports."
+  },
   "name:LA:mylesgarrett": {
    "name": "Myles Garrett",
    "team": "LA",
@@ -3144,17 +3133,6 @@
    "date": "2026-11-06T14:57:00-05:00",
    "detail": "Back",
    "espn_id": "4426405"
-  },
-  "00-0040737": {
-   "name": "Terrance Ferguson",
-   "team": "LA",
-   "pos": "TE",
-   "status": "Injured Reserve",
-   "fantasy": "IR-R",
-   "date": "2026-11-06T14:14:00-05:00",
-   "detail": "Ankle",
-   "espn_id": "4570037",
-   "comment": "Head coach Sean McVay said Friday that Ferguson (ankle) is expected to play in Sunday's game at Washington, Sarah Barshop of ESPN.com reports."
   },
   "00-0039751": {
    "name": "Jordan Whittington",
@@ -3877,7 +3855,7 @@
    "pos": "OT",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-06T16:46:00-05:00",
+   "date": "2026-11-06T17:16:00-05:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
@@ -4581,27 +4559,15 @@
    "detail": "Triceps",
    "espn_id": "3047495"
   },
-  "00-0035719": {
-   "name": "Deebo Samuel Sr.",
-   "team": "SF",
-   "pos": "WR",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-11-06T16:06:00-05:00",
-   "detail": "Hamstring",
-   "espn_id": "3126486",
-   "comment": "Samuel (hamstring) didn't participate in the early portion of Friday's practice, Nick Wagoner of ESPN.com reports."
-  },
   "00-0033280": {
    "name": "Christian McCaffrey",
    "team": "SF",
    "pos": "RB",
-   "status": "Questionable",
+   "status": "Active",
    "fantasy": null,
-   "date": "2026-11-06T15:54:00-05:00",
+   "date": "2026-11-06T17:12:00-05:00",
    "detail": null,
-   "espn_id": "3117251",
-   "comment": "McCaffrey (hamstring) took part in the open portion of Friday's practice, Nick Wagoner of ESPN reports."
+   "espn_id": "3117251"
   },
   "00-0031408": {
    "name": "Mike Evans",
@@ -4609,10 +4575,32 @@
    "pos": "WR",
    "status": "Out",
    "fantasy": "OUT",
-   "date": "2026-11-06T15:50:00-05:00",
+   "date": "2026-11-06T17:05:00-05:00",
    "detail": "Achilles",
    "espn_id": "16737",
-   "comment": "Evans (Achilles) didn't participate in the portion of Friday's practice open to the media, Nick Wagoner of ESPN.com reports."
+   "comment": "Evans (Achilles) has been ruled out for Sunday's game against the Raiders, Nick Wagoner of ESPN reports."
+  },
+  "00-0034775": {
+   "name": "Christian Kirk",
+   "team": "SF",
+   "pos": "WR",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-11-06T17:02:00-05:00",
+   "detail": "Knee - Meniscus",
+   "espn_id": "3895856",
+   "comment": "Kirk (knee) will miss Sunday's game against Las Vegas and may need surgery for a meniscus injury, David Lombardi of SFStandard.com reports."
+  },
+  "00-0035719": {
+   "name": "Deebo Samuel Sr.",
+   "team": "SF",
+   "pos": "WR",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-11-06T17:00:00-05:00",
+   "detail": "Hamstring",
+   "espn_id": "3126486",
+   "comment": "Samuel (hamstring) has been ruled out for Sunday's game against the Raiders, Nick Wagoner of ESPN.com reports."
   },
   "name:SF:brandonaiyuk": {
    "name": "Brandon Aiyuk",
@@ -4635,17 +4623,6 @@
    "detail": "Ankle",
    "espn_id": "3043116",
    "comment": "Robinson (ankle) practiced on a limited basis Thursday."
-  },
-  "00-0034775": {
-   "name": "Christian Kirk",
-   "team": "SF",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T18:02:00-05:00",
-   "detail": "Knee",
-   "espn_id": "3895856",
-   "comment": "Kirk (knee) didn't practice Thursday, Sam Warren of The Athletic reports."
   },
   "name:SF:marquessigle": {
    "name": "Marques Sigle",
