@@ -1051,7 +1051,7 @@
   },
   "BAL": {
    "confirmed": true,
-   "count": 4,
+   "count": 5,
    "players": [
     {
      "pid": null,
@@ -1072,6 +1072,11 @@
      "pid": "00-0039577",
      "name": "Kedon Slovis",
      "pos": "QB"
+    },
+    {
+     "pid": null,
+     "name": "Nate Wiggins",
+     "pos": "CB"
     }
    ],
    "confirmed_at": "2026-11-05T19:00:01-05:00"

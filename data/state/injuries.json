@@ -1,28 +1,28 @@
 {
- "at": "2026-11-05T19:20:01-05:00",
+ "at": "2026-11-05T19:30:00-05:00",
  "source": "espn",
  "players": {
-  "00-0038559": {
-   "name": "Michael Wilson",
-   "team": "ARI",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T15:23:00-05:00",
-   "detail": "Ribs",
-   "espn_id": "4360761",
-   "comment": "Wilson (ribs) remained in a yellow non-contact jersey at Thursday's practice, Bo Brack of GoPHNX.com reports."
-  },
   "00-0037157": {
    "name": "Bam Knight",
    "team": "ARI",
    "pos": "RB",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T15:12:00-05:00",
+   "date": "2026-11-05T19:22:00-05:00",
    "detail": "Concussion",
    "espn_id": "4427728",
-   "comment": "Knight (concussion) wasn't present for Thursday's practice, Theo Mackie of The Arizona Republic reports."
+   "comment": "Knight (concussion) officially didn't practice Thursday, Darren Urban of the Cardinals' official site reports."
+  },
+  "00-0038559": {
+   "name": "Michael Wilson",
+   "team": "ARI",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-05T19:19:00-05:00",
+   "detail": "Ribs",
+   "espn_id": "4360761",
+   "comment": "Wilson (rest/ribs) was a limited practice participant Thursday, Darren Urban of the Cardinals' official site reports."
   },
   "name:ARI:isaiahadams": {
    "name": "Isaiah Adams",
@@ -390,6 +390,16 @@
    "detail": "Undisclosed",
    "espn_id": "5150660"
   },
+  "name:BAL:natewiggins": {
+   "name": "Nate Wiggins",
+   "team": "BAL",
+   "pos": "CB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-05T19:12:00-05:00",
+   "detail": "Illness",
+   "espn_id": "4601278"
+  },
   "00-0039577": {
    "name": "Kedon Slovis",
    "team": "BAL",
@@ -484,16 +494,6 @@
    "detail": "Neck",
    "espn_id": "4685526",
    "comment": "Randall (neck) is officially listed as questionable for Thursday's game versus the Jaguars, Ryan Mink of the Ravens' official site reports."
-  },
-  "name:BAL:natewiggins": {
-   "name": "Nate Wiggins",
-   "team": "BAL",
-   "pos": "CB",
-   "status": "Out",
-   "fantasy": "INACTIVE",
-   "date": "2026-11-04T20:06:00-05:00",
-   "detail": "Illness",
-   "espn_id": "4601278"
   },
   "00-0040981": {
    "name": "Joe Fagnano",
@@ -2745,10 +2745,10 @@
    "pos": "WR",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T17:42:00-05:00",
+   "date": "2026-11-05T19:11:00-05:00",
    "detail": "Back",
    "espn_id": "4432775",
-   "comment": "questionable"
+   "comment": "Thornton (back) was a limited participant at the Raiders' practice Thursday, Paul Gutierrez of the team's official site reports."
   },
   "00-0034365": {
    "name": "Ian Thomas",
@@ -3987,7 +3987,7 @@
    "pos": "OT",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T19:05:00-05:00",
+   "date": "2026-11-05T19:26:00-05:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
@@ -4910,6 +4910,17 @@
    "detail": null,
    "espn_id": "4696044"
   },
+  "00-0035704": {
+   "name": "Drew Lock",
+   "team": "SEA",
+   "pos": "QB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-05T19:13:00-05:00",
+   "detail": "Elbow",
+   "espn_id": "3924327",
+   "comment": "Lock (right elbow) practiced in a limited capacity Thursday, John Boyle of the Seahawks' official site reports."
+  },
   "00-0034869": {
    "name": "Sam Darnold",
    "team": "SEA",
@@ -4971,17 +4982,6 @@
    "date": "2026-11-04T19:05:00-05:00",
    "detail": null,
    "espn_id": "4432734"
-  },
-  "00-0035704": {
-   "name": "Drew Lock",
-   "team": "SEA",
-   "pos": "QB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T14:03:00-05:00",
-   "detail": "Elbow",
-   "espn_id": "3924327",
-   "comment": "Lock (elbow) is slated to start Sunday's game against the Cardinals, per NFL reporter Andrew Siciliano."
   },
   "00-0040648": {
    "name": "Tory Horton",
