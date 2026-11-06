@@ -1,5 +1,5 @@
 {
- "at": "2026-11-06T12:00:01-05:00",
+ "at": "2026-11-06T12:30:14-05:00",
  "source": "espn",
  "players": {
   "name:ARI:jaydenwilliams": {
@@ -63,16 +63,6 @@
    "detail": "Ribs",
    "espn_id": "4360761",
    "comment": "Wilson (rest/ribs) was a limited practice participant Thursday, Darren Urban of the Cardinals' official site reports."
-  },
-  "00-0033119": {
-   "name": "Jacoby Brissett",
-   "team": "ARI",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-04T14:50:00-05:00",
-   "detail": null,
-   "espn_id": "2578570"
   },
   "00-0039041": {
    "name": "Elijah Higgins",
@@ -217,6 +207,16 @@
    "detail": null,
    "espn_id": "4361307"
   },
+  "name:ATL:divinedeablo": {
+   "name": "Divine Deablo",
+   "team": "ATL",
+   "pos": "LB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-06T12:10:00-05:00",
+   "detail": "Forearm",
+   "espn_id": "4037626"
+  },
   "00-0037746": {
    "name": "Brian Robinson Jr.",
    "team": "ATL",
@@ -248,16 +248,6 @@
    "detail": "Hip",
    "espn_id": "4431210",
    "comment": "Collins (hip) was a full participant in Thursday's practice, D. Orlando Ledbetter of BowTieSports.com reports."
-  },
-  "name:ATL:divinedeablo": {
-   "name": "Divine Deablo",
-   "team": "ATL",
-   "pos": "LB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T22:25:00-05:00",
-   "detail": "Forearm",
-   "espn_id": "4037626"
   },
   "name:ATL:yasirabdullah": {
    "name": "Yasir Abdullah",
@@ -409,6 +399,16 @@
    "date": "2026-10-30T22:43:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "5150660"
+  },
+  "00-0033119": {
+   "name": "Jacoby Brissett",
+   "team": "BAL",
+   "pos": "QB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-06T11:20:00-05:00",
+   "detail": null,
+   "espn_id": "2578570"
   },
   "00-0034975": {
    "name": "Justice Hill",
@@ -1144,15 +1144,15 @@
    "detail": null,
    "espn_id": "15168"
   },
-  "name:CIN:jordanbattle": {
-   "name": "Jordan Battle",
+  "name:CIN:kyledugger": {
+   "name": "Kyle Dugger",
    "team": "CIN",
    "pos": "S",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T11:32:00-05:00",
-   "detail": "Hamstring",
-   "espn_id": "4567098"
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-11-06T11:48:00-05:00",
+   "detail": "Quadriceps",
+   "espn_id": "4401811"
   },
   "name:CIN:cashiushowell": {
    "name": "Cashius Howell",
@@ -1163,16 +1163,6 @@
    "date": "2026-11-03T20:35:00-05:00",
    "detail": "Wrist",
    "espn_id": "4710752"
-  },
-  "name:CIN:kyledugger": {
-   "name": "Kyle Dugger",
-   "team": "CIN",
-   "pos": "S",
-   "status": "Questionable",
-   "fantasy": "OUT",
-   "date": "2026-11-03T08:03:00-05:00",
-   "detail": "Quadriceps",
-   "espn_id": "4401811"
   },
   "00-0033526": {
    "name": "Samaje Perine",
@@ -2477,6 +2467,36 @@
    "detail": null,
    "espn_id": "4431459"
   },
+  "00-0038935": {
+   "name": "Brenton Strange",
+   "team": "JAX",
+   "pos": "TE",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-06T12:07:00-05:00",
+   "detail": null,
+   "espn_id": "4430539"
+  },
+  "00-0040718": {
+   "name": "Travis Hunter",
+   "team": "JAX",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-06T12:05:00-05:00",
+   "detail": null,
+   "espn_id": "4685415"
+  },
+  "00-0039893": {
+   "name": "Brian Thomas Jr.",
+   "team": "JAX",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-06T12:01:00-05:00",
+   "detail": null,
+   "espn_id": "4432773"
+  },
   "00-0038611": {
    "name": "Chris Rodriguez Jr.",
    "team": "JAX",
@@ -2597,36 +2617,6 @@
    "date": "2026-11-03T20:05:00-05:00",
    "detail": "Knee",
    "espn_id": "3915520"
-  },
-  "00-0039893": {
-   "name": "Brian Thomas Jr.",
-   "team": "JAX",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-03T18:56:00-05:00",
-   "detail": null,
-   "espn_id": "4432773"
-  },
-  "00-0040718": {
-   "name": "Travis Hunter",
-   "team": "JAX",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-02T22:10:00-05:00",
-   "detail": null,
-   "espn_id": "4685415"
-  },
-  "00-0038935": {
-   "name": "Brenton Strange",
-   "team": "JAX",
-   "pos": "TE",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-02T00:19:00-05:00",
-   "detail": null,
-   "espn_id": "4430539"
   },
   "00-0038519": {
    "name": "Nikko Remigio",
@@ -3662,6 +3652,28 @@
    "detail": null,
    "espn_id": "4262921"
   },
+  "00-0035676": {
+   "name": "A.J. Brown",
+   "team": "NE",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-06T12:09:00-05:00",
+   "detail": "Knee",
+   "espn_id": "4047646",
+   "comment": "Brown (knee/ankle) remained sidelined at practice Friday, Doug Kyed of the Boston Herald reports."
+  },
+  "00-0033090": {
+   "name": "Hunter Henry",
+   "team": "NE",
+   "pos": "TE",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-06T12:02:00-05:00",
+   "detail": "Foot",
+   "espn_id": "3046439",
+   "comment": "Henry (foot) is present for the media-access portion of Friday's practice, Mike Reiss of ESPN.com reports."
+  },
   "00-0040734": {
    "name": "TreVeyon Henderson",
    "team": "NE",
@@ -3692,28 +3704,6 @@
    "date": "2026-11-05T16:54:00-05:00",
    "detail": "Foot",
    "espn_id": "4241720"
-  },
-  "00-0035676": {
-   "name": "A.J. Brown",
-   "team": "NE",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T16:38:00-05:00",
-   "detail": "Knee",
-   "espn_id": "4047646",
-   "comment": "Brown (ankle/knee) was a non-participant at Thursday's practice, Rob Demovsky of ESPN.com reports."
-  },
-  "00-0033090": {
-   "name": "Hunter Henry",
-   "team": "NE",
-   "pos": "TE",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T14:37:00-05:00",
-   "detail": "Foot",
-   "espn_id": "3046439",
-   "comment": "Henry (foot) wasn't spotted at Thursday's practice, Evan Lazar of the Patriots' official site reports."
   },
   "name:NE:gregvanroten": {
    "name": "Greg Van Roten",
@@ -4026,7 +4016,7 @@
    "pos": "OT",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-06T11:16:00-05:00",
+   "date": "2026-11-06T12:17:00-05:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
@@ -5167,11 +5157,12 @@
    "name": "Emeka Egbuka",
    "team": "TB",
    "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-06T11:37:00-05:00",
-   "detail": null,
-   "espn_id": "4567750"
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-06T12:19:00-05:00",
+   "detail": "Foot",
+   "espn_id": "4567750",
+   "comment": "Buccaneers coach Todd Bowles said Friday that Egbuka (foot) will be a game-time decision for Sunday night's game against the Bears, Greg Auman of Fox Sports rep"
   },
   "name:TB:tristanwirfs": {
    "name": "Tristan Wirfs",
