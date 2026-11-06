@@ -1,5 +1,5 @@
 {
- "at": "2026-11-06T00:30:00-05:00",
+ "at": "2026-11-06T01:00:01-05:00",
  "source": "espn",
  "players": {
   "name:ARI:jaydenwilliams": {
@@ -400,6 +400,26 @@
    "detail": "Undisclosed",
    "espn_id": "5150660"
   },
+  "00-0034975": {
+   "name": "Justice Hill",
+   "team": "BAL",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-06T00:39:00-05:00",
+   "detail": null,
+   "espn_id": "4038441"
+  },
+  "00-0034753": {
+   "name": "Mark Andrews",
+   "team": "BAL",
+   "pos": "TE",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-06T00:28:00-05:00",
+   "detail": null,
+   "espn_id": "3116365"
+  },
   "00-0040981": {
    "name": "Joe Fagnano",
    "team": "BAL",
@@ -564,16 +584,6 @@
    "date": "2026-11-03T21:52:00-05:00",
    "detail": null,
    "espn_id": "4876132"
-  },
-  "00-0034975": {
-   "name": "Justice Hill",
-   "team": "BAL",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-03T19:05:00-05:00",
-   "detail": null,
-   "espn_id": "4038441"
   },
   "00-0035537": {
    "name": "Ty Johnson",
@@ -2457,6 +2467,16 @@
    "detail": null,
    "espn_id": "4431459"
   },
+  "00-0038611": {
+   "name": "Chris Rodriguez Jr.",
+   "team": "JAX",
+   "pos": "RB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-06T00:44:00-05:00",
+   "detail": null,
+   "espn_id": "4362619"
+  },
   "00-0034960": {
    "name": "Jakobi Meyers",
    "team": "JAX",
@@ -2537,16 +2557,6 @@
    "date": "2026-11-05T18:48:00-05:00",
    "detail": "Coach's Decision",
    "espn_id": "4577494"
-  },
-  "00-0038611": {
-   "name": "Chris Rodriguez Jr.",
-   "team": "JAX",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-04T15:33:00-05:00",
-   "detail": null,
-   "espn_id": "4362619"
   },
   "00-0041100": {
    "name": "Josh Cameron",
