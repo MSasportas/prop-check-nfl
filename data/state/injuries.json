@@ -1,5 +1,5 @@
 {
- "at": "2026-11-05T18:50:13-05:00",
+ "at": "2026-11-05T19:00:01-05:00",
  "source": "espn",
  "players": {
   "00-0038559": {
@@ -390,6 +390,48 @@
    "detail": "Undisclosed",
    "espn_id": "5150660"
   },
+  "00-0040876": {
+   "name": "Elijah Sarratt",
+   "team": "BAL",
+   "pos": "WR",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-05T18:53:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "5088338",
+   "comment": "inactive"
+  },
+  "00-0039577": {
+   "name": "Kedon Slovis",
+   "team": "BAL",
+   "pos": "QB",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-05T18:53:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4428512",
+   "comment": "inactive"
+  },
+  "name:BAL:emeryjones": {
+   "name": "Emery Jones Jr.",
+   "team": "BAL",
+   "pos": "OT",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-05T18:53:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4685736"
+  },
+  "name:BAL:aeneaspeebles": {
+   "name": "Aeneas Peebles",
+   "team": "BAL",
+   "pos": "DT",
+   "status": "Out",
+   "fantasy": "INACTIVE",
+   "date": "2026-11-05T18:53:00-05:00",
+   "detail": "Coach's Decision",
+   "espn_id": "4565311"
+  },
   "00-0039464": {
    "name": "Austin Reed",
    "team": "BAL",
@@ -447,8 +489,8 @@
    "name": "Nate Wiggins",
    "team": "BAL",
    "pos": "CB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
+   "status": "Out",
+   "fantasy": "INACTIVE",
    "date": "2026-11-04T20:06:00-05:00",
    "detail": "Illness",
    "espn_id": "4601278"
@@ -493,16 +535,6 @@
    "detail": "Groin",
    "espn_id": "4697745"
   },
-  "00-0039577": {
-   "name": "Kedon Slovis",
-   "team": "BAL",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-03T10:05:00-05:00",
-   "detail": null,
-   "espn_id": "4428512"
-  },
   "00-0040870": {
    "name": "Ja'Kobi Lane",
    "team": "BAL",
@@ -522,16 +554,6 @@
    "date": "2026-11-02T22:26:00-05:00",
    "detail": null,
    "espn_id": "4360939"
-  },
-  "00-0040876": {
-   "name": "Elijah Sarratt",
-   "team": "BAL",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-02T13:42:00-05:00",
-   "detail": null,
-   "espn_id": "5088338"
   },
   "00-0035537": {
    "name": "Ty Johnson",
@@ -2426,16 +2448,6 @@
    "espn_id": "4882093",
    "comment": "Tuten (ankle) is on track to play in Thursday night's game against the Ravens, after going through what Jeremy Fowler of ESPN.com describes as an extensive preg"
   },
-  "name:JAX:travonwalker": {
-   "name": "Travon Walker",
-   "team": "JAX",
-   "pos": "DE",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T19:51:00-05:00",
-   "detail": "Ribs",
-   "espn_id": "4426349"
-  },
   "00-0038611": {
    "name": "Chris Rodriguez Jr.",
    "team": "JAX",
@@ -2511,9 +2523,9 @@
    "team": "JAX",
    "pos": "WR",
    "status": "Active",
-   "fantasy": null,
+   "fantasy": "INACTIVE",
    "date": "2026-11-02T13:53:00-05:00",
-   "detail": null,
+   "detail": "Coach's Decision",
    "espn_id": "5085024"
   },
   "00-0038935": {
@@ -3965,7 +3977,7 @@
    "pos": "OT",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T18:39:00-05:00",
+   "date": "2026-11-05T18:54:00-05:00",
    "detail": "Calf",
    "espn_id": "3115303"
   },
@@ -4661,6 +4673,17 @@
    "detail": "Triceps",
    "espn_id": "3047495"
   },
+  "00-0032775": {
+   "name": "Demarcus Robinson",
+   "team": "SF",
+   "pos": "WR",
+   "status": "Injured Reserve",
+   "fantasy": "IR-R",
+   "date": "2026-11-05T18:45:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "3043116",
+   "comment": "Robinson (ankle) practiced on a limited basis Thursday."
+  },
   "00-0034775": {
    "name": "Christian Kirk",
    "team": "SF",
@@ -4735,17 +4758,6 @@
    "date": "2026-11-04T20:50:00-05:00",
    "detail": "Groin",
    "espn_id": "4240542"
-  },
-  "00-0032775": {
-   "name": "Demarcus Robinson",
-   "team": "SF",
-   "pos": "WR",
-   "status": "Injured Reserve",
-   "fantasy": "IR-R",
-   "date": "2026-11-04T20:08:00-05:00",
-   "detail": "Ankle",
-   "espn_id": "3043116",
-   "comment": "Robinson (ankle) was designated to return from injured reserve Wednesday, Matt Maiocco of NBC Sports Bay Area reports."
   },
   "name:SF:nickbosa": {
    "name": "Nick Bosa",
@@ -6115,6 +6127,14 @@
   "00-0036626": {
    "status": "Questionable",
    "at": "2026-11-05T18:50:01-05:00"
+  },
+  "00-0040876": {
+   "status": "Out",
+   "at": "2026-11-05T19:00:01-05:00"
+  },
+  "00-0039577": {
+   "status": "Out",
+   "at": "2026-11-05T19:00:01-05:00"
   }
  }
 }

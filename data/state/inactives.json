@@ -1029,10 +1029,31 @@
    "confirmed_at": null
   },
   "BAL": {
-   "confirmed": false,
-   "count": 0,
-   "players": [],
-   "confirmed_at": null
+   "confirmed": true,
+   "count": 4,
+   "players": [
+    {
+     "pid": null,
+     "name": "Aeneas Peebles",
+     "pos": "DT"
+    },
+    {
+     "pid": "00-0040876",
+     "name": "Elijah Sarratt",
+     "pos": "WR"
+    },
+    {
+     "pid": null,
+     "name": "Emery Jones Jr.",
+     "pos": "OT"
+    },
+    {
+     "pid": "00-0039577",
+     "name": "Kedon Slovis",
+     "pos": "QB"
+    }
+   ],
+   "confirmed_at": "2026-11-05T19:00:01-05:00"
   }
  }
 }
