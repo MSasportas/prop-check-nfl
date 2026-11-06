@@ -1,5 +1,5 @@
 {
- "at": "2026-11-05T19:30:00-05:00",
+ "at": "2026-11-05T19:40:00-05:00",
  "source": "espn",
  "players": {
   "00-0037157": {
@@ -2612,12 +2612,11 @@
    "name": "Nikko Remigio",
    "team": "KC",
    "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
+   "status": "Active",
+   "fantasy": null,
    "date": "2026-11-04T20:47:00-05:00",
-   "detail": "Hip",
-   "espn_id": "4372716",
-   "comment": "Remigio (hip) was limited in Wednesday's practice."
+   "detail": null,
+   "espn_id": "4372716"
   },
   "name:KC:mansoordelane": {
    "name": "Mansoor Delane",
@@ -4958,9 +4957,9 @@
    "team": "SEA",
    "pos": "G",
    "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
+   "fantasy": null,
    "date": "2026-11-04T21:35:00-05:00",
-   "detail": "Knee",
+   "detail": null,
    "espn_id": "4429211"
   },
   "name:SEA:connorotoole": {
