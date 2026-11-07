@@ -3,10 +3,10 @@
  "season": 2026,
  "week": 9,
  "slate": "2026-W09",
- "started_at": "2026-11-07T09:00:01-05:00",
- "status_at": "2026-11-07T09:00:01-05:00",
- "finished_at": "2026-11-07T09:00:01-05:00",
- "last_ok_at": "2026-11-07T09:00:01-05:00",
+ "started_at": "2026-11-07T09:30:00-05:00",
+ "status_at": "2026-11-07T09:30:00-05:00",
+ "finished_at": "2026-11-07T09:30:04-05:00",
+ "last_ok_at": "2026-11-07T09:30:00-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -22,7 +22,7 @@
   {
    "step": "stats",
    "status": "skipped",
-   "note": "checked at 8:30 AM"
+   "note": "play-by-play unchanged (8376846 bytes)"
   },
   {
    "step": "roster",
@@ -31,18 +31,18 @@
   },
   {
    "step": "injuries",
-   "status": "skipped",
-   "note": "read at 8:30 AM; inactives posted for 2 team(s)"
+   "status": "ok",
+   "note": "espn: 147 out, 68 questionable; inactives posted for 2 team(s)"
   },
   {
    "step": "weather",
-   "status": "skipped",
-   "note": "nothing due (3 indoors)"
+   "status": "ok",
+   "note": "3 read, 0 failed, 3 indoors"
   },
   {
    "step": "odds",
    "status": "ok",
-   "note": "no pull due"
+   "note": "1 read(s) (R)"
   },
   {
    "step": "engine",
@@ -56,7 +56,7 @@
   },
   {
    "step": "watch",
-   "status": "skipped",
+   "status": "ok",
    "note": "0 move(s)/side(s) scanned, 0 flagged, 0 graded"
   },
   {
@@ -85,7 +85,7 @@
  "keys": [
   {
    "n": 1,
-   "left": 362,
+   "left": 356,
    "shared": false
   },
   {
@@ -119,17 +119,23 @@
    "shared": false
   }
  ],
- "pool_total": 3054,
- "allowance": 84.13,
+ "pool_total": 3048,
+ "allowance": 83.73,
  "tier": "full",
  "games_left_before_reset": 15,
- "budget_used_today": 0,
+ "budget_used_today": 6,
  "odds": {
   "state": "ok",
-  "at": "2026-11-05T19:10:00-05:00",
-  "next_at": "2026-11-07T09:30:00-05:00"
+  "at": "2026-11-07T09:30:00-05:00",
+  "next_at": "2026-11-07T13:00:00-05:00"
  },
- "due": [],
+ "due": [
+  {
+   "pull": "R",
+   "game_id": "2026_09_CIN_ATL",
+   "cost_max": 6
+  }
+ ],
  "skipped_games": [],
  "unmatched_names": [],
  "unknown_teams": [],
@@ -141,14 +147,14 @@
  "odds_notes": [],
  "runner": {
   "event": "workflow_dispatch",
-  "run_id": "42377238449",
+  "run_id": "42379496952",
   "iteration": 2,
-  "chain_link": 764,
+  "chain_link": 765,
   "chain_started_at": "2026-11-05T13:54:23-05:00",
-  "run_started_at": "2026-11-07T08:30:17-05:00"
+  "run_started_at": "2026-11-07T09:00:12-05:00"
  },
  "live_page": {
-  "checked_at": "2026-11-07T08:30:00-05:00",
+  "checked_at": "2026-11-07T09:30:00-05:00",
   "http": 200,
   "is_page": true
  }
