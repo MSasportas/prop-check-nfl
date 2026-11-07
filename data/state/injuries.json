@@ -1,5 +1,5 @@
 {
- "at": "2026-11-06T22:30:01-05:00",
+ "at": "2026-11-06T23:00:01-05:00",
  "source": "espn",
  "players": {
   "name:ARI:jongaines": {
@@ -1598,6 +1598,16 @@
    "detail": "Calf",
    "espn_id": "2980097"
   },
+  "name:DEN:krisabramsdraine": {
+   "name": "Kris Abrams-Draine",
+   "team": "DEN",
+   "pos": "CB",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-11-06T22:26:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "4429193"
+  },
   "name:DEN:eyiomauwazurike": {
    "name": "Eyioma Uwazurike",
    "team": "DEN",
@@ -1627,16 +1637,6 @@
    "date": "2026-11-06T19:59:00-05:00",
    "detail": "Ankle",
    "espn_id": "4360853"
-  },
-  "name:DEN:krisabramsdraine": {
-   "name": "Kris Abrams-Draine",
-   "team": "DEN",
-   "pos": "CB",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-11-06T16:46:00-05:00",
-   "detail": "Ankle",
-   "espn_id": "4429193"
   },
   "name:DEN:dondreatillman": {
    "name": "Dondrea Tillman",
@@ -1923,6 +1923,26 @@
    "detail": null,
    "espn_id": "5123663"
   },
+  "name:GB:travisglover": {
+   "name": "Travis Glover",
+   "team": "GB",
+   "pos": "OT",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-11-06T22:39:00-05:00",
+   "detail": "Knee",
+   "espn_id": "4361904"
+  },
+  "name:GB:seanrhyan": {
+   "name": "Sean Rhyan",
+   "team": "GB",
+   "pos": "G",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-11-06T22:37:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "4426411"
+  },
   "name:GB:keiseannixon": {
    "name": "Keisean Nixon",
    "team": "GB",
@@ -1965,16 +1985,6 @@
    "espn_id": "3149687",
    "comment": "Brooks (ankle) is listed as questionable for Sunday's game against the Patriots, Wes Hodkiewicz of the Packers' official site reports."
   },
-  "name:GB:seanrhyan": {
-   "name": "Sean Rhyan",
-   "team": "GB",
-   "pos": "G",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-11-06T16:51:00-05:00",
-   "detail": "Ankle",
-   "espn_id": "4426411"
-  },
   "00-0039811": {
    "name": "MarShawn Lloyd",
    "team": "GB",
@@ -2005,16 +2015,6 @@
    "date": "2026-11-06T15:41:00-05:00",
    "detail": null,
    "espn_id": "4248528"
-  },
-  "name:GB:travisglover": {
-   "name": "Travis Glover",
-   "team": "GB",
-   "pos": "OT",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-11-05T20:29:00-05:00",
-   "detail": "Knee",
-   "espn_id": "4361904"
   },
   "00-0035700": {
    "name": "Josh Jacobs",
@@ -2891,6 +2891,36 @@
    "detail": null,
    "espn_id": "4432665"
   },
+  "name:LAC:denzelperryman": {
+   "name": "Denzel Perryman",
+   "team": "LAC",
+   "pos": "LB",
+   "status": "Injured Reserve",
+   "fantasy": "IR-R",
+   "date": "2026-11-06T22:42:00-05:00",
+   "detail": "Undisclosed",
+   "espn_id": "2579621"
+  },
+  "name:LAC:kendallwilliamson": {
+   "name": "Kendall Williamson",
+   "team": "LAC",
+   "pos": "S",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-11-06T22:39:00-05:00",
+   "detail": "Calf",
+   "espn_id": "4360745"
+  },
+  "name:LAC:deaneleonard": {
+   "name": "Deane Leonard",
+   "team": "LAC",
+   "pos": "CB",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-11-06T22:36:00-05:00",
+   "detail": "Concussion",
+   "espn_id": "4690171"
+  },
   "00-0041550": {
    "name": "Brenen Thompson",
    "team": "LAC",
@@ -2922,36 +2952,6 @@
    "date": "2026-11-06T17:13:00-05:00",
    "detail": "Lower Leg",
    "espn_id": "4040842"
-  },
-  "name:LAC:kendallwilliamson": {
-   "name": "Kendall Williamson",
-   "team": "LAC",
-   "pos": "S",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-11-06T17:12:00-05:00",
-   "detail": "Calf",
-   "espn_id": "4360745"
-  },
-  "name:LAC:deaneleonard": {
-   "name": "Deane Leonard",
-   "team": "LAC",
-   "pos": "CB",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-11-06T17:12:00-05:00",
-   "detail": "Concussion",
-   "espn_id": "4690171"
-  },
-  "name:LAC:denzelperryman": {
-   "name": "Denzel Perryman",
-   "team": "LAC",
-   "pos": "LB",
-   "status": "Injured Reserve",
-   "fantasy": "IR-R",
-   "date": "2026-11-04T19:59:00-05:00",
-   "detail": "Undisclosed",
-   "espn_id": "2579621"
   },
   "00-0040184": {
    "name": "KeAndre Lambert-Smith",
@@ -3248,6 +3248,16 @@
    "detail": null,
    "espn_id": "4426515"
   },
+  "name:MIA:malikherring": {
+   "name": "Malik Herring",
+   "team": "MIA",
+   "pos": "DE",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-06T22:23:00-05:00",
+   "detail": "Neck",
+   "espn_id": "4259547"
+  },
   "00-0041524": {
    "name": "Will Kacmarek",
    "team": "MIA",
@@ -3279,16 +3289,6 @@
    "detail": "Quadriceps",
    "espn_id": "4682745",
    "comment": "Wright (quad) is listed as questionable for Sunday's game against the Lions, David Furones of the South Florida Sun Sentinel reports."
-  },
-  "name:MIA:malikherring": {
-   "name": "Malik Herring",
-   "team": "MIA",
-   "pos": "DE",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T22:53:00-05:00",
-   "detail": "Neck",
-   "espn_id": "4259547"
   },
   "name:MIA:darrellbaker": {
    "name": "Darrell Baker Jr.",
@@ -3646,16 +3646,6 @@
    "date": "2026-11-01T22:30:00-05:00",
    "detail": null,
    "espn_id": "4431452"
-  },
-  "name:NE:gabejacas": {
-   "name": "Gabe Jacas",
-   "team": "NE",
-   "pos": "LB",
-   "status": "Questionable",
-   "fantasy": null,
-   "date": "2026-11-01T18:50:00-05:00",
-   "detail": null,
-   "espn_id": "4837244"
   },
   "name:NO:kelvinbanks": {
    "name": "Kelvin Banks Jr.",
