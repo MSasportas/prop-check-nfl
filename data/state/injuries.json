@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T09:30:00-05:00",
+ "at": "2026-11-07T10:00:01-05:00",
  "source": "espn",
  "players": {
   "name:ARI:isaiahadams": {
@@ -3390,6 +3390,17 @@
    "detail": null,
    "espn_id": "4367209"
   },
+  "00-0035228": {
+   "name": "Kyler Murray",
+   "team": "MIN",
+   "pos": "QB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-07T09:40:00-05:00",
+   "detail": "Hamstring",
+   "espn_id": "3917315",
+   "comment": "Murray (hamstring) is recovering from a Grade 2 strain \"that will keep him out for Monday's game and potentially beyond,\" Tom Pelissero of Netflix reports."
+  },
   "00-0041104": {
    "name": "Demond Claiborne",
    "team": "MIN",
@@ -3441,17 +3452,6 @@
    "date": "2026-11-05T13:49:00-05:00",
    "detail": null,
    "espn_id": "4573398"
-  },
-  "00-0035228": {
-   "name": "Kyler Murray",
-   "team": "MIN",
-   "pos": "QB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T13:36:00-05:00",
-   "detail": "Hamstring",
-   "espn_id": "3917315",
-   "comment": "Murray likely won't play Monday against the Bills due to a hamstring strain, Alec Lewis of The Athletic reports."
   },
   "00-0032950": {
    "name": "Carson Wentz",

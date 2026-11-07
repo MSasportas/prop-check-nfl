@@ -3,10 +3,10 @@
  "season": 2026,
  "week": 9,
  "slate": "2026-W09",
- "started_at": "2026-11-07T09:30:00-05:00",
- "status_at": "2026-11-07T09:30:00-05:00",
- "finished_at": "2026-11-07T09:30:04-05:00",
- "last_ok_at": "2026-11-07T09:30:00-05:00",
+ "started_at": "2026-11-07T10:00:01-05:00",
+ "status_at": "2026-11-07T10:00:01-05:00",
+ "finished_at": "2026-11-07T10:00:04-05:00",
+ "last_ok_at": "2026-11-07T10:00:01-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -22,7 +22,7 @@
   {
    "step": "stats",
    "status": "skipped",
-   "note": "play-by-play unchanged (8376846 bytes)"
+   "note": "checked at 9:30 AM"
   },
   {
    "step": "roster",
@@ -37,12 +37,12 @@
   {
    "step": "weather",
    "status": "ok",
-   "note": "3 read, 0 failed, 3 indoors"
+   "note": "1 read, 0 failed, 3 indoors"
   },
   {
    "step": "odds",
    "status": "ok",
-   "note": "1 read(s) (R)"
+   "note": "no pull due"
   },
   {
    "step": "engine",
@@ -56,7 +56,7 @@
   },
   {
    "step": "watch",
-   "status": "ok",
+   "status": "skipped",
    "note": "0 move(s)/side(s) scanned, 0 flagged, 0 graded"
   },
   {
@@ -129,13 +129,7 @@
   "at": "2026-11-07T09:30:00-05:00",
   "next_at": "2026-11-07T13:00:00-05:00"
  },
- "due": [
-  {
-   "pull": "R",
-   "game_id": "2026_09_CIN_ATL",
-   "cost_max": 6
-  }
- ],
+ "due": [],
  "skipped_games": [],
  "unmatched_names": [],
  "unknown_teams": [],
@@ -147,11 +141,11 @@
  "odds_notes": [],
  "runner": {
   "event": "workflow_dispatch",
-  "run_id": "42379496952",
+  "run_id": "42381878013",
   "iteration": 2,
-  "chain_link": 765,
+  "chain_link": 766,
   "chain_started_at": "2026-11-05T13:54:23-05:00",
-  "run_started_at": "2026-11-07T09:00:12-05:00"
+  "run_started_at": "2026-11-07T09:30:17-05:00"
  },
  "live_page": {
   "checked_at": "2026-11-07T09:30:00-05:00",
