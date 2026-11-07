@@ -3,10 +3,10 @@
  "season": 2026,
  "week": 9,
  "slate": "2026-W09",
- "started_at": "2026-11-07T10:00:01-05:00",
- "status_at": "2026-11-07T10:00:01-05:00",
- "finished_at": "2026-11-07T10:00:04-05:00",
- "last_ok_at": "2026-11-07T10:00:01-05:00",
+ "started_at": "2026-11-07T10:30:01-05:00",
+ "status_at": "2026-11-07T10:30:01-05:00",
+ "finished_at": "2026-11-07T10:30:02-05:00",
+ "last_ok_at": "2026-11-07T10:30:01-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -22,7 +22,7 @@
   {
    "step": "stats",
    "status": "skipped",
-   "note": "checked at 9:30 AM"
+   "note": "play-by-play unchanged (8376846 bytes)"
   },
   {
    "step": "roster",
@@ -36,8 +36,8 @@
   },
   {
    "step": "weather",
-   "status": "ok",
-   "note": "1 read, 0 failed, 3 indoors"
+   "status": "skipped",
+   "note": "nothing due (3 indoors)"
   },
   {
    "step": "odds",
@@ -141,14 +141,14 @@
  "odds_notes": [],
  "runner": {
   "event": "workflow_dispatch",
-  "run_id": "42381878013",
+  "run_id": "42384211971",
   "iteration": 2,
-  "chain_link": 766,
+  "chain_link": 767,
   "chain_started_at": "2026-11-05T13:54:23-05:00",
-  "run_started_at": "2026-11-07T09:30:17-05:00"
+  "run_started_at": "2026-11-07T10:00:16-05:00"
  },
  "live_page": {
-  "checked_at": "2026-11-07T09:30:00-05:00",
+  "checked_at": "2026-11-07T10:30:01-05:00",
   "http": 200,
   "is_page": true
  }
