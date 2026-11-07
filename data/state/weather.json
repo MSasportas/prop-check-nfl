@@ -127,6 +127,10 @@
    "roof": "outdoors",
    "at": "2026-11-06T18:00:13-05:00",
    "text": "55\u00b0F, wind 9 mph"
+  },
+  "2026_09_BUF_MIN": {
+   "roof": "dome",
+   "text": "Indoors"
   }
  }
 }
