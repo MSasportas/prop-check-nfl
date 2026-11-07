@@ -1,7 +1,27 @@
 {
- "at": "2026-11-06T21:00:18-05:00",
+ "at": "2026-11-06T22:00:01-05:00",
  "source": "espn",
  "players": {
+  "name:ARI:walternolen": {
+   "name": "Walter Nolen III",
+   "team": "ARI",
+   "pos": "DT",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-06T21:35:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "4685503"
+  },
+  "name:ARI:maxmelton": {
+   "name": "Max Melton",
+   "team": "ARI",
+   "pos": "CB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-06T21:30:00-05:00",
+   "detail": "Knee",
+   "espn_id": "4698113"
+  },
   "00-0038559": {
    "name": "Michael Wilson",
    "team": "ARI",
@@ -52,16 +72,6 @@
    "date": "2026-11-05T20:55:00-05:00",
    "detail": "Ankle",
    "espn_id": "5084939"
-  },
-  "name:ARI:maxmelton": {
-   "name": "Max Melton",
-   "team": "ARI",
-   "pos": "CB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T19:38:00-05:00",
-   "detail": "Knee",
-   "espn_id": "4698113"
   },
   "00-0039041": {
    "name": "Elijah Higgins",
@@ -156,16 +166,6 @@
    "espn_id": "3045523",
    "comment": "Arizona placed Bourne (tibia) on injured reserve Tuesday, Darren Urban of the Cardinals' official site reports."
   },
-  "name:ARI:walternolen": {
-   "name": "Walter Nolen III",
-   "team": "ARI",
-   "pos": "DT",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-03T08:03:00-05:00",
-   "detail": "Ankle",
-   "espn_id": "4685503"
-  },
   "00-0041561": {
    "name": "Carson Beck",
    "team": "ARI",
@@ -206,6 +206,17 @@
    "detail": null,
    "espn_id": "4361307"
   },
+  "00-0040432": {
+   "name": "Beaux Collins",
+   "team": "ATL",
+   "pos": "WR",
+   "status": "Injured Reserve",
+   "fantasy": "IR-R",
+   "date": "2026-11-06T21:36:00-05:00",
+   "detail": "Hip",
+   "espn_id": "4431210",
+   "comment": "Collins (hip) is listed as questionable for Sunday's game against the Bengals in Madrid, Tori McElhaney of the Falcons' official site reports."
+  },
   "name:ATL:jamespearce": {
    "name": "James Pearce Jr.",
    "team": "ATL",
@@ -236,17 +247,6 @@
    "detail": "Hamstring",
    "espn_id": "4241474",
    "comment": "Robinson (hamstring) has been ruled out for Sunday's game against the Bengals, Tori McElhaney of the Falcons' official site reports."
-  },
-  "00-0040432": {
-   "name": "Beaux Collins",
-   "team": "ATL",
-   "pos": "WR",
-   "status": "Injured Reserve",
-   "fantasy": "IR-R",
-   "date": "2026-11-05T15:16:00-05:00",
-   "detail": "Hip",
-   "espn_id": "4431210",
-   "comment": "Collins (hip) was a full participant in Thursday's practice, D. Orlando Ledbetter of BowTieSports.com reports."
   },
   "name:ATL:yasirabdullah": {
    "name": "Yasir Abdullah",
@@ -561,16 +561,6 @@
    "detail": "Coach's Decision",
    "espn_id": "4565311"
   },
-  "00-0039464": {
-   "name": "Austin Reed",
-   "team": "BAL",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-05T17:23:00-05:00",
-   "detail": null,
-   "espn_id": "4368343"
-  },
   "00-0035993": {
    "name": "Tyler Huntley",
    "team": "BAL",
@@ -797,6 +787,36 @@
    "detail": null,
    "espn_id": "3918298"
   },
+  "name:CAR:willlee": {
+   "name": "Will Lee III",
+   "team": "CAR",
+   "pos": "CB",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-11-06T21:20:00-05:00",
+   "detail": "Hamstring",
+   "espn_id": "5151083"
+  },
+  "name:CAR:jaelanphillips": {
+   "name": "Jaelan Phillips",
+   "team": "CAR",
+   "pos": "LB",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-11-06T21:10:00-05:00",
+   "detail": "Hamstring",
+   "espn_id": "4242975"
+  },
+  "name:CAR:bobbyokereke": {
+   "name": "Bobby Okereke",
+   "team": "CAR",
+   "pos": "LB",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-11-06T20:54:00-05:00",
+   "detail": "Foot",
+   "espn_id": "3117253"
+  },
   "name:CAR:torricellisimpkins": {
    "name": "Torricelli Simpkins III",
    "team": "CAR",
@@ -806,26 +826,6 @@
    "date": "2026-11-06T18:06:00-05:00",
    "detail": "Ankle",
    "espn_id": "4696902"
-  },
-  "name:CAR:bobbyokereke": {
-   "name": "Bobby Okereke",
-   "team": "CAR",
-   "pos": "LB",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-11-06T18:05:00-05:00",
-   "detail": "Foot",
-   "espn_id": "3117253"
-  },
-  "name:CAR:jaelanphillips": {
-   "name": "Jaelan Phillips",
-   "team": "CAR",
-   "pos": "LB",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-11-06T18:05:00-05:00",
-   "detail": "Hamstring",
-   "espn_id": "4242975"
   },
   "00-0039150": {
    "name": "Bryce Young",
@@ -866,16 +866,6 @@
    "date": "2026-11-05T20:16:00-05:00",
    "detail": "Knee",
    "espn_id": "4362647"
-  },
-  "name:CAR:willlee": {
-   "name": "Will Lee III",
-   "team": "CAR",
-   "pos": "CB",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-11-05T18:13:00-05:00",
-   "detail": "Hamstring",
-   "espn_id": "5151083"
   },
   "00-0039344": {
    "name": "Jonathon Brooks",
@@ -1769,6 +1759,46 @@
    "detail": null,
    "espn_id": "4391845"
   },
+  "name:DET:djwonnum": {
+   "name": "DJ Wonnum",
+   "team": "DET",
+   "pos": "LB",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-11-06T21:18:00-05:00",
+   "detail": "Concussion",
+   "espn_id": "4038849"
+  },
+  "name:DET:djreed": {
+   "name": "D.J. Reed",
+   "team": "DET",
+   "pos": "CB",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-11-06T21:12:00-05:00",
+   "detail": "Hip",
+   "espn_id": "3139387"
+  },
+  "name:DET:kerbyjoseph": {
+   "name": "Kerby Joseph",
+   "team": "DET",
+   "pos": "S",
+   "status": "Out",
+   "fantasy": "PUP-R",
+   "date": "2026-11-06T21:10:00-05:00",
+   "detail": "Knee",
+   "espn_id": "4360383"
+  },
+  "name:DET:jackcampbell": {
+   "name": "Jack Campbell",
+   "team": "DET",
+   "pos": "LB",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-11-06T20:58:00-05:00",
+   "detail": "Neck",
+   "espn_id": "4569465"
+  },
   "00-0038896": {
    "name": "Jacob Saylors",
    "team": "DET",
@@ -1789,27 +1819,7 @@
    "date": "2026-11-06T20:48:00-05:00",
    "detail": "Ankle",
    "espn_id": "4912274",
-   "comment": "Vaki (ankle) is listed as questionable for Sunday's game against the Buccaneers."
-  },
-  "name:DET:djwonnum": {
-   "name": "DJ Wonnum",
-   "team": "DET",
-   "pos": "LB",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-11-06T17:48:00-05:00",
-   "detail": "Concussion",
-   "espn_id": "4038849"
-  },
-  "name:DET:djreed": {
-   "name": "D.J. Reed",
-   "team": "DET",
-   "pos": "CB",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-11-06T17:47:00-05:00",
-   "detail": "Hip",
-   "espn_id": "3139387"
+   "comment": "Vaki (ankle) is listed as questionable for Sunday's game against the Dolphins."
   },
   "name:DET:cademays": {
    "name": "Cade Mays",
@@ -1821,16 +1831,6 @@
    "detail": "Ankle",
    "espn_id": "4361788"
   },
-  "name:DET:jackcampbell": {
-   "name": "Jack Campbell",
-   "team": "DET",
-   "pos": "LB",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-11-06T17:47:00-05:00",
-   "detail": "Neck",
-   "espn_id": "4569465"
-  },
   "00-0036963": {
    "name": "Amon-Ra St. Brown",
    "team": "DET",
@@ -1841,16 +1841,6 @@
    "detail": "Ribs",
    "espn_id": "4374302",
    "comment": "St. Brown (ribs) is questionable for Sunday's game against the Dolphins, Tim Twentyman of the Lions' official site reports."
-  },
-  "name:DET:kerbyjoseph": {
-   "name": "Kerby Joseph",
-   "team": "DET",
-   "pos": "S",
-   "status": "Out",
-   "fantasy": "PUP-R",
-   "date": "2026-11-05T17:37:00-05:00",
-   "detail": "Knee",
-   "espn_id": "4360383"
   },
   "name:DET:jimmyrolder": {
    "name": "Jimmy Rolder",
@@ -2596,10 +2586,10 @@
    "pos": "WR",
    "status": "Questionable",
    "fantasy": "QUESTIONABLE",
-   "date": "2026-11-06T19:06:00-05:00",
+   "date": "2026-11-06T21:40:00-05:00",
    "detail": "Hip",
    "espn_id": "4372716",
-   "comment": "questionable"
+   "comment": "Remigio (hip) has been deemed questionable to suit up against the Jets on Sunday."
   },
   "name:KC:mansoordelane": {
    "name": "Mansoor Delane",
@@ -3380,6 +3370,28 @@
    "detail": null,
    "espn_id": "4367209"
   },
+  "00-0041104": {
+   "name": "Demond Claiborne",
+   "team": "MIN",
+   "pos": "RB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-06T21:29:00-05:00",
+   "detail": "Knee",
+   "espn_id": "4832846",
+   "comment": "Claiborne (knee) did not participate in Friday's practice."
+  },
+  "00-0036259": {
+   "name": "Jauan Jennings",
+   "team": "MIN",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-06T21:23:00-05:00",
+   "detail": "Calf",
+   "espn_id": "3886598",
+   "comment": "Jennings (calf) did not participate in Friday's practice."
+  },
   "name:MIN:andrewvanginkel": {
    "name": "Andrew Van Ginkel",
    "team": "MIN",
@@ -3390,17 +3402,6 @@
    "detail": "Chest",
    "espn_id": "3133487"
   },
-  "00-0036259": {
-   "name": "Jauan Jennings",
-   "team": "MIN",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T18:36:00-05:00",
-   "detail": "Calf",
-   "espn_id": "3886598",
-   "comment": "Jennings (calf) was limited in Thursday's practice."
-  },
   "name:MIN:jayward": {
    "name": "Jay Ward",
    "team": "MIN",
@@ -3410,17 +3411,6 @@
    "date": "2026-11-05T17:32:00-05:00",
    "detail": "Knee",
    "espn_id": "4568007"
-  },
-  "00-0041104": {
-   "name": "Demond Claiborne",
-   "team": "MIN",
-   "pos": "RB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T17:28:00-05:00",
-   "detail": "Knee",
-   "espn_id": "4832846",
-   "comment": "questionable"
   },
   "00-0040494": {
    "name": "Max Brosmer",
@@ -4470,6 +4460,16 @@
    "detail": "Triceps",
    "espn_id": "3047495"
   },
+  "name:SF:natehobbs": {
+   "name": "Nate Hobbs",
+   "team": "SF",
+   "pos": "CB",
+   "status": "Injured Reserve",
+   "fantasy": "IR-R",
+   "date": "2026-11-06T21:33:00-05:00",
+   "detail": "Groin",
+   "espn_id": "4240542"
+  },
   "00-0032775": {
    "name": "Demarcus Robinson",
    "team": "SF",
@@ -4534,16 +4534,6 @@
    "detail": "Personal",
    "espn_id": "4360438",
    "comment": "Aiyuk's effort to secure his release by reporting to the 49ers' facility Friday could be complicated by roughly $13 million in bonus forfeiture he owes the team"
-  },
-  "name:SF:natehobbs": {
-   "name": "Nate Hobbs",
-   "team": "SF",
-   "pos": "CB",
-   "status": "Injured Reserve",
-   "fantasy": "IR-R",
-   "date": "2026-11-04T20:50:00-05:00",
-   "detail": "Groin",
-   "espn_id": "4240542"
   },
   "name:SF:siranneal": {
    "name": "Siran Neal",
@@ -4656,6 +4646,26 @@
    "detail": null,
    "espn_id": "4696044"
   },
+  "name:SEA:uchennanwosu": {
+   "name": "Uchenna Nwosu",
+   "team": "SEA",
+   "pos": "LB",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-11-06T21:08:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "3120358"
+  },
+  "name:SEA:leonardwilliams": {
+   "name": "Leonard Williams",
+   "team": "SEA",
+   "pos": "DT",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-11-06T21:03:00-05:00",
+   "detail": "Shoulder",
+   "espn_id": "2971622"
+  },
   "name:SEA:quentonnelson": {
    "name": "Quenton Nelson",
    "team": "SEA",
@@ -4665,26 +4675,6 @@
    "date": "2026-11-06T19:56:00-05:00",
    "detail": "Knee",
    "espn_id": "3129308"
-  },
-  "00-0037745": {
-   "name": "Velus Jones Jr.",
-   "team": "SEA",
-   "pos": "RB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-06T19:32:00-05:00",
-   "detail": null,
-   "espn_id": "4035693"
-  },
-  "name:SEA:uchennanwosu": {
-   "name": "Uchenna Nwosu",
-   "team": "SEA",
-   "pos": "LB",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-11-06T18:13:00-05:00",
-   "detail": "Ankle",
-   "espn_id": "3120358"
   },
   "name:SEA:brandonpili": {
    "name": "Brandon Pili",
@@ -4726,16 +4716,6 @@
    "date": "2026-11-05T20:39:00-05:00",
    "detail": "Ankle",
    "espn_id": "4426376"
-  },
-  "name:SEA:leonardwilliams": {
-   "name": "Leonard Williams",
-   "team": "SEA",
-   "pos": "DT",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-11-05T19:46:00-05:00",
-   "detail": "Shoulder",
-   "espn_id": "2971622"
   },
   "00-0034869": {
    "name": "Sam Darnold",
