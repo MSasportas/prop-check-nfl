@@ -89,34 +89,34 @@
    "text": "Indoors"
   },
   "2026_09_LV_SF": {
-   "temp_f": 71.9,
-   "wind_mph": 4.6,
-   "gust_mph": 5.4,
+   "temp_f": 66.5,
+   "wind_mph": 5.9,
+   "gust_mph": 6.9,
    "rain_pct": 0,
    "rain_in": 0.0,
    "roof": "outdoors",
-   "at": "2026-11-06T21:00:01-05:00",
-   "text": "72\u00b0F, wind 5 mph"
+   "at": "2026-11-07T00:00:01-05:00",
+   "text": "66\u00b0F, wind 6 mph"
   },
   "2026_09_ARI_SEA": {
-   "temp_f": 54.1,
-   "wind_mph": 12.3,
-   "gust_mph": 22.6,
-   "rain_pct": 28,
-   "rain_in": 0.004,
+   "temp_f": 54.2,
+   "wind_mph": 12.0,
+   "gust_mph": 21.3,
+   "rain_pct": 29,
+   "rain_in": 0.0,
    "roof": "outdoors",
-   "at": "2026-11-06T20:30:14-05:00",
+   "at": "2026-11-07T00:00:01-05:00",
    "text": "54\u00b0F, wind 12 mph"
   },
   "2026_09_GB_NE": {
-   "temp_f": 51.2,
-   "wind_mph": 11.0,
-   "gust_mph": 22.1,
+   "temp_f": 50.3,
+   "wind_mph": 8.6,
+   "gust_mph": 24.4,
    "rain_pct": 0,
    "rain_in": 0.0,
    "roof": "outdoors",
-   "at": "2026-11-06T20:30:14-05:00",
-   "text": "51\u00b0F, wind 11 mph"
+   "at": "2026-11-07T00:00:01-05:00",
+   "text": "50\u00b0F, wind 9 mph"
   },
   "2026_09_TB_CHI": {
    "temp_f": 54.5,
