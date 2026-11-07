@@ -1,7 +1,27 @@
 {
- "at": "2026-11-06T22:00:01-05:00",
+ "at": "2026-11-06T22:30:01-05:00",
  "source": "espn",
  "players": {
+  "name:ARI:jongaines": {
+   "name": "Jon Gaines II",
+   "team": "ARI",
+   "pos": "G",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-11-06T22:13:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "4367199"
+  },
+  "name:ARI:jaydenwilliams": {
+   "name": "Jayden Williams",
+   "team": "ARI",
+   "pos": "OT",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-11-06T22:08:00-05:00",
+   "detail": "Knee",
+   "espn_id": "4709718"
+  },
   "name:ARI:walternolen": {
    "name": "Walter Nolen III",
    "team": "ARI",
@@ -42,26 +62,6 @@
    "detail": "Concussion",
    "espn_id": "4427728",
    "comment": "Knight (concussion) is out for Sunday's game against the Seahawks, Josh Weinfuss of ESPN.com reports."
-  },
-  "name:ARI:jaydenwilliams": {
-   "name": "Jayden Williams",
-   "team": "ARI",
-   "pos": "OT",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-11-05T21:07:00-05:00",
-   "detail": "Knee",
-   "espn_id": "4709718"
-  },
-  "name:ARI:jongaines": {
-   "name": "Jon Gaines II",
-   "team": "ARI",
-   "pos": "G",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-11-05T21:01:00-05:00",
-   "detail": "Ankle",
-   "espn_id": "4367199"
   },
   "name:ARI:isaiahadams": {
    "name": "Isaiah Adams",
@@ -1161,13 +1161,23 @@
    "detail": null,
    "espn_id": "15168"
   },
+  "name:CIN:cedricjohnson": {
+   "name": "Cedric Johnson",
+   "team": "CIN",
+   "pos": "DE",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-06T21:57:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "4430065"
+  },
   "name:CIN:kyledugger": {
    "name": "Kyle Dugger",
    "team": "CIN",
    "pos": "S",
    "status": "Out",
    "fantasy": "OUT",
-   "date": "2026-11-06T11:48:00-05:00",
+   "date": "2026-11-06T21:55:00-05:00",
    "detail": "Quadriceps",
    "espn_id": "4401811"
   },
@@ -1260,16 +1270,6 @@
    "date": "2026-11-01T16:55:00-05:00",
    "detail": null,
    "espn_id": "3915511"
-  },
-  "name:CIN:cedricjohnson": {
-   "name": "Cedric Johnson",
-   "team": "CIN",
-   "pos": "DE",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-01T16:10:00-05:00",
-   "detail": "Ankle",
-   "espn_id": "4430065"
   },
   "00-0038619": {
    "name": "Andrei Iosivas",
@@ -2228,6 +2228,16 @@
    "detail": null,
    "espn_id": "4258173"
   },
+  "name:IND:justinwalley": {
+   "name": "Justin Walley",
+   "team": "IND",
+   "pos": "CB",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-11-06T21:55:00-05:00",
+   "detail": "Knee",
+   "espn_id": "4682909"
+  },
   "00-0039816": {
    "name": "Anthony Gould",
    "team": "IND",
@@ -2277,16 +2287,6 @@
    "date": "2026-11-06T14:29:00-05:00",
    "detail": "Knee",
    "espn_id": "3917142"
-  },
-  "name:IND:justinwalley": {
-   "name": "Justin Walley",
-   "team": "IND",
-   "pos": "CB",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-11-06T12:54:00-05:00",
-   "detail": "Knee",
-   "espn_id": "4682909"
   },
   "00-0036223": {
    "name": "Jonathan Taylor",
@@ -2580,6 +2580,16 @@
    "detail": "Knee",
    "espn_id": "3915520"
   },
+  "name:KC:peterwoods": {
+   "name": "Peter Woods",
+   "team": "KC",
+   "pos": "DT",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-11-06T21:59:00-05:00",
+   "detail": "Neck",
+   "espn_id": "4871063"
+  },
   "00-0038519": {
    "name": "Nikko Remigio",
    "team": "KC",
@@ -2600,16 +2610,6 @@
    "date": "2026-11-06T15:29:00-05:00",
    "detail": "Shoulder",
    "espn_id": "4880124"
-  },
-  "name:KC:peterwoods": {
-   "name": "Peter Woods",
-   "team": "KC",
-   "pos": "DT",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-11-06T14:11:00-05:00",
-   "detail": "Neck",
-   "espn_id": "4871063"
   },
   "00-0030506": {
    "name": "Travis Kelce",
@@ -3652,10 +3652,20 @@
    "team": "NE",
    "pos": "LB",
    "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
+   "fantasy": null,
    "date": "2026-11-01T18:50:00-05:00",
-   "detail": "Knee",
+   "detail": null,
    "espn_id": "4837244"
+  },
+  "name:NO:kelvinbanks": {
+   "name": "Kelvin Banks Jr.",
+   "team": "NO",
+   "pos": "OT",
+   "status": "Injured Reserve",
+   "fantasy": "IR-R",
+   "date": "2026-11-06T22:01:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "4685260"
   },
   "name:NO:martinemerson": {
    "name": "Martin Emerson Jr.",
@@ -3698,16 +3708,6 @@
    "detail": "Hamstring",
    "espn_id": "4880281",
    "comment": "Tyson (hamstring) is listed as questionable for Sunday's game against the Browns, Katherine Terrell of ESPN.com reports."
-  },
-  "name:NO:kelvinbanks": {
-   "name": "Kelvin Banks Jr.",
-   "team": "NO",
-   "pos": "OT",
-   "status": "Injured Reserve",
-   "fantasy": "IR-R",
-   "date": "2026-11-05T20:09:00-05:00",
-   "detail": "Ankle",
-   "espn_id": "4685260"
   },
   "name:NO:asimrichards": {
    "name": "Asim Richards",
@@ -3923,6 +3923,16 @@
    "detail": null,
    "espn_id": "4682648"
   },
+  "name:NYJ:josephossai": {
+   "name": "Joseph Ossai",
+   "team": "NYJ",
+   "pos": "DE",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-06T22:04:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "4362094"
+  },
   "name:NYJ:trevinwallace": {
    "name": "Trevin Wallace",
    "team": "NYJ",
@@ -4013,16 +4023,6 @@
    "date": "2026-11-04T22:37:00-05:00",
    "detail": "Knee",
    "espn_id": "4837388"
-  },
-  "name:NYJ:josephossai": {
-   "name": "Joseph Ossai",
-   "team": "NYJ",
-   "pos": "DE",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T22:35:00-05:00",
-   "detail": "Ankle",
-   "espn_id": "4362094"
   },
   "name:NYJ:harrisonphillips": {
    "name": "Harrison Phillips",
