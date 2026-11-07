@@ -17,7 +17,7 @@
   "2026_09_TB_CHI": "9760d8f19f84bfee300a74ceb656c95d",
   "2026_09_BUF_MIN": "17ad7eff2f7875e20a8109abe40470e3"
  },
- "events_at": "2026-11-07T07:00:16-05:00",
+ "events_at": "2026-11-07T13:00:31-05:00",
  "unknown_teams": [],
  "done": {
   "2026_09_JAX_BAL": [
@@ -391,9 +391,9 @@
   "pulls": "RWC",
   "pool_at_plan": 1214,
   "games_left": 15,
-  "pool_raw": 3006,
+  "pool_raw": 2936,
   "keys_shared": 2,
-  "made_at": "2026-11-07T13:00:00-05:00"
+  "made_at": "2026-11-07T13:00:31-05:00"
  },
  "failed": {}
 }
