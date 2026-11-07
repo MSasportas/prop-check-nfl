@@ -1,7 +1,17 @@
 {
- "at": "2026-11-06T23:30:13-05:00",
+ "at": "2026-11-07T00:00:17-05:00",
  "source": "espn",
  "players": {
+  "name:ARI:isaiahadams": {
+   "name": "Isaiah Adams",
+   "team": "ARI",
+   "pos": "G",
+   "status": "Injured Reserve",
+   "fantasy": "IR-R",
+   "date": "2026-11-06T23:26:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "5084939"
+  },
   "name:ARI:jongaines": {
    "name": "Jon Gaines II",
    "team": "ARI",
@@ -62,16 +72,6 @@
    "detail": "Concussion",
    "espn_id": "4427728",
    "comment": "Knight (concussion) is out for Sunday's game against the Seahawks, Josh Weinfuss of ESPN.com reports."
-  },
-  "name:ARI:isaiahadams": {
-   "name": "Isaiah Adams",
-   "team": "ARI",
-   "pos": "G",
-   "status": "Injured Reserve",
-   "fantasy": "IR-R",
-   "date": "2026-11-05T20:55:00-05:00",
-   "detail": "Ankle",
-   "espn_id": "5084939"
   },
   "00-0039041": {
    "name": "Elijah Higgins",
@@ -398,6 +398,16 @@
    "date": "2026-10-30T22:43:00-04:00",
    "detail": "Undisclosed",
    "espn_id": "5150660"
+  },
+  "00-0040870": {
+   "name": "Ja'Kobi Lane",
+   "team": "BAL",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-06T23:49:00-05:00",
+   "detail": null,
+   "espn_id": "4870847"
   },
   "00-0040887": {
    "name": "Josh Cuevas",
@@ -2409,6 +2419,16 @@
    "detail": null,
    "espn_id": "4431459"
   },
+  "00-0041084": {
+   "name": "Tanner Koziol",
+   "team": "JAX",
+   "pos": "TE",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-06T23:42:00-05:00",
+   "detail": null,
+   "espn_id": "4917427"
+  },
   "00-0041503": {
    "name": "Nate Boerkircher",
    "team": "JAX",
@@ -2569,16 +2589,6 @@
    "date": "2026-11-03T20:11:00-05:00",
    "detail": "Elbow",
    "espn_id": "2970716"
-  },
-  "name:JAX:davonhamilton": {
-   "name": "DaVon Hamilton",
-   "team": "JAX",
-   "pos": "DT",
-   "status": "Injured Reserve",
-   "fantasy": "IR",
-   "date": "2026-11-03T20:05:00-05:00",
-   "detail": "Knee",
-   "espn_id": "3915520"
   },
   "name:KC:peterwoods": {
    "name": "Peter Woods",
