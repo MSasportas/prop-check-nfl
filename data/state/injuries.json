@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T11:30:19-05:00",
+ "at": "2026-11-07T12:30:01-05:00",
  "source": "espn",
  "players": {
   "name:ARI:isaiahadams": {
@@ -2248,6 +2248,16 @@
    "detail": null,
    "espn_id": "4258173"
   },
+  "00-0035710": {
+   "name": "Daniel Jones",
+   "team": "IND",
+   "pos": "QB",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-07T12:14:00-05:00",
+   "detail": null,
+   "espn_id": "3917792"
+  },
   "name:IND:justinwalley": {
    "name": "Justin Walley",
    "team": "IND",
@@ -2358,16 +2368,6 @@
    "date": "2026-11-02T20:32:00-05:00",
    "detail": null,
    "espn_id": "4686468"
-  },
-  "00-0035710": {
-   "name": "Daniel Jones",
-   "team": "IND",
-   "pos": "QB",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-02T14:27:00-05:00",
-   "detail": null,
-   "espn_id": "3917792"
   },
   "00-0033439": {
    "name": "Pharaoh Brown",
@@ -4470,6 +4470,17 @@
    "detail": "Triceps",
    "espn_id": "3047495"
   },
+  "name:SF:brandonaiyuk": {
+   "name": "Brandon Aiyuk",
+   "team": "SF",
+   "pos": "WR",
+   "status": "Out",
+   "fantasy": "RESERVE-DNR",
+   "date": "2026-11-07T11:58:00-05:00",
+   "detail": "Personal",
+   "espn_id": "4360438",
+   "comment": "Prior to meeting with 49ers officials Friday, Aiyuk (personal) told assembled media that he's \"feeling great, healthy\" and \"looking to get reinstated to the Nat"
+  },
   "name:SF:natehobbs": {
    "name": "Nate Hobbs",
    "team": "SF",
@@ -4533,17 +4544,6 @@
    "detail": "Hamstring",
    "espn_id": "3126486",
    "comment": "Samuel (hamstring) didn't participate in the early portion of Friday's practice, Nick Wagoner of ESPN.com reports."
-  },
-  "name:SF:brandonaiyuk": {
-   "name": "Brandon Aiyuk",
-   "team": "SF",
-   "pos": "WR",
-   "status": "Out",
-   "fantasy": "RESERVE-DNR",
-   "date": "2026-11-05T21:40:00-05:00",
-   "detail": "Personal",
-   "espn_id": "4360438",
-   "comment": "Aiyuk's effort to secure his release by reporting to the 49ers' facility Friday could be complicated by roughly $13 million in bonus forfeiture he owes the team"
   },
   "name:SF:siranneal": {
    "name": "Siran Neal",
