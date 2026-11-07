@@ -1,5 +1,5 @@
 {
- "at": "2026-11-06T23:00:01-05:00",
+ "at": "2026-11-06T23:30:13-05:00",
  "source": "espn",
  "players": {
   "name:ARI:jongaines": {
@@ -787,6 +787,26 @@
    "detail": null,
    "espn_id": "3918298"
   },
+  "name:CAR:bradychristensen": {
+   "name": "Brady Christensen",
+   "team": "CAR",
+   "pos": "G",
+   "status": "Injured Reserve",
+   "fantasy": "IR-R",
+   "date": "2026-11-06T23:05:00-05:00",
+   "detail": "Hamstring",
+   "espn_id": "4256062"
+  },
+  "name:CAR:damienlewis": {
+   "name": "Damien Lewis",
+   "team": "CAR",
+   "pos": "G",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-11-06T23:00:00-05:00",
+   "detail": "Knee",
+   "espn_id": "4362647"
+  },
   "name:CAR:willlee": {
    "name": "Will Lee III",
    "team": "CAR",
@@ -846,26 +866,6 @@
    "date": "2026-11-05T20:28:00-05:00",
    "detail": "Quadriceps",
    "espn_id": "4576075"
-  },
-  "name:CAR:bradychristensen": {
-   "name": "Brady Christensen",
-   "team": "CAR",
-   "pos": "G",
-   "status": "Injured Reserve",
-   "fantasy": "IR-R",
-   "date": "2026-11-05T20:19:00-05:00",
-   "detail": "Hamstring",
-   "espn_id": "4256062"
-  },
-  "name:CAR:damienlewis": {
-   "name": "Damien Lewis",
-   "team": "CAR",
-   "pos": "G",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-11-05T20:16:00-05:00",
-   "detail": "Knee",
-   "espn_id": "4362647"
   },
   "00-0039344": {
    "name": "Jonathon Brooks",
@@ -1759,6 +1759,16 @@
    "detail": null,
    "espn_id": "4391845"
   },
+  "name:DET:cademays": {
+   "name": "Cade Mays",
+   "team": "DET",
+   "pos": "C",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-11-06T22:55:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "4361788"
+  },
   "name:DET:djwonnum": {
    "name": "DJ Wonnum",
    "team": "DET",
@@ -1820,16 +1830,6 @@
    "detail": "Ankle",
    "espn_id": "4912274",
    "comment": "Vaki (ankle) is listed as questionable for Sunday's game against the Dolphins."
-  },
-  "name:DET:cademays": {
-   "name": "Cade Mays",
-   "team": "DET",
-   "pos": "C",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-11-06T17:47:00-05:00",
-   "detail": "Ankle",
-   "espn_id": "4361788"
   },
   "00-0036963": {
    "name": "Amon-Ra St. Brown",
@@ -2731,6 +2731,16 @@
    "detail": "Knee - ACL",
    "espn_id": "4591008"
   },
+  "name:LV:thomasbooker": {
+   "name": "Thomas Booker IV",
+   "team": "LV",
+   "pos": "DT",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-11-06T22:51:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "4360749"
+  },
   "00-0040581": {
    "name": "Dont'e Thornton Jr.",
    "team": "LV",
@@ -2750,16 +2760,6 @@
    "date": "2026-11-06T19:14:00-05:00",
    "detail": "Groin",
    "espn_id": "4430330"
-  },
-  "name:LV:thomasbooker": {
-   "name": "Thomas Booker IV",
-   "team": "LV",
-   "pos": "DT",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-11-06T17:41:00-05:00",
-   "detail": "Ankle",
-   "espn_id": "4360749"
   },
   "00-0035891": {
    "name": "Cody White",
@@ -4104,6 +4104,26 @@
    "detail": null,
    "espn_id": "4035537"
   },
+  "name:PHI:jonathanjones": {
+   "name": "Jonathan Jones",
+   "team": "PHI",
+   "pos": "CB",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-11-06T22:50:00-05:00",
+   "detail": "Hamstring",
+   "espn_id": "2971027"
+  },
+  "name:PHI:michaelcarter": {
+   "name": "Michael Carter II",
+   "team": "PHI",
+   "pos": "CB",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-11-06T22:45:00-05:00",
+   "detail": "Abdomen",
+   "espn_id": "4240456"
+  },
   "name:PHI:jihaadcampbell": {
    "name": "Jihaad Campbell",
    "team": "PHI",
@@ -4155,26 +4175,6 @@
    "date": "2026-11-06T19:02:00-05:00",
    "detail": null,
    "espn_id": "4870795"
-  },
-  "name:PHI:jonathanjones": {
-   "name": "Jonathan Jones",
-   "team": "PHI",
-   "pos": "CB",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-11-06T17:32:00-05:00",
-   "detail": "Hamstring",
-   "espn_id": "2971027"
-  },
-  "name:PHI:michaelcarter": {
-   "name": "Michael Carter II",
-   "team": "PHI",
-   "pos": "CB",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-11-06T17:32:00-05:00",
-   "detail": "Abdomen",
-   "espn_id": "4240456"
   },
   "00-0036912": {
    "name": "DeVonta Smith",
@@ -4636,6 +4636,26 @@
    "detail": null,
    "espn_id": "4696044"
   },
+  "name:SEA:charlescross": {
+   "name": "Charles Cross",
+   "team": "SEA",
+   "pos": "OT",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-11-06T23:17:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "4426376"
+  },
+  "name:SEA:brandonpili": {
+   "name": "Brandon Pili",
+   "team": "SEA",
+   "pos": "DT",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-11-06T23:09:00-05:00",
+   "detail": "Back",
+   "espn_id": "4259651"
+  },
   "name:SEA:uchennanwosu": {
    "name": "Uchenna Nwosu",
    "team": "SEA",
@@ -4666,16 +4686,6 @@
    "detail": "Knee",
    "espn_id": "3129308"
   },
-  "name:SEA:brandonpili": {
-   "name": "Brandon Pili",
-   "team": "SEA",
-   "pos": "DT",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-11-06T18:13:00-05:00",
-   "detail": "Back",
-   "espn_id": "4259651"
-  },
   "00-0035704": {
    "name": "Drew Lock",
    "team": "SEA",
@@ -4696,16 +4706,6 @@
    "detail": "Knee",
    "espn_id": "4032473",
    "comment": "Shaheed (knee) is listed as out for Sunday's game against the Cardinals, Gregg Bell of 933 KJR reports."
-  },
-  "name:SEA:charlescross": {
-   "name": "Charles Cross",
-   "team": "SEA",
-   "pos": "OT",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-11-05T20:39:00-05:00",
-   "detail": "Ankle",
-   "espn_id": "4426376"
   },
   "00-0034869": {
    "name": "Sam Darnold",
