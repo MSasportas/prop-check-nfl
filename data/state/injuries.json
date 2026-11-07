@@ -1,5 +1,5 @@
 {
- "at": "2026-11-06T20:30:14-05:00",
+ "at": "2026-11-06T21:00:18-05:00",
  "source": "espn",
  "players": {
   "00-0038559": {
@@ -1769,6 +1769,28 @@
    "detail": null,
    "espn_id": "4391845"
   },
+  "00-0038896": {
+   "name": "Jacob Saylors",
+   "team": "DET",
+   "pos": "RB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-06T20:51:00-05:00",
+   "detail": "Neck",
+   "espn_id": "4383429",
+   "comment": "Saylors (neck) is listed as questionable for Sunday's game against the Dolphins."
+  },
+  "00-0039364": {
+   "name": "Sione Vaki",
+   "team": "DET",
+   "pos": "RB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-06T20:48:00-05:00",
+   "detail": "Ankle",
+   "espn_id": "4912274",
+   "comment": "Vaki (ankle) is listed as questionable for Sunday's game against the Buccaneers."
+  },
   "name:DET:djwonnum": {
    "name": "DJ Wonnum",
    "team": "DET",
@@ -1809,17 +1831,6 @@
    "detail": "Neck",
    "espn_id": "4569465"
   },
-  "00-0039364": {
-   "name": "Sione Vaki",
-   "team": "DET",
-   "pos": "RB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-06T17:30:00-05:00",
-   "detail": "Ankle",
-   "espn_id": "4912274",
-   "comment": "questionable"
-  },
   "00-0036963": {
    "name": "Amon-Ra St. Brown",
    "team": "DET",
@@ -1850,17 +1861,6 @@
    "date": "2026-11-03T21:07:00-05:00",
    "detail": "Hamstring",
    "espn_id": "4896353"
-  },
-  "00-0038896": {
-   "name": "Jacob Saylors",
-   "team": "DET",
-   "pos": "RB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-02T20:13:00-05:00",
-   "detail": "Neck",
-   "espn_id": "4383429",
-   "comment": "Saylors (neck) is not expected to practice Wednesday, Nolan Bianchi of The Detroit News reports."
   },
   "00-0040390": {
    "name": "Jackson Meeks",
@@ -1933,6 +1933,26 @@
    "detail": null,
    "espn_id": "5123663"
   },
+  "name:GB:keiseannixon": {
+   "name": "Keisean Nixon",
+   "team": "GB",
+   "pos": "CB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-06T20:25:00-05:00",
+   "detail": "Groin",
+   "espn_id": "4259493"
+  },
+  "name:GB:zairefranklin": {
+   "name": "Zaire Franklin",
+   "team": "GB",
+   "pos": "LB",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-11-06T20:20:00-05:00",
+   "detail": "Shin",
+   "espn_id": "3124005"
+  },
   "00-0038589": {
    "name": "Josh Whyle",
    "team": "GB",
@@ -1964,16 +1984,6 @@
    "date": "2026-11-06T16:51:00-05:00",
    "detail": "Ankle",
    "espn_id": "4426411"
-  },
-  "name:GB:zairefranklin": {
-   "name": "Zaire Franklin",
-   "team": "GB",
-   "pos": "LB",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-11-06T16:51:00-05:00",
-   "detail": "Shin",
-   "espn_id": "3124005"
   },
   "00-0039811": {
    "name": "MarShawn Lloyd",
@@ -2015,16 +2025,6 @@
    "date": "2026-11-05T20:29:00-05:00",
    "detail": "Knee",
    "espn_id": "4361904"
-  },
-  "name:GB:keiseannixon": {
-   "name": "Keisean Nixon",
-   "team": "GB",
-   "pos": "CB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T15:35:00-05:00",
-   "detail": "Groin",
-   "espn_id": "4259493"
   },
   "00-0035700": {
    "name": "Josh Jacobs",
@@ -2741,6 +2741,16 @@
    "detail": "Knee - ACL",
    "espn_id": "4591008"
   },
+  "00-0040581": {
+   "name": "Dont'e Thornton Jr.",
+   "team": "LV",
+   "pos": "WR",
+   "status": "Active",
+   "fantasy": null,
+   "date": "2026-11-06T20:35:00-05:00",
+   "detail": null,
+   "espn_id": "4432775"
+  },
   "name:LV:darienporter": {
    "name": "Darien Porter",
    "team": "LV",
@@ -2770,16 +2780,6 @@
    "date": "2026-11-05T19:36:00-05:00",
    "detail": null,
    "espn_id": "4241983"
-  },
-  "00-0040581": {
-   "name": "Dont'e Thornton Jr.",
-   "team": "LV",
-   "pos": "WR",
-   "status": "Active",
-   "fantasy": null,
-   "date": "2026-11-05T19:11:00-05:00",
-   "detail": null,
-   "espn_id": "4432775"
   },
   "00-0034365": {
    "name": "Ian Thomas",
@@ -3083,6 +3083,28 @@
    "detail": "Hamstring",
    "espn_id": "3691739"
   },
+  "00-0037557": {
+   "name": "Ronnie Rivers",
+   "team": "LA",
+   "pos": "RB",
+   "status": "Injured Reserve",
+   "fantasy": "IR-R",
+   "date": "2026-11-06T20:50:00-05:00",
+   "detail": "Calf",
+   "espn_id": "4243003",
+   "comment": "Rivers (calf) does not have a designation for Sunday's clash against the Commanders, Sarah Barshop of ESPN.com reports."
+  },
+  "00-0039751": {
+   "name": "Jordan Whittington",
+   "team": "LA",
+   "pos": "WR",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-06T20:46:00-05:00",
+   "detail": "Back",
+   "espn_id": "4569382",
+   "comment": "Whittington (back) is questionable for Sunday's matchup against Washington, Sarah Barshop of ESPN.com reports."
+  },
   "00-0040737": {
    "name": "Terrance Ferguson",
    "team": "LA",
@@ -3144,28 +3166,6 @@
    "date": "2026-11-06T14:57:00-05:00",
    "detail": "Back",
    "espn_id": "4426405"
-  },
-  "00-0039751": {
-   "name": "Jordan Whittington",
-   "team": "LA",
-   "pos": "WR",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-04T22:15:00-05:00",
-   "detail": "Back",
-   "espn_id": "4569382",
-   "comment": "Whittington (back) was a limited participant at the Rams' practice Wednesday, Sarah Barshop of ESPN.com reports."
-  },
-  "00-0037557": {
-   "name": "Ronnie Rivers",
-   "team": "LA",
-   "pos": "RB",
-   "status": "Injured Reserve",
-   "fantasy": "IR-R",
-   "date": "2026-11-04T21:03:00-05:00",
-   "detail": "Calf",
-   "espn_id": "4243003",
-   "comment": "Rivers (calf) was designated to return from injured reserve Wednesday, Greg Beacham of the Associated Press reports."
   },
   "name:LA:jaylenwatson": {
    "name": "Jaylen Watson",
@@ -4124,6 +4124,38 @@
    "detail": null,
    "espn_id": "4035537"
   },
+  "name:PHI:jihaadcampbell": {
+   "name": "Jihaad Campbell",
+   "team": "PHI",
+   "pos": "LB",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-11-06T20:37:00-05:00",
+   "detail": "Hamstring",
+   "espn_id": "4685287"
+  },
+  "00-0037132": {
+   "name": "Britain Covey",
+   "team": "PHI",
+   "pos": "WR",
+   "status": "Out",
+   "fantasy": "OUT",
+   "date": "2026-11-06T20:32:00-05:00",
+   "detail": "Knee",
+   "espn_id": "3926231",
+   "comment": "Covey (knee) is officially listed as out for Sunday's game versus the Giants."
+  },
+  "00-0038400": {
+   "name": "Tanner McKee",
+   "team": "PHI",
+   "pos": "QB",
+   "status": "Questionable",
+   "fantasy": "QUESTIONABLE",
+   "date": "2026-11-06T20:26:00-05:00",
+   "detail": "Ribs",
+   "espn_id": "4685201",
+   "comment": "McKee (ribs) is officially listed as questionable for Sunday's game versus the Giants."
+  },
   "00-0040024": {
    "name": "Darius Cooper",
    "team": "PHI",
@@ -4164,16 +4196,6 @@
    "detail": "Abdomen",
    "espn_id": "4240456"
   },
-  "name:PHI:jihaadcampbell": {
-   "name": "Jihaad Campbell",
-   "team": "PHI",
-   "pos": "LB",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-11-06T17:31:00-05:00",
-   "detail": "Hamstring",
-   "espn_id": "4685287"
-  },
   "00-0036912": {
    "name": "DeVonta Smith",
    "team": "PHI",
@@ -4205,28 +4227,6 @@
    "date": "2026-11-06T16:01:00-05:00",
    "detail": null,
    "espn_id": "3929630"
-  },
-  "00-0037132": {
-   "name": "Britain Covey",
-   "team": "PHI",
-   "pos": "WR",
-   "status": "Out",
-   "fantasy": "OUT",
-   "date": "2026-11-06T15:57:00-05:00",
-   "detail": "Knee",
-   "espn_id": "3926231",
-   "comment": "out"
-  },
-  "00-0038400": {
-   "name": "Tanner McKee",
-   "team": "PHI",
-   "pos": "QB",
-   "status": "Questionable",
-   "fantasy": "QUESTIONABLE",
-   "date": "2026-11-05T18:51:00-05:00",
-   "detail": "Ribs",
-   "espn_id": "4685201",
-   "comment": "McKee (rib) was limited in Thursday's practice."
   },
   "00-0039398": {
    "name": "Joe Milton",
@@ -5152,6 +5152,16 @@
    "detail": "Foot",
    "espn_id": "4573318"
   },
+  "name:WAS:jerzhannewton": {
+   "name": "Jer'Zhan Newton",
+   "team": "WAS",
+   "pos": "DT",
+   "status": "Injured Reserve",
+   "fantasy": "IR-R",
+   "date": "2026-11-06T20:37:00-05:00",
+   "detail": "Pectoral",
+   "espn_id": "4430560"
+  },
   "00-0036626": {
    "name": "Dyami Brown",
    "team": "WAS",
@@ -5183,16 +5193,6 @@
    "detail": "Foot",
    "espn_id": "4567156",
    "comment": "Burks (foot) has been ruled out for Sunday's game against the Rams."
-  },
-  "name:WAS:jerzhannewton": {
-   "name": "Jer'Zhan Newton",
-   "team": "WAS",
-   "pos": "DT",
-   "status": "Injured Reserve",
-   "fantasy": "IR-R",
-   "date": "2026-11-04T22:19:00-05:00",
-   "detail": "Pectoral",
-   "espn_id": "4430560"
   },
   "name:WAS:daronpayne": {
    "name": "Daron Payne",
